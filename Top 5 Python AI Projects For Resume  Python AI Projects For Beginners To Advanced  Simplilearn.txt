@@ -1,0 +1,410 @@
+hello everyone I am M and welcome back
+to simp YouTube channel today we are
+talking about must have python AI
+projects and how to build them so that
+can really help you sharpen your skills
+and stand out in the growing field of
+artificial intelligence so let's quickly
+see what is python python is one of the
+most popular programming languages for
+AI because its Simplicity and the
+powerful libraries it offers like
+tensorflow kasas and py to building
+projects using python is a great way to
+get started if you want to break into
+the AI industry whereas artificial
+intelligence is transforming Industries
+like healthare finance and even
+entertainment companies are now looking
+for expert who know how to apply AI to
+real world problems in this video we
+will explore beginner level to advanced
+level projects so these projects are
+designed to give you hands-on experience
+in building intelligence systems
+analyzing data and even automating task
+so without any further Ado let's get
+started so let's start with beginner
+level projects so number one we have
+fake new detection using machine
+learning so in today's world fake news
+is a major concern causing
+misinformation to spread rapidly across
+social media and news platform detecting
+fake news is crucial to maintaining the
+Integrity of the information we consume
+so this projects aim to build a machine
+learning model that can identify fake
+news articles by analyzing their textual
+content by learning from existing data
+sets of real and fake news the model we
+a to classify articles into these two
+categories thus existing media outlets
+and social media platform in reducing
+the spread of misinformation this
+project is perfect introduction to
+natural language processing NLP as it
+involves TX data manipulation feature
+extraction and supervised learning it
+can also be adapted for real-time use on
+website or social media platforms to
+flex suspicious article and provide more
+reliable information to users so now
+let's see how to build this in this
+first step is data collection use data
+set like l or fake News Net that can
+contain label real and fake news
+articles you can find data set from the
+kle the second step is pre-processing
+clean the text by removing stop words
+punctuation and special character
+tokenize and stem words used in anal or
+spacy the third step is feature
+extraction use tfidf or bag of words to
+convert the text into numerical data for
+machine learning models the fourth step
+is model training train a classifier
+like logistic regression Nave base or
+random Forest on the DAT the fifth step
+is evaluation evaluate the model using
+accuracy precision record and F1 score
+matrics to determine how well it
+classify fake and real news tools you
+can use is nltk psychic learn and pandas
+skills you will gain from this are text
+pre-processing NLP classification models
+and if you want to make us video on this
+project please comment Down Below in
+number two we have image recognition
+using CNN image recognition is one of
+the core application of deep learning
+and computer vision using variety of
+Industries ranging from Healthcare to
+autonomous vehicles this project will
+guide you through building an image
+classifier using CNS a deep learning
+architecture designed specifically for
+image recognition task the goal is to
+create a model that can accurately
+classify images such as differentiating
+between cats and dogs by working on this
+project you will gain a solid
+understanding of the fundamental
+concepts of CNS such as convolution
+layers pooling and activation functions
+this project not only introduces you to
+the basics of CNS but also teaches
+essential skills like image
+pre-processing data set handling and
+model evalution which can be applied to
+more advanced computer vision projects
+in the future so now let's see how to
+build this project in this project first
+you have to import data set so use a
+data set like cifr 10 or kle cats versus
+dogs with label images the second step
+is pre-processing the siiz normalized
+and augmented images using libraries
+like open CV or pil to prepare the data
+set the third step is model architecture
+design a basic CNN model with
+convolutional pooling and fully
+connected layers using Kos or tensor
+flow the fourth step is training split
+the data set into training and
+validation sets and train the CNN model
+to classify images fifth step is model
+evaluation use accuracy precision and
+confusion metrics to evaluate how well
+the model predicts the correct class
+level tools you will use in this project
+are kasas tensorflow open CV pandas
+skills you will gained after doing this
+projects are image pre-processing CNN
+architecture model evaluation and if you
+want to make us video on image
+recognition using CNN please comment
+down below second we have intermate
+level projects in this first we have ai
+based recipe recommendation system
+recommendation systems have become an
+integral part of modern digital platform
+from e-commerce website suggesting
+product to users to stream Life Services
+recommending shows and movies so in this
+project you will build a recipe
+recommendation system that suggest
+diseses based on the ingredients a user
+has on hand this project demonstrate how
+recommendation algorithms such as
+content based filtering and
+collaborative filtering can be used to
+provide personalized suggestion you will
+also learn how to pre-process data and
+clean textual data such as ingredient
+list and Implement a machine learning
+algorithm to match user inputs with
+recipe databases this is an excellent
+project for understanding how
+recommendation system work and how they
+can be applied in various industries
+from food Tech to personalized contact
+recommendations so now let's see how to
+build this in this projects first step
+is data collection use web scraping
+tools like beautiful soup to scrape
+recipes from website or use data sets
+like recipe 1M the second step is
+pre-processing normalize and clean
+ingredient data by standardizing
+ingredient names and handling missing
+values the third step is recommendation
+algorithms Implement content based
+filtering and collaborative filtering to
+recommended recipes content based
+filtering matches ingredient list while
+collaborative filtering uses user
+preferences model fourth step is model
+training use cosign similarity to match
+user provided ingredients with recipe
+ingredient in the data set and the next
+step is interface and tools so create a
+simple web interface using flask where
+users can input ingredients and receive
+recipe recommendation tools you will use
+beautiful soup Panda psyched learn and
+flask so you will gain skills like web
+scrapping data cleaning recommendation
+systems using this project by doing this
+project and if you want to make us video
+on this project please comment down
+below number fourth we have chatbot with
+sentiment analysis chatbots have
+transformed how businesses and services
+interact with users providing 24x7
+support and personalized responses in
+this project you will build a
+conversational chatboard that can
+analyze the sentiment behind user inputs
+and respond accordingly by incorporating
+sentiment analysis the chatbot will not
+only understand the content of the user
+messages but also the emotional toone
+such as whether the user is Happy
+frustrated or neutral this allow the
+chat board to adjust a tone and
+responses to improve user satisfaction
+for example a chatbot could offer a more
+empathetic response if it detects an
+negative sentiment this project will
+give you hands-on experience in building
+a conversational AI system while
+learning how to integrate machine
+learning technique like sentiment
+analysis the skills you develop in this
+project can be applied to customer
+service Healthcare education and more so
+now let's see how to build this project
+so before jumping to advanced level
+projects here is a quick info for you
+dive into the future of AI with our
+generative Ai and machine learning
+course in collaboration with E and ICT
+Academy I goart learn tools like chat GT
+open AI hugging pH Python and more join
+Master Class LED by iitg faculty engage
+in Hands-On projects and earn executive
+alumni status this generative Ai and
+machine learning course enriches your
+career Journey with comprehensive
+coverage of machine learning deep
+learning NLP generative AI reinforcement
+learning computer vision and more
+combining Theory with Hands-On practice
+it offers live virtual sessions projects
+with integrated labs and master classes
+by IIT goari faculty so find the course
+link from the description box below and
+the pin comment in this project the
+first step is chatbot framework use
+tools like dialog flow or rasa to build
+a conversational chatbot capable of
+handling various user intents the second
+step is sentiment analysis integrate a
+sentiment analysis model using pre-end
+models like Veda or B the third step is
+conversational flow adjust the chatbox
+responses based on the sentiment
+positive negative or neutral detected in
+the user input the fourth step is
+integration and deployment so build an
+interface website or messaging platform
+where users can interact with the
+chatbot in real time and deploy the
+chatbot on a website or app allowing
+user to engage it with it and receive
+sentiment aware responses so you will
+use tools in this are Dil flow rasa
+Vader Transformers flask and you will
+gain skills like sentiment analysis
+chatbot deployment conversational a and
+if you want to make us video on this
+project please comment down below so now
+let's see some advanced level projects
+in this we have ai powered image
+colorization image colorization is a
+fascinating application of deep learning
+that transform black and white images
+into color by predicting and applying
+realistic colors to grayscale images
+this project explore how CNN and G can
+be used to learn mapping between
+grayscale and colored images you will
+gather data set of colored images
+convert them into gray scale and train
+the model generate color version this
+project is especially useful in areas
+such as film restoration photography and
+artistic station where colorization can
+breathe new life into old black and
+white images more however it highlights
+the power of deep learning in
+understanding and generating complex
+visual data giving you insight into how
+these models work for tasks like image
+Generation video prediction and Beyond
+the skills you learn in this project
+will also be useful for other creative
+AI application like style transfer and
+image synthesis so now let's see how to
+build this project so in this project
+first step is data collection use data
+set of colored image convert them into
+gray scale and use the grayscale images
+as inputs while training the model to
+Output colorized version the second step
+is preprocessing normalize images pixel
+values and resize them for training the
+third step is model architecture
+Implement a unit model or generative
+advisal Network Gans which are well
+suited for image generation task like
+colorization fourth step is training and
+evaluation train the model on Gray scale
+images as input and colored images as
+output using mean squared error method
+for guidance
+evaluate with visual inspection and Peak
+signal to noise ratio the last step is
+deployment so create a web interface
+where user can upload black and white
+images and get them colorized so you
+will use tools like tensor flow K US
+Open CV and flask so we will gain skills
+like deep learning CNN GN and image
+pre-process and if you want to make a
+video on AI powered image colorization
+project so please comment down below and
+the last we have object detection using
+YOLO you only look once object detection
+is one of the most popular computer
+vision application allowing machine to
+recognize and locate multiple objects
+within an image or video stream in real
+time YOLO is a state-of-the-art object
+detection algorithm known for its speed
+and accuracy this project involves
+building a real-time object detection
+systems capable of identifying multiple
+objects in images or videos Feats by
+drawing bounding boxes around them
+object detection has widespread use in
+fields such as security surveillance
+autonomous driving and augmented reality
+where system need to understand and
+interact with their surroundings in real
+time by working on this project you will
+learn how to pre-process image data
+format bounding box labels and train a
+YOLO model using a data set like coco or
+Pascal you will also gain a valuable
+experience in deploying object detection
+system that process video streams giving
+you the skills to build application in
+Dynamic environment from traffic
+monitoring to Industrial robotics so now
+let's see how to build this Pro projects
+so in this project we will first import
+data set so use a data set like coko or
+Pascal V which contains label objects in
+images with bounding boxes the second
+step is pre-processing resize image and
+normalize pixel values ensuring bounding
+box labels are appropriately formatted
+the third step is model architecture use
+the U Loop U only Loop once architecture
+which splits images into a grid and
+predicts bounding boxes and class
+probabilities for each object the fourth
+step is training and evaluation train
+the YOLO model on label data using a
+framework like darket evaluate the model
+using metrics like intersection over
+Union and mean average Precision the
+last step is deployment develop a system
+that can process video streams in real
+time detecting objects and drawing
+bounding boxes around them tool you will
+use open CV tens of flow and dark net
+you will gain skills like object
+detection YOLO architecture realtime
+video processing and if you want to make
+videos on this project please comment
+down below so in conclusion these python
+AI projects not only help you build
+Hands-On skills but also provide a solid
+foundation for advancing your career in
+artificial intelligence whether you are
+working on fake news detection image
+recognition or developing Advanced tools
+like chat BS and object detection s
+these projects offer real world
+application that companies are looking
+for start small keep learning and as you
+complete each project you will get
+better prepared to take on the
+challenges in the growing AI field with
+this we have come to end of this video
+if you have any question or out please
+feel free to ask in the comment section
+below our team of experts will help you
+as soon as possible thank you and keep
+learning with simply done craving a
+career upgrade subscribe like and
+comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

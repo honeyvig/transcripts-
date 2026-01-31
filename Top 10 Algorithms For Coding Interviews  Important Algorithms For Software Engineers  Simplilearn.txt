@@ -1,0 +1,2217 @@
+hello everyone and welcome to today's
+video on top 10 most important
+algorithms for coding interviews have
+you ever heard of 8020 rule which is
+also known as Paro principle you might
+be wondering why I'm bringing this up
+well it turns out that 20% of algorithms
+are frequently asked by 80% of the
+companies and 80% of the problems you
+will encounter are based on these 20% of
+algorithms
+this Insight is particularly crucial if
+you are aiming for a software developer
+position now today I have handpicked the
+10 most crucial algorithm questions that
+fall within this critical 20% the ones
+you are mostly likely to encounter
+during coding interviews if you want to
+boost your chances of acing the coding
+round then make sure you watch this
+video Until the End now let's dive in
+and get you prepared to tackle those
+interviews with
+confidence craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to Fast Track Your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just a quick info guys simply learn
+has got full stack program in
+collaboration with IBM in this course
+you are going to learn the monack
+Technologies you will learn Technologies
+such as Mong DB expressjs reactjs nodejs
+plus get HTML CSS and JavaScript to
+build and deploy interactive
+applications and services throughout
+this course so hurry up now and join the
+course the course link is mentioned in
+the description box now before we move
+on let us discuss our agenda for today's
+session so guys we are going to cover
+questions from arrays string sorting
+related algorithms then we will move to
+searching recursion or backtracking
+then greedy related algorithm towards
+the end we are going to focus on trees
+dynamic programming graph related and
+divide and concur algorithm so let's get
+started so guys let's start with our
+first problem that is trapping rainwater
+problem the trapping rain water problem
+is a classic example that illustrates
+how to effectively use a two-pointer
+technique to solve a problem with both
+time and space
+efficiency now what is a given question
+so guys the given question is that find
+the maximum amount of water that can be
+trapped within a given set of bars where
+each Bar's width is one unit so consider
+an input array where you have the height
+of the bars at
+70425 0 6 405 so you can see in this
+diagram I have Illustrated that now the
+thing is like here is the essence of
+this problem lies in understanding that
+the water trapped of Any Given bar is
+dependent on the tallest bars to its
+left and the right because the water
+will naturally settle at the lower
+elevations between the taller elevations
+the essence of the problem lies in
+understanding that the water trapped of
+Any Given bar is dependent on the
+tallest bars to its left and right
+because water will naturally settle at
+the lower elevations between taller
+elevations so the first approach is kind
+of an intuitive approach and I will tell
+you that in this approach you should not
+go for it so our approach is you apply
+your intuition
+okay so guys initially one might think
+of iterating over each bar okay so
+iterate over each bar from here to here
+to here to here and finding the tallest
+bar to the left and right of it and
+using the smaller of these two heights
+to determine the water trapped of the
+given current bar but there's a problem
+with this approach here the time
+complexity will become o of n s it's
+very much and it's like a quadratic Time
+Square you're getting a polinomial time
+basically and uh we don't want this this
+is very much inefficient for larg R okay
+so we have a problem with this approach
+it is
+basically inefficient
+if our arrays become too much
+large now what we are going to do guys
+we are going to try an optimal approach
+so the technique will be two-p pointers
+so let's
+proceed so in the two pointer technique
+it offers a linear time Solution by O
+ofm Okay so our approach to solve this
+problem would
+be two pointer
+technique and here our time complexity
+would be linear which will be of O of N
+and here's a step by-step solution so
+what we are going to do we are going to
+initialize two pointers the left and the
+right and they are initialized at the
+start and the end of the array
+respectively so suppose if this is our
+array so we can initialize one pointer
+here and one pointer here okay now these
+pointers will move towards each other so
+this thing you have to notice so the
+motion will be like this and until the
+meet so we have to declare certain
+variables such as left Max and right Max
+we can create two variables the first
+one will be left Max and the second one
+would be right
+Max and these are B basically used to
+creep the track of Maximum Heights
+encountered from left and right sides of
+the array as we iterate in the second
+process what we are going to do we are
+going to iterate and calculate the
+trapped water here the idea is to move
+the pointer either to the left or to the
+right which is at the smaller height
+this is because the water tra at a
+position is determined by the shortest
+height that can hold the water and it is
+also influenced by the shorter of the
+heights at the two pointers so there's a
+condition for this so condition would be
+something like this so if height of
+left is less than height of right
+okay then we process the left pointer if
+the height of left is greater than or
+equal to the left Max we update the left
+Max to the height left since no water
+can be trapped on a bar that is taller
+than its previous Max now if the height
+of left is less than the left Max then
+calculate the tra water as left Max
+minus height left and we can add this to
+the total trapped water then we again
+move the left pointer one step to the
+right or else process the right pointer
+similarly in the similar fashion we are
+going to update the right Max and
+calculate the Trap water like if height
+of right is less than the right Max and
+we are going to move the right pointer
+and we are going to repeat this process
+until the left pointer surpasses the
+right pointer now we are going to see
+its code and we are going to understand
+this but before that let us try to take
+an example and understand much more
+better way now let me take an example
+and explain you that so suppose if I say
+consider this array okay so we have an
+array something called as 7 0 4 2
+5
+0 6 4 0 and 5 okay so we have two
+pointers one I have initiated here and
+one I have initiated all over here okay
+this is our given array now as the
+pointer moves towards each other so what
+will happen so when the left Max is
+seven and the right Max is five okay let
+us declare the variable so left Max we
+have given as 7
+and right Max would
+be equal to five so here what is the
+height so the left pointer is at index
+one and height 1 is equals to zero
+basically so the tra water here will be
+this will be 7 left Max minus 0 okay so
+now we
+calculate the trapped water
+which is equals to 7 the left Max and
+this will be minus 0 so it is going to
+come around seven
+units okay I'll repeat
+again so here what I'm saying is when
+the left Max is seven and the right Max
+is five and we know that our left
+pointer is at index one so we are taking
+it as height of one which is basically
+equals to Z
+okay so what is a trapped water so when
+we are calculating this we are basically
+doing a subtraction of the left Max
+minus the height at the index one now
+this approach systematically reduces the
+problem space while calculating the
+exact amount of water trapped
+efficiently and it is particularly
+suited to problems where Solutions
+depends on comparison between elements
+with forward and backward dependencies
+within the array so as I have told you
+earlier now let us calculate the trapped
+water step by step so if you try to see
+at index one okay so here left equals to
+1 and right is equals to 9 so height
+would
+be of
+left equals to0 less than height of
+right which is basically equals to five
+now since we have to say that the left
+Max is what s and it is greater than
+height of one which is basically zero so
+a trapped water will
+be left
+Max minus the height of 1 which is
+equals to 7 - 0 and it is equals to 7 so
+at the first we calculated this now what
+is the total trapped
+water so T trapped we can give this
+variable and which is equals to
+basically 7 units now we are going to
+move left to index
+[Applause]
+two okay now at index two in the step
+two what we are going to do so here left
+is equals to 2 and
+right is equals to 9 so height of two or
+height of left we can
+calculate equals to 4 which is greater
+than height of
+right pretty fine which is equals to
+five now here what we are going to do so
+we are going to calculate the left Max
+okay and this will be seven and this is
+greater than height of two which is
+basically four now what will the Trap
+water guys very basic so our trapped
+water would
+be it would be left minus or we can say
+left Max minus height of
+two which is how much guys 7 -
+4 = to 3 units got it so now if you here
+calculate at the step two how much is a
+total trapped
+water it will come around 7 + 3 which is
+equals to 10
+units now this was our step two now
+after this what we are going to do at
+the next step our index would be
+three okay now here our left is equals
+to three and right is equals to 9 pretty
+fine so you can keep seeing the array
+and how I'm doing the calculation So
+based on this algorithm if you are able
+to calculate it you will see while we
+are going to code it will become much
+more easier so let us calculate at index
+3 first so left is equals to three all
+over here and our right is equals to 9
+so what we have to calculate guys we
+have to calculate the height so height
+of left would be what which will be two
+and this is greater than height of
+right so which is equals to five and now
+our left Max would be what would be
+seven which is greater
+than height of
+three you can do something like this and
+which is basically two units so what
+will trapped water all over here
+it would be around left
+Max minus height of three which will be
+7 - 2 = to 5
+units so now let us calculate the total
+trapped water so T
+trapped and this is going to 10 + 5 = to
+15 units so you can see it's overall an
+iterative process then again at step
+four we are going to move our left to
+index
+form pretty fine now at this step what
+we are going to do calculate the same
+stuff like so here our left would be
+what guys four and right would be
+nine so we are going to
+calculate height of left
+which is equals to five and it is
+greater than height of
+right which is equals to 5
+minus left Max and which is basically
+seven all over here and it is greater
+than height
+at
+four basically it's
+five so what will it trapped water in
+this
+case so guys trapped water will be left
+Max
+minus the height at
+four equals to 7 - 5 2
+units and the total trap would
+be they are just is going to add this so
+it would be 15 units plus 2
+units 17 units okay so this is overall
+uh approach for calculating the Trap
+water and when you have done it so guys
+you have to keep iterating like this and
+at the seventh step when you're going to
+add the overw water it is going to come
+around 25 units so basically it's a
+two-pointer approach and the algorithm
+as I have clearly mentioned mentioned
+you and you have to follow certain like
+this now let us see how we are going to
+code this in Python so guys I'm going to
+use Google collaboratory for the same
+and let us try to understand the code
+all over there so guys in this problem
+our algorithm approach was very simple
+what we did basically we initialized the
+left Max and the right Max arrays then
+we updated the left Max I as a maximum
+left of Max of IUS one and we have
+calculated height of I for each bar
+similarly we fill the right Max array
+starting from the end of the array and
+to find a trapped water we iterate
+through the array and computed the sum
+using the formula water plus equals to
+Men of left Max I right Max I minus
+height I okay so similarly we were
+calculating that using the two-pointer
+approach now let us try to understand
+what will be its python code so for
+example I would say so we have defined a
+function named as trap that is going to
+take a single argument height and which
+is a list of integers representing the
+heights of the bar then we are doing the
+base case check so if not height then we
+are returning the zero this function
+first checks if the input list is empty
+if it is then the function returns zero
+because no water can be trapped if there
+is no bars in the third step we are
+doing the initialization so Left Right
+equals to zero L of height minus one
+okay which is very easy then we are also
+going for left Max right Max and we are
+calculating that using height of left
+height of right and water tra so these
+are all being initialized equal to zero
+pretty fine till here initializations
+you have been clear so guys left and
+right pointers are initialized to the
+start and end of the list respectively
+or an array so left Max and right Max
+are used to track the maximum Heights
+encountered so far from the left and the
+right sides as we Traverse the list What
+trapped keeps the cumulative total of
+water tra so in the main Loop what you
+going to see so when I have written when
+left is less than right this Loop
+continues until the left pointer is less
+than the right pointer this Loop
+iterates to the list and moving the
+pointers inward based on the relative
+Heights at the left and right so if the
+height at the left pointer is less than
+height at the right pointer then we are
+calculating this so if height left is
+less than height right and if height
+left is greater than or equal to left of
+Max then we are putting left Max equals
+to height of left otherwise we are
+putting water tra plus equals to left
+Max minus height left + one so this is a
+overall formulation which we are
+basically doing what this piece of code
+is doing so don't get terrified by the
+piece of mathematical equation the same
+way which we have calculated by taking
+an array earlier the same thing which we
+are doing right now this block basically
+is updating the left Max if the current
+bar is is taller than the previous left
+Max and if it is not it is calculating
+the trapped water of the current bar so
+left Max minus height of left and it is
+adding to water trap the left pointer is
+then incremented now if the height at
+right pointer is less than or equal to
+height at the left pointer so guys as
+you can see in the code next part
+revolves around else so if height of
+right is greater than equal to of right
+Max then we are printing right Max
+equals to height of right or else water
+tra plus equals to right Max minus
+height of right and we are subtracting
+this with one and finally we are
+returning the water trap so this block
+is basically updating the right Max and
+if the current bar is taller than the
+previous right Max it is calculating the
+trapped water of the current bar which
+is right Max minus the height of right
+and it is adding to the water tra the
+same way as we have calculated and here
+the point is then decremented so you can
+see right equals to minus1 is given now
+finally we are returning the water trap
+and after this Loop completes the
+function Returns the total amount of
+water trapped and it is calculated in
+this so now we have taken a given array
+so guys let us try to run this code so
+you can see it is giving the total
+trapped water equals to 25 as I've
+already told you based on my
+calculations so this was a program for
+calculating the trapped water and this
+is a very amazing problem and it
+basically gives you an idea regarding
+how you can use the two-pointer approach
+now let us move on to our next problem
+now guys we are taking a string related
+algorithm and we are going to tackle a
+problem which is going to ask you to
+validate an IP address so let us see
+what the program is so the program is
+write a program basically to validate an
+IP address and I have given a definition
+all over here according to Wikipedia
+that ipv4 addresses are canonically
+represented in a DOT decimal notation
+which consist of four decimal numbers
+and each ranging from 0 to 255 separated
+by dots something like
+17216
+24.1 so what are ipv4 addresses
+basically ipv4 addresses are canonically
+represented in a DOT decimal notation
+and it consists of four decimal numbers
+so from a range of 0 to 255 and they are
+separate ated by dots so when validating
+ipv4 addresses it's crucial to identify
+which strings conform to the ipv4
+standards and which do not here we are
+going to clarify the criteria that makes
+a string a valid ipv4 address and those
+that result in it being invalid so
+following the explanation I'm going to
+provide a systematic approach to solve
+this validation problem now so what's
+the criteria for a valid ipv4 address
+and ipv4 address must have the following
+criteria the first one is four numeric
+octets okay so it should
+have
+four
+numeric
+octets an ipv4 address is composed of
+four numbers and we call it as octets
+and these are separated by dots
+something like
+192 16801
+now the range of each octed if we
+discuss
+about so each octed must be a decimal
+number ranging from 0 to
+255 and the numbers outside this range
+are recorded as invalid because 256 is
+not a valid octed okay so when I say
+256 this thing you should remember
+now no leading zeros this is our third
+criteria as they can imply an octal
+number however the single Zero by itself
+is allowed for example I'll tell you
+that
+192.168.1.1 this is actually
+invalid and if you say say
+192 168
+0.1 this will become valid so I have
+told you no leading zeros should be
+there now what is the exact format if
+you talk
+about the address must strictly follow
+the number do number. number format like
+this
+and any additional characters are
+incorrect placements of dot results in
+an invalid address suppose if I say
+192.168.0.1 or
+192.168.1.1 so these are basically
+invalid so let me give you the those
+addresses
+this will become
+invalid so I have set you the criteria
+for determining what is a valid ipv4
+address and what is not now let us try
+to code this problem and we are going to
+systematically validate this problem we
+are going to split this this string and
+then we are going to solve this problem
+so let us proceed to our Google collab
+and see the program so basically all
+over here what we are doing so we are
+splitting it using the split function to
+divide the address into Parts based on
+dots and we are ensuring that exactly
+four parts are returned otherwise the
+address is invalid then we are
+validating the each octed we are
+converting the part to an integer and
+confirming that it lies between 0 to 255
+range and finally we are returning the
+result so as you can see all over here
+in the first part I have written def
+validate ipv4 IP Parts ip. split then
+Parts equals to ip. spit and here this
+code is there and at the end I'm
+returning If part is not equal to zero
+then part. istrip Zer so let me explain
+this code basically what I'm doing it so
+guys this ipv4 function is basically
+checking all the rules okay and it is
+checking whether given IP address is
+valid or not based on splitting it and
+finally what we are basically doing we
+are basically doing a string
+manipulation so validate ipv4 is
+designed to check that if a given string
+conforms to ipv4 address format or not
+so the first thing that we are doing we
+are defining validate ipv4 IP okay then
+in the next we are splitting the strings
+into octed where Parts equals to ip.
+split now the IP address string is split
+into Parts using dot as a delimeter and
+the split method breaks the string at e
+Dot and it is returning the list of
+substring octets for a valid ipv4
+address this list should contain exactly
+four elements each representing one
+octet now finally we are checking the
+number of octets so in the code if
+length of Parts not equals to four we
+are returning it false so basically this
+line is checking if the less parts has
+exactly four elements if there are more
+or fewer than four parts the function
+immediately returns false indicating
+that the string is not a valid ipv4
+address now finally we are validating
+each octets so here the loop iterates
+over each element or parts in the list
+of part and each part corresponds to one
+of the octets in the IP address and
+finally we are checking the numeric
+value and range so if not part is digit
+or not zero less than equal to in part
+less than equal to 255 basically we are
+checking range all over here we are
+saying that return the false So within
+the loop each octed part is checked to
+ensure that part is digit means the
+method we are using is digit method is
+verifying that the octet contains only
+numeric characters which are essential
+for it to be a valid number so in part
+lies between 0 and
+255 okay basically checking the octet
+when a convert convered to an integer it
+should be valid within a range of 0 to
+255 inclusive and the values outside
+this range are not a valid ipv4 and
+finally we are checking for the leading
+zeros so here if part not equal to zero
+and part is strip here zero not equals
+to part then we are returning the false
+so basically this line is checking the
+leading zeros in each octet okay and
+part not equal to zero this condition
+allows the single zero as the valid
+octed but it is triggering the check for
+other cases if I say part is strip zero
+not equals to part the is strip method
+removes the leading zeros from the
+string and if the result is different
+from the original part then the original
+has leading zeros and this is invalid
+unless the octed is exactly zero and
+finally we are returning the true for
+valid IP address if it is there if all
+the checks are passed for each octed
+then we are returning true otherwise
+false so I have given a certain IP
+address let's try to run this code and
+we can see for the first one it is
+saying true and for this one it is
+saying false okay so in this way you can
+check for different numbers so this is
+basically an idea for checking whether a
+given string is a valid IP V4 address or
+not now guys let us move to our third
+problem which is related to sorting
+algorithm so guys the question is as
+follows so it says given an integer sort
+its element by the frequency and index
+if two elements have different
+frequencies then the one which has more
+frequency should come first otherwise
+the one which has less index should come
+first so guys how we are going to
+approach this problem so suppose we have
+this input element okay say 331 1
+8368 and we are expecting its output as
+331 so basically what we are printing
+all over here so guys we are printing it
+with the element which has the more
+frequency so you can see in the output
+list we have 3 3 1 1 88
+67 now let's try to understand the
+problem first what it is trying to say
+so we want to sort this array so that
+the numbers with the higher frequencies
+come first and if two of the numbers
+have the same frequency then the one
+that appears in the first in the
+original array should come first now let
+us analyze its two cases the worst case
+scenario and the best case scenario so
+in the worst case scenario all the
+elements are unique so here sorting by
+frequency does a little to change the
+relative order of the elements since
+each has the same frequency of one I
+would say so we say the frequency of one
+okay and here the Sorting will primarily
+rely on their original indices okay so
+we are taking two ideas all over here so
+basically
+sorting is relying
+on their
+original
+indices now let us take an example all
+over here so
+say we have nums as an given list and
+here we have five 1 6 and
+seven so here all the elements have a
+frequency of one okay so we and
+just and sorted by the index implicitly
+the output will
+be 5 1 6 and 7 okay if we are sorting by
+the
+index now here no reordering is needed
+based on the frequency now let us take
+the best case scenario
+so here all the elements are same and
+the array is already sorted by the
+frequency and the index doesn't matter
+because there is only one unique element
+for
+example let us take an array of nums
+equal to two 2 2 and two so here what we
+can notice that all the elements have
+the highest possible frequency which is
+equal to the length of the array so here
+the output will be
+typically it is going to be two two two
+and two now let us take the third type
+of scenario which is a typical scenario
+so let us try to return the original
+example and break it down to step by
+step let's suppose we have this
+array 2 3 2 4 2 and
+three okay now step one would be what
+frequency and index tracking so at the
+step
+one we are going to Target
+the frequency
+and index
+tracking so first we need to count the
+occurrences of each number and track the
+index of the first appearances so let's
+try to notice the frequency all over
+here so
+say two three
+times then 3 is 2 then all over here we
+can see four is one
+and uh if I talk
+about the first of the indices all over
+here so I can take a note of this all
+the way here and if we talk about first
+indices we can say two is there of zero
+three is there of one four is there of
+three now in the step two what we are
+going to
+do so basically we are going to sort
+Okay so here we'll be sorting basically
+and we need to sort the numbers based on
+their frequency means descending and by
+their first index ascending so if the
+frequencies are equal the sorted order
+will be based on the rules so it will
+be 2 3 and four now we can say that two
+comes first is of highest frequency then
+three comes next to it and then finally
+we have four four so four comes last now
+what will be step three
+guys step three we are going to
+reconstruct the
+array so using the sorted order and
+frequencies we reconstruct the array so
+we can see
+here two has appeared three
+times three has
+appeared two times
+four has
+appeared one
+time so resulting the sorted array would
+be 2 2 2 3 3 and four so when analyzing
+the time complexity and space complexity
+of this algorithm which we are using to
+sort integer array by frequency and then
+by index it is very important to
+consider the component of the algorithm
+so if we talk about the time complexity
+guys so the frequency and index tracking
+we are doing this step is involving
+iterating through the entire array once
+so for each element operations are
+performed that are constant in time so
+here the complexity would be o of n okay
+and where n is length of the array now
+if I talk about sorting guys okay so the
+array is sorted in some based on some
+custom key now which involves sorting
+based on the frequency and which is
+retrieved in constant time from a
+dictionary and then by the first index
+so we are using a python sort function
+typically which is time sort okay which
+has a Time complexity of O of and login
+in the worst case so here in terms of
+sorting we can see
+we have a Time complexity of O of n log
+n and this is the worst case that's the
+most important thing to remember right
+here so combining these predominant
+Factor so here's the overall sorting
+step and we are making an overall time
+complexity of this algorithm by so
+overall if you see it becomes o of n log
+n now let us discuss about the space
+complexity
+now two dictionaries are used one to
+store the frequency of each element and
+another to store the first occurrence in
+the worst case where all the elements
+are unique both dictionaries have n
+entries and we have the complexity of O
+of n where N is a length of the array
+then we will talk about the Sorting
+space the space required for the sort
+operation itself which for the time sort
+involves an auxilary space so in the
+worst case scenario the complexity talk
+about space complexity
+[Applause]
+it is going to be in the worst case
+scenario o ofn but in Practical
+scenarios especially for a partially
+sorted data it can be pretty much less
+so we can take this into consideration
+so given these consideration the overall
+space complexity of this algorithm is O
+ofn accounting for the storage of two
+dictionaries and the potential space for
+sorting operation now we will be using
+dictionaries okay to solve our problem
+and the use of dictionary is going to
+allow for faster lookup operations which
+are essential for sorting criteria hence
+the space tradeoff the Sorting step file
+the efficient with the complexity of O
+of n
+log okay and it is the most timec
+consuming part of the algorithm the
+space required for sorting can vary but
+the use of dictionary is a fixed cost
+based on the number of unique elements
+in the array so guys let us see how we
+are going to write this code in Python
+based on the same algorithm that I have
+told you so guys as you can see this is
+a python code for our given problem so
+you can see here I have used s by
+frequency and index as a function this
+function is basically used to sort nums
+which is an array of integers then I
+have initialized a dictionary which is
+frequency equals to empty dictionary now
+this dictionary is basically used to
+keep the track of how many times each
+number appears in the array now we have
+also initialized another dictionary
+which is first Index this is used to
+store the first occurrence of index of
+each number in the array then we are
+trying to populate the dictionaries so
+you can see there is a for Loop which
+iterates over the nums using enumerate
+to get both the index and the number now
+if a number is encountered for the first
+time it's added to both the dictionaries
+so frequency is initialized to zero and
+immediately incremented and first index
+is set to the current index so if a
+number is not new only its frequency is
+incremented now we are sorting the array
+the sorted function which is used
+basically to sort the nums array and the
+key for sorting is a Lambda function
+that is basically returning a tuple you
+can say frequency bracket X first index
+X so basically this is a tle which
+ensures that sorting is primarily by
+frequency in the descending order due to
+the negative sign and the second place
+by the first occurrence of the index in
+the ascending order now finally we are
+returning the sorted array so this
+function sorted nums which is the array
+sorted according to the specific
+criteria now the time complexity as I
+have told you is O of n for populating
+the dictionaries and for sorting it is O
+of n login and we have also discussed
+about the space complexity which is O of
+n where n is the length of the array for
+storing the frequency and index
+information now let us try to run this
+code and see whether it's giving the
+right answers so you can see we are
+getting 444 662 so which is definitely a
+correct because the way we have devised
+our algorithm outputs this answer I hope
+so you would have got a brief idea
+regarding this now guys let us move to
+our fourth question which is searching
+in a nearly sorted array in a
+logarithmic time so let us see what is
+the question is so it's says given a
+nearly sorted array such that each of
+the N elements may be misplaced by no
+more than one position from the correct
+sorted order search a given element in
+it efficiently and report if the element
+is not present in the array so guys if
+you say nums is an array like 2 1 3 5 4
+7 6 8 9 and we say a Target is five so
+the output should be element five found
+at index 3
+so guys given a nearly sorted array such
+that each of the N elements may be
+misplaced by no more than one position
+from the correct sorted order search a
+given element in it efficiently report
+if the element is not present in the
+array an element at index I in a
+correctly sorted order can be misplaced
+by plusus one position it can be present
+at index IUS one or I or I + one in the
+input array for example let me show you
+what I mean to say such that if you say
+say we have 2 1 3 5 4 7 6 8 and 9 and we
+say that our
+Target is equals to five now guys what
+we want output that element five okay we
+have to give that this is found at index
+3 now we are going to start with a
+numerical specific example to explain
+the modified binary search in a nearly
+sorted array and then we are going to
+analyze the
+complexities so let us consider another
+array say let us take a small case okay
+and we say we have this array 3 5 2 10
+and 6 so guys in a perfectly sorted
+order the AR would something look like
+this so say nums equals to 2 3 5 six and
+10 okay but however each element in the
+nums can be misplaced by no more than
+one position from its correct sorted
+order for instance the element two which
+should be at index zero it is at index 2
+now what is our task so for example we
+are going to search the element 10 in
+the AR NS and then we are going to apply
+the modified binary search approach so
+what's the algorithm for the same so the
+step one would be
+initialization okay in which we are
+going to
+start
+with left equals to zero
+and right equals to length of the
+array minus
+one then we are going to do the binary
+search
+with the
+adjustments so here we are going to
+calculate the midpoint okay so we'll say
+the
+midpoint of the given array so which is
+going to be
+left plus
+right divide by two okay then we are
+going to check three positions to
+account for potential misplacements
+okay so here will
+be nums mid minus
+one then we'll have
+nums
+mid and
+nums mid +
+one now depending upon the comparison
+between these positions and Target value
+we are going to adjust the left or right
+pointers what will be the next step The
+Next Step would be checking for
+conditions now here we are going to say
+like if nums of
+mid okay is a target this is equals to
+Target then I will say return index
+we are going to also check if mid is
+greater than left okay
+so we going to also check all the way
+here
+that mid is greater than left and if
+nums of mid minus
+one is the given
+Target so that we can handle the
+misplacement to the left okay basically
+we are doing this to handle
+the
+misplacement to the
+left now we are going to check okay
+again that
+if
+mid is less than
+right so we are going to say if nums
+mid + one is our given Target we are
+going to
+handle its
+misplacement to the
+right now we are going to adjust in the
+next process
+okay the left and the right pointers
+based on the target number is greater
+than or less than numbs of M so this
+adjustment you have to do you have to
+adjust the target number you have to
+check that it is greater than nums of
+M or it is less
+than num of
+M so we have approach still here now let
+us take an array and let us try to apply
+with this operation so here we have the
+example execution like suppose if our
+array nums
+here we have 3
+5 2 10 and 6 so what we are going to do
+we are going to search for 10 okay so
+let us say let us search for 10
+okay now we are going to start with zero
+so we say left equals to zero and right
+equals to four so in our first iteration
+okay what we are going to do we say that
+our that we have calculated equals to
+two Okay and we also see that nums of
+two equals to two Okay just note
+this now we are going to check okay here
+the check is going to come that nums of
+two and nums of
+one and nums of
+three so we say that nums of matches the
+target
+[Music]
+okay then we are going to return three
+so this is how this approach Works
+basically and now let us discuss the
+time complexity which is very important
+so suppose you are appearing for an
+interview and you are applying this
+approach so you have to understand that
+time complexity of applying this
+approach is o l again okay
+so because the modifications to the
+binary search do not change the
+logarithmic reduction in the problem
+space at each step now we are checking
+the immediate neighbors like mid minus
+one and mid + one and it only adds a
+constant time operation within each
+iteration of the search if I discuss
+about the space complexity
+guys then the space complexity is O of
+one and as per as this algorithm uses a
+constant amount of space regardless of
+the input size which is a few additional
+variables for indexes and the midpoint
+calculation this approach effectively
+adjusts a traditional binary search to
+accommodate slight unsorted in the array
+which provides an efficient solution for
+searching in a nearly sorted arrays and
+this ensures that search process remains
+robust even with minor deviations from
+the complete sorted order now let us see
+the python implementation of the same
+problem and uh we are going to use the
+same ID that is Google collab so guys as
+you can see this code so we have all
+over here a function which is search and
+nearly sorted so it basically takes an
+array nums and a Target value to find
+then we are doing the binary search
+adjustments so you can see there's a
+while loop and it continues as long as
+left is less than equal to right then we
+are doing the mid calculation so
+basically it finds the middle index
+after that we are doing a direct check
+it is going to check whether the element
+at the mid index is the given Target
+finally we are going to go for the
+neighbor checks additionally like we are
+checking for Mid minus one and mid + one
+to account for potential misplacements
+so Guys these X ensure that slight
+unsorted of like plus minus one position
+that is handled then we are going the
+pointer adjustments so it says if nums
+of mid is less than Target then we are
+adjusting left to Mid plus two and
+skipping over the mid plus 1es since it
+was already checked now we are also
+taking this condition that if nums of
+mid is more than the given Target then
+adjust the right to Mid minus 2
+similarly skipping the immediate
+neighbor that's why I have taken mid
+minus 2 and finally I'm returning the
+return minus one so if the loop exists
+without finding the given Target then it
+just returns minus one indicating that
+the target is not in the array same as
+guys so this is the overall manipulation
+that we have done now you can see this
+code all over here so initialization is
+this part then here the conditional is
+there then we are checking the Met
+position checking the left neighbor
+checking the right neighbor and we are
+moving the pointer based on the value
+comparisons okay
+now we have taken an array and we say
+the target is 10 now let us see whether
+this gives us answer three so you can
+see we are getting answer three so with
+this approach we are able to solve this
+problem now let us move on to our next
+question so guys I hope so you would
+have heard about hamiltonian paths so
+basically it is related to a graph
+problem okay so let us see what's the
+given question is by seeing this diagram
+you have some idea regarding what could
+be the hamiltonian graph but first of
+all let us try to understand what is our
+question our question is given an
+undirected graph print all the
+hamiltonian parts present in it and the
+hamiltonian parts in an undirected or a
+directed graph is a path that visits
+every vertex exactly at once so bit of
+definition I have added all over here
+now so if I say that you are given an
+undirected path then print all the
+hamiltonian paths present in in it the
+hamiltonian path is an undirected or a
+directed graph is a path that visits
+each Vortex exactly once for example
+following the graph shows a hamiltonian
+path okay so as as you can see in this
+diagram okay all over here so in this
+way some kind of hamiltonian path is
+there now how we are going to solve this
+problem and here we are going to use
+recursion or use a backtracking so
+basically on the first time I'm going to
+try for the backtracking okay so here is
+your undirected graph okay now we are
+going to check that if every Edge
+starting from an unvisited Vortex leads
+to a solution or not as in hamiltonian
+path visits each Vortex exactly once we
+take the help of visited array in the
+proposed solution to process only
+unvisited vertices and also we are going
+to use the path array to store the
+vortices covered in the current path if
+all these vertices are visible
+then hamiltonian path exist in the graph
+and we print the complete path stored in
+the path array now what we are going to
+do basically so let us take a graph as a
+hamiltonian graph let me take a graph
+all over here to say we have a graph
+okay let us take a graph say it is
+equals
+to okay 2 comma 3
+then at two we have 1 3 and
+four at three we have 1 2 and
+four at
+four we have 2 comma 3 and we are
+closing it now it is a simple undirected
+graph where we can say that the vortex
+one is connected to the vortex 2 and
+three and Vortex 2 is connected to
+Vortex 1 3 and four okay similarly vortx
+3 and Vortex 4 all their connectivity is
+given in this array now this graph
+contains several Honan paths a
+hamiltonian path is a path that visits
+each vertex exactly at once so for
+example a possible hamiltonian path in
+the scenario could be like
+so here we could have say 1 2 4 and 3 so
+we're going to start with vertex n then
+travel to Vex 2 then to four and then to
+three so example I would also give like
+for a non-hamiltonian graph so we can
+consider a graph structure where it's
+not possible to visit each vertex
+exactly once without repeating so say we
+have this kind of graph so say we have
+graph n okay
+and it
+has 1 of two two of 1 comma
+3 three we have 2A
+4 then we have
+4 which is
+three so guys this is a simple path
+graph and it does not contain a
+hamiltonian circuit and depending on the
+starting point it may not always form a
+amian path so we're going to start at
+vertex 104 and move through the vertices
+in a sequence and we have a hamiltonian
+path all over
+here 1 2 3 4 or 42 3 1 okay so guys if
+we start at Vortex 2 or three we cannot
+form a hamiltonian path that visits
+every Vortex once without retracing the
+steps therefore why this given graph is
+not qualifying under these conditions
+now let us try to understand the
+hamiltonian pathf finding
+algorithm so guys to find all the
+hamiltonian paths in the graph we can
+use backtracking approach okay so our
+approach will be backtracking
+now initialize so initially what we are
+going to do we are going to
+initialize okay so we are going to start
+with the vortex and make it Mark as
+visited and initialize the path with
+this Vortex the next would be a
+recursive
+search Okay in this we are going to
+explore all the adjacent vertexes for
+each adjacent vertex if it is not
+visited then we are going to add it to
+the current path and Mark it as visited
+then at
+three we are going to
+recurse with New
+Path and finally at four we are going to
+backtrack
+it by removing the vortex
+okay and From the Path and making it as
+unvisited
+now at step three it will be
+completion which would be if the path
+include all the vertices in the
+hamiltonian path then you can print or
+store the path if you're not getting
+that you can continue exploring the
+potential paths by backtracking so this
+overall approach is backtracking and
+this is a hamiltonian pathf finding
+approach so basically when the problems
+are related to graph we can use use
+these techniques and to find the
+required vertices which are connected to
+all the vertices now it's a very amazing
+problem it's more of a mathematical
+problem but also it is in conjunction
+with a computer science now let us try
+to solve this problem using python now
+you can see all over here we have
+defined the hamiltonian path graph so
+here you can see what are the parameters
+the graph the current Vortex paths
+visited and result now let us try to
+understand each part one by one so for
+example uh first let us discuss the time
+complexity of this so the time
+complexity is O of n where N is a number
+of vertices so basically it is n
+factorial okay so so in the worst case
+we explore every permutation of the
+vertices okay now the space complexity
+is ofn due to the recursive call stack
+and additional data structures to keep
+the track of path and visited vertices
+so here the provided python function
+hamiltonian path is basically designed
+to identify all the hamiltonian paths in
+an undirected graph using a recursive
+backtracking approach now first you can
+see we are defining a function okay then
+there's a graph a dictionary will be
+there which is representing the
+undirected graph where the keys are
+Vortex identifiers and values list are
+adjacent vertices then there is a
+current Vortex where the vortex
+currently being visited in the graph
+then there is path a list that keeps a
+track of vertices in the current
+potential hamiltonian path then there is
+a dictionary that tracks whether each
+Vortex has been visited it basically
+helps in preventing revisiting vertices
+and thus ensures that each Vortex
+appears exactly once in the path then
+there are results a list to accumulate
+all the hamiltonian paths found now we
+are taking the base case for recursion
+where you can see all over here that if
+the length of the path is equals to
+length of the graph okay then what we
+are going to do basically we are
+appending and we are saying path do copy
+and return so basically this function
+checks if the length of the path equals
+to the number of vertices in the graph
+and if it is true it means that the path
+contains every vertex exactly once
+constituting a hamiltonian path this
+path is then added to the result list
+the path do copy is used to append a
+snapshot of the current path ensuring
+further modifications to the path do not
+alter the store path then there is a
+recursive exploration all over here then
+if we talk about recursive exploration
+then for neighbor in graph we say there
+is a current Vortex and if it is not
+visited by the neighbor we say that
+visited neighbor equals to true then we
+are appending path. append the given
+neighbor there is a hamiltonian path
+where we say graph neighbor path visited
+results and we are basically popping it
+up then we also say that visited
+neighbor equals to false and this block
+of code basically is handling the
+recursive exploration we are iterating
+over the neighbors like for each
+neighboring Vortex what we are doing we
+are saying that the current Vortex the
+function that checks if it is not being
+visited it is marked as visited and we
+are using the recursion if the neighbor
+hasn't been visited it is marked as
+visited and it is added to the path and
+the function recursively calls itself to
+continue building the path from the new
+vortex then basically we are doing the
+backtracking okay so in backtracking
+what we are doing we are removing the
+last added Vortex from the path and
+marking it as unvisited so this step is
+very crucial as it allow for exploring
+alternative parts that includes
+different sequences of vertices now
+finally the end of the function so the
+function doesn't return a specific value
+since it modifies the results and
+directly stores all the hamiltonian
+parts
+we talk about the execution flow guys
+the hamiltonian path functions is
+expected to be called initially with the
+starting Vortex and empty path a visitor
+dictionary initialized to false for all
+vertices and empty list for the results
+from there it explores all the possible
+Parts recursively using backtracking and
+it is used to navigate through the
+search space of Vortex permutation that
+could form a hamiltonian path now to use
+this function you can initialize a graph
+like here I have initialized the graph
+all over here and basically I'm trying
+to find all the hamiltonian path so
+basically what this program is going to
+do it is going to start the search from
+vortex one but then you could start from
+any Vortex and expect it to find all the
+hamiltonian paths in the graph assuming
+that you adjust initial call parameters
+accordingly the output will be list of
+lists where each inner list is
+representing a different hamiltonian
+path found in the graph so let me run
+the code and show you so you can see it
+has printed all the required hamiltonian
+path so this completes our objective of
+this program now let us proceed to our
+next problem now our next problem is job
+sequencing problem with the given
+deadlines so let us see the problem so
+it says that given a list of task with
+deadlines and total profit earned on
+completing a task it says find the
+maximum profit earned by executing the
+task with specified deadlines okay now
+you can assume that each task takes one
+unit of time to complete and a task that
+cannot execute Beyond this deadline also
+it says only a single task will be
+executed at a time so for example you
+can say there's a job ID profit and a
+deadline okay so let us try to add
+something so guys say if we choose
+task as 1 3 4 5 6 7 8 and 9 so we can
+achieve a maximum profit
+of
+say9 and we are also noting that the
+task two and task 10 are left out so we
+can see the task deadline for here and
+the profit say such as 1 95 22
+358 and with respectively it would be
+there now if you see this diagram we can
+see that for this given problem we can
+see there is a job ID there's a profit
+there's a deadline now how we are going
+to execute this problem so the idea is
+like if you want to solve this problem
+we can approach a greedy approach
+okay and the idea will be pretty simple
+you can consider each task in the
+decreasing order of their profits and
+schedule it in the latest possible free
+slot that means said Z line very simple
+now if no such slot is available there
+then don't schedule that task so here
+you can arrange it so for example so
+guys as you can see all over here here
+I've have taken the given task here's a
+deadline here is a profit so I've just
+exaggerated these numbers and as you can
+see all over here the task five okay has
+a maximum priority associated with it
+has a maximum gain of 30 okay similarly
+we can say the task four has the least
+priority so we are going to apply the
+gritty approach in which what we are
+going to do we are going to consider
+task in the decreasing order of priority
+so if we talk about the deadlines and
+profits so maximum is going to come
+first so five will be there 4 25 6 2 20
+3 18 and this so let me uh write it
+again so on the first order of priority
+it will be 5 okay then it will be 4 then
+25 6 2 then it will be 30
+20 3 5 18 1 9 it will be 15 next then it
+will be 9 again then it will be 4 12 8
+and next would be 7even 10 7 5
+8 then there will be 10 3 5 2 then there
+will be 2 2 4 and 7 and finally we are
+going to get one so guys we are going to
+demonstrate the greedy approach so let
+us consider deadline in the form of a
+circular structure so here what we are
+going to do we are going to build a task
+so guys in this approach what I'm going
+to do the first thing is I'm going to
+sort task by profit
+okay so what will happen at this stage
+where all the tasks are based on their
+profits in descending order it is going
+to ensure that we are considering the
+most profitable tasks first and it is a
+key to maximizing the total profits then
+we are going to initialize the data
+structure
+so use an array or a list to keep a
+track of the scheduled task and if the
+size of the array should be equal to the
+maximum deadline from your task list
+third what we are going to do we are
+going to do task
+scheduling now we are going to iterate
+over the sorted list of the task and for
+each task we are going to attempt to
+schedule it as closer to the deadline
+possible we're going to start from the
+task deadline slot and move back
+backward to find a free slot if a free
+slot is available then we are going to
+schedule the task there and it is going
+to ensure that each task is scheduled in
+a way that leaves a room for task with
+earlier deadlines and finally we are
+going to calculate the total
+profit now once all the task are
+processed we can calculate the total
+profit from the schedule task so let us
+try to implement it in Python
+now guys you can see all over here we
+are defining a function called Max
+profit and here we are taking an
+argument called task now next process is
+we are sorting the task by profit
+descending so we are using a Lambda
+function all over here so here task.
+sort T equals to Lambda X and X2 then a
+task are sorted in a descending order
+based on profit this sorting is crucial
+because the gritty algorithm prioritizes
+the higher profit tasks to ensure that
+they are considered first this maximizes
+the total potential profit that can be
+secured then finally we are initializing
+a scheduling array okay you can see all
+over here where we are putting the max
+deadline equals to Max of task one for
+task in task and we are saying schedule
+equals To None multiplied by Max
+deadline + one and we are also
+initializing total profit so we can see
+that in the max deadline it is
+determining the maximum deadline from
+all the task to Define the size of the
+scheduling List It basically represents
+the latest time slot available for a
+scheduling task and you can see the
+schedule all over here so it is an array
+which is initialized to none so it is
+sized according to Max deadline + one
+which is including slot zero and which
+remains unused assuming task deadlines
+start one then there is total profit
+which is initialized to zero and this
+variable will accumulate the profit from
+successfully scheduled task then you can
+also see all over here that for schedule
+task we are taking for task deadline
+profit and task and for D in range
+deadline Zer and minus one so if not
+scheduled we are checking if slot is
+free then we are putting Schedule D
+equals to task profit and we are saying
+that total profit plus equals to profit
+and we are breaking it so basically what
+happening in this block of code that the
+outer loop is basically iterating
+through each task now ordered by
+descending profit and the inner loop
+looks for a free time slot to schedule
+the current task starting from its
+deadline and it is moving backwards so
+this is to place the task as late as
+possible without missing the deadline so
+leaving the earlier Slots free for other
+task that might not need them so if a
+free slot is found okay the task is
+placed and in this slot and its profit
+is added to total profit this Loop
+basically breaks as soon as the task is
+scheduled which ensures that each task
+is considered only for sched buing and
+finally we are returning the total
+profit so after all task have been
+considered the function Returns the
+accumulated total profit which is the
+sum of total profits from all the task
+that was successfully scheduled within
+their deadlines now we have taken all
+these tasks and we are basically
+printing the maximum profit with respect
+to task so you can see the task are
+defined in the list of tles where each
+tle contains the task number its
+deadline and its profit and the max
+profit function is called with this list
+so the maximum possible profit is
+printed if we talk about its complexity
+analysis then primarily complexity
+driver is a sorting operation which is O
+of N logn and there is subsequent nested
+Loop which runs in O of n of D which is
+the worst case where n is the number of
+task and D is the maximum deadline if we
+talk about space complexity guys it is O
+of D where D is the maximum deadline due
+to the space required for the schedule
+list
+so guys this code effectively schedules
+a task to maximize profit using a greedy
+algorithm ensures that most profitable
+task are given priority while respecting
+their deadlines now let us move on to
+our next question so guys our next
+question is based on determining whether
+a given binary tree nodes are cousins of
+each other or not so let us go for
+that so guys as you can see all over
+here it says that given a binary tree
+determine if two nodes are cousins of
+each other or not now two nodes of a
+binary tree are cousin to each other if
+and only if they have different parents
+but not at the same level so guys to
+clarify the concept of cousins in a
+binary tree let us consider a specific
+binary tree example and identify which
+nodes are cousins and which are not we
+are going to examine a binary tree
+structure and used to determine its
+cousin relationship so for example here
+you can see this structure so
+say we have 1 2 and four and five three
+is given to 6 and 7 so let us talk about
+their nodes and relationship so at the
+level zero node one is a root okay at
+level one node two and three are the
+children of node one at level two nodes
+four and five are the children of node
+two and node six and seven are the
+children of node three if we talk about
+cousins guys nodes are that on the same
+level but have different parents so here
+example note four and six both are on
+the level two four is a child of two and
+six is a child of three since they have
+different parents they are cousins now
+next is notes five and seven both are on
+the level two where five is a child of
+two and seven is a child of three these
+notes are also cousins for same reasons
+as four and six now if you take about
+non- cousins example you could see Notes
+2 and three both are on level one but
+share the same parent one they are
+siblings not cousins
+now similarly node four and five now let
+us check programmatically how to check
+the cousin status we are going to code
+this program in Python so guys you can
+see this program and let us try to
+analyze this program that how we are
+locating whether given nodes are cousins
+of each other or not so you can see in
+the first lines of code we have created
+a class called tree node and we are
+initializing def in it self X now here
+we are allocating self. Val equal to X
+cell do left equals To None cell do
+right equals To
+None basically it's defining a simple
+tree node class for binary tree nodes
+where each node has a value Val a left
+child left and a right child right now
+you can see there's a is cousins
+function okay now here def is cousins
+root X and Y this is the main function
+that checks if two nodes X and Y are
+cousins in a binary tree rooted at root
+now next step we are finding the depth
+okay so Define find depth and parent
+node so we have taken node Val dep zero
+parent equals To None So if not node we
+are returning none so if node do Val
+equals to Val we are returning depth and
+parent finally we are returning find
+depth and parent where node do left Val
+depth + one node or we are finding depth
+and parent no do R while de+ one this is
+basically a recursive helper fun
+function which is searching for a node
+with a given value Val in the tree it
+returns a tuple containing node St and
+its parent code it Raves a tree starting
+from the given code node and checks if
+the current node is Target so node. Val
+equals to Val so if so it Returns the
+current depth and period And if it is
+not found it recursively searches the
+left and right of the sub trees
+incrementing the depth with each
+recursive call and updating the parent
+to the current node in the next next
+step we are basically checking cousin's
+condition so we have X info equals to
+find depth in perent we're taking root X
+and there is y info where we are finding
+depth in parent root y so if x info and
+Y info are there then X depth X parent
+equals to X info y depth it is assigned
+to X info similarly y depth y parent is
+assigned to Y info then basically we are
+returning X depth equals to Y depth and
+X parent is not equals to Y parent if we
+are not getting this we are returning
+false so basically this piece of code
+retrieves the depth in parent
+information for node X and Y using a
+helper function if both nodes are found
+then we are saying that X info and Y
+info are not none it is basically
+unpacking this information into depth
+and parents for each node it is
+returning true if both nodes are at the
+same depth okay and have different
+parents like exp parent is not equals to
+Y parent which are the conditions for
+nodes to be cousin if either of the node
+is not found then it is returning false
+guys the time complexity of this is
+approximately o of N and the function
+find depth and parent is basically a
+depth first search that maybe in the
+worst case visit every node in the tree
+Once where N is a number of nodes in the
+binary tree so if we talk about the
+space complexity so due to recursion
+this the space complexity is determined
+by the height of the tree Edge as that
+is a maximum size of the call stack in
+the worst case for a skew tree it could
+be O ofn So guys the code efficiently
+checks if two nodes are cousins by
+determining their depths and parents
+through a DFS approach it ensures that
+the nodes are met the specific criteria
+of being at the same level but having
+different parents effectively solving
+the cousin determination problem in the
+binary tree so guys this was a solution
+now we have given our tree all over here
+now let us try to run this code and let
+us see what is our answer so you can say
+this is true and this is false so our
+objective is completed all over here
+okay guys let's move to the next problem
+that is a subset problem and this
+problem is basically based on dynamic
+programming so guys the question is
+given a set of positive integers and
+integer K check if there is any
+non-empty subset that sums up to K so
+for example if I have the input
+73258 and we say k equal to 40 then we
+want an output with subset with the
+given sum exist so 725 sums up to 40 so
+this is our given output now a knife
+solution would be to cycle through all
+the subset of n numbers and for every
+one of them check if the subset sum to
+the right number the running time of
+this order is O of 2 n.n okay so how
+this is coming guys as there are two n
+subsets and we can say we are checking
+each subset so we need to sum at most n
+elements
+okay so if we look at these so we get o
+of 2 FN so we can say it is pretty
+expensive a better exponent time
+algorithm uses recursion subset sum can
+also be thought of as a special case of
+the 01 napsack problem for each item
+there are two possibilities include the
+current item in the subset and recur for
+the remaining items with the remaining
+total you have to exclude the current
+item from the subset and recur for the
+remaining item and finally return true
+if we get a subset by including or
+excluding the current item otherwise
+return Falls the recursion based case
+would be when no items are left or the
+sum becomes negative so we have to
+return true when the sum becomes zero so
+the subset can be found Now using
+dynamic programming so to solve the
+problem if finding if there is a subset
+in a given set of positive integers that
+sums up to a specified integer suppose K
+we use a dynamic programming approach
+this method is efficient and ensures
+that we explore all possible subsets so
+suppose we have a given set of integers
+say all over here so we take a equals
+to 7 3 2 5 and 8 and we take K = to
+40 okay so here the task is to determine
+if there is a subset of a which elements
+sums up to K so why are we creating an
+array of size k + 1 you can pause the
+video and think about it so guys we are
+creating an array of size k + 1 it's a
+dynamic array because we need to check
+the sum of from 0 to K so the index of
+the DP array which represents all the
+possible sums from 0 to K so this allows
+us to use a Boolean array which has an
+index of I which indicates whether a
+subset of sum of I is possible now what
+will be the algorithm of this the first
+is we have to initialize an array okay
+then create a Boolean array DP of size k
++ 1 okay so we have taken already K +1
+size and it is initialized to false okay
+so we are also have to set
+repeat then set DP 0 to true because the
+sum of zero can always always be
+achieved with an empty subset in the
+second process you have to iterate
+through each element okay so iteration
+is there for each element in the array
+update the DP array from the right to
+left to avoid using the same element
+multiple times so for example say we
+have the element seven okay so start
+from back to 14 to the front seven Okay
+so dp14
+remains
+false then we have
+dp13 this is also
+false then we have all over here 12 11
+similarly and 9 8
+7 repeat
+okay similarly we have 12 11 10 9 8 okay
+and till 7 we have to go so here it will
+be false okay this will also be false
+now guys still here we are having a
+false now when it comes seven it becomes
+true now we can say 7 + 0 = to 7 now
+after this you have to update the DPR
+aray okay so it would be
+true false false
+and similarly it's going to go till
+false now element three let's look for
+element three okay so if we are taking
+element
+three then start back from 14 to the
+front of three
+okay so in this scenario Al we have DP
+of 14 this will also be false similarly
+we have
+30 then we have 12 11 10 and 9 so when
+it comes till 9 we will find that it
+becomes true why guys because
+3 + 6 =
+9 and DP of 8 remains false okay so we
+can say that DP of 6 six okay basically
+is true all over here because we have
+updated this value in the earlier
+section so guys this will become true
+why guys because as we know that DP of
+6 was
+true so 3 + 6 will be equal to
+9 now similarly dp3 is also true because
+3 + 3 = to 6
+okay DP of 5 will remain
+false and DP of 4 also will remain
+false finally DP of 3 as I've told
+earlier will become
+true and after this you have to update
+the given array
+so I hope so you have got a brief idea
+regarding this so you have to
+continuously do this and keep updating
+this array okay so guys when the DP
+array has already covered all the values
+from 0 to 14 it cannot change further so
+we'll do a final check since we know
+that DP of 14 will become true so it
+confirms that there's a subset that sums
+up to 40 now let us see the python code
+and let's try to understand understand
+this so guys let us try to understand
+this code so we have implemented this
+using python so you can see there's a
+function which is a subset sum it is
+going to check if there exist a
+non-empty subset of a given set a that
+is summing up to a given integer which
+is equals to K now we have defined def
+is subset sum A and K then we have
+initialized our DP array so initially
+it's false and it is multiplied by size
+of the array which is k + 1 now we have
+initialize DP of 0 equals to True after
+that we are proceeding for
+initialization where a Boolean array of
+DP size k + 1 is created and it is
+initialized to false now DP of I will be
+true if a subset with some I is possible
+using the elements from the set a so
+here DP of 0 is set to true because the
+sum of Zer can always be achieved using
+an empty subset now after this what we
+are doing guys we are updating DP array
+for each element in a so you can see I
+have written for Num in a for I in range
+K num minus one and minus one if DP of
+IUS num is there then DP of I is true
+then we are updating the DP array and
+the outer loop is iterating through each
+element num in the given set and here
+the inner loop iterates backwards from K
+down to now this is ensuring that each
+element is used only once if DP of I
+minus num is going to check if a subset
+sum of IUS num is a achievable or not
+and it is achievable then by adding them
+to the subset a subset of I will also be
+achievable and hence DP of I will be set
+to true now we have given this given
+example as a 73258 and k equal to 40 now
+we are using this function to check
+whether there is a subset available
+which is going to sum up to 14 let's try
+to run this so you can say it is
+returning true because in here you can
+find that subset exist which is going to
+sum up to 40 so guys this was a given
+implementation of this problem now let's
+proceed for the next problem now here as
+you can see from this diagram that we
+are going to apply the jigra algorithm
+so let us see what is the given question
+so guys the question is given a source
+Vortex s from a set of vertexes V in a
+weighted graph where all its age of
+weight u and v are non- negative so you
+have to find the shortest path of
+Weights DNS V from the given Source s
+for all the vertices present in the
+graph now we can see all over here that
+suppose I give you the vortex and the
+minimum cost now let us try to imagine
+the root okay say for going A to B okay
+this is our given
+root and if I talk about the cost it is
+four units okay now this is the minimum
+cost now
+we can go this by a to
+e then to b and a to
+c so for this the cost is equals to
+six now after going from
+here a to e to B to C then we are going
+from a to d okay so here we can say the
+cost is five then we are going from a to
+e to D then a to e and we can find the
+cost is three units now we all know that
+this is a given base problem which I
+have given you all over here so with the
+minimum cost and the given Roots which
+we are traveling on now basically you
+need to understand first what is a
+weighted graph a weighted graph is a
+graph where we are adding the units all
+over here like suppose from A to B so
+this is the given weight for that then a
+to e to B have given uh the cost as six
+so similarly for this scenario we are
+going to use bread first search which
+can be used to find the shortest path in
+an uned graph or even a weighted graph
+for having the same cost of all of its
+edges but if the edges in the graph are
+weighted with different cost then BFS or
+breadth Frost search generalizes to
+uniform cost search so instead of
+expanding notes to their depth from the
+root uniform cost search expands the
+note in order of their cost and from the
+root so a variant of this problem is a
+JRA algorithm and we can apply to solve
+this problem JRA algorithm is an
+algorithm for finding the shortest path
+between nodes in a graph so for a given
+Source node in a graph the algorithm is
+going to find the shortest path between
+that node and to every other node and it
+can also be used for finding the
+shortest path from a single node to a
+single destination node by stopping the
+algorithm once the fastest route to the
+destination node has been determined JRA
+algorithm is based on the principle of
+relaxation in which more accurate values
+gradually replace an approximation to
+the correct distance until the shortest
+distance is reached the approximate
+distance to each Vortex is always
+overestimate of the true distance and it
+is replaced by the minimum of its old
+value with the length of a newly found
+path eduse is a priority CU guys you
+have to remember if you're using a jigra
+algorithm to solve this problem then we
+have to understand we have to use
+priority
+Q okay now it this Quee to gly select
+the closest vertex that has yet not been
+processed and performs this relaxation
+process of all the outgoing ages G
+algorithm is a fundamental algorithm for
+finding the shortest path from a single
+Source vertex to all the vertices in a
+graph with non- Negative Edge weights it
+is particularly well suited for graphs
+represented as weighted graphs or
+directed graphs so let me try to explain
+you once more so suppose we have
+vertices a b c d and e okay and say we
+have edges with
+weight all over here so for it to E I
+say the weight is three from E to
+B say the weight is
+1 from B to C the weight is two from E
+to D the weight is two units again so if
+we take the source Vortex
+a then in this setup we find the
+shortest path from a to all the other
+vertices and understands the root taken
+so you can see all over here there will
+be a direct root in which not given
+hence uh it will be probably longer than
+the alternative and if you're taking an
+indirect root suppose we are going from
+a to e to B then with a cost of 3 + 1
+okay which will be four so similarly I
+have to calculate the direct root and
+indirect root for each of them so I have
+to take these things into
+consideration so say what I mean to say
+guys so suppose all over here A to B so
+we can see from in this
+diagram that there is no direct root
+present only so we have to apply the
+indirect root so for indirect root how
+we are going to go guys say here a to e
+is given so first we'll go to a to e
+then from E to B so the overall cost
+will be 3 + 1 which will be equals to 4
+units so in similar way you have to
+calculate and you have to find out which
+is the shortest path for each one of
+them let's try to code this in Python
+then you'll have a fair idea that how we
+can solve this problem using jigra
+algorithm and we are going to use the
+priority
+CU so guys as you can see all over here
+this is a pseudo code for this problem
+so here I have declared a function
+called
+which is taking a graph and a source
+into consideration then I have taken
+distance of source equals to zero so
+this is initialization and here I'm
+creating the vortex to Q okay let me
+comment
+it okay now here what we are doing
+basically guys that for each vertex in a
+graph of V we are finding that if the
+vtex V is not equals to Source then I'm
+putting the first distance of v as
+Infinity because it is an unknown known
+distance and the previous V is also
+undefined this is a predecessor of V now
+here we are going to add with the
+priority of v and here we are
+calculating the distance of V we are
+also checking that if the Q is not empty
+so we are extracting the minimum okay
+all over here so here for each neighbor
+of V of U that is still in Q okay what
+we are doing basically guys here we are
+calculating a distance of U plus length
+of u and v and here we are basically
+checking which is the shortest distance
+so if this distance is less than this
+alt is less than distance of V then we
+are putting distance of V equals to alt
+previous of V equals to U and we are
+queuing it up with the decreased
+priority of vnl and finally what we are
+returning we are returning an array of
+distance array and the previous array
+this is a basic pseudo code so you can
+try this implementation in Python okay
+so you can put a graph all over here put
+source and try to calculate the minimum
+distance using the jar algorithm so guys
+generally in the given exam they will
+ask you the pseudo code only mostly
+there are chances so you can explain
+something like this now let us move on
+to our final question so guys let us
+look at to our question so the question
+is given an integer array sorted using
+the mer sort algorithm so guys how we
+are going to approach this problem first
+let us have an overview of Mer sort so
+we all know that mer sort is an
+efficient sorting algorithm that
+produces a stable sort which means that
+if two elements have the same value they
+hold the same relative position in the
+sorted sequence as they did in the input
+in other words the relative order of
+elements with equal values is preserved
+in the sorted sequence much sort is a
+comparison sort which means that it can
+sort any input for which a less than
+relation is different F now let us talk
+about how does a merge sort works we are
+going to look into divide and conquer
+algorithm like all divide and concer
+algorithms mer sord divides a large
+array into two smaller subarrays and
+then recursively sorts the subarrays
+basically two steps are involved in the
+whole process divide the unsorted array
+into an N subarray each of size one and
+then an array of size one is considered
+as sorted repeatedly merge the subarrays
+to produce a new sorted subarrays until
+one subarray is left which would be our
+sorted array so guys you can see this is
+a diagram all over here which I have
+showed you earlier so this is a diagram
+for sorting the element so guys you can
+see here we are sorting the elements
+okay and there are seven element in an
+integer array
+so here you can see it is working on
+divide and concer algorithm that works
+by recursively breaking down an array
+into smaller subarray then sorting them
+and then merging into the sorted
+subarrays to produce the given sorted
+array so as you can see in this there
+are 38 27 43 3 9 82 and 10 are the
+elements of the given array now step one
+would be dividing the array so we have
+divided the initial array okay now we
+are splitting into two halves the left
+half is 38 27 43 the right half is 39 82
+and 10 step two will be recursively
+divide each half so left half would be
+left with 38 27 43 then it is split into
+38 and
+2743 if you look at the right half guys
+we can see 3 9 82 and 10 are there we
+are splitting it into 3 and 9 and then
+82 and 10 step three would be
+recursively divide further until each
+subarray has one element so we can see
+left of the left half has 38 and right
+of the left half has 2743 three we are
+splitting into 27 and 43 the left off
+the right hall 3 and 9 are there then we
+are splitting it into 3 and 9 if you
+look at the right of the right half we
+have 82 and 10 we are splitting it into
+82 and 10 step four will be merge the
+subar so here would be the merge step so
+we are merging 27 and 43 compare 27 and
+43 then merg to 27 and 43 at the step 10
+we are merging three and 9 we are
+comparing 3 and 9 and merging to 3 and 9
+then we are merging 82 and 10 so we are
+comparing 82 and 10 then merging 10 and
+82 now the merge step with larger
+subarrays will happen so we are merging
+38 with 27 43 now we are comparing 38
+with 27 okay and then 43 which is
+merging to 27 38 and 43 then we are
+merging 3 and 9 to 10 and 82 compare 3
+and 9 with 10 and 82 merg through 39
+1082 and finally we are proceeding for
+the final merge so we are merging 27 38
+43 and 3 9 10 and 2 so finally we are
+getting 3 9 10 27 38 and 43 and finally
+82 in our final step so this is how this
+diagram is depicted and I hope so you
+would have got a brief idea regarding
+this now let us try to implement this in
+Python now guys let us try to understand
+the python implementation of merge sort
+so we can see first we have taken the
+base case where we have the function
+merge sort and it is recursively called
+until the array length is greater than
+one now if the array length is one or
+less it is already sorted then the next
+step is dividing the array is split into
+two halves left half and the right half
+and finally we are doing the recursive
+sord so as you can see guys all over
+here that must sort is called
+recursively and it is s sorting them
+individually into halves now the sorted
+halves are then arranged back together
+so we have two pointers I and J which
+are used to track the elements in the
+left and right halves respectively okay
+now what we are going to do a third
+pointer K is used to place the merged
+element back to the original array now
+when the elements are compared in the
+merged in sorted order remaining
+elements from either of the half are
+copied to the array if any elements are
+left now now you can see all over here
+that we are checking at this step that
+if any element was left so we are
+deploying this code while I is less than
+length of the left half so we are giving
+array of k equals to left half of I and
+then we are incrementing I by 1 and k +
+1 now at this we are checking for the
+right half if J is less than the length
+of right half then what we are doing
+basically we are putting the parameter K
+so array of K is assigned to right half
+of J and we are incrementing J with one
+and K with one now we have taken a same
+array and let us try to sort this array
+so we have used our function M sort and
+we are putting this array as our
+argument let's try to see if this
+technique gives us the elements in
+sorted order so you can see three is
+coming first then 9 10 27 38 43 and 82
+so guys the way we have discussed our
+algorithm so this code perfectly suits
+to it so I hope so guide you have got a
+brief idea regarding M sord so Guys
+these were the top 10 coding interview
+questions which you should definitely
+try practicing if you are planning to
+appear for a coding interview that was
+all for today's session guys I hope so
+you would have enjoyed our today's video
+on top 10 commonly asked interview
+question for the software engineering
+role staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+deliv Ed by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

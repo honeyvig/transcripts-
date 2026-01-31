@@ -1,0 +1,230 @@
+today we will learn about the top five
+interview questions in SQL that you must
+know to crack your business analytics
+interviews that said if these are the
+type of videos you'd like to watch then
+hit that like And subscribe buttons and
+the bell icon to get
+notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upskill yourself to master business
+analytics skills and land your dream job
+or growing your career then you must
+explore simply learn scit of various
+business analytics programs simply learn
+offers a postgraduate program and
+business analytics from Puro University
+in collaboration with Amazon Google and
+Microsoft soft through this program you
+will gain knowledge and work ready
+expertise in skills like prescriptive
+Predictive Analytics regression
+classification and over a dozen other
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts and Top
+Tire product companies and academics
+from top universities after completing
+these courses thousands of Learners have
+transition into a business analytics
+role as a fresher or moved onto a higher
+paying job profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the pin comment and description box
+below to find a business analytics
+program that fits your experience and
+areas of Interest now without further
+Ado let's get started so speaking about
+the top five interview questions let's
+quickly jump to the workbench of SQL so
+I'm using my SQL workbench and here we
+have a database called use simply learn
+so SLP is the database name so we will
+be using the use command to get access
+to that particular database so we are in
+access to it and now now let's quickly
+check out tables show tables there you
+go we have a few tables here book
+collection book order employee details
+joining register and employee register
+so let's go with the employee
+details so I'll just simply shoot a
+command select
+star
+from
+EMP details
+so now we have our employee table so we
+will be using this particular data set
+to run few queries from our interview
+questions so getting back to the
+interview questions so most commonly you
+will be asked the following interview
+questions so the first question is you
+will be asked to find out the names of
+the employees that start with the vbls
+so AE i w u so they will ask a question
+give me the list of names that start
+with these five letters it can be either
+a or e or I OU right so what's the
+question so here you will be using like
+operators and not like operators let's
+say they want the names with WS so you
+can just use the like operator and use
+this particular command select employee
+name that's the name of the column from
+employee register or employee details
+and then where employee my name is like
+a modulus which means it should start
+with a and it can have any number of
+alphabets after that right so let's
+quickly also check what do we have in
+employee register so I think it's a
+similar table to employee details that
+we used
+before we have the same details here so
+no not our problem now let's try to
+extract the names of the
+employees W's name start with vels right
+so we will be using the work clause and
+like operators
+run the command and there you go so we
+have three names so if you able to
+answer this question they will ask they
+might ask a similar question with a
+little modification so this time they
+might ask you give me the list of names
+that will not start with vels so you'll
+just replace the like operator with not
+like so either they'll ask the questions
+which might ask start with vels or they
+might ask a question which does not
+start with W this is one of the common
+questions now going to the second
+question so here also they will give it
+a Simple Start they will ask to give the
+details of the employee who has the
+highest salary or they will ask you to
+give the highest salary you can simply
+use the max aggregation and you can get
+the maximum salary so we have
+$887,000 and sometimes if you are able
+to answer this question they will make
+it a little tricky to you and they will
+ask give the second highest salary here
+you can use offset or there are multiple
+possibilities but let me give you the
+simplest one where you can have the same
+query only difference is where salary is
+less than Max of salary first the
+subquery will be executed which will
+extract the maximum salary and the next
+one is less than so it'll give you only
+one row which has a little salary which
+is Les less than the maximum one right
+so simply let's execute the query so we
+will have the answer so the next highest
+salary is
+$78,000 now moving on to the third
+question so sometimes they will ask you
+to use the update commands as well so
+here we have some salary details of our
+employees in the employee register
+employee going to do here is let's say
+this is the appraisal period and they're
+giving you 15% hike to all the employees
+so you need to update the salary column
+so what you do is simply uh update table
+name salary plus salary into the
+percentage of hike which is 15% so here
+we adding that particular percentage in
+the form of decimal numbers which is
+0.15 and simply run the command and you
+have it now you can just simply uh query
+the same detail which is Select Staff
+from employee details so you will have
+the updated salary list here there you
+go now let's proceed with the next
+question that we have in our list which
+is about select the employee name and
+salary from a given range right if they
+ask you give me only the range of
+employees who salary lies between 50,000
+to 7,000 so you can use the between
+operator here and range of numbers that
+is 50,000 and 70,000 just run this
+particular code and there you go you
+have the details so there are two
+employees whose salary lies between
+50,000 and 70,000 now the last question
+is uh they might ask you to extract the
+details from a certain department so
+basically this might also turn up to
+find a difference between having and
+group by CLA sorry having and wear CLA
+yeah so this is one of the common
+interview questions where they will ask
+the difference between having and and
+wear Clause so when you are implementing
+Group by in your query and you're also
+implementing some aggregate functions
+like count sum Etc minimum maximum in
+those situations when a group by Clause
+is involved then you can use having when
+there is no uh Group by function then
+you can simply go with the we Clause so
+here I'm trying to extract the number of
+people present in finance department so
+I'm not grouping by department so I can
+just use where clause and run this and
+now in situations where I have to group
+by
+I mean you know when I have to implement
+Group by in those scenarios you can
+include having clause in place of where
+so that is the fundamental difference
+between having and group by and also you
+got the understanding of group by
+command here and these are the most
+commonly asked SQL interview questions
+for a business analyst interview and
+with that we have come to an end of this
+session on top five interview questions
+for a business analyst should you have
+any queries regarding any of the topics
+covered in this session or if you
+require the data set or code document
+that we used in this particular session
+then please do let us know in the
+comment section below and our team of
+experts we'll be happy to resolve all
+your queries at the earliest until next
+time thank you for watching and stay
+tuned for more from Simply learn staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in Cutting
+Edge domains including data science
+cloud computing cyber security AI
+machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click
+here

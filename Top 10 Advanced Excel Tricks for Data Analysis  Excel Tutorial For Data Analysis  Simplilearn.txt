@@ -1,0 +1,3248 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about the top 10 Advanced data analytic
+tips and tricks in Excel that's said if
+these are the type of videos you'd like
+to watch then hit that like And
+subscribe buttons and the bell icon to
+get notified just for a quick info if
+you want to upskill yourself and master
+data analytics skills to land your dream
+job or growing your career the new must
+explor and clearance Cod of various data
+analytics programs simply learn office
+postgraduate programs from Pur
+University in collaboration with IBM
+through this program you will gain
+knowledge and workr expertise and skills
+like prescriptive and protective
+analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts from Top Tire product
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data analytics role
+as a fresh AR or moved onto a high being
+job profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+pin comment and description box below to
+find a data analytics program that fits
+your experience and areas of Interest
+now without further delay let's get
+started so now we are on the Excel sheet
+and you can see that in this particular
+Excel sheet we have some student details
+we have the serial numbers names role
+numbers class blood group and some
+subjects like math science computer
+statistics social GK and the final marks
+obtained percentage and total marks
+right so let us imagine that uh a
+company has come for an interview so all
+these students are going to attend an
+interview and uh the minimum percentage
+to attend the interview will be like
+75% so you can see that we have 75 here
+and all the students have got above 75
+except for the one student which is Mike
+right so for Mike to attend the
+interview he needs 75 percentage or
+above so uh he can make some
+modifications in one of these subjects
+right so there is always an exam after
+the exam called as Improvement exam so
+if you can like to score some extra
+marks in the subjects which you have
+scored less so that you can make up to
+the percentage what you're expecting you
+can do that so here in this particular
+sheet uh Mike has six subjects right and
+in six subjects you can see he has codes
+of in 6 91 45 71 94 and 62 so out of
+these he have scored Less in one subject
+compared to all the subjects one subject
+is really low that is computers so what
+if he can give an improvement exam and
+increase his percentage to 75 right so
+that can be done so we can do some root
+Force methods like we can change the
+marks like 55 and then check this
+particular one so it's getting 74 right
+so using the brute force method will be
+a little bit lengthy so you can do this
+because it is just a small uh table
+which has least number of data and you
+just have one single cell to modify so
+that can be done in small tables but
+what if you had some table with hundreds
+of rows or thousands of rows that'll be
+time consuming right so for that we have
+some inbuilt functionality in Excel that
+is called goal seek in Excel so now
+let's eliminate the marks
+here so we have eliminated the marks and
+the upgraded percentage is 65 now we
+need the target as
+75 okay so let's uh write it
+as Mike's Target right we need mic so
+Mike's new Target
+as 75
+[Music]
+okay now to make sure that we need a
+Mark here which can get mic to 75
+percentage we will use the data
+operation so here on the toolbar which
+has file home insert Etc we have one
+other option called as data so when you
+click on data from toolbar you'll have
+this ribbon and in this ribbon we have
+various options so when you come into
+forecast group we have an option called
+what if analysis when you click on vtif
+analysis you'll have a set of options
+out of which we have goal seek now for
+goalseek we need to select a table cell
+that is this particular table cell that
+is
+M9 so we need the value 75 here right so
+what is the cell that you need to change
+here for that you need to select this
+one and select this particular cell here
+right and now you can select okay now
+you can see that Excel has automatically
+run all the permutations and
+combinations and has come up with a
+number so that the overall percentage of
+mic will be 75% right so the expected
+marks that Mike should be getting in his
+computer's Improvement exam should be
+equal to 56 or greater than 56 to get
+the final Target as 75 so that he can
+attend the company's interview so this
+is how we use goal set or goal seek in
+Excel now let's quickly get onto the
+Practical mode where we will have some
+data sets over which we will be trying
+to apply the charts now there are
+various types of charts in table and
+those are the pie chart the column chart
+the bar chart column versus line pavier
+chart and Spark line charts so we will
+discuss one after the other first let us
+discuss about the pie chart so as you
+you can see we have a small data set on
+my screen which I have personally
+created and uh this deals with the
+companies and this deals with the shares
+of the automobile industry so now for
+this let's create a pie
+chart select all the data and then get
+into the toolbar and inside the toolbar
+you can see various options and inside
+that we're going to use the insert
+option and when you select the insert
+option you will have a ribbon here and
+inside the ribbon you can see groups
+tables illustrations addin and here you
+go these are the charts so now we needed
+a pie chart so select on that icon and
+you have various types of pie charts you
+have two dimensional pie charts three
+dimensional pie charts donut type of
+charts Etc right so I would like to go
+with the three-dimensional pie chart as
+it looks a little more appealing and
+easy to understand and now there you go
+this is the title of the chart and these
+are the legends of the chart and this is
+the chart area and these are the values
+now we can uh you know kind of add the
+data labels as well so you can just have
+to press the plus icon over here and
+you'll have the options you can add the
+data labels which will give you a lot
+more interesting
+values and uh you can also turn this
+around as you can see we on double
+clicking any part of the pie chart
+you'll get this option which is called
+as format at data point and uh let's
+imagine that you wanted to show the
+information related to this particular
+one which is Volvo which has the biggest
+share so this is in front right now now
+what if you wanted to show the
+information related to data which is
+over here right for that you can select
+this particular Arrow key and you can
+just twist it and there you go it is
+coming in front this will be uh a great
+way of presenting your data to your
+clients
+right
+yeah and there is another option where
+you can directly explode this like you
+can pick it out you can see this right
+Point explosion where you can split it
+out and you can show that especially
+like you can highlight it and show it so
+that's the you know a great way of
+presenting your data so that's how you
+can work with pie charts in Excel now
+let's quickly move to the next one that
+is the column chart and in the column
+chart we have the data related to some
+company and uh the profits of that
+company based on a so you can see that
+the year has started from 2008 and it
+has gone until 2021 and these are the
+profits of that company year after year
+so since we are dealing with column
+chart I'll tell you the simplest way to
+create a column chart there is a
+shortcut key for that which is alt F1
+and there you go you have the chart
+right on your
+screen
+now you can uh expand the chart just by
+dragging it like that and you can see
+that there is some problem with this
+chart that is we have numbers here
+instead of ear right you can see that
+the First Column is the ear which is
+2008 to 2021 but here you can see we
+have 1 2 3 4 which is not proper right
+so to change the axis that is you can
+see the axis which is 1 2 3 4 from 1 2 3
+4 to the ears 2008 2009 2010 11 Etc you
+just have to make one change here and
+also you can see I have pressed the plus
+icon over here which will open the
+option where you can include the access
+titles if you have and data labels
+everything right so for now I think I'll
+keep it as it is so you can include the
+data table as well as it is here and you
+can include that in the chart there are
+various options that Excel provides you
+so now let's uh focus on changing the
+axis from 1 2 3 4 to the ears for that
+you need to select the chart design and
+inside the chart design you have an
+option called select data press that and
+here you have various set of options you
+can see profits you can see ears now
+we'll select ears and we will remove
+that and now you can see the edit option
+here right select that and now it will
+ask you which column to be selected for
+the access ring
+for that let's select this and now let's
+select the ears
+here and press okay and there you go
+again press okay so there you go you
+have the ears over here instead of the
+numbers which you had in the first place
+so that's how you create the column
+chart and we have the next type of chart
+which is really simple now you know you
+kind of change this chart directly into
+bar chart there is no big deal in that
+so uh for that you just need to select
+the change chart type option over here
+you're just changing the chart type and
+you can get the bar graph over here
+column and bar graphs are completely
+same to each other only that you can see
+these uh bars in the horizontal way
+rather than in the vertical way let's do
+that let's not create a new thing for
+that so uh yeah there you go when you
+select the change chart type option you
+have various set of chart type options
+on the menu bar over here so what we
+needed was the bar chart now let's
+select that and there you go let's
+select okay and you have the bar
+chart right and you if you want you can
+include the data labels which look a
+little bit more interesting you can also
+include the data table as
+well okay for now I think we have to
+expand the chart to get the Clear
+View yeah that's how you do it
+right now let's move into the next type
+of one yeah we dealt with the bar chart
+so we'll directly enter into the column
+versus line chart so we have similar
+kind of data we just had year and
+profits in the previous part now we also
+have included the expenses right we
+needed another column to showcase the
+line chart compared to the columns right
+so for that I've included a new column
+that is expenses as well now just let's
+select the
+data and let's select the option alt F1
+to create our
+chart right now automatically uh Excel
+has provided us the column chat we have
+The Columns of expenses we have the
+column of profits and we also have ear
+now let's change the data as we did
+before select uh here and remove it and
+then edit
+select edit and select the ear that is
+from here to
+2021 select okay and we have the ears
+over here now what we needed to do is
+change the chart type right select the
+change chart type option and since we
+wanted to create a column versus line
+chart it is a combination whenever you
+want one or two types of charts included
+in one single chart window then it has a
+combo option so here we need to select
+the combo option and inside that we have
+various types of combination charts we
+have clustered column we have clustered
+line on secondary axis we have clustered
+stat area clustered colum and the other
+one is custom combination so let's go
+with the first one that is clustered
+line let's select that and there you go
+we have the line graph with the column
+so that's how we create the column
+versus line and and if you want you can
+include the data labels and you can
+include the data table as well yeah okay
+I think uh we need to expand the canvas
+a little more to get a clear
+view
+yeah so you have Legends over here you
+have the data labels and access
+everything and chart title you can
+always change the chart title so for now
+let's uh rename it as Pro profits versus
+expenses yeah that's that's how it
+goes done okay I think I made a spelling
+mistake
+here yeah it's clear
+now now the next type of chart we're
+going to deal with is the P
+chart so uh we have dealt with P chart
+column chart bar chart and column versus
+line now P chart is a little bit
+different it's like you're going to
+create some active chart which responds
+to the variations you're making to your
+data so to understand that better let's
+create a practical chart over here I
+select all the
+data
+okay yeah I have selected the data now
+to create a pivot
+chart let's
+select the insert option from the
+toolbar and inside the ribbon we have
+charts group and inside that we have PIV
+chart now let's select the P chat option
+and there you go now it's asking for
+range and we have selected the range
+over there and uh we are not going to
+create a new worksheet for the entire
+chart we are going to create the uh
+chart inside the existing worksheet
+itself so for that let's select the uh
+area where we want to select the uh
+chart to be present now for that let's
+select this
+and yeah select
+okay okay there is some
+error let's cancel this and try
+again let's select the
+data and preview chart again
+we have selected the
+range
+yeah that's how you select the range and
+now select the position where you want
+to create it existing worksheet we have
+selected that and press okay yeah that's
+that's the way we've got our P chart
+over here and you can see our P chart is
+completely blank right now it will
+respond to the changes you make to your
+P chat for now we have uh serial numbers
+and uh these are the names of the guys
+who
+have okay so these are the names of the
+guys you who have some dealerships for
+various car makes such as Ford Ferrari
+Honda Kia Alpha Romeo BMW etc etc so uh
+we're going to change or we're going to
+see um you know we're going to make some
+charts of the persons who own the cars
+or the car brands or dealerships in
+various regions so we're going to work
+on that now let's drag in the
+name and uh let's drag
+region and
+cards and the
+units yep
+so we have our uh chart over here column
+chart which has the different different
+names and the dealerships and some of
+cars over there right so you can see
+that we can also change some values over
+here what if we wanted to know only uh
+the details regarding Jennifer you can
+do that you can unselect everything and
+you can just select Jennifer and press
+okay now you'll have the details of only
+Jennifer of having the car brands so we
+have the regions as well so Jennifer
+owns dealerships in two different
+regions that is South and West and uh
+the sum of units and count of cars as
+well so that's how the PV charts are
+used in real
+time and now let's select sales and drag
+the sales as
+well yeah it's been dragged and you have
+the sales of U
+Jenifer the details of her sales and
+let's move the chart a little bit and
+you have the plus icon where you can
+include the data labels for a better
+information yeah so that's how you use
+the P charts so we are on the last type
+of charts which is the spark line chart
+Now to create a spark line chart we need
+to get into the insert option and inside
+we have the ribbon and inside the ribbon
+we have the group that is spark lines
+now to generate a spark line chart we
+need to select this particular column
+and then select the type of spark line
+you want to create for now let's create
+the column type of spark line chart yep
+we have to Club these cells together
+first we for got that because we're
+going to insert the spark line chart
+right above here now for that let's
+merge the
+cells
+[Music]
+yeah so uh we wanted to create the
+spark line chart of column type and now
+it's asking for the location where we
+want to create the spark line chart so
+this is the location now let's select
+okay and there you go we have the spark
+line chart right over here now you can
+see that we have a negative Point here
+so if you want you can change that from
+negative to positive and it will
+automatically update that and if you
+want to add the axis ACC to this
+particular chart you can select the
+options Park line and there you go you
+have certain options like High Point low
+point and if you wanted to add some
+margin you can also do
+that add data type access and there you
+have the
+access show access yeah you have the
+access now and you can have the high
+point and low point for that as well
+which is the you know the biggest change
+and the smallest change in this
+particular segment that is few Furniture
+yeah Furniture had the highest sales in
+January and uh Home Appliance had the
+lowest sale and you can also change the
+color and uh let's type of change the
+color again yeah we have a different
+color over here which resembles a little
+bit more better or you can also go with
+this one and if you wanted to add the
+same to all all these tables you can do
+that just by dragging it and you have it
+for all the 6
+months now if you wanted to add some new
+data in this row or you wanted to add a
+new complete row then you can do that as
+well and change that and bring that
+change implemented in these charts as
+well now let us try to add a new row
+here which includes the miscellaneous we
+have that data right over here let's
+select that copy and uh let's let's
+paste it over here so there you go we
+have the extra row here so yeah now we
+have added the miscellaneous row and
+right now we have the spark line chart
+for only four columns or four rows that
+is Furniture technology home appliances
+and office needs and miscellaneous is
+missing now to add that as well let's
+select spark line and inside spark line
+just select edit Group location and data
+and now let's select the entire data
+and now select
+okay there's something wrong
+again spark line edit
+data select
+range this should be helping yeah there
+you go we have all the fire rows now
+including Furniture technology home
+appliances office needs and
+miscellaneous so conditional formatting
+is a method to visualize your worksheet
+we already have the charts in Excel to
+visualize our Excel sheets in graphical
+form but what if you had to see or
+visualize the data in your worksheet as
+it is so that is where the conditional
+formatting comes handy now let's get
+back to the Microsoft Excel and try to
+implement some conditional formatting
+now we are on on the Excel worksheet
+this particular data set is based on a
+store now we have various columns in
+this particular data set we have R ID
+order ID customer name Etc and finally
+we have quantity discount and profits
+now let's go to profits uh let us
+imagine that we have provided this
+particular store with a target of
+minimum 15% profits now let us find out
+the stores that have hit the 15% Target
+and the ones which did not
+so for that let us select the entire
+column now you can find the conditional
+formatting option in the home toolbar
+and in that ribbon the ribbon with
+Styles has the condition formatting
+option click on that and you have
+various options over here highlighting
+the cells top bottom rules data bars
+data scales and icons so data bars are
+actually the bar graphs which highlight
+themselves on each and every cell if you
+implement them and these are the color
+scales if you want to implement some
+colors you can go through that and if
+you want to represent your CS with icons
+you can also do that for now let's
+highlight the sales so select that and
+inside this select the greater than
+option and here you can provide the
+percentage that is
+15% and the sales or the stores which
+hit the target should be highlighted
+with green color and select okay and
+there you go you have your stores that
+hit the 15 15% Target and the ones which
+did not hit the 15% Target now if we
+want to highlight the ones which did not
+hit the 15% Target you can highlight
+them with the color
+red
+so conditional formatting highlight the
+Cs less than
+15% with color red and text dark and
+there you go it's done now let us
+consider another example so this
+particular example is based on train
+data set and here we have the passenger
+ID survived passenger class name Etc now
+we have a train accident incident over
+here now one is indicated that they are
+alive and zero is indicated that they
+are not alive now let us use this column
+and conditional formatting highlight the
+cells containing the text as one with
+color
+green
+okay
+and highlight the
+cells that contain text zero as red that
+indicates they are not
+alive and let us select the
+icons now we have the icons over here
+the X indicates that they're not alive
+and the Green Tech Mark indicates that
+they're alive now that is how you use
+conditional formatting in
+Excel so what is data validation in
+Excel so it is a feature by Microsoft
+Excel where it can restrict data entry
+into certain cells by using data
+validation and it will prompt the users
+to enter valid data in the cells based
+on the rules and restrictions provided
+by the creator of that particular sheet
+now this would be a little confusing to
+understand so to understand it in a much
+better way let's get back to the
+practical way where we will start
+entering some data validation rules to
+our Excel sheet and try to enter data
+into it
+now we are on the Microsoft Excel and
+this particular sheet is based on
+employee ID employee name employee
+Department employee salary fiscal year
+and work timings of the
+employees now we will be applying some
+data validation rules to each and every
+column and try to enter data based on
+the rules we have entered now for the
+first one which is the employee ID we
+will enter rules based on the emplo ID
+number so to apply the data validation
+you need to go into the data tab on the
+toolbar and inside the ribbon you can
+see data tools group and in the data
+tools group you have the option of data
+validation now select the entire column
+go to the data tools group select data
+validation option and you will have this
+particular popup menu and here you can
+see different types of options so since
+we are entering employee ID it would be
+a whole number so let us select whole
+number option and now here you can see
+the option of between not equal to equal
+to not between greater than less than
+Etc so let us select between and let us
+assume that your employee ID has five
+numbers and uh it should be between
+10,000 to
+11,000 so let us provide
+10,000 and
+11,000
+now select okay and now the new rule has
+been
+applied so now the minimum value of each
+and every employ ID should be equal to
+or more than 10,000 and less than 11,000
+and it should have five digits now let's
+try to enter a wrong employee ID that is
+just one there you go you can see that
+Microsoft Excel is not allowing you to
+include a wrong number it says this
+value does not match the data validation
+restrictions defined for this cell so
+now you can press retry and try to enter
+some number which is in between 10,000
+to
+11,000 now it is
+10,901 and this will take the
+entry now let us assume that because I'm
+the creator of the I know what
+should be entered here but what if I
+give this sheet to you and you are the
+person who's trying to enter the number
+and it shows the error and you don't
+know what was the error right to avoid
+this kind of confusion what you can do
+is you can do some uh ways where you can
+provide the message to the user so that
+can be done by okay let's select the
+sheet again and go to the data
+validation and here you have the same
+settings now here you have another
+option saying input message so before
+input message let us go to error alert
+now
+here the error title would be data
+entered is not
+valid please enter this is the error
+message please
+enter
+EMP
+ID
+between
+10,000 to
+11,000 press okay now when you try to
+enter the wrong number it will show that
+particular error alert
+message see data entered is not valid
+please enter employee ID between 10,000
+to 11,000 now this is fine but how long
+this will be you know what if there is
+an option where you just hover over to
+this cell and it automatically tells you
+to enter the value between 10,000 to
+11,000 without having to face the error
+yeah even that can be done so you can
+select the entire column go to data
+validation and here this is the input
+message this is where you can do that so
+here you can write the message name
+valid
+data please
+enter
+data
+between 10,000 to 11,000 now when you
+hover over to any cell in this
+particular column it will automatically
+show you this message where you can
+avoid all the errors just select okay
+see when you select any cell in this
+particular column it will automatically
+tell you please enter data between
+10,000 to 11,000 so here you don't have
+to face any errors right now let us try
+to enter the valid data
+1
+9
+02 and it will take it as the correct
+value and again 1
+903 now in case if you try to provide
+the wrong number it will show the
+error
+see so that's how it is now we have
+finished the whole number part now let's
+get into the employee name where we have
+to provide
+uh the second type that is text length
+now let us imagine that uh in your
+company you're trying to provide ID
+cards to your employees and you know
+that ID card is really small and inside
+that ID card you need to include the
+employee photograph and your company
+name employee ID blood group phone
+number address everything and also you
+need to include the name of the employee
+so what if there is an employee with
+very lengthy name like 30 characters 40
+characters yeah in India it is really
+possible that you might have a lengthy
+name so what you can do is you can
+provide the text length where the text
+is limited to like 15 or uh 20 uh um
+characters so you can include that name
+in the ID card so you can do that by
+allowing the data validation criteria
+with text length uh minimum can be
+anything so minimum can be one and
+maximum here you can provide 50
+and press okay okay minimum will change
+it to at least uh
+two and yeah let it be one so minimum is
+one and maximum is 15 characters and
+press okay and uh let us also provide
+the input
+message
+enter character type character
+data please enter valid name
+and error
+alert invalid
+data please enter valid
+data okay please enter
+characters less than
+50 press okay
+now let us try to enter a random name
+okay uh we'll enter characters more than
+15 here qu t
+z uh yeah it's like 1 2 3 4 5
+11 okay now this is more than
+15 okay I think it's not more than 15
+let's try to enter a little bit more
+characters yeah now we have entered more
+than 15 characters and it is showing
+please enter characters less than 15 so
+now we can ret right and try to enter
+some valid
+name
+um now we have characters less than 50
+so it will take as the proper name now
+let us try to enter another
+name
+I'm just entering some random
+data so another name
+maybe great now the next type of data
+validation is also done now let us get
+into employee Department employee
+department is something really superb so
+I'll tell you about it it's actually a
+list now let us finish the other ones
+first that is employee salary physic
+clear and work timings after that we'll
+learn about uh the list
+one now let's come into employee salary
+so salary is something where you have to
+include decimal points so now let us go
+to uh data validation and inside the
+values we have already dealt with whole
+number uh text
+length yeah now we'll uh deal with
+employee salary that is decimal now
+minimum is okay what is uh minimum can
+be one
+0 and the maximum can
+be 1
+lakh or let us put that as 10
+lakhs press okay okay not not just then
+enter
+valid salary
+okay now let's change it to minimum is
+10,000 so the employee minimum salary
+will be 10,000 and input enter valid
+salary
+enter
+salary
+between
+10,000 to 10 lakhs
+let us include a comma here
+too now error
+alert invalid
+salary please
+enter between
+10,000 to 10
+lakhs press okay now the message and
+data validation conditions are applied
+to this column now let us try to enter
+some invalid data first it will show the
+error now we need to enter the valid
+data yeah now it is taking the valid
+data let us provide 20
+,000 and this has
+35,000 now the next one is fiscally Year
+let us imagine that we wanted to you
+know work on the employees for current
+working year that is 2020 to
+2021 and or you can consider 2021 to
+2022 not more than 2021 and not less
+than 2021 for that you can provide the
+year option as well so for that you need
+to select the entire column go to data
+validation settings and inside here you
+have an option of date so uh let us
+provide the date option as between and
+start date is
+01/ 01/
+2021 and end date is
+01/01
+SL
+2022 and input
+message let us provide data as current
+fiscal
+year Current financial
+year enter
+date
+between 2021 to
+2022 let us copy this and go into error
+alert error message will be S inv
+valid
+dat select okay now the error message
+and uh the data input message and the
+data validation rule has been applied
+for this column so let's try to enter
+some date here you can enter uh 02 of
+February
+2021 it will take as the correct data
+now let's try to enter some wrong data
+which is apart from 2022 02
+02 20 22 it will not take this it will
+throw error
+so that's how it works now let us try to
+enter as
+2021 and this is
+March it will take it now another
+data 04 this time and
+2021 so that's how your uh date data
+validation will work now coming into the
+next type of data validation that is
+time so we have time here let us imagine
+that you are providing some work timings
+to your employees that should be from
+9:00 a.m. to 5:00 p.m. not more than
+that so you want to keep your work life
+balance for all your employees so you
+just want them to work between 9 to 5
+and that should be fine and anything
+apart from that time should be invalid
+so you can do that by selecting uh time
+option between it should be in between
+and the start time will be
+09 0 0 and this should be
+uh
+17 that is 5:00 p.m. in the
+evening and input
+message please
+enter time
+between 900
+a.m.
+to okay
+5
+pm. this should be the input
+message
+now error
+alert invalid
+time error message okay
+now okay work timings now this should be
+okay we can do this as two columns
+actually let us
+cancel let us copy this and paste it
+here
+you can do it as
+login login timing and this should be
+okay this should be a log
+out so this should
+be okay so this will be considered as
+login and log out times now let us
+provide the login time this should be
+the right time
+and uh let's try to provide wrong
+timings 08 now it will not take it it
+will throw as error so it's working fine
+let us provide 10 now let us provide the
+log out time it should be below 5 p.m so
+let us provide five it will take
+it
+okay let's try to provide something just
+1 minute less than
+five that is
+59 okay there is some problem in this
+let's check
+it okay it is taking uh three that is
+including
+seconds okay let's provide seconds as
+well
+05 0 0 0
+0 okay still there is some
+problem okay we have entered four we
+should we are supposed to enter 24hour
+timing right
+14 okay uh it should be 17 I think this
+will work yeah now we are following
+24-hour timing here so let's provide
+another timing that is
+16 30 0 0 this will be valid and
+1530 yes this is also valid now we have
+finished almost all types of uh data
+validation things that is we have
+finished with any value whole number
+decimal date timing test length and the
+last one is list so this is where things
+get interesting now let's cancel this
+now select the employee column now if
+you're running a company then definitely
+you'll not have only one Department in
+it you might have multiple departments
+right so let us consider that you have a
+software development company so in that
+the basic departments will be software
+development team and software testing
+team so what you can do is you can
+provide a list so using that list you
+can just uh H over to that cell select
+the drop- down menu and inside that you
+can select the option so we will try to
+work something like that if we have
+selected the entire
+column selection
+okay yeah let us select the entire
+column again go to data validation the
+selection contains some sales without
+data validation settings do you want to
+extend data validation to the sales yes
+now let us provide the list
+option
+[Music]
+and here Source you can provide
+as
+developer and
+tester press okay
+okay now input message select
+one
+select
+one error
+alert
+invalid
+data select from drop
+down
+only press okay now when you select the
+cell you can see small drop- down icon
+right so when you press it you will have
+developer and tester option option so
+you can select developer for first one
+and for second one you can select uh
+tester right okay this is good for uh
+one or two options maybe three or even
+maybe like five but what if you have
+more departments okay let's go to this
+uh second sheet where we have the
+department data so here we have like 14
+departments no 15 departments or 15
+employee type names so the first one is
+see your second is developer tester
+quality analyst system analyst Finance
+human resource so so many options are
+there so you cannot keep on typing all
+of them right so here it is 15 what if
+you have like 25 like 50 departments
+right it will be tough so for this you
+have another option so let me select all
+this data and copy this from this sheet
+to our employee
+sheet let us paste it
+somewhere here let's expand
+this
+okay now we have our uh list over here
+now let us remove the data validation
+from this
+column clear all okay now everything is
+cleared let's select okay now let us
+erase this data as
+well now let us apply the list data
+validation again from scratch go to
+list now here we can select the source
+SCE select this particular
+cell and drag it until here and it has
+been
+loaded now go to input
+message data
+options select one from the menu or the
+dropdown
+copy error
+alert select only from the drop down
+menu invalid entry
+yeah now let's select
+okay fine now you have the icon here you
+have all the provided
+options you can scroll down and select
+any one of of these you can select
+knowledge transfer for the first one and
+second one would be system
+analyist and and the last one would
+be human
+resources now in the list everything is
+fine okay this is showing you the menu
+options and everything so but what if
+you provide this sheet to your new joiny
+or new employee in your company and by
+mistake he messes up something like
+deleting this okay so we have deleted
+systems analist and when you click on
+the options here you don't have systems
+analyist in that place you have blank
+space right so there is a way where all
+your uh you know data can be messed up
+so to avoid this what you can do is you
+can actually um save this data in a
+different sheet like I did here like
+Department data you can hide this sheet
+or you can protect the sheet with
+password or something so that nobody can
+mess this up so now let us get back to
+the employ data and select this column
+and uh clear everything press okay and
+let us also clear
+this and this as well this one too now
+let us eliminate the rows or
+cells the employee yeah
+everything okay now we have basically
+removed this data from here now let us
+try to apply the data validation once
+again now here let us select as
+list and
+uh here let us provide the option let us
+go to next sheet let us select all these
+options and press okay okay let's
+provide input
+message
+data
+options M Department
+options
+yeah now let's select
+okay now let's hide this sheet now the
+sheet has been hidden and you still have
+the
+options
+developer or let us provide
+CEO then we have have
+developer then we
+have
+test so that's how you can protect your
+sheets as well what is Excel
+vlookup vlookup stands for vertical
+lookup vlookup lets you search for
+specific information in your spreadsheet
+it allows you to search for a particular
+value in a column and returns another
+value from a different colum but of the
+same Row V lookup takes advantage of
+vertically aligned tables to quickly def
+find data associated with the value the
+user enters now let's look at the syntax
+to write a vlookup function so vlookup
+takes four parameters or arguments you
+can see it here there are four arguments
+in the v of
+function so the first argument is called
+the look of value the look of value
+represents the value that you're are
+searching for next is the table array
+the table array represents two or more
+Columns of information the Third arent
+is called the column index number now
+this represents the column number in the
+table from which the value must be
+returned the First Column is one the
+second column is two and so on and then
+we have the fourth parameter which is
+called the range lookup now this
+parameter is optional now range lookup
+is used to find an exact match so if you
+want to find an exact match you need to
+enter false or zero meanwhile if you
+want an approximate match you need to
+enter true or one if getting your
+learning started is half the battle what
+if you could do that for free visit
+scaleup by simply learn click on the
+link in the description to no
+more now let me give you a brief
+overview on what's going to be in our
+demo so for our demonstration we'll use
+a sales data set you can see the data
+set on the left using this data set
+we'll understand how we lookup performs
+an exact and approximate match we'll see
+how V lookup is case insense sensitive
+then we'll perform a wild card character
+search we'll understand how to handle
+errors when a match is not found and
+finally you will look at two-way
+lookups now here is a small example of
+how V lookup works so we want to find
+the units sold by Morgan using the data
+set on the left so here you can see I
+have the data set it has some rows and
+columns so these are the columns which
+are order date region there's a
+representative column item units there's
+unit cost and total and from this table
+I want to find the units that were sold
+by Morgan if you look at the table at
+the bottom you can see the
+representative name Morgan and Morgan
+has sold 30 units now I want to find
+this value using the V lookup function
+so here on the right you can see I have
+my lookup value which is Morgan and this
+is my V lookup formula
+and using this formula I'm getting the
+result as 30 now let's go to our Excel
+workbook and perform all the demos one
+by one so this is my Excel workbook that
+we are going to use for our demo and
+here is the data set we'll be using now
+this is the same data set that you saw a
+while ago so this data set has seven
+columns you have the order date the
+region Representatives name item there
+units unit cost and total which is is
+basically the total or the amount of
+sales that was
+generated we are going to use a chunk of
+this data set and perform our vlookup
+analysis so let's see our first example
+and the problem we have at hand let me
+go to the exact match tab all right so
+here I'm going to use this chunk of data
+which is actually taken from the
+original data set so we have taken the
+first 11 rows from the data set you can
+see from row
+two till row 12 is going to be our data
+set that we'll use so we have a question
+here we want to find the items sold by
+Thompson so here Thompson is my lookup
+value which means looking at Thompson I
+want to find the item that he sold so if
+you consider our table here you can see
+we have the representatives name
+Thompson right here and from the table
+you can see Thompson sold pencil and I
+want to get this value which is pencil
+using my vooka function so let's go
+ahead and write our vooka
+function I'll consider this as my lookup
+value and here under item I'm going to
+write my V lookup formula to write the
+vup formula I'll write first equal to
+and I'll write vook up if I hit tab it
+will auto complete all right now let's
+give the parameters so first is going to
+be the lookup value which is nothing but
+Thompson so I'll just select this cell
+which is
+j17 comma now it's asking to give the
+table array so the table array is the
+table from which you want to retrieve a
+value one thing to keep in mind is that
+the value you are looking for should be
+the first column of a table and you can
+select the table array till the end of
+the data set or till the column which
+has the value want to find so here I'll
+select my table array starting from the
+representatives column till the end of
+the item column which is going to be my
+table array then I'll select the column
+index number so the column index number
+is based on the table array you have
+selected in this case my column index
+number is going to be two because we
+have selected just two columns and the
+value which I'm going to find is in the
+second column so I'll give two comma Now
+the range lookup I'm going to give is
+false because I want to find an exact
+match so either you can hit tab or you
+can write zero which means
+false if I close the bracket and hit
+enter it will return me the item that
+Thompson had sold which is pencil you
+can verify from the table that Thompson
+had sold pencil all right now let's try
+to change the table array and see what
+result are we getting so this time I'll
+slightly change the table array so again
+we are trying to find the item that
+Thompson had sold so I'll write my
+formula equal to V lookup I'll hit tab
+to autoc complete I'll give my lookup
+value as Thompson comma this time I'm
+choosing my table array starting from
+the representatives column till the end
+of the data set which is till p12 again
+my column index number is going to be
+two because if you consider this table
+as the item column is the second column
+in the selected table array so I'm going
+to write it as two comma the range
+lookup I want to give as false because I
+want to find the exact match if I close
+this and hit enter you can see it has
+return returned me the same result that
+we saw earlier now suppose let's say
+this time I want to start my table array
+from the region colum which is this
+column so I want to select my table
+array starting from the region column
+now the this is going to show me an
+error because your table array should
+always start from the look of value
+column so if you consider Thompson as
+the look of value my table array should
+always start from the representatives
+column so let's just try this example so
+I'll write V lookup my lookup value I'm
+going to give it as Thomson comma the
+table array as I mentioned earlier I'm
+going to choose from the region column
+and let's say I'll select till the item
+column give another another comma and
+this time my column index number is
+going to be three because since the
+table array has three columns and my
+item column is the last column so I'm
+going to give my column index number is
+three comma I want to get the exact
+match so I give zero if I close the
+bracket and hit enter you can see it has
+given me an
+error okay now let me just show you
+another method to use V lookup in Excel
+so here on the top you can see there's a
+formulas Tab and under formulas tab
+under function Library you see we have
+an option to select look up and
+reference if I click on this and if I
+scroll down below you can see there's an
+option called vlookup let's choose this
+all right now here you can give your
+lookup value your table array column
+index number and the range
+lookup under this function arguments
+dialog box
+so here I want to select my lookup value
+as Thomson my table array is going to be
+from the representatives column till
+let's say the end of the data set my
+column index number is going to be
+two I'll write two and range lookup I'll
+write as false because I want the exact
+match now if I hit okay you can see it
+has given us the exact same result so
+this is one of the other ways to use V
+lookup in Excel now let's move to the
+next sheet which is regarding
+approximate match okay so sometimes you
+might have cases where you don't have
+the lookup value present in the table in
+those cases you can tell V lookup to
+return an approximate match now one
+thing to keep in mind is that your
+lookup value column should always be
+sorted in ascending order while trying
+to get an approximate match so here we
+are going to use this table and my
+lookup value column which which is going
+to be the representatives column is
+already sorted in ascending
+order and let's see the question we have
+here so I want to find the item sold and
+the unit cost for Matt so my lookup
+value is going to be Matt now if you see
+this table I don't have the
+representatives name mat anywhere in the
+table now using an approximate match I
+want to find the item and the unit cost
+so let's do it so here under item I'll
+write my vlookup formula so I'll type
+vlookup I'll hit tab to complete it and
+this time my look of value is going to
+be Matt so I'll select this cell comma
+my table array I'll select from the
+representatives column till the end of
+item column because I want to find the
+item value for Matt I'll give a comma my
+column index number as per the table
+array is going to be two comma my range
+lookup this time I'm going to give us
+true or one so I'll write one close the
+bracket hit enter all right it has
+written me binder was the item sold by
+Matt now let's try to figure out why we
+look up returned binder as the
+item now let's say you were asked to
+insert the name Matt to the
+representative column in alphabetical
+order so where would you place it
+ideally you should place between KL and
+Morgan since this column is already
+sorted Matt should appear before Morgan
+and after Q so in an approximate match
+we lookup will consider the previous
+highest value in this case the previous
+highest value before Matt is KL and
+hence we look up returned the
+corresponding item purchased by Kel
+which is binder now
+similarly if you wanted to find the unit
+cost for mat
+again we lookup will return the unit
+cost of KL which is
+125 let's just try out so I'll write V
+lookup my lookup value is mat comma my
+table array for this time is going to be
+from Representatives column till the
+unit cost column I'll consider I'll give
+a comma Now the colum index number as
+per the table array is going to be four
+we give another comma and this time I'll
+double click true because I want an
+approximate match if I close the bracket
+hit enter you can see it has returned me
+125 which is actually kl's unit cost
+okay we have another question and this
+time I want to find the units sold by
+Rob now Rob is going to be my lookup
+value if you see the representatives
+column we don't have Rob now let's see
+what we look up is going to return and
+as the item for Rob so I'll write V
+lookup I'll give my lookup value as Rob
+comma my table array is going to start
+from the representatives column I'll
+select till here I'll give a comma the
+column index number is two give another
+comma I'll double click on
+true I close the bracket hit enter you
+can see V lookup has return return me
+pen now let's understand why vlookup
+returned pen for Rob now if you are
+asked to insert the representatives name
+Rob into this column so ideally Rob
+would appear somewhere between Morgan
+and sorino
+because since this is sorted in
+ascending order Rob is actually greater
+than Morgan and is less than sorino so
+as you know we look up in an approximate
+match Returns the previous highest value
+which is Morgan here and the
+corresponding item for Morgan is pen and
+hence we look up returned pen for Rob
+all right now moving to the next
+sheet which is another property of
+vlookup which tells V lookup always
+looks to the right this means that your
+lookup value must always be on the left
+and the value you are going to find out
+should always be to the right of the
+table now consider this scenario where
+your lookup value is on the left in this
+case it is the representatives value
+and I have taken svino for an example
+and we want to find the order date for
+svino now if you consider this table
+your lookup value which is svino is
+actually this column the representatives
+column and we are going to find out the
+order date so your representatives name
+is on the right of the table and the
+value we are going to find out is on the
+left of the table now as for the
+property we look up only looks to the
+right so so if I use the vlookup
+function for this example here I'll
+write vlookup I'll give my lookup value
+as s Vino comma my table array I'll
+consider from the order date because I
+want the order date
+till the representatives column I'll
+give a comma and this time my column
+index number is actually the first
+column if I consider my table array as
+the first three columns selected
+and my range lookup is going to be false
+if I close the bracket hit enter it
+returns me an error the reason is we
+look up always looks to the right and
+this time the value we were trying to
+find out was to the left of the
+table now if you consider the opposite
+case suppose you have the order date and
+you want to find the representatives
+name you can do that easily because your
+lookup value which is the order date is
+on the left and your Representatives
+column is on the right so let's just try
+this I'll write V lookup my lookup value
+is going to be S Vino's order date so
+I'll select it from the table I'll give
+a comma my table array will start from
+the G column let's say I'll select the
+entire table comma and my column index
+number will be three if you consider
+these as my table
+array comma my range lookup is zero if I
+close this hit enter you can see we have
+got svino corresponding to the order
+date all right now let's move to the
+next
+tab now this tab says V lookup returns
+only the first match so we have a
+question at hand the question is find
+the units sold by Jardine if you see
+this table we have the representatives
+name Jardin twice you see here and if
+you look down we have jardan here as
+well but the item sold by jardan at the
+first instance is pencil and at the
+second instance it's desk now as per the
+property V lookup always returns the
+first match now ideally when we write
+the V lookup function and look for the
+units sold by Jardine you will see vup
+will return 36 instead of three let's
+just write
+out I'll write the V of
+function my lookup value is Jardine
+comma my table array I'll select from
+the representatives column till the end
+of units column I'll give a comma my
+column index number based on the table
+array is three I'll give another comma
+Now I want the exact match so I'll
+select zero close the bracket and hit
+enter now as you can see it returns me
+the first first match of Jardine which
+is 36 so we lookup did not consider the
+second
+match
+similarly if you consider this table we
+have Jones repeated Thrice so you have
+Jones here you have Jones here for the
+second time and also we have Jones for
+the third time and let's say you want to
+find the unit cost for Jones so if I
+write the vooka
+function I'll consider my look of value
+as Jones comma my table
+array I'll select from the
+representatives column till the end of
+unit cost column I'll give a comma based
+on the table array my unit cost column
+is at the fourth index so I'll write
+four comma the range lookup is zero if I
+click on this and hit enter you can see
+it here V lookup has returned the first
+instance of Jones and it did not come
+consider the second and the third
+instance so our unit cost for Jones is
+1.99 because we look up only Returns the
+first
+match okay moving ahead to the next
+example we have here is we lookup is
+case
+insensitive if you consider this table
+I've added another row in green so if
+you see here I have a representative
+name called Gil which is in proper case
+or popularly known as sentence Keys here
+I have added Gil's name
+in capital letters are all in upper case
+so I want to find the total revenue
+generated by Gil the total revenue is
+basically the total column let's do it
+I'll write V
+lookup my lookup value is Gil which is
+actually in upper case I'll consider my
+table array from the representatives
+column till the end of total column or
+the sales
+column based on this selection my column
+index number is
+five comma the range lookup is false so
+I'll just double click on
+false if I close the bracket hit enter
+you can see it here our vook of function
+has returned the total as
+53973 which is actually the value for
+this row so clearly V up did not
+consider Gil was present at the bottom
+of the table in upper case so this shows
+that V lookup is clearly case
+insensitive all right now moving to the
+next example the vuca function supports
+wild cards which makes it possible to
+perform a partial match on a lookup
+value for instance you can use V lookup
+to retrieve values from a table after
+typing only part of a lookup value to
+use wild cards with vlookup you must
+specify the exact match by giving false
+or zero for for the last argument that
+is range lookup now we have a question
+here I want to know how much sales did
+the representative whose name starts
+with Ki make now here sales represents
+the total column
+actually so I want to find out the
+person whose name starts with
+Ki so if you consider the representative
+column I have one representative whose
+name starts with Ki that is Kel so
+using Ki as my lookup value I want to
+find the total so let me show you how to
+use wildcard characters and find the
+value using vlookup so I'll write my
+function V
+lookup okay now in lookup value I'll
+give
+Ki after that I'm going to write Amber
+scent followed
+by double inverted commas then I'm going
+to write a star
+and close the inverted comma this means
+the value starts with Ki Amber sent
+actually represents concatenation and
+star represents anything followed by Ki
+so this is going to be my lookup value
+in total I'll give a
+comma next I'll select my table array
+starting from the representatives column
+till the end of total column because I
+want to find the seals I'll give another
+comma
+my column index number based on the
+table array we have selected is five
+comma the range lookup is zero because I
+want to find an exact match close the
+bracket hit enter you can see it here V
+lookup has returned me
+999.50 which is actually equals
+total now there's another way to do it
+instead of selecting the cell in which
+we have the lookup value I I can
+directly write it in the vooka function
+so I'll write the vooka function
+something like this so my lookup
+value I'll pass Ki within double
+inverted commas because Ki is a
+character value So within double
+inverted commas I'm writing Ki followed
+by Amber sent which is for concatenation
+followed by a
+star within double inverted commas so
+this is going to be my look of values
+this in total means anything that
+appears after Ki will be considered as
+the look of
+value again the table array I'll select
+as these rows and columns comma my
+column index number would be five comma
+the range lookup is zero if I close the
+bracket hit enter you see we have the
+same value so this is another method or
+another way of using
+vlookups okay now moving ahead let's
+explore another feature of vlookup so if
+the vlookup function cannot find a match
+it returns a hash na error now if you
+want you can use the if na function to
+replace the has na error with a friendly
+message so suppose you want to find the
+region in which an order was placed on
+10th of May
+2018 now if the order date is not found
+I want to return a message that is
+invalid date so
+if you look at the order date column we
+don't have any value for 10th of May
+2015 you can see these values we don't
+have any value corresponding to this
+date so if my V lookup function cannot
+find this lookup value I'll return
+invalid date so let me show you how to
+write
+this I'll type my vook of function I'll
+give my order date as 10th of May 2015
+as my lookup value and then I'll
+consider my table array starting from
+the order date column till the end of
+region
+column I'll give another comma my column
+index number would be two this time
+based on the table are we have selected
+comma I want an exact
+match so I'll give zero close the
+bracket and hit enter there you go it
+has returned me an error now I want to
+convert this error to a friendly message
+saying invalid date so let me show you
+how to do it I'll do it here so to
+return a valid
+message I'll use the ifna function and
+within ifna function I'll give my V
+lookup function so let me type if
+na I'll hit
+tab now for the value parameter I'll use
+my vup function so my lookup value is
+going to be the order date comma my
+table array I'll select from the order
+date column till the end of region
+column comma my column index number is
+going to be two comma my range lookup is
+zero I'll close the bracket give another
+comma Now if this expression results in
+an error I want to display a message
+that is invalid date so I'll put invalid
+date within double codes since it is a
+text
+message I close the bracket hit and
+enter you can see the result which is
+invalid
+date now moving on to the final section
+of the demo we have two-way
+lookup now in the v lookup function the
+column index parameter is normally
+hardcoded as a static number however you
+can also create a dynamic column index
+by using the match function to locate
+the right
+column and this technique allows you to
+create a dynamic two-way lookup matching
+on both rows and
+columns now let me first show you how a
+match function works so
+suppose I want to find the index where
+unit cost column is present so here I'll
+use the match function I'll give my
+lookup value as the unit cost column
+name comma suppose I'll choose my lookup
+array starting from Representatives
+column till the unit cost column comma
+I'll give my math match type as zero for
+exact match if I close the bracket hit
+enter it returns me four because my
+array was selected from the
+representatives column till the unit
+cost column and in this array unit cost
+is at the fourth
+index all right now using this idea
+let's solve the following problem I want
+to find the cost of each item sold by
+Morgan so let's write our vooka formula
+right be
+lookup my lookup value is J5 which has
+the representatives name as Morgan comma
+my table array I'll select from C2 till
+F12 I'll give a comma and this time I
+know that my column index number is at 4
+but I'll be using the match function to
+find the
+same so I'll write
+match my lookup value is unit cost
+comma my lookup array is from C1 till
+fub1 comma my match type is zero I close
+this bracket give another comma and I'll
+give my range lookup as zero close the
+bracket hit enter you can see for Morgan
+the unit cost is 19.99 you can verify
+from from the table for Morgan the unit
+cost is
+19.99 all right now we have another
+question
+here I want to find how much sales did
+Andrew make in the central region so
+here I have two lookup values one is
+Central one is Andrews now looking at
+these two values I want to find the
+total to solve such
+problems let me first create another
+table I'll place the table somewhere
+here okay so let me just paste the table
+here all right now I'll create another
+column where I'll merge the values of
+region and representatives so here let
+me create another column okay I'll just
+name this column as
+region
+rep all right now this column
+I'll use the concatenation operator so
+I'll Select East use Amber Cent and then
+select Jones I'll hit
+enter now the same thing I'll just
+duplicate it for the other rows as well
+so I have my new column created Now
+using this table I can easily solve the
+problem now to find the total I'll write
+my vlookup
+formula so my lookup value will be a
+combination of
+j11
+erson
+k11 comma while table array will start
+from the region rep which has the values
+of region and rep combined
+till the last
+column and from this table array my
+column index number is five and my range
+lookup is zero if I close the bracket
+hit enter you can see for central region
+which is this one and for Andrew's
+representative the total is
+14925 all right now we are done with our
+demo let's have a quick glance at what
+all we did in this demo okay so first of
+all we saw our data set which was a
+sales data set that we used then we
+started with our first example to see
+how vooka performs an exact match we
+also saw how using the formulas Tab and
+lookup and reference you
+can write V lookup in another way so you
+can use the function arguments to give
+your V lookup parameters next we saw how
+V lookup performs an approximate match
+so we had Matt and raw which were not
+present in the representatives column
+after that we saw an important property
+of V lookup that is V lookup only looks
+to the right followed by V lookup only
+Returns the first match following which
+we saw that V lookup is case insensitive
+so here we had added a new row where Gil
+was present in upper case but still we
+look up found the total revenue for Gil
+which was in sentence case or proper
+case next we saw how we can use Wild
+Card characters to use V
+lookups and here we saw how to use an if
+any a function along with V lookup and
+finally we saw how to use two V lookups
+choose from over 300 in demand scales
+and get access to 1,000 plus hours of
+video content for free visit scaleup by
+simply learn click on the link in the
+description to know more now we are on
+the sheet of Microsoft Excel and here
+you can see some data on my
+sheet that is employee name employee ID
+and salary so here we are going to
+perform our horizontal lookup but before
+that let me show you that this
+particular drop- down menu so this
+particular drop- down menu has all the
+names of the employees in this
+particular table and we have created
+this using data validation in Excel if
+you want to create the drop- down menus
+just like this then feel free to check
+out our data validation in Excel
+tutorial link to which is in the
+description box below now let's try to
+implement H lookup in Excel so here we
+have employee name but we want to find
+out the employee ID so for that let's
+create the H lookup now for that
+equals to H
+lookup now the first one is the lookup
+value so this one is the cell which is
+the employee name now after that the
+table array we have to select all the
+table arrays
+here
+now the row index number so the employee
+ID is in row index number two according
+to the table so for that provide two and
+close the bracket and before closing
+brackets you you might want to give the
+exact match so for exact match select
+false and close the bracket press enter
+and there you go and if you select Jack
+then you'll find the employee ID of Jack
+and if you select Jerry you'll find the
+employee ID of cherry reflecting here
+now similarly let's find out the salary
+of all the employees using H lookup so
+equals H
+lookup and lookup value that happens to
+be the name of the employee now the
+table
+array and next we have uh row index
+number that is salary happens to be the
+third R in the table so three
+and exact match close the bracket and
+enter so now if you change the values in
+this particular drop down menu you'll
+find the employee ID and their
+particular salary so Jack happens to be
+carrying the employee ID as 10001 and
+his salary is 10,000 so similarly let's
+try try to find out Peter's employee ID
+and salary so there you go one5 and
+50,000 as salary so that's how you use H
+lookup in Excel here you can see the
+first chart so this particular data is
+converted into a table format to avoid
+confusion while you're fixing the data
+so here you can see the name of the
+employee employee ID Department salary
+and date of joining and here you can see
+the salary column and the bonus
+percentage of each and every employee
+based on their salary
+now coming to the new data table and
+here on the table two which is an
+updated table here you can find we're
+going to find out the department of the
+employee and the current Department of
+employee and the bonus percentage based
+on his or her salary so why are we
+finding current Department again so here
+you can see that we have an intern Emily
+who has joined in the year 2020 but
+recently she got promoted as a developer
+so her department has been changed from
+Department in turn to Department
+developer in 2021 so that's what we're
+going to find out here in the current
+Department using X lookup now let's
+start to implement X lookup so for that
+equals to X lookup and for lookup you
+can see if you need to find out the
+lookup value lookup array return array
+and all the other two are not important
+right now but you can use them to get
+some exact matches in the future we'll
+also use that in the future for now
+let's try to use the first three
+parameters that is look up value look up
+at array and written array so the lookup
+value is the name of the employee Mary
+and lookup array is right here which is
+this one now we are going to select the
+lookup array then comma and uh we're
+going to look up the department so this
+is the department lookup
+array and that's all we
+need close the bracket and press enter
+okay I think we missed out the lookup
+value so the employee uh or the lookup
+value which we required was missed so
+I've added it here so that is the lookup
+value the first one which is Mary and
+there you go press enter and you have
+the department here now let's add it to
+all the rowes and here you have all the
+rowes and all the data related to all
+the employees now we will find out the
+current Department as you can see here
+you have em as intern which is the old
+data but what if you needed the latest
+data that is the developer in the year
+2021 right for that you might want to to
+the X lookup formula a little bit so
+let's try that X look up look up value
+which is the same and comma Now where
+you have to look for the array that is
+lookup array this one and the return
+array which happens to be this
+one and
+next
+you can find the exact match for this
+one so that's all right exact match and
+here comes the important part where you
+have to search last to first by default
+X lookup searches for first to last that
+is like this in the starting place to
+the last place so that's the reason why
+we had Emily as intern so now if we give
+last to first then it retrieves the
+latest data where Emily will be shown as
+developer now select that
+and now you can close the brackets and
+press enter so let's add that to all the
+rows there you go now you can see Emily
+Clark Peter and James all they have got
+their updated job profiles as you can
+see in the original data Emily is a
+developer now so is Clark who was
+originally a tester and he got promoted
+to development team in 2021 similarly
+Peter became a senior Finance executive
+in 2021 and James the manager of sales
+now let's try to find out out the bonus
+for all these employees based on their
+salary so this one is quite simple so X
+look
+up now the lookup value is their
+existing salary comma and the bonus part
+so the lookup array is the salary
+range then here is another important
+point so here you might want to find the
+exact match but finding the exact match
+will not help you here you might want to
+declare another type of value where you
+can get exact match or next smaller item
+so you'll understand it why I'm
+selecting that so now let's close the
+bracket and enter
+so so now we have the bonus values now
+let's add the bonus value to all the
+factors all the rows I mean so you can
+see we have different variety of
+salaries that is 38,000 22,000 39 Etc
+but here in the ranges we have provided
+10 20 30 40 and 50 so what if the value
+is between and 20 that's when you want
+the less number right that's when you
+want the number which is equalent to 30
+or less than 30 which happens to be 15%
+so that's how it has worked here that is
+0.15% bonus to the actual salary now we
+are on our Excel sheet here you can see
+the employee names and employee IDs of
+different employees from different zones
+let us imagine that the blue one is from
+East Green one is from West and the
+black one is from or the purple one is
+from South and the orange one is from
+North so this data is a little small but
+what if you had a data with hundreds or
+thousands of rows including all the
+employee names employee IDs or another
+relevant data type like sales of an
+employee and his employee ID and you
+were supposed to combine all the data
+from all the four different zones into
+one single sheet it would consume a lot
+of of time right so recently Microsoft
+has released some latest updates based
+on arrays and datas so one of those is
+vstack function in Excel so how to use
+it since it is a latest function I
+recommend you to go to the file menu and
+in the file menu you can navigate to
+account and in the account you can see
+the option of update options then you
+can select update now and your Microsoft
+Office will be updated to the latest
+version and you'll get access to the
+latest functions in Excel and all the
+other office related things like B one
+presentation Etc now we going to
+implement the vack function in Excel it
+is completely simple all you need to do
+is equals to stack and then select the
+data remember to select the data from
+column A and cell two or the row two we
+are not selecting the employee name and
+employee ID we are just selecting data
+now separate them by comma then again
+this one here this set and again this
+one and again lastly this particular
+last set now close the bracket and press
+enter and there you go you have all the
+employee names and their respective
+employee IDs all together in one data
+set so this is how you use wack function
+in Excel now here we have four different
+sheets of the sales so so the first
+sheet is the West Zone next is South
+Zone East Zone and central zone so all
+this data belongs to one single sheet
+that is Superstore data set so I have
+categorized or I have taken a part of
+the data which belongs to central region
+South Region west region and east region
+now we are going to use all these four
+sheets and create one single sheet which
+is the pivot table of all the four
+sheets now without further Ado let's
+start the process now for that we might
+want to use the shortcut key that is alt
+D now press P now this starts the pivot
+chart
+wizard now here we have to choose the
+option multiple consolidation
+ranges then click on
+next and here you can see the pivot
+table is clicked by default now we'll go
+to next now here click I will create
+page fields or the pivot chart wizard
+will automatically create if you want
+that to create for you now click on next
+now here let's select the
+range now I'll be selecting the
+range add
+it now next we'll Select
+East
+it followed by that we have
+South and finally we have West
+now we will name these according to the
+regions so the first one will be
+West next one will be
+South next one will be
+East and the last one will be
+Central click on next and here select
+new worksheet and finish and there you
+go you have the pivot table here now you
+might want to change the submission
+value so click anywhere on the pivot
+table and change it from count to sum so
+so that you have the summation of the
+total number of sales subcategory sales
+and grand total of sales Etc now here
+you can see all option now let's select
+Central and you'll get the details of
+the central region the grand total and
+the sales happening quantity of sales
+Etc now here can you can see the
+furniture office supplies technology and
+the grand total all in one single sheet
+now let's get back to the original sheet
+so as you can see this is the original
+sheet and in the original sheet you can
+see various more
+categories which is the which is the
+shipment mode customer customer segment
+country City State uh and you also have
+uh product name subcategory Etc so if
+you had added all these into this sheet
+you can also create a separate option of
+adding my new details to your pivot
+table so that is how the pivot table is
+created using multiple sheets so slic in
+Excel are software filters used along
+with Excel tables or Excel pivot tables
+over a large amount of data not just
+filtering out data but slices also help
+you with an easy understanding of the
+information being extracted and
+displayed on the screen now Microsoft
+Excel slices are compatible with Windows
+and Mac and Tosh operating systems now
+let us understand how to implement
+slicers in Excel so for that we might
+want to get back to the Practical mode
+that is starting our Microsoft
+Excel now we are on our Excel sheet and
+as you can see on my screen there is
+some data available on the Excel
+spreadsheet and this table is not just
+any table this table from Microsoft
+Excel is been converted into an actual
+table as you know by default Excel
+considers all the data which is been
+inserted into the spreadsheet as a
+database and to implement this license
+in Excel we must might want to create or
+convert the format of database into a
+normal table for that you can select all
+your data and just press contrl T and
+that will allow you an option called
+convert the data into table now since
+this table is already converted as a
+table we can directly start implementing
+or inserting slices into the
+spreadsheet now for that select all your
+data
+then going to the insert
+option and in the insert ribbon you can
+see the filters group and in the filters
+group select the option called slicer
+now you will be provided with multiple
+options since we have the columns
+employe ID employee name Zone
+designation Department salary employees
+date of birth and employees date of
+joining so we can choose any of the
+options available according to our
+columns and create the slices now let me
+select the first one that is Zone next
+designation department and let's also
+select employee
+name now press okay and there you go we
+have our
+slices now let us try to rearrange these
+slices all you can do is just select and
+drag them
+up
+and done now let us imagine that we want
+to see or take a look at the employees
+who are working in the EAS Zone then we
+have all the information displayed on
+the screen who are working in the East
+Zone they are Jack Tony bner Fred Etc
+and their Department designation etc etc
+all on one single screen so this really
+helps you while you're presenting your
+data in a presentation now for a change
+let's try to select the department now
+if your client wants to select the data
+from only analytics Department then you
+might want to select on the analytics
+key on the department slicer and there
+you go you have an employee called luk
+hops who works in the East Zone and his
+department is analytics and his
+designation is contract based and the
+salary he is getting is
+65,000 now similarly
+uh you can see that we have only
+selected analytics and your client also
+wants data from it support now you can
+see that analytics is gone but what if
+you want both analytics and it support
+then you have an option called select
+multiple then you can select analytics
+and it support and if you want HR you
+can also do that and in the zone if you
+want West along with East then you can
+do the same east and west and you have
+all the employees details and in the
+designation let's try to select U senior
+traine okay select multiple senior
+training and manager so that's how you
+do it so that's how it's done and that's
+how you implement slicers in Excel to
+simplify the filtering options using
+slicers during a presentation so what is
+suon Excel now you might want to
+calculate uh the total sum of sales
+right so let us assume that this is your
+entire stores sales data and you wanted
+to calculate the entire sum of sales so
+there is a sum function in Excel where
+you just have to you know select all the
+sales and apply some function onto it
+and you'll get the sum of all the sales
+right so with something like this you'll
+select all the cells and then you'll
+apply a sums function and you'll get the
+sum here and average everything right so
+this is fine but what if you just wanted
+to find the sales that are happening in
+only western region as you can see our
+column f is based on region so we have
+four regions South West East and Central
+so your manager asks you to find the
+sales happening in suppose say west
+region so how do you calculate it would
+you manually go into each cell and check
+if it's West and calc that will be time
+consuming right so what if you had a
+method which could do it for you just in
+a matter of few steps or few clicks
+right so that's exactly summs so so it
+will basically add a condition calculate
+the sum of sales where the region is
+equals to West simple to like or similar
+to Cal query right so that is exactly
+what we're going to do in Excel today
+that is using Summers now let me add
+here Sales of West Region now in the
+next cell let's add a suus function
+remember there are multiple sum
+functions in Excel so when you type in
+suum
+you can see so many options based on
+some right you just have some followed
+by that you have some if it is just some
+if not some ifs today we are
+concentrating on some ifs so not just
+some if we'll go to some ifs so we'll be
+having an option of placing multiple if
+conditions there so let's also try that
+more on that later now let's press tab
+to select our sum FS function now okay
+we forgot another important step so
+before we apply sufs we need to convert
+our table into a table format yes it
+looks table but right now it's not in
+Tabo format it is in the format of
+database we know that Microsoft Excel
+considers its data as a database by
+default so to convert the database into
+table just click anywhere on the data
+and press contrl T so that you'll have a
+new dialogue box and it will ask if your
+table has headers just make sure that
+you have tck in it our table does have
+headers so select okay
+now our database has been converted into
+a perfect table and it's ready for
+applying sums function so now you can
+see our database has been successfully
+converted into our table now let's begin
+with our sufs now again remember we are
+using some ifs here not Su if or sum so
+select sum if and press Tab and we have
+our sums function now the first step
+which colum are we looking at what are
+we finding out right which is a sum
+range what sum do you want for now we
+need some of sales so select the sales
+column and we have a simple key function
+here let's hold control again press
+shift and hold shift together so we're
+holding control and shift key together
+and now we're pressing lower Arrow key
+once yes the entire sales column has
+been selected comma Now where do you
+want to look so we want to look I mean
+which part of the table you want to
+fetch right so this is the region part
+we want to fetch right now so again hold
+control and shift together lower Arrow
+key the entire column is selected now
+the next last part so we want to look
+into the both of the columns that is
+sales column and region column now which
+type of data you want so for now we want
+Western type of data that is the sales
+data which is happening only in West
+right so we'll select this cell with the
+data as W or you can also manually enter
+it for now let's select the data so I'm
+selecting this F7 which has uh data as
+West right now let's close the
+parenthesis and press enter so there you
+go you have the sales happening in the
+western region now you can also try to
+format it in the form of currency so
+let's use uh dollars since it is based
+on American states so let's use dollars
+so there you go now we are having the
+sales data of West now let's try to copy
+the same to all the fores and uh now
+here let's type in
+East and this can be South right and
+this can be your
+central there you
+go right now you can also copy the same
+formula and make minor edits to it so
+here instead of f8 you can select uh
+East so where is East here and press
+enter so you have the sales related to
+East now let's try to edit F9 with South
+select South Region enter so you have
+South sales and what remaining is
+Central so let's edit Central as well
+and press enter so there you go right
+now you have all the separate sales data
+from west east south and Central now
+again uh you might want a bit more
+granularity data right or in your
+reports right like you wanted to find
+the sales data happening in West and you
+wanted to find out the category based on
+only Furnitures so your manager will ask
+you okay a fantastic job so now just
+give me another minute detail on the
+data I want to calculate the sales
+happening on West based on category
+Furniture right so he wants furniture or
+he wants office supplies only right you
+can also do that it's not an issue at
+all now let's try to copy this sell and
+paste it here and sales invest let's add
+another input here on
+furniture right now you wanted to
+calculate the sales happening in west
+region only on furniture so you can also
+do that now we can use the same formula
+as well just copy paste the formula here
+right and you can add few things here
+when you try to add a comma it will
+automatically generate the next criteria
+so it is expect that you are looking for
+adding another criteria right now which
+column you want you want category so
+let's select category you want to select
+all the cells same trick control shift
+lower key and again press comma and you
+wanted to select only uh Furniture so
+select on furniture cell there you go
+now press enter so there you go we
+successfully have the sales data from
+west region based on category Only
+Furniture so that's how you do suf in
+Excel you can also add a few more
+details to it like in Furniture you can
+also look only for tables so here you
+can see in west region we have furniture
+sales data and we have sales data of
+West Region based on furniture which
+includes only tables you can also do
+that using sums function in the same way
+all you have to do is select the
+subcategory column and select the cell
+which has the data as tables so this is
+how you use sus in Excel how to create
+drop- down list in Excel now for that we
+might want to switch to the Practical
+mode now we are on our Excel spreadsheet
+and here you can see I'm trying to
+create an calendar for the employees in
+the company where you might have to you
+know write down the day and month and
+year or week of your birth date or maybe
+your joining date or maybe also your
+last working day right this might be
+useful for all the employees to you know
+uh avoid them from writing it down
+manually so how do I create it so it
+takes a few simple steps all it takes is
+some data validation methods and also
+there is an exclusive video specifically
+made on data validation in Excel link to
+which is in the description box below or
+you can search it on our official
+YouTube channel now you can see that uh
+the word calendar is on the first cell
+that is A1 but we have four cells below
+it that is A3 B3 C3 three and D3 so you
+might want to add this to all the cells
+right like may be in the middle so for
+that you can do the option of mergin
+Center also there is a tutorial on
+mergin Center about all the options
+available in this particular thing so
+you can go through that also and uh here
+we have done the first step now all we
+need is day month year and week so in a
+calendar or in a month you'll have days
+from 28 29 30 or 31 days right so let's
+create a list or the drop down menu for
+that so that whenever you click it right
+so whenever you click on that particular
+cell you will have the list of all the
+days available right so let's get
+started with that let's create a new
+sheet so why are we creating a new sheet
+you won't want that all the numbers in
+your calendar sheet right over here
+right so for that so we are creating a
+new sheet and all the data will be
+available here so here let's write down
+the days first and here the second
+number also you can use the option of
+Flash Fill so that you can you know uh
+reduce the effort here so you can see
+the flash F option over here all you
+need to do is select the CES and drag
+them down until you get your required
+dates right so let's keep it till 31
+days there you go you have the days so
+these will be your days and here now the
+next option was month right yeah month
+and year now using the same flash F
+option you will you know add the months
+into your sheet so this will be
+Sunday so Excel has this smart flash F
+option where you can just drag the data
+and everything will be filled according
+to your requirements so Sunday to
+Saturday now the next one right that is
+your
+month so same as the before process
+we'll create
+January now you can use the flash Bill
+option and all the way up to December
+now the last one was the
+year so
+1990 and 199
+21 so you can select the cells and Flash
+Fill Up to
+2022
+maybe yeah 2022 should be good enough
+now this is the flashfill option you
+have here and also we have an exclusive
+tutorial on flashfill Al together you
+can go through it for a detailed
+explanation as well now coming back to
+the original sheet so this is where you
+create create your drop down list right
+so select the cell where you want to add
+the drop down list navigate to data and
+then here is your data validation menu
+so we have a variety of data validation
+options over here there is an exclusive
+tutorial on that you can go through it
+for now we'll look into the list option
+only because we want to create a drop
+down list right so here it will ask for
+Source click on the source here the
+source bar right Now navigate to sheet
+number two where we have the days
+options select the
+range so this will be your range and
+select okay also you can add some
+message here right what you can do is uh
+in case if there is an error or
+something right you don't want that to
+be happening so all you need to do is uh
+right down select from
+dropdown
+select from drop down
+only so this could be a message select
+from drop down only the title is Select
+options or just
+options in case if there's an error you
+can write down your title as invalid
+data and you can write down a messages
+please
+select from drop down
+only so um in case of someone tries to
+write as 32 or 33 to check the Integrity
+of your data validation then they will
+encounter an error and an error message
+and then they must be understanding what
+exactly they try to do and if it's
+correct or wrong right so this is to
+make sure that whatever the data you
+enter is correct and valid so okay and
+here you can see select from the
+dropdown list only options with option
+list as title and let's try to enter 32
+right and when you press enter you will
+see an error
+so the error messages invalid data
+please try to select from drop down only
+so you can go for a retry and select the
+drop down
+right so let's eliminate them and now
+select something from the drop down so
+let's take it
+as maybe 10 right so this is how you
+cleared the day one now let's try to do
+with the month same data validation
+option
+settings will be list and Source will be
+this
+one think I made a mistake here so let's
+cancel this and go back to sheet 2 and
+Brin in this as our week yeah now coming
+back to the month
+again it will be a
+list and the source will be in sheet 2
+navigate to the sheet 2 and select your
+range and input message the same
+options select from dropdown
+only and error alert title will be
+invalid
+data this one will be please
+select from drop
+down
+on
+it's okay and that's done now let's
+continue with here as well let's quickly
+do the
+same
+it will be a list Source will be in
+sheet
+to this is your list press okay and
+lastly the week same process it will be
+a list show will be in your sheet
+two input
+message
+options thatle invalid
+dat let drop down
+only
+right so your drop down list is ready
+now so the month will be anything So
+currently we have me and here can be
+anything anywhere so let's take it as
+997 and we can be you know the adjacent
+week so what was 10th of May
+1997 let's check our
+calendars
+was a
+Saturday so it was a Saturday and that's
+how you create drop down list in Excel
+and if you want you can also add borders
+to your calendar right
+so that's how it's done what is a pivot
+table a pivote table is a tool that
+summarizes and reorganizes selected
+columns and rows of data in a
+spreadsheet to obtain a desired
+report it does not actually change the
+spreadsheet data it simply pivots or
+turns the data to view it in different
+perspectives pivot tables are especially
+useful with large amounts of data that
+would be time consuming to calculate
+manually now let's understand the
+different components of a p table so
+there are four main components first we
+have rows when a field is chosen for the
+row area it populates as the first
+column in the pivot table similar to The
+Columns all row labels are unique values
+and duplicates are removed columns is
+the second component when a field is
+chosen for the column area only the
+unique values of the field are listed
+across the top then we have values each
+value is kept in a pivot table cell and
+displays the summarized information the
+most common values are sum average
+minimum and maximum finally we have
+filters filters apply a calculation or
+restriction to the entire table so let's
+jump over to Microsoft Excel and let me
+show you the data set that we will use
+in this demo so with India being ready
+for its 16th census in
+2021 that is next year it is a good time
+for us to analyze India's last census
+data from 2011 and see where different
+states and cities across India stood in
+terms of population literacy and other
+socioeconomic factors we will analyze
+this data by creating different pivot
+tables in Excel and explore some of its
+features so let's begin first I'll show
+you one of the features that Excel
+offers us so suppose I click on any cell
+and hit control+ Q you can see our
+entire table is selected and at the
+right bottom there's an option of quick
+analysis now you can see by default
+Excel has prompted certain features such
+as formatting we have charts totals and
+there's one more called tables now Excel
+by default has created some P tables for
+us now the first one you say sum of
+district code by state names next we
+have sum of sex ratio by state name then
+we have some of child sex ratio some of
+male graduates and some of female
+graduates by state name and there are
+others before creating our pivote table
+so let's have a final look at our data
+set
+so First Column you see is the city
+column so there are different cities
+from different parts of India then we
+have the state code we have the state
+name district code we have the total
+population followed by male and female
+population next you can see we have the
+total literates from each City then we
+have the male and female literates next
+we have the sex ratio then we have the
+child sex ratio next we have total
+number of GR graduates and finally you
+can see we have male and female
+graduates so using this table we'll
+create several peot
+tables now first of all let's create a
+peot table to find the total population
+for each state and sort it in descending
+order so you can see here we have the
+problem statement so our first P table
+will have the total population for each
+of the states in descending order so to
+create a peot table you can click any
+cell in your data go to the insert Tab
+and here left you can see we have the
+option to create a pivote table so let
+me select pivote table now my range is
+already selected the entire table and
+here I'll choose existing worksheet
+because I want to place my pivote table
+in the same worksheet and I'll give my
+location I'll point to cell Q5 now let
+me click
+okay you can see the peot table Fields
+appears here on the right now since we
+want to find the total population for
+each state so what I'll do is I'll drag
+my state name onto rows so here in our
+poo table you can see we have the
+different state names listed now we want
+the total population for each of these
+states so in the field list I'll search
+for total population which is this one
+and drag it under
+values you can see we have our sum of
+total population for each of these
+states by default Excel will sum any
+numeric column you can always change it
+to average minimum maximum anything you
+want now we want to sort this column in
+descending order so I right click go to
+sort option and choose Z to A that is
+largest to smallest you can see here in
+2011 Maharashtra had the highest number
+of population or the total population in
+Maharashtra was the highest then it was
+utar Pradesh we had Andra Pradesh and if
+I come down we have nagaland and andan
+and nicobar Islands towards the end so
+this is a simple P table that we created
+now the next problem we have is we want
+to find the total sum of literates in
+each City belonging to a state so let's
+see how to do it I'll click on any cell
+go to insert and here I can click on
+pivot table my range is selected I'll
+choose existing worksheet and give my
+location which is Q5 I click on
+okay now here we want to find the total
+sum of literates so what I'll do is
+first let me drag total literates column
+to values you have the total sum of
+literates from all the
+states next I want to see the sum of
+total literates based on states and
+cities so let me first drag state name
+onto rows and then we'll drag City onto
+rows you can see here we have our pavot
+table
+ready to the left of the pivote table
+you can see we have the state names and
+the cities per state and on the right
+you can can see the total number of
+literates from each City if I scroll
+down we have Assam then you can see we
+have
+Bihar and if I keep scrolling we have
+all the states harana Himachal Pradesh
+that's Jammu and Kashmir which has now
+become a union territory we have jarand
+Karnataka and other states as well
+moving
+on okay so the next thing we want to see
+is what is the average sex ratio and the
+child sex ratio for each state with that
+we also want to find the states that had
+the highest and lowest sex ratio in
+2011 so let's create a peot table for
+this I'll click on any cell go to insert
+choose P table click on existing
+worksheet I'll select cell Q5 and click
+on
+okay now since we want the average sex
+ratio and the child sex ratio so first
+I'll drag those columns either you can
+manually scroll and drag it or here you
+have the option to search for it so if I
+look for child you can see we
+have the same column listed can just
+drag it from there let me delete this
+and I also want the sex ratio so I'll
+place it on top of child sex ratio next
+we want to see it based on different
+states so what I'll do is I'll take
+state name and put it under rows so here
+you can see we have our pivot table
+ready on the left you can see we have
+the different state names listed and on
+the right we have the values now we want
+to find the average Now by default Excel
+will sum the numeric columns you can see
+it tells you sum of sex ratio and child
+six ratio so what you can do you can
+click on this drop down and go to Value
+field
+settings and here summarize values by
+you can choose average you can see the
+custom name it says average of Sixx
+ratio click on
+okay our entire column is now giving us
+the average sex ratio similarly for this
+column let me convert it into average
+I'll again click on the drop down go to
+Value field settings click on average
+and click
+okay and you can see here we have the
+average of child sex ratio for each of
+the states now the next question says
+which states had the highest and lowest
+sex ratio so we'll consider this column
+so we'll sort it in any order you want
+you can do it either ascending or
+descending let me sort it in descending
+order you can see we have our column
+sorted now so in 20 2011 Kerala had the
+highest sex ratio and if I scroll down
+to the bottom you can see himanchal PR
+this had the lowest which is around
+[Music]
+818 up next let's explore one more
+feature of peot table so suppose you
+want to see the top or bottom few rows
+of a peot table you can do that as well
+so here we have a question at hand we
+want to find the top three cities with
+the highest number of female grad
+so let's see from the entire pivote
+table how we can filter the top three
+cities so I'll go to insert click on the
+P table option go to existing worksheet
+click on Q5 and hit
+okay now since we want to find the top
+three cities I'll drag City column onto
+rows and then we want the female
+graduates so in the search bar I'll look
+for
+female and I'll choose this column that
+is female graduates and drag it here
+onto values so I have the sum of female
+graduates for each of the Cities now
+since we want to find the highest number
+of female graduates in the top three
+cities so let me first sort this
+column I'll sort it in descending order
+now we have it sorted now from this you
+can say that Delhi greater Mumbai and
+bangaluru are the top three cities but
+it's displaying all the cities for us so
+let's filter only the top three so what
+you can do is right click and go to
+filter under filter you have the option
+of top 10 I'll select this here I only
+want the top three so either you
+can go down like this or you can
+directly type three your column is
+already selected Ed let me just click on
+okay there you go we have the required
+pivot table ready and it only displays
+us the top three cities with the highest
+number of female
+graduates now the next thing we want to
+see is how to use a Slicer in a peot
+table so we have a question here What's
+the total population for all the cities
+in Rajasthan and Karnataka so let's
+create a p table for this and see how
+you can use a slicer to filter the table
+click on existing I'll click on a
+location this time
+q6 click
+okay now since I want the total
+population so I'll drag total population
+onto values and then I'll
+select the
+city onto rows and then the state name
+also I'll place it on top of City so you
+have in the P table all the states and
+their cities and on the right you can
+see the total population for each of
+these cities but our question is we want
+to find only for Rajasthan and Karnataka
+now for that what you can do is go to
+insert and create a slicer either you
+can create from this option or you can
+go to pivote table analyze option and
+here you have the option to create or
+insert a slicer I click on this and
+since we want to slice the table based
+on state that is Rajasthan and Karnataka
+I'll choose state name as my slicer
+field you can see this is my slicer here
+now you only want the data for Rajasthan
+and Karnataka so I'll search for these
+two so here we have Karnataka so let me
+select Karnataka
+first
+and I also want for
+Rajasthan so let me select Rajasthan
+also you can see in our pivote table we
+only have data for Rajasthan and
+Karnataka so this pivote table shows you
+different cities from Karnataka and the
+total sum of population from each of the
+cities and similarly we also have for
+Rajasthan moving ahead now we will see
+another very interesting feature of
+pivot that is how you
+can create percentage contribution of a
+table for example we have a question
+here what's the percentage contribution
+of male and female literates from each
+state now we want to see in terms of
+percentage and not as sum or average
+let's do
+that I'll create my pivote
+table click on
+existing and I'll select an empty
+cell okay now here since we want to find
+the percentage contribution of male and
+female literates so first I'll
+drag male literates onto values followed
+by female literates on two values by
+default it has summed up the male
+literates and female literates value and
+also I want to drag State
+column to rows
+so here you can see the sum of male
+literates and female literates per state
+I want to convert this as percentage
+contribution so what we can do is I'll
+select any cell and I'll right click and
+I'll go to so value as and here I have
+the option to select percentage of grand
+total so I'll select
+this you can see we have the percentage
+contribution of male literates through
+the total now if I sort this you will
+get to know which state contributed or
+has the highest percentage
+contribution so we have Maharashtra for
+male
+literates then we had utar Pradesh in
+2011 if I come
+down we had migala nagaland and Andaman
+and nicobar
+Islands as two states which had little
+or minimal contribution to literates
+similarly let's do it for female
+literates I'll go to so value as and
+select percentage of grand
+total so you can see here also
+Maharashtra utar Pradesh then Gujarat
+and all had the highest percentage
+contribution to female
+literates so this is another good
+feature to convert your data and see it
+in terms of
+percentage now moving ahead let's say we
+want to to find the bottom three cities
+from each state that had the lowest
+female graduates we can do that as well
+I'll go to insert click on
+pivot go to existing worksheet select an
+empty worksheet and click on
+okay now since I want to see based on
+States as well as cities so let me drag
+the state name first onto row and let's
+drag the city column onto
+rows next we want female graduates so
+let me look for female graduates in the
+field list I'll drag it onto
+values now we have the list of states
+and the respective cities and to the
+right of the P table you can see the sum
+of female graduates from each
+City now first I'll sort this column
+I'll right click go to sort and click on
+sort to largest now we have sorted our
+female graduates
+from shortest or smallest to largest now
+since I want to find the bottom three
+cities from each state I'll come to this
+cell right click go to filter and select
+top 10 now
+I'll replace top 10 with bottom and I
+want the bottom three cities from each
+state I have my column selected that is
+some of female graduates if I click on
+okay you can see here some of the states
+don't have three cities so you can see
+andan and nicobar islands has only one
+city that is Port player while the
+remaining you can find the bottom three
+cities with the lowest number of female
+graduates so Andra Pradesh had these
+three in Assam we had Naga then there
+was dier and ccha similarly if I come
+come down in harana we have palwal
+kathal and
+zind if I come further here you can see
+for Karnataka there gangavati this Rani
+benur and this scholar similarly you can
+see for Kerala as
+well now moving
+ahead now in the next example I'll tell
+you how you can create a calculated
+field or a calculated column in Excel
+with the help of a p table so in a p
+table you can create or use custom
+formulas to create calculated Fields or
+items calculated fields are formulas
+that can refer to other fields in the
+pivote table calculated Fields appear
+with other value fields in the pivote
+table like other value Fields a
+calculated Fields name May proceed with
+sum of followed by the field name so
+here we have a sales table that has
+columns like the items which has
+different fruits and vegetables and
+those have been categorized as fruits
+and vegetables we have the price per kg
+and this is in terms of
+rupees and we have the quantity that was
+sold now let's see if you want to find
+the sales for each item in the table you
+can create a calculated field so your
+sales column is going to be the product
+of price per kg and quantity so let me
+show you how you can do that with the
+help of a pivote table I'll create a
+pivote table
+first click on an empty cell
+hit okay now if you see on the top under
+pivot table analyze and under
+calculations we have the option Fields
+items and sets if I click on this drop
+down I get the option to create a
+calculated field or insert a calculated
+field and click on this I'll give my
+field name as sales and I'll select my
+formula I'll first click on price per kg
+and hit insert field I'll give a space
+hit shift 8 to give the product symbol
+and then I'll double click on quantity
+now this is my formula for sales that is
+price per kg multiplied by quantity I'll
+click on ADD and I click on okay if you
+see here there's a calculated field that
+is present in the pivote table fields
+which is seals but it did not add it to
+our original table or original table is
+the same but here we have added a
+calculated field which is present only
+in the pivote table list now we can use
+this it has already taken it under
+values now let's say I want to find the
+sum of sales for each item under each
+category you can see it here we have our
+category fruit and we have our category
+vegetable and under that we have
+different items like Apple apricot
+banana similarly in vegetables we have
+broccoli the carrots corn eggplant and
+others so this is how you can create a
+calculated field in a pivote table now
+this's one more good feature that Excel
+offers us in pivote table is to create a
+pivote chart so you can use your pivote
+table and create different charts so
+I'll show you how to do that if I go to
+insert here I have the option of
+recommended charts I click on this Excel
+gives me some default charts which you
+can
+use let's say I'll select
+this let me drag it a bit to the right
+here you can see I'll close this pivote
+field list this is a nice bar chart that
+Excel has created this is called a
+pivote chart now here you can see the
+category fruits and vegetables and the
+different fruit and vegetables or the
+items in the y axis you can see the
+total sales if you see from the graph
+guava meet the highest amount of Sals
+now if I sort this let's sort this
+first you can see it here fruit guava
+meet the highest amount of sales now
+since I sorted and changed my poo table
+the P chart also automatically gets
+updated similarly there are other chart
+charts also that you can create let's go
+to the insert Tab and let's click on
+recommended charts again let's look for
+a pie chart so this is a pie chart that
+you can create let me click on okay so
+here is our pie chart and each Pi
+represents a certain item and the pi
+that has the highest area represents it
+had the highest amount of sales in this
+case you can see it is quava and
+similarly we have other items as well
+this is fruit
+banana that's
+corn and we have spinach and
+others let's explore a few other charts
+so first I'll click on my pivot table go
+to insert and under recommended charts
+let's now select a line chart if I hit
+okay move it to the right so this is a
+line chart you can see it starts from
+guava which had the highest amount of
+sales then it
+drops and in the x-axis you can see the
+different items similarly when it starts
+with the vegetables broli made the
+highest amount of sales with 2,800
+rupees and our lowest was eggplant at
+900 rupees for fruits papaya sold the
+least at 700 rupees let's take another
+chart I'll go to insert under
+recommended charts let's see this time
+we'll see a bar chart now this is
+a horizontal bar chart and not a
+vertical one we just saw a vertical
+column chart like this this is an
+horizontal bar chart now you can always
+increase and decrease the size of these
+charts let's explore a last chart let's
+take the area chart for now so this is
+an area chart again it looks similar to
+the line chart it starts with guava
+which had the highest amount of seals
+similarly papaya under fruits had the
+lowest amount of Sals under vegetables
+it was broccoli and finally eggplant
+made the lowest amount of sales under
+vegetable now let's go to our first
+sheet and summarize what we have done in
+this demo for pivot tables in Excel so
+we had our
+data this is a 2011 Census Data from
+India we have had the different cities
+the state names and we had the total
+population total literates female
+literates male literates we had the sex
+ratio total graduates and other
+information so we began by understanding
+how to create a simple pivote table
+where we calculated the total population
+for each state and sorted it in
+descending order we found that
+Maharashtra utar Pradesh had the total
+population in
+2011 then we saw another preot table
+where we calculated the total sum of
+literates in each City belonging to a
+certain state so you can see we had the
+different state names and the cities
+under each
+state then we saw another feature where
+you could calculate the average of a
+certain numerical column so here we
+calculated the average sex ratio and the
+child sex ratio for each state and found
+out which one had the highest and lowest
+sex ratio
+you after that we saw how you could find
+or filter
+tables we saw how to find the top three
+cities with the highest number of female
+graduates we found out that Delhi
+greater Mumbai and bangaluru with the
+top cities with highest number of female
+graduates next we saw how to use Slicer
+in a p table so we sliced our table
+based on Rajasthan and Karnataka State
+and saw the total population for all the
+cities in Rajasthan and Karnataka
+in the next
+sheet we explored another feature that
+was to find the percentage contribution
+of male and female literates from each
+state then here we saw how to find out
+the bottom three cities for each state
+having lowest female graduates one thing
+marked that some of the states did not
+have three cities for example Andaman
+had only one city that was Port player
+but the others we found out the bottom
+three cities that had the lowest female
+graduates finally we looked at how to
+create a calculated field in a pivote
+table so we saw how to create a
+calculated field called sales and then
+we explored how to create different
+charts and graphs so this was an area
+chart that we saw there a column chart
+we also saw or looked at a bar chart
+that was a horizontal bar chart
+similarly we saw how to create a pie
+chart as well now at times you might be
+working on a really important
+spreadsheet on your Excel or you might
+have the sales data of your company or
+some confidential data of your
+organization and you might have shared
+the file with your junior or you might
+face some paret issue and you forgot to
+save or you missed to save your data and
+what to do if you cannot save your data
+and how can you recover it right so this
+might be a really big hassle today we
+are exactly to discuss the same and see
+how to do it in multiple ways so Excel
+comes up with an option to automatically
+save the data also it will try to warn
+you that your data is not being saved
+would you like me to save it or not
+right so we'll do the first one so here
+you have the autosave option you can
+either say okay to it or you can ignore
+it in case if you ignore it if you
+choose to ignore it or if you choose to
+manually save it and then if you want to
+close the file remember we haven't saved
+the file if you if you wish to close it
+Excel will automatically come up with a
+dialogue box asking you want to save
+your changes to your data.
+xlsx that means it is asking you if I
+have to save it or not let's try to
+ignore this and forcefully let's try to
+close it you can go to task manager
+option here we are trying to simulate
+the option of bar issues so we are
+forcefully closing Excel without saving
+any
+data so we have closed it now here you
+can see we do not have Excel running in
+the background now when you directly
+open or try to start Excel when you get
+the power backup again and if you want
+to open that same data file it will ask
+you the document recovery option it says
+you have closed the file without saving
+the changes and you can choose to you
+know come back from the same place where
+we left last time okay now that was the
+paret issue and now let's see uh another
+way okay let's imagine that somebody uh
+eliminated few important data files from
+your organization's confidential data
+employee ID employee name Etc and again
+uh let's simulate the force uh close of
+the
+Excel now we are closing it again
+without saving no data was been
+saved now it will also ask the same uh
+data it has another version here the the
+original one which wasn't saved so here
+you can recover the same file again
+however it was initially so you can save
+it and it will get back to the original
+place so this was one way also we have
+another few multiple ways just we have
+to navigate to file and here you can
+open and in the open menu you have a
+button called recover unsaved workbooks
+not just the current workbook it will
+also have all the remaining files which
+are related to excel that are not saved
+so here you have a few workbooks which
+was not saved this is one option and we
+also have another option we can just
+navigate to info and there you have
+another option called manage workbook
+and in the manage workbook you have
+another option called recover unsaved
+workbooks which will also redirect you
+to the same file that is Microsoft
+Office unsaved files and you'll have all
+the unsaved workbooks which are related
+to excel so this is how you can Rec
+cover the unsaved data in Excel using
+multiple ways first thing Excel will
+automatically ask you if you have to
+save the file or not and in case if you
+forget to save it you can directly
+recover it by default by Excel it will
+automatically show that some folder was
+not saved on the left side of your Excel
+spreadsheet by default and in case if
+you missed out on that one you can
+manually go to file and you can either
+choose open option or info option to
+recover the unsaved folders from your
+default file location from your PC that
+is Microsoft Office unsaved files
+Etc which will have all the list of all
+unsaved workbooks related to Excel and
+with that we have reached to the end of
+this session on top 10 Advanced data
+analytics steps and tricks using Excel
+should you need any assistance like pbd
+data sets or any other resources used in
+the session please feel free to let us
+know in the comment sections below and
+our X pass we'll be happy to assist you
+as early as possible until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

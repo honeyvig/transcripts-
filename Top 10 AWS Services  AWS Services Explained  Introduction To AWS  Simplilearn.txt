@@ -1,0 +1,582 @@
+hello everyone and welcome to today's
+video on top AWS services at simply
+learn now before you move on I request
+you guys that do not forget to hit the
+Subscribe button and click the Bell icon
+for further updates so guys let's dive
+straight into the top AWS services so
+guys our first service is Amazon ec2
+which stands for elastic compute Cloud
+so basically what it is Amazon ec2
+basically lets you rent virtual
+computers which is servers in the cloud
+you can use them to run your
+applications without having to buy your
+own physical servers and you'd be
+questioning that why this service is so
+important so guys the reason is that
+businesses no longer need to invest in
+expensive physical servers which can be
+difficult to maintain and scale so ec2
+allows companies to adjust their
+computing power based on the current
+needs ensuring they only pay for what
+they use this flexibility helps
+companies to save cost during low
+traffic periods and manage high demand
+during peak times all without worrying
+about maintaining physical
+infrastructure now let me propose a case
+study where a company named Airbnb used
+ec2 so guys this was the challenge
+Airbnb experienced issues with scaling
+during high traffic periods such as
+holidays and during major events which
+leading them to systems slowdowns and
+potential
+outages managing their own server was
+very very costly and timec consuming as
+they had to predict demand and manually
+add capacity which often led to over and
+under poisoning now I'll explain what
+over and under poisoning is but let us
+first look at what are the issues they
+faced the first one they had the scaling
+issue which means that high traffic
+periods during holidays caused slowdowns
+and outages then there was a problem of
+server management managing physical
+servers was very expensive and complex
+then they had unpredictable demand it
+was very hard to predict traffic spikes
+which led them to capacity problems then
+there was manual capacity addition it
+also required manual intervention to
+scale up during our resources and
+finally they had over or under poisoning
+which mean that often they had many
+servers or few servers which led to
+wasting resources or causing slowdowns
+now what was the solution guys so after
+moving to Amazon ec2 Airbnb could
+automatically scale its infrastructure
+Up and Down based on the demand ec2s
+Pace as you go model allowed them to
+avoid the cost of over provisioning and
+handle Peak traffic seamlessly so guys
+there is some statistics which I want to
+share that Airbnb infrastructure scaled
+up by 3x during the peak period using
+ec2s autoscaling feature which led them
+to zero downtime during high demand
+Seasons they also reduce infrastructure
+cost by 20% by paying only for the
+capacity they needed now let us move to
+our second service so guys our second
+service is Amazon S3 or simple storage
+service what it is guys basically Amazon
+S3 is a cloud storage where businesses
+can store and retrieve any amount of
+data like documents videos and backups
+why it was important guys basically S3
+provides virtually unlimited Secure
+Storage that automatically scales with
+your needs it eliminates the need for
+businesses to purchase and manage
+physical storage Hardware S3 also
+integrates easily with other AWS
+Services making it a key component for
+storing large amount of data like backup
+application files or even media
+streaming content its high durability is
+around
+99.99% which ensures that your data is
+safe and always accessible now let us
+look at a case study of Netflix so guys
+during 2012 Netflix faced a massive
+outage due to a failure in their data
+storage system resulting in downtime
+that caused them millions in Lost in
+Revenue their existing infrastructure
+could not handle the massive amount of
+content that required constant
+maintenance now there are some of the
+problems with Netflix face
+the first one is massive outage which
+means that Netflix experienced a major
+data storage failure in 2012 then they
+had to go through a significant downtime
+this outage resulted in millions of
+dollars in Lost Revenue they had
+inadequate infrastructure their existing
+storage system couldn't handle the large
+Content Volume then there was
+scalability issues and also constant
+maintenance the infrastructure struggled
+to scale up with the growing user demand
+and also caused them lot of problems now
+after migrating to Amazon S3 Netflix was
+able to store massive amount of data
+S3's scalability allowed Netflix to
+handle Global content distribution
+without interruptions or data loss now
+let me show you some statistics guys so
+Netflix now streams to over 230 million
+users globally with S3 handling 1,000
+petabytes of video content approximately
+the switch to S3 reduced Netflix data
+loss risk to near zero and downtime
+dropped by
+90% so guys this was one of the case
+study where Netflix used S3 and this was
+the amazing result that they got now let
+us see of the one of the next Amazon web
+services which is Amazon RDS or Amazon
+relational database service so what it
+is guys RDS is a managed database
+service that that takes care of setting
+up maintaining and backing up databases
+for you why it is important guys because
+managing databases can be timec
+consuming it involves tasks like
+software updates backups and scaling RDS
+automates these tasks freeing up
+valuable time for businesses to focus on
+the other core activities with features
+like automated backups multizone
+availability and easy scaling RDS helps
+businesses to ensure their databases are
+always running smoothly and securely
+without the headache of manual
+intervention now we'll take again the
+example of Netflix so guys during this
+phase also Netflix suffered from a
+critical database outage leading to a
+data corruption and millions in losses
+managing on promises database was very
+very difficult as backups scaling and
+Disaster Recovery requires significant
+resources and manual effort now these
+are some of the problems which Netflix
+faced the first one was critical
+database outage where Netflix
+experienced a major database failure
+then they had to go through data
+corruption where this outage caused
+significant data corruption there was
+massive losses because there was
+incident resulted in millions of dollars
+in losses then there were some on
+promise challenges like managing their
+on promised database was very complex
+and inefficient and there was also lack
+of automation because manual database
+management increased the risk of failure
+so guys by using Amazon's RDS Netflix
+automated database backups patching and
+scaling RDS multier deployment provided
+High availability and fall tolerance
+which ensure that data losses during the
+failure outages are very very minimal
+now there is some statistics that
+Netflix reduces database recovery time
+from hours to minutes in using RDS their
+database operational cost also dropped
+by 50% and due to the automated
+management features so see how this
+service was very useful for Netflix now
+let us move ahead and try to understand
+our next service which is AWS Lambda but
+before we discuss this service just a
+quick info guys simply learn has got
+Cloud Architects master program you can
+Master AWS Azure Google Cloud with the
+cloud architect course you will build
+expertise in AWS Microsoft Azure gcp
+with the cloud architect certification
+course you'll also receive exam vouchers
+which is included on any Azure course
+you will access official AWS author
+self-learning content plus you'll also
+Master Cloud architectural principles
+design and also deploy a scalable
+service on cloud platforms so guys hurry
+up now and join the course the course
+link is mentioned in the description box
+now let us move ahead in discussion of
+what is AWS Lambda so guys Lambda lets
+you run your code in the cloud without
+having to manage servers basically it
+automatically scales up when needed and
+only charges for the time your code runs
+why it is important guys because Lambda
+allows businesses to run code without
+worrying about servers or infrastructure
+paying only for the compute time used
+this means companies can handle
+fluctuating traffic without having to
+over provision servers which means that
+it will help in Saving cost and reducing
+complexity Lambda is ideal for Ev driven
+applications where tasks are triggered
+based on the specific events such as a
+file upload or a user action now there's
+a company called irot guys so irot
+needed to process large volumes of data
+from millions of Roomba devices
+worldwide managing servers to handle
+this real-time data was very very
+complex and expensive especially when
+usage fluctuated now there was some
+problem guys with this that they had
+high data volume they had real time
+processing problems they had a problem
+of server management then the cost
+challenges also came up and the
+scalability issues then iroot adopted
+AWS Lambda servoless architecture to
+automatically Scale based on the number
+of incoming requests they no longer had
+to manage servers or pay for Ideal Time
+as Lambda only charges for the exact
+compute time used so guys what was a
+result that iroot saw a 90% reduction in
+infrastructure cost by using lambda's
+paper use model Lambda processed over 20
+million events per day scaling
+effortlessly without manual intervention
+so Guys these were the success story of
+iroo by using the AWS Lambda service now
+let us move ahead and discuss about our
+next service which is Amazon cloudfront
+so guys what is cloudfront basically
+cloudfront is a Content delivery Network
+that speeds up the delivery of websites
+videos and other data to the users
+around the world why it is important
+guys because cloudfront reduces the time
+it takes to deliver the content to users
+particularly those located far from the
+origin server this is crucial for
+businesses that need to provide a fast
+and seamless experience to Global
+audiences whether it's delivering videos
+web applications or large files
+cloudfront ensures low latency access
+improving the user satisfaction and
+engagement so guys you have heard about
+a company called slack slack once
+experienced High latency and slow
+message delivery for users located far
+from their data centers this created
+delays and inconsistent user experience
+especially for for Global teams
+collaborating in real time now let us
+see what were the problems faced by
+slack they had a problem of high latency
+where I have told you that users far
+from Slack's data center experience
+significant delayed in massage
+transmission the slow massage delivery
+was there geographical impact was one of
+the problem where the latency issues
+were more pronounced for Global teams
+collaborating across distant locations
+then if we talk about realtime collab
+collaboration were also hindered this
+delayed caused challenges for teams that
+rely on real-time communication which
+finally affected and disrupting the
+workflow and finally they had
+inconsistent user experience so guys by
+implementing Amazon's Cloud front slack
+was able to cache and deliver content
+from Edge location closer to the users
+reducing latency and improving overall
+performance Cloud front's integration
+with AWS Shield also improved security
+against potential dods attacks now after
+using the service slack reduced the
+latency by 50% globally providing
+realtime messaging to 10 plus million
+daily active users they also experienced
+40% faster file uploads and improved
+performance for International Teams so
+guys this was a success story of slack
+now let us move ahead and discuss about
+our next service which is Amazon EBS or
+elastic book store so guys what it is
+basically Amazon EBS provides high
+performance storage for application
+running on ec2 instance it is like a
+virtual hard drive that you can attach
+to your ec2 server why it is important
+guys because EBS offers fast reliable
+and persistent storage for applications
+that require consistent high performance
+storage like databases or Big Data
+applications businesses can scale
+storage up or down as needed EBS
+automatically backs up the data with
+snapshots which ensures minimal downtime
+and data loss so guys there's a company
+called Expedia which faced performance
+issues with their existing storage
+system it struggled with to handle high
+volume of transactions during Peak
+booking times leading to slow response
+times and frustrated customers they had
+performance issues they had high
+transaction volume problem like as I've
+told you during the booking busy periods
+then they had slow response time where
+customer experienced slow response
+affecting their ability to complete
+bookings efficiently then they had the
+problem during the peak booking they fa
+challenges where the problem was
+basically the performance issues now the
+customers were also frustrated so what
+xedia did was xedia migrated their
+databases from Amazon EBS which offered
+consistent low latency performance and
+automatic scaling to meet high demand
+and periods EBS also provided robust
+snapshots backups for Disaster Recovery
+as a result Expedia improved booking
+transaction speeds by 35% ensuring fast
+response time during their Peak Travel
+Seasons they also increased their data
+through output by 2x supporting millions
+of daily searches queries without the
+delays so this was a success story of
+Expedia guys now You' be excited to know
+the next success story so our next a
+service is Amazon VPC or Amazon virtual
+private Cloud what is Amazon VPC
+basically VPC allows businesses to
+create a secure private Network in the
+AWS Cloud giving them control over how
+their data and applications interact
+with the internet why this is important
+guys basically VPC provides businesses
+with full control over their Cloud
+Network including IP addresses subnets
+and security it allows businesses to
+securely connect their on promises
+infrastructure to the cloud and ensures
+that sensitive data is kept separate
+from the public internet for Industries
+like finance and Healthcare this level
+of security is critical for meeting
+Regulatory Compliance what was the
+challenge guys so there's a company name
+called Capital One Capital One needed a
+secure and scalable Cloud solution to
+manage its sensitive financial data
+while meeting strict regulatory
+requirements they on promises
+infrastructure was expensive to maintain
+and difficult to scale securely so guys
+they had problems like need for security
+scalability challenge they had a problem
+of Regulatory Compliance they had high
+maintenance cost and they it was very
+difficult to scale securely so guys by
+creating an isolated virtual private
+Cloud Capital One securely migrated its
+application and data to AWS VPC gave
+them full control over their networking
+environment ensuring compliance with
+data privacy regulations while reducing
+infrastructure costs Capital One
+basically reduced their infrastructure
+management cost by 30% by using the VPC
+they achieved
+99.99% of uptime for critical
+applications thanks to secure scalable
+crowd infrastructure of VPC so guys this
+was one success story of Capital One now
+let us look at another Amazon web
+service which is Amazon IM am or Amazon
+identity and access management what it
+is guys basically I am lets businesses
+control who can access their AWS
+Resources by setting permissions and
+user roles it is important because I
+ensures that only authorized individuals
+can access sensitive resources reducing
+the risk of security breaches it's a
+critical tool for controlling access in
+large organizations where multiple teams
+need different level of access access to
+Cloud resources IM am also supports
+multiactor authentication which adds an
+extra level of security Now what is the
+challenge guys which a company named
+autodex faced so autodex had a global
+Workforce and managing users to access
+various AWS resources was becoming very
+complex they needed a way to ensure that
+only authorized users could access
+sensitive data and resources while
+maintaining security across the board so
+the a problem of complex user access
+management then there was a need for
+authorized access then there was a
+global Workforce challenge with Autodesk
+faced then they had to also maintain
+their security standards and they had a
+problem of Access Control they needed a
+solution on access control where a more
+efficient and a scalable system was
+required by Autodesk to simplify and
+secure user access management across the
+AWS resources
+so guys Autodesk implemented AWS am to
+manage permissions and access control
+across their Global team with IM am they
+created detailed user roles and policies
+ensuring secure access based on need and
+reducing the risk of data breaches so
+guys Autodesk reduced unauthorized
+access incidents by 60% after
+implementing imem they decrease the time
+spent on access management by 40% thanks
+to the im's centralized control system
+and that's was possible so this is how
+Autodesk solve this problem now let us
+move ahead and discuss about our next
+service this is a very amazing service
+guys its name is Amazon squis or Amazon
+simple Q service basically Amazon sqs is
+a messaging service that allows
+components of systems to communicate
+with each other by sending and receiving
+messages between distributed
+applications why it is important guys
+because us allows systems to scale
+independently by decoupling tasks
+meaning different part of an application
+can work on their own schedule without
+being dependent on one another it's
+useful for batch processing even driven
+applications and microservices I know it
+sounds bit of a technical jargon but
+these are some of the scenarios where
+sqs is used so guys you have heard about
+this famous company called Disney plus
+Disney plus face challenges in managing
+their large volume of user request
+especially during their release of
+popular shows and movies handling
+real-time requests without overloading
+the system was a constant issue they
+faced problem like high user request
+volume realtime request handling then
+system overload risk was there because
+the platform constantly struggled with
+the risk of system overload during Peak
+viewing times scalability challenges
+were also there because handling large
+number of concurrent users require
+required scalable solution and also
+consistent user experience means they
+ensure to have a smooth and
+uninterrupted experience for all the
+users during high demand periods which
+was not happening now Disney plus
+adopted Amazon sqs to queue and process
+task efficiently decoupling their
+application components this ensured that
+tasks such as streaming requests were
+processed smoothly even during high
+traffic periods and finally Disney plus
+handled over 1 million requests per
+second during Peak streaming periods
+with sqs ensuring no message was lost
+the use of sqs improved systems
+performance by 25% enabling Disney plus
+to deliver uninterrupted streaming
+experiences so guys this is a success
+story of Disney plus now let us move
+ahead and discuss about our final
+service can you guess it guys yes it is
+Amazon Dynamo DB Dynamo DB is a fully
+managed nosql database service that is
+fast and scalable it is ideal for
+applications that need to handle large
+amount of data with low latency so this
+is the thing now you would be wondering
+why Dynamo DB is important so guys
+Dynamo DB is very essential for
+applications that experience rapid
+growth or fluctuating demand unlike the
+traditional databases they might
+struggle to keep up the volumes of
+traffic but Dynamo DB can automatically
+scale up to handle millions of requests
+per second this is just something which
+I told you let me elaborate this by the
+story of a company called Lyft so guys
+Lyft needed a database that could handle
+millions of ride request in real time
+but their traditional database systems
+could not scale efficiently to meet the
+demand leading to slow response time
+during busy hours they had problem like
+real-time data handling scaling
+limitations they had they had high
+request volume they had slow response
+times and also they needed a scalable
+solution for this problem now here comes
+the Dynamo DB left switch to Amazon's
+Dynamo DB which provided fast scalable
+and serverless architecture with no SQL
+database Services Dynamo DB ability to
+handle millions of requests per second
+ensure that lift could match drivers
+with riders in real time without latency
+now this is the thing which LIF has seen
+left processed over 2 million ride
+requests per day with Dynamo DB scaling
+automatically to meet the peak demand
+they improved the response time by 70%
+ensuring a smooth experience for both
+drivers and Riders this is how left
+solved this problem what amazing service
+is D mod now guys you have seen the top
+10 important AWS Services I hope so you
+would have liked this video please do
+not forget to hit the Subscribe button
+and click the Bell icon for further
+updates thank you guys for watching this
+video craving a career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back staying ahead in your career care
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here
