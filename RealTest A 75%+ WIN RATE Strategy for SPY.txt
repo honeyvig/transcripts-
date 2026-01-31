@@ -1,0 +1,751 @@
+uh in today's video I want to show you
+guys how to convert one of my um pans
+script systems into real test and run
+some back tests so this will be our
+first um real test script on the channel
+let's get started so for today's video
+I'm going to use my um script that I
+made for this video a simple pullback
+strategy with a 75% plus win rate um it
+was created by Joe marwood um this is
+the original video if you want to go and
+check that out my script is slly
+different to his but not much so this is
+what the script looks like on trading
+View and what it's doing is buying dips
+in the Spy ETF below a short-term moving
+average while uh the uh spy is trading
+above a long-term moving average so this
+is a type of mean reversion system but
+it does have a trend filter it's a long
+only buying dip uh mean reversion type
+system all we need to know is that this
+system buys when price closes below this
+short-term moving average but Above This
+200 period And it sells when price
+closes back Above This short-term moving
+average or if price Falls 10% and closes
+below our stop loss so we're trading one
+position on spy 100% of our account
+balance on this particular system and
+these are the performance metrics so
+it's not a fantastic system but as I'll
+show you in the real test version with a
+couple of tweaks we can beat Buy and
+Hold with this system which is the
+Benchmark that we should always be
+aiming for When developing stock market
+systems so with all that said let's copy
+the source code if you come to my
+website there'll be a link below and
+copy the source code jump over to real
+test and if I paste this um Pine script
+at the top of my real test script we go
+through each line or each section and
+convert it into real test um real test
+coding language and then we'll be able
+to do things like this with our
+optimization
+um settings I can run 81 tests and you
+can see how quickly this happens we just
+ran 81 one tests across um 8,000 plus
+days of um historical data and we've
+just optimized across all these
+different parameters so we've changed
+our slow period moving average length
+our fast period moving average length
+we've used leverage this is no leverage
+this is 50% leverage this is 100%
+leverage we've changed our stop-loss
+distance to 20% and we've tested 1% 15%
+20% all of that in a matter of seconds
+3.9 seconds to be exact and now we can
+sort through the list
+and perform some optimization we can
+look for settings that produce metrics
+that beat The Benchmark Buy and Hold
+like this 8.69% with a 24% draw down
+beats if I open up the summary report
+and scroll down here's our Benchmark our
+Benchmark is buying and holding spy we
+get an 8% annual rate of return with a
+56% Max draw down which is obviously
+pretty
+nasty this version of the script beats
+that rate of return while harving the
+draw down so yeah powerful stuff here
+with real test let's get into converting
+the code section by section so I've
+already written out this code obviously
+I'm going to delete everything and start
+from scratch to walk you guys through
+what each section is and how we format
+this so everything under the notes um
+category here or section is a comment
+this whole thing is just one big comment
+that is not read by the P the sorry real
+test back testing system so we can
+ignore all of this in our code but I'm
+using this as reference material the
+first thing we need to do is import our
+data or data for you Americans and um we
+have a couple of options here in the
+past video on the channel I showed you
+guys how to import Norgate data and get
+that set up um that's the preferred
+method that's the best method to use
+because the Norgate historical data is a
+lot more accurate than free data sources
+but we also have Yahoo um data which we
+can use so I'll show you how to do both
+methods today I'm going to copy over my
+code here for the import section and
+I'll break it down with you guys now
+something I didn't show you guys when we
+set up real test was how to create your
+own watch lists so for today's video I'm
+going to be importing the Spy ETF and to
+do that we need to create a static watch
+list or this is how I'm going to do it
+there there's I think there's a
+different way to reference one of the
+inbuilt or default watch lists here but
+I'm just going to create a static watch
+list so click create come up here to
+stock market choose exchange traded
+product uh ETF exchange traded fund and
+then down here we can search for spy and
+now now here are all the spy ETFs you
+can select whichever one you want if
+you're using Norgate data I'm going to
+select this one and then I'm going to
+click add and I'm going to name this spy
+ETF and click save I've already created
+this watch list so it says duplicate
+watch list name but but yeah you would
+just click save and exit and now we have
+our watch list I could also add the um
+Au spy if I wanted to or I could add
+multiple ETFs to this watch list and we
+could test this system across multiple
+ETFs with multiple positions but for
+today we'll stick to just spy so this is
+our import section for Norgate we're
+referencing Norgate we're referencing
+our custom watch list if I hit full stop
+this will list all of the watch lists
+available to me from Norgate if I go
+down to the bottom here here is my spy
+ETF double click that this is the file
+we're saving to doesn't matter what you
+call it I'll call mine
+Spygate RTD now down here we have the
+Yahoo version of uh importing spy which
+is the free Yahoo data source so for
+this Source you don't need a
+subscription Norgate does require
+subscription as I went over in the
+previous installation guide video Yahoo
+doesn't need one so if you're on a free
+trial with real test or you're just not
+ready to buy Norgate yet um you can
+follow along with the Yahoo version of
+this code um if you highlight all of
+this and hold control and hit forward
+slash that will comment that section out
+and you can highlight this section
+control/ to uncomment it now we're
+working with this version of the import
+data and I haven't mentioned this but
+the source code to this entire script
+will be below in the pin comment and in
+the video description if you want to
+follow along so that's our data import
+complete next up we just specify the
+dates that we want to import from so
+using the earliest and latest keywords
+will just import the maximum amount of
+historical data from this data source
+that's fine for today's video the next
+thing we need to do is specify our
+script settings or system settings again
+I will copy this code over paste it in
+here and scroll down so if you're using
+Yahoo you would uncomment this line and
+comment this line um for the rest of the
+video I'm going to use Norgate because
+um I just think it's a better data
+source because it is a better data
+source and at the endend of this video
+we'll um compare Norgate to Yahoo in the
+back
+test but for now let me comment that out
+uncomment that so our script settings we
+are saying which historical data source
+file we want to reference from so when
+we import from Norgate or Yahoo our
+symbols will be saved to this file then
+we import that file directly from our
+script settings next we have the start
+date un like
+our import section in the settings
+section this specifies when our back
+test starts so we can import any date
+range we want and then specify what part
+of that date range we want to test over
+this allows for things like walk forward
+testing um just window analysis time
+window analysis where we can see how our
+system perform during certain periods of
+time or market conditions um for today's
+test I'm going to leave this as earliest
+and latest we'll leave bar side is daily
+that's the smallest bar size you can
+have in real test it is an endof day
+system it does not have tick data for
+intraday testing um but that's fine for
+today's video use available bars if I
+click on this line and hit F1 this will
+bring up the help window and explain
+what this does use available bars
+controls what happens when there are not
+enough bars to calculate a simple
+average or other indicator so for the
+RSI for example if we have a 14 period
+RSI and we only have seven bars on our
+chart or our test is running on the
+seventh bar we don't have enough bars to
+accurately calculate the 14 period
+RSI by setting this to false the
+indicator will just not be used it will
+be um Na is the equivalent in pinescript
+which means it has no value and our
+system should not act on any of that
+indicator information if I set this to
+true however a 14 period RSI on the
+seventh bar of our back test we'll use a
+seven period RSI to calculate its um
+value so it we'll use the available bars
+to calculate the moving average or
+indicator value generally speaking you
+you want this to be false I think it's
+false by default in the if you don't
+specify this I'm pretty sure it's false
+but I'll leave mine as false just so
+that I know that it's definitely off
+currency will stay as USD since we're
+trading in an American market and our
+count size will stay as 100,000
+that's just a good Benchmark to start
+with in all of our back tests so that's
+it for our script settings the next
+thing is our parameters now this is
+where things get a little bit
+complicated I'll simplify things to
+start with and then I'll show you what
+all these from to step def things are so
+let's get rid of all of these so in the
+original script um go back and watch the
+original video if you if you want to
+know the details of the system
+parameters but as I mentioned we're
+basically buying dips below a short-term
+moving average only while price is
+trading above a long-term moving average
+and we're using a 10% stop loss that's
+what these parameters here are saying
+our slow length ma is 200 bars our fast
+length moving average is 10 bars our
+stop- loss percent is 0.1 which is
+10% and our account balance percent
+allows us to use leverage so by default
+this will use 100% of our account if we
+set this to 150 now we're using 150% 2:
+1 would be 200% of our account um I'll
+leave it as 100 for now and later on
+towards the end of this video we'll come
+back to this setting this section of um
+script or system parameters and I'll
+show you guys how we can optimize or run
+multiple back tests across multiple
+ranges of uh parameters here so that we
+can um optimize our system now it's
+important to avoid curve fitting when
+we're doing this curve curve fitting is
+the act of massaging your system
+parameters so that they perform
+fantastic on the historical data you
+feed it but at the cost of reducing its
+resilience to Randomness in the future
+so in other words um we're trying to
+make robust systems now obviously the
+future will always be different to the
+past that's why trading is so difficult
+and it's not obvious that something that
+worked in the past will continue working
+forever but curve fitting or over
+optimization is a dangerous trap we need
+to avoid um that's something we'll cover
+in more detail in future videos it
+probably deserves its own video entirely
+but yeah I just want to footnote here
+when we do get to optimizing the script
+be aware that it is a dangerous thing to
+do if you're not experienced and and
+educated on the risks of over optimizing
+or selecting the optimal parameters at
+the cost of reducing robustness of your
+system anyway that's a information dump
+that uh will make more sense as you
+learn more about real test and system
+development in general which again
+there's tons of info on my channel um
+and there's some fantastic books out
+there Trend following by Michael Koval
+is a good book stocks on the Move by
+Andreas kenau um anything by Nick Raj is
+obviously fantastic if you know who Nick
+is he's got some great podcast
+interviews out there about system
+development and these Concepts so go and
+check them out if all of this sounded
+completely alien and new to you anyway
+these are our script parameters very
+simple this is the equivalent in
+pinescript to our user inputs um the
+next thing we need to do is just like in
+pinescript get our indicator values so
+to get our indicator values we use the
+data section so I'll copy this over here
+we're getting our slow moving average
+and our fast moving average this is the
+equivalent in pinescript to ta. SMA
+close 50 would get a 50 period simple
+moving average in real test we just
+simply say Ma and then we give it a
+price source to calculate on and a
+length ma slow length is our user input
+or parameter from this section so we get
+our slow ma our fast ma now to buy the
+market on a dip the condition is very
+simple what we need to check for long
+setup is is the closing price above our
+slow moving average the 200 period SMA
+and is the close below our short moving
+average or the 10 ma if that's true we
+buy the Market on the next bars open and
+then if price closes above our
+short-term moving average the sell
+condition is then true and that's our
+takeprofit condition it could be a a
+small loss if the market has trended
+down and we closed above our SMA but
+more often than not this is going to
+close for a small profit again this is a
+mean reversion system we're looking for
+small bounces in the market so it has a
+very simple sell condition something you
+could do in your own time if you wanted
+to is play around with other exit
+reasons so we could say or uh close
+above previous high so this is just like
+pin script we use the square brackets as
+historical operators so we could say is
+the closing price above the previous
+bars high that could be an alternative
+take profit um you get the idea we'll
+play around with these sorts of ideas in
+future videos but for now we'll keep it
+simple and this is our cell condition
+now we get to the bulk of the script
+this is where we Define our actual
+strategy we tell real test what
+conditions we want to specify um is our
+buy condition our sell condition our
+stoploss Etc so I'll copy this strategy
+section over there we go we need to give
+it a name so simple pullback strategy is
+the name of my system our commission is
+uh the interactive brokers standard
+commission our side is long only our
+quantity is account balance percent so
+100 and our quantity type Ty is percent
+so in real test that's the same as up
+here here we have our default quantity
+type which is set to percent of equity
+and default quantity value is 100 so
+100% of our balance invested on each
+trade this does exactly the same thing
+except that account balance up here is
+where we specify whether we're investing
+100% or 150
+Etc next up we have Max positions we're
+not pyramiding with this system we're
+only trading one in one out so one open
+position at a time and and our entry
+setup this is the keyword real test uses
+to determine whether or not to buy a
+market or or go short if we're Trading
+long end short today we're only Trading
+long so our entry setup is this
+condition which is this Boolean value
+here which is did price close within our
+pullback Zone next we have our exit rule
+so the exit rule is where we specify our
+takeprofit or our stop loss so sell
+condition is did price close above our
+short-term moving average or is the
+current closing price less than our Buy
+price the price that we've bought at
+multiplied by our stop-loss percent
+range so 1 minus stop percent range is 1
+- 0.1 which gives us essentially
+0.9 so is the current closing price less
+than our fill price multiplied by 0.9 or
+90% which gives us a 10% stop from our
+entry that's our exit rule very simple
+take profit or stop loss stop loss will
+be hit very rarely um just by the nature
+of this system and how short our fast ma
+is but we need a um stop loss well I
+think you should have a stop loss in all
+systems just in case you never know how
+far a market can fall um especially if
+you're trying to buy
+bounces um you probably want a fail safe
+to get you out of it bad trade this is
+our fail safe at the worst we will lose
+approximately 10% now that's it for our
+system if I save this script let's click
+import make sure I haven't made any
+errors there we go everything looks good
+I'll come here and delete my tests and
+run a quick
+test there we go everything's looking
+good 6.3% rate of return with a 15% Max
+draw down not fantastic not going to
+make us rich in a hurry but it almost
+Beats Buy and Hold but how do we know
+that that's where the Benchmark section
+comes in so if I copy this section of
+code over this is our
+Benchmark that we can compare the system
+to so in this particular case because
+we're trading SPY we want to compare
+this to spy so I can actually get rid of
+this Um this can stay
+as Norgate and Yahoo both use spy as the
+symbol ticker so I can get rid of that
+and we can just have one
+um version for both data
+sources now if I click test and we come
+down I can right click this and click
+show summary report and scroll down and
+here's our
+Benchmark so now we can compare our
+system to what we would have had if we'd
+bought and just held the Spy ETF from
+its Inception as you can see the average
+rate of return is about
+8.77% per year with a 46 47% Max draw
+down so we nearly lose half of our
+Capital when we buy and hold spy versus
+only losing 15% and making 2% less per
+year on average so that's it for our
+script the last thing I want to do is
+show you guys how to draw things onto
+the chart in real test so if I paste
+this over here this is the charts
+section the way we format our code to be
+drawn on the chart is very different to
+pinescript
+um so I'm not going to go over that in
+today's video that probably needs its
+own video to go over the different
+various examples how to draw into your
+own indicator box that sort of thing
+this uh symbol here means draw directly
+onto the chart these two values so we're
+drawing our ma slow and Ma fast so now
+if I save my code click test again and
+click show trade list if I double click
+let's let's scroll down to a trade that
+was recently taken um here let's double
+click on this
+trade I can highlight this this
+section now you can see our long-term
+moving average this blue line and the
+shortterm is this green line this is um
+volume down the bottom here you can see
+this bar closed below our short-term
+moving average but above our long-term
+moving average so on the next bars open
+we bought this Market this same bar
+closed above our short-term moving
+average so on the next bar we took
+profit that is the gist of this system
+if we'd had a dip below this short-term
+moving average we would have waited till
+price closed back above it to sell or we
+would have waited for price to come all
+the way down and hit our 10% stop loss
+to draw our 10% stop loss let's see if
+we can do that
+here I can call this stop loss copy this
+code here paste that in click save hit
+test again um show trade list let's view
+that same
+trade here it is you can see our red
+line is our 10% stop loss so price would
+have had to fall all the way down here
+before we closed for a loss so the odds
+of it closing back above this green
+moving average obviously a lot higher
+than it coming all the way down to the
+stop loss and yeah that is it for this
+script basically that's um I know it's a
+bit overwhelming at first it's very
+different to pinescript for those of you
+who have been following me for a long
+time and learning my pinescript um
+methods and techniques this is very
+different to pin script but it is still
+very simple it does take time to learn
+like anything but I think it's pretty
+intuitive it's pretty simple and in
+future videos we'll expand on this
+framework this template we'll make more
+complicated systems with um systems that
+trade multiple positions we can look at
+long and short trades um we can even
+look at other markets like Forex and um
+things like that for now let's wrap up
+this video with a quick example of how
+to run optimizations so I'll paste this
+code over here and break this down this
+is exactly the same code as before so
+undo 100% of our account balance 200
+slow moving average 10 period fast
+moving average and a 10% stop plusus
+paste this over
+here DF stands for default this is the
+default parameter that we should use if
+we're just running a normal test but if
+I click on this optimize tab here now we
+we can select these parameters and run
+various optimization tests on them so
+with the default settings here if I
+click run test right now what's going to
+happen is real test is going to run um
+81 you see down here it's going to take
+81 tests 81 different tests to analyze
+all of these parameters and what we're
+doing is for account balance we're going
+to test the system with 100% of our
+Equity invested all the way up to 200%
+in steps of 50 so we'll test 150 and
+then we'll test 200 the next parameter
+here is our slow period moving average
+length this is going to test from 100 up
+to 200 in steps of 50 so just like
+account balance that will go 150 and
+then 200 fast moving average length will
+test from 5 up to 50 in steps of 25 with
+the default value of 10 so I might
+change this to five so now we're
+stepping up in periods of five so we'll
+go 5 10 15 20 25 30 35 40 and then up to
+50 and we can compare what um each of
+those parameters do to our system and
+then we have stop range where we're
+testing from 10% up to 20% in steps of
+5% so we'll test 1% 15% 20% so now if I
+save my code and come up to optimize
+you'll see that our test has increased
+quite a bit now we're running 270 tests
+that's because I changed my step on the
+fast moving length from 25 steps to five
+steps and what we can now do is I can
+click optimize make sure all these
+parameters are selected click run tests
+and we can watch real tests spit out 270
+different tests across all of those
+different parameter types they're over
+here there we go and now I can sort this
+list by Max draw down so this one's
+pretty nasty 60% Max Max draw down um we
+can look at what caused that our stop
+loss at 20% is probably a bit too far
+we're using maximum leverage so that's
+obviously recipe for trouble and our
+slow period is 150 fast is 50 if I sort
+by um best rate of return now things are
+getting interesting ideally what we're
+looking for here is not the best
+performance that's counterintuitive
+intuitively as humans we just want to
+pick what's what what parameters produce
+the best return with the lowest draw
+down that's how most Traders think when
+they're new to system
+development but that's not necessarily
+what we should be looking for what we
+should be looking for is systems that
+generate robust returns um in other
+words what we're looking for is what
+parameters do we need to set so that we
+can reliably and confidently trust that
+the system performance isn't going to
+deviate too too much from what we expect
+so this is a bit complicated it's a bit
+Advanced it's hard to explain there's a
+lot of content out there on the web
+again Nick rad does some fantastic
+content on this go and check out his
+work if you want to learn more about um
+good system development habits to get
+into and Concepts to learn um but
+basically we want parameters to produce
+stable returns so for example if a 250
+period moving average skyrockets our
+return turn but a 240 period moving
+average plummets that's not good we
+don't want to set our moving average to
+250 because that's not a robust setting
+however if a 200 period moving average
+produces a decent return with a decent
+acceptable Max draw down and so does 190
+so does 180 so does 210 so does
+220 um then we don't care if 220 is
+better than 200 we probably want to
+select 200 because that's in the middle
+it's pretty um stable on either side so
+we know that that parameter setting is
+not curve fitted it's not too tightly
+fit to the uh data that we're working
+with that's how you need to think when
+you're optimizing a system with that
+said let's open a random uh summary
+report here we want to beat The
+Benchmark otherwise what's the point but
+we also want to keep our draw down in
+check so we need the return to be better
+than the Benchmark and the draw down to
+be significantly better than the
+Benchmark in this case I don't know any
+Trader that would be comfortable with a
+46% draw down other factors to consider
+is how many trades does the system take
+what does the commission drag are we
+going to have issues with slippage are
+we going to have issues with executing
+the system if we need to take thousands
+and thousands of trades in order to just
+barely beat The Benchmark that's going
+to be frustrating we're not going to
+stick to that it's going to be annoying
+in this case 250 trades over a couple of
+decades that's not too bad we're talking
+pretty minimal effort here to beat The
+Benchmark so let's have a look through
+this rate of return um list let's come
+down to approximately our Benchmark
+which is
+8.7% here we go so this back test
+matches The Benchmark
+spoton and we have already shaved our
+draw down almost in half so let's look
+at what parameters this was using we're
+using 150% leverage all of these tests
+that beat The Benchmark are going to
+have leverage because um of the nature
+of this particular system because we're
+taking such small profits we need to
+magnify those profits to beat The
+Benchmark but 50% Leverage is pretty
+reasonable our slow period moving
+average was 200 our fast was 35 so I can
+already tell this is probably not going
+to be a particularly robust setting just
+because it's a weird number 35 5 is
+weird we need to test how does 30
+perform how does 40 perform if either of
+those take a dive or deviate too much
+from from these metrics here and and
+other important metrics then we've got a
+problem we also have our win rate here
+you'll notice that every single test
+here is above 60% win rate most of them
+are in the 80 70% which is pretty uh
+impressive I have to say with a simple
+system like this um but it is a single
+market system so we need to run more
+tests to verify that this is a robust
+system I would highly doubt that we'd
+get this high of a win rate across 10 20
+30 different Market ETF types um
+definitely not if we traded a universe
+of stocks like the S&P 500 or something
+but anyway interesting script a good
+little template to work with to to build
+off um you can copy this code into your
+tester play around with the conditions
+um in future videos I will show you guys
+how to test a universe of stocks so
+we'll test over the S&P 500 maybe
+something like that um 500 different
+stocks also testing across historical
+constituents so markets that no longer
+are members of the um S&P 500 but used
+to be that's important to consider in
+back testing with real test and stocks
+for those of you who are not using
+Norgate simply uncomment this Yahoo
+section and comment out this section
+make sure to change your data file as
+well that's all you should need to
+change so now have I saved my code um
+actually before we do that let's run a
+quick test let's delete all of these
+optimizations and just run a quick test
+with the default settings there we go
+now let's
+uncomment
+Yahoo and comment out Norgate there we
+go I'll need to run an import this does
+take a lot longer than um Norgate
+because we need to connect to Yahoo's
+web service and it's just slow because
+it's free all right all right that's
+done let's run a quick test using Yahoo
+pretty much the same metrics here so
+that's good that's promising you can
+clearly use Yahoo for testing ETFs if
+you want to just because of the nature
+of ETFs you don't need to worry about
+historical constituents and all of that
+stuff because that's all naturally
+inherently reflected in the price of the
+ETF so you can get away with um ETF
+trading I think with Yahoo um there
+might be some cases where you might need
+more advanced um data from Norgate but
+to get started with real test practicing
+you can get away with this free data
+source so that's good to know because
+Norgate is definitely a bit pricey
+especially those higher tiers that we
+need to get that historical constituent
+information um so in the beginning phase
+of your learning there's nothing wrong
+with using Yahoo until you feel
+comfortable and confident in moving
+forward with um investing into your
+trading tools with all that said I hope
+you found this video interesting and
+helpful as always the source code will
+be below in the video description best
+of luck with your training and your
+system development I love you all take
+care and
+goodbye

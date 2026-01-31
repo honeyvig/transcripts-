@@ -1,0 +1,612 @@
+hi everyone I am May and welcome to this
+fantastic video on random forest in
+machine learning by simply learn if you
+enjoy watching these type of videos and
+find them interesting subscribe to our
+YouTube channel as we bring you the best
+videos daily also hit the Bell icon to
+never miss any update from Simply learn
+in this video we will discuss what is
+random Forest after that we will see
+working of a random forest and the
+advantages and the disadvantages of the
+random Forest after that we will see
+some applications of the random forest
+and at the end we will do a hands of lab
+demo of how you can build a random
+Forest before moving on to what the
+decision tree is if you want to become
+an AI expert and get handsome salary
+packages look at a wide range of AIML
+courses by simply run in collaboration
+with top universities across the globe
+by enrolling in any of these
+certification program you will gain
+expertise in skills like generative AI
+prompt engineering chat gbt explan
+enable AI machine learning algorithm
+supervised and unsupervised learning
+model training and optimization and
+there is much more on the list with
+handson experience in tools like charity
+Dal python open CV and tensorflow you
+will catch the eye of top recruiters so
+what are you waiting for hurry up and
+enroll now a year of experience is
+preferred to enroll in these courses
+find the course Link in the description
+box below so with that mind let's get
+started so what is a random Forest
+random Forest is a popular tool in
+machine learning created by Leo Brean
+and edle Cutler it's like a team of
+decision tree working together to give
+one final answer people like it because
+it's easy to use and can handle
+different types of problem like sorting
+things into groups or predicting values
+moving forward let's see working of
+random Forest algorithm so Step One is
+Select random samples from a given data
+or training set the second one is this
+algorithm will construct a decision tree
+for every training data set the third
+one is voting will take place by
+averaging the decision phrase step four
+finally select the most voted prediction
+result as the final prediction result so
+this combination of multiple model is
+called emble emble uses two methods the
+first one is badging creating a
+different training subset from sample
+training data with replacement is called
+badging the final output is based on
+majority voting the second one is
+boosting combining weak Learners into
+strong Learners by creating sequential
+model such that the final model has the
+highest accuracy is called boosting
+example is adab Boost and XG boost so
+moving forward let's see advantages and
+disadvantages of random Forest so first
+we will see some advantages of random
+Forest are first one is can perform both
+regression and classification task the
+second one is produces good prediction
+that can be understood easily the third
+one is can handle large data set
+efficiently fourth one is provides a
+higher level of accuracy in predicting
+out out comes over the decision
+algorithm some disadvantages are while
+using a random Forest algorithm more
+resources are required for computation
+the second one is it consumes more time
+compared to the decision tree algorithm
+the third one is less intuitive when we
+have a extensive collection of decision
+trees the fourth one is extremely
+complex and requires more computational
+resources so moving forward let's see
+some application of random Forest some
+of the application of random Forest are
+Bank
+it predicts a loan applicant solvency
+this help Landing institution make a
+good decision on whether to give the
+customer a loone or not they are also
+being used to detect fraud St the second
+one is Healthcare health professionals
+use random Forest system to diagnos
+Patient patients are diagnosed by
+assessing their previous medical history
+past medical records and review to
+establish the proper dosage of the
+patient the third one is stock market
+Financial analysts use it to identify
+potential markets for stocks it also
+enables them to remember the behavior of
+stocks the fourth one is e-commerce
+through this system e-commerce vendors
+can predict the preferences of customer
+based on past consumption Behavior so
+moving forward let's Implement random
+Forest classifier using python so yes
+this is my Jupiter notebook screen so
+let me uh give you again a brief uh idea
+about the random foret classifier So
+Random Forest is a supervised machine
+learning algorithm which is based on
+Ensemble learning so in this ker so I
+will build two random Forest classifier
+models to predict the safety of the car
+okay one with a 10 decision frees and
+another with the 100 decision trees so
+the expected accuracy increases with the
+number of decision Tre in the model I
+will demonstrate the feature selection
+process also using the same random
+forest model to find only the important
+features right so we will rebuild the
+model using these features and see its
+effect on accuracy okay so let's start
+with some some importing major libraries
+okay so I first I will rename it to
+random
+Forest right so I will
+import number as
+NP for the linear
+algebra and second
+import pandas as PD for the data
+processing right for CSV file that is
+bd. read CSV we used to read and then
+import met plot
+Li lib do
+pyplot s
+PLT this m plot Li is for the data
+visualization and then import
+cbor as SNS so this is for some statical
+data visualization and I will write here
+EMP
+% M plot
+live
+line right so I will
+import
+OS
+for uh directory
+name file
+name in OS Dot
+B
+okay I think we don't have we don't need
+this part right so let's move
+forward so here I
+will write import
+warnings right
+warnings do filter warning
+ignore right the random
+warnings right so here I will import the
+data set so here I will write data
+equals
+to
+car evaluation you can find this data
+set on the description box
+below and here I will read DF equals to
+DF is nothing like data frame pd. read _
+CSV then data my header equals To
+None
+right let me run it okay so let's uh now
+we will explore some data to gain
+insights about what's in data so we will
+do a Eda explored data analysis so here
+I will write uh I will do some random
+functions use some random function like
+BF do shape it will tell the how many
+rows and columns present in the
+data right if you want to see the data
+you can write DF so this is our data
+okay 1728 and S columns as you can
+see right small this is this
+and if you want to see the top five rows
+of the data set you can use the DF doad
+head is used for the top five and the if
+you use tail instead of head you can see
+the last five rows of your data set
+right so here I will rename columns
+okay because here it is return 0 1 2 3 4
+56 so I will rename the column names so
+column
+names equals
+to first one is
+buying second one is for the
+maintenance write
+main third for
+doors
+persons then one is but
+boot luggage
+boot right and Save
+T then class of the
+Von okay then DF dot
+columns equals
+to column
+names then column
+names okay so these are the column names
+now so if you want to see again the
+column names are changed or not let's
+check
+see buying maintenance doors person
+luxury booth and safety
+class okay so if you want to see the
+summary of the data set so here we can
+write simply DF
+doino so this is now see not null not
+null object object data types you can
+see right memory usage all that
+okay let me give some lines yeah
+so let's check the frequency
+distribution of the values and variables
+okay so I will check here the frequency
+counts of the categorical uh variables
+so here I will write column names equals
+to fine okay I can copy from here
+itself
+yes copied so I will write for column
+and column
+names
+print
+DF
+column dot value
+counts
+right so this is
+some uh High mid low
+okay this is some data types it's value
+count
+right so we can see that the doors and
+the person are cical in nature so we can
+treat them as a cical value variables
+right see person and the doors they are
+in cical in nature right so so there are
+seven variables in the data set all the
+variables are of cical data type types
+so these are given by buying like this
+this this main doors person luxury boot
+okay and the class is the target
+variable right so we will explore class
+variable so here I will write DF
+class dot
+value
+count
+okay okay so the class Target variable
+is ordinal in nature right so let's
+check some missing values so DF do
+isnull do
+sum okay so we can see there is no
+missing value in the data set so okay we
+so I have checked the frequency
+distribution of values previously
+already so it also confirms that there
+are no missing value on the data set
+right so here we will declare feature
+vector and the target variable so here I
+will write X = to DF dot
+drop
+class comma XS = to
+1
+okay and Y = to
+DF class
+right so here we will split data into
+separate training and the testing data
+set so I will write from
+skar dot do
+model
+selection
+import
+train test
+split right so I will write here xcore
+train comma X
+underscore test comma
+ycore
+train comma
+Yore test equals
+to
+train test
+split X comma y
+comma test
+size = to
+0.33 comma
+random state will give
+42 so it's nothing like we are splitting
+testing and uh this training data set
+into 0.33 0.33 means
+approx uh like 66% into training data
+set and the 33% into testing data set
+you can say right I will run it okay in
+complete
+input
+yeah okay X is not defined it's Capital
+because it is
+capital right okay too many values to
+unpack expected
+three okay so here I can
+see as you can see it's now working it's
+just a you know typ of mistake so yes
+it's working
+now so moving forward let's see the
+shape of the X and the X Tex so you will
+get to know the idea in how much percent
+we splited so X
+train do shape comma X test do shape
+right so as you can see 1157 rows and
+six in training and the testing is just
+571 in the six columns as you can see
+our the maximum value of the rows are
+1728 into 7 column
+right okay
+so uh moving forward we will do some
+feature engineering so feature
+engineering is the process of
+transforming raw data into useful
+features that help us to understand our
+model better and increase its predictive
+power okay so here I will carry out some
+feature engineering on different types
+of variables okay so first I will give
+some
+space so here I will write x
+train. d
+types right it's object object
+object and I will write
+X
+train do
+head okay so we can see that all the
+variables are ordinal categorical data
+type so here what I will do I will will
+import
+Catey
+category
+encoders as
+C
+right okay
+no
+yeah so here we will encode categorical
+variables into ordinal encoding so for
+that I will write encoder
+equals to
+C
+dot
+ordinal
+encoder columns name I will copy columns
+name from
+here and we will remove class because
+class is our Target
+variable
+right oh
+unfortunately I pasted
+here right so here I will write X
+train equals to
+encoder dot
+fit
+transform xor
+train then X test equals to encoder Dot
+transform X
+test
+right
+so let's
+check xcore train dot
+head
+okay then xor test.
+head so as you can see uh now we have
+ready training and the test set for the
+model building
+okay so now I will import random forest
+classifier model with default parameters
+so I will write from SK
+learn.
+emble
+import
+random Forest
+classifier right so here we will instate
+the classifier so I will write random
+Forest classifier equals
+to random Forest
+classifier then random
+State equals to zero
+right here we will fit the model so I
+will write
+RFC do
+fit X train and the Y
+train
+right here we will predict the test
+result test set result you can say y
+prediction equals to
+RFC
+predict X
+test so here I will
+check the
+accuracy
+import
+score right here I will write
+print model
+accuracy
+score with 10 decision
+trees this is entries
+right I here write
+zero 4 I need four decimal
+points do
+format
+accuracy
+score y
+test comma y
+prediction
+right okay RFC do predict spelling is
+wrong
+predict so as you can see the accuracy
+is 0.95 9457 almost 95% you can see so
+here white test are the true class
+labels and why prediction why predict
+are the predicted class labels in the
+test set so here I have built the random
+forest classifier model with default
+parameters of n estimators here I used
+the 10 10 decision trees so to here I
+have used the 10 decision trees to build
+the model so now I will increase the
+number of decision Tre and we will see
+the effect on the accuracy
+okay so
+nothing I will copy this
+whole and paste it here so
+so here I will edit this
+RFC
+100 okay I will write
+n
+estimators equals to
+100
+right and let's change
+now okay then y prediction underscore
+100 it's y RFC
+underscore
+100 right here I will
+write y prediction
+uncore
+100 so as you can see the model accuracy
+score with 100 decision Tre is against
+0.94 57 so the model accuracy score with
+10 decision Tre is
+0.92 it's not 0.94 57
+right and the with the but the same with
+the 100 decision trees as well so as
+expected accuracy increases with the
+number of decision frees in the model
+okay sorry I forgot to write here 10
+give okay so as you can see here the
+model accuracy score with 10 decision
+Tre is
+0.924 7 here I have given n estimator is
+equals to 10 and but with the same with
+100 decision trees an estimator equal to
+100 the accuracy is 0.945 7 so as
+expected accuracies increases with the
+number of decision trees with the model
+right so here we will find some
+important features with random forest
+for that I will write
+here
+clf equals
+to okay I will copy
+this right and I will fit it
+cf.
+fit uh into the training set
+X train comma Yore
+train
+right so now I will use some feature
+importance variable to see feature
+importance is score
+okay so here I will
+write
+feature score
+to PD
+do
+series clf
+dot
+feature
+importance comma
+index = to
+xcore train do
+columns do
+sort
+values and
+ascending ascending equals
+to
+false
+right so let's see the feature
+score featur
+scores so as you can see the feature
+score is this for the particular columns
+okay so we can see the most important
+feature is safety and and the least
+important feature is go right and the
+least is
+St so here let's visualize the feature
+so SNS doar
+plot X = to
+feature scor Comm yal to
+feature scores.
+Index right PT
+do X
+label is
+feature
+importance
+score then PLT do
+viable
+features and P do
+title is
+visualizing visualizing important
+features right then PLT do
+show okay fees scores it
+is okay it's it's
+label yeah as you can see okay is the
+most important is safety and the least
+importance
+door right so now moving forward we will
+see uh confusion metrix and the
+classification report
+right so now let's create confusion
+Matrix so for skan do
+Matrix
+import
+confusion
+Matrix
+right so here I will write confusion
+Matrix equals to
+confusion
+Matrix in y
+test comma y
+prediction right so here I will write
+print confusion
+Matrix
+okay for the next line comma
+CM okay so this is confusion Matrix now
+we will create some classification
+report so here I will write from escalan
+do Matrix
+import
+classification
+quod
+print
+classification
+p y test comma y prediction okay so this
+is you can see this is you know
+classification report so what we did in
+this report project I build the random
+Forest classifier to protect the safety
+of the car so we use two models uh 100
+decision trees and 10 decision trees for
+the 10 decision trees is
+0.947 but the same with 100 decision
+tree is
+0.945 so I have used the random forest
+model to find out only the important
+feature build the model using the
+features and see its effect on the
+accuracy right so we find the doors at
+the least safety and the safety is the
+highest so the second least important
+model is uh you know luggage boot if I
+remove it from the model and rebuild the
+model then the accuracy was found to be
+0.854 Z okay it is significant drop in
+the accuracy so I will not drop the uh
+drop it from the model okay so at the
+last we will use confusion matrics and
+the classification report are another
+tool to visualize the model performance
+okay so so they yield uh at the good
+performance okay so thank you for
+watching this video till here if you
+have any query please ask them in the
+comment section below our team of expert
+will reach you as soon as possible thank
+you for watching stay safe and keep
+learning with simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

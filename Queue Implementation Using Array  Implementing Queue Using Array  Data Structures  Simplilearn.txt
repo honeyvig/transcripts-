@@ -1,0 +1,269 @@
+hey everyone welcome to this video on
+queue implementation using adi as per
+our last video queue in data structure
+you must have a basic idea of the queue
+as an abstract data structure and its
+applications and software development
+if you haven't checked out that video we
+highly suggest you watch it before
+proceeding further you will find a link
+to that video in the description box
+below
+let's have a look at our plan for the
+session today but before we begin if
+you're new here and haven't subscribed
+already make sure to hit the subscribe
+button and the bell icon for interesting
+tech videos every day
+first we are going to take a small recap
+on queue in data structure
+we then dive into the declaration of a
+one-dimensional array and pointers for
+queue implementation
+finally we will formulate code for queue
+data structure using the c plus coding
+language
+on that node without any further ado
+let's get started with the recap on
+queue in data structure
+in the last session we introduced you to
+queue data structure as an abstract data
+type as we know when we talk about data
+structure as adt we define it as a
+mathematical or logical model
+we specify all the features or
+operations available with the data
+structure
+so considering that we learnt a few
+basic features of a queue in the last
+session let's go ahead and learn more
+a queue is a linear collection of
+different data types that allow
+insertion at one end and deletion at
+another unlike any other data structure
+the queue ends remain open allowing it
+to have different functionalities at
+both ends
+additionally the queue works with the
+restriction that insertion should be
+performed at the rare node and deletion
+at a front node
+processes of insertion and deletion are
+called nq and dq respectively we
+discovered both of these operations
+along with three more supportive
+procedures named as peak is full and is
+null
+now that we are considering to implement
+a queue data structure so all these
+operations will become different
+functional blocks additionally all these
+operations must take constant time and
+it must not depend upon a variable like
+the number of elements in q or the size
+of the queue
+by that what i mean is the complexity of
+all these operations must be o of one
+having said that let's dive deep into
+the strategy to implement queue data
+structure until now we have understood
+that q is a special kind of list with
+some restrictions on insertion and
+deletion and there are two approaches to
+deal with queue implementation the first
+one is array based and another one is
+linked list based in this session we are
+going to focus on array-based
+implementation
+initially let's say we want to create a
+queue of integer elements for that
+purpose firstly it is essential to
+declare an array of random spaces let's
+take 100 as the size of our array that
+means our array can have a maximum of
+hundred integer elements the declaration
+of an array is made with this line of
+code intq hundred
+where int represents integer data type
+and q is the name of our array and
+hundred is its size
+the array that we just initialized is
+going to store our queue
+by that what i mean is that any random
+index of an array queue is going to
+start with two marked ends front and
+rear
+in this array i'm showing front of the
+cue towards the left and rear towards
+the right
+for making those end nodes we need to
+initialize two pointers front and rear
+at this moment as our queue is empty so
+both of those pointers should point
+towards minus one so initialization of
+these pointers should be done as in
+front is equal to minus one and int red
+is equal to -1 when the insertion or
+deletion happens in queues these
+pointers will be either incremented or
+decremented so they are an essential
+part of this queue implementation
+process
+now you must be clear with the array and
+pointers declaration part so let's dive
+further and formulate code for queue
+implementation using a one-dimensional
+array in c plus
+it is essential to include header files
+into our source file as we cannot access
+standard c plus functionalities without
+them
+that is why here we are going to load io
+stream and standard input output files
+along with using namespace sdd
+once this is done we will initialize our
+array along with front and rear pointers
+remember we always have to declare the
+size of an array before compilation
+that means we cannot update the size of
+an array at runtime
+this scenario is the biggest limitation
+of queue implementation using arrays
+having said that let's proceed with
+pointers declaration
+now we are done with the initialization
+process we will now work on
+implementation of queue functionalities
+let's first work out supportive queue
+functions like is null is full and peak
+isn't function validates if the queue is
+empty
+and as per our previous discussion when
+both front and rear points to -1 then
+the queue is considered to be empty
+so the condition to determine if q is
+empty will be
+if
+rare is equal to is equal to minus 1
+and front is equal to is equal to minus
+1 it will return q is empty
+if the queue does not satisfy the
+previous condition then it is not empty
+so by using the else condition we can
+display the queue is not empty
+next up is is full function this
+function validates if the queue is full
+and we can clearly say that if the rare
+pointer is equal to the max size of the
+queue then our queue is going to be
+completely full
+next is peak
+the peak function extracts the element
+where the front pointer is pointing
+without removing it from the queue
+for this functionality to work our queue
+must contain data elements in it
+what i mean is rq should not be empty if
+rq is not empty then data at the front
+node can be accessed
+this is how we implement supportive
+queue functions let's immediately dive
+into the development of main queue
+operations nq and dq
+for enqueue operation if the queue is
+full then our function should prompt an
+overflow error
+for that to happen we have to put this
+condition
+if the front pointer is pointing to
+minus 1 then we have to increment the
+front pointer to 0 manually
+otherwise it can be incremented by rare
+plus plus
+after pointer incrementation we have to
+ask for a data element to enter into the
+queue
+once the data is given it should be
+inserted at the position where the rare
+is pointing now
+finally let's code the final main queue
+operation called as dq
+if the queue is empty then there is no
+element for deletion so it should prompt
+an underflow error on screen
+also if there is only one element left
+inside q then both pointers should again
+be pointed towards -1
+for that let's write another condition
+here
+if both the previously mentioned
+conditions are false then deletion of an
+element can be achieved by just pointer
+incrementation
+we have implemented all the queue
+functionalities here but we haven't
+implemented a function that can show us
+how our queue looks so for that let's
+implement one more function with the
+name
+display this function should prompt the
+elements of the queue on the screen
+elements will only be printed if the
+queue is not empty hence we have to
+check for the emptiness of the cube
+first
+finally we are done with the hard part
+so let's arrive at the main function to
+contemplate these operations in order to
+visualize outputs
+we are going to use a switch case to
+take a user command thus not to waste
+your time on this let me just get done
+with this block asap
+that's all we are done with the queue
+implementation using arrays let's just
+examine if our code works fine or not by
+compiling it
+this program should return a console
+that asks the user to give commands for
+performing different operations
+so as you can see on your screens if i
+input 1 i can perform insertion in a
+queue
+let's perform some insertions now we
+will insert 4 elements first 3
+then 21
+next 78
+and finally 12.
+after inserting these elements we will
+print the state of the queue using case
+3.
+now let's also check the dq function
+if we perform a dq operation then 3
+should be remote from the queue
+let's check if it is remote using the
+display function
+and yes our code works just fine
+now if you're concerned about this code
+then don't be as we can send it over to
+you if you drop your email ids in the
+comments section below
+additionally you can also try to run it
+on your local system to have a better
+understanding of the concept
+so with this we come to the end of this
+video i hope this video on q
+implementation using arrays was
+informative and exciting if you have any
+queries regarding this topic let us know
+in the comment section below and we will
+get back to you
+thank you so much for being here and do
+watch out for more videos from us until
+then keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

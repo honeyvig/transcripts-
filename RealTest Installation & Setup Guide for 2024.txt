@@ -1,0 +1,870 @@
+hey what's up Traders hope you're doing
+well in today's video I'm going to be
+showing you guys how to install real
+test so first of all what is real test
+if you haven't seen my recent videos and
+email newsletters about real test go and
+check them out but basically it is a
+multi strategy portfolio level back
+testing software so let me break this
+down multi strategy means that it can
+back test multiple systems in a single
+back test so you can mix and match
+systems together like you would in a
+recipe for example it's probably a bad
+example but uh you could have a long
+only system and a short only system you
+could have a system that's a um mean
+reverence system and a system that is a
+trend following or momentum system you
+could even have two systems trading
+different time frames so a daily chart
+weekly chart and you could merge them
+together uh you could even have systems
+that trade different markets so the
+Aussie Market the Australian Market or
+the Canadian Market or the US market and
+you can merge those systems together
+multiple currencies Etc obviously
+something we cannot do in uh pinescript
+so that's why I've been using this
+software to develop my stock market
+systems now portfolio level means that
+we can trade a portfolio of symbols in
+our back test so for example I have a
+system that trades 20 different stocks
+at a time or up to 20 it doesn't always
+have 20 positions but it can trade up to
+20 Max positions so on a very very busy
+day all 20 positions will be filled and
+uh yeah I'll have 20 open stocks in my
+portfolio we can back test that using
+real test another thing we can't do in
+pin scripts now real test is a terrible
+charting software I'll just say that up
+front you wouldn't use real test to
+analyze markets with drawing tools that
+is something that is very much trading
+views strength if you're analyzing price
+action you'd want to use trading view
+pinescript is unparalleled when it comes
+to analyzing price action in a visual
+manner for charting when it comes to
+back testing multiple systems across
+multiple stocks it is very lacking in
+that system we can't do that so using
+both of these together these two tools
+has made me a very very uh what's the
+word holistic Trader I use trading view
+to analyze markets I use it for my um
+handful of discretionary or semi
+discretion I'm a rules based Trader but
+I do have systems that depend on my
+interpretation of price action I use
+trading view for those sorts of systems
+with real test I have pure mechanical
+systems the systems that I trade in real
+test are very black and white they're
+very green light red light either I have
+a trade or I do not have a trade but the
+system itself has basically no
+discretion in it obviously there's
+discretion in developing the system
+itself in choosing what conditions the
+system uh users and what techniques the
+system uses that requires discretion to
+decide what to do or how to build your
+system but once the system is built real
+test spits out my orders every day or
+every week or every month whatever time
+frame I'm trading and I just press the
+buttons it's that simple now building
+the system is the hard part obviously
+back testing it properly making a robust
+system that can stand the test of time
+uh but once you have a system that that
+fits that criteria uh real test is very
+powerful and so in the videos to come
+I'll share what I've learned about real
+test how I use it in my personal trading
+process um but for today's video we've
+got to start somewhere let's start with
+installing real test and getting the
+software running on your computer
+because it's not as simple as trading
+view trading view you just go to
+tradingview.com so before we get started
+let me just quickly explain exactly how
+real test Works technically so it's a
+standalone software it's an application
+it's a Windows only application so if
+you're going to use this on a Mac or
+Linux or any other operating system you
+will need a virtual machine to do that
+I'm not going to show you guys how to do
+that in this video but for those of you
+with Windows computers this will run no
+problems on um unless you're maybe using
+Windows 95 it should work on your
+computer one other thing I should
+mention up front that I'm not sure I
+have in the past videos I've made um and
+newsletters I've sent out Is that real
+test is a daily chart only back testing
+software so if you're an intraday Trader
+you're trying to develop intraday
+trading systems especially if you're a
+currency Trader so you're trading
+intraday currencies Forex markets for
+example you probably want to stick to
+trading view for that just because they
+have such a massive amount of intraday
+lower time frame data in their platform
+basically for free it's included in your
+subscription but when it comes to real
+test um this software is designed to be
+traded end of day now that doesn't mean
+that it doesn't take many trades I've
+developed systems that take hundreds of
+Trades if not thousands of Trades a year
+um simply because there are so many
+stocks out there so even though it's
+trading end of day for example my system
+that trades 20 uh positions per day has
+a sample size of 30 something thousand
+trades over a 20 or 30 year period so
+for those of you who are thinking that
+trading end of day means less
+opportunities that's simply not true
+because of how many markets we have to
+trade so with all that out of the way
+let's get into how to install this
+software so I'll leave links in the pin
+comment below and in the video
+description to real Test's website uh
+but it is mhpr trading.com once you're
+here you need to go to the free trial
+and purchase link if you've never bought
+real test before then you do have access
+to this 30-day free trial which I
+obviously recommend you use you get full
+access to the software and there's no
+restrictions so you can play around with
+it see if you like it or not see if it's
+something that you want to commit to
+otherwise it's
+$389 current Curr for a new license
+price that's a one-time payment and you
+have access to um lifetime use of the
+current version plus all releases and
+updates for the next 12 months and you
+can also install real test on two
+computers at once so I have real test on
+my main computer I've uninstalled it for
+today's video so that I can reinstall it
+with you guys um and show you the steps
+but I also have it installed on my
+dedicated machine so that when I'm
+traveling or I'm just not home uh for
+whatever reason I can jump into my
+remote computer my remote um dedicated
+machine and I can do my trading from
+there Norgate data which will get to
+later also has a similar feature where
+you can have it installed on multiple
+computers but there is a limit so you
+can't share your license with your mates
+your family once your 12 months is up if
+you do need access to the latest updates
+maybe maren the creator of real test
+fixes a bug that you need fixed for your
+trading then you might need to purchase
+this license extension would which is
+159 USD and it adds a year license to
+your date so that you can get um updates
+for another year now if you click these
+links that will take you to the purchase
+page uh but if you've never installed
+real test before you need to click this
+one here download real test installer so
+I'll do that right now there we go that
+is done so now I've open up my downloads
+folder here is the real test installer
+let double click that so here we go make
+sure to read the uh license agreement
+unless you're uh you like to live
+dangerously like me and you never read
+these and you just accept them um
+there's no reason why you can't install
+this to the default Drive um if that's
+what you want to do for me personally I
+like to install this onto my second hard
+drive doesn't really matter what type of
+drive you install it to as far as I know
+um a solid state drive is probably going
+to be a little bit quicker but it's
+really the the speed of your back test
+is probably going to depend more on your
+um CPU as far as I know having more RAM
+and a better C CPU is probably going to
+help speed this software up more so than
+where you install it to so I've already
+got my folder here from when I
+uninstalled real test before recording
+uh I guess it didn't delete the folder
+so I'm just going to click real test
+there and it's going to install into
+real test/ real test so click okay click
+next folder already exists that's fine
+yours won't say that if this is the
+first time installing click install and
+we're done very quick um I don't want to
+read the release notes cuz I read them
+recently on the latest update I just
+want to run real test so let's click
+finish now you won't get this message if
+you haven't used your free trial period
+you won't get this message now I've
+obviously used mine so I get this error
+and now I need to enter in my license
+information for those of you who can
+start your free trial uh you'll get 30
+days access to the software without
+needing to put in a license for those of
+you who have purchased the license this
+is where you enter your information so
+I'm going to activate my license for the
+rest of today's video all right so when
+you install the software and open it for
+the first time activate your trial this
+is the interface you'll be met with it's
+a little bit overwhelming at first um
+we've got a lot of stuff just crammed in
+at the top um so you can see this is a
+functional software this isn't made to
+look pretty like trading view is uh this
+is pure functional back testing software
+and that's its strength that's uh what's
+great about it we'll learn all of these
+um in settings over time in the videos
+to come for today you don't need to know
+any of this really um we'll get to
+running our very first script in a
+moment let me close these um my systems
+I have open here let's open up the
+examples folder so I'm going to scroll
+through these and look for a system that
+I recognize so let's um let's start with
+the doio rayo's all weather um example
+system so this is a system that trades
+ET ETFs it uh buys spy bonds gold and
+commodities and these are the
+percentages of the portfolio allocated
+to each ETF the reason I chose this
+example script is one because it's very
+simple there's only a handful of lines
+of code here um it's obviously very
+different to pinescript it's going to
+take some time to learn this we'll get
+into that in future videos uh but for
+now the important part to pay attention
+to is this section here the import
+section this is where you import your
+historical data so there are a bunch of
+options if I go back to the examples
+folder and scroll down to import here
+are a bunch of example scripts that show
+you the methods for importing different
+data sources so you can import directly
+from an Excel spreadsheet which is
+interesting given that um trading view
+can export its intraday price action I
+wonder I haven't tried this I'm just
+speculating but I wonder if it's
+possible to import trading views
+intraday data into real test to run back
+tests on intraday time frames by
+tricking it into thinking that each bar
+is a daily bar for example I don't know
+that's getting a bit outside the scope
+of today's video but who knows uh the
+point is there are a bunch of different
+options for importing the the one I use
+the most the one that most professional
+Traders use and the data source that is
+recommended by real test by the
+developer of real test himself uh is
+Norgate data we'll get to that in the
+next half of today's video how to
+install Norgate um it does cost money
+and that's why I want to show you guys
+this script first because this script
+imports from Yahoo which is free so when
+you're first um trying out real test
+especially during your free trial period
+you might want to just play around with
+Yahoo it's free data doesn't cost a
+scent and all of the syntax is identical
+so you can still learn real tests
+software and its syntax without having
+to pay for data and then you can pay for
+the data later down the track when you
+feel comfortable uh and ready to move on
+and get more advanced with your scripts
+now the reason why you need to pay for
+data with real test is that when we're
+back testing stock market systems free
+data isn't going to cut it when it comes
+to ETFs you might get away with free
+data I haven't played around with many
+ETF systems yet so I'm not sure if
+that's true but um the the reason why
+you need paid data with stocks is
+because you need a data source that
+accounts for several things that are
+unique to stocks such as their listing
+status are they delisted are they part
+of an index so index constituents and
+then you also need to know was the stock
+a member of a market index in the past
+but is no longer so historical index
+constituents we need data that adjusts
+for dividends splits it gets quite
+complicated and these are things that do
+not get managed by a free data source
+like Yahoo Yahoo will provide data
+sources for currently listed stocks so
+you can simulate your back test based on
+the current members of the S&P 500 for
+example the problem is those members
+weren't always the members of the S&P
+500 and we need to account for that in
+our back test when we're back testing on
+a portfolio based system we need to
+account for markets that have come into
+the index fallen out of the index
+markets that used to exist but have now
+gone bankrupt markets that we would have
+traded 10 20 30 years ago if we were
+trading our system but no longer exist
+on these free data sources trading view
+has the exact same problem trading view
+does not provide data for Dlisted stocks
+so if a stock goes out of business if a
+company goes bankrupt and gets delisted
+from the Stock Market trading view does
+not provide data for that market anymore
+because why would it it's not a back
+testing software as such it's a charting
+software with back testing sort of tax
+on that's why we need dedicated software
+like this for things like developing
+portfolio based stock market systems but
+anyway for those of you who are just
+playing around with real test getting
+your feet wet stick to Yahoo for now
+there's no reason not to so here in data
+source we're telling real test to import
+from Yahoo these symbols so these are
+ETFs we specify a start date an end date
+we can just use the latest keyword to
+import from this start date all the way
+up until the latest you could also
+change this to earliest the problem with
+doing this is as this comment says DBC
+was not listed as an ETF until this date
+so if you're trading multiple ETFs for
+example you need your start date to be
+um the first date of whenever the last
+ETF was listed if you were trading the
+constituents of the S&P 500 for example
+you might be able to set this just to
+earliest and then your data source will
+include the first possible date and the
+last possible date in your historical
+data but I'll leave that as it is for
+now finally you have a save as this is
+your data file so this makes importing
+very quick the first time you run this
+it will save all of the price data to a
+file and then when you run your test it
+will import all of the data from that
+file and things run a lot quicker than
+if you had to import the data every time
+you ran your test so to import this data
+from Yahoo for free we can simply leave
+this as it is and come up to this button
+here and click import and now the
+software is connecting to Yahoo now it's
+importing the historical data from the
+five symbols we have listed here now
+this is much much slower than using a
+paid data source um Norgate data would
+have had this done a long time ago but
+this import's been running for couple of
+minutes now which is a long time to
+import five symbols but anyway that's
+what happens when you use free trading
+resources there we go it is finally done
+so now in my settings I'm referencing
+the same file we just imported and saved
+so now when I run back test this
+information comes into play so now we
+are starting from the earliest date
+included in our data source so by
+default this is going to be this date
+here because that's when we set our
+import date to start from so our back
+testing date is this one it's going to
+be the earliest included in our data set
+and the latest included in our data set
+and our bar size is monthly so this
+system is going to uh adjust its
+position sizing at the end of each month
+now I can click test we're done now that
+was really really quick let's do that
+again
+test it's almost instant very cool um so
+this system this rid doio system has a
+6% rate of return not fantastic uh but
+better than the interest rate you get on
+a bank balance but the Max draw down
+you're almost beating the um Benchmark
+which I believe is around
+7% okay so was a bit off it's it's about
+10% holding spy for the past 30 years
+produced about a 10% annual compounded
+return however it also endured about a
+50s something per draw down during the
+2008 financial crisis so you know this
+is not a bad system yeah you're cutting
+your return almost in half but you're
+cutting your draw down over half so this
+is the kind of thing billionaires put
+put some of their money into to mostly
+probably to protect it from inflation
+more so than grow their wealth but
+anyway this simple system profitable
+very easy using free data source if
+you're following along then you've
+imported your first data set made your
+First Data file run your first back test
+through the real test system uh we'll go
+into more detail in future videos for
+now let's just go over uh the summary
+report so if I click this and bring this
+over this gives us a report of the
+system how many trades it took its win
+rate its average win average loss whole
+bunch of statistical information even a
+year by year and month by month break
+breakdown of its p&l as a percentage of
+the account balance your Max draw down
+so this system has a very low Max draw
+down here's your Equity curve uh draw
+down stats you even have some Monte
+Carlo information down here which
+simulates um potential outcomes for the
+system if Randomness is introduced so
+that the black line is our actual system
+performance the colored lines of
+theoretical potential uh performances if
+things was slightly different in
+historical data so ideally you want a
+system that ends up profitable in all of
+its Monte Carlo simulations now so
+anyway these are all things that we'll
+break down in future videos for now that
+concludes the real test version of this
+installation guide let's jump over to
+Norgate now and I'll show you how to
+import paid data including historical
+constituents and all of that fun stuff
+all right so back on my web browser here
+is Norgate data's website again this
+will be linked below somewhere in the
+comments or um description now Norgate
+data does cost money so in order to
+create an account we need to come over
+to the order form so click on this link
+here so you can pay for 6month or 12
+month subscription so if you're not sure
+if you want to commit to this yet maybe
+stick to a six-month but the 12mon is a
+little bit cheaper I believe so most of
+you will be creating a new account so
+let's click this this button
+here so now we have to confirm our
+access method so gate data Works in
+association with supported third party
+applications and platforms for us today
+we just need to click on real test
+that's this option here you also have
+Amy broker and you can select multiple
+options here if you want to so if you
+know what any of these other system um
+import systems are feel free to click
+them there's no reason not to but for
+today's video I'm going to be clicking
+real test because that's the only
+platform of this list that I use
+currently I have used Amy broker in the
+past that's a great software as as well
+uh but I prefer real test I like its
+syntax I find it syntax a bit more
+intuitive to learn and the fact that it
+can back test multiple systems
+simultaneously is obviously a big
+advantage and that's why I'm doing this
+series obviously I'm a fan of real test
+as we come down you need to put in an
+email address so this needs to be a real
+email address because your um login
+credentials will be sent to this email
+once you U pay for the data so make sure
+to put in a real email address you need
+to consent to their privacy policy um
+you don't need to receive emails about
+Norgate data developments if you don't
+want to so you need to click yes on this
+if you want to use Norgate but you can
+opt out of the um optional emails here
+next up you need to select your payment
+currency I select AUD because I'm Aussie
+but you should select the one that um
+you're going to pay in because you'll
+pay less fees I'm going to select 12
+months I don't have a coupon code now
+this is the important part this is where
+we select the data that we need
+so you click on which one you want to
+extend they do have Forex data and
+Futures data which is something I
+haven't explored yet but I will in
+future videos currently I only trade the
+US market and the Aussie market so if we
+click on US Stocks data here is the list
+let me zoom out my browser slightly so
+the one that you will need eventually is
+platinum it's not cheap it is
+$630 a year this is a
+recurring payment so you need to pay
+this every year to get your back testing
+data now the reason we need Platinum is
+because Platinum is the
+only um option other than Diamond which
+includes Dlisted
+Securities and historical index
+constituents we need both of these
+features in our data in order to
+simulate our back tests accurately you
+also get data all the way back to 1990
+which is obviously big advantage in
+terms of sample size
+and market conditions to test over a lot
+has happened since the
+19990s you don't need diamond and
+Diamond does include the same features
+Dlisted Securities so companies that
+have gone bankrupt or simply withdrew
+from the market or were merged into
+other companies or whatever uh we also
+have historical index
+constituents both of these are suitable
+for back testing the main difference
+with diamond as far as I know is that
+you get data all the way back to 950
+which is even more Market condition more
+sample size so if you have the money
+there's no reason not to go Diamond but
+platinum's a great option as well now
+you need one of these platinum or
+diamond in the US Stock data section in
+order to get accurate back testing
+results once you have built a system if
+you are no longer in the development
+process you can get away with the silver
+option because you get current end of
+day updates and current major exchange
+listed Securities so silver is perfect
+for live trading so once your system is
+built and you've back tested it and
+you're happy with it and you're not
+tweaking it anymore you can probably get
+away with silver which is half the price
+less than half the price of platinum and
+this is perfect for for um executing
+trades but in the back testing process
+we need at least Platinum so you want to
+click subscribe that will add it to your
+cart we don't need OTC stocks I don't
+trade OTC Securities but you can add
+that on if you want to um now with
+Aussie stocks things are slightly
+different but again we need at least the
+Platinum option we need historical index
+constituents and Dlisted Securities so
+I'm going to add that as well um I don't
+need derivatives so already I'm looking
+at U $1600 a year for my data but you
+know in the past two months since this
+uh year started I've already I'm up
+about
+$35,000 it trading my systems so it's
+just the cost of doing business as a
+Trader and um un unfortunately there's
+no way around it and Norgate data are
+worth every cent because they do a
+fantastic job of curating their data
+keeping it up to date making sure it's
+accurate so that's why it's the
+recommended option for real test Norgate
+data do a fantastic job of what they do
+but it's not cheap so keep that in mind
+if you're going to go down this route
+you need to have money to make money in
+the stock market it's not like crypto on
+Forex where you can start with 100 bucks
+you'll probably lose it but you can
+start with 100 bucks you can't do that
+with stock definitely not then we have
+um similar deal with Canadian stocks
+data you will need Platinum if you're
+Canadian a Futures data I've never used
+you only have one option there and um
+same with Forex data I'll probably
+explore Forex data in future videos but
+for now we'll stick to us markets and
+Aussie markets here you need to fill out
+your billing details um agree to the
+terms and conditions and then proceed to
+payment and once you pay for your
+subscription you will get an email with
+your login details and then you can come
+over to the downloads Tab and you can
+download the software that keeps your
+data updated on your PC so the real test
+can import it and run tests on that
+price data so let's do that next click
+on Norgate data program installer all
+right that's downloaded come to my
+download folder double click on the ndu
+installer now this is interesting I've
+never had this pop up before um but I do
+know that this software is legitimate I
+got it from a legitimate source so um a
+little bit concerning that this pops up
+I've never seen this happen before but
+the Norgate data updator is completely
+legitimate this publisher is legit so
+I'm going to click run anyway hopefully
+they fix that by the time you download
+this uh installer so now again just like
+real test you can leave all of these
+settings as the default you need to
+accept the license agreement um you can
+leave this as the default path if you
+want to I'm going to change mine to my
+um real test application folder in in my
+real test folder just so I can keep
+everything together but you can leave
+this as the default path if you want to
+uh real test will automatically find
+where you've installed nor gate data or
+at least it should so it doesn't matter
+where you install it now we also need to
+select our database folder now for some
+reason not sure why it has some um
+requirements some important requirements
+so the database folder needs to be
+located along a separate path to the
+application folder it cannot be located
+under program files this has probably
+got to do with read uh read write
+permissions some of these folders don't
+allow you to read and write if they're
+in use and things like that um the
+database folder cannot contain any other
+file so it needs to be installed into
+its own unique folder so for this
+particular file path I'm going to leave
+it as the default I'm just going to
+leave it on my C drive because it can't
+go in the installation folder for the
+software so let's just leave it where it
+is Click next now I do want to update
+automatically that means every time I
+open the software it will automatically
+update my um databases that's fine click
+next it requires some Microsoft packages
+that's fine click install we'll install
+everything for you shouldn't take very
+long and there we go we are done so now
+I can click run Norgate data updat okay
+there's a major update to install so let
+it do its thing you'll notice that mine
+automatically logged into my account
+that's probably cuz my my information
+was saved on my PC somewhere I did
+uninstall this software before doing
+this video but it's kept my sub describe
+your information I'll show you how to
+log into your um account in a moment but
+for now these are the databases that I'm
+going to import so these will be based
+on what you selected with your Norgate
+subscription I'm going to leave all of
+these ticked and just click okay now
+it's uh downloading and extracting all
+of my data and updating everything to
+the latest historical price data for
+each market that will take some time
+depending on your internet connection um
+it could take a little while um so it's
+a good time to go make a coffee let it
+do its thing and when you get back it
+should be done but for those of you who
+are using this for the first time you
+will need to log in to your account so
+if you come to settings and click login
+details this is where you input your
+username and your password mine are
+already inputed and I can't change them
+for some reason um but you will need to
+import this from your email so make sure
+to um write down what Norgate data send
+you it's very old school this software
+it doesn't um I don't think it even lets
+you change your password you're just
+given a randomly generated number as a
+password or at least I was and um I just
+had to save this in a text file
+somewhere anyway once you've logged in
+let it update let it do its thing and
+I'll show you how to import data into
+real test when it's done all right now
+that that's done let's open back up real
+test and now let's open up a different
+example script let's open up clan
+House's stocks on the move this is a uh
+momentum rotational system developed by
+Andreas kenau in his great book stocks
+on the move I highly recommend reading
+that book if you're a systematic Trader
+and you haven't read it already it's
+fantastic it's a great manual on really
+good practices for momentum trading
+systems in particular and systematic
+trading in general but anyway this is
+what the import section looks like for
+Norgate if you're using Norgate instead
+of Yahoo you need to specify Norgate as
+you see here this requires the Platinum
+subscription that's because we're using
+the current and past constituents of the
+S&P 500 I already exped what that means
+we're also including spy that's for the
+regime filter so those of you who have
+followed my channel for a while will
+know that I'm a big fan of regime
+filters in this particular system the
+S&P 500 ETF the Spy ETF needs to be
+above its 200 day moving average in
+order for the system to rotate into new
+stocks I won't go over the code to this
+uh system in today's video this is all
+explained in Andreas clenow uh stocks on
+the Move book so again read that if you
+haven't already it's fantastic so now
+we're importing the S&P 500 current and
+past historical constituents into the
+SPX RTD file we're importing that into
+our back test under the settings uh
+section here we're importing from 1995
+until the latest available data and
+we're back testing from 1999 until 2015
+that might be when the book was
+published I'm not sure why um that date
+set to that uh let's change this to lat
+hit save and now hit
+import now I might need to restart real
+test because it's not recognizing that
+I'm upgraded to the Platinum
+subscription so I'm going to close real
+test open up real test again and hit
+import there we go now it's working fine
+so I'll bring this up a little bit so
+you can see what's happening we're
+importing
+1,00 symbols from the S&P 500 current
+and past constituents into this file
+this data file that's done and we're
+good to go now if I had multiple scripts
+referencing the S&P 500 I can reference
+this same file and um whenever I run an
+import that will update the data for all
+of these systems if I'm using the exact
+same data file for this particular
+Market anyway now that we've imported
+that data set I can hit test and we'll
+run a back test on this system there we
+go as you can see the system is not bad
+it beats the real test version of uh
+rayo's all weather so I don't know how
+accurate that script is to rayo's
+official actual system but I assume it's
+pretty close if not spot on uh we beat
+that system with Andreas Clen House's
+system hope you found this interesting
+in the next video we'll write our first
+script we'll import something we'll do a
+little back test I don't know what we'll
+do yet but um I've got some ideas a
+bunch of my friends recently had kids
+I've got four new babies that my uh
+friends have had and I've pledged some
+money to each of them to invest in the
+market until they turn 18 and then they
+can access that money when they turn 18
+so I'm working on some long-term ETF
+systems um that I can use to invest that
+money in for them over the next 18 years
+maybe we'll look at one of them in the
+next video I might start playing around
+with some ETF rotational system
+something simple even something as
+simple as just buying and holding spy
+but using some filters to avoid those
+nasty draw Downs that come along every
+couple of decades what could also be fun
+is uh converting some of the trading
+view strategy IES I've made into real
+test which we'll look at in future
+videos as well but anyway that will do
+it for today's video I hope you found
+this interesting I hope you guys are
+excited to check out real test I know
+it's very different to pinescript I know
+that a lot of you guys probably aren't
+interested in this and that's okay I'll
+still be doing trading View and
+pinescript videos but I do really want
+to do a short series on real test
+because it's something I've been using a
+lot in my own trading I'm loving it it's
+producing fantastic results for me and I
+want to share um my experience and
+anything that I found success with I
+want to share that with with you guys
+because I enjoy sharing the knowledge
+and wisdom and experience that I'm
+accumulating that I learn from Traders
+much better than me I like to pass it on
+to my audience so I hope you guys are
+interested in that and excited about
+that if not um stay subscribed because
+there'll be more Pine script videos to
+come soon take care guys and girls good
+luck with your trading I love you all
+and I'll speak with you soon
+goodbye

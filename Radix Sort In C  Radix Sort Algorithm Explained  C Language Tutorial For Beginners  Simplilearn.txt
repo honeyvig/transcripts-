@@ -1,0 +1,197 @@
+foreign
+in this video we are going to learn all
+about a Reddit sort in C programming so
+without any further delay let's get
+started with the agenda for today's
+session
+and while we are at it please leave us a
+like if you find our content helpful and
+it's up to the channel would be
+appreciated all right
+we will start by understanding what Red
+X sort is in C next we will understand
+the working of the Red X sort and
+finally to get things a little more
+interesting let's run a program
+practically on redixot for better
+understanding well now we are good to
+get started
+first let's begin by understanding what
+Reddit sought in C is
+in red xot the Sorting is done on the
+integer values digit by digit from the
+least significant bit to the most
+significant bit either in ascending or
+descending order of arrangement so for
+example
+let's consider an array of four elements
+to sort and they are 12 9 236 and 463.
+so firstly some of the elements which
+are in the units Place once they are
+sorted in the proper place move on to
+the tens place and sort digit by digit
+and finally sort elements of the
+hundreds place
+great now we have an idea of what Red X
+sort is in C so moving ahead let's
+understand the working of the Red X sort
+so let's consider this example we have
+an array of five elements to sort so
+first find the largest element and it is
+576 which consists of three digits in it
+that means we required three passes to
+sort the unordered array so as I
+discussed before in the first pass saw
+the elements starting with the least
+significant bit followed by the second
+least significant bit
+and later the most significant bit
+elements
+so here the least significant digits are
+8 2 0 4 and 6. so considering digits 0
+to 9 we use counting sort to sort the
+elements and place them in the right
+order and are the proper position so
+since we have 0 in the list let's place
+this element first
+and then search for the next list
+element in LSD
+and it is to
+and followed by 2 we have 4.
+and then 6.
+and the last element is 8.
+and finally the digits are sorted
+and the sorted elements are in the
+ascending order of 0 2 4 6 and 8.
+so now moving on to the second least
+significant bit the elements are 1 2 5 7
+and 0.
+so the least digit we have in a list is
+0. so let's place the digit first
+and followed by digit 0 we have one next
+then two
+and followed by that we have five
+and seven
+so here finally the order of sorted
+elements is
+0 1 2 5 and 7.
+similarly let's move on to the most
+significant bit
+so let's place the least digit first
+which is digit 1.
+so followed by that we have another one
+so let's move that next
+then the next list digit is three
+followed by three we have 4.
+and then 5.
+finally the elements are sorted in the
+right order
+the array elements are sorted in the
+ascending order and they are 108 110
+354 422 and 576.
+okay so let us now move on to the
+implementation of red x.nc
+so it is a implementation of a red X
+sort so first we have the two function
+declaration that is display and redx
+sorting
+so first moving on with the function get
+maximum element so find the maximum
+number from the given array elements so
+to find we have the variable declaration
+Max element initially a of 0 is assigned
+and for I is equal to 1 till I less than
+n
+if the condition e of I is greater than
+Max element assign e of I to Max element
+and written Max
+the next function is the counting sort
+so using counting sort algorithm we
+perform a red X sort
+so the variable declared at array size
+and place so first we are creating the
+output array of size plus 1 then we are
+creating a Max variable is equal to
+array of 0 divided by place of module
+10.
+and in this for Loop
+this for Loop is to sort the array
+elements so for that we are taking
+disadvantages starting from unit place
+to 100 place
+so the condition is
+for I is equal to 1 till I less than
+size
+if condition array of I is divided by
+place of module 10 must be greater than
+Max then assign array of a to Max and in
+count Max Plus 1 creating another
+variable called count
+and then for I is equal to 0 to I less
+than Max the initial count of I is equal
+to 0.
+the next for Loop is to calculate the
+count of elements so I is equal to 0
+till I less than size count of array of
+I divided by place of module 10 plus
+plus so incrementing the count by 1.
+and the next for Loop
+is to calculate the cumulative count
+which is nothing but the sum of all
+count generated so far
+so here for I is equal to 1 till I less
+than 10
+count of I is equal to count of I plus
+count of I minus 1. and in this for Loop
+where I is equal to size minus 1 and I
+greater equal to 0
+so basically in this for Loop we are
+taking one digit at a time from the
+input array that is this a array of I
+and placing them in the output array at
+proper place so the output array is this
+and the condition is count of array of I
+divided by Place module 10 minus 1.
+and count of I divide by Place model 10
+minus minus so we are also decrementing
+the count by 1.
+and finally the last for Loop is for
+assigning all the sorted output array
+elements in the input array that is
+whatever is stored in output I is now
+moved on to the array of I array
+and the Red X sort function here
+so whatever we have we are calling the
+get Max element and that Max element is
+given to Max variable here
+and we are calling the counting sort
+and display function is to display all
+the sorted array elements and then
+moving on to the main function here we
+have the array of five elements that is
+522 98 232 and 140. so in this main
+function we are calling the Red X sort
+and the display function so now let's
+try to execute
+and as you can see the screen the arrays
+are sorted in a proper ascending order
+so starting from 5 98
+122 140 and 232.
+so with this we have come to the end of
+this session on the Red X sort Instinct
+I hope this session was informative and
+interesting so if you have any queries
+regarding any of the topics covered in
+this session or if you require the
+resources like PPT code document or
+anything then please feel free to let us
+know in the comment section below and
+our team of experts will be happier to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

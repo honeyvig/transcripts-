@@ -1,0 +1,1543 @@
+hello everybody and welcome you all
+so
+we're gonna talk about something very
+interesting topic of the day
+and that is called hooks in react
+see friends actually what happens
+when we work on react-based development
+so in react 16.8
+we have introduced a new feature called
+react hooks
+these hooks have
+really changed the way how the react
+development really happens
+because prior to these react hooks
+we were writing so much of code because
+of that it actually increased the
+complexity to our program
+but ever since the react hooks came into
+this picture the development time has
+slows down
+okay and we have actually increased the
+productivity of our development
+now how the react hook really changes
+the way
+this we're gonna see it now in those
+slides
+now what are the react hooks see the
+react hook is a special feature that
+lets you hook intro
+now what is this
+see they say fuse important thing they
+say normally hook allows you to reuse a
+stateful logic without changing your
+component hierarchy
+your application can actually divide it
+into the smaller pieces which later on
+can be used together
+okay so hooks let you use most of the
+react features without using classes see
+actually what happens
+in react we have a two type of ways how
+you write your components number one is
+called class based component and second
+which is called functional component
+now
+class based components are little more
+heavy lifting because it comes
+pre-loaded with state management as well
+as the life cycle management
+but not always you need these two
+so you need to keep your components
+light weighted so if you want to keep
+your components light weighted so you
+need to basically approach towards the
+state
+less or functional component so by
+adding those hooks feature so you can
+have this normal functional components
+on the top of that you will be having
+some add-on feature that's the beauty of
+react hooks
+now the rules of react hooks
+so there are few rules of the react
+hooks which you need to understand
+and what those are
+number one
+they say
+only call hooks
+at the top level
+don't look hooks inside loops conditions
+or nested function so there are certain
+conditions
+they say
+only hooks only call hooks from the
+react function component don't call
+hooks from the regular javascript
+function instead you can call hook from
+the react function component or call
+hooks from the custom box so there are
+multiple options are available which you
+can expose or use in your regular
+react-based applications
+okay
+so after that we will see the demo how
+the three different type of hooks are
+used state hooks event hooks and create
+customized hook and we will see some
+demo on the top of that
+hello everybody so once again we are
+going to start working with another type
+of oxy
+in our previous examples we have seen
+how you can have the state related hook
+now my next event will be all about how
+you can have
+the
+even based hooks we're talking about
+something called use effects so how the
+usefx really works let's take a look now
+so here
+in a similar example if i just give the
+name call
+[Music]
+okay let's try to make it here only so
+what i'm trying to do now is in my
+current application
+i'm already having this count and set
+count to me but
+i can also provide some default values
+that anyways has been provided so rather
+than hard coding it i can provide it
+from somewhere else so how we can
+so let's use one property called props
+here
+and here rather than providing this i'm
+saying
+prob start count so my question is like
+what do you mean by count here
+see count is nothing but a property
+which initial value i don't know so
+which you can set it from outside
+so what you can do is here
+before you export it you can say give
+the name call
+hook stand dot
+default props
+default
+props
+okay equal to i'm starting with the
+curly braces
+and after this curly braces here saying
+count
+okay that value is what
+zero
+what initial value we're giving count
+initial value equal to what zero now and
+uh post this
+this value whichever we are giving it
+so what we also do in the same line is
+here we would like to also perform the
+another actions for setting the state
+initial value is called count
+and
+this way i can say set count count plus
+one
+okay that is anyways fine
+so increment let me copy this
+so here let me say npm space start
+so i must see some values have been
+presented okay you can see still
+initial value was zero
+that's why if you see initial value was
+zero so now because of getting the
+initial value called props dot count and
+now i can say increment
+and i want to talk about decrement so
+decrement and here we say reset
+so
+here
+we can say minus 1 and this value rather
+than saying count plus one
+okay
+you can say
+props dot count means whatever the
+initial value would be that value will
+be initialized here
+so now the code will work just the way
+it is now you can say increment
+decrement reset
+so it's working fine
+so in our react hooks is of an option
+which is available called
+life cycle hooks
+life cycle books are very very important
+that means you're trying to say
+whenever you would like to call anything
+related to your life cycle like when
+your component starts you would like to
+learn something when the component
+you know update you want to learn
+something so these kind of activities
+you can certainly make it so how you
+gonna be making it now let's take a look
+now so initially what i'm doing is
+i'm just
+creating a new function called
+use
+because it is a predefined
+okay available from
+okay react 16
+so here onwards you can see it is coming
+from the same property from react and
+under this use effect what i will do is
+i will just say
+log and i'm saying
+called
+every time
+now if i just launch my application and
+see the inspect
+you can see it is saying called every
+time even if i say increment it is
+getting called even decremented is
+getting called and reset it will get
+called
+because this is a life cycle method and
+the life cycle method means it will get
+called
+normally in a react we have a call
+component dead mount and component data
+update so it is a copy of both
+okay
+however you can
+is stick this particular use effect to
+the specific need only like if you do
+not want this to be get called
+on updates only when the component
+launches so what you can do here in its
+comma parameter you can make it as a
+square bracket
+this is square bracket will contain
+those values which you would like to
+watch for those changes
+so if you do not keep it anything by
+default it will be what
+blank so now if i just go ahead and
+start it is saying called every time and
+now you can say
+it is not getting called at all because
+now
+it is knowing that hey it is a blank
+value so i'm not seeing any value so it
+needs to be get called only when it is
+launching
+not every time
+however you also can offer the condition
+where you want to call this use effect
+only when the changes happens not
+every time when it is loading
+so what you can do you can just call
+this
+again
+and paste it again this use effect and
+say called
+on
+update and here you can provide the
+value which you would like to listen so
+actually if i see the state is getting
+changed for this count so i can say
+count and now once it is ready
+i can start my application
+and you can say here
+increment now you can see it is getting
+called
+okay but it is not getting called on
+loading every time
+so you are specifically telling
+like
+this use effect should get called only
+when
+state changes to the count and this you
+are not listening to anything so you are
+making it as applying
+i hope you are clear about what use
+effect is all about
+okay everyone so the previous example we
+have seen like how
+this books with regards to your uh
+current application works like as i'm
+saying we're talking about like in
+this
+state hook where we have seen use effect
+we have also seen another feature that
+is known as called use state and now
+we're going to be talking about our next
+okay everyone so now
+we're continuing to our next feature
+here and that is known as called use
+context see when we talk about react use
+context we always have a
+very special feature coming up with us
+where the reusability comes as a
+priority
+okay so if you really want to use a
+reusability
+okay you always think about the option
+called use context now first of all i
+would like to show you the problem
+and then we discussed about the solution
+so now here
+i'm gonna say
+use
+context.js and in this use context.js
+what i'll be doing is i'll be creating
+some few functions here i'm saying
+function
+name
+okay
+so in this manner i can create
+const
+i can say
+user
+set user equal to
+use
+state and initialize the value which
+call what
+admin that is the initial value we are
+saying like in main app user set user
+use state admin
+and now after this
+i am using return
+and in this return
+with my div tag i would like to offer
+the message
+okay so we are giving the name called
+h2 and within this h2 we are
+using this a value called
+welcome and with this dollar sign
+we can give the value like a user
+whichever the initial value will be that
+will be represented here
+so that's what my first component
+likewise
+if i want to share the data
+to the other components
+how i basically try to use that's an
+important thing i would like to consider
+right now
+so this is my first component
+like i also want to create another
+component which is accepting the data
+and utilizing its own way
+okay so like this
+i can copy
+and say
+user2
+for this function i'm creating this user
+tool
+in this user tool
+i will not be defining any state as of
+now because it is there already defined
+okay so in this it will be expecting
+here it will be expecting
+user as in parameter okay so return
+you can define it anything i can say
+paragraph
+in this i can say
+[Music]
+user2 component
+okay and i'm saying
+component 2 and now i would like to pass
+this value further to the another
+component now
+so what i'm trying to say now here
+if i say user 2
+let me copy this the whole bunch
+and paste it below here and i'm saying
+user3
+which is also taking this data
+and here
+i'm defining this value called
+user3
+okay space
+user
+equal to
+user
+like this
+we are providing it
+okay
+so that's where
+i'm trying to use this
+functionality so we are having this
+function user two
+okay so after this
+we are taking function three and adding
+the data right over there
+okay so this div tag whichever you're
+taking it
+so we have a call main app we can say
+user two and forward per user three so
+the data we can keep on passing from one
+copper into another component so we have
+got this component with me
+user 2 and same time people call user 3
+now
+ok and this user 2 whichever is
+available to me
+ok when you're saying hello user
+this user 2 i can provide this data
+right over here
+ok so in my main application i can say
+uh
+user
+two
+okay and with this we can provide the
+value called
+user equal to
+once again user
+like this so you can see here
+we are passing the data
+down the line to all my components
+whichever we are utilizing it
+okay
+so that's fine
+so
+after this what you'll be doing because
+we are passing the data just like that
+but the only thing is what if this main
+app
+wants to pass the data directly to the
+user three it cannot pass
+okay it can pass the data to the user
+three only from its immediate child
+which is a user too
+and that's what the problem i would like
+to sort it out but here
+let me say
+export
+default
+the name is called main app
+okay let's make initial capital that is
+always good
+okay export default main app
+and let's add this main app right inside
+your
+approaches
+okay now let's see
+see the value is coming up welcome admin
+welcome admin recommended
+so that's pretty fine
+components are basically rendered but
+there is no reusability if you see like
+it is a
+plain old technique
+you pass the data to the child and you
+cannot pass the chat to the grandchild
+these are the certain challenges
+okay so let's try to sort it out this
+issue
+okay everybody so it's time to basically
+talk about the solution we have already
+seen our problem
+there's no reusability there's no
+sharing of the data
+and the sharing of the data is happening
+from parent to child
+only when you are a direct parent
+otherwise not
+so how are you going to be fixing this
+issue
+so fix this what i'll be doing is we
+just want to say
+const
+app context equal to
+create
+context
+okay so we're going to say equal to what
+a create context so as usual the states
+are there
+return
+now in this return what i will be doing
+it i will be using this
+context so anyways i'm having this dev
+tag
+so i'll be using this option like in
+user context
+or the context which you have created
+that is called context so we are saying
+what
+app context here okay dot
+you see there is an option available
+called provider this is the one which
+should be helping you to share the data
+to the all the components value equal to
+user
+okay and this app context i would like
+to cut it
+okay and paste it after here
+okay and here
+user to equal user to whatever it is the
+value is there so you are passing it to
+user two
+okay and later on you can pass to any
+components those who want to really use
+it
+okay so whoever wants to access your
+context it can be easily available
+okay so you really don't need to pass
+this data again and again so if you are
+in second component
+okay so your anyways wrap this second
+component right over here
+so here in your second component
+you really don't need this any data like
+this
+and you really don't need this
+like that so you can easily pass this
+video to the user3 also
+okay so it's very simple and
+straightforward
+so
+let me try to remove this value from
+here also
+and you can get the data the way you
+always want
+okay so
+you say value equal to what
+user here
+so after that you're saying
+user equal to what user whichever value
+you are basically passing it
+okay and say use context.provider
+okay and the second component
+when you say user 2
+you just say
+you really don't need this in fact i
+would say
+you can even remove it
+okay and the same you can remove it from
+here also
+okay and when i see my component swag
+see
+still working like the weight is
+expected
+okay so that becomes the idea of what
+your
+use context
+okay which is designed for sharing the
+data between and among the components
+okay everyone so now it's time to
+basically discuss about our another very
+important topic that is called user f
+okay use ref is basically what the used
+ref you can say it is the kind of hook
+which allows you to persist value
+between the renders
+again i'm telling you user f allows
+actually to persist the value between
+renders
+normally you can store
+or you can use to store a mutable values
+which are changeable
+okay that does not cause
+a re-render when updated
+okay
+that means you can persist that value in
+a storage okay as a mutable value which
+does not cause
+a re-render when the updates actually
+happens so normally it can be used to
+access your dom element directly
+clear so how it can be let's take a look
+with using one simple example
+so you all can understand how we can
+utilize this
+okay so i'm gonna create another one
+here
+name call use ref dot
+cheers
+inside this use ref.js so let's get
+started with this implementations the
+one which we're looking at right now so
+called user if so once again i'm
+creating
+a function
+app
+and inside this i would like to say
+const
+input
+vl
+comma
+set
+input val
+equal to
+user state
+okay
+we want to use it now we want to use one
+more const
+prep value
+okay equal to now we would like to say
+use
+ref you can see it is coming once again
+from the where from the react here in
+this user we can pass initial value
+black we do not have initial value so
+that we are sending it as a what is a
+blank
+now post that
+we want to create
+first important thing is we would like
+to use the use effect first use
+effect you have already seen the use
+effect earlier because it is holding the
+life cycle related
+conditions so now here we are saying
+prep value okay dot
+current
+equal to
+input val
+okay and after that which value you are
+seeing
+we get updated so we are passing
+value for sure
+okay
+post that once it is ready okay i'll be
+saying return
+okay inside this return
+i'm having
+div tag
+and here in this div type we can say
+input type
+equal to
+text
+okay value
+equal to which value would like to take
+it so we are giving
+input val
+okay and we are also saying on change
+equal to
+taking this e is an event object here
+and
+we're calling
+set
+input val
+with
+e dot
+target dot
+value
+okay
+so we are holding the values
+just like this
+okay and after this once it is ready i
+just want to use the
+s3 tag
+to show what is the current value so we
+can say
+updated value
+okay here
+i'm having this input value with me
+and now i'll be using one more
+h2 psa
+last value of
+using
+priv
+value
+okay dot
+current
+so that's where you are basically using
+so
+this will be offering you what
+the kind of value you are actually
+expecting into your program
+okay so use ref hooks can be used to
+keep track of the previous state values
+this is what we're doing it now
+okay so this is because we are able to
+persist
+use reference value between the render
+so now let me try to say
+export
+default
+and
+i'm just giving the name of
+app and this app i'm using it here in my
+app.js
+app
+let me terminate it and
+launch it again
+[Music]
+let's see
+local 3000 again
+so it is taking some more time but i'm
+sure
+we'll be able to see the outcome soon
+interval system so now you can see these
+values are coming up so now when i pass
+the value call
+one it is containing the one when i say
+two you can see it is holding the
+previous value when i said three it
+containing the previous value when i say
+for it holding the previous value that's
+where exactly the beauty of this
+user of which you are expecting it from
+all of you
+so everyone we have already seen like
+our previous example like how we can use
+the use ref in our previous project now
+it's time to talk about
+our another interesting feature in
+hooke's continuation to this
+and that we're talking about called
+working with a use reducer
+so what is the use reducer see use
+reducer is again a hook
+which is as same as like in use state
+okay it allows for
+custom state logic
+unlike the normal state how we maintain
+using new state it allows to help
+having some custom logic also see if you
+are finding yourself where if you have a
+call multiple portions of the state
+that actually depends on the complex
+logic use reducer would be very very
+beneficial for you because it contains a
+centralized logic
+okay and can help the users to develop
+some more fantastic applications so
+let's see how we can actually do this
+and how we can utilize that so in hooks
+demo
+i'm going to create a new file here i'm
+going to give the name call
+not
+app.js
+and in this node.js i would like to have
+some initialize state i won't like to
+make it available to the user
+so
+let's try to use one
+very simple logic called
+const
+node reducer
+node
+reducer equal to here
+i would like to take the parameter like
+in state
+and
+action it is just like in normal
+functionality we are writing it down
+and inside this we would like to use a
+switch
+here we use a switch and we will judge
+what type of action client is trying to
+invoke action this is what kind of
+condition client so client is ready to
+invoke i'm using action
+dot
+type
+okay and here we use the first option
+like in case
+first
+condition i'm taking it is called
+populate nodes
+okay
+populate underscore
+which all the existing nodes are
+available populated
+okay and here
+after this
+we would like to say return
+[Applause]
+dot
+nodes
+okay or else in a default case
+or in a default case
+we are saying return
+the default state whichever is available
+to me
+so that's how the condition is now
+going back
+i would like to also check what are the
+type of
+states are available which i would like
+to show it back to the client so we are
+using this option like it
+const
+let's create a states first we are
+saying const
+nodes
+comma
+dispatch equal to use
+reducer and inside this rule is user
+first parameter we are passing is called
+node reducer whichever we have taken is
+an action here
+and comma the initial state which i'm
+making it is a blank
+i do not have any states of making it as
+a blank again i'm using this option i
+can const
+title
+set title equal to
+use
+state with initial value blank
+so that's how we are passing it now
+okay now the next thing is like i would
+like to
+check
+in my code
+how to basically
+display the list of nodes back to my
+application
+okay that's what the whole logic i want
+to write
+okay so let's check in case if i want to
+return
+the bulk of nodes how will i do this
+so here
+let's try to create
+the
+nodes app so
+this i would to make it that was the
+reducer for us now here we're going to
+create const
+node
+tab equal to
+and i'm closing it here
+okay so we are having these two
+properties with me
+and
+i can have a number of actions also but
+let's talk about return
+in this return
+we want to display the list of nodes
+which are available to me
+in case if i'm having it i will display
+it so
+i'm having the div tag
+inside this dev tag i can say
+h2
+notes
+after this notes
+notes
+dot map in case if i am having a array
+of nodes map is a predefined function
+for me so here we are using what
+note
+okay so
+so inside this you would like to provide
+the
+object where the details will be
+available to me
+okay so
+i can use the div tag
+where i can have the property with me so
+i can use
+the div
+okay so i can use
+key
+equal to
+you can just use
+the default sheet which is available on
+notes
+key equal to what notes
+and provide
+the other details too like if you want
+to iterate it so you can just provide
+the data accordingly
+okay so
+that's what the whole idea is
+and here
+under this we would like to provide
+not
+okay
+and
+here if in case if i want to have some
+data that can be displayed
+okay so
+now say
+export
+default
+note app
+and this is not up i'll be making it as
+a child of app.js
+okay
+you can see i have got initial data
+displaying here so in case if i have few
+more records
+suppose if i set data
+okay so you can basically make
+this data also available here so you can
+see our god list of records are
+available
+okay so
+that's make your development even more
+easier
+and that's the beauty of how the nodes
+can be used for the further development
+okay so i hope you're clear about
+what in case if i want to use
+uh you know this reducer
+so how we can further utilize it to
+initialize
+the data with this
+but later on if i want to some add some
+actions
+i can also add it
+okay but this is what the initial state
+which we are using it
+in case if i want to display the data in
+my code
+hello everyone so in the previous
+sections we have seen like uh
+how we will be utilizing
+our you know use reducer applications
+now i'm going to tell you about another
+react very popular tool that is known as
+called use memo which is once again a
+very very popular tool so what is the
+user memo it is again another hook so
+use memo hook returns a memorized value
+what it was the previous value was
+so you can
+say think of
+uh
+memorization as a caching value so that
+it does not need to be recalculated it
+already contain the value within that
+so use memo only runs when
+of its dependency update
+okay so use memo
+okay
+is one of the very very popular tool but
+it can be
+you know little expensive resource
+insensitive function
+okay so it is
+used memo can be used to keep expensive
+and resource oriented function
+to avoid needlessly running
+so we will see how this
+use memo can work
+so let's check this out and see see
+what my intention is in my application
+is like
+use memo is basically perform
+some
+actually memorized your complex
+uh calculations so that it doesn't need
+to run unnecessary every time
+okay so it does a kind of caching
+behavior for you to make your life even
+more simple so let's see how it works so
+accordingly you will also get the
+implementations
+okay so
+you need to understand the use memo hook
+accept the second parameter
+okay to declare it dependencies so the
+expensive function would only run when
+this dependency has been changed
+otherwise not
+okay so let's see how we will be using
+those so now here
+i'm creating a new file and give the
+name call
+[Music]
+memo.js
+okay so inside your memo app.js what you
+do is just take a look let me try to
+close rest of those
+yeah so here you see
+okay so we are saying
+set count
+equal to
+user state initialize value with what
+i would say 0
+for a time being i'm trying to use now
+okay
+and
+after that if i want to perform some
+calculations i can do that but let me
+try to perform
+this job only okay count and set count
+according to my
+rule
+okay now
+what i'm planning to do now is in a
+similar line
+i want to offer one more feature here
+called const
+equal to use state
+i am making it as a what type area type
+okay and i'm saying
+const
+calculation equal to
+expensive calculation
+and here we are passing what
+counters and parameter here
+okay now let's perform some functions
+i'm saying const
+increment equal to
+set count
+see
+plus one
+okay and we are using
+we're calling this set to dos here
+okay hence use
+all the previous states whichever are
+available and
+new data this will get added so three
+functions we are basically calling
+after that i am saying
+return
+in this return i'm having what
+div tag
+within this div tag i can use
+another div tag here and here we're
+using
+my
+after this h2 we would like to use
+to do dot
+map
+slash what index
+and here we saying return
+paragraph
+sorry key
+equal to
+add task
+okay and
+here here
+sorry
+equal to what index here
+and here
+to do
+[Music]
+okay
+how do you make it
+okay so this is how we have it now
+after this we would like to create a one
+button
+inside this button i can say
+add to do
+and here
+we will say one click and in on click
+will be calling
+at task
+so this is what it is happening now
+okay everybody
+so here after this
+div tag is getting closed
+hr is getting closed
+again we are opening up another div tag
+here
+and here we are seeing
+count
+and here we are using
+in this button we would like to
+click on plus
+increment what we're calling it here
+increment here and
+call something called
+calculation
+just like a normal message and here
+put what
+calculation
+okay so once it is done
+so your dip tag is also close
+both the two tags are getting closed
+okay and they are also getting close and
+now
+we would like to perform one function
+whichever i would like to use it for my
+standard calculation
+okay so let's see what we are trying to
+do so here i am saying
+programming calculation equal to
+okay and we are using this
+lock button inside this lock button i'm
+saying
+[Music]
+calculating here and post this
+this thing is called for
+let
+i equal to 0
+is
+less than
+[Music]
+okay and we're using what
+i
+plus plus
+and say
+now
+equal to one
+okay
+and after this
+i can say
+return
+now
+and after that i'll be rendering this
+function
+by saying
+export default memoir
+that's it
+okay
+so this would be my application here
+okay so now
+here in this example
+the expensive function which is called
+long running function
+okay
+whatever i'm talking about
+the long running function okay will only
+run when the count is changed
+and not when the to-do's are added
+that's a whole picture about this code
+here
+okay so you can just see here
+we are using this statement
+and
+here
+we're gonna give the name of this
+long running calculations
+to here
+okay so i'm calling it there
+now this memo app i'll be using it in my
+app.js
+okay so that is what we have it now so
+i'm clearly saying like here so
+in this application
+hook accept second parameter to declare
+dependency this exp so the long running
+functions will only run when the
+dependency have changed otherwise not
+that's the whole picture
+so it is adding it saying calculating it
+and then it is getting changed
+okay
+so that's what the whole picture of what
+we have done so i'm sure like you all
+are clear
+about how
+this memo is really performing some job
+the one which is actually expected
+and once again we're going to start with
+another feature of books as we have got
+many hooks seen in our development
+okay and
+now on this top of this i'll be working
+on our new concept that is what's called
+use imperative handler
+it is again a new concept as we have
+already seen multiple different type of
+hooks into our development now we'll be
+talking about use imperative handler
+now what is the use of
+this particular hook look when we talk
+about use imperative handler if i just
+get you this
+so if i say
+use
+now when we talk about use imperative
+handler
+okay so this use reparative handler and
+the user is what we've already done
+allows to pass a reference object
+but the later which is called
+use reference
+which you've already seen
+this use reference
+doesn't allow to customize the instance
+that are
+also passed with the ref object so use
+imperative handler hooks is a different
+from user friends
+because it allows again it allows
+handling and customizing the return
+value
+it allows handling and customizing the
+return value
+and it also allows to replace the native
+instance of the ref object
+now how it works let's try to understand
+in our development
+so
+here we're going to start working with a
+very simple approach
+into our code
+okay
+so we're going to create a new one that
+is called
+[Music]
+imperativedemo.js and after this we are
+writing
+function
+inverted
+okay here we are passing two parameters
+here one is called
+props
+and seconds call what two parameters we
+are passing it
+now here we are saying
+const
+user if
+okay
+now
+after this we're using use
+you can see we have called use
+imperative handler comes from
+this one so we are using this use
+imperative handler and here we are
+passing what refers in parameter
+okay and
+okay now in this case we are using one
+type of functionality called blur
+okay and here with this blur
+and we are using
+log
+and writing
+custom blur is called
+after this once it is ready i would like
+to say return
+in this return
+we are saying button
+okay
+and with this button
+i want to use ref
+okay equal to
+btn and
+props
+we both are passing in here
+in this using
+click
+okay
+that's it and
+once it is done then
+we would like to use this
+okay into my application
+wherever i can actually access this
+in my application system
+so once it is ready i would like to make
+it
+available so by using i'm saying export
+default and i'm using something called
+forward reference
+you can see it is again a part of what
+the react application we are using is
+called forward reference
+and here you're passing what
+button so that is what my code is
+now here
+i will be making it as a child off but
+[Music]
+in my app.js so we already have this
+earlier
+memoir so here in my application
+i'm just using const
+btn equal to
+use reference
+i'll be using what use reference
+so react and i'm using
+okay so we're using this option called
+use reference here and we are passing
+null here and after this
+this value which over here having it we
+just said cut
+and passing it here
+and this under this written keyword i'm
+using
+button
+and in this button in our
+options i can provide the events
+so inside this button we would like to
+one second yep
+so inside this button using
+one click
+equal to
+we are saying btn okay dot
+current dot
+okay so we haven't imported
+anything so let me import a button from
+here
+okay so we say
+import
+button
+which class you have created here
+imperative demo
+okay
+so
+so once it is there so
+[Music]
+so we're providing what btn dot current
+dot
+blur
+so closing this here and along with this
+we are saying ref
+equal to
+btn
+that's it
+so this is where exactly the options are
+so you understand in this particular
+example we have developed a custom
+button component that has a user defined
+instance attached to the reference
+object
+attached to the what the reference
+object now so we have developed the
+button component that has a user defined
+instance attached to the reference
+object so button component is a child
+component of the app component
+are we clear so when we click the button
+here
+the button is clicked
+okay it called user defined blur
+function which is attached to the pass
+reference object
+okay so that's the whole idea now
+so i haven't tried anything another
+button
+that certainly i can add it
+so under here
+okay
+so now
+okay so
+here
+the things are working the way we were
+expecting
+okay so you see like what we did here is
+now
+we are now using this approach
+okay you see like we are using this
+approach with using this
+use empirical reference so we have a
+call function button
+we're passing two parameter props in ref
+so we're getting this use reference
+object
+and use imperative we are passing this
+ref
+and this object here so we are using
+this blur
+as an
+kind of custom objects where console.log
+custom
+properties getting called a reference
+button equal to
+button and you're saying dot or dot
+props click here button and export
+default forward reference button here
+and followed by app.js
+we are just using this
+normal app component
+const button equal to use reference null
+return we are returning this button
+on click
+you see here equal to btn
+okay it's just a reference what you're
+using dot
+current dot blur
+and uh after that is getting close using
+f equal to what btn whichever you're
+referring it and that's it so the job is
+done
+[Music]
+so friends now after this the previous
+example we have seen called imperative
+now it's time to basically discuss about
+another very interesting example that is
+called use layout effect there is
+another hook which is available to you
+so this use layout effect actually works
+similar
+okay
+to use use effect but rather working
+asynchronously like what a use effect
+does because use effect works
+asynchronously
+it fires synchronously after all
+loading is done
+again i'm repeating
+the use layout effect works similar to
+use effect but rather than
+but rather working asynchronously like
+how the use effect works okay what it
+does is it basically it fires
+synchronously after all norm
+is done loading so this is pretty useful
+for normally a synchronously
+re-rendering the dom
+okay so it is very useful for
+synchronously re-rendering the dom and
+also to read the layout
+from the dock
+but to prevent
+blocking the page loading we should
+always use use effect otherwise it will
+block
+so the use layout effect
+okay works in the same phase as
+in mount and component did update
+methods we should only use use effect
+layout effect if use effect is not
+outputting the expected result
+so let's take a look with a simple
+example the one which we are looking
+forward for
+okay so here in my code what we're doing
+is
+we're gonna give the new file name
+called use
+dot
+okay so let me add
+constant
+layout
+okay
+and here we're using const
+equal to
+use state
+and give any value whichever you would
+like to give it okay let's say
+welcome
+and after that
+you come down and say
+use layout effect
+okay and say if
+value
+equal to
+welcome
+i am saying
+set value
+welcome to react hooks
+okay so that's an expectations and after
+that we are using what
+the log and inside this length is saying
+used layout is working
+okay with value so
+using what the value
+here okay
+and
+whenever the value changes
+and listening to what the value here
+and after this when we talk about return
+so you have to return the value ht
+okay so we say
+return
+inside this tip we will say
+value
+that's it
+and after this
+left
+in here
+okay
+so once it is ready you will see here
+in your program
+okay we need to check
+[Music]
+so
+a value okay all right so here i need to
+use
+to make it okay so now
+i go to the inspect
+go to the console
+let's refresh
+and now you can see it is loading
+synchronously
+okay
+so your application is now loading the
+way it
+[Music]
+so that's where the idea of this
+particular example so
+in this example we have built a name
+changer application that changes the
+name of the state when the used layout
+effect is called
+okay and it's working fine
+okay everyone so now if it is ready then
+we'll be talking about our next feature
+here
+that is called working with
+use debug value
+this is once again another hook
+of the react based development
+so when we talk about use double value
+so what used value actually does and
+what we uh really do
+with the use debug value this we would
+like to understand
+okay see what happens not too many
+developers nowadays know about
+use debug value hook okay though
+although it provides a much better
+debugging experience when it comes to
+the developing custom books so use debug
+value is a simple in-built hook that
+provides more information about the
+logical
+of a custom mode within a reactive tool
+so react devtool is a tool which you can
+get it downloaded for your chrome
+extension
+okay
+and
+it allows you to display the additional
+information
+okay
+next to your hooks with optional
+formatting
+okay so that's what the
+redux
+react
+views debug value is basically be useful
+for
+now how you basically use this so you
+can just consider in this way
+if i just go back and create a new file
+and give the name called usable value
+use
+differ
+okay
+so inside this youtuber.js
+here we would like to use function
+and function we can use this option i
+can use
+friend status
+use frame status so here
+we can say
+trend
+and here we can use const
+is
+online
+set
+online equal to
+and here i told you is
+online
+question mark
+here we say
+online
+okay and here
+we say what
+okay and after this we are talking about
+this option what written
+okay
+so that's where exactly you perform
+this condition for after that what you
+can do you can just use this option i
+can export
+default
+trendline online status
+so this is where you can
+basically perform this online debugging
+sorry the debugging for all the
+react hooks whichever you looking
+forward for so this is very popular and
+utilized and useful option for the
+regular users
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

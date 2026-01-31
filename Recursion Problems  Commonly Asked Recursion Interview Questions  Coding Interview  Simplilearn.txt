@@ -1,0 +1,366 @@
+recursion it is one of those topics
+which tends to blend with almost every
+other category in the programming world
+interviewers always ask questions based
+on recursion to gauge candidates problem
+solving abilities because this topic
+pushes the candidate's limit and
+differentiate them between good and
+exceptional
+and on that note i am weber khandelwal
+and i welcome you all to simply learns
+youtube channel
+in this session we will discuss some of
+the commonly used recursion problems
+asked in the interviews
+we shall begin our session with the
+first question
+we will be calculating sum of the
+numbers from 0 to a given number
+then we will discuss a recursive
+function that returns the factorial of a
+given number
+after that we will take a glance at a
+recursive function that returns the nth
+fibonacci number post that we will take
+a closer look at a recursive function
+that checks if the string is a
+palindrome
+finally we will discuss recursive
+function that can reverse a given string
+but before we begin make sure you have
+subscribed to our youtube channel and
+click down the bell icon below so you
+never miss an update from simplylearn's
+youtube channel
+so without any further ado let's get
+started with our first question
+we will calculate the sum of numbers
+from 0 to a given number
+we will start with creating a function
+sum
+in function definition we will first
+check if the given number is 0
+or 1
+then we will return the number else we
+will return addition of that number with
+the recursive sum function
+with n minus 1 as an argument
+now let's try it in the code editor
+we will write a function and
+sum
+argument and num
+we will check
+if
+num
+is equals to 0
+or
+num
+is equals to 1
+if yes then we will return
+num
+else
+we will return
+num
+plus
+sum
+of
+n minus 1.
+now
+we will write the code for the main
+block
+we will declare end and comma press
+we will call cn
+to take the input data
+then we will equal res equals to
+sum
+at
+n
+then we will print this sum
+yes
+now let's try and execute this program
+we will give argument as 5.
+as you can see our function is working
+flawlessly
+let's get back to our slides
+now let's move on to our next question
+we will discuss a recursive function to
+find the factorial of given number
+we will start with creating a function
+fact
+in function definition we will first
+check if the given number is less than
+or equal to
+1
+then we will return 1 else we will
+return multiplication of that number
+with a recursive fact function call with
+n minus 1 as an argument
+now let's try that in a correlator we
+will start with function and
+fact
+argument end
+and
+if
+and is less than equals to one
+then
+we will return
+one
+else
+we will return
+and multiplied by recursive function
+that
+with n minus 1 as argument
+now let's write the code for the main
+block
+so we will declare variables end
+and comma rest
+will take input
+from the
+user
+now rest is equal to
+fact
+and
+now we will try to print the value of
+res
+so
+factorial
+yes
+let's try and execute this
+we will find the factorial of 5 which is
+120
+as you can see our function is working
+flawlessly it is getting us the value of
+factorial 5 which is 120
+let's get back to our slides if getting
+your learning started is half the battle
+what if you could do that for free visit
+scale up by simply learn click on the
+link in the description to know more
+then we will move on to our next
+question
+we will discuss a recursive function to
+find the nth fibonacci number
+we will start with creating a function
+fibonacci
+in this function's definition we will
+first check if the given number is less
+than or equal to 1.
+then we will return that number
+else we will return the sum of recursive
+function fibonacci with n minus 1 as an
+argument and recursive function
+fibonacci
+with n minus 2 as an argument
+now let's try to do that in the
+correlator
+let's start by creating a function and
+fibo
+with argument as
+and n
+we will first check if n is less than
+equals to 1
+if yes then we will return
+and
+otherwise we will return
+sum of
+recursive function fivo
+at n minus one
+and the fibonacci function
+at n minus 2
+let's write code for the main block
+we will start with variable
+and
+n
+comma
+res
+we will call cn function to get user
+value for n
+then we will store the value of
+fibonacci function in res
+now we will call print function say out
+to print the value of ras
+so anet
+is fibonacci to res
+return
+zero
+let's try and execute this
+we will check the fibonacci number at
+ninth position which is 34.
+as you can see we are getting the value
+as 34 that is our function is working
+flawlessly
+let's get back to our slides
+now we will move forward with our next
+question
+we will be discussing a recursive
+function that can check if a string is
+palindrome or not
+we will start with creating a boolean
+function in is parallel
+with an argument as string str
+integer low
+and integer high
+first we will check if the string has at
+least one character or not
+then we will compare the first character
+and the last character
+if a mismatch happen then we will return
+false otherwise we will move to our next
+pair by recalling the recursive function
+with incrementing low and decrementing
+high by 1.
+now let's try this in the code editor
+we will start by creating a recursive
+function to check if str
+from low to high is a palindrome or not
+here the low defines the
+first index and high defined the last
+index
+so we will write a boolean function
+is
+valine
+with argument as
+string
+str
+comma
+end
+low
+comma and
+high
+we will check for star base gas
+so if
+low is greater than equals to high
+then we will return
+now we will check
+if
+the first
+character is
+equal
+to the last character
+return false
+now we will move to the next pair
+so
+return
+is
+parent
+with argument as str comma
+low
+plus 1. comma hi
+minus 1
+now let's write the code for the main
+block
+so
+we will take string
+spr
+is equals to
+malayalam
+now we will check
+if
+alien
+now we will find this length of this
+string so int
+ln
+is equals to
+str
+dot length
+now we will check
+if
+s palin
+from str common zero
+to comma
+l a n
+minus 1
+if it is true then it will
+give c out
+we will print palindrome
+rom
+else
+we will print
+not
+a palindrome
+try and execute this in the code editor
+as you can see it is saying that it is a
+palindrome which is correct so a
+function is working flawlessly let's get
+back to our slides
+finally we will discuss a recursive
+function that can reverse a given string
+we will start by with creating a
+function reverse with an argument as
+string str integer low and integer high
+first we will check if the string is
+greater than one character or not
+if yes then we will swap them
+then we will move to our next pair by
+calling the recursive function reverse
+with incrementing low and decrementing
+high by 1.
+now let's write this code in the code
+editor
+we will start with creating a recursive
+function but before that
+we will include a special library
+include
+algorithm
+now
+void
+reverse
+string
+ampersand str
+note that we have passed the string as a
+reference parameter
+low
+end
+high
+now we will check if
+low
+is less than
+high
+if yes then we will swap
+str
+at low
+comma
+sdr
+at high
+then we will call the recursive function
+reverse
+to move to our next pair
+str
+comma
+low plus 1
+comma high
+minus one
+let's write code for the main block
+we will write string
+str
+which is equals to
+simply learn
+now we will
+reverse comma 0
+comma
+str dot length
+minus 1
+now
+c out
+reverse
+of the
+string str
+let's try and execute this
+as you can see this function is working
+flawlessly as it has reversed the word
+simply learn
+let's get back to our slides and this
+was all for today's session hope you
+guys found it informative and helpful if
+you like this session then like share
+and subscribe
+if you have any question then you can
+drop them in the comments section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,176 @@
+hey everyone i am peppa khandelwal and i
+welcome you all to simply launch youtube
+channel in this session we will discuss
+selection sort algorithm we shall begin
+our session by introducing selection
+sort
+then we will discuss selection sort
+algorithm
+after that we will implement selection
+sort algorithm in the code editor
+finally we will sum up what we have
+learned from this session
+before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply runs
+youtube channel
+so without any further ado let's get
+started with an introduction to
+selection sort
+the selection sort algorithm is an
+in-place comparison based method that
+divides the list into two halves with
+the sorted portion on the left and the
+unsorted half on the right then the
+smallest element from the unsorted array
+is chosen and swapped with the leftmost
+element and that element is added to the
+sorted error
+now let's discuss the selection sort
+algorithm
+let's say we have an array
+first we will divide this array in two
+sub arrays unsorted array and sorted
+array
+then we will divide the minimum element
+from the unsorted array and swap it with
+the left most element of this unsorted
+array after that we will add it to the
+unsorted array
+we will keep repeating this process
+until there are no elements left on the
+unsorted array
+we have now introduced
+sort and its algorithm
+now let's implement this algorithm in
+the code editor
+we will start by creating a function
+swap
+argument will be integer pointer x
+comma
+integer pointer
+y
+will declare an element temp
+to store the value of
+pointer x
+then we will store pointer wise value in
+x
+and we will store temps value in y
+and that's how we can swap them
+next we will write the definition of
+selection sort function
+void
+selection sort
+argument will be
+end
+array arr
+comma and
+n
+we will declare variables and i
+j
+and a min
+underscore idx variable to store the
+minimum index
+now we will one by one move boundaries
+of unsorted sub arrays
+so for loop
+i is equals to 0
+where i is less than n minus 1
+i plus plus
+we will find the minimum element in this
+unsorted array so
+min
+underscore
+idx
+is equals to i
+now for
+a is equals to
+i plus 1
+j less than n
+j plus plus
+if
+array element at jth location
+is less than
+array at the min index
+then
+min idx will be updated with j
+now we will swap the form minimum
+element with the first element
+so we will call swap function
+with argument as
+ampersand
+arr
+at min idx
+comma
+ampersand
+arr
+at ith location
+now we will write a function to print
+this array
+so void
+print
+array
+argument as int arr
+and its size
+and n
+uh
+i is equals to 0
+i less than
+n
+i plus plus
+layout
+arr
+at i
+layout
+handle
+now we will write the code for the main
+block
+so end
+arr
+is equals to
+4 comma 2 comma 1 comma 8 comma 3
+we will find the size of this array so
+end n is equals to
+size of
+array arr
+divided by
+size
+of this array is first element
+now we will call selection sort function
+argument as arr comma n
+then we will try to print this so c out
+sorted
+array
+and we will call the function print
+array
+to print this array
+arr comma n
+now let's try and execute this program
+as you can see we have successfully
+sorted this array using selection sort
+algorithm
+let's get back to our slides
+at last let's sum up what we have learnt
+in this session
+first up the selection sort algorithm is
+a comparison based in-place algorithm
+next the selection sort algorithm is not
+appropriate for use data sets
+next up selection sort have the worst
+complexity of big o of n square
+finally it can be beneficial when memory
+write is an expensive procedure
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

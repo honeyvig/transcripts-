@@ -1,0 +1,482 @@
+hi everyone
+welcome to another video on the python
+series of videos by simply loan
+today we are going to look at scopes and
+arguments in python
+now you need to know the basics of
+python functions to understand this
+topic we already have a video on python
+functions so please check that out
+now let's learn about
+what is scope in python
+so scope in python is the area of the
+region of a program where you can access
+variables functions and objects declared
+the scope defines the accessibility of
+the python object so the objects cannot
+be accessed from anywhere in the program
+variables are not visible to the entire
+code so their visibility can be
+restricted
+now scope verifies which variable to be
+accessed
+a variable declared inside a function
+belongs to the local scope of that
+function and can only be used inside
+that function
+now whenever you use a name such as a
+variable name or a function name python
+will search through different scope
+levels or namespaces to determine
+whether the name exists or not
+so python resolves names using the legb
+rule the legb stands for local
+enclosed global and built-in scope
+now talking about local scope the
+variables which are defined in the
+function are called local scope of the
+variable so these variables are defined
+in the function's body
+now talking about
+enclosing scope
+now this scope only exists for nested
+functions if the local scope is an inner
+or nested function then the enclosing
+scope is the scope of the outer or
+enclosing function
+coming to
+global scope
+the variable which can be accessed from
+anywhere in the program is known as the
+global scope such variables can be read
+inside or outside the function
+now the global scope is often
+implemented when we want to use the same
+variable name in the rest of the program
+coming to the
+final rule which is b that is built in
+scope so if a variable is not defined in
+local enclosed or global scope then
+python looks for it in the built-in
+scope now this scope contains names such
+as keywords functions exceptions and
+other attributes that are built into
+python
+now if you define the same variable name
+inside and outside of a function python
+will treat them as separate variables so
+two separate variables one available in
+the global scope that is outside the
+function and the other available in the
+local scope that is inside the function
+now let's head over to our jupiter
+notebook and we'll try
+scopes in python with hands-on
+demonstrations
+all right so i'm on my jupyter notebook
+let's start with our
+examples first we'll look at
+local scope in python
+for that i am going to create a function
+called
+fun
+and
+inside the function i will create a
+variable called
+s which
+holds let's say
+an object called
+simply loan
+and then
+i am going to
+print
+the variable that is s
+now in this case i have defined my
+variable
+inside the function so this becomes
+accessible only
+inside the function
+now if i call the function using the
+function name that is f u n
+and if we run it you can see we have the
+message printed that is simply known
+now
+we'll see another example
+so suppose
+we'll try to access it outside the
+function it will throw an error so i'll
+just give a comment try
+to access
+it
+outside the function
+all right
+so again i'll create
+a function called let's say
+fun 1
+i'll give a colon and here i'll say
+let's say
+s1 equal to simply loan
+and now
+i'll give a comment here print s1
+then i'll call my function
+f u n 1
+and
+i'll try to
+print
+the variable s1
+outside the function so here s1
+has a local scope since it is defined
+inside the function but i am trying to
+access the variable outside the function
+let's run it
+you can see the error here name s1 not
+defined
+now
+if i give a
+comment
+and run this
+you see there is no message and let me
+just remove this comment and print it
+you can see we have the
+s1 variable message printed that is
+simply known so this is how the
+local scope of a function works
+now let's see an example of
+enclosed scope which is
+function inside another function
+so i'll create a function
+let's say func
+and
+i'll use the variable this time s2 equal
+to
+simply loan
+and then
+inside the func function i will define
+another function let's say
+i n func which basically stands for
+inside
+function and then here i'll say print s
+s2
+and
+we'll call the
+inner function that is in
+fu and c
+and then i'll call the outer function
+let's run it
+and see the result
+you can see here we have the message
+printed
+simply learn i just
+edit this message let's say
+welcome to simply loan
+now if i run this
+you can see we have updated the message
+here
+now
+for the enclosed scope you need to
+define an outer function including the
+inner function like we
+did here
+and you can also comment out the local
+variable of the inner function and refer
+to the variable using the non-local
+keyword let me show you an example
+around this
+suppose i have a
+global variable called msg
+i'll see this is a
+global
+scope
+message
+after that
+i'll create a function so i'll define a
+function called
+outer
+and
+i'll use the same variable name that is
+msg
+and my message would be this is an
+outer variable
+after that
+i'm going to define another function
+called
+inner
+and
+this will have
+the same variable that is msg and my
+message would be
+inner
+message
+variable
+now as i mentioned before i need to
+comment out the
+local variable of the inner function so
+i'll just
+comment this out
+and then
+i'm going to say
+non-local which is the keyboard
+so i am
+referring to the variable using the
+non-local keyword
+i'll say non-local
+variable name that is msg
+and now
+i'll
+print msg
+will come out of the function and we'll
+call it
+inner
+after that we'll call the
+outer function
+and then i'm going to print i'll just
+scroll this down
+and we'll say msg
+so here what we are doing is so this is
+an example of an enclosed scope so where
+we have
+defined the outer function enclosing the
+inner function and we have commented out
+the local variable of the inner function
+and we are referring to the variable
+using the non-local keyboard now let's
+run it you see here i have
+my
+two
+print statements working here the first
+one is this is an outer variable you can
+see here and then i have print msg so
+this is a global scope message cool
+now
+we'll see an example of how the global
+scope works though we have already seen
+an example above so this was an example
+of a global
+scope
+now we'll see a few more examples around
+global scope again
+suppose i have a variable called s3
+equal to i'll see
+simply loan
+and then i'll declare a function
+f unc
+one
+i give a colon and then say
+print
+s three
+now i'll call the function f u n c one
+and will print it
+s3
+if i run it you can see here i have
+simply learned printed twice so i have
+used the same variable name s3
+inside the function so
+this simply learn is for the
+local scope s3 that is this one and
+outside the
+function we have printed s3 again so
+simply learn twice
+all right
+now let me show you another example
+about using the
+global scope
+create a variable msg1
+let's say my message is
+welcome to
+simply learn
+python
+programming
+i'll define the function func 2 i'll
+give a colon
+and i'll use the same variable that i
+used
+or declared above that is msg1
+i'll say this is the
+inner msg1 variable
+then i'm going to print
+msg1
+after that i'll call my function func 2
+and i'll print
+msg1
+if i run this
+you can see i have the two messages
+printed first is this is the inner mst1
+variable and the second print statement
+will print the
+global variable
+message that is welcome to simply learn
+python programming
+cool
+now you can also
+use the global keyword inside the
+function to convert a local scope into
+global scope
+now
+i'll just give a comment using
+global keyword
+so i'll define my function func let's
+say 3
+i'll give a colon
+and using the global keyword
+i'll say
+s
+and i'll say s equal to
+simply loan
+now let me
+call func 3
+and will print s outside the function
+now one thing to remember here
+my variable has been declared inside the
+function but since before declaring the
+variable i have assigned the global
+keyword to s
+so this now becomes a
+global scope variable so you can access
+it outside the function as well now if i
+run it you can see it here i have my
+message printed
+simply on if i say hello you can see it
+hello printed
+cool
+now
+we'll see another example of using the
+global scope
+let's say i have a variable called a1
+which is
+india
+and then
+i'll create a function called my country
+and i'll use
+the
+global keyword and say a1
+and after that
+i'm going to
+say a1 equal to
+i'll change the country to let's say
+france
+now let me
+call the function my country
+and will print
+a1
+and you can
+notice the difference in the result so
+here initially i had defined india as a
+global variable and after that i am
+assigning the
+same variable name with a global keyword
+and hence it will take
+the updated value for e1 and you can see
+here the result is france
+now finally let's look at
+built-in scope in python
+this is the final example in the demo
+session about scopes and arguments in
+python
+cool
+so
+this example is a bit different from the
+previous few examples that we saw on
+local scope
+enclosed scope and global scope
+so here
+i am going to
+import
+pi from the math
+module so i will say from math
+import
+pi
+so this example includes
+global scope enclosed scope as well as
+local scope and of course we have the
+built-in scope as well
+now what i'll do is first i'll
+give a comment and
+create a variable called
+pi
+equal to
+i'll say
+global
+pi
+variable
+i'll say this is a global
+pi variable
+and then
+what i'll do is i'll say
+df
+let's do one thing first of all we'll
+remove
+the comment
+and now i'll create a
+outer function
+into a colon and say
+the variable pi
+i'll say
+outer
+variable
+pi
+and then
+i'll create
+a nested function with the name inner
+and
+i'll say pi
+equal to
+inner
+by variable
+now
+i am going to say
+print
+pi
+and
+after that i'll
+call the
+inner function
+and
+next
+i'll also call the
+outer function
+now if i
+run this
+you can see the result
+inner
+pi variable being printed which is this
+print statement
+now
+what i'll do is
+i'm going to comment out the
+global scope variable
+and i'll also comment out
+the first
+outer function variable that i defined
+i'll comment this out
+and i'll also comment the inner
+function
+pi variable
+now
+if i run this
+you see the result here it prints the
+value of pi that was imported directly
+from the math module or the math library
+so here pi is not defined in either
+local
+enclosed or
+global scope so the built-in scope is
+looked up that is the pi value imported
+from the math module so this is an
+example of built-in scope in python that
+uses
+inbuilt
+functions modules and objects that are
+available in python
+all right
+so that brings us to the end of this
+video tutorial on python scopes and
+arguments i hope this video was useful
+and informative if you have any queries
+please feel free to put them in the
+comments section of the video thank you
+for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

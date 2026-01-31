@@ -1,0 +1,597 @@
+hello everyone welcome to simply learns
+youtube channel today we will be
+discussing about queue implementation
+using linked list but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies so if
+you are a tech geek in a continuous hunt
+for latest technological advancements
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without any
+further ado let's get started with the
+agenda for today's discussion
+at first we will quickly revisit the q
+functionalities that we have covered in
+previous sessions
+followed by that we will understand the
+need for linked list implementation of
+queue advancing ahead we will deal with
+representation of queue using linked
+list and the challenges that occurs
+while implementing queue using linked
+list finally we will cover the coding
+implementation of queue data structure
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic which is quick recap on
+queue functionalities
+q as we know from our previous
+discussions is a structure in which
+whatever goes in first comes out first
+for example customer service queue in a
+customer service queue the customer who
+enters first will leave the billing line
+first and the customer who enters last
+will definitely get served at last this
+scenario for insertion and deletion is
+also known as first in first out
+principle moving ahead let's discuss
+some features of this queue data
+structure
+basically q is a linear data structure
+that follows certain restrictions on
+insertion and deletion the insertion can
+only be made from one end and deletion
+can only be performed from another end
+further deletion is called as dq and
+insertion is called as enqueue
+along with these two primary queue
+operation there exists three more
+supportive queue operations named as
+peak is full and is empty peak operation
+should simply return the element at the
+front without removing it from list and
+its full and is empty operation should
+return the state of queue that is empty
+or full
+all these discussed operation must take
+a constant execution time by that what i
+mean is the time complexity for all
+these operations should be big o of one
+now moving ahead we shall understand the
+need for linked list implementation of q
+when we discuss the implementation of
+queue using arrays we discussed the
+limitation of fixed size according to
+that limitation an array will always
+have a fixed size and it should be
+declared before the compilation of
+program furthermore once all the
+positions in an array are taken or it is
+exhausted then we only have two options
+we can either deny insertion by saying
+that the queue is full and we cannot
+insert anything now or what we can do is
+we can create a new larger array and
+copy elements from the previous array to
+the new large array the time complexity
+for this copy operation will be
+proportional to the number of elements
+inside field array in other words we can
+say that the time complexity of this
+copy operation will be big o of n
+but again as we are giving random larger
+size to the array there is a possibility
+of massive memory loss
+like right now in this area 70 percent
+of the memory is unused and the memory
+is a crucial resource that we should
+always be protecting it's not that some
+amount of unused memory will be real
+problem in today's modern day computer
+but it's just that while designing
+solutions and algorithms we should
+always analyze and understand these
+implications regarding memory
+along with this memory wastage there
+exists another sort of memory management
+issue that occurs while utilizing an
+array to implement a queue data
+structure the space of an array which is
+used to store elements can never be
+reused to store the queue elements
+because items can only be inserted from
+the front end and the front end's value
+may be so high at that time the space
+before the pointer will be lost for
+eternity
+let's have a look at an example to
+understand this drawback more clearly in
+this example of array representation of
+q a queue of size 10 having five
+elements is shown the value of the
+friend pointer is 5 therefore we cannot
+reinsert values in the place of already
+deleted elements before the position of
+front that means the space of the array
+before print pointer can never be reused
+for storage purpose
+these drawbacks represents the need for
+a more appropriate method to implement
+queues and by using a proper dynamic
+data structure like linkedlist these
+drawbacks can be easily removed on that
+note let's discuss about the
+representation of queue using a linked
+list
+a linked list as we know is a collection
+of data elements that we call nodes
+these nodes are stored at non-contiguous
+locations in memory further each node
+contains two fill one to store data and
+another to store the address of next
+field or the reference to the next node
+let's assume that the node in this
+figure are at addresses 200 400 and 500
+respectively i have failed this
+addresses in the address field as well
+the identity of the linked list that we
+always keep with us is address of the
+head node we often name a pointer or
+reference variable at which we store the
+address as head
+so now we are saying that we want to use
+a linked list to implement queue data
+structure and the basic definition of
+queue conveys that a queue is a linear
+data structure in which insertion is
+performed at the rear node and deletion
+at the front node it's really effortless
+to enforce this property of a queue in
+linked list we can simply pick one side
+of a linked list for insertion and
+another site for deletion if the head
+node is considered to be front then the
+tail node will be the rear otherwise if
+the head node is deemed to be the rear
+then the tail node will be the front end
+whatever side we are picking for
+whatever operation we just need to make
+sure one thing and that thing is the
+operations that we are carrying out must
+take a constant time or in other words
+that time complexity should be big of
+one
+i hope that you guys are clear with the
+representation of a linked list as a
+queue data structure
+now moving forward we will discuss about
+its implementation
+but before that let's have a look at the
+time complexity management challenge
+which occurs in queue implementation of
+a linked list
+in the case of linklish the cost for
+insertion or removal from the head side
+is bigger of one but the cause for
+insertion or removal from the tail side
+is big o of n
+so here is the d in a standard
+implementation of queue using linklish
+if we insert element at one side and
+remove them from other side then one of
+these operation nq or dq depending on
+how we are picking this side will cost
+us big o of n
+but the requirement that we have
+specified before for q implementation
+suggest that both these operations must
+take a constant time
+so we'll definitely need to do something
+to ensure that both nq and dq operations
+take constant time
+let's call this side front and this side
+rear
+so
+i want to enqueue a node from the tail
+side and i want to perform a dq at the
+head side
+we are good for dq operation because
+removal from the front will take a
+constant time but insertion or enqueue
+operation will be costing us big of n
+let's first see why insertion at the
+tail will be costlier and then maybe we
+can try to do something to insert an
+element at the rear end what we will
+have to do is first we'll have to create
+a node let's say i have got this node at
+address 350 and the integer that i want
+to enqueue is 7 the address part of this
+node can be set as null
+now we have to build a link with this
+created new node and to do that first
+we'll set the address part of the last
+node as the address part of this newly
+created node but the only identity that
+we always keep with us in case of linked
+list is address part of head node so to
+get appointed to any other node we need
+to start at head that is why first we'll
+create a pointer variable temp and will
+initially set it to head node and now
+using this stem pointer will traverse to
+the end of our linked list that is the
+tail node
+and here using this pointer temp we can
+write the address part of the newly
+created node at the previous tail node
+to build this new link
+this traversal of pointer from head to
+tail is taking all the time for
+insertion we use a statement like temp
+is equal to temp dot next to move the
+next node what we can do is we can avoid
+this whole traversal with the help of
+pointer variable just like head node
+we can call this variable tail or even
+rear let's call this variable rear for
+now and also the variable which storing
+an address of head as print in any
+insertion or removal we'll have to
+update both print and rear now but from
+now on whenever we will perform enqueue
+operation we can directly check where a
+rear node is and update its address to
+formulate a new insertion link this
+simple addition of one pointer resolves
+a problem with the cost of insertion
+let's understand this scenario with the
+help of an example previously we were
+traversing from head node to the tail
+node but now as we know the location of
+tail node there is no need for any
+traversal we can directly update the
+address part of rear node to make a link
+for new node
+here the new node with data element 7
+will be linked to the previous node and
+the rear pointer will also be updated to
+point towards the newly inserted node
+now the complexity for both the
+operation will be big of 1
+which means we can now begin with the
+coding implementation of q using a
+linked list so let's dive directly into
+that
+in order to get started with our coding
+implementation we'll need to load some
+dependencies that are called as header
+files i have already included those
+header files here so first of all we'll
+declare a structure to create nodes for
+our linked list and inside the structure
+we'll initialize data and address part
+so let's get started with creation of
+this structure
+struct
+node
+now the initialization of data and
+address part
+and
+data
+struct
+node star
+next
+now using this created structure we will
+initialize front and rear pointers so
+let's create this front and rear pointer
+struct
+node
+star
+front
+is equal to null
+similarly struct
+node star
+rear
+is equal to
+none
+the declaration of variables that we
+have done here is in global scope the
+reason behind that is to make sure that
+these variables will be accessible to
+all the functions
+so moving forward let's work out the
+primary queue operation we'll start with
+enqueue operation so let's create a
+function for that void
+enqueue
+and inside this function will pass an
+argument in x to insert a element
+now
+inside the enqueue function will take an
+integer as an argument in this function
+will create a new node for purpose of
+insertion so let's create that new node
+struct
+node
+star
+temp
+is equal to
+struct
+node star
+malloc
+size of
+struck
+no
+so with this size of function we have
+allotted the size of address part as
+well as the data part
+one more thing i want to tell you guys
+is i am using malloc in c here for
+dynamic memory allocation if you want to
+implement this code using c plus plus
+then you can use new operator instead of
+malloc the purpose of using malloc here
+is to create a node in dynamic memory
+now moving ahead
+we can start working on two cases of
+enqueue operation primarily there won't
+be any element inside the queue so for
+the first insertion we'll manually set
+both front and rear to the address of
+this newly created node so to do that
+first we'll have to create a if
+condition
+if
+front
+is equal to equal to null
+and then
+rear
+is equal to equal to null
+front
+is equal to real
+is equal to
+10.
+which is nothing but the new created
+pointer variable and will return
+the control
+if this condition fails that means there
+are already some elements present inside
+our queue so
+using else condition we can write
+another statements rear
+dot next
+is equal to temp
+and rear
+is equal to
+10.
+basically these two lines of code are
+just updating the address part of the
+next node along with setting the
+temporary data into rear node's data
+field
+this code will be further clear if i'll
+show things moving in simulation so
+let's revisit powerpoint for that
+purpose
+let's say initially we have an empty
+queue so both front and rear will be
+null null is only a macro for address 0
+at this stage let's say we are making a
+call to enqueue function passing number
+2 as an argument now let's go through
+the nq function and see what will happen
+first we'll create a node the data part
+of this node will be set as 2 and the
+address part will initially set as null
+let's say we got this node at address
+100
+so a variable name temp will store this
+address right now the front and rear
+both are null so we'll go inside this if
+condition and simply set both front and
+rear as hundred
+after the first enqueue operation our
+queue will look like
+this let's say we are making another
+call to enqueue function at this stage
+passing number 4 as an argument once
+again a new node will be created let's
+say i got this new node at address 200
+this time the queue is not empty so in
+this function we'll first go to the
+statement rear dot next is equal to 10
+so we'll set the next part of this node
+at address 100 as the address of a newly
+created node which is 200 so we'll build
+this link now and now we'll store the
+address of this new rear node in this
+variable name rear so this is how my
+queue will look like after the second
+enqueue operation
+i hope that you guys are clear with the
+implementation of enqueue operation and
+the working of its code let's deal with
+the next queue operation named as dq in
+our code editor
+now inside this dequeue function i'll
+create a temporary pointer to the node
+in which i'll store the address of the
+current front or head node so that we
+can directly delete it so the statement
+i'll write for that is struct
+node
+star
+temp
+is equal to
+front
+now the first condition that will write
+in this dq function is underflow error
+so let's begin with if lock if
+front
+is equal to equal to null
+printf
+q
+is an empty state
+slash n
+and return the control to the next
+function
+otherwise in next case when both front
+and rear will be equal we'll set both
+these pointers to the null manually so
+to do that we'll insert another if lock
+if
+front
+is equal to equal to rear
+front
+is equal to rear
+that's equal to
+null
+this if lock will get activated when
+there is only one element inside the
+queue in all other cases we can simply
+make a front point to the next node so
+we'll simply do a front is equal to
+front dot next so for that we'll write
+else block
+else
+front
+is equal to
+front
+dot
+next
+in all three previous mentioned cases we
+are trying to remove elements and that
+can only be done by implicit call of
+function free so let's call function
+free to delete the front node from our
+queue
+so the statement that we'll write is
+front free
+the temporary variable which is actually
+storing the head node address
+next we'll work on peak operation and
+for that we'll create a new function
+in
+peak
+basically the peak function is used to
+extract the value of print pointer for
+front pointer we will simply check if
+the queue is empty if it is empty then
+obviously there is no element at front
+node to extract but if it is not empty
+then we can extract a value from print
+pointer so for that we'll create a if
+block if
+front
+is equal to equal to
+null which also means the queue is empty
+then we'll return
+printf
+q
+is empty
+slash and
+otherwise we will return
+the data present at front node
+now we have implemented all important q
+functionalities but we won't be able to
+check the state of queue with the help
+of these functions so let's formulate
+one more function called as print to
+visualize our queue so
+let's define this function void
+print
+inside this function will create a
+temporary pointer struct
+node
+star
+temp
+is equal to front
+we are initializing this temporary
+pointer to the front so that we can
+traverse the whole q elements using
+iterator element so moving forward let's
+create this iterator element using a
+while block so the statement that will
+write for that is while
+temp
+is not equal to null
+printf
+modulus d
+comma
+temp
+dot
+data
+and we will set
+temp
+is equal to temp dot
+next
+this is nothing but the traversal of
+linked list
+now we'll also print f
+slash n
+so that
+all elements will be printed in order
+with this we have completed the
+implementation of print function as well
+now let's work on our driver method
+called as main function to contemplate
+the output of our program
+inside this we'll make call to the
+enqueue function nq
+2
+and we will print the state of our queue
+using print function next we'll make
+call nq
+4
+and we will also print this state using
+print function
+next we'll make call to enqueue 6
+and we'll also print the state of our
+queue at this instance
+now after this we'll dequeue few
+elements dq
+and we'll print a state
+next we will enqueue one more 11 and
+queue eight
+now that we are done with the coding
+implementation of queue using linked
+list let's execute the program and
+visualize the output
+this is the output that we have received
+let's compare it with the calls that we
+have made in order to judge its
+correctness
+the first call that we made was nq2
+so the print function has printed 2 over
+here
+after that we inserted 11 4 and 6 and
+our print function has printed the state
+after these operations as well next we
+deleted the element present at front
+pointer which is 2 so after deleting 2
+the output that we got is 4 and 6.
+finally we inserted one more element to
+check if it is getting inserted at the
+rear end and that element was it which
+is exactly inserted at the rear end of
+cube
+so with this coding implementation we
+come to the end of this video i hope you
+guys are clear with the q implementation
+using linked list but if you still have
+any queries regarding the topics covered
+in this video then let us know in
+comment section below and our team of
+experts will be happy to resolve all
+your queries thank you so much for
+watching this video and stay tuned to
+simply learn for more technical videos
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

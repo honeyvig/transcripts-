@@ -1,0 +1,645 @@
+hey everyone welcome back to another
+video by simply learn in this tutorial
+we'll make a project in c plus
+this project will be a login and
+registration system in c plus
+in which a user can register
+log in and also if he or she forgets the
+password then also it can be recovered
+we will make this project using the
+fundamentals of c plus like switch case
+statements and file handling operations
+etc
+but before that if you are new to our
+channel then consider getting subscribed
+to our youtube channel as we have daily
+updates on multiple technologies
+let's go ahead and understand this c
+plus plus project of login and
+registration system
+in this project first of all we will
+make a menu page
+in which there are options like login
+registration
+forward password and exit
+then we'll ask the user to select anyone
+among those options
+once the user has selected a particular
+option
+then we have to continue with the
+functionality of that
+so now let's switch to our code editor
+and do its practical implementation
+so this is our dev c plus plus code
+editor now let's create a new file
+now first of all we will include the
+header files
+the hash include iostream
+then there is
+f stream class or file handling
+operation
+hash include f stream
+then there is string dot h
+for string
+then we will include the namespace
+standard
+now we will do the forward declaration
+for three functions that is login
+function registration function and
+forward function
+and after that inside the main function
+we will make the menu for the login page
+so let's start
+first of all we are doing the forward
+declaration
+this is the login function
+this is the registration function
+and this is the forward function
+now inside the int main
+first of all we will make a variable c
+which stands for choice c for choice
+so now
+we will make the menu page
+so let's
+create will use
+slash t writing the horizontal space
+now in the end we will use slash n
+all right similarly we'll do here
+welcome to
+the login page
+now again we'll do the same
+slash d
+slash t slash t
+and now
+underscores
+menu
+slash insulation
+all right now we will make the options
+so we'll do the slash d
+now after slash t will add
+vertical bar
+then
+we'll write press
+1
+to login
+let's make it capital
+press one to login
+and after making some space then
+vertical
+bracket again
+then end l
+similarly we'll copy it and do for
+option 2.
+press 2
+to register
+all right
+let's maintain the symmetry
+press three
+if you forgot your password all right
+press 4 to
+exit all right
+so this is done now after that we will
+ask the user to enter your choice
+and for that we'll display a message
+saying that
+please enter your choice
+but before that we'll use slash n and
+some slash t's
+all right now we'll ask the user please
+enter your
+choice
+all right
+now we'll take the input of the choice
+that is c that we have already declared
+next line
+now
+we'll use switch case statements
+for example if the user selects 2 to
+register first of all
+then
+inside the switch case statement in case
+2 we will call the registration function
+and if the user enters 1 then we will
+call
+the login function
+so let's do that
+let's create a switch statement
+and see
+that is choice
+now inside the switch statement first of
+all we'll create a case one
+inside this case there would be
+login
+we are calling this logging function
+and then there is break statement
+all right similarly now we will
+create case 2.
+so case 2 would be registration
+here we are calling the registration
+function
+and then there is break statement
+in case 3 there is forgot function
+that is if the user forgets the password
+then this function will be implemented
+now
+there is a default case
+no now there is a case 4.
+in case 4 there would be a message
+saying that
+thank you
+because case 4 would be exit
+so we'll display a message saying that
+now we'll also have to make the default
+case
+that is if the user selects 5 6 or any
+other number that is not in the menu
+then we will display a message saying
+that
+please select from the options given
+above
+so before that we'll add the slash d
+please select
+from the options
+given above
+after that we'll use slash n
+and endl
+after that we'll call the main function
+so that the control goes back to the
+main function and
+we'll also use
+system
+cls that is clear screen
+it means every time the code is
+processed it will clear up the screen
+now all we need to do is to create the
+login function
+so
+i'll write
+void
+login
+and inside this function first of all
+we'll create some variables
+and so let's do that and count
+user
+id
+no this user id would be of string
+write
+string
+user id
+then there would be
+password
+then id
+then pass
+all right so these are the variables
+that we have created
+now again we'll use the
+system cls
+that is clear screen
+we have to
+write cls inside the double quotes
+all right now we will display a message
+that please enter the username and
+password
+so we'll do that
+and we'll write slash g slash d slash d
+and
+please enter
+the username
+and
+password
+all right now
+will again display a message saying that
+username
+now we'll take the input
+so here user id
+is the username that the user will enter
+now again we will display a message
+saying that password
+let's make it capital
+again we'll take the input
+now as the user has entered the username
+and password
+now we will check that if that username
+and password already exist in our
+records
+and for that we will use the file
+handling operation of if stream class
+because if stream is used
+to read the data
+so
+we will use if stream
+and if stream class
+this will read the data from the file
+input is the object name
+and
+the file name would be
+records
+dot txt
+all right we'll have to
+[Music]
+make it inside the double quotes
+all right
+so now this if stream will check inside
+the file that if that login password
+exists or not
+and to check that we will have to use
+the while loop
+inside the while loop will write
+input that is the object name
+then there would be id
+and then
+pass
+so this is the id and password
+and this is how we read in file handling
+operations
+here what we are doing is we are reading
+that if
+that id and password is there
+and then we will match those id and
+password
+with
+the id and password that is entered by
+the user
+so for that we will have to use the if
+condition inside the while loop
+so let's do that
+we will write if
+id equals user id
+and
+pass equals password
+then
+count would be
+one
+and then we will use system cls to clear
+the screen
+here we have assigned one to count
+because in the next part we will use an
+if condition
+that if the count is one then we will
+display a message saying that
+your login is successful that is the
+password or username entered by the user
+matches with the record that is
+the user has already registered
+so now before that we have to close this
+file
+so
+let's do that
+we will to close this file we will use
+the object name that is input dot
+close this is how we can close the file
+all right now we'll use the if condition
+and inside this if condition
+as i have said if count equals 1
+all right if count equals 1
+then we will first of all display the
+user id that is the username
+and then we will display a message that
+your login is successful
+so let's do that
+your login
+is successful
+now thanks for logging in
+now again we will
+shift the control to the main
+because there is the main menu
+and now
+inside the else block
+we will display a message
+that is if the user and password is not
+found inside the file then
+it means that the
+user is not registered so he can't login
+he has to register first
+so we'll
+display a message
+saying that
+login error
+please check your username
+now again
+main function
+now we have to create another function
+that is the registration function
+that is if the user press 2 then this
+registration function would be called
+so let's create this function
+void registration
+now inside this function we will first
+of all create some variables then after
+that we'll ask the user to enter the
+username and password pretty much the
+same as that of the previous function so
+first of all string
+r for registration
+user
+id
+our user id
+then r
+password
+then rid and our pass
+system cls again clear screen
+all right
+now we will
+display a message saying that enter the
+username
+again
+enter the password
+our password
+all right
+so in the previous function we have used
+if stream class but in this function we
+will use off stream class because we
+want to write inside the file and off
+stream helps us with that
+so
+for that we will use off stream
+and object name would be f1
+and
+records is a file
+and we will use the
+app mode this ios mean the input output
+stream and app will open the file and
+append the output in the end
+so this is our app mode
+there are different modes
+so here we are using this app mode
+so after this we'll put the semicolon in
+the end
+now
+we have to write inside the file so
+we'll do the
+f1
+and this is how we write inside the file
+f1 here is the object name
+and our user id
+is the username and after that we'll add
+some space
+and then
+our
+password
+that is the password
+we want some space between the username
+and password that is why we have
+used the single quotes and
+this is how we write inside the file and
+after that we'll again use the system
+cls that is the clear screen
+all right
+now we'll display a message that
+registration is successful
+as we have already written inside the
+file so now we can display this message
+saying that registration is successful
+now again control back to the main
+function
+so now we will create the forgot
+function
+this is the last function
+void
+forgot
+so this function
+would be called when the user
+forgots the password or username
+so first of all we will create a
+variable
+option
+now we will ask the user that you forgot
+your password no worries then we'll ask
+the user to press one to search your id
+by you by your username and press two to
+go back to the main menu
+so let's start
+before that we will use system cls
+all right now we'll display the message
+saying that
+you forget the password
+no worries
+and then
+new slashing
+now press one
+to search
+your
+id
+by username
+all right
+now
+press 2 to go back to the main menu
+all right now after that
+we'll use slash d
+all right now enter your choice
+now we'll take the input
+c in
+option
+after that using the switch case
+statement
+option
+now inside the switch case
+you will create cases
+so case one
+that is when the user selects option one
+then
+hint
+we'll use bracket over here because
+there will be
+multiple lines
+all right
+now int count
+we'll initialize it with zero
+now
+some more variables we will declare the
+string
+s user id
+and
+s id
+then s pass
+so these are some string variables and
+count is the integer variable after that
+will display a message that enter the
+username which you remembered
+so let's do it
+the username
+you remembered
+all right
+now
+we will take the input from the user
+as user id
+so once the user entered the username
+then we will check
+that if that username exists in the file
+using the if stream object as we know
+stream is used when we want to read from
+the file or check from the file
+so we'll create the if stream class
+and the object name would be f2
+and
+records.txt is the file
+all right now using the while loop
+we will check
+that if
+the username is there inside the file or
+not
+so sid
+and s pass
+so now
+if
+s id equals
+s
+user id
+then
+count equals one
+so we will assign one to count and
+after that we will close the file that
+is f2
+dot close
+so here what we are doing is we are
+checking inside the file using the
+stream object that if that id or
+password is there and if that id is
+there then we'll assign one to the count
+as initially it was zero and then again
+we'll do the same as that we have in the
+pre as we have done in the previous
+function that if count equals to one
+then we will
+print a message that your account is
+found
+so let's do that
+so as we have closed the file now after
+that
+we'll use an if statement
+with a condition that if
+count equals 1
+then we will print a message saying that
+your account is found
+your password
+s is
+so it will display the password
+again the control will be shifted to the
+main
+where there is the main menu
+and inside the else block now
+inside the else block will
+display a message
+saying that
+sorry your account is not found
+sorry
+your account
+is not
+found
+so as the case one ends we will use the
+break statement
+now we will create case 2.
+in case 2 as we have
+said that it will simply call the
+go back to the main menu so
+all we'll do is
+call the main function
+so that the control will go back to the
+main menu
+and now also we have to create the
+default case
+in the default case we'll simply print a
+message saying that wrong choice please
+try again
+so we'll you slash t slash d slash d
+wrong choice
+please try again
+after that
+we will call the forgot function
+so that the user can try again with the
+correct option
+all right so
+we forgot to save this
+so let's name it as
+register dot cpp
+and save it
+now let's try to run this
+go to execute and compile and run
+there is some error
+all right so it must i must be capital
+as we have declared
+let's try again
+so as you can see welcome to login page
+this is the menu and this is press one
+to login press two to register press
+three if you forgot your password press
+four to exit
+so now we will enter our choice first of
+all we need to register so we'll write 2
+and our username as
+sam
+at the rate
+email
+is our username
+and now our password
+sam123 is our password
+so as we can see the message
+registration is successful
+after that we will log in
+as we have registered now we'll try to
+log in
+sam address email is our username
+and sam
+one two three
+our password so as you can see your
+login is successful
+thanks for logging in
+now let's say i forgot my password
+so i'll press 3 as if you forgot your
+password you have to press three
+so
+there's a message you forgot the
+password no word is please
+press one to search your id by your
+username so i'll press one
+now i'll write my username the last
+username i remembered
+sam at the rate
+email
+so your account is found your password
+is this as you can see
+so let's say
+again if i forgot the password and by
+chance
+i write
+sammy
+at the rate email
+then sorry your account is not found is
+displayed
+as sam at the rate email is the
+registered customer and not sammy at the
+right email so it will display this
+message that sorry your account is not
+found
+and let's say again if we try to
+press let's say 5
+then we can see that please select from
+the options given above actually we have
+to make it below options given below
+but we can do that else everything is
+working fine so now we will click on
+exit that is 4
+and this is the message thank you
+so as you can see this is our
+registration and login
+system in c plus and this is how we can
+do it
+we have created these three functions
+that is login function
+then there is registration function
+after that there is a forgot function if
+we forgot the password and the code is
+pretty easy and not that much long so
+you can try this code on your own
+all right guys with that we have come to
+the end of this tutorial on login and
+registration system in c plus plus
+if you like this tutorial please give it
+a thumbs up i hope it really helped you
+all thanks for watching stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

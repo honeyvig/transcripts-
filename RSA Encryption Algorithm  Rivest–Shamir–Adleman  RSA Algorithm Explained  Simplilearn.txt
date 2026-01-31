@@ -1,0 +1,317 @@
+digital signatures have become a part
+and parcel of the everyday
+correspondence in the corporate sector
+the pandemic has further accelerated the
+need for digital wears to become
+mainstream in the business world
+while we have already learned regarding
+the dsl algorithm which is exclusively
+used for verification and transmission
+of signatures
+the rsa algorithm can be used for
+general data encryption and decryption
+as well
+functioning on a similar public key
+cryptography architecture it is seen as
+a more complex solution to bolster
+security let us take a look at the
+topics to be covered today
+we first get a recap on what asymmetric
+encryption is and how is it any
+different from symmetric encryption
+we learned what digital signatures are
+and how they are used in today's world
+we understand how rsa system works and
+how it can be used to encrypt and
+decrypt general data apart from the
+digital signatures finally we learn
+about the advantages rsa provides when
+it comes to managing signatures and
+encrypting information in a professional
+environment
+let's take a look at what asymmetric
+encryption is
+asymmetric encryption uses a double
+layer of protection
+there are two different keys in play
+here a private key and a public key a
+public key is used to encrypt the
+information pre-transit and the private
+key is used to decrypt the data post
+transit this pair of keys must belong to
+the receiver of the message
+the public keys can then be shared via
+messaging blog posts key servers and
+there are no restrictions for it as you
+can see in this image two keys are
+working in the system
+the sender first encrypts the message
+using the receiver's private key after
+which we received the ciphertext
+the ciphertext is then transmitted to
+the receiver without any other key on
+getting the ciphertext the receiver uses
+his private key to decrypt the
+ciphertext and get the plain text back
+there has been no requirement of any key
+exchange throughout this process
+therefore solving the most glaring flaw
+faced in symmetric key cryptography
+the public key known to everyone cannot
+be used to decrypt messages and the
+private key which is known to everyone
+cannot decrypt messages it doesn't need
+to be shared with anyone the sender and
+receiver can exchange personal data
+using the same set of keys for as often
+as possible
+in the current scenario if we have two
+people mary android who wants to send
+messages to each other
+mary must use roy's public key to
+encrypt the information before passing
+on the cipher text to roy
+on receiving the cipher text roy can use
+his private key to decrypt the data and
+get the plain text back
+like we highlighted earlier both the
+keys belong to roy who is the receiver
+in this particular interaction
+we now have a revision on how asymmetric
+encryption works let us understand what
+digital signatures are and how they work
+the objective of digital signatures is
+to authenticate
+and verify documents and data
+this is necessary to avoid tampering and
+digital modifications or any kind of
+forgery during the transmission of
+official documents
+with one exception the work on the
+public key cryptography architecture
+typically an asymmetric key system
+encrypts using a public key and decrypts
+with a private key
+for digital signatures however the
+reverse is true the system is encrypted
+using the private key and it is
+decrypted using public key
+because the keys are linked together
+decoding with the public key verifies
+that the proper private key was used to
+sign the document thereby verifying the
+signature's provenance in step 1 we have
+m which is the original plain text
+message
+it is passed on to a hash function
+denoted by h ash to create a hash digest
+h
+next it bundles the message together
+with the hash digest and encrypts it
+using the sender's private key it sends
+the encrypted bundle to the receiver who
+can decrypt it using the sender's public
+key
+once it decrypts the message it is
+passed to the same hash function to
+generate a similar digest it compares
+the newly generated hash value with the
+bundle hash value received along with
+the message
+if they match it verifies the data
+integrity
+in many instances they provide a layer
+of validation and security to messages
+sent through a non-secured channel
+properly implemented a digital signature
+gives the receiver reason to believe
+that the message was sent by the claimed
+sender
+digital signatures are equivalent to
+traditional handwritten signatures in
+many respects but properly implemented
+digital signatures are far more
+difficult to forge than the handwritten
+type digital signature schemes in the
+sense used here are cryptographically
+based and must be implemented properly
+to be effective
+they can also provide non-repudiation
+meaning the signer cannot successfully
+claim they did not sign a message while
+also claiming their private key remains
+secret
+further some down repudiation schemes
+offer a timestamp for the digital
+signature so that even if the private
+key is exposed the signature is valid
+to implement the concept of digital
+signature in real world practice we have
+two primary algorithms to follow
+the rsa algorithm
+and the dsa algorithm
+the former is a topic of learning today
+so let's go ahead and see what the rsa
+algorithm is supposed to do
+the rsa algorithm is a public key
+signature algorithm developed by ron
+rivest adi shamir and leonard edelman
+the paper was first published in 1977
+and the algorithm uses logarithmic
+functions to keep the working complex
+enough to withstand brute force and
+streamlined enough to be fast post
+deployment
+rsa can also encrypt and decrypt general
+information to securely exchange data
+along with handling digital signature
+verification
+let us understand how it achieved this
+we take our plain text message m we pass
+it through a hash function to generate
+the digest h which is then encrypted
+using the sender's private key
+this is appended to the original plain
+text message and sent over to the
+receiver
+once the receiver receives the bundle we
+can pass the plain text message to the
+same hash function to generate a digest
+and the ciphertext can be decrypted
+using the public key of the sender the
+remaining hashes are compared if the
+values match then the data integrity is
+verified and the sender is authenticated
+apart from digital signatures the main
+case of rsa is encryption and decryption
+of private information before being
+transmitted across communication
+challenge
+this is where the data encryption comes
+into play when using rsa for encryption
+and decryption of general data it
+reverses the key set usage unlike
+signature verification it receives the
+receiver's public key to encrypt the
+data and uses the receiver's private key
+in decrypting the data
+thus there is no need to exchange any
+keys in this scenario there are two
+broad components when it comes to rsa
+cryptography one of them is key
+generation key generation employs a step
+of generating the private and the public
+keys that are going to be used for
+encrypting and decrypting the data
+the second part is the encryption and
+decryption functions these are the
+ciphers and steps that need to be run
+when scrambling the data or recovering
+the data from the ciphertext
+you will now understand each of these
+steps in a next subtopic
+keeping the previous two concepts in
+mind let us go ahead and see how the
+entire process works starting from
+creating the keeper to encrypting and
+decrypting the information
+you need to generate the public and
+private keys before running the
+functions to generate ciphertext and
+plain text they use certain variables
+and parameters all of which are
+explained
+we first used two large prime numbers
+which can be denoted by p and q
+we can compute the value of n as n equal
+to p into q and compute the value of z
+as p minus 1 into q minus 1.
+a number e is chosen at random
+satisfying the following conditions and
+a number d is also selected at random
+following the formula e d mod j equal to
+1 and it can be calculated with the
+formula given below
+the public key is then packaged as a
+bundle with n and e and the private key
+is packaged as a bundle using n and d
+this sums up the key generation process
+for the encryption and decryption
+function we use the formula c
+and m
+the ciphertext can be calculated as c
+equal to m to the power e mod n
+and the plaintext can be calculated from
+the ciphertext as c powerd mod n when it
+comes to a data encryption example
+let's take p and q as 7 and 13.
+the value of n can be calculated as 91.
+if we select the value of e to be 5 it
+satisfy all the criteria that we needed
+to
+the value of d can be calculated using
+the following function which gives it as
+29 the public key can then be packaged
+as 91 comma 5 and the private key can
+then be packaged as 91 comma 29.
+the plain text if it is 10 which is
+denoted by m
+ciphertext can be calculated to the
+formula c equal to m to the power e mod
+n which gives us 82.
+if somebody receives this ciphertext
+they can calculate the plaintext using
+the formula c to the power d mod n which
+gives us the value of 10 as selected as
+our plain text
+we can now look at the factors that make
+the rsa algorithm stand out versus its
+competitors in the advantageous topics
+of this lesson
+rsa encryption depends on using the
+receiver's public key so that you don't
+have to share any secret key to receive
+the messages from others
+this was the most glaring flaw faced by
+symmetric algorithms which were
+eventually fixed by asymmetric
+cryptography structure
+since the key pairs are related to each
+other a receiver cannot intercept the
+message since they didn't have the
+correct private keys to decrypt the
+information
+if a public key can decrypt the
+information the sender cannot refuse
+signing it with his private key without
+admitting the private key is not in fact
+private anymore
+the encryption process is faster than
+that of the dsa algorithm
+even if the key generation is slower in
+rsa many systems across the world tend
+to reuse the same keys so that they can
+spend less time in key generation and
+more time on actual cipher text
+management
+data will be tamper proof in transit
+since meddling with the data will alter
+the usage of the keys the private key
+won't be able to decrypt the information
+hence alerting the receiver of any kind
+of manipulation in between
+the receiver must be aware of any third
+party who possesses the private key
+since they can alter the data mid
+transit the cases of which are rather
+low hope you learned something
+interesting today if you have any
+questions regarding this topic feel free
+to ask us in the comments below and we
+will be happy to answer your question
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

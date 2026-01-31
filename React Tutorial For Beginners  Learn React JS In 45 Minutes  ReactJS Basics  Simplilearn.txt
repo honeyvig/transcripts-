@@ -1,0 +1,1005 @@
+did you know that react is used by over
+10 million developers worldwide it's
+also the framework behind some of the
+world's most popular websites including
+Facebook Instagram and WhatsApp with
+more than two lakh stars on GitHub react
+is one of the most loved and widely used
+JavaScript libraries out there so are
+you excited to learn how to build
+amazing web applications using react
+then you have come to the right place
+but before learning it you must know
+where is react being used in your
+day-to-day life think about the websites
+you frequently use the effortless
+scrolling of your social media feed the
+instant movie recommendation on your
+favorite streaming service or even the
+smooth updates on your too list app
+these Dynamic experiences are often
+powered by react
+GS craving a career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FastTrack your
+Ambitions whether you're making a switch
+or aiming higher simply learn has your
+back so if you are interested in
+learning react or advancing your career
+as a M Stack developer then this full
+stack developer Masters program by
+simply learn is for you you will Master
+top skills like mongodb expressjs react
+and nodejs along with Git HTML CSS and
+JavaScript to build and deploy
+interactive applications and service
+services with handson projects and
+expert instructions you will gain
+practical experience and a deep
+understanding of full stack development
+and R now to become a proficient M Tech
+developer and take your career to the
+next level the course link is in the pin
+comments and the description box all
+right so let's get started all right so
+in this video we will learn what you
+should do before learning theact then
+react folder structure jsx then react
+components then react props after that
+we'll learn additional rendering and
+then the rendering lists so without
+further Ado let's get started all right
+so before moving forward we need to
+understand what is react so reactjs
+often shortened to react is a JavaScript
+library specifically designed for
+building user interfaces that is uis
+think of it as a collection of pre-made
+building blocks that you can assemble to
+create Dynamic and interactive web pages
+unlike traditional web development where
+you write out every detail on the page
+react lets you focus on describing what
+you want the UI to look like and it
+handles the efficient updates behind the
+scenes this makes building complex
+interfaces faster and easy to maintain
+all right now let's understand what you
+should do before learning react so
+before we start learning react it's
+important to know a bit about HTML CSS
+and JavaScript so basically HTML is what
+we use to build the basic structure of
+web pages in react you will use
+something similar called jsx to create
+your components so understanding HTML
+will help you a lot then CSS CSS is what
+makes your web pages looks nice by
+adding Styles like colors fonts and
+layouts knowing CSS means you can make
+your react components look good too all
+right now JavaScript JavaScript is a
+language that makes web pages
+interactive and dynamic since react is
+built on JavaScript you need to
+understand how to use it to handle
+things like user interactions and data
+changes if you have a good grasp of
+these three technologies that is HTML
+CSS and JavaScript you'll find it much
+easier to learn and work with react but
+you don't have to worry as we are
+covering react from the basic so you
+don't have to worry about that but a
+basic understanding of these three
+Technologies would help you all right
+now we'll have to understand how to
+start with theact that includes how to
+download it and from where we'll have to
+download it and so let's do that all
+right so we'll go to Google and we'll go
+for nodejs download you guys might be
+confusing here like why we are
+downloading nodejs so for that we'll
+have to understand many things so we to
+get started with Thea basically you need
+to set up your development environment
+which includes installing nodejs npm and
+understanding npx so basically nodejs is
+Javascript runtime that allows you to
+run JavaScript on your server or a local
+machine it's essential for developing
+like modern application including uh
+those built-in react so we'll have to
+download it because we'll be using npm
+and npx commands so npm is basically the
+node package manager it's a tool that
+comes with the nodejs it helps you
+manage JavaScript packages and libraries
+uh including react so basically for that
+reason we'll have to download nodejs and
+talking about npx that I uh Told You So
+basically npx is like a tool that comes
+with npm uh it started from version
+5.2.0 and it allows you to run npm
+packages without installing them
+globally so this is useful for running
+create react app without clustering your
+system with unnecessary package so
+basically if you npm is for managing
+packages and npx is for uh like running
+the packages so in short we can describe
+this by this all right so we'll go to
+nodejs download and you can download it
+from here can find the download option
+and you can easily download it I already
+have it in my system so I'll not be
+downloading it it's pretty simple you
+have to download it and install it it's
+very basic you don't have to worry about
+that so once it's downloaded and
+installed you can check by going to CMD
+my link M
+Chrome and here you can type node minus
+V which will give you node version so
+your version can be different from mine
+depends how it is upd updated and new
+versions come comes and goes so you
+don't have to worry about that so mine
+is V
+2.6.1 you can check whether it is
+installed or Not by doing this node
+minus Fe if it is not installed it will
+not display this all right now I hope
+you have V Studio code so for any code
+editor you can try but I believe Visual
+Studio is much better than any other
+code editor so I'll prefer that one only
+so let's go to the visual studio first
+so basically Al this is the interface of
+Visual Studio code as we can see now if
+we want to create a react app over here
+as we have installed node chair so we
+don't have to worry about anything else
+so first of all uh you'll have to create
+a folder where you'll be creating or
+whatever changes you'll be doing your in
+your project or something like that you
+can keep it over there so first let's
+create a folder we'll go to this and
+here we'll go and we'll write new new
+folder and we have created a folder in
+the name of react cute all right all
+right so basically this is our folder
+react cute now we'll go to Explorer open
+folder and we have selected the folder
+we'll open the folder in react now what
+we'll have to do is we'll basically go
+to the
+terminal and we'll use the commands to
+create the react tab basically so we'll
+have to pay attention or all right now
+we'll go to the terminal and we'll write
+npx create
+react app then we can write the name of
+the app I'm writing like my app you can
+write any name as per your choice all
+right now we click on enter so basically
+uh my app can be replaceable with your
+desired project name so yeah so
+basically this command does several
+things so uh basically downloads this
+command basically downloads and runs the
+create react app package and it will
+also set up a new project with all the
+necessary files and configurations so
+we'll have to wait until it is done
+completely so let's wait all right so
+it's done so as you can see it is
+written we suggest that you begin by
+typing CD my app and PM start so
+basically CD my app is used to navigate
+to the project directory and uh then
+there is npm start so we need to start
+the development server so we use npm
+start it will start the development
+server to see your react application in
+action so this command basically starts
+the development server and opens your
+default web browser at Local Host 3000
+so you should like start with it you'll
+have to type in this command CD my app
+and then npm start all right so we'll
+write CD my app or you just can copy
+paste it from the above I'm typing all
+right now we'll write n m start let's
+just wait so a local host 3000 is here
+and react app is started it is keep on
+rendering all right so you can head back
+over here all right now as you can see
+inside this we have multiple things node
+modules Publix SRC Etc so let's just
+explore all of these things one by one
+so as I told you earlier so so when
+you'll create a react project you'll see
+bunch of files and folders so
+understanding these the structure will
+help you know where to find things and
+where to put your code so we'll start
+with the first one this is node modules
+basically so this folder contains all
+the packages and libraries that your
+project needs you don't need to touch
+this folder it's managed automatically
+by the package manager like npm or Jam
+so then don't have to worry about it
+then there is public folder so this
+folder holds the static files of your
+project it includes an index.html file
+as we can see so uh this index.html file
+is the entry point of your react
+application any files you put here will
+be like accessible directly in the
+browser all right now after this there
+is SRC folder we can see so this is
+where you're all you'll spend most of
+the time it contains the source code of
+your uh react application and uh here's
+like index.js is there so this is the
+Javascript file where the react
+application starts then app.js is there
+so this is the main component app.js as
+we can see so this is the main component
+of your application you can think of it
+as a container for all other components
+and app.css this file will contain the
+styles for the app component then index.
+CSS this file contains the global styles
+that apply to the entire application so
+other files are also there you don't
+have to worry about them like package.
+so package.json you need to understand
+so this file keeps track of your project
+dependencies scripts and metadata it's
+an important file because it defines the
+project setup all right so this is dog
+ignore uh this file tells git which uh
+files and folders to ignore so they
+don't get included in your version
+control so yeah this is pretty much the
+folder structure so now talking about
+the entry point so the index. ml file
+that I already discussed uh in the
+public folder it is is the entry point
+of your app the index.js file in the SRC
+folder is where the react app is
+bootstrap basically then the main
+component the main component is app.js
+you can say this file is the main
+component of your application it can
+contain other smaller components that
+you can create all right then the
+styling styling is app.css we can see
+here it is app.css and index.css files
+are used for styling your components you
+can add more CSS files as needed so I
+think this is pretty much what it is
+about the folder structure now we'll be
+proceeding with creating the react app
+and understanding what are the things we
+need to understand the react application
+so all right now it's time we should
+talk about GSX as well so GSX stands for
+JavaScript XML it's a syntax extension
+for JavaScript that looks similar to
+HTML and is used in act to describe uh
+what the UI should look like uh it lets
+you uh write HTML like code within
+JavaScript it makes uh it easier to
+visualize the structure of the user
+interface components so it basically uh
+allows you to write HTML like code
+directly inside your JavaScript files
+for react like it makes describing what
+your website should look like much
+easier so let's just understand it with
+the help of one example let's just
+create a
+file just simply have just created this
+file we'll delete it later uh all right
+so let me explain to you guys so here
+we'll write two examples and then I'll
+explain about uh jsx you can understand
+it in a better way so cons let's say
+element react create
+element which one
+hello
+world all right now again const
+element
+right
+hello world so what according to you
+guys is much easier to write the first
+one or the second one I believe you guys
+have selected the second one right so in
+both examples we are creating a an
+element that displays the text hello
+world as a heading H1 however uh the jsx
+version is much cleaner and easier to
+read because it resembles HTML so
+basically this is not HTML this is jsx
+as I told you that it lets you like
+write like HTML like code directly
+inside the JavaScript files so all
+thanks to jsx we can write like this and
+so let me do a bit breakdown for you so
+we start an opening tag so as we can see
+H1 and then we write the content we want
+to display basically like we have
+written hello world and we'll close the
+tag simply that we do in HTML so
+basically think of jsx as a special
+instruction for react when you use jsx a
+tool called bble often used with react
+that translates it into regular
+JavaScript that react understands so
+this is what jsx is it looks like HTML
+but it is not so yeah all right so let's
+just delete it all right so now let's
+understand about components so first of
+all let's understand how to make one
+we'll go to SRC create a new file and
+let's name it gretings you can name as
+per your choice jsx to create a
+component we have to use jsx in the end
+all right so this is the component and
+this is the app.js comp app.js component
+and this is G .js so uh talking about
+this so a component in react are
+basically the building blocks of react
+app they can be functional that is the
+simple function or class based that is
+uh using es6 classes so we are going to
+do uh with the functional component
+itself so functional components return
+jsx while the class components use
+render method components use props to
+receive data and can be composed
+together to build complex user
+interfaces for example that we'll going
+to create one and I'll make you
+understand what a component is and how
+it is working it's all right so let's
+get started so this is greeting. jss and
+this is app. jss so basically we can
+remove this one first we don't need it
+right you can remove this as well all
+right now greetings. jsx all right so
+we'll start
+import react from react after this the
+name of the functional component is
+greetings so function then the name of
+the component greetings all right now
+let's say I've written I'm going to use
+a basic example first so that you guys
+can understand it happy learning so this
+is our function component and so now
+we'll have to export it to the app.js so
+we'll write
+export default
+greetings so we have exported this from
+here and now we have to import this over
+here so that we could receive it import
+greetings all right now we can remove
+this as
+well greetings so this is how we can
+write a component so the back slash is
+over here and the name of the component
+and inside the
+tag kind of a format so as you can see
+we have
+included happy learning so what now will
+happen is this happy learning will be
+displayed over here in the app.js so
+this is basically a building block so
+similarly we can create many components
+like gretings we can create some more
+components and all we have to do is to
+place over here we'll have to write the
+name in the similar format so we can
+include it over here and in the app
+it'll display normally so so it will not
+get cluttered with a lot of code we can
+code I can write 100 lines of code over
+here and all I have to do is just
+include the name of that particular
+component over here and it will
+automatically displayed over here also
+we have to write return statement like
+this over here as well that is in the
+component return now I hope it'll work
+happy learning it is displaying as you
+can see so this is a basic example of
+what we call component now let's
+understand what is props so uh react
+props that is short for properties are a
+way to pass data from parent component
+to child component Ina they are used to
+customize and configure the child
+components think of it like arguments
+you pass to a function so let's just uh
+understand it with the help of fine
+example so yeah we have to go to this
+greeting function again so yeah we'll
+have to change the code a bit so let's
+just say we want to pass some props as I
+told you it's like argument that you
+pass to the functions so uh let's say I
+want to pass name name is let's say
+John
+and just copy paste it another thing
+that I want to pass is another name
+three times we pass is Robert and here
+Sid so I want want to pass these three
+names as arguments to the greetings
+function that is props so how should we
+do that so we'll go to greetings and so
+uh this code will not work basically so
+what we'll do is greetings we'll have to
+pass the props props will receive the
+what we call names one by one so let's
+just write like this uh hello and the
+curly braces we can write the jsx props
+do name and yeah now we can display the
+names now let's save it and one by one
+all these three names will be displayed
+so here the first component the second
+component third component it is the same
+component but you're passing the
+different names so let's see if it is
+working or not so as we can see hello
+John hello Robert hello Sid so these
+three we have passed from here to here
+props do name props do name so it is
+receiving the names one by one name is
+here it's like this so we are passing
+from apps app.js and receiving props
+over here so this is what props is
+you'll be using it in a regular basis
+when you're creating a react app or
+making a project in react other thing is
+this curly braces so uh the curly
+brackets are used to embed JavaScript
+expression within jsx so jsx as I told
+you is a syntax extension for JavaScript
+that looks similar to HTML and is used
+to describe what the UI should look like
+when you want to include Dynamic content
+or execute JavaScript code within jsx
+you need to use curly braces so keep in
+mind if you're using uh HTML in
+JavaScript you have to use these cly
+Braes it'll it is jsx basically all
+right so now let's understand about
+conditional rendering so conditional
+rendering in react means showing
+different content or component based on
+certain Condition it's like making
+decisions in your codee about what to
+display on the screen so if I'll put it
+in simple words it's like conditional
+rendering lets you control uh what shows
+up on your screen imagine having a
+different pre-built sections of your app
+and you can choose which one to display
+based on the certain conditions so uh
+for that we'll have to create uh another
+what we call this component so go to SRC
+we'll click on SRC and then we'll open
+create a new file and let's name this
+file as packing list and we have named
+this file as packing list so let's start
+so first of all uh let me tell you you
+can export in the end as well and the
+starting as well I'm going to use it
+over here export default function list
+so yeah default spelling is not
+correct all right function list not
+function L it's packing list
+yeah packing list but before this we'll
+have to use
+function all right so now the
+Braes yeah so now we'll use return keep
+in mind this is the syntax basically so
+you'll have to keep in mind the
+syntax all right now we'll use a section
+tag I'll explain it to you guys why we
+are using this section tag and what it
+is and Yeah so basically we'll have to
+do conditional rendering so we'll create
+different scenarios all right
+so let's say uh this is
+saying
+Sally rides packing
+list all right so this is under
+H1
+and now item we are creating a component
+basically inside a component so that
+component would be I haven't created yet
+would be
+item so in item we'll write is packed if
+it is
+true you don't have to be worried guys
+I'll explain it just be with me this is
+let's say space
+time or space suit okay we don't have to
+use this we should use like this it's my
+bad right similarly we'll have to do for
+others as well just copy it paste it and
+paste it so basically we'll be using uh
+different scenarios so name the space
+space suit over here and here we'll
+write some other name let's say
+helmet with a golden leaf okay now here
+we'll write photo of t
+all right so we'll have to enclose all
+of these under a list I believe so let's
+do
+that an out
+list so here let me explain to you guys
+what we are doing so here this component
+uh is defined as packing list so it
+returns a section element containing the
+packing list information inside the
+section there's a H1 element displaying
+the uh Sally's uh Ride Sally rides
+packing list basically so next comes a
+unordered list element that you guys
+know for the items uh Inside So within
+the unordered list there are three uses
+of item components each use of item is
+wbed in jsx as we can see uh and passes
+props to configure the items display so
+each of these are passing the props to
+configure the items display the name
+prop specifies the item name that is
+example space suit and the is paged prop
+as we can see is paged so is packed prop
+determines if a check mark is shown true
+or not that is true or false so uh as I
+told you we'll be making another
+component inside this component only so
+uh the overall functionality would be
+the packing list components create the
+overall structure
+and the title for the list it then
+utilizes the item component three times
+each time customizing it with the
+specific item names and packing status
+whether it is packed or not using props
+the item component that we will be
+creating now uh will display each item
+based on the props it receives packed
+items show a check mark while unpacked
+items will be listed without one so
+let's just create that one all right so
+let let create over
+here function
+item inside this we'll be using the CES
+name and his pack so these are the two
+things that we are
+passing all right now if condition is
+there and inside if is bagged if is pged
+is true then we should return a tick
+mark basically uh all
+right so I like class names so let's
+name it like item only and we'll have to
+use tick I don't know if we can do that
+we'll write it
+afterwards Li all right let's just write
+take over here as of now right
+so and in the else it would go like
+return
+last name
+item here also we'll have to write the
+name and along with this so that it is
+shown uh the tick is shown in front of
+the name that's why we are doing it all
+right so it is done so the conditional
+rendering thing is whichsoever name is
+correct that only will be displayed as
+the correct one others will not so it's
+a conditional thing this is how this is
+what we are doing in it so let's just
+say this item one is true two is also
+true three is also true let's just make
+it
+false so this one will not be ticked
+correct correct it will not be uh
+correct one these two will be the
+correct one in front of this will be
+displayed so we have used this if now I
+repeat we have used this if so it is
+conditionally rendering it all we have
+to do is just to include it in
+app.js so let's just do this we can
+remove this one and now we can
+write go packing list dot slacking list
+so yeah just keep in mind that while
+doing the importing thing import packing
+list from do slacking list it'll go in
+the files or folders wherever this file
+is as we can see over here it is they
+search for it and then it will include
+it so the same format
+packing list we have included it let's
+just see as you can see Sally R packing
+list space suit is done helmet with a
+golden leave she hasn't packed yet photo
+ifim is there so if we'll alter it let's
+go over here and make it this one also
+will make false and let's see if it is
+depicted over here or not so as you can
+see photo of team again is not correct
+not she has not Tak
+it with her so yeah this is what
+conditional rendering is now let's
+understand rendering list in react so
+for that we'll be doing an example again
+so we'll create a reusable component
+we'll build basically we'll build a
+shopping list and then we'll create a
+reusable component to display a list of
+items we'll use the map function to
+iterate over our items and render them
+as list items in a clean and efficient
+way so for those people who don't know
+what is map function so the map function
+in react is like a conveyor belt for
+your data it takes an array of items
+sends them through one by one and lets
+you create something new for each item
+this something new is usually another
+array but in react it can be jsx
+elements to build Dynamic list or other
+user interface structures so this is
+this was about uh Maps so now let's
+create another component all right so
+let's go to SRC right click new file
+list. jsx we are naming it list all
+right so let's make a list so first of
+all we'll again import react from react
+all right now what we'll do is we'll
+create the functional component function
+list and all right
+now we'll mention the
+items so uh I'm going to explain to you
+guys in a very basic manner because I'm
+considering you guys are beginners so
+I'll be using as simple example as I
+could so yeah all right first let's say
+apple then
+avocado then
+banana
+grips then we can can say
+ranges all right so we've used five
+fruits we have mentioned a list or cons
+or list of items basically you can say
+the array of items as well
+now we'll go on
+return We Make a list unordered
+list now inside this list we'll first of
+all uh name it
+class name all right class
+name item
+list all right now inside this we'll use
+items do map basically because we want
+to iterate over each of them so we'll
+use a map function to itate over the
+items that is Apple avocado banana one
+by one so we'll do is
+jsx so jsx we'll write
+items.
+map this is an arrow function I believe
+you guys understand know about Arrow
+functions all right
+so all right this is key I'll explain it
+to you guys what is key if you you guys
+don't have any idea regarding it so
+item class
+name item and inside it we'll keep
+the sorry inside the jsx we'll write
+item that is basically the
+array all right let's keep it short
+only here also we'll keep it short item
+all right
+now I think uh we have we have wrote Mau
+instead of map all right now what else
+we'll have to do is we'll go to the
+app.js basically and we'll do some
+things over there so what are those
+things will packing list we have wrote
+we can exclude
+that and go we'll write H1 don't worry
+I'll explain that code to you guys you
+don't have to worry about that
+so first of all my shopping list now
+inside this we'll write we'll basically
+write the name of that component that is
+list and we have to import it as well we
+don't have to forget it import
+list
+from SL list so why it is showing me an
+error because I think I have not
+exported that we'll go and Export that
+as
+well
+export
+default
+list as you can see there is no error
+now go to app save it and let's see if
+it is fine or not so as you can see my
+shopping list Apple avocado bananas
+grapes so this is how we can render a
+list this is basically a
+list basically this this is how we can
+render a list in react so uh let me
+explain it to you guys the list
+component uh defines an array of items
+containing list of items basically as we
+can see so the return statement over
+here uh uses GSX to create an unordered
+list that is ul and we have named class
+name as item list and we have do we have
+done the CSS part but you don't have to
+worry about that as we're focusing on
+react now we use here the map function
+to iterate over the items array where it
+is as you can see here it is so uh in
+this list we have use the map function
+and inside the map function we create a
+list Alli and inside the list element
+for each item in the array we are using
+the map function each list item has the
+class name item and displays the current
+items names using cly Braes so crucially
+we add a key prop to each item list each
+list item basically so the key prop
+should be unique for each item and helps
+react optimized performance when
+updating the list that is why we have
+used that in this case we use the item
+itself as the key as you can
+see so here again in app we have just
+included the component name and imported
+it so yeah this is how you
+can render the list now let's understand
+react hooks so here we'll be covering
+UST state in react hooks so UST state in
+react hooks is that allows you to add
+state to function components it returns
+a state variable and a function to
+update it you initialize it with a
+default value and react ensures that
+state persist across rerenders so uh in
+simple words like it has two parts
+basically the state variable and the
+state seter function you can also refer
+it to as up data function so State
+variable so this variable holds the
+current value of the state you can use
+it to read the state in your component
+and the state Setter function which will
+write next to it is the function that
+allows you to update the state when you
+call it with the new value we yet
+reenders the component with the updated
+state so I'll explain it to you guys
+when uh we are writing it so let's start
+with it all right now again let's create
+another component go to SRC create a new
+file. GSX all right now first let me
+just explain it to you const count set
+counter set count U state so when you're
+using this use State uh in react you're
+using the use State hook to add state to
+a functional component this line creates
+a state variable that is count and a
+function set count this is set count to
+update it initially you can set the
+count to a variable by passing to used
+State like whatever the value will be
+here let's say zero so this zero value
+will be assigned to this count it's the
+initial value of this count all right
+now and this is the set count function
+it will update this count function so
+whatsoever value uh will be passing from
+this set count it will gets up reled to
+this count it works like this so U
+initially you can set this count using
+the U State like UST State Z which sets
+count to zero whenever you need to
+change the value of count you call set
+count with the new value this helps your
+component remember values and update the
+display when those values change so this
+is how it works now let's write a proper
+component regarding this all right
+import react from react now we'll create
+the
+function function
+counter all right return
+statement so in the return statement
+first of all we'll create a div and
+inside that div we will be creating an
+H1 tag inside that we'll be uh using the
+count and after that we'll be using two
+buttons that is one will increment and
+the other one will be decrementing it so
+basically let me tell you what we are
+creating over here so here we'll build a
+simple counter app we'll use a cool
+react feature as we told you use state
+to keep track of a number and create
+buttons to increase it or decrease it
+you'll see how this hook helps manage
+the state within the functional
+component with the help of this example
+all
+right Dev class
+name all right let's name it counter
+so in this one we'll write
+H1 and we'll here this here we will
+display the counter the current counter
+basically so we'll write
+count after this we'll make buttons
+we'll create
+buttons onclick so the buttons have the
+on click functionality on click
+this function will be called that is
+handle click so we have wrote this
+function inside jsx so what we are doing
+is we're making it whenever we'll click
+on the button that is on click C Capital
+this function will be roked or called
+and the definition of this function
+we'll be creating after this so
+similarly we'll create another function
+let's just copy paste it because the
+syntax is same and this time also uh
+let's just write because we want one
+function to increment it and another
+function to decrement it so we'll write
+handle
+increment andle
+decrement all right so we have created
+two buttons now what we'll do is we go
+over here and we'll create these
+functions so let's let's first of all
+create counter that US state basically
+that we previously wrote
+const
+count then there is set
+count U State we have initialized the
+value of count with zero as we can see
+and after that function we have to
+create another function handle increment
+so inside this function we'll write set
+count count + one
+so basically what this function will do
+it will update the uh what we call count
+state by one using the set count
+function so this function handle
+increment will call this and the set
+count will update this count by one so
+basically as I told you this set count
+this one is the updator of count so when
+we are clicking on handle increment
+basically we are calling this function
+and this function is again updating this
+count so initially value was Zero then
+it will become one again we'll click it
+will become two again we'll click it it
+will become three same goes for the
+decrement so let's write the function
+for decrement as well
+function
+handle
+decrement all right so inside this again
+we'll have to do the same thing set
+count count minus one over here we have
+to do
+all right here again the update the
+count state it will update the count
+state by minus one using the set count
+function so this is how it is working
+and now let's see whether it will work
+or not we'll have to uh add it in app.js
+as well let's just write counter over
+here
+first all right now instead of list here
+we'll write the name of the component
+that is counter all right we'll have to
+import it that is why it is showing the
+error import
+counter from do SL
+counter all right it is showing errors
+as we can see all right because we are
+using UST State hook so we'll have to do
+one thing more because we are using US
+state
+import
+react US state
+from
+react uh another thing is this export
+statements don't have to forget it keep
+in mind export
+default
+counter all right new state is not
+defined6
+[Music]
+27 all right so make sure to add this to
+import it the hooks that is the use
+state
+then it will not show any error now
+let's see if it will work or not all
+right the buttons are very small uh okay
+let's just add something in
+it
+and or we can also write decrement as
+well all right now it is visible so on
+clicking plus it is incrementing as you
+can see in now let's click minus it is
+decrementing as we can see it is also
+going in minus wow so yeah this is the
+counter that we have just created you
+can also create it with the help of
+react so all thanks to you state and it
+is pretty easy to use it you can try
+this on your own so all right that's a
+great start for react with react
+basically so we have covered some
+fundamental concepts like compon on
+hooks like UST State and many others
+these are just the building blocks and
+react offers vast toolbox for creating
+Dynamic uis so I've also tried to make
+things easier by going through some
+basic example alongside you and play
+around with those examples try modifying
+them and see what you can build out on
+your own there are tons of online
+resources you can go for but make sure
+to check out Simply learn scool that
+I've mentioned earlier it will be a
+onstop solution for all of you guys and
+remember practice makes perfect and with
+a little effort you will be well on the
+way to mastering react all right guys
+with that we have come to the end of
+this video If you like this video please
+give it a thumbs up I hope it really
+help you all thanks for watching stay
+safe and keep learning staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+work working professional looking to
+advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to career your success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

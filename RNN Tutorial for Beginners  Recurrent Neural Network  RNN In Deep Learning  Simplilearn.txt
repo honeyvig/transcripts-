@@ -1,0 +1,1336 @@
+foreign
+there are numerous such tasks in daily
+life that are totally disrupted when
+their order is changed for example in
+language the sequence of word defines
+their meaning in Time series data times
+defines the occurrence of event and in
+genomic sequence data e-sequence has a
+different meaning there are numerous
+examples of this where the sequence data
+influence the event itself if you want
+to use such data for any useful output
+we need a Network that has prior
+knowledge of the input to fully
+interrupt it thus thus recurrent neural
+network comes into play RNN so hello
+everyone I am mayank and welcome to
+Simply learn today we will take you
+through a hands of lab demo of how we
+can use RNN model for sentiment analysis
+in machine learning
+so let me tell you guys that we have
+regular updates on multiple Technologies
+if you are a tech geek or a continuous
+hunt for the latest technological Trends
+then consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply run
+great I think we can get started so in
+today's session we will discuss what RNN
+model is moving ahead we will see why
+should we use RNN after that we will see
+how does RNN work the current neural
+network after covering these topics we
+will move forward and see types of RNA
+recurrent neural network and
+applications of Arduino at the end we
+will do a hands of live demo of
+sentiment analysis using RNA in fact
+study says there will be more than 2.3
+million jobs opening in the field of
+artificial intelligence and machine
+learning by 2023 but you can beat the
+curve with a professional certificate
+program in Ai and machine learning
+co-sponsored by Purdue University and
+IBM and that is designed after simply
+learns intense bootcamp learning model
+Ai and ml certification course so this
+course covers tools and techniques like
+python tensorflow Keras nltk and many
+more along with industry projects like
+social media Twitter zomato delivery
+service provider Uber transportation
+service provider and many more Amazing
+projects so choosing this course can you
+get hired by renowned companies like
+Google Amazon LinkedIn and Adobe and an
+average salary hike of 70 percent so
+what are you waiting for join the AI and
+ml professional certificate program and
+Excel your career in Ai and machine
+learning so the link is in description
+box below don't forget to check it out
+so before starting let us have a simple
+question to brush our knowledge so
+question is what are the application of
+RNN okay NLP
+time series image captioning and all of
+the above please answer in the comment
+section below and we will update the
+correct answer in the pin comments or
+you can pause this video give it a
+thought and answer in the comment
+section before we move on to the
+programming part let's discuss what RNN
+is and proceed further for the same so
+what is RNN recurrent neural net so RNN
+work on the principle of saving output
+on a particular layer and feeding this
+back to the input in order to predict
+the output of the layer this is how can
+convert a feed neural network into a
+recurrent neural network RNN the node in
+different layers of neural network are
+compressed to form a single layer of
+recurrent neural network a B and C are
+the parameters of neural network now
+that you understand what RNN is let's
+look at the way why RNN okay so y r n
+RNN were created because there are few
+issues in the feed forward neural
+network cannot handle this equation data
+considers only the current input cannot
+memorize previously Okay so the solution
+of these issues is RNN and RNN can
+handle sequential data accepting the
+current input data and previously
+received input data so RNN can memorize
+previous input due to their internal
+memory so moving forward let's see how
+does RNN networks work okay so the input
+layer X takes an input to the neural
+network and process it in the passes it
+into the middle layer the middle layer
+Edge can consist of multiple hidden
+layers each with its own activation
+function and weight and biases
+if you have a neural network where the
+various parameters of different hidden
+layers are not affected by the previous
+layer that is the neural network does
+not have the memory then you can use RNN
+so the RNN will standardize the
+different activation function and
+weights and biases so that each hidden
+layer has the same parameter then
+instead of creating multiple hidden
+layers it will create one and loop over
+it as many time it is required so moving
+forward let's see types of RNN so there
+are four types of RNN
+one to one
+one to many many too many
+and many to one
+so let's see one to one RNN so this type
+of neural network is known as the
+vanilla neural network it is used for
+General machine learning problem which
+has a single input and a single output
+now see
+one too many RNN this type of neural
+network has a single input and multiple
+outputs an example of this is an image
+captioning now let's see many to one RNN
+this RNN take a sequence of input and
+generates a single out sentiment
+analysis is a good example of this kind
+of neural network where a given sentence
+can be classified as expressing positive
+or negative sentiment and the last one
+is many too many RNN this RNN takes a
+sequence of inputs and generates a
+sequence of output machine translation
+is the one of the example so moving
+forward let's see application of
+recurrent neural network first one is
+image captioning rnns are used to
+caption an image by analyzing the
+activities present the second one is
+time series prediction and a Time series
+problem like predicting the prices of
+stocks in a particular month can be
+solved using RNN
+and the third one is natural language
+processing text Mining and sentiment
+analysis can be carried out using RNN or
+NLP natural language processing the
+fourth one is machine translation given
+an input in one language rnns can be
+used to translate the input into
+different language as output so now
+let's move to the programming part first
+we will import some libraries major
+libraries for the first we will import
+for the data frame so I will write
+import
+find out
+speeding
+the second one is import numpy
+as NP
+so pandas is a software liability
+written for the Python programming
+language for data manipulation and
+Analysis in particular it offers a data
+structure and operations for
+manipulating numerical tables and The
+Time series
+and this numpy numpy is a library for
+the Python programming language adding
+support to four large multi-dimensional
+array and matrices along with the large
+collection of high level mathematical
+function to operate on these arrays okay
+so for plotting we will import some
+libraries like c bond
+as
+SNS
+this is nothing just a short form of we
+don't have to write again and again c
+bond c bar we can write SNS
+so then another one is from
+what cloud
+word cloud
+matplot live
+Dot
+By plot
+as PLT
+okay so C bone is a library that uses
+matplotlib underneath to plot graphs it
+will be used to visualize xandom
+distribution and the word cloud is a
+visual representation
+of words Cloud creators are used to
+highlight popular words and phrases
+based on frequency and relevance they
+provide you with quick and simple visual
+insights that can lead to more in-depth
+analysis and this matplotlip matplotlib
+is a plotting library for the Python
+programming language and its numerical
+mathematics
+extension number it provides an object
+oriented API for embedding plots into
+applications using general purpose UI
+okay like
+Tinker double X python qt or gtk
+so let's import some
+nltk
+that's your language toolkit
+so
+I will write import
+nltk
+okay from
+an ltk
+dot stem
+import
+iser
+and from nltk dot Corpus
+import
+upwards
+then
+from
+and I'll take it or tokenize
+code
+word
+tokenize
+so nltk the natural language toolkit or
+more commonly analytic is a suit of
+libraries and programs for symbolic and
+statical natural language processing for
+English return and Python programming
+language
+and this is stop words stop words are
+words that are so common they are
+basically ignored by
+typical tokenizers and this word
+tokenized is a function in Python that
+splits a given sentence into words using
+the analytical liability okay so let's
+import some psychic learn
+Library so for that I will write from SK
+learn
+dot model
+collection
+import
+train
+test
+okay then from sqlan
+dot feature
+extraction
+Dot text import
+fid vectorizer
+then from
+a scale on Dot matrices
+Matrix
+import
+confusion metric
+classification
+okay
+so a second line is a free source
+software machine learning library for
+Python programming language it features
+various classification regression and
+clusting algorithms including support
+Vector machine learning logistic
+regression and many others like random
+Forest classifier
+and the strain test split method is used
+to split our data into train and test
+set first we need to divide our data
+into features like X and Y labels
+and this tfid vectorizer converts a
+collection of raw documents into a
+matrix of TF or IDF features the fast
+tax on what two vectorizer what
+embedding python implementation and this
+confusion Matrix a confusion Matrix is a
+table that is used to define the
+performance of a classification
+algorithm okay
+then we'll import some libraries like
+from
+scale on
+Dot linear model
+quote
+logistic
+regression
+than from
+no P.M
+board
+and from
+a learn
+ER
+port
+random
+or as classifier
+okay then from
+sqlan Dot name base
+port
+Bernoulli
+is
+okay
+so everything is correct
+you will see while running so logistic
+regression estimate the probability of
+an event agree such as voted or didn't
+vote based on a given data set of the
+independent variable
+at SVC logistic regression estimate
+sorry linear support Vector machine SVC
+is an algorithm that attempts to find a
+hyperplane to maximize the distance
+between classified samples and this is
+random for its classifier create a set
+of decision trees from a randomly
+selected subset of the training set
+and this Bernoulli NB or noline air base
+is a part of the name based family it is
+based on panology distribution and
+except only binary values that is 0 or
+1.
+so let's import some tensorflow so
+import
+tensorflow
+Dot
+combat dot V2
+and
+import
+tensorflow
+data sets
+as tfds
+so tensorflow is a free and open source
+library for machine learning and
+artificial intelligence across a range
+of tasks but has a particular focus on
+training and inference of deep neural
+networks okay that supports warnings
+nothing warning
+[Music]
+warnings
+report
+Ari
+and code strain
+airport Beacon
+so everything is basic just let's see
+the pickle pickle is a python is
+primarily used in serializing and
+deserializing a python objective
+structure okay let's run it
+let's see how many other
+um
+after that we will load the data set and
+we will go through data visualization
+okay word cloud cannot import name what
+cloud okay see c will be Capital here
+random Forest
+good
+okay it's still loading here let's see
+okay so loading is done so now let's
+load the data set so we'll write data
+equals to PD Dot
+wait
+underscore CSV
+data set name
+test
+all right
+so you can find this data set on the
+description box below
+coding costume Latin
+plus two
+polarity
+okay
+ID
+command date
+comma
+very
+perhaps your pocket come aware
+okay yeah
+it seems fine
+let me change this first
+is using Arena
+so here I will write data person
+data dot sample
+change to one
+okay so let me like brief uh tell you
+that what we are going to okay
+let me brief you like what we will do in
+this sentiment analysis using rnm so in
+this demo like you will see uh text
+processing on Twitter data set and after
+that we will perform different machine
+learning algorithms on the data such as
+logistic reaction random Forest
+classifier as we see name based to
+classify positive and negative duties
+after that I will also build a RNN
+recurrent neural network which is the
+best fit for such textual sentiment
+analysis okay since it's a sequential
+data set which is requirement for the
+RNN Network
+so let's dive into so now
+we will see the data data visualization
+data set details Target like the
+polarity of the tweets zero negative
+okay then the date the date of the tweet
+and the polarity and the user that were
+tweeted than the text okay so I will
+write print
+data set
+if
+data
+comma ship
+okay
+wait let me first do like this yeah
+so there are 20
+or you can say two like rows and six
+number of columns okay so it is a huge
+data I will you can find this data set
+from the description box below so here
+let's see the data
+and why I use head head is used for like
+what's showing
+top 10 rows of the data set if you will
+use tail instead of head it will show
+the last 10 rows of the data set okay
+here polarity 0 0 means negative and 4
+means positive okay like you can
+consider as 0 1
+his ID date then query then user then
+the text
+Okay so
+here I will do data
+clarity
+Dot
+okay these are the zero four okay
+uniqueness zero means negative and the 4
+means positive
+replacing the value 4 as 1 for the ease
+of understanding what I said to you you
+can consider as 0 1 so data
+polarity
+equals to data
+molarity
+four two one
+okay then data
+now you can see zero one zero one zero
+one one zero okay
+so if you will light only head it will
+show the top five rows only
+okay
+so now let's use one python function and
+describe
+Dot
+type
+so as you can see here count is 2 lakh
+and the mean of the particular row is
+this
+and the idea is this standard deviation
+minimum value the 25 percent the 50
+percent and the 75 percent and the
+maximum
+okay so let's see the number of positive
+versus negative tag this sentence
+okay
+so here I will write positives
+for some data
+polarity
+data dot polarity
+is equals 1
+then negatives
+data
+polarity
+data dot polarity
+is equal to zero
+trend
+total
+laptop
+the data is
+dot format
+data
+dot shape
+now I will print
+the total length the negative and the
+positives okay so number
+of
+positive
+okay
+Dot
+format
+positives
+so I will copy
+this and paste it here
+and here I will do the changes for the
+negatives
+okay now let's see
+so here polarity is not defined
+comma
+so you as you can see the total length
+of the data is too like and the number
+of positive sentences is
+like 1 lakh 46
+and number of negatives okay spelling is
+the number of negative text sentences 99
+954.
+okay so now we have a brief data
+so now let's get a word count Pub of
+text so for this
+I'll be right
+around
+words
+done
+length of
+or start split
+then now let's plot our account
+distribution for both positive and
+negative
+so I will create a bar plot so for that
+I would like it
+but
+round
+to data and
+text
+dot apply
+dot count
+okay then I will write P positive equals
+to data
+then
+found
+data dot polarity
+is equals to 1.
+and
+so let me copy this only
+here I will write 0
+and
+okay then
+PLT dot figure
+and figure size
+question
+12 comma six
+than PLT
+Dot
+45
+and PLT dot X label
+word count
+PRT Dot y11
+and frequency
+I will write G plus 2
+PRT Dot
+comma n
+color
+equal to 0.5
+positive
+okay then let's make a legend also
+location should be
+right
+Falls
+the data word count where it equals to
+okay my bad
+so as you can see the positive and the
+negatives
+okay
+so these are the like word count
+distribution for both positive and
+negative okay
+so now let's uh
+what we can do we can do the get like
+get the common words in training data
+set
+for retaining data set so for that I
+will do
+from
+collections
+import
+counter
+or
+words
+to
+foreign
+test
+data
+text
+to line
+Dot split
+for word
+and
+words
+if length of
+word
+to them
+to
+all
+voice dot band
+dot dot dot lower
+where I can write counter
+all words
+dot most
+common then I need 20.
+so as you can see these are the most
+common word used like in every sentence
+the and you for have that I am but just
+like this out over all
+so these are the most common words like
+it used does used like 64 000 times and
+like this your is used for a thousand
+times
+something like that
+so now we will do some data Pro data
+processing
+okay
+now let's do the database pressing
+so
+[Music]
+and SNS Dot count plot
+data
+polarity
+okay
+these are the negatives and these
+positives
+there are slight change I guess
+that is why it's not looking
+so much of different like there's a
+slight
+with 46 different so that is why it's
+looking almost same
+okay
+so now removing the unnecessary columns
+like query user word count
+data dot drop
+it
+query
+and word count
+X is equals to 1
+comma
+Place question true
+okay
+it will be true
+so here I will write data
+words on this okay my bad
+here I will add data dot drop
+ID
+come on
+so
+then data dot head
+the data see we have only the two the
+polarity and the text
+okay
+so
+now
+uh let's see the null values
+so the
+Dot
+foreign
+okay
+so there is no null values so now
+converting pandas object
+to a string type
+for that we have to write
+text
+let's do data
+text
+type
+we are
+that
+yes
+I
+yeah so now download the stop words and
+LDK
+done
+download
+words
+once you set
+stop words
+it's in English
+top words
+this
+these are some
+you know stop words
+so moving forward let's download
+and then take a DOT download
+a
+okay
+dot download
+.net
+so the pre-processing steps taken are
+like lower casting each text is
+converted to lowercase then remover of
+URLs will do this
+my windows okay links starting with HTTP
+or St TPS or ww are replaced by like
+commas removing usernames removing short
+words removing stop words like
+limitization is the process
+will do of con for the converting award
+to its base okay
+so for that
+what I will do
+I'll just copy the whole code for you
+will explain you one by one what I've
+done
+okay
+so this is the course for the URL
+pattern for removing all the WWE https
+and HTTP type of thing and removing
+them
+and I have used pattern for the lower
+casting removing all the URL okay
+then removing all the usernames like at
+the red and removing punctuations and
+stop words
+okay like this
+so now what we have to do data
+p
+the processed
+tweets
+and data
+text
+dot apply
+Lambda
+X
+process
+then tweets
+okay
+then print
+next
+tea processing
+so it is taking time
+and it will be completed it will return
+here till text pre-processing is done
+okay
+as you can see the textbook
+pre-processing is done
+so now let's check
+data Dot
+add
+done
+as you can see see the at the rate and
+this slices are gone
+okay
+so now the text is pre-processed
+so now what we will do we will analyze
+the data so now we are going to analyze
+the preprocess data to get an
+understanding of it we will plot word
+clouds for positive and negative dutes
+from our data set and see which what
+occurs the most
+okay first we will create for the
+negative words or negative tweets you
+can see so I will add pld dot figure
+and figure size
+15 comma 15.
+okay then word cloud question
+but
+cloud
+next words
+question
+two thousand comma
+it equals to
+1600
+comma
+height question
+800
+and rate
+dot join
+the data dot polarity
+and I will write here polarity
+okay equal to zero
+again
+then
+to assessed to its
+okay
+then here
+I have to write
+PLT dot show
+WC
+interpolation
+bilinear
+okay perhaps you forget to come up here
+soon 2000
+then come a bit
+dot generate
+what I can do
+let me run now let's see
+hope this time it will work
+it's still loading
+as you can see this is
+words okay like today I am and work
+don't wish they need much
+these are the most negative tweets
+okay words from negative tweets you can
+say
+right
+so let's see the positive tweets okay
+so the thing will be same
+let me copy
+paste it here so for this I will do
+one
+yeah
+it will take little bit of time
+still loading
+like as you can see hate can't
+okay
+sorry
+these are the negative words
+okay still loading
+so let's wait for like few seconds
+now you can see the positive words like
+love okay good
+LOL
+and awesome something like that
+okay so these are some
+positive words so now let's do the
+vectorization and splitting the data
+like storing into input variable process
+tweets to X and output variable polarity
+to y
+okay we'll do that
+yeah
+so x equals to data
+says
+tweets
+values
+and by pursue
+data
+majority
+Dot
+values
+okay
+now I will write here print
+it's dot shape
+paint by dot shape
+Okay cool so now what we will do we will
+convert text to what frequency Vector
+okay TF2 IDF so this is an acronym that
+stands for term frequency to inverse
+document frequency which are the
+components of the resulting scores
+assigned to each word okay so term
+frequency this summarize how often a
+given a word appears within a document
+and inverse document frequency this down
+scales word that appear a lot across
+documents okay so now here we will
+convert a collection of raw documents so
+a matrix of TF to idea features
+okay then I will write
+and
+because riser
+and sub-linear
+x equals so
+Vector dot with
+transform
+Ed
+okay
+and
+number of features
+comma length
+vector
+get
+their names
+the number of feature words are like
+170321
+okay now we will do like
+now let's paint the shape
+so now we will do the split uh spread to
+train and test so the previous data is
+divided into two sets of data training
+data and the testing meter so data set
+upon which the model would be trained on
+contains 80 percent data the test data
+is that data set upon which model would
+be tested again contains 20 of data so
+for that I will write extreme
+test
+all right train
+come on
+just
+speak
+hi
+pesticides
+equals to 0.20
+random
+date
+plus one zero one
+okay
+so what I will do I will do the you know
+print the shape of extreme y train X
+text y test like how many columns are
+there rows not column exactly the rows
+are there okay
+so I'll paste here so see
+extreme like this is a total was like 2
+lakh
+okay
+so one lakh 60 000 in training as we
+discussed earlier like 80 percent in
+training and 20 interesting
+okay
+so now let's do the model building
+OKAY model evaluating functions
+so now let's make a model
+okay
+and first I will do I will write and
+then I will explain you the whole okay
+so here what I did this will tell you
+the accuracy of the model of training
+data and the testing data okay then we
+will predict the values for test data
+set and the evaluation for the data set
+then we will compute and plot the
+confusion Matrix
+okay with the both the categories
+negative positives okay group name will
+be true negative and the false positive
+okay
+so
+there's nothing that let's run it
+so now what we will do we will do first
+for the logistic regression so here I
+will write LG equals to
+logistic
+regression
+okay then history
+equals to LG dot fit
+X strain
+comma
+y train
+with an model
+evaluate
+let's see
+this is for the
+logistic regression
+okay
+as you can see the accuracy of the
+training data is 83 percent the testing
+data is 77 percent
+okay
+so this is The Confident Matrix the
+predictive value like these are the
+categories
+now let's see for the linear svm for
+that I will write svm
+plus 2
+.
+as we see
+and svm
+dot fit
+strain
+comma y train
+then model
+evaluate
+of svm
+okay
+and after that we will do for random
+forest and the new base okay then we
+will start with the RNN
+so as you can see the accuracy of
+training data is very pretty good 93
+percent and
+is 83 percent and testing is less than
+regression model let's see
+for the random Forest so I will write
+here
+RF equals to
+run down for rest
+ifier
+30 meters
+equals to 20
+Criterion equals to
+rupee
+more than Max
+depth equals to 50.
+then RF dot fit
+strain
+comma
+y train
+and model
+evaluate
+okay
+loading let's see the accuracy how it
+will come
+after this we will do for the name base
+and after that we will move on to the
+our main model RNN recurrent neural
+networks
+still loading
+yes it will take little bit of time
+so as you can see the confusion Matrix
+okay
+so training data accuracy 75 percent is
+very less so now let's see the last
+Model name base
+okay so NB equals to
+Bernoulli
+and B
+and B dot fit
+strain
+comma
+y train
+okay then model
+evaluate
+training
+8670 so as far
+linear SCC has the best
+test training accuracy you can say and
+the best
+testing accuracy is 76 70
+76.45
+see logistic relation so now let's move
+to the our main model RNN so what is RNN
+recurrent neural network at the start at
+the state of the art algorithm for
+sequential data and are used by Apple cd
+and Google search voice it is the first
+algorithm that remembers its input due
+to an internal memory which make it
+perfectly suited for machine learning
+problem that involve sequential data and
+there is one more thing embedding layer
+embedding layer is one of the available
+layers in Keras this is mainly used in
+natural language processing related
+applications such as language modeling
+but it can also be used with other tasks
+that involve neural networks while
+dealing with NLP problems we can use
+pre-trained word embedding such as globe
+alternately we can also train our own
+embeddings using Keras emitting layer
+STM layer long short term memory
+networks usually called lstms I have
+made already many videos
+you can check it out were introduced by
+Sky mender these have widely been used
+for speech recognition language
+processing sentiment analysis and text
+prediction if you are going deep into
+lstm we should first understand the need
+of lstm which can be explained by the
+drawback of practical use of RNA so
+let's start with RNA
+okay
+so here
+I will importing some libraries
+okay so after that I will write port
+get us
+version
+2.110 okay fine let
+so now let's
+paint
+X test comma
+white train
+wire test
+just to train
+test
+it
+tweets comma data dot polarity
+Dot
+values
+then
+test
+size
+0.2 test size 0.2 means
+like 80 and 20 percent
+thing
+82 training and the
+20 percent to
+testing
+and let's
+the model evaluation okay
+so I will
+these are relu sigmoid all the you know
+the layers
+so now this Epoch it will run till 5000
+like
+count will go till 5000 okay see the
+5000 and it will go to one to ten so it
+will take time so I will get back to you
+after this completing this okay
+now as you can see uh the Box
+then successfully okay
+so what should I do but I will get some
+space here so now we will see the
+positive and negative outcome okay this
+is something like testing okay we will
+test we will predict
+we will give one a sentence and then we
+will predict
+it is coming right or wrong the accuracy
+is giving a right or wrong okay so here
+I will write
+sequence
+request to tokenizer
+Dot
+text
+to
+sequences
+then I will write this
+data science
+article
+is vast
+okay
+so here I will write test equals to pad
+sequences
+and here I will write sequence
+comma
+max length
+plus 2
+maxland
+then I will write here prediction a
+question
+model
+write model
+then we'll write model 12.
+2 dot predict
+then test
+okay
+if diction
+is greater than 0.5 means 50 percent
+then
+it should print
+positive
+okay
+else
+foreign
+again let me run this
+sequential object has no
+okay spell mistake
+the negative because here is the word
+worst
+it is showing correct now check from the
+RNN model so model equals to K res dot
+models
+dot load
+models here we will load RNN model RNN
+underscore model
+dot SG F5 it is pre-trained model
+okay pretend RNN model so sequence
+equals to
+kenizer
+dot text
+to sequences
+then
+I will write here this
+this MN
+codes
+is best
+okay
+test equals to pad underscore sequences
+sequence
+thanks and
+then prediction
+equals to model
+dot predict
+that test
+if prediction is greater than 0.5
+and
+positive 0.5 means fifty percent more
+than 50 percent
+else
+went negative
+and to build load models
+being positive because this ml course is
+best
+so there is no negative word
+okay
+so what we will do now we will do model
+saving loading and prediction okay
+so for that uh
+I will write import
+pickle
+y equals to open
+vectorizer
+because
+then
+WB
+if
+here I will add pickle
+dot done
+dump
+better file vector
+suppose
+okay
+so like this I have to write for name
+base logitification svm and random
+Forest
+so
+what I will do
+right here
+okay let's run this
+okay
+so now what we have to do we have to
+predict using saved model okay
+what we will do here we will load model
+first and we will predict Okay so
+first I will write the function name
+load
+models
+and we will load the vectorizer so file
+equals to
+open
+vectorizer
+dot pickle
+RB
+characterizer
+because
+you can
+upload
+file
+the filing Dot close
+now I am loading the logistic regression
+model so for that we have to write open
+would be
+LG equals to
+become
+file
+the file dot closed
+then then
+riser
+LG
+okay
+and it
+yeah
+so now we will predict the sentiment so
+for that I will write the
+predict
+divisor
+text
+okay
+so here we will predict the sentiment so
+for that
+this is
+underscore text
+equals to
+process and score
+three
+and demands for
+sentiment and
+text
+then
+text
+deep
+riser
+Dot
+transform
+it says
+then sentiment
+to model dot predict
+so here I will make a list of text with
+sentiments so for that I will add data
+equals to empty array
+then for
+text
+prediction
+and zip
+X comma sentiment
+dot append
+text comma prediction
+okay
+and we will convert the list into
+pointers data frames so for that I will
+add t f equals to
+80 dot data frame
+comma columns
+question
+next
+comma
+sentiment
+then DF equals to DF Dot replace
+comma 1
+YouTube
+positive
+and dear
+so at last I will write here if
+equals to
+um
+and here we will loading the model
+vectorizer comma LG Plus
+the text to classify like what should be
+in the list so
+next question
+here I will like I love machine
+learning
+foreign
+update
+the driver
+in the command text
+then print
+DF dot head
+okay I love machine learning positive
+work is so active positive John I feel
+so good negative
+okay that is
+and
+yeah see that's coming okay
+this is how you can do
+the sentiment analysis using uh rnm
+model here we have loaded RNN model so
+it is showing right so let's do them as
+poses
+people
+and right here
+at
+boy
+negative okay
+RNN model is working so right okay so I
+hope you enjoyed this video till later
+if you enjoyed this video please
+subscribe to our YouTube channel
+and press the Bell icon to stay updated
+and if you want this full code just
+comment for the same
+and if you have any queries or something
+related to Python and machine learning
+you can comment down our
+expertise will reach you Zone thank you
+so much for being here
+till then stay safe and keep
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

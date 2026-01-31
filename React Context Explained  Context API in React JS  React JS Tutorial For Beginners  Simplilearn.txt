@@ -1,0 +1,466 @@
+hello everybody and welcome you all
+so it's a very exciting day because
+today we're going to talk about
+one of the very interesting topic of the
+react.js and that is not called working
+with the react context
+so we will talk about the introduction
+like what is the react context
+when to use react context context apis
+and the demo
+so the intention of this particular
+presentation is to give you the correct
+idea in react what benefit you utilize
+it or you get it when you use a context
+context api
+now the first question is like
+in an existing react application
+okay where the context ap is really
+useful
+so let's talk about some introduction to
+react context
+now first important thing we need to
+understand a typical application when we
+talk about react application so data is
+always pass through what from the top
+down approach
+with the help of props as we know it
+very well
+if we have a component like an a b and c
+and if c components wants to get the
+data from
+a so a cannot directly pass the data to
+c because
+c is the child of b and b is the child
+of a so according to the rule so data
+has to be
+passed through the proper hierarchy that
+is called drilling down the props
+which is one of the very very
+complicated area because when you have a
+complex hierarchy and if you are making
+a lot of middlemen in between so this
+create a lot of confusion in your
+development and hence your application
+gets more and more complex
+so to avoid such kind of scenarios so we
+have this option like in
+react context so in context api what
+happens like here
+the data can be passed directly
+to any of the component whichever
+needs that
+so data gets stored in a centralized
+environment and from there it get passed
+down to all its child whenever it needs
+whether it is a direct child or it is a
+indirect
+so this is what the benefit you get with
+the help of props here
+so if you see the main comments have got
+not many childs so using the props you
+are passing the data to all its child
+directly
+but the challenge here is that all
+childs are direct child of main
+component what in case if we have
+further
+childs so that create a lot of trouble
+okay so create context is basically the
+way where you can pass a data directly
+to
+the components and cut down the all
+middlewares
+okay to your applications
+and that's what the context api and the
+question is like when to use a context
+api
+so as you can see it is clearly written
+like context is basically designed
+to be considered as a global state which
+any of the components tree can easily
+get it directly from its parent
+okay without involving any of itself
+directly
+now
+you see like here we have a call app
+component which have the language as a
+function
+and here we have a call select language
+so you are passing the data here to its
+child
+okay so you see here the language
+component needs to take a very important
+extra component that is known as call
+what lang
+and pass it to the selected language so
+this could be further painful or more
+complicated when on every single button
+if the app needs to know the language
+and what it is pass through the other
+components so we want to basically cut
+down all
+so context if you want to use it
+okay with using this areas like a
+react.createcontext
+so this create context helps you to
+create a context in a parent component
+whichever you want and let other
+components subscribe to this so whenever
+the changes are happened
+they would be immediately informed about
+that so here we have a call provider so
+here every single context
+okay so comes with a react
+provider so they are basically trying to
+consume the state whichever is being
+available with the context
+so using this property like in class or
+context type you actually consume the
+nearest current
+of the context with using this dot
+context
+now we will call consumer
+so this particular component which is
+actually subscribing to the changes
+okay so this let you
+basically subscribe to the context with
+a functional component and here you have
+a call context or display name it
+basically accept a display name as a
+string property
+okay which you can easily drag through
+when you talk about react dev tools
+now let's talk about a demo
+of our development
+so now here
+let's get involved on the demo part
+but before that i would like to show you
+one simple problem statement which you
+feel it so this if you see we've got
+context api which is available here so
+here you can see this is
+a property drilling where you have
+called parent you have further childs
+and you have further childs so the
+component properties are keep on going
+through multiple mediators
+which you want to avoid
+okay and the right hand side if you see
+this one is basically the parent and
+immediately passed on to her to the
+child
+and you see like here it is happening
+this is the wrong approach where the
+data is basically going in the waterfall
+model
+this is better because here the data has
+been passed from parent to any other
+child directly
+so that's what the benefit you get it
+okay everybody so it's time to basically
+talk about some
+quick demo so that it can help us to
+understand how we can utilize this react
+context api for our development
+so here
+uh this is my project which is there
+already developed
+in my browser
+i just when i open up i see here
+in local 3000
+i'm getting this as a welcome message
+so nothing fancy let's get started with
+creating a new component i'm creating a
+new folder
+when you call
+components and insert this i'm going to
+create a new file
+and give the name anything whichever i
+want i say
+index
+dot
+js or else i can give some different
+name called
+main app.js that looks fine
+well here i need to import
+okay import
+react from react
+well let's go back and start developing
+a function so i'm developing
+function
+app
+because i'm talking about functional
+component
+return
+okay
+and within this tab tag i'm using this
+h2 tag
+and now here we are saying
+welcome to app component
+okay so that's a just a basic example we
+have it
+going ahead i would like to add few more
+components like
+function
+employee
+and the same thing
+return
+and here once again
+okay
+and here once again i'm saying h2
+welcome to
+employee component
+okay
+so
+like this i can copy
+and have one more that is called
+salary and i'm saying
+welcome to salary component
+so these are the basic component sets
+which are available to me
+now certainly you will be having some
+parent
+and accordingly you can have some childs
+also
+so we have to make some components as a
+parent so what i will do here is
+in my app here
+i will make
+employee
+here
+i would like to make
+okay
+that means employees are com child of
+app and
+salary is a child of employee component
+okay so it's very very simple
+and straightforward
+and later on
+i can have
+the new component ready
+in which i can deploy
+this
+and make it available to the
+end user
+okay
+so let's see what i'm having it now
+so
+here we have a call app
+and here we are saying um
+finally
+equal to
+i just use the name called main app
+that looks more better
+maina
+and here we are using
+react
+dom
+so we want to basically render it
+wherever you want it
+so what else what we can do is on the
+other side
+we can say
+export
+default
+main app
+we can do like this in this menu i can
+add it under my
+app.js file
+so it came from here and let's check
+well i got this message printed here
+so
+this is
+very simple and straightforward like you
+in creating a parent and child
+relationship
+so now
+the actual job comes
+when my application is having
+some of the details which i'm looking at
+it
+okay that means i want to have a data so
+as i said earlier that when you are
+creating
+the react based component so you need to
+have some
+relationships where the data can be
+stored in anywhere so in the next
+example i will show you how to store the
+data in a main and how we can pass it to
+the others
+now we will be providing the data to our
+main component
+which is my main app
+so here i would like to provide
+const
+here we can have
+because we're talking about state
+management
+so we're using employee
+employee
+equal to
+use
+state
+use state
+and here in our use state will provide
+some of the important information like
+an id
+suppose i say one zero one
+and i say name
+and i can just give the name called
+admin and
+so we have a call id we have a con name
+let's try to
+[Music]
+put it
+okay
+it has to be here
+yeah id
+name admin and now we're talking about
+location
+we can say pune
+and uh let's talk about
+salary
+and we can give any satellite like one
+two three four five so
+here we have got this uh quick
+state which we have created
+okay so the next thing is like once your
+state is ready
+okay so you have to provide some input
+through which the data can be available
+to the others
+and to make this possible
+here
+above this we are providing
+const
+employee context
+equal to
+react.createcontext
+so we are initializing our context
+to confirm
+what we're really doing this now
+and in this context whichever i'm having
+it now i would like to provide a data
+which i can easily access to my other
+components
+so now here once i provide a context
+here
+okay so when i see this welcome to this
+component you can see we have called
+employee available
+yeah so what i will be doing is now here
+we will be saying
+employee context
+we see employee context
+dot
+provider
+okay
+now here
+we want to provide
+we close this
+yeah so here we're providing value
+value equal to
+the value object so what value object we
+are having it right now here
+that is called employee
+so this is state we are initially
+providing it here
+and
+this
+area wherever the context is basically
+available will be providing this
+employee object and pass it within this
+so this employee object which we are
+having it
+so now you can see the context is closed
+here so now within this context we have
+passed as employee so the all data will
+be available to this employee object now
+and that's the best part of this code
+now
+okay
+now this context i can easily get it
+in my employee
+okay
+and access all the details whichever i
+wanted now if i see here
+i can come down and i say
+let
+context
+equal to
+now we are using this option i can use
+context and insert this use context we
+are talking about
+employee context so we got the details
+whatever we have set it on the top
+okay and here
+i can set
+the details like we are saying welcome
+to the employee
+so we have got a lot many things
+available here so
+label
+so let's provide the details here
+so we are saying employee id
+colon
+here
+we can use the details
+okay by saying
+context dot you can see we have got
+details available
+like an id
+likewise i can just copy it
+paste it
+employee name
+typical employee name
+so we also have a part of this
+id name location so we can also pass
+location
+okay
+so we have got those
+details available with us
+and in a similar line
+whatever details we have taken it from
+there i can also pass it where
+in my salary component too
+where i can display the salary related
+details into my code so like here
+i can just copy this here
+okay so we got employee context which is
+available
+and here i can provide the same number
+of amount
+like but this time
+i may require sorry
+i may require the name
+as well as the salary both
+okay
+so these two details
+whichever you want you can easily get it
+and make it available to the client
+okay so this using use context
+you're actually trying to retrieve all
+the relevant information
+which was required and you can see it is
+available here so the same employee
+which is there now i can have this
+employee details
+under my employee component and under my
+salary
+we have a call salary component so
+that's something which makes
+your context api more interesting
+because this is where you avoid
+bringing any middleware and make this
+data
+or component easily accessible outside
+so hope you're clear what context api is
+all about and why we use it
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

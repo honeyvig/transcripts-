@@ -1,0 +1,3270 @@
+hi guys i'm anjali from simply learn now
+if you have been following our playlist
+on python by now you have probably
+completed all the basic concepts of
+python so today we'll use these basic
+concepts in creating a website using
+python again now this application is
+called django and before we move into
+actually developing the website let's
+better understand what django is so
+django is a high level python web
+framework so when you compare django to
+many of its other counterparts such as
+flask which also uses python it provides
+very limited freedom but then again this
+limited freedom does mean that it makes
+development much faster and that is the
+goal of django so if you are a complete
+beginner with web development and also
+sort of with python this is the place to
+start so django has a free and a paid
+version but since we are just learning
+how it works we can go for the free
+version in fact the paid version is only
+required when it's utilized by companies
+where they perform a lot of
+modifications to the point that it's
+actually unrecognizable now some of the
+companies which are using django are
+instagram bitbucket pinterest and even
+nasa now there's another important thing
+that we need to understand about django
+which is its design pattern so django
+follows the mtv design pattern where mtv
+stands for model template view these
+terms may seem very remote to you right
+now and i don't think there'd be a point
+of me explaining what they are as of now
+so once we move on to the demo where
+i'll be teaching how you can create the
+web framework we can better understand
+how this design pattern works and with
+that we are finally ready to move into
+actually creating our website so there
+are certain prerequisites to django to
+perform these open your command prompt
+so the first thing we need to ensure is
+that your system has python installed
+now of course if you are learning django
+you probably already know python and for
+this purpose you would have had python
+installed previously itself we'll just
+check so type in python version and if
+you do have python installed your
+version number will appear here now the
+other thing we need installed is pip so
+once again pip would also be installed
+on your systems it comes with python
+itself and so yeah i have pip
+19.0.2 version now once those two things
+are done we'll move on to a virtual
+environment so a virtual environment is
+basically this environment that we
+create to isolate our application now
+this is necessary in django because
+often we make applications we have
+completely built the application and now
+we do not want to touch them we do not
+want to create anything new we do not
+want to update any packages that are
+already being used so if you are
+creating a new application for which you
+need to update the packages we don't
+want the implementation of that to
+hamper with the implementation of our
+current application so this is why we
+completely isolate them so for that the
+first thing you do is you need to
+install the virtual environment wrapper
+we'll use the pip command to do so so
+pip install virtual env wrapper so if
+you're using any other system such as
+linux systems and then press enter but
+in case of windows put a dash and win
+which signifies windows so i already
+have my virtual environment installed so
+now we have python we have our pip and
+we have the virtual environment now
+let's create a virtual environment so to
+create the virtual environment type in
+mk virtual env and the name for your
+virtual environment so previously i had
+made in virtual environment py1 this
+time i'll go with py2 and that should
+create your environment so virtual
+environment is created which is p by 2
+and as soon as it's created you'll
+notice that now your commands start
+running in py2 so when you're creating
+an application the application itself is
+not created at this place it's just the
+environment files that's stored in here
+so now all this is done the final
+prerequisite is of course to have our
+web framework we need to install django
+so let's get to that pip install django
+so now that django is installed we are
+finally ready to start our project so
+the command to run to start your first
+project django dash admin start project
+and followed by the name of your project
+so i'll just name my project the django
+project so i just cleared my screen now
+if you go to this location where we
+created our project you'll see the
+project folder is created here and
+inside the folder there's yet another
+folder with the same project name and a
+manage file now this manage file is
+usually what we will be running to
+compile our programs and then within the
+folder you have certain python files so
+we'll open all this in our ide and i'll
+be using pycharm but you can go ahead
+with any other python id in fact you can
+even use a notebook so you can select
+your project from here the panel on the
+left or you can opt for open browse
+through your folders and then select
+your project so the project we created
+just now is the django project which is
+this one so i'll open it and and your
+project will appear on the left side
+panel here you can see within it there's
+another folder with the same project
+name and there's the manage.py file now
+within this folder again there's another
+folder dot idea and then there is the
+init settings url and the wsgi file
+although we won't be making changes on
+modifying any of these files so we'll
+check out what these files are one by
+one although we won't be making
+modifications to most of them the idea
+folder probably won't be existing in
+your project you can completely ignore
+that now we'll have a look at what each
+of these python files do so the first
+file which is the init file as you can
+see it's empty the reason is that the
+very presence of this file is only to
+inform that this package here this is
+not any ordinary folder it's a python
+package so you don't really need any
+content within this now the next file
+that we have here is the settings file
+so the settings file is essential
+configuration file this is modified only
+when your application goes into the real
+world other than that we just leave it
+as it is some of the values that you
+would be modifying is for example the
+debug value now when the debug value is
+true which in our case it is whenever an
+error occurs in any of your code and
+you're trying to run that page all the
+errors appear on the page but now if you
+are putting your website into the real
+world you do not want that all your
+errors will be displayed on the page for
+obviously security reasons so then you
+can just change this value to false just
+before you upload your page next you
+have the urls page as from the name it's
+very clear the urls page is where you
+have your url stored so basically this
+file maps the url of a page to the
+function that the page will be
+performing so now you have the wsgi dot
+py code file so this page contains an
+application callable which the
+application server uses to communicate
+with your code and finally we have the
+manage dot py page this is the page used
+to interact with your project so we
+never ever touch the manage dot py page
+the settings page does change when your
+website goes into the real world the
+urls page we will be actually modifying
+during the course of our project again
+the wsgy dot py page we leave it
+untouched so now that you know the
+basics of what each file already present
+does we can start our demo so before we
+start coding our website there's a dummy
+development server which is provided
+with django so we'll just check that out
+first just go to your command prompt and
+move into the path of your project and
+then you just type python manage dot py
+run server and as you can see here the
+development server has started and it's
+at port 8000 so go to your browser open
+any browser of your choice localhost and
+at 8000 port and as you can see here
+since we have installed our django and
+we ran our server so our django page has
+appeared here and it says that our
+installation worked successful so so far
+all good we can now start building our
+project so what website are we creating
+well i was thinking of a very basic
+website where you'll have the front page
+the first page would have probably like
+three four genres and within each genre
+you'll have a piece that is an article a
+novel or even a poem of that particular
+genre so the user gets to click the
+genre on the first page and the minute
+he or she does so we move on to the next
+page where we have our article within
+that genre displayed we'll also include
+a registration page just to see how that
+works with django so before we move on
+guys i want to tell you that this
+tutorial will completely concentrate on
+how django works so we will not look
+much into the details of how our page is
+displayed that is we won't go in depth
+into html css and so on but rather just
+stick to django and its functionality
+and another thing that we need to know
+about django before we start developing
+is that every page in django is called
+an app so when you go to a website say
+facebook for instance you have multiple
+tabs right so there's a tab for the
+profile you click on it and it
+immediately takes you to your profile
+now if this entire thing that is
+facebook was built on django then your
+profile would be one app and then
+there's another tab which takes you to
+your messages the page where all your
+messages are displayed that would be a
+second app so that's how django works
+every small thing every continent or
+every page of your website is an app and
+you need to ensure that you can describe
+exactly what an app does in one or two
+sentences so a page should not have
+multiple things happening on it if a
+page is for displaying messages that
+should be the sole purpose of the page
+so yeah that's the basic of apps and how
+they are a part of django so how do we
+create this app just open your command
+prompt move on to the path where your
+project is stored now in here you'll
+type in the command to create your first
+app so that's python manage dot py start
+app and then the name for your app so
+i'll name my app genre so basically on
+my first page i want all my genres to be
+displayed and every article is put under
+a particular genre hence the name enter
+and your app should be created so i go
+back to my pycharm and as you can see
+here we have our app genre created in
+here now under this app there are more
+number of files so what do these files
+do we'll discuss that first well first
+is our migrations folder now inside this
+migration folder there'll be a number of
+files which will be created once we go
+through our project we'll see every time
+we execute a particular command a new
+file is inserted into the migrations
+folder so this basically connects your
+database with your source code and that
+might seem very complicated but actually
+django makes it extremely easy and then
+you have the admins page now this admin
+file or this admin page that django
+provides is extremely useful so it's
+like this dummy admin page where you can
+actually go and you can view your entire
+database there in a very formatted way
+you have all the models that you created
+there you can insert more values you can
+delete values you can edit values which
+are already present so right now the
+admin page will not be existing there's
+no point of us going and checking it
+right now since we have not created any
+models yet again what is models i'll
+come to that too so that is the next
+file i'll be telling you about now if
+you have gone through object oriented
+programming python or java or any other
+object oriented programming as a matter
+of fact you probably know the concept of
+classes now over here in our models file
+we create classes and each of this class
+is actually a model and by that we mean
+it's a database so when we create a
+class we have a number of attributes in
+this class and each of this attribute
+forms a column in our database so that
+is what will be happening here and once
+we create our class or what we call
+model that is when we can actually view
+the admin page and we'll see how this
+page is extremely helpful the next
+important page is the views page so guys
+if you remember initially i told you the
+django has a design pattern which is the
+model view template where model is
+already discussed they are the classes
+template as you probably guessed is the
+look of the page so that's basically
+your html files and what brings the
+model and the template together that is
+the view so view adds the functionality
+now whenever you receive a request from
+the user for a particular url you will
+describe the response for this request
+but view is not responsible for giving
+the response that is another file that
+we'll be creating as you'll see in some
+time so now when i go back to my web
+page here there's no url for this this
+is just a domain name but once we start
+creating our website the very existence
+of each web page is linked to a presence
+of a url so that is exactly where we'll
+start building under our django project
+folder we have this urls page there's
+already a url path present here it says
+admin which is as you guessed it's the
+url to the admin page that is by default
+provided by django and over here there's
+this another parameter so what this
+parameter is it's the response that is
+to be given for the request that you
+receive now just in this manner we need
+to add the url for our first page which
+is going to be the genres page so i say
+path genos and then in here i'll insert
+the action so i've not created any
+action yet so i don't know what to put
+in there either as of now but guys think
+about this so if our website has 10
+pages does this mean that we'll have 10
+different urls going in here that would
+be quite half a sad wouldn't it so we
+need a more organized way of doing this
+and for that very purpose we will use
+genres the app as our base app so if
+from genres we are moving on to our
+second page so say our genres has our
+three genres which is fiction
+inspiration and something else so user
+clicks on fiction and this immediately
+takes the user to the second page where
+the content in fiction is displayed so
+then our second page should be a sub
+page of genre in a way and every other
+page that we move to from our first page
+should be the same so for this purpose
+what we can do is we'll go to our genres
+app the package will create another urls
+file within journal and in this urls
+file we'll define the url for our second
+page with reference to our genres url so
+how is that done well the first thing
+you need to do is you must copy paste
+this statement here into our urls page
+for this page we do not really need to
+import include so i'll remove that part
+out and i also need to define my urls
+pattern so copy paste this to but again
+admin is already defined there
+completely we do not require that now
+here we'll say if the user wants the
+page genres this is going to be my first
+page that is my front page so what will
+be the response to this the response
+will obviously be defined in our views
+page right now we have not created
+anything in our views page but we will
+soon and we will name the response for
+the url jonas as index since that is
+usually what the purpose of the front
+page is it's usually to display the
+index so we'll have view dot index and
+then following this we'll also give a
+name to this very particular call and
+the purpose of that i will explain later
+just name this index for now it's not
+view its views and also we need to now
+import views okay so we defined that if
+the user goes to this page genre then we
+will be displaying whatever is defined
+under views dot index of course we have
+not created that yet and we will move on
+to that in a while now the problem is
+every request that is made by the user
+the first thing django does is it checks
+the urls page under your main project
+which is this page and under this page
+we have not defined the action for
+genres and it would be very repetitive
+to define this again so what we do
+instead is we'll just include the file
+where we did define the function for
+genres and that is genres dot urls so
+the user gives a request for the genres
+page django checks out this main url
+speech it sees it matches the url to
+this very particular pattern here and
+for that it knows that the response is
+to include the genres dot url page so it
+includes this page and within this page
+we of course have the function or the
+response defined so now the next thing
+is to create the response so now under
+this views file will create a view the
+first thing is we need to import the
+http package the request is always http
+and this time the response that we are
+providing is also a http response we'll
+change this later because we'll need a
+more defined response but for now we'll
+stick to a very basic display on our
+first web page so let's import
+django.http
+import http response and now we can
+define a function which will tell what
+response to provide for the particular
+urls now here we say that if the user
+gives a request for this url our
+response is views dot index so within
+views we need to define a function named
+index so def index and this one takes
+request as a parameter and returns a
+http response and that response could be
+a simple text of course you can also
+have html tags and just for the purpose
+of formatting so that our text looks
+pretty bold i'll put this into our
+header just say hello world so that's
+done this is the response that we'll be
+providing for that particular url now
+the thing is we have this page here
+settings and in settings if you scroll
+down you'll see there's a list of apps
+which are installed and in this list our
+app genre is not mentioned so before we
+run our server we'll add our app to this
+list so that's done now go to your web
+page if getting your learning started is
+half the battle what if you could do
+that for free visit scale up by simply
+learn click on the link in the
+description to know more
+the one where you run your local host
+first and this time okay so my server is
+not running i need to start my server
+first type in your command python manage
+dot y run server and it says that
+there's no issue and our server is
+currently running so you go back to the
+page where we run our local host so the
+last thing we ran a local host currently
+your page would still be on that if you
+have not done any modifications i did a
+few in between hence i got this page now
+if you check out localhost again you'll
+see that there's an error this because
+now we started defining the urls in our
+url page so when you don't give any url
+as such django checks out the two urls
+defined here and says hey what you typed
+in here whatever your request was does
+not match any of the url patterns so now
+we want to check out the genres page and
+enter and as you see here hello world is
+displayed so of course this is a dummy
+page we need to do something way more we
+need to create a web page and that is
+what we'll get to okay so now that we
+viewed our dummy web page the next thing
+we need to do is actually populate this
+app with some data now to populate the
+app with data of course we need to first
+store the data and that is stored in a
+database so with django you would have
+probably already noticed here this is
+file called sqlite so this is the
+database management system that comes
+along with django it's already set up to
+be used just a small command a small
+tweak that we require and everything
+will work perfectly fine so what this
+does is basically all the data that you
+enter through your model will work along
+with this so that means that there
+should be a communication between your
+sqlite and your source code now if i go
+back to the terminal where i ran my
+server you'll see here there's an error
+line which says you have 15 unapplied
+migrations and your project may not work
+properly right now what we designed
+worked right because we didn't have any
+data stored but from now on we will be
+storing data so we need to ensure that
+the migrations are done right and by
+migrations we mean that our database
+management that sqlite is synced pretty
+well with our source code so first of
+all stop your server and now you run a
+command to do the syncing which is
+python manage dot py migrate and as you
+hit this command the syncing is
+happening so when you say that the
+migrations are complete what you
+actually mean is when django looks at
+your installed apps this is an app that
+we created and we just added it a while
+back to this list of installed apps but
+everything else in here in this list was
+already present so these are some
+default apps django or this project in
+particular will already work with and
+many of these apps require to access
+some databases it could not do that
+until now but now that we finished our
+migrations when django checks out these
+apps and needs to run them it can easily
+access the database take whatever data
+is required from there and perform its
+functions again if we go back to our
+command prompt and run the server again
+you'll see that this time we do not get
+the error of the unapplied migrations so
+that is how you sync your database with
+your source code now once we create our
+models it means that we have added some
+new classes there are some new tables
+which are going to be added so again we
+need to perform the migration function
+which we'll look into later now let's
+get to creating our classes so as i
+mentioned earlier models are basically
+classes now there are two classes that
+we will be creating for this particular
+project the first class will have all
+the genres and the second class which
+will hold all the articles so let's
+begin coding now my first class i'll
+call it collection and every class needs
+to import from models dot model now
+within this class all we need to define
+are its various attributes so i'll
+explain this again the class is
+basically a table and all your
+attributes of the particular class are
+the columns so the first thing is the
+collection name or the genre name now
+the collection name would be something
+like a fiction or inspiration or
+non-fiction could be anything and all
+these are strings so when you're
+inputting them so in django basically
+that's the cache field type so you say
+models dot care field and a compulsory
+parameter here is you have to insert the
+maximum length i'll give it 100
+characters next thing we'll have a
+description for each genotype that again
+would be carefield enter a max length
+give it 500 and then we'll also have an
+image or a cover for each of the
+collection or each of the genre so that
+would be i'd say call cover as in
+collection cover so this again will be a
+careful type as i'm going to enter the
+link for the image over here now the
+links would be pretty large so i'd say a
+length of thousand so that's our first
+class now we'll define a second class
+which is for the particular articles or
+the pieces which are inside the
+collection so here we'll just go for one
+article within a collection and i'll
+name this class as peace as in a piece
+within a collection again this class to
+impose from models.model and we will
+enter the column names now so every
+piece will have a title which would be
+the name of the piece and that too would
+be of care field type give the sir 200
+and then all of these will have a
+particular type that is whether it's a
+book it's a novel it's a poem or it's a
+blog post that is what will go in our
+type variable next we'll have the artist
+name for a book that would be an author
+for a poem that would be a poet so we'll
+go for the general term which is artist
+the year it was published now the year
+would be an integer so we have a
+different field type here the integer
+field and that does not require a max
+link and finally again for each piece
+you'll have a cover so i'll name that
+piece cover
+again we'll pass the link of an image
+here so carefield with the max length of
+1000 and yeah so our two models are
+created here class collection and class
+piece now once again we'll do the
+migration and what will happen is that
+the database will link with this model
+and then we can finally view the admin
+page and see what exactly that admin
+page is that we've been talking about
+all this while but before we move on we
+are missing out on something so we have
+our collection and we have each piece
+how do we link the piece with the
+collection well this is where the
+concepts that you probably learned in
+database is going to come into use this
+is where we use a foreign key so
+although we are writing a code here this
+is exactly how a table in a database
+will be created so every item would have
+a primary key and now we are going to
+use foreign keys in our class piece to
+link each piece to a particular
+collection so if i say dan brown's book
+origin so that should be linked through
+the foreign key with our collection
+fiction so let's create our foreign key
+and i'll name it collection but this
+time with a small c
+models dot foreign key so to the foreign
+key you pass the table name to which
+you're making the reference first which
+is collection and then you pass on an
+action as to what will happen to a
+particular piece if the collection that
+it's linked to is deleted so what we
+want is if suppose fiction is deleted
+then automatically origin which is tied
+with fiction should also be deleted and
+that is called a cascade delete so you
+say on delete models
+dot cascade and now we are finally done
+creating our models so now that our
+models are created we know these
+particular models are created for our
+application or our app genre so you go
+back to the settings page and here we
+had previously inserted this app genre
+but back then it was not really required
+it was just that there is this other app
+that is not included in the default apps
+given by django so let's put in the name
+there but now that we actually have a
+database associated with this app we
+need to specify this app in its complete
+structure that is the configuration so
+if you go under genres and then there's
+this file apps and under apps you can
+see this class genre config copy this go
+back to settings so genre dot apps dot
+genre config so now when you run your
+server django will check the list of
+installed apps and will be able to
+access the database associated with our
+newly created app too but there's more
+to it than that remember how previously
+we made migrations so we can link our
+database with the source code now we got
+to make those migrations again because
+now we created new models so every time
+you create a model or you make some
+changes to your models you always need
+to do your migrations and this time
+since our migrations is specific to a
+particular app the syntax is slightly
+different so you can also use this
+terminal down here it works just the
+same and python manage dot py make
+migrations and your app name enter and
+as you see it says the models collection
+and piece have been created now what
+this migrations exactly does is it
+converts these models that you have
+written in coded format into an sql form
+so that's why your tables and everything
+stored and now if you check your
+migrations folder you'll see there's a
+new file under it that is a current
+migration that you attempted so now that
+the migrations are made you can finally
+run your project so once again and
+overall migrations so i'm back to my
+command prompt since the black
+background makes it easier to see the
+text break out of your server and we
+finished our migration so now we can run
+our server no issues and there's no
+error with the migrations either let's
+now check out our genre page of course
+it'll look the same because although we
+created our models what the models will
+be reflected in is the database the
+overall look of the page so far has not
+been changed so it's the same so i'll
+repeat that once again every time you
+make a change to your model or you add
+some new class to your model first run
+the migrations for that particular app
+that is python manage dot py make
+migrations and your app name and then
+you run a migrations in general so
+that's python manage dot py migrations
+and then you can run your server okay so
+our database is created but right now
+it's empty so our next step is to
+populate our database for that again
+open a command prompt and now you need
+to enter into the sql shell so the
+command for that is python manage dot py
+shell but before that i'll just go to
+the path where my project is stored and
+now in here i'll execute my command so
+once you get these three arrows you know
+that you have entered the shell and over
+here you can execute your sql commands
+now before we input values into our
+tables what we need to do is we have to
+import these tables because even within
+this project there are multiple number
+of tables there are some tables which
+were in there by default too so from
+genre dot models import collection comma
+piece which are the name of our tables
+and enter so our tables are now imported
+now first we'll populate our table
+collection okay so collection has three
+columns there's the collection name
+there's a description and there's a
+cover image so go back to your shell so
+we'll have an object here collection one
+which will be equal to collection so
+this would be the constructor for our
+class collection and within this we'll
+insert our values so our first attribute
+is collection name and that's equal to
+fiction our second attribute is the
+description and we'll say enter the
+world of fantasies for the description
+of fiction and finally we have the
+attribute called cover which is the
+collection cover and in here i'll just
+enter the url of an image i found online
+so that's it we have entered the values
+for our three attributes now press enter
+now let's view if this actually stored
+in our database so for that you execute
+the command your table name which is
+collection dot objects dot all and it's
+empty so what's wrong we created an
+object in which we inserted all the
+values but then still our database seems
+to be empty so this is because so far
+this collection object that we created
+is only stored in our shells memory we
+have not actually committed this to the
+database so the command for committing
+this to the database would be our object
+name which is call one dot save and once
+again we'll execute the command to check
+everything that's present in our
+database collection and now you can see
+finally that there is an object present
+and now we can also check the value of
+the various columns in our table
+collection for this particular object
+you can say call 1 dot collection name
+and gives you the collection name
+similarly you can also check its
+description now as i mentioned
+previously every object that you create
+in a table has a primary key associated
+with it so the primary key basically
+holds the uniqueness of that particular
+row so we can also check the primary key
+for a particular row or an object just
+go for call one dot pk and it says the
+primary key is one now the primary key
+is also known as the id of the object so
+you can identify it as id2 again you'll
+get the value which is 1. now if you
+want to change the value of any of these
+columns that can also be done very
+easily on the shell so suppose i want to
+change the description say call 1 dot
+description and initially it was enter
+the world of fantasies i wanted to be
+welcome to the world of fantasies so
+welcome to the
+world
+of fantasies and now if i check the
+value of call 1.description the value
+has changed so that's pretty simple
+isn't it now if you think this is simple
+there's a much much more simpler way of
+adding values to the database which
+we'll see just in a while and that is
+where we'll put in more objects we'll
+have a few more genres and we'll also
+add elements to our table piece so now
+we can look into how to create our admin
+page so now that we learned how to input
+or populate our database through the
+shell let's go for the easier and the
+more efficient way which is through the
+admin now before we do that we need to
+create an admin and for that go to your
+command prompt out of the shell now in
+your command prompt type the command
+python manage dot py create
+super user okay so once you do that
+they'll ask you to create a username and
+we'll just go for admin since we're
+creating ourself as the admin enter
+enter an email id just go with admin 123
+at admin.com and a password so since
+this is not a production environment i'm
+gonna just bypass the password
+validation but if your website is going
+into the real world then make sure
+things are secure enough and our super
+user is created successfully so now we
+can go on to a browser and here we will
+just type admin so this is our admin
+page you can see here there are two tabs
+groups and users but the main thing the
+main reason that we require the admin
+page does not seem to come out here we
+expected there to be our database tables
+present here so we can directly go and
+edit them or add some values to them but
+it's not there so what is missing is
+that we need to go back to our python
+page and over here go down to the admin
+file so here we need to add the models
+that we want to appear in the admin page
+basically we need to register those
+models with the admin page and for that
+the first thing we do is we have to
+import the model so from dot models
+import and
+our two classes
+are collection
+and peace so we have not added anything
+to our table piece yet we will later on
+but any how we'll just register both of
+them at one shot and you type in here
+admin dot site dot register
+collection copy paste this and change
+the collection to piece which is our
+second table and that's it so with just
+these two lines of code you should have
+your collection and your piece tables
+appearing in the admin page now when i
+move back to the admin page and refresh
+this you'll see that our tables have
+appeared here click on collection and
+there's one collection object here click
+on that you can see the values of the
+attributes and through this admin page
+now i'll show you how you can add more
+objects so just press on save and add
+another here we can enter our second
+collection's name which in my case is
+inspiration and description would be be
+inspired to do more and for call cover
+which is the collection cover i have
+another link that i just took from the
+net save and we'll add one more so we'll
+have three collections now and our third
+collection would be horror the
+description let's say the fear is
+real although we hope it's not and
+finally we have the collection cover
+paste the link here save the store so
+now we have three objects under
+collection now as you see here all our
+collection objects just say collection
+object with a number in bracket in the
+similar manner when we were also going
+through our shell every time we executed
+the command collection.objects.all
+we got just the name collection object
+and a number but we want something more
+meaningful so when i look at this table
+of collections i know that the first one
+is the collection fiction the second one
+is the collection inspiration and so on
+so for that go back to your code so go
+under your models dot py file and under
+the class collection we'll define a
+special method which is double
+underscore str now this is an overriding
+method that is this method already
+defined but the value returned by this
+method is not of much meaning to us as
+if now so now over here we'll return
+something that we actually want to see
+when we look at the objects in our table
+collection and what i want is i want the
+collection name to appear that would be
+quite clear as to what object is at
+which position so i say collection
+return self dot collection name and that
+should do it now in the similar manner
+we can have the same function for piece
+2 and for peace what we want to return
+is the title so that's it now if i go
+back to my admin page refresh this as
+you can see we have something much more
+meaningful under our table collection
+now the objects actually have a name
+well the objects don't actually have a
+name but we are displaying one of the
+attributes of the object and that gives
+more clarity as to what the object holds
+so now we'll start creating our views
+now as i mentioned earlier our website
+would be such that the first page that
+the user goes to is probably going to be
+the genres page which will have the url
+genre slash and with nothing following
+it so the function for that particular
+url or the response for that particular
+url we defined in here in our urls page
+under the genres app which is we'll be
+calling the index function in views that
+is this function now from that page
+there will be certain links and when the
+user clicks those links he or she can
+move to another web page and that is the
+web page where the particular article
+present inside our collection would be
+displayed so i'll just put down in
+comment what pattern of the url we are
+matching for each of these parts so the
+first one that we are matching is just
+genre followed by nothing now our next
+part would be genre followed by a number
+now this number one here is actually the
+id of the collection that the user
+chooses so if the user chooses the
+collection fiction which is our first
+collection that has a primary key one so
+immediately the user should be sent to
+the next web page which is genre slash
+one where one represents the id of the
+collection chosen by the user so now for
+path let's pass the expression that will
+match this particular url and that
+expression is actually just an integer
+number since the front part that is
+genre slash is already matched and this
+integer number we are going to store it
+in a variable because we'll require that
+variable later so you can just say int
+colon and collection id now when you do
+this
+and jonas id so when you do this what
+happens is that this one gets stored in
+this variable genre id and this pattern
+will match this url now when this url is
+matched what response do you want to
+give that is what you want to display on
+that particular web page that will be
+defined in another function we'll define
+under views we'll name it details for
+now of course details is not defined
+we'll do that in a while and give a name
+to this too which will be the same
+details so
+now we are able to recognize this url
+what we need to do is next we need to
+define details which will give a
+response to that url so go to your views
+page and you create your details
+function now what is displayed in this
+details function greatly depends upon
+the genre that is chosen by the user in
+the first page which is stored again in
+genre's id so over here you pass not
+only the request but also genre id and
+inside you'll return a http response
+the collection the genre id is
+the html tags also need to be within the
+quotes copy paste that in here have code
+here too and now one more thing we need
+to do is so genres id is an integer but
+we cannot concatenate an integer with a
+string so we need to convert this to a
+string and that's it so let's go back to
+our web page and run this page so the
+first page which is genres displays
+hello world now if i enter genre slash
+one which is what we created newly run
+the code you see here the genre id is
+one in a similar manner even if i enter
+five although we don't have a collection
+five it'll display the genre ids five
+now these are dummy web pages so this
+kind of a display is fine of course once
+we actually start building our view
+which we will do very soon things will
+be more defined now let's get to
+actually creating a good view so what we
+want here is uh first of all we do not
+want to display any large text so let's
+delete that off we need to import our
+models because this is where our
+database is and of course we need to
+fetch information from our database to
+be displayed on our view so from
+dot models import collection and piece
+now in our index function what we'll do
+is we'll first collect all the objects
+from our table collection we'll have a
+variable which is all collection and
+then to collect all the objects we'll
+use the same sql command that we used so
+so that's collection dot objects so all
+your objects in the collection table
+will be stored in all collection now
+we'll store this as a dictionary so that
+we can iterate over these objects and
+display them one by one so we say
+context equal to all collection is the
+key and the value would be our variable
+all collection so that's done now we
+need to iterate over this so do we do
+that within our views itself but there's
+no point of doing that because while we
+are iterating over every object in our
+collection table we also need to display
+them in a certain format that means that
+we need these objects to be somehow
+embedded in a html file and this is
+where we create our very first html file
+for our first page which is the genres
+page so to create our html page inside
+genre create another package and you
+name this package templates now inside
+templates create another folder and give
+this package the name same name as your
+app name that is genre and now inside
+genre we can create a html file i'll
+name this file genre template so all our
+template or our html files will be in
+this path okay so before we actually
+develop the genre template html file
+we'll go back to our view and complete
+the section of so now what we are seeing
+is that we have a template we have a
+html file and that file will define how
+we need to display the objects in our
+collection database or our collection
+table all we need to do here in our
+index function is actually pass these
+objects to our html file so for this we
+have a function render and before we
+actually use the function we need to
+import the library
+django.shortcuts under which we have
+this function render this is already
+imported on top i did not see that so
+i'll just remove that part out and now
+that you have the render function you
+use that to pass your object so what
+this render function does is basically
+we'll pass context to it it will type
+context with the template name that we
+pass and it will return a http response
+object so you pass your request you pass
+the path to your template that is genre
+slash templates slash genre slash genre
+template dot html so now you have passed
+your template to and finally the object
+which is context
+so that's pretty much all you need to do
+for your very first view under the views
+file now we need to develop our genres
+template so
+for our html file first thing we'll
+change the title let's display our app
+name so in this particular case since
+i'm making a dummy website i'm not
+giving it a name or anything just going
+with our app name okay so now we need to
+display our objects which have been
+passed from the views folder now the
+render function basically passes an
+object which is called object underscore
+list
+so we'll create a for loop say
+collection in object underscore list so
+this way we can iterate through all the
+objects in our object list and now see
+this is an html file but this line of
+code here this is the python code so
+pretty often this will happen that you
+need to embed a python code within your
+html file so what you do is you insert
+your python code within curly brace
+followed by the percentage sign this
+will tell your compiler that hey
+although this is a html file this line
+here is actually a python instruction so
+now we're able to extract each genre in
+fact i'll name this variable as
+genre obj now we need to decide how
+exactly we want to display these objects
+so what i want is first i want the image
+of that particular collection or the
+genre to be displayed which is what i
+have stored in one of the variables and
+then just below the image i want the
+name of the genre to be displayed now
+this name should be clickable so that
+the minute the user clicks on it we can
+move on to another page and then just
+below the name i want the description
+for that genre to be displayed okay so
+first we have the image
+img source and in here i need to insert
+the link for that particular image so
+the link i actually already stored in my
+database as i showed we did that through
+the shell and then later on through the
+admin page too so how do we access that
+particular link well just like you would
+in a python code you can access it
+through the variable name and every time
+you're accessing or you're displaying
+just the value of a variable you insert
+the variable name within double braces
+so double braces and then genre obj dot
+call cover and now i'll give it some
+height and width to make it look a
+little more appealing we'll have minimal
+formatting here because the objective of
+this tutorial is not to show you how to
+write your html code but how django
+works and next i'll have the name as i
+said this particular name would be
+clickable so inside href i will insert
+the url of the page the user should be
+taken to once he clicks on the name so
+that url is what we defined here okay so
+it's genre followed by the primary key
+or the id of the category that he
+clicked so that would be
+genre slash and we stored it in
+genre id so that's the link the user
+will be taken to and now the name that
+will be displayed and then after that
+finally we have the description to be
+displayed so that'll be in a h3 header
+again double braces because
+we are going to just print out the value
+of a variable and then after each
+object's details are displayed we'll
+break a line for better formatting what
+i'll do is i'll have all of this
+embedded within a div and have it
+aligned to the center so that's it we
+have created a html file here one more
+thing i'll just say end for so that's it
+our html file or our complete display
+for the first page has been created so
+once again i'll explain what will happen
+in the case of our first page only when
+the user enters the url slash genre
+followed by nothing django will first
+check this urls page the main url page
+it'll see the path has matched here and
+the action for this has been defined as
+you include the genres dot url page so
+it goes to the genres dot url page
+includes this and in this there's a
+function defined as a response for this
+particular url a very well defined
+function which is in our views file so
+it goes to the views file and in the
+views file we have completely defined
+our function index over here we collect
+all the objects in our collection table
+we convert that into a dictionary so
+that it's iterable then we pass it using
+the render function so the render
+function will take your template and
+it'll tie that along with the context
+which is the dictionary and it will pass
+an object a response object to a html
+file this response object will be called
+object.list and it is iterable so we'll
+iterate through the object we will
+display each object
+in a sort of formatted way and that is
+it and then the render function will
+pass this object all collection to our
+template and over here we will iterate
+over the oil collection which is the
+dictionary and using this hashtable code
+here we'll print out the objects in all
+collection in a formatted way so that's
+it and
+one more thing make a small correction
+back in the views file so initially i
+had inserted the entire path to
+genretemplate.html so the thing with the
+render function is that it automatically
+knows that it must look into the
+templates folder so you have to only
+give the path after the template that's
+genre
+genre template now let's go back to our
+browser
+and in here put in your url
+and there you go so that's our first web
+page you can see the image for our genre
+is here and then you have the name and
+then you have the description okay so
+that's redirecting us to a page where
+there's an error it says that this path
+is not found so when you look at these
+error guys you will understand better as
+to how the matching of the url patterns
+take place first this url pattern just
+this part after your port number that is
+checked against the url in your main url
+file that is django
+projects.url file where we have defined
+genre and then after that it will check
+the files that we included in the genres
+url file that is genre followed by the
+genre id now we had defined a dummy page
+for this previously and that was being
+displayed too so i'll go back to the
+code and figure out what the error is
+the error is here of course i wrote
+genre id which does not signify anything
+as such now because here we have this
+object genre obj that is where all the
+objects from the collection table are
+stored one by one so what we actually
+need to access is the id for genre obj
+now i'll go back to my browser so now
+i'm back to my browser and as you can
+see here we still have our front page
+click on fiction and yeah we got a dummy
+page back so now our next step is to
+design this page go back to your code
+and again
+designing the page means we need to
+start
+putting content into our details
+function now before we start designing
+this function we need to populate the
+piece table so again let's go back to
+our admin page we'll add the data
+through the admin page since that's much
+easier here you have peace
+and
+click on the add button
+first we'll add for fiction the title
+will give let's insert the book origin
+by dan brown so the artist would be
+round and it's a novel
+and the year is 2017 that's the year of
+publication and for the piece cover i'll
+just put
+the book origins front page cover i'll
+just put in the image here a link
+save and add another
+now for inspiration i'll put in the poem
+if and type would be poem artist is
+rudyard kipling
+kipling with single p the year of
+publication would be 1895
+and for the peace cover another link
+and finally we'll add one to hoarder
+the title would be the pet symmetry
+written by stephen king
+and again this is a novel it's published
+in the year 1983
+and then link and we save this so we are
+done for each of the categories of each
+of the genre we have added a single
+article so now that our table piece is
+also populated we can start designing
+the view for this
+so for our details page let's start with
+removing this http response here
+so first what we need to do is we need
+to extract the object
+that the user selected from our genres
+page so we say collection
+dot objects
+dot get
+pk equal to
+genre id so what we are doing here is as
+you can see above we use the query
+collection dot objects dot all which
+returned all the objects in our table
+collection now here we are telling that
+okay i want just one object from my
+collections table and that particular
+object is the one whose primary key
+matches that stored in the variable
+genre.id and since genre.id
+is defined in this file and it's
+basically the id of the genre that the
+user selected
+this
+will be a number either one two or three
+that is one for fiction two for
+inspiration and three for horror so now
+that we got that object we will use this
+object c item
+to extract from a piece
+table so for that we say piece dot
+object
+dot filter and to this we pass
+and
+the category that we filter on is the
+collection
+and that is our foreign key so remember
+when we created our table piece we had a
+foreign key named collection so we are
+seeing if collection is equal to c item
+then extract that particular object from
+our table piece
+and then we will return this
+again through the render method
+pass the request
+and in here we'll have
+the path to an html file just like we
+did in the previous case
+but this time a different html file
+because we want to display this slightly
+differently
+and then finally we need to pass the
+context so we haven't created the
+context yet which we will now although
+this is just one item every time you are
+passing it through the render function
+you need to make a dictionary out of it
+so just copy paste this here
+name this p item
+pass in here p item
+and just now i did create a html file in
+the same path as before that is under
+templates you have the genre folder and
+under that i created a html file called
+detail template nothing's filled yet but
+now that we have created a file we can
+put in the path here
+so just copy paste this
+and change the genre to detail so that's
+done too now all we have left
+is to actually code the html file
+so i'll just copy paste this
+here and then make the required
+correction
+so in p item
+and this would be piece object
+you align its center and
+piece obj is the cover we do not really
+need
+a href here
+so delete that part out because this is
+the final page we are not redirecting to
+any other page from here of course when
+you're building a complete web page this
+ideally when you click on the name of an
+article the article should open
+we wouldn't be including that part here
+though because it does not bring out any
+new functionality of django
+peace obj and here
+so peace obj
+dot title
+dash
+and then we'll print out the
+author or the artist name so peace obj
+dot artist
+and finally we can have the year
+also what
+this particular article is that is the
+type
+so that's pretty much it we'll change
+the title to
+[Music]
+so now that
+this is done we'll just end the for loop
+also this is not call cover but now
+we've got to change it to peace cover
+and now we'll go back to our browser
+so this is our genre page refresh it
+once again
+and we'll click on one of the
+genres and yeah as you see
+the particular piece related to that
+genre gets displayed the pet symmetry by
+stephen king which is a novel published
+in the year 1983 so now we're back to
+our code and well our first and a second
+page is designed it's working fine so
+now we are not going to create something
+new instead what is already created
+let's modify that now so far the
+functions that we wrote work just fine
+but django provides this thing called
+generic classes or generic views what
+this does is it makes writing these
+functions extremely easy so now you have
+four lines of code the exact same thing
+can be done in like two or three lines
+of code
+in fact it's not just the easier method
+this is also recommended
+so i'll tell you how that is done first
+of all we need to import the generic
+package
+so from django
+dot views
+import
+generic and now let's delete this entire
+thing
+so our first function is basically
+listing out all the objects in the table
+so you have multiple objects all of them
+are being listed out now this kind of a
+function
+would belong to a generic class
+so far i was defining functions now i'm
+speaking about class so is it a function
+or a class well it is a class
+it's definitely a class but i'll show
+you how this class is called as a
+function so first we'll finish writing
+the class now we have the class
+index and this particular class type is
+a list view because we are listing out
+objects
+now under this first we'll have a
+template name which is the path to our
+template
+and now to return our query set so
+previously we were always returning a
+dictionary now we can return a query set
+we have a function def query set
+and under this we just say return
+collection dot
+objects dot all so the same query we
+were using previously but now we do not
+need to take the objects from the query
+and then convert them into a dictionary
+then pass it on using the render
+function we can simply do this one
+statement and all our objects will be
+sent to a template
+where now in the template so far we were
+seeing all collection because that is
+the key that we were using in our
+dictionary
+but that is no more we are not using the
+render function anymore
+when this query set passes an object
+it's received by the template file
+in a variable named object list
+so you replace your previous variable
+with object list
+and that is it with that we finished
+the method for displaying our first page
+now we'll move on to the second page so
+the second page is slightly different
+because this time we are not listing out
+multiple objects we just have one object
+and we are basically giving out the
+details of the object that means that
+this class
+which we'll still call details
+is a detailed view class so we say
+generic
+dot
+detail view
+let's delete all of this first
+now the function of this detail view is
+basically to display the details of an
+object
+so what we need to do is first we need
+to define a model now our model is
+collection
+because we are receiving the primary key
+from the collection and each of this
+object actually is a part of a
+collection the object would not exist if
+the related or the counterpart genre of
+that object did not exist so a model is
+collection and our template name will be
+again the path
+so that genre
+detail template
+dot html
+and that's it so this is even smaller
+than our generic view
+now in a detailed template initially we
+had the name of the key in our
+dictionary again this time we don't have
+a dictionary pass so what is the value
+here well the value here
+would be collection dot piece
+underscore set
+dot all so this will return all the
+pieces related to that particular
+collection
+and everything in small this time
+now we are almost done go back to your
+views and you see this is a generic
+detail view now the thing about the
+detail view class is
+it always accepts one parameter go back
+to your urls file as you are passing
+here a variable gen
+genre underscore id of in type you don't
+need to do that anymore you can simply
+say pk and pk will be passed to this
+class and now that's the problem so here
+we were calling functions but now we
+have classes defined not functions
+anymore so we need to figure out a way
+of calling this class as a function so
+for that you just say as
+underscore view
+for both of these classes
+and that's it as simple as that now you
+can call your classes as a function and
+since you use the generic view now
+things have become so much more simpler
+much smaller our code looks
+very neat
+now let's go back to our browser go to
+our front page let's see if everything
+is displayed right yes it is so our
+changes worked out just fine click on
+one of these tags and as you can see the
+page has loaded so much less code very
+few lines of code but things work just
+as fine as before so web page is all
+built but let's add something new over
+here to make it look a little more like
+a website one of the most common things
+that you find in every website you go to
+is a navigation bar so let's add the
+navigation bar go back to your code now
+in here
+we need a navigation bar in both our
+pages so typically what you might think
+is the way to go about it is add the
+code for navigation bar in your genre
+template and detail template but as you
+know whenever you code repeatability is
+something that you should be always
+against minimum repeatability
+so instead what we do is under genre the
+same folder that has all our templates
+create another html file
+and name this base
+so this will be our base template and we
+will add the code for creating a
+navigation bar in here and then we'll
+just include this base in our other
+templates so first let's create
+our navigation bar
+now we'll be using bootstrap to create
+the navigation bar
+and every time you work with bootstrap
+the first thing you need to do is in
+your head section include these three
+links so if you have worked with
+bootstrap you probably already know you
+need to go to the bootstrap website copy
+these links paste them here so you're
+basically able to access some style
+sheets which are stored in some other
+system and once that's done you can
+start building your navigation bar
+so in your body
+you have nav class
+navbar
+and navbar default
+so this
+is the class for creating your basic
+navigation bar
+but actually we'll go
+with inverse instead of default so this
+has a dark theme navigation bar it will
+look better on our
+white background website
+within this create a div tag
+of container fluid so basically what the
+container fluid does is that your
+navigation bar will occupy the entire
+page
+and will fit according to the page
+width
+now under this you have
+the navbar brand class
+and the first icon i want is
+my home
+okay so i put in home here
+and when i click on home whatever i want
+to be redirected to
+whichever page i want to be redirected
+to put the link for that or the url for
+that in here
+and i'd like to be redirected to the
+genres page since that's our home page
+now other elements we can include in our
+navigation bar
+we put them as list elements so class
+nav navbar
+and we want these elements to the right
+of our navigation bar so we say navbar
+right now i'm not going into the details
+of this since again this is not a part
+of the django tutorial so we'll quickly
+just create the navigation bar
+now every element to the right will be
+listed out
+and i'll have a registration button so
+that will be under genre slash
+register now i have not created the view
+for this url yet in fact this url is not
+even identifiable yet
+but for now i'll just put that in and
+we'll run it all together
+and finally at the very right and corner
+of my navigation bar i want to display
+the username that is whichever user is
+currently going through my website
+now yeah right now we have not designed
+the features for all of this we don't
+have a registration form itself so a
+user does not mean anything to us right
+now but very soon i'll show you how you
+can create a registration form you can
+have users register to it so then this
+will start making sense
+so we'll say li class
+and in here
+the way you can extract the current user
+of your website is you say request dot
+user
+and that's it that's pretty much all we
+need right now
+just check all the tags again we have
+the navbar inverse which is the type the
+look of our navigation bar container
+fluid
+and here we actually need to specify
+that it's a header so we say diff
+class
+navbar header
+well this
+would be closing right in the end
+so i'll just format this once
+and finally down here you insert two
+python statements you say
+block content
+content is a variable so you can have
+any other name here just say block
+content and then end block
+so why this i'll explain to you in a
+while
+so basically this entire part creates
+your navigation bar but you require this
+navigation bar to be present in multiple
+pages so here when you say block content
+and end block it's basically the content
+that will fall in each of the pages so
+if i go to my genre template page i can
+simply include the base template here
+and then
+everything inside the genre template
+page all this instruction to actually
+create that page
+will come under a block
+so what we'll do here is we'll go to
+our template pages and here we will
+extend our base.html file so extends
+genre
+base dot html
+and then
+the body the instructions within the
+body will be the content of the block
+so you say block
+content
+and then end block
+now we do the exact same thing
+with our detail template
+so now this way we created a common base
+file for our navigation bar and the
+content for each of these templates will
+be by turn included within this tag here
+so we'll have the navigation bar present
+for every page
+now when we move back to our browser you
+see the change here there is a
+navigation bar if you click on home will
+be redirected to our genre page and then
+click on one of the categories
+and you have been redirected to the next
+page the navigation bar is still present
+so we also have a user here currently
+the only user we created the super user
+it's the admin this will change soon
+once we start registering people
+so
+next step is to create a form where we
+can actually have users register so for
+our registration page the first thing we
+need to do is we need to create a url
+and
+go in here
+let's copy this line
+so the recognizable url would just say
+register so it would be genres
+slash register
+and that would call
+a views function
+called user form
+and we obviously haven't defined this
+class yet so yeah this is also going to
+be a class we are going to use the
+generic view to create this tool it's
+going to be pretty simple but since it's
+a class we need to call it as a function
+so as view will still exist and we here
+we'll have user form
+but before we start actually creating a
+view for the registration page or
+writing a html file we need to create a
+blueprint for the form so why a
+blueprint for the form when we did not
+create a blueprint for our other pages
+i'll tell you why but first we need to
+comment this particular line because it
+will result in an error and now we'll
+check out our admin page
+yeah so this
+table here is what we'll be using to
+store our usernames so the tables
+already present here we'll just tweak it
+a little that is we'll take the username
+we'll take the email address and we'll
+take a password field all of these
+actually have a password if you click on
+them you can see here the password is
+hashed so these are the three fields
+that we'll collect from the user so
+we'll use the basic form
+just selecting exactly what we need so
+for that purpose we need to create the
+blueprint so to create the blueprint
+under genre create
+a python file calling it forms
+and now in here
+we import that table we just saw that
+database
+so we say django dot contrib
+dot auth
+dot models
+import
+user
+two imports here so
+and then we'll import the module forms
+okay so now we can create a class called
+user form
+which will import from
+forms dot model form
+and in here we'll have a class called
+meta so meta basically means the
+definition or a description of your
+class so inside our class user form
+we'll have a description for our class
+and in that description we give a model
+name so model name is user because we'll
+be using that particular model i just
+showed you and then we'll specify the
+fields that we'll be using from this
+model because we are not taking all the
+fields we are going to ignore a few of
+them so we say fields
+create a list here and within the list
+we'll enter the name of the attributes
+that we'll be actually using for our
+particular form so we have username
+email and we'll take a password now
+unlike username and email password is
+not just any care field
+so over here we have to specify
+the password type
+so you say forms dot care field
+and within brackets
+you say widget equal to
+forms dot password import so password
+input so from this
+your django will know that here we
+basically need to take the hashed values
+and not just store what the user inputs
+as characters
+so that's it with that we have created
+the blueprint of our form next thing is
+we can actually go to the views and
+begin writing
+the view
+the class
+view for our form so the class to create
+a form
+would be called user form view
+actually before we proceed we need to
+import this so let's do that first
+import user form
+also need to import some other packages
+here we'll import a few packages for
+user authorization
+that's authenticate
+and login
+and now we can begin writing a user form
+viewer class
+so to use a form you you pass the object
+view
+and we also need to import a class for
+this so let's do that
+from chango
+dot views or generic
+import view
+okay so the first thing we need to
+define a class for this form
+and that would be the user form
+and once again a template for this form
+which will define the outlook this form
+has
+so you give a template name which is a
+variable name actually you can have any
+variable name here just something that
+makes sense
+now i don't have a template page already
+so i'm not as in have not created
+another html file for the form
+specifically but i know that i'll be
+creating it the genre slash and the name
+of the html file
+so that would be form template now the
+minute we are done writing this view
+i'll show you how we do the template
+that's just basic html code so i'm
+pretty sure you know how to work with
+that too
+now with forms there are two things
+there's the get method that is basically
+when the user wants a form so you give
+the user an empty form and there's a
+post method that is when the user puts
+in his or her details into the form
+so with our class with our generic
+classes
+these methods are already defined and
+within two three lines you can
+completely define the functionality of
+these so first is the get method to
+which we pass self and request
+now the first thing is you provide the
+form to the user and this form is empty
+so you say self.form
+class
+and you pass nothing to this because as
+i mentioned earlier too the form is
+empty
+and now what you do is you return this
+object
+through the render function so basically
+when you do this
+the form is combined with the html file
+and an object is returned
+so basically when you do this what
+happens is as i mentioned earlier too
+the render function works the same way
+it passes the object of the form the
+content of the form to the template and
+it basically sends out a http request
+so that's your template name and then
+finally the form itself
+and as we
+did previously this will be a dictionary
+and that is
+the get function
+now we'll move on to the post
+again you pass self and request
+now when the user enters the data and
+then hits the submit button that's when
+the post function will be called all the
+data will be stored in a particular data
+variable and that is what we'll be
+defining the first line so form equal to
+self dot
+form class
+and request dot post
+so all your data will go into this post
+variable
+now the next thing that the post
+function has to do
+is check if the data entered by the user
+does make sense
+so for that you say if form
+dot is valid
+so if the form is valid
+save this data
+so you say form dot save
+so where exactly are we saving this well
+as i showed you previously
+django provides this table for user this
+database for storing the users and the
+group users so that is exactly where
+we'll be storing the data received
+through this particular form
+now if the data is valid we can
+separate out the various fields receive
+the clean format
+so first we have our username say
+username equal to form dot
+cleaned data
+and that will be username
+and then you have the password
+so remember when the user entered the
+data itself it was stored in these
+fields
+but now we're getting a clean version of
+that data and storing it in this these
+variables username and password and
+now
+unlike how we can usually put the equal
+to sign and assign values to certain
+variables
+this kind of a process is not possible
+for passwords because passwords are not
+just storing some cad field data it has
+a hash value i'll show you that once
+again so you see here you go to the
+users
+admin
+and if you check this out the password
+is not actually stored as just
+characters it's hashed using some
+algorithm and then it's stored so in
+this particular case we cannot say that
+password is equal to this value there's
+a certain function through which you
+pass the password such that it's stored
+in the required format
+so for that you say user dot set
+password
+and then you pass password variable
+and finally you see user dot save
+so guys over here actually we are saving
+the data
+in the shell not in your database and
+once our data is cleaned and everything
+it is then that we are saving it into
+the database so that's why we have two
+safe statements here so now that the
+user has entered their data and they
+have hit the submit button we have saved
+the data in our database what's next
+well now what we want to do is we need
+to redirect the user to the index page
+basically once the user is done with the
+registration process there's no point of
+the user staying on the same page again
+so we redirect them to the index page
+now along with this we'll also combine
+login so if the user's password and
+username are authenticated and the user
+is in active status that means that the
+user has logged into our website so now
+we'll see how this is done
+create a object new user
+and this object will hold a user if the
+username and the password that we pass
+here to this authenticate function is
+actually valid and they match
+that is the form of
+that is they form a pair so the username
+will be the variable username
+and password will be the variable
+password
+so if the new user does exist
+that is if new user
+is not null
+if the new user is not none
+we'll check the stages of the new user
+so what is the status again i'll take
+you back to that database
+go to users
+well since we're in the middle of the
+code we cannot access this page but
+basically this database or this table
+which stores the usernames has a field
+called status which you probably would
+have noticed and next to the active user
+there's a green tick so if the user has
+that green tick if the user is active
+that means his session is in progress so
+it's basically like logging in
+so you say if new user
+dot is
+active
+you log in the user
+you send request
+and the new user
+object and once the user has logged in
+you return the user to the index page
+and this is where you need to use a
+function redirect before we use that
+function we need to of course import it
+so here or redirect is within this same
+shortcuts library
+we'll just add and redirect here
+so index page is basically called genre
+so that's where the user will be taken
+now if this
+user is not authenticated that is there
+is some invalid data entered
+we basically give the user back or form
+an empty form give them another chance
+to fill it
+so for that we just copy paste this line
+here the
+render
+put that down there
+and that's it with that we are done
+creating a view for our user form now
+what we are left with is actually
+creating this html file
+so let's do that again go to genre your
+main folder and
+create a html file
+now remember what we named
+a html file in this view that's form
+template
+make sure the same name
+so let's start creating the form the
+first thing we do is for the form 2 we
+want to add the navigation bar so go to
+your
+go to any of your html
+files and copy out these lines here
+registration
+then you have the block content which is
+exactly where you'll be putting all your
+content
+that goes here and then we'll start
+and then we'll add the end block
+again copy paste that too
+okay so now we can start
+typing out our html code
+so first is our form tag
+now this is going to be an extremely
+simple straightforward form
+and now the thing with django is
+whenever you're having a form an
+interactive form make sure to include
+this csrf token here so csrf stands for
+cross site request forgery
+that can be sent actually from and it's
+a type of cross site scripting attack
+that can be sent from malicious site
+through your visitors browser to your
+own server so to prevent this django
+provides a very simple technique which
+is where you provide this csrf token now
+make sure you're always providing this
+whenever you have a post method and
+you're not redirecting or you're not
+using the url of or you're not using an
+external url because that means that
+your current page
+token is being sent to an external web
+page and obviously that kind of a
+leakage would hamper the security
+okay so we'll be taking a username
+again email is also type text
+and finally the password
+and after all the fields you have
+finally the submit button
+and that's it
+our html page is also ready now
+so now you need to move on to the urls
+page
+and uncomment this because now we
+actually have
+a response
+also this is called user form view now
+i'll just stop the server and run it
+again although this is not really
+necessary if you just go back to your
+page refresh it everything works fine
+okay now we will move on to our web page
+okay so home page is working fine just
+like before
+next you click on register and here's
+your form so as you can see here the
+navigation bar is present for the form
+tool
+now we'll create a new user
+name simply with the email id simply123
+gmail.com
+and password
+that's it now click the submit button
+and the minute we click the submit
+button as you can see you got
+transferred back to the home page and in
+here if you see the right hand corner
+you'll notice that we had admin before
+but now it's simply so that is because
+we just now created a user simply and
+the minute you create a user by default
+that becomes the active user now to
+check this we will move on to the admin
+page
+and this is our landing page so now what
+happened is that since the other user
+that we newly created
+is the active user that means we got
+logged out of the admins profile and to
+view the admin page of course we need to
+be logged in as the admin so i log back
+in
+and as you can see here under the users
+group you'll notice we have a new user
+created simply with the following email
+id
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+welcome to web scraping with python my
+name is richard kirschner with the
+simply learn team that's
+www.simplylearn.com get certified get
+ahead certainly there are many reasons
+to be able to go online and scrape
+different websites they range everything
+from pulling out different links
+to pulling data off of websites as a
+data scientist you might need to get
+some information off a website that
+doesn't have a direct api to pull that
+information and in python we have a
+wonderful tool when you talk python and
+you talk web scraping we're talking
+beautiful suit which is a package you
+add into your python that you're running
+and we can come over here to the website
+www.crummy.com
+software slash beautiful soup you can
+actually read a little bit about it
+currently beautiful soup 4 is the
+current version if you don't remember
+the full website for it you can always
+do what i do which is go over and do a
+search for beautiful soup official site
+it almost always comes up right at the
+top and you click on there and it'll
+take you to the crummy.com software site
+for beautiful soup now we're going to
+use our whatever python interface you
+want ide i'm going to use jupiter lab
+which is built on jupiter notebook
+through anaconda
+jupiter lab is jupiter notebook with
+added tabs and some added features it's
+basically in beta testing so it's got a
+few little glitches when you're saving
+things and moving between projects but
+for the most part it's a great upgrade
+to the jupiter notebook and you can use
+them together so you don't have to i
+mean it's built on jupiter notebooks
+anything you do in jupyter notebook you
+can open up in jupiter lab and the first
+thing we need to do is we need to go
+ahead in this case i'm going under my
+environments since it partitions the
+environments out and i'm going to open
+up a terminal window we have to install
+some packages in here to work with now
+there's a lot of choices on this i
+because of the simplicity we'll be using
+conda install now you can use pip
+install for the same thing and we're
+going to install our beautiful soup four
+and you have to type out the whole thing
+beautiful soup for and you can use a pip
+install if you're using a different
+environment and i am using python
+version 3.6
+although according to beautiful soup
+they also work on 3 7 all the way from
+27 through all of 3x now according to
+the beautiful soup website the beautiful
+soup 4 works on anything you can install
+on anything from python 27 all the way
+through any of the python 3 versions
+this just happens to be python 3 6
+because i do there's a lot of other
+packages that don't work on 3.7 yet and
+we'll go ahead and run this install on
+here and let it go through its
+environmental setup and of course with
+conda it goes in there and finds all the
+dependencies pip doesn't do as much as
+far as finding dependencies but you know
+exactly what's on there with pip so if
+you're doing a huge distribution you
+probably want to use your pip install so
+you can track what's going on there with
+the
+conda i like to just let it take over
+since this isn't a major distributed
+package going out another quick note
+between pip and conda is that if you
+start on a project in one of these
+environments and you're using pip in
+there stick with pip if you're using
+conda stick with conda they track the
+packages and you can run into some
+issues where they're not tracking the
+same packages and something gets
+overwritten so it's important to stay
+very consistent with your install on
+your environments and we'll also need to
+go ahead and install our numpy
+environment and our pandas on here so go
+ahead and do that if you haven't added
+those packages in go ahead and install
+those into your
+environment that you're working in and
+of course pandas is just simply uh
+install pandas and let's just install a
+couple more packages in this case let's
+get our install our map plot library
+because we're going to plot at the end
+since we're going to be collecting data
+and for this project that will be all
+the packages we'll need so we can go and
+close out of our installer or whatever
+setup you have and we'll go back to home
+and we'll just launch our jupyter lab
+and that will open up in our browser
+window now if you're coming from jupiter
+notebooks and first time in lab we can
+go ahead and just create our first
+notebook python 3. you can also do it
+under file launcher and you'll see new
+notebook it automatically opens up and
+we just click right on there it'll pop
+open on the left and i'll right click
+this and we'll rename this we'll rename
+it uh just beautiful and it is a i pi nb
+file on there so that should look
+familiar because that's a jupiter
+notebook file this is a new one now i
+have more tabs in the past i usually hid
+this on the other computer all my notes
+for the lesson today but this is my
+notes going down and we'll go ahead and
+just start going through this and see
+what it looks like to do a data poll
+from front to end and see how that works
+as a data scientist pulling that
+information in from the website and the
+first thing i want to do is i want to go
+ahead and close this side window that
+way it looks get the nice full screen
+and we can also up the size a little bit
+one of the wonderful things about
+working in a browser window just do that
+control plus thing the packages we
+talked about is pandas so we imported
+our pandas if you haven't already that's
+our data frame if you haven't done our
+pandas tutorial definitely worthy of the
+time to go through there and understand
+pandas because it's such a powerful tool
+this basically turns your in data into a
+spreadsheet data frame our numpy is our
+number array uh so it kind of works with
+pandas very closely as far as
+manipulating data in arrays map plot we
+want to go ahead and bring that in our
+plt so that we can plot the data at the
+end and this line right here that says
+matplot library inline is for the
+jupyter notebook specifically it tells
+it to print that on this page a lot of
+the newer versions don't actually
+require to have that line they'll still
+print it on the page but you should
+still include that if you're in the
+jupyter lab setup and then we have our
+url library.request we're going to
+import url open for opening up the
+website and then we have our bs4 that's
+your beautiful soup for we're going to
+import beautiful soup and then our last
+one is our re that is for manipulating
+our regular expressions so we get to
+that part of importing our data we have
+to do a lot of reformatting so it's
+something we can use and the re is one
+of those tools we'll go ahead and run
+this and just bring all that in so this
+is all imported all these packages are
+now into our web scraping program we're
+gonna run now if we're gonna dive in and
+pull data we should have a nice website
+to pull from and let's go ahead and
+we'll use the
+upper timing.com results for the 2018
+martin luther king race and if we take
+this you can actually just take this
+where did we get this from well you can
+go in here and find the website you're
+going to scrape from and you'll see
+right here it says you just copy that
+link right in there that http and this
+is the website that we're looking at you
+can see right here all the information
+that we're looking at let's say we
+wanted to run some statistics on this it
+sure would be nice to be able to pull it
+off of here and if they don't have a
+direct api that means we need to pull it
+from their website some of these will
+have a download although if you've ever
+done we have a download click and maybe
+you're paging through a hundred websites
+uh in one case i was uh polling all the
+different united states bills that are
+passed to track who voted on them for a
+project and you can imagine that there's
+you know hundreds and hundreds of those
+thousands of these documents that they
+voted on who voted on it goes through
+the senate goes back to the congress so
+i opened up a website pull all the links
+off of there that match a certain
+criteria and we'll look at that in just
+a minute how we go through the html and
+then i had to reformat them or i could
+hand download each one one at a time
+which would just be a nightmare so it's
+nice to automate it in this case we're
+going to be pulling up this chart and we
+want to figure out how to pull this
+chart off of this website and so we go
+back into our jupiter notebook i've got
+my url just our name for it and it's
+just a string that's all this is nothing
+fancy there you'll notice that on the
+slashes we now have forward forward
+slash you can do a single forward and
+hdp is a double forward this is just how
+you have to switch it to match setup in
+there and then it's going to go ahead
+and use the html equals url open url and
+that's from our url library request so
+it's opening a link to that website or
+at least pointing to it and if we run
+this this just sets it up so this is all
+set up and then once we've done our
+setup let's go ahead and create an
+object called soup this will be and if
+you remember up here here's our
+beautiful soup that we imported from the
+bs4 and this is the package that we're
+working with and so we're going to do
+our beautiful soup on here and on this
+we need to go ahead and send it our html
+so it knows what it's opening and then
+the second part is we have to tell it
+how the format is coming in and the most
+common one for your html polls is an
+lxml
+setup and so almost all of them you'll
+end up using the lxml there's a few
+other options and because this is so
+common uh in the newer versions a lot of
+times they just leave it out just
+because it's already on the default
+we'll go ahead and leave it in here just
+to remind us that it's there we'll go
+ahead and run that and on the newer
+versions uh they actually default it to
+the xml setup in the html we'll just
+leave it out and call it html so it's
+just going to pull from this url and
+when we run that on here we've now
+created an object soup that has pulled
+the website into it so soup contains the
+information along with information on
+that website and what's going on so
+let's just go over what we did real
+quick before we start digging into the
+actual soup before we start scooping out
+stuff we imported our different
+modules that we're going to use with our
+package specifically the beautiful soup
+we did install the beautiful soup if you
+remember correctly you have to call it
+beautiful soup 4 specifically so it
+knows what you're bringing in and this
+line right here is very key from bs4
+because that's how it installs the
+module we're importing our beautiful
+soup and then we found our url in this
+case we're going to go pull information
+from the martin luther king dream run
+and then we set our html to our url open
+url and you can see right here we
+imported that so here's our url.request
+import url open so we're requesting a
+connection and once we send that
+connection into the beautiful soup it
+creates an object called soup and then
+this one of course we chose soup just
+because it goes with beautiful soup i
+guess we could have chosen beautiful and
+now we can start extracting information
+from our website because we pulled it
+down onto our computer under soup now we
+can start by looking at the title of the
+website
+soup.title and if we print title.txt
+you'll see this a lot in beautiful suit
+because title contains all kinds of
+information and if we want just the text
+from that title you add the dot text on
+the end and you can see right here we
+have our 2018 mlk dream run 5k race
+results if you look at the tab that's
+the actual title up here a 2018 mlk
+dream run 5k race that's what the title
+is on the website and then you might be
+curious what's in title what's the whole
+title that it's storing up there well
+let's go ahead and print it out here's
+print title and print title.txt and we
+run that you can see it has the html
+tags title on it and then the forward
+slash title to end it and so we're
+really just pulling off this piece of
+the html code and then we look at the
+text inside that particular part of the
+html and earlier i mentioned links what
+if you want to get all the links off
+this page oh that would be fun uh we
+could do soup dot and we'll do find
+underscore all put this in bracket and
+then quotation marks we're going to put
+a a is the key find and you'll start
+seeing a div and all the different
+options you have for finding these
+entities in a website and then let's go
+ahead and just print our links and you
+can see here that it now shows all the
+different links in here that are marked
+by eggs we did a find all a and then we
+can also because this is a little bit
+hard to pull off the h reference so we
+can also add in our find all fine-tune
+that in this case the h reference equals
+true we'll actually filter that out and
+then finally we might do a four link in
+links and we can simply do something
+like this for each link we want to
+actually find the h reference because we
+know there's an h reference in it and if
+i run this you can see it just comes
+through and prints them out one at a
+time some of these are really useful so
+you might be looking for something that
+has https in it and you know that's a
+link running to something else or you
+might be looking for the mail to tags
+you know that's all the mail addresses
+but either way you can easily find all
+the links in your
+html document that you're paging through
+and of course
+any packages that have evolved over time
+you can also do link dot get h reference
+which should do the same thing as our
+other format and you can see it
+certainly does we get the same printout
+up here in this particular case we
+really want to get the data off the page
+uh so let's go ahead and do that let's
+see what that looks like and in data
+let's call it all rows there we go
+equals and then we have our soup dot
+find underscore all there's our brackets
+and then if we're looking for each row
+in a database you'll remember your html
+code we're looking for the tag tr so we
+want to find all tr and we can take this
+and let's go ahead and just take all our
+rows and do a print all rows and about
+this time you're going to guess that
+we're going to get a huge amount of
+information just dumped onto our page
+and sure enough we do if you look at
+this it just kind of goes on forever but
+this is an array each row is considered
+an array so because of that we can do
+something simply as putting brackets and
+just print the first let's do the first
+five rows so from beginning to five and
+you can see here's our first five rows
+on here i sometimes like to just do
+let's just do row zero and we see that
+row zero is finishers finishers 191 and
+just out of curiosity what's if that's
+zero what's row one male okay so we're
+starting to see titles going across here
+so if we come up here and we do rows we
+did what up to 10. let's just take a
+look and see what 10 does again and just
+take a look at that information that
+comes across place
+bib name gender age city state chip chip
+paste gender and so on so it comes all
+the way down here we kind of have an
+ending right here and then we have one
+and then we actually it looks like we
+start to have information so we have our
+one or one 1191 max randolph that must
+be the name male 29 and so on you start
+seeing how the information starts
+getting displayed going down so the next
+thing we want to do with this i'll go
+back up here and just edit the space
+we're in so it starts to make a little
+bit more sense keep it all together and
+so we want to do for each row in all
+rows we're looking at what information
+are we looking at well we have our th up
+here that's a header our td down here
+which looks like the individual
+information and we really are looking
+for
+the actual data so we're looking for td
+tags in the rows and we can do that
+because when you remember when it stores
+the row it also stores the tags
+underneath that so all rows have all the
+different tags in it and you can see
+right here as you print each one of
+those out and so we look at each row we
+can create another variable we'll call
+it row list and we'll set this equal to
+in this case row because we've already
+pulled all the rows out of soup so now
+we want to find for each row and in
+there we want to find our td and if we
+go ahead and just print i'm going to do
+it if you notice i changed the indent so
+i'm just going to print row list what
+this does is the last value to go into
+row list our last row is going to print
+now and of course make sure you have an
+underscore instead of a period when
+you're typing so row dot find underscore
+all td and if we print the last row you
+can see i have all the data coming
+across here we have our 191 our 1216
+zuma ochoa i hope i said that right
+female i believe that's age 40 and so on
+and then we can take our row list and
+there's a lot of things we can do with
+the row list what we'll do for let's do
+object or let's just do
+cell in row list and so we're going to
+look at each cell because this is if you
+look at this they have commas separated
+between the different objects and then
+we're going to go ahead and print
+cell dot text let's just take a look and
+see what that looks like and we can see
+here for each row we get 191 there's our
+191 there's our 12 16 12 16 our uh
+individual who's in the race and so
+forth all the way down for those
+different settings let's go ahead and
+create a new variable up here uh we'll
+call this all let's just call it data
+we'll keep it simple uh so here's our
+data and then we have our row we take
+our row we break it up into individual
+cells so we'll call this
+data row and we'll set this empty to an
+empty row and we're going to take our
+cells tab this we know that each cell
+generates a text and so what we want to
+do is i want to take my data row let's
+just replace that let's take our data
+row and let's append our cell dot text
+so i'm going to add the each row is
+going to be a row of the different text
+on here and then once i create each row
+i want my data which is going to be
+everything to append each row and here's
+our data row and then if we go ahead and
+come down here and let's just print data
+now if we were lurking with large data
+we'd be very careful about just throwing
+all our data on the page but you can see
+here we throw the date on the page and
+we get finishers 199 male 78 female 113
+one and so on and if you look at this
+this is the headers on the file we have
+finishers uh male females just like some
+general statistics on the first one and
+then we have actually uh
+an empty data set and then we have our
+data that continues which actually the
+actual information we're looking for so
+we have one 1191 max randolph mill 29
+washington dc run time uh one of 78 and
+so on on here so we could really quickly
+get rid of that number of different ways
+to do that one of them is just to do
+we're going to set if we do data two on
+uh we should get rid of everything but
+we want to keep randolph so make sure
+randolph is in there oh we lost randolph
+let's try one on there we go there's max
+randolph on there uh so we can just
+simply do redo our date on here and we
+can do data probably want to do it in
+all rows from one on but i'm just going
+to do my data equals data one on down
+here and there's reasons to split it
+this way in data science sometimes you
+don't want to touch the original data in
+case you need it in case we do need the
+first row so we'll put it down here and
+uh maybe we'll just call this titles
+titles equals data of zero and so we
+could do something here where we print
+we'll print up our titles and we'll
+print our data in this case instead of
+one on let's go minus
+two let's look at the last two rows of
+data so here we have our titles and for
+some reason just put in finishers of 191
+as expecting a little bit more up there
+and we have our last couple people and
+they look like the data on these looks
+just fine on here turns out this is just
+some generic statistics up here so we'll
+get rid of titles completely it doesn't
+really do us any good but we know that
+data comes in here and we can look at
+our data and look at the very end of the
+data too the minus two to the end and we
+can see it pulls the data in pretty good
+we don't have anything too funky in here
+we're looking at it looks pretty clean
+now you got to be a little careful
+because at some point we might have to
+come back here and clean up the data if
+we get an error for running a data
+analysis we might find out there's some
+unusual characters or something is
+missed in the data itself and you also
+notice that everything is a string so
+when we're bringing it in we might have
+to do some conversions to test it out
+and convert them to whatever kind of
+data format we're working with so at
+this time we want to go ahead and bring
+in our pandas
+and let's go ahead and call this
+df for data frame we'll set it equal to
+and if you remember correctly we
+imported pandas as pd and that's
+standard you'll see that in most code
+examples where they call the import
+pandas as pd
+and it is capital d
+capital f for data frame and we're just
+going to bring in our data that's what
+we called it on here and let's take this
+and we'll print now when you're working
+with data frames you're usually talking
+large amounts of data and so you almost
+never want to print the whole data frame
+out we're going to go ahead and do that
+anyway just so we can see what that
+looks like and you can see in here
+brings in our data frame coming in here
+we just have a mess of information this
+is our data let's go ahead and print df
+and see what that looks like in the data
+frame and this is nice because it
+organizes it into a very easy to read
+table and we have they set the label 0 1
+2 3 4 5 6 and so on and then we have
+each row we have mel
+78
+going across when we get all the way
+down here we'll see max randall about
+number three and the first thing this
+does is this flags me that i brought in
+a bunch of information up here that we
+really didn't want
+it's from 3 on that we want and we can
+clean this up in one of two ways we can
+try to clean it up under the data or we
+can clean it up under the data frame
+depending on what it is we're trying to
+do and so to fix this
+i want to go ahead and just change it up
+here in the actual data pull in we don't
+need that information so i'll rerun it
+reload our data from for on and then
+when i run this we see we have max
+randolph is right at the top of the list
+like he should be and we have all the
+data going down now with the data frame
+remember i said we don't usually print
+the whole data frame we'll go ahead and
+do df.head and this prints the first
+five rows and you can see that we have
+13 columns here's max randall all the
+way to theo kinman and i usually also
+print df
+tail and the reason i like to do these
+particular two setups i'm going to
+change it just to two rows because you
+can do that you can put as many rows as
+you want is this good to look at the
+first part and the end because those are
+usually where you have extra data
+brought in uh something's messed up and
+you can also see that we have 190 rows
+in here and it comes in with our zuma
+alicia and they're both on here on the
+list so now we have a nice data frame
+columns and rows we can easily look at
+it we can see the setup on here and we
+can look at the names and everything now
+at some point you might be looking at
+these individual columns and find
+different information that needs to be
+re-edited if you can you try to do it
+with the whole column under pandas you
+can up in the upper part of the code
+where you went from cell to cell or row
+to row you could look at individual
+cells maybe find a marker in that cell
+that's something specific like remove
+all colons or semicolons or something
+and there are brackets there's a lot of
+options in there but you'll find that
+this one actually comes in pretty clean
+on here all the way down and the next
+thing we really want to do is we want to
+look at the headers i don't know about
+you but doesn't make any sense to me
+when i have column one i don't know what
+1191 is or 1080. need name kaiser runner
+i'm guessing that's column two is names
+third one looks like male or female
+probably age but i don't want to guess i
+want this to bring in my column so i
+know exactly what i'm looking at so how
+can we make beautiful soup do that for
+us well let's take our column headers
+we're going to set that equal to our
+soup find underscore all and then we're
+going to look for our headers our th
+files and since we're in jupyter lab in
+this case jupyter notebook i can just
+type out column headers if it's the last
+variable i have listed it will
+automatically print it so it's kind of a
+shorthand and we can see right here we
+have place i'm guessing that's bib name
+gender age city state chip time chip
+pace and so on so we have all our
+headers right there i shouldn't have to
+type them all in and we'll go ahead and
+do it before we'll go ahead and do a
+header list equals our empty array and
+then we can do for a column in column
+headers and we can take our header list
+and just append and what do we want we
+want the text from the column so we'll
+just do column.txt and then if we come
+down here and we print our header list
+let's see what that looks like if we did
+it right we should get a nice list of
+all the different column headings we
+want so we have place bib name and so on
+and then pandas just because pandas is
+so cool we can simply do df columns
+equals our header from our header list
+we simply said df column set to df
+headers and then if i print df.head
+we'll take a look at that and we'll see
+right here it has nicely placed our
+values on here place bib name gender age
+and so on so very quickly we've created
+this nice data frame we have the data
+displayed in nice rows and columns and
+easy to read and then as a data
+scientist the first thing we want to
+know is the info what is in these
+columns and rows and headers and you see
+right here they all come up with
+non-null object there's a big flag so if
+i want to do anything with this these
+are all coming through as strings or an
+object i usually mean strings in this
+case that they're a string variable and
+we have you can quickly read through
+this 191 entries date columns total 14
+columns there's a total of 14 columns in
+the data and it shows you all the
+different names and what type of column
+they are and it's probably good also to
+look at the shape of the data df.shape
+we'll go ahead and just run that you see
+it's 191 by 14 14 columns 191 entries
+this is more like a we look at a numpy
+array 191 by 14 for the shape and
+remember this is a variable so if i put
+it on if it's a last variable or last
+value in the set of cells jupiter
+automatically prints it out so if you're
+in a different ide you want to go ahead
+and use the print statement on here uh
+and then one of the things you'd want to
+also go through we'll create a second
+one df2 equals df dot drop in a now the
+axis is automatically equal to zero so a
+lot of times you'll see something like
+axes equal zero comma how equals any
+axis equals zero is default that means
+we're looking at going down the rows you
+could look at the column going across
+let's remove the how any that's just
+going to confuse you the axis is is
+whether you're going down the columns or
+if you're looking at a row by row by row
+by row or you could be looking at it by
+column by column by column this would
+drop any column and it would drop off
+the n a in any column and how equals and
+we want any i always confuse all in any
+they both start with a all means that
+all of them have to be non-value where
+any means that any of them can be there
+to drop it so this would drop any column
+with a null value in it but we want zero
+you know drop any value with a null
+value and then because zero is always
+the default we'll just leave it out and
+then it's curious as to what the shape
+is now did we lose anything was there
+any null values in our df2 that we
+dropped from the df and we'll go ahead
+and run that and we see 191 and 14. so
+we didn't really drop anything but it's
+always good to check there's other ways
+you can also do are there let's see any
+n a's you can detect n a's in here no
+values infinite values that's another
+one you got to watch out for we're
+working with data that we're going to do
+something with here in a minute so you
+got to be a little careful also in the
+convergence are you going to convert
+something where people typed in weird
+characters to describe the data a
+certain way so now we've got to this
+point where we have all our different
+columns we have our different data and
+at this point maybe you're asking or
+maybe the shareholder the company is
+asking hey can we look at the
+based on the chip time here's our chip
+time can we plot that versus gender how
+does gender versus chip time compare and
+so we can do that we can take that and
+the first thing we look at is we say hey
+well chip time came in as a string and
+that's going to be an issue now there's
+a number of ways you can change this one
+of them is we could go all the way back
+up here where we created the data and
+find a way to tag it and say hey
+whenever this cell text maybe instead of
+appending this i notice that any time
+there's two colons in it that's probably
+a time signature and let's uh convert
+all the time signatures to date time
+filled or whatever a lot of times you
+don't get that you don't get that option
+and that's always a question in bringing
+in data whether you convert the data
+coming in at the beginning or do you
+wait till you have it open it up and
+then convert it when you go to use it
+we're going to go ahead and convert it
+after we got it into our data frame so
+we have our df2 here we've dropped all
+of our n a's we dropped our we have a
+shape in fact let's do this since
+there's no difference between df and df2
+well we'll just go ahead and use df2 so
+let's go ahead and take our df2 and we
+want to take those that specific field
+and convert it into some kind of
+numerical value we can use and let's add
+another column a lot of times this is
+something you want to do is where you
+want to go ahead and keep all the
+original columns and just add a new
+column in there and this new column is
+going to be based on the if remember
+correctly we had chip time that's what
+we're going to look at okay we want chip
+time versus gender if we go into our
+pandas we find out we have
+pandas 2 delta and this is actually time
+delta and then we just want to take our
+df2
+and we're going to use the chip time
+column so this is going to say hey let's
+look at let's convert everything in df2
+chip time into a time delta format
+that's the data type we're going to put
+it as let me go ahead and just run this
+and if we go in here and we do info df2
+and we'll keep our we're going to look
+at this particular column but we want to
+keep it as a data frame so this is a
+list of all the columns we want to look
+at we'll just do dot info on here and
+run that and we do an info on that you
+can see it's now a
+time delta 64 nanoseconds uh well we
+really don't want nanoseconds we
+actually probably want to do it in
+minutes uh so let's take a look at that
+and let's take this whole thing tf2
+let's just set the df2 we have our df2
+this is a column we're working with here
+and we can use the as type property in
+pandas and so we can set this equal to
+df2 we'll take our same
+column in here and we'll set it as type
+time delta seconds so it's still a delta
+time here so if i run this you'll see
+that it still comes up as where is it
+hopefully it turns it into a float so
+we're now at a float 64. so it's the
+number of seconds in that delta time and
+then finally we want to go ahead and
+turn that from seconds to say minutes
+and you know there's 60 seconds in
+minutes and so now we divide by 60 we
+still have a float we have our info it
+shows us it's a float and then we can go
+ahead and just do a print df2 and let's
+just keep it small we don't want to look
+at all our data we just want to do the
+head of it and we run this and you can
+see right here where we go to be the
+last one here's our chip time in minutes
+a lot of times uh just to make life easy
+for viewing since we're only looking at
+this particular element uh we can do
+chip time in minutes and now we just see
+that oops we take off we'll go ahead and
+take off our info done with that and
+we'll run this and you can see we have
+our minutes 16.8 minutes 17.51 minutes
+and so on it's a float number now keep
+in mind this is 0.8 that's not a 16
+minutes and 80 seconds that they can
+always throw you if you're going through
+so many numbers you forget so important
+to remember that and we're also going to
+look at the other one we're looking at
+is what gender you want to look at
+gender to
+chip time in minutes and so we can see
+here under the head we get mail mail
+mail and a number of different setups
+and let's switch this to tail real quick
+and just look at the end of it and here
+we have female female male female female
+so we have two different genders and we
+have our chip time in minutes and if you
+remember we brought in our plt if you
+haven't used the plot library the
+matplot library you have a drawing place
+you're putting stuff on so we have our
+plt we're going to do a bar graph and we
+just want to simply use our df2 gender
+and df2
+chip time in minutes so that's going to
+plot the two bars and to make it pretty
+we'll go ahead and give it the x label
+gender the y label chip time minutes and
+that simply is remember it always plots
+x in the plots y we have our gender our
+chip time give it a nice title uh
+comparison of average minutes run by
+male and female uh and if we go ahead
+and run this with the correct titles in
+here and everything matches uh you'll
+get a nice graph we can see here the
+comparison of average minutes run by
+male and female here's our chip time in
+minutes the men seem to be slackers in
+this particular case and it's actually
+uh there's a number of studies that show
+that women team tend to have as far as
+doing cross-country there's a lot of
+women who have a longer endurance than
+men so it's not too surprising but we
+can see here the average chip time
+around 70 and for women over 100 minutes
+and then another really cool thing we
+can do is we can describe the data so
+df2.describe this again is a pandas
+function just like info is we're going
+to include uh np number the numpy number
+and if we run that you'll see here comes
+up and says chip time in minutes account
+it gives you the average or the mean
+standard deviation the minimum the
+maximum all the different descriptive
+information you're going to want from
+your data set on there and just because
+there's all kinds of fun ways let's do a
+box plot to display your information uh
+we can do a box plot where the column
+equals chip time in minutes and let's go
+ahead and run that keep mistaking my
+chip time in minutes you can see it puts
+out a nice box plot showing you the
+information we have our different values
+and floaters this is always interesting
+because this is a nice way of seeing
+where we have these uh floaters one up
+here and there's two up above and of
+course here they're a nice spread on the
+box plot and we can also modify this a
+little bit and we can add in by equals
+gender and then we'll give it we'll just
+give it a blank title i don't know why
+we're giving a blank title we'll just
+add a y plot y label on there for
+runtime and if we run this you can see
+here boxplot grouped by gender chip time
+in minutes and now we have our female
+and male two different areas and you can
+see how they vary you have your two
+different uh your outlier up here and
+you can also see how there's such an
+overlap between the two different values
+so if i was looking at this i'd be like
+wow you know i really could not draw a
+conclusive thing on this saying that
+women's run time was more in general
+because they overlapped too much that
+would be one of the conclusions i'd have
+to come up with done here and then we
+get to maybe the partners come in from
+the company and say hey we'd like to
+know the age versus chip time in minutes
+that'd be something worth knowing on the
+statistics on this and the first thought
+is we can simply plot it and we can do
+this we can actually plot the scatter
+plot chip time versus df2 of h there's
+our xy coordinates but if you remember
+from df2 when we did the info let's go
+way back up here we're looking at a data
+object as far as our chip time on this
+and our h now we converted the chip time
+but we also need to convert the age and
+if we do it right here we just plot it
+and it'll actually let us plot it it
+shouldn't it should give us an error but
+it does let us plot it you'll see the
+ages come up a mess over here because
+they're converting it to weird float
+numbers and all kinds of things so we
+want to do is we want to take our age
+and we'll just call this ah underscore i
+so we're going to take our age and we're
+going to create another column for df2
+age underscore i and the i is just going
+to stand for integers our own choice of
+values there is a number of ways to do
+this but we're going to do pandas 2
+merrick is the best way in pandas and
+the reason we're doing this is that
+numeric creates a float value uh so
+right off the bat we want all our stuff
+converted it converts it to the least
+common denominator so if they're all
+integers already you'll get integers as
+you can see from here it's doing some
+kind of conversion that converts it to a
+float value the other thing that numeric
+does is if there's a null value or they
+put in like a blank line or a dash to
+represent no information it'll convert
+it to a
+null so it goes from like a string to a
+null versus just having some kind of
+made up number that python somehow
+created for the graph we have below and
+then we want to add our df2h because
+that's what we're converting to numeric
+and then we want to coerce it and
+there's a couple different options on
+this like you can have it where it just
+doesn't process it in pandas but coerce
+means that if it gets a weird value that
+is a null value now and since we're
+dealing with errors this is what happens
+when you get an error converting it we
+want to coerce it there we go and put
+the end bracket on there and then
+finally we want to go and round this off
+so i'll put brackets around all the way
+around it and this rounds off everything
+in this series so we've done here is
+i've taken df2h which is a d type object
+which in this case is mostly strings
+with a couple blank ones in there and
+we're going to convert it to a numeric
+which will automatically go to float and
+then we're going to take wherever
+there's an error wherever it says hey
+this doesn't convert and usually that's
+a blank screen like i said i've worked
+with so many databases where they
+someone puts down none someone types in
+space sometimes in a dashed i mean none
+and you get this really weird conversion
+coming up this covers all of that in
+pandas so it's really a nice way of just
+coercing it and saying hey if we don't
+have a number in there let's make it a
+null value and then we're going to round
+it off and then finally let's go ahead
+and take our df2 here's our df2 and
+let's drop those null values drop in a
+and we want how how equals any so that
+means if there's any null values in the
+data set now you can this might get you
+in trouble because you might have null
+values in a different column and so you
+might lose data that way at this point
+we could also do like certain parts of
+like drop just certain columns with null
+values there's all kinds of other
+options in here but we're just going to
+do how we're going to just drop any and
+we want to do it in line equals true so
+that means it's going to reassign it to
+df2 so df2 now has a rounded out so it's
+rounded to the integer we didn't do any
+places the age and it's going to be age
+i and then we've dropped all our null
+values that way we're not going to get
+any errors when we try to plot a null
+value and it also makes sure that data
+by deleting out the rows because that's
+what this does it automatically does
+axis0 which is your rows axes one is
+your column by doing this it
+automatically removes all the rows with
+null values so it just cleans out the
+rolls and then when we go ahead and plot
+this we see we have a nice clean data
+and we have age all the way up to 70. so
+we have our chip time set and then our
+age going across and it makes a nice
+plot that you can easily show for
+display and for the the um and you can
+easily show that to your shareholders or
+whatever group you're working on it
+makes a really nice and quick easy
+display and with that uh thank you for
+joining us today you know for a quick
+look at the beautiful soup and the web
+scraping tools in python again thank you
+for joining us with simply learn this is
+www.simplylearn.com
+get certified get ahead richard kerster
+have a good day happy learning and look
+to see you in classes if you have any
+questions feel free to post them on the
+bottom of the youtube we do go back and
+look at those questions and answer them
+and you can also visit us at our website
+we have a number of different
+communities and forums there where you
+can ask questions concerning programming
+web scraping data science and just about
+any kind of certification program out
+there you can imagine
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

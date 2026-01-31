@@ -1,0 +1,421 @@
+hello everyone welcome back to another
+video by simply learn
+in this video we will learn about
+references in c plus
+so let's go ahead and have a look at
+what we'll be covering today
+so we will learn what are references in
+c plus
+then the creation of references
+after that we will learn about reference
+in the function and returning the
+reference from the function
+next we will have a look at the
+applications of references and
+understand the difference between
+reference and pointer
+but before we begin make sure to
+subscribe to our channel and press the
+bell icon to never miss an update
+so first is what are references in c
+plus plus
+a reference can be defined as an
+alternative name of the variable
+as the name suggests it is used to refer
+to an existing variable
+it is basically used to store the
+reference of the variable and is stored
+using an ampersand sign
+although the reference and address are
+the same thing but their context is
+different
+when we are talking about reference
+variable then we will call it reference
+rather than address
+the variable can either be accessed with
+the help of variable name or by the
+reference name
+so as we have understood about
+references in c plus plus so now let's
+learn how to create reference in c plus
+let's suppose we have a variable named
+data
+and we know how to declare a variable
+first its data type then the variable
+name and then we will assign the value
+to the variable
+here int is the data type
+data is the variable name and 10 is the
+value that is assigned to the variable
+if we want to declare a reference
+variable for the variable data then it
+would be like this
+first is the data type
+with ampersand sign then the name of the
+reference variable equals to the
+variable name of which we are storing
+the reference of
+as you can see int ampersand ref
+which is the name of the reference
+variable equals to data which is the
+name of the variable
+so we can say ref is the reference
+variable for the data variable and it
+can be used instead of the variable name
+now
+coming to reference in the function
+we can pass the reference to the
+function as a parameter
+it is similar to passing the pointers to
+the function but it is safer
+while passing the reference to the
+function the changes made inside the
+function will also be reflected outside
+because after passing the reference to
+the function the past reference will
+access the actual argument
+so the changes that are done to the
+parameter inside the function will
+affect the arguments
+in addition it is safer and provides a
+cleaner code
+to pass the value as reference all we
+need to do is to change the function
+parameter as reference type as you can
+see in the calculation function int
+ampersand a
+now let's learn about returning the
+reference in c plus
+similar to pointers references can also
+be returned
+while returning the reference an
+implicit pointer is also returned
+in return by reference
+no local variable is returned and no
+constant is returned
+only the global variable is returned in
+return by reference function calling is
+done on the left hand side of the
+assignment operator
+as you can see in the example
+n is returned from the function but it
+is not the value that we are returning
+but the address of the variable
+when this variable is returned then the
+value 15 is assigned to it
+which is then printed as we can see in
+the example
+now coming to applications of references
+in c plus
+so first is
+references helps in modifying or
+changing the values inside the function
+without actually passing the actual
+arguments
+because we can easily pass the reference
+instead of variable and if we pass the
+reference to the function then also it
+can modify or change the values
+second is
+references helps with operator
+overloading because unlike pointers they
+work with references and values
+rather than pointer variables
+third is
+references helps with writing less error
+prone code and by replacing values with
+references while calling avoids the
+unnecessary copy of data
+so these were some applications of
+references in c plus
+now let's understand the difference
+between reference and pointer
+the reference can be defined as an alias
+of the variable
+here the word alias means additional
+name or we can say
+also known for the name
+on the other hand a pointer is used to
+store the memory address of the variable
+reference cannot have a null value
+whereas pointers can have a null value
+references cannot be reassigned to other
+values
+whereas pointers can be reassigned to
+other values
+it returns the reference of the variable
+on the other hand pointer returns the
+value located at the address of the
+variable
+reference can be initialized during its
+creation only it cannot be
+re-initialized
+whereas
+pointer can be initialized as many times
+as required
+so these were some differences between
+reference and pointer
+now let's go ahead and do some examples
+of reference in c plus plus in our code
+editor that is vs code
+all right so here we will do an example
+of return by reference in c plus
+we all know how to return a value from a
+function
+so now we will understand how can we
+return a reference from the function
+all right so let's start
+first of all create a new folder and
+let's save it
+and name it as
+ref1
+dot cpp
+now we will save it
+all right so first of all we'll include
+the header files and then we'll start
+with the main function
+hash include iostream
+and then the name space standard
+now let's start with the main function
+inside the main function
+first of all like normally we'll do for
+the functions we will call
+let's name the function as club
+so this is how we normally call a
+function
+and
+after that we create a function like
+this
+like
+int
+club
+and
+then
+this is how normal calling works but in
+this case we want this function to
+return the reference
+and for that we have to use the
+ampersand sign
+so we have used this ampersand sign
+and this is a syntax int which is the
+data type then the ampersand sign then
+the name of the function and if we want
+to pass any arguments then we can do
+that and keep in mind that inside this
+function we cannot return any local
+variable or any constant like we cannot
+return we cannot create a variable
+inside this function assign it some
+value and then return it we can't do
+that and we can only return the global
+variable
+let me show you that we cannot return
+this return
+8 as this is a constant and we can't do
+like this like
+int
+p equals to nine
+and then we will return it
+return p we can't do like this as well
+all we need to do is to create a global
+variable and then we will return
+all right
+so let's create a global variable
+let's say the global variable is
+n
+and so we'll return
+n
+now if we want to assign
+some
+value to this global variable we have to
+call this club function
+and we have to make this calling on the
+left hand side of the assignment
+operator
+like this
+and now we have to assign the value
+like
+let's say the value is 75
+so here we are assigning the value and
+calling this reference operator we are
+assigning the value to this global
+variable this n global variable and in
+this part we are actually assigning this
+75 value to this global variable n
+now we can print this n variable which
+is global and check if its value is 75
+or not
+all right so let's save it and let's try
+to run this
+as you can see 75
+so this is an example of return by
+reference in z plus plus
+now let's move on to another example
+all right now
+all right we know a reference cannot be
+reassigned that also means a single
+reference cannot refer to two different
+values
+but two different references can have a
+single value
+or in other words a value can have two
+different references
+so in this example we'll show
+how a value can have two different
+references
+so let's start doing this example first
+of all we'll include the header files
+hash include iostream
+now the namespace standard
+all right
+now inside the main function
+we will create a variable
+and two different references the
+variable is num and we will assign it a
+value let's say 70
+and
+we will create two different references
+in
+num1 and n1
+and
+we will assign it to num
+and
+n2 which is also signing to the same
+variable so there are two references n 1
+and n 2 which are referring to the same
+variable num
+so now we will print this variable num
+and both of these reference variable
+that is n1 and n2 to check if they are
+pointing to the same value
+so let's do this
+we will write
+c out
+value of
+num is
+all right now
+again
+value of
+reference
+n1
+is
+and one
+handle
+similarly
+value
+of
+reference
+and 2 is
+and 2
+and l
+all right
+so we have printed all of
+these variables and references
+and now return
+0. and let's check if they're
+running fine or not
+as you can see value of num is 70 value
+of reference n1 is 70 and n2
+reference is 70. so we can say all of
+these
+references and variables are pointing to
+the same value and the value of num can
+also be accessed by this reference
+variable n1 and n2
+all right now let's do another example
+let's name it ref
+two dot cpp
+so here we will do an example of
+references in c plus plus in which we
+will pass the reference into the
+function to swap the actual values
+basically we don't pass the actual
+arguments we only pass the references
+and swap the values
+so
+let's start
+so let's include the header files
+now we will create the main function and
+inside the main function we will declare
+two variables and assign the values
+and y
+17 let's say
+now we'll print first of all we'll print
+before swapping right
+you
+all right
+so
+now we will
+call
+the function swap we will create a
+functions web afterwards
+and we'll pass not the values but the
+references
+and then we can similarly
+copy this one
+and just paste it again
+and we'll do that
+after
+swiping here we have to do before
+swiping right
+so first of all we'll print the value of
+x and y before swapping then
+we will print the values of x and y
+after swiping
+so now we have to create the definition
+or write the definition of swap function
+so
+let's write void swap
+and do remember that here we are passing
+the references not the values so we have
+to write like this and ampersand
+n1
+this is how when we are passing the
+values we have to write like this
+and
+hint ampersand
+n2
+here this n1 is referring to x
+and this n2 is referring to y
+and inside this swap function will
+simply
+swap as we
+know how to swap into temp equals n1
+then we'll do
+n1 equals n2
+we all know how to swap
+to here we haven't passed the values
+actually we have passed the reference
+and using those references we are
+swiping the values
+so now let's try to run this
+save it and
+let's run this
+as you can see before swiping x value is
+12 and y value was 17 after swiping 17
+and 12
+so as we can see clearly that the value
+is swept
+so we can say using the references or by
+passing the references to a function we
+can actually swap the values so this
+also proves that references can access
+the values
+so these were some examples of
+references in c plus plus
+references in c plus plus is a very
+simple topic and there are very limited
+examples on this topic and if you find
+some more examples please do try them
+all right guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up
+i hope it really helped you all
+thanks for watching stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel
+and click here to watch similar videos
+turn it up and get certified click here

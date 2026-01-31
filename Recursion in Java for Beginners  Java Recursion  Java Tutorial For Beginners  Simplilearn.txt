@@ -1,0 +1,306 @@
+foreign
+and let's get started with today's topic
+which is about recursion in Java so
+let's first understand what do we mean
+by recursion and then we will look at
+the details of the class which you are
+seeing on your screen so recursion is
+the phenomena of an a method calling
+itself so so we we have the scenarios
+where we call a particular method or an
+object right but what if you have a
+scenario where a method wants to call
+itself now you might be wondering why a
+method would call itself because this
+will go into an infinite Loop right if
+you write a method called sum and then
+the sum at inside the sum method you
+again invoke the sum method then this
+will keep running into Loops till your
+program goes out of memory I will show
+you the example of that as well but the
+basic idea is the use case where if you
+have a need where the where the method
+wants to call itself that is where you
+will use the recursion concept another
+thing whatever you can achieve with
+recursion generally you can achieve the
+same output using for Loops as well but
+when you reuse it for for Loops it will
+require you to write lot of code
+recursion will reduce the number of
+lines you need to write and manage in
+your code but on the other side
+recursion can get a bit complex because
+it requires an advanced understanding of
+how methods actually work in Java so
+before I go any further understand that
+methods whatever you define inside the
+method that goes on to a stack remember
+I covered about stacks and it's a lifo
+Arrangement so whatever you define
+inside your method all those variables
+and all those statements they go on to a
+stack and then the stack gets emptied
+one by one executing the statement which
+is sitting on the top of the stack that
+is the concept of the method execution
+that under the hood it is using a stack
+now when we talk about the recursion it
+also follows the same stack insertion
+and stack item removal concept that how
+do you insert elements into the stack
+and how do you remove them so we are
+going to walk through an example of
+recursion with the help of a use case
+called factorial now if you if you have
+studied about factorial in your in your
+school classes you might remember that
+factorial is a way where let's say if I
+have to calculate the factorial of 10
+then it would be 10 into the factorial
+of 9 into the factorial of 8 into the
+factorial of 7 so you see I'm repeating
+the concept of calculating the factorial
+again and again first I am calculating
+the factorial of 10 in 10 into factorial
+of 9 then I say 9 into factorial of 8
+then I say 8 into factorial of 7 then I
+say 7 into factorial of 6 and so on so
+forth so this is the concept of how do
+you calculate factorials another example
+where you can use recursion is a
+Fibonacci series so when we talk about
+this if you Anarchy series the basic
+idea is that you sum the previous two
+elements and that's how you create the
+next element then this then you sum the
+immediate previous two and you create
+the next element so again you perform
+the operation of summing the past two
+elements again and again to calculate
+the next element so you see again you're
+repeating the same operation again and
+again so try to identify that particular
+thing where you have to repeat the
+particular operation again and again on
+the whole sequence that would be the use
+case where you might be needing to use a
+recursion concept so here I have
+prepared an example for calculating the
+factorial of a number so what you see on
+your screen is a class called complex
+function and then it has a method called
+calculate factorial and inside the
+method you supply an argument which is
+basically a number for which you want to
+calculate the factorial so if you supply
+5 a factorial of 5 will be calculated if
+you supply 10 a factorial of 10 will be
+calculated now the first thing which you
+need to do when you write a recursion
+function is to know the exit condition
+that is probably the most important
+concept when you write recursion you
+should know when to end the program if
+you get it wrong then your program will
+start will be stuck into an infinite
+Loop and it will only exit when there
+would be a stack Overflow basically
+there will not be enough memory inside
+the jvm to run your program it will
+crash technically so remember always to
+define a exit condition some people also
+call it as a base condition but remember
+the base case or base condition or the
+exit condition either of the terms can
+be used interchangeably but always
+remember to First Define the base
+condition so here when do you end
+calculating the factorial you know the
+factorial of 1 is 1 and it cannot go any
+further so that would be your base
+condition that once if if you if you
+encounter a scenario where somebody
+inputs one as an argument then you
+simply return one because the factorial
+of 1 will be 1 so this is your base case
+this is what is going to make sure that
+your program exits smoothly if you get
+it wrong your program will never end it
+will go into an endless mode then in the
+else condition you write the factorial
+logic based on the recursion so like I
+said what does a factorial function does
+is if you calculate the factorial of 5
+then it would be 5 into factorial of 4 4
+into factorial of 3 3 into factorial of
+2 2 into factorial of 1 and that's when
+it will end so here I'm saying let's say
+if n was 5 so you say 5 into you again
+call back the same function 5 into
+calculate factorial of 5 minus 1. so now
+again the function will be invoked with
+an N equal to 4 it will go here this
+condition will not be met because n is 4
+it will goes to the else block again the
+same thing will happen 4 into calculate
+factorial of 3 so you are again invoking
+the same function but this time
+supplying and as three so it will go
+here n will be supplied as 3 it will
+again check the base condition and is
+still not 3 and is still not 1 so it
+will go to the else block so 3 into
+calculate factorial of 2 it will again
+go up and again it will invoke the
+calculate factorial method but this time
+with n equal to 2 this condition is
+still false because n is still 2 it will
+go to the else block and it will say 2
+into calculate factorial of 1 it will
+again go up this time it will invoke
+with n equal to 1 and it will go here
+and it will satisfy the condition and
+that's where your program will have its
+first output you remember previous
+execution of 5 into factorial 4 into
+factorial 3 into factorial 2 did not
+result into an output these were the
+executions of the method call which were
+just going on the stack so you were just
+at first you had the calculate factorial
+of 5 on the stack on top of it you had
+the calculate factorial 4 on the stack
+then you had calculate factorial 3 on
+the stack then you had 2 and then you
+had one but when you had one your
+program did uh received or reached any
+particular end so that was your first
+output once you have your first output
+ready then you go back to the previous
+one so the first statement has been
+popped now you go back to the calculate
+factorial of 2 and you calculate that
+once you have the output of that then
+you go back to calculate factorial of
+three and so you basically unpack the
+stack now you basically try to remove
+the elements from the stack to visualize
+this this is how it will look like that
+you first call the factorial five let me
+just change the name of it just to make
+it look exactly how it will go on the
+stack so this is how it is going to go
+on the stack so you first you call the
+calculate factorial of 5 which in turn
+called the calculate factorial 4 which
+in turn called calculate factorial 3
+calculate factorial 2 calculate
+factorial one and once you had the
+calculate factorial one you got the
+first output and once you have the first
+output then you start unpacking it
+because you had the value of the
+calculate factorial 1 so you can say 2
+into calculate factorial once output
+calculate factorial once output was 1 so
+2 into 1 becomes 2 and this is the
+output of calculate factorial 2 right
+then it goes to the next step basically
+this one sorry this one and calculate
+factorial 3 was demonstrated as 3 into
+calculate factorial of 2 so 3 into
+calculate factorial of 2 which is this
+one two so this gets replaced here 2 and
+you get the output as six now you have
+this one also resolved the next one on
+the stack was calculate factorial of 4
+which was written as 4 into calculate
+factorial of 3 so 4 into calculate
+factorial of 3 is output so this
+function calls output this functions
+call output was 6. it goes back and it
+says 4 into 6 24 and you have this one
+also calculated now you go to the last
+statement which was calculate factorial
+of 5 which was written as 5 into
+calculate factorial of 4 and calculate
+factorial of 4 has been already computed
+as 24 so now you can simply say 5 into
+24 which is the output of calculate
+factorial 4 and you get the output as
+120 and this is the final return
+statement which will be returned to you
+so if you try to understand this till
+this particular point you are just
+calling function after function after
+function with a different value of N and
+everything started getting into a result
+due to the base condition this was the
+base condition and that's why the base
+condition is very important now imagine
+there was low base condition then this
+would never return and it will keep
+calling calculate factorial calculate
+factorial and it will keep going down
+the stairs it will never be able to come
+up because there is no base condition
+and that's why base condition is very
+important at the same time also
+understanding how recursion works is
+also very important always remember that
+the output of the first execution gets
+supplied in the second execution the
+output of the second execution gets
+supplied in the third execution and
+that's how the stack unpacks or empties
+itself so here I'm just doing the normal
+drill here where I am saying complex
+function complex function equal to new
+complex function and then calling the
+calculate factorial method passing 5 to
+8 and then printing the eventual result
+and if I run this I get the output as
+120 which I just walked you through so
+remember how to use the recursion why to
+use the recursion how to define the base
+condition all of these things will will
+be of of very much importance when you
+try to implement recursions practice
+this a lot recursion is a concept which
+takes time to to get used to so practice
+many different examples and many
+questions of recursion and you will be
+more confident about it read more about
+this concept in the Java docs look at
+different examples on the internet that
+will help you build more knowledge
+around this and that's all I I want to
+cover in this particular session if you
+like this video a thumbs up would be
+massively appreciated thank you and
+we'll meet again in the next session
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

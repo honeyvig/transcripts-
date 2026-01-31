@@ -1,0 +1,536 @@
+hello everybody and welcome you all
+so today we have a very interesting
+session coming up for this react which
+is called react router so let's get
+started with react router and see what
+it offers
+so friends the first important thing
+about what is the routing
+as we know it very well the routing is
+synonyms of
+navigation any application whether you
+talk about multi-page application or
+single page application it always
+requires a routing
+through this routing you will be making
+your applications
+uh you know to be navigate from one part
+to another part like you never call
+login page registration page and you've
+got a lot of links available
+and when you click on those links
+application will take you towards those
+necessary pages but here in react these
+are component centric architecture
+so here you will be having a components
+loaded
+okay
+so as we know in a traditional web
+development routing plays a very very
+crucial role so that you can navigate
+through
+okay now
+react router so what is the react router
+so we know this react router is a client
+and server side routing library provided
+by the rehack it is a javascript
+libraries which is normally known for
+creating the attractive user interfaces
+now here the traditional react router is
+available on the web
+okay and the server
+so
+with using traditional node.js
+based application which is you know it
+is designed for developing a server-side
+java based javascript based applications
+and on react networks once again for
+mobile-based
+environment for react applications
+now react router components so browser
+router so typical we say the browser
+router is this is one of the component
+because react router comes with lot many
+api so here's one of the api which is
+called browser router so browser router
+is something
+from where
+okay it uses the traditional html5
+history api which is one of the main
+component
+so
+it keeps your
+url in sync with what you are navigating
+through
+okay so next we have a call routes
+so routes are basically chosen based on
+what best matches you are providing it
+so that when you click on those links so
+appropriate route will get loaded for
+you so-called components
+so now we have a call link so the
+traditional link components are used to
+basically create a hyperlinks like ahrf
+how we used in html pages
+so
+to different
+uh from the traditional react ap
+application so it is mainly designed
+focus on navigation throughout the
+applications
+and now we have a call switch so
+traditionally switch what it does it
+renders the first routes and matches the
+location rather than rendering all the
+matching route like whichever has come
+it is like a typical switch case
+whichever comes it make it available and
+come out
+that's how it provides
+okay so installation wise you need to
+have
+first
+you have to create the react based
+application by using
+npx create react app so
+create react app is a tool provided by
+the
+official facebook and the router hyphen
+tutorial is the name of the project
+okay so you'll be using this command to
+create a new project for you and post
+that
+you have to install
+this particular dependency called react
+hyphen outer hyphen dom so this
+dependency you need to install post
+first
+uh i would say
+the message is executed so once the
+first command is ready then you will be
+going inside this npm
+install and then you say react router
+dom so this is how the steps are
+and
+now we'll talk about demo so let's get
+started with the demo part
+okay everybody so it's time to
+get into some hands-on
+so i already have a project ready with
+me which we have created with using
+create react app so my project name is
+react hyphen app
+and i would like to create a new uh
+router based example here so the
+dependency regarding react hyphen router
+hyphen dom is already
+installed so if you see this
+package.json react router dom is already
+there in place so we would like to start
+now
+developing those router based examples
+so to make it happen what we will do is
+here in my src
+we will create a new folder name called
+components
+and inside this components
+we will create some file name called
+login
+dot
+js
+likewise we would like to create a
+register
+user
+details.js
+one more
+name call
+portfolio
+so we have got these pages already with
+me
+okay
+out of which i want the first components
+to be get launched here that is known as
+call a landing page so here i will also
+create
+landing
+so let's go back and create a new
+components here which will be helping us
+to
+move
+here and there
+so first thing in my landing page my
+component.js i have a call app.js which
+is a base component for me
+so as i can see this is how you go back
+and create a new
+functional component so i just copy the
+same
+and here in login.json paste it
+and give the name to
+login
+login and here we can say welcome to
+login i just
+this is my small component i copied
+and i pasted in the portfolio
+so you can portfolio welcome to
+folio register
+register
+okay you know called user
+details okay so we have got these
+components with us
+i will start with
+landing page first
+so
+i would like to create a class based
+component here
+so
+import
+react
+from
+react now
+4d for class
+landing page
+exchange
+component
+now
+render
+return
+okay so this is
+the one so we called tube tag here
+well
+this is my component which is available
+to me
+so the landing page is a component which
+through which i'll start working on
+so i can say
+welcome to landing so here i want this
+components to be available outside
+so what i will do is
+this landing page in my index.js
+i'll make it as the first component to
+be launched
+landing page
+so when i start my application i should
+see here
+okay welcome to lending is coming up
+perfect
+so this has become my first component
+which i
+want to launch and furthermore we would
+like to add few more components here
+okay so in a previous program we have
+seen
+how to create a multiple components and
+how we can make one of the component as
+a learning component now it's our next
+program where we will be enabling the
+routing into our code
+syllable
+landing page we would like to create
+some more
+dependency we are saying import
+from
+react hyphen router hyphen down so we'll
+be choosing those dependencies one by
+one but from there
+we want to start working
+with cons routes
+equal to
+first thing
+as we discussed with you that is we
+would like to start with the browser
+router
+okay
+so
+from this point onwards we would like to
+start with
+switch
+as you can see they are taking from the
+react router down
+after the switch we will say
+route
+okay so here
+with this route we would like to see the
+navigation path we say path
+equal to if it is
+login
+then which component i want to launch so
+we can say
+component
+here i'll say c small
+component equal to
+okay
+it's not loading so we can say import
+and since i want to launch
+the component which is a type of login
+so we can say import
+from login
+so if you see here
+we work on login so we will be using
+this login only
+okay
+so this is my login component likewise i
+will say
+from
+register so here
+we would like to say
+login
+and
+in a similar way
+we also want to have the another
+registration
+we copy the same
+use this
+register
+register
+so this is how the components are used
+here
+okay
+well
+these are the quick two components we
+have created one is called login in the
+second core register
+after that what you will be doing this
+routes you will be adding it under this
+div tag so i'm removing this landing
+page
+and here
+i will give the name call
+routes that's it
+so once this route has been given
+now it's time for us to
+see
+what it differs
+so landing page
+or sorry we have a register we have a
+register also
+so
+[Music]
+say route is not defined so what we can
+do
+we can also import that out from this
+page now let's go back
+okay nothing is shown so now we have to
+manually type by saying
+login you can see i've got this message
+go welcome to login
+now let's see register
+and there we go register so two
+components are loaded correctly now we
+would like to import two more
+import
+[Music]
+portfolio
+portfolio
+okay
+and last
+we have a call a user details
+import name call
+user details here
+so we got user details let me copy these
+two
+so register
+portfolio
+so this is how
+our components are so now
+we can see all registered successfully
+well in our previous program we have
+seen we were typing those urls manually
+into our browser
+but in real time this won't be a
+solution
+in a real time you would like to make
+this example
+by clicking on a hyperlink you would
+like to make it possible
+so i will be doing this
+so to make it possible what you will be
+doing is
+like here itself you create a new
+component called
+header
+okay
+so this is how we're going to create the
+new component called header
+so within this
+you're going to add
+the new
+i call header within this you will be
+using
+nav link which is once again
+the tool provided by
+react to which you can create a
+hyperlinks
+so this is the nav link for you
+so within this nav link you will provide
+the option like in 2
+equal to
+login
+and
+along with this
+you will also provide
+the name so here i say
+login let me copy the same
+login
+register
+register
+we also have called
+last we have called
+portfolio
+so this is my component which is
+available to me and this i would like to
+use
+within my application so here
+after this browser router
+we would like to add the component call
+header here
+that's it that's the only thing we need
+to do now this header component is now
+the part of
+routes and let's see how it makes a
+difference now you can see
+very clearly it is having those links
+with me and now when i click on those
+links
+you can see how these are easily
+accessible to all of us
+okay so these are the links which are
+available to us through which we can
+make our components
+simple and easy to access
+one more thing we can do it here
+and what's that
+this component whichever we are talking
+about okay
+this component we can attach
+to one of my
+component when my components start it
+should work automatically so i can do
+one thing let my login command to be the
+base component for me
+so in order to make this possible i need
+to write one more tool here called
+exact equal to
+true
+and here also we have to use the same
+so here
+we would like to add one more property
+here
+okay and we will say exact equal to true
+okay what i would like to use
+exact equal to true
+that's it any job is done now let's
+check
+and now you can see the by default login
+page appeared
+because the login is in root location
+and that's all
+your url works
+okay everybody so in a previous examples
+we have seen how the links are working
+but these links are all internal links
+but what in case if i want to go to the
+external link so let's try to understand
+that point
+so here let me try to open up
+i'm opening up simply learn link and i'm
+clicking on this
+the url is right now https
+simplylearn.com
+that's a link which is available so let
+me try to copy this link
+and uh
+here
+if you want to go to that location so
+what do we need to do now
+so to make it possible
+here i can just make this another nav
+link
+copy the same
+then i give the name called
+simpler
+and
+and here i'll just copy the same
+okay
+so now it's asking me for the component
+because i do not have any component here
+right now
+so here what i will be doing instead
+i am making it as a blank
+okay and here
+i want to give window
+dot location
+dot
+href
+equal to
+the website which is available
+okay so that will be the link which i'm
+providing it now
+and
+after this link what has been provided
+i'm saying
+return
+that's it
+okay so that will be the link
+so i'm saving this and going back to
+this
+location now
+so you can see we have a call simply
+that the moment i click it here
+so
+it will somehow try to take me towards
+where
+this external website the one which we
+are actually looking forward for
+okay so this is the way
+through which you can basically make
+the application accessible outside so if
+i just go back to my browser and uh
+[Music]
+refresh this and click on signature and
+you can see now it took me to an
+external location called simplyland.com
+likewise if i just go back and open
+the
+simple learn
+as a youtube channel
+also just say
+okay simply learn
+youtube so if any of the
+i would say
+the link
+which is available right you can see
+right now we have a card
+multiple website so if i just click or
+anything suppose
+this is a link for me
+and
+i try to create one more link here
+just like we have a call simply learn so
+let's create one more let's say
+simply learn youtube
+simply on youtube so here
+i copy the same
+okay so here
+in my browser whatever the link is
+provided let's just copy this link
+and
+paste this link right over there
+okay so this is what a link which is
+available to me
+now i go back to my code
+i can say simply run youtube i click it
+and you can see it took me two way to
+the other
+so this is the way you see
+how the links are basically created
+and they are simply available to us
+in a very simplified manner
+okay and that's where
+the hyperlinks are basically working
+with us
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

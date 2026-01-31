@@ -1,0 +1,472 @@
+hey Traders so for a while now I've been
+promising to expand the channel to cover
+broader trading subjects and Concepts
+and the time has come to do that now I'm
+not going to abandon or neglect
+pinescript pinescript is still an
+amazing language and I will continue to
+teach that however I've taught that for
+a few years now I've covered pretty much
+everything that I'm a specialist in and
+in my own trading I've been branching
+out into other software for my back
+testing purposes when it comes to the
+stock market the trading view strategy
+tester is fantastic for single Market
+systems so currency Traders uh traders
+who trade indices some Commodities but
+when it comes to trading and testing a
+portfolio of stocks where we're trading
+multiple stocks in the same system
+simultaneously uh trading view has some
+major limitations when it comes to that
+and that's why I've been studying real
+test and I've gone through a mentorship
+program with Nick Raj who is a reputable
+Aussie Trader he's been trading for
+decades he's much much smarter and more
+experienced than I am he's a veteran
+trader has been trading since the pit
+days and um he's a big proponent of real
+test and I've learned a lot of what I
+know from him and in some of the videos
+to come early this year I want to Branch
+out into real test show you guys how
+this software works the first video is
+going to be how to install it get your
+um stock data or data for you Americans
+uh set up and integrated uh but for
+today's video I just want to do a teaser
+video and show you guys why I'm excited
+about real test so what you see here is
+a back test from a system I actually
+trade in the live markets it's a mean
+reversion long only US Stock Market
+System um it trades 20 positions at a
+time 20 different stocks and if I delete
+this test really quick and come to my
+script here is my code it's very
+different to Pine script but it's just
+as simple so I'll be teaching you guys
+the syntax and basics of this code in
+the videos to come but if I hit test
+here look how quickly we test over a
+couple of decades from 19 1991 till
+today
+8,336 days of trading over
+35,800 trades here are my back test
+results so we've got a 32% annual rate
+of return with a pretty nasty 27% Max
+draw down that was hit I'll go over that
+later in the video but this was hit
+recently it Max draw down was hit
+recently before I started trading the
+system the draw down was closer to 24%
+so anyway not terrible metrics um I'm
+comfortable with a lot of risk a lot of
+my systems do tend to hover around a 30%
+Max draw down um there's no there's no
+free lunch in trading so the higher your
+rate of return the higher your draw down
+tends to be I have some things in the
+works that um reduce this draw down a
+bit but in reducing the draw down it
+reduces my rate of return so these are
+the sort of things I want to cover on
+the channel going forward but anyway for
+today's video let me right click this go
+show summary report here is all the
+trade um statistics for this system 58%
+win rate we trade 20 positions with with
+leverage so for every dollar I have I
+can trade $2 and we took
+35,800 trades and that back test took
+about I don't know how many seconds less
+than 10 seconds and that is the power of
+real test and so in today's video I just
+want to give you a teaser give you an
+example of my trading process every day
+I go through this process and place my
+trades and I just want to show you guys
+how easy it is to use real test to
+semi-automate your trading process in
+the stock market so today's video is
+going to be more of a teaser video um
+it's not particularly instructional
+other than just giving you insight into
+how I trade so if that doesn't interest
+you you might want to skip this video
+and wait for the next one where we'll go
+into how to install the software and the
+basics of its syntax that sort of thing
+but for those of you who are curious
+about this software and what it can do
+for you let's get started all right so
+here I want to show one of the main
+advantages of using real test um to
+trade a portfolio of stocks so here I
+have my inter active broker account this
+is a mean reversion portfolio so this
+system trades um sell-offs in stocks it
+buys sell-offs and the goal is to
+capture small bounces across 20
+different stocks I do use leverage on
+this account so whatever my net
+liquidity is I can double that to to buy
+stocks with uh because we're capturing
+such small bounces this system does
+depend on Leverage to make a meaningful
+amount of money so every morning I come
+into my office office I turn on my
+computer I come to this folder and
+double click this batch file which runs
+a bunch of commands which generate 20
+orders or up to 20 orders that I need to
+place into the US Stock Market using
+interactive brokers so if I double click
+this I'll fast forward this bit but it
+doesn't take very long at all so now
+it's opened up Norgate data so it's
+downloading the latest stock data as you
+can see here that's done now it's
+running real test to import the latest
+stock um price data which for me is is
+overnight trading because I live in
+Australia if you couldn't tell from my
+accent so the US market trades overnight
+for me starting at midnight roughly now
+depending on how beefy your computer is
+this can take a very short period of
+time or a longer period of time mine
+just completed then and now real test is
+generating my orders order generation
+successful we're done so now if I open
+up this um Excel file here here are my
+orders for today or the US market will
+open tonight for me at midnight and
+these are the orders I need to place
+into my broker so first I need to sell
+these markets I can automatically import
+this entire list into interactive
+brokers using um their it's called
+basket Trader I do that for my buy
+orders these are all limit
+orders with a 1day
+expiry um but for my sell orders I like
+to sell these manually just so that I
+can keep tabs on what the system's doing
+especially early onto a system I've only
+been trading the system for about 6
+months so I I like to keep my um sort of
+fingers and eyes in the system while
+it's new so now what I do is I drag this
+Excel sheet onto my second monitor I
+open up interactive brokers and I go
+through my open trades list which is on
+the right here and I sell each stock
+that I need to sell so I need to sell
+docu which would probably be docu sign
+yep uh something I use a lot with my
+accountant uh doc youan so I've set up
+my interactive brokers so that I can
+just click on the stock click close
+position and click market and that just
+placed a market order to sell this Mark
+uh this stock at the next Market's open
+so tonight at midnight when the Market
+opens the US Market opens for me this
+stock will be immediately sold at Market
+I don't recommend doing this in the
+Australian stock market if you're an
+Aussie watching this because um we do
+have some issues with slippage um
+because the Aussie Market is not quite
+as liquid and things work a little bit
+differently in Australia but in the US
+at the market opening auction we can be
+pretty sure that we're going to get a
+decent price especially with such a
+small account we've only got about
+$40,000 here which sounds like a lot of
+money to most retail Traders but it's
+obviously not a lot in the context of
+the US Stock Market which trades
+trillions of dollars so we can be pretty
+sure that this will be sold okay at the
+open next up is Excel close Market
+FDI close market and while I'm doing
+this I'm just looking at the chart
+glancing at the chart making sure
+nothing fun is happening making sure the
+system's not doing anything particularly
+crazy that um perhaps I didn't account
+for in my back test or notice in my back
+test so FDI next up is
+ivz this was a profitable trade you can
+see the systems buying these Wicks that
+is exactly what we're looking for we're
+looking for a market to sell off hit my
+limit order bounce for the day and then
+we sell at the next Market's open so
+close that at Market next one is pxd
+another small profitable trade this
+group green line is where our trade was
+bought I don't know why interactive
+brokers do it this way it's a bit weird
+to me I wish this was just a line or
+something instead of a gradient but
+anyway I can probably change that in the
+settings I just haven't bothered but you
+can see this particular trade uh we
+really bought the low of the day that's
+pretty rare I can't zoom in any more
+than this but um wow we really caught
+the low of the day on this particular
+Market that probably wouldn't happen
+with a larger account size um due to
+liquidity constraints but anyway um
+close this at Market final one is
+stwd so now this was a nice little
+winner close it market so we're not
+making a lot of money with this system
+it's only 100 something dollars today it
+makes on average $100 $200 a day on a
+good day it's got a very high win rate
+so it will often end the day profitable
+but not by a hell of a lot of money and
+the whole point of the system system is
+to offset my Trend following systems so
+when we do have a volatile day that's a
+bit of a whipsaw day this system tends
+to do really well in those market
+conditions so if the Market's going
+sideways this system does very well if
+the market is trending some days it
+won't buy any stocks because nothing
+sold off to its limit order and in those
+days my other accounts do well my Trend
+following systems do well and so the
+whole point of this system is to offset
+bad days for my Trend flowing systems I
+consider myself Prim primarily a
+momentum and Trend following Trader um
+but I did make this system to complement
+my Trend following systems anyway I
+digress there that's just giving you
+some insight into my trading techniques
+and style we're done normally this
+process is a lot quicker for me because
+I'm not explaining what I'm doing
+normally I can have this completely done
+from start to finish from generating my
+orders to closing interactive brokers I
+can have that done in about 3 minutes um
+usually I'll generate the orders go make
+a coffee by the time I get back they're
+done and this whole process of selling
+my open positions and importing my new
+positions takes about 2 minutes um
+you'll notice that it didn't close all
+of the trades in this list that's
+because of the way the system rules
+function it does keep some trades open
+longer than one day I'm not going to
+give away the rules to the system in
+today's video but you can see this stock
+is still open uh the reason for that is
+that the system needs to close for a
+profit or hit its stock loss and it stop
+loss is closing below this um shortterm
+moving average price is just above that
+so we're holding on to the stock tilt
+tomorrow and hoping for that bounce to
+come in tomorrow if it doesn't we'll
+sell for a small loss hopefully a small
+loss you never know with stocks they can
+gap down pretty bad some days but that
+is a very rare occurrence and conversely
+sometimes they can Gap up the next day
+so that tends to offset any issues with
+gaps with this particular overnight
+system anyway that's done we've sold all
+our open profitable positions we're
+keeping a couple of trades for another
+day or two the final thing to do is
+import my new orders for tonight that's
+really easy now the way I've chosen to
+do this is I've just made a simple
+Google Sheets spreadsheet here um let me
+zoom out my chart a bit um and what I do
+here is I get my Excel spreadsheet here
+copy all of these entries just crl a
+contrl c contrl v into Google Sheets I
+need to input my balance which is uh
+39,19004 click transmit and all of these
+orders get sent to my broker with the
+correct position sizing correct by limit
+prices according to the system from real
+test click transmit and my work for the
+system's done for the day again this
+seems complicated it's really not this
+really does take about 3 minutes per day
+um I do this every day even if I'm on
+holiday if I have an internet connection
+I tend to do this just because it's just
+so quick and easy it doesn't really
+bother me to have to do this and there
+we go we've placed about about just
+under $80,000 worth of orders for
+tomorrow's Market open and it was done
+very quickly using real test so in
+future videos I'm going to do a Basics
+guide on real test how to install it how
+to get Norgate data working with it all
+of these things do cost money it's not
+like trading view where it's all free
+that's the catch when it comes to um
+real test but the price actually isn't
+that bad especially if you're a serious
+Trader a professional Trader for me
+because I run a company that deals with
+pinescript through the pinescript
+Mastery course I actually have to pay
+about
+$4,000 per year to use trading view
+here's my trading view plan um this is
+in US dollars so it's nearly 4,000
+Australians so if I do USD to AUD yeah
+$3,700 a year to use trading view for me
+since I sell a script My ultimate
+pullback indicator I have to subscribe
+to the commercial subscription which is
+pretty steep that's a pretty steep price
+compared to Norgate data if I go to
+Norgate data depending which data you
+opt for uh the US Stock data starts at
+$270 per year and real test is a $389
+one-off payment um if you want updates
+it does cost a little bit more to get
+the latest version of real test but
+overall we're looking at about
+$659 to get started with uh real test
+compared to for me um nearly
+$2400
+on on trading View and with real test we
+get so much more when it comes to back
+testing um I can run this is my mean
+reversion system let's run a quick test
+on it and I'll show you what the
+performance metrics look like so I just
+imported the latest stock data now if I
+click test we'll run a quick test uh
+doesn't take very long at all we just
+did a test in the time I was talking
+about this over 8,300 days let's go show
+summary
+report um we took 35,000 trades over
+8,300 days I don't know how many stocks
+we traded but it would have been
+thousands and thousands of stocks we
+have about a 59% win rate a 32% annual
+rate of return according to this back
+test with a 27% Max draw down um which
+is pretty rough the Max draw down is a
+bit steep um that has only happened in
+the past couple of years of course as
+soon as I start trading the system it
+has its worst draw down ever um that's
+normal in trading that uh you can be
+pretty sure that your system will have
+its worst draw down after you start
+trading it uh but anyway I have some
+things in the work that shouldn't
+mitigate this draw down I am working on
+a market on close adaption adaptation to
+this system so that the trades are
+closed out before the market closes so
+you don't hold trades overnight um that
+reduces The Return by a decent margin uh
+but it does shave the draw down off by a
+big margin so that's a change I'm
+working on
+optimizing but anyway you saw how quick
+all that was the test here took a couple
+of seconds to perform over thousands and
+thousands of stocks uh to do that in
+trading view is obviously impossible
+trading view is fantastic for single
+Market systems so if you're trading
+indices or you're trading currencies um
+it's fantastic for that even some
+commodity ities but if you're trading
+stocks it's borderline useless the
+trading view strategy tester does not
+have a portfolio based uh testing system
+where real test does real test can even
+trade multiple systems alongside each
+other so we could have a mean reversion
+system and a trend following System
+trading the same pool of capital and we
+could run that test and see how the two
+systems perform when traded
+simultaneously we could see how they
+affect each other's um draw down and you
+can even compare the equity code
+on the chart so here's my Equity curve
+for this system here's the
+month-on-month breakdown of
+profitability the Max draw down for each
+year the total return for each year and
+a whole bunch of other metrics that we
+have to work
+with um and you can even add your own
+metrics we have some Monte Carlo
+analysis here um you can add your own
+graphs and stuff to this um to this
+analysis as well quite easily so in
+future videos I will be showing you guys
+how to get started with the real test
+it's a whole new world it's a whole new
+bag of worms so to speak um compared to
+trading view it has its own scripting
+language it has its own nuances its own
+style its own software obviously and so
+this will probably become its own course
+one day similar to the pinescript
+Mastery course it's something that I'm
+still learning myself um but it is a
+very very powerful piece of software
+that I encourage all serious Traders
+especially if you're trading stocks I
+encourage you to check this out um with
+that said I'll wrap this video up here
+and I'll speak with you in the next
+lesson where we'll go into um how to get
+this software set up how to get data
+importing through Norgate data and how
+to write your very first script I hope
+you guys are as excited as I am to um
+explore this new software just to be
+clear I'm not giving up on Pine script I
+will still be doing content for that but
+when it comes to strategy development I
+will definitely be focusing more on real
+test for that side of things when it
+comes to stocks especially there is just
+no point in using trading view for
+stocks again it's fantastic fantastic
+for single Market systems but when it
+comes to stock trading you cannot beat
+software like real test there's
+obviously Amy broker is a similar
+software that's also quite good I've
+used that in the past and if you're in
+the Amy broker there's no real reason to
+switch unless you want to back test
+multiple systems simultaneously that is
+an advantage that real test has over Amy
+broker uh but anyway I digress that's
+enough for today's video thanks for
+watching and I'll speak with you in the
+next video take care
+for

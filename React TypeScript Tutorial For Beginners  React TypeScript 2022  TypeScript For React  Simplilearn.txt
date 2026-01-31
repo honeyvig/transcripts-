@@ -1,0 +1,267 @@
+hey everyone welcome to another tutorial
+by simply learn
+in this tutorial we will learn about
+react type script let's see what's in it
+for you in this session
+we will first look at what is typescript
+then we will understand what is react
+then we will look at some of the
+features of react
+followed by which we will look at the
+advantages of using react with
+typescript
+and proceeding further we will see how
+to install and configure typescript and
+react
+but before we begin make sure you have
+subscribed to our youtube channel and
+click down the bell icon so you never
+miss an update from simply learn
+so without wasting any further time
+let's get started
+what is typescript
+typescript is object oriented and
+strongly typed programming language
+which is a superset of javascript
+typescript was designed by anders
+hegelsberg at microsoft
+the limitations of javascript for the
+developing large-scale applications at
+microsoft and among its external
+customers led to the creation of
+typescript
+because of the difficulty of working
+with complicated javascript code there
+was a demand for custom tooling to make
+developing javascript components easier
+typescript code is converted to
+javascript which can be executed
+anywhere where javascript is supported
+in a browser on node.js or in any other
+application
+typescript is a javascript with some
+additional features
+to support more robust interaction with
+the editor typescript adds additional
+syntax to javascript
+and typescript is moreover a scripting
+language that understands javascript and
+uses type inference to provide powerful
+capabilities without additional code
+what is react
+react is a javascript library for
+creating user interfaces that is
+declarative efficient and customizable
+react allows to build complicated user
+interfaces out of components which are
+small independent pieces of code
+react was first open sourced in 2013 by
+facebook and has since become one of the
+most popular libraries in the front-end
+world with frameworks like redux react
+can simply be extended to integrate
+functionality like routing and state
+management patterns
+features of react
+react is an open source library and is
+developed by facebook
+react apps are fast flexible modular and
+scalable
+react is powerful javascript libraries
+that creates interactive interfaces
+popular libraries of react are redux
+material design and chest
+redux helps manage state in javascript
+redux is the most popular of all react
+libraries because it easily tracks the
+state as the application size grows
+react has robust developer community and
+variety of libraries
+the act is declarative and component
+based declarative views make the react
+code more predictable and easier to
+debug
+and react is component based that is
+react letters build encapsulated
+components that manage their own state
+and compose them to make complex uis
+advantages of using typescript with
+react
+in a react project typescript allows us
+to write html code directly
+typescript delivers superior
+intellisense and code completion for jsx
+when used with react
+javascript xm is abbreviated as jsx
+when using ides like visual studio
+visual studio code autumn webstorm
+eclipse and others typescript comes in
+handy this allows better development by
+improving autocomplete and snippet
+generation
+typescript has code that is easy to read
+and understand
+typescript is statically typed language
+the distinction between statically and
+dynamically typed programming languages
+is when type checking occurs
+variables in static language are type
+checked
+while creating react app complex type
+definitions can be defined as interfaces
+in typescript this is useful when you
+wish to use a complex type in the
+application such as an object with
+multiple properties
+microsoft supports typescript
+an open source programming language
+millions of developers all over the
+world enjoy and use it
+this implies that if you get stuck while
+learning or using typescript you can
+easily obtain help and answers on the
+community portal
+we can integrate typescript into our
+existing react projects for this we can
+configure the typescript compiler
+installing and configuring typescript
+and react
+before we install typescript we need to
+install node.js
+go to the node.js official website and
+you can install node.js from there once
+you install node.js go to the command
+prompt and run this command npm install
+hifunji typescript
+this command is used to install
+typescript globally
+once you have installed typescript to
+check if the typescript is installed
+properly run the command tsc typescript
+compiler
+hyphen v to check the version of the
+typescript compiler
+next we need to install react
+for installing react and creating a
+react project
+go to the command prompt and run this
+command
+npx create react app this command will
+create a simple folder structure of the
+application then install all the
+necessary modules and get the project up
+and running for you
+first of all we need to install node.js
+to install node.js go to the official
+website of node
+nodejs.org
+go to the downloads in downloads here
+you can
+install the node.js if you have windows
+if you have mac os
+you can install it from here so i have
+windows so i'll install windows since i
+have already installed so i'll cancel it
+so once you have installed node.js then
+go to the command prompt
+in command prompt we need to install the
+typescript to install the typescript run
+the command npm that is node package
+manager
+install
+hyphen g
+g stands for installing globally
+and then typescript
+what this command does is it installs
+the typescript globally
+run this command once you run this
+command the typescript will be installed
+since i have already installed
+typescript i'll cancel it so after you
+have installed typescript to check if
+the typescript is installed properly run
+the command typescript compiler tsc
+space
+hyphen hyphen b
+and press enter
+and this will show the version
+and this will show the version of the
+typescript installed so i have version
+4.5.4 installed in my device
+so after this to get started with the
+project after successful installation of
+node.js and typescript
+let us create a new folder to create a
+new folder type the command make
+directory
+and we'll name the folder as
+typescript
+hyphen
+react
+so enter
+so we have created the new folder
+next we'll change the directory to the
+folder which we created so cd
+to
+ts react
+so after this we need to initiate the
+project
+so to initiate the project we will run
+the command npm
+init
+it is asking for package name
+just click enter
+and
+click enter
+then is this ok click s
+after this what we need to do is create
+react app
+so to create react app run the command
+npx
+space create
+react app
+and enter
+so this command will create a simple
+folder structure for your application
+and then install all the necessary
+modules and get your project up and
+running for you
+so this is the project folder which i
+have already created
+i have the vs code folder wherein i have
+settings.json files in this then i have
+installed all the node modules
+then i have the source folder
+in source folder i have app.tsx file
+counter.esx
+index.html declarations
+index.exe file
+to install webpack just run the command
+npm install web pack
+space webpack hyphen cli in the terminal
+this will install the web pack
+so i'll show you a simple hello world or
+hello everyone program
+so in app.tsx
+we'll just type hello everyone
+and we'll give the color as green and
+align the text at the center input since
+we have imported the counter
+file so in counter file
+we'll just type in subscribe to simply
+learn with text align in the center and
+with the color red
+so we'll just run this
+and here we go
+here we go we have the message hello
+everyone and subscribe to simply
+so with that we have reached the end of
+this video like and share it if you
+found it interesting thank you so much
+for being here keep learning and stay
+tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

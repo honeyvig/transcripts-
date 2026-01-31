@@ -1,0 +1,509 @@
+foreign
+and welcome back to another video by
+simply learning this is anubhav and in
+this video we will see what is SAS
+features and I will be demonstrating its
+Concepts and features so let's begin but
+before that if you haven't subscribed to
+our Channel already make sure to hit the
+Subscribe button and press the Bell icon
+so you will get all the updates from
+Simply learn also I wanted to tell you
+guys about this amazing program by
+simply learn so if you want to become a
+software developer consider this Caltech
+postgraduate program in full stack web
+development by simply learn and master
+those necessary skills check out the
+link in the description for more details
+you can also call on the number that are
+given below to know more about this
+program so do check it out now let's
+jump into our video I'll open the visual
+studio code
+and then I'll tell you what jazz is
+let me create new window okay I'll close
+this one
+okay
+so says or syntaxically awesome style
+sheet is a preprocessor scripting
+language that is compiled into cascading
+style sheet which is CSS it offers more
+advanced feature than CSS such as
+nesting variables mixins and functions
+which makes it easier and more efficient
+to write and manage style sheets I'll
+demonstrate each and everything I have
+told you about these features first
+firstly we'll see about what is these
+nesting variables and mixins and all
+we'll first see about it and then we'll
+dive into it okay so SAS is a CSS
+preprocessor like suppose you have
+written a code in size what the
+preprocessor will do is it will process
+the SAS code into CSS for example in
+react we write jsx then it gets
+converted into HTML right so now SAS is
+completely compatible with odd versions
+of CSS okay it also reduces the
+repetition of CSS and therefore it saves
+time that means when we write CSS code
+okay I'll show you one of my files in
+just a second
+I'll open this Tailwind okay
+in this source and this okay so I have
+opened this CSS file for you guys okay
+so in this what we are doing is we are
+giving some uh commands to this page
+that I have created one portfolio app
+okay this video will be in the
+description don't worry about any of the
+things just learn the concepts okay
+so here we are giving some command to
+app logo then we are just giving it
+height and pointer events then we are
+again using that app logo to give it
+animations okay but with the help of SAS
+we can do it in one go we don't have to
+declare every time these things we can
+do it in the one go
+so now I think you have got to know it
+saves a lot of time okay
+so to get started with jazz you need to
+install it in your computers
+you can go to SAS
+I have open that for you guys let me
+include this one yeah
+here when you'll go or let me show you
+you just write SAS okay the first thing
+that will come is this one so as it is
+showing CSS with superpowers right so
+SAS is a most mature stable and Powerful
+professional guide CSX extension
+language in the world
+these are some of the features or the I
+would say the things that are very good
+about SAS as SAS compatibility Rich
+features that we'll talk later mature
+industry approved large community and
+Frameworks like bootstrap Bourbon and
+Chassis
+okay
+so we'll click on this install and then
+you will find your device like if you
+have mac that one is paid you can
+install it for free with the help of
+this command okay
+just copy this command open your virtual
+Studio code but first let me create one
+folder for you guys
+okay I'll create it in the desktop
+and let's name it as SAS
+okay
+I have opened folder
+and create new folder
+let's meet created here
+then we can open that right
+now and play this folder here opening
+the video Studio code this one going to
+the bootstrap okay this one yeah
+open this SAS folder yeah and we are
+good to go
+now we'll open the terminal
+okay
+so these are some shortcuts that I
+wanted to tell you guys because so many
+students tell me about how to do these
+things so for that I opened the terminal
+with control and backtake control and
+back tech you can also open it with the
+help of this
+dominant new dominant okay so it's
+showing that
+we can do it
+with Ctrl shift and back tech but we can
+do it with the control and back tip okay
+it's open two terminals let's kill one
+yeah now what we have copied from there
+we'll paste it here so let's wait a
+couple of seconds to get an installed as
+you can see it's installed for this you
+should have node.js installed in your
+system and npm installed in your system
+to install uh npm you just write
+npmi and it will get installed okay if
+getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+now let's move forward now let's install
+the compiler for SAS okay for that just
+go to the extensions and here right
+live
+SAS
+compiler
+and as you can see
+this one is preview this extension is
+duplicated
+okay
+let's install this one
+this is also a good one I don't know why
+this one is deprecated replicate means
+it's removed uh okay fine this one is
+also
+good
+okay yeah
+now it's installed in my system and I
+think you are also installed you have
+done the installation now here we'll
+create a folder let's name it as SAS
+here we will create a file
+let's name it as index
+dot HTML
+okay
+and inside this we'll create a file in
+this SAS
+let's name it as says
+let's name it as
+okay
+custom
+Dot
+as you can see it is showing this this
+now what I'll do is I'll create one
+program for you guys or if you want I
+can explain you first the features then
+we'll move on to the
+that recording part right
+so once you have installed SAS into your
+systems
+uh in this file we are going to write
+your the styles using CSS syntax the
+main person purpose of this video is to
+know more about SAS syntax okay which
+includes features like variables nesting
+mix-ins and functions
+so let's take a look at each of these
+features in more detail and then I'll
+explain you about it okay so the first
+one that I told you about is variables
+so SAS allows you to Define variables
+that can be used throughout your style
+sheet that means when you declare a
+variable in this one it will be same
+throughout the style sheet okay this can
+be useful for defining colors font sizes
+and other common properties that you may
+use to reuse okay
+to Define a variable you use the dollar
+sign
+or dollar symbol followed by the
+variable name and its value for example
+I have
+okay I'll open the SAS file here I have
+declared one dollar sign and then I will
+write
+primary
+color
+semicolon and then I'll write red
+so you can also add some other extent
+cool extensions like prettier to make
+your code look good or stylish
+okay or we can also write it as dollar
+sign we'll declare variables like this
+only
+font size
+should be 16 pixel
+right this is how we write the code
+right okay from with this we can go live
+just by clicking on the start so it has
+taken us to this one so let's just cut
+this one and this one
+okay minimize this one
+okay now we'll talk about nesting I'll
+go deep into it don't worry I'll explain
+each and every concepts of these
+features but firstly I'll tell you about
+the main main things okay so now what is
+nesting in SAS SAS allows you to Nest
+selectors within one another okay which
+can make your style sheet more organized
+and easier to read
+to Nest a selector simply include it
+inside another selector for example I'll
+give you one example
+let's open the HTML file now and we'll
+write
+navigation bar
+for nav
+and inside that I'll use the UL which is
+ordered list
+unordered list actually
+and then we'll give it a margin
+of 0
+and then we'll give it a bidding
+and then we'll give it
+list
+Style
+let's give it none
+so inside this nav
+we use this order unordered list okay so
+this is what this nesting is we are
+nesting something else inside a nav okay
+so this is how we Nest a selector okay
+now we'll talk about make sense
+so mixins are reusable blocks of code
+that can be included in multiple styles
+they are similar to functions in
+programming languages okay to create a
+mix in you can use the
+add mixing directive
+we have to create that will show you you
+can add add the read or add mixin
+directive followed by the name of the
+mixin and its properties for example I
+will show you
+so first we'll write mixin
+border
+so this is what a directive name okay we
+will first will declare mixin add mixing
+and then let's write border radius
+inside that we have used the dollar sign
+and then radius okay
+now inside this we'll name the other
+properties like okay I'll show you one
+or two
+web kit
+webkit border radius then we'll give it
+a radius we can use also use
+Mars border radius okay border radius
+Tire radius these are the things that we
+can use
+you can then include the mixing in your
+styles using the add include directive
+at the rate we will write if you want to
+use this link if you have written mixing
+in this and I have to do use it not in
+this sash file obviously but if I have
+to use it inside some other file so I'll
+write include in the
+upper module of the page and then I'll
+write include and then I'll write the
+directive name okay
+so
+you can use it as I'll give you one
+example of that here
+so have you created one mixing or
+something else here
+so I'll write
+button inside this button I have to give
+it a properties of that mixing that I
+have already created somewhere else okay
+so then I'll write
+include
+order
+radius
+so now I think you guys are getting it
+that it's making us very making research
+very easy and CS is very easy right so
+because of this one line we don't have
+to write this paragraph not this
+paragraph if I'll complete this code
+okay I'll just complete this and then
+I'll show you
+so yeah so we have created one border
+box or something then we can include
+this border radius here
+right
+it's that simple right it's making CSS
+very easy
+I'm telling you guys just stay focused
+you will learn CSS SAS it's very simple
+okay
+now we'll talk about functions in SAS
+so functions are similar to mixins only
+but they return a value that can be used
+in a style
+to create a function you can use a add
+function directive followed by the name
+of the function and its properties that
+didn't make sense we used to write at
+the rate include directive right in this
+functions we'll write at function
+directive okay
+it's very similar to mixing
+so let's write an example here we'll
+write function
+embed
+with all the sign Excel
+and then
+we'll return
+x n divided by
+16 or something else and then let's
+in 16
+or 1.
+okay
+so you can then use this function in
+your code to style your calculator value
+for example okay
+so now we'll give you an example okay
+not not the body tag and you will just
+giving you an example
+font size should be m
+20 pixel that's right
+so yeah
+to compile your SAS file into a CSL file
+you will need to run it through the SAS
+compiler right so this can be done using
+the command line or by using a task
+Runner like Gulp or grunt
+okay
+and now we'll see
+I just close this tab and then this
+extension was working completely fine so
+I was just telling you about this size
+so I just click on this as and it's
+compiling now
+just wait for a couple of seconds more
+so I'll tell you more about SAS SAS was
+created by Hampton Carlton in 2006 and
+was later it was designed to make CSS
+more Dynamic and flexible allowing more
+efficient and scalable styling for web
+pages
+okay so let's now see whether it is
+working
+go here
+just a second
+now let's see the compiler okay as I
+removed these two semicolons and saved
+it it created two files for us okay one
+is custom.css and second one is
+custom.css.map so what we'll be doing is
+here is so Source mapping URL custom
+this file okay so whatever we write in
+this file it will then convert it into
+CSS as I have already told you
+now let's move forward let's open the
+HTML let's delete this code and here
+I'll
+write
+okay here now let's create a header in
+this body
+and we'll link it don't worry
+so I have created
+hello from
+simply learn
+okay
+now here I'll name this document as
+what you doing
+and then I'll link my this CSS file into
+my HTML okay
+so I'll write link
+so I'll write my style sheet
+okay after that I'll give the link of my
+this custom.css file okay for that I'll
+write the folder name inside this folder
+it's custom load CSS right
+let's save it
+okay the head is giving me and
+now everything is same as CSS okay don't
+worry about anything guys it's all same
+but now we have to write all our CSS
+code into this SAS file and then it will
+get converted or mapping into this CSS
+okay you will see
+into some time
+will go to the custom.js
+now
+what I observe and I also do this I'll
+use the semicolons here
+or
+like I'll write here this one
+header then we have to do it something
+like that I'll also do that but inside
+this SAS we don't use these things okay
+now
+see how simple it is okay
+we'll
+read first let's give it a width to that
+hello world or something
+I do
+with hundred percent
+hide
+50 pixel would be
+fine
+background
+as I have told you I will show error
+when you will do the wrong CSS you have
+word using CSS
+and now you will see it just mapped all
+our SAS code into this CSS file right as
+I have written here header with 100
+height 50 pixel background blue and it
+just converted all the things into this
+without I don't have to write this I
+didn't write this as you can see so this
+is that simple okay and it has very
+great features
+right
+let's move ahead now we'll see how to
+Nest nesting we have to do nesting okay
+for that we'll do here give it a
+building first
+everything
+let's be preparing of 10 percent to that
+header that we have created just now
+this one
+okay
+I'll give it a fair thing and then
+okay we can't use that semicolons here
+okay fine so we'll write H1
+inside this H1 we'll write
+color
+and we'll give it a color white
+then text a line
+sender okay after that I want hover
+whenever I hover on that H1 tag which is
+Hello from Simply learn it should change
+the color Okay so so we'll give it a
+background right
+that also okay
+so let's save it
+and let's check whether it is compiled
+successfully or not
+okay okay now we'll just right click on
+this HTML file
+and open with live server
+and as you can see it's showing
+completely fine as I hover on this hello
+from Simply learn it's working
+completely fine so this is how SAS works
+we are writing SAS code here and
+it is converting our SAS code into what
+SAS
+the CSS code into SAS okay so overall
+SAS is a powerful tool for writing and
+managing style sheets and its use of
+variables nesting mixins and functions
+can make CSS more efficient and easier
+to work with if you are working on a
+large or complex web project it may be
+worth considering using SAS to help
+streamlining your Styles and improving
+your workflow
+so let's wrap up this video on SAS if
+you want more videos on SAS you can
+comment down and we'll surely make more
+videos on SAS we hope you had a lot to
+learn and if you have any suggestions or
+doubt please write them down in the
+comment section below thank you so much
+for tuning in today happy learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

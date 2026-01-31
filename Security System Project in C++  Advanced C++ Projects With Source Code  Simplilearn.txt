@@ -1,0 +1,818 @@
+foreign
+of the oldest programming languages and
+is still going strong more than 37 years
+after it first appeared on the scene
+many other programming languages
+including C sharp and Java have been
+influenced by C plus plus and is still
+used in various applications of software
+for example Spotify Amazon Bloomberg and
+YouTube are a few examples of that
+so hey everyone welcome back to another
+video by simply learn in this video
+session we will be creating a c plus
+project this project will be a security
+system in C plus plus here we will
+create a system in which we can register
+login and if we wish to change the
+password then also we can do that
+we will try to keep things easy and
+basic so that each and every one of you
+can understand the security system in C
+plus project
+but before we begin make sure to
+subscribe to our YouTube channel and
+press the Bell icon to never miss an
+update from Simply learn before moving
+forward let me ask you a quick question
+what was the previous name of C plus
+plus option A C option b c with classes
+option C C plus or option D C with
+objects
+please leave your answers in the comment
+section below and stay tuned to find the
+correct answer
+now let's switch to our code editor
+which is Dev C plus plus
+so this is our code editor now let's
+save this file first of all
+let's name this file as
+system
+dot CPP
+all right so we have named this file now
+we'll start with header files so first
+of all we'll add the header files so
+we'll write hash include
+IO stream for input output operations
+all right now we'll add another header
+file which is
+hash include fstring
+now
+the third header file which we will be
+adding that would be S string
+so this fstream Library the f-stream
+library is used because we have to work
+on files and this Library allows us to
+do so it is used for file handling
+operations
+now the second one that is the S stream
+Library this header file provides
+templates and types that enable
+interoperation between stream buffers
+and string object
+so this was it now we will have to add
+another header file
+all right and let's do that
+hash include
+string all right
+so iostream F stream as stream and
+string we have added the added files Now
+using namespace STD
+all right now we will create the main
+function that is int Main
+now inside the main first of all we will
+be creating variables so let's do that
+and a let's say now we'll initialize I
+with 0
+now we will be creating some strings
+let's say
+string text all these variables we will
+be using it later in the project so
+let's create them
+password let's say password one
+password to
+let's name it pass
+name
+password 0
+h
+uge
+word and
+word one
+so we will be using these variables
+later in our project
+all right now
+let's create some string array
+so
+creds that is credentials
+will make an array
+right CP
+2.
+all right
+now we'll display
+an interface and in that interface we
+will show uh four options like register
+login change password and end program
+so let's just do that
+all right
+so let's name it security system
+foreign
+so as we are creating a interface so
+let's make it look good like we can do
+some things like that
+and I'll for extra space now
+here we can do one thing like
+can do like this
+it's up to you how you want to beautify
+your interface that's all upon you
+so I'm basically doing that
+register
+foreign
+ly we will do
+for others
+that we can just copy paste it will save
+our time
+so basically
+first would be register
+second would be login
+and third would be change password and
+fourth would be end program
+and we can do one more thing
+all right now let's make it two
+this would be login
+3 would be change password
+foreign
+would be
+end program
+all right so register login change
+password and end program
+so we have created four of these
+so we have created the four choices now
+after this we will be asking the user to
+enter any choice like if you want to
+register login or change password or end
+the program so he can select one two
+three or four for that we have to take
+an input from the user
+so we will do that first of all to add
+some space we can do handle
+all right
+yeah
+so now we will use a do while loop so
+inside the do
+we will again use handle twice so that
+there would be some difference between
+this register login interface and the
+choice that we will be asking
+right now C out
+enter
+your choice
+so here we are asking the user to enter
+one two three or four
+as per his or her choice
+all right
+all right
+so C in
+here we will be taking the input let's
+say a is the input
+now we'll use a switch case
+right switch and inside the choice that
+the user will enter
+all right now
+case one would be there first of all
+case one
+and inside case one let's scroll it a
+bit all right so inside case one
+first of all we will be printing
+something like register as as the user
+has pressed one so he want to register
+first of all so we'll create an
+interface over here as well so let's do
+that okay
+out
+like we previously did it's your choice
+like how you want to do it
+right now we can
+write
+foreign
+all right
+after that again
+let's leave some space here
+or we can do it above as well like
+here also we can do this
+and let's do this here
+foreign
+so register here we have created
+now we'll use two Vandal because we want
+to create some Gap in between enter your
+choice and this interface so right
+so we will print a message enter your
+username it's like please
+enter
+username
+all right so after that the user will
+enter the username
+so we'll take the input of that
+so here we will write
+name
+all right now the user
+will have to enter password also so
+right please
+enter the
+password
+so after this the user will enter the
+password so we will be taking the input
+of that
+so
+we have already created these variables
+as you can see name we have created and
+password 0 so we have created so we'll
+use that password zero
+all right now we'll ask the user to
+enter his or her age
+so will I please
+enter
+your age and whatever credentials you
+want them to enter you can do that you
+can also take the input of the address
+or something personal that you want to
+store you can also do that
+so all right
+so please enter your age
+see in
+age all right this name password 0 and
+age we have already created these
+variables we have initialized these
+variables all right now
+now we will store these details that is
+now name password 0 and age
+into some file and for that we have to
+use the file handling operations
+so we'll used those like we will create
+off stream class we'll create an object
+of offstream of one
+and
+to F1
+so we will use of1 as it is the object
+of offstain class
+and why we have used the offstream class
+because it is used to open a file to
+write something in it so here we want to
+store name password H in that file so
+basically we have to use off stream only
+and if stream class is used when we want
+to open a file for reading purpose but
+now we want to open the file for writing
+purpose so that because of that we have
+used offstream Class
+so here we will write of1 that is the
+object of Hosting class dot open
+so
+inside this we will write the name like
+that file dot txt it will open the file
+all right
+now inside the if block we'll write o f
+1
+dot is
+open
+underscore open this is a function
+all right
+we have one notices open it will keep on
+moving till
+all the details will be entered in the
+file
+so we'll write of1
+so here basically we are writing the
+details inside the file
+we'll use slashing because we want the
+username and password in different lines
+so that is why we have used slash in
+here
+all right of one
+password
+all right password zero it was sorry
+now
+we have stored the name and password
+only
+now we'll write
+registration
+successful
+all right registration successful
+now as we can see break statement we
+have already written
+all right
+so basically everything is done in this
+case here we have taken the input of
+username password age and stored all
+these details in the file
+so that we can use it later
+now this was the case one registration
+is done in case one now we can move on
+to case two
+similarly we'll create a case too
+now inside this case two
+all right now inside this case two first
+of all we'll initialize I with 0 why we
+are doing this I'll explain that later
+so similarly we will create
+the interface that we previously created
+in registration so let's do that
+foreign
+so we have created this
+now here we will use if stream because
+we want to read
+so as I previously told that if stream
+is used to read from files open and read
+phone files so we'll create if stream
+class and object if stream
+if one or let's say of of2
+so this is the object of if stream class
+Now using this object we will open the
+file of2 dot open
+now of
+sorry here we will write file Dot txt
+all right so here we have opened this
+file and now
+we'll take the input like we'll have to
+match it whether it is the same personal
+node so we'll take the input we'll write
+please
+enter the username
+see in
+user the other variable that we have
+created
+now see out
+please enter the password
+all right so
+here also we'll take the input from the
+user we'll write the other variable that
+is pass that's why we have created so
+many variables
+all right now
+let's roll it a bit
+now if
+similarly that we have done previously
+of2 dot is underscore open
+so it will check all the files basically
+if 2 is open then
+here we will use a while loop
+dot o f
+2
+dot end of file so here we are using the
+end file function
+from this eof or end of file function we
+can detect when the Endo file is reached
+it returns non-zero when the end of file
+has been reached otherwise it will
+return 0.
+all right inside it now we will create
+another while loop
+while
+get line
+of2 that is the object
+and text that is a variable
+all right
+now inside it we will write
+I String
+string
+ISS
+text
+all right now I'll explain the part
+so here in this part get line part so a
+while loop together with the get line
+function is used here to read the file
+line by line
+so using this the getline function the
+file will be red line by line and this I
+String stream object so I String stream
+object is used to stream the string and
+store it using the extraction operator
+after this we will be using an
+extraction operator where we will store
+the string
+all right
+here we have used the extraction
+operator and here we are storing
+now in the grids array that we have
+created
+we will be using
+here we were
+all right so in credits array
+we have already declared this
+we will store the word first of all
+and then we will increment because one
+by one
+the in the zeroth position first of all
+first username will be stored then
+the password will be stored in the
+second position so we need to increment
+that
+all right
+now
+we will match if the
+registered username matches with this
+username or not and similarly we'll do
+for password so we can do like if user
+equals to creds at zeroth position that
+is the username username the user has
+entered first so it must be at the
+zeroth position
+and the password would be at the first
+position
+and index one so for that we can use if
+password equals to
+grids at index one
+then
+we can print a message
+saying that login
+successful
+all right
+now to add some space we can use handle
+now after displaying this login
+successful sign we can print the details
+like
+we can write
+details
+we can write C out
+username
+name
+handle
+all right similarly for the password
+will do
+foreign
+so here we will show the username
+password age details to the user now in
+the else block so where the password and
+login credential will not match in that
+case now we'll do
+so for that case we will write first of
+all let's create some distance
+so that it looks nice
+all right so first of all we will write
+incorrect credentials
+all right incorrect credentials
+after that we can do one more thing
+so
+he will write
+press
+two
+let me just do this press 2
+to login
+S2 to login
+and
+here similarly we'll write
+change password
+so
+press three
+to change
+password
+so here we go
+so if the details are incorrect so the
+user can log in again try or
+he or she can try to change the password
+now we'll add the break statement also
+so here we have added the break
+statement now
+as you can see our case 3 is also done
+so what we have done in case three is
+like
+we have taken the input of username and
+password and then we tried to store it
+at credentials that is an array
+so at credentials zeroth position that
+is index 0 the username will be stored
+and at credential first index the
+password will be stored then we will try
+to match the username that the user has
+entered while registering with the creds
+at zeroth position and password with the
+password
+so if it matches the login will be
+successful and the details will be shown
+and if it will no it if the details are
+not matched then it will
+show an error in correct credentials and
+press 2 to login and press C to change
+password
+so this was the case too
+now let's move on to case three
+from here we will create the case three
+foreign
+again we will first of all initialize I
+with 0
+now here let's scroll it a bit
+yeah so here we can write like
+change password so
+let's do this
+change
+password
+so
+now after displaying this again we will
+open the file using that if stream here
+if stream
+of0
+Now using this object of 0 will open the
+file.txt
+file Dot txt
+all right so here we will write
+file Dot txt
+after opening this file we will display
+a message to enter the old password so
+because we are changing the password so
+first of all we'll ask them to enter the
+old password
+so
+enter the
+old password
+now we'll take the input fold this is
+the variable
+now we'll use an if condition
+that similar to that that we have
+previously used os0 dot is open
+this file will remain open
+now again we'll use end of operation
+function
+is underscore
+end of file
+all right now inside this while loop
+again second while loop will be used
+similarly that we have done previously
+get line function again
+all right
+I String stream
+ISS
+text
+ISS
+word one here basically we are storing
+the data in word one
+then CP another array
+so we'll store word one at the zeroth
+position
+then we'll increment
+CP
+by mistake we wrote Co
+all right
+now we'll increment so that the password
+will also get stored
+all right
+now
+we'll use if condition
+if if old password is equal to cp1 as we
+know at cp0
+the username is there but we have to
+compare the password so if old password
+is equal to cp1 that is the new password
+that the user has entered then
+first of all we'll close the previous
+file
+to free up the memory space
+all right now we will open another file
+with off stream object of one
+because off stream is used when we want
+to write something
+open and write so now we'll use
+of one object
+dot is underscore open
+now
+double actually
+all right now C out
+enter your new password we are basically
+asking them to enter the new password
+we will take the input of the password
+one
+then we again display another message
+saying that enter your password again
+so enter your password
+again
+again we'll take the input
+saying that password to
+now if
+password 1
+equals to
+password to
+then
+we will overwrite
+p
+0
+that is we are storing the zeroth index
+of CP at of1 we will basically
+overwriting this slash and so that the
+username and the password
+displays in different lines in the file
+that is being created
+of one
+password one here we are basically
+overwriting now
+will display the message after this that
+password
+changed successfully
+all right
+now in else block that is if password
+one is not equal to password 2 in that
+case what we will be doing is of1
+CP 0 after cp0
+will again use slash n
+all right of one
+old that is the old password
+so it doesn't get override here
+so now we'll display
+password
+do not
+match
+now for the previous if
+we'll create else condition
+in this else we will print
+please enter valid password
+that is if the old password entered by
+the user is wrong please enter a valid
+password
+all right once this is done we can use a
+break here
+all right
+now the break statement is already there
+now
+as we can see there were four
+things like four options login change
+password and end program fourth one is
+and program now we'll have to create
+case number four
+and inside that case we can do one thing
+like we'll
+just print one thing and use the break
+statement we can write like thank you
+so that it'll look nice
+all right so the fourth case is also
+done
+now we can also create a default case
+in the default case we can write like
+enter a valid Choice like if the user by
+chance entered five six seven other than
+one two three four then this message
+will be displayed
+all right now we'll use a while loop
+not equals to 4
+so
+so this is the while loop of this dude
+do that we have created as you can see
+this do we have used the do by Loop so
+it keeps on repeating until a that is
+the choice is not equal to 4 Once the
+user entered four that is the end
+program
+then it will not show the options so
+that's why we have used
+a this while
+return
+0.
+all right our code is done let's try
+to run this program
+I believe some errors must be there
+let's see
+so
+it is showing some error over here
+so we have used
+level codes with endl which we can't use
+all right now let's save this one
+and now let's try to run this
+we forgot to close this one there must
+be some errors
+again so again we'll have to
+make it double equal to
+and one more energy is there I figured
+that out a not equal to 4. forgot to add
+equal to sign
+now I'm sure that
+I'm pretty sure that all the errors are
+resolved let's try to run this again
+all right as you can see
+one for register two for login three for
+change password four four and program
+all right so
+first of all we'll register let's say
+we want to register enter your choice
+one
+let's say AK
+one at the red Gmail
+so this is the username
+let's set the password AK
+123
+right age 24
+registration successful now we have to
+press 2 to login
+again the username we will have to enter
+we'll write AK
+1 at the rate Gmail
+now the password is
+ak123 As We Know
+so as you can see the details are here
+username is this password is this and
+age is 24.
+now let's say we want to change the
+password we'll click on 3 as it is
+measured to change the password you'll
+have to click on 3.
+so we have clicked on three
+so first we'll have to enter the old
+password which was ak12
+3.
+now the new password
+ak321 let's say
+for the confirmation we will have to
+enter the password again ak321
+as you can see password change
+successfully now just to check that
+if this password is really changed or
+not we'll log in again
+we'll press 2 to login and enter the
+username ak1
+at the rate Gmail and try to log in with
+the new password which is ak321
+as we can see the login is successful
+username is this password is ak3221
+three to one age is 24.
+now let's say
+if we try to login with the wrong
+password
+so let's say AK one at the rate Gmail
+this was our username
+now the password let's say
+ak456 let's try to login with the wrong
+password
+as you can see incorrect credentials
+press 2 to login press 3 to change the
+password
+so now it's your choice if you want to
+login again
+then you can do that if you want to
+change the password you have to click on
+three
+and as we know that
+we know the right password so will not
+do that
+password change thing
+all right now
+we'll click on four to
+end program as you can see thank you
+message is displayed
+now we can also try one more thing like
+let's try to run this again
+as you can see uh first of all let's
+register
+let's see
+Sam
+at the rate Gmail
+this is the username the password is
+sam123
+and age is 24.
+so as you can see the registration is
+successful
+now we'll try to login
+so while logging in we'll put the wrong
+password
+so let's see
+Sam
+at the rate
+Gmail
+Sam
+three to one
+so as you can see incorrect credentials
+again press 2 to login and press 3 to
+change password
+so you can click on two or three if you
+want to
+if you want to login or change password
+respectively
+I don't want to do that so I'll simply
+click on 4
+2 and the program so thank you message
+will be displayed
+so guys this was about this
+security system in C plus plus it is
+quite basic topic and all the concepts
+that are being used is intermediate
+level you can create this on your own
+you can add some functionality some more
+functionality to this security system
+also and doing projects like this will
+enhance your knowledge in C plus plus
+and will give you
+or show you the Practical aspect of C
+plus plus
+you can try this project on your own
+and with that we have come to the end of
+this video on security system in C plus
+plus so previously a question was asked
+about what C plus plus previous name was
+the correct option was C with glasses
+earlier C plus plus was also known as C
+with classes
+also are you aiming to get certified in
+full stack Java developer course and
+want to build a full stack Development
+Career in that case you can check the
+full stack Java developer course by
+simply learn with job guarantee which
+will open the doors for the best career
+opportunities
+to find the details of the course check
+the link in the description box below it
+could be the ideal solution to help you
+build your career in the right direction
+if you like this video then please give
+it a thumbs up I hope it really help you
+all thanks for watching stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

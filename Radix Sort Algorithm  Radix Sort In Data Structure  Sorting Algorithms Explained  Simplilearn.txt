@@ -1,0 +1,224 @@
+hey everyone i am kundaliwal and i
+welcome you all to simply learns youtube
+channel in this session we will discuss
+radix sort algorithm
+we shall begin our session by
+introducing radix sort then we will
+discuss radix sort algorithm after that
+we will implement radix sort algorithm
+in the coordinator finally we will sum
+up what we have learned from this
+session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel
+so without any further ado let's get
+started with an introduction to radix
+sort
+radix sort is a non-comparative sorting
+algorithm it avoids comparison by
+creating and distributing elements into
+buckets according to their radix
+and for elements with more than one
+significant digit this bucketing process
+is repeated for each digit while
+preserving
+the ordering of the prior step until all
+digits have been considered
+now let's discuss radix sort algorithm
+let's say we have an array
+first we will find the largest element
+in the array to decide maximum number of
+significant digits we will need to
+compare to sort this array
+we will go through each significant
+place and sort the array one by one
+first we will solve the array according
+to the units place
+then we will sort according to the tens
+place
+and then we will sort according to
+hundreds place and so on till the array
+is sorted
+we have now introduced the radix sort
+and its algorithm
+now let's implement this algorithm in
+the code editor
+we will start with the utility function
+to get maximum value in this array
+so int
+get max
+with an argument as array arrow
+size
+n
+we will declare variable int mx is
+equals to arr at 0
+and we will write a for loop
+where
+i is equals to 1
+to i less than n
+at i plus plus
+if
+arr at
+is greater than mx
+then
+mx will be equals to ar
+at i
+then we will return
+the value of mx
+now we will write a function to do
+counting sort of array arr according to
+the digits represented by exponent
+so void
+count sort
+xp we will declare an integer array
+output
+and
+i comma
+account array
+of size 10.
+where all elements are zero
+now we will store the count of all the
+elements of the array arr
+so for loop
+i is equals to zero
+i less than n
+to i plus plus
+divided by
+exp
+modulus of
+10
+plus plus
+we will change count i so that
+count i now contain actual position of
+this digit in output
+so for
+i is equals to 1.
+i less than 10
+i plus plus
+count
+i
+plus equals to
+count
+i minus 1.
+now we will build the output array
+so for loop
+at i is equals to n minus 1
+to i greater than equals to zero
+and i minus minus
+output
+count
+arr
+at i
+divided by exp
+modulus
+10
+minus 1
+is equals to
+arr at i
+and now
+count
+arr
+i divided by exp
+modular
+10
+minus minus
+now we will copy the output array of arr
+so that arr now contains sorted numbers
+according to the current digit
+so for
+i is equals to zero
+i less than n
+i plus plus
+arr
+at i
+is equals to
+output
+now let's write the main function that
+will sort the arr using radix sort
+so void
+red x
+sort
+and
+now we will do the counting sort for
+every digit note that instead of passing
+digit number exp is passed exp is
+basically 10 raised to the power i
+where i is current digit number
+so
+for
+exp
+is equals to one
+and m divided by
+exp
+is greater than zero
+while
+exp
+is multiplied equals to
+10
+we will do count sort
+on arr
+of size n
+with exp
+now let's write a function to print this
+array so void
+and array
+and arrow
+and
+n
+for
+and i is equals to 0
+i less than n
+i plus plus
+layout
+array
+now let's write the main function
+we will declare and arr
+bracket
+with values
+170 comma 45 comma 75
+comma
+90
+comma
+802 comma 24
+comma 2
+comma
+66
+now we will find out the size of this
+array arr
+and
+is equals to size of
+arr divided by
+size of
+arr first element
+now we will call the radix sort function
+and we will print this array
+now let's try and execute this
+as you can see we have successfully
+sorted this array using radix sort
+let's get back to our slides
+at last let's sum up what we have
+learned from this session
+first up radix sort can be used on
+lexographically sortable data
+next up radix sort utilizes the count
+sort algorithm
+next radix sort is done by sorting
+elements using significant digits
+finally radix sort consumes more memory
+space than quick sort
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you like this session then like share
+and subscribe if you have any questions
+then you can drop them in the comment
+section below thanks for watching and
+stay tuned for more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

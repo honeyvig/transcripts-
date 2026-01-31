@@ -1,0 +1,274 @@
+foreign
+subject in JavaScript after merge
+anticipation the react team has finally
+released react version 18.0 which
+includes the highly anticipated
+concurrent rendering features hello
+everyone and welcome back to another
+video by simply learned this is anubhub
+and in this video we are going to talk
+about react 18 and its new features but
+before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and
+press the Bell icon so you will never
+miss any update from Simply learn so
+without further Ado let's begin first
+let me tell you what react.js is so what
+is react.js react is a JavaScript
+library used to build fast and
+interactive mobile and web applications
+it is an open source reusable component
+based front-end library of JavaScript
+react is a combination of HTML and
+JavaScript it provides a re-burst and
+opiniated way to build modern
+applications so let's move ahead and I'm
+going to ask you one question okay
+so let's see
+how many ways are there to Define
+variables in es6 which is ecmascript
+so
+pause this video right now and answer
+this question in the comment section
+below so the answer of this question is
+three
+so the three variables defined in
+ecmascript 6 is where lit and constant
+moving ahead
+now we'll see the new feature that are
+introduced in react 18.
+the first one is concurrent features
+then we have transitions
+and after that the mean is suspense on
+the server
+moving ahead now we'll see the
+improvements that are done in react 18.
+automatic batching
+better rendering and then performance
+so some things have changed like before
+we used to write react Dom dot render
+wait let me explain it for you
+after we installed react 18 go to the
+index.js file there change the react Dom
+dot render now we'll write react Dom dot
+create root to create a root and then
+render our app using root let's discuss
+about reactating
+so react was released in March 2022 and
+you can install it with the help of npm
+and yarn
+let's move ahead and see what's new in
+react 18.
+so there are features like automatic
+batching transitions suspense on the
+server and concurrent react
+now we'll start with the automatic
+batching
+so in automatic batching All State
+modifications made using event handlers
+are grouped together using react
+buildings batching functionalities so it
+prevents the files from going through a
+pointless rendering procedure react 18
+also features a modified version of
+batching called react 18 automatic
+batching that group All State
+modifications made by create route
+together so automatic batching is
+nothing but to do all the micro tasks
+together at the end of the task to save
+time let me show you an example of
+automatic batching
+earlier the program used to render in
+each step but now with automatic
+rendering this will only render at the
+end of the task
+so as you can see in this program
+this set is fetching false set error
+null set form status successful okay so
+earlier first render will be performed
+in this part set is fetching the second
+render is performing when it is calling
+set error and the third render is
+performing when it is calling set form
+status okay but now it will just read
+satisfetching set error and in the last
+it will render at only one time okay so
+this was automatic batching
+let's move ahead on transition
+so a transition is a New Concept in
+Riyadh to description between
+urgent and non-urgent updates in Urgent
+updates it will reflect direct
+interactions like typing clicking
+pressing Etc the transition updates the
+transition of the UI from one view to
+another so let me give you an example if
+you are doing a task and another urgent
+task comes in that has a higher priority
+so react will stop that task and work on
+the higher priority task
+and then start the task again
+so the transition is done like this okay
+if you are doing one task and some other
+urgent task comes up it will stop the
+earlier task and start on the higher
+priority task
+now let's move ahead with this suspense
+on the server
+before react 18 was introduced if one
+component of an app is slow it slows
+down the entire app yes but with react
+18 if one component is low it will not
+slow down the entire app now suspense
+allow you to instruct react to send HTML
+for other components such as loading
+spinner before sending HTML from the
+placeholder So This Server renderer will
+then insert its HTML into the same
+stream once the slow component is
+prepared and has fetched its data react
+suspense is a feature that enables
+developer to monitor the rendering
+element while the process is still in
+process
+it then displays its fallback
+functionality
+this functionality can be used in
+conjunction with the transition API with
+the most recent react version it even
+pauses the rendering schedule to lessen
+the effect of loading by preventing the
+content from being changed
+okay the render sequence is quite
+helpful since it provides a calm loading
+State while the user is still dealing
+with a network conflict
+okay this is a very good functionality
+that has introduced with us since react
+18 comes with a sequence it allows us to
+designate fallbacks for UI element that
+are yet to be seen on the screen
+therefore using the sequence tag we
+could wrap a single slow component And
+Delay the component loading also you can
+configure a fallback to show a loading
+animation so this is how we used to
+write the code
+but now with the help of sequence we are
+using the code like this
+okay let's move ahead and talk about
+concurrency in react
+now react can interrupt pause restart or
+quit a render in react 18 with
+concurrent rendering this enables react
+to react rapidly to user inputs while
+engaging in the time consuming rendering
+operations we will also talk about the
+examples of concurrent rendering later
+but let me first tell you react 18
+introduced the foundation of concurrent
+rendering and new features such as
+sequence stream servering streaming
+server rendering and transition are
+powered by concurrent rendering as a
+react developer you concentrate on how
+you want the user experience to be
+delivered and react take care of the
+technical details now let me give you an
+example
+concurrent react can remove UI elements
+from the screen and add them later while
+restoring the previous state
+react should be able to restore the
+previous screen in the same state it was
+before for instance when a user tabs
+away from one screen and comes back to
+it we intend to provide a new component
+name off screen in a future Miner that
+follows this pattern off screen can also
+be used to create new user interface
+element in the background so that they
+are ready before the user reveals them
+now we'll talk about a new hooks so the
+new hooks are introduced in react 18 let
+me talk about them
+so the first is use ID
+use transition use deferred value
+using external store
+and use insertion effect
+you can use all these hooks now we'll
+talk about the strict mode
+now this trick mode is more stricter
+okay when using react 18 strict mode
+components will be mounted unmounted and
+then remounted with a previous state by
+remounting trees using the same
+component State before unmounting react
+will be able to instantly mount a
+previous screen in the future
+thanks to the reusable State now we'll
+see the changes done on the client
+server and library site
+okay let's start
+change is done on react 18.
+one is client side
+server side
+and the library side now we'll talk
+about the client side changes in client
+side render is now being created as
+create root as you can see in this image
+we are first using
+if you'll open the index.js file in your
+react you'll see this file okay in here
+you will see if you were using react Dom
+dot render but now it's like root dot
+render
+okay like create root here importing the
+create route now the const root equals
+to create root now we can use the root
+because we also gave the constant root
+equals to create root
+now moving ahead on the second one which
+is unmounted component at node is now
+become root dot unmount okay so before
+we were using this function but now it's
+like root dot unmount then we'll call in
+the element
+now now we'll talk about
+react.dom.hydrate which is now converted
+into hydrate dot root
+call hydrate in react 17 and Below to
+attach react to its extinct HTML that
+was already rendered by react in a
+server environment
+using this react 18 will warn that your
+app will behave as it fits running on
+react 17.
+now we'll talk about the server-side
+changes
+on server side render to pipe stream is
+now on the Node environment and render
+to readable stream is on the edge
+environment and render to string is now
+deprecated
+now we'll talk about library site
+changes
+there are new features like use ID using
+external store use insertion effect so
+finally I would like to tell you guys
+that the react focuses on improving the
+user interface and is constantly working
+on it so with this we have read the end
+of this video on reactating new features
+and updates
+for more videos like this please
+subscribe to Simply learn thanks for
+watching until next time stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

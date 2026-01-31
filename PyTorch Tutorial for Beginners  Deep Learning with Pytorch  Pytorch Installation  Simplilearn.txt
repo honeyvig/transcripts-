@@ -1,0 +1,345 @@
+foreign
+T is an image classification and neural
+network processing machine learning
+framework by Dodge is an open source
+python-based machine learning
+implementation based on the torch
+Library it is the most widely used AI
+Library among the industry and academic
+researchers around the world hey
+everyone you're already watching simply
+learn and in today's video we're gonna
+be learning all about Pi torch and how
+to build a neural network using pytots
+if you love watching videos like this do
+hit the Subscribe button to never miss
+any updates from Simply learn so now
+without any further delay let's get
+started with the pytots installation so
+to install python first make sure the
+python is installed in your system so to
+install python for programming visit the
+python.org website so that is
+just end up python
+so visit this first link
+www.python.org so here
+just click on this downloads and click
+here on python
+3.11.1 version okay so since python is
+already installed in my system I'm not
+going to install so here you just need
+to click this and will be installed here
+so it will be downloaded so once it is
+downloaded you can run and install the
+python in your system so once installing
+python check if it is successfully
+installed using the following command
+so
+open the comment prompt
+and here enter python
+version
+so as you can see python is installed so
+python 3.11.1 is installed successfully
+so if you get the python version then we
+are good to go and our next step is to
+install Anaconda so to install Anaconda
+visit the link
+Anaconda
+so here as you can see www.anaconda.com
+so once you scroll down here you can see
+this green download button so you can
+just click on this download
+and wait for it to get downloaded it
+will take some time to download
+so suppose if you are running through
+pep then you can also check whether
+paper is installed in your system so to
+check if pip is installed using a
+following command VIP
+you can save version
+so here you will get the proportion so
+but here today we are going to install
+the Anaconda
+say it is downloaded
+so once the Anaconda is downloaded open
+the file and click on next and next
+click on I agree
+select me recommend it and click on next
+so it's already selected just click on
+next and here in the fourth step choose
+the install location so here it's asking
+choose the install location so this is
+the default location if you want to
+change the location then you can change
+it
+so you can just click on next
+and here uh in The Next Step it's asking
+Advanced installation options so here
+you can just click on this first add
+Anaconda 3 to my path environment
+variable and click on install finally so
+once you click on install it will get
+installed so Anaconda will be installed
+so since it's already installed in my
+system I'm not going to click here but
+once you click on this they are gonna
+will be installed successfully so to
+check whether the Anaconda has been
+installed successfully check Anaconda
+version in the Anaconda prompt
+so just open the Anaconda from
+and enter conda version
+so as you can see here we got the
+version of Honda
+so you can also check in the comment
+prompt
+second version
+and here we got the version of condo so
+that means Anaconda is successfully
+installed
+so now to install pie torch visit Pi
+torch
+and here click on the first link
+and here we are with the pie torch.org
+so scroll down
+and here you can see this so considering
+your system specification will run any
+one of the following comment so that is
+here you need to select pytorch build
+that is stable and then your operating
+system would be Windows if it is Linux
+or Max then you can select either of
+them
+so I'll assist windows so I'll click on
+window and package would be uh as per
+your requirement if it is PIP then you
+can go with this else condom since we
+have installed Anaconda so we will click
+on condom and language would be python
+because we have
+um we are running using Python language
+and coming to the compute platform
+here if your system is having GPU then
+go with conda let's go with CPU since
+this system is not having GPU so we will
+go with the CPU so run this comment so
+here we got one comment so according to
+our compute platform if it is Coda then
+we'll get this command if it is CPU then
+we'll get this command so just copy this
+command
+once copying this command
+paste it in your comment prompt
+okay Enter
+so as you can see collecting package
+meta data
+so as you can see here the package plan
+we got all the things and following new
+packages will be installed so click
+proceed yes or no will give us
+so you are downloading and extracting
+packages
+preparing verifying executing
+now here
+to check whether the pytos has been
+installed successfully run the following
+command
+so let's run in the comment Anaconda
+prompt
+so just enter column
+this F
+yphen F by torch
+so as you can see the name pytouch
+version also we got and build channel so
+once you get all this if you get the
+python version after running the command
+that means python just successfully
+running
+so if you want you can also check in the
+comment down just enter Honda list
+hyphen f
+and Pi torch
+just click give enter and it should
+display the pytorch version name and its
+version
+so as you can see we got the name
+version and build channel so now we know
+pytots is installed so now let's start
+to build a neural network so this is a
+pytorch deep learning tutorial for
+fashion MNS data set so to predict data
+set classes we will build a CNN so now
+without further delay let's get started
+to build a neural network using pi torch
+so in our first step here we have first
+let's import important libraries so
+these are the libraries that we are
+importing
+so import numpy as NP find as SPD and
+Mac plot lip as PLT and next we are
+importing torch torch.nn as NN and
+thoughts.autograde import variable and
+coming to torch Vision torch
+vision.transforms as transforms
+torch.utils.data so this is to load data
+in batches we we use the data loader
+class from tors.utils dot data and from
+sklearn dot matrices import confusion
+Matrix so next check if the GPU so here
+next check if the GPU is available use
+it for the computation otherwise use the
+CPU so here we are asking conda is
+available else CPU next using the method
+read CSV so using this method let's load
+the disk using pandas okay and device
+the data set into the test and train
+data now in your own class let's say
+fashion data inherit the data set class
+and coming to this
+we have user defined class for creating
+data set with pi torch dataset class and
+next method to initialize variables and
+First Column is of labels and dimensions
+of image is equal to 28 cross 28 cross 1
+where height is equal to 28 and the
+color channel will be equal to 1 so this
+will be the color channel that is 1 and
+we have 28 cross 28 and using two
+methods get item and length
+so this is the item method this is the
+length method so to get item and length
+we are using two methods so get item
+will return the image and labels and the
+length will return the number of items
+in a data set and this one or transform
+data into tensor that has a range from 0
+to 1 so next the fashion Mist fashion m
+s class from the torch visual module is
+being used and the data set will be
+loaded for the first time so here the
+data will be loaded and coming back here
+the fashion MNS data set contain 10
+different types of clothing that is we
+have t-shirt or top brushes pullover
+dress coat sandals skirt sneakers back
+and ankle boot so these are the clothing
+the types of clothing and creating a
+method that Returns the class name for
+the label number so here we have the
+label item so here creating a method
+that Returns the the class name for the
+label number so for example if the label
+is 5 then we return the sandal right so
+next print the train loader size and its
+length so here we are printing the train
+loader and the length and then
+experimenting with data and displaying
+images with the matplot clip that is IM
+show method so using this method I am
+sure we are going to display the image
+so here we got the image so as I said it
+was like 28 cross 28 and the color was
+gray so here we got all the labels that
+is we have pullover ankle boot shirt
+t-shirt dress code coat sandal coat and
+bag so the labels are printed and then
+building a CNN here we are create a
+model class in our class fashion CNN
+that inherits the NN module class so
+which is a super class for all neural
+networks in pytorch and the following
+layer Compares our neural network
+so here we have the two sequential so
+these are the two sequential layers each
+with the following layers so we have
+conventional layer that is 3 cross 3 and
+padding is equal to 1 kernel sizes 3
+cross 3 and then a layer for batch
+normalization this and a DOT full batch
+normalization and then we have NL r e l
+u is used to activation function and Max
+pooling layer here we have of size uh 2
+cross 2 and then comes the flatten the
+output of the dense layer and here we
+have
+um this flatten the output of the dense
+layer also known as the fully connected
+layers so three fully connected layers
+with a different in out features and one
+Robert layer here we have one dropped
+layer with a class probability of p is
+equal to zero point
+two five and then all functionality is
+provided with the forward method so this
+is the forward method which defines CLS
+forward pass so let's implement the
+network so here model
+making a model of our CNN class so
+creating an object in the code a model
+and transforming it to the GPU if one is
+available and then creating a loss
+function in this case cross here we have
+the cross and drop by loss as used and
+then we are using the atom algorithm
+so this atom algorithm is used for
+optimization and here we got the output
+and here this step training and testing
+a neural network on a test data set so
+list for here we have the list
+loss list
+iteration list and accuracy list so list
+for a visualization of laws and accuracy
+and then list for knowing class wise
+accuracy this is the class to knowing
+the classes accuracy and then here we
+are going to transferring image and
+labels to GPU if available and forward
+pass and then initializing the grade
+here here we are going to initializing a
+gradient as 0 so there is no mixing of
+gradient among the batches and then the
+propagation the error backward and
+optimizing the parameters and then
+testing the module so here we are going
+to test the module and here we got the
+accuracy for the labels
+so each label accuracy is checked so
+here we have given 0 to 5 so we got 6
+accuracy and you can see uh the loss
+it's been decreased and final accuracy
+that we got is 34 percent and then so
+here we are going to examine the
+accuracy in each fashion mnis data set
+class so each label accuracy is checked
+here we have the iteration versus loss
+accuracy and iteration versus accuracy
+so after finding accuracy we are
+printing the confusion Matrix
+so accuracy of t-shirt or top is 86.98
+and accuracy of torsion since 99
+occursive pullover is 91 dress is 92
+code 90 sandal 99 shirt 94.40 sneakers
+96.97 bag is 99.68 ankle boot is 98.53
+so here we got all the accuracy of uh
+clothes
+and finally printing the confusion
+Matrix so this is our confusion Matrix
+so this is my deep learning
+implementation in the fashion Eminence
+data set using pytos and I got 94 on the
+test so to improve it modify the layer
+architecture or parameters and with that
+we come to the end of this video on pie
+torch tutorial so if you like this video
+share it with your friends before I sign
+off make sure you subscribe to our
+Channel and hit the Bell icon to get all
+the updates we'll be back with more such
+interesting videos until then keep
+learning and stay tuned to Simply learn
+thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

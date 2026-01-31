@@ -1,0 +1,424 @@
+hey everyone and Welcome to our YouTube
+channel today we are diving into the
+fascinating world of react components if
+you're new to react or just looking to
+deepen your understanding you're in the
+right place in this video we will
+explore the fundamental concept of what
+component is in react we'll break down
+its role and significance within the
+react ecosystem and we will walk you
+through the process of writing a
+component step by step but don't don't
+worry if you're completely new to react
+we will start from the basics we will
+guide you through writing your first
+react component and help you understand
+it through Hands-On examples by the end
+of this video you will have a clear
+grasp of how components work and how
+they contribute to building Dynamic and
+interactive user interfaces but before
+that if you are beginner or looking to
+refresh your knowledge grab your coding
+setup and let's Dive Right In just a
+quick info for you if you're
+professional who wants to switch careers
+with software engineer by learning from
+the experts then try giving a shot to
+Simply learns postgraduate program in
+fullstack web development accelerate
+your career as a software developer
+through this postgraduate program in
+fullstack web development course in
+collaboration with keltech ctme in just
+a few months you will learn modern
+coding techniques with boot camp level
+intensity and gain all you need to be
+fullstack technologist the link in the
+description box should navigate to the
+homepage where you can find a complete
+overview of the program being offered
+all right now let's start with the first
+topic which is what is a component so
+let's imagine you're making a digital
+puzzle each puzzle piece has a specific
+rule but it's when you put them all
+together you see the whole picture in
+the world of react these puzzle pieces
+are called components now imagine a
+button a form or a header on a web page
+each of these is a component these
+components are like reusable templates
+kind of having a set of puzzle pieces
+that you can use to create different
+pictures you can take these components
+and place them throughout the website to
+construct the complete user experience
+so in simple terms react components are
+the individual parts then when combined
+make up the entire website they make it
+easier to create and manage different
+pieces of a web page just like putting
+together a puzzle to reveal the big
+picture of your website it all right now
+what role does it play in react like
+what role does it component play in
+react so as your projects gets bigger
+you can reuse the components you have
+already made to create new designs it's
+like using familiar pieces to build
+things making development faster
+components help organize your code and
+make it easy to manage as your project
+grows just like using the same set of
+Lego blocks to build various structures
+this simplify the process of creating an
+maintaining different parts of your
+website making it more efficient and
+saving your time so this was about the
+role that component play in react now
+let's understand how to write a
+component and for that we'll have to
+move to vs code so we'll do a practical
+demo all right so this is our vs studio
+so here we will be writing a simple code
+so that code will have a heading and
+unordered list so we'll start first of
+all we'll write return
+all right inside return we'll write the
+code H
+one and we'll write best
+places to
+visit okay now below
+this unordered list and write
+list
+first of all we'll
+write USA then we'll simply copy this
+instead of writing again and again we'll
+just copy paste
+it all right so
+USA Canada let's
+say
+Singapore
+Australia
+South Africa these are the just random
+countries M writing and let's say
+Mexico all
+right so this is the unordered list and
+this is the heading all right so now we
+don't want to write the complete code
+over here so instead of this as we can
+see heading is very less code and this
+unorder list is very less code but in
+actual problems this these type of codes
+are very number of lines in terms of
+number of lines these are very large so
+in order to make it small we'll create
+components so instead of writing the
+complete code in app.js we'll create a
+component to make you understand now we
+are going to make things simpler by
+creating a special part of the code
+called a react component instead of
+writing all the code in one place app.js
+we'll break it into simpler pieces so
+instead of typing everything over here
+that is in app.js we'll just use the
+component name to include its code it's
+like organizing our code in more
+straightforward way so we'll simply use
+its name but for that we'll have to
+create a component so let's go to
+source and we'll go to new file so first
+we'll want to create a component for
+heading so heading is best places to
+visit so we don't want to write it over
+here we just want to uh write the name
+of the component over here so that it
+looks concised all right so we'll write
+heading make sure the name of the
+component start with a capital letter
+that is as we can see heading H is
+capital then GSX heading. jsx so this is
+the component now here we will include
+first of all we'll write input react
+from
+react
+UT all right
+WR
+input react from
+react all right now the function here's
+the function inside the
+function all right so inside the
+function there is a return statement and
+what return statement is
+saying that we are simply going to
+include this instead of writing it again
+we just copy paste it just took it from
+here and we'll just include it over here
+so this this is the heading best places
+to visit now in order to export I mean
+in order to use it over here we need to
+export it and the app.js needs to import
+it so we use basically we use Import and
+Export in components to share the ReUse
+code easily so this is the ReUse code
+when we export a component it's like
+packaging it for use elsewhere then when
+we import that is we will import over
+here when we import that component in
+another file that is app.js we are
+basically saying Hey I want to use that
+code here it helps keep things organized
+and allows us to use the same component
+in different parts of our app without
+repeating the code so what we'll do is
+first of all we'll export it from here
+so for that we'll
+write export default and the name of the
+component first of all we haven't
+mentioned the name over
+here heading
+the name of the component is heading all
+right so we're going to save it and now
+we can write over
+here name of the component heading
+space forward slash so this is the
+syntax angular brackets name of the
+function or the name of the component
+space forward slash closing of angular
+bracket so this is how you can do it and
+now we will import it import
+heading
+from do
+slash heading now if you want to include
+jsx you can otherwise it is not
+mandatory all right now in order to use
+it firstly we're going
+to use
+div so as the multiple lines are there
+as we can see so we have to use either
+the fragmentation or a div all right so
+yeah we did it so we have included it
+and I believe it will work fine let's
+have a look at it as you can see best
+places to visit USA Canada Singapore
+Australia South Africa Mexico so it is
+working fine now we don't want this list
+also over here we want to use it as we
+did similar to this we we are going to
+do this for list also so we don't want
+it here we'll create a component for
+this and simply we'll include the
+component name and forward slash so this
+is the syntax basically so we'll name a
+component name list in which we'll put
+the code and then we'll include or
+import this code over here so let's do
+that like the previously we did
+similarly we'll go to Source new file
+and list. jsx let's name it list
+now import react from react
+Now function the name of the function is
+list the name of the function is list
+and
+now
+return all right so we'll go in app.js
+we just copy this one cut it and
+simply paste it so again here we can use
+div all right we'll save it now here
+also as you can see first of all is a
+typo yeah now as you can see here also
+we'll have to export it otherwise the
+code will not work it will not display
+so we'll write export
+default list all right so we have
+exported this so once once you have
+exported any file can take it so app.js
+will take it so we'll write
+import
+list
+from so dot slash
+list all right so now instead of writing
+the complete code we'll simply write
+we'll I repeat we'll simply
+write list space
+forward
+slash all right now let's try to run it
+let's see if it is working or not so as
+you can see it is working fine best
+places to visit and all the places are
+are there and let's see if we go back
+just copy paste this
+list so we we have pasted it multiple
+times so now if will go over here and
+check so we don't have to write the code
+again and again we'll simply copy paste
+the component and that part of code will
+be copy pasted in different places as we
+want so this is the beauty of react this
+is how we can do it that's why react is
+preferred because of its
+reusability and so we have created two
+components heading and list so let's
+just go and create one more components
+let's say in which we will use a image
+so let's name it like picture or
+something like that so we'll go to SRC
+new file and we'll name it picture.
+jsx
+right
+all right so now here we will include an
+image so in this
+component first of all we'll write
+Dev so now inside div
+we will use a image tag self closing
+one now inside it first of all there
+will be SRC that is the
+source so we have this
+picture
+just paste it over
+here all right now we can name it
+also all right now
+now if you want to do CSS
+then this is how we can do it in react
+the
+GSX let's say the width
+is 200
+pixels and we have to enclose it in the
+double
+codes right
+height 200 pixels all right so I think
+this would be enough now let's save it
+and Export it
+also export
+default
+picture all
+right let's save it so now we'll have to
+import it over here write
+import picture
+from
+slash
+picture now we're going
+to Simply include the component so again
+the syntax of the component is the name
+of the
+component forward slash and the closing
+of angle brackets this is it so there is
+an error it is showing picture is not
+defined over here we can see typo is
+there now we'll save now let's have a
+look so this is it so best places to
+visit is a heading this is a list and
+this is a picture so none of them is
+here we are just included their
+components and if will copy
+this you can see multiple images will be
+there so this is the reusability feature
+you don't have to write the same code
+again and again in react also one more
+thing so in this picture image as we can
+see in this picture component the
+component list returns an IMG tag with
+SRC and ALT attributes IMG is written
+like HTML but it is actually JavaScript
+in every component it is like that it is
+looking like HTML but is it is actually
+JavaScript under the hood this syntax is
+called GSX and it lets you embed markup
+inside the JavaScript and also the
+return statements so return statements
+can be written all on one line also but
+if your markup isn't all on the same
+line as you can see if your markup is
+not on on all on the same line then you
+must wrap it in a pair of parenthesis as
+we have
+done all right so this was about this
+now I have one exercise for you in which
+you'll have to look at the code and tell
+us what is wrong with the code all right
+so let's go there so this is the code
+you'll have to look at this code and
+tell us what is wrong with this code you
+can pause this video and figure out what
+is wrong in this code based on the
+things we have taught
+you all right so as we can see now we're
+going to figure out what is wrong with
+this code first of all the thing is this
+is the component and this is the name of
+the component so this is the basically
+the definition of the component now as
+you can see we know that the starting
+letter that is the first letter should
+be Capital so instead of T small T we'll
+put capital T copy this in all of
+these and over here also if it is not
+Capital it will not work all right so we
+have done this so now let's try to run
+this as we can see it is not running it
+is showing a error so what is that error
+we'll have to figure out so as you can
+see they are saying 12 in line 12 it is
+showing now the thing is over here we
+haven't EXP orted it this is the second
+fault so we'll write
+export
+default
+gallery all right now let's try to run
+it so as you can see it is done and
+Local Host 3002
+right so as you can see key points of
+react elements first of all let's remove
+these two all right so now let's save it
+all right so key points for react
+components so these three key points
+you'll have to remember react component
+names always begin with a capital letter
+in react every piece of user interface
+is a component react components return
+jsx markup so as we have already told
+you about the markup so this is about it
+also as we did we can copy paste it
+again and again to make it
+more all right so in conclusion react
+components are like building blocks for
+web apps with react components you can
+keep your code tidy and make changes
+easily it's like having set of tools
+where each one does a specific task by
+organizing your code this way you can
+make your app more flexible and easier
+to understand so think of react
+component as the handy tools that make
+web development a breeze all right guys
+with that we have come to the end of
+this video If you like this video please
+give it a thumbs up I hope it really
+help you
+thanks for watching stay safe and keep
+learning staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified I
+click
+here

@@ -1,0 +1,385 @@
+hello and welcome everyone today we are
+going to discuss cues in data structures
+but before we begin make sure to
+subscribe to our youtube channel and hit
+the bell icon so you never miss an
+update from simply learn primarily let's
+have a look at our plan for this session
+today we will start this session with an
+introduction to the queue
+later we will discuss the structure of
+the queue in detail
+after that we will deal with different
+operations that can be performed on
+queues
+advancing further we will understand
+various types of queues and their
+structures
+and finally we will discuss different
+applications of queues to understand how
+queues are used to manipulate data on
+that note without further delay let's
+get started with introduction to queue
+you know that all of us depend on
+messaging applications like whatsapp
+facebook messenger instagram chats to
+communicate with our friends and family
+members and while using them you must
+have observed that the person you are
+trying to communicate with receives
+messages in the same order as you have
+sent them now the question that arises
+here is how is this happening how are
+these applications maintaining the order
+of these text messages
+and the solution to these questions
+bring us to queue
+basically in these applications a queue
+is maintained for each user containing
+the messages to be delivered to the user
+when the user connects to the network
+all the text messages in the queue gets
+delivered and once the messages are
+delivered empty queues get deleted
+this example clearly illustrates the
+importance of data structures so let's
+dive further and understand the
+structure of the queue in depth
+but before doing that let's look at a
+real-life example of cues to understand
+it more clearly
+the most common and relevant example of
+a queue is a movie ticket counter
+in the movie ticket counter you must
+have observed that both of its ends
+remain open also these ends are fixed
+with the help of barricades and that is
+why no one can enter in between these
+ticket lines
+additionally the person who enters first
+receives a ticket first and the person
+who enters last will obviously get
+served at last
+cues and data structure resembles all
+these properties of a movie ticket
+counter which makes them better at
+creating virtual first come first serve
+systems
+basically they are defined as a linear
+collection of different data types that
+allow insertion at one end and deletion
+at another
+unlike any other data structure the
+queue ends remain open allowing it to
+have different functionalities at both
+ends the end at which insertion takes
+place is called rare
+and the end at which deletion takes
+place is known as front
+furthermore there are two approaches to
+consider the structure of the queue and
+both of them depend on the approach of
+the programmer
+that means being a programmer if you
+consider the left hand as front then
+your rear node will be at right end
+otherwise if you consider the left hand
+as rare then the right end will be your
+queue's front node
+unlike arrays and linked lists elements
+in the queue cannot be operated from
+their respective locations here they can
+only be operated from the front or rare
+position
+moving on let's discuss the operations
+in queue data structures one by one
+the first operation is enqueue it is
+used to store the elements in the queue
+next up is dq this operation is used for
+removing them
+further we have is full and is null
+operations is full function scrutinizes
+if the queue is full or not and the is
+null operation evaluates if the queue is
+empty
+we also have a peak operation that helps
+you get the element from the front of
+the queue without removing it
+let's now understand how these
+operations work with the help of the
+following examples
+here we will look at nq5 and q1 and q
+minus 2 then is full
+then dq
+peak
+and is null
+but before explaining these operations
+it's essential that we initialize the
+queue data structure by assigning some
+random size to it
+for example int queue of three by this
+declaration we are assigning only three
+spaces for insertion and q
+also at this phase there is no element
+in the queue as it's empty so both the
+front node and rear node will point to
+the same location with null memory space
+in the storage system let's consider
+that null index to be -1 for ease of our
+convention
+now the first operation on our list is
+nq of 5.
+as we discussed previously enqueue
+operation is nothing but the insertion
+of data into a queue data structure
+it begins with checking if the queue is
+full or not
+if the queue is full then the previously
+assigned memory is completely filled
+with data elements
+so insertion would not be possible this
+is also known as overflow error in terms
+of programming
+but as our queue is empty so the
+insertion can be performed here for that
+we have to increment the rare pointer to
+index 0 from index minus -1
+and once we do that the data element phi
+will be added to the queue also for
+front insertion both front and rear will
+point to the same location as there is
+only one element present in this queue
+let's insert two more elements into this
+queue with the operations enqueue 1 and
+then q minus 2.
+for that we have to increment the rare
+pointer to the next index which will be
+1.
+now as the point is incremented so the
+data will be entered into this position
+next up is nq minus 2. again we have to
+follow the same process of incrementing
+the rare pointer we will increment the
+rare pointer to point towards the next
+index that is index 2 and hence the data
+element with value -2 will be entered
+here
+the next operation on our list is is
+full
+in this operation if the rare pointer
+points to the max size then the queue is
+considered to be full as there is no
+space left for insertion in our case the
+max size of rq is 12 bytes
+additionally we are considering to enter
+only three integer elements
+and one integer data element takes four
+bytes of the memory space that means
+three integer elements will take 12
+bytes hence this function will prompt q
+is full on the screen
+now we will discuss the dq operation if
+we want to access data from a queue we
+have to perform two sub tasks the first
+one is access the data where the front
+is pointing and another is to remove the
+data after access and this complete
+process is called as dq operation
+the first step of this operation is to
+check if the queue is empty
+if the queue is empty then there is no
+element available for deletion this is a
+case of underflow error
+but as our queue is not empty we can
+proceed with the next steps we will be
+accessing data from the front node and
+later we will be incrementing the front
+pointer in order to remove the link to
+the previous node so that the data gets
+removed now front will point to the
+index 1.
+thus the data value 5 will be removed
+from the queue and will also be prompted
+on the screen
+therefore this function comes with an
+integer return type
+next up is peak operation
+in this operation element at the front
+node will be accessed without deleting
+it
+the algorithm for this operation begins
+with checking if the queue is empty or
+not
+if the queue is not empty then data at
+the front node will be accessed with
+temporary variable and printed on the
+screen
+advancing further let's perform two more
+dequeue operations here first is dq of
+one and another one is dq of minus two
+the data at a front node will be
+accessed primarily and the front pointer
+will be incremented to point to the next
+data element
+when we do the point incrementation the
+link to the previous node gets remote
+which results in data deletion
+similarly we will perform a dq of 2
+operation here now the front will be
+pointed to null memory space as there is
+no element left in rq and the data -2
+will be removed
+the last operation on our list is is
+empty
+this function checks if the queue is
+empty or not in the previous procedure
+we mentioned that if the front points to
+the null memory space then the queue is
+empty and in our case the front is
+already pointing to -1
+so the output of this function will be q
+is empty
+this is all about operations in the
+queue i hope that you all are clear with
+these operations
+next we will discuss different types of
+queues and their structures at a glance
+basically there are four types of queues
+linear queue
+circular queue priority queue and double
+ended queue
+the structure which we have discussed
+till this time is that of a linear queue
+so now we will move on to circular queue
+the circular queue is almost similar to
+the linear queue except that the last
+node of this queue is connected to the
+first
+it is also known as ring buffer as all
+the ends are connected to another end
+additionally this circular queue is a
+better version of the linear queue as it
+removes the drawback of insertion in the
+linear queue
+the empty space available in a circular
+queue can be filled with the new element
+by simply incrementing the value of the
+rare position we will learn about this
+in detail in our further sessions
+a priority queue is another special type
+of queue data structure in which each
+element has some priority assigned with
+it
+based on the priority of each element
+the elements are arranged in a priority
+queue if the elements occur with the
+same priority then they are served
+according to the first in first out
+principle
+in the priority queue the insertion
+occurs based on the arrival while the
+deletion occurs based on the priority
+the above figure shows that the highest
+priority element comes first and the
+elements of the same priority are
+arranged based on the first in first out
+structure
+the last type of queue is dq
+dq is a linear data structure in which
+the insertion and deletion operations
+are performed from both the ends we can
+say that dq is a generalized version of
+the queue
+dq can be used as stack as well as q as
+it allows the insertion and deletion
+operations on both the ends
+if the insertion takes place at one end
+and deletion at another then that eq is
+known as a linear queue
+and if both addition and deletion are
+performed at a single end then that dq
+is called stack
+advancing further let's discuss some
+applications of queues to gauge an
+insight into the importance of queues
+the queue data structure is used in
+computers printers and applications to
+utilize the benefits of the first come
+first serve technique
+in computers whenever you work on
+documents or ppt you must have observed
+that whichever key you press on the
+keyboard appears in the exact same order
+on the screen
+but when your processor is too busy with
+other tasks you might notice that the
+keys you press appear on the screen with
+some delay after you press them
+basically those keys are stored in queue
+and when the processor becomes free it
+processes in the order the keys are
+pressed
+that means the key pressed first will be
+written in a word document first
+so this is how computers use a queue to
+eliminate deadlocks when multiple
+processes are in a ready state
+next up is printers
+a queue data structure is used in
+printers to maintain the order of pages
+while printing that means the pages are
+stored in a queue in the order that you
+want to print them and once the page is
+removed from an ordered queue it gets
+printed
+another most common application of queue
+data structure is their usage in web or
+mobile apps
+applications like domino swiggy uses a
+cue for maintaining food order status if
+you place an order from an online portal
+your order id enters the queue and once
+the previous orders before your order id
+gets scattered then your order will be
+catered as well
+from these examples we can clearly say
+that queues are used whenever there is a
+need for an fcfs strategy in software
+development so whenever you work on
+projects that need a first come first
+serve approach then remember that you
+have to implement a queue data structure
+to complete it successfully
+finally let's have a look at some key
+takeaways that we discussed in this
+session
+we started this session by examining the
+structure of the queue
+we learned that the queue is a linear
+data structure
+after that we talked about different
+operations of queues in which we learned
+nq and dq are responsible for data
+manipulation in a queue
+later we discussed different types of
+queues as well
+finally we discovered some applications
+of queues and how they fulfill the need
+of fcfs systems
+we have also made it clear that queues
+can handle multiple data types as well
+so with this we come to the end of this
+video i hope this video was informative
+and exciting if you have any queries
+regarding the topics covered in this
+video let us know in the comment section
+below our team of experts will be happy
+to resolve your queries
+thank you so much for watching this
+video and stay tuned to simply learn for
+more such interesting videos
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

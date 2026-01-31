@@ -1,0 +1,209 @@
+hey everyone i am weber khandelwal and i
+welcome you all to simply launch youtube
+channel
+in this session we will discuss
+quicksort we shall begin our session by
+introducing quick sort
+then we will discuss quick sort
+algorithm
+after that we will implement quicksort
+in the coordinator
+finally we will sum up what we have
+learnt from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simplylands
+youtube channel
+so without any further ado let's get
+started with an introduction to
+quicksort a quick sort is a highly
+efficient sorting algorithm and it is
+based on partitioning an array into
+smaller sub arrays and then we will sort
+these two resulting sub arrays in the
+same manner
+this algorithm is quite efficient for
+large size data sets as its average and
+worst case complexities are big o of n
+square
+now let's discuss algorithm of quick
+sort
+let's say we have an array first we have
+to select a pivot
+we can select either the first element
+or the last or medium or any random
+element as pivots
+this pivot will dissect the array into
+two sub-arrays then we will shift all
+smaller elements than the pivot element
+to the left
+then we will again apply the same
+operation for the left sub-array
+and take pivot like we did for the main
+array we will perform the same for the
+right sub-array as well
+we have now introduced the quick sort
+and its algorithm now let's implement
+this algorithm in the code editor
+we will start by creating a function
+swap
+so void swap
+end
+star
+x
+comma
+is equals to
+star x
+star x is equals to star y
+r y is equals to temp
+now we will write a function which will
+partition this array this function will
+take the last element as pivot
+and the pivot element at its correct
+position in sorted array and places all
+smaller elements
+to the left of the pivot and all greater
+elements to the right of the pivot
+so int
+partition
+and
+arr
+comma
+and
+low
+so end
+pivot
+equals to
+ar high
+now end
+i
+is equals to
+low minus 1
+so for
+end
+j is equals to low
+j less than equals to high minus 1
+a plus plus
+now if current element is smaller than
+the pivot
+so if
+at j
+is less than pivot
+then we will increment the i
+then we will swap
+ampersand array
+i
+comma
+ampersand array
+at j
+and we will swap
+ampersand
+array
+at i plus 1
+comma
+10
+array
+at high
+and then we will return
+i plus 1.
+now we will write the main function that
+implements quicksort
+so void
+quick sort
+and
+arr
+bracket
+comma and
+low
+comma and high
+so if
+low
+is less than high
+and
+pi
+is equals to partition
+arr comma
+low
+comma
+hi
+now we will separately sort elements
+before partition and after partition so
+quick sort
+arr comma
+low
+comma
+p i minus 1
+and
+quick sort
+arr
+comma
+p i plus 1
+comma i
+now we will write a function to print
+this array
+so void
+and
+array
+and
+arr
+comma
+end size
+and
+high
+so for loop
+i is equals to zero
+i less than size
+a plus plus
+see out
+array at it
+layout
+handle
+now we will write the main block so end
+array
+and comma 7
+comma 8.
+i will find the size so end n
+is equals to
+size of
+array
+is divided by
+size of
+array
+element at zero
+now we will call quick sort
+n minus one
+now we will print this
+so c out
+sorted
+array
+print
+eric
+now let's execute this
+as you can see we have successfully
+sorted our array
+let's get back to our slides
+at last let's sum up what we have
+learned in this session
+first up quick sort follows the divide
+and conquer principle
+next up quick sort has an average space
+and time complexity of big o of n log n
+next all pivots should be selected in
+the same manner as the first pivot
+finally quick sort is an unstable
+sorting algorithm so even a single
+mistake can crash a program
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simplyra
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,1151 @@
+hello everyone and welcome back
+so today we have a very interesting
+session is coming up and that is known
+as call working with react and redux
+friend this is one of the most important
+topic for those those who are working on
+a react and they are thinking about how
+the redux can be so important for all of
+them
+so let's get started and talk about
+redux more so first of all
+this is the conversation is going on
+with say like hey i'm creating a react
+application for the shopping cart
+feature so the person is saying that
+that's great
+so but say like
+typically if i'm developing a shopping
+cart based application so it is
+difficult to realize like how i would be
+taking care about the state management
+of my application because
+state management for any application
+whether it is a mobile base whether it's
+a desktop base it is very very essential
+which centralizes store
+the state of your application and from
+there it distributes to all
+they say why don't you use a tool name
+called redux which is one of the most
+popular tool available in market
+okay so now the conversation starts i
+can can you tell me like
+what exactly the redux is and how i can
+get a benefit out of this so let's get
+started about this conversation
+so what is the redux why we use it the
+principles
+the advantages and disadvantages and
+some short demos
+well
+here
+why redux see the important aspect of
+the redux is basically it says the state
+is an object any application will
+certainly have a state and that state
+needs to be stored okay which contains
+lot of properties related to many
+different aspects of your code okay that
+needs to change over the period of time
+like you upload any picture in your
+facebook the number of likes change
+frequently so the state can be modified
+based on what the user actions or the
+network changes
+so every time when the state objects
+changes
+react application automatically
+re-renders the new component states back
+to the
+client
+so a state objects can have a multiple
+properties like you can see about if you
+upload any
+new status in your
+i would say uh
+facebook so you can say like it contains
+comments it contains a number of likes
+it contains multiple aspects okay tags
+so these are multiple properties of any
+application
+okay so in a larger play you can see the
+large scale application you can have a
+several components with so many number
+of objects and every time this
+application keeps switching keep
+changing the state so you need to have
+the centralized management of holding
+all the states
+okay so from your desktop or from mobile
+you go to the web and access
+your resources
+and
+frequently
+they say this is because the state of
+the application while switching was
+stored and then re-rendered
+when switched it back
+okay so the state object needs to be
+managed and the redux is just the same
+which takes care about what the state
+management so redux is nothing but one
+of the very very popular
+javascript framework which helps to
+maintain the state without writing
+maximum efforts
+of the coding so it is a state
+management tool and it can work or
+accommodate it not only with react with
+any sort of applications
+okay so the redux is taking care about
+the states and whichever
+component needs that state it will be
+immediately available to them
+so let's to understand what are the
+pillars of redux so the principle of
+redux number one single source of truth
+that means there will be only one store
+and which will maintain the complete
+object tree where the complete state
+will be stored without any hurdle okay
+so it is easy to debug and it is faster
+development
+and single state tree also make it
+easier to debug or inspect of your
+application and this development time is
+anytime faster
+now the next thing is we're talking
+about the status read-only that means
+you can't change it but rather you're
+going to get the new state every time
+when the new changes comes into your
+application
+okay so there's no state changes and
+actions are nothing but a call of plane
+objects
+okay
+now
+here
+the next application is all about
+changes are made with pure functions a
+pure function means a function is so
+called pure which doesn't make any rest
+api call i'll be clear it is just
+responsible to take your inputs and
+return you the new output
+so it is easy to manage
+okay because it is you are you're
+talking about mutating the previous
+states and because
+reducers are just a functions which are
+also called pure function it is very
+easy for us to maintain such kind of
+applications
+so
+so there are the quick three pillars of
+a redux
+application okay store
+actions
+reducers so store when we talk about so
+they are the one which takes care about
+the complete tree of the state
+management okay so
+that's where exactly the complete
+changes and the chain will be maintained
+so get state is a function which is
+responsible to return the current state
+of your store dispatch is the one which
+is responsible to dispatch an action
+like any action like in clicking on the
+button
+or requesting some new things from our
+application
+subscribe that means you are subscribing
+for any change to your application and
+unsubscribe means uh you want to be get
+updated about any changes which are
+happening behind the scene
+actions like you can see these are just
+a plain object they are the mediator
+between the reducers as well as what
+your
+back end application so they are just
+like in plain actions which are
+given to your
+client the client as a react will be
+calling these functions and they will be
+in turn
+hold the data and pass on further to
+where to the reducers now so they are
+the payloads of the information and send
+the data of your application to your
+store
+any data you talk about ui network calls
+or whatever it is
+okay now the reducers
+are something which needs to act on
+every time when the state applications
+changes of your code
+okay and it is the one which accepts the
+current state and it is the new state
+based on what actions you have performed
+and the combined users are the one which
+are combining multiple reduces together
+and act as a common registry when
+multiple reducers are joined together
+okay now let's talk about some pros and
+cons of redux
+so process of using redux that means
+advantages we are talking about so this
+is always one source of truth so there
+will be no confusion state is completely
+in sync and there's a single resource
+where the states are getting maintained
+it is a very much predictable outcome
+you know it very well what to
+give and what to receive
+so it is more stated so the code is more
+consistent and easy to manage and very
+simple optimized and user friendly
+mechanism and track every single change
+in a real time
+okay these are the pros cons which we
+talk about no encapsulation so it can
+leads to some security issues
+boilerplate it happens sometimes when
+you need to write this code repeatedly
+throughout your application
+memory usage so it does uses the memory
+okay when the changes are updates and
+updates are happening so
+it is returning a new state every time
+so
+it sometime uses the accessor memory
+which leads to some more
+bloater of the code
+so we are now clear about how the redux
+works and now it's time to talk about a
+demo
+okay everyone so it's time to basically
+talk about like
+how you will be installing a react
+applications into your current
+environment
+look friends if you are interested on
+creating a new
+react applications
+okay so we have a very simple steps to
+follow number one if you want to create
+a new react applications you can quickly
+create
+by opening up the node.js terminal
+and there you can install this
+dependency by saying npm space i space
+create hyphen
+react hyphen app space hyphen g
+so friends what this command does
+so you have to go inside your command
+prompt and type this command npm space i
+space create hyphen react hyphen app
+space iphone g
+this command will download the necessary
+tool called create react app okay from
+the web environment and get it installed
+into your global location
+that is very essential if you want to
+start working with the create react app
+project
+and once this is ready the next step
+what you have to follow is to create
+another project by saying npm
+or sorry
+create
+create hyphen
+react hyphen app
+okay and after that you have to use the
+tool name called
+my
+app
+so this my app will be the name of the
+project
+which you need to
+create so create react app is a tool
+which you have recently downloaded in
+your
+current environment
+using hyphen g and after that you have
+to use this create react app and create
+a new project with a name called my app
+so this will create a boilerplate
+project of the
+react application and once you say
+create react app my app so the next step
+what you have to do is you have to use
+the cd command
+okay by saying my app
+so you have to go inside this new
+project and you have to use npm space
+start
+so npm spaces start will be the another
+command which will help you to create or
+to start or launch your react
+application
+okay so the step number one is this and
+the second step you have to create like
+this
+okay so that's the way how your new
+project is gonna be
+creating it for you so
+here in my
+application if i start my terminal
+so i'm here under my
+desktop
+okay and i can go back and create a new
+project here
+by because this is i have to do it very
+first which is already done i've already
+installed this in my machine i can go
+back and create the second command call
+create
+hyphen
+react hyphen app space
+my app the moment i hit enter it is
+going to create a new project for me
+and it'll take a while
+and it'll ask it is asking me like you
+do not have a permission
+so let me go back and create a
+permission to my application
+now
+it is
+getting it ready
+so initially it will take some time
+to get your dependencies downloaded and
+create a fresh folder structure into
+your desktop but in case if you are a
+window user i would recommend that you
+use
+your c drive or d drive wherever you are
+comfortable and there you perform all
+the actions here you can see the my app
+folder is created and here all the
+necessary dependencies are getting ready
+and it is downloading all the necessary
+steps for me
+okay
+so let's come back once it is ready
+okay everyone so you can see here i've
+got this my project ready with me
+and
+once it is ready it is asking me about a
+few things it is telling me like
+if you want to start working with this
+project you have to use cd space my app
+as i said earlier
+this is the command which you have to
+use city space my app so i'm saying city
+space my app
+and i'm saying npm space start
+something npm space starts it will
+launch my
+application and the server will pick up
+so let's see if i have any applications
+running under the same port
+so
+once again let me rewrite or rerun it
+again
+so it is launching my application now
+okay it is having some permission issues
+due to that it is coming up so i can
+just use
+the sudo command before
+and
+[Music]
+now it will pick up my application
+now you can see my application is
+initiated
+great so guys this is where exactly you
+get your react application ready
+and yes
+in case if you want to
+[Music]
+develop a redux based application so you
+have to download some additional
+dependencies too so you have to say
+npm space i
+space
+redux
+space
+react hyphen
+redux
+so these two dependencies you really
+require in case if you want some
+additional set of
+redux facility you want so i'm just
+saying sudo
+and now
+it is downloading all the necessary
+dependencies for my code
+there we go so friends that is the way
+how you perform
+the necessary
+setup for the react and redux
+application
+and after that we will start working
+with a sample application and react of
+redux
+okay everyone so since
+our application is all set
+okay so we are all good okay to take our
+development to the next level so here we
+would like to show you how you can
+develop
+something very basic react and redux
+application which can help you to get a
+basic setup ready of counter example
+okay so how to start working with react
+and redux so before i proceed ahead this
+is the folder structure for me
+okay and
+in this folder structure i'm going to
+create another this is actually the one
+which i've imported in my vs code editor
+and here i would like to create a new
+folder here under my src
+saying
+or i can see the redux demo
+and under this redirects demo i can
+create a new file here called
+counter.js
+and inside this contact.js i would like
+to import some dependencies by saying
+import
+react from
+react
+and
+let's go and create a new class by
+saying export
+default
+class
+counter
+extends
+component
+now this is the way how you always
+create a class
+okay inside your react which have a one
+render function
+which returns a jsx code to you
+i have a call return
+and here it returns a jsx code to me i'm
+just writing a very simple message
+called div
+and saying
+welcome
+to
+react
+app
+so this is my a very simple counter
+example
+which extends component
+this counter i would like to use it in
+my index.js file
+and inside this i say
+counter
+and the moment i say counter added in my
+index.js i will say npm space
+start
+to get my
+project
+ready
+okay
+it is saying it is running so you want
+to run
+hit enter
+let us pick up its own
+port number
+so 3.0001 and i'm getting this message
+called welcome to react app
+very simple so i have got this
+counter example
+which component
+i have delivered to my browser and it's
+time to develop some
+kind of a counter application and for
+this
+what i will do is
+here
+i want to bring
+some
+buttons so i say
+button
+and i'm saying
+increment
+i have another button
+called
+decrement so we have two buttons with me
+increment and decrement
+okay and these buttons
+will call some functions which i'm
+writing it here i'm saying inc
+okay and i'm also using
+dec
+that means increment and decrement and
+here i just write alert
+by saying
+called just for to confirm
+whether these are getting called or not
+so i'm saying
+called
+and here we'll be attaching those even
+by saying on click
+equal to
+inc
+and here we are saying once again
+equal to
+okay and we will check if it are working
+fine
+so
+perfect it is getting called
+it is getting called yes so alert was
+just an idea
+to check whether the functions are
+getting invoked properly or not
+okay
+now
+the first step in case if you want to
+perform
+this
+type of development remember one thing
+you always starts with
+creating a reducer so to create a
+reducer what i will be doing it i'm
+going to create a new file here
+called
+intext.js
+okay
+so i'm creating a very simple file
+called index.js and here i will try to
+apply but fortunately i already have
+index.js file with me
+okay in my
+this location so here itself i can
+create some initializing the state
+so in my application
+uh
+i'm already having this counter with me
+so let me go back and download some
+dependencies first
+so the first thing what i need to import
+is called counter which is anyways we
+have taken it up
+next
+i would like to import
+from
+react hyphen networks
+okay i'm just keeping those dependencies
+blank which later on i will tell you
+what those meanings are
+i'm using
+import from
+products some of the dependencies are
+there
+okay so the step number one what you
+will be doing you will be initializing
+the state so here in my application
+okay i would like to initialize my state
+by saying
+const
+state okay equal to
+let me initialize my state
+okay i will say with the value call
+count
+colon zero
+okay and furthermore we will go ahead
+step by step
+well
+this is what our state was called
+initial state count column what
+a zero
+okay so what i would like to do here is
+i would like to create
+some
+functionality here
+okay which is nothing but a call reducer
+function like i told you earlier it is a
+kind of pure function which will be
+helping you to return the state back to
+your application
+okay so i'm first of all saying function
+reducer
+okay it takes two parameter
+state
+equal to
+initial state
+comma
+action okay and here we are using switch
+in this switch we are confirming what
+type of action client will invoke if i
+say action dot
+type
+okay now we will check which type of
+action client may invoke if my action
+is type of what
+increment
+if the action is type of
+increment
+then
+it returns
+count
+colon
+state dot
+count plus 1 it will increment the
+counter by 1.
+okay that's the one thing
+and second thing i will try to copy this
+if the case is of what type
+decrement so here
+it will say
+-1
+okay otherwise i'll return
+otherwise i will return the default
+state i am saying
+return
+state
+that's the condition is
+okay after this what i will be doing is
+i have to create a store because see
+them ideas like store i told you earlier
+in my ppt it is the one which contain
+the single source of truth okay so you
+need to create it so after this i'll
+create
+const
+store equal to
+create
+store
+see it comes from redux
+okay from where you have to create a
+store so say create store and here you
+password
+reducer
+okay so this reducer is nothing but
+the one
+which you have recently created on the
+top
+okay so your store will collect the
+state by having the multiple reducers
+utilized here
+and now once it is ready
+so i'll be using one tool name called
+provider guys provider is basically
+called as a bridge which is responsible
+to collect the state
+okay from the different store and from
+there it make it available to the
+consumer which is so called components
+so provider works as a bridge
+from collecting the state from multiple
+locations so far from store and make it
+available to the components so provider
+is the tool comes from the react hyphen
+redux
+okay
+oh so what we need to do here in my
+application
+i would like to use
+provider
+so you can see it is a provider
+inside this provider i will wrap
+my counter and this provider will take
+the
+store
+from where
+from the store store is what the one
+which is creating this tool and through
+this store it is making this estate
+available to home to my counter
+okay so the counter will get what the
+initialize
+state with the default value called what
+a 0 and that we can make it available to
+my
+application
+so i hope you are clear about
+how the state is going to be
+you know utilized by the components so
+in my counter.js if i want to get my
+state visible to my application here i
+have to basically go and create one more
+function here
+okay that is called function
+map
+to
+crops
+and this map state to props function
+will be holding
+the status and parameter and here it
+says return
+it says return and here i'm saying count
+is a local variable i'm declaring it
+colon
+state dot
+count so count is the variable which you
+remember we have
+made it a variable
+okay with my initializing the state and
+this count variable will be available to
+wear to my application and this
+map state to props since it is written
+outside of this component i have to
+create one more
+function called default connect so this
+is the connect function which is
+responsible to connect this map state to
+plot function which is getting the state
+from the reducer to your current
+component so in this connect i will pass
+a first parameter called map state to
+props and the component name which is
+responsible to consume your state
+okay
+because it is export default connect we
+are already doing it so we will be
+removing it from here because in a
+single file one component can have
+default
+okay and we can make
+this counter visible
+in my current application
+clear so this counter you can display
+okay by using this dot props dot count
+so here
+in your render
+wherever you are using this now okay you
+can display the counter here
+so you can see
+count colon
+this dot
+props dot
+count
+so that's how
+your
+application is basically designed
+okay so it's having some issues which
+will be fixing it
+okay but here that's the first thing
+which your counter example is being
+taken it up
+okay everybody so you see like here my
+code is almost ready everything is there
+let me check by my browser
+and you can see here
+it is working perfectly fine
+okay and here in your application you
+see
+we have got count
+and the initial value call 0 the one
+which you initialize from index.js
+it is visible to me
+that's perfect
+okay now i would like to
+invoke an actions
+and these actions will be further
+incrementing or decrementing that means
+these actions will be calling those
+reducer functions
+and these reducer functions
+will be calling through what
+so this
+our
+counter so we have a counter here
+and these counters i'll be calling it
+and to check how they're getting called
+internally so index.js
+is the one which will be helping us to
+invoke all those one by one so let's see
+how we can call those from my counter
+so in step number one in case if i want
+to call those
+in my increment okay so i just use this
+error sign
+and here in my inc
+i just use this option like in this dot
+props dot
+dispatch
+this is the predefined function dispatch
+in which
+we have to tell which type of action we
+are trying to invoke so we are saying
+type
+colon what
+and this is the name which should match
+with this action the one which you
+created increment
+okay so your action will get called and
+the value will get increment let's check
+awesome you can see now it is invoking
+this action and this action is basically
+internally helping me to
+invoke the number of count and the same
+thing i will try to perform
+for my decrement also let me call this
+here
+and make it as an error function
+and say decrement
+and let's see
+perfect so it is working fine so friends
+that is a complete example of like how
+in your react you'll be responsible
+for
+invoking these dispatchers which are
+nothing but a call a typical
+way of invoking your
+reducers behind the scene and these
+reducers
+will be performing your necessary
+actions after accepting the data
+from the input so now you can see we
+have a call incremented agreement
+it is a pure function it is taking your
+actions and returning you what the new
+state of your applications
+so that's where your simple example is
+so this particular example we have
+created for you
+to offer you something
+very comprehensive in a reactors
+react.js what happens like
+we know at our previous demonstrations
+we have used a lot about
+redux for the state management tool we
+have told you like redux is
+a very well known state management tool
+and redux comes with
+host of
+new features like
+you talk about action you talk about
+reducer
+you talk about provider
+so multiple things are there
+now the important thing is
+when being a client of any react-based
+application if i have to use
+react
+redux features so we have to use a
+correct
+so in our previous demonstrations you
+have seen we were using map state to
+props for retriving retrieving the state
+from the redux and we were using
+map dispatch to props for dispatching an
+action
+and these two functions map state to
+props and map dispatch to props
+okay
+we have to associate with connect
+function
+which is a part of react hyphen redux
+many of you
+initially might have felt
+this looks quite complicated
+yeah
+so
+react has offered you
+the
+very simplest way to communicate with
+your backend state management tool which
+is so called redux
+in very very simplified manner
+now in the latest version
+you neither require any connect function
+on the client
+nor you require map state to props or
+map dispatch to props
+rather you have got some new functions
+are available which i'm going to show to
+you right now here
+so here in my src if i see
+this one container folder under this we
+have called product listing
+this is a very simple example of like
+how
+you can load the list of
+products from the backend apis
+so
+we are using
+once again axios to load the list of
+dummy products from my backend
+but the intention is like how we can
+maintain the state
+so
+here we have used two very interesting
+features
+one is called use dispatch and second is
+called use selector
+and they come from react iphone redux
+what is the benefit of this
+the benefit of using used dispatch and
+use selector is
+they are the absolutely alternative too
+they are absolutely alternative to map
+state to props
+and this is an alternative to map
+dispatch to props and you do not need
+any more connect function
+so u selector is designed to get the
+state
+from your packet
+okay so if you can see here
+this example we are having one property
+called dispatch
+where we are associating this u's
+dispatch
+okay
+and
+to dispatch
+the data what we have retrieved from my
+back end
+which we are anyways using the x use
+and from this axios
+after making the call
+whatever the data i'm getting it i'll be
+setting this data
+to my back end so i'm dispatching this
+so if you see
+dispatch
+is a property which is associated with
+this use dispatch
+and using this dispatch
+okay you are directly calling the action
+set products is nothing but a call
+your action
+okay and under this you're passing
+response to data so if i open up
+here in my action
+okay so you can see we were called set
+products
+okay so here i'm calling set products
+and under this we are sending
+the data which you are retrieving it
+from our backend
+so it's a very simple way
+okay so this dispatch is directly
+calling this
+your action function and passing the
+data whatever retry from the client
+so that is for dispatching
+for retrieving the current state
+what you're doing you will be using
+this statement like
+use
+selected
+okay so the use selector is the another
+feature okay through which you will be
+retrieving the state so now you can see
+i'm saying you selected and i'm getting
+the state and i'm saying state dot all
+products dot products
+so what is the all product is nothing
+but my
+combined user property
+so if i see my combined reducer
+so using this state which is a just a
+keyword i'm calling this all products
+which is my combined user property
+so if i if i see my reducers
+index.js you can see this one property
+called all products
+in my combined users so this all product
+i'm basically calling this
+and accessing its property called
+products
+so now you just understand this u
+selector is completely replacing
+the necessity of
+your
+map state to props
+and this
+next function called dispatch which is
+called use dispatch is completely
+replacing
+the necessity of map dispatch to props
+and you do not need connect function
+so these are the new features
+which helps the developer to make their
+development little more easier
+okay so i'm sure you got the clarity of
+how this is really used
+okay everyone so we have recently seen
+how this use selector
+and
+use dispatch
+is replacing the traditional technique
+now
+there is another very interesting
+feature which is available
+we all know that redux is designed for
+state management
+and is a pure client side management
+state management tool
+but the big question still is the same
+where the state is getting stored in
+tomorrow if i want to know
+i want to see those states in my
+application
+if i want to know where the state was
+saved
+what was my previous states which
+actions are called
+so to debug this complete situation
+redux is offering you very comprehensive
+tool
+that is called redux dev tools
+redux dev tools is
+a very very important aspect for the
+redux developers
+here if i see my package.json
+okay
+so
+initially you do not need
+any specific tool
+for
+state management
+sorry so called your redux step tools it
+comes by default
+but how to configure this
+so to configure this
+this redux dev tools
+here in your store.js
+you have to define this statement
+called window.redux type tool extension
+underscore
+underscore underscore
+and and windows dot redux step tool
+extension
+this line you have to write it for sure
+in order to identify
+the
+previous state and what actions you have
+called
+this is very important without this
+your
+redux state management which is
+happening
+you can't debug it so you're allowing by
+telling okay i want my current
+applications to have
+the dev tools available
+okay
+so once this is ready with me how will i
+use this
+so to use this what we need to do is
+because
+the dev tool is
+absolutely a browser-based tool so if i
+just open up here
+okay and if i say
+redux
+so you will see the first option you
+will get redux dev tools
+it is a tool
+offered by the redux dev tools
+and
+you have to install it since in my
+browser it is already installed
+but in your
+you have to install it first
+okay
+so once you install
+what you need to do is
+here
+let me try to launch this first
+let my application start
+and the moment it starts it'll load
+some default data from the back end
+you can see now
+some backend data
+some dummy data is now loaded
+and here
+you see there's an option called redux
+drive tools
+it enabled because it is installed
+and here
+i have this option
+in a panel
+okay you can see this is the
+how the redux devtools really looks like
+in
+it is the
+[Music]
+i would say
+a
+a kind of plugin which will hold all the
+records now you can see it is by default
+calling
+the set products which is an action for
+me
+and if i select any product
+you can see now there's another action
+get called
+and these are all what the properties of
+this particular action
+if i click on back it'll call remove
+selected products
+and once again if i select any of this
+product once again it is loading the
+other products
+i go back
+and load another one
+so many products are there which i can
+you use it now
+now i can see so these are all multiple
+actions
+it is internally invoking to tell which
+are the actions are there
+and what is happening is if you see
+if i select this drop down if i say
+chart
+you you'll be quite surprised to see how
+beautifully
+this example
+is offering you
+the charting
+you see this now
+this is the products are there this is
+the state has been maintained behind the
+scene
+okay and it locks the complete state so
+if i press the play button
+you will get to know what happened
+see now earlier it loaded all the
+products now it is once again loading
+unloading
+now you can see
+the complete state
+is maintained behind the scene and it's
+storing
+the previous state
+what it was when the user was selected
+and now you understand
+what this redux type tool is
+it is a beautiful tool
+designed for
+giving you
+the better
+productivity
+in terms of debugging your application
+knowing what is going on
+okay so make sure
+two things you need to do
+number one
+you have to enable this
+and pause that
+you have to have a redux dev tool
+installed
+then only you can have this
+thank you
+there if you like this video subscribe
+to the simply learn youtube channel and
+click here to watch similar videos to
+nerd up and get certified click here

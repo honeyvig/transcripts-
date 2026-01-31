@@ -1,0 +1,258 @@
+have you ever wondered guys that how AI
+models like chat GPT or Google bars
+generate answers well they are
+impressive tools but they have just one
+big limitation they are only as good as
+the data they have been trained on that
+means they don't always have the most
+upto-date information or access to
+specific knowledge beyond their training
+period but what if there's a way for
+these models to go beyond their training
+and pull in realtime external data to
+improve their answers that that's right
+guys and the answer is with the help of
+RG so guys in today's video we are going
+to learn about retrieval augmented
+generation craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back now before you move on just a quick
+info guys simply learn has got a
+postgraduate program in AI machine
+learning you can boost your career with
+this AIML course delivered in
+collaboration with P University and IBM
+you will learn in demand skills such as
+machine learning deep learning NLP
+computer vision reinforcement learning
+and many more so guys hurry up now and
+join the course the course link is
+mentioned in the description box so
+let's get started so guys imagine a
+scenario where a child asks their mother
+which planet has the most moons based on
+what she learned in her school the
+mother confidently responds that Jupiter
+has the most moons her answer is correct
+according to the knowledge she has
+gained sometimes ago but what she
+doesn't know is that more recent
+discoveries have changed this fact this
+is where two main issues come with
+traditional large language models the
+first one is no external data source so
+with respect to this case the mother is
+solely relying on the information stored
+in her memory without consulting any
+external sources like a book or the
+internet this exactly what happens with
+llm like chat GPD they can generate
+answers based on the data they were
+trained on and they don't have access to
+real-time updates unless specifically
+program to do so next one is outdated
+information since the mother hasn't kept
+up with the latest astronomical
+discoveries a knowledge is outdated this
+is another common problem with llms they
+are trained on a fixed data set up to a
+certain point which means they don't
+have access to new information after all
+now imagine if the mother had access to
+the real-time databases like
+encyclopedia or an Internet connected
+device she could quickly look up at the
+latest data and the number of moons each
+planet has so guys that's where
+retrieval augment generation comes into
+the play if mother had access to search
+engine or a database RSG can retrieve
+information from external sources
+whether its databases websites or other
+documents allowing them to answer
+queries based on both internal knowledge
+and external data so instead of Simply
+relying on what it knows the AI
+retrieves new information when ask
+something that falls outside its
+knowledge base when it involves recent
+events of facts this ensures that the
+model can stay relevant and accurate if
+you talk about what exactly is R so guys
+R is a framework that enhances the
+capabilities of a large language model
+by incorporating external knowledge
+through retrieval mechanism so guys this
+basically system is designed to improve
+accuracy relevance especially when
+you're dealing with the complex
+questions now let us try to understand
+the components of RG so guys the first
+one is retrieval second one is
+Generation third one is augmentation so
+guys our first step is retrieval the
+retrieval process in the mother case
+would be that she has to access a search
+engine or a database so that she could
+retrieve the most upto-date information
+on the number of moons this is what RG
+models do they can retrieve information
+from external sources whether it's
+databases websites or other documents
+allowing them to answer queries based on
+both internal knowledge and external
+data so instead of Simply relying on
+what it knows the AI retrieves the new
+information when ask something that
+falls outside the knowledge base or when
+it involves recent event of Acts this
+ensures that the model can stay relevant
+and accurate next one we have
+augmentation once the mother retrieves
+this data in this case she augments her
+knowledge with the new information she
+combines what she just learned with her
+previous understanding of the solar
+system this augmentation process happens
+in RG where the model takes the retrieve
+information and merges it with
+pre-existing knowledge to give a more
+complete and accurate response this is
+critical because it ensures that the
+answer is just not direct quote from the
+retriev data but an enhanced and
+well-rounded response that incorporates
+both past knowledge and newly retrieved
+facts now let us talk about generation
+guys now the mother is ready to provide
+the final answer to her child she
+generates a response actually like
+Saturn now has the most moons so say the
+number is 83 so here the final step is a
+generation phase where the AI produces
+an answer that is both upto-date and
+comprehensive so by combining retrieval
+and augmentation AI can generate a
+response that is far more accurate and
+simply relying on Based training this is
+why RG is so powerful guys because it
+actually Bridges a gap between outdated
+knowledge and the real-time data making
+llms more reliable and relevant now let
+us move ahead and let us discuss about
+the components of RG in a diagram so as
+you can see suppose a user asks a
+question so here is a smart retriever
+then it looks for a specific knowledge
+so there is a knowledge base and it
+gives the relevant documents so guys let
+us take an example so suppose you type a
+question so there will be a smart
+receiver so smart receiver is going to
+look for a specific knowledge base and
+it is going to give the relevant
+documents now the question plus the
+relevant documents are going to be sent
+to the llm as a generator and then it's
+going to generate an explicit Source
+informed content so you can see like how
+R is working in in this scenario now let
+us take some key applications where R is
+playing a major role the first one that
+we have all over here is customer
+support and chat BS so RG can Power
+customer service BS that can provide
+accurate up-to-date responses to
+customer queries instead of being
+limited to the pre-rain data the model
+can retrieve the latest information from
+a company's internal knowledge base or a
+website making it more effective in
+handling queries about new products
+services or policies then next we have
+is search engines RS can be integrated
+into search engines to enhance the
+relevance and accuracy of the results
+instead of just returning a list of
+documents the model can retrieve
+relevant documents augment the search
+results and generate more refined
+answers to complex queries this improves
+the search experience for users by
+providing both data and explanations in
+one place next we have research and
+development in R&D environments R can
+assist researchers in accessing the
+latest scientific Publications patents
+and reports it can generate summaries or
+new insights based on retrieve data from
+databases or academic jours helping
+scientists stay updated on the new
+findings without manually going through
+the large volume of research next we
+have is content creation so guys for
+Content writers and marketers RG can
+retrieve information on the latest
+trends data points and research and then
+help in generating high quality accurate
+content it can assist in writing blog
+Post article or reports by gathering
+relevant data from multiple sources and
+synthesizing it into a coherent
+narrative next one we have ai powered
+assistance personal digital assistants
+like like Siri or Alexa can also use R
+to improve the quality and relevance of
+the responses they provide next we have
+is personalized learning so R can also
+play a very major role in personalized
+learning suppose an adtech app is using
+RG to make a more personalized
+application for the learner and finally
+we see e-commerce so guys in e-commerce
+R can enhance product recommendation
+systems by retrieving updated
+information on product reviews customer
+preferences or industry Trends it can
+help generate descriptions or suggest
+personalized products to customers based
+on real-time data from the market in all
+of these applications RG provides a
+powerful mechanism for combining
+retrieval of real- time external
+information with generation of
+insightful up-to-date responses making
+it an essential tool for industries that
+require both accuracy and current
+information so guys that was all for
+today's video I hope so you would have
+enjoyed our today's video on R thank you
+guys for watching this video and do not
+forget to hit the Subscribe button and
+click the Bell icon for further update
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

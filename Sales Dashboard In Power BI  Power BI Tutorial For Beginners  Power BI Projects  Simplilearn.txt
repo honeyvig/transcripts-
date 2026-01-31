@@ -1,0 +1,549 @@
+hey everyone welcome to Simply launch
+YouTube channel today we will learn
+about building an interactive dashboard
+and powerbi that's it if these are the
+type of videos you'd like to watch then
+hit that like And subscribe buttons and
+the bell icon to get notified just for a
+quick info if you want to upskill
+yourself master data analytics skills
+and landar your dream job or growing
+your career the new plus simp plance
+goad of various data analytics programs
+simply learn office postgraduate
+programs from Puro University in
+collaboration with IBM through this
+program you will gain knowledge and work
+ready expertise in skills like
+prescriptive and Predictive Analytics
+regression classification and over a
+dozen others that's not all you also get
+the opportunity to work on multiple
+projects and learn from industry experts
+in Top Tire product companies and
+academic from top universities after
+completing these courses thousands of
+Learners have transitioned into a data
+analytics role as a fresher or moved on
+to a higher paying job and profile if
+you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comment
+and description box to find a data
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+with the topic for today's discussion
+that is building a powerbi dashboard so
+these days you might be hearing a lot
+about pobi we do have a lot of bi tools
+in the market like Exel
+Tablo click view a lot but people are
+talking about powerbi the most but why
+so we will be knowing that in a while so
+let's get started with uh building a
+dashboard first and eventually in the
+process you will definitely understand
+it so making a dashboard in powerbi is
+just like a breeze so before we get
+started with powerbi I would like to
+explain you a few fundamentals that you
+might want to take a look at before
+getting started so data cleaning is a
+much needed process so you can do data
+cleaning using public query or you can
+just simply open your Excel and try to
+check the data types for blank cells any
+inappropriate datas eliminating them
+right so simple basic fundamental data
+cleaning process if you have some
+irrelevant data in your data set just
+eliminate that row or try to fill that
+with the proper data that was supposed
+to be there and if there are any blank
+rows or blank cells eliminate those
+blank rows and blank cells so that your
+data is up to date and accurate and
+apart from that uh let's check out some
+data types for example the first one
+which happens to be the ru ID here so
+this is the data set that we will be
+dealing with today so this particular
+Road ID has a general data type so it
+can be either a number or a float and
+when you come to the ship date over here
+the OD date over here right so those are
+date data types and they might follow
+different formatting let's say they
+might follow uh date number that is day
+number and for month they might add the
+alphabetical name like Jan or Feb and
+the year or a few others might format
+with date time and uh you know we will
+be having date uh and at the time which
+will'll be describing the hours minutes
+and seconds right so there are a lot of
+variations where a data from date data
+type can be saved so it's your
+fundamental
+you know responsibility to make sure
+that all the elements from a specific
+column are of one single data type so
+that the the entire data set is inte you
+know it's very U good and it should be
+intact that's the whole point of it and
+if you have any inconsistencies in your
+data set that might result in you know
+abnormal predictions abnormal dashboards
+or charts whatever you make there will
+not be uh those dashboards cannot be
+relied on your reports cannot be uh
+reliable so that's the whole point of it
+so just make sure that you go through
+the fundamental very basic data cleaning
+things like eliminating blank rows blank
+cells maintaining a uniform data type
+for all your columns you know based on
+the data it's not like you have to
+maintain character data type for your
+dates so you need to make sure that what
+kind of data type suits what kind of
+data and you need to check that and make
+sure that all the elements in that
+particular column follow one standard
+data type so I'll be going with date
+data type for audit date and ship date
+and ship mode will be character serial
+that is row number will be serial number
+or row number will be integer and uh
+everything else will be C data type and
+when it comes to the last four rows
+sales quantity discount and profit so
+those will be the uh you know float data
+type and when you check out the location
+here we have country not so these will
+be segregated by your bi tool either
+Tablo or powerbi whichever you're using
+so those will be segregating these
+particular location type data types and
+it will show them as map right so this
+is the major thing which you need to
+make sure before starting with your you
+know building the dashboard so that you
+know having said that let's begin with
+the powerbi let me start the powerbi bi
+tool here it is just click on it it
+should take a while so here we are we
+are on the you know first page of the
+PBI so you can import the data from
+Excel you can import the data from SQL
+Server you can just copy paste your
+blank tables so you can make use of some
+apis and plugins and get connected to
+the data sources from web or any other
+sources and you can also import the data
+from that particular source so today we
+will be dealing with the Excel data set
+so we will be importing the Excel file
+and before that here you can see some op
+options which are filters data
+visualizations and uh data so we haven't
+loaded any data so you can see the data
+over here and if you are on table they
+will be available on the left side and
+you will call them dimensions and
+measures so you can apply the same uh
+analogy here so you'll be available with
+the dimensions and measures once we
+import the data and here you have a wide
+variety of charts and graphs that you
+can just you know drag and drop and
+create so once you have the data over
+here you can just drag and drop onto the
+canvas over here and then it will
+automatically generate some type of a
+data set or chart let's say it'll give
+you a tabular chart you can just click
+that particular chart and come over here
+over over here and you can select any
+one of the charts available here let's
+say you wanted the P chart you can do
+that uh you can do a donut chart you can
+do a dream app right so once you h on to
+it it will tell the name of that
+particular chart and you can select that
+like it's based on your choice right so
+this is about it basically now you can
+also do some drill throughs that's again
+for a session in another time another
+day so that's session for a different
+day for now let's try to create a
+dashboard in a routine way remember I'm
+telling you or I'm specifying in a
+routine way because we also about to
+learn why powerbi is being uh so popular
+currently in the bi industry right so
+there are some tips and tricks that will
+help you in the long
+so let me close the filters close the
+visualizations close the data and now
+let's click on this particular option
+which says import data from Excel right
+now we are in the Excel data set so this
+is the file where I basically store my
+Excel data sets that I'll be working on
+so you can also have access to this you
+can just let me know and we will drop
+down the tribe Link in the description
+box and you'll have the accessibility to
+all these data sets so remember I spoke
+about data cleaning right so this Excel
+data it is completely cleaned every data
+column has a uniform data type and it
+follows that data type throughout and if
+you check out this particular original
+data set which is sales European sales
+over here so this is the original data
+set which follows different
+nomenclatures for data types for example
+if I come down to the date column there
+are different types of data types some
+of the cells have only dates they follow
+date month and year and some of these
+cells have date month and year along
+with the time so another clitch here so
+a few of the cells were following the uh
+you know 24hour timing nomenclature and
+a few others were following 12 hours
+this is specifically mentioning AM and
+PM right so this causes a lot of trouble
+when you're creating a report trust me
+I've been that so what I did is I clean
+the entire data set removed the cells I
+mean the blank cells remove the blank
+columns remove the blank cells remove
+the blank rows and in any situation if
+there is um you know uh discrepancy
+followed in data types I've also cleared
+that and I saved Excel data right so we
+will be using this particular data now
+and if you need these data sets I can
+provide you with that using the Drive
+Link and you can have access you can
+also try your data cleaning by following
+our tutorial which is linked in the
+description box below for data cleaning
+and you can do it and you can start with
+your dashboards now let me just extract
+this particular data set just click on
+open and you will be having it on the
+screen just in a moment so when you
+check out the original data set we have
+a lot of sheets here right so these were
+some pivot tables that we created for
+data analytics using Excel so you can
+also check out that video now we will be
+doing the same data analytics and
+creating an entire interactive dashboard
+on PBI with the same data set so you can
+see uh powerbi is trying to load all the
+tables and all the sheets available in
+that particular file but we just need
+one out of those you can also click all
+of those or you can just get one out of
+those so for now I just need one out of
+those so here it is and you can check
+the data you can have a quick preview of
+how your data is looking right and then
+just click on load and the best part is
+powerbi will also perform a data
+cleaning operation from its end and I
+identifies if there are any rules or any
+sells that I miss out to clean and it
+will notify you if there are any errors
+and it will also I mean it is also
+capable to you know um fix those errors
+for you you can see I have seven errors
+right so you can just view errors and
+clear them or I can just close so that
+in the background PBI will take care of
+them for me now we have the data right
+so here you can see the data tab got
+both opened and here you can have a new
+drop down if you click on that you have
+all the data elements present in the
+data set or in terms of tblue you have
+dimensions and measures so basically
+wherever you have a sumission or any
+kind of mathematical operation present
+in front of the column name that
+particular element or that particular
+column is considered to be the measure
+so which is which is basically dealing
+with the numbers and all the others
+which do not have any other mathematical
+symbol like equals hashtag or sumission
+those are the dimensions basically the
+character data type or the DAT data type
+whichever uh the data type it is but not
+numbers right so here we have it so what
+you basically do is completely similar
+to uh Tablo click view or any other
+business intelligence tool basically
+just drag and drop right now let's say I
+want to find out the U region wise sales
+what can I do here is is I can just drag
+it onto the canvas and again I have
+sales over here I can drag sales to the
+canvas I can just you know how it onto
+the existing box you can see this
+particular box right you can just drop
+it inside the box so that powerbi will
+understand that I'm trying to uh you
+know extract the region wise sales and
+it will perform the sumission of all the
+sales region wise and it'll give you a
+table let's say you're not satisfied
+with this particular table
+representation you can just hold your
+table and here you can open the
+visualizations and open the filters
+right and here you have visualizations
+over here if you want to segregate that
+in form of a p chart you can do it right
+now it will give you the sum of sales
+based by region now if want to calculate
+the U let's say order date you know uh
+date wise sales then I can also do that
+you can just drag the sales over here
+and and select that particular table and
+you know whenever you are dealing with
+date data type right when you're dealing
+with date data type then what you do is
+you try to use the line craft it's the
+best way to represent your sales how
+they are happening right and uh few
+other things let's say I want to
+calculate uh the profit by city or
+country which country is facing the
+highest number of profits we can also do
+that just drag and drop you know how it
+is and okay it's giving a lot of
+countries but but still it's not a big
+problem for us just drag and drop the
+sales and here you can select any one
+out of these let's go with the bar graph
+and here you have it right now so far so
+good right so far we so good now if you
+uh worry about the interactivity you
+don't have to basically when you're
+using Excel or any other table let's say
+if you're using Excel you might have to
+use slices right so if you're not aware
+of what am I talking about you can just
+go check the data analytics of building
+the dashboard using Excel where I have
+completely explained the day is set and
+they you know built an interactive
+dashboard there so it'll give you a
+better idea about it so before that um
+let's get let's Circle back so here uh
+you don't have to create a slicer and
+you don't have to report the connections
+between each and every chart it's
+automatically done in the background for
+example let's say if I wanted to
+calculate the sales of central region if
+I just click on the central region it
+will automatically change the display of
+the entire dashboard that will give me
+the central region sales right and uh if
+I just go back it'll you know it will
+give me the entire sales dashboard let's
+say if I want to calculate the west
+region I have my best data right so
+that's the best part of Papi and now we
+are going to identify why this this is
+one One Good Reason Why powerbi is
+popular but there is another good reason
+why powerbi is so popular right now so
+popular so easy and so effective that
+even a schoolgoing kid can build a
+dashboard trust me a schoolgoing kid of
+grade 11 grade 12 or a candidate who is
+just graduating or a fresher or any
+person who doesn't have a computer
+knowledge but has some good knowledge
+about numbers and how businesses work
+they can definitely create an
+interactive dashboard using powerbi even
+if they are new to powerbi so we're
+going to just see just that let's create
+a new page or you can just go back to
+the same
+page okay let's create a new page now
+let's say I don't know uh how to create
+a chart I don't know let's say my
+manager asked me to create a complete
+report of the sales happening and I
+don't know powerbi and I don't know
+anything about how to create a chat and
+how work right but I have certain idea
+right let's say I have a certain idea I
+want to find out the region wise sales I
+want to find out the country-wise sales
+I want to find out the performance of
+sales date on date year on year month on
+month quarter on quarter whatever it is
+you just want to create you know you
+just want to extract the you want to
+build an Insight on the date wise sales
+and uh you want to find out um you know
+profits based on uh certain regions or
+certain categories right which category
+is the highest performing category which
+is the majorly Ed a shipment mode right
+there are Limitless possibilities you
+know what to build but you don't know
+how to build right in such situations
+powerbi is here for the rescue just
+right click on the canvas just click
+anywhere right now you okay it was not
+the right click it was the double click
+so just double click anywhere on the
+powerbi canvas and there you can see
+something called ask a question about
+your data let me expand that for you you
+can see ask question anything about your
+data now let's say I want to create the
+same region wise sales right you can
+just type on the region wise sales and
+it's already giving you a uh you know
+it's already giving you a bar graph now
+let's say you don't want the bar graph
+you want a p pie chart or a donut graph
+right donut chart so you can either
+select any one of those I'll go with the
+pie chart for now so you can just select
+on that and here you have your pie chart
+right how simple is that how easy is
+that right and now you can just place it
+anywhere on your dashboard check the
+size alignment and you're good to go
+let's close this filters for now so that
+the canvas is a little more better
+visible now let's say I want to find out
+ship mode profits and uh the type of
+graph I'll go with the bar graph there
+you go sales that happened using a
+certain ship mode and you have the data
+right here and I'm choosing the bar
+graph now let's say I want to calculate
+the month-on-month sales right so double
+click anywhere on the canvas
+sales audit date and
+remember we want to represent the okay
+it's too intelligent it already gave you
+a line graph right just click that
+select that and uh just place it
+anywhere on your chart and you can
+expand it there you go there you have it
+right and now let's do let's try to find
+out a few more things let's try to find
+out uh which of these segments gave me a
+lot of uh profits category wise
+profits category profit and let's try to
+build uh we have a pie chart so let's
+build a donut chart there you go place
+it anywhere on the canvas like whever
+you need it now few more things
+statewise okay now let's make it a
+little more
+interesting State fail map you wanted a
+map right so just select on that and you
+will be having the map okay so
+problem here so I think let's go with
+country sales map okay let's enter now
+let's select this particular chart okay
+no interactivity I need right now select
+this and here let's select map and map
+and fi map visuals are disabled to
+enable them go to a file options
+settings options Global Security details
+okay let's try this file options and
+settings op options global global
+security use map and field map visuals I
+think this should fix this okay let's
+refresh it should help us there you go
+you have your map let's place it
+anywhere in r in the dashboard now we
+have the region wise sales or
+country-wise sales and shipment mode
+subcategory and uh let me know what else
+we can build let's have the kpis here
+now let's go to the sales and just drag
+and drop the sales sign anywhere on the
+table and I want the data presented in
+visuals I have the card now let's have
+profits and that should be a card again
+and let's have U quantity that should be
+a card again that's our kpi profit sales
+quantity discount is another one where
+which you can add and just add number
+card again there you go we can go to the
+insert option insert text box and there
+you can just write down sales dashboard
+align the text to Center and that should
+be good there you go so far so good and
+in case if you wanted to add a few more
+visual athetics to your dashboard you
+can also do that you can just click down
+yeah I think you remember your
+PowerPoint right just go to view and you
+can select any of the backgrounds you
+want and there you go you have it if
+you're not happy with this you can also
+have some images in the background you
+can add some images which will make it
+look a little more interactive right so
+that's how you build an amazing
+interactive dashboard in powerbi and uh
+that's the reason why uh the Simplicity
+why powerbi is being so popular amongst
+the all other remaining bi tools and
+with that we have come to an end of this
+session on how to build an interactive
+sales dashboard using powerbi and if you
+have any queries regarding any of the
+topics covered in this session or if you
+require the resources that we used in
+the session like the D sets pbds and
+this particular workbook at a dashboard
+which we created which we will be anyway
+saving please do let us know and we will
+have it reached out to you at the
+earliest until next time thank you for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here
