@@ -1,0 +1,1217 @@
+hello everyone I'm M and welcome to this
+exciting video on using SQL for data
+analysis SQL or structured query
+language is a powerful tool for managing
+and analyzing data stored in databases
+so in this video we will walk you
+through a comprehensive SQL project
+designed to Showcase its capabilities in
+data analysis whether you new to SQL or
+looking to enhance your skill this
+project will provide you with valuable
+insights and hand on experience we will
+start by setting up our database and
+importing a data set which we will use
+throughout the project you will learn
+how to write basic SQL queries to
+retrieve a specific data filter result
+and sort information as you progress we
+will dive into more advanc technique
+such as joining multiple tables using
+aggregate function to summarize data and
+creating subqueries for complex analysis
+so by the end of this video you will
+have a solid understanding of how to use
+SQL to analyze data effectively you will
+see how SQL can help you uncover pattern
+make data driven decision and gain
+deeper insight into your data sets
+whether you are a working on a school
+project a professional task or just
+exploring data analysis for personal
+interest this SQL project will help you
+with the skills you need to succeed
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we jump into the demo
+part here is a quick info for you if you
+want to become SQL certified then try
+SQL certification course by simply this
+SQL certification course give you all
+the information you need to successfully
+start working with SQL databases and
+make use of the database in your
+application learn how to correctly
+structure your database author efficient
+SQL statement and closes and manage your
+seq database for scalable growth key
+features of this course are cover basic
+to Advanced SQL concept dedicated live
+sessions by faculty of Industry expert
+cellp learning modules to learn at your
+own pace Hands-On project for real world
+application engaging learning experience
+featurings demo session and real word
+example industy recognized certificate
+upon completion so this course is open
+to anyone interested in learning SQL no
+prior experience in programming or
+databas is required it is ideal for
+beginners and those looking to enhance
+their database management skill check
+out the course link from the description
+box below and the pin command so grab
+your laptop follow along and let's
+unlock the potential of SQL for data
+analysis together so without any further
+Ado let's get started so welcome to the
+demo part of SQL project so in this we
+will do digital music store analysis
+okay so this SQL project is for the
+beginners so what you will learn from
+this uh project
+main thing is like so what's the
+objective of this project this
+particular project so this project is
+for beginners and we'll teach you how to
+analyze the music playlist database and
+you can examine the data set with SQL
+and help the store understand its
+business growth by answering simple
+questions so as you can see I will show
+you so I have three set of questions
+first one is easy okay and the second
+one is
+moderate and the third one is advanced
+level so we have three set of questions
+easy set moderate and the Advan okay so
+every set is of three three questions I
+guess yes every said there is three
+three questions so okay in easy one
+there are five so we have 5 + 3 8 8 + 3
+11 we have 11 questions to solve okay
+from this you will understand how you
+can you know analyze data with SQL how
+you can extract something from database
+how you can store something like
+this
+okay so and one more thing I will show
+you the schema of the particular uh data
+set which we will you know soon we will
+restore so we have the tables in this
+artic album track media type genre
+invoice line invoice customer employee
+ID playlist playlist track and all okay
+so this is the music playlist database
+schema so without any further Ado let
+me create one database so here just
+right click create
+database okay
+here I will
+write
+music okay and
+save so now our database is created okay
+so if you will go to
+schema and if you go to tables there is
+no tables in it means there is no there
+is database but nothing is there the
+database is empty so now what I will do
+just go to your database just right
+click here you can see the restore
+option okay
+restore so format as it is then here
+file name go to this music store
+database I will put this database Link
+in the description box below don't worry
+open then
+restore process started process complete
+some people will face this uh that the
+process is failed or something okay so
+for that what you have to do just go to
+file then
+preferences here you have to set the
+path just binary path okay see I am
+using the 15th version okay so I have
+set the path here also and this also but
+you have to set this path is important
+okay if you will not set this edv
+Advanced server path it's fine but this
+path is most important okay
+but for the future reference I have
+added on the both what you have to do
+you have to just see where you will find
+this path just go to this PC then OS
+then program
+files here you will find this post G SQL
+then I'm using
+C15 15 then bin so you have to
+copy this
+path right have to just copy it
+and paste it here and then select this
+one after that just save you
+won't find any fail thing okay the
+process will complete right so now let's
+move forward and see the tables okay
+it's still empty why just refresh it see
+now you can see all the you know columns
+in my tables okay
+so what I will do for the checking I
+will run one query here okay let me
+close it okay I will write here
+select
+star from
+album okay let me run
+it so now as you can see here my table
+is working fine everything seems
+good
+okay so now what we will do we will
+solve question one by
+one okay so the first question let's see
+the first question easy one who is the
+senior most employee based on job title
+okay who is the senia
+most okay so I will
+write
+here like the first question is who
+is the
+senior
+most
+employee based
+on job
+title okay so this is our
+question so we know we have the table
+name called employer so we will select
+that table first so I will write here
+select
+staff
+from
+employee
+so you should know uh which table should
+to select okay so here as you can see in
+this question there is you know uh word
+employee who is the senior most employee
+based on the job title most employee
+means employees and employee table
+right so
+I will run
+it
+okay so what I will do I will just
+select this and run it okay so now you
+can see there in employer there is
+employee ID last name first name title
+report levels bu date higher date and
+all the details of the
+particular
+Okay so we will do so there is one more
+thing you can see the levels okay level
+one level two so we have to who is the
+senior most employee based on the job
+title so what I will do I will write
+here
+order
+by levels and decreasing order
+okay so first I will do so now you can
+see the levels are in the descending
+order from
+senior to this okay L7 to L L1 so what
+we want we want only one uh employee
+name so what I will write here limit is
+one okay I will copy this and done it
+okay so now you can see the last name is
+Madan moan sorry moan Madan this is last
+name this is first name so moan Madan is
+the senior most employee based on the
+job de so question
+first is done so the second question is
+which countries have the most
+invoices okay first I will write down
+the question
+which
+country has
+the have the most
+have the most
+invoices
+okay so for
+this what we have to do see just first
+check first we have to check from which
+table you know we will get the solution
+so here you can see the word
+invoices okay so we have one table
+invoice and invoice line we have to
+select it from this
+okay so I will write
+here Select Staff
+from
+invoice
+okay so we have customer ID invoice date
+billing address billing city billing
+State and
+everything so here you can see we have
+the billing country as well okay because
+we need the country name so we will take
+this column right so I will write
+here so I will write
+select we change it
+select
+count
+star from the
+select star
+billing
+country from
+invoice Group
+by billing country
+so why I'm doing this group by because
+as you can see uh we have USA multiple
+times USA USA USA then Canada also and
+the other countries as well so from this
+I will get only the one okay I will
+group them and I will get the one fine
+so from this we will uh get the
+count so after this I will write
+order by
+here I will
+write
+see see descending okay let me run
+it so now you can see the billing this
+is the billing order okay so or you can
+see the on voices USA got the
+131 and Canada 76 Brazil 61 if I will
+write here again the limit one what I
+will
+get see
+USA we got the USA so USA is the country
+which have the most
+invoices okay if you will remove this
+limit so you will
+get the other country as well second in
+Canada third is Brazil and like this
+okay
+and the third question is what are the
+top three values of total
+invoices okay again we need the same
+table okay first I will write the
+question third question is what
+are are
+the top three values of total
+invoices top three value
+of
+total invoices okay I know I can just
+solve this question by the second one
+but I want to do it from the
+starting
+okay so first I will take select stuff
+from
+invoice let me run
+it so first we will sort the data
+here I will write order
+by
+total because the last you know this is
+a table name okay
+total and the descending
+order so first I will
+select so we need just the top three so
+first T will do everyone know limit
+three
+okay
+okay so here I have done I have wrote
+this star that is why it's giving me the
+all the values if I want this only this
+value so I can write select
+total from invoice ordered by
+this okay I will say and run it so I
+have this total like 23.75 999 and 19.8
+and 19.8 so these are the top three
+values of total
+invoices okay so here the fourth
+question is which city has the best
+customer we would like to throw a
+promotional music festival in the city
+we made the most money write a query
+that returns one city that has the
+highest sum of invoice Total return both
+the city name and some of the all
+invoice total so let me write the
+question first okay I'm WR wrting
+question for you know your better
+understanding
+okay question
+fourth which city has the
+best
+customers we
+would like to throw a
+party uh promotional
+promotional music
+festival in the
+city we made the most
+money we made
+the most
+money write
+a
+query that it does one city
+that has
+the
+highest sum of
+invoices as sum of
+invoices
+Total return
+return
+both the
+city
+name and some
+of
+all
+invoices
+okay so we have this question okay so V
+city has the best customer we would like
+to throw a promotional music festival in
+the city we made the most money write a
+query that returns one city that has the
+highest sum of invoice Total return both
+the city name and the sum of all the
+invoices okay so for first what we will
+do we will
+select select stuff
+from
+invoice okay
+sorry we'll select this okay so first we
+will select the building City we have to
+focus on this and the total in this two
+table we have to just focus on okay so
+here I will write
+sum
+of
+total
+as
+invoice
+total comma
+billing
+city from
+invoice so this time we will do group by
+billing city because we need the city
+names uh then I will addite
+order
+by
+invoice
+total in the descending
+order seems good select some total as
+invoice Total Building City from invoice
+building okay so let me select
+this so as you can see the highest
+billing city
+is
+parag Prague and the best customer is
+from the parak
+city okay so this city has the best
+customer obviously parak pragu or sorry
+for the you know mispronunciation
+okay so this is how we have solved our
+fourth question as well okay because WR
+both the city name and the sum of all
+the inv you know these is the city names
+and the invoice total okay moving
+forward to our fifth
+question which is again the long one who
+is the best customer the customer who
+has spent the most money will be the
+declared the best customer write a query
+that Returns the person who has spent
+the most money
+okay so I will write here
+who is the
+best
+customer the
+customer who has
+spend the
+most
+money will be
+deare the best customer
+so write a
+query category that returns that
+Returns
+the
+person who has
+spent the most money
+okay yeah so who is the best customer
+the customer who has spent the most
+money will be declared as the best Comm
+write a query that Returns the person
+who has spent the most money okay so for
+this we have to take this customer Data
+customer table data okay so I will write
+as
+select stuff
+from
+customer okay I will select this and I
+will run
+it okay so this is our
+no data table data of customer okay so
+we have the country facts emails state
+city address last name first name
+okay so as you can see there is
+nothing uh like no detail of invoice or
+the money okay which have spent by the
+customer so what we will do we will look
+at our schema so now what we can do if
+we can't solve a particular question
+from with one table we have to you know
+join the table to the other table so
+here we have to join customer table to
+invoice table so in this you can see
+there is customer ID and here also
+customer ID so on the basis of customer
+ID we can join the join both the table
+and with the help of this total we will
+sort out the uh that guy okay that
+customer
+right so for this I will
+write here
+select customer
+Dot
+customer ID
+comma
+customer
+DOT first
+name comma customer
+dot last name because we need need the
+full name of that guy
+comma
+sum invoice do
+total as
+total
+okay okay let me can be POS okay I don't
+need the search
+pad right
+then I will write
+from
+customer okay my
+bad then
+join
+invoice
+on customer
+Dot
+customer
+idals
+to invoice do
+customer
+ID
+then I need group
+bu
+okay Group
+by
+customer
+Dot customer ID after
+this uh uh let me order it by the
+descending order so the most you know
+spend customer will come
+up so I will write here
+order order
+by
+total the descending
+order then
+limit = to
+1 fine let me run it let's see what
+output
+should okay
+okay some error is
+coming okay
+sorry okay so as you can see the
+customer ID is five the first name is R
+the last name is ma our ma is spent the
+highest value 144.5 4 0 0 and two so who
+is the best customer mad our madav sorry
+my bad our mother right our mother has
+spent the most
+money okay so this is how we are done
+with our easy set of questions now let's
+jump into the moderate one okay so let
+me write the question first for the
+moderate so I will write
+here moderate
+questions so these analytics skill help
+you in the data analytics to become a
+data analyst or to become a data
+scientist
+okay so the question first
+is
+write
+query to
+return
+okay write query to
+return the
+email qu to
+return the
+email comma first
+name first
+name comma last
+name
+and
+genre of
+all rock music
+listen Okay then return
+your
+list
+ordered
+alphabetically by
+email
+starting with a
+okay
+yeah so for
+this okay
+okay let me open this
+first
+yeah okay fine so first what I will
+do so now in this question as you can
+see we need the we have to return the
+email first name and the last name and
+the genre of all rock music listeners so
+if you will see select stuff from
+customer okay we R
+this and if I will see there is no
+column name genre okay if I will show
+you the schema of this see the genre is
+here and the customers is here okay we
+need the first name last name and the
+email ID and the genre okay and the
+genre is Will should be Rock okay so
+what I can do I can can connect this
+genre with
+track then because here is also track ID
+and here is also track ID then track ID
+to invoice line then invoice line to
+invoice then invoice to customer with
+the customer ID okay this pattern I have
+to
+follow right so for this I will
+write select just copy
+this okay just follow the steps
+select
+distinct email comma first
+name comma last
+name
+from
+customer
+join
+invoice on
+customer
+Dot customer
+ID equals
+to invoice
+Dot customer uncore
+ID then
+join
+invoice uncore
+line on
+invoice do invoice
+ID okay then
+invoice _
+ID then
+where
+track ID should be
+in here I will
+do select
+track
+ID okay
+from
+track then
+join then join
+genre
+yeah
+on track dot genre Dot
+ID equs
+to genre
+dot JRA
+ID
+where this is important
+genre
+name
+like rock
+because we need as you can see WR a
+query to return this is this and genre
+of all rock music
+listeners okay
+rock right
+then order
+by
+email okay before that let me show you
+this track
+okay select star from track okay let me
+show you this
+table you can see the name the track ID
+album ID Media type genre ID
+okay then the composer this this this
+bytes and the unit
+price
+right okay so you know this we have have
+then this customer okay invoice ID we
+took right fine so now what I will do I
+will just select this
+and okay invoice ID okay invoice ID is
+ambiguous here I have to
+write invoice
+line do invoice
+ID okay let me now
+run let me run it okay one more join
+genre on track. genre ID there is entry
+for table genre but it cannot be
+referenced from this part of the query
+okay okay
+as you can see the here the table name
+is genre _ ID that was the
+mistake okay one more genre.
+name spelling
+mistake sorry my bad guys noes it
+happens okay now you can see we have all
+the people who love rock music and we
+have the email then first name then the
+last name see Aon Mitchell Alexandra Roa
+a
+grber like this cam Dan Edward like this
+okay so there are total 59 people who
+loves rock music from this particular
+database okay now question two
+question two is let's Okay first let me
+show you let's invite the artists who
+have written the most rock music data
+set write a query that Returns the
+artist name and the total track count on
+the top 10 rock bands okay so
+let's
+invite the
+artist who
+have written
+the
+most rock
+music in our data
+set so
+write write a
+query that
+Returns the artist
+name and
+and the total TR count
+of track count
+of top
+10
+rock
+band so now what we need here okay let
+me do this
+so what we need here so let's invite the
+artist who have the written the most
+rock music first we need the artist okay
+and the second is rock music then we
+need track okay and the total count
+total track count means we will get from
+the track so
+here we have track column track uh table
+and we have the artist so now let's see
+the schema part so we have we need
+genre
+okay for the you know uh rock music then
+we have
+to combine this with the track ID
+because J ID is there from track ID to
+album because we need the artist name
+see artist ID and artist ready so this
+is how we have to connect the table
+now so for for this I will write here
+just follow the steps
+select
+artist
+dot artist
+ID
+comma artist dot name
+comma
+count
+artist. artist ID
+as number of songs because we need the
+total number okay who have written the
+most rock music number of
+songs fine
+from
+track now we have to
+join
+album on
+on
+album do album
+ID equals to
+track
+dot
+album
+ID okay then we have to join the artist
+with artist ID
+so
+join
+artist column on the basis of
+Artist Artist ID equals to then
+album to album.
+artist ID okay
+so here I have joined the artist to the
+album colum
+table okay then I have to join genra to
+the track table with the track table
+okay so here I will write
+join
+genre
+on genre Dot
+genre
+ID equals
+to genre
+ID okay sorry track
+ID track doj
+ID okay so here I will write
+where where genre
+dot
+name
+like shock
+okay lock fine then I will Group
+by my bad Group
+by
+artist do artist ID I need the ID as
+well then order
+by order by
+number
+of
+songs in the descending then limit I
+need only 10 rock bands limit will be
+10 let me run it
+okay let me run
+it okay
+album okay
+now let me run it okay now you can see
+this guy let Zeppelin arid is 22 and
+wrote the most songs f 144 then U2 122 d
+purple 92 then then this this this then
+this okay so this is how we solved our
+second
+question right
+so now the third
+question okay return return all the
+track names names that have a song
+Length longer than the average
+song Length return return the name and
+the millisecond of the each
+track ordered by the song
+Length
+okay so first I will write this question
+Q3 so return all the
+track names
+that have a
+song
+Length longer
+than the
+average strong length Okay as return all
+the track names that have the song
+Length longer than the average song
+Length okay
+then return
+return the name and
+milliseconds for each track
+fine after that order by them order by
+the
+songs with the
+longest
+song
+listed
+first okay fine so we have to return
+return all the track names that have
+song L and
+the
+okay first we will find the total length
+of this songs then we will do the where
+then we we will put the VR Clause to
+find out the
+particular uh longest s okay so this is
+this will do in the two you know step
+first you will find the average stke
+length Okay so I will write here
+select select name comma
+milliseconds okay
+from
+track
+where
+milliseconds here I will write
+select
+average from the
+millisecond
+okay then I will let right here
+as
+average
+track
+length Okay then here I will write from
+track after this I will write
+here order
+by m
+seconds I need in the descending
+order
+okay so let me run
+it so now you can see see first I will
+uh read it again so return all the track
+names that have a song Length longer
+than the average song Length return the
+name and the millisecond for each track
+order by the song with the longest song
+listed first okay so this is the longest
+song
+okay so we have all the songs which are
+the longer than the average song Length
+right so now moving forward we have
+jumped into the advanced set of
+questions okay so now we will do the
+advanc questions okay so let's see first
+find how much amount spent by each
+customer on artist right a query to
+return customer name artist name and
+total spense okay so first we will write
+down the
+questions okay then question
+one question one okay
+find how
+much
+amount
+spent by
+each
+customer on
+artist
+write
+query to
+return customer
+name comma artist
+name comma total
+Spin and total
+spent okay so how to solve this so first
+find which artist has earned the most
+according to the invoice lines okay
+first uh let me show you the schema okay
+we need the artist name we need the
+customer name and we need the total
+spent okay with the invoice line because
+the quantity should be there okay so
+first we'll see how to join these three
+table artist table customer invoice and
+invoice line like this okay this is how
+we
+will you know join the table fine so now
+I will tell you the you know steps so
+first find which artist has earned the
+most according to the invoice line okay
+the second now use the artist to find
+which customer spent the most on the
+artist so for this query you will uh we
+need to use the invoice invoice line
+track customer album and the artist
+table so just remember this one is
+tricky because the total spent in the
+invoice
+table right let me show you
+so total spent on the invoice
+table might not be a single product so
+that is why I was saying we need the
+quantity so we need the invoice line
+table to find out how many each product
+was purchased then we have to multiply
+this by the price of each artist okay
+fine so now so this is the lengthy one I
+will just you know write it for you and
+get back to you
+yeah so this is how you can see okay
+Group by five I have wrote this you can
+just you know write
+it okay like this okay we took artist
+name then sum of invoice line unit price
+into invoice line the quantity that I
+showed
+you okay we have multiply this total
+with the quantity okay then we joined
+the table track with invoice album with
+track artist with album okay so now
+let's run
+it
+yeah so now you can see this H or queen
+amount spent 27 the customer ID is this
+okay then
+Nicholas scer then 18 okay we have
+the everything okay customer name artist
+name and the total spend this is the
+customer Name the artist name and the
+total amount they spent fine so now
+let's move forward to the next
+one which
+is
+okay okay yeah so the second one is this
+we want to find out the most popular
+music genre for each country we
+determine the most popular genre as a
+genre with the high amount of purchase
+so write a query that returns each
+country along with the top genre for
+countries with the maximum number of
+purchases shared return all the genres
+okay so what I will do first I will
+write the
+question okay so V
+okay question
+two so
+find how the
+most popular
+music
+music genre for
+each
+country okay with
+theine
+determine the most
+popular genre as the
+genre with the
+highest amount
+of
+purchase
+okay then write a
+query that
+returns each
+country along with
+the top
+genre
+for
+countries where the
+maximum number of
+purchase
+okay
+so so there are two part Parts in this
+question first the most popular music
+genre and the second is the need of data
+at the country level okay so we can do
+it from the two methods okay using CT
+and the using the recursive method so I
+will use the using CT I will do this
+city so for that you have to write
+with
+popular
+genre as
+select
+count
+invoice
+line
+dot
+quantity
+okay
+as purchases
+comma customer
+dot country comma genre do
+name comma
+genre dot
+JRA
+ID
+okay
+then here I will write row
+underscore
+number
+number then I will write
+over
+Partition
+by customer do
+country order
+by
+count
+voice line
+dot quantity
+okay into descending
+order as row
+number
+okay so
+from invoice
+line
+okay yeah
+so here I will join the tables
+join
+invoice
+on invoice
+do invoice
+ID equals
+to
+invoice
+line dot invoice
+ID okay then again join
+customer
+on customer do customer
+ID do
+idore ID equ to
+invoice Dot customer
+ID
+fine then again we have to join
+track
+track
+on track. track
+ID equals
+to invoice uncore
+line dot trackcore
+ID then
+join
+johra on
+JRA
+dot JRA
+ID okay
+then track do John
+Ry okay then I will do group by
+Group by 2 comma 3 comma
+4 then I will do order
+by two then ascending
+order and then one 2 descending
+order
+okay
+okay then now I will write select
+start
+from
+popular
+genre
+where row
+number is less
+than greater than
+one okay now let me run it
+so now you can see we
+have okay I will let me read so we have
+to find the most popular music genre for
+each country okay so now we have the
+country name Argentina the most popular
+is alternative and punk John R is this
+St number is
+this okay purchase is this then the
+Australia this rock rock rock rock rock
+okay certain Rock USA Rock and
+everything is there right so this is how
+you can
+find the most popular music genre for
+each country okay the last question is
+still
+here now the last question
+is write a query that determines the
+customer that has spent the
+most on the music for each country write
+a query that Returns the country along
+with the top customer and how much they
+spend okay for the countries the top
+amount of spent is
+shared
+right and they provide all the customer
+who spent this amount okay so for this
+um this is like a similar to this
+question okay so there are two parts in
+this question find the most spent on
+music for each country and the second is
+the filter the data for the respective
+customer it's very easy okay so
+okay I will write the solution okay you
+can check the question from there okay I
+will write
+customer
+with
+country
+as as uh I will here
+select customer
+Dot customer
+ID
+comma first
+name comma last
+name comma
+billing billing
+country
+comma
+sum should be total
+as total spending
+right then I will
+write
+row
+number same over we have also written
+here now
+right the same we have to write here
+over
+then
+Partition
+by billing
+country order
+by by
+some total
+descending
+order as row
+number okay so after this I will
+write here
+from invoice you have to
+fetch then again the same thing you have
+to join the
+table
+join customer
+on customer
+do customer
+ID equals to
+invoice do customer
+ID okay then here I will write Group
+by by 1A 2A 3A 4 comma okay that's
+it okay then I will write here order
+by
+for ASC ascending
+order comma
+5 to descending
+order
+fine so now I will write here select
+start
+from
+customer
+with country
+where
+row
+number is one
+fine so let me run it
+see we have first name last name billing
+country total betting row number and the
+customer ID let me show you the
+question here write a query that
+determines okay let me make it SM
+okay
+yeah so write a query that determines
+the customer that has spent the most on
+the music so customer we have the
+customer name for each country write a
+query that return the country along with
+this so we have the country name with
+the top C custom how much they spend we
+have the total spending for the
+countries where the top amount is shared
+provide all the customer who
+has customer who spend this amount okay
+so we have everything
+here right we have this Le from Brazil
+this this this this this okay with the
+customer ID so this is how you can solve
+these questions so till now I can say
+you have a good data analytics skills so
+so for this I can say this will help you
+in the interview of data analyst in data
+science or any SQL okay so with this we
+have come to end of this video if you
+have any question or doubt please ask in
+the comment section below a team of
+expert will help you as soon as possible
+thank you and keep learning with simply
+learn staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to career success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nert up and get certified
+click here

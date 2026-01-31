@@ -1,0 +1,761 @@
+foreign
+'s YouTube channel in the session we
+will be learning the threads in Java or
+the multi-threading in Java but before
+we begin let me tell you guys that we
+have daily updates on multiple
+Technologies if you're a tech geek in a
+continuous hunt the latest technological
+Trends then consider getting subscribed
+to our YouTube channel and don't forget
+to hit that Bell icon to never miss an
+update from Simply learn now without
+further Ado let's get started with our
+agenda for today's session
+so we will get started by understanding
+what exactly is multiprocessing then we
+will understand the different types of
+multi-processing then we will get into
+the thread where we will understand what
+exactly is a thread and how the thread
+Works in Java programming then we will
+understand the multi-threading paradigms
+then the thread life cycle and followed
+by that we will get into the
+technicalities of thread where we will
+understand the thread definition and how
+to access the thread methods and how to
+run it started and you know the life
+cycle of a thread and how to end it
+followed by that we will get into some
+most frequently used thread methods in
+Java I hope I made myself clear with the
+agenda now without further Ado let's get
+started
+but before that if you are an aspiring
+full stack developer or the one who is
+looking to upskill your skills in full
+stack development then we have a perfect
+course for you from Simply learn we have
+the postgraduate program and full stack
+development which should help you to
+accelerate your career as a software
+developer through the most important
+skill set that you will be requiring in
+the real-time environment the key
+features for this particular
+postgraduate program are you will be
+having the Caltech cdme postgraduate
+certificate enrollment in simply launch
+job assist receive up to 25 CEUs from
+Caltech ctme and simply learns job
+assist helps you get noticed by top
+hiring companies master classes thought
+by Caltech ctme instructors eight times
+higher interaction and live online
+classes conducted by industry experts
+online convocation by caltex ctme
+program director 20 lesson and and phase
+and projects Capstone projects and four
+domains Caltech ctme Circle membership
+and build your own portfolio on GitHub
+apart from this you will be guided
+through this particular learning path
+where you will have a brief introduction
+to Catholic pgp program and
+implementation of oops with Java
+becoming a backend expert implementing
+Frameworks by devops way develop a web
+application using front-end stack full
+stack web development Capstone project
+and apart from that you will have some
+more electives where you will go through
+Caltech ctme full stack development
+masterclass and The Phase 5 which
+happens to be testing in devops
+lifecycle
+the skills that will be covered
+throughout this entire program are agile
+spring core 50 AWS soap and rest Java
+devops JavaScript es6 JSP hibernate and
+jpa HTML5 and css3 and finally the
+serblets and also you will be worked
+through some of the most important tools
+like angular CSS Docker get HTML Jenkins
+junit 5 Maven mongodb MySQL rabbitmq
+selenium Etc
+you will be also covering the most
+important projects for your portfolio
+which will include the fintech sector
+food delivery services entertainment
+sector and much more and here are our
+program advisors Rick and finally we
+have the career support so what are you
+waiting for enroll today to our pgp
+program in full stack web development
+now let's get back to our PPT and learn
+about the threats in Java so the first
+subheading which is what is
+multi-processing
+so back in the day when the computers
+were a new thing the processors had only
+one single call and they used to execute
+tasks or the scheduling of the task was
+one after the other one process was
+supposed to be finished and then the
+next would come up right so now what is
+multi-processing so these days the
+latest computers come up with multiple
+core processes right here even the
+processors are highly powerful but they
+can execute multiple processes in one
+single go or you can consider they can
+execute multiple tasks fairly with
+respect to each other right so the
+process of using the complete bandwidth
+of a CPU to execute two or more
+computational jobs at a time as defined
+as multi-processing now there are two
+different types of multi-processing
+so the two different types are basically
+process based and thread based so both
+are completely you know similar to each
+other but they have some minute
+differences what are the differences
+basically they both execute the same
+task right they take care of two or more
+mathematical or logical processes to be
+executed parallely with respect to each
+other what's the difference yeah they
+might seem same but the thinnest line of
+difference is when we look into the
+process based multi-processing it runs
+two or more processes concurrently and
+threads they execute two or more threads
+concurrently so what is the difference
+between a process and the thread right
+now let's assume that you have opened
+your internet browser and in the one tab
+you are browsing through your internet
+and in a different tab you are scrolling
+through your social media platform say
+Twitter Facebook or YouTube right here
+those are considered as different
+processes
+right you are trying to open up
+different tabs on your Google browser or
+any internet browser and apart from that
+let's say you are trying to execute a
+code and you have opened your IDE say
+eclipse or pycharm or something so when
+you're browsing through internet you get
+some source code and try to copy it and
+try to run it on your ID so these are
+considered as multi-processes right
+multiple processes so this is process
+space multi processing when you come
+into thread based you just open up one
+single application let's say your boss
+told you to write down a document for
+deal right now you're processing a deal
+or you're trying to give a presentation
+to your client or something and you are
+trying to prepare that particular
+document on Microsoft Word or Microsoft
+PowerPoint which forever may it is
+right and your process is to type in the
+text or add the information onto your
+IDE or let's say you are trying to add
+information onto your word right and
+here Microsoft Word is taking care of
+multiple things in the background it is
+taken care of you know the spelling it
+is taking care of grammatical issues it
+is taking care of indentation it is
+taking care of font Etc right so here
+multiple threads are running to execute
+a single task right this is where you
+can Define the difference between
+process based and thread paste so
+another difference is process based
+multi-processing requires more time and
+more memory compared to the thread base
+whereas the thread based
+multi-processing will consume less time
+and less memory since only one
+application is running there and the
+last difference is it requires separate
+address space so the process based
+multi-processing will require separate
+individual address for for each and
+every process you are running the
+background so one address for browsing
+to internet one address for executing
+your IDs Etc and here when you're
+running one single application so one
+single address space is shared by
+multiple threads you will be having one
+single main thread and that particular
+thread is responsible for creating or
+eliminating any child threats we will
+understand this particular process in
+the next following sections but let's
+say let's understand that there will be
+one single main thread which will start
+the entire application and that
+particular thread or main thread is
+responsible for any of the future
+upcoming child threats right so this is
+the thinnest line of difference between
+the processed space multiprocessing and
+thread based multiprocessing
+moving into our next subheading we can
+see what is a threat right so what
+exactly is a thread
+so here you can see one image and this
+particular image can be considered as an
+application so let's say you are going
+to start an application let's say you're
+starting your Eclipse IDE then you start
+your application this particular
+processor will start the main thread
+inside that particular operation or that
+particular application right and that
+particular main thread is responsible
+for creating multiple child threads so
+the hierarchy goes in this way when you
+start an application that particular
+application will receive a request or a
+process from the user let's say you are
+trying to open the IDE or let's say
+you're trying to open an existing file
+in your computer system that's the
+request what you send right based on
+that request that particular request
+will be processed by starting a main
+thread and that particular main thread
+will look is there a requirement for any
+of the child threads to be created for
+this particular process or request and
+accordingly it will give birth to
+multiple child threads and it will get
+the job executed or it will get the job
+done so every thread will have a job and
+that particular job will be inside the
+thread body and it will be executed by
+accessing that particular thread body so
+we will look how the fundamentals or how
+the process or how the life cycle of a
+thread goes on in the next particular
+segment now moving ahead into the next
+part a thread is the smallest unit of
+execution or a processor allocates time
+to threads every thread has a program
+counter to keep track of the next Duty
+remember I said one single main thread
+will create the multiple threads or
+child threads right so each and every
+thread will have a program counter which
+will take care where to go and what part
+of the code to be executed right
+sometimes you call a function and the
+entire control will be sent into that
+particular function body and the main
+body will be waiting for a response from
+that function it can be anything it can
+be the data or it can be the control
+which comes out of the function after
+the execution right and after that every
+thread has a stack to arrange the
+priority of jobs allocated every thread
+has a set of registers and every thread
+has its own unique ID however a thread
+cannot execute itself it needs a program
+or a process you cannot start a thread
+unless you start or unless you give a
+request or any kind of you know
+operation to the application and finally
+multi-threading can be only be possible
+on multi-core processor so if you have a
+single core processor you cannot do it
+the processor should be capable to
+execute multiple processors at one
+single go it should be capable to finish
+multiple process in parallel with each
+other it should not have scheduling like
+one after the other so that can be
+possible only multi-processor based
+computers only
+now in the next sub heading
+what is multi-threading
+right as shown in the above figure a
+thread is executed inside a process and
+there is context switching between the
+threads there are multiple processes
+inside the OS and one process can have
+multiple threads remember I said you
+when an application is started it
+receives a request or it receives an
+operation or a process from the user and
+based on that process request or
+operation the main thread will start the
+execution process and that particular
+main thread is responsible for creating
+multiple threads in one group based on
+the requirement right so here you can
+see one application got started and it
+started up multiple processes process a
+process B process C right the process
+can be interdependent or process can be
+individual or they are not dependent on
+each other it is based on what kind of
+application you are running right the
+process can be dependent on each other
+or it can be independent and it can run
+on its own So based on the requirement
+the context switching happens between
+the processes right so these are the
+threads and these are the individual
+process of process a process p and
+process C let's say process a is
+dependent on the result or the output
+which comes from process B until that
+time this particular threads and process
+a are idle right and if say process a is
+supposed to be giving the output to
+process B which is dependent on process
+A and C together then the threads in
+process B will be idle until the control
+comes to that particular end right
+that's how multi-threading works that's
+the meaning here which says context
+switching happens between the threads
+right now moving on to the next sub
+heading
+the next subheading will explain us the
+thread life cycle right we already have
+a brief understanding how a thread
+starts what's the hierarchy of a process
+what's the hierarchy of a main thread
+than the child threads right now let us
+understand let's keep that aside and let
+us understand the thread life cycle of
+every thread whether it is a child
+threat or whether it is a main thread
+every thread will go through this
+particular life cycle let's understand
+what's that life cycle is
+so the life cycle starts from new
+runnable running waiting and dead this
+particular runnable plays a major role
+because every single thread whatever the
+thread you define that particular thread
+will only have one function which is run
+right we will be dealing that in the
+next segment but now let us understand
+what exactly each and every one of these
+stages is having an importance right
+let's go through the first stage and
+that is new
+the first stage in every threads life
+cycle is new
+the brand new thread is created using
+thread clause and thread will be in this
+state until the program is sent for
+execution so whenever you click on the
+application the application will start
+and the new threads are readily
+dispatched for every process right until
+the process is clicked upon until the
+process is started these style threads
+or the thread whichever started will
+remain in the new state right it will
+not start
+whenever the request is received then
+the stage will change from new to
+runnable the thread gets engaged with
+the instruction here the thread gets
+assigned to a scheduler and scheduler is
+responsible if the threads execute or
+not once the threads receive the
+execution order the threads will get
+into the running state from the runnable
+state here it will store the potential
+to execute a task in the random State
+once the potential is given the order
+then it starts executing the job the
+thread starts executing the instruction
+and this stage is called as running
+stage the scheduler borrows the thread
+from the thread pool the thread pool is
+where all the runnable or new threads
+are available and once a scheduler gets
+the job it borrows the threats from the
+pool and gets them running and gets the
+job executed and remember I said in a
+multi-processing stage you will be
+having multiple threads and in case if
+there is a dependency let's say process
+a is supposed to be receiving an input
+or an output or a control from another
+process until then the process B will be
+in idle state that particular idle state
+is called as waiting state so the thread
+goes into the waiting stage as it is
+dependent on a different process to
+receive the control or the input now
+let's get into the next stage that is
+the dead stage the final stage is where
+the thread gets killed after the process
+execution is done after the termination
+stage the threat enters to the debt
+condition let's say the process could
+completely execute it and there is no
+reason why the thread is still active
+then automatically the scheduler or the
+main thread well terminate the executing
+child thread or the waiting whichever
+the state it is if the process is done
+the child thread whichever finished
+execution will go into the death state
+so this is the thread life cycle moving
+into the next subheading we will
+understand the process of
+thread creation
+so Java threads can be created in two
+different ways that is extending the
+threat loss and using a runnable
+interface now let us understand the
+first way of creating threats that is
+extending a thread class
+so so far we have understood the thread
+terminology what is multi-processing
+what is the different types of
+multiprocessing thread and what is
+multi-threading Etc and we also know
+that to execute threats in Java we need
+to you know execute the thread class
+right and what if you wanted to create
+multiple threads
+based on the fundamentals of oops it is
+already evident that you cannot inherit
+multiple inheritances right so far we
+have understood that to execute a threat
+we had to inherit the thread class which
+is the superclass in Java and if you
+want to execute a thread you need to
+inherit the thread properties from the
+thread super classic server right now
+let's say we had the process or let's
+say we had a dependency where we had to
+create multiple threads now it is edited
+we cannot inherit the threat class
+multiple times for all the individual
+threats that's where the interface comes
+into picture now we have something
+called a runnable interface in Java now
+we will be overriding that runnable
+interface to get the thread job executed
+so you can see here this particular code
+segment is called as thread definition
+so to implement the runnable interface
+you will write the class A which will be
+implementing the runnable interface and
+inside that you will be overriding the
+run method which is the only method
+available in thread interface or run
+interfer runnable interface of java and
+inside this particular run function
+whatever you write is considered as the
+threadshow which can be anything which
+can be printing a simple message or it
+can be a for Loop or it can be a
+condition or any Duty whatever you want
+to execute in terms of software is
+called as a thread job which is always
+encapsulated inside the Run function of
+the runnable interface
+and when you come into thread execution
+you create a new class B which will
+implement the runnable interface and
+inside that you will be having the
+public static point mean string arcs so
+until here you will have one single
+thread that is the main thread which
+will be you know called by the jvm and
+once you create the new object of the
+main thread then a new thread will be
+generated that is the child thread which
+is responsible for executing the job
+which is present in the runnable
+interface and the main thread will be
+available as it is this particular main
+thread will have the job of executing
+the objects or whichever the code you
+have the job which is related to the
+class B and it will be dedicated to that
+job only the child through which you
+create the new thread will execute the
+chair thread job which is in the
+runnable interface so this is how you
+can create a thread by extending an
+existing thread class
+now let's try to execute an example
+based on this particular type of thread
+creation
+so on my screen you can see an example
+for extend method where we are going to
+extend an existing thread class and try
+to create the multi-thirating operation
+so the third job here is in between the
+try and catch block which is a for Loop
+which will just run for four times until
+this particular condition is true and
+try to print a message thread and the
+name of the thread right and every
+thread creation will have a 50
+millisecond sleep timer now let's try to
+quickly execute this class our code and
+see the output so here you have the main
+thread or the main extend class right
+and here we have the thread creation or
+we are calling the start function using
+the extending method
+let's select the code and execute this
+particular code
+there you go the code got executed and
+here we have the output the creation of
+thread one and two and the thread names
+the threads which are running is thread
+2 and the threads which have died after
+the execution is thread one and two
+right so we created this particular one
+two three four threads and the current
+threads which are three and four are
+maybe in the waiting State or the
+routable state and the two threads which
+are executed are debt are the thread one
+and two so with that let's go into the
+next type of theoretic creation which is
+the runnable interface right now we get
+into the next type of thread creation
+which is using the runnable interface it
+is completely similar we will have the
+thread definition Class A implements
+runnable and public static word mean and
+here we have the thread shop and when
+you come into class P right remember in
+the previous method we just directly
+created the T start right T dot start
+method and which created the thread job
+I mean X secure started executing the
+thread show but when you come into
+runnable interface things are quite
+different now here
+to access or to start the thread job or
+to run the thread job this particular
+Class B will not have the control over
+this particular thread show right you
+cannot directly add in the start and
+ignore directly add in the run method
+here and expect it to run
+so what are we creating is we are trying
+to create a new object right the object
+of this particular class and that
+particular object of this class will be
+accessed by the thread so here we're
+creating a thread again thread T is
+equals to new thread and we are passing
+this particular object to the thread
+method and through this we are getting
+the start function T dot start will
+start executing the thread shop in the
+class A so this is how the runnable
+interface works now let's go through an
+example based on this particular way of
+creating a thread
+so here on my screen you can see we have
+the runnable way of implementing threads
+right we have created an object of the
+class and we are passing that particular
+object here and we are accessing the
+thread through the start method and here
+the job is again simple just via you
+know encapsulating the job inside the
+try and catch block and it is again a
+simple for Loop which should print the
+message and the thread details let's
+quickly execute this program and see the
+output
+there you go the program got
+successfully executed again we have
+created multiple threads here one two
+three four the threads
+two three four
+now the threads three and four are in
+the waiting State and or you can also
+consider that they are in the running
+State and the ones and two threads which
+have completely finished their tasks are
+in the exiting stage or dead state and
+now let's move ahead into the next part
+of our PPT which is about the most
+frequently used thread methods
+so some of the most frequently used
+thread methods are run sleep is alive
+suspend and resume as the name itself
+suggests the run method is used to do an
+action so remember the runnable
+interface will have only one single
+method which is run right so whatever
+the job you define or whatever the job
+you construct in the class is run by
+this particular method right and the
+next one is sleep
+foreign
+for a specific amount of time if you
+want to hold the execution of a
+particular thread then you can Define
+this Sleep Method and add the number of
+milliseconds for which you want to hold
+that particular thread next is the lab
+is alive can be considered as a Boolean
+type of method where you can just check
+if a thread is alive or not it will
+return a value which is based on the
+activity of that particular thread and
+you can use that for the further
+processing next is the suspend method
+which will suspend an executing thread
+let's say you want to forcefully stop a
+particular thread then you can use the
+suspend method and finally resume in
+case if a thread is in Waiting stage not
+in the dead stage if it is in the
+waiting stage then you can start
+resuming the activity of that particular
+thread by using the resume method to
+have a better understanding of each and
+every method we have discussed here
+let's execute a program based on each
+and every method let's get back to the
+eclipse idea
+we are back on the Eclipse IDE
+so here we have the simple program to
+help us understand how a run method
+actually works so here we are creating
+the method run objective method run
+which is Run 1 and here we are creating
+a thread right remember the
+implementation of runnable interface
+where we created an object of the main
+class that is the method run and then we
+created an object of thread and then we
+passed the thread.1 along with the run I
+mean start function to execute this
+particular job which is inside the main
+run method which is the thread job to
+print the function or print a message
+which says that it is running right
+let's execute this particular program
+and see here
+so there you go the program got executed
+and here we can see the thread job is
+being executed which is print a message
+which says thread is running now let's
+get into the second one which is Sleep
+Method and here we have the
+we have the third job encapsulated in
+between the try and catch functions
+block or you can say try and catch block
+and here we have the Sleep Method where
+we are calling the sleep function by
+providing 500 milliseconds hold right so
+when you execute this program the thread
+creation thread one and thread 2 will
+have a difference of 500 milliseconds
+now let's execute this program and see
+the
+there you go the program got
+successfully executed and the Sleep
+Method is being executed here
+right so with that let's move on to the
+next method I presume it could be the
+ease alive method
+so let's close this console and we have
+the program here
+now here is alive is the main class and
+the thread job is encapsulated between
+try and catch blocks
+and here we have the start function for
+starting the thread and we are passing
+the ease live method to check if the
+created thread is alive or not let's try
+to execute this program
+there you go the program got executed
+and here you can see the run method and
+is alive is true that is the threads
+which got created are alive and one of
+the threads
+right one of the two threads is alive
+and another is false and here you can
+see which thread is alike now we have
+executed is alive run sleep and here we
+have resume method let's get into the
+resume method let's close the console
+so here we are trying to suspend some
+threads here you can see thread number
+one two and threader number two is
+started here and here we're calling the
+suspend function for thread number two
+right and again we are calling the
+thread number two again with the resume
+function right and in between these two
+we are trying to start a new thread
+which is thread number three let's try
+to execute this program and see the
+output
+there you go
+so here you can see the thread number
+three has been created right so the
+thread which was suspended it got
+reactivated again in this particular
+section
+right and we are continuing again with
+the number for the thread number four
+now that leaves us to the last method to
+purchase the suspend method and we
+already had an example of suspend method
+in the resume method all we are doing is
+just trying to hold or stop one
+particular method by calling the suspend
+method let's try to quickly execute this
+program and close the Practical session
+there you go the thread number three got
+suspended all right now here you can see
+the creation of thread number zero the
+main thread one two three four and the
+thread three which got suspended here
+and we again continued with the number
+four right so
+so with that let's get back to the PPT
+so here we have all the five methods run
+sleep is a live suspend and resume and
+with that we have come to an end of this
+session on threats in Java or multi
+threading in Java if you have any
+queries regarding any of the topics
+covered in this session or if we require
+the resources like PPT demo and the code
+used in this particular session then do
+let us know in the comment section below
+and our team of experts will be more
+than happy to resolve all your queries
+at the earliest until next time thank
+you stay safe and keep learning
+foreign
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

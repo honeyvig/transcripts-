@@ -1,0 +1,497 @@
+foreign
+in this session we will start with
+certain exercises which we will perform
+in Tableau in order to understand some
+basic concepts
+now in order to learn Tableau the basic
+first step is to import a sample data so
+in our case what we have done is we have
+imported a sample Superstore which is in
+Excel format a sample superstore.xl
+which has three worksheets in it orders
+people and returns so by importing this
+data into Tableau first of all we will
+create relationships between these
+sheets in order to identify who all have
+placed orders and how many people have
+returned the orders we will do some
+analysis on the orders placed by certain
+set of people and Order returned by a
+certain set of people
+now as we have imported uh the sheet we
+will make certain joins so the first
+step is to drag the orders
+table the order sheet on the
+relationship canvas here okay and you
+can see the data sample data the first
+100 rows over here
+okay then now we need to create an inner
+join with people's table between order
+and people okay so if you see
+it has automatically detected the field
+names on which the inner join has to be
+created so on the order side you have
+region and on the right hand side which
+is the people data you have also a
+region okay so both these columns are
+common and that's how we have made a
+join between orders and people data
+so if I close this box and go and check
+the people's data
+open
+so see the region and the person these
+two columns from the people table have
+now been
+joined with the orders table right so it
+means that these are the orders in a
+particular region which has been placed
+by
+in this region
+let me show you the sample Superstore
+Excel file now this is the structure of
+the file you have a sample list of
+transactions basically the orders which
+are placed by customers
+across multiple regions
+south west of USA South Region west
+region then you have a list of order IDs
+which have been returned so basically
+the order ID in the returns sheet
+matches with those orders in the order
+table
+and then you have the people uh sheet in
+which you have region
+and a person associated with that region
+the sales person associated with that
+region okay so basically when we are
+combining joining orders with people we
+are joining that
+which orders
+belongs to which region and who's the
+sales person associated with it so what
+we have done over here is we have made a
+inner join means all the orders should
+belong to a particular region and that
+region is in the people's sheet
+and then in the second step
+now we will make a
+left join between returns and orders
+not inner join we'll make a left join
+between returns and orders and we will
+make a join using the
+order ID
+okay so just edit this
+click on left
+and
+select order ID as the join column now
+what does left join means left join mean
+is that consider all the orders from the
+orders table and only consider the
+orders from the return statement which
+have data means which are returned
+otherwise show null for the order IDs
+which are not returned so if you see
+this is the these are the two columns
+from the return statement and these are
+null because this is relevant to the
+order IDs which are not returned okay
+which has been accepted by the customer
+but these are the orders for which you
+see data in the returned and Order ID
+column it means that these have been
+returned
+now with these joins in place please
+save your book and now we have our
+relations created in the
+um
+in the Tableau now we are ready to
+create certain reports and extract
+certain kpis using this relationship
+model
+now we'll move to sheet1
+okay
+and first we will place
+state
+and person on the rose
+sheet okay
+then
+I'll go to my
+numbers and
+put the profit or the super State per
+person how much profit I am making as a
+company okay this is my goal to check
+Now sort by highest to lowest so
+California is giving me the maximum
+profit of 76 381 then New York then
+Washington so this is the sorted order
+in which I have
+listed my profit in descending order
+now I can also check what are the number
+of orders
+placed
+and check the distinct count
+foreign
+out of the total orders of 127 okay so
+this is the number of total number of
+orders which have been returned for
+California is 127.
+it's 16 29 so the sorted order is as per
+the revenue as per the profit and this
+is the details of the orders which have
+been returned per state
+so if you see for connected for a Kansas
+there are zero returns
+so you can also extract data
+foreign
+ERS and identify new rows using order
+date so as and when new data is being
+added you can
+refresh it now say extract
+and now you can save this information
+profit
+by state
+and click save so this is the extraction
+of this particular report which is
+possible in tableau
+so this is the first exercise which we
+have completed
+for
+reviewing and analyzing the profit per
+state highest to lowest and within that
+per state what are the number of orders
+which have been returned by all the
+customers the distinct count of order
+IDs which have been returned
+now let's start our second exercise on
+creating calculated fields in tableau
+now in this exercise we will be doing
+certain
+activities like we will be creating a
+set to show the states which have more
+than 100 customers then we will be
+creating a calculated field to show an
+average sales per customer okay then we
+will create a calculated field to show
+the sales goals and then show emerging
+and developing stage so these are the
+four kpis which we have to derive
+now the first thing we have our sample
+Superstore data already imported and the
+relationships created in a join with
+people and left join with returns
+now we have our sheet 2 in which we will
+create the states a list of states which
+has more than 100 customers
+so what we have to do is we have to
+click right click on the customer name
+and click create set
+okay
+now we have to give the name as states
+with 100 plus customers
+and then go to the condition tab
+select by field
+and then apply condition as
+count of customer name
+greater than equal to
+100
+and click
+ok
+now we have this set created states with
+100 plus customers
+now to determine average sales by
+customer we have to now create a
+calculated field
+so go to the analysis and click on
+create calculate field
+okay
+now name it as
+average
+sales per customer
+and now we will say average
+we will use a
+okay so we are saying that per customer
+we are using a level of definition
+function include which means that per
+customer what is my average sales right
+we've already used a function aggregated
+function called average so we are saying
+per customer give me the total and then
+give me the average per customer so
+we're going to click ok
+now create another calculated field you
+can also create from here
+and name is as name it as sales goal
+now in this we are going to type the
+formula if
+minimum
+States
+with 100 plus customers equal to true
+then
+sum of
+sales
+into 1.3
+else
+average sales per customer into
+100 so me we are saying that
+if the customer belongs to the set of
+states with 100 plus customers then the
+sales Target should be
+1.3 times the actual sales as of today
+else it should be 100 of the average
+sales per customer
+now let's create another calculated
+field which we call as
+emerging
+or developing state
+if distinct count
+of customer name
+is greater than equal to 100
+then
+the state is tagged as developing state
+else it is called as
+emerging state
+okay so we have now three calculated
+Fields average sales per customer
+emerging or developing State and sales
+goals
+now we will use this in our
+reporting
+so we will drag sales goal under the
+columns
+and then I'll drop my state
+so now this is the statewise sales goal
+depending whether the state has 100 plus
+customers or not
+then add your customer name
+make the measure as count distinct
+and make it as discrete
+okay so if you see this
+we have the count of customers per state
+and the
+the sales goal
+for that particular state
+and now
+I'll put my sum of sales the total sales
+which I want
+which is there per state
+now go to show me and select
+this particular chart
+bullet graph
+now to bring sales goals to column right
+click on the sales access and select
+swap reference line fields
+now from your left hand panel drag and
+drop emerging or developing State on the
+color panel
+okay so a merging state is the orange
+one and the developing state is the blue
+one
+and save the sheet as
+developing and the emerging States
+so if you see this it's an emerging
+State because its count is less than the
+customer count is less than 100
+its sales goal is
+57384 but the actual sales is one nine
+five one one okay
+so now this is a developing State its
+count is greater than equal to 100 and
+its sales goal and its sales is exactly
+the same it matches so that's why you
+are saying the bar and the blue bar is
+ending exactly where the vertical bar is
+so what we are trying to depict is that
+whether the state is going Beyond its
+Target sales goal or it's behind it
+and you can see that using this
+particular vertical bar like for example
+Michigan its sales goal is 71 952 but
+its actual sales is seven six seven two
+seven zero average sales so that's why
+it is be above its Target
+and it's a developing state
+because it has more than 100 customers
+so you can even sort
+by the count of the uh customers higher
+to lower so all your developing state
+will grow from at the top and the
+emerging States Will Group at the bottom
+or you can sort by
+the sales goal
+so the orange bar is the sales goal or
+the blue bar so depending what sales
+goal
+has been
+derived for each state
+hello and welcome to this new session on
+tableau
+now in this session we will talk about
+how to prepare dashboards and how to
+Interlink reports within the dashboard
+so in order to start this session we
+will first create couple of reports and
+then include them in the dashboard and
+then link them together
+so for this session
+as usual we are using the sample
+Superstore data set for our
+example
+now first we will create a report where
+we are gonna
+show profit by region per region
+so first we will drag the region
+in the rows column and we will get all
+the regions and
+state
+so we have all the states per region in
+our report now and then we will drag
+sales
+and profit
+so now we have our sales and profit
+measures the column level
+now just also drag now the region to the
+color section so now we have each region
+colored
+the entire sales and profit per region
+is distinguished by the different colors
+Central is south and west
+now
+click on the
+colors
+now we want to show the labels using the
+marks card okay so we want to show the
+region
+okay so we need to include the show the
+marks labels just a second
+foreign
+so enable the labels
+say show Mark labels
+okay
+so you have on the left this is the
+profit and this is the total sales now
+rename
+this sheet as region and state analysis
+report
+okay
+now let's create another worksheet
+now in this sheet just drag the state
+on the
+marks card now automatically Tableau
+will detect that you know you have
+dropped a particular State and we have
+the states of United States so it has
+identified the state names and showed
+you the identifiers of the states on the
+map and automatically
+identified the latitude and longitudes
+which are generated by Tableau and given
+you the markers on each and every state
+now drag the sales measure to the color
+panel
+okay so now this is sales per state in
+the color scheme with the color scheming
+then now Drag The Profit to the size
+so now each state you have the color the
+profit and the sales
+now you can edit the colors and you can
+select
+a particular scheme of colors and say
+apply and okay so now you are able to
+distinguish
+the colors on the state
+now after this
+just rename the sheet as
+profit by state
+report
+now create let's create another report
+now in this report drag the subcategory
+to the column section
+and sales and profit measures in the
+rows
+okay
+now click on the right click on the sum
+profit pill and check dual access
+now click right click on the profit
+access and say synchronize access
+now select some sales from the card
+marks card and change the notation as
+bar
+and for profit change the notation as
+line
+so now this is a fair display of
+sub category wise
+sales and profit representation that
+these are the sales and what is the
+profit
+now go to the marks all marks and drag
+the category section
+the
+category section as the tooltip
+okay so for each and every bar or line
+item you should now see the category
+also
+save your report
+and rename this now report as
+sales
+by and profit by sub category report
+now let's create a new dashboard
+now the reports which we have just now
+created first our dashboard size let's
+make it as automatic
+okay then
+let's show the dashboard title click
+click on the dashboard title
+now drag the reports which you have
+created
+profit by state
+sales and subcategory Report
+and region and
+okay so you have all your three reports
+in a single dashboard now
+profit by state sales and profit by
+subcategory and region by and state
+analysis report now we will link these
+reports so go to dashboard
+click on actions
+add an action called new filter
+select Source sheet in the source sheet
+dashboard to
+only select region and state analysis
+report
+and in the Target sheet just deselect
+region and state analysis
+on the source sheet keep the Run action
+on select and
+click
+ok
+now whatever state you select over here
+that particular state will be used as a
+filter across both these reports so it
+means in North Dakota you have all these
+category sub categories being sold and
+their Associated profit and on the map
+profit by Straight report you can see
+the North Dakota State being highlighted
+or only selected and the relevant profit
+and sales
+okay so here is the total profit and
+sales in the profit by state report and
+in this sales and profit by sub category
+report you have the breakup of the
+profit and sales across the categories
+similarly you can select any other state
+and automatically the
+filters will get applied automatically
+see this Marine Main
+okay
+so with this we cover our example of how
+to create multiple reports and then
+connect them
+or encapsulate them in a single
+dashboard for a single view across all
+these reports
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

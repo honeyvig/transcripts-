@@ -1,0 +1,1055 @@
+hey guys welcome back to another video
+by simply learn and in this session we
+will learn how to make a game in c plus
+of tic tac toe
+so this game tic tac toe is actually a
+paper pencil game for two players
+in which both the players one by one
+mark the cross and zeros in the spaces
+in a three cross three grid
+the player who succeeds in making a pair
+of 3 is declared as the winner
+so in this session we will learn how to
+make this game in c plus
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so first of all
+we have to make the structure of tic tac
+toe game
+and the structure of tic tac toe is like
+this
+these are the empty spaces and we have
+to mark these empty spaces with crosses
+and zeros
+and now these are
+column numbers and row numbers which
+will help us in adding alphabets to
+these empty spaces
+so first of all we have to create this
+structure
+so let's go ahead to our visual studio
+code
+so first of all let's name this
+game dot cpp
+we'll save it
+so now let's start with hash include
+iostream
+now we'll write using namespace standard
+now before making the structure we have
+to create an array a multi-dimensional
+array or we can say a two-dimension
+array so we'll write into main and
+inside int main first of all we'll
+declare that array and initialize
+some elements
+all right
+let's say the name of the array is space
+three rows and three columns we want
+okay so let's say the elements are
+zero zero
+zero one
+zero two
+okay now
+the second row the elements are
+1 0
+1 1
+1 2
+in the third row the elements are
+2 0
+to 1
+2 2.
+so these are the elements i have added
+these elements because these are
+collectively the rows and column numbers
+of the spaces
+as you can see
+0 0 zero one zero two one zero one one
+one two two zero two one two two so
+these are those elements i have added
+these are actually the positions of the
+empty spaces
+now
+we will take
+the input of the number of players
+as their name
+for example enter the name of first
+player and enter the name of second
+player so for that we have to create a
+string first of all
+let's say string n1 and string n2
+because there are two players
+now we'll display a message that enter
+the name of the first player let's say
+enter the name
+we missed writing e
+okay enter the name
+of the
+first player
+okay
+let's add slash in
+all right
+now let's take the input we'll write
+get line
+c in comma
+n1
+which is the name of the string
+now we'll do same for the other one
+enter
+the name of the
+second
+player
+now again we'll write get line
+c in comma
+and two
+now just in order to make it look good
+we'll write
+n1 that is the name of the first string
+or the name of the first player
+is
+player 1
+so he
+or she
+will play first
+okay
+now we'll write slash n
+now we'll do same for the player two
+we'll simply copy this
+and paste it
+and now
+all right
+let's change this player 2 and
+we'll play second
+okay
+now we have to make the structure of the
+tic-tac-toe game
+that is this kind of a structure we have
+to make
+so let's go ahead and create this
+okay
+we have to create two straight lines so
+we can do like this
+and make sure to write slash n
+in the end
+now we can do same for the second line
+because the two lines are pretty long
+enough so we can copy and paste
+it will save our time and we can do
+again
+now we have to create a horizontal line
+as well
+for that let's say
+c out
+and we can create this horizontal line
+by using underscore
+we'll give it a shot
+and
+we can do it like this
+so
+that it matches with the upper line
+all right
+now
+we can
+write slash n
+and we can do
+copy these two
+and we can again paste
+and then this horizontal line
+we can copy basically we have to create
+a structure
+so
+it is good if you can do it in a fast
+way
+or an easy way
+all right but the
+18 and 19 line seems to be extra so yeah
+we can remove that
+so that
+let's make it more symmetrical
+let's add some more underscores
+here as well
+make it like this
+all right now it is looking pretty much
+symmetrical
+let's remove this line
+yeah it is looking good now
+now all we need to do is to add the
+elements of the multi-dimensional array
+that is space array
+to these empty spaces like we have to
+add element on each and every empty
+space
+so as you can see this is the zero zero
+that is zero throw and zero column this
+is zero throw and first column this is
+zero through and second column and
+similarly all of these
+so that is why we have created these
+kind of elements so yeah we can also
+change these elements let's create them
+one
+two let's make it simple
+seven
+eight
+and nine
+so yeah all we need to do is to add
+these elements to these empty spaces
+our main intent behind adding these
+elements to these empty spaces is
+whenever we click a particular element
+or digit like let's say 2 or 3 then the
+mark of 0 or x should be placed at that
+particular position
+so let's do it
+and for that we have to do it like this
+write c out
+and
+inside c out
+we'll write the name of the array
+with the position of it
+of a particular element
+so this is the position of the first
+element that is one
+and after that
+we'll do it like this
+okay so this is the vertical line
+and
+then again we have to
+write
+the position for the second element
+that is 0
+1
+this element is 2
+and once we have
+rode this then
+we can enclose it
+in the bracket
+all right
+now
+the second vertical line
+and we'll do same for the third one
+right space
+0
+2 that is the third element that is 3
+now let's enclose it
+in double quotes
+all right
+yeah
+slash n
+semicolon
+now let's fix it
+now it's fine
+now we have to do
+the same for the second row and the
+third row
+so
+all we need to do is to copy this
+and we'll add over here
+and
+over here as well
+instead of writing this whole code we
+can simply copy paste and now all we
+need to do is to just change the row
+number and the column number so as you
+can see this is the first this is the
+second and this is the third element so
+we'll do same for the other elements so
+this is the fourth element so this
+position is
+1 0
+and this position is 1 1
+this position is 1
+2
+and this is a
+second zero position
+this is 2 1 position
+and this is
+this is position 2 2
+that is the last position
+so this is the thing
+so we can check if it is looking good or
+not
+i'm pretty sure that is not fully ready
+yet but yeah we can check
+so we'll save it by pressing ctrl and s
+now we'll try to run this
+so as we can see enter the name of the
+first player so let's say the name of
+the first player is sam
+and this name of second player is
+mario
+and yeah so this is
+our output
+but it is not looking good as its
+alignment is not good
+which i was sure
+so we have to make some changes
+we have to adjust a bit
+this was the vertical line and this was
+the second vertical line
+so let's make some changes and
+let's see if it is looking good or not
+sam
+and mario again
+it is better than earlier but as you can
+see this
+one is not underneath this one
+that is the vertical line
+is not underneath the previous vertical
+line and same for the sixth same for the
+ninth
+so we'll have to adjust this
+and it's pretty easy we can do that
+yeah now let's save it again
+and let's hope it runs this time
+enter the first name we have to enter
+let's add mario first this time
+same the second time
+yeah it is looking good now as you can
+see
+it is symmetrical and
+positions are also filled one two three
+four five six seven eight nine these are
+those elements
+now all we need to do is to
+make this structure as if a person that
+is the player
+will click a particular digit that is
+one two three four five six or seven
+eight nine then that mark that is
+zero or cross will be added to that
+particular position
+and also we haven't noticed that this
+mario is player 1 mario's play 2 is
+wrong
+that is we have we have to write n2 over
+here so by mistake
+we have wrote n1 and
+and we can add one space over here as
+well so yeah the rest is good
+now all we need to do is to create some
+functions
+but before that
+let's make it right
+yeah
+now let's make this all code inside a
+function so let's say
+let's move this into main we'll do that
+later
+let's create this code inside a function
+let's say the name of the function is
+function1
+okay
+all right
+so this is our function and let's create
+all these variables outside the function
+so that it can be
+global variables
+and we also take this array
+we'll
+copy it
+and paste it over here
+all right
+and we can remove it from here
+yeah so we have declared it globally and
+we'll do the same for
+the variables that is row
+and another variable that is column
+because we know that
+in a two dimensional array there must be
+rows and columns
+so we'll
+write column
+all right so these are the global
+variables
+so now let's go ahead and create
+function two
+for that
+let's say we'll write void
+function
+two
+now inside this function
+we will check for any invalid value and
+will make sure that it is not there
+but before that we will
+create a variable digit
+so that we can take the input from the
+user
+so we'll write
+and digit this is the variable
+now after that
+we'll write
+so here we will write if the value of
+token that is the variable that we will
+now create is equal to x then we will
+take the input from the first player and
+then we'll take the input from the
+second player
+so
+before that we have to create a variable
+token
+so we'll write here
+this variable is of corrected type
+character
+token
+let's
+initialize it with cross
+or x
+all right
+now
+here we will write
+if
+value of token
+equals equals
+cross
+then we'll
+write n1
+that is the variable name
+enter please enter we'll write please
+enter
+after that
+we'll take the input
+that is the variable digit
+now we will do same for player 2 that is
+n2
+so
+we can copy this
+and we can paste it
+all we need to change is
+we can make it
+zero and
+make it n2 so it will display
+n2 that is player 2 please enter
+and then the player 2 will enter the
+digit
+now we have to check these digits for
+each and every column and rows one by
+one
+and also we have to make sure that there
+is not any invalid value
+so for that
+we'll write
+if
+digit value is
+one
+that is the number entered by the player
+is one
+that is the first place or the first
+space
+then
+it would be
+row
+equals 0
+and
+column
+equals 0
+that is the first place
+just to clarify here we are talking
+about this position that is 0th row and
+0th column
+after that we will do it for zero throw
+in first column then zeroth row and
+second column and similarly we'll do for
+all of these positions
+okay now we have to repeat this code
+we have to just change this digit value
+to two three four five six up to nine
+because there are nine spaces
+and we have to change the rows and
+columns value so instead of writing it
+again and again we can just copy and
+paste it
+we'll copy
+and
+i will paste
+and we'll do it for
+nine times three
+all right now all we need to do is to
+change these values
+if the value of the digit is 2 that is
+entered by the user for the player
+then
+the value will go to
+zero throw
+and first column
+if the value is three
+then zero throw second column
+or third column because we are starting
+from zero so that is why we are talking
+like this
+now if the value of digit is four
+then zero throw and
+then first row sorry
+first row
+and
+zeroth column
+then
+if the value of five
+then first row
+and
+first column
+if the value is six
+first row
+[Music]
+and second column
+if the value is seven
+then
+second
+row
+zeroth column that is right
+the value of digit
+eight
+we'll write eight
+and
+the value would be
+row 0
+row 2
+and column 1
+here digit is 9.
+so row would be 2
+and column would be 2
+after that in else we can write
+if the case is invalid
+we will print
+invalid
+all right
+we can write endl after that
+now this condition else means
+if the value entered by the player is
+any other value then the values at the
+empty spaces that is from 1 to 9 then
+that case would be an invalid case so
+that is why here we have written invalid
+now after that
+we have to write an if condition
+so first of all i'll write the if
+condition because it's pretty long and
+after that i'll explain it to you
+so we'll start with if
+the value of token
+is
+[Music]
+cross
+and
+space eddy
+that is row
+and here we'll write
+column
+not equal to
+x that means
+that means if x is not there at a
+particular position
+and
+similarly we'll write for
+the
+zero
+you will write
+column
+i will write row
+if i take particular position
+there is no 0 as well
+so
+that means
+that is a unused place
+so inside this we'll write
+space
+row
+column
+x
+or cross
+token
+equals
+zero
+okay so we have wrote this and now i'll
+explain you this part so here we are
+checking if there is any unused space
+which is left in the structure to fill
+so what we are doing is if the value of
+token is x that means player 1 turn is
+there and at a particular place there is
+not x and not 0 as well so player 1's
+value x would be assigned there as we
+can see in line 96 after that player 2
+turn is there so we have assigned the
+value 0 to the token that is player 2's
+value
+after this we have to use
+else if statement and do the same for
+player 2 as well
+all right
+now we'll write else if
+and we'll do
+the same we can copy it and paste it
+over here
+we need to do minor changes
+we have to change it to 0
+and this one would be same this means if
+player 2 turn is there
+then if the value is not x at a
+particular place and neither it is 0 at
+a particular place then that particular
+place is empty or unused
+so
+we will assign 0 at that place
+because now the turn is of player 2.
+okay we can copy paste it as well
+because the code is same
+here would be 0
+and the token would be x or cross
+after this we have to write the else
+block
+and inside that block we have to call
+the function again so that we can play
+it again
+so
+all we need to do is we will print
+there is no
+empty space
+all right
+we can use
+handle
+we have to call this function the name
+of the function is function2
+you write function2
+so now let's have a look at what we have
+done
+so first of all
+once the player enters the digit the
+value will go to the suitable if
+condition
+as you can see here the player will
+enter the digit then the value will go
+to this particular
+suitable if condition
+once the particular condition matches
+then it goes to the below if condition
+that is over here
+here it is checked whether the space is
+already filled or not if it is filled
+then we will get the message that there
+is no empty space
+but if it is empty then the player can
+fill the space with zero or cross
+depending on the player
+so now let's go ahead and create a
+function and we'll name this function
+as
+function 3 which is of boolean type
+all right
+here we have created this function of
+boolean type because we have to return
+true and false only in this function we
+will set the condition for players to
+win and check whether the game is still
+going on or it is a draw
+so let's start
+first of all we'll create a for loop
+which i trades from
+zero that is end i equals zero
+i less than
+three
+till three and i plus plus
+now
+inside the for loop we will set the
+conditions for a player to win the match
+so as we know that in the game of tic
+tac toe if the pair of three matches
+whether it is horizontal vertical or
+diagonal then that particular player
+wins the match
+so here we will set the conditions for
+horizontal and vertical pairs and after
+this we will set the condition for
+diagonal pairs so let's start
+so we'll write f
+array space
+space
+i
+will making
+we are making
+row a variable
+i zero
+equals equals
+space
+i
+one
+space i1
+and
+space
+i zero again
+equals to space
+i
+two
+there's a mistake again
+all right
+so this condition is for first row as we
+can see
+so in the condition we are checking if
+this element that means the element at
+this position is equal to this position
+and the element at this position is
+equal to this position
+then the particular player wins
+and that's what we are doing in the
+condition the loop starts from zero so
+first zero zero
+equal to zero one that is first and the
+second element then first and the third
+element
+so it is checking that whether these
+three elements are equal so if they are
+equal then it is true and otherwise it
+is false
+so here we have checked horizontally and
+now we have to check vertically so we'll
+write
+or
+and we'll write
+space
+0i
+0
+i
+equals
+space 1i
+and
+zero i again
+equals to
+space
+to
+i
+here we are making
+rows fixed and column variable
+so if these conditions are true the
+player wins so we'll return
+true
+so now similarly we'll do for the
+diagonal elements
+for diagonal elements we have to check
+diagonally so we don't have to use the
+for loop we'll write space
+zero
+zero
+equals
+space
+one one
+and
+space
+1
+1
+equals space
+2 2
+now here are
+space
+0
+2
+equals space
+1 1
+and space
+space
+one one
+equals
+space
+2 0
+okay
+so if these diagonal conditions also met
+then
+it is true that is it's a win
+all right
+okay so after
+this
+so these were the conditions for winning
+the game so now we have to
+make the conditions to check whether the
+game is still going on or is it finished
+so we'll do that
+so we'll write for and
+i equal 0 i less than 3 because it is a
+3 cross 3 matrix
+and i plus plus
+after that we'll write
+for
+end j or k whatsoever you want in j
+equal 0 j less than
+3
+j
+plus plus
+all right
+now inside this both of these for loop
+we will write the condition of if
+space
+i
+j
+not equal to
+the symbol that is
+cross
+and it is also not equal to
+this i
+j
+[Music]
+also not equal to the other symbol that
+is zero
+then
+we will return
+false
+so here what we are doing is
+in the if condition one by one every
+position is being checked we have
+written if the value at the position is
+not cross and is also not 0
+that means the game isn't finished yet
+or it is still going on because the game
+is played till every position is filled
+totally so if any position is not filled
+that means the game is still going on
+that is why we have returned false
+so we have used these conditions
+if the player wins the game
+these were the conditions to check
+whether the game is still going on now
+only condition left is to check if the
+game is draw
+so
+after this
+if this condition is not met and this
+condition is not met and this condition
+is also not met then there is only one
+possibility that the game is draw so
+after this for loop the control will go
+to outside the loop so we have to create
+a variable let's say tie
+and make it true
+so we also have to declare this variable
+and the data type of this variable must
+be boolean
+so we can
+write bool
+die
+all right
+now let's come back now after
+it is time we will return
+false
+all right
+now we have created these three
+functions that is function three
+function
+two
+and function one
+so now one by one we have to call each
+and every function
+starting from one two and three
+systematically we'll do it so
+write int main
+right int main inside into main first of
+all we have to call these three
+functions one by one so how can we do it
+so we'll write
+while
+and inside the while loop we'll write
+the condition
+not
+function
+three
+here it means this loop
+will keep on iterating till this
+function
+will return false and this function that
+is function 3 will keep on returning
+false until
+any player that is player 1 or player 2
+wins the game
+so
+if the game is not won by any of the
+player then again these functions will
+execute one by one
+so this cycle will keep on repeating so
+we'll write function one first of all
+after
+that function
+2
+and then function 3
+right so
+after this while loop
+will write if condition
+if
+token
+equals symbol
+x
+tie
+is false
+i'll explain this part
+now we'll write n1
+that is the name of the player 1
+and after that we'll write
+wins
+then we'll write endl
+similarly we'll do it for
+the player 2
+but we have to write in lsf
+token equals
+symbol
+0
+and
+tie is not there that is the game is not
+tie
+then
+player 2 wins that is n2
+wins
+now in the last
+there is else block
+so this block else block will execute if
+the game is draw
+so
+it's
+a draw
+all right
+we we have done a mistake over here
+if the token value is x then
+n2 wins
+that is player 2.
+if the token value is 0
+then n1 wins
+so yes here if the value of tie is false
+that is there is no tie between both the
+players and the value of token is x that
+means player 2 wins here the token equal
+to x that is cross means that the last
+turn was of player 2 and the game was
+not a tie and is ended so it means the
+game is won by player 2 and vice versa
+for the player 1
+and if both the conditions are not met
+then it is a tie
+so now let's try to run this
+let's save it first
+now let's try to run this
+hope it works
+there are some errors
+let's have a look at them
+okay so we haven't used the brackets
+plus there are some more errors
+so let's fix them all
+function two and function 3
+as you can see there are no brackets we
+forgot to
+mention the brackets
+here as well
+and for the strings
+we have to do like this
+all right
+there are some more errors
+so let's do some changes
+and we also forgot
+to make it a character array
+let's make all the elements as character
+and also we have to assign tie
+to something like
+let's say
+false
+we have to initialize it
+and
+let's see if there are some more errors
+there must be some more errors let's
+save and run it we forgot to save it
+now we'll run it
+okay
+there are some more errors
+we forgot
+to put bracket over here and call the
+function one
+and let's just copy and paste
+this whole enter the name thing into the
+main function that's where it will look
+nice and
+it will minimize the errors so we can
+copy this or we can cut this
+and
+we can paste it in the main function
+all right now
+now let's save this and let's try to run
+all right there are some more errors i
+think
+single quotes we have to make it double
+quotes
+all right plus i think
+now let's try again
+this is showing the error
+all right this is 112.
+all right
+after this we have to make some changes
+in this
+if and
+else statements
+so so let's change this so we'll write
+else if statement
+and
+write the condition
+that
+if digit is
+less than one
+and
+or
+digit is greater than
+9
+then this message that is invalid should
+be displayed
+all right now let's try to run this
+save it
+and run this
+function one
+now our only error is function one so
+function one spelling is wrong
+let's correct it save it
+and now let's try to run this
+okay
+enter the name of the first player let's
+say sam
+enter the name of the second player
+that's ron
+here it is so
+sam we forgot to
+mention the space so that is why it is
+coming along sam please enter
+so let's say sam wants to enter at third
+position
+so here we can see
+at third position
+this is the third position and here it
+is
+the cross now ron please enter
+we forgot to add the space so that is
+why it is
+looking weird but yeah
+now
+ron will enter let's say one
+as you can see
+zero is at place one
+now
+sam
+will enter
+six
+as you can see
+sam is going to make a pair on the other
+side ron will now click on five
+all right now
+sam again will click on 9 to make his
+pair
+as you can see sam has made his pair and
+sam wins
+so this is the game of tic tac toe and i
+know the code is pretty long but it is
+worth trying and if you want to do it in
+a better way then you must practice it
+for like two to three times
+so this is how you can create a game of
+tic-tac-toe in c plus
+alright guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up i hope
+it really helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

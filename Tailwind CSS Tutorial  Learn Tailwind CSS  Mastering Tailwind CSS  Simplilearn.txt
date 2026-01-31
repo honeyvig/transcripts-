@@ -1,0 +1,469 @@
+imagine you are embarking on a journey
+to create a beautiful stylish and
+responsive websites along the way you
+will encounter a powerful tool called
+Tailwind CSS which is like having a
+magic wound for a web design let me take
+you on a tour of Tailwind CSS and its
+awesome features Tailwind CSS is a
+utility first CSS framework that
+provides a highly efficient way to build
+user interfaces it is different from
+conventional CSS Frameworks like
+foundation and bootstrap which normally
+includes pre-designed elements and
+preset Styles Tailwind CSS on the other
+hand concentrates on offering a
+collection of low level utility classes
+that you can combine to produce Unique
+Designs so the Caltech postgraduate
+program in full stack web development
+with this program you will be equipped
+with the necessary skills to develop
+full stack web development web
+applications using Java starting from
+the fundamentals of JavaScript you will
+dive into exciting advanced concepts
+such as angular spring boot hibernate
+jsps and MVC which is model view
+controller there's never been a better
+time to Unleash Your Inner web developer
+get ready to take your skills to the
+next level and build awesome web apps
+that will blow a user's mind do check
+this out the link will be in the
+description box below now let's discuss
+some of the features of Tailwind CSS so
+here are some key Concepts and features
+of Tailwind CSS the first one is utility
+classes till when CSS offers a
+comprehensive set of utility classes
+that can be applied directly in your
+HTML marker these classes define
+specific Styles such as margins paddings
+colors typography positioning and mode
+the next one is automatic design
+Tailwind CSS follows the automatic
+design principle which encourages
+composing UI Elements by combining
+smaller building blocks by using utility
+classes you can easily assemble and
+customize components without writing
+custom CSS for each individual component
+the next one is responsive design
+Tailwind CSS includes a responsive grid
+system that allows you to create
+responsive layout you can Define
+different sizes and alignments for
+various screen sizes using the
+responsive classes like SM MD LG and
+Excel next we have customization Telvin
+CSS is highly customizable it provides a
+configuration file where you can modify
+various aspects of the framework such as
+color font breakpoints and more this
+allows you to tail a Tailwind CSS to
+match your Project Specific design
+requirements the next we have just in
+time mode jid in addition to regular
+mode Telvin CSS introduced a just in
+time mode jit mode dynamically generates
+only the CSS classes that are used in
+your project resulting in a smaller
+final CSS file sizes by combining these
+features Telvin CSS offers a highly
+flexible and efficient way to create a
+custom design without writing extensive
+CSS code it empowers developer to
+rapidly prototype integrate and build
+modern user interfaces to get started
+with Tailwind CSS you can install it via
+npm or include it via a CDN and then
+start applying the utility classes
+directly in your HTML markup Telvin CS
+is highly customizable it provides a
+configuration file where you can modify
+various aspects of the framework now
+let's move on to the demo and let's
+create something from Tailwind CSS and
+see how we can use it now before moving
+ahead you should know HTML in CSS before
+diving into this demo luckily we have
+full courses on HTML and CSS the link
+will be in the description box below you
+can definitely check it out let's see
+the dev tools that you need for this
+tutorial you should have Chrome browser
+and vs code in your system now let's
+install npm or npx in your system also
+you should have node.js to check whether
+you have node.js installed in your
+system or not you can just press Ctrl
+tactic and this terminal will open you
+can also go here to open the terminal
+and new terminal okay
+now here I'll write node
+hyphen V to check the version of the
+node so it's for me it's version 16.20
+yeah you have different versions also so
+it's fine let's open the Chrome and I'll
+show you how to install node
+.js for
+Windows or Mac you can download from the
+node website so if you have Windows
+laptop you can install
+like what type of laptop you have with
+the configuration of the laptop you have
+and Mac you can also install
+which Mac do you have okay
+so let's
+move ahead
+and go to visual studio code
+and let's dive into this
+now before moving ahead let me tell you
+Tillman CA says a modern and Innovative
+CSS framework that revolutionize the way
+you design and build websites Telvin CA
+says Embraces the utility first approach
+and let me tell you about this let's
+first
+rate it
+yeah I'll tell you what utility classes
+before moving ahead okay
+so when we write used to write any CSS
+we used to write Dot my class we can say
+and we used to give a margin like that
+margin
+wife name the file HTML it's CSS okay
+it's fine I'm just
+trying to tell you how we write it
+earlier and how we now write it in
+see is this okay
+now earlier we used to like see a write
+CSS like this my class and then we'll
+give the margin of this now you would
+add the classes directly to your HTML
+elements like
+now you can add the HTML
+like this in the HTML file only inside
+it div we will write a class and we'll
+give that class
+margin of 4
+and then we'll close it now with the
+help of if this Tailwind CSS
+see how much code we have saved with
+just one link right so this is how
+Tailwind CSS works okay
+so reusable classes that empowers you to
+create customize and responsive design
+with ease now let's install one
+extension which is live server
+in my system it's already installed by
+Electric div
+you can install it by just going here
+and here you will find the button
+install
+just install it it will help us
+to give our code in the live server okay
+we don't have to save again again and
+again the same Command right
+okay
+now moving ahead let's install the CSS
+Tailwind CSS that's instantly this HTML
+and let's open the terminal and here I
+will write npx
+third one
+CSS in it this will install open the
+right this will install a config file of
+tail mode okay let's wait a couple of
+minutes so as we can see it has
+installed
+created a file and import its Tailwind
+CSS okay
+so we need
+well let's now create
+now let's create
+let's create here
+create
+and let's create another one not inside
+this
+let's create another one SRC
+so we have created
+two folders
+create an SRC
+so
+let's go overhead
+let's fix HTML
+now let's create
+so so many people say how we did that so
+with this is the abbreviation to create
+a demo of
+HTML just write one exclamation mark and
+just type tab okay
+it will create this blank HTML for you
+guys right
+so you can change the name
+okay
+fine now our next step is to create
+a folder inside this config
+to tell till when where B is the HTML
+file so for that inside this I'll write
+slide slash and inside the create
+directory
+we have
+a stroke or star sign with DOT HDM
+right that should be in the
+brackets
+yep
+so
+let me just see it again
+left it to this right wrong
+save it now it will save all the HTML
+file
+now inside the source we'll create a
+file and let's name it as input dot CSS
+right
+so
+let's now add Tailwind
+inside this
+you can paste it also but
+let's write it
+base still in component and then when
+you delete
+and that will always be like that so
+don't worry about that lines
+okay
+let's save this file now
+what we are doing here is we have
+created this Tailwind CSS the base
+component and utility classes
+so what we can do is
+what this will help is whenever I'll
+create write my CSS inside this it will
+automatically convert our
+CSS to Tailwind CSS so let's do that by
+just writing a command npx
+Tailwind
+CSS
+type to install import write dot source
+inside the source there is one CSS file
+this one this file so to convert that
+we'll write the names
+like first write this input
+dot CSS
+and
+to open it
+into the different folder which we have
+created is create
+and let's let's write CSS
+two
+okay
+dot CSS
+so what we are doing here is we are just
+writing the source CSS file to convert
+into the
+Tailwind file
+so let's press enter and see
+Express intervention
+we'll see yeah so this has created one
+folder for us it's inside this folder it
+has created one style so inside this
+let's look at this
+so this is all the Tailwind styles that
+this has created for us inside this we
+will find it okay
+so let's just not a work on that let's
+move ahead
+now let's open our HTML file and here
+after the title
+will write
+or let's import the compatibility
+first with the meta it doesn't matter
+but let's add it
+equip
+with the tax UA
+you don't have to learn these lines it
+will eventually know
+when you learn
+HTML
+okay
+and then
+I.E
+fill you this container
+so let's make it till here
+it doesn't matter without this line also
+your code will run smoothly
+so let's just show you how it is
+so main thing is we'll
+link the CSS
+to Google HTML
+that will telling him
+there is called study sheet
+application
+of that will be CSS
+Style
+okay let's save it
+and now inside the body we'll create one
+Dev of class
+DG
+which is this one is
+Tailwind component and style
+so
+we will give it a width in till when we
+don't write it with you know and as I
+have shown you in the utility classes
+part in the earlier
+okay
+so we'll give it a height of 52.
+okay let's write this and save it so
+as we have created one HTML to run this
+we'll again go back to this previous
+command that we wrote right so what will
+we will be doing here is
+we'll write slash and we'll write watch
+what this will function will do it will
+again render and render the file without
+even saving it we will we have to just
+save it and it will again open in the
+server
+so let's click all right okay and it's
+saying reveal thing and it's done let's
+now open our file on the live server so
+I have just clicked and it is showing me
+a small square let's go back and add
+some more functionalities to the square
+and let's make it a circle for that I'll
+be writing grounded
+rounded none on the small full
+so there are so many with that tell me
+let's give it a shadow also to make it
+look more good
+so with I have only written Shadow and
+it's giving me so many functions of
+Tailwind right so let's write Delvin uh
+Shadow function
+to excel and let's save it and by just
+pressing save it's just building and
+watching our code
+going through some changes right let's
+go and you will see one Shadow function
+is there and it has made that square
+into a circle
+let's go back to our code and okay yeah
+now what I have to do is it's looking
+great but it's in the corner so what I
+have to do is I have to make the circle
+in the center of the page okay so for
+that we'll give it a class of Tailwind
+and we'll write
+Min height
+of screen
+okay and the grid you know about the
+grid you know if you don't know about
+grid you can check out our video on grid
+and please content Center so what I have
+given it a class the it should be
+screenshot screenshot should be medium
+and the grid of that page should be
+placed in the center
+so let's save this file and you will see
+our circle is in the center and if I
+reduce it
+we will see it will always be in the
+center of the page like that right
+okay
+let's make it like that only for now
+yeah
+let's
+leave it move forward
+Now to create another Circle
+will again create another class
+inside that div only right so we have
+created creating another class and it's
+in this it will give it a PG
+of
+let's give it a video of still
+let's give it
+200
+or it's fine
+Beach okay and let's give it a weird of
+32
+and then a height of 32 as well right
+and it should be rounded again and it's
+copy this from the
+above
+or we will write it
+surrounded for
+that's not in the great part let's save
+it now
+and see whether it is coming
+please
+okay
+so what I have done here is I have
+placed one great place content in Center
+in this line also
+so let's save it and see yeah it's
+looking
+exactly like I we pulled it to me now
+let's create another circle inside this
+second Circle again we'll write the
+class
+of
+Fiji color and let's give it a PC of
+yellow
+okay and let's give it a height of 16.
+because it should come like
+similar to everything and let's give
+this a height of that
+right rounded
+yeah
+and let's close this div and save it and
+see we have created this
+right
+so with this CSS uh Telvin configuration
+or you can say tl1 CSS file
+we can do so many things with that like
+as you can see we just wrote some
+classes of Tailwind CSS and we have
+improved our code so much
+so say goodbye to the limitations of
+pre-designed components and embrace the
+freedom of Tailwind GSS where you can
+have complete control over every aspect
+of the website Style with its extensive
+default size effortless responsiveness
+and endless customization options
+Tailwind CSS in here to transform your
+web development journey into a magical
+and delightful experience
+so grab your van Unleash Your creativity
+and let Tailwind CSS be your trusted
+companion on the path to creatifying
+stunning and enhancing websites so with
+this we have read the end of this video
+make sure to like and share this video
+And subscribe to simplyleones YouTube
+channel thank you
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

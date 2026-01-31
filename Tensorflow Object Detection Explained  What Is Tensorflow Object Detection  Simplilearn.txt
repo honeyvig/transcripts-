@@ -1,0 +1,2062 @@
+hello and welcome to this tutorial on
+deep learning
+my name is douglas and for the next hour
+or so
+i will be discussing deep learning and
+tensorflow the tensorflow environment
+in order to show you an example of deep
+learning
+there are several innovative and
+interesting applications of deep
+learning one being identifying a
+geographical location based on a picture
+the way this works is by training an
+artificial neural network with millions
+of images which have their geo location
+tagged and when we add a new picture the
+network will be able to identify the
+geolocation of this new image
+for example
+you have all these images with perhaps
+significant monuments or significant
+locations
+and you train with millions of such
+images and then
+when you feed another image
+though it may not be exactly the same as
+the one that was used for training you
+would be able to identify and recognize
+for example that this is a picture from
+paris because it recognizes the eiffel
+tower
+now if we take a closer look at the way
+it works internally by peeking under the
+hood so to speak
+these images are digital information in
+the form of pixels
+and each image has a different size they
+might be
+uh 256 by 256 pixels resolution where
+each pixel has maybe a certain grade of
+color
+and all that is fed into the neural
+network which then gets trained based on
+this information and is able to
+recognize
+and extract the features and thereby is
+able to identify these images and the
+location of these images
+then when you feed a new image based on
+the training it will be able to figure
+out where this image is from
+so that's really
+the basics of how it works
+so in this tutorial
+so in this tutorial we will cover what
+is deep learning
+and
+why do we need deep learning
+one of the main components of deep
+learning is a neural network so we will
+look at that
+we will define a perceptron and how to
+implement logic gates using perceptrons
+and
+like and and nor and so on using
+perceptrons
+the different types of neural networks
+and applications of deep learning we
+will see how neural networks work for
+instance how do we train neural networks
+uh we'll end up with a small demo code
+which we will take you through in
+tensorflow
+now in order to implement deep learning
+there are multiple library or
+development environments that are
+available and tensorflow is one of those
+so the focus at the end of this will be
+how to use tensorflow to write a piece
+of code using python as a programming
+language
+now so we will use an example which is a
+common one in the world of deep learning
+which is hand
+writing number and recognition
+commonly known as mnist database so
+we'll look at mnist database
+and how we can train a neural network to
+recognize handwritten numbers
+so that's what we're going to cover in
+this video
+so let's get started
+now
+what is deep learning
+deep learning is a subset of a high
+level concept known as artificial
+intelligence i assume that you've heard
+of or are already familiar with the term
+artificial intelligence
+well artificial intelligence is like the
+high-level concept if you will and in
+order to implement artificial
+intelligence applications we use what is
+known as machine learning
+and then a subset of machine learning is
+deep learning
+machine learning is a more generic
+concept and deep learning is one type of
+machine learning if you will
+we will see a little bit later and in
+future slides more detail
+of how deep learning is different from
+traditional machine learning
+but to start with we should mention that
+one of the differentiators between deep
+learning and traditional machine
+learning is that deep learning uses
+neural networks we'll talk more about
+neural networks here and how we can
+implement neural networks etc as part of
+this tutorial
+so if we look deeper into deep learning
+deep learning involves working with
+complicated unstructured data as
+compared to traditional machine learning
+where we normally use structured data
+now in deep learning the data would be
+primarily images or words or maybe text
+files
+and include a large amount of data
+deep learning can handle complex
+operations it involves complex
+operations that is
+another difference between traditional
+machine learning and deep learning is
+that the feature extraction
+happens pretty much automatically now in
+traditional machine learning feature
+engineering is done manually therefore
+data scientists have to do feature
+engineering and feature extraction
+but in deep learning that happens
+automatically so for large amounts of
+data complicated unstructured data deep
+learning gives very good performance
+so as i mentioned
+one of the secret sources of deep
+learning is neural networks
+so what is a neural network
+neural networks are based on our
+biological neurons the whole concept of
+deep learning and artificial
+intelligence is based on the human brain
+and the human brain consists of billions
+of tiny interconnected neurons
+you can see here how a biological neuron
+looks
+and here's how an artificial neuron
+looks
+so
+neural network is basically a simulation
+of our human brain
+the human brain has billions of
+biological neurons
+and we are trying to simulate the human
+brain using artificial neurons
+so if we look closer at a biological
+neuron it has dendrites the
+corresponding component of an artificial
+network or an artificial neuron would be
+inputs
+they receive the inputs through the
+dendrites
+then there is the cell nucleus which is
+basically the processing unit in a way
+in the artificial neuron there is also a
+piece which is the equivalent of the
+cell nucleus
+then based on the weights and biases
+which we will discuss later
+the input gets processed which results
+in an output in a biological neuron the
+output is sent through a synapse and in
+an artificial neuron there is the
+equivalent of that in the form of an
+output
+biological neurons are also
+interconnected there are billions of
+neurons that are interconnected in the
+same way artificial neurons are also
+interconnected so the output from one
+neuron will be fed as an input to
+another neuron and so on
+in a neural network one of the basic
+units is a perceptron what is a
+perceptron
+a perceptron can be considered one of
+the fundamental units of a neural
+network it can consist of one neuron or
+it could be more than one but you can
+create a perceptron with a single neuron
+it could be used to perform certain
+functions it can be used as a basic
+binary classifier
+meaning it could be trained to do some
+basic binary classification
+so this is what a basic perceptron looks
+like
+this is nothing but a neuron
+so you have your inputs x1 x2 and xn
+then there is the summation function
+then there is what is known as an
+activation function and based on this
+input what is known as a weighted sum
+the activation function gives an output
+of either 0 or 1.
+so we say that the neuron is either
+activated or not that's basically how it
+works
+so you get the inputs and each of these
+inputs are multiplied by a weight and
+there is a bias that gets added and the
+sum of these it gets fed into the
+activation function
+which results in an
+output if the output is correct the it
+is accepted and if the data is wrong
+there's an error and the error is fed
+back and the neuron then adjusts the
+weights and biases
+to give a new output and so on and so
+forth and that's what's known as the
+training process of a neuron or a neural
+network
+there's a concept called perceptron
+learning the perception on learning is
+one of the very basic learning processes
+the way it works is somewhat like this
+you have these inputs like x1 to xn and
+each of these inputs is multiplied by a
+weight
+this is the equation so that sum w i x i
+sigma of that
+which is the sum of these
+is the product of x and w is added up
+and then a bias is added to that the
+bias is not dependent on the input or
+the input values but the bias is common
+for one neuron however the bias value
+keeps changing during the training
+process then once the training is
+completed the values of these weights w1
+and w2
+and so on and the value of the bias gets
+fixed so that is basically the whole
+training process known as perceptron
+training
+so the weights and biases keep changing
+until you get an accurate output
+then the summation is passed to the
+activation function as you see here this
+is w i x i
+uh summation plus b is passed to the
+activation function then the neuron gets
+either fired or not
+and based on that there will be an
+output
+then the output is compared with the
+actual or expected value which is also
+known as labeled information
+so this is the process of supervised
+learning where the output is already
+known
+and that is compared and thereby we know
+if there is an error or not
+if there is an error the error is fed
+back and the weights and biases are
+updated accordingly until the error is
+reduced to the minimum so this iterative
+process is known as perceptron learning
+or perceptron learning rule
+the error needs to be minimized until
+the error is minimized
+the weights and biases keep changing
+through this iterative process
+again the idea is to update the weights
+and the bias of the perceptron
+until
+the
+error is minimized
+the error need not be zero however the
+idea
+is to reduce the error to minimum as
+possible
+again
+this is an iterative process
+that continues until either the error is
+0 which is unlikely
+or
+the minimum possible given
+in these conditions
+in
+1943 two scientists warren mccullough
+and walter pitts came up with an
+experiment
+where they were able to implement
+logical functions like and or and nor
+using neurons which was a significant
+breakthrough in a sense
+they were able to come up with the most
+common logical gates they were able to
+implement some of the most common
+logical gates which could take two
+inputs like a and b and then give a
+corresponding result
+for example in the case of an and gate a
+and b the output is a b
+in the case of an or gate that it is a
+plus b and so on and so forth
+they were able to do this using a single
+layer perceptron now for most of these
+gates it was possible to use a single
+layer perceptron in the k except in the
+case of nor and we'll see why that is in
+a little bit
+so this is how an and gate works the
+input a and b and the neuron should be
+fired only when both the outputs are one
+so if you have a 0 0 the output should
+be 0 or 0 1 it is again 0 or 1 0 again
+it is 0 but for 1 1 the output should be
+1. so how do we implement this with a
+neuron
+so it was found that by changing the
+values of weights it is possible to
+achieve this logic
+for example if we have equal weights
+like 0.7 and 0.7 and if we take the sum
+of the weighted product so for example
+0.7 into 0 and then 0.7 into 0 again
+will give you 0 and so on and so forth
+now in the last case when both inputs
+are 1 to get an output that is greater
+than 1 which is the threshold so only in
+this case the neuron gets activated and
+there is an output
+in all the other cases there is no
+output because the threshold value is 1.
+so this is the implementation of an and
+gate using a single perceptron or single
+neuron
+as for an or gate the output will be one
+if either of these inputs is one
+as we can see here in all the cases the
+output is one except for here where we
+have to zero is resulting in an output
+of zero so how do we implement this
+using a perceptron well once again if
+you have a perceptron that with weights
+for example 1.2 now if you see here in
+the first case where both are zero the
+output is zero in the second case when
+it is 0 and 1 1.2 into 0 is 0 and then
+1.2 into 1 is 1. and in this case we see
+the output being 1.2 in the last case
+where both
+inputs are 1 the output is 2.4 so during
+the training process these weights will
+keep changing and then at one point
+where the weights are equal to w1
+is equal to 1.2 and w2 is equal to 1.2
+the system learns that it gives the
+correct output so that is the
+implementation of an or gate using a
+single layer perceptron or a single
+neuron now xor gate this is one of the
+more challenging ones they tried to
+implement and exorgate with a single
+level perceptron but it was not possible
+and therefore
+this was like a roadblock in the
+progress of neural networks
+subsequently it was found that an xor
+gate could be implemented using a
+multi-level perceptron
+or mlp
+in this case there are two layers
+instead of a single layer and this is
+how you can implement an xor gate
+you see here that x1 and x2 are the
+inputs then there is a hidden layer you
+see denoted here as 3 h3 and h4
+and then you take the output of that and
+we get the output noted as o5 here
+and provide a threshold here
+so then we see here the numerical
+calculation so the weights in this case
+for x1 it is 20 and minus 20. and again
+20 and minus 20. then these inputs are
+fed into h3 and h4
+so we see here for h3 the input is 0 1 1
+1 and for h4 it is 1 0 1 1.
+then if we look at the output
+the final output where the threshold is
+1
+if you use a sigmoid with a threshold as
+one
+we see here in these two cases it is
+zero and the last two cases it is one
+so this is the implementation of xor now
+in the case of xor when one of the
+inputs
+is one you will get an output and that
+is what we are seeing here in the case
+where both the inputs are one or both
+inputs are zero then the output should
+be zero
+that is known as an exclusive or gate
+exclusive because only one of the inputs
+should be one and then you will get an
+output of one which is satisfied by this
+condition so the xor gate is a special
+implementation of a perceptron
+now that we have a good idea about what
+a perceptron is let's take a look at a
+neural network so we've discussed both
+the perceptron and the neuron so let's
+turn our focus now to what neural
+network is
+just like it sounds a neural network is
+just a network of neurons
+so there are five different types of
+neural networks
+these are artificial neural network
+convolution neural network recursive
+neural network
+or recurrent neural network
+deep neural network and deep belief
+network
+so each of these types of neural
+networks have a special purpose
+in other words they can solve certain
+types of problems
+for example
+convolutional neural networks are very
+good at performing image processing and
+image recognition and so on whereas
+recurring neural networks are very good
+for speech recognition and speech
+analysis as well as text analysis now
+each type has some special
+characteristics and they are good at
+performing special types of tasks
+with regard to some of the special
+applications of deep learning
+deep learning today is used extensively
+in the field of gaming
+you've probably heard of alphago which
+is a game created by a startup called
+deepmind which was acquired by google
+and alphago is an ai
+which defeated the human world champion
+lee siegel in this game of go
+so gaming is an area in which deep
+learning is being used extensively and
+we see a lot of research happening in
+the area of gaming as well
+in addition to that nowadays there are
+neural networks known as
+generative adversarial networks
+which can be used for synthesizing
+either images or music or text etc
+these can be used to compose music that
+is a neural network can be trained to
+compose a certain kind of music
+then autonomous cars
+you might be familiar with google's
+self-driving car today a lot of
+automotive companies are investing in
+this area
+and deep learning is a core component of
+these autonomous cars so these cars are
+trained to recognize for example the
+road or the lane markings
+on the road signals
+any objects or obstructions that might
+be in front of the car
+all of this involves deep learning so
+that's another major application
+in robots we've seen several robots
+including sophia
+you may be familiar with sofia who was
+given a citizenship by saudi arabia
+there are several such robots which are
+very human-like and the underlying
+technology
+in many of these robots is deep learning
+medical diagnostics and health care
+is another major area where deep
+learning is being used
+within healthcare diagnostics
+there are multiple areas where deep
+learning image recognition and image
+processing can be used for example for
+cancer detection
+as you may be aware if cancer is
+detected early on it can be cured one of
+the challenges though is the
+availability of specialists who can
+diagnose cancer using
+these diagnostic images and various
+scans and so on
+so the idea is to train neural networks
+to perform some of these activities
+so that the load on the cancer
+specialists or
+oncologists
+is lightened
+there's a lot of research happening here
+and there are already quite a few
+applications that are said to be
+performing better than human beings in
+this area whether it's lung cancer or
+breast cancer
+so
+health care is a major area where deep
+learning is being applied
+let's take a look at the inner workings
+of a neural network
+so how does an artificial neural network
+identify or can we train a neural
+network to identify various shapes such
+as squares or circles or triangles etc
+when these images are fed as the inputs
+so this is how it works
+any image is just digital information
+of the pixels
+so in this particular case let's say
+this is an image of 28 by 28 pixels and
+this is an image of a square there's a
+certain way in which the pixels are lit
+up
+so these pixels have a certain value
+let's say it may be from 0 to 256 and 0
+indicates maybe it is black or dark
+and 256 indicates it is white or
+completely lit up
+so that would be an indication or
+measure of how the pixels are lit up so
+this is an image that consists of
+784 pixels
+of information
+so all this information contained inside
+the image can be
+let's say compressed into these 784
+pixels
+and the way that each of these 784
+pixels is lit up provides information
+about what the image is
+so we can train neural networks to use
+that information and identify the images
+so let's take a closer look at how this
+works
+the value of each neuron
+if it is close to one it is white and if
+it is close to zero it is black
+so
+this is an animation of how this whole
+thing works
+one of the ways of doing this
+is that we can flatten this image and
+take each of these
+784 pixels and feed it into our neural
+network as an input
+the neural network would consist of
+probably several layers there could be a
+few hidden layers and then there's an
+input layer and an output layer so the
+input layer takes the value of these 784
+pixels as an input and then you get an
+output which can be of three types
+or three classes which might be a square
+or a circle or a triangle now during the
+training process when you initially feed
+this image
+it might say that it's a circle or a
+triangle
+so as a part of the training process we
+then send that error back and the
+weights and biases of these neurons are
+adjusted to correctly identify
+that this is a square
+that is the training mechanism really
+that happens here
+now let's take a look at a circle
+this is the same way so we feed these
+784 pixels and there's a certain pattern
+in which the 784 pixels are lit up and
+the neural network is trained to
+identify that pattern
+again
+during the training process it will
+probably initially identify the image
+incorrectly saying that maybe it's a
+square or triangle then again the error
+is fed back and the weights and biases
+are adjusted until it gets the image
+correct
+now once again
+that is the training process so now
+let's take a look at a triangle
+so
+let's say if we feed another image
+consisting of a triangle so this is a
+training process we've trained the
+neural network to classify these images
+as
+triangles circles or squares and now
+this neural network can identify these
+three types of objects so if we feed
+another image it will be able to
+identify
+whether it is a square or a triangle or
+circle so what's important to be
+observed is that when you feed a new
+image it is not necessarily that the
+image in this case
+a triangle is in the exact same position
+the neural network actually identifies
+the patterns
+so even if the triangle is let's say
+positioned here
+not exactly in the middle but maybe in
+the corner or on the side it would still
+identify that the image is a triangle
+which is the whole idea behind pattern
+recognition so let's take a look at how
+this training process works
+so we've seen
+that a neuron
+consists of inputs it receives inputs
+and then there's a weighted sum
+which is nothing but this x i w i
+summation of that plus the bias
+and this is then fed to the activation
+function and that in turn gives us the
+output
+now during the training process
+initially when you feed these images
+let's say you send a square it may
+identify it as a triangle or maybe you
+feed it a triangle and identifies it as
+a square and so on that error
+information is fed back and initially
+these weights can be random maybe all of
+them have zero values and then it will
+slowly keep changing as a part of the
+training process the values of these
+weights w1 and w2 up to wn
+keep changing in such a way that toward
+the end of the training process it
+should be able to identify these images
+correctly
+until then the weights are adjusted and
+again that is what's known as the
+training process
+these weights have numeric values could
+be 0.5 0.25 0.35 and so on could be
+positive or it could be negative then
+the value that is input here is the
+pixel value
+now they could be anything between 0 to
+1 you could scale it from 0 to 1 or 0 to
+256 whichever way you want
+0 being black and 256 being white and
+all the other colors in between so that
+is the input so these are numerical
+values this multiplication or the
+product of w i x i is a numerical value
+and the bias is also a numerical value
+you need to keep in mind that the bias
+is fixed for a neuron and it doesn't
+change with the inputs whereas the
+weights are one per input so that's one
+important point to note
+but the bias also keeps changing
+initially it will have a random value
+but as a part of the training process
+the weights the values of the weights w1
+w2 wn and the value of b
+will change then ultimately once the
+training process is complete these
+values are fixed for this particular
+neuron
+w1 w2 up to wn plus the value of b
+is also fixed for this particular neuron
+and so there would be multiple neurons
+and there may be multiple levels of
+neurons here
+and again that's the way a training
+process works
+so this is another example of a
+multi-layer where there are two hidden
+layers in between and then you have the
+input layer values coming from the input
+layer and they can then go through
+hidden layers and finally to the output
+layer
+and as you can see here there are
+weights and biases for each of these
+neurons in each layer
+and all of them change during the
+training process
+at the end of the training process each
+of these weights have a certain value
+which becomes the trained model
+and those values become fixed once the
+training is completed
+then there is something known as
+activation function one of the
+components in neural networks
+is activation and every neuron has an
+activation function so there are
+different types of activation functions
+that are used it could be rilu or a
+sigmoid and so on
+the activation function is what decides
+whether a neuron should be fired or not
+so whether the output should be zero or
+one is decided by the activation
+function
+the activation function in turn takes
+the input
+which is the weighted sum you'll recall
+we talked about w i x i plus b
+that weighted sum is fed as an input to
+the activation function and then the
+output will be either a zero or a one
+there are different types of activation
+functions which were covered in an
+earlier video which you might want to
+watch it's okay
+so as a part of the training process we
+feed the inputs the labeled data or the
+training data and then we get an output
+which is the predicted output by the
+networks in which we indicate as y hat
+and then there's labeled data
+because for supervised learning we
+already know what the output should be
+so that is the actual output
+during the initial process before the
+training is complete obviously there
+will be errors and that is what is known
+as a cost function
+so the difference between the predicted
+output and the actual output is the
+error
+now the cost function can be defined in
+different ways there are different types
+of cost function in this case it is the
+average of the squares of the error
+so all the errors are added
+which can sometimes be called the sum of
+the squares sum of square errors or sse
+that is then fed as feedback in what is
+known as backward propagation or back
+propagation and that helps the network
+adjust the weights and biases
+so
+the weights and biases get updated until
+this value
+the error value or the cost function is
+minimal
+there is an optimization technique which
+is used here called gradient descent
+optimization
+so this algorithm works in a way
+that the error which is the cost
+function needs to be minimized
+there's a lot of mathematics involved in
+this
+for example they find the local minimum
+the global minimum using differentiation
+and so on
+but the idea is this the goal of the
+training process
+is to reduce the error
+so
+if we look at this as the cost function
+in the beginning or at certain levels
+the value of the output or of the cost
+function is very high so the weights
+have to be adjusted in such a way
+the weights and the bias so that the
+cost function is minimized so this
+optimization technique
+called gradient descent is used
+this is known as the learning rate so
+for gradient descent you need to specify
+what the learning rate should be so you
+want the learning rate to be optimal
+because if you have a very high learning
+rate the optimization will not converge
+because at some point it will cross over
+to this side
+on the other hand if you have a very
+slow learning rate
+it might take forever for that to
+converge so we want to come up with the
+optimum value of the learning rate
+once that is done using gradient descent
+optimization the error function is
+reduced
+and you come to the end of the training
+process
+so this is another way of looking at
+gradient descent over here we see the
+cost function
+the output of the cost function the
+output of the cost function which has to
+be minimized using the gradient descent
+algorithm
+these are the parameters so weight could
+be one of them
+initially we start with random values
+and costs will be high and as the
+weights keep changing in such a way that
+the cost function comes down
+at some point it may reach a minimum
+value
+and then start to increase
+so
+that is where the gradient descent
+algorithm decides it has reached the
+minimum value and it will try to stay
+there
+this is known as the global minimum
+so these curves were drawn for
+explanation purposes however these
+changes could be erratic
+sometimes
+there may be a local minimum here
+and then a peak and then so on and so
+forth but the whole idea of gradient
+descent optimization is to identify the
+global minimum
+and find the weights and the bias at
+that particular point
+so that's sort of an overview of
+gradient descent
+now here's another example where we see
+these multiple local minimums you see
+here at this point it is coming down and
+this looks like it might be the minimum
+value but it's not
+and we see the global minimum here so
+the gradient descent algorithm
+will make an effort to reach this level
+and not get stuck here at a local
+minimum so the algorithm knows how to
+identify the global minimum and it does
+that during the training process
+now
+in order to implement deep learning
+there are multiple platforms and
+languages that are available but the
+most common platform nowadays is
+tensorflow
+we created this video to give you an
+overview of tensorflow so we're going to
+do a quick demo on how to write a
+tensorflow
+code using uh python
+tensorflow is an open source platform
+created by google so let's take a quick
+look at the details of tensorflow
+so this is a library a python library
+so you can use python or another
+language or other languages are also
+supported like java among others
+but python is the most common language
+that is used so this is basically a
+library that is used for developing deep
+learning applications especially using
+neural networks it consists of primarily
+two parts
+one is the tensors and the other is the
+graphs or the flow
+that's why it's called tensorflow
+tensors are like
+multi-dimensional arrays
+uh
+that's sort of one way of looking at it
+and usually you have a one-dimensional
+array
+first of all you can have what is known
+as a scalar which means a number and
+then you have a one-dimensional array
+something like this
+set of numbers so that it's a one
+dimensional array then you can have a
+two dimensional array which is like a
+matrix
+beyond that sometimes it gets difficult
+so this is a three-dimensional array but
+tensorflow can handle many more
+dimensions so it can have
+multi-dimensional arrays
+and that's really the strength of
+tensorflow which makes deep learning
+computation much faster
+which really is the reason tensorflow is
+used for developing deep learning
+applications
+so
+tensorflow is a deep learning tool and
+this is the way it works so the data
+basically flows in the form of tensors
+the way the programming works
+is that first you create a graph of how
+to execute it
+and then you execute that graph in what
+is known as a session
+and we will see this in the tensorflow
+code as we move forward so all the data
+is manipulated or managed
+in tensors and then the processing
+happens by using these graphs so tensors
+have uh ranks and
+the ranks of a tensor is sort of like
+the dimensionality
+for example if it is scalar
+in other words just one number the rank
+is supposed to be uh zero
+it could be a one-dimensional vector
+in which case uh the rank is supposed to
+be one and then you can have a two
+dimensional vector
+like a matrix in that case we say the
+rank is uh two
+then if it's a three dimensional array
+the rank is three and so on it could
+have more than three as well so you
+could have multi-dimensional arrays
+in the form of tensors
+so what are some of the properties of
+tensorflow
+i think today it is one of the most
+popular deep learning platforms or
+libraries
+uh
+it is open source developed and
+maintained by google
+one of the most important things
+about tensorflow is that it can run on
+either cpus as well as gpus gpu is a
+graphical processing unit and cpu of
+course is a central processing unit
+previously gpu was used primarily for
+graphics which is the reasoning for the
+name
+now gpu cannot perform generic
+activities very effectively like cpu can
+but it can perform iterative actions or
+computations extremely fast much faster
+than cpu
+which makes it very good for
+computational activities and in deep
+learning there's a lot of iterative
+computation that happens so in the form
+of matrix multiplication and so on so
+gpus are very well suited for this kind
+of computation and again tensorflow
+supports gpu as well as cpu so there's a
+certain method for writing code in
+tensorflow as we will see when we get
+into the code of course tensorflow can
+be used for traditional machine learning
+as well but that would be overkill so in
+order to gain an understanding it might
+be good to start writing code for a
+normal machine learning use case so that
+you can get the hang of how tensorflow
+code works and then you can move into
+neural networks so that's just a
+suggestion
+but if you're already familiar with how
+tensorflow works you could probably go
+straight into the neural networks part
+in this tutorial we will take the use
+case
+of recognizing
+handwritten digits
+so this will be a good example of deep
+learning
+now the mnist database is a nice
+database
+that has images of handwritten digits
+nicely formatted
+because very often in deep learning and
+neural networks we end up spending a lot
+of time preparing the data for training
+however with mnist database we can avoid
+that because the data in the is in the
+right format
+which can be used for training
+and mnist also offers a bunch of
+built-in utility functions
+that we can use right away without
+worrying about writing our own functions
+which is really one of the reasons why
+mnist database is very popular for
+training purposes now initially when
+people want to learn about deep learning
+and tensorflow this is the database that
+is used
+it has a collection of 70 000
+handwritten digits a large part of which
+are for training
+then you have a test just like in any
+machine learning process and then you
+have validation so all of them are
+labeled so you have the images and they
+are labeled and these images look
+somewhat like this we see handwritten
+images collected from many individuals
+now these samples are handwritten by
+human beings and these numbers uh go
+from
+uh zero to nine so different people have
+written these numbers and the images
+have been copied and are
+formatted in such a way that is very
+easy to handle so that's a little about
+the mnist database
+now we're going to implement this in our
+tensorflow
+is we will feed this data
+the training data along with the labeled
+information basically these images are
+stored
+in the form of pixel information as we
+saw in a previous slide
+but each of these images is nothing but
+pixels so
+an image is
+nothing but an arrangement of pixels and
+the value of the pixel is either lit up
+or it is not or maybe somewhere in
+between that's really how the images are
+stored and how they're fed into the
+neural network for training
+now once the network is trained when you
+provide a new image it will be able to
+identify that image within a certain
+percentage of error of course so for
+this we'll use one of the simpler neural
+network configurations called softmax
+for simplicity
+what we will do is flatten these pixels
+instead of looking at them
+uh in a two-dimensional arrangement
+and so we'll just flatten them all
+for example it starts from here it's a
+28 by 28 pixel
+so there are 784 pixels
+so pixel number one starts here and goes
+all the way up to 28 and then 29 starts
+here and goes up to 56 and so on and
+pixel number 784 is here so we take all
+these pixels flatten them out and feed
+them like one single line into our
+neural network
+so this is what's known as a softmax
+layer
+which what it does is once it's trained
+it will be able to identify what digit
+this is
+so in this output layer
+there are 10 neurons
+each signify a digit and at any given
+point when you feed an image only one of
+these
+10 neurons gets activated
+for example if this is trained properly
+and if you feed a number 9 like this
+then this particular neuron gets
+activated so you get an output from this
+neuron so let me just use a pen
+or a laser
+to show you here
+so you are feeding number nine and let's
+say this has been trained so if you're
+feeding a number nine this will get
+activated
+now let's say you feed one to the train
+network
+then this neuron will get activated if
+you feed it two then this neuron will be
+activated and so on you get the idea
+so this is one type of a neural network
+or an activation function known as
+softmax layer which is what we'll be
+using here so this is one of the simpler
+types for quick and easy understanding
+so this is how the code would look
+we'll go into our lab environment in the
+cloud we'll go there
+and show you in just a minute
+but quickly this is how the code will
+look
+so i'll just go over this
+briefly here and then we'll go into the
+jupiter notebook where the actual code
+is and we will run that as well so first
+of all we're using python here
+and you can see this syntax here is a
+python language
+now the first step is to import the
+tensorflow library now we do this by
+using a line of code
+import tensorflow
+as tf tf is just for convenience and you
+can name it anything you want
+once you do this the tensorflow is
+available as an object identified as tf
+and then you can run its methods and
+access its attributes and so on
+now m this database is actually an
+integral part of tensorflow which is the
+reason we always use this example
+mnist database as an example
+so
+we simply import mnist database
+as well as using this line of code and
+then you slightly modify this so that
+the labels are in this format
+what is known as one hot true which
+means that the label information is
+displayed like an array
+so let me just use a pen to show you
+what this is
+so when you use this one hot true what
+happens is each label is stored in the
+form of an array of 10 digits
+and let's say the number is eight
+so
+in this case all the remaining values
+there will be a bunch of zeros
+so this is like the array at position
+zero this is at position one position
+two and so on and so forth let's say
+this is position seven then this is
+position eight
+that will be one because our input is
+eight and again position nine will be
+zero
+so what this means is one hot equals
+true like is will kind of load the data
+in such a way that only one of the
+digits has a value of one
+so
+based on which digit is one
+we know what the label is and so in this
+case the eighth position is one so we
+know that the sample data
+the value is eight similarly if you have
+a two here let's say then the label
+information will look something like
+this then so you have your labels and
+then first you have a zero and a zero
+position and a zero in the first
+position and the second position will be
+a one which indicates number two then
+your third position is zero and so on so
+that is the significance of one hot true
+so then we can take a look at the data
+by displaying the data
+and as i said earlier you can see that
+this is displayed in the form of numbers
+and each uh
+one of these is pixel values so you
+won't see the images in this format but
+there is a way to visualize the image
+and we'll take a look at that in a bit
+so this tells you how many images there
+are and each set of the training
+and we see there are 55 000 images in
+the training and the test set has 10 000
+and validation there are 5 000 so all
+together there are 70 000 images
+okay let's just move on then
+okay so you can view the actual image
+using the uh matplotlib library and we
+see here the code used for viewing the
+images you can view them in
+color or you can view them in grayscale
+and the cmap here defines which way we
+will view that
+then we have the maximum and minimum
+values of the pixel values
+where you see the maximum here is one
+because this is a scaled value
+one means it is white and zero then
+means it is black
+and it could be
+anywhere between black and white
+so
+in order to train the model there's a
+certain way to write the tensorflow code
+the first step uh is to create some
+placeholders
+and then you create a model in this case
+we'll use the softmax model and one of
+the simplest models
+placeholders are primarily to get the
+data from outside into the neural
+network
+this is a very common mechanism that is
+used then of course you will have uh
+variables
+you may remember these are your weights
+and biases
+so when there are in our case there are
+10 neurons and each neuron has
+has
+784 because each neuron takes all the
+inputs so if we go back to our slide
+here
+actually each neuron takes all 784
+inputs so here's the first neuron which
+takes all 784 inputs the second neuron
+takes all 784 inputs and so on so each
+of these inputs needs to be multiplied
+by a weight and that's what we're
+referring to here so this is a matrix of
+uh
+784 values
+for each of the neurons
+in other words uh 10 by 784 matrix
+because there are 10 neurons
+and then
+there are biases
+now you may remember that the bias is
+there's only one per neuron
+so it's not one per input unlike the
+weights so therefore there are only 10
+biases because there are only 10 neurons
+in this case
+so we're creating a variable for the
+biases
+so this is something a little new
+in tensorflow unlike our regular
+programming languages where everything
+is a variable here the variables can be
+of three different types you can have
+placeholders which are primarily used
+for feeding data you have the variables
+which can change during the course of
+computation and then the third type
+which is not shown here are constants
+which would be
+fixed numbers
+in regular programming language you
+would have all variables or perhaps
+variables and constants but in
+tensorflow you have all three
+variables and constants and then you
+create what is known as a graph so
+tensorflow programming consists of
+graphs and tensors as we discussed
+earlier
+so this would be considered a tensor
+and then the graph tells how to execute
+the implementation
+so that the execution is relied in the
+form of a graph
+in this case what we're doing is a
+multiplication
+tf
+you remember the tf was created as a
+tensorflow object
+so let's just go back here
+so we tf is available here now
+tensorflow has what is known as a matrix
+multiplication or matmul function and
+that is what is being used here in this
+case
+so we are using the matrix
+multiplication of tensorflow so you'll
+multiply your input values x with with w
+so
+in summary x w plus b you're just adding
+b
+similar to one of the earlier slides we
+saw where sigma x i wi
+that's what we're doing here matrix
+multiplication is multiplying all the
+input values with the corresponding
+weights and then adding the bias so that
+is a graph we created then the next we
+need to define our loss function and our
+optimizer
+so in this case we are going to use the
+tensorflow
+apis so tensorf.n
+soft max cross entropy with logits is
+the api that we will use
+and reduce mean is the mechanism
+which says that you reduce uh the error
+then
+the optimizer for doing the correction
+of errors
+we are using the gradient descent
+optimizer which we talked about earlier
+so
+for that you need to specify the
+learning rate you remember we saw a
+slide somewhat like this
+where you defined what the learning rate
+should be and how fast you need it to
+come down
+that's the learning rate and again this
+needs to be tested and tried in order to
+find out the optimum level of the
+learning rate it shouldn't be very high
+in which case would not converge and
+again it shouldn't be too low because it
+will take too long
+so you define the optimizer and then you
+minimize
+for the optimizer
+and that will kick start the training
+process
+so so far we've been creating the graph
+and in order to actually execute the
+graph we create
+what is known as a session and then we
+run that session
+and once the training is completed we
+specify how many iterations we wanted to
+run
+for example in this case we are saying
+1000 steps which becomes the exit
+strategy in a way
+so you specify the exit condition so the
+training will run for 1000 iterations
+and once that's done you can evaluate
+the model using some of the techniques
+shown here so let's just take a look at
+the code
+quickly and see how it works
+so this is our cloud environment
+now you can install tensorflow on your
+local machine as well
+i'm showing you this demo on our
+existing cloud but you can also install
+tensorflow on your local machine now we
+have a separate video on how to set up
+your tensorflow environment
+which you can watch that if you want to
+install tensorflow on your local
+environment
+or you can use any other cloud service
+for example google cloud
+amazon or cloud labs any of these could
+be used to check out the code
+okay so this is started
+and we will log in
+all right so this is our deep learning
+tutorial
+code
+and this is our tensorflow environment
+so let's get started
+so we've already seen a little bit of
+code here
+in the previous slides and now we'll see
+that the code in action so the first
+thing we need to do is import tensorflow
+and then we will import the data and
+then we need to adjust the data in such
+a way that one hot encoding
+is set to true as i explained earlier
+in this case the label values will be
+shown appropriately and we can just
+check and see what type of data we're
+using
+so these here are the data sets python
+data sets and if we uh
+check the number of images
+we can see how this looks there like
+this is an array of type
+float32
+also if we uh want to see the number of
+training images
+we see there are 55 000 and then we see
+10 10 000 test images and then 5 000
+validation images
+let's take a quick look at the data
+itself visualization so we'll use
+matplotlib for this
+and if we take a look at the shape
+now the shape gives us the dimension of
+the tensors or the arrays if you will
+so in this case the training data set
+you can see the size of the training
+data set using the method shape it says
+they're 55 000
+by uh
+784 and again remember the 784 is the 28
+by 28 pixels
+so that's what it is showing
+so let's take one image
+and we'll
+take the first image
+and look at the shape so we see the size
+is only 784
+we could also look at the data of the
+first image itself and this is what we
+see
+so now most of it will be zeros because
+you can imagine in the image
+only certain areas are written on so
+that's why the rest is blank
+which is why we'll have mostly zeros
+again it's either it's black or white
+then the rest of the values are scaled
+so
+they are between zero and one
+and this is what we see here
+so we have these different locations
+with values and other locations with
+zeros so that's how the data is loaded
+and then
+if we
+want to see what the value
+of the handwritten image or if you want
+to view it this is how you view it so
+you
+build this reshape
+so matplotlib has this feature
+to show you these images so we will
+actually use the i am show function
+and if you use the parameters
+appropriately you will be able to see
+the different images
+now i can change the values in this
+position
+for which image we are looking at so
+let's say i want to look at uh and see
+what images uh image five thousand we
+see
+uh
+five thousand is a number three or if we
+say
+five
+what is a five it is an eight or maybe
+fifty
+another eight
+so if you're wondering how i'm executing
+this code shift enter if you're not
+familiar with jupiter notebook shift
+enter is how you execute each individual
+cell
+and then if you
+uh want to execute the entire program
+you can come up here and say run all
+so that is how
+this code gets executed
+here again
+we can see what is the maximum and
+minimum value of the pixel values as i
+mentioned these are scaled and the
+values are between 1 and 0.
+now this is where we create our model
+the first thing
+is to create the required placeholders
+and variables which is what we're doing
+here
+so we create one placeholder
+and we create two variables
+which are for the weights and the biases
+so these two variables are actually
+matrices
+and each variable has
+784 by 10 actual values
+so again the 10
+is for the number of neurons and the 784
+is the pixel values which is 28 by 28
+pixels
+then with the biases as i mentioned one
+for each neuron so there will be 10
+biases
+they are stored in the variable noted b
+then we have the graph which is
+basically the multiplication the matrix
+multiplication x and w
+and and
+then the bias is added for each of the
+neurons
+and the whole idea is to minimize the
+error
+so let me just execute this code i think
+it's already executed
+so then we define
+the y value which is basically the label
+value so this is another placeholder and
+we have x as one placeholder and y true
+as a second placeholder which will have
+values in the form of ten digit arrays
+and since we said one hot encoded it
+the position that has one value
+indicates the label for that particular
+number
+then we have cross entropy which is
+nothing but the loss
+the loss function
+then we have the optimizer
+we have chosen gradient descent as the
+optimizer then the training process
+itself so the training process which is
+done to minimize the cross entropy
+which again is the loss function
+so we define all of this in the form of
+a graph now up to now remember we've not
+executed any tensorflow code
+until now
+uh we're just preparing the
+graph or the execution plan that's how
+the tensorflow code works so the whole
+structure and format of this code will
+be completely different from how we
+normally do programming
+so people with programming experience
+might find this a little difficult to
+understand
+and it needs quite a bit of practice and
+you may want to view this video a couple
+of times
+to better understand the flow because
+tensorflow programming is slightly
+different
+from normal programming
+so some of you who have done
+maybe spark programming to some extent
+will be able to easily understand this
+although in spark the code itself is
+pretty straightforward
+behind the scenes the execution happens
+differently
+but in tensorflow the code is written in
+a completely different way
+and uh
+the code doesn't get executed in the
+same way that it is written
+which is something that you can learn
+through practice
+now
+so far
+what we've done up to here is to create
+the variables
+and set up the variables in the graph
+and
+that's pretty much all
+basically defining what kind of network
+you want to use
+for example you may want to use softmax
+and so on
+so you have created the variables
+the data
+viewed the data
+we've prepared everything but have not
+yet executed anything in tensorflow so
+now the next step is the execution in
+tensorflow
+so the first step for doing any
+execution in tensorflow is to initialize
+the variables so anytime you have
+variables defined in your code
+you need to run this piece of code
+always
+so you need to create what is basically
+known as a node for initializing so this
+is a node you're still not executing
+anything here you just created a node
+for the initialization so let's go ahead
+and create that
+and from here forward is where you will
+actually execute your code in tensorflow
+and in order to execute the code what
+you will need is a session tensorflow
+session so tf.session will give you a
+session
+so there are a couple of different ways
+you can do this but one of the most
+common methods of doing this
+is what is known as a width loop
+so you have with uh tf dot session as
+says
+with a colon here
+this is like a block the starting of a
+block and these indentations tell how
+far the block goes and this session is
+valid until the block gets executed
+so that is the purpose of creating uh
+this with block so with t f dot session
+as says and then
+says.run init
+now says.run will execute a node
+that is specified here
+so for example we are saying here sas
+dot run
+says is basically an instance of the
+session
+so here we are saying tf.session
+so an instance of the session gets
+created and then we're calling that sess
+and then we run a node
+within that one of the nodes in the
+graph so one of the nodes here is in it
+so we say run that particular node and
+that is when the initialization of the
+variables happens
+so now what this does is if you have any
+variables in your code in our case we do
+w is a variable and b is a variable
+so any variables that we have created
+you have to run the initialization of
+these variables
+or uh you'll get an error so that is
+what this is doing
+so then within this block we specify a
+for loop
+so
+we say we want uh the system to run 1000
+iterations and perform the training
+so that's what the for loop does
+run the training for a thousand
+iterations
+and what it is doing is basically it's
+fetching the data
+or these images
+remember that about 50 000 images but it
+can cannot get all the images in one
+shot because it would take a lot of
+memory and you'll have performance
+issues
+so this is a very common way of
+performing deep learning training
+you always do it in batches so you may
+have 50 000 images but you might do it
+in batches of
+100 or maybe 500 depending on the size
+of your system and so on
+so in this case we are saying get me 100
+images at a time
+and only training images remember we
+only use the training data for
+training purposes and we use the test
+data for test purposes so you might be
+familiar with machine learning but in
+case you aren't in machine learning
+this is not specific to deep learning
+machine learning as well you have what
+is known as a training data set and a
+test data set
+your available data you will be
+typically splitting into two different
+parts and using the training data set
+for training purposes
+and then to see how well the model has
+been trained you use the test data set
+to check the accuracy of the model
+so that's what we're doing here
+now you can see here we are actually
+calling an mnist function mnis train
+dot next batch
+so this is the advantage of using an
+mnist database because they have
+provided some very nice help or
+functions otherwise we would have had to
+write the piece of code to fetch this
+data
+in batches
+and that itself would be a lengthy
+exercise so we can avoid all of that if
+we're using the mnist database and
+that's why we do this for in the initial
+learning phase
+so when we say fetch what it will do is
+fetch the images into x
+and the labels into y and then you use
+this batch of 100 images
+and you run the training session so
+says.run
+and what we're doing here is running the
+training mechanism where it passes the
+images through the neural network and
+then determines the output
+and then
+if the output is initially wrong
+the uh feedback is given back to the
+neural network and thereby all the w's
+and b's get updated
+until it runs
+1 000 iterations
+in this case the exit criteria
+is the 1000 but you could also specify
+say the accuracy rate or something like
+that
+as the exit criteria
+so here it just says that this
+particular image was wrongly predicted
+so you need to update the weights and
+biases
+that's the feedback given to each neuron
+and that is run through a thousand
+iterations
+and typically after a thousand
+iterations the model would have learned
+to recognize these handwritten images
+however it might not be 100 accurate
+so once that is done
+once the thousand iterations have run
+you you test the accuracy of this model
+by using the test data set
+so this is what we're trying to do here
+and the code may be a little complicated
+especially if you're seeing this for the
+first time but you need to understand
+the basic tensorflow method
+but basically it's just comparing the
+output
+with what is actually there
+so you have your test data and you're
+trying to find out what is the actual
+value and the predicted value and seeing
+whether they're equal or not tm.equal
+and how many of them are correct and so
+on and so forth
+based on that the accuracy is calculated
+as well
+so this is the accuracy and we are
+trying to determine uh how accurate the
+model is
+in predicting these numbers or these
+digits
+so let's run this
+this entire thing is in one cell so
+we'll have to just run it in one shot
+and this might take a little while let's
+see
+not bad so it has finished a thousand
+iterations and what we see here as an
+output is the accuracy
+so we see that the accuracy of this
+model is around
+91 percent
+which is pretty good
+for such a short exercise
+within uh such a short time frame
+however in real life uh this is probably
+not sufficient
+so there are other ways to increase the
+accuracy
+which we will see in some other
+tutorials
+you know how to improve the accuracy how
+to change maybe the hyper parameters
+like number of neurons or number of
+layers and so on so that we can increase
+the accuracy beyond 91
+percent so what is a tensorflow object
+detection api
+it's an open source framework which is
+provided by the tensorflow team
+and
+there are trained models available and
+the sample code which is also available
+which we can use in order to easily
+detect objects and images and videos
+this is pretty robust and can detect
+objects fairly quickly
+it's very easy for people to use even uh
+people with very little or no knowledge
+of
+machine learning or deep learning can
+also with a little bit of python uh
+programming knowledge can actually use
+this api
+this library to build object detection
+applications so this is a list of
+libraries that are required and these
+have been shown in the code as well
+the exact purpose of each of these
+libraries or
+why it is required
+is outside of the scope of this tutorial
+but we can see in the code as we walk
+through
+how and why they are used
+so the cocoa data set coco stands for
+common objects in context so this data
+set consists of 300 000 images of
+90
+most commonly found objects like chairs
+and tables etc
+this model has been trained or in fact a
+set of models have been trained on this
+data set
+and this is pretty good to detect
+the most common objects and images
+and videos
+so with that let's get into the code
+the first step is to import all these
+libraries as we have shown you
+previously
+a large part of this will be for doing
+some helper functions
+or maybe visualizing the images and so
+on
+so that's the reason they're required so
+the exact details of each and every
+library is probably out of the scope of
+what we're doing here right now
+but as a first step we need to include
+these libraries and run the code and
+then
+at a later time we could maybe discuss
+what each library does
+this will work with tensorflow versions
+higher than 1.4
+so you may have to upgrade if you're
+running a version lower than 1.4
+so
+let me go ahead and execute this cell we
+also
+need this line of code to make sure that
+once we run this object detection
+the labeled images are displayed within
+the notebook
+some of you are familiar with this
+and we will be importing some of these
+utility libraries which we will be using
+for uh visualization purposes
+so once the objects are detected we need
+to display the information what the
+object is and what percentage of
+confidence the model has
+which is the reason for the utility
+functions
+the next step is to prepare the model as
+i said we'll be using an existing
+trained model
+the tensorflow team has actually
+provided these models
+the one that we will be using is ssd
+with mobilenet
+but you can use anyone that is listed
+in this url
+so let me just show you this url
+these are a bunch of models
+trained models that are readily
+available for anyone to use
+these are open source models if i scroll
+down you can see some of them
+the accuracy is higher
+but they take longer and others with
+lower accuracy that are much
+faster so you can play around with
+some of these
+but
+again
+in this particular exercise
+we are going to be using this ssd model
+which is ssd mobile net version one
+so in this cell
+we are primarily creating a bunch of
+variables for example the name of the
+model the path and so on and so forth
+then we will be using these names in the
+next step which is to download this
+model
+and install it locally
+these are also referred to as frozen
+models so once they are trained you can
+extract or freeze the model hence the
+name frozen model
+so
+that others can use this without any
+further training
+so this is where we download and extract
+our model
+locally so this is going to take a
+little while so i may have to pause the
+video and come back
+once it's done
+this might take a bit
+so let's see if it completes
+i have pretty high speed network but
+even then this will take some time so
+all right let's take a look at this
+that's done and now this is done
+so once that is done we need to load
+some label mapping
+and basically what this will do is
+your model as you may be aware of by now
+if you do some classification the model
+will not give you an output
+as text
+rather it will give numbers
+so there are five classes and it will
+say this belongs to class one or class
+two or three or five and so on so the
+numbers will obviously uh not make any
+sense to the outside world so we need to
+do some small mapping so in this case
+one
+maybe a chair two maybe a table three
+maybe a pillow and so on so that kind of
+number two text mapping needs to be done
+and that is what is being done in this
+particular cell and then we have a
+helper code which will load the image
+and convert it into a numpy array which
+is what gets processed
+and used by the model to do the
+detection so that is what this is
+and a little bit later
+you will be calling this function
+next is the preparation for detection
+so here we are basically seeing
+where the images are stored and how many
+images or what
+the naming convention or format of the
+images is
+now if you want you can modify this code
+for example currently i have test
+underscore images as my folder
+let me just show this to you
+so this is my object detection folder
+and i have a sub folder which is storing
+my images which is test underscore
+images so you can rename that folder and
+you can use that name in your code
+now also
+uh the format of these files
+here
+we see a very simple format
+which is the names of the files are like
+beach 1 beach 2 beach 3 and so on so i'm
+using beach as the team therefore i have
+images that are related to beaches so
+this is beach one beach two and beach
+three and there are some others but
+we'll use these three for our demo so
+that's what we're calling out here
+and the name of the image will be beach
+something like jp.jpg
+which is the jpeg format and within
+these braces will be one two or three
+depending on which image we are using
+so the next
+uh step is to run inference on these
+images in a loop
+and what we are basically doing here is
+getting these images one by one and then
+running through the model to find out
+what objects can be detected and then
+against each of these objects a box will
+be drawn and that will be labeled with
+the name
+and percentage of accuracy or confidence
+that the model
+detects these objects
+so that is the function here
+and let me just run that piece of code
+and here's basically where we are
+calling this function so we are loading
+these images and then we are calling
+this function for each image and we are
+displaying this uh using matplotlib
+library
+so let me just run this it will take one
+image at a time and then detect the
+images
+now the beauty is that the same format
+for this code can be used for doing
+object detection in a video
+and we have another video for doing
+object detection in a video
+so most of the code out there will be
+reused from here except
+that instead of reading the images from
+the local storage
+we
+read the frames from the video so
+there's a neat video reader that will be
+available which will be shown in another
+video
+then frame by frame reread the video and
+then pass that on to this function
+and it will act as
+each of these frames is an image
+and that will do the object detection
+for the entire video
+so that's in a separate video so maybe
+be on the lookout for that and the
+information for that will be provided in
+the cards in the eye symbol
+so that's a separate tutorial for object
+detection in video
+so now that we have all the pieces
+together the last cell is where all the
+action takes place
+so let's run this
+and see how it looks
+so this may take a little while
+so now there are three images
+so let's see what it detects
+so there we go so the first one
+it has detected a person with 97
+accuracy
+which is pretty good
+okay and the next image it detects an
+umbrella and chair
+there are a few other objects in that it
+was not able to detect but we see the
+umbrella
+and it shows 63 accuracy or confidence
+and the chair with 58
+again not bad
+now let's take a look at the next image
+so here these are balloons
+uh hot air balloons but the model thinks
+it's a kite
+which is probably not that bad
+it sees that there's something in the
+sky and therefore thinks that it's a
+kite
+and we see it detects that with 65
+percent confidence
+okay so that was pretty much all i
+wanted to show you in this particular
+tutorial
+about object detection in
+images
+and with that we come to the end of this
+tutorial
+i hope you liked it and found the
+content useful
+if you have any questions or comments
+please feel free to place those below
+and make sure to watch the other
+tutorial on object detection in videos
+thanks and have a great day
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

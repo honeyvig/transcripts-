@@ -1,0 +1,350 @@
+hello hello hello welcome everyone Merry
+Christmas if you're watching this after
+Christmas it'll be released um Friday
+this week which will be close to
+Christmas for this video I was going to
+do a cute little Christmas thing a
+couple of years ago some of you who've
+been following the channel for this long
+well remember I did a video showing you
+how to add Christmas decorations to your
+chart and um I'll show you the video
+here it's unlisted on my channel but
+I'll show you a quick clip from that
+video um it's from a couple years back
+to and and here comes the magic eight
+reindeers and a Santa Claus in a sled
+and we're going to set the tool tip so I
+was going to do a video similar to this
+this year but um I actually had to build
+a tool to assist in my end of year
+analysis for my trading so here in
+Australia our financial year starts on
+the 1st of July so um the 1st of January
+will be the six-month Mark of our
+financial year and so I like to do some
+analysis on my trading every 6 months
+and so rather than do another video like
+this I'll leave a link to this in the
+video description if you guys want to um
+see how to add uh this to your charts um
+but in today's video we are going to
+cover the source code for this tool here
+that I created which shows the
+performance metrics for a market between
+two periods of time so here we have the
+1st of July or the first date after the
+1st of July and the most recent date I
+can change this period if I want to and
+the script will just display how that
+market performed during that time period
+um so this is an easy way for me to
+compare benchmarks like um see what the
+S&P 500 did during this time compared to
+my actual trading system so if I just
+throw up spy um on my chart and change
+this back to the current date or even
+Beyond uh we can see that the Spy is up
+7% this year for in the past 6 months
+and I can compare my trading results to
+these benchmarks so in this week's
+newsletter which I would have already
+sent out by the time you're watching
+this video I would have broken down my
+trading metrics for the year uh these
+numbers will have been updated slightly
+but in this week's newsletter I'll break
+down all of my different um systems and
+how they performed for the past 6 months
+and what I've learned over uh the past
+trading year some Reflections on my own
+trading and the markets in general I'll
+be reflecting on that in uh this week's
+newsletter so go and check that out at
+our website if you're interested at the
+artof trading.com but for today's video
+let's get into the source code for this
+tool here the source code to the script
+will be on my website you can find the
+link in the video description or the pin
+comment below if you want to copy this
+code into your um Pine editor this
+script only has two user inputs a start
+date and an end date we have some
+persistent variables for calculating our
+total return and our um max favorable
+Excursion and Max adverse Excursion
+that's what MF Mae stands for these are
+just fancy ways of saying how far did
+the market go in profit and how far did
+it go in the negative um what were the
+extremes so what was the worst draw down
+throughout the year and what was the
+best return throughout the year
+theoretically obviously the Max draw
+down is pretty easy to achieve in real
+trading you just got to hold on to the
+asset while it goes through that draw
+down but achieving the max favorable
+Excursion is a different story
+altogether because that means exiting
+your position at the highest price
+possible which is obviously not going to
+happen most of the time I hate to burst
+any new Traders bubbles out there but uh
+there is no system that get you out at
+the top consistently but it is
+interesting to gauge that metric it is
+interesting to compare your performance
+to what was possible what what how much
+did you leave on the table that's an
+interesting metric to analyze in your
+trading um you shouldn't compare
+yourself to it but you can at least
+compare your systems performance to um
+see how much it's leaving on the table
+because if you're constantly or
+consistently leaving a large amount of
+profit on the table maybe there is a way
+to adapt your system to capture more of
+that upper end of profitability uh but
+anyway very simple script I'll just
+quickly explain what it's drawing here
+so this first white line is the start
+date this second white line is the end
+date it's hard to see but there are two
+black lines here they just represent the
+highest and lowest price that um the
+market achieved throughout the year the
+red line is the end price the closing
+price this is all based on closing
+prices by the way there's no point
+analyzing the highs and lows of price
+action when it would be a complete fluke
+to exit a position either at the lowest
+Wick or the highest Wick um I operate on
+candle closes whether it's a 5 minute
+chart strategy or a daily chart strategy
+or even a weekly chart strategy I base
+my decisions on candle closes so that's
+what this um data down here is
+calculated on and finally the blue line
+here is price action as a line it's just
+plotting the closing price um throughout
+the time period we're analyzing
+so the source code is pretty simple uh
+we just have these two inputs for
+telling pinescript which period of time
+to analyze we have all the relevant
+variables we need in order to analyze
+the first thing we need to do is um
+detect first bar that prints on or after
+start date so if the current Bar's time
+is greater than or equal to our start
+date input which um which is a time
+stamp I covered timestamps and time
+inputs in the previous week's newsletter
+so if you're new to pinescript or you're
+not very comfortable or familiar with
+time um coding in Pine go and check that
+newsletter out again it's on our website
+the artof trading.com if the current bar
+is printed after that start date then
+this if statement gets um executed if
+start price is na that means this is the
+very first bar that has printed after
+our start date and we want to save the
+opening price of that bar where price
+originates during our time period we
+need to save the start index or the bar
+index of that first bar purely so we can
+draw these lines so you can see that our
+line starts here all of these lines are
+drawn on the final bar on our chart so
+in order to draw a line from this bar we
+need to save that into our code we need
+to tell our code that we want to start
+drawing this line from this bar index
+which is the 1st of July or the nearest
+bar to it in this particular case that
+was the 3rd of July uh my user input
+here is set to the 3D probably because I
+added it first onto a Forex Market where
+trading does not occur on Saturdays but
+there we go on crypto obviously this
+trades over the weekend so we can start
+our period from the 1st of July and so
+with this code if price exceeds our end
+date or we reach the final confirmed
+history bar so the very last bar
+printing onto our chart if either of
+those conditions are met then this
+script analyzes that time period so I
+could drag this period back to let's say
+the 1st of December and now it's
+analyzing that time period but if I
+change this to say
+2025 then it's only going to analyze up
+until the final confirmed his historic
+bar on my chart historical bar so this
+real-time bar here is ignored it's only
+basing its analysis of confirmed price
+information and I noticed there that on
+the 1st of December
+um that bar happened to be the highest
+close of the year and it drew a black
+line over the top of our red line so
+what I need to do before we move on is
+just swap these two around because
+pinescript draws in order that you tell
+it to and so it was drawing this black
+line over the top of our high our end
+price so now if I save my code we'll get
+the end price drawing over the top and
+that looks better if this is the very
+first bar that printed within our time
+period Then our start price will be na
+and so we can assign start price to the
+open save the index and draw this white
+line the way we draw a vertical white
+line is by giving this line object the
+same index for its two x values so X1
+and X2 should be the current buer index
+and then y1 and Y2 should be the open
+and the close and then you can extend
+both and that will um extend the line
+indefinitely in both directions and that
+gives plus the vertical line you can
+obviously do the same for horizontal
+lines I decided not to do that with the
+script um and then this block of code
+here this else statement is only
+executed if start price is not na a so
+if we've already assigned a start price
+that means we are printing price action
+after our start date but it's not the
+very first bar since this code's been ex
+executed so that means this code gets
+executed and this code here just checks
+is our lowest price na or is the current
+bars closing price lower than the
+currently saved lowest price so as price
+moves lower we keep saving that price
+and then as soon as it starts moving up
+we stop saving that price and this ends
+up being saved um is our lowest price
+this black line and same for the highest
+price but obviously the opposite
+direction and that's it that's all the
+information we need to calculate these
+three metrics um next we have a custom
+function here for converting the
+difference of two values into percentage
+and then we can detect final final bar
+on our chart /time window so this 2%
+function takes two numbers and converts
+it into a percentage that's how we get
+these values here um and this block of
+code is where all of our analysis is
+done so if the current bar is the last
+confirmed historical bar or the current
+Bar's time exceeds our end date and our
+end price is na or not set to anything
+then this code gets executed first we
+save and price that stops this code from
+executing again and draws the label and
+all of our lines and and what have you
+so we draw our price lines um from the
+start index remember we had to save our
+start index when we saved our start
+price so that we knew where to draw our
+lines from so we draw from our start
+index to the current bars index plus 10
+so we have a 10 bar offset if I zoom in
+here and measure out from here to at the
+end of our line um oh and we have some
+plots down here that we don't actually
+need so let me get rid of these plots
+that's drawing the same thing twice so
+now our lines are drawing 10 bars into
+the future to give us a bit of an offset
+if you want to you can get rid of that
+I'm not really sure why I left that in
+let's get rid of that and now we can see
+that we're defin it's a bit easier to
+see what window of time we're analyzing
+there we go that looks a bit better so
+all these numbers now are analyzed based
+on everything that happens between these
+two lines and this is where we prepare
+that information to be drawn as a string
+so we add the symbol info we calculate
+the total return as a percentage the
+highest return and the lowest return we
+add all of these by building a string we
+build or concatenate a bunch of of text
+um this a fancy word for adding a bunch
+of text together to get this and you can
+use the back sln to add a new line just
+makes it easier to read we draw the
+label 10 bars off from the current bars
+and I'll remove this 10 bar offset from
+the label as well and zoom out let's add
+a one bar offset I think that'll look a
+bit better yeah there we
+go and that's it we draw our label with
+all our text and then we also plot the
+closing price it only plots if start
+price and end price are na but on the
+final Bar N price will not be na that's
+why if I zoom in here the blue line
+should really draw up to this red line
+since that's the final closing price so
+let's add a one historical operator on
+here so this will draw the closing price
+so long as our starting price has been
+set so we are plotting price action
+beyond our start price and if our end
+price this price here this variable is
+na on the previous bar um now our line
+will draw up to the red line so now
+we're getting our closing price all the
+way to the final bar on our chart and
+that's it that's the script it's pretty
+simple tool here but I thought it was an
+interesting um application of time
+inputs um you can obviously adapt this
+for anything you could turn this into a
+back testing filter so that your script
+only filters trades between a certain
+period of time you can analyze other
+metrics in here you could analyze
+indicator values between this period of
+time um you could adapt this to analyze
+trading sessions instead of dates so
+intraday you could analyze price action
+on an intraday basis and see what the
+opening range is like on certain markets
+in the morning hours for example or
+pre-market anything like that so I'll
+leave this video here I hope you guys
+have a fantastic Christmas and New Year
+I probably won't release a video until
+20 24 which is crazy to think about
+thank you everyone for your support this
+year you guys are amazing I've had a
+fantastic year I had a lot of fun both
+trading and teaching pinescript next
+year I'll be expanding the channel to
+cover more topics more subjects we'll go
+into real test we'll go into stock
+trading systems a lot more information
+on systematic trading development back
+testing automation all of that fun stuff
+so make sure to subscribe if you haven't
+already and I'll see you next year hope
+you have a fantastic holiday have fun
+with your family and hit the ground
+running next year I'll be right there
+with
+you

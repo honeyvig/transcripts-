@@ -1,0 +1,371 @@
+hey everyone i am ravagandava and i
+welcome you all to our simply learns
+youtube channel today we will be going
+over streams in c sharp but first let me
+remind you that we have our daily
+updates on numerous technologies so if
+you are a techie looking for the latest
+technological innovation then try
+subscribing to our youtube channel and
+don't forget to hit the bell icon and
+never miss an update on simple
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with a
+discussion on what our streams
+and their purpose in a real life
+situation
+then we will have a brief discussion on
+the types of streams
+following that we will discuss each of
+these streams
+one by one first we will go through
+binary stream
+then we will go through text stream
+finally we will end this session with a
+demo on reading and writing in a text
+file
+now let's get started with the
+discussion on what are streams
+first a stream is an organized sequence
+of bytes
+that is transmitted from one application
+to input device to another
+these bytes are transmitted and read
+sequentially and always arrive in the
+same sequence they were sent
+next
+streams are the main way of transmitting
+information in the computer world
+streams enable various programs to
+access computer data and create network
+connections with remote systems
+then in the world of computers many
+operations can be interpreted as either
+reading or writing to a stream
+for example printing sends a sequence of
+bytes to a stream
+associated with the corresponding port
+to which the printer is connected
+at last
+when you read or write from or to a file
+you must first open the stream to the
+matching file then we will execute the
+reading and the writing and then we have
+to close the stream
+next let's go over the type of stream
+there are two types of streams defined
+first we have binary string
+then we have text strings
+let's discuss them in detail
+first let's have a look at binary
+streams
+a binary string comprises
+one or more bytes of unique data
+users may write the value contained in
+an abstract object
+to a bicorator or a binary string
+and read back the identical value that
+was recorded in the object when the user
+wrote it
+next
+the library function do not change
+the byte sent between the program and
+the binary stream
+they can however append an arbitrary
+amount of null bytes
+to the file that you write with the
+binary string
+the application must deal with the
+additional null right at the conclusion
+of the binary strings
+then
+except for positioning relative to the
+end of the binary stream location within
+a binary string is always well defined
+the current file position indication can
+be obtained and changed the same way as
+a text stream can
+finally
+the file is viewed as a series of bytes
+in a byte string
+except for the potential changes
+discussed previously
+the stream appears to the application as
+the same sequence of files
+next
+let's discuss text streams
+a text stream comprises one or more
+lines of text that may be written to a
+text oriented display and viewed
+next a software reads a nl or
+new line at the end of each line
+while reading from the text range
+after that the software prints an anno
+to signify the end of the line
+when writing to a text frame
+the library functions can change the
+amount and representation of characters
+transferred between the application and
+a text stream to meet different
+conventions for encoding text in files
+among target environments
+[Music]
+the last
+positioning is constrained inside a text
+string
+calling fk pose or f10 will
+return the current file position
+indication
+by using fsetpole or fc command you may
+place a text stream at a location
+found in this manner as well as at the
+start or end of the stream
+finally let's conclude this session with
+a demo to read or write on a text file
+now we will start with creating a new
+project
+we will be creating a console app so
+console
+then we have
+now we have these many options
+note that we will be using a dotnet
+framework one as well as which uses c
+sharp
+so let's use this
+then we will go to next
+let's name this
+text file
+demo
+we will use the framework.net framework
+4.7.2
+then we will hit create
+now let's get started
+so first
+we will define string
+and name it
+file
+dir
+then we will hit enter
+now here we will be entering the file
+path to which a text
+text document will be stored
+so
+we will use accelerate then we will use
+semicolon now we have to give an address
+here
+so let's first go over and create a new
+folder i've already created a folder so
+let's right click over there
+here this is my folder x12 demo
+now we will create a new
+text document
+we will name this
+as demo file
+let's name this this
+now we will go over
+properties
+and we'll copy its location
+ctrl c
+we can close this
+now
+we will go back here
+we'll paste this
+we will add one back arrow
+and write the name so name was demo file
+let's make sure
+that we are using the site name
+demo files
+should be capital
+demo file
+dot txt
+now we will create a list
+so we will have a list
+[Music]
+this list will have string
+[Music]
+we will name this
+text
+lines
+equals to
+new
+[Music]
+list
+string
+and close
+[Music]
+then we will write a file
+function
+file dot
+read
+we are using
+file now it may happen that it's not
+working
+so what we will use is this using
+system.io
+this will give us the correct
+directories to use these
+so let's try it again so read all text
+so we have options like read all text
+read all bytes
+let's suppose if we are using binary
+stream or we are using text stream but
+let's go and use you read all lines so
+that it's easier to rope in both of
+these cases
+so we will use read all lines
+[Music]
+then we will give
+the file path as file dir
+dot
+but now
+by default
+this file only uses a string error so we
+will need to convert this whole thing
+into
+a list so we will use
+to list
+now you guys must be asking we haven't
+added anything in that file
+so list how is it going to read all
+these all lines from that so first let's
+go over to the text file
+and add some data to it
+so
+here we'll open this
+let's write some data
+let's use superhero names so
+it's open man
+he is from dceo
+then we have
+batman
+or let's use spiderman
+he is from mcu
+[Music]
+then we can use hulk
+again from see you
+let's use someone from dc so let's use
+flash
+dc
+eu
+[Music]
+let's have one more
+wonder woman
+[Music]
+pvc
+we have saved this
+and close this
+now we have added some data in these
+so let's go back to our code
+now
+according to our code till now it should
+have read all the data from the file but
+now we have added this the data to file
+about we check if it actually got added
+or not
+so let's have and for each
+loop
+so for each
+line
+for its
+string
+line
+and
+[Music]
+text
+life
+[Music]
+let's go this
+okay
+now we have better look at our code
+so
+then we will have console
+dot
+bright line
+here we will have line
+[Music]
+now this will print out all the lines
+now let's also add
+a console
+dot
+redline
+this command will make sure that
+the window the console window which will
+open when we will run this code will not
+close it will only close after we hit
+enter
+now let's run this
+and as you can see it has finally read
+the data from the text file
+now how about we can write something on
+this
+so we will close this
+then after this forage
+let's add some data to this list
+so
+we will use
+text
+lines
+dot
+add
+and curly braces
+let's add another superhero
+iron man
+and
+x universe has mc
+[Music]
+now this will
+add the data
+to the list
+but how do we write this data to the
+file
+so we will use
+file
+dot
+write all lines
+then
+for the file path
+we will give
+our file dir
+and
+what we want to
+write all these lines here will be from
+the list text lines
+now we will save this and let's run it
+[Music]
+but why is it not printing the new line
+which we just added
+that's because
+this program
+where this file
+this printing function then before then
+we were adding but it still did add
+these lines
+so to check that we can go
+and check that file
+let's open it
+and here you can see we have ironman mcu
+now
+let's comment these lines so that we
+don't add double values
+now run this again
+now
+as you can see the ironman is added to
+this list
+and this is how you read and write to a
+file
+now let's get back to our slides and
+this was all for today's session hope
+you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

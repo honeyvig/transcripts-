@@ -1,0 +1,899 @@
+hey traders in this video i want to show
+you guys a hack to make your back
+testing process significantly
+faster
+this one's a little bit different to my
+normal pan script lessons in this video
+i'm going to be showing you how you can
+use pine script
+strategy scripts to significantly speed
+up and optimize your back testing
+process to make it way
+way faster now before we start full
+disclaimer this is an imperfect science
+there are potential issues with this
+approach to
+back testing that i'm going to show you
+today it's very important you watch the
+full lesson pay attention because
+i do explain my thought process the pros
+and cons of this approach throughout the
+lesson but what i'm going to show you
+here is how you can export your strategy
+data
+from the trading view strategy tester
+and convert it into a spreadsheet so
+that you can compare the
+trade metrics the strategy performance
+metrics of multiple markets and get a
+better grasp on the max drawdown the
+total return drawdown duration and all
+that sort of thing using simple
+spreadsheet well this isn't a simple
+spreadsheet but you can use a simple
+spreadsheet you don't need to use this
+spreadsheet you see here this is my
+personal trading spreadsheet that it's
+taken me years to build you don't need
+to use this particular one i'll link you
+below to a more simple one that doesn't
+have as much overwhelming information in
+it if you want this one with the full
+bells and whistles i include this in my
+indicators and strategies course i also
+include the source code to this
+particular script you see today
+in that course which includes full
+pine connector and automation
+integration it's completely ready out of
+the box to start auto trading through
+pine connect and i have been auto
+trading the script for the past two or
+three months and the whole reason i'm
+making this video today is because i've
+been running into an issue which i'll
+explain throughout the lesson that i
+needed to address regarding my max
+drawdown and trading multiple markets
+and today's lesson is going to show you
+the fastest method that i have found to
+analyze my strategy scripts at least in
+a preliminary fashion i do like to
+manually confirm any automated testing
+results that i generate but we'll cover
+that throughout the lesson so with all
+that said let's get started with today's
+lesson
+so in this case i have a script on my
+chart this is an inside bar momentum
+strategy i'm not going to go into how
+this strategy script works because i
+cover that in my indicators and
+strategies course where i will be
+breaking down the source code but for
+now i just want to use this script as a
+great example of how this hack
+works
+so basically what we're going to do here
+is we're going to export
+all of our trade data
+the list of trade data here into a
+spreadsheet
+and then i'm going to convert that
+spreadsheet
+into like a back testing template
+kind of thing what this will allow us to
+do is combine multiple markets so here
+on the right side of my screen you can
+see i've flagged every market every 4x
+market that is profitable with this
+strategy significantly profitable so if
+i click on some of these
+let me just quickly go through i'll just
+keep hitting space keep an eye on the
+top right corner here where my mouse is
+and you can see that some markets are
+not profitable at all
+while other markets are decently
+profitable with this strategy
+now the problem is and actually the
+problem i've been having with automating
+this strategy
+is that the i don't know the drawdown i
+don't know the max drawdown when trading
+multiple pairs so all of these pairs i
+think the maximum drawdown of any single
+pair
+is around 12
+any of these pairs i've got flagged some
+of these are way higher than 12 max
+drawdown but the problem i was having
+with automating the strategy on multiple
+markets is when it hits a losing streak
+i don't know how bad that losing streak
+is going to get
+imagine if all
+how many pairs do i have here one two
+three four five six seven eight nine 10
+11 12. i've got 12 markers here that are
+profitable with this strategy if i
+automate the script across all 12 of
+these first of all i don't have enough
+money in my account balance
+to handle the margin requirement of
+opening 12 simultaneous trades at least
+not yet maybe if the strategy does well
+i'll throw more money in um but the
+point is if the script trades all of
+these markets at the same time
+and all of them have a losing
+streak let's say all of them lose two
+three four trades in a row which is not
+uncommon for any strategy even with a
+high win rate if that would have
+happened simultaneously across multiple
+markets i could be looking at a 20 30 40
+draw down on my account if i'm not
+careful
+and so what i want to do
+is i know that this strategy is
+profitable on a bunch of markets
+what i don't know
+is the max drawdown when combining all
+of these markets so that's what i'm
+going to do today i'm going to show you
+how to export this trade data into a
+spreadsheet
+and then combine all these markets into
+a single spreadsheet so we can track the
+max drawdown so let's do it it's
+actually not that difficult there's a
+few steps involved
+but
+i'll show you how we do that now let's
+start from the top let's start with
+aussie dollar
+now this applies to any strategy script
+that you throw on your chart the catch
+here is that it will only work with a
+fixed target so in this particular case
+this strategy takes a one to one
+profit target so
+if i have a 10 pip stop loss i have a 10
+pip target and so my reward is identical
+to my risk so if i risk 1 i make 1 on a
+winning trade and obviously lose one
+percent on a losing trade so that's
+important to mention it may be possible
+to do this with a variable profit target
+like a dynamic profit target that
+changes on each trade i haven't looked
+into doing that yet because most of my
+automated strategies use fixed
+in fact all of my automated strategies
+at the moment use a fixed target just
+because it's just simpler to work with
+there's less that can go wrong when
+you're using a fixed target with an
+automated system i'll be experimenting
+as i get more confident with my
+automated trading i'll be experimenting
+with other profit taking techniques but
+for now i just use a fixed target and so
+this technique works with most of my
+strategy scripts
+and this is how it works
+throw on any strategy script with a
+fixed target in this case i'm using my
+inside bar momentum strategy
+open up the tester and then we have this
+export button right here
+if you click on that
+it will copy all of this data onto your
+clipboard and we can paste that into a
+spreadsheet you can use excel if you
+want to if you're more proficient with
+excel then of course you can use that
+i'm more proficient with google's google
+sheets that's what i use for my own
+testing just because it's online
+cloud-based i can access it anywhere so
+i've i use
+google sheets that is my preference so
+i'm going to copy this into a blank
+spreadsheet here i'm going to click on
+this first cell and paste in
+all of my data now there's a lot of data
+here most of it is useless to me because
+i don't care about my contract size i
+don't care about cumulative profit and
+run-up percent and all this crap i just
+want to get a clean
+uh list of every trade this script took
+and whether it won or lost i don't care
+about the direction either
+you can track that if you want to but
+for me i just want the date the trade
+was taken and whether it won or lost
+so i'm going to delete all of this data
+from the top
+and then what i need to do is sort my
+spreadsheet by type the reason for that
+is that we don't want any of this data
+um all these blank cell data we don't
+want this and so if we
+sort our spreadsheet by type by the b
+column that will allow us to get rid of
+all of our entries we don't want any of
+our entry um
+cells we just want our exit cells this
+is where it tells us whether the trade
+won or lost now the catch here is that
+the date time is going to be a little
+bit off it's not going to track the date
+and time that the trade it was opened
+it's going to track when it was closed
+but for the purposes of what i'm trying
+to do here that doesn't matter i don't
+care about that
+so let me sort my spreadsheet by the b
+column by clicking on the b column and
+clicking data clicking
+short
+sort sheet
+short
+sort sheet by column b a to z click that
+and now
+if i scroll up to the top of my
+spreadsheet i can delete all of this
+data here
+if i scroll down until
+we get to this
+section here about halfway down the
+spreadsheet
+i want to delete all of this info here
+that does not contain the exit price and
+profit so i can hit delete here
+and now if i scroll to the bottom of
+this data
+that is where our column names will be
+column titles
+and now what i want to do
+is first of all we can delete a lot of
+these columns i can delete that
+i can delete that i can delete that that
+the only columns i want is the date and
+the profit so this is profit in dollars
+a negative number just means the trade
+lost obviously positive number means a
+trade one that's the only data i need so
+i can delete all of these other columns
+as well
+now i have everything i need in order to
+convert this information into a back
+testing
+spreadsheet
+so now what i want to do is delete these
+titles
+sort all this data by date and time so i
+need to come back up to data and click
+sort sheet by column d this time now
+when we scroll up to the very top of our
+spreadsheet we have all of our trades
+listed by date and time and the monetary
+gain and loss now to convert this into a
+back testing spreadsheet i just need to
+get a positive number
+if
+the trade
+1 and the negative number of the trade
+lost
+so to do that i can create a
+spreadsheet formula here i can say if
+open parentheses
+g one is less than zero
+so if you're not familiar with
+spreadsheet formulas it's pretty much
+the same thing as pine script just the
+syntax is a little bit different
+and here what we need to do is put in a
+comma and now the next value we put in
+is what this cell will be filled with if
+that condition is true
+so if g1 the cell g1 is less than zero
+that's a negative number that means we
+lost the trade i need to put negative
+one there
+if i put another comma in
+this is the value that gets put in the
+cell if that condition is not true so if
+g1 is not less than zero that means it
+must be a positive number
+and so we won that trade and so i just
+want to put one in there
+and now if i close off that parentheses
+and hit enter
+this little suggestion will pop up if
+you're using google sheets and we do
+want to autofill this entire column
+but if you accidentally click off this
+and you don't get the chance to click
+the tick button
+you can still fill all of these cells by
+just clicking on this cell click on this
+little square down the bottom here
+click on that and drag all the way down
+to the bottom of your
+data and there's quite a few trades
+taken here and so now if you look
+through here carefully we have a bunch
+of ones and negative ones
+this whole column now represents
+which trades won which trades lost and
+the date and time that happened
+so now if i scroll up to the top of my
+chart
+the problem we have now is if i try to
+copy all of this data into my
+spreadsheet
+the google sheets at least i don't know
+how excel works but google sheets will
+not copy the values it will actually
+copy the formulas and so when i paste
+this information
+into a different spreadsheet
+it will
+copy the formulas and so we won't get an
+accurate reading it will actually
+all of these numbers will be based on
+whatever's in the g column
+on this spreadsheet
+so what i need to do is click on the
+column title here the h column select
+all of these cells
+copy them ctrl c or command c on a mac
+or just right click copy
+and then in any other cell here
+i need to click in a cell
+right click
+come down to paste special
+and then paste the values only we do not
+want the formulas we just want the
+values
+so now if i paste the values only
+and if you double click on the cell it
+now doesn't contain a formula it's just
+the values that we generated here now
+what i can do is click on that
+column
+copy all of those values jump over to my
+back testing spreadsheet there'll be a
+link beneath this video to this
+spreadsheet template if you need it if
+you have your own spreadsheet this will
+work just fine depending on how you've
+set up your formulas but what i need to
+do here is paste all of those values
+into my target column so this
+spreadsheet allows for two targets by
+default the second target is ignored so
+we're just dealing with a one target
+system here and so now if i paste in all
+of my values into my target column
+there they are
+now what i need to do is just put one
+for my stop loss so technically this
+normally counts the pips per trade that
+you win and lose but as i said at the
+start of this video
+since we are using a fixed target it
+doesn't really matter how many pips we
+want or lost because i'm risking a set
+percentage per trade
+and i don't care if i won one pip or 10
+pips or 100 pips that means that i won
+one percent
+or lost one percent of the trade lost
+so what i can do now
+is
+um first of all let's paste in all of
+our dates so i'm going to click on the
+date column here paste that into the
+date column on this spreadsheet i'm
+going to change the market so this is
+aussie dollar we're dealing with here
+and now i'm doing this on my template
+spreadsheet i should have been doing
+this into a unique spreadsheet so let me
+duplicate this really quickly before we
+proceed and let me rename this
+sheet to aud usd
+i can highlight these three columns drag
+it all the way down to the bottom of our
+dates list and our targets list
+there's a lot of trades there
+and now all i need to do is drag this
+one
+all the way down to the very last trade
+in this list
+and once i do that
+the spreadsheet will automatically
+generate all of my trade metrics
+so we have
+my total gain percentage my max drawdown
+percentage my win rate
+and the monetary gain um and that's it i
+also track a bunch of other metrics in
+my spreadsheet such as which days
+perform the best you can see here that
+mondays are actually quite bad for this
+strategy so on this particular pair
+aussie dollar maybe it would be worth
+adding a filter to the script to not
+take trades on mondays since it's not
+profitable in fact it's far from
+profitable
+a one to one target with a 43
+win rate is terrible we need to win at
+least 50 percent to break even and
+that's not even including commission
+costs and spread and the cost of trading
+so
+mondays are not profitable for this
+strategy that's something to note and i
+should add a filter to aussie dollar to
+not take trades on mondays but that's
+outside the scope of this lesson
+maybe we'll cover that in a different
+lesson if you guys are interested in
+strategy optimization but for now we'll
+just leave it
+as it is it's still profitable but it
+would be more profitable if we didn't
+take 91 trades with a 43 win rate so
+keep that in mind
+and anyway there we go we have our data
+here
+let me tidy up some of this
+information
+and we'll move on to doing this whole
+process again
+with a new
+market
+so let me duplicate our template i'll
+only do one more pair here to save time
+the process is identical for multiple
+pairs but for now let's just do cad yen
+i think cad yen was the next one on my
+list yes so now we do exactly the same
+thing i load up the cad yen strategy
+data i export it click that button now
+let's copy the clipboard i can click ok
+i can open up my blank spreadsheet here
+create a new tab if you want to or new
+sheet if you want to
+paste all that data in and we do exactly
+the same thing i need to delete all of
+this header data
+i don't care about that
+i need to sort by the b column the type
+column so let's sort our sheet by type
+now i can scroll up and delete all of
+this data down to where
+our trade winning loss
+metrics are
+beginning to be tracked by the
+spreadsheet delete all of that
+useless data there that we don't need
+i can scroll down to the bottom of this
+data to where our titles are column
+titles
+i can delete
+these columns
+all three of these and i can delete all
+of these up to profit we want to keep
+our profit column but get rid of all
+these other columns
+and now we can delete our two
+column titles here scroll up to the top
+and or maybe not quite to the top and
+click on the d column we need to sort
+our column by date and time now so let
+me click data sort sheet by column d
+scroll all the way up to the top and now
+we need to do the same thing we did last
+time equals if
+open parentheses g1
+if g1 is less than zero put in negative
+one otherwise put in positive one
+close that off hit enter
+and we we didn't get the option to
+autofill
+this time maybe because i did this in
+one column over if we did it in this
+column i think it would suggest the
+autofill so that could be one way to
+speed up this process but anyway let me
+click on this
+little box and drag it all the way down
+to the bottom of our trade data list and
+stop there
+scroll back up to the top select this
+column
+copy
+and then right click paste values only
+copy that column jump over to our
+backtester spreadsheet i can change this
+to cad yen paste in our targets paste in
+our
+date and times and then i can drag all
+of these down to the bottom i'll show
+you why this is important in a moment
+why we bother tracking that data
+there we go
+now i can do the same thing here hit one
+drag this up to the top
+there we go and now we have our trade
+data entered into the backtesting
+spreadsheet and notice that these
+metrics are identical if i jump over to
+my chart
+57.68 return
+11.47 percent drawdown
+um same numbers here 57.68 return
+11.48
+drawdown close enough there's a rounding
+difference there on the final digit but
+these numbers are accurate at least as
+far as our script is if your script is
+inaccurate obviously your data is going
+to be inaccurate some of these trades
+may have lost
+instead of one because a spread maybe
+price got really close to our stop loss
+but didn't quite touch it and the script
+didn't record it as a loss even though
+our broker would have stopped us out of
+the trade keep that information in mind
+use this at your own risk
+it's not a perfect system but it is a
+fast way to quickly analyze
+your strategy results and see which
+markets perform well together
+potentially you still need to manually
+confirm this demo trade it if you can
+for a while or at least on a small
+account balance that you don't care to
+lose before you start risking any
+serious amount of money with this sort
+of approach to strategy development and
+optimization but anyway we have two
+spreadsheets here now filled with data
+time and date and win and loss data we
+can now merge these two spreadsheets to
+see how they would have performed
+together we can see how aussie dollar
+performed with cad yen in terms of its
+max drawdown and total return
+over the
+past couple of years of data we're
+starting from
+january of 2018 until today which is
+november 2021 that's a lot of data
+that's 438 trades so
+we can merge these two spreadsheets and
+see how these performed together
+let's click on this little plus sign to
+add a new blank sheet and then what i
+need to do we'll start with cad yen
+click in the top left cell here
+the very first trade that's recorded
+scroll down to the
+bottom here where our trade is no longer
+where our final trade was taken by the
+script
+select all of those cells copy
+paste them in here
+and then do the same thing for aussie
+dollar
+copy the first cell all the way down to
+the last trade
+copy
+scroll down to the bottom of this data
+this list of data
+and paste this under cad yen
+there we go we now have both markets on
+the one spreadsheet all that's left to
+do is sort this spreadsheet by date and
+time so that we get the correct
+order of trades taken by these two
+markets so if i click on the d column
+click data sort sheet by column d
+done we now have all of our
+markets that we have combined sorted by
+the correct date and time and if we had
+multiple markets here other than two
+this would still work so that's why i'm
+only showing you two forex pairs here as
+an example
+because these steps apply to however
+many markets you want to combine so now
+all that's left to do is we can
+copy all of this data and
+control c
+now if i duplicate my template
+spreadsheet here i can rename this let's
+just call it portfolio for now this is a
+portfolio of all of the pairs i want to
+trade
+delete that data click on the very first
+trade cell here
+and you can either just paste this
+straight in and it should work just fine
+or you can right click and click paste
+special values only
+i'm just going to paste in all that data
+as i normally would
+and here we go we have two markets
+combined
+all of their metrics combined
+our win rate on monday has jumped up to
+53 so cad yen obviously does well on
+mondays to increase our
+win rate on aussie dollar from
+43 percent
+um 250 whatever it is if we look at cad
+yen cabin must do quite well on monday
+very well 63 win rate on a monday so
+that's interesting isn't it
+the australian dollar doesn't do well on
+mondays
+but the cad yen does you wouldn't know
+that unless you combine this data into a
+spreadsheet
+and so anyway um let's go to portfolio
+we have a 14
+max drawdown it's pretty reasonable
+if you look at the rules tab here i have
+a list of the
+average
+calendar year returns and intra year
+drawdowns of the s p 500 so if you just
+bought and held etfs
+you would have been looking at multiple
+drawdowns exceeding 14
+i mean the average drawdown here is
+quite horrible really it's horrific 48
+which is obviously from 2007 terrible
+drawdown if i lost 48 of my trading
+account on a strategy i would be
+pretty concerned but 14 i can handle 14
+i'd like it to be a little lower than
+that if i can manage it but 14 is fine
+20 is fine i can stomach that because i
+have a high risk tolerance i'm young i'm
+making plenty of money for my lifestyle
+i don't care if i lose 20 on my way to
+make
+um whoops where was it portfolio
+130 return over a couple of years it's
+pretty good considering i'm getting i
+think
+point
+maybe two percent interest
+on my savings account in my bank i don't
+even bother saving money anymore
+whenever i have money i invested in
+something either my stock portfolio my
+trading my forex trading or crypto or i
+spend it on things i need i do not leave
+money burning in my savings account no
+more than i need in order to cover an
+emergency
+all of my assets are pretty liquid so i
+don't really care if i need money
+quickly it wouldn't take me longer than
+a day or two to get a decent amount of
+money into my hands
+so yeah anyway
+that's really it for today's video i
+just wanted to show you guys how to
+quickly combine strategy data into a
+testing spreadsheet so that you can
+check your max drawdown
+i'm sure that if i added up all of these
+markets into one spreadsheet the
+drawdown would be surely a lot higher
+than this
+because a lot of these pairs are
+correlated cad yen will be correlated to
+some degree with swiss yen so will euro
+yen pound yen
+new zealand yen even though this
+strategy performs well on all of these
+yen markets when one encounters a
+drawdown surely the others will likely
+do as well and so that's something i
+need to check and this is how i'm going
+to do it and maybe i need to cut out a
+couple of yen pairs and just pick the
+ones that perform the best maybe two
+pairs two yen pairs the best ones that
+had the best drawdown and total return
+together maybe i'll throw them onto my
+automated trading system and see how
+that goes but i certainly don't think i
+will want to trade all of these yen
+pairs maybe i'll be surprised maybe i'll
+throw them all in a spreadsheet and they
+do fine but i doubt it and same with all
+these euro pairs euro aussie euro yen
+euro dollar i'll need to check how these
+correlated pairs perform together before
+i feel comfortable throwing them all
+into a system
+to be automatically traded plus as i
+mentioned earlier this script takes a
+trade at the same time of day on all of
+these pairs so i can only trade a couple
+of markets anyway
+with this strategy without risking
+margin calls frequently so i need to be
+careful of that as well
+but i'll figure that out i'll just
+probably trade two or three markets here
+maybe four because i'm using pine
+connector with this particular strategy
+i can set up pine connect to only
+allow it to execute x amount of trades
+so i could say only open two trades max
+or three trades maximum and then it
+doesn't matter how many alerts i set uh
+because if it receives more than three
+it won't take all of them but then i
+have the problem of of inconsistency
+seeping into my trading because i don't
+know which markets will be executed
+first and so it's probably best to just
+keep a small portfolio of two or three
+pairs trading
+this strategy and depending on what um i
+find out through my own automated
+testing on my actual live account i'm
+using around 10 grand on an actual live
+account at the moment testing this stuff
+as startup with a few grand and it now
+has bumped up to 10 grand as i get more
+confident with the system and i'm seeing
+that it can handle itself without
+catastrophic
+implosions but i'm still not comfortable
+going any further than 10 grand at the
+moment just because i need to track my
+max draw down and see how the strategy
+handles bad times
+correlated bad times i need to see how a
+bunch of markets perform together
+when they are going through a rough
+patch that is what this technique i'm
+showing you today will help me
+figure out through my back testing
+results i can check which pairs are
+terrible together and which pairs
+complement each other sometimes you'll
+merge two pairs together and your total
+return will increase and your drawdown
+will actually decrease because when one
+pair is losing the other pair is winning
+and so it's important to do this process
+for both
+protection of your capital protection of
+your risk
+a management of your risk and
+optimization of your return because if
+two markets increase your return but
+lower your drawdown that's going to
+probably be better to trade than trading
+two markets that have an outstanding
+return but their max drawdowns also
+complement each other and you have a
+larger max drawdown one way to think of
+it is
+waves in the ocean i'm sure you've all
+seen
+those of you who live near an ocean i'm
+sure you've seen
+times when two waves
+hit each other from opposite directions
+and they form a super
+large wave it's the same with trading
+and drawdown you don't want two markets
+that have a drawdown that overlap with
+each other too often or at least not too
+many markets doing that too often
+because you can
+see some pretty outrageous drawdown
+levels if your pairs are too correlated
+in that risk metric anyway that's it for
+today's video i hope you found this
+interesting
+it's a pretty cool technique again use
+it at your own risk it's obviously
+flawed because we haven't gone through
+and checked every single trade here
+there could be trades that might have
+lost
+that were counted as winning trades as i
+mentioned earlier maybe your stop loss
+was actually filled but price never
+technically touched it on your chart and
+so your script didn't exit or count that
+trade as a losing trade but your
+spreadsheet did count it as a winning
+trade that's a problem you need to watch
+out for
+not super frequent
+in my experience but it can happen and
+depending on the strategy you're using
+it could be a big problem so keep that
+in mind another thing worth mentioning
+is that
+pine script is terrible
+at
+simulating intrabar price action
+so on a trade that hits your take profit
+and
+spikes up to hit your stop-loss on the
+same bar if you get a giant bar
+with a huge wick
+and the candle hits both your take
+profit and your stop-loss sometimes
+pinescript and the strategy tester will
+count that as a winning trade and when
+you drop down to a lower time frame and
+go back to that time of
+trade
+uh you'll see that price action actually
+did it in the opposite direction it
+played out in the opposite
+way it hit your stop-loss first and then
+you'd take profit but the higher time
+frame strategy test that counted it as a
+win
+that is a problem
+again not super frequent but depending
+on what type of strategy you're using
+could be a huge problem so keep that in
+mind
+anyway i'll wrap it up here i covered
+this information pretty quick because
+it's a weekend here i have family over
+but i wanted to get this information out
+as quickly as possible so i hope you
+found this interesting if this is all
+new to you the spreadsheeting and all
+this stuff you might need to watch this
+video a couple more times but i'm sure
+you'll get the hang of it it's not that
+difficult a bit of practice and you'll
+have this down and it will save you a
+heap of time in your back testing
+process at least that initial stage of
+picking which markets to further
+investigate manually i mean
+it would be a good idea even if these
+metrics turn out good to
+manually confirm and go over at least a
+few hundred trades and just make sure
+that there's no glaring issues with your
+script and that the data is at least
+90 accurate that would be my advice and
+that's personally what i like to do in
+my own trading i don't mind a little bit
+of margin of error
+as long as my metrics look solid and
+that margin of error isn't going to
+result in a winning strategy actually
+being a losing strategy
+anyway that's all see in the next lesson
+good luck with your trading

@@ -1,0 +1,223 @@
+hey everyone i am weber kandalwal and i
+welcome you all to simply learns youtube
+channel
+in this session we will discuss subset
+sum problem we shall begin a session by
+discussing the problem statement
+then we will discuss the algorithmic
+solution to the subset sum problem
+finally we will implement the solution
+to the subset sum problem in the code
+editor
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel
+so without any further ado let's get
+started with the problem statement
+we will be given a set of non-negative
+integers and a value of variable sum
+and we must determine if there is a
+subset of given set with a sum equal to
+a given sum
+now let's discuss the algorithmic
+solution to the subset sum problem
+first we will create a 2d array of size
+arr size plus 1 multiplied by target
+plus 1 for the type boolean
+next the state dp i j will be true if
+there is x there exists a subset of
+elements from a from 0 to i
+whether sum value equals to j
+let's look at the pseudo code
+here if the current element has a value
+greater than the current sum value we
+will copy the answer
+for previous cases
+and suppose the current sum value is
+greater than the i-th element
+in that case we will see if any of the
+previous states have already experienced
+the sum equals to j
+or any previous states experience the
+value j minus a a at the i value
+which solves our purpose
+we have now discussed problem statement
+and algorithmic solution to subset some
+problem
+now let's implement this solution in the
+code editor
+we'll start with the boolean function is
+subset sum
+which will return true if there is a
+subset of set
+with the sum equal to the given sum
+so
+we'll
+is
+subset
+sum
+and
+arr
+comma
+end
+and
+comma
+and
+sum
+now the value of the subset subset i j
+will be true if
+there is a subset of set from 0 to j
+minus 1 with sum equal to i
+so
+boy
+upset
+and plus one
+two
+sum
+plus one
+now if sum is equals to 0 then the
+answer will be true so 4
+and i equals to 0
+i less than equals to n
+i plus plus
+subset
+at i z i comma 0
+is equals to true
+now if sub is not 0 and set is empty
+then we will answer false
+so 4
+and
+i equals to 1
+i
+less than equals to sum
+i plus plus
+now in this case we will check at subset
+0
+comma 1
+my
+equals to false
+now we will fill the subset table in
+bottom up manner
+so for
+and
+i equals to 1
+i
+less than equals to n
+and i plus plus
+we will add another for loop
+and
+j is equals to
+1
+j
+less than equals to
+sum
+a plus plus
+now if
+j
+is less than
+arr
+i
+minus one
+then
+subset
+i
+comma j
+will be equals to
+subset
+i minus 1
+and j
+now if
+j is greater than equals to
+ar
+at i minus 1.
+then
+subset
+at i comma j
+will be equals to
+subset
+i minus 1
+to j
+or
+subset
+i
+minus 1
+to
+j minus
+a r
+i minus 1.
+now we will return
+subset
+at n comma
+sum
+now let's write the main block
+so we will create and
+set
+which will be equals to
+values like 3 comma 34
+comma 4
+comma 12
+comma 5
+comma 2
+and so on
+and we will have to
+find a subset with the sum equals to
+sum equals to
+9
+now let's find the size of this set so
+int
+n equals to
+size of
+that
+divided by
+size of
+set at zeroth position
+now if
+is subserve
+some with
+with arguments as set
+comma n
+comma sum
+is equals to
+true
+then
+c out
+found
+a subset
+with
+given
+some
+else
+see out
+no
+subset
+with
+given
+some
+is
+found
+basically if this is subset sum gives
+true then we will print the found a
+subset with given sum
+otherwise we will print no subset with
+given sum is found
+now let's try to execute this
+as you can see we are getting a found a
+subset with given sum which means we
+have found a set with the sum as 9 which
+is 4 comma 5.
+now let's get back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simplyroom
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

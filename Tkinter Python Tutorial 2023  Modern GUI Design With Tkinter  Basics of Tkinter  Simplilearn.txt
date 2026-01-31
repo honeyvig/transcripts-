@@ -1,0 +1,1304 @@
+hi everyone I'm abisara and welcome to
+the simply land YouTube channel this
+session we'll introduce you to the te
+inter module its widgets and their uses
+after that using these widgets we will
+create a dollar to Rupee converter but
+before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to never miss an update and I hope the
+screen is clearly visible and the audio
+is fine if yes please type in yes in the
+chat section below and if there are any
+issues to let us know before starting
+let us have a simple question to brush
+up Ona knowledge and your question is
+list tle and range are the dash of data
+types and your options are sequence
+types binary types buan types or none of
+the men mentioned above please answer in
+the comment section below and we'll
+update the correct answer in the pin
+comment you can pause the video give it
+a thought and answer in the comment
+section and and insightful for you guys
+if you are focused on building strong
+foundational skills for career growth in
+that case you can check out a free
+course to Learn Python Basics with a
+completion certificate from skillup by
+simply learn you can check the python
+Basics free skillup course with the link
+in the description box
+below and with that we will start our
+tutorial for TI
+int so first we will create a
+folder I will move to C
+drive and in Python projects I will
+create a folder with the
+name tier
+tutorial and inside I will open the
+command Pro
+and write the command code space period
+and press enter to open my IDE that is
+I'm using the visual studio code you can
+use any ID you want or you have your
+hands
+on so now we will make a
+file and name it as TT
+dopy you would be amazed to know that
+there are various GUI Frameworks for
+python but only teiner is included in
+the standard library that is if you
+install the python it would come along
+with that only you don't need to install
+it again or write any command to install
+it again and T has a number of
+advantages the same code runs on Windows
+Mac OS and Linux since it is cross
+platform oriented and in contrast to
+other Frameworks work teiner is
+lightweight and generally simple to use
+this makes it an appealing option for
+creating GUI apps in Python so starting
+with first we will import tein module
+for that we will write the command
+import take enter and we'll use an
+allias
+here and we'll import it as
+TK so so first we need to create a tick
+into
+window and we will add a single widget
+in that and show you guys how we will
+create that
+window so first you will get your python
+ideally open and just import the te
+inter module as we have imported here
+and now to make the window we'll write a
+command
+window equal to TK what we have import
+it and we'll write
+TK and enclosed Circle brackets here
+window is an instance of T TK class now
+we will create a new window and assign
+it to the variable window so this is the
+TK
+class now when we write window main
+Loop so it will repeat the loop and when
+we add widgets in it it will keep on
+repeating and it will show you the
+window with all the widgets so first
+we'll save this file and run
+it you can see that we have the ti enter
+window
+here so this is how you create a tick
+enter window
+now moving on now we will set the title
+for the T inter window I will show you
+again as it was showing
+TK it's showing TK so we will change the
+title for the take enter window and to
+change that we'll write a
+command window dot
+title and in the circular brackets we
+will write the title we want for a tier
+window I will write simply learn tier
+tutorial so
+yeah I will save this and run this file
+for you guys so you can see that
+it has shown the title so we'll just
+stretch it and you can see the title
+here so we can stretch the take inter
+window till we have not set the
+resizable method false false if we set
+it as false or zero it would not be able
+to stretch The Tick into window as we
+are able to stretch it now so this Arrow
+it won't be available after we set it as
+false now moving
+on after setting the title now we will
+set the geometry that means the
+dimension for the take inter window for
+that we'll use the geometry method and
+it's a fundamental method which decides
+the size position and some other
+attributes of the screen layout we are
+going to create so for that we'll write
+a command window dot
+geometry and
+inside you could write the dimensions
+first we will set the width that is
+x-axis we'll set it as 600 pixels then
+we'll write small X then the Y AIS or
+the height of the window we'll set it as
+500 and after that we will add Plus
+what this indicates is 290 pixels that
+is the window will appear on the screen
+290 pixels from the
+x-axis and for y- axis we will add 10 so
+it would appear 10 pixels from the Y
+AIS so we'll save this and run it you
+could see that 290 pixels from the
+x-axis and 10 pixel from the Y AIS and
+we have set the geometry that is 6 00
+pixels that is the width or the x-axis
+and 500 that is the Y AIS the
+height so now moving
+on now we have created the window now
+we'll add a widget and show you guys how
+we add a widget before
+that uh let us know what kind of widgets
+we have in Tio so in this tutorial we
+will be learning around five wigets so
+we will start with label and label it's
+a widget that is used to display text on
+the T inter window or your screen and
+next we would be having the button
+widget that can contain text and can
+perform an action when clicked it could
+have any action or it could have just a
+text without any action then we will
+have the entry widget it's used to get
+any entry from the user or a single line
+of text it also get multi lines of text
+for that we have to set other
+attributes and next we would be seeing
+the frame so a frame it's a rectangular
+region used to group related Widgets or
+provide padding between
+widgets so these are the five wigets
+that we would be learning so I counted
+you four but here you will learn other
+widgets that would be
+canvas and you would see the photo image
+object and other things so moving on we
+will use many
+widgets first we'll create a single
+widget and show you guys how we'll
+create it and we'll start with the label
+widget so for that we will call the
+label class for that
+and I will set you greeting for you
+guys so greting equal to
+label
+so here we will use tk. Lael class to
+add some text to a window we will create
+a label widget with the text hello
+Learners welcome to TK tutorial and
+assign into a variable grading as we
+have assigned started assigning it and
+the window you created earlier doesn't
+change you just create a label widget
+but you haven't added it to the window
+yet there several ways to add widgets to
+a window right now we can use the label
+widget and then we'll use the grid
+method or the pack method or the place
+method to show that widget on your
+window screen or on the tier window so
+starting with creating the
+widget now we'll set the text for it
+and
+text that would be equal
+to hello
+Learners and welcome to T
+tutorial and by the way guys uh some
+people call it as sko I col tto and many
+colleges TK
+inter so you guys can pronounce it at
+any
+way okay so welcome to T enter
+tutorial
+now here we will use the place method so
+for
+that we'll use
+greeting dot
+place and here we'll use
+TK do
+level and we will place it at here we
+will assign the coordinates as we have
+created a window with xaxis and Y AIS
+here we will assign our x coordinate as
+190 and y
+coordinate as
+210 as we have the window and in that we
+have xais at full length of
+600 and y axis with 500 so we are
+placing it at 190 and at y- axis at
+210 and similarly with the place widget
+we have like take enter has three
+buildin layout managers that use
+symetric methods to position widgets in
+an application frame uh first we have P
+widget that organizes widgets in
+horizontal and vertical boxes that are
+limited to Left Right top bottom
+positions and many other positions each
+box is offset and relative to each other
+and here we are using the place so Place
+places wigets in a two-dimensional grid
+using X and Y absolute coordinates then
+we have the grid so grid method locates
+widgets in a two-dimensional grid using
+row and column absolute
+coordinates one thing is important when
+you use this pack place or
+you should not be combined these all in
+the same master window instead choose
+one and stick with
+it further you will know why we should
+stick with one
+only so here we have created a label and
+placed it in a variable grading so we'll
+save this and run the window you can see
+that we the T window has appear here and
+we can
+see the text that is placed on a label
+and the text says hello Learners welcome
+to the te enter
+tutorial now moving
+on we will command
+this and now we'll add some
+functionalities to the label widget
+only so for that we will create
+label and here we'll not assign it to
+any
+variable like we will assign it to a
+variable and name it as label
+only TK do
+label and this would be capital for
+label and
+inside We'll add the text
+and that would be
+same that would be hello Learners
+welcome to TK
+tutorial after setting the text for our
+label here we can set the foreground and
+background
+color so for that we will write FG that
+is
+foreground and that would be equal to
+white
+color and we'll set the background for
+the label as
+green for that we'll write the command
+BG equal
+to
+green and
+now now
+to uh get this label showed on your
+ticker window you have to use any of the
+three method methods that is pack place
+or
+grid so now we will use the place method
+only so first we'll write the variable
+name that is
+label and the place
+method and inside we'll set the
+coordinates that is X =
+190 and Y =
+to 210
+now we'll save this and run the file for
+you guys you can see that the label as
+good the background color is green and
+the foreground color for text is
+white so now moving on we can add other
+attributes to the label
+widget and that would be the width and
+the
+height so
+for that we'll write width that would be
+equal to
+30 and height we'll set it as
+10 so
+now we'll save
+this and run the file again you can see
+that uh it has expanded itself so we
+have set the
+width equal to 30 that is the x-axis it
+has expanded to 30 pixels and height
+equal to 10
+pixels so uh I have told you that label
+widgets are used to display text or
+images and the text displayed by label
+widget can't be edited by the user it's
+for display purpose only label widgets
+display text with the default system
+text color and the default text
+background color these are typically
+black and white respectively but you may
+see different colors if you have changed
+these settings in your operating system
+and you can control uh sorry control
+label text and background colors using
+the foreground and background parameters
+as we have seen
+that so moving
+on uh as you have set the color uh with
+the words here you could also set them
+with the hexa code
+so to set them with the hexa code you
+could just write the hexa code for the
+color and here I
+will use this purple color or what there
+would be a
+specific like the dark blue
+magenta but you call this color so I
+will save this
+and run it for you guys first I will
+close this so here you can see
+that I have set the color with the hexa
+code and like the text it's coming out
+of the width so for that we'll set the
+width as
+50 set it as
+500 set as 50 close the previous window
+save the file and run it
+again here you can see that we have set
+the width s50 and Y AIS that is height
+as
+10 so moving on we will start with
+button widgets so we'll close this take
+into
+window and command command down
+this
+now let's start with button
+widget so button widgets are used to dis
+play clickable buttons like there would
+be text and those buttons would be
+clickable you can configure them to call
+a function whenever they are
+clicked and in many ways a button is
+just a label that you can click so as we
+have set the height and width for the
+label we can set it with the same
+parameters and the differen is you can
+just click and that turns out to be a
+button widget
+so to make the pattern
+widget we will start
+with
+variable and to set the button we use TK
+do button and inside we will set the
+text that would be click me to say
+high so when you click
+it I
+will have to set a function to get its
+functionality so click me to
+say
+I so this would be the text that would
+be displayed on the button and then
+we'll set the
+width for the button and and we'll set
+it as
+25 25 pixels and then the height and
+that would be 2 pixels so width that
+would be equal to 25 and height that
+would be equal to uh we'll set it as two
+pixels
+only and then we'll set the background
+color that would be white and we'll set
+the foreground color as black
+background color is
+white and for foreground we'll use
+FG and that would be equal
+to
+Black and now if you want to add some
+functionality you can add it in the
+command
+so first we will declare the function
+and add the functionality for a button
+and after that we can use the
+command
+so we'll just pack it and see how a
+button looks in a t
+window so for that we will
+use okay you have written it
+here sorry for that
+so we are set with a
+button yeah we'll save this file and
+click on the Run button you can see that
+uh the button is displayed on the take
+to window so it's clickable
+so that's what make it differentiate
+from the label it's clickable now we
+will add functionality so
+that we can have some text when we click
+on
+this so for
+that first we'll create
+a and we'll create the function here and
+name it as
+hello and here
+we will create a
+label in this
+function and inside we will place a
+text and that would
+be I Learners Welcome
+To
+tenter tutorial
+and
+now in this function only we
+will set like in the label for the label
+will set the foreground
+color uh forr color we will set it as
+white and background color we will set
+it as green
+okay now we will pack it so that
+it gets visible on a tick into window
+so we can also pack it
+here we will just use the pack method
+and it
+will get showed up in a take to
+window so now we have created a
+method or a function and we have that
+functionality now we have to set the uh
+this functionality to
+a
+button so for
+that we
+will write
+command and that would be equal
+to the name of the function that is
+hello
+and it's Capital
+HED
+okay and we have packed the
+button so no need to do it
+again so we'll save
+this and run it so you can see that uh
+we are seeing a button here and that
+says click me to say hi that is what we
+have set the text for it when we click
+it we see the functionality that is it
+has displayed a label with background
+color that is green and foreground color
+that is white and it displays the text
+as hi Learners Welcome To teiner
+tutorial
+so this is about the button widget now
+moving on now we'll start with the entry
+widget so for
+that oh
+sorry first we'll comment
+this and we'll also comment this
+function so now we'll start with the
+enter
+Viet so why we use enter viget when we
+want to get text from a user like a name
+or an email address we use an entry
+widget it's a display that display a
+small text box that the user can type
+some text into so creating and styling
+an entry widget works pretty much
+exactly like the label and the button
+widgets so we will start with the entry
+widget and for that first we'll create a
+label only and on that label we will
+place the enter
+widget so first we'll create a variable
+and name it as label only and after
+that we
+will go with this like creating label
+and then we will add some text to the
+label that would
+be it will ask for what is your name or
+will just add name to
+it and here we will create the ENT
+widget for that we will create a
+variable and name it as entry and now
+we'll create the entry
+vidget so this is the simple method to
+create any entry widget we have created
+that and now we have to place or pack or
+grd it to get a display on a take window
+so here we will use
+pack label do
+pack and we'll also pack the enter
+pet so we are done now we'll save it and
+run it you can see that we have created
+a label and place the text here that is
+name and beneath that we have packed an
+enter widget and inside we can enter
+anything that's my name abisara and you
+can enter
+anything so these are the basic
+functionalities for the entry vet you
+could see our other videos to get the
+hands on this entry widget and other
+widgets to get the other attributes and
+functionalities and use them in any app
+you want to
+make so moving on we will command this
+this or I will give you an another
+example for the entry
+widget so for
+that first we will create a label only
+and
+inside we will place the master that is
+the window and assign text to it and
+that would be name only here we will
+create a form and it won't be having
+some functionalities to store the
+information but it would be a form for
+name email
+password and for that we'll use the
+enter
+widgets so we have created a label here
+and here you
+will so we will use the place
+method to get it displayed on the take
+into window and we'll set the x
+coordinate as 30 and
+by as 50
+pixels and moving
+on we will set the entry widget and a
+label first we'll set the label for
+email
+so for that we'll also create a
+label and inside we'll pass the master
+that is
+window
+and set the text as email only
+so it get displayed on the
+label now we'll use the place method
+only
+to get it displayed on our TI into
+window
+and for
+this I will use x = 30 and yal to 19 it
+would in the
+same x
+coordinates and in y direction it would
+be shifted downwards and that would be
+yal to
+19
+now I will create another label and
+store it in a variable that would be
+password and to create it I will write
+TK do
+label Sor and
+here the
+small n for label and inside we will
+pass the master window that is window
+and set the
+text as password only
+and now we will place
+this
+label and we'll set the x coordinate as
+30 and y will shift it downwards and set
+it as
+130
+yeah so these would be the
+labels and
+now see these levels like how the paste
+so you can see name email password and
+now we will place entry widgets in front
+of
+them so to get the entry widgets first
+we
+will assign a variable and inside that
+we will create an entry
+widget that would be tk.
+entry and inside we will pass a master
+window
+and now we will place this at xal to 880
+like it would be sufficient I think so
+we will see when we will get the this SP
+now okay so we have set the x coordinate
+as 80 and Y is 50 now we will make
+another entry widget for email and then
+for password so for this we will name
+the variable as E2 and here we
+will just a
+second
+okay okay we'll do
+it tk.
+entry and it would be capital for
+that and that would be the master window
+and we'll place
+this at x =
+80 and Y will shift it downwards that
+would be same for the label email that
+was
+90
+and now we'll create another variable
+that is
+E3 and for that
+have created an entry
+widget and now we will place this and
+set the x coordinate as 880 only and y
+coordinate that would be the same for
+the label that was
+130
+so we will save this
+and run
+it you could see that name email
+password that are the labels and we have
+go to enter widgets and it's
+overwriting so we will set this as
+100 we'll save it and run it you could
+see that it has shifted 20 pi apart from
+this uh from its previous
+position so this is about the ENT widget
+so this is a basic tutorial so I won't
+be getting into the get method delete
+method or the insert method so there are
+three main operations that you can
+perform with entry wigets that is
+retrieving text with get method that is
+to get method and deleting text that is
+with delete method and inserting text
+that is with insert
+method so we
+will do this much only in this basic
+tutorial and moving on now we will
+create some frames so frame widgets are
+important for organizing the layout of
+your widgets in an application like you
+have many widgets and you have used
+around three to four widgets and you
+want to organize them so you have to
+create widget that is frame and inside
+that frame widget you can organize all
+the other
+widgets so an empty frame widget is
+practically invisible you won't be able
+to see that if you haven't placed any
+widget in that so frames are best
+thought of as containers for other
+widgets you can assign a widget to a
+frame by setting the widgets Master
+attribute as we have set the master
+attribute as window in the enter widget
+and in the label as we have seen in the
+entry wiget example so here we will
+start with creating
+frames and for
+that
+first we will assign a
+variable frame _ a and that would be
+equal to tk. frame we will create a
+frame sorry
+and now we will create a label for
+that and we
+will assign the variable as label _ a
+and that would be equal to TK
+do
+label and
+inside we would get this label fixed
+into the frame so for that we will set
+the master as
+frame so we have set the variable as
+Master here and this variable contains
+the
+frame
+now we will add the text to the label
+and that would
+be this is frame a we will name it as a
+and here we can set the background color
+also so here we will use the exxa code
+for that we won't write the simple name
+of the color so here we will write the
+hexa code
+and have taken its inverted
+coma so now we have to set the
+background color and that would be in
+the inverted formas only so we'll start
+with hash and and we'll set the color I
+remember theod for 4 682
+B4 two
+color so you will get the background
+color and now we will pack this label so
+that it gets
+displayed when take window
+okay so for that we
+will write the variable and use the back
+method and now we'll create another
+frame and store it in a variable frame
+underscore B and inside we will create a
+frame TK
+dot frame
+and here we will create another label
+that would be label underscore B and
+that would be equal to TK do
+label and here we'll set the
+master as frame only as we will be
+setting this label into the frame so for
+that we'll write frame undor
+B now we'll set the text text that would
+be this is frame
+B
+okay now we'll set the background color
+and we will set the background color
+different from the
+above so you can differentiate
+that so I
+99 67 a
+and for the hexa code you have to use
+hash so what you call this color like
+light red light orange or
+anything so
+just get that
+sorted so we'll pack this widget for
+that we'll use the variable label undor
+P we'll use the pack
+method and we have packed it
+now we will save
+this showing the
+red okay we have not Place inverted Comm
+so we'll save this and run
+it label is not defined so we have
+written label
+[Music]
+okay so sorry for my silly mistake so
+we'll save this and run it again for you
+guys so here we are not able to see
+it so what oh we have not packed the
+frame here so we would not be able to
+see
+that so we'll pack it here only so first
+we will pack frame underscore a
+dot
+back and then frame underscore G do
+pack now we'll save this and run it
+again you could see there's two frames
+displaying that is this is the frame a
+and this is the frame B and this is the
+label on above the frame and if we
+just swap these packs what would happen
+let's
+see we'll save this and run the file
+again you could see that the frame has
+been shifted so the pack method it just
+pack the widgets line by line by line in
+a layer form so you must be careful with
+that okay so now we'll see some app exp
+for
+the
+frames we have seen how to create a
+frame now we'll
+see how these frames can be displayed
+how how its appearances are like we have
+the five appearances we will discuss
+it and we will adjust these frames
+according to their appearances and these
+appearances can be called out with the
+method or with the attribute that is
+reliefed
+so frame widgets can be configured with
+a relief attribute that creates a border
+around the frame you can set relief to
+be any of the values uh that is the flat
+value that we have seen that has no
+border effect the default value then
+there is sunun that is Su Ken in the
+capitals that it creates a sunun effect
+I will show you like what that effect is
+then we have the raised then Groove and
+the ridge so so for that we'll see a
+simple
+example and one important thing to apply
+this border effect we must set the
+Border withd attribute to a value
+greater than word greater than one this
+attribute adjust the width of the Border
+in
+pixels so for
+that uh we will create the
+frames and we will start with
+border and that would be equal
+to we will create a dictionary
+here so for the flat
+keyword we will create
+a in the capital letters we have to
+write flat
+okay and for the sun
+can we will
+create TK
+dot
+second
+okay and inary we have to place the
+Bas and after sunen we have raised
+Groove and rge so for
+that we'll write
+raised and we will get DK I have done a
+mistake
+above so this would be TK do s
+comma and now we will have the group
+order it is TK
+dot
+Groove comma and after that
+r that is TK do
+R
+okay
+so now
+now we
+will run a loop
+for Relief underscore
+name
+comma
+relief
+and set the
+border and that is we will I trade these
+items one by one
+and now we
+will create a frame that would be DK
+dot frame and set the master as
+window and
+the equal
+to relief and set the Border width
+that's also the point and we set it as
+five
+okay and
+now we will back this
+Frame so for that we'll use the pack
+method do
+pack and now we will create a
+label that is TK dot
+label and
+inside we'll set the master as frame and
+text we'll set the text
+as Rel uncore name
+and then we'll pack this
+label okay now we'll save
+this and display it for you guys so you
+could see that first we have the flat
+frame then Sun can then raised then
+Groove then
+rid
+okay so if you want to set these frames
+on the left side for that you can use TK
+do left
+tribute we'll save this and run it for
+you
+guys oh U we have to assign it inside
+sorry I will save this and run it for
+you guys so you can see that it has
+shifted to left like all these are
+packed in the left
+Direction all the
+frames so now moving
+on now we will see the frames with
+different
+colors I'll just command this down
+and now we will get the frames we'll
+start with a variable and name it as
+frame one and create a
+frame TK
+do
+frame with capital F and inside we'll
+set the
+master as
+window and width as 100
+and height as 100 and background
+color we'll set it as
+red and now we will pack this
+Frame so this Frame would be of the red
+color so to pack this we will write
+frame one that is the variable in which
+the frame has been stored and we'll use
+the pack method
+so we have packed it now we will
+use pill to fill this frame in the whole
+window with that we'll write fill equal
+to TK do Capital SX so it will get this
+Frame fulfilled in the window in the X
+Direction and similarly we will create
+create another
+frame I will copy paste it and name the
+variable as variable as frame two and
+inside I will change the
+color and I will set the width and
+height
+now okay I will show you
+like how it will
+work pack this Frame two do
+pack and now we'll also so set another
+frame and name it as frame
+three
+okay and for this also we have to set
+another color so that we can
+differentiate that which frame is this
+so we'll set it as blue now we will save
+this and run it so you can see that uh
+we have set the width and height but we
+have used the fill attribute to fill it
+in the whole
+ex X Direction so it has good fill
+up so these are the three frames we have
+created now we have seen the basics or
+the beginner for the T into module now
+using these modules we will create a
+simple project that would be Dollar to
+Rupee converted as I have told you
+earlier in the starting in the
+introduction for
+that we will just create a new file and
+named as
+dollar to rup
+P converter
+py so if like rupe
+so here we will use the current value of
+what $1 is equal to Rupee we will set it
+as current value so we will search it in
+the web and use it in a function okay so
+we'll make this project a simple one or
+just a simple app to get your hands on
+with these
+widgets okay so starting with importing
+so first we'll import T
+enter and as we have seen earlier we use
+allias for that and here also we'll use
+that and after that we
+will create window that is equal to TK
+or TK
+class and window
+dot main
+Loop okay now we will set the geometry
+of the window so for that we will
+write and we will set the xais with 300
+pixels and small X and Y AIS is 250
+pixels okay and we won't be adding some
+pixels to the x or the y direction it
+will just come in the default section
+that uh this ideally would get it appear
+to okay now we'll use the configure
+function and set the background color so
+with configure you could set the
+background color and other attributes so
+for that we'll write
+window do
+config and inside we'll set the
+background color
+BG equal
+to and I remember the hexa code for that
+here we will use hexa code or you could
+just write the name of the color Okay E9
+67a we have used it previously the light
+red
+color okay now uh I have discussed with
+you that the resizeable function but we
+haven't used it in the
+former that is the py file but here we
+will use so for that we'll write window
+do
+resizable and inside we will set the
+width equal to
+false and height also as
+false so you won't be able to adjust its
+width or height width or
+height and you won't be seeing any arrow
+for that okay like if you place the
+cursor on the border of the window now
+you won't be able to see any error to
+get it stretched out in the x or y
+direction so we
+have use the resizable function for that
+now we'll set the title for this window
+for that we'll write window do
+title and inside we'll write the title
+that would be dollar to rupe converter
+converter
+okay now first we will start with a
+label and we will add the heading
+as Dollar to Rupee converter
+only so for that we will create a label
+and place it inside the variable
+L1 TK Dot
+label and inside we will pass the master
+as window and set the
+text as dollar to rupe
+converter and we can set the font also
+okay for that we'll just use the font
+attribute and inside we have to place
+this in a circular
+braces so for that we'll write we have
+it inverted
+comma uh we'll use aial
+here okay and set the font size as 15
+now we'll close the circular
+bracket okay
+we have to close one more and we'll set
+the foreground color as
+white
+okay and we'll also set background
+color and that we would set as hexa
+code
+B c0
+c0
+okay and that would be in the inverted
+Hess else it would be termed as the
+comment only and now we'll close the
+circular
+bracket
+okay and we will pack it at the last
+only now we will create another
+label and for that we'll store it
+in L2 variable for that we'll write TK
+do label and inside we will pass window
+as
+master and
+text and here we will set the label as
+enter dollar amount okay
+so that we'll write
+text enter
+dollar
+amount
+okay now we will add some functionality
+and after amount we'll write the
+colon now we'll set its
+font in the Circ
+Braes and we'll set this also as
+a and set it size just smaller than the
+heading that would be Dollar to Rupee
+converter we set it as
+10 okay
+and we'll set it as
+bold this we have to place it in
+inverted
+commas and after the font we'll set the
+foreground
+color that would be equal to
+White and then we'll set the background
+color we have taken the inverted coma
+white now we'll set the background
+color and for that we'll write the hexag
+code
+and that would be
+A5 69
+BD so we'll
+see this purple
+color so I call it
+purple I'm bad with color so you can
+see what you want to call this color or
+like what's the fundamental name of this
+color
+so now we have created two levels enter
+dollar amount and now we create we will
+get another level and that would be for
+amount in rupees like after we will
+execute the Dollar to Rupee so that
+would be displayed in that label that
+would displayed just beneath this label
+that we will be creating that would be
+L3 and for that we will write tk. label
+and inside we will pass the master as
+window and set the
+text S amount in
+rupees
+okay and now we'll set its font
+and we'll set it same
+only
+as
+area and with the font
+size 10 and we'll also set it as
+bold
+okay so outside this
+font we will set the foreground and
+background color and that would be
+foreground
+color
+white and background
+color we'll write the EXA code for that
+only and that would be same A5 69 VD
+okay now we will create entry
+widgets
+so first entry widget that would be
+for entering the amount enter dollar
+amount
+so this enter wiet would be B beneath
+the enter dollar amount
+label so for that we will create a
+variable even1
+and get an entry vet TK do
+entry and we have e capital for the
+entry and inside we will
+pass master as
+window and we'll set the font as areial
+in the cir
+Braes
+okay and set the font size is 10 and no
+bold for
+it okay and in the window first we have
+created the heading that was in the
+label that is Dollar to Rupee converter
+then we have cre a labor enter dollar
+amount and beneath that we have created
+an entry widget in which we will enter
+the dollar amount and then we will
+create a button to convert this dollar
+amount into the
+rupee so now we will be creating a
+button so we will name the variable as
+button
+one now we'll pass
+the window as
+master and set the
+font is
+aial
+and one size is 10
+only
+no but for Buton first we have to set
+the text number what it should
+display so it should
+display
+convert to
+doar no convert to dollar convert to
+rupe
+okay so we have
+set the
+text and we have set the font and now we
+have to place a command and that command
+we have to place a function so that it
+should convert the dollar amount into
+the rupee so we have to create a
+function we will create
+it create it
+here okay
+and name it as convert
+only so for
+that we'll
+write
+convert and inside we will set a
+variable and integer
+type and here we are using the get
+method to get the text that we have
+inputed in the entry widget that is
+stored in the even variable
+and after that we will create a variable
+F and inside we will write the dollar
+value against a rupee that is
+8071 Rupees is equal to
+$1 so that would be multiplied with the
+dollar
+[Music]
+amount that would be
+C but we
+will get it
+oh
+sorry
+okay so
+now now we
+will now we will create a text
+widget so for that we will create a
+variable that is
+T1 and create a text widget
+TK dot text and inside we will pass the
+window as
+master and set the state as
+disabled I will tell you
+why
+disabled and set its
+width
+as 15
+and right as zero
+okay so we'll also configure this in the
+function
+okay so we'll configure this and write
+as T1
+dot
+config and we'll set it
+State equal to
+normal
+okay and T1
+dot
+[Music]
+delete that is if you want to delete you
+can delete it test one by
+one TK do
+and and T1 do
+insert and set it as it State as
+disabled
+okay now we will pack all these
+widgets first we'll start with labels L1
+do
+pack then L2
+dot
+back then entry widget that is stored in
+even even dot back
+and
+then
+button do
+pack and then
+L3 dot back and then P1
+dot
+back okay
+now we'll save this and run
+it okay uh so we have to
+create empty
+text like empty labels
+we will create it
+here
+Mt underscore
+L1 and create a label that is TK do
+label
+okay and inside we will
+pass window and set the background color
+equal to
+it would be e 99 67 oh
+sorry E
+9967 A that is the light red color okay
+and here we will create an mty
+label that is TK
+not
+label
+and now we will pass the master as
+window and background
+color as light red only you'll write the
+same hexa code
+e99
+678 sorry
+I press shift also with
+that
+so
+okay
+now now we see our program and run
+it so we're getting an error that
+is defined at State equal to
+normal okay
+able to find so we'll just run it again
+only okay we got that so you can see
+that it's not resizable
+we have created the convert method to
+create the dollar amount that is we have
+entered the dollar amount that is one
+and we click on the button that is
+convert to dollar it would reflect us to
+8271 and if we get it deleted and enter
+the dollar amount as 56 and click on the
+button that is convert to dollar it
+would display us as 56 into the value
+that is
+8271 so this is the small project that
+we have created using the widgets that
+is the T into widgets so I hope like you
+Cod these all the widgets so this was
+the basic tutorial if you want to learn
+more you can just see the other videos
+that is in the IE
+button and at end I have something
+insightful for you guys uh if you guys
+are aiming to get certified in Python
+Programming and want to build a python
+software development career in that case
+you can check this python certificate
+course by simply learn which will open
+the doors for the best career
+opportunities to find the details of
+this python certification course just
+check in the description box I will just
+add the link there and it could be the
+ideal solution to help you build your
+career in the right direction and with
+that I hope this session was interesting
+and informative if you liked it please
+let us know in the comment section below
+and also do subscribe to our Channel and
+stay tuned for more from Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

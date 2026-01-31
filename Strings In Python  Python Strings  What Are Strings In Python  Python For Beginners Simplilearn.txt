@@ -1,0 +1,741 @@
+hi everyone welcome you all to this
+video on the python series by simply
+loan
+in today's video we will learn about
+strings in python
+but before i begin make sure to
+subscribe to the simple one channel to
+learn interesting tech videos
+let's have a look at the agenda for
+today
+so we'll understand what is a string in
+python and how to create strings in
+python
+then we look at the different string
+methods and how to
+perform string indexing
+and
+all these will see with the help of
+hands-on demonstrations on the jupyter
+notebook
+so let's understand what is a string
+so a string in python is an object that
+represents a sequence of characters
+in python we have str as the data type
+of string
+now you can create strings
+using single quotes or double quotes so
+here is an example
+where we have used a single quote to
+write a string so our string is hello
+india which is inside a single quote
+below if you see we have the same string
+written within double quotes so these
+are the two methods in which you can
+create strings in python
+now you can also use triple quotes which
+are generally for multi-line strings or
+doc strings
+so here is an example we have a string
+called str3
+and
+the content it has is human psychology
+is an interesting subject now if you
+print the string it will be printed in
+two lines and not in a single line
+now we'll be exploring much more in
+detail in our demo session so please
+wait for a while
+next we have string indexing so if you
+want to extract a few characters from
+your string you can use the indexing
+method
+so in python
+a string starts with the
+index number 0
+so here we have a string which is
+healthy
+and
+the first element is present at the
+zeroth index so at the bottom you see
+the forward index on the top we have the
+reverse index or the negative indexes
+so in python as i said the first index
+is at the zeroth position so h is at
+zero
+e is at the first index a is at the
+second index so on and so forth
+now similarly if you look at negative
+indexing it starts with minus 1 in
+reverse order so we have minus 1
+for y minus 2 for h minus 3 for t and so
+on and so forth
+now let's head over to our jupyter
+notebook where we'll
+learn about strings in python in detail
+okay so i'm on my jupyter notebook first
+i'll create a
+new notebook i'll click on new and then
+select python3
+okay
+so here let me
+rename my notebook as
+strings in python demo
+i'll click on rename
+okay
+now let's start with our first example
+i'll create a variable called str1 that
+will have a string you can see here i am
+using single quotes now i'll write
+hi
+sam
+so here
+str1 is holding a string called hi sam
+and let's go ahead and print the string
+str1
+i'll hit shift enter to run it you see
+here i have my string printed hi sam
+now if you want to check the
+data type that str1 holds
+you can use the type function
+and inside the type function i'll pass
+in my variable str1
+if i run it you see here it gives us str
+which means
+it is of type string
+now let's create another string str2
+using double quotes this time so i'll
+write let's say
+hello
+angela
+i can give exclamation mark
+okay now let's just print the
+second string you see here this is my
+second string which is
+hello angela if you want you can also
+use the print function here
+and run it you get hello angela
+now let's
+write a multi-line string using triple
+quotes so i'll write str3 equal to
+i'll use triple quotes
+and then
+i'll say
+hi everyone
+go to the next line i'll write today
+we will
+learn
+about
+i'll go to the next line and i'll write
+strings in python
+then i'll again give triple quotes to
+close my string
+and let's just print this str3
+if i run it you can see it here i have
+now written a multi-line string hi
+everyone today we will learn about
+strings in python let me just add a s
+there you go
+okay
+now coming to the next topic we'll learn
+about indexing
+all right
+let me declare a string str1
+which has
+value as simply loan
+now
+to use indexing and extract
+certain
+items in a string or values in a string
+you can use square brackets and inside
+the square brackets you can give the
+index
+position for example if i write str1
+and in the square bracket i'll give
+let's say
+i want to
+find the element or the value present at
+the zeroth index let's run it it gives
+me s
+because as we
+learnt in the slides
+the first index in a string
+starts with the zeroth number
+so i have s in my zeroth index so hence
+it has printed s
+let's explore a few more if i write str1
+of let's say i want to know what is
+present at the third index if i run it
+it gives me p you can check now
+so s is at the zeroth index i is at the
+first index m is at the second index and
+p is at the third index
+let's say i'll write str1 of
+let's say 12
+we can see the difference now it gives
+us an error it says string index out of
+range the reason being simply learn
+does not have any value at the 12th
+index so it's printing an error saying
+string index out of range
+now let's change this to
+6 and see what we have at the sixth
+index we have l
+if you count here
+s is at the
+zeroth index i is at the first index m
+is at the second index p is at the third
+index
+the first l
+is at the fourth index again i is at the
+fifth index and then we have the second
+l at this sixth index so we have l
+printed here
+now
+let's see how to use
+the slicing operator using colon i'll
+write
+slicing operator
+okay
+i'll use the same string str1 let me
+print it once again we have simply
+learned
+suppose i write str1
+within brackets i'll use the slicing
+technique now i want everything starting
+from the zeroth index
+i get simply learn so here i'm printing
+everything that starts with the 0th
+index
+next let's see
+what we have
+if i print my string str1
+and write 1s2 6
+i'll run it
+it gives me impli
+so if you notice here
+i want to extract whatever is present
+from the first index
+till the sixth index but excluding the
+sixth index so in python
+the indexing method or the slicing
+method will exclude the last index so
+here if you see
+i is at the first index m is at the
+second index
+p is at the third index
+l is at the fourth index
+and then we have i at the fifth index
+and we have excluded the sixth index
+that is the second l so hence it has
+written us impli
+now similarly let's see
+we'll see another example i'll write
+str1
+this time i'll use colon
+six
+if i run it you get
+simply so it has printed everything
+starting from the zeroth index till
+the sixth index but excluding the sixth
+index so you have all these values
+from zeroth index till the fifth index
+okay
+now you can also
+reverse a string for that you can use
+negative slicing using
+two colons
+if i write print
+str1
+and within square brackets i'll give
+colon colon -1
+let's run and see the result
+there you go if you see this it has
+printed my original string which is
+simply learning reverse order now
+so this is a very simple method if
+someone asks you to reverse a string or
+print something in reverse order you can
+use the negative slicing method
+now let's explore a few more example
+if i write str1
+and within brackets i'll give minus 1
+and run it
+it returns me n because in my original
+string if i go on the top i have n at
+the last index which is
+here minus 1.
+similarly let's see what we have at
+minus
+3.
+we have a here if i go to the top
+you see here
+n is at minus 1 r is at minus 2 and a is
+at -3 and hence it has given us a
+now let's say i'll write str1
+i want to print
+minus 2
+colon and let's see the result it has
+given us
+r and n
+so here we are printing
+only the
+last two elements in the string hence we
+have used minus two
+okay
+now
+python does not allow you to reassign
+values
+in a declared string let me show you
+what i mean
+i'll give a comment here reassign
+strings
+suppose
+i have the same string str1 which is
+simply learn
+say i write str
+and i want to replace
+the value
+present at the third index with let's
+say
+o
+and
+if i were to print
+str1 now
+python will throw an error
+saying str object does not support item
+assignment
+so it is immutable
+like tuples where you cannot reassign
+any values
+you can also
+delete a string
+see i have another string called str2
+which has a value of
+let's say python programming
+you can use the dl keyword
+and write str2
+and now let's print
+str2 you will see
+that
+it says name str2 is not defined because
+we have already deleted str2
+the above stuff
+okay
+now let's go ahead and see some of the
+important string operations
+okay
+see i have
+str1
+which has
+python
+now one thing to note i'm using either
+single quote or double quote you can use
+whatever you want
+let's say i have another string which
+has programming
+so these are my two strings
+let's
+perform a few operations on these
+strings
+see i write
+str1
+multiplied by 3
+and i'll run it
+you can see here it has printed python
+thrice because i have said str1
+multiplied by 3 so in str1 we have
+python
+and multiplying 3 returns python 3 times
+now let's see i'll write str1
+plus str1
+it has merged python twice so i have
+python and python repeated
+let's say i write str1 plus str2
+we see the result it gives us python
+programming so basically
+if you use
+the plus operator with two strings
+python will perform a concatenation
+operation which means it will merge both
+the strings
+now if you want to find if a specific
+character is present in a string or not
+you can use the in operator for this
+let's say i'll print
+whether
+w
+is
+present in
+str
+one
+if i run it it gives us false because in
+str1 we have python
+and if you see here we don't have the
+letter w in python and hence it has
+given us false
+let's
+now let me copy this
+i'll paste it here
+let's try whether o is there in
+string one or not it gives us true
+because we have
+an o here
+you can see here we have an o
+similarly
+let's say
+i want to find whether
+l a
+is there in string
+two or not
+on it it gives us false because in
+string two we have programming and we
+don't have any l a
+present in programming
+let's say we'll see whether r o is
+present in
+string two or not
+this time it returns us true because if
+you see here we have ro in programming
+and hence it has given us
+true
+now you can also
+print a raw string using the
+r alphabet
+so the way to write is i'll write r
+give a
+single quote
+let's say i'll give a location
+c drive
+to forward slash and let's say i'll
+write
+python 3.7
+and run it it gives me a raw string
+now
+let's see some formatting methods i'll
+write a comment saying
+format methods
+okay
+i'll write a print statement
+i'll give double quotes and here
+let's see the first example where i'm
+using
+curly braces i'll write
+and i'll give another curly braces
+you'll get to know what i'm doing once i
+finish this
+let's say
+i have a message
+both are
+best
+friends
+then i'm going to use my format
+method
+and inside this i'll pass in my two
+values for these braces
+so these curly braces will be replaced
+by
+the words that i
+pass in or the values that i pass in
+within the format method
+so here i'll write let's say
+james
+and my second person would be
+brad now let me run it you see here
+what python does is it replaces
+the curly braces with
+the names that have passed within the
+format method so it takes the first
+argument for the first curly brace
+and the second argument for the second
+curly brace
+so
+my statement becomes
+james and brad
+both are best friends
+now let me just copy this i will show
+you another example
+this time i'll
+give 1 and
+0 inside the curly braces
+now if i run this
+there you go
+so here
+james is at the zeroth index so this is
+basically a list where james is at the
+zeroth index and brad is at the first
+index so if i write 1 and 0 it will take
+brad here
+and then
+for 0 it will take james so now my
+message becomes brad and james both are
+best friends
+now let's try out another example i'll
+paste it here
+i'll use
+two variables let's say a and b
+and inside my format method
+i'll write a
+equal to james
+and i'll assign b as brad
+let's run it
+there you go we have our message printed
+james and brad both are best friends so
+here a refers to james and b refers to
+brad
+cool
+let's explore another example
+i have a variable called name and that
+has a value
+angela
+and then i have another variable
+that's a salary
+of
+100 000
+i'll use a print statement
+i'll print a message
+her
+name
+is
+i'll use
+percentage
+s for string
+give
+a backslash n for next line and i'll
+write
+her
+salary
+is
+then i'll write
+percentage d
+this is for numbers
+and then i'll give another percentage
+and let's see i'll write
+my two variables name and salary
+let's
+see what we have in the
+result
+i need to close my double quotes here
+i'll exclude it from here let's run it
+there you go
+so i have my message here her name is
+angela her salary is
+hundred thousand dollars
+i'll just
+delete this piece here we'll run it
+again okay
+now this percentage s
+refers to the name
+and we have declared her name is angela
+so my first statement or the message
+becomes her name is angela
+and the next
+message is her salary is percentage t so
+percentage d here refers to the salary
+where we have hundred thousand
+so the next message is her salary is
+hundred thousand
+so these are the very basic and
+important
+print methods or formats that you can
+use
+while working with strings
+now we'll explore a few
+functions that are readily available in
+python to operate with strings
+i'll take my same string str1 as simply
+learn
+and then
+i'll create another variable called str2
+i'll write str1 dot
+i'm going to use the
+capitalize method
+okay let me make one correction i'm
+going to write everything in
+lowercase so that we can see the
+difference how we can capitalize the
+string
+so i'll write my print statement print
+old value
+this is going to my message
+i'll give a colon
+followed by my double quotes and i'll
+pass in my variable str1
+okay
+now i'll copy this
+in the next line we have
+a new value as str2
+let's run it and see the difference
+there you go so here my old value has
+simply learned in all
+lower case but
+when i used the capitalize method
+so python has converted my first letter
+and simply learn to
+uppercase or capital keys
+cool
+now let me copy this
+i'm going to use the same example
+for
+the next three methods
+let me show you how the case fold method
+works
+this time i'm going to pass my input
+string in all uppercase i'll write
+simplylearn in uppercase
+and instead of capitalize i'll write
+case fold
+let's run it and see the difference
+there you go
+initially we had simply learn in
+upper case and now we have converted
+into case fold so
+all the letters are in lower case
+now moving ahead
+you can also
+use the
+upper method to convert a string into
+uppercase
+let's say i have a string
+where
+few of the letters are in uppercase and
+few of the letters are in lowercase
+this time i am going to convert
+everything into uppercase so i'll use
+the upper function instead of case fold
+let's run and see the result there you
+go so this time
+python has converted my original string
+into upper case
+and likewise you can also use the lower
+case
+instead of upper if i write lower you
+see here everything has been converted
+to lower case
+cool
+okay
+now i'll show you how the
+title method works so in title method
+all the words
+basically the first letter of all the
+words will be in upper case so suppose i
+have
+a string
+which is
+simply learn
+company so i'll write
+let's say
+this is my string and i'll
+i'll convert my str1 to title keys
+let me run it
+so this is the difference you can see
+the first letter of the first word is
+upper case
+again
+the first letter of the second word is
+also in uppercase so this is how the
+title
+case works
+you can also count the occurrences of a
+particular element in a string
+suppose i have string one
+that has python programming
+in str2
+i'll write str1 dot
+and use the count function to count how
+many times let's say n the letter n is
+present
+then i'll print
+saying
+occurrences
+give a colon here
+and then i'll pass in my variable that
+is str2 so this will count the number of
+times
+n is present in my original string so if
+you see here
+in python programming we have n present
+twice
+similarly let's check for
+g
+the letter g is also present
+twice
+let's see for y
+now y is present only once
+which you can see here
+okay
+next
+let's see how the
+replace function works in
+python
+i am giving a comment as replays
+so let's say i have a string str1
+which has
+hamburg
+is
+located in
+france
+so hamburg is a city which is actually
+located in
+germany and not in france so using the
+replace method we are going to replace
+france with germany
+so what i'll do is i'll create another
+string str2 equal to i'll write str1 dot
+and then i'll
+use the replace function
+and i'll say replace
+my string france
+with
+country
+germany
+and then we'll print str2 and see the
+result
+there you go
+so we have changed
+hamburg is located in france to hamburg
+is located in
+germany now coming to the final method
+that we are going to explore in this
+python strings demo which is
+using the split function
+okay
+so you can split the values for each
+word in a string as separate
+words
+and store it in the form of a list
+so i
+write str1
+i'll just copy this
+i'll paste it here
+and i'll change france to germany
+because hamburg is actually present in
+germany and not in france
+and then i'll create another variable
+called str2
+i'll write str1 dot
+and then use the split function
+now let me print both the strings first
+i'll print str1
+and then i'll print
+str2
+if i run it
+you see
+my original string was hamburg is
+located in germany and then using the
+split function we have
+segregated or divided
+each of the words present in the
+original string into separate words and
+this time it is present in the form of a
+list
+ok
+so that brings us to the end of this
+video tutorial on strings in python i
+hope it was useful and informative thank
+you for watching and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

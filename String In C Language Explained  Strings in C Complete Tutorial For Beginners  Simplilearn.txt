@@ -1,0 +1,198 @@
+hey guys welcome back to another video
+by simply learn in today's video we're
+gonna be learning all about strings in c
+but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and the
+bell icon to never miss an update
+so now without any further delay let's
+begin
+this session will help you to understand
+what a string in c is
+next string declaration and
+initialization and finally let's
+understand string operations and the
+important functions of reading and
+writing a string
+let's get started with what is a string
+in c
+a string is a sequence of characters
+represented within double quotes string
+examples are as given below
+every time we initialize a string it
+must be within double quotes so for
+example if a string is simply learn then
+it must be within double quotes only
+then it will be considered a string
+strings are not just alphabets but even
+if numbers or whitespace characters are
+enclosed within double quotes even that
+is considered a string
+now let's look at the syntax to declare
+a string
+we have the data type followed by string
+name and the size
+always a string must be declared of data
+type character for example we have cad
+as data type string name as str it can
+be any name and followed by the size of
+a string
+if the string size is 5 the last
+character would be a null character
+represented as a terminating character
+in the c programming language
+now that we know how to declare a string
+in c moving ahead let us understand
+string initialization
+first let's see the ways to initialize a
+string
+we can initialize a string within double
+quotes by mentioning the string size and
+another way is that it can be
+initialized without mentioning a string
+size in the subscript
+and it can also be initialized inside
+the curly bracket character by character
+separated with the comma operator
+just by initializing character by
+character the compiler will identify the
+number of characters in a string then it
+will store character in the memory and
+the terminating character the null
+character
+look at the diagram below and understand
+how a string is stored in memory
+first memories are located at some
+address
+that holds the string a
+b c d and null character at the end
+and then the index starts from 0 to n
+minus 1 so in this example the string
+elements are 5 and the index will start
+from 0 to 4.
+i hope it's clear
+okay so let us move on to the operations
+on strings
+we all know that we have many c
+programming language operations
+similarly we can perform different
+operations on string and a few such
+operations are finding the length of the
+string concatenating two strings copying
+a string to another string and finally
+comparing two strings
+so for all these operations we have
+functions associated with it
+we use string handling functions defined
+in the header file string dot heads to
+perform such operations in c language
+a function like strlen is to find the
+length of a string
+it will count the number of characters
+in a string and prints the output
+then strc80 is used to concat two
+strings which means adding up two
+strings
+suppose our first string is simply and
+the second string is learn then it will
+add both the strings and give us the
+output as a single string called simply
+learn
+the following function is strcpy to copy
+a string to another and finally strcmp
+to compare two strings
+now that we have some idea about the
+strings handling functions in c language
+let's look at the functions to read and
+write a string
+first let's understand the functions of
+reading a string
+using scanf getcat and gets we can take
+string input
+scanf is used to read string and
+percentage s is the format specification
+so when we use percentage s format
+specification to read a string from the
+terminal then ampersand is not required
+next
+the get cap function reads a single
+character by character from the terminal
+once the whole string is read it is
+stored as an array in the memory
+following we have the gets function
+defined in the stdio.h header file that
+reads character until it finds the new
+line character and add a null character
+to the string
+up next we have functions of writing a
+string
+and the functions are printf putcad and
+puts
+printed function is used to print the
+string on the console
+we use the percentage as format
+specification to print the string on the
+console
+next bootcamp is used to print a single
+character so using a look we can use
+putcad repeatedly in our programs and
+print all the string characters
+finally we have puts function
+from which the whole string is printed
+which is defined in the header file
+stdio.hedge
+let's run a simple program to understand
+strings in a better way
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more as you all can
+see the program we are trying to print
+the string called simply learn using
+printf function
+so let's give string size less than a
+string
+so let's give 5
+and see the output
+so here we got an warning saying that
+string for array of care is too long
+that means
+it just prints the starting five
+characters of a string
+s-i-m-p-l so this is the starting five
+characters of a string called simply
+learn
+now let's remove the size and run the
+program
+so as you can see the whole string is
+printed that means the compiler will
+identify the number of characters in a
+string and prints the output
+in our next program let's perform an
+operation using the string functions
+so in this program we are using puts and
+printf function to print the output
+then we have initialized two strings and
+the first string is simply and second
+string is learn in order to add both the
+strings we are using strc80 function
+now let's run the program and look at
+the output
+as you can see strings are concatenated
+successfully so this was our first
+string called simply and second string
+learn and both the strings are added up
+and given a single string called simply
+learn
+so with this we have come to the end of
+this session on the string sensing i
+hope this session was informative and
+interesting until next time thank you
+stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

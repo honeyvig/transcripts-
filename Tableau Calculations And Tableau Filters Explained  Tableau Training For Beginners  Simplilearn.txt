@@ -1,0 +1,249 @@
+hey everyone welcome to Simply Lo's
+YouTube channel today we will learn
+about TBL calculations and filters
+that's it if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified just for a quick
+info if you want to upscale yourself
+master business analytics skills or
+learn your dream job or growing your
+career then you must explore simply
+learn goit of various business analytics
+programs simply Lear offers postgraduate
+program from P University in
+collaboration with Amazon Google and
+Microsoft through this program you will
+gain knowledge and work ready expertise
+and skills like prescriptive and
+Predictive Analytics Recreation
+classification and over a dozen others
+that's not all you also get the
+opportunity to work projects and learn
+from industry experts from Top tiro
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transition into a business analytics
+role as a fresher or pay job profile if
+you are passionate about making your
+career in this field then make sure to
+check out the link in the pr comment and
+description box below to find the
+business analytics program that fits
+your experience and areas of Interest
+now without further delay let's get
+started with t calculations and filters
+so we will right away jump into tblo
+public so the data set we dealing with
+TBL Sage European data set so we have
+row ID order ID ship date ship mode
+customer name segment City Etc right
+category subcategory all the basic data
+Rel related to sales so let's get back
+to the sheet and now before we proceed
+there are different types of
+calculations let's say uh you are
+familiar with the Microsoft Excel or
+powerbi or any other mathematics
+basically so what do we have that we
+have something called as aggregate
+functions B functions subtraction
+addition multiplication division right
+so when it comes to T we can also
+implement the thing so we can also find
+out aggregate functions like sum average
+minimum maximum difference Etc and if
+you are ought to create some other
+mathematical field which is different
+from the regular B mass or aggregate
+functions then you can also do those so
+if you are focusing on such type of
+mathematical function then it can be
+created using calculated fields in table
+and you can write down different
+mathematical statistical formulas and
+even some SQL queries sometimes so today
+we will drill down to the basics so we
+will only focus on Aggregate and other
+regular mathematical functions apart
+from the SQL queries and please do let
+us know if you want us to work on some
+deep down uh SQL queries on some
+complicated calculated fields in t which
+can help you in real time so with that
+uh we will also work on some of the
+filters which you can Implement in tab
+your dashboards let's say for example we
+create some uh calculated field which U
+you know finds out maximum sales from a
+region or maximum sales in a subcategory
+and uh let's say we also find out some
+um okay we have measures with say
+discount profit and quantity let's say
+we want to calculate the selling price
+or cost price of a certain subcategory
+item then we can do it using the
+calculated field and we want to find out
+that particular calculation for a
+specific region let's say we have region
+Dimension here let's say we have five
+regions and out of which we want to find
+out the details of cost price selling
+price and profit for the bestest region
+right you can add that into the filter
+segment that that means you need to drag
+the region Dimension into the filters
+and you can also click on the show
+filter to have that filter section right
+on the right side part of this panel and
+you can click on the filter uh you know
+regions there and extract the required
+filter so even when it comes to filters
+we also have different types of filters
+uh let's say about FX filters so we have
+extract filter data filter context
+filter and uh Dimension filter measure
+filter and table filter so you will be
+using any of these filters based on your
+requirement and also do let us know if
+you want an exclusive tutorial on
+filters in Tablo with all the types of
+filters included and if you want a
+complete end to end demonstration on
+each of these filters so with that let's
+proceed with our Tableau calculations
+and filters with a brief overview let's
+try now to find out the selling price or
+cost price of a particular subcategory
+item let's trag subcategory to rows and
+uh drag sales to this particular table
+here we were supposed to drag sales here
+so it gives us a
+number there you go and let's say this
+as sale price and uh profit let's track
+profit
+here right now we need the cost price
+right so how do we do it so we can
+create a new calculated field over here
+just select that and let's name it as
+cost
+price here you need to some of
+sales minus profits sum of profits
+there you go apply and you will have a
+newly created calculated field right
+over here you can see it is designated
+as equal to hashtag which is a little
+different from the other measures which
+just start by an hashtag right you can
+just drag this and uh you can drop it
+over here to find out the actual cost
+price so there you go so you have the
+cost price profit and sales now let's
+say you want to calculate the minimum
+and maximum of sales that are happening
+in a region so you can just quickly you
+know drag the subcategory to rowes and
+sales to columns just add it and now we
+want the minimum sales and maximum sales
+of that particular subcategory item now
+you can just create a new calculated
+field and uh Max sales is the name
+equals
+to Max so here's your function Max of
+sales press tab to select and press okay
+and you created a Max sales option over
+there and now let's create the minimum
+sales can write new calculated field Min
+sales and uh here you can use minimum
+press tab to select sales press tab to
+select and press okay now you created
+new calculated Fields over here here can
+just drag maximum
+sales minimum sales with that aggregate
+function and now you have maximum sales
+and minimum sales right
+there now let's say we find the use of
+filters right now let's say we want to
+find region wise sales let's add region
+over here and uh the sales part onto the
+rul now let's say we want to find out
+only the central part now what you can
+do is drag that particular region into
+filters and here just press okay just
+check all the parameters you have or not
+and then just press okay and now you can
+you know click on the drop down menu use
+show filter and you have it here and now
+based on your requirement you can do it
+and for now you can see this particular
+Filter Works only for sheet number three
+but not here right so to help on that
+part you can click on this option where
+you can apply to all worksheets so when
+you click on this this worksheet when
+you click on this you can find that
+particular option to all the sheets okay
+we were supposed to all related data
+sources there you go and if you click it
+here you can find out that particular
+filter and just click on the drop- down
+menu show filter and you can see all now
+you have the uh you know Max sales
+minimum sales and total sales of a
+subcategory certain subcategory for all
+the regions now let's say I want to find
+out that data for only central region
+you have it over here just click on East
+you have East sales East and North you
+have eastn North right and let's say we
+come back to this particular sheet where
+we have the cost price profit Etc let's
+click on this show filter option here
+and click all and we have the uh Min
+sales data right here so let's say we
+want to find out the cost price profit
+and sales data for only central region
+here you go so that's how calculations
+basic mathematical calculations in table
+work such as the aggregate functions
+minimum maximum and bom Mass functions
+so that's how the basic mathematical
+functions operate in TBL and that's how
+the simple filters operate in table and
+with that we have come to an end of this
+session on table calculations and
+filters do let us know if you want an
+in-depth tutorial on filters and Tablo
+calculations and with that if you have
+any queries regarding any of the topics
+covered in this session or if you
+require the readers that we used in this
+session or any resource that we used in
+this session please do let us know and
+our team of experts will be happy to
+help you as soon as possible until next
+time thank you for watching and stay
+tuned for more from Simply staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set your yourself on
+the path to Career Success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

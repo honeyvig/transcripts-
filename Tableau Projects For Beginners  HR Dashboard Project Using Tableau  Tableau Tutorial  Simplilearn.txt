@@ -1,0 +1,896 @@
+hey everyone welcome to Simply L's
+YouTube channel today we will learn
+about HR data analytics using TBL that
+is we will go through some of the HR
+data sets available online we will
+download one of them and we will read
+the rows and columns and understand what
+the data is talking about and then load
+the same data and if required we will do
+some data cleaning and if we will do
+some calculations using TBL and then we
+will extract some impactful insights
+from that particular data set and then
+load all the charts onto One dashboard
+and create one final interactive HR data
+analytics dashboard using tabl that's it
+if these are the type of videos you'd
+like to watch then hit that like And
+subscribe buttons and the bell icon to
+get notified just for a quick info if if
+you want to upscale yourself master
+business analytics skills and land your
+dream job or growing your career then
+you must explore simply learns go to
+various business analytics programs
+simply learn offers postgraduate
+programs from P University in
+collaboration with Amazon Google and
+Microsoft through this program you will
+gain a knowledge and work expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen other
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts in Top
+Tire product companies and academic from
+top universities after completing these
+courses thousands of Learners have
+transitioned into a business analytics
+role as a fresher or moved on to a
+higher paying job profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the description box below
+which will redirect you to find the
+business analytics program that fits
+your experience and areas of Interest so
+without further delay over to our
+training so we have opened up the
+popular website for all the data sets so
+out of those data sets I found this
+particular employee attrition data set
+to be a little interesting so you can
+create a kagle account and then download
+this particular data so um I have
+already downloaded this particular data
+and repeat so I have already downloaded
+this particular data and uh we can
+directly get started by understanding
+what exactly this data set talk about so
+this particular data has
+about 26 columns and um it has about
+6,000 no it's about uh
+1,470 rows right so this is about the
+data set we are having here and let's
+observe each and every column with a
+little more clarity first we have age of
+employees and then we have attrition
+which is in the form of Boolean so what
+is attrition you may ask so attrition is
+something uh let's say if you are
+present in the company then it is known
+as no and if you are leaving or if you
+have left the company then it can be
+considered as yes so basically to keep
+it simple attration is something
+reducing right let's say if your company
+is facing some uh Financial issues or if
+they want to cut down some cost cuttings
+or do some cost cuttings then they will
+do something called layoffs so that is
+that particular action can also be
+turned as attrition so the particular
+data set that we downloaded also talks
+about attrition of employees and we can
+also create a dashboard based on
+attrition rates right so this particular
+value we have here is in the form of
+Boolean right so we have character data
+set and if you load this particular data
+set onto tblo then this particular data
+type will be considered as Boolean by
+tblo so we might have to write some
+calculations you know calculated fi and
+W and convert this from Boolean value to
+numerical value we will do that on uh on
+the line and the next one is about the
+business travel and uh this talks about
+how frequently or how rarely a
+particular employee travels on the
+purpose of business so you can keep this
+or you can also in know kind of turn it
+into a Boolean value if you want and you
+may not uh it's based on the data set
+use case if you want to create a story
+or if you want to create a chart based
+on this particular parameter you can do
+that and if you if you are not willing
+to do that it's all right and I think
+the daily rate here is about the rupees
+or dollars that are paid for every
+employee based on working per day and
+this particular column talks about sales
+research that the department and um I
+think this particular column talks about
+if we expand this distance from home so
+how many miles or how many kilometers
+each and every employee is traveling
+from his home to reach office and uh
+this
+particular uh column is about education
+which talks about one two and three four
+four being the highest number five is
+the highest number so let's
+read data right next to it so if we
+expand this
+education field Life Sciences Life
+Sciences okay is it is it like uh
+bachelor's degree postgraduation Masters
+or something like that it's a little bit
+unclear but again if we come into the
+education field we find a little more
+clarity here whether it is coming from
+Life Sciences other medical right we
+have multiple uh courses here marketing
+I think marketing will go into sales yes
+marketing is into sales technical degree
+again sales so we have multiple
+education Fields over here and employee
+count so I think uh uh each and every
+employee has a value over here so if one
+uh I mean it's like let's say if I
+filter out the research and development
+department and then I count or sum all
+these uh numbers then I think I'll get
+the employee count so I think this
+particular column is here for a reason
+and this particular employee number can
+be considered as employee ID number and
+then we have uh some interesting columns
+here employee environment satisfaction
+so on a scale of 1 to five or on a scale
+of 1 to 10 how satisfied this particular
+emplo employees in this particular
+environment then we have gender column
+then we have hourly rate in case we
+discuss a column based on day right so
+this particular column is about hourly
+rate or hourly charges you would be
+paying your employee we can create some
+good um stories or we can create some
+good use cases with all these columns
+then job involvement so I think this
+particular column or this particular
+rating is given by the manager for the
+employee so how involved this particular
+employee is into his job role so again
+job level I think this is based on the
+irchy is it from Easy from an manager
+level or easy from um you know intern or
+a junior level I think this describes
+about that so here we have the highest
+level as four which describes as a
+manager I think yeah that's what it is
+and uh we have job satisfaction this is
+also one of the interesting columns so
+we can also create a you know chart
+based on job satisfaction from the
+Departments how are the employees I mean
+we can find out which particular
+department has the highest job
+satisfaction rate so let's check the
+values and um marital state is single
+married or divorced right and monthly
+income monthly
+rate so we have monthly income here and
+monthly rate so uh monthly rate again is
+a little confusing monthly income is
+higher than monthly rate okay we might
+go into these
+details okay we might uh change a few
+column names here we can check out that
+and then we have number of companies
+work wow this is also another
+interesting column which talks about the
+number of companies the current employee
+has worked with and over
+18 yes I think this particular Corum
+will by default have all the rowes yes I
+think this is about the age and then
+overtime how many employees are doing
+over time percentage of salary high this
+could be another good um story board so
+what's the highest percentage of a high
+receip by an employee or what's the
+highest high percentage based uh
+Department wise we can do that and
+performance rating relationship
+satisfaction standard hours stock option
+level total working years train yeah
+work life balance right so nice we do
+have a good data set over here and if we
+come back to this particular columns
+here then I think uh monthly
+income and this could
+be confusing here monthly income and
+monthly
+rate
+anyways uh is there any calculation here
+nothing no calculation here think we'll
+go with monthly income as the salary and
+we might ignore monthly rate because it
+is a little confusing so why uh are we
+reading this data uh with such key in
+observation because once we understand
+the data we can build our use cases and
+we can proceed with building charts and
+you know dashboards unless you know
+unless you know what kind of data you're
+dealing with unless you know what kind
+of assets you have in your data you
+cannot proceed with any of the use cases
+so that's the reason we are trying to
+understand the data first in a very good
+way then we can proceed with the process
+of building charts process of extracting
+insights process of building a dashboard
+so throughout this tutorial we will be
+performing some in tab will for
+performing some calculation or
+calculated fields in tab then we will be
+creating some bins we will be you know
+we'll try to um search every major or
+critical corner of T and then understand
+or at least get a brief overview or a
+short overview of that particular
+feature in T and um I think this should
+be helpful for you to get a decent
+Insight on what a stab and how exactly
+going to work with it right and now
+let's proceed with
+T I have already worked a few examples
+on this particular data set so let's
+open a new uh tblo session or a
+window yeah there you go we have a new
+uh session or New U instance of TBL here
+and now let's go back to Connected data
+or you can directly come to here which
+is about data source and uh so since the
+data that we downloaded is in the form
+of excel we will choose the option of
+Microsoft Excel here and um previously
+we did not find it because it was
+looking for workbooks so instead of
+workbook if we select all files then we
+can get the HR data set over here so
+basically uh we will be working on CSV
+type of files so unless your um data set
+is saved in the form of workbook you
+cannot do that so if you go back to your
+Excel and uh go to excel save options
+and save it as a workbook you can find
+it but it's not a trouble you can just
+change from Excel workbooks to old files
+and you'll find your dat set now I think
+uh it might take a while to load an
+error record it's communicating with
+Excel connect to the data source okay uh
+I think it is about the illegal file
+format which is in the CSV format I
+think it's not taking or identifying it
+in the form of CSV so if we take or save
+it in the form of uh workbook which I've
+done here I think it should be
+beneficial for us yeah there you go it
+directly extracted the data in the form
+of U workbook and here on the left side
+if you can see let me expand it a little
+so here we have all the fields you know
+the column names which we had initially
+these are the column names and these are
+the if if I close this we have the data
+which is about the columns and rows we
+have which we went through right so
+these are the columns and rows and since
+we are working with one particular or
+one single uh data set we don't have to
+work much on the joins and Union options
+let's say if you are working with two
+different tables related to one single
+organization which are connected based
+on one primary key like the employee ID
+or something like that then you might
+have to perform some joins or unions
+operations which are present entirity
+over here and that could be another
+tutorial for another day for now let's
+continue with the HR data set that we
+have today right so we can just directly
+go on to the worksheet
+and we have the um dimensions and
+measures so whichever value you're
+finding over here in blue color or which
+is in the text format which um you know
+that will be considered as uh um
+Dimension and here employee number in
+fact it is um uh it is a you know
+numerical value it is still considering
+it is a dimension since it is unique so
+it it was in text format leave in Excel
+so it is considering it as um measure I
+mean Dimension and the number whichever
+you have which is a numerical value
+which describes a certain measure then
+that could be considered as a
+measure and apart from this you might
+find another set of uh you know uh
+inputs here which can be either a
+parameter or a calculated field so there
+is a difference between a measure and a
+calculated uh measure so if the hashtag
+over here I don't know if you can see
+this a little green color hash if it
+starts with equals to and hash then it
+means that it's a calculated field right
+and apart from that you have the filters
+over here and you have the color size
+text detail tool tips and once if you
+start dragging your datas that is
+measures and dimensions you can also
+find uh text labels which is present to
+here and uh if you want to you know tilt
+your let's say if you want to reorganize
+your columns and rows you can just click
+on the swap Icon and if you want to
+organize your columns or you know the
+row charts or column charts whichever
+you find in ascending or descending
+order you can use these to do that and
+um you can present you can directly go
+into the slid show or presentation mode
+with this icon and this particular one
+is based on the view currently it on it
+is on the standard view let's say your
+chart is really small and you want to
+expand out if you want to fit that your
+entire um screen or let's say um you
+know this particular view area then you
+can click on that entire View and apart
+from that um and yeah I forgot to
+mention show me if you drag this
+particular icon if you click on this
+particular option you have a wide
+variety of charts so tblo will give you
+its own choice or it decides which
+particular chart could be more uh better
+uh you know visually appealing and it
+will decide and it will give you the
+type of chart which matches for the data
+and in case if you want to change your
+perspective or if you want to change
+your view then you can select the uh
+type of chart which could be which you
+feel is more appealing and you can
+change the type of charts from here here
+so that said let's start with the data
+analysis or Data Insights now um
+starting with Department okay now let's
+find out how many number of departments
+we have and what is the employee count
+how many number of employees we have in
+our organization so we have found we
+have three different departments which
+is H our research and development and
+sales now let's find out the total
+number of employees so we had something
+called employee count in our um dat set
+so let's try to drag that employe count
+to this
+particular and we have the department
+which is research and development which
+has highest number of employees and
+sales is about 446 and HR with 63 we can
+click on this label icon which will give
+us marks right now it has to count and
+if you click on colors uh then you can
+drop this particular thing on colors and
+it will change
+colors let's say we can choose different
+colors based on
+Department type chart you want as
+this yes now we have different colors
+for different
+departments you
+can say you can designate this
+particular sheet as you know when we are
+trying to build a dashboard we might
+have to drag all the sheets onto the
+dashboard right and it's better when you
+have an understanding of what sheet are
+you going to drag onto the um you know
+dashboard so employe
+count let's create another
+another story which talks about
+graduation levels or you know education
+level of the
+employees will track education to
+columns
+so these are the degrees I mean these
+are the education levels of employees
+and you can again dag the employee
+account over here and you
+can drag education to colors and we have
+different and we can reorganize in terms
+of um yeah the highest is in bachelor
+degree can enter view there you go and
+um if we track Department let's see what
+happens if we track department so here
+we have Department wise decrees right so
+in HR department the people number of
+people people okay let's try to label
+it we have 27 people from HR department
+with a bachelor's degree and uh 379
+people from R&D with a bachelor's degree
+and
+166 people from B sales department
+having bachelor's degree right impressed
+now
+let's see where we go with genda so uh
+how many females and how many males are
+in you know every Department we can do
+that so take
+department and we
+will
+count if we drop gender onto color we
+will have two different colors for two
+different you know
+genders
+and and in case if you want to change
+this part particular
+you know uh type of chart into this uh
+by chart you can do
+that and entire
+view just keep it as it is you can also
+do that and if you want to uh you know
+change this particular one into a pie
+chart that can be
+done you can also click on
+labels and if you want to change some
+you know uh if you want to mod ify or
+change the color or CH do some
+modification to this particular angles
+you can do that by clicking on this and
+you can change colors or do some
+detailing on it right and education
+gender now uh remember we had some
+decent columns to select with that is
+performance and uh you know performance
+rating um job
+satisfaction and few other details right
+job involvement let's try to Build That
+B
+department now uh since we have uh three
+different departments let's go with
+HR
+department Sals
+department now the HR department sales
+department and research and development
+so let's keep it as R and D
+Department
+right now we have three different you
+know uh canvas now we will perform some
+good insights
+so we want Department here so
+yeah in
+rowes you know let's try to put another
+depart
+filters let's try to
+filters and they will want only HR since
+we are working on HR okay
+so let's see distance from
+home
+okay
+count Let's uh let the um table let
+table build the charts the way it is
+building we will at last modify it and
+the way we want let's go with the T
+table chart right so the total number of
+employees present in the HR department
+we will keep it you know we will keep it
+as a default for all three departments
+first the number of employees then
+another parameter then another parameter
+right so first we have added the number
+of employees
+then job
+satisfaction right then
+uh okay let's monthly rate monthly
+income
+then percentage of salary
+hike
+[Music]
+rating work life
+balance standard working
+hours I think that's good enough now we
+can go to show me and change this to
+table you know table type all right and
+you can also to change this to entire
+view so what we can do is we can add
+this onto a dashboard so we can have uh
+one H Department another next Department
+three particular departments over here
+right which shows about you it's like an
+overview of how many number of employees
+you have job satisfaction and now let's
+also try to calculate the attrition
+right we have the attrition over here we
+can do one thing what we can do is uh we
+can remember I said we will perform some
+uh time calculations right so we will
+try to convert this particular text or
+you know Boolean type of value numerical
+value and we can try to uh calculate the
+attrition rate all right so let's try to
+calculate
+that
+can you have to look for format over
+here
+you need a calculated field
+right create a calculated field let's do
+this
+as attrition value or attrition
+count right I'll keep it as attrition
+value
+so it's a simple F function
+and attrition is here
+called
+stent
+yes
+then
+one
+l b
+as Z and and pressing have to select the
+uh you know function
+so table has verified the code and it's
+saying the calculations F press okay and
+I think you will be able to find a new
+calculated field which says equals to
+hashtag attrition value all right so
+this means equals to hashtag is a
+calculated field now we have it and uh
+we have to find out the attrition rate
+attrition rate is simple create a
+calculated
+field name it as
+rate
+so some
+of addtion value that we just
+calculated divided by sum of employee
+count yes that should give you the give
+us the attrition rate and uh we can for
+format it
+and
+change uh yeah that is the attrition
+trate right now we have the attrition
+trate over here if we go into format we
+have it as in the form of numbers let's
+give it as percentage Ag and let's also
+keep
+um okay let's keep it in two decimal
+places let's say we have uh 98% or let's
+fingers crossed no company should have
+98% addtion rate let's say it's about 5%
+or 5.08 5.59 something like that so
+let's keep two decimal places in there I
+think it's done now we have let's go
+back to Fields let's close this
+particular now we have let close this HR
+department and measure modes so it's
+taking all the measures so here we have
+uh I think we don't need business travel
+right let's remove
+this you can just drag and it's gone so
+we have attration rate employe count job
+satisfaction monthly income percentage
+salary high performance rating and
+standard working
+hours
+so remember the uh values or let's
+say yeah remember these values so we
+will be creating this particular
+dashboard for all three departments so
+first we will be having department so I
+mean first we will be having attrition
+rate employee count job
+satisfaction okay we'll refer to it not
+a problem right now we are in the sales
+department
+right
+now you're in the sales department so we
+will get the Department
+again to
+rows department and filters and this
+time we will have
+sales this a small info you can also you
+know um keep it uh in the form of you
+can apply this to all
+worksheets uh
+right all LED uh worksheets so if I go
+into r& D again um I think we will have
+let's look around it once again now for
+now we will have the sales department so
+we will get
+the and then we have employee
+comp emplo in particular Department
+job
+satisfaction first page of salary
+height rating standard working
+hour there you go you can use show me
+change it into a table format change the
+view from standard to entire
+right and we'll have our last Department
+which is
+rting there you go so same applies here
+go to Department add it into filters go
+to Department add it to RS and then here
+change it from sales to R remember we
+selected that entire sheet right so
+whenever you add the department filter
+it will by default go to sales but again
+you can change it from the options over
+here and uh we will start with attrition
+rate similar to the previous one employ
+count job
+satisfaction the income percentage
+salary
+hike perance rating and standard working
+apps C we missed standard working
+hours let's check the order monthly
+income percentage salary
+hike there you go you can change the
+standard view from entire view to entire
+view there you go done all right so far
+we have the attrition rates calculated
+here and um now let's say we try to
+create some vins right you can try to
+create some Vin based on gender based on
+Department okay we have already created
+a lot of Department and we already have
+gender we can create some bins based on
+age right uh
+age AG wise
+bin I think if we go back to the data we
+already
+have AG bands right so we have five
+different H bands but again if you want
+to create a pin specifically you can
+also do that just for the uh you know um
+how to do it purpose let's say you
+wanted to know how to create bins we
+already have that bin prerecorded in the
+data but again if you want to do that
+let's try
+it let's go to
+age create you have calculated Fields
+groups B so all are one and the same so
+let's go with Ben over here and let's
+name it as h one and instead of a
+decimal value let's keep it as a whole
+number and click okay before that you
+need to create a parameter over
+here and minum will be you know this the
+step count to right once I create the
+chart you will understand what I was
+talking about the step Downs I think
+yeah everything is fine let's press okay
+okay and there you go and now if you you
+drag the hins onto the columns
+and count you should get how many
+employees are in what pin right so now
+if you click on the parameter over here
+you can see a new parameter just got
+created you can rename it you know
+rename it as age
+parameter done and if you click on
+this there you go remember we uh created
+the step count if you increase the step
+count to four then the age starts from
+16 to 20 20 to 24 24 to 28 right so
+these are the things you want to keep in
+mind and if you label these um then it
+count and you uh do this based on your
+department right we already have the
+number of employe cons over here right
+employe con number of employees working
+in a certain department and and right um
+and if you try to drag the H bin into
+color you will have different color for
+different HS and if you try to sort it
+you can also do that so the age group of
+uh 28 to 32 have the highest number of
+employees right so that's how we do it
+and we barely have employees uh with
+high r 60 and um from 16 to 20 maybe
+they are here for internship something
+like that right so so far so good now we
+can get started with a
+dashboard right now right now we have
+remember we were naming our uh uh what's
+see um every chart right when you're
+dragging some chart into the dashboard
+you need to know what exactly you're
+draging so you can directly uh drag all
+your uh charts onto this dashboard and
+finish it or if you want to make it look
+a little more interesting you can also
+add some image into the background I
+want to add an image so insert an image
+file fit Image Center image and choose
+the particular image from your download
+section I think this is good
+okay there you go
+you can change you know I can see this
+particular you know visual is a little
+small you can't fit all the charts into
+this and it's not clearly visible and of
+course if you click on the slideshow
+this will become bigger but again that's
+not the way right so let's try to change
+this to
+maximum let's change the pixel density
+over here let's check the screen size
+and then add the input over here so that
+it fits properly just a minute so uh
+let's try to increase this or customize
+this
+720p let's try to increase a little
+more our m is to make it fit within the
+canvas so um yeah
+let's increase the
+work I think this should be fine or we
+can also eliminate this particular image
+Al together if it's blocking the view so
+much right remove image from dashboard
+so we can make some good modifications
+to the existing uh dashboard right and
+then we can try to add them over here
+now uh we have employee count let's Okay
+that called got added to all the uh
+worksheets let's select all here or edit
+filter I want
+all it will affect all the let me delete
+this particular C shelf so I'll have one
+particular Department here and I will
+ch
+not to worry anyways we are dragging
+this right so I think each and every uh
+this is the ultimate uh thing what we
+wanted to
+have so I think we need to make a little
+modification to the attrition rate over
+here format and change this from numbers
+to percentage and R&D the
+same right I think in one place uh we
+can have all so if I drag One dashboard
+to the uh if I drag one chart to the
+dashboard I think we can have all three
+departments in one Cod right so uh one
+thing is that we understood how to use
+filters and how to add those filters to
+all existing you know uh
+sheets let's get started with dashboard
+now we can try to edit this in a in a
+little bit we can make it look Bolder
+and uh instead of tab I think tab light
+is good
+enough Department wise and make it look
+bold and again these you can edit a
+little okay we can just do it
+automatically
+right we have to U you know reduce or
+set some size to so I'm trying for
+that second
+chart I think reiz it a
+little gendu wise we have the gendu wise
+uh employee numbers here and we have uh
+the data related to attrition rate
+employee count job satisfaction in one
+go and if we add age wise then we have
+age wise and EMP and um we can go
+through education details of all the
+employees Department wise and uh we have
+um the first one employee count we can
+you can also drag the employee
+count yeah so far so good uh the details
+what we wanted are all on One dashboard
+so we wanted the employee account based
+on gender and we have that and if you
+wanted to understand the details of all
+employees of about their attrition rates
+about their employee counts total number
+of employees working in the entire
+department and their monthly income and
+percentage of salary hike and uh
+performance rating standard working
+hours right so here you can see there is
+a whole number 930 right instead of this
+you can make some modifications to the
+data set right you can do that if you
+could just go to uh the um percentage
+salary hike and go to you know uh there
+should be some okay we have it
+over here right so if we go to
+percentage of salary hike and go to the
+measure then it should be average and
+again if you go into the format here it
+is again numbers and if you change it to
+percentage and two decimals and then you
+have some percentage over here some
+minor changes I think it should be 14
+.76 and
+15.16 and 15.16 right so there is some
+uh uh modification that need you need to
+do here and I think you'll get the final
+number over here so uh if you could see
+if you refresh it you will have the
+latest data over here so if you are
+working in a company which is giving you
+a standard uh 10 to 15 person then I
+think you're lucky so it's the decent
+number which is going on in all the I
+mean overall all the organizations and
+here you have another dashboard which
+explains about the education levels of
+each and every employee The Bachelor uh
+the number of employees in each
+department with a bachelor's degree
+right you have the details with here and
+even here you have uh you know um drop-
+down option if you click on this
+particular U age group you know keep
+only you can find out that these are the
+details will this details will be
+highlighted and uh if you go for a
+bachelor's degree you have that
+particular thing highlighted over here
+and this is how you build an interactive
+dashboard in real time and with that we
+have come to end of this session on HR
+data analytics using tblo and if you
+have any queries regarding any of the
+topics covered in the session or if
+require the resources that we used in
+the session like the D Set uh or the
+table-board the entire dashboard or any
+other resource that we used in the
+session or if you have any queries
+please do let us in the comment section
+below and our team of experts we'll be
+happy to help you as soon as possible
+until next time thank you for watching
+and stay tuned for more from Simply gone
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains in
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

@@ -1,0 +1,284 @@
+hello everyone and welcome to the part
+two video of creating a task manager
+application using HTML CSS and
+JavaScript guys if you haven't watched
+the part one video click on the IE
+button to navigate to the part one video
+where we are creating the front end in
+this video we'll be creating the backend
+Logic for our Task Manager application
+watch this video till the end if you
+want to learn more about it now before
+we move on I request you guys that do
+not forget to hit the Subscribe button
+and click the Bell icon for the future
+updates
+just a quick info guys simply learn has
+got a postgraduate program in full stack
+web development in collaboration with
+the Caltech University in this course
+you're going to learn the modern coding
+techniques with the boot cam level
+intensity and gain all you need to be a
+full stack Technologies so guys you can
+check out the link in the description
+box now guys let us add the backend part
+we'll be using JavaScript to add the
+logic so that our front-end application
+could interact with the back end
+so let us create a function first okay
+and I will name this function
+as add
+task okay now what I have to do guys now
+let us declare a variable called input
+okay and in this
+input I will say let us get the element
+by ID okay so document
+do get element by ID and in this I want
+to say I need a task
+input
+okay now similarly I will create another
+variable for uh okay let's rename it as
+task
+input okay now we will create another
+variable with the name as task list okay
+so all over here
+and in this I will add the task
+list very good now let us add some
+Logics so if I say if the input value is
+an empty string then I would say please
+add a task okay so let's write that
+logic so it will be under if and else
+condition so if task input okay now I'm
+going to use this variable and I will
+use
+value when this is equals to empty
+string okay now for the same purpose
+purposes I would
+say okay now if the input value is an
+empty string then I would say
+alert
+okay please enter a
+task and with that said guys I will
+return okay now similarly let us create
+some list okay now so that our certain
+elements would be created and it would
+be added in the Dom so let us create
+another variable called Li okay
+and in this I would say
+document do create
+element
+Ali
+okay now similarly I would create a text
+node
+so
+where text
+node same equals to document. create
+element okay I'll copy
+this and in this I would say document.
+create text node okay so it will be
+creating a text node
+and in this I would say task
+input dot
+value now similarly I would append this
+child okay so for appending it into our
+Dom I would say lii do append
+child okay
+and I would add this element called text
+node that sounds pretty cool now let's
+move on and let us add our delete button
+to the Dom so for creating the delete
+button guys what we can do all over here
+okay we write the same principles like
+where delete
+button and this will be equals to
+document dot create element
+okay and in this will be the
+button now I would change the inner HTML
+of the same so by typing the delete
+button delete
+dot delete button do inner
+HTML okay and this will be changed to
+delete
+then the
+same on
+click and I would say task list okay
+same list which we have created and I
+would say remove the
+child and the element which I have
+created Li I would add it all over here
+sounds pretty cool now let's move on to
+the next part okay now delete button is
+a function okay just remember this okay
+now we have completed this part now let
+us create a complete button for the same
+so we'll create
+where
+complete button which is equals to
+document dot create
+element in this I will create the
+complete button so document. create
+element and I'll just add the name as
+button pretty
+good now now what I will do next I will
+change the inner HTML so the same name
+I'm going to copy it and I would say
+complete button dot inner
+HTML which is equals to say
+complete so you would be seeing this in
+the Dom as when you are changing the uh
+the status by clicking on the complete
+button so we'll be changing or
+manipulating a Dom by this now it will
+show completed and let us create a
+function okay to implement that logic
+so let us copy
+this
+and complete button do
+onclick okay and this will be a
+function
+Alli
+do class
+list do
+toggle and I would say it as
+completed okay now let us append all
+these things so Ali
+do append child okay we can see this
+method all over here and let us add the
+delete
+button similarly I'm going to add the
+complete
+button pretty good guys now let us
+append the LI okay so after this I would
+say as the state has been updated all
+over here so I would say task
+list dot
+appen
+Li and the task input value would
+be say it's equals to the empty
+string
+now let us break down this code and
+understand this one by one okay there's
+some error showing all over here let us
+figure it out so it is function
+okay okay as you can see it should be
+small okay now our backend Logic for
+this UI has been
+done and we could see some minute errors
+also all over here
+so just remove this one more equal to
+sign so now let us break down this code
+one by one so we can see there's a
+variable I have created where task input
+okay so what this does basically this is
+going to retrieve the input element with
+the ID called task input from the HTML
+document and it is going to assign the
+variable as task input then similarly I
+have done for the task list what is
+going to do guys this also line we're
+going to retrieve the element with the
+ID name as task list from the HTML
+document and it has been assigned to the
+this variable now here the logic has
+been written that if the value written
+all over here okay so this condition is
+going to check if the task input is an
+empty string so it displays an alert
+that please enter a task now where Ally
+equals to document. create element Ali
+if we look up to this line it means that
+it is going to create a new list item
+okay Ali and it is going to assign a
+variable Alli to it then similarly I
+have created a text node okay so
+document. create text node what is going
+to do it is going to create a new text
+node containing the input value of the
+task input and it is going to assign to
+this variable called text node now if
+you move on a little bit more you can
+see Alli do upend child is there okay
+now if we go on to this line this line
+means that it is going to append the new
+text node containing the value of the
+task input okay with the newly created
+Li item similarly I have created the
+delete button all over here so delete
+button is being created in the HTML
+document okay this uh element is going
+to get added now delete button do inner
+HTML equals to delete what this line is
+going to do guys this line is going to
+set the inner HTML content of the delete
+button to delete now when we are on
+clicking this button what is going to
+happen this is basically removing the
+task list okay from the given list now
+similarly the complete button is there
+we are creating the complete button okay
+and it is going to set the inner HTML to
+complete all over here and on clicking
+this button is going to toggle that it
+has been completed now we have appended
+delete button and complete button to our
+Dom as far as the manipulation we are
+doing on the UI the back end is going to
+take care of it now let us see the UI
+and again try to understand this code
+now let us see on the browser and see
+how we have implemented our backend
+logic and how it is manipulating the
+front end part of it now let us go back
+to our browser and check the application
+so guys as you can see this is our Task
+Manager application now let us try to
+add a task
+say
+jym at
+9 p.m.
+okay then we can add a task like
+studying
+Jim
+at 7
+p.m.
+cooking at 10
+p.m. now let us see that I have
+completed my this task that studying
+German at 9 so I can just click on
+complete and you can see after toggling
+this button there's a line which Cuts
+this off and shows that this task is
+completed now if I want to remove this
+task guys I can click on the delete
+button and see from our Dom it gets
+deleted similarly if I could mark this
+as completed this as has completed it
+would be completed but if I want to
+delete all this still you could delete
+it so guys I hope you enjoyed our
+today's video on creating a task
+application using HTML CSS and
+JavaScript staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive iive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

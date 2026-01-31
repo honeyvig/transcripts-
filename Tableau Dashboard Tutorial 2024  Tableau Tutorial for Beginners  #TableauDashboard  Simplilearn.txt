@@ -1,0 +1,505 @@
+hey everyone welcome to Simply LS
+YouTube channel today we will learn
+about building an interactive dashboard
+in tblo that's said if these are the
+type of videos you'd like to watch then
+hit that like And subscribe buttons and
+the bell icon to get notified just for a
+quick info if you want to upscale
+yourself master data an artic skill and
+landar your dream job or grow in your
+career then you must explore simply Lars
+goad of various data Antics programs
+simply learn offers a postgraduate
+program in data analytics from puru
+University in collaboration with IBM
+through this program you will gain the
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts in top TI of product
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data analytics role
+as a fresher or moved onto a higher
+paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pinned comment and
+description box below to find a data
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+with our topic for today that is
+building an interactive tblo dashboard
+so if you are a beginner in Tabo and if
+you want to understand what exactly you
+you can perform data visualization in
+table and create an interactive
+dashboard then this particular tutorial
+will be the perfect one for you so we
+will quickly create an interactive
+dashboard and we will be using some
+sales data set from European nations and
+we will try to perform some data
+visualizations and try to extract some
+important insights and finally segregate
+all the charts and graphs that we
+created into an interactive dashboard at
+the end so that's the agenda for today's
+session so let's get started with the
+latest version of t that is 2023 version
+there you go we just got started with
+the tblue public desktop now here the
+data set that we are going to deal with
+is a Microsoft Excel version so TBL will
+help you get connected with text files
+Json files Microsoft Access PDF file
+spatial file statistical file and much
+more and you can also get connected to
+realtime Service as well but now we will
+be connecting to Microsoft Excel data
+set so you can just click on Microsoft
+Excel and here here I have Excel data
+sets and out of which we will be working
+today with the table sales EU that is
+European sales click on that so don't
+worry if you want the data set or if you
+want to continue with me to work on this
+particular data set then I will be
+linking that particular data set link in
+the description box below you can
+download the data set and uh you know
+learn in real time with me as we go
+ahead building this particular dashboard
+so we have uh got connected to our data
+set as you can see so here we have the
+columns and rows and we have the cells
+filled with data so here we have row ID
+order ID order date ship date ship mode
+customer ID customer name segment City
+Etc so these are the uh columns and
+column headers or in normal sense or in
+um you know uh short sense you can call
+it as the metadata of the data that we
+are dealing with today right now we can
+straight up we go go ahead with the
+first worksheet and here we have all the
+dimensions and here we have all the
+measures so the qualitative data in your
+data set is called as Dimension and the
+quantitative data we have on a data set
+is called as measures so here we have
+filters marks and everything that we
+need here we will be dragging and
+dropping the columns and rows so let's
+get started with the first story or chat
+which is about the kpi of your sales so
+this particular sheet will help you
+understand the key performance
+indicators of your data set so we will
+be like having how many number of U
+customers do we have in a you know a
+particular State City Country Etc and we
+will be having how many number of orders
+we received how many number of uh sales
+we got from them what's the quantity of
+uh products the ordered and what's the
+profit everything in one single you know
+story right so we will be dragging the
+required measures and dimensions onto
+the rows and columns so firstly let's
+try to drag the customer IDs right we'll
+place the customer IDs add all the
+members so we will be creating a small U
+you know measure here will change the
+measure to count disting So currently it
+is taking up all the customers which are
+available in the data set which may be
+in thousands so we don't want all the
+data sets over here so so we will just
+have the count count distinct uh
+customers there you go we have around
+800 customers so maybe uh few customers
+got redundant uh in buying the product
+from the website now let's continue with
+a few more options that we want to have
+on our kpi so okay let's go with product
+ID so that we have how many number of
+products they uh you know purchase from
+the website so add all the members same
+as customer customers so you can go with
+product and here you have measure change
+the measure to count we are not going to
+use count desting here we're going to
+count here so we have the actual number
+of how many number of products that have
+been ordered now let's go with the
+quantity here what's the quantity that
+they have ordered hold and drag it onto
+the so don't worry currently you can see
+we have a bar graph over here we can
+change this into a taba format from
+this particular available option over
+here which named which is named as show
+me now we have a quantity over here
+let's quickly close it now next will be
+sales and then lastly we have the profit
+sum of sales sum of quantity and sum of
+profit right so everything is good to go
+and now what you can do is just change
+this particular chart from bar graph to
+taable graph right now you can again
+ship this to the column so that you have
+a table format and here you can edit
+this edit alas product ID or products so
+this will give you the number of
+products which have been ordered from
+the customers and instead of distinct
+count of customers you can edit this to
+read it as
+customers so you'll get to know how many
+number of customers you have so in the
+interactive dashboard that we are going
+to create we will be having a place
+where we can we will be having an option
+where we can select a state or a region
+or a city or a country and get to know
+what's happening in that particular
+country what's what are the sales
+numbers right you get to know that
+now if you uh format this you have
+alignment where you can Center align all
+the text here or or or the um you know
+table headers or column headers
+and so it will be in the
+center font if you want to increase your
+font you can do that I'll go with
+18 it's not working for some reason
+let's select this and try once
+again there you go now we have uh the
+bigger headers now we also want this
+particular you know numbers to be in a
+uh to be mentioned in in a bigger font
+so you can do that by just clicking on
+this go to automatic and should be
+centered and here select this particular
+text the entire text and increase the
+size to about 16 or 18 and if you want
+you can bold the numbers and if you
+don't want to bold them you can keep it
+as it is and apply okay there you go and
+here we have standard uh look we can
+select this as entire view so that you
+have a bigger uh space to show the
+numbers so when you drag this to the
+dashboard you will have a bigger space
+to Showcase your numbers there now with
+that we have finished the first chart
+that we wanted now let's continue with
+the second chart where we will try to
+understand a product wise or you know
+segment wise
+sale now for that we will try to drag
+the categories or subcategory iies okay
+we'll try to drag the subcategories into
+columns and sales to
+rows there you go now you have the
+category wise sales which category is
+giving you highest number of sales Etc
+you can either you know order them in
+ascending order or descending order we
+will now order them in descending order
+and if you want to know the um products
+or the subcategories which are
+performing above average sales then can
+do one thing you can try to add an
+average SE know segregator go to
+analytics and here you can find average
+line you can add that average line by
+double clicking on that and here you
+have the average sales numbers right so
+the average sales numbers in this
+particular line will tell you the what's
+the average sale number which is1
+72,8
+129 and now if you want to segregate
+these uh subcategories into the ones
+which are performing above average and
+the ones which are per Performing below
+average then you can do that as well go
+to data again and here you have an
+option to create a new calculated
+field and here uh you can you know
+rename this calculation as
+products
+or
+degrees above
+average and here you can write down the
+formula sum of
+sales then
+some
+of there you go it's valid press okay
+and if you drag this particular newly
+created calculated field onto the color
+it will give you two different colors
+and in case if you want to modify it you
+can do that as well just highlight you
+know edit colors and now here you can
+select green color for the ones which
+are performing good and uh for the ones
+which are not performing good you can
+turn them into a different shade maybe
+this particular one and press apply and
+okay there you go now you have them okay
+true edit colors for true you can select
+green and press okay there you go now
+you have the top uh 1 2 3 4 5 6 seven
+performing subcategories which are
+giving you above average sales or
+profits now you can rename this sheet
+as
+category VI
+sales subcategory by
+sales now next what you can do is
+location wise if you want to perform a
+location wise sales chart they can do
+that as well location wise so here you
+can drag
+your city or
+country and here you can drag your sales
+to
+rowes here you can choose the
+map there you go now you have the region
+wise sales and the darker shade will
+give you the highest number of sales and
+the lighter shade will give you the
+lowest number of sales so here you have
+a legend which explains you
+8,638 is the lowest number of sale and 8
+lakh
+58931 is the highest number of sand if
+you want to edit this edit the colors if
+you don't like the colors you can also
+go back here and choose the one which
+you like so I'd like to go with a green
+gold shade where gold or yellow shade
+will explain you that the lowest number
+of sales are happening in that
+particular region and the darker ones
+tells you that the darker regions are
+the ones with the highest number of
+sales so now let's go ahead with the
+next type of chart where you can find
+out the region wise sales right in our
+particular data set if you go back to
+the data source here here you can see we
+have something called as region so which
+will tell you about the south north east
+west and Central right so now we can
+also find out the region why sales so
+let's
+get region wise and you can drag region
+onto columns or rows and uh sales to row
+there you go now you have central region
+east region North Region and South
+Region you can drag region again onto
+the colors so that you have a different
+color for a different region there you
+go now you have different regions for
+different colors and uh so far we have
+the kpi subcategory sales okay if you
+drag some of sales or sales which is
+right over here onto the label you have
+the numbers as well okay it looks it
+looks more clearer now and location wise
+sales as well and if you want you can
+drag a
+country let's TR a lot clumsy then we
+will not use it but if it's a little
+clearer we can use
+it
+lab region by sales now you can have the
+sales onto the label we have numbers for
+that so we have region wise kpi sub
+category location and now if I want to
+calculate the month- on Monon sales or
+year- on-ear sales so our particular
+data set has year on year as well so we
+have about four to five years of data
+set so let's try to calculate the month
+on month and year on
+year you can drag all the date onto
+columns and
+fails to thr there you go now we have
+here so starting from any any date which
+is previous to 2020 or it is null uh it
+is considered as zero after the next one
+we have 2020 21 22 and 23 now let's say
+I want the data of only 2023 so you can
+also do that just by you know clicking
+here you have 2020 21 22 23 years data
+here uh so we will you know divide it
+into months we will eliminate the
+quarter so so now we have a month on
+month sales for every year now what you
+can do is let's say if I want to have
+only the uh data for 2023 I can double
+click on that and it'll give me only the
+data for 2023 and uh you can also now
+drag the sum of sales sales into color
+so that you have a different color for
+everything which shows the least color
+where we have the lowest to sale and the
+highest color for the highest sale now
+you can also change the color if you
+don't like the blue one you can go with
+a different color so you can go with
+something around U green there you go so
+you have the darker green shade for uh
+highest number of sales on the lower uh
+green shade for the lowest number of
+sales so month- on Monon sales for
+2023 and if you want to make some
+changes to it you can also do that here
+you have this type of uh graph which
+will show you the
+details okay so now we have it so we
+have added some of sales to label and we
+have the numbers over here with the
+dotted indicators now we have kpi
+location wise sales region wise sales
+and month on month uh in 2023 let's
+check out if we can do anything else
+with the data set that we have here if
+we can build any uh other uh you know uh
+graph and demographics about the date so
+we have ship mode here so let's try to
+calculate which ship mode is giving us
+the maximum amount of profits so which
+mode should we use if we are trying to
+you know uh generate some good profit so
+we'll try to uh you know add profit into
+the color so that we have different
+colors so standard class is the one
+which is generating us the highest
+number of profits and and you can also
+you know try to create a descending go
+here there you go you can name it ship
+mode
+profits now you can also create another
+dashboard where you can identify the
+quantity of products ordered so quantity
+the quantity to rows or columns and the
+subcategory right which subcategory has
+the highest number of uh you know uh
+quantity ordered so add sub category to
+different colors that we have different
+colors you can reorganize them there you
+go so far we have uh 1 2 3 4 5 six seven
+and eight uh stories so you can you know
+uh drag all the stories onto the final
+dashboard so here we have the final
+dashboard and if you want to make some
+modifications to your dashboard you can
+increase or decrease the width of your
+dashboard so let let us do
+that let's check the height and
+width now if you want to customize your
+dashboard by adding an image in the
+background you can also do that just
+drag an image fit the image Center image
+and uh choose the image from your
+desktop I'll choose this particular one
+and apply there you go and in case if
+you don't want any images onto your
+desktop or the dashboard you can quickly
+cro that
+right now you can continue with the
+dashboard here we have the kpi U story
+first you can drag it over here and you
+have the perfect numbers right on your
+dashboard and now you can drag the
+subcategory sales just drag
+them or you can change the subcategory
+sales into a bar graph change the
+color this to Green dashboard here it is
+there you go now you can also increase
+or decrease the size of of your uh
+kpi there you go now let's try to add
+the location wise sales here we have the
+location wise sales region wise sales
+month on-month sales right
+here let's try to add the shipment which
+can go
+here there you go now the last one is
+the quantity which can be added right
+here there you go now here we have
+another Legend where you can select the
+individual let's say I want the data
+only from Central so you have the
+central data here the order and sales
+States and let's say I want everything
+and I want I can change my location so
+if you uh drag a little if you remove
+the
+selection
+and uh if you would like to go with the
+location wise
+data you can also do
+that let's say I want the data only for
+Switzerland you can just click on it and
+you get the sales for only Switzerland
+and uh if you want some other you know
+let's say Finland just click on it and
+you'll get the data for Finland so
+that's how you create an interactive
+dashboard so you can see here we have 33
+customers from from Finland theyed 64
+projects products and we have about
+$33,900 of profit and we sold about $21
+number of goods and the sales figure is
+20,7 not4 right and we also have the
+subcategories over here and here we have
+the quantity region wi sales everything
+and uh that's how you create an
+interactive dashboard in tblo and with
+that we have come to an end of this
+session on creating a tblo dashboard if
+you have any queries regarding any of
+the topics covered in this session or if
+you require the resources like this
+particular Tabo public book or the data
+set that we used or the pbd please do
+let us know in the comment section below
+and our team of experts we'll be more
+than happy to resolve all your queries
+at the earliest until next time thank
+you for watching and stay tuned for more
+from Simply La staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

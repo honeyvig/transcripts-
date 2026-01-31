@@ -1,0 +1,164 @@
+for secure and efficient data
+transmission over the network channel
+control mechanisms are needed to govern
+the transmission of data
+which will be our topic for today's
+session
+hi guys and welcome to yet another
+interesting video by simply learn
+in today's session we will look into
+what is stop and wait protocol
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to miss an update from
+us
+now without further ado let's take a
+look at the agenda for today's session
+for today's session
+to begin with we will look into
+introduction to the stop and wait
+protocol
+moving forward with steps involved in
+the protocol
+and continuing with the working of the
+stop-inward protocol
+and ending our session with knowing some
+drawbacks of applying stop-ended
+protocol
+now let's move on to the first heading
+that is introduction to the protocol
+the stop and rate protocol is a type of
+flow control mechanism active in the osi
+model of the data link layer
+the transmission of data applies only to
+the noiseless channels
+where a noiseless channel represents an
+ideal network channel where no frames
+are lost duplicated or hacked
+moving on we have
+the stop and rate protocol is
+unidirectional in transmission of data
+that is
+either sending or receiving data will
+only takes place at an instance
+for the third point we have
+the stop and rate protocol as the name
+suggests is when the sender shares a
+data packet to the receiver end then the
+sender side has to stop and wait for the
+receiver side to send an acknowledgement
+before it starts sending the next data
+packet
+with this point we are now knowledgeable
+about the working of the stop and
+protocol at an elementary level
+now let's move on to the next heading
+the next heading for the session is
+steps involved in the stop and wait
+protocol
+the steps for this protocol are divided
+into two parts sender and receiver
+protocol
+let's start with the sender side
+the first step is to transmit one data
+unit at a time to the receiver end by
+the sender side
+and the next step is
+to transmit the next data until only
+after we receive the acknowledgement
+from the receiver end
+now let's move on to the receiver side
+in receiver side step one is to receive
+the data and use the data that is being
+sent
+then the second step is after the data
+has been used by the receiver side it
+will send the acknowledgement to the
+sender side for further data
+transmission
+this is how the transmission of data
+takes place in the data protocol
+now let's move on to the next heading
+that is working of stop and rate
+protocol
+using the previous two headings we can
+easily determine the steps involved in
+this working
+let's take a look
+to begin with we have two sides the
+sender and the receiver side
+the first step is
+to send the data from the sender side to
+the receiver end
+and after the receiver side has used the
+data it will send the acknowledgement
+signal
+meanwhile the sender side has to wait
+for the acknowledgement signal
+only after it receives the
+acknowledgement signal will it send the
+next data packet
+now that the sender side has sent the
+data for the second time
+the receiver site will use this data and
+then only share the acknowledgement
+signal
+this process of sending data from the
+sender side to the receiver side and
+receiving acknowledgement from the
+receiver side to the sender side
+continues
+for n number of times
+according to the given scenario in the
+network channel
+now let's move on to the next heading
+that is also the last heading for this
+session that is drawbacks of using
+stop and read protocol
+the first drawback of using this
+protocol is the loss of data
+this issue can arise when transmitting
+data from the sender side to the
+receiver end
+it may be due to any issue due to
+hacking attempt or network disruption
+or any other network related issue
+then
+this can also arise when receiving
+acknowledgement from the receiver site
+now let's move on to the second drawback
+the next issue is related to
+acknowledgement transmission that is
+during the transmission of
+acknowledgement signal
+due to the network issues
+the acknowledgement signal is disrupted
+and the transmission is terminated
+this can arise again due to any reasons
+that are occurring in the network
+channel
+now let's move on to the last drawback
+for this heading
+the last issue occurs due to the delay
+in transmission time of the information
+time delay drawback can occur on either
+side of the transmission that is during
+data transmission
+or the acknowledgement transmission
+with the completion of the drawbacks we
+are completed with the session on stop
+and rate protocol but stay tuned this
+topic is not yet finished
+we'll come up with the next video that
+is sliding window protocol which is in
+continuation with stop and wait protocol
+so stay tuned with this we have reached
+the end of the video if you have any
+questions regarding the topic you can
+ask them in the comment section below
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,1473 @@
+what's up traders in this video i'm
+going to be breaking down
+the settings menu for my latest version
+of the ultimate pullback indicator
+so the ultimate pullback indicator is a
+script that i've been working on since i
+began trading in 2017.
+i have been working on it actively for
+all this time and i've been improving it
+over those years based on things i've
+learned about trading and pine script
+obviously
+and
+this latest version is
+updated to pinescript version 5. it
+includes a bunch of new enhancements
+improvements it includes automated
+trading functionality through autoview
+and pine connector
+it
+i mean it has everything you could ever
+want out of a pullback indicator and if
+it doesn't have everything you want and
+you subscribe to it
+shoot me an email and maybe i can add
+that feature to it but in this video i'm
+just going to be breaking down the
+settings menu the
+various options you have to use with
+this indicator this video is intended
+for
+free trial members and paid users of
+this indicator to guide them through
+what all the settings do
+so if you're not into that if you're not
+interested in this indicator you might
+not find this video very interesting but
+if you are a pine scripter someone who
+is interested in learning pine script
+you might just want to watch this video
+for ideas to implement into your own
+scripts because there are some pretty
+cool features in the script the reason
+why
+i am charging money for this script is
+one it takes me a lot of time to
+maintain an update and i spend a lot of
+time on this script i've exerted all of
+my expertise into the script basically
+all of my knowledge about trading
+particularly this style of trading pull
+backs momentum trend continuation
+trading and pine script
+this is a script that i use in my own
+trading i've currently been running it
+for two or three months now automating
+my trading through pine connector and it
+has been profitable for me i'm not
+saying it will be for you depending on
+the settings you select
+but it has proven itself to me and i'm
+ready to release this new update before
+we begin i'll show you a quick glimpse
+of the source code to give you an idea
+of how much effort and time has gone
+into this
+script this project of mine there are
+three scripts that accompany it
+technically two that you get access to
+and one brand new library script that
+uses
+features of panscript five that if
+you're not a pine script coder you won't
+be interested in that so in short this
+is a trading tool it's intended to
+assist in your trading i use it in my
+own trading to assist in my training
+both manual and automated trading it
+also generates alerts things like that
+to help me manage my positions
+anyway that's all i had to say
+let's get into the video now i'm not
+gonna lie there is a lot to cover here
+on this indicator it's a very advanced
+indicator script with a lot of different
+bells and whistles and features i would
+just encourage you to stick to what you
+know and only experiment once you get
+comfortable with the indicator you don't
+need to adjust any of the settings to
+use this the default settings should be
+fine on a lot of markets out there for
+the most part i use this indicator in my
+own trading with the default settings
+that's why i've made them the default
+settings but if you do want to get
+experimental and creative and start
+testing different variations of
+the techniques that this indicator
+employs i definitely encourage you to do
+that there are
+hundreds of ways to trade this indicator
+this strategy profitably certainly
+thousands of ways to trade it
+unprofitably
+but there are at least dozens to
+hundreds of ways that you could set this
+indicator up in totally different
+configurations for different markets and
+time frames and find it to be profitable
+one word of caution would be don't
+overwhelm yourself don't go down the
+rabbit hole of over optimization
+i do get emails sometimes from traders
+where they are just trying to do too
+much with this indicator just because
+they can in trading less is more simple
+is better just because you can use all
+of these settings and tweak them and
+change them doesn't mean you should
+um i would only tweak a few at a time
+and keep in mind that you're trying to
+make a strategy that is robust across
+multiple markets not one that is perfect
+for a single market that is a road to
+insanity quite frankly if you spend too
+much time optimizing a strategy for a
+single market and time frame you can
+send yourself crazy
+and you'll never find profitability in
+trading sometimes good enough is good
+enough don't spend your life searching
+for the perfect setup just find one that
+is profitable within your risk tolerance
+that makes a decent return and performs
+in a way that you're comfortable with
+and then just trade that for a while and
+then maybe over time you'll come up with
+different ways to improve your approach
+and maybe then you should come back and
+experiment with adjusting some of these
+settings personally i keep this simple i
+trade it with basically just a
+one-to-one target and two positions and
+i trail my stop-loss on my second
+position that's the common way i trade
+this sometimes i'll trade it with one
+position and shoot for a greater than
+one to one risk reward profile depending
+on the market and time frame and market
+conditions but anyway that's my advice
+for this script and i'll go into more
+detail in other lessons on techniques
+and profitable trading approaches with
+this indicator that you can use and
+explore so let's open up the settings
+menu if i click
+if i click on this little cog here
+that'll open up the settings interface
+and this is what the default settings on
+so the first thing to note is that all
+of the settings are organized into
+categories so up the top here we have
+our display settings
+and
+all of these settings control what draws
+onto our chart
+so we have draw p labels here this is
+what controls our profit and loss labels
+if i turn that off these labels go away
+and these labels show how many pips the
+trade won or lost so if i turn that back
+on and i hover over this label you can
+see it tells me how many bars i was in
+the trade for what my max adverse
+excursion was in pips
+and a percentage so mae and mfe a max
+adverse excursion and max favorable
+excursion
+that's basically just how far price went
+against us before hitting our profit
+target in the case of an mae and in the
+mfe the max favorable excursion it's how
+far price went in our favor before
+turning around and stopping us out these
+are useful metrics to track in your back
+testing
+to give you an idea of whether you're
+giving your trades too much room to
+breathe or too little room to breathe
+but you can turn these off if you don't
+want to see them by clicking on this
+check checkbox here
+you can also turn off your stop-loss
+size so you can turn all the labels off
+if you want to and then the script will
+look like that
+it's a little bit cleaner but less
+information i normally leave these on
+especially if i'm back testing next up
+we have draw extended stops and targets
+this just draws your stop loss and your
+take profit until one of them is hit so
+if i zoom out a bit here's a good
+example the script kept drawing i'll
+take profit all the way until this bar
+here hit it also useful for back testing
+next we have our draw back test results
+so if i turn this on
+this will turn on the inbuilt
+back tester system
+so in this indicator version of the upi
+i've built out a custom backtester
+system and this system displays your
+starting balance your return in dollars
+your return in percentage your max
+drawdown as a percentage the pips that
+it returned and the ending balance now
+it's important to stress that this is a
+rough
+estimate very rough guide it doesn't
+take into consideration
+times when price
+gets really close to your stop-loss
+and maybe stops you out based on the
+spread so here's an example here
+even though this trade eventually lost
+um when price got this close to the
+stop-loss right here there is a chance
+depending on the market you're trading
+the time frame and the spread
+there is a chance that you might have
+been stopped out but the script doesn't
+detect that because the script cannot
+know the spread
+of the current market and so i've tried
+to make it as accurate as possible but
+you need to factor in the possibility
+that a number of trades were actually
+losing trades but the script recorded
+them as a winning trade there are also
+occasions when price might have just
+tagged your take profit and the script
+recorded it as a win but then price
+reversed and went on to stop you out for
+a loss or for breakeven but the script
+doesn't record that this is an
+unfortunate limitation of pine strip
+that we can't simulate the spread so
+that is why i always strongly recommend
+that you back test thoroughly manually
+and don't just blindly trust any script
+but certainly not this backtester system
+here that being said i have done some
+testing and this tester system does seem
+to be quite accurate on most markets and
+time frames i've only tested it on forex
+markets but aside from the small number
+of trades that may have been losing
+trades or may have been falsely recorded
+as winning trades it seems pretty
+accurate and the way it works is it
+simulates risking a percentage of your
+account balance
+on every trade that it detects so if i
+open up the settings menu and i scroll
+down to the
+backtester settings
+category
+right here
+here you can input your starting balance
+and your risk per trade so by default
+it's risking one percent per trade but
+if i wanted to i could bump this up to
+let's say two percent and you can see
+how the simulator the back tester
+simulator would have performed with that
+level of risk we also have in the top
+right here our
+performance stats
+and that is this setting here so if you
+don't want either of these on your chart
+you can turn them both off you can also
+change the location of the stats display
+so using this drop down here tr stands
+for top right
+bottom right and bottom left so if you
+wanted to you can move it to the bottom
+left for example
+and the display will move down here you
+can also
+turn on a bunch of extra stats here if
+you want to so we could see our
+breakeven rate our win loss rate for
+long shorts and our max adverse
+excursion and max favorable excursion so
+this is what it would look like to have
+all the stats turned on now i'm not
+going to go over all of the settings in
+detail because each setting does have a
+little tool tip here that explains what
+it does if you hover your mouse over
+these little eye information icons there
+is a tool tip that will explain what
+that setting does but i'll quickly
+scroll through the settings and explain
+what each section does so here's our
+stops and targets section
+you can change your stop loss to a fixed
+pip amount by default it's disabled if
+you change this to any number other than
+zero then your stop loss will be a fixed
+pip distance from your entry instead of
+an atr based stop which is the default
+setting so by default we have a one atr
+stop loss which means the script
+calculates the distance from your entry
+to the swing high the recent swing high
+of the setup
+and then adds one atr to that distance
+to get your stop-loss price
+but obviously you can change this if you
+want to you can have it tied a stop
+or you could have
+a wider stop it's worth playing around
+with this on different markets and time
+frames um for example on a daily chart
+you might want a much tighter stop loss
+than on an intraday chart so you can
+control your stop loss and targets under
+this section you can also control your
+risk reward profile here by default it
+sets all one to one but you can change
+that here
+you can set your breakeven distance so
+for example if i wanted to i could set
+my risk reward to two to one and my
+breakeven to one to one
+here is an example of a trade being
+stopped out for break even so we entered
+short here stop loss was up here price
+came down to hit our one to one
+breakeven target which is the blue line
+and then our stop-loss came down to
+break even and then this bar here came
+up to stop us out for break even and has
+a blue cross above it to indicate that
+that was the case so that's our basic
+uh stop-loss and risk reward settings
+you can also adjust your minimum risk
+reward to pull back origin let me reset
+these first of all what this setting
+does is it's a filter that filters out
+any trades that do not meet the minimum
+requirement of the minimum risk reward
+profile to the pullback origin and the
+pullback origin
+is the lowest body
+of the recent pullback
+so we had an impulsive move down here
+from price action we put in a new low
+this was the wick of the low but this
+these candle bodies here
+is the pullback origin that the script
+references
+you can change that though in the
+settings if you want to you can change
+the pullback origin reference to wix
+so if i change that to wix then the
+script will
+use this as the pullback origin and if
+you come up to the style
+section of the settings menu here and
+you scroll down
+to the bottom of the settings we have
+our bullish and bearish
+pullback
+plots here they're all turned off by
+default but if you want to see how the
+script is detecting pullbacks you can
+turn these on
+so if i turn
+bearish pullback close and bearish pull
+back low on
+you can see now where the script is
+or how the script is detecting lows in
+the pullback so as price moves lower the
+blue line represents the wicks and then
+at the bottom as brass begins to pull
+back towards the moving average the red
+line is our pullback origin body and the
+blue line is our pullback origin wick so
+turning this on is good for debugging
+and just seeing how the script detects
+the pullbacks it's not a perfect system
+there are times especially during
+consolidation where the script will
+falsely detect pullbacks
+there's not really any way around that
+that's just a limitation of code in
+general it's impossible to make a script
+that can read a market and all the
+nuances and subjectivity
+involved in a market
+like the human eye can that's why i
+always encourage traders to
+use discretion when using this indicator
+it can be automated profitably and i am
+running this through pine connector and
+automating my trading on this script
+using this strategy but it does perform
+better and it is more accurate and more
+profitable if you trade it manually with
+discretion and you avoid any trades that
+do not look like a valid pullback for
+example here's a great example here
+price pulls back we get an entry here
+that trade gets stopped out and then
+price moves back below the moving
+average and the script begins looking
+for another pullback
+but we are basically in consolidation
+here and then we detect another signal
+this is an example of a signal i would
+not take i would use my discretion to
+not take the signal because we are
+technically in consolidation even though
+we've pulled back after a move below the
+moving average using my human eye i can
+see that this is not an ideal setup this
+is not a high quality pullback setup and
+so i would not have taken this and i
+would have avoided this loss if you're
+automating the script
+it will just take this trade regardless
+and even though it might be profitable
+to trade every signal blindly that the
+script detects depending on the settings
+you've set up for the strategy it's
+important to mention that the script is
+not 100 accurate and no script is
+when it comes to detecting market
+conditions anyway moving on let me show
+you what this minimum risk reward to
+pull back origin does if i set this to
+one to one and we zoom out you'll see a
+bunch of signals
+taken away are now ignored and our win
+rate has dropped significantly our trade
+count has dropped significantly the
+reason for that is the script is now
+only taking pullback trades where our
+target
+our profit target from our entry
+falls above
+the low
+of the pullback so in this case the
+pullback origin is set to closing price
+and so this red line
+needs to be beyond our take profit and
+you can see that a whole bunch of trades
+here have now been invalidated through
+this actual trending market because when
+a market is heavily trending
+quite often it won't give you a
+one-to-one risk reward to the pullback
+origin so that's something to keep in
+mind but depending on the time frame
+you're trading the market you're trading
+you may want to filter trades based on
+the risk reward to the structure of the
+pullback
+if i change this to wic we'll get a lot
+more trades being detected
+nearly double
+and that will obviously affect your win
+rate as well so i encourage you to play
+around with the filters and see what
+works best for you and the way you like
+to trade
+so that's our stops and targets section
+next up is our moving average section
+this is self-explanatory you can select
+the moving average type you want so
+there's all different types here um ma1
+is your main moving average you may find
+certain moving averages to be more
+profitable on certain markets and time
+frames so playing around with the moving
+average type and moving average length
+is a good idea in your testing so here
+i've changed the moving average to a 100
+period sma and it has affected our
+metrics a decent amount there's also ma
+type 2 which is a filter moving average
+so if i set this back to a 50 ema
+we could use a 200 sma as a secondary
+filter so now this big thick blue line
+is our 200 sma and now the script will
+only take long trades
+if the setup occurs above the 50 ema and
+the 200 ema
+so any long trades that are detected
+below the 200 sma but above the 50 ema
+will not be considered valid and same
+for short trades this script will not
+take any short trades that occur below
+the 50 ema but above the 200 ema so this
+is just another filter to try to keep
+you on the right side of momentum and
+the trend again i encourage you to play
+around with this filter based on
+whichever markets and time frames you're
+trading to disable the second m8 just
+set it to zero
+length and then the script will stop
+using it
+next we have max candles beyond moving
+average
+this determines how many candles are
+allowed to close
+above the moving average or below for
+long trades
+so here's a good example
+here price has made a move below the
+moving average it's pulled back to the
+moving average and we've had one candle
+close above it and then we had our
+signal
+if i were to set max candles beyond m a
+to zero
+this setup will be invalidated because
+we've had one candle close above the
+moving average you can see it just
+disappeared
+and so this setup is now invalidated and
+that actually increased our win rate
+slightly so this is another filter worth
+playing around in your testing i find
+that allowing at least one candle to
+close beyond the moving average is a
+good happy medium
+you do get some lower quality trades but
+the increase in trade frequency tends to
+make up for that in terms of
+profitability next up we have our
+consolidation look back and max
+consolidation count
+this look back is how many bars to look
+left
+how many bars to look back on and this
+max consolidation count is how many
+times price can cross above and below
+the moving average so the default
+settings are basically saying
+if price has crossed above and below
+the moving average four times
+over the past 10
+bars that would look like this so 1
+cross 2 cross 3 cross 4 cross
+if that has happened and then we get a
+pullback signal
+the signal is invalidated because we've
+crossed the moving average too many
+times in recent price
+and so we are likely consolidating i
+find the default settings to be
+sufficient in eliminating most clearly
+bad trades around consolidation but you
+may want to play around with this but i
+like to leave it on four i found that
+that worked across most markets on
+average but depending on the market
+you're trading you may want to play
+around with that filter as well
+next up we have our candle patterns so
+the script detects several different
+candle patterns by default it's only
+detecting engulfing candles you can turn
+on or off long trades and short trades
+so if you only want to trade long you
+can turn off short trades and then all
+short trades
+will be removed and the script will only
+trade long and then you can also turn on
+a bunch of candle pattern settings so
+this setting means that engulfing
+candles must engulf the wick if i turn
+that on any setup like this one down
+here
+you can see that this setup here
+does not engulf the wick of the previous
+bar so this bearish engulfing candle
+here engulfs the body of the bar but not
+the wick
+whereas these
+setups do engulf the wick so that's just
+another filter there by default turned
+off you can also detect hammers and
+shooting stars so this might be easier
+if i turn off and golfing kennels and
+just turn these alternative patterns on
+one at a time
+here you can see a hammer candle was
+detected on the pullback so it must
+still be a swing low to be considered
+valid
+and there are certain rules that you can
+tweak about the hammer and star candles
+such as it being green or red hammers
+and stars perform better on certain time
+frames and markets like all strategies
+in all setup patterns
+certain markets will perform better than
+others
+so again i encourage you to play around
+with the different candlestick patterns
+that the script can detect so you can
+also turn on hammers and stars must
+match color so hammers must be green
+shooting stars must be red
+that's just another filter there we also
+can detect doji candles so if i turn
+hammers off and turn doji's on let's
+have a look for one here's one here
+so here we have a
+swing high
+doji candle
+and the way it detects the doji as valid
+or invalid is by default using the
+default settings the candle body must
+account for
+no more than five percent of the entire
+candle size from top wick to bottom wick
+so if the candle body is five percent or
+less of the entire candle size so the
+wicks must be a similar size to each
+other then the doji is considered valid
+and then we have another setting here
+doji can be bullish and bearish this is
+similar to the hammers and stars must
+match color
+if you turn this on then
+the doji candle for short trades must be
+red and the doji candle for long trades
+must be green if you don't turn it on
+then it can be any color so if this was
+a green candle it would still be
+considered considered a valid doji and
+then finally we have our detect fractal
+color change candles so that sounds
+complicated but really it's not all
+we're looking for
+is a swing high candle that changes
+color against the pullback so in the
+case of a bearish setup we're looking
+for
+a price to make a new low
+price to then pull back a few green
+candles and then we're looking for a
+swing high candle that is bearish that's
+the only
+rule for this setup it doesn't need to
+be an engulfing candle it doesn't need
+to be a hammer or star it doesn't need
+to be a doji it just needs to be red
+and so you can see it also detected this
+doji candle since that was a swing high
+that was red
+so it's a very very simple entry pattern
+but it can be profitable on some time
+frames and markets which is why included
+there's also a final filter here for our
+candlestick patterns which is must touch
+ma1 which is our main moving average
+so if i turn on detect engulfing candles
+and turn this must touch ma1 on and let
+me turn off
+our bullish and bearish pullbacks to
+tidy up the chart a little now the
+script is only taking trades that touch
+the moving average
+so any trade that occurs
+too far from the moving average
+is considered invalid so again this is
+another filter that works quite well on
+some time frames let me turn that off
+and we'll move on to our candle settings
+these are mostly self-explanatory and
+have information tool tooltips so i'm
+not going to go into too much detail but
+we can set the max candle size
+based on the atr so if the candle size
+is greater than 2.5 times the current
+atr it is invalidated by default but you
+can tweak that here
+the mass rejection wick size for
+engulfing candles
+determines how large the
+rejection wick on the engulfing candle
+can be here's a good example
+so the rejection week for an engulfing
+candle is the opposite wick it's not the
+rejection wick to the downside that
+would make it a hammer candle the
+rejection wick is
+in the opposite direction of the
+engulfing candle so here we have a
+bullish engulfing candle that engulfs
+the body of the previous candle but the
+rejection wick is quite large
+if we were to turn the
+max rejection width size to 1 that means
+that the rejection weight cannot be
+greater than the size of the candle body
+so that trade gets invalidated there
+that's just a filter that can enhance
+the accuracy of the trade
+the trading setups on some markets and
+time frames by default it's disabled and
+set to zero
+next we have our star and hammer close
+if i turn on hammers and stars i'll show
+you what that means so here's a hammer
+candle right here
+the
+hammer and star close percentage is
+where the body must open and close
+in relation to the candle size so if i
+bring out my fibonacci tool this is the
+best way to visualize this and i drag
+from the low of this bar to the high if
+i set it to 33.3 for example so if i
+added 3 3 on the end of
+this number
+that now means that in order for a
+hammer candle to be considered valid the
+body must open
+and close
+above the 33.3 percent
+high
+so the upper third of the total candle
+body
+or candle size so for example if you set
+this to 618 then the
+hammer candle could look something like
+this with a small wick on the bottom
+so tweaking that number will change
+how the script detects hammers and stars
+we also have the hammer and star minimum
+size as a multiplier of the atr so by
+default the hammer and star candle must
+be at least 10 percent of the current
+atr this setting here just stops the
+script from detecting tiny hammers and
+stars so a candle that looks like this
+in relation to recent price action would
+be too small to be considered a hammer
+and so that filter there filters out any
+tiny hammers and stars then we have our
+doji size remember i said that doji
+candles must be a maximum five percent
+of the total candle size you can tweak
+that here then we have the max doji wick
+size versus the other wick so if one
+wick is greater than two times the size
+of the other wick then the doji is
+considered invalid because that means it
+looks something like this
+and this
+is not considered a valid doji by the
+script we need to see something more
+like
+this where the body is in the middle of
+the candle and represents an indecision
+pattern so this setting here can tweak
+how the script detects that next up we
+have our exit settings so this is for
+governing our exit reasons so i'll jump
+ahead to the exit reasons and come back
+to these settings which govern the
+parameters of our exits the first exit
+reason we have here is use atr trailing
+stop so all of these settings here will
+overwrite your fixed take profit so if i
+turn on use atr trailing stop reset my
+chart let's turn off hammer candles and
+turn on engulfing candles
+and now here's an example of a trailing
+stop
+trade if i zoom out a bit this is
+probably a better example
+so you can see that the script is still
+detecting pull back trades below the 50
+moving average as usual we get a bearish
+engulfing candle here that meets the
+rules of the strategy one atr stop above
+the high
+one atr one to one target when this bar
+here hits our profit target
+the stop loss begins to trail our red
+line here is our trailing stop loss and
+it is trailing one atr above
+the recent swing high so as price moves
+down the atr moves down with it to lock
+in profits
+and it only moves into profit that's
+what a trailing stop is it's designed to
+lock in profits in a trending market and
+then eventually our trade gets stopped
+out for 99 pips here on a 29 pip stop
+which if you look here
+is a 3.38 risk reward trade you can
+ignore the max adverse excursion but the
+max favorable excursion was 129 pips so
+we gave up a few pips here of profit but
+we made a lot more than our one-to-one
+target
+using this trailing stop method so
+that's one exit reason you can use with
+the script but before we move on to the
+others you do have some options here for
+the trailing stop this is your atr
+trailing stop multiplier so by default
+it's a one atr but you can adjust this
+just like the regular
+atr stop loss
+setting
+then you have your trailing stop source
+by default it's set to high or low but
+you could set it to the closing price if
+you wanted to and that would change how
+the script trails the stop-loss so now
+we're trailing from the closing price
+and you can see that on this trade here
+we got stopped out a bit prematurely so
+there's pros and cons to all
+exit approaches in any strategy
+but the other option here is the open
+so if we set that to open then
+we can see how that affects this
+particular trade
+and you can see that we have a much
+tighter stop loss here but this time the
+trade
+played out more profitably so that's
+something you can play around with so
+that's the atr trailing stop exit reason
+next up we have the rsi engulfing exit
+and that's where the rsi settings here
+come into play so by default we're
+operating on a 7 period with an 80 and
+20 overbought and oversold threshold so
+if i throw on the
+relative strength index
+onto my chart and i change the settings
+to the same as the script there we go
+you can see that the rsi went oversold
+here so we entered short as we normally
+do with the one atr stop as soon as our
+one to one target was hit by price
+the script began looking for an
+engulfing candle that occurred while the
+rsi was oversold and so we exited here
+for 91 pips
+that's what the rsi engulfing exit
+reason does
+the rsi exhaustion exit is exactly the
+same except that it doesn't wait for an
+engulfing candle it just waits for an
+opposite colored candle so in this case
+we're short
+so as soon as we got a green candle
+while the rsi was oversold if i hover
+over
+the candle proceeding this green candle
+and we look down here you can see that
+the rsi was just slightly oversold at 19
+and so as soon as we got a green candle
+on that next bar the script exited our
+trade so that's a slightly more
+conservative exit reason than the
+engulfing exit the engulfing exit will
+allow you to stay in trades longer but
+sometimes you might not get the exit
+reason and
+so it's considered a more aggressive
+approach to managing your positions the
+next exit reason we have is the higher
+close lower close exit reason so if i
+turn that on and wait for the script to
+load
+same deal we enter short here with the
+one atr stop and our one to one target
+is hit on this bar and then the script
+begins searching for a bar that closes
+higher than the previous bar which
+happened right here on this green bar
+and we exited for 91 pips and it's
+obviously the same for long trades but
+in the opposite direction we're looking
+for a lower close
+candle that closes lower than the
+previous bar and so this is just an
+approach that allows you to stay in
+moves a little bit longer and is
+definitely more suited to markets with
+strong momentum
+the next exit reason is the same as this
+one the higher close level close except
+that we need two in a row so high closed
+level closed times two
+means that we need
+two bars to close higher than the
+previous bar in a row so that's just a
+slightly more aggressive
+exit reason and it's more aggressive
+because it means you are likely to stay
+in the trade longer than if you're just
+waiting for a single higher close candle
+and so that's for traders who want to
+shoot for a larger risk reward profile
+and don't mind
+withstanding a little bit of pain
+in exchange for the chance that the
+market continues lower after that single
+higher close candle now the second last
+exit reason on this list is the ema
+breach exit so if i turn that one on
+this one's pretty self-explanatory once
+you see it in action
+so same entry reason as always bearish
+engulfing candle one atr stop once our
+one to one target is hit the
+script begins monitoring or waiting for
+price action to break and close above
+our
+main moving average
+so in this case we've got the 50 ema
+here as soon as this candle closed above
+the 50 ema the script exited our trade
+for 88 pips so this is more of a trend
+following technique for traders who
+prefer trend following rather than trend
+continuation where you might be a little
+more conservative with your profit
+taking this allows you to stay in moves
+longer and you get a
+much higher risk reward profile but a
+much lower win rate and so it really
+depends on how you like to trade whether
+or not you would use that exit reason
+personally i'm not a fan of it because i
+like to take my profit more
+conservatively but i included the option
+here for those of you who prefer the
+trend following approach to trading and
+then the final exit reason here is use
+pullback origin exit so if i turn that
+on
+and we zoom in on this trade here is a
+good example
+i don't know if you noticed that but if
+you look closely you can see that our
+profit target has extended slightly we
+are now placing our profit target at the
+bodies of the pullback origin
+and so we have our one atr stop as usual
+from our
+entry to our high one atr above that is
+our stop and then our profit target is
+set at the pullback origin now one
+problem with this approach is that the
+script does not discriminate between
+pullback origins you can see that this
+setup here has a three pip target and a
+29 pip stop personally i'm not a fan of
+inverse risk reward profiles i don't
+like risking more when i'm wrong than i
+make when i'm right i prefer the other
+way around i prefer to make more money
+when i'm right than i lose when i'm
+wrong but for those of you who prefer a
+much higher win rate this approach is
+extremely um has an extremely high win
+rate and decent returns but we have a
+0.4 risk reward profile so we're only
+making 40 cents on the dollar for every
+time we take a trade and it wins versus
+when it loses so that's not ideal but if
+you still want to use this approach of
+taking profit at the pullback origin
+after your entry but you don't want an
+inverse risk reward profile you can use
+the minimum risk reward to pull back
+origin filter so if i set this to one
+all of these trades will disappear
+because the risk reward profile to the
+pullback origin is less than one to one
+so if i come back to this trade here
+that we first looked at if i throw on my
+profit tool my p l tool here
+my short p l tool from our entry
+um down to our target you can see that
+we have about a 1.2
+risk reward profile from our entry to
+the pullback origin so the script
+considers this setup valid there are
+markets and time frames that this is
+profitable on it's not profitable on
+this particular market and time frame
+but i included the option because it is
+a viable way of trading pullbacks if
+that's how you like to do it so that's
+it for our exit reasons i definitely
+encourage you to play around with these
+do some back testing and see what works
+best on the markets and time frames you
+like to trade assuming you're not
+comfortable with just a fixed target
+like the default settings but now let's
+move on to our filters so here is our
+time filters section this is pretty
+self-explanatory by default we are
+trading on all days but if you want to
+turn any of these days off you can so
+today is friday here in australia if i
+click on friday and turn that off
+and reset my chart
+all of the price action that occurs on
+friday
+will be red now it's still early in the
+morning here
+um and the time is based on the exchange
+and the exchange that i'm trading
+is a foreign exchange market and so it's
+still thursday night in america
+and so it's not drawing the filter onto
+my chart but here you can see
+that
+last week this was last friday the
+script turned red
+and it does not take any trades that
+occur
+within this red period
+so for example here was a valid trade
+if i turn friday back on and click ok
+this trade comes back so that's pretty
+self-explanatory
+some days uh more profitable than others
+and some days are not profitable at all
+for example mondays tend to be pretty
+slow for me so i usually turn mondays
+off on intraday strategies but by
+default all of these days are enabled
+next we have our use time session filter
+so this applies to all days and is just
+a time session
+so if you enable this whatever time
+session you pick here
+will turn red on your chart and the
+script will ignore any trades between
+that time session so for example if i
+don't want to trade from 6 a.m to 10 a.m
+i can set that up like that and now any
+of these red zones are ignored by the
+script and then the final time filter we
+have to work with here is
+our date filters so this is our start
+and end filter so by default it's kind
+of disabled only because i've set the
+start filter so far back if you load up
+a market that has price data that starts
+beyond 2000 the first of january 2000
+then it will ignore any trades before
+that time
+so for example if i set this to start
+filter
+let's say the 1st of january 2021
+and i set the end filter to
+let's do the 10th of october if i zoom
+right out
+um actually let's go to a four hour time
+frame
+here we go so this is the first of
+january 2021
+and any trades that occur before that
+date are ignored by the script and the
+chart turns red
+any trade that occurs after our end date
+the 10th of october is also ignored and
+the chart turns red so those are all of
+our date filters to disable them just
+set this to a
+really far back date and set the end
+filter to a really far away date and
+let's move on to our look back settings
+and miscellaneous settings so the look
+back settings are again self-explanatory
+uh the first is our look back for swing
+highs and lows this is used for our
+trailing stop loss primarily and a few
+other candlestick pattern detection
+techniques
+the script is designed to trade swing
+high patterns so fractal patterns we're
+looking for the tops and bottoms of pull
+backs and so any candle pattern that
+does not meet that criteria is ignored
+and this look back setting can be used
+to tweak how the script searches for
+swing highs and lows and sorry if you
+can hear that in the background it just
+started raining here pretty heavily but
+i need to get through this video
+so i'm going to keep going the second
+look back is our ma breach look back
+this isn't for our exit reasons this is
+for our
+um ema invalidation and what i mean by
+that is
+um
+it's it's for this setting here our
+max candles beyond ma by default we can
+only have one candle maximum close
+beyond the moving average before our
+entry pattern can be detected and
+considered valid this ma breach look
+back period
+here
+is how far back we look for that breach
+so by default we're looking back five
+bars for any moving average breaches
+so here for example here is a trade that
+the script ignored because we had too
+many candles closing below
+the
+moving average over the past five bars
+so that's what our look back settings do
+next we have a miscellaneous setting so
+you can set the atr length this is for
+setting your stop loss you have the
+point allowance setting
+i'll explain what this does i couldn't
+think of a better word for this the tool
+tip here explains it in a little more
+detail what it does but the best way to
+explain what this does is to show you so
+let me go to a market example of what
+this setting does so here i am on pound
+yen on the four hour chart
+and look at this setup here
+this to the naked eye looks like a valid
+engulfing candle setup and this is a
+setup i would trade in my manual
+discretionary trading
+the problem is the script doesn't detect
+this as a valid setup because
+it doesn't technically
+fully engulf the previous candle if i
+zoom right in really really close
+and i put a horizontal line at the close
+of that previous bar this
+green candle here
+opens one point
+above the close of this previous bar and
+so it's not considered a valid engulfing
+candle by the script because um the
+script is dumb
+it only does exactly what i tell it to
+and it doesn't know how to use
+discretion to know when a setup is close
+enough
+and so i added this point allowance
+setting to the script if we come back
+down to that
+and i set that to
+one
+one point
+this setup will now be detected so what
+this setting is doing is it's allowing
+this engulfing candle to be considered
+valid even though it opened one point
+above the close if i set that to two
+points then it would allow a two point
+gap from the close and so on so the
+purpose of this point allowance setting
+is to correct for micro gaps on certain
+data feeds so if you're trading through
+oanda for example
+that brokerage service very very very
+rarely has gaps in its price action just
+from the way its data feed works
+here on global prime
+we do have micro gaps that occur on some
+markets and so that's what that setting
+is for and this setting is disabled by
+default if that's not something you want
+the script to do
+next up we have overwrite new stops and
+targets
+this is purely for back testing if i
+turn this on
+the script is now going to detect i was
+going to overwrite old trade profit
+targets with new trade profit targets
+and stop losses
+so for example here this trade was
+detected here's its take profit but
+before its take profit was hit a new
+trade was detected and so
+this trade was overwritten with this
+trades
+stops and targets
+now our back tester system isn't going
+to be accurate with this these two data
+displays are going to be inaccurate
+because
+the script is not designed to be
+actually traded this way this is purely
+for back testing so if you're going to
+turn that setting on make sure to turn
+these two off
+and the reason i added this is because
+when you're manually back testing
+strategies there may be times when you
+cannot trade maybe you're at work maybe
+you're asleep maybe you're at university
+whatever it is you do
+and you can't take certain trades by
+turning this setting on the script will
+show you all of the valid setups that
+occur regardless of whether or not you
+could have taken it and then you can use
+your discretion during the manual back
+testing process to determine whether or
+not you could have entered certain
+trades but by default that is turned off
+to avoid confusion so
+let me
+turn that off again
+uh the next setting is round stop loss
+size this is purely for display purposes
+just to make back testing easier if i
+move this out of the way and i turn this
+off just keep an eye on our
+labels here now it's showing the exact
+pip amount rounded to two decimal places
+if i turn this on it just rounds it into
+a whole number so that's just purely for
+back testing it makes it easier to enter
+that information into a spreadsheet
+finally we have our use eap stop loss
+algorithm this is the final
+miscellaneous setting what this does is
+it slightly tightens up our stop losses
+so
+this is intended for use on higher time
+frames so if we go to a four hour chart
+here and we'll see if we can find some
+examples
+so here we are on the pound dollar four
+hour chart which has quite a high atr
+this is going to be a good example of
+what the eap stop-loss algorithm does
+if we come back down to it
+and
+i turn it on keep an eye on our
+stop-loss pips
+when i turn this on notice that it
+shrinks a little bit turn it off
+our loss widens a bit turn it back on
+shrinks a bit so the purpose of this eap
+stop-loss algorithm will open up the
+source code to where this is calculated
+so here is the source code for
+calculating the eap stop loss you don't
+need to understand what this code does
+but this is the easiest way i can think
+to
+show you so this eap
+calculation takes in the atr as an input
+and then it checks if the atr is between
+20 and 30 then it returns 20. and then
+this is our stop-loss distance so it
+basically rounds the atr down based on
+certain brackets so the next bracket is
+if the atr is between 30 and 50 then it
+sets the atr to 30 if it's between 50
+and 100 then it sets it to 50. so if the
+distance from our entry to the swing
+high
+was going to be 90 pips then this
+algorithm will shrink that down
+to
+50 pips so we'll only add 50 pips to the
+high instead of 90 pips to the high
+now the purpose of this eap stop loss
+algorithm
+is for trading the pullback strategy the
+way that stephen hart the creator of the
+strategy trades it so if you're an eap
+student if you're a student of stephen
+hart from thetradingchannel.net or his
+youtube channel the trading channel then
+you'll know all about this and i don't
+need to explain it if you are not a
+student of stephen hart's courses i
+would just recommend not using this
+setting because it might be a bit
+confusing but basically this is just a
+way to slightly reduce your stop-loss
+size on average which in turn allows you
+to have a slightly larger position size
+on average and leads to greater profits
+over the long term on certain markets
+and time frames by default this is
+disabled so you don't have to worry
+about it if that confused you and you're
+not interested in using fancy
+stop-loss techniques so let's go back to
+euro dollar and i'll go over the final
+settings here in the ultimate pullback
+indicator so i went over this at the
+start of the video but here is our back
+tester settings this is where you set
+your starting balance and your risk per
+trade for our custom backtester system
+down here so if i wanted to i could set
+this to 100 let's set it to 125
+600 and
+600
+now our starting balance will be
+this number
+and that affects our return
+uh dollar amount and then of course we
+can change our risk per trade for the
+back tester if nine percent is too much
+of a drawdown for this account balance
+you could set it to say 0.5
+per trade and see how that affects your
+return and max drawdown but i'll leave
+these back as they were and we'll look
+at the autoview oanda settings so i'll
+do separate videos on oanda and on pint
+connector but this is where you set up
+your automation settings for using
+autoview
+and you can customize everything here
+your account balance
+your account currency and risk per trade
+all of that stuff and same with pi
+connector here you can
+set your license id your risk per trade
+uh your spread for limit orders things
+like that but again i'll go over this
+i'll go over these settings in more
+detail in a different video because this
+one is already long enough and i'll need
+to show you how to set up these
+services which not everyone will want to
+use and so i'll leave it outside the
+scope of today's settings guide so
+that's basically it for the ultimate
+pullback indicator there's a lot to
+cover there obviously finally before we
+wrap this up i'll just cover the
+ultimate pullback strategy which is a
+companion script to the
+upi the ultimate pullback indicator let
+me reset the settings on both indicators
+there we go they should be pretty much
+identical now
+so the strategy version the main
+advantage of the strategy version is it
+draws the pips straight onto the chart
+so on the indicator version there's a
+limit to how many labels you can have on
+the chart on the strategy version there
+is no limit so this is a great back
+testing tool the strategy version of the
+script is a great back to back testing
+tool
+it makes it really easy to enter this
+data into a spreadsheet all of the
+settings are the same there are some
+settings that are removed from this
+indicator just because they don't make
+sense to be here the ultimate pullback
+indicator version that i was just
+showing you is the preferred version to
+be using it gives slightly more advanced
+information than the trading view back
+tester system does but keep in mind
+there will be slight differences in how
+the scripts perform the back tester
+system in trading view has a couple of
+little quirks that i found really
+difficult to simulate in my own
+indicator code and so for example you
+notice here if i turn on the upi
+we have a 58.85
+win rate over 384 trades if i open up
+the strategy tester we have 387 trades
+and a 58.91
+win rate now the code between these two
+scripts is almost identical certainly
+the
+setup detection
+code is identical and so i don't know
+why the strategy version took three
+extra trades and has a slightly
+different win rate but the metrics are
+close enough
+that i'm not too bothered about that you
+should always do your own manual back
+testing anyway the
+trading view strategy tester is renowned
+for being inaccurate especially on
+certain
+markets and time frames and
+using certain settings with your scripts
+so do not depend on the strategy tester
+to tell whether or not a script is
+profitable do not depend on my inbuilt
+tester either make sure to do your own
+research do your own homework do your
+own testing the purpose of this
+indicator is not to
+shortcut the back testing process and
+make it so that you don't need to do it
+the purpose of this script is to help
+you back test a lot quicker and be more
+efficient about it so the ultimate
+pullback strategy has all the same
+settings here that we just went over
+including pan connector and auto view
+you can automate the strategy version of
+the script if you want to it doesn't
+really matter which script you use to
+set your alerts
+to set your alerts you just select the
+script and the upi has a lot more alert
+settings here
+i'll go over the alerts in a different
+video but here are the
+unique alerts you can set for the
+ultimate pullback indicator if you want
+to trade through a third party like pine
+connector or order view you'll need to
+select any alert function call and put
+in the appropriate web hook that's all
+you need to do in order to automate this
+script it will handle everything else
+for you based on whatever you
+set up in the
+settings menu for these services down
+here and that sums up the user guide for
+this script if you'd like to find more
+information on the ultimate pullback
+indicator including information on how
+to start your one month free trial to
+test out the indicator in depth head to
+upi.theartoftrading.com that'll redirect
+you to my course website where you can
+find more information on my digital
+child my pride and joy the script that i
+have sunk
+hundreds maybe even thousands of hours
+into over the past three years take care
+best of luck with your trading
+i'll speak with you soon
+have a great day

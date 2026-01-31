@@ -1,0 +1,277 @@
+hello and welcome to our YouTube video
+on SQL injection now you may be
+wondering what is SQL injection well let
+us explain SQL injection is a serious
+vulnerability affecting web applications
+where attackers can execute unintended
+code on a server by injecting malicious
+SQL commands into a database query if
+successful an attacker can gain
+unauthorized access to sensitive data or
+even modify it so if you are a web
+developer this is something you must
+take seriously but don't worry in this
+video we will explain how SQL injection
+works why it's so dangerous and how you
+can protect your application from it so
+be sure to watch until the end to learn
+how to safeguard your apps from this
+thread before we begin if you are
+someone who is interested in building a
+career in cyber security by graduating
+from the best universities or a
+professional who only sits to switch
+careers with cyber security while
+learning from the experts then try
+giving a short to Simply learns
+postgraduate program in cyber security
+activity that is in collaboration with
+the modules from MIT schwarzman College
+of Engineering and the course link is
+mentioned in the description box that
+will navigate you to the course page
+where you can find a complete audio of
+the program being offered and if these
+are the types of videos you would like
+to watch then hit the Subscribe button
+like and press the Bell icon to never
+miss on any update and here we go and
+now we'll see the agenda for our
+tutorial starting with we'll first see
+what is SQL injection then we'll see how
+does a SQL injection attack work then
+we'll see what are types of SQL
+injection tags and then we'll see the
+detection and prevention of SQL
+injection index then we'll see some real
+life examples that happen with the SQL
+injections and then we'll have an
+overview of impact of SQL injection
+attacks now we will start with what is
+SQL injection SQL injection is a
+technique used by attackers to
+manipulate a web applications database
+queries by injecting malicious SQL code
+into input Fields attackers can execute
+unauthorized commands and potentially
+gain access to sensitive information
+sequence injection attacks primarily
+Target web applications that use SQL
+databases such as MySQL Oracle or
+Microsoft SQL server and now we will see
+how does a SQL injection attack work so
+to understand how a SQL injection attack
+Works let's consider how a typical SQL
+query functions queries are used to
+retrieve or modify data from a database
+attackers exploit vulnerable input
+Fields by injecting malicious SQL code
+that alters the intended behavior of the
+query and attackers first study the
+targeted database to understand its
+structure and behavior then they craft a
+SQL query that the server interprets as
+a legitimate command for example or one
+equal to 1 that is a queries input field
+an attacker can bypass authentication
+and gain access unauthorized axis and
+SQL injection and tax can also be used
+to delete data manipulatory codes or
+retrieve information from multiple
+database tables using techniques like
+error-based injection Union based
+attacks or inferential SQL injection now
+we'll see an example to understand this
+concept more so consider a website that
+has search feature where users can
+search for products by entering keywords
+the website uses a SQL database to store
+product information in a secure scenario
+the website would take the user's input
+sanitize it and construct a SQL query to
+fetch the relevant products for example
+the query might look like this that is
+Select star from products where name
+like and the entered keyword what they
+want to search so this querying
+retrieves products whose names contain
+the entered keyword however if the
+website is vulnerable to SQL injection
+an attacker can manipulate the input to
+execute medicio SQL statements let's say
+the attacker wants to retrieve all
+products from the database regardless of
+the entire keyword in the search field
+they entered or 1 equal to 1 hyphen
+hyphen the input manipulates the SQL
+query and this query becomes this that
+is Select star from products where name
+like Ampersand and then or 1 equal to 1
+hyphen hyphen percent in this case the
+attacker uses the single code to close
+the existing string followed by or 1
+equal to 1 hyphen hyphen to inject a new
+condition that is always true the
+semicolon is used to terminate the
+previous statement and the double
+hyphens are used to comment out the
+remaining portion of the original query
+as a result the modified query
+effectively becomes that you can see on
+the screen and the condition 1 equal to
+1 is always true so the query retrieves
+all products from the database
+regardless of the keyword and this
+example demonstrates how an attacker can
+export a vulnerable SQL injection point
+to modify the SQL queries logic and
+retrieve unintended data remember this
+example is simplified for educational
+purposes and real world SQL injection
+attacks can be more sophisticated it's
+crucial to secure web applications
+against SQL injection vulnerabilities to
+prevent unauthorized access and data
+breaches now we'll see types of SQL
+injection attacks so there are different
+types of SQL injection attacks that
+attackers can employ let's explore a few
+of them the first we will explore is
+inbend SQL I I is injection here that is
+in-band SQL injection so this type
+includes error based and Union based
+attacks where attackers use the same
+channel to launch Channel attack and
+collect the results and the next is
+inferential SQL injection that is also
+known as blind SQL injection this type
+involves sending data payloads to the
+database server to observe its response
+without directly seeing the results it
+can be either Boolean based or time
+based and the next is out of band SQL
+injection in cases where infant SQL
+injection is not possible attackers
+leverage other channels such as DNS or
+HTTP request to retrieve data from the
+database now we'll see detecting and
+preventing SQL injection attacks so
+detecting and preventing SQL injection
+attacks is crucial to safeguarding web
+applications here are some preventive
+measures so the first measure is train
+employees own preventive methods that is
+educate your ID teams including
+developers and system administrators on
+SQL injection attack vectors and
+prevention techniques next we could do
+is Implement input validation and
+parameterized queries validate and
+filter user input using an allow list
+approach and use parameterized queries
+or prepaid statements to separate SQL
+code from user input that will not allow
+any malicious hacker to enter any SQL
+code into the input method and the next
+is regular security scans perform
+regular security scans to identify and
+address potential vulnerabilities in web
+applications and the next is keep
+software up to date that is ensure that
+all software including databases and
+programming languages are regularly
+updated to include the latest security
+patches and protections against SQL
+injection and now we'll see some real
+life examples of SQL injection attacks
+so let's take a look at some real life
+examples the first is Tesla
+vulnerability in 2014 security
+researchers discovered a SQL injection
+vulnerability on Tesla's website which
+allowed attackers to gain administrative
+privileges and access user data this was
+one of the SQL injection attacks and the
+next was fortnite vulnerability in 2019
+a SQL injection vulnerability was found
+in fortnite that could have enabled
+attackers to access user accounts the
+vulnerability was promptly patched and
+the nexo's Cisco vulnerability in in
+2018 a SQL injection vulnerability in
+Cisco Prime license manager granted
+attackers shell access to computers with
+the install license management system
+Cisco addressed the issue promptly and
+last not the least we'll see the impact
+of SQL injection attacks so the impact
+of SQL injection attacks can be
+devastating for businesses the first
+could be the unauthorized access to
+sensitive information and resources and
+the next is potential data breaches and
+exposure to confidential data and the
+next is data manipulation or deletion
+and the next is Network infiltration and
+system compromise and the next is blows
+of customer trust and decreased revenue
+and the last is reputational damage and
+long-term consequences for the business
+and that wraps up our discussion on SQL
+injection it's crucial for businesses
+and developers to be aware of this
+vulnerability and take necessary
+precautions to prevent attacks stay
+vigilant keep your software up to date
+it and educate yourself and your team on
+best practices for web application
+security and with that we have reached
+the end of this tutorial let's take a
+minute to hear from our Learners who
+have experienced massive success in
+their careers hi I'm Philip I'm 61 years
+old and last year I obscure was simply
+learns post-graduate program in cyber
+security after working 30 years in the
+IIT sector in various different profiles
+I'm happy to tell you that I was able to
+clear and pass my cissp and ccsp
+certification exams on the first attempt
+after taking the course course I must
+say was packed with practical examples
+it was led by highly skilled certified
+instructors with many companies before
+the security analysts and the architect
+on a contract basis but I needed some
+stability which I got with the job I
+just started with Infosys as a cyber
+security consultant
+happened on the first if you have any
+questions please feel free to comment
+and will have it answered for you as
+soon as possible until next time thank
+you for watching stay safe keep learning
+and get ahead
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

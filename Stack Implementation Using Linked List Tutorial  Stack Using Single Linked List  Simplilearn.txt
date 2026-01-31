@@ -1,0 +1,163 @@
+hello everyone welcome to simply learns
+youtube channel in this session we will
+learn about linked list implementation
+using stack but before we begin let me
+tell you guys that we have daily updates
+on multiple technologies if you are a
+tech geek in a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn
+now without further ado let's get
+started with our session for today
+so first up what exactly is a linked
+list
+so linked list is a dynamic data
+structure it allocates memory
+dynamically the nodes are maintained in
+a non-continuous memory that is in
+linked list we have nodes so each and
+every node is connected via a pointer
+which points to the address of the next
+node
+each node contains next pointer that is
+the next pointer's address which keeps
+the reference to the next node and it
+also has another section which stores
+the data the topmost note always
+contains null in its address
+and this is how a linked list looks like
+so this is the top which is the
+beginning position of the linked list
+and this is the address of the first
+location and this is the next node this
+is the following node then this is the
+last node and this points back to the
+head node so this is how you can
+implement a stack like data structure
+using linked list you can see that we
+can perform stack like operation that is
+the elements are located one above the
+other and the top is pointing to the
+head node
+now let us go through the implementation
+of stack using linked list first we will
+go through traversing of stack using
+linked list
+so displaying each node of the linked
+list representing stack is termed as
+traversing copy the head pointer to the
+temporary pointer and then move
+temporary node through all the nodes and
+display values of each node
+so you can see the animation here will
+explain you how the traversal goes
+through the linked list in real time
+now another linked list implementation
+of stack as the push operation
+so adding a new node to the top of the
+stack is termed as push operation
+generally in stack we have three
+operations that is push pop and peak so
+one of the operation is push where you
+add an element into the stack in the
+same way using linked list you can add a
+new node to the stack and point it as
+the top of the stack or the first
+element which represents the top in
+terms of stack
+now create a node first and allocate a
+new memory to it if the list is empty
+and node consists of data and null is
+the address it will be inserted as the
+first node
+if there is some node already existing
+then add a new node at the beginning to
+avoid violations
+so the following animation will help you
+understand how we add a new element or
+the top element to the stack using
+linked lists
+now followed by the push operation we
+have the pop operation
+so now let us go through the pop
+operation
+removing a node from the top of the
+stack is termed as pop operation
+in the same way we will be eliminating
+the first node from the linked list
+which is termed as top
+underflow condition may occur when you
+try to remove the node if the stack is
+already empty
+in stack node can be removed from one
+end only therefore the value stored in
+the headpointer must be deleted and the
+node must be freed
+followed by the pop operation we have
+the peak operation
+retrieving the topmost node of the
+linked list representing stack without
+removing the linked list node from the
+top of the stack is termed as peak
+operation generally when you're using a
+stack data structure just retrieving the
+value of the top node is called as peak
+operation you're not going to eliminate
+or you're not going to add a new element
+to the top you're just going to copy the
+element or you're just going to retrieve
+the element which is pointed as top this
+operation is called as p
+now in the linked list you can also
+perform this operation of peak
+now with the theory discussed let us
+execute a practical program based on
+stack implementation using linked list
+now on my screen you can see a code
+example using which we will implement
+stack using a linked list now here we
+have the pop operation push operation
+and top and then the main function
+don't worry about the code this
+particular code snippet will be attached
+in the description box below or you can
+also request us and we will have it sent
+to your mail id and you can understand
+the code and try executing in your local
+system now without further ado let's
+directly run the code
+so there you go the code got
+successfully compiled and we have tried
+to add some elements into the stack that
+is a b c and c is being the top most
+element of the stack and that element
+has got popped and followed by that the
+element on the top currently after c
+being popped out is b and the node
+element b got popped again and the only
+element which is present in the stack is
+a and that element is also popped out
+after performing the pop operation and
+now currently the stack is empty you can
+see that we have tried to push the
+elements a b c and also we try to pop
+the elements a b
+now with that we have come to an end of
+this particular tutorial on
+implementation of stack using linked
+list if you have any queries regarding
+the topics covered in this tutorial or
+if you need the code that we have
+executed in this particular tutorial
+then please feel free to write us down
+in the comment section below and we will
+be happy to help you out until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

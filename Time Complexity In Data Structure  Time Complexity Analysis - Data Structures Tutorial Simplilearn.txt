@@ -1,0 +1,600 @@
+space and time complexity can define the
+effectiveness of an algorithm
+while we know there is more than one way
+to solve a problem in programming
+knowing how the algorithm works
+efficiently can add value to the way we
+do programming
+to find the program's effectiveness or
+algorithm knowing how to evaluate them
+using space or time complexity can make
+the program behave in required optimal
+conditions
+doing so makes us an efficient
+programmer
+hey everyone i am pepper khandelwal and
+i welcome you all to our simply learns
+youtube channel
+today we will talk about data structures
+and algorithm complexity
+but before we begin let me tell you guys
+we have our daily updates on multiple
+technologies
+so if you are a tech geek in a
+continuous hunt for the latest
+technological advancements then consider
+getting subscribed to our youtube
+channel and don't forget to hit the bell
+icon to never miss an update from simply
+learn
+now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with the
+discussion on what is complexity
+then we will discuss the big notations
+finally we will wind up this session
+with the discussion on various time
+complexities with examples
+now let's get started with what is
+complexity
+complexity is a measure of how the
+resources
+in this example time fluctuate
+as the problem grows in size
+an algorithm may run quickly and show no
+time difference but when the input size
+rises the program
+may take longer to execute it may become
+sluggish and perform poorly
+next up let's discuss the big o notation
+in theoretical terms bigger notation is
+used to examine performance or
+complexity of an algorithm
+bigger notations examine an algorithm's
+upper bound of performance that is its
+worst case behavior
+bigger notation also considers algorithm
+asymptotic behavior
+which refers to the
+methods performance when the amount of
+the input declines to extreme bank
+computational complexity asymptote big o
+of f measures
+the order of employed resources based on
+the magnitude of the input data that is
+cpu time ram etc
+as you can see in the graph here is line
+graph to represent various complexities
+we started with constant complexity to
+logarithmic
+linear
+square
+and n log n complexities
+now let's have a look at the various
+complexities
+first of
+constant time complexity
+if the method time does not vary and
+remain
+constant as the input size increases the
+algorithm is said to have bigger of 1
+complexity
+the algorithm is not affected by the
+size of the input
+it takes a fixed number of steps to
+complete
+a particular operation and this number
+is independent of the quantity of the
+input data
+as you can see in this code each
+statement represents one
+so when you count all of them it gives
+us a constant amount of four or one
+let's go to code editor and try this
+very good
+let's make a
+function static
+void
+constitution
+in this i will have and
+a is equals to
+100
+and
+b is equals to
+50
+then i will have another end
+sum
+is equals to
+a
+plus
+b
+then i will have
+write
+console
+dot
+bright line
+and then i will print out sub
+now let's go to the main program
+and call this function
+so
+const complex
+this is
+let's save it and run it
+as you can see it is printing 150 which
+is sum of a and b
+now let's get back to our slides
+next up log n complexity
+a method with complexity of big off for
+input size n where n is really big
+divides the issue into little bits for
+each iteration login
+it takes login steps to execute a
+particular operation
+on n items
+where the base of the logarithm is
+usually 2
+because the base of the logarithm is not
+critical
+to the order of the operation count it
+is frequently ignored
+to explain this further
+typically a binary search function has
+a figure of login complexity
+we can try this function in a code
+editor
+let's start with
+function creation
+so static
+and research
+its argument as end
+with braces
+space
+arr
+comma
+and
+x
+then in the definition i will have and
+l is equals to 0
+and r is equals to
+length of l
+minus
+1
+now
+we will write a while loop
+l
+is less than equals to r
+we will have
+end
+m
+is equals to
+l
+plus
+embraces r minus 1
+r minus l
+divided by
+2.
+this amp is a pivot
+now we will check if x is present at the
+mid
+so to do that we will have
+if
+addresses
+arr embraces m
+is equals to
+x
+we have returned
+m
+this will only return m
+if it is at mid
+now let's say if x is greater than then
+we should ignore the left half
+so if
+arr
+director
+m
+is less than
+x
+then
+l
+will be equals to
+m plus
+1
+now
+here we have we have increased our lower
+bound to mid plus one
+so that it the scope will shift from the
+left hand side of the mid to the right
+hand side
+now let's say if x is smaller then we
+should ignore the right half
+so we can write it as
+else
+because that's the only other
+possibility of the left
+counter side
+so now we will have
+r equals to m minus 1
+now we have decreased our upper bound
+from
+whole air array length minus 1
+to mid minus 1
+now let's say if we reach here then the
+element was not present
+then
+we will be returning
+-1
+this while loop will
+loop around this code until it finds the
+element if it doesn't find it then this
+will return -1
+now let's write the main block
+let's define an array
+and
+arr
+is equals to
+2 comma 3 comma 5 comma 7
+comma 11
+comma 30.
+let's have another variable end n
+which will store
+the length of the array
+then end
+x
+is equals
+to 7
+this will be the number which we have to
+find
+so now
+end
+res is equals to
+b search
+a
+rr comma
+x
+now
+if
+rest
+is equals to
+minus 1
+that is we didn't form
+the element so it will print
+console
+dot write line
+element
+now let's say we found it
+then else
+we will have console
+dot write line
+element
+found
+at
+plus
+index
+plus
+this
+let's save it
+and run it
+as you can see it found the element at
+index 3
+since our element was 7 so it should be
+at 0
+1 2 and the 3.
+now let's get back to our slides
+next up is linear complexity
+when an algorithm executes n steps for
+an input of size n
+where n is a very large number
+then the time consumed by the process
+changes
+linearly as the input size rises
+the algorithm is said to have a bigger
+off and complexity
+to execute an operation on n items it
+takes about the same number of steps as
+the number of elements
+linear complexity denotes a relationship
+between the number of components and the
+number of steps
+here is a simple program where we are
+using a simple forage
+for each to represent a loop
+a typical loop will have an end
+complexity or a linear time complexity
+let's try it in a coordinator
+if getting your learning started is half
+the battle what if you could do that for
+free visit skill up by simply learn
+click on the link in the description to
+know more
+let's start
+with the string
+places
+food
+which is equals to
+ingress
+in solutions
+first element
+as
+i
+comma
+sandwich
+pizza
+now
+let's write before each code
+where in argument i will write trend
+i
+in input
+and then we will write console
+dot
+right
+line
+then
+i
+let's save it
+and run it
+it should print out each and every
+element and as you can see it is
+printing out by soup sandwich pizza
+and juice
+let's get back to ourselves
+next up we have n log n complexity
+an algorithm with a complexity of big o
+of input size n where n is a really big
+number
+it divides the problem into little
+chunks for each invocation
+then takes each of the smallest bit and
+stitches them back together for n log n
+complexity
+to execute a given operation on n items
+it takes and login
+steps typically a quick sort algorithm
+shows the
+properties of bigger off and login
+complexity
+let's write up a code to explain
+quicksort
+let's start with a simple
+function static
+public
+and
+partition
+where arguments will be
+end
+arr
+comma
+and
+left
+comma
+and
+right
+then we will define
+a variable and
+pivot
+then this pivot
+will have
+array
+at left
+then while
+it's true
+i will have another while loop
+array
+at left
+it's less than
+pivot
+then we will have
+left plus plus
+in case
+while
+arr
+at right
+is greater than pivot
+and we will have right
+minus minus
+now if
+left
+is less than right
+then
+temp
+will have
+arr
+at right
+arr
+write
+will have value
+of
+arr at left
+and
+arr
+left
+will have the value
+basically we are only switching these
+values
+else
+we will return
+right
+then we will have
+another function
+static
+public
+void
+that is quick sort
+with argument as and
+traces
+arr
+comma
+and
+left
+comma
+and
+right
+i will have and pivot
+then f
+left
+is
+less than right
+then
+we will have
+pivot
+is equals to
+partition
+with
+arr
+from a left
+comma
+right
+as argument
+now if
+pivot
+is greater than one
+then
+we will call quicksort
+with
+arr comma
+left
+comma
+pivot
+minus one
+or
+if
+pivot
+plus 1
+is less than right
+then
+we will call quick sort
+with the argument as
+the same array comma
+pivot
+plus one
+comma
+right
+now let's come back to our main block
+let's start
+with writing
+and
+an array
+equals to
+let's take values as 56
+21
+59
+65
+58
+one 100
+32
+6
+and 9.
+then let's have another variables as n n
+equals to 10
+comma
+i
+then we will have console
+dot light line
+and print
+quick sort
+then a console line
+dot write lines
+let's print the initial error
+initial
+array
+so for that we will write a whole loop
+i is equals to
+zero i less than n
+i plus plus
+so console
+dot guidelines
+arr
+at ith location
+plus
+space
+then
+let's use quicksort
+for
+array
+from
+zeroth location
+to
+9
+this will sort the array
+so now console
+dot right line
+sorted error
+another hold
+with
+i is equals to 0
+to i less than n
+to
+i plus plus
+then we have our
+console dot right
+array
+at i
+plus
+space
+let's save it
+and run it
+as you can see it is first printing the
+initial array then it is sorting the
+array
+now let's get back to our slides
+next up is quadratic complexity
+a method for input size n where n is a
+very large number
+executes almost double
+r n squared the steps
+and the algorithms time changes
+the complexity of method is stated to
+rise quadratically as the input size
+increases from n square
+for a particular operation it takes the
+order of n square steps where n is the
+size of the input when the number of
+steps is proportional to the amount of
+input data then we get a quadratic
+complexity
+here is a simple program of a nested
+loops
+which in turns gives us the n square
+complexity
+let's try this in a code editor
+let's start with the nested loops
+so for loop
+and
+i is equals to zero
+i
+less than four
+i plus plus
+then we have another nested for loop
+follow
+and
+j
+is equals to 1.
+then j
+is less than
+i
+the j plus plus
+basically this is letting us to run this
+loop only three times
+so
+let's have a console
+dot write line
+let's write subscribe
+to simply
+let's save it and run it
+let me clear the logs
+as you can see it is printing it three
+times
+let's get back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

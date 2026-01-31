@@ -1,0 +1,265 @@
+during the process of assigning the
+network addresses for each of the device
+in a network system the use of ip
+addresses becomes too massive and leads
+to the wastage of network addresses
+in today's topic we will learn about a
+network concept that plays an important
+role in overcoming such a situation
+hi guys and welcome to yet another
+interesting video by simply learn but
+before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+now without further ado let's take a
+look at the agenda for today's topic
+in the beginning we will learn about
+what is submitting
+then continue with what are class
+addresses and subnet mask
+characteristics of submitting
+then see some of the benefits of using
+submitting process
+and lastly the drawbacks of using
+submitting
+let's begin
+the first heading is what is subnetting
+the process of subnetting is to divide
+the network into smaller network paths
+this allows the system to have better
+connectivity in the system it also
+increases the security measures for the
+network against hacking attempts and
+also maintains an efficient flow of
+network traffic
+the smaller divided units of the network
+are known as sub networks
+taking an example of an ip address
+with slash 24 representing the subnet
+mask can be divided into two sub
+networks of slash 25 subnet mask
+which can further be divided into
+smaller sub networks
+now that we understand what is
+subnetting let's move on to class
+addresses and subnet mask
+firstly let's begin with class addresses
+to better understand the submitting
+process we need some information
+regarding different classes used in ip
+address
+where the first class is class a
+with the range of 0 to 127
+network bits as slash 8
+then we have class p with the range of
+128 to 191
+with network bits as 16
+and lastly we have class c
+with network range of 192 to 223
+with network bits as 24.
+the network bits representing each class
+are very important when making subnets
+of a particular ip address
+let's see how they do so
+for this we'll be representing each
+class in binary format for class a we
+have 1
+for 8 bits
+for class b 16 bits and class c 24 bits
+moving on we will see what exactly is
+the subnet mask
+to better define the sub networks in the
+system we require the use of a subnet
+mask
+that is the subnet mask is a way to
+differentiate between the portion of an
+ip address that represents the network
+address id and the host network id
+in this
+let's see the default subnet mask for
+each of the class
+for class a we have 255.0.0.0
+for class b we have 255.255.0.0
+whereas for class c we have 255.25
+to better understand this let's take a
+look at the classes individually
+the network id part is the one that
+represents the binary digit 1 whereas
+host id represents binary digit 0.
+that means for class a we have 8-bit
+cells network id and the remaining bits
+as host id
+by looking at the host id we can see
+that the network addresses that are
+available for the host is the largest in
+the class a
+whereas for class b we have 16 bits for
+network id and the remaining for host id
+where we can see the remaining part for
+the host id is lesser than class a that
+means
+class b can assign network ids for a
+medium level company
+and lastly for class c we have 24 bits
+as network id and the remaining for host
+id from this we can see that the host id
+used for class c is the lowest that
+means only smaller division companies
+can use class c
+moving on let's take a look at the
+characteristics of the subnetting
+process
+first is the network id which represent
+the first ip address in each subnet
+block then we have broadcast id which
+indicates the last ip address of the sub
+network block
+moving on we have first host id which is
+the immediate first ip address after the
+network id
+then we have
+last host id as the name suggests it
+defines the ip address before the
+broadcast id
+continuing we have
+next network id
+this defines the network id of the next
+subnet block
+then we have the total number of ip
+addresses
+in the sub network block and lastly we
+have subnet mask or
+which represents the network id and the
+host id part in an ip address
+to better understand all the attributes
+of the subnetting
+let's take a look at an example
+in this example we are assuming an ip
+address 192.168.0
+point x with a subnet mask of 24.
+for this ip address we have divided it
+into four parts that represent slash 25
+slash 27 slash 27 and last part as slash
+26
+now let's find out the details that
+means the attributes for the sub network
+slash 25.
+the first attribute is
+the number of ip addresses
+going by the table
+we have 0 to 256 addresses in a single
+block
+but in this slash 25 represent only 0 to
+128
+that means the total number of addresses
+in slash 25 subnet block is
+128.
+moving on we'll find out subnet mask or
+citer
+that is the default subnet mask of class
+c
+which i have taken reference from the
+subnet table which was explained in the
+earlier slide
+which is 255.255.
+then we have the network id
+which represents the topmost network
+address in the sub network block in our
+case it is 192.168.0.0
+then we have broadcast id which is the
+last ip address in any sub network block
+in our case it is 192.168.0.1
+moving on the network id and the
+broadcast id addresses cannot be
+assigned to any network device in the
+network
+because the network id is used to
+identify the sub network block in a
+network
+along with broadcast id which is used to
+communicate with any of the host that is
+connected to the sub network block
+that also means that the total number of
+usable
+network id addresses in a network block
+is total number of ip addresses minus 2
+that represents network id and broadcast
+id
+that would be
+128 minus 2 and we get the value 126
+which represents the total number of ip
+addresses that are usable
+moving on
+the next attribute is first host id
+that means
+the first id after the network id which
+is 192.168.0.1
+then we have the last host id
+which is 192.168
+which is just before the broadcast id
+and lastly the next network id
+which is 192.168.0
+point
+now that we are clear about all the
+characteristics of our sub network how
+about a practice round for everyone to
+find all the characteristics for the sub
+network block slash 27 subnet mask
+you can give your answers in the comment
+section
+let's move on to the benefits of using
+subnetting
+where the first benefit is enhanced
+network efficiency
+through the use of applications of
+subnetting we can share data to not only
+a specific portion of the network model
+rather than broadcasting to the whole
+network causing unnecessary traffic in
+the channel as shown in the example
+over here we see four different host and
+if we want to share a specific data put
+only two of the host we can subnet them
+into specific parts
+through this the router will only send
+data to the specific portion of a sub
+network rather than broadcasting to the
+whole network channel this will prevent
+network traffic
+moving on the other benefit of using
+subnetting process is
+network security
+separating also provides protection to
+an extent against any hacking attempts
+made on the network model
+due to the complexity of the sub
+networks as presented in the example
+during the hacking attempt if we can
+identify how the virus attacks the
+network model we can prevent it from
+attacking all the sub networks by
+compromising a single or two of them and
+preventing the remaining sub networks
+let's move on to the drawbacks of using
+subnetting process
+the very first drawback of using the
+subnetting process is it makes the
+network model much more complex
+which in turns affects the maintenance
+and efficiency
+then we have the unused ip addresses
+which are left over
+from applying the network model in a sub
+network process
+and lastly we have the low efficiency
+use of hardware devices
+if the hardware devices such as router
+or switch is used are of low efficiency
+the performance of the sub network is
+also decreased
+with this we have reached the end of the
+session if you have any questions
+regarding the topic you can ask them in
+the comment section thank you for
+watching

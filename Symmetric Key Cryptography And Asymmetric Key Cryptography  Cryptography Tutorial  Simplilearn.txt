@@ -1,0 +1,610 @@
+in today's world where working online is
+the norm and every aspect of our
+personal lives being on the internet is
+standard it is imperative that we
+protect this flow of information
+in a single browser request to a
+shopping website a search parameter hops
+across multiple services around the
+world taking into account a location
+country currency and a browser history
+as well it's no surprise that we can get
+lower rates while booking flights if we
+browse in the web browser incognito or
+the private mode a major portion of
+today's internet usage is the ability to
+send and receive messages on the air
+chat messaging applications like
+whatsapp telegram signal and many other
+transfer data over the internet
+including our private images videos and
+notes
+in spite of repeated assurances there is
+always a point of failure in the chain
+of communication
+a dedicated hacker will only need a
+sliver of information to be able to
+crack into this channel and intercept
+all the communication between users
+this is where encryption comes into play
+there are two types of encryptions both
+of which have the advantages and
+disadvantages
+symmetric encryption and asymmetric
+encryption are both used extensively in
+the cyber security industry so covering
+both of these topics is of utmost
+importance
+let's start by learning about encryption
+in general
+we're going to take a small recap on
+cryptography and understand the types of
+cryptography and our focus for the day
+but then dive into symmetrically
+cryptography and its working we learn
+about the terminology behind private key
+cryptography we learn the type of
+ciphers being used today and the
+advantages of using symmetric key
+cryptography
+let's have a small recap before we move
+ahead
+cryptography is the science of
+encryption and decryption of data to
+prevent unauthorized access
+encryption is the process of making the
+plain text unreadable to any third party
+which generates a cipher text
+decryption of process of reversing the
+encrypted text back to its original
+readable format that has the plain text
+as you can see in the image the plain
+text in the example is the word study
+the sender uses an encryption key to
+convert the plain text into ciphertext
+which will be unreadable to the people
+who don't have the decryption key the
+cipher text can be a combination of
+random alphanumeric characters
+it is then sent directly to the receiver
+who then converts the ciphertext back to
+the plain text that is the word study
+using a decryption key depending on the
+type of cryptography being used the
+decryption key can be the same key used
+for the encryption or it can be
+completely different
+there are two types of encryption in
+cryptography
+symmetric key cryptography
+and asymmetric key cryptography
+both of these categories have their pros
+and cons and differ only by the
+implementation
+today we are going to focus exclusively
+on symmetric key cryptography
+let us have a look at its applications
+in order to understand its importance
+better
+this variant of cryptography is
+primarily used in banking applications
+where personally identifiable
+information needs to be encrypted
+with so many aspects of banking moving
+on to the internet having a reliable
+safety net is crucial
+symmetric cryptography helps in
+detecting bank fraud and boosts the
+security index of these payment gateways
+in general
+they are also helpful in protecting data
+that is not in transit and dress on
+servers and data centers
+these centers house a massive amount of
+data that needs to be encrypted with a
+fast and efficient algorithm so that
+when the data needs to be recalled by
+the respective service there is the
+assurance of minor to no delay
+while browsing the internet we need
+symmetric encryption to browse secure
+https websites so that we get an
+all-around protection it plays a
+significant role in verifying website
+server authenticity exchanging the
+necessary encryption keys required and
+generating a session using those keys to
+ensure maximum security
+this helps us in preventing the rather
+insecure hdp website format
+so let us understand how symmetric key
+cryptography works first before moving
+on to the specific algorithms
+symmetric key cryptography relies on a
+single key for the encryption and
+decryption of information
+both the sender and receiver of the
+message need to have a pre-shared secret
+key that they will use to convert the
+plain text into ciphertext and vice
+versa
+as you can see in the image the key used
+for encryption is the same key needed
+for decrypting the message at the other
+end the secret key shouldn't be sent
+along with the cipher text to the
+receiver because that would defeat the
+entire purpose of using cryptography
+key exchange can be done beforehand
+using other algorithms like the
+diffie-hellman key exchange protocol for
+example
+for example if paul wants to send a
+simple message to jane they need to have
+a single encryption key that both of
+them must keep secret to prevent
+snooping on by malicious actors
+it can be generated by either one of
+them but must belong to both of them
+before the messages start flowing
+suppose the message i am ready is
+converted into cipher text using a
+specific substitution cipher by paul in
+that case jane must also be aware of the
+substitution shift to decrypt the
+ciphertext once it reaches her
+irrespective of the scenario where
+someone manages to grab the ciphertext
+mid-transit to try and read the message
+not having the secret key renders
+everyone helpless looking to snope in
+the symmetric key algorithms like the
+data encryption standard have been in
+use since the 1970s while the popular
+ones like the ees have become the
+industry standard today
+with the entire architecture of
+symmetric cryptography depending on the
+single key being used you can understand
+why it's of paramount importance to keep
+it secret on all locations
+the side effect of having a single key
+for the encryption and decryption is it
+becomes a single point of failure anyone
+who gets their hand on it can read all
+the encrypted messages and do so mainly
+without the knowledge of the sender and
+the receiver
+so it is the priority to keep the
+encryption and decryption key private at
+all times
+should it fall into the wrong hands the
+third party can send messages to either
+the sender or the receiver using the
+same key to encrypt the message
+upon receiving the message and
+decrypting it with the key it is
+impossible to guess its origin
+if the sender somehow transmits the
+secret key along with the cipher text
+anyone can intercept the package and
+access the information
+consequently this encryption category is
+termed private key cryptography since a
+big part of the data's integrity is
+riding on the promise that the users can
+keep the key secret this terminology
+contrasts with asymmetric key
+cryptography which is called public key
+cryptography because it has two
+different keys at play one of which is
+public
+provided we managed to keep the key
+secret we still have to choose what kind
+of ciphers we want to use to encrypt
+this information
+in symmetric key cryptography there are
+broadly two categories of ciphers that
+we can employ let us have a look
+stream ciphers are the algorithms that
+encode basic information one bit at a
+time
+it can change depending on the algorithm
+being used but usually it's relies on a
+single bit or byte to do the encryption
+this is the relatively quicker
+alternative considering the algorithm
+doesn't have to deal with blocks of data
+at a single time
+every piece of data that goes into the
+encryption can and needs to be converted
+into binary format in stream ciphers
+each binary digit is encrypted one after
+the other
+the most popular ones are the rc4 salsa
+and panama
+the binary data is passed through an
+encryption key which is a randomly
+generated bit stream
+upon passing it through we receive the
+ciphertext that can be transferred to
+the receiver without fear of
+man-in-the-middle attacks
+the binary data can be passed through an
+algorithmic function
+it can have either x or operations as it
+is most of the time or any other
+mathematical calculations that have the
+singular purpose of scrambling the data
+the encryption key is generated using
+the random bitstream generator and it
+acts as a supplement in the algorithmic
+function the output is in binary form
+which is then converted into the decimal
+or hexadecimal format to give our final
+ciphertext
+on the other hand block ciphers dissect
+the raw information into chunks of data
+of fixed size
+the size of these blocks depends on the
+exact cipher being used a 128 bit block
+cipher will break the plain text into
+blocks of 128 bit each and encrypt those
+blocks instead of a single digit
+once these blocks are encrypted
+individually they are chained together
+to form a final cipher text
+block ciphers are much slower but they
+are more tamper-proof and are used in
+some of the most widely used algorithms
+employed today
+just like stream ciphers the original
+ciphertext is converted into binary
+format before beginning the process
+once the conversion is complete the
+blocks are passed to the encryption
+algorithm along with the encryption key
+this would provide us
+with the encrypted blocks of binary data
+once these blocks are combined we get a
+final binary string
+this string is then converted into
+hexadecimal format to get a ciphertext
+today the most popular symmetric key
+algorithms like aes des and 3des are all
+block cipher methodology subsets
+with so many factors coming into play
+there are quite a few things symmetrical
+cryptography excels at while falling
+short in some other
+symmetric key cryptography is much
+faster variant when compared to
+asymmetric key cryptography there is
+only one key in play unlike asymmetric
+encryption and this drastically improves
+calculation speed in the encryption and
+decryption
+similarly the performance of symmetric
+encryption is much more efficient under
+similar computational limitations fewer
+calculations help in better memory
+management for the whole system
+bulk amounts of data that need to be
+encrypted are very well suited for
+symmetric algorithms since they are much
+quicker handling large amounts of data
+is simple and easy to use in servers and
+data forms this helps in better latency
+during data recall and fewer mixed
+packets
+thanks to its simple single key
+structure symmetric key cryptography
+algorithms are much easier to set up a
+communication channel with and offer a
+much more straightforward maintenance
+duties once the secret key is
+transmitted to both the sender and
+receiver without any prior mishandling
+the rest of the system aligns easily and
+everyday communications becomes easy and
+secure if the algorithm is applied as
+per the documentation symmetric
+algorithms are very robust and can
+encrypt vast amounts of data with very
+less overhead
+let's meet you
+joe is a journalist who needs to
+communicate with ryan via long distance
+messaging
+due to the critical nature of the
+information people are waiting for any
+message to leave joe's house so that
+they can intercept it
+now joe can easily use symmetric key
+cryptography to send the encrypted data
+so that even if someone intercepts the
+message they cannot understand what it
+says
+but here's the tricky part
+how will joe send the required
+decryption key to ryan
+the sender of the message as well as the
+receiver need to have the same
+decryption key so that they can exchange
+messages otherwise ryan cannot decrypt
+the information even when he receives
+the cipher text if someone intercepts
+the key while transmitting it there is
+no use in employing cryptography since a
+third party can now decode all the
+information easily
+key sharing is a risk that will always
+exist when symmetric key cryptography is
+being used
+thankfully asymmetric key encryption has
+managed to fix this problem
+this is bever from simply learn and
+welcome to this video on asymmetric key
+cryptography
+let's take a look at what we are going
+to learn today
+we begin by explaining what asymmetric
+key cryptography is and how it works
+we take a look at its application and
+uses we understand why it's called
+public key cryptography and then learn a
+little bit about rsa encryption and then
+we learn about the advantages of
+asymmetric key cryptography over
+symmetric key cryptography
+let's understand what asymmetric key
+cryptography is
+asymmetric encryption uses a double
+layer of protection
+there are two different keys at play
+here a private key and a public key a
+public key is used to encrypt the
+information pre-transit and a private
+key is used to decrypt the data post
+transit
+these pair of keys must belong to the
+receiver of the message
+the public keys can be shared via
+messaging blog posts or key servers and
+there are no restrictions
+as you can see in the image the two keys
+are working in the system the sender
+first encrypts the message using the
+receiver's private key after which we
+receive the cipher text the cipher text
+is then transmitted to the receiver
+without any other key on getting the
+ciphertext the receiver uses his private
+key to decrypt it and get the plain text
+back
+there has been no requirement of any key
+exchange throughout this process
+therefore solving the most glaring flaw
+faced in symmetric key cryptography the
+public key known to everyone cannot be
+used to decrypt the message and the
+private key which can decrypt the
+message need not be shared with anyone
+the sender and receiver can exchange
+personal data using the same set of keys
+as often as possible
+to understand this better take the
+analogy of your mailbox
+anyone who wants to send you a letter
+has access to the box and can easily
+share information with you
+in a way you can see the mailbox is
+publicly available to all
+but only you have access to the key that
+can open the mailbox and read the
+letters in it
+this is how the private key comes to
+play
+no one can intercept the message and
+read its contents since it's encrypted
+once the receiver gets its contents he
+can use his private key to decrypt the
+information
+both the public key and the private key
+are generated so they are interlinked
+and you cannot substitute other private
+keys to decrypt the data
+in another example if annis wants to
+send a message to bob
+let's say it reads call me today she
+must use bob's public key while
+encrypting the message
+upon receiving the cipher message bob
+can proceed to use his private key in
+order to decrypt the message and hence
+complete securities attained during
+transmission without any need for
+sharing the key
+since this type of encryption is highly
+secure it has many uses in areas that
+require high confidentiality
+it is used to manage digital signature
+so there is valid proof of a document's
+authenticity
+with so many aspects of business
+transitioning to the digital sphere
+critical documents need to be verified
+before being considered authentic and
+acted upon thanks to asymmetric
+cryptography senders can now sign
+documents with their private keys
+anyone who needs to verify the
+authenticity of such signatures can use
+the sender's public key to decrypt the
+signature since the public and the
+private keys are linked to each other
+mathematically it's impossible to repeat
+this verification with duplicate keys
+document encryption has been made very
+simple by today's standards but the
+background implementation follows a
+similar approach
+in blockchain architecture asymmetry key
+cryptography is used to authorize
+transactions and maintain the system
+thanks to its two key structures changes
+are reflected across the blockchain's
+peer-to-peer network only if it is
+approved from both ends
+along with asymmetric key cryptography's
+tamper-proof architecture its
+non-repudiation characteristic also
+helps in keeping the network stable
+we can also use asymmetric key
+cryptography combined with symmetrical
+cryptography to monitor ssl or tls
+encrypted browsing sessions to make sure
+nobody can steal our personal
+information when accessing banking
+websites or the internet in general
+it plays a significant role in verifying
+websites have authenticity exchanging
+the necessary encryption keys required
+and generating a session using those
+keys to ensure maximum security instead
+of the rather insecure http website
+format
+security parameters differ on a session
+by session basis so the verification
+process is consistent and utterly
+essential to modern data security
+another great use of the asymmetric key
+cryptography structure is transmitting
+keys for symmetric key cryptography with
+the most significant difficulty in
+symmetric encryption being key exchange
+asymmetric keys can help clear the
+shortcoming the original message is
+first encrypted using a symmetric key
+the key used for encrypting the data is
+then converted into the ciphertext using
+the receiver's public key now we have
+two ciphertexts to transmit to the
+receiver
+on receiving both of them the receiver
+uses his private key to decrypt the
+symmetry key he can then use it to
+decrypt the original information on
+getting the key used to encrypt the data
+while this may seem more complicated
+than just asymmetric cryptography alone
+symmetric encryption algorithms are much
+more optimized for vast amounts of data
+on some occasions
+encrypting the key using asymmetric
+algorithms will definitely be more
+memory efficient and secure
+you might remember us discussing why
+symmetric encryption was called private
+key cryptography
+let us understand why asymmetric falls
+under the public key cryptography
+we have two keys at our disposal
+the encryption key is available to
+everyone
+the decryption key is supposed to be
+private
+unlike symmetric key cryptography there
+is no need to share anything privately
+to have an encrypted messaging system to
+put that into perspective we share an
+email address with anyone looking to
+communicate with us it is supposed to be
+public by design so that our email login
+credentials are private and they help in
+preventing any data mishandling since
+there is nothing hidden from the world
+if they want to send us any encrypted
+information this category is called the
+public key cryptography
+there are quite a few algorithms being
+used today that follow the architecture
+of asymmetrical cryptography none more
+famous than the rs encryption
+rac encryption is the most widely used
+encryption or public key encryption
+standard using asymmetric approach
+named after its founders rivest shamir
+and edelman it uses block ciphers to
+obscure the information
+if you are unfamiliar with how block
+ciphers work there are encryption
+algorithms that divide the original data
+into blocks of equal size
+the block sense depends on the exact
+cipher being used once they are broken
+down these blocks are encrypted
+individually and later chained together
+to form the final cipher text
+widely considered to be the most secure
+form of encryption albeit relatively
+slower than symmetric encryption
+algorithms it is widely used in web
+browsing secure identification vpns
+emails and other chat applications
+with so many variables in play there
+must be some advantages that give
+asymmetrically cryptography an edge over
+the traditional symmetric encryption
+methodologies
+let's go through some of them
+there is no need for any reliable key
+sharing channel in asymmetric encryption
+it was an added risk in private key
+cryptography that has been completely
+eliminated in public key architecture
+the key which is made public cannot
+recreate any confidential information
+and the only key that can decrypt
+doesn't need to be shared publicly under
+any circumstance
+we have much more extensive key lengths
+in rsa encryption and other asymmetric
+algorithms like 2048 bits key and
+4096-bit keys
+larger keys are much harder to break
+into via brute force and are much more
+secure
+asymmetric key cryptography can use as a
+proof of authenticity since only the
+rightful owner of the keys can generate
+the messages to be decrypted by the
+private key
+the situation can also be reversed
+encryption is done using a private key
+and decryption is done by the public key
+which would not function if the correct
+private key is not used to generate the
+message hence proving the authenticity
+of the owner
+it also has a tamper protection feature
+where the message cannot be intercepted
+and changed without invalidating the
+private key used to encrypt the data
+consequently the public key cannot
+decrypt the message and it is easy to
+realize the information is not 100
+legitimate when and where the case
+requires
+hope you learn something new today if
+you have any questions regarding this
+video feel free to let us know in the
+comments below and we will get back to
+you as soon as possible
+subscribe to our channel for more videos
+like this and thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,806 @@
+what's up my friends and fellow traders
+welcome back to another video in today's
+video we're going to be diving just a
+little bit deeper into pine connector
+if this is the very first video in this
+series that you've stumbled across make
+sure to go back and watch the previous
+videos in the series uh where i explain
+what pine connector is how to set it up
+and how to test your first alert
+commands but basically
+pine connector is an expert advisor that
+receives your
+trading view alerts and executes trade
+commands
+that you tell it to using the pi
+connector syntax
+in the previous video we went over the
+syntax commands that we have to work
+with
+in today's video this is going to be
+basically a part two of that video
+where we take that information and we
+execute
+these test commands using actual pine
+code
+so i was going to use a profitable
+strategy script
+for today's example but i decided
+against that just because i think it'll
+be a little bit too much information to
+take in in one video
+instead what i'm going to do is we're
+going to create a test
+script that executes these commands in
+code
+and we're going to create it in such a
+way that we can copy and paste that code
+into any script basically and in the
+next video we will work with an actual
+profitable strategy script that i'll
+give you guys
+that we can automate completely automate
+through
+pine connector and metatrader which is
+obviously pretty awesome
+so i want to keep today's video short
+and concise as possible
+let's get started now the actual script
+we're using for today's lesson isn't
+that important
+i've already written out the code and
+tested it to make sure that it works so
+that
+you know we're not wasting our time here
+and it does work
+and so basically i'm just going to walk
+you through what i've done here
+this script is just a really simple test
+strategy all it does is buy
+higher closers and sell or go short for
+lower closes and when that happens
+we set our stop loss at the high or the
+low of the bar
+our target is 10 pips from our entry and
+then we trigger
+an alert and generate the relevant
+syntax to execute our trade
+through pi connector on metatrader so if
+i come up to the chart here and open the
+settings menu for the script this is
+what we have to work with
+we have our license id which you
+obviously need for every alert
+command you send to pi connector we have
+our risk per trade which is either a
+percentage of our account balance or
+a lot size depending on what you've set
+up
+over on your metatrader account or pi
+connector script
+so we have our license id our risk per
+trade parameter
+next up we have our metatrader prefix
+and suffix
+that is your symbol suffix you can see
+here that in my symbols list
+all of my pairs have a dash f after them
+i haven't encountered any prefix
+symbols on any of the brokers i've
+tested this
+script through but i imagine that there
+are prefixes for some markets
+so i've included a prefix option here
+so this dash f here basically gets added
+on to my symbol in this case i'm on
+aussie yen the script would add this
+dash
+f onto the end of my symbol
+in my alert so that metatrader is
+trading the right symbol
+but we'll get to that in a moment i
+don't want to overload you with too much
+information
+the final option we have to work with
+here is using a limit order so if you
+turn this
+off pi connector will just use a market
+order to enter your trade
+if you turn it on then pi connector will
+use a limit order
+at the closing price of the
+setup that we're detecting so let's open
+up the pine editor and go through the
+actual code behind the script so i'm
+going to remove some of this code so
+that we
+can go through everything section by
+section and step by step
+before i move on i should comment out
+the alert so we don't get any errors if
+i save the script this should compile
+without any problems
+nearly the comment
+i'll get rid of the comment for now
+and save that and so basically we just
+have a script now
+that is buying higher closes so if the
+current bar closes higher than the
+previous bar we go long
+and if it closes below the previous low
+we go short
+very simple script it's not profitable
+by any stretch of the imagination but
+that's not the point of today's lesson
+today's lesson is all about this pie
+connector code
+so i'm going to rush through these input
+settings because they're not that
+important you should be able to just
+copy and paste this into your scripts
+there'll be a link below in the video
+description to the source code for this
+script
+basically we need our id our risk
+parameter prefix and suffix and
+limit order boolean most of these inputs
+are strings
+our our license id is a string input
+our prefix and suffix is a string input
+our risk per trade is a float input
+and our use limit order is obviously a
+boolean input
+and then i've just grouped these into pi
+connector settings so that if you copy
+and paste this into a script that
+already has a bunch of settings you'll
+have your own section
+for pine connector and i've added a
+bunch of tool tips just explaining what
+each
+setting does so the next thing we have
+to do
+is generate our correct syntax
+for sending our alerts to pi connector
+so i'm going to rewrite the code i wrote
+earlier and walk you through each line
+as i do that so basically what we're
+doing here is we're generating our pi
+connector alert string or text and i use
+a custom function to do that but before
+we write the custom function
+i first generate a couple of syntax
+parameters
+that we need the first one is our symbol
+so this is the market we're trading and
+remember we have our prefix
+and suffix so basically i add the prefix
+first then i add in our sim info
+dot ticker and that will give us this
+text here
+of the market we're on whichever market
+we've set this alert up on
+we'll use the ticker code and then we
+need to add our
+patent connector underscore suffix
+variable
+by default when you get this script that
+will be
+set to nothing but for now just to keep
+things simple i'll leave dash f
+in since that's what i need for my
+broker i would also normally put
+the default value of my license id to my
+actual license id
+but i'm not going to do that today
+obviously because that will make this
+lesson a lot more complicated because
+i'll have to blur that number out every
+time
+it pops up on the screen so in your own
+scripts
+you would put your license id as the
+default value here
+and your relevant prefix and suffix is
+the default value
+here but anyway moving on the next thing
+i do
+in my script is i generate our
+limit variable so if the user has turned
+use limit order on
+then the text syntax for pi connect is
+obviously different to if they're using
+a
+market order so the way i did this was i
+just
+check using a conditional statement is
+pi connector limit turned on or true if
+it is true
+we want to add the text limit
+otherwise if pc limit is not turned on
+we just want to have a blank
+string with nothing in it the next thing
+i do
+is generate a price variable and this is
+set to the same thing pc underscore
+limit
+if the user has pine connector limit
+turned on
+then we write out this text here this
+alert syntax this is for specifying the
+price to set our limit order at
+and for this i just write out price
+equals or is set to
+and then i add on the closing price of
+the current bar but remember when we're
+dealing with numbers and strings we need
+to convert
+that number into a string using the
+tostring function
+so here i write to string close plus
+and then i add a comma on the end
+because all of our alert syntax has to
+be separated by commas
+and this will make sense when we build
+out the full alert so bear with me
+if the user has not turned peace and pc
+limit on
+pi connect the limit on then just like
+this
+limit variable we just set this price
+variable to a blank
+string so nothing gets added to our
+alert syntax
+so let's save the script make sure that
+that compiles fine
+there we go no problems there the next
+thing i do
+is generate a custom function for
+spitting out our alert syntax
+with the relevant data that we need to
+pass to pi connector
+so for this i create a custom
+function called pc underscore entry
+underscore whoops alert so this is our
+pi connector entry alert function
+and this function takes four parameters
+the direction of the trade
+the price of the limit order if we have
+that turned on
+the stop loss price and the take profit
+price and if you've never used a
+or created a custom function before in
+your own scripts i'm not sure if we've
+covered that on the channel before
+it's very simple all we do is use the
+equals and then right arrow operator
+to define this custom function and then
+we can start the function on a new line
+press tab to indent the text otherwise
+you'll get a compile error
+and anything that occurs under this tab
+belongs to this
+alert function and the last line of text
+in the function or the last variable we
+reference in the function is what the
+function returns when we use it
+so in this case i only have one string
+or one variable that this function
+creates and that is just a
+string so this function is going to
+return a string whenever we use it
+and the string is going to look like
+this remember
+this is why i did the previous couple of
+videos where we broke down the
+way pine connector syntax works because
+now we need to
+copy that in code so remember we need to
+start with our id
+so pi connector id plus and then
+separate all of our variables or syntax
+commands
+with a comma we're basically just going
+to string together all of these pi
+connector settings from up here
+and our function
+arguments so our pi connector id
+comma plus the direction of the trade
+biocell which is this variable here
+and then another comma plus the
+symbol which is what we declared up here
+with our prefix and suffix plus comma
+and then another plus then we input our
+price
+parameter from the arguments of this
+custom function
+now in this case remember with the price
+variable we created it
+ends with a comma if pc limit is turned
+on
+if it's not turned on then it doesn't
+return anything it's just a blank string
+so we don't need to add the comma here
+we can just go straight to stop loss
+equals and then we add on our stop loss
+converted to a string so this will be a
+price variable
+uh that will pass into this function so
+we need to convert
+the price of our stop loss into a string
+then we need to
+separate this next syntax command by
+comma
+and the next command is tp equals and in
+fact we can
+merge these we don't need to separate
+these two um
+so we have our stop loss and then a
+number
+comma tp and then another number that we
+need to convert to string
+and then another comma and then risk
+is the final parameter that we specify
+here
+and that is just this setting up here pc
+risk so
+plus two string pc underscore
+risk so this should compile if i save
+the script
+uh there we go no problems there so now
+we have
+everything we need in order to execute
+a trading command through pine connector
+all we need to do is
+generate the relevant information the
+direction we want to trade in
+the price of our limit order if we're
+using a limit order our stop loss and
+our take profit price
+and obviously our risk up here in the
+pine connector settings
+so let's move on to that part of the
+script
+i did add a just a little short quick
+filter here
+simply because this script takes so many
+trades since it's
+you know nearly every second candle
+closes higher or lower than the previous
+bar
+it was generating so many trades that
+the script wouldn't run
+it hit the maximum number of orders that
+you can execute through the back testing
+system
+so i added this little filter basically
+all it does
+is check if the current bar occurs after
+the 1st of july of this year that way
+if i scroll out my chart on these lower
+time frames
+it doesn't take any trades beyond the
+1st of july
+and that just makes the script a little
+bit easier to work with and stops it
+from crashing
+basically so what we're doing here is
+not important
+your long condition for your entry is
+specific to your
+strategy script your preferences
+if you've either written a script that
+you personally want to automate or
+you've found a script out there
+on the internet that you'd like to
+automate you would use the long
+condition and short condition
+for that strategy today's example is
+just an extremely simple
+technique i just wanted a strategy
+script that generated a lot of trading
+signals so it was easy to test
+through pine connector so that's the
+purpose of this really simple entry
+uh for our long and shorts uh the only
+thing i do is save
+my long stop and long target and that is
+just
+for our exit commands down here so we
+input our long target and
+our long stop loss and short target and
+short stop loss into the strategy.exit
+command whenever we have a long trade
+open or a short trade open
+if either of those prices are hit by
+price action then the
+backtester system will exit our trade so
+that
+is not super important for today's
+lesson we'll cover how strategy strips
+work
+uh in more detail in the next lesson
+when we're actually dealing with a
+profitable
+strategy for now this is just to
+practice
+without pi connector alerts in an actual
+practical pine script so let's wrap up
+this lesson
+by breaking down how we use our
+custom function we just created to send
+this data
+to pi and connector and so if i just
+delete this
+i'll go over it line by line and part by
+part
+and then all of this should make perfect
+sense to you let me get rid of all of
+this
+and i'll explain what i do here so first
+i create an alert
+string variable and this is set to our
+custom function that we created
+so i set this to pc underscore entry
+underscore alert
+and then remember our function takes
+four
+input parameters the first one is the
+direction we want to trade in
+so for a long trade that's obviously a
+buy so the first parameter will be the
+text buy
+but if the user has turned on
+use limit order then we need to change
+by to say by limit or one word
+the way i did that the easiest way i
+could think of to do that was to do
+this we add our limit
+text onto the end of our buy text
+and remember when we created our limit
+variable
+this checks if use limit order is turned
+on if it is
+it just adds the text limit to the text
+by so this will essentially say buy
+limit
+but if the user has not turned limit on
+then this is a blank string and it will
+just leave
+by so that was the easiest way to make
+this
+script as simple and efficient as
+possible
+that i could think of at least maybe you
+can think of a better way
+that is more intuitive to you if this is
+confusing but
+anyway the next thing we need to do is
+specify our price our limit order price
+so remember if we've turned limit order
+off in the settings menu
+then this string will be a blank string
+it just adds nothing to our alert
+but if we've turned it on then this adds
+the closing price
+parameter so price equals and then the
+closing price of the current bar
+and that's where our entry limit order
+will be placed next up we need to pass
+in our
+long stop and our long
+target and that's it that's literally it
+all we need to do now is generate an
+alert that sends this alert string
+to pi connector using the webhook url
+which i've covered in the previous
+lessons if i've lost you anywhere here
+make sure to go back and watch the
+previous lessons because i did take my
+time
+making sure i explained all of these
+concepts as clearly as
+humanly possible because it does get a
+little bit confusing
+and convoluted when we start working
+with code if you
+fully understand how the syntax works
+for point connector it makes
+understanding how the code works
+a lot easier so keep that in mind if you
+are lost
+by anything i've done in today's lesson
+this is a lot more complicated than
+previous lessons i've created if you've
+watched my auto view series this should
+be a lot more familiar to you but if you
+haven't
+then this is probably a little bit
+confusing but don't worry by the end of
+this series i'll make sure that you are
+comfortable
+with working with pine connector in your
+pine scripts
+so to wrap up this video let's generate
+our alert
+so to do that we just use the alert
+function
+and this function takes two parameters
+it takes
+one mandatory parameter which is your
+string message
+your text for the alert and one
+optional parameter which is the
+frequency of
+the alert so i've already added bar
+state dot is confirmed as a condition
+for our long trades this basically
+just checks to make sure that the
+current bar is either
+on its final tick and is closing or is a
+historical bar and has already closed
+so it doesn't matter really what we put
+in our alert function
+for the frequency parameter because this
+check makes sure that it will only ever
+be executed
+this if statement will only ever be
+executed on
+a closing bar but we'll add it in anyway
+uh the way i wrote this out was just we
+pass in our alert string
+which we just created here and then i
+set the frequency to alert
+dot control space frequency once per bar
+close and that's it if we were to
+save this script and
+hopefully it compiles no errors there we
+go if we were to come up and create an
+alert
+select our script point connector
+strategy test
+and select alert function calls only
+make sure you've
+inputted the correct webhook url here if
+you've done that
+doesn't matter what you call this alert
+it doesn't matter what actions you set
+up
+it doesn't matter if you set any of
+these notifications on
+or off as long as you've turned this on
+your alert
+text will be sent to pine connector and
+as long as you've connected
+the pi connector expert advisor and
+you've set it up properly in metatrader
+then your script will automatically
+enter and exit trades
+it's as simple as that obviously it
+doesn't look simple
+but if you're experienced with pine
+script then you know how awesome this is
+because
+normally to automate trading commands it
+takes
+a lot more code than this significantly
+more code than this
+but through the power of third-party
+apis
+and what alex has created here with pine
+connector we can
+automate entire scripts
+in essentially uh 20 or 30 lines of code
+which is incredible obviously
+the more complex element of automating
+your script is developing the actual
+strategy itself
+but given how simple panscript is and
+the wealth of knowledge that is out
+there
+in the public trading view library
+including
+a lot of scripts that i've created if
+you want to check them out just go to my
+blog at theartoftrading.com and i have
+dozens of free scripts uh there that you
+can steal
+source code to and play around with and
+if you want my personal
+profitable strategy scripts you can buy
+them over at pinescriptmastery.com
+but otherwise if you've got your own
+scripts you've written or you've found a
+script out there that you want to
+automate or you want to hire
+a coder to write yourself a script
+this code that we've written today is
+all you need in order to automate
+your more simple strategies through pi
+connect
+obviously if you've got more complex
+exit reasons and stuff like that
+it gets a little more difficult to
+automate
+but we'll dive into more advanced ways
+of using pine connector in future
+lessons
+for now let's wrap this up by just
+finishing off the script
+the one thing i like to do just to see
+what our alert looks like
+is you can change the comment parameter
+on your strategy.entry function
+to any text you want i'm going to set it
+to alert underscore
+string and now i save the script
+whenever the
+script detects a long trade you can see
+our
+alert text
+being drawn out here so there's our
+license id
+we're using a buy limit we are trading
+on pound dollar with the
+suffix added dash f then we specify the
+price
+of our limit order then we have our stop
+loss price our take profit price and our
+risk
+parameter and if i were to change any of
+this information up here for example if
+i set this to 0.01 lots
+and i turn use limit order off click ok
+you can see that this is all changed now
+we don't have buy limit we just have buy
+and our risk is 0.1 lots
+remember that you need to set up your pi
+connector settings
+correctly over here so if i set this to
+stop loss and take profit based on pips
+and i try to execute this script alert
+i'll get an error
+since my stop loss and take profit is
+actually based on price
+so make sure to keep that in mind when
+working with pi connector you do have
+two
+sides of this equation you've got your
+script alerts and
+syntax and these settings over on
+metatrader
+so let's wrap this up by uncommenting
+these two lines of code
+if i save the script now we should be
+getting
+text for long and short trades and
+obviously i need to
+uncomment the comment part of the
+entry and get rid of that bracket
+save the script and now we'll be getting
+all the text we need
+in order to confirm that we've set up
+our alert syntax code properly
+so if you want to test this just go to
+the video description below
+copy and paste the source code to the
+script over into your
+pine editor make sure to be on a demo
+account
+if you can when using this through pi
+connector since this is
+far from profitable you will lose money
+if you're trying to trade this on a live
+account
+but basically just to test this script
+all you need to do is click
+create an alert select our script select
+alert function calls only
+and click create and next time a
+signal is detected your script will
+execute either a market order or a limit
+order based on what you've selected here
+and i should have mentioned this earlier
+but the way we calculate our target it's
+not important since this
+is not the point of today's lesson but
+we just
+subtract the minimum tick multiplied by
+100 so this is points
+basically this will add 100
+points or 10 pips to the low of the
+current bar
+for short trades and really this should
+probably be
+the closing price not the high or the
+low
+since we want to calculate our target
+from
+the entry price not from the low of the
+bar
+minor difference there but uh that's how
+i
+should have set the code up so you can
+see that we entered long here
+exited here for 10 pips if we
+had been running the script and had the
+alert set
+when this setup was detected a limit
+order would have been placed at the
+closing price of this bar
+it would have been filled on one of
+these three bars and then our stop loss
+would have been the low of this bar
+and our take profit was obviously 10
+pips up here
+and pie connector would have handled all
+of that for us automatically
+whether you're asleep at work picking up
+the kids
+sitting by the pool drinking a cocktail
+whatever the only thing you need to do
+is make sure you've got metatrader
+running on a computer whether that be a
+virtual private server which i'll show
+you how to set up later
+in the series or on your home computer
+as long as you've got metatrader open
+these alerts will be auto traded auto
+managed
+by pine connector if you run into any
+issues while using this expert advisor
+make sure to click on this experts tab
+down here and this will show you the
+message log of pine connector and so if
+anything has gone wrong with your
+command execution you should be able to
+get an idea of what happened
+by reading this message log if you don't
+understand what happened
+send a screenshot of this log to the
+support team
+over at pine connector's website so
+that's it for today's lesson i hope you
+can see now why i decided to do this
+with
+a test script before we work with an
+actual profitable strategy script
+because the
+profitable strategy script side of the
+lesson is going to take at least 20
+minutes
+to explain so this way when we get to
+next week's lesson
+we can copy and paste this code
+into our script and it's all ready to go
+all we need to do is
+set up our alert string after we've
+detected
+our entry conditions so i hope you found
+today's lesson interesting
+thanks for sticking around making it to
+the end i know this stuff
+is quite niche but a lot of you seem to
+be really into it and it is really cool
+i'm certainly into it
+and i am playing around with this in my
+own
+personal trading automation is something
+i've always
+wanted to have in the background i do
+prefer to be a discretionary trader i
+don't want to be a fully automated
+trader but there's no harm in having
+an automated strategy running in the
+background 24 7
+if you can set that up so hopefully this
+series will help you
+do that with your own coding with your
+own trading now i'll leave it there as
+this video is already long enough
+thanks for watching thanks for your time
+and best of luck with your trading i'll
+see you in the next video
+take care
+you

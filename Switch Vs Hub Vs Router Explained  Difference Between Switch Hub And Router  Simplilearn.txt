@@ -1,0 +1,309 @@
+foreign
+there are multiple devices at work that
+oversees the data exchange over the
+communication Channel
+these devices are differentiated based
+on their performance processing unit and
+working protocols which we'll be
+discussing later in the session
+hi guys and welcome to yet another
+interesting video by simply learn
+but before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to Ms an update from
+us
+now without further Ado let's take a
+look at the agenda for this session
+to begin with we will look into what is
+a hub and some information related to
+the network hub
+moving to the next topic we will look
+into what are network switches and some
+information about the same
+next we will look into what are network
+routers and how they affect the
+networking exchange of data between
+communication channels
+as for the last topic will be a
+difference between a network Hub switch
+and a network router
+let's begin with the introduction to the
+network hub
+a network Hub is a device that is
+designed to connect multiple Network
+units in a closely connected Network
+channel
+so hubs are also used in Lan Networks
+the network Hub shares data with the
+destination device by acting as a
+central connection point of data
+transmission and connecting all the
+other devices to in the channel
+some points to remember about the
+working of a hub Hub is incapable of
+processing any complex protocols due to
+the absence of an intelligent unit in
+the system
+also the physical model of the Hub is
+composed of multiple sockets for
+connecting network devices
+now let's move on to the working of a
+network hub
+for the first scenario we will assume
+that a message is being sent through the
+Hub to a destination node
+let's begin
+according to the example Hub has
+received a message for device a
+where it will share the same message to
+device a
+which is a basic protocol
+but due to the absence of any
+intelligent unit or a processing point
+in the hub device it will share a
+message for a to all the other connected
+devices that are device p as well as
+device C
+this creates a lot of access of traffic
+in the network channel
+now let's move on to the second scenario
+which is when receiving a response from
+the device
+in this case when the device a shares a
+response to the hub to be sent to the
+sender device it will share the same
+response to all the other connected
+devices again due to the same reason
+that is lack of any Processing Unit or
+intelligent point
+in the network channel
+please take a look at the arrow points
+which is very important during the
+transmission of data
+with this we have clear all the points
+that are important for a network Hub now
+let's move on to the next topic that is
+information on switches
+the network switch is a networking
+device that is active in the data link
+layer of the OSI model and is designed
+specifically to connect private networks
+in a line Channel
+switches are program to share messages
+only without designated device that is
+mentioned in the header format of the
+message
+which cut down the network traffic in
+the channel
+switches uses different types of data
+which can be either packets or data
+frames
+switch uses a destination Source address
+and the destination address for
+forwarding the message to the specific
+device in the system
+now let's look into the working of a
+network switch
+the first scenario is when the message
+is received to a switch and is to be
+forwarded to a particular device
+in this case we are receiving a message
+for device a
+which will be shared only to device a
+according to the address mentioned in
+the header format
+this
+decreases the network traffic in the
+channel and also prevent
+the access of message to device B and
+device C
+this task of managing the address and
+sending the data to the designated
+device is handled using Mac address
+which is used by the network card
+installed in the network device
+now let's move on to the second scenario
+that is receiving a response from the
+device in this case the switch will
+receive a response from device a
+which will be forwarded to the sender's
+address mentioned in the message
+and this will prevent the response to be
+shared to device V and device C due to
+the presence of a processing unit in the
+switch
+with this we have completed all the
+important points to be known regarding a
+network switch now let's move on to the
+third topic that is information on
+routers
+let's begin
+a network router is a device that is
+designed to share data between multiple
+networks at a much larger scale in
+comparison to a hub or a network switch
+it is connected to multiple devices at a
+very large level
+that can be considered as metropolitan
+area network or a wide area network
+router uses IP addresses to share data
+with a specified device in the network
+channel
+and they also perform the task of
+translating an address that is available
+in a private Network to a globally
+recognized Network
+so that it can access Internet
+which is known as Nat Network address
+translation
+if you want to look further in the
+translation process that the router
+performs you can visit our video on the
+same in the simply learn Channel
+now with this we have completed all the
+introduction points regarding a network
+router now let's move on to the working
+of a network router
+in this scenario a message has been
+received by the router for device a
+from which it will reduce the IP address
+for the device a and share the data
+the message deliver efficiency is
+highest in case of a network router as
+it uses routing path from a routing
+table to guide the message to its
+destination point
+and vice versa
+with this we have completed all the
+important points regarding a network
+router now let's move on to the last
+setting for this session that is
+difference between a network Hub switch
+and a router
+for this difference we will use
+different features to differentiate the
+working of a hub switch and a router
+the first difference is based upon the
+osm model layer
+in case of a hub it is active in the
+physical layer of the OSI model that is
+also known as the first layer
+and in case of a switch it is active in
+the data link layer of the USM module
+also known as the second layer
+whereas a network router is active in
+the network layer of the SI model also
+known as the third layer
+now let's move on to the next difference
+that is based on addresses used by each
+of them let's take a look
+a hub as we already discussed doesn't
+use a MAC address or an IP address for
+the transmission of data in the network
+channel
+in case of a switch it uses Mac
+addresses available in the network
+channel to provide a guidance system for
+the message to be transferred
+whereas in case of a router it uses IP
+addresses to transmit the data to the
+designated device
+let's move on to some other differences
+that is format of data used in each of
+them
+Hub uses electrical signals or bits for
+data transmission in a network channel
+whereas such uses a data frame or data
+package for the transmission of data
+over the communication Channel
+and in case of a router it uses data
+packets to be transferred
+and the next difference is based on the
+mode of transmission
+let's take a look for this
+a hub is based on half duplex network
+connection that means at a certain point
+of time only a single device can share
+or receive data from the other endpoint
+of the network channel
+and in case of a switch it is full
+duplex network connection that means it
+can simultaneously receive and send a
+data packet or a data frame to any of
+the network devices connected in the
+system
+similarly a router is also based upon
+the full duplex network connection form
+let's move on to the next difference
+that is installation purpose
+on the basis of installation purpose a
+hub is mainly preferred in a lan Network
+or in a private Network where two to
+three devices are to be connected which
+increases the efficiency due to the
+absence of a processing unit in a hub
+as for a switch it connects multiple Lan
+networks or a large area network
+available
+as for the case in a network router it
+is a Global Network that connects
+multiple devices across the globe and
+it's also designed to connect internet
+to any of the device
+let's take a look at the next difference
+that is device classification
+in case of a hub it uses broadcast
+format or a broadcasting device to
+transmit data over the communication
+Channel due to the absence of any
+Processing Unit in the system
+and in case of a switch it uses
+multicasting application for the
+transmission of data
+and in case of a router it uses routing
+path from a routing table to transmit
+the data in the communication Channel
+let's take a look at a few more
+differences
+that is installation cost
+a network Hub can be installed very
+easily in a network channel as it does
+not perform any complex task
+in case of a switch
+it required moderate cost installation
+as it performs some complex queries or
+complex protocols in the network channel
+whereas in case of a router it is the
+most expensive to install in a network
+channel due to the high device picks and
+the Performance Based protocol
+and the next difference is based upon
+processing and intelligence
+now that we are clear a hub device does
+not have any Processing Unit or
+intelligence point
+and is the most basic point of data
+transmission
+whereas in case of a switch it possesses
+a processing unit
+to differentiate the destination address
+or a source address in the header format
+of the message
+whereas in case of a network router it
+is the most sophisticated device among
+all the three network devices as it
+performs the most complex queries and
+protocols in the network channel
+with this we are completed
+with the session on difference between a
+network Hub switch and a network router
+if you have any questions or queries
+regarding the topic you can ask them in
+the comment section
+thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

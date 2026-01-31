@@ -1,0 +1,234 @@
+with the increase in the sharing of data
+and information online there is a need
+to maintain proper routing and efficient
+data transmission from sender to the
+receiver node
+which comes under the scope for today's
+topic
+hi guys and welcome to yet another
+interesting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to remember an update
+from us
+let's take a look at today's agenda
+to begin with we will look into what are
+switching techniques
+why to apply these switching techniques
+and in the end we will look into
+different types of switching techniques
+let's move on with the first heading
+that is what are switching techniques
+switching techniques are network
+techniques responsible for overseeing
+the transmission of data over different
+communication channels
+they are also responsible for choosing
+the best route for data transfer
+next we will look into why to apply
+these switching techniques
+using the switching techniques we can
+choose the best and the most efficient
+route for data transfer in the network
+for example
+if we want to send some data from node a
+to node b we can do so by
+moving from node a to a switch then node
+d then to node b
+but doesn't this seems like too long
+this is where the switching techniques
+plays its role
+using the switching technique we can
+choose the smallest and the most
+efficient way that is node a switch then
+to the node b
+next we will look into different types
+of switching techniques
+switching techniques can be divided into
+three primary types
+the first is
+circuit switching
+that requires a predestined path for
+data transmission
+then we have message switching which
+integrates the destination address with
+the data for transmission
+and in the end we have packet switching
+that divides its message into smaller
+units known as packets
+packet switching can further be divided
+into two different types that are
+virtual switching and data ground
+switching
+now let's look into some details
+regarding each of the types
+on the first node we have circuit
+switching
+in circuit switching for data
+transmission to occur a pre-established
+path is required between the sender and
+the receiver node
+for example
+assume that we call someone
+then this request is sent over to the
+network switches
+and the route is to be established for
+the signal to pass through
+after that system assigns a route for
+the signal to pass through then
+the receiver receives the call from the
+caller side
+this is how it works
+now let's look into some points to
+remember about circuit switching
+for circuit switching we require a
+dedicated channel established between
+the source and the destination node for
+the network to pass through
+the data transmission can take place
+only after the path is established
+and the last point to remember is
+other than the sender and the
+destination node no node can interfere
+with the transmission of data to the
+established route
+let's look at some advantages and
+disadvantages of applying circuit
+switching in a network
+for first one we have advantages
+data transmission in circuit switching
+is sure to be established due to the
+predestined path
+circuit switching is preferred for long
+and continuous transmission of data due
+to the pre-established path route
+then let's look into some disadvantages
+the time required to establish the
+connection is quite long due to the time
+required to establish a path
+also due to the continuous transmission
+of data in circuit switching
+more bandwidth is required for
+maintaining the connection
+let's move on with message switching
+in message switching no predestined path
+is established between the sender and
+the destination node in the message
+this technique integrates the
+destination address into the data
+transmitted and shared over the network
+let's look into the setup to better
+understand the working of message
+switching
+for first step the center node
+integrates the destination address into
+the message
+then the whole message is transmitted to
+the switching node in the network where
+it gets stored for the next transmission
+and similarly like the second step this
+transmission of data is done over
+the whole network
+and finally
+through the destination address in the
+data it reaches the receiver's node
+this is how the message switching works
+let's take a look at some points to
+remember about message switching
+in message switching no predestined path
+is established
+it uses dynamic routing as the message
+is transmitted through the communication
+channel in real time
+the each node in network switching
+stores the data
+unless it is transferred over to the
+next switch node
+let's take a look at some advantages and
+disadvantages of applying method
+switching
+to begin with let's take a look at the
+advantages
+the size of the data that can be
+transmitted over method switching is
+variable
+in message switching the use of
+bandwidth is done in an efficient manner
+now let's look into some disadvantages
+for message switching the nodes that are
+known as the switch node is to be
+provided with sufficient storage memory
+there is a delay in reaching the
+destination due to the message technique
+that is the message has to stop at each
+of the switch node before it is
+transferred over to the destination node
+now let's look into the last switching
+technique that is packet switching
+in packet switching the message is
+broken into smaller data units known as
+packets
+these packets are appended with relevant
+network details for the transmission
+over the network
+let's look into the working of packet
+switching
+we know that in packet switching the
+data is broken into smaller units
+packets
+which each packet is given a sequence
+number for identification
+these packets are integrated with
+required sender and receiver address and
+switching method to choose the smallest
+route to reach the destination node
+these packets are then recombined at the
+destination node in the correct sequence
+order
+now let's look into some points to
+remember for packet switching
+for packet switching all the data
+packets that are provided with unique
+number for identification at the
+receiver end that is
+one two three and four in the previous
+example we just used
+packet switching chooses the most
+shortest path possible for the data to
+reach the destination end
+in case we have unreached packet or some
+unattained packet the whole message from
+the sender side is sent again
+to the receiver end
+now let's look into some details
+regarding advantages and disadvantages
+of applying packet switching
+advantages of using packet switching is
+it provides re-routing in case the
+network node is busy
+it also allows multiple user to access
+the same network and no predestined path
+is needed
+the disadvantage of applying packet
+switching is the protocols that are
+needed for the working of packet
+switching is very complex
+there are often cases of loss of data
+packets during the transmission in case
+of overloading or corruption of data
+with this we have understood how our
+data is transmitted over different
+communication channels and how to choose
+the most efficient path to reach the
+destination end
+with this we have reached the end of the
+video if you have any questions
+regarding the topic you can ask them in
+the comment section
+thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,588 @@
+hello everyone welcome to Simply learns
+YouTube channel today we will learn
+about subquery in SQL that's said if
+these are the type of videos you'd like
+to watch then hit that like And
+subscribe buttons and the bell icon to
+get notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simp learn has your
+back just for a quick info if you want
+to upskill yourself to master SQL for
+data analytics and landar your dream job
+or grow in your career then you must
+explore simply learn SQL certification
+course simply learn offers an industry
+recognized SQL training and
+certification program for aspiring SQL
+developers and data analysts through
+this program you will gain knowledge and
+work ready expertise in skills like real
+world problem solving data analytics and
+MySQL workbench along with many others
+that's not all you also get the
+opportunity to gain an engaging learning
+experience featuring live demo sessions
+in real world examples you will also get
+dedicated live sessions by faculty of
+Industry experts from Top Tire product
+companies along with the academicians
+from top universities after completing
+this course many of our Learners have
+transitioned into a data analyst role or
+a SQL Developer role as a fresher or
+moved onto a higher paying job profile
+if you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comment
+and description box below to find the
+link to the SQL certification program
+offered by simply done so without
+further delay let's get started so SQL
+subqueries so subqueries in SQL are
+majorly of three types which are scaler
+subqueries multi row subqueries and
+nested subqueries in SQL so when it
+comes to scaler subqueries it'll return
+one row and one colum and when it comes
+to multi row subqueries there are two
+types it can either give you one column
+and multiple rows or multiple columns
+and multiple rows and the last one is
+almost kind of
+self-explanatory which says it is just a
+subquery inside an already existing
+subquery right so without further delay
+let's get started with the MySQL
+workbench load our data set to the MySQL
+workbench and try to query some
+subqueries based on the use cases that
+we are able to build on the data set
+that we are using right and uh you can
+uh this might be an interview question
+so where exactly can you use a subquery
+so you can use a subquery along with
+where along with having along with
+between along with a select query maybe
+insert right there are multiple
+possibili just try to name a couple of
+them maybe a four or five which makes
+you stand on the safer point during your
+interview now let's get started with the
+MySQL workbench now here we are the
+first thing that we will be doing is low
+the data set so just click on this new
+schema so new schema is nothing uh
+different from your new data set so
+let's name it as Superstore and apply it
+requires lower case so let's proceed
+with the lower case as well not a
+problem there you go you have the new
+data set or database now you need the
+data set so that data set needs to be
+applied to the table so currently we
+don't have any data in the table go to
+the import data wizard browse and U
+downloads and here somewhere I have SQL
+data and remember to save your Excel
+data in the form of um you know the Comm
+separated file as CSV and ensure that
+all your U the data table name and the
+column headers are compatible with my
+SQL or SQL so basically what's the
+problem is let's say you have some U
+maybe the difference in naming
+convention row space ID right so that
+could cause a problem when you are kind
+of trying to write a statement right so
+here I've already done that row ID order
+ID order date so I've replaced with an
+underscore wherever I found a space so
+that it becomes automatically SQL
+compatible right now the first R might
+be having a small um error due to the
+import function but that's something
+that we can fix so let's also check
+other column names or column headers
+over here so uh every other column
+header looks absolutely fine but the
+first one which happens to be a small
+import error but that's something we can
+fix so go to the next and press on next
+so this is about 9,000 to 10,000 rows of
+data which might take a little while but
+that's not a problem let's wait
+gently there you go the data got
+successfully imported now the next step
+is just click on the next here and yeah
+therefore we have our
+9,9 87 records imported successfully
+finish that and uh you can close this
+schema and now refresh the D set here
+just right click and refresh all and
+there you go you can see the arrow Mark
+here just click on there you can see the
+Excel reset so here we have all the
+columns and remaining things what we
+require fire so here are the columns now
+let's quickly use the data set the data
+set name is Superstore so this is the
+superstore data set so we have also
+named the database as Superstore just
+run it now we have the full access of
+super store now you can just run the
+select Stu from the table name is Excel
+data
+and we have query ready and just run it
+and we have the entire table right here
+uh yeah so remember we were supposed to
+change the row name right so you just
+hover over this and I think you'll get
+an option of copying the field name copy
+the field name now use the AL table
+Excel data the name
+column
+to row go so we have done it you can
+just run this query once again and make
+sure that everything is fine there you
+go so so far so good now let's get
+started with the uh
+subqueries so as we discussed before
+there are three different types of
+subqueries uh basically Scala subquery
+multi row subquery and um nested
+subquery so let's start with uh the
+Scala subquery so
+there you go now we know scaler subquery
+will give us one row and one column so
+according to that let's try to devise a
+use case so let's find out uh the list
+of customer names that uh made a
+purchase above an actual average right
+let's say we have the customer names and
+customer IDs let us say that okay let's
+find out the average sale the overall
+sale right so there might be a few
+customers who might have basically some
+Deep Pockets basically they're rich and
+they might have you know purchased some
+goods from the store uh billing more
+than the average of overall sales right
+we need to find out such customers so
+that we can basically offer them some
+discounts and uh uh maybe a few more uh
+coupons something like that so that
+encourage them to shop a bit more that
+sounds like a use case right so let's
+get ahead with that let's write the use
+case
+so that's our use case right there so
+first we need to find out the average of
+all the sales so let's write the query
+you write the query by select and an
+aggregate function which is average AVG
+sales so we have sales data here from
+table let's copy the table name Excel
+data
+semicolon so this is our first query or
+you can also call it as an inner query
+so the average sales is about
+[Music]
+$294 right so this is our average sale
+now we need to use this inner query you
+need we need to devise this as an inner
+query and write an external query where
+we will uh find out the customer names
+right so let's write that select
+customer name customer _ name from Excel
+data so you can see that I'm using
+naming conventions in a different way
+the keywords are all caps and uh the
+table names and the column names are in
+small right so this makes things easier
+for anyone who's reading your code so
+they'll understand uh that this is you
+know a variable name or maybe a keyword
+so they'll easily identify that so this
+happens to be our outter query so select
+customer name from Excel data where
+sales are greater than average of sales
+this is our inner query so you can name
+it as outer query and we have already
+named it no we didn't but we can name it
+as inner query so this increases the
+readability of your code right so now if
+we execute this we can get the output so
+we have so many names here but we happen
+to require as we can see we have
+duplicate entries of data right so we
+can make minor changes over here what we
+can basically do is uh use a group by uh
+function and let's group them by
+customer names and uh as a fact we know
+the sale number right so let's include
+sales as well so that we have uh you
+know customer name right in front of the
+sales what they made and we can have a
+clarification if they cross this 294
+number correct and uh since we're using
+Group by and uh in that situation let's
+replace where with having now this is a
+correct query so that's the U
+explanation right so you can use
+subqueries along with have along with
+where along with uh having and select
+right so let's try to execute this code
+and we should be having the output ready
+right so we have our customers and uh uh
+they have made multiple sales here right
+so they might have come to the store
+multiple times and they might have made
+multiple sales right so here they have
+made multiple sales which are above the
+given sales number now let's proceed
+with the next uh query uh which is the
+type of query is multiple row subquery
+the second type of subquery right so
+let's rename this as multiple row
+subquery so why am I doing this so the
+uh this document will be an open source
+document so that you can have access to
+this document while you are learning
+this will be linked in the description
+box below you can just download the data
+set you can just download the query
+document and try to follow us for a
+better learning experience now let's go
+with the problem statement for this so
+uh it it is it is something which gives
+you multiple rows and multiple columns
+in return so now let's try to build a
+use case for this so the use case is
+let's try to find out uh okay let's
+execute our first very over here so we
+have city right we have city state so
+now let's try to find out that
+particular state which has highest sales
+right so let's try to identify any state
+which has more than 100 sales let's say
+your manager just gave you a use case to
+find out that that single state where we
+have maximum sales happening so the
+sales number should be nothing less to
+100 so that way uh we can Target the
+product more right so for that
+particular situation we can go with uh
+this particular solution so again U
+there are two parts of this and uh
+firstly we will try to find out distinct
+states names right select state from
+Excel data where sales is greater than
+$100 close so this is the inner query
+let's execute this so these are the
+states now we wanted a dis distinct uh
+uh location right so let's try to roll
+this state under distinct function so
+that we have those disting States so one
+state might have faced multiple sales
+which are above $100 right so we just
+wanted to know which are those states
+which are giving sales at least above
+$100 so that's the inner query now let's
+try to uh wrap it under an outer query
+where we will try to find out the same
+thing and and we can do one better so
+what we can do is uh since we already
+had multiple states in the list let's
+try to find out uh a city or state that
+has less than $100 right so why don't we
+do that let's select distinct States or
+state from Excel data where state is not
+in where state is not in state not in is
+is not required over here and you can
+open the bracket and you can wbp this
+inside and in a query close this there
+you go and if in case you wanted to
+provide some indentation you can also do
+that and your query is done now if we
+execute we can find out those states
+which are not yielding at least 100
+sales there you go so we have a list of
+four states which are not even giving us
+100 sales right so in these uh sales you
+can do two things either stop your store
+or you can give some exciting discounts
+on your products so that you can drive
+some motivation in the customers to buy
+some things now the next use case is
+let's try to find out some product names
+from subcategories that get higher sales
+than all the products in their
+subcategory right so uh this is another
+uh example in multiple row subquery so
+let's try to execute that let's try
+let's write down the use case first so
+we have the use case ready now let's try
+to write the query select product name
+let's also uh try to extract the
+subquery right that should be helpful
+subcategory not a
+subquery uh maybe we can also extract U
+sales numbers from Excel
+data and let's try to Alas them as
+E1 where sales is greater than so this
+is the outter query now let's try to
+build the inner query select average of
+sales we wanted to find out that product
+which is selling more than the average
+of all the sales right sales wrap it
+under the average function from Excel
+data we can alas it as E2 so why am I
+doing this alosis over here because
+there is a funny thing not actually
+funny so this is an important thing
+which you might have to consider because
+these alasas will help us to write a
+query in such a way that the query will
+run only when it has some value from the
+order query so so far here if you see if
+you run this query the inner query it
+will actually run without any error and
+when you execute it along with the auto
+query it will run right but in the
+current situation the current query
+which we are writing here it will not
+run unless it is clubbed with the auto
+query how let's check it so I'm WR I'm
+going to write a where query right next
+to this where
+E1 do subcategory is equals to E2 do
+subcategory you can just copy paste this
+to save time and the interest of time
+and close the bracket right now if you
+try to execute this in a query it will
+never execute it will throw an error
+right now if you Club this along with
+the external query it will run so if the
+query is um heavy sometimes we might
+lose the connection to the data set or
+the server it's okay at times we can
+just optimize the query and try to get
+an alternate result so you can see it's
+running over here ping we should be
+receiving the output
+shlay there you go we have the data So
+based on that particular subcategory we
+have accessories we have labels
+appliances right so it's like you are
+grouping all the atories available in
+your data set and you're calculating the
+average of sales happened in that
+particular subcategory now you have that
+average number right and if any product
+in that subcategory is selling above the
+average of that particular subcategory
+we are extracting that product name
+right so sandless numeric keypad
+Bluetooth so these are some products
+which are out selling in those
+respective categories so we're basically
+trying to find out the best performing
+products of all the indiv usual
+categories right now let's proceed with
+the next query let's proceed with our
+third type of uh subquery which happens
+to be the nested
+subquery right now let's devise the use
+case for this so the use case is find
+the customers who have placed orders for
+products from specific category and
+whose total sales exceeded the aage Aver
+sales of all the customers and who have
+placed orders products from the same
+category right so this is the use case
+now we can devise a solution in five
+steps as I have mentioned already here
+identify the customers who have placed
+orders for products from specific
+category that's the first step then for
+each of these customers calculate total
+sales for products from the specified
+category and then calculate the average
+Sal Sal of all customers who have placed
+orders for products from the same
+category fourth step is compare the
+total sales of each customer from step
+two with the average total sales from
+steps three and lastly return the list
+of customers whose total sales exceeded
+average of all sales now this is a
+little complex to understand but again
+not to worry about we will devise the
+solution one step at a time right so we
+will write the query inside a query
+inside a query right so we will be also
+using some uh join closes in between so
+that's how it's going to work so let's
+quickly write the query so the first uh
+query that I'm going to write is uh find
+uh the customers identify the customers
+who have placed the orders of products
+in specified category so
+select customer ID from uh let's also
+try to calculate the sum of sales that
+they provided sum of
+sales and let's call it as an
+alos as total sales right so so far so
+good from okay let's try
+to uh add an underscore I missed that
+Excel
+data so uh the thing is for a specified
+category right for a specific category
+so uh
+the query is a little uh interesting
+here so okay let's quickly run our query
+here where we will identify what
+categories we have right
+so select category from Excel data right
+so we will identify which categories we
+have so we have office supplies
+technology okay let's try to identify it
+as
+distinct so that we have the unique
+names of our categories so now we have
+the unique names of our categories we
+overall have three categories now the
+use cases they want to find out the
+sales from a specific category right now
+let's provide the category as I don't
+know uh I like technology so let's try
+to add the specific category as
+technology from Excel data where
+category is equals to uh remember the
+double codes or single course because we
+are using dealing with character type
+data type so
+techy or you can just
+copy copy field right so we don't want
+to take any uh risks here that's the
+first query
+close and try to execute yeah we missed
+Group by so what you can do is just add
+a group by let's Group by customer ID
+there you go so based on customer ID we
+have grouped it now this would be our
+inner query and before we close it uh we
+will allas it
+as customer sales okay that should be
+the good uh name for it so close this
+using the bracket and also begin this
+using a bracket and name it
+as
+customer sales there you go so the first
+part of it is
+done now now we are going to implement
+the join
+function now based on what are you going
+to join this we will be using the same
+query we will be making a mild
+modification onto it E1 do customer ID
+let's copy paste and this even. customer
+ID should be equals to
+customer sales. customer
+ID so far so good go in we will copy
+paste the same query over here this
+should be our inner query and the outer
+query try to
+select average of total sales average
+sales
+from and try to make some indentations
+so that it's easily readable and
+understandable so I don't think we will
+be needing the customer ID here all we
+need is some of sales
+uh we will name it as total sales from
+Excel
+data where we have the category okay we
+have grouped it and now let's close it
+and alas it as average
+sales okay on uh customer sales okay we
+will join this on customer sales dot
+total
+sales and this should be greater than
+the average sales of that particular
+category sales do average sales so far
+so good now we have devised the inner
+query and outter query now we need to
+take care of what are we going to
+extract from this right now we want to
+extract distinct names okay we this
+might give us a lot of uh names so we
+want uh distinct names distinct of e1.
+customer ID comma E1 do customer name as
+well so let's go with
+customer ID and remove ID and type down
+name and we are extracting this from
+Excel
+data Let's uh alas this as uh E1 this is
+our E1 table okay and now we are going
+to join this there you go now let's try
+to execute our query so we have taken
+care of all the inations and subqueries
+and nested queries and if we run it we
+should be getting the data there you go
+so we have extracted basically we have
+extracted U the required find the
+customers who have placed orders for
+products from a specific category so
+technology category and those total
+sales exceeded than the average total of
+all the other customers so in the
+technology segment the average sales of
+all the other customers should not be uh
+you know the so there are specific
+customers who bought a lot of technology
+stuff and uh their sales is actually
+more than the overall average of all the
+other customers who placed technology
+orders in the same segment so that's
+what we have found here based on their
+customer ID and customer name so we
+basically executed all three types of
+subqueries which is KLA subqueries multi
+subqueries and nested subqueries and
+that brings us to the end and if you
+have any queries regarding any of the to
+topics covered in this session or if you
+require the demo document and any other
+data set that we used in this session or
+the PPD please feel free to let us know
+in the comment section below and our
+team of experts will be happy to resolve
+all your queries at the earliest until
+next time thank you for watching and
+stay tuned for more from s Pon staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in Cutting
+Edge domains including data science
+cloud computing cyber security AI
+machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link l
+in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

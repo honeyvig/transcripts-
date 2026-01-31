@@ -1,0 +1,212 @@
+during the transaction of data and
+information between multiple devices the
+task of establishing maintaining and the
+sharing of data is handed over to the
+network model which also governs the
+protocols enacted on the transmitted
+data hi guys and welcome to yet another
+interesting video as simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+let's take a look at the agenda for
+today's session
+for today's session firstly we'll
+understand what exactly is the tcp ip
+model continuing with the protocols that
+are applied
+the layer structure in the tcp and ip
+model
+then we'll see the benefits of using tcp
+model
+and comparison between osi model and
+tcpip model
+let's begin
+firstly we'll understand what exactly is
+the model
+the tcp model is a method of sharing
+data and information over the
+communication channel
+where the data has to go through each of
+the four layer structure of the network
+model
+where it also performs tasks such as
+remodeling of data efficient
+transmission and air related issues
+each layer has dedicated protocols that
+they enact on the transmission data
+now let's continue with the protocols
+that are used in the tcp model
+to understand the protocols that are
+used in the tcpip model we'll compare it
+with the osi model and if you want to
+know more about the osi model you can
+visit our video on the simply learn
+channel
+let's begin
+the top most three layers of the osi
+model which are application layer
+presentation layer and session layer
+collectively refers to the application
+layer in the tcbip model
+where they use
+protocols such as ftp file transfer
+protocol http hypertext transfer
+protocol telnet and smtp which is simple
+mail transfer protocol
+then we have the transport layer from
+osm model which refers to the transport
+layer in the tcp model
+where they apply protocols such as tcp
+transmission control protocol and udp
+user datagram protocol
+moving on we have network layer
+from the osi model which refers to the
+internet layer in the tcpip model
+which apply protocols such as ip
+internet protocol icmp internet control
+message protocol and arp
+address resolution protocol
+then we have data link layer and
+physical layer from the osm model which
+refer to the network access layer in the
+tcp model
+this layer doesn't exactly apply any
+protocol but are connected through
+physical medium which includes ethernet
+wi-fi
+and cables
+now that we are completed with the
+protocols regarding tcp model let's take
+a look at the layers in detail
+the tcvip network model consists of
+different layers
+where the original model consists of
+four different layers which are
+application layer transport layer
+internet layer and network access layer
+then we have the updated model which
+consists of layer
+application layer transport layer
+internet layer data link layer and
+physical layer
+let's take a look at the layers in
+detail
+the first layer that we are going to
+know about is the application layer
+application layer
+this layer acts as an interface between
+the application and programs that
+require the tcp model for communication
+including tasks performed by the layer
+such as data representation for the
+software application that are executed
+by the user and then forward it to the
+transport layer
+the protocol supplied by this layers are
+http hypertext transfer protocol which
+is used to access information available
+on the internet
+then we have smtp simple mail transfer
+protocol which is used to access email
+related tasks
+moving forward we have the transport
+layer
+this layer is responsible for
+establishing connection between the
+sender and the receiver device
+this layer performed the task of
+dividing the data from the application
+layer into packets
+where they are used to create sequences
+which are then transferred over to the
+destination device it also performs the
+task of maintaining the data that is to
+be transmitted without error and
+controls the data flow rate
+the protocols that are applied in the
+transport layer are
+tcp transmission control protocol which
+is responsible for transmission of
+segments over the communication channel
+then we have udp user datagram protocol
+which is responsible for identifying
+error in the data that is to be
+transmitted over the communication
+channel
+moving forward the next layer is the
+internet layer
+this layer is responsible for the
+transmission of data over the network
+channel that is they provide a proper
+route for the packets to be transferred
+over the communication channel
+the protocols that are applied by this
+internet layer are
+iprotocol which is the internet protocol
+this protocol assigns a unique address
+to a physical system
+so that it can be identified on the
+internet
+then we have arp
+address resolution protocol
+this protocol is used to find the
+physical address of the system using the
+internet protocol address
+in the end we have the network access
+layer this layer is a combination of
+data link layer and physical layer from
+the usm model
+where it is responsible for maintaining
+the task of sending and receiving data
+in drawbits
+the raw bits are transferred from the
+center side to the receiver side in the
+format of binary digit which are zeros
+and ones
+let's move on with the advantages of
+using the tcp ip model
+the tcp model assigns an ip address to
+each of the system that is available on
+the network channel so that they can be
+identified on the internet
+then they are also responsible for
+enacting different protocols on the data
+that is to be transmitted over the
+communication channel the tcp model also
+enables the user and the system to
+access different format of data over the
+communication channel
+now let's take a look at the last topic
+for this session which is the osm model
+versus the tcp model
+on comparing both of the network models
+we get
+the osi model consists of seven
+different layers whereas the tcp model
+comprises of four different layers
+the osi model has separate session layer
+presentation layer whereas the tcpip
+model comprises of a single application
+layer
+the transport layer in the osi model
+provides packet delivery protocols
+but in the tcp model transport layer
+does not provide any such protocols
+the osm model is implemented during
+network communication
+but in case of tcp model it is used as a
+reference model for the network channel
+with this we have reached the end of the
+module
+if you have any questions regarding the
+topic you can ask them in the comment
+section below
+thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

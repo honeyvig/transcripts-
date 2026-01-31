@@ -1,0 +1,163 @@
+hey guys welcome back to another video
+by simply learn in today's video we're
+gonna be learning all about structures
+in c
+but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+this session will help you to understand
+what a structure is in c
+then let's understand the general syntax
+of structure declaration
+after that assigning members of the
+structure in c
+later structure initialization and
+finally structure within structure
+now let's begin by understanding what a
+structure is in sync
+as we all know array is a collection of
+elements of the same data type similarly
+a structure is a collection of elements
+with the same or different data types
+for example
+unlike an array a structure can have
+members of different data types like int
+float care etc
+now let's have a look at structure
+declaration in c
+we use the struct keyword before the tag
+name to define a structure tag name is
+nothing but a structure name whatever is
+declined inside the struct curly
+brackets are members of the structure
+once the members are declared the
+variable has to be created to access the
+members of the structure
+now let's see the example
+we have struck keyword followed by
+student as a tag name then a list of
+structure members
+and they are name of type cad roll
+number and age of type int and s1 as a
+structure variable
+we can have a list of structure
+variables
+another way of structure declaration is
+we can declare structure variable
+outside the curly brackets by using
+struct keyword followed by a tag name
+and then declare variable list
+for example
+struct keyword
+then student tag name and s1 as a
+variable name in structures in c
+programming we cannot assign values
+during the definition of a structure it
+indicates the wrong way to the
+declaration so now let us try to
+understand the right way of assigning
+values to the structure members insane
+to assign values to all the members of a
+structure and axis we use dot operator
+also known as a period operator
+look at the syntax below to clearly
+understand how we access and assign the
+structure members
+first the structure variables followed
+by the dot operator and structure
+members
+for example s1 dot roll number is equal
+to 34 s1 dot 8 is equal to 18 and we
+make use of the string function strcpy
+to copy the name
+next we have structure initialization in
+c
+we can also initialize the structure
+variable and to initialize we can
+directly assign values of all the
+structure members inside the curly
+brackets with an assignment operator for
+example
+struct storing s1 is equal to inside the
+curly bracket enter the values separated
+by comma operator
+in this particular example name is john
+the roll number is 22 and the age is 18.
+now that we know how to declare and
+initialize structure variables in c
+let's see how the structure elements are
+stored in the memory
+as we know cad takes one byte of memory
+space so according to the size of the
+string the characters will occupy in the
+memory
+in structures the memory is created once
+the structure variable is declared as
+per this example s1.name is a string so
+that memory will be allocated and its
+base address will be obtained
+for the s1 variable the total memory
+allocated is 8 bytes that is
+5 bytes for s1.net 2 bytes for s1 dot
+roll number and 2 bytes for s1.8
+so i think you got a good understanding
+of how memories are located for the
+structure elements
+okay so let us move on to the structure
+within structure in c
+when a structure contains another
+structure as a member it is known as a
+nested structure or structure within a
+structure
+for example
+let's consider a structure name student
+and another structure name as a date
+in this example a structured date acts a
+member so a structured date has its own
+members and they are date month and year
+of type int and structure variable for
+date is doj
+and the structure variable is
+initialized for both the members of the
+structure that is name admission number
+8 date month and year
+now let's execute a simple structure
+program
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+as you can see in this particular
+program using the structure we have
+initialized the variables and trying to
+print the values
+and by using the dot operator
+we are accessing the members of a
+structure so now let's run it
+and here we got an output name roll
+number and age of a student structure
+in our next program using structure we
+are using another way to declare
+variable and initialize the structure
+members
+as you can see we have declared variable
+outside the structure curly bracket
+and inside the main function we have
+initialized the structure members
+so now let's run the program
+so here we got the same output
+so with this we have come to the end of
+this session on the structures in c
+programming i hope this session was
+informative and interesting until next
+time thank you stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
