@@ -1,0 +1,948 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn SQL
+data analytics with my SQL workbench in
+this tutorial we will be going through
+the fundamentals of SQL that will cover
+the basic Clauses of SQL to the advanced
+Clauses like joins pattern matching and
+much more for better understanding of
+the importance of SQL let's consider a
+simple use case for our realtime SQL
+sales analysis for business growth so
+the context in today's business
+environment making datadriven decisions
+is essential for growth imagine a car
+dealer Keen to analyze sales performance
+and customer Behavior to boost
+profitability the dealer is eager to
+understand which fuel types CNG diesel
+petrol or hybrid are most popular among
+customers the owner needs data to guide
+inventory decisions and marketing
+strategy
+this is where SQL becomes a game changer
+the dealership ddps holds the wealth of
+information and through SQL queries the
+owner can extract detailed insights
+using SQL the owner gets the number of
+cars sold segmented by fuel type with
+secret functions they quickly generate a
+report showing which fuel types are in
+highest demand armed with this data the
+dealership adjusts its marketing
+strategies promotes high demand vehicles
+and Alliance inventory with customer
+preferences the SQL report streamlines
+the analysis and also forecast future
+Trends guiding investment in electric
+and Hybrid models as the market shifts
+towards
+sustainability now that we understood
+the importance of SQL in data analysis
+let's proceed with a hands- on example
+but before that if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified just for a quick
+info if you want to upscale yourself
+master data science and data analytics
+skills and learn your dream job or
+growing your career then you must
+explore simply learn's coad of various
+data science and data analytics programs
+simply learn offers various
+certifications and postgraduate programs
+in collaboration with some of the world
+leading universities like Caltech IIT
+kour and many more through our courses
+you will gain knowledge and work ready
+expertise in skills like SQL Advanced
+Excel python machine learning data
+visualization Genera Ai and over a dozen
+others that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire data and product companies
+and also academicians from top
+universities after completing these
+courses thousands of Learners have
+transitioned into data science or data
+analytics role as a fresher or moved
+onto a higher paying job and profile if
+you are passionate about making your
+career in this field then make sure to
+check out at the link in the pin comment
+and description box below to find a data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with our demonstration on
+SQL data analysis for today so we will
+be having two different Excel files so
+one Excel file will be having the
+customer data set and another Excel file
+will be having the dealership Excel file
+or dealership data set right and along
+with that we will get started with the
+SQL workbench my SQL workbench tool to
+run our queries I hope I made myself
+clear with that now let's get started
+now this is our customer data set so our
+customer data set will be having uto ID
+state where the uh customer belongs to
+and the region of that particular State
+and his customer ID and his name right
+along with that we have another data set
+known as dealership data set right
+remember this order Ting the First
+Column remember this right when we
+performing joints this is the key based
+on which we going to perform the joints
+with two different data sets all right
+now let's check out the second data set
+so this is our second data set known as
+the dealership data right so we we
+having the first U audit ID and after
+that we have audit date delivery date
+delivery days and dealership name which
+particular store is that and the
+dealership spin code category of vehicle
+bought and product name quantity fuel
+type traffic leads orders Revenue profit
+and basically profit is revenue Minus
+cost to company right and the order stat
+is is it in transit is the order
+canceled or placed or is the order
+delivered right so is it not delivered
+yet so these are the order statuses so
+we have four different of one of them
+order in transit delivered canceled or
+not delivered correct so these are the
+two dates that we will be working on
+today and let's also take a look on the
+workbench that we will be executing
+queries on so this is the SQL or my SQL
+workbench where we will be executing our
+queries right so currently it is using
+data from a different data set so we
+don't want that we can create a new
+prompt and we can get started with our
+data sets here so uh to get started with
+the new file we might have to create a
+new schema first so let's create a new
+schema so you can just write down your
+name car
+dealership right so that that's the new
+schema name just apply apply so you have
+just created a new schema now let's open
+the schema here and you have the tables
+there and you don't have any data table
+right so for that we might want to add a
+new table so double click or right click
+on that and here you can see a table
+inut visit so browse the path and here
+we have the delation data open and click
+on next next and and if you go back here
+you have an option called drop data
+table if the table already exists right
+if you already have a dealership data
+table there then you can just drop it
+off right and now let's try to make some
+changes to it because we don't want the
+confusion so either what you can do is
+you can add an underscore or if you want
+to keep the space or you can eliminate
+that underscore I'd prefer to eliminate
+that underscore and click on next and
+there you have the data ypes right so if
+you want to change some data types you
+can do that over here and I think there
+is some issue with the first one here
+you have Auto with some extra thing
+which you don't want here but we can
+clear that down the line not a problem
+and import the data file click on next
+and there you go the data file should be
+shortly imported it might take a little
+while but it's all right there you go
+click on next and th records have been
+successfully included finish and we want
+another table also to be included so
+what you can do is use the import data
+visit once again and browse and import
+the customer data this time click on
+next and the file name just make sure
+that you don't have any spaces but if
+you literally want the space use an
+underscore but not the spacing right it
+might cause some problem while you're
+writing queries that's the reason for
+which we should either eliminate or use
+an underscore so go with next and here
+we have the same order ID no worries we
+can change the column name over here
+right it's all right just import the
+data go ahead with
+it click on next and finish th records
+have been
+successfully uh imported now let's run
+some basic queries like uh okay first we
+might have to use the data set right so
+so we want to use a car
+dealership so car dealership press enter
+or you can use control
+enter okay there was some spelling
+mistake so I think we have created uh
+the schema with the wrong spelling but
+it's okay uh all we have to do is just
+change the uh name over here car
+so we have added an extra R there but
+not a problem so we are in the schema
+now now let's try to run um okay I'll
+not erase these names because we'll
+create a document of it so we can select
+uh any of the
+tables select U let's look at all the
+columns let's look at uh okay double
+click Start
+From yeah there you go we have refreshed
+it so if you extend here you can see
+customer data right so let's type in
+customer data semicolon and there you go
+when you run it you have the data right
+so um since we have 1,000 rows we can go
+with the current th000 rows or if you
+want to extend it we can go 50,000 or if
+you want the whole one lakh more than
+right there might be data with more than
+50,000 rows in those scenarios you can
+also click on the don't limit option but
+since we have thousand rows we can
+continue with what we have th000 rows
+right now let's um copy and paste the
+same command and change the name of
+customer data to
+dealership so I'd like to uh pass a
+small uh suggestion here so uh when
+you're writing the queries use the
+keywords in caps right so uppercase and
+data tables or column names in lower
+case so that whenever you pass your
+queries or your document to your fellow
+developers then they can easily identify
+the difference between the keywords and
+the column names or the data table names
+this will help them to resolve an issue
+if there is correct so we have the uh
+table over here now uh we have discussed
+some issue with the column name right
+now we will proceed with the a quick
+editing um query where we will change
+the column name of this particular data
+set or no not just the column right just
+a moment so we will have take the help
+of uh alter keyword so alter
+table and our table name here is
+customer Data before that let's copy
+this particular keyword here or we can
+do one thing describe table we can make
+use of describe
+word describe table customer
+data enter okay let's find a way to at
+least copy that column name I'm not
+finding how to copy that okay we found a
+way right click or double click and we
+have an option of copy field name let's
+copy the field name and here let's
+continue with alter keyword alter table
+customer data and and let's not use the
+semicolon here now use the rename
+keyword rename
+column reing column paste
+the okay all ID so there's the mistake
+so uh we found a way to uh copy this uh
+column name just double click or right
+click here copy the field name so that
+you get the format or you get the exact
+data which is written as a column name
+here there might be some mistake or
+there might be some problem during the
+input but that's not something to worry
+about so we are renaming the colum name
+from the existing name to order ID which
+we want so just place it over there or
+you can manually write it so that you
+don't want to take any chances for any
+more risks so order ID there you go just
+run this
+query and now let's select the data from
+customer ID once again
+and there you go you have a proper
+functional working ID now let's rename
+the order ID column from dealership data
+as well so I want to rename customer
+data to dealership data just copy the
+name of the table and replace it over
+here and yeah let's check the uh columns
+first there you go you have a similar
+problem here so let's uh change our R to
+the name of the first column in
+dealership data as well Now quickly run
+the uh query and now let's select the
+data from the dealership data there you
+go so we have a fully functioning um or
+fully corrected data set so we have
+order data remember I you can see I'm
+using a underscore symbol here whenever
+or wherever I feel like having the space
+you can eliminate the space uh and keep
+it as order ID in a continuous form
+without having a space or without having
+a underscore but remember don't just
+leave it as a simple space if you leave
+it as a space then you might be having
+deep trouble while you are writing a
+query to fetch some data okay so SQL or
+my SQL workbench might be confused to
+have spaces in between the column names
+or the entity names let's not uh make
+that happen right now let's uh continue
+with some queries so we are currently in
+the order or um dealership data so here
+we have some orders data so we have a
+product quantity now let's build a you
+know a kind of a problem statement where
+we have to extract uh a couple of U data
+sets or in a couple of uh results from
+the data set that we have now let's make
+use of we statement and uh try to find
+some answers right now let's say uh the
+dealer uh wants to know
+uh one of the dealership names where it
+is Prime Auto right so he wanted to know
+how many number of orders Prime Auto
+dealership has received now it's a
+simple U where statement let's try to
+answer the query answer the pro solution
+to the problem just write down select
+what you want to select I want to select
+the dealership name right let's write
+down or let's use the Autos suggest mode
+so before that select leave space leave
+space space from a table name which is
+dealership data right now you can
+proceed with um the column names what
+happens here is when I wrote select from
+dealership data it is automatically
+giving me some recommendations here
+right so the typing time will be less
+right so I want to get back to
+dealership name right
+Dealer ship press
+and underscore name I want this
+dealership name from dealership data
+where dealership
+name is equals
+to single
+code Prime
+Oro and I also want to know total number
+of orders they received so you can
+either use count or sum I'll go with sum
+of
+orders so for so good so let's run this
+particular query control enter and there
+you go so we have found that Prime Auto
+dealership has received
+546 number of orders so if you want to
+uh if you don't want some of orders here
+you can also alas it by typing
+as total orders
+received yeah so your column name has
+been success successfully changed right
+and if you don't use alas as it will
+still
+work there you go but in case if you
+want to make the code clearer to your
+fellow developers I would recommend to
+use as right now let's proceed with the
+some other similar wear commands so that
+you have a good habit of how to use wear
+clause in your realtime queries now
+let's go back to our data and see what
+else we can build as a problem statement
+so here we have days to deliver now
+let's say uh the client wants to know uh
+how many uh cars if there is a premium
+if it's a premium car then he wants to
+know the premium cars which took more
+than 10 days for delivery now let's
+write a wear query for that place the
+same query Here and Now name is where
+Auto I'll use a and statement here
+delivery
+date or days to
+deliver is greater than or equal to 10
+or we just copy this and paste it over
+here and we don't want the alas there
+you go now let's run this query and why
+don't we also write the product name
+here right so we understand which is
+that car which is taking so much of time
+so some of the uh cars are BMW X3 voleno
+so maybe some reason why these cars are
+taking a long time for delivery right so
+what happens here is he's able to
+understand there are couple of cars from
+couple of categories or couple of uh
+manufacturers which are taking a lot of
+time for delivering the
+car so what he can do is he can write
+down a request or an email to those
+manufacturers to reduce the uh time they
+are taking to manufacture the product so
+that he can give an early delivery to
+his clients right now let's run our
+query back again to see some more uh
+places where we can use the wear CLA
+right now let's see uh we want to uh
+categorize or we want to find out
+specific cars from the segment sedan or
+the category sedan where where uh the
+dealership is Elite Automobiles and the
+fuel type is diesel right let's try to
+build a back command for that let's copy
+the same Weare Clause
+here paste it again here product
+dealership name and instead of dat to
+deliver let's type
+category instead of Prime Auto we will
+be using Elite
+Automobiles and the category
+is equals to since we're using character
+data type we will be using single codes
+or double
+codes sit down control enter and there
+you go so uh Elite automobiles is
+selecting or or he is selling all the
+siton class BMW Series and uh these are
+the details right so if the dealership
+wanted to know what are the cars or what
+are the products this particular
+dealership is selling in category sit
+down he wants to know if he's focusing
+on any other manufacturer or a specific
+manufacturer so that he wants to make
+sure that uh these type of cards or
+these type of makers should be um you
+know proceeding with giving more
+deliveries of that particular category
+now this is one way of doing it and now
+let's identify since we have a couple of
+and a few more other categories we want
+to find out the total number of orders
+received based on the category let's say
+the uh business owner wants to
+understand which type of category
+vehicles are being sold a lot and he
+wants to make sure that his inventory
+has good number of such type of vehicles
+for future deliveries or future orders
+from the customers uh in such situations
+you want to group by the category and
+group by is also a keyword in my SQL
+where you can use that and categorize
+based on the category provided okay
+let's build the query so that you can
+understand it in a better way so U let's
+copy paste the same query here and now
+we will change a few terms here instead
+of product we will write
+category and instead of dealership name
+and instead of uh category here again
+okay we will write down
+sum of
+orders from dealership
+data Group by category and order
+by sum of
+orders
+descending now what does this query mean
+it means I want to find out the category
+so SUV category sedan class category and
+hatchback category right so I want to
+find find out which type of category is
+getting the highest number of orders
+right in that case what happens is if
+you find out that SUV category is
+getting a lot of sales then what you
+will do you will buy a lot of SUV based
+vehicles from the manufacturers and keep
+them in in your inventory so that
+whenever you receive an order for that
+particular vehicle it can show the
+options and make a sale right and why
+are we using aut buy right so we want to
+to find out the highest number of sales
+right order by descending what it does
+is it keeps the highest selling uh
+category on top and the lowest selling
+category on the bottom so if I run this
+query you will understand what exactly I
+meant so here you can see SUV category
+is the one which is receiving the
+highest number of orders followed by
+hatchback sedan and M multi-purpose
+vehicle MPV right now these are the
+vehicles so what you will do is the next
+business decision what you make is you
+will try to order a couple of more SUVs
+for your inventory and um it can be from
+different manufacturers and then you
+will provide multiple options when a
+candidate or when a client comes for
+buying SUV type Vehicles now to Deep
+dive let's say since you've already
+found out SUV is highest selling and now
+you want to find out which is that one
+single car in SUV category which is
+getting those many high orders right so
+that you want to make sure that you want
+to understand this particular car is
+getting highest number of sales from SUV
+so I want to keep a little bigger number
+of uh that particular car so that
+whenever a client comes for that car I
+have it ready right so if you if you
+make uh slight modifications to this
+query you can come up with that category
+and I'll also include product and sum of
+orders and uh order byct
+product group by Group by product order
+by sum of orders descending now I
+expecting a small error here but it's
+all
+right there you go so we might have to
+place category as
+well okay let's try to run this query
+once again there you go so now uh we
+also might have to use um a where
+command here where
+category is equals to
+SUV now run the query I guess you'll
+find the answer there you go so BMW X3
+series is that one SUV which is getting
+a lot of orders right now if you scroll
+down yeah these are the five top five U
+SUV products for which we are receiving
+total number of highest orders so what
+we did here is we selecting the category
+column product column and total number
+of orders right so we are filtering
+basically we are using where command to
+filter down the data so wherever the
+category is equals to SUV filter those
+data alone and now we are grouping by
+the product which is here Group by
+product and category and order by sum of
+orders descending keep the highest
+orders on top and the lowest orders on
+the bottom section where the category is
+SUV so in in categories SUV the lowest
+orders received are 130 for BMW X5
+Series so what you can do is if you want
+to cut down if your inventory is already
+having a couple of BMW X5 series cars
+then what you can do is you can cut down
+the imports from for that category and
+if you have less number of x3 series you
+can increase a couple of more cars maybe
+five to 10 more cars so that you have
+your inventory ready with X3 series for
+your clients right so this is how you
+can use where Group by a Buy in your
+query so let's say you wanted to
+eliminate that particular one product
+manufacturer which is receiving less
+number of orders in sedan class so as C
+ascending order and it is
+sidan now if you run the query you will
+find out sidan class
+bmwx3 is the one which is receiving less
+number of orders in the category sidan
+and you can eliminate that and if you
+want to specifically identify a
+particular dealership name which is
+having lowest sales then you can also do
+that where category is equals to sedan
+and dealership
+name uncore name is equals to Elite
+Motors Elite
+automobiles you can also include the
+dealership name in the column here and
+group by category and dealership name
+some of orders Su uh Su of orders
+ascending and run this query and there
+is some problem here in the query
+dealership name category error unknown
+dealership name in the field list okay
+so Elite automobiles let's let's copy
+this from here so we might have made a
+spelling M stake in a query but not a
+problem just place it here and there you
+go now we must be getting the answer
+okay dealership name okay we missed out
+with the dealership name so we had a
+spelling mistake when in case of
+dealership name let's yeah that's the
+one and now let's run the query there
+you go so in Elite automobiles in sedan
+class we have BMW 5 series in less
+number of orders received right now
+there might be some reason for it maybe
+the location of the dealership where it
+is so there might be chances right so
+when um let's say you are in South India
+or let's say you're in North India or
+some part of a country where the roads
+are really wonderful you don't have a g
+uh section you don't if you're not
+living in Western GS and you you're
+having good longer highways in those
+segments of Roads you would prefer
+sedans but in case if you are in a a g
+section or if you are in a you know
+where we have a lot of mountains lot of
+off Offroad roading tracking kind of
+regions in those regions you might
+prefer SUVs correct so there is a chance
+now Elite Motors might be in a place
+where there are some odd roads not good
+roads they might be a hilly region they
+might be it might be a region where you
+don't have good roads right even if
+you're not in the western GS or a g
+region or even if you're not in a region
+where you don't have any kind of hillies
+or mountain regions but the roads are
+not good or if you are are passionate
+about it it might be a trend right it
+might be some cult if you are coming
+from a region where is a good cult for
+SUVs right there might be multiple
+reasons so I think that is one of the
+reasons why uh there could be a high
+demand for SUVs or sedams or specific
+category of vles in a certain region now
+let's proceed with the next remaining
+queries or Clauses so far we have dealt
+with the withd Clause uh the which where
+clause and aut by Group by Clauses now
+let's proceed with um case Clause right
+now case is something like a switch case
+where you have uh if you're familiar
+with uh the switch cases in programming
+then case is similar to that in SQL now
+let's say the dealer wants to identify
+or the business owner wants to identify
+different dealership names based on the
+profit they make right or uh the number
+of the revenue they make he wants to uh
+find out the highest uh uh profit making
+category as high profit the medium
+profit and the low profit so the
+threshold is like 1 million if they're
+making 1 million then they are under
+highest category if they making in
+between 50 to 1 million they're medium
+and if they're making low than that then
+they are least profiting and if they are
+least profiting they might have to the
+the business own
+might have to take some decisions might
+be like improving helping them improve
+their sales or fixing their contracts or
+if they want to collaborate or combine
+that particular dealership the high
+performing one right some business
+decisions to make sure that everyone
+everyone is breaking even in profits now
+let's use the switch statement
+here so as I discussed High profit so I
+am going to
+take uh two columns here so selecting
+the dealership name of profit they are
+making and case starts here when sum of
+profit I'm calculating the profit here
+Revenue minus the cost to company is
+greater than 1 million rupees that is 10
+lakh Rupees then it is considered as
+high profit and if the profit is between
+50,000 or 5 lakhs or 1 million then it
+is moderate profit else low profit now
+let's run this query and we're grouping
+them by dealership let's run this query
+and see the output then there you go so
+we have profit categories here we have
+high profit result okay let's minimize
+this section
+here yeah there you go so there are five
+to six dealerships we have across uh the
+country and most of them are in high
+profit or all of them are in high profit
+so if we increase the number to 10
+million so far we had 1 million so if it
+is between 5 million to 10 million now
+let's run the query and see if we have
+any uh yeah so most of them are making
+good profits here there you go so far so
+good now this is how you can use a
+switch case statement now let's say I
+also
+want okay let's first use the uh uh
+patter matching case here kind of uh
+like statement we can use here like
+clause now I I want to make sure to
+identify a specific product okay let's
+run this query once again where we have
+the dealership data select all from
+dealership data so now we have uh 8
+series X8 Series right so some of the
+premium Vehicles now I'd like to go with
+X8 BMW X8 so I want to
+identify the dealership names which are
+selling X8 series now we can write down
+the query as select dealership name what
+you can do is just copy the dealership
+name so that we don't make any spelling
+mistakes I think we wrote dealership
+yeah we can remove this dealership name
+product from dealership
+data
+where
+product
+like or you can use
+like I think we don't need to use equals
+to them
+codes percentage or mod x 8 and
+percentage okay so what am I
+specifically mentioning here is I don't
+care if it is uh having anything in
+front of X8 and after X8 so we are damn
+sure that uh the series X8 will be
+released only by BMW so in few scenarios
+the BMW could be in small cases or there
+might be no space in between BMW and and
+X8 right so I don't want to take a
+chance so I want the exact details so I
+don't care if there is a space or not if
+there is anything else U there might be
+even spelling mistakes BM or BMA X8 or
+um the full form of BMW right so and
+after X8 I don't I don't want to take
+any chances here as well it might be
+series it might be cars right so I want
+every detail the dealership name and the
+product uh from the dealership data who
+is having X8 car in their inventory
+there you go so we have so many uh
+dealerships here so if I have to take uh
+the uh exact names if I don't want any
+reputations then I can go with the
+distinct
+here so distinct of dealership names
+where we can find out who is dealing
+with X8 in their inventory so we have
+five automakers here five dealerships
+who are having X8 in their inventory now
+let's also have a count right so we can
+make sure that how many number of U x8s
+they have uh count of
+product so we can understand how many
+number of uh okay so there is some query
+mistake here aggregated without Group by
+so here we can add another uh statement
+Group
+by dealership name or distinctive
+dealership I I'll just go with
+dealership name here and um order
+by count of
+product descending now let's try to run
+this query by
+product now let's run the
+query there you go so we have City
+Motors who has the highest count of BMW
+X8 series and they have um uh the
+biggest inventory I presume so in the
+next upcoming physical year if there is
+a requirement of importing X8 then you
+can check out the numbers right if you
+want to import a huge inventory or if
+you want to reduce the number and you
+can also if there is a good sale for
+Asian dealership for BMW X8 series you
+can also improvise your numbers as well
+so that's how you can use um the pattern
+matching statement and if you don't want
+um if you want to exclude xit then what
+you can do is just place an I here I
+like or product not like X8 so if you're
+filtering out X8 and running numbers of
+codes for everything other every other
+car but X8 you just want to run that
+query and here you can see instead of X8
+you can have details repeat and you can
+see instead of X8 you have every other
+detail on every other card that's how
+you can go with
+now now let's uh proceed with the joins
+in our tutorial for today now let's
+create a use case right you wanted to
+identify all the customers who bought an
+X8 right so um if you check the data if
+we go back to our query here and uh run
+the dealership uh query and you can see
+here we have order ID order date
+delivery date everything but we don't
+have customer name but I want the
+customer name but customer name is in
+the table customer data right and here
+we don't have the uh product detail what
+they bought right so Vian Sai or
+vhan it can be anyone who got an X5 or
+X8 right but now I want to know the
+exact customers who are or who have
+already placed an order for X8 or you've
+already delivered that X8 right or let's
+say you wanted to know if they they have
+placed an order for X8 now in this
+situation you might want to make use of
+joins which join two tables and give you
+the results so there are basically
+couple of joints that you can use left
+join right join inner join outter join
+cartisian join right so most of the
+cases you would just go with the keyword
+join so it will basically function like
+a left join right you're choosing the
+first table and you are choosing the
+matching datas from the right table now
+uh we want the order ID column we want
+the customer name and also the product
+name which is equals to X8 and we want
+to run a join command based on order ID
+so order ID happens to be the primary
+key based on which you can perform the
+join so it could be a little complicated
+orally so I will write the query so that
+you have a better understanding for it
+so let's quickly run the query I'm going
+to use the select statement here and we
+wanted the customer name right so we
+want the customer
+name or we have it here right double
+click copy the field name so that we
+don't have any mistakes done and it is
+from customer data right so customer
+data Dot customer name okay let's also
+copy the customer data table name as
+well right
+so that we don't have any mistakes in
+our
+query and bond dealership data table
+name as well so
+comma dealership data and what we want
+from dealership data is uh
+product and we also want dealership
+data dot order Ting prob be the field
+name come up from dealership data
+join customer data to dealership
+data on what terms so order ID is common
+between customer data and Order data
+right so we want order ID equals to
+order ID but it will be confusing so
+what we can do is join customer data on
+customer data. order ID and dealership
+data. order ID
+right and we will also use a we Clause
+we product
+dealership.
+product like again the same statement
+which is here there you go now we are
+selecting order ID from dealership Data
+customer name from customer data and
+product name from dealership data from
+the table dealership data join customer
+data table on customer data. ID is
+equals to dealership data. ID which is
+the order ID where dealership data.
+product right the product details are in
+dealership data table and the product is
+like anything before exit anything after
+exit because we want the details only
+for X8 the customers who bought X8 right
+now let's run this query and there you
+go so these are the customers who bought
+X8 so we have about 21 29 9 results 29
+members are the premium customers who
+got this premium vehicle X8 series now
+that's how you can use joints in a SQL
+table SQL data query and so far we have
+covered joins we have covered case we
+have covered pattern matching we have
+covered we Clause group byy order bu and
+U select and few others so we have also
+made a complete documentation out of it
+we now know how to create create a
+schema how to import data and few
+protocols to follow when you're
+importing data like uh using an
+underscore and we also have covered
+alter table if you have some mistakes in
+your column name how to alter the name
+of that column right so these are the
+fundamentals uh that you can know about
+SQL and also some advanced concepts like
+case and joints that you can know about
+SQL so um so far we have covered
+everything that you must know for a
+beginner and also we have covered
+something if you're an advanced level
+SQL Developer it's like a brushing up
+tutorial for you how to use some Clauses
+like group by autoby and how to use
+cases how to use joints right and that
+calls for the end of this tutorial on
+SQL data analysis and if you have any
+queries regarding any of the topics
+covered in this session or if you
+require the data sets or any of the
+resources that we used in the session
+like data sets the document where we
+have created all the queries then please
+feel free to let us know in the comment
+section below and our team of experts
+we'll be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply Lear staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification program prrams in
+cuttingedge domains including data
+science cloud computing cyber security
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn up and get certified click
+here

@@ -1,0 +1,741 @@
+welcome to simply learn my name is
+richard kirschner with the simply learn
+team
+that is www.simplylearn
+get certified get ahead
+in this video we're going to take a look
+at speech recognition
+what's in it for you
+we're going to cover what is speech
+recognition
+how does speech recognition work
+picking and installing a speech
+recognition package
+working with audio files working with
+microphone and then we'll have some
+demos
+what is speech recognition
+speech recognition incorporates a field
+of computer science and linguistics to
+identify spoken words and convert them
+to text it allows computers to
+understand human language
+and you can hear see here a simple uh
+uml diagram where we have the person
+with their microphone
+um
+they talk into the microphone and it
+converts it into some kind of
+recognizable either text or reads it
+back there's all kinds of things we can
+do and this is such an exploding area in
+data science right now
+how does speech recognition work
+speech is first converted from physical
+sound to electrical energy using a
+microphone
+and then to digital data using an analog
+to digital converter
+this digital data can be converted to
+text using algorithms like neural
+networks or hidden markov models
+if you don't understand this
+this is you know pretty common nowadays
+when we're talking about any of our
+computer and data science
+we really do have this whole setup where
+we want to convert things into a digital
+data computers handle zero and ones very
+well they handle the numbers and we can
+then do a lot of work on that whether
+it's speech
+audio video
+other data that comes in off the web
+picking and installing speech
+recognition package
+there are multiple speech recognition
+models available which all provide
+different functionalities
+some of the commonly used packages are
+appiah a pa i hope i said that right
+include natural language processing for
+identifying speakers intent
+google cloud speech offers basic speech
+to text conversion
+speech recognition offers easy audio
+processing and microphone phone
+accessibility we will work with speech
+recognition due to its ease of use it
+can be installed by running the
+following command pip install speech
+recognition
+so the first thing is working with audio
+files
+and when we talk about audio files
+it's stored this is kind of a nice thing
+so you can see an image it has a
+timeline and then it has
+values as far as the
+um what the sound is doing in there and
+depends on channels you can see over
+here how to cut audio files where they
+show the different channels in different
+colors
+uh there's a lot of stuff that goes on
+in an auto audio file with the values
+depending on how many um
+channels you have so if you have 16
+channels that means every point on this
+line is like a frame it might be
+0.1 of a second
+and then you'll have 16 values and the
+height the total height that's what
+you're looking at here is that all those
+different values and you can see here
+they kind of break it up into like i
+think this is just the volume on this
+little image this is just a simple
+search for audio files images nothing
+fancy
+and that's what's going on is you have
+these different channels and different
+values we really don't normally dig into
+looking at the actual values unless
+you're displaying it um
+other than saying the total amount of
+volume coming out of a microphone we
+really don't care a whole lot because we
+want to hear it we want to hear what's
+going on
+and then there's working with a
+microphone
+and
+you know you really um again
+when you're working in python as of now
+it's very hard to do both video and a
+microphone input at the same time so a
+lot of times you'll see the sound file
+and the
+image file separated the camera coming
+in either you work on them separately
+and then you put them back together and
+so we're talking about a microphone like
+my computer i have
+all my usb jacks
+i have two web cameras both web cameras
+have their own microphone
+my one of my monitors has its own
+microphone i have three monitors
+then i have my actual microphone i'm
+using which is jacked in there which has
+a little bit better sound quality
+and so you really want to set your
+microphone whatever your default is most
+of these programs right now go for the
+default microphone there is ways to work
+around that but when you're working in
+specifically windows it can get a little
+challenging
+to tell windows which microphone you're
+using
+it's not the biggest challenge but you
+got to be aware of that
+so we're going to start with a really
+our basic speech to text demo
+and before we dive into the demo we're
+actually going to do three demos and
+we'll breeze through the second two
+because they're based on the first one
+they create one is a guess a word and
+the other one is going to be open a url
+and we'll be in
+our i use anaconda by default certainly
+you can use pycharm
+in all of these you do have to be aware
+that sometimes your closed environment
+or if you're running it on your computer
+might need some extra packages or
+something like that most of these are
+pretty straightforward
+and we'll go ahead let me go ahead and
+open up jupiter notebook here we go and
+i actually meant anaconda and then
+jupiter notebook i'm in python 3.8
+this will work i believe it goes all the
+way back to 3.4
+for the speech recognition
+and currently there's like a 3.9 i think
+even a 3.10 beta
+i'm in 3.8 because a lot of the work i
+do does not work on 3.9
+and we'll go ahead and click the launch
+on jupiter notebook which opens our
+jupiter notebook
+and in here we'll start a new python
+three
+and then
+sometimes i i don't know how hard how
+important it is to rename it but we'll
+go ahead and rename it uh speech
+to text because that's what we're going
+to be working on
+uh we'll go ahead and rename that if i
+already exist oh i guess we'll call this
+speech
+that's because they sent me the demo
+it's like any good cook you want to
+prepare everything in the back before
+you do these demos and make sure that
+they run correctly
+and let's go ahead and import our speech
+recognition as sr
+that's common um sr is a common
+abbreviation if you ever do any go do a
+search for speech recognition tutorials
+and examples it's always going to come
+up they use sr
+and we're also going to import pi text
+pi 2 text 3.
+this converts it from
+the
+because we're going to take sound in
+from our microphone
+and then we're going to try to read it
+back to us and so that's part of that
+package in reading it back because we
+want to be able to hear it
+and you can see up here here's the pip
+install
+speech recognition
+and the pip install pi
+t tsx3
+make sure you have these installed or
+they're not going to run and we need to
+go ahead and import those packages
+and the first thing we want to do is go
+ahead and initiate our um recognition
+part of the software and so we'll do an
+r equals sr recognizer very
+straightforward this is the base setup
+you want for this
+and so r is going to be our main
+recording and all our different
+functionality is coming in from there
+and we'll go ahead and create a little
+function here speak text
+so this is our own function and whatever
+we put in here we want to say it back to
+us that's all this is doing
+and here's our engine we're going to use
+for our speech which is the
+initialization of the pi ttsx3
+and then we simply have it say
+command
+and then run and wait
+so this is going to go through and just
+say back whatever we send to it in text
+on there
+and let's go ahead and run that we can
+actually test this is kind of fun
+let's go speak
+text
+the old hello world
+and if we run this
+hopefully you can hear from my speakers
+oops made a mistake there i forgot to
+capitalize
+like any good programmer it's easy to
+forget that let's try that again with
+speak text
+hello
+world
+when i'm developing small routines hello
+world there you go i said it hello world
+it works
+i do a lot of little quick tests like
+this on each of the functions i'm
+working with it's so easy to get ahead
+of yourself and then you have to go back
+and find the error
+from like 15 16 lines before
+so you know just a quick trick quick way
+to test things out as you're going
+and the first thing we want to go ahead
+and do
+is we're going to use our microphone as
+a source for the input so with sr
+microphone here it is tapping the
+microphone which microphone is it it's
+whatever you have set underneath your
+sound so if i go underneath my sound
+setup
+and we start looking at that we can
+start looking to see where the
+microphone is underneath the system
+settings
+you can mess with that and change it um
+right off the bat though it's good to
+just leave it as a base if you're just
+playing with this for the first time and
+then the next thing and this is kind of
+important and you can do this manually
+with the
+speech recognition on there
+is your microphone
+isn't doesn't have a noise cancellation
+on it by default uh what that means is
+if my air conditioner is running in the
+background uh you're going to hear this
+loud background noise and if i stop
+speaking or i try any queue on here
+because we're going to let this auto
+stop itself you can set it for
+you can actually set a duration
+which we did here for doing ambient
+noise
+this is two seconds
+or you can you can let it know when you
+stop talking you can think of any of
+your
+alexis google voice any of those
+they wait for a pause in the sound and
+that's one of the things they can do and
+then they also have a duration on there
+that's what this is we're just going to
+record the ambient noise and say hey
+let's be quiet for a couple seconds and
+then once we've been quiet for a couple
+of seconds then we'll go ahead and pick
+things up and we'll go ahead and just
+run this make sure we don't get any
+errors
+and so you can see right here right and
+i had a little cues on here uh silence
+please calibrating background noise
+um calibrate it speak now um that way we
+know what's going on always good to give
+yourself cubes there uh so that's that's
+the first thing is we want to go ahead
+and set our speaker or
+our microphone
+and look for the ambient noise so it'll
+filter out the ambient noise and then we
+want to actually just listen uh listen
+for user's input and we're going to call
+the the
+variable that we're putting this
+data in as audio2
+and that's going to be our listen uh
+source2
+and once we listen and it will stop once
+he gets to a silent point
+uh we'll go ahead and do my text.r
+recognize google
+and this is important because this is
+using the google package one of the
+really cool things about data science
+nowadays and doing all these different
+processing
+is that we can now use other tools
+instead of having to start off with
+trying to figure out how to transfer
+people's voices
+into data for one hot and core encoder
+you can now do this and run your audio
+file through there in this case it's um
+you'd have to look at the actual audio
+files and what they accept and
+everything but we're just going to dump
+the audio file in there and we're going
+to see if it recognizes what's going on
+so let's go ahead and run this
+whoops before we run it i got better put
+a i better print out the output
+otherwise we'll never see what's going
+on
+so let's go ahead and run this and see
+what happens
+now that is calibrated does it work
+and you can see right here did you say
+now that is calibrated does it work and
+so we have
+uh transferred our microphone into our
+computer into text
+and just because it's fun
+we want to go ahead and use our our
+little module we put together called
+speak text and we're just going to dump
+the my text into that and let's go ahead
+and run that
+welcome to simply learn
+get certified get ahead
+welcome to simpler get certified get
+ahead it almost had it there that's kind
+of funny uh welcome to simpler i didn't
+quite get the simply learned part but
+that's okay
+that is part of the
+joys of working with data science is
+we're always on the cutting edge trying
+to learn something new
+now we had speech to text what we want
+to go ahead and do next is have a little
+fun with this
+what i'd like to do in this demo is
+we'll use speech recognition to directly
+open a website in google
+we will say the website url and it will
+automatically open
+and you can see here we're going to use
+just
+facebook.com or any other uh
+setup going into the mic
+our recognition is going to look for it
+and then it's going to feed that into
+opening up a new web browser
+and in our jupiter notebook we'll close
+out of this
+cancel
+i will probably never use this again
+since i have the original we'll go ahead
+and do that
+and we'll do a new
+python
+and from here we'll do our imports
+here's our speech recognizer as sr
+and our web browser as web
+and this is just opening up a web
+browser in there so that we have a way
+of actually looking at stuff in here
+and let's create our uh our main
+definition
+there we go uh i don't know why they had
+it as a def in there they must have been
+in a rush
+uh so the first thing we want to do is
+make sure we're running this as the main
+program and that's all this does up here
+a lot of times you'll get error on some
+of these because you're if because
+they're threading or they're doing
+sometimes it's a thread sometimes it's a
+multi-process in the back
+if it is opening up this particular
+setup and
+you have down you're not pulling it from
+a main program it's going to crash and
+so that's what you want to put that in
+there and a lot of these different codes
+we start getting into
+microphones videos any of these external
+sources
+you really want to have me do it as a
+multi-process and it's all hidden in the
+back so you don't have to worry about it
+but if you do mess with it you start to
+realize that each one of those is a huge
+resource and if you have them all
+running on the same thread all of a
+sudden you get lag and all kinds of
+stuff and so a lot of these already have
+that built in
+and so here's our r again our value and
+then we're going to do with the
+sr microphone as the source
+a lot of this is going to should look
+familiar right about now because this is
+what we just did in here
+is putting this together and here's our
+sar microphone we're going to adjust for
+the ambient noise i'm going to let it do
+automatically adjust for the ambient
+noise there
+clearly you can do a lot of different
+things on that but in this case we just
+want to adjust a little auto adjust
+and then we'll go ahead and
+create our audio and this is start to
+look you know not so complicated it's
+really easy to pull a sound recording in
+off your microphone and so we're just
+going to do our audio we're going to
+listen to the source we're going to do
+print hey we're now translating your
+source into something we can use
+and so when we take that audio we
+translate it into something we can use
+and it's gone through the recognition
+then we want to try uh
+oops here we go here's a recognized
+google i jumped ahead so recognizing now
+we want to go ahead and recognize it
+through the google translation
+we're going to print the destination up
+here so you can see it and then we're
+just going to open up the web page
+and then if there's an error we want to
+go ahead and throw an error down here
+this try and accept is pretty important
+because you when you start messing with
+these things you'll you'll find like
+web paths and the path is messed up or
+all kinds of different things can happen
+on there let's go ahead and run this and
+let's see if we can open up the facebook
+just like we had in the demo
+www.facebook.com
+oh and look at that i don't have my
+login built into the
+saved so it's prompting me for the login
+but there we go we're on facebook.com
+all that just done by vocal through our
+microphone
+real powerful tool there
+and
+we'll do one more demo just in case you
+wanted to
+play a little game on there to give you
+some ideas of different things you can
+do with this
+here's our import we're going to throw
+in random in time
+just so we have a little randomness
+there as far as
+looking for a word or whatever
+and then we'll go ahead and create a the
+actual recognized speech from mike part
+of the program
+let's go ahead and put that in there
+there's a lot bundled in here but it's
+nothing
+really new uh
+the first thing is it returns a
+dictionary with three keys
+success
+uh error
+transcription none
+if that's if it could not be
+transcribed so it might be they just
+picked up jarble and sent out an error
+so those are the three things we're
+looking for when we do the speech
+recognition
+is whether it worked it has an error or
+just has garbage in it and then we're
+going to check that the recognizer and
+the microphone arguments are the
+appropriate type because we're sending
+over here a recognizer which is our sr
+dot recognizer and then an sr microphone
+which will go to the default microphone
+and then if uh if it's not if it is
+instance of a recognizer of sr
+recognizer then we raise an error if
+it's not and the same thing with the
+microphone
+again
+this is common
+troubleshoot or not troubleshooting but
+development of a lot of these programs
+is we want to make sure that if
+something's wrong then we can just push
+it back an error on there and that saves
+like if you're doing a major development
+if i'm just playing with this i probably
+would leave this stuff out unless i'm
+playing with it because i am trying to
+put together a major program
+but that works out pretty good and then
+here's where our
+key is this is where whatever's going on
+this is our main stuff and we have with
+our microphone as the source we're going
+to use the recognizer just for ambient
+noise that should look familiar
+and then our audio is just going to
+listen for it so it's going to listen
+for the guess
+and then we're going to set up our
+response object if you remember from up
+here we said we're going to send back
+and this is just a dictionary success
+error transcription
+and it's going to come down here it's
+going to try the response the
+transcription equals recognizer google
+audio
+exception if there's a error on this
+then the success equals false response
+error equals api unavailable
+and then of course if you're unknown
+error then also error unavailable return
+response
+so all this is is just bundling this
+answer into a thing saying hey we messed
+up or we didn't
+the real key here in all of this is that
+we're doing the same thing we did before
+which is we're creating a audio
+setup right here which listens to the
+source and returns the actual audio on
+there on the response
+and let's go ahead and run that
+there we go
+and then with any of these if you
+remember last time we talked about it's
+going to look for the main
+and in the main we want to go ahead and
+create our
+instructions and
+our basic setup in the main let me go
+ahead and do that
+of course you don't have to have these
+separated by cells if you're in pycharm
+it just be a single setup on there
+that's a jupiter notebook thing that
+just makes it easier for troubleshooting
+and so we're going to set it up with our
+words you could swap this for any words
+you want um you can swap this for all
+kinds of really cool things to see if
+you can identify it
+you could think of this as if you have
+your
+computer hooked up to a drone you might
+be able to tell it turn left turn right
+or something along those lines and then
+those commands would go through
+just like we did with the access the web
+page
+in this case we're going to create a
+list of words we have our prompt limit
+we have a recognizer here's our
+microphone
+and our recognizer sr recognizer
+sr microphone
+this is the word we're going to guess
+just a random that's why we imported
+random up above
+good to have instructions uh format
+words and so on and if i if i run this
+this doesn't actually do anything yet it
+just gives off the instructions and then
+it's gonna sleep for
+three seconds
+when you're putting together code it's a
+good idea to give instructions so that
+people know what's going on and then
+give them a moment to read it that's
+always a good thing in these codes
+sometimes when we're testing them we
+forget that we forget the little things
+that make a big difference
+uh when it comes on is released
+and then let's put the main piece of the
+code together here
+uh so we want to go ahead and give you
+uh in this case they're doing what we do
+three guesses
+so number of guesses for iron range of
+three guesses
+and then
+if no re if there's like a mess up we
+want to catch it and give you another
+try
+and if it succeeds we want to see if we
+got the right answer and so we're going
+to do a prompt limit i think the prompt
+limit i forget what they said a 2-5 or
+something up here
+there it is prompt limit 5. it's going
+to give you five tries to get a working
+guess so if i say if i slur my words and
+i'm like a citizen uh banana i say bro
+it's going to come back and say i didn't
+recognize that try again
+so print your guess your speak in your
+format that's what all this is
+and
+right here is the key
+this is our guess this is the
+function we created earlier and we send
+it the recognizer in the microphone and
+it says if guest transcription so if the
+transcription is false
+break if not guess is success break
+print i didn't catch what you did say
+again
+so if if either the transcription comes
+up as false where it failed or the guess
+doesn't make sense um it's going to loop
+through here five times and then kick
+you out at that point
+and then it comes down here and let's
+say you try all five times you get five
+errors and then it's going to come up
+and say hey there was an error let's
+kick that out
+so that's some general programming
+ways of catching errors and catching
+guesses and things like that
+this is so common when you're having a
+website with passwords and all kinds of
+fun stuff that comes up
+and then we want to show the user the
+transcript
+you set that way you can see what it
+tells you you said
+and then your guess is correct
+user has more attempts
+or if it guesses correct equals you know
+does it equal the word lowercase
+both of these you want to remember to
+convert to lowercase
+and then if it's not correct we have so
+many more guesses if guess is correct
+print correct you win format word
+yay you won and if it's incorrect try
+again
+and then if you've gone through all of
+your guesses
+you want to go ahead and just say sorry
+you lose
+game over let's go and play just see how
+it turns out and of course any of these
+codes remember you can send a note to
+the um
+through if you're on youtube watching
+this you can go through that channel and
+send simply learn a note and they can
+send you copies of some of this stuff
+give you something to play with
+let's go
+banana
+orange
+oh look at that i won yay two tries to
+guess orange
+uh so a lot of little fun there a little
+game you can throw together
+uh again
+we looked at some of the key elements
+here is our recognizer and our
+microphone
+and then we go up to the def
+our audio is going to go ahead and we
+need to go ahead just for ambient noise
+and then
+we just dump it all in there and let the
+audio take over and it listens for the
+answer
+just a really great little fun little
+set of script on there
+thank you for joining us on speech
+recognition with simply learn
+for more information please visit
+www.simplylearn.com
+get certified get ahead
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

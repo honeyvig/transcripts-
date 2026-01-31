@@ -1,0 +1,304 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about an advanced SQL topic the CTE or
+also known as The Common Table
+expressions in Sequel that's it if these
+are the type of videos you'd like to
+watch then hit that like And subscribe
+buttons and the bell icon to get
+notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upill yourself to master SQL for data
+analytics and land your dream job or
+grow new career then you must explore
+simply Lear SQL certification course
+simply learn offers an industry
+recognized SQL training and
+certification program for aspiring SQL
+developers and data analysts through
+this program you will gain knowledge and
+work ready expertise in skills like real
+world problem solving data analytics
+MySQL workbench problem solving over a
+dozen others that's not all you also get
+the opportunity to gain an engaging
+learning experience featuring demo
+sessions and real world examples you
+will gain dedicated live sessions by
+faculty of Industry experts and Top Tire
+product companies along with the
+academic from top universities after
+completing these courses many of our
+Learners have transitioned into a data
+analyst role or a SQL Developer role as
+a fresher or moved onto a higher paying
+job and profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the print comment and description box
+below and without further delay let's
+get started so what exactly is a CT ask
+now if you are beginner in SQL let's say
+you wanted to Club two different tables
+or more different tables maybe three or
+four right so you will be using one
+keyword which is join right and let's
+say you may have to create a query in
+such a way that you have to Club
+different tables and you have to extract
+the results from one table into another
+and finally create a output table right
+so this might be sounding a little too
+complex so basically what CTE does is it
+acts as a temporary table right now you
+can write a query and save it as a CTE
+right and that particular resultant
+table from CTE will not be created but
+will be in the memory as a temporary
+data or an intermediate resultant data
+right now whenever you want to use a
+join or whenever you want to use the
+same query inside a bracket or inside
+something in your query you can just
+simply use the name of the CP and then
+the data you require the columns you
+require and done you will get the data
+now this might be a little too
+complicated to understand in just m
+words now let's just go through the
+formal definition of what exactly is a
+CD and what it does and then let's
+quickly so it's a little too complicated
+to understand it just with m words so
+let's get started with the Practical
+examples but before that let's
+understand a formal definition of what
+exactly is a CTE in SQL so CTE also
+known as or also called as the Common
+Table expression or some people also are
+used to call it as a width expression so
+the keyword is with so a Common Table
+expression in SQL is a temporary result
+set that you can Define within a query
+as I said it helps to break down the
+complex queries make the code more
+readable and allows you to reuse the
+result set multiple times within the
+same query just you need to use the name
+of the CTE in the places where you want
+in your query and it reduces the code
+length as well as the execution time now
+CTE are defined using the width keyword
+as we discussed before followed by the
+CTE name right so for every uh column
+name name or anything in your data set
+you give a name right similarly when you
+are using CTE in SQL you also need to
+give a name to the CTE and that
+particular name will be used in your
+subquery positions that will reduce the
+query length and execution time so you
+should be giving a name and the query
+that generates the result set the CTE is
+available only during the execution of
+that particular query or specific query
+right so as I said the CTE table the
+resultant table which is created while
+you are using the CTE will not be
+created as a permanent table in the
+database right it will be a temporary or
+intermediate result which will be active
+as long as your current query which is
+using the CTE is active now let's go to
+the demonstration mode there we will try
+to create some simple quer
+right and we will understand how exactly
+a CT can be beneficial in those
+situations now let's go to the MySQL
+workbench this is my MySQL workbench so
+I have a lot of tables here we have the
+credit card data set we have the sakila
+data set SLP data set says Superstar
+World Etc right so we will be using the
+superstore data set uh I mean the
+database so firstly we need to write in
+the query which means that I am going to
+use the superstore database
+right sorry
+Superstar so I uh prefer using uh
+smaller case or lower case for database
+names and column names and uh upper case
+for the keywords for example here use is
+upper case and Superstar is the name of
+the keyword right so uh that is for uh
+identifying or easy readability which is
+a keyword and which is a name right so
+let's execute this query and have access
+to the superstore data set and in
+Superstore data set I have one table
+called as Excel data now let's quickly
+check what we have in Excel data select
+star from Excel
+data here we have Ro ID order idid aut
+date ship mode customer everything right
+so we have uh region we have uh sales
+quantity discount profit rate so we have
+a number of possibilities and number of
+reports that we can generate but let's
+try to keep it simple let's try to find
+out unique regions right
+select unique of regions
+right or just
+regions
+data Group by regions so let's quickly
+execute this statement and see the
+output or maybe we can make some
+modifications to it right instead of
+that you might want to use you might
+want to use distinct function so that
+you don't get all 10,000 plus rows so
+basically uh this particular data set
+has about 10,000 or more rows in it and
+it's not real it's completely made up
+report using artificial intelligence so
+we use chat GPT to create 10,000 R of
+data for 30 years maybe from 2000 or
+2001 to up to 2030 or 31 right so we
+don't want all those 10,000 plus columns
+or sorry rows so let's use a distinct
+here and uh try to ex this statement so
+that we get U five of uh the regions
+what we have so there you go we have um
+five regions as expected NorthEast
+Southwest and Central now you can also
+uh
+select uh kind of maybe average of sales
+uh maximum of sales and total sales so
+uh this is bringing us somewhere we can
+you know try to find out regionwise
+sales right so region wise sales Group
+by years like 30 years what was the sale
+happened in the year
+20121 sorry 2001 right we begin from
+2000 or 2001 to all the way up to 2030
+or 2031 right so we can see if there is
+an increase in the year on-ear sales a
+decrease in the year on ear sales we can
+identify the best performing ER the
+worst performing ER right so this sounds
+like a good use case now let's go to the
+code where I've written it as a CTE and
+understand the
+workflow so here I have uh named my CTE
+as sales CTE so I'm starting it with the
+keyword with right so with sales CTE as
+now this is our query right what am I
+doing I'm extracting so according to the
+DAT set we have the date right so the
+date is year month and date of that
+particular day right but we want just
+the year so we're using the ear function
+to extract the Year from the date as
+sales ear region uh sum of sales right
+we wanted to find out the total sales
+happened in that particular year as
+total sales from the data set Excel
+dator and R by air right we wanted it in
+increasing order so 2000 to all the way
+up to 230 or 2031 correct so that's how
+it is and I'm saving all this as a CTE
+named as sales CTE now I want to select
+some parts of that particular CTE so I
+want to select sales air region total
+sales from sales city which is right
+over here and order it in form of sales
+and region right now let's try to copy
+this code and run this in our
+workbench right now let's Okay let me
+close this quickly so that we have a
+complete view of the code right so let's
+now select all the
+code so now we have selected this
+particular code let's try to run this
+and see the output there you go we okay
+we have the output but there is
+something wrong we did not get uh the
+ears right so all the 30 years of data
+here it is Group by region which is fine
+okay we don't want region we want to
+group it by ear that's okay and the
+thing is we need to fix this particular
+year so maybe there is something wrong
+where with the order date right so I
+think uh the database has saved this
+particular oh okay okay since this is
+generated by chart jpd maybe the data
+type of the date is other than data
+right other than date data type it may
+be string now we might have to do some
+type casting to change the data type of
+the AUD dat and let's quickly do that so
+now we have updated the
+here so what we have done is just uh
+cast here right so we have
+changed the string type of date to the
+normal date which follows by year month
+and date so this is a simple type
+casting that you can do and uh rest
+everything and we've also added a we
+condition so where uh date is not added
+or date is equals to null then you can
+just uh ignore that and uh now let's try
+to execute this query and we have also
+removed that region thing right Group by
+region or order by region so we want
+that to be ordered according to the uh
+year which should start with uh 200 one
+or the first ever year to the last ever
+year according to the data set now let's
+select the entire CTE query and run that
+and check our outputs so there you go
+you have the year onye sales from 2001
+to all the way up to the year
+2030 and
+2031 right so that's how the CTE or
+common uh table expressions in SQL or
+the width query in SQL can be used and
+uh with that we have come to the end of
+this session on Common Table expressions
+in SQL if you have any queries regarding
+any of the topics covered in this
+session or if you require the D set or
+the code document that we have used in
+this session then please feel free to
+let us know in the comment section below
+and our team of experts will be happy to
+help you as soon as possible until next
+time thank you for watching and stay
+tuned for more from Simply learn staying
+ahead in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your your career we've got
+you covered explore our impressive
+catalog of certification programs in
+Cutting Edge domains including data
+science cloud computing cyber security
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

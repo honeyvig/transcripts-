@@ -1,0 +1,283 @@
+foreign
+hey guys welcome to yet another
+interesting and informative video by
+simply learn
+in today's video we're gonna be learning
+all about single link listening but
+before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+this session will help you understand
+what a single linked list is in C moving
+ahead let's understand the memory
+representation of a singly linked list
+later let's look at the syntax of a
+single linked list and finally
+operations performed on a singly linked
+list now let's begin by understanding
+what a singly linked list is in C
+a single linked list is a collection of
+data called nodes where each node is
+divided into two parts to store data and
+address
+every node in a linked list is connected
+with the other through a pointer that
+points to the address of the next node
+unlike a risk linked lists are not
+stored in contagious memory elements are
+located at some random location in the
+memory for example
+if the first element is inserted at the
+location 2000 then the next element
+would be located at 2016 and then at the
+next relocation and so on
+moving ahead let's have a look at the
+simply linked list memory representation
+let's consider four elements to be
+inserted into the list and for that we
+have four notes where each node consists
+of data part and address part to store
+at some address 2000
+2016 2022 and 3000.
+in singly linked list
+we have a special node called a head
+node that holds the address of the first
+node and the last node points to the
+none as I discussed before every node in
+a linked list is connected with the
+other through a pointer that points to
+the address of the next node and that is
+represented by the arrows in this
+diagram
+for example
+let our elements to be inserted be 10 20
+30 and 40. the address of the first node
+is stored in the head node
+and the next part of the first node is
+holding the address of the next node
+that is 2016. similarly the second node
+is holding the address of the third node
+that is 2022 and the third node is
+holding the address of its next node
+that is 3000 which follows till the last
+node that is pointing to the none in
+this way they are linked together
+up next we have syntax of a singly
+linked list
+to declare variables of a different type
+and a pointer variable we make use of
+structures so we have a stuck keyword
+followed by a structure name called node
+then we have variables decline that is
+data and the struct node has trick next
+a pointer variable pointing to an
+elements of a structure node so with
+this let's try to execute a simple
+simply linked list program to understand
+in a better way
+as you all can see this is a program of
+a singly linked list
+so here we have a struct note inside
+that we have a variable data of type
+integer
+and then a pointer variable pointing to
+an element of a structure node so inside
+the main function we are creating the
+nodes first second third and fourth and
+for this we are allocating memory to all
+the nodes so for that we have a
+statement first is equal to structure
+node asterisk mlog is a function to
+allocate memory and then size of stuck
+node so similarly we are creating first
+note second third and fourth and then we
+are inserting values into the nodes so
+for that we have
+first node data part is holding the data
+10
+and then second node data part is
+holding the data 20. and third node 30
+and 4th is 40. so then we are linking
+these nodes together for that we have
+first
+node next part is holding the address of
+second node
+second node next part is holding the
+address of third node and similarly the
+third node and fourth node but here the
+fourth node is pointing to the nun which
+means they are no more notes further
+later we have a display function where
+it displays all the linked list elements
+so while pointer is not equal to null it
+will print
+all the elements so now let's run it
+and here we got the output
+the linked list elements are 10 20 30
+and 40 and they are inserted
+successfully into the notes
+okay so now let us move on to the
+operations on a single linked list
+first we have insertion sort algorithm
+next deletion sort algorithm and finally
+traversal sort algorithm let's
+understand them in detail
+so first let us understand insertion
+operations
+under insertion operations we have
+insertion at beginning so basically we
+insert the element at the beginning of
+the element list next insertion at end
+that means it insert the elements at the
+end of the element list and lastly
+insertion of the specified node that
+means it inserts the element of the sum
+specified node
+so now let's run the program and
+understand these insertion operations
+practically
+so as you all can see this program is to
+perform insertion operation on a single
+link list so we have insertion at
+beginning operation then insertion at n
+and followed by that we have insertion
+of the specified node
+so first let's understand insertion and
+beginning so here we have a pointer
+variable that is head and a new data
+so the new is a note where we are
+allocating memory to it and the new data
+part is holding the new value
+and its next is assigned to the head so
+now the head uh I mean the new is
+assigned to the Head
+so
+that would be our first node and next
+coming to the insertion at end
+here we have head and again the new data
+so new again we are locating memory to
+it
+so the last node is equal to head
+assigning the head to the last node so
+the new data part is holding the new
+value but the next part is holding the
+null that means it's pointing to the
+null
+so if a head is equal equal to null
+that means the new is assigned to head
+and written while last node next is not
+equal to null then
+as a last node next to the last node and
+new to the last note next
+so after that we have insertion after
+specified node so that means if the
+previous node is equal equal to null
+that means given previous node cannot be
+none
+so here we have we are creating one more
+new node and allocating memory to it
+and for that
+the new data part is holding the new
+value and the new next
+is pointing to the previous node next
+and the MU is assigned to the previous
+node next
+so next it will print all the
+linked list elements so for that we have
+a display function where it Plains all
+the elements
+and here
+we are going to insert the values that
+is 11
+20 13 14 44 and 15. so first it will
+insert the element at the end that means
+the last will be 11 and insertion at
+beginning in the sense our first element
+would be 20. again insertion at
+beginning so before 20 there it will be
+13
+and insertion at n after 11 will have 44
+and insertion of the node head of head
+of next that means after 20 we'll have
+15.
+so let's execute and have a look at the
+output
+so as you can see
+the elements the linked list elements
+are 30 20 15 11 and 44. they are
+inserted successfully
+followed by that we have deletion
+operation to delete from the beginning
+delete from the end and delete after
+that specific node so now let's run a
+program
+so in this program we are going to
+perform deletion operation so basically
+we are going to delete a node
+so for that
+we have a head and a previous
+so if a pointer is not equal to null and
+pointer data is equal to key
+then pointer next is assigned to head
+and free this space and return
+while here we are going to search a data
+to be or a node to be deleted
+so while pointer is not equal to null
+and pointer data is not equal to k then
+assign pointer to previous and pointer
+next to pointer
+and if pointer is equal equal to null
+then return
+and here we are going to remove the node
+so we are going to free up the space
+so now let's try to run it
+so as you can see here
+the linked list elements already the
+elements that we had inserted was 13 20
+15 11 and 14. and now after deleting an
+element that is we have deleted our
+first node element that is 13. so now
+the remaining elements after deleting
+are 2015 11 and 44.
+so finally we have traversal operation
+in this operation we visit each and
+every node at least once maybe to
+display all the elements or to perform
+operations on it
+so let's understand it practically
+so finally we are going to perform our
+operation called traversal that means it
+displays all the elements in a linked
+list
+so
+it actually visit each and every node at
+least once so that means it will display
+all notes till it finds the none
+so now let's try to execute it
+so as you can see first we had inserted
+the elements 13 20 15 11 and 44. so
+after deleting one element we had a list
+2015 11 and 44. so now after traversing
+that means it displays the elements now
+present in a linked list and they are
+2015 11 and 44.
+so with this we have come to the end of
+this session on singly linked list in C
+I hope the session was informative and
+interesting if you have any queries
+regarding any of the topics covered in
+this session or if you require the
+resources like PPT code document or
+anything then please feel free to let us
+know in the comment section below and
+our team of experts will be happier to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

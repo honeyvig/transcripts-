@@ -1,0 +1,1057 @@
+hey everyone i am pepper khandelwal and
+i welcome you all to our simply learns
+youtube channel today we will be going
+over the sorting algorithms in c sharp
+but first let me remind you that we have
+our daily updates on numerous
+technologies so if you are a tech geek
+looking for a latest technological
+innovation then try subscribing to our
+youtube channel and don't forget to hit
+that bell icon so you never miss an
+update on simpion
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin our session with the
+discussion on what is sorting
+then we will briefly discuss some of the
+basic sorting methods which includes
+using a sort function
+or a comparative method or using a
+delegates we will also try sorting using
+link library functions
+and an iterative sorting method
+finally we will discuss some sorting
+algorithms like bubble sort insertion
+sort selection sort and quick sort with
+the help of our demo
+so let's get started with the discussion
+on what is sorting
+first up sorting is the technique of
+putting the items of an collection in a
+certain order in c sharp
+an array a list or any other data set
+can be considered as collection
+next
+the collection may contains item of both
+simple
+and complex kind a simple type can be an
+array of integers it can be a text
+floating point values and so on
+whereas a complex type might be a
+collection of objects of user defined
+kinds like employee student and so on
+complex types are frequently nested
+which means that the objects may have
+several characteristics
+at last we have a c-sharp sort function
+includes built-in methods for sorting
+collection c-sharp sort function may
+sort an array list or any generic
+collection depending on the comparer
+given
+next let's go over some of the basic
+sorting methods
+we'll go over various sorting methods
+so first up we have sort method
+let's go to our visual studio and try it
+out
+let's start with
+declaring and initializing an array so
+in
+we will have bracket
+arr
+equals to
+new
+end
+box
+we will have normal box
+then we will have curly braces and we
+will give it
+the values so let's have 16 comma 29
+comma 6
+comma
+17 comma 35 comma 19.
+now
+let's try to print this unsorted error
+first so console dot
+write line
+so unsorted
+array
+then after that we will have a four inch
+loop
+with end
+item
+in
+arr
+here we will have
+another console statement console.write
+we will have
+this item
+plus
+and have
+so these values separated by a space
+now let's call our sort function
+so we will call array
+dot sort
+in argument we will have arr which is
+our array
+semicolon to close it
+now
+let's print this arrow so console
+dot
+write line
+slash and slash n
+then we have sorted
+array
+then we will have a four each loop
+and
+item
+in
+ar
+and we will have console
+dot
+write
+item
+plus
+now let's save it
+and run it
+as you can see
+it is first printing our sorted error
+unsorted error
+then it has sorted this complete array
+using the sort function
+let's get back to our slides
+next up we have compare to method
+so let's get back to our visual studio
+and try this one as well
+here we will have
+repeat
+we will start with
+declaring an array so end
+arr
+equals to
+new
+and
+braces
+then in curly braces we have
+our
+array so 29
+comma 6 comma 17
+comma 35 comma 90
+i'm using the same data set so that we
+we will have a clear understanding of
+how things are working
+so next
+let's print the array first
+so console
+dot
+write line
+unsorted array
+then we will have a 4 inch
+then we will have
+end
+item
+in
+arr
+and we will
+have console
+dot write
+item
+plus
+to subtract them by the space
+now
+let's use the comparative method
+so we will sort this array from first to
+last we will compare every element to
+each other so
+we will have
+array
+dot
+sort
+then we will have int
+so arr
+comma
+new
+comparison
+and
+then in braces i will have
+i1 comma
+i2
+equals to
+i1
+dot
+compared to
+i2
+then we will try to print this
+so
+console
+dot
+write line
+sorted
+array
+then we will have 4 each
+and
+item
+in err
+and we will have
+console
+dot
+right
+then item
+plus
+and we will save this
+let's try this out
+as you can see it has first printed out
+unsorted array then it has sorted this
+out
+that's how you can work around whether
+compared to function
+now
+let's get back to our slide and check
+out what we have to learn next
+next up we have using a delegates method
+so let's get back to our visual studio
+code and learn how to use delegates
+to
+to do a sorting
+here
+let's start by initializing an array
+so we will have end
+braces
+arr
+equals to
+new
+end
+braces
+16
+comma 29 comma 6 comma 17 comma 35 comma
+19.
+data set
+then
+we will
+print out
+this unsorted array
+console.writeline
+then
+unsorted
+then after that we have our 4-h loop
+and
+item
+in arr
+then we will have console
+dot right
+here we will have item
+plus
+then a space to
+separate them
+next we will start our sorting process
+so we will sort this array from first
+class
+so to do that we will use
+array
+dot
+sort
+and we will use end
+then we will have a r
+comma
+delete
+and
+m
+comma
+and n
+then in curly braces we will have return
+m minus n
+next we will
+print out a result so console.writeline
+sorted
+array
+then we will have
+our 4 each
+and
+item
+arr
+console dot
+write
+item
+plus
+a space
+to separate them
+now let's save it and run it
+as you can see it is printing our sorted
+array unsorted error
+within sorted array
+now let's get back to our slides and
+check out what are other methods that we
+will be learning next
+next up we have
+using link methods
+so now let's get back to our visual
+studio and learn that
+here
+we will start
+with initializing and declaring a new
+array
+so int
+braces
+arr
+equals to new
+end
+braces and curly braces
+in curly braces i will have 16 comma 29
+comma 6 comma 17.
+35 comma 19
+next we will
+print out this unsorted error so console
+dot
+right line
+unsorted
+then we have a 4-h loop
+and
+item
+in
+arr
+we have console
+dot
+write
+then we have item
+plus
+a space
+now we will do our sorting process
+so
+to sort the array in increasing order we
+will use
+arr
+equals to arr
+and order by function
+which is stored in our link system
+libraries
+so c is equals to
+c
+dot
+to
+array
+next up we will print out the sorter
+error
+i will i'm just gonna use reuse this
+code
+and
+just change a few things
+let's save it and run it
+as you can see it has printed out and
+sorted and sorted
+now let's get back to our slides and
+learn our last method
+next up we have using an iterative
+method
+so
+let's get started
+let's go back to our visual studio code
+so now we will start
+with
+creating an array
+so
+end
+arr
+then braces
+equals to
+new
+end
+braces
+then curly braces
+we will have
+our
+set
+sex
+17
+35 19.
+next up we will also declare a variable
+temp
+so it's an integer variable
+now we will try to print the unsorted
+array so
+we have
+console
+dot
+writeline
+unsorted array
+then we have our 4 inch loop
+and
+item in arr
+then i have console
+dot
+write
+item
+plus
+a space
+now
+let's try to sort this array
+so
+we will traverse 0 to arrays length
+so we will start with a 4 loop
+and
+i
+is equals to 0
+i less than
+ar dot
+length
+minus 1
+and i plus plus
+then we will traverse from i plus 1 to a
+its length
+so
+for loop
+let's give it a tap so that it will be
+easy to understand
+end
+j
+is equals to
+i
+plus
+1
+then j less than
+a r
+dot
+length
+then j
+plus plus
+now we will compare array elements with
+all next elements so if
+arr
+bracket i
+is greater than
+arr
+bracket j
+then
+we will have a swap
+so temp is equals to
+arr
+i
+so basically we are saving the value of
+ar i
+in time
+then we will change the airwise ic value
+with arrj
+now we will store
+the temp value in arg
+to complete the swapping process
+equals to temp
+now let's print out the sorted array
+so
+we will use the earlier code
+we will just
+rename this
+sorter
+control save
+let's try out this code now
+and here as you can see we have
+successfully printed out our unsorted
+and sorted arrays let's get back to our
+slides
+so now that we have looked over some of
+the basic sorting methods it's time for
+a little quiz
+so comment down below the answer which
+sorting algorithm is used in the sort
+function
+which we just use
+so now let's move on and let's check out
+some of the sorting algorithms we will
+have a look
+at
+the algorithms
+like bubble sword
+insertion sword
+selection sword and the quick sword
+so let's discuss them one by one
+first up we have bubble sort
+so we will start with the first two
+elements and compare them
+and if the first one is bigger than the
+second then we will switch them
+so as you can see in this image we have
+4 and 2 so we will check if 4 is greater
+than 2
+if it is then we will switch them
+so the next array will become 2 4 1 8 3
+then we will move on to the next pair
+and we will repeat this with the next
+set so now
+the array was 2 4 1 8 3 so we will check
+between four and one
+and if one
+is less than four then we will switch
+them so new array will become two one
+four eight three
+now we will not go back to two and one
+we will
+come continue on to the next pair so
+next year will be four and eight
+if we will see if these are
+thus correct pair yes it is then we will
+move on to next one and we will switch
+between eight and three
+in eight and three the 3 is smaller so
+we will switch them so new array will
+become
+2 1 4
+3 8.
+so let's get to our next slide
+and here as you can see a new array is 2
+1 4 3 8
+so now we will repeat the same step in
+the second iteration so we will start
+with 2 and 1
+so we will switch them so it will be 1 2
+4 3 8
+then we will have 2 and 4
+we don't have any swap between them so
+we will go to the next pair we have swap
+between four and three so we will swap
+them so it will become one two three
+four and eight
+then we have to go to our next pair it
+is four in it there is no swap between
+them
+so let's go to the next slide
+and here the all the swaps are done
+so now this array is sorted but
+we know that but our algorithm doesn't
+know that yet so we will go to a final
+iteration
+with this
+array so it will check between one and
+two there is no swap
+it will go to two and three there is no
+swap three and four no swap four and
+eight no swap so now when the algorithm
+registered that in the complete
+iteration there were no swaps
+then it will declare this array as
+sorted
+let's try this in a visual code studio
+here is our code for the bubble sort
+so first let's go to our bubble sort
+function
+here i am declaring an n with an error
+length
+then
+for the let's start from the start in a
+bubble sort we have argument as array
+so we have already passed down array in
+this function
+so first we are declaring its length in
+an variable n
+then we will have a nested for loop
+which will run from i is equals to 0 to
+n minus 1
+and j is equal to 0 to n minus i minus 1
+then we will have us if statement which
+will check arj is greater than
+arj plus 1 that is it is basically
+checking if the this is the first
+element is greater than the second
+element or not if it is then it will
+swap them
+it is utilizing a variable called temp
+to swap these two
+then we have
+another function which is a print array
+it is basically responsible to printing
+out the array
+next we have our mean function in this
+we are declaring an array 42183
+this is the same data set which we used
+during our logic explanation
+so now
+first we are printing out unsorted array
+just for the aesthetics then we are
+utilizing the print error function to
+print out this unsorted array
+then we are using a bubble sort function
+which is responsible for sorting
+this
+then we will print out sorted array to
+print out the actual answer
+let's add another end so that
+i don't think it needed because we will
+be using here right line
+then we have print array to print out
+the sorted array let's run it
+as you can see it has first printed out
+the unsorted array which was our
+use case
+then we have a new sorted array this is
+one two three four eight
+so now let's get back to our slides
+next up we have insertion salt
+so in insertion sort
+let's say we have this error
+we have an array called 65423
+we will start with traversing this array
+from index i to n minus 1 that is i
+to 5 minus 1 that is 4
+so while traversing we will compare the
+elements in the current index to its
+predecessor
+so we will be comparing six with five
+sorry five with six
+now if the data at the current index is
+smaller than its predecessor then we
+will compare it with the element before
+that so basically right now we compared
+it
+we felt like the five was uh great uh
+less than six so we will
+we will check before six but there was
+no element before six so we just will
+swap them next we moved on to the next
+pair now we have six and four
+now we are checking between four six and
+four now four is smaller than six so we
+will obviously switch between them but
+let's just check
+for the element before that even so
+before that we have 5 so we check if 4
+is less than 5 and yes it is so what we
+will do is we will
+completely shift four
+behind the five and six
+so in the next array it will become four
+five six and two and three
+and as you can see it has changed
+now
+we will shift the bigger elements to an
+index up to make space for the swapped
+element that's what we just did now we
+will activate the same steps again to
+sort the complete array so basically
+what we will do we will check
+if 2 is less than 6 yes it is then we
+will go and check 2 if 2 is less than 5
+yes it is then we will go check if 2 is
+less than 4
+then yes it is
+so we will switch 2 to the complete and
+same thing we will do with the three we
+will check if three is
+uh smaller than six yes it is then we
+will check if it is smaller than five
+then with four yes it is then we will
+check if it is smaller than two no it's
+not so we will not shift 3 before 2 we
+will put it after 2 and that's called
+insertion sort
+now let's try it with the code
+explanation in a visual studio code
+so let's get back to our visual studio
+code
+here is our insertion sort code
+so first we have a function to sort this
+array
+this is called a sort function
+here we have first declare n to this
+array which is which was passed as an
+argument
+then we have a for loop which runs from
+i is equals to 1 to i is i is less than
+n
+then we have declared a key
+which stores the ar i
+now
+we have an integer j is equals to i
+minus 1
+now
+what we will do is we will move elements
+of air array from 0 to i minus 1 that
+are greater than key
+so basically we have declared one key
+we will change this key on each
+iteration of for loop so basically it is
+declaring
+this this key is the one which will be
+shifting
+so now we will check every element
+before that so what that is what we are
+doing
+using this while loop to check every
+element before key if it is greater than
+key
+now as soon as we figure out yes it is
+greater than key so we will
+just
+swap that position and shift all the
+elements
+and then we will
+put the value at that keys location
+next we also have a utility function to
+print this array so we have a print
+array function which will print out the
+complete array
+next we have our main loop
+here we are declaring this r array it is
+the same
+use case code which we use during a
+logic explanation
+then we have a console and the print
+array line to print out the unsorted
+array then we declared an object
+to our insertion sort
+program
+this class
+then we have we used that object to call
+the function sort
+then we we use console and the print
+array to print out the sorted array now
+let's run it to check if this works
+and yes it works
+so we have an unsorted array six five
+four two three and a sorted array two
+three four five six
+now let's get back to our slides
+next up we have selection sort
+in selection sort we have an array
+which is
+42183
+now
+first we will divide this array into two
+sub-arrays
+an unsorted array and sorted array
+then we will find the minimum elements
+from unsorted array
+and
+swap it with the leftmost element of
+this unsorted array
+after that we will add it to the sorted
+so what we did here is we first
+divide the first
+the array array line just focus on the
+line with array tag
+and we will divide this array into two
+parts as unsorted array and a sorted
+array so the first part
+which will be the left most part will be
+the sorted part
+and the right most part will be the
+unsorted part so here
+our sorted part has nothing and the
+unsorted part
+has all the array so basically we are
+representing the sorted part with the
+green color and the unsorted part with
+the blue color so right now we have
+42183
+in the blue color so that basically it
+means it is unsorted
+now what we did is we checked the
+minimum element from this unsorted array
+so basically four two one eight three we
+find the minimum number between them
+which was one so we basically picked it
+plug that out and put it in a sorted
+part so now in the first
+tag we have one in a sorted
+uh portion and we have 2483 in the
+unsorted portion
+now
+we will keep repeating this process
+until there are no elements left on this
+unsorted so basically what we did it
+did this
+is we
+plugged two
+which was the minimum from the unsorted
+part and put it in sorted part so now
+in the second tag we have 1 and 2 in the
+shorter part and 483 in the unsorted
+part
+now we will keep repeating this process
+we will keep repeating it like in our
+third fourth and fifth iteration
+basically what first we plugged out
+three the
+next minimum uh letter and put it in the
+sorted then we plugged out four and put
+it in the next menu then we plugged out
+eight since it was the last element left
+so here our algorithm stops
+now let's try this algorithm
+in a code
+so
+let's move on to our visual studio code
+and here
+is our selection sort code
+let's start with the sort function
+so first we are declaring
+an
+array length and in an variable n
+then we will one by one move boundary of
+this unsorted sub array so basically we
+are
+having a for loop
+then we would we are declaring a minimum
+index that that will have value of i
+now i is the
+iterator for this for loop so it will go
+from zero to n minus one
+so basically it will
+one by one
+put an element
+first to the zeroth location then for
+loop iteration work then it will go go
+uh look for the first location then the
+second then the third that's how it will
+work
+then we have a for loop which will which
+will basically check
+the minimum number so we have integer uh
+from j i plus one so basically it will
+look from the current locat uh it will
+neglect any uh number before our minimum
+index
+that's why it is starting from i plus 1
+so that it will only look for the
+unsorted part
+then we have an if element it will check
+if the it is uh if that array is smaller
+than our minimum index
+if it is then it will assign that j as
+the minimum index next and now we have
+found the minimum element so it will be
+swapped with the first element
+so now the temp
+will have the minimum index which was
+our new
+j
+and then the errors minimum index
+will be switched with this array i
+then we have a print array function this
+will print out this array
+then we have a main function which will
+print out first
+which has first array declared
+is the same use case set which we used
+during our logic explanation
+then we have console and printer
+lines to print out the unsorted array
+then we have sort function run so that
+it will sort this array
+then we have our write line and print
+error to print out the sorted part
+let's run this
+and understand
+what it did
+as you can see it has been first printed
+as unsorted part then it has printed our
+sorted part
+so we can be assured that this popping
+mechanism work
+now let's get back to our slide and look
+at what is our next in the line to
+understand
+next up we have quick sort
+now in case of quick sort let's say we
+have
+an array
+first we have to select a pivot
+now we can select either the first
+element the last or the median or any
+random element as pivots so for our
+array we have 69523 now we can choose
+any element as pivot
+this pivot will dissect the array in two
+sub-arrays then we will shift all
+smaller elements from the pivot element
+to the left and all the bigger to the
+right so now we have three as a pivot
+location so now it will shift all the
+small element to its left
+so basically the only element smaller
+than 3 is 2 so it will be on the left
+and all the bigger elements will be
+shifted to the right
+so now
+here it is so it has shifted
+2 to the left and 5 six nine to the
+right
+now what we will do we will apply the
+same operation for the left subway so
+basically it has dissected the array
+into two parts the left sub array and
+the right server so we will do this for
+the left sub array since there is only
+one element two
+and there is nothing which is which was
+smaller bigger than this so it will stop
+there then we will do this same for the
+right side
+so we will go for the five six and nine
+now it will find another pivot element
+let's say it found 6 as the new pivot
+element so now it will check
+and every element for the right sub area
+only
+which is smaller than six so it found
+five was smaller so it shifted five to
+the left
+and nine to the right
+now
+since it has its own sub array
+so now it will check for the five no
+five has nothing here so five will
+remain there then it will check for the
+right
+right there is nothing so now it will
+conclude that yes it is sorted
+now let's check out a simple code to
+understand the quick sort logic
+let's go back to our visual studio code
+and here it is our code
+first we are starting with a swap
+function this is completely responsible
+for swapping two element we are using
+our same old the concept of using temp
+to swap the
+elements next we have a function which
+will do the partition part
+so basically it will take the la
+uh it will take the last element as
+pivot we can
+configure it to use
+according to our wishes if you want to
+put use the first one or the
+median or anything else
+i'm using it as a last element as pivot
+now
+we are
+passing out three
+variables as its
+argument so we are passing out the array
+the low and the high this low and high
+will basically
+define so
+which is the area's lowest number and
+which is the highest
+index
+now why it is
+showing this why we can't do it
+manually during the code part is because
+what if we want to do the partition for
+our sub errors which we will do
+as you have learned during our logic
+explanation for the quick sort that's
+why it is using low and high
+now we will
+use pivot equals to array high now
+this is the point where you choose the
+pivot now if you wish to choose the
+first element you can use array low
+but you have to configure the rest of
+the code according to that you want to
+choose the median so you can basically
+choose array
+low high minus low by two
+now uh let's
+uh follow
+now the index for the smaller element
+and the
+that and indicate the right position of
+a power pivot found so far
+so we will have in i
+is equals to low minus 1 now why we are
+choosing low minus 1
+uh it will basically signify that
+uh
+basically what we will do is low will be
+our one so it will basically choose one
+before that
+so that it will start from
+before
+next we have for loop
+int j is equals to low and j
+through j less than equals to high so it
+will start from the low to the high
+minus 1
+then j plus plus
+now if the current element is smaller
+than the pivot
+so it will check this if array will
+check if the current element smaller
+than the pivot then it will increment
+the index of the smaller element by i
+plus plus then it will swap these two
+then after that it will do the swap
+array i plus 1 and high
+then it will return i plus 1
+now we have our quick sort algorithm
+now this main function will implement
+quick sort so it will have array which
+which is the array to be sorted
+the low which will be the starting index
+and the high which will be the ending
+index so now if low is less than high
+this is a base case uh situation
+which which is always checked
+now if pi is partitioning
+let's say pi is partitioning index and
+array p is now at the right place so in
+pi
+is equals to partition of array low
+comma high
+now it will separate the sorted element
+before partition
+and after partition so now we will apply
+so basically it has partitioned the
+array in two parts
+the left sub array and the right sub
+array now we will use this pi
+to apply a quick sort in the first
+partition and the quick sort the next
+partition
+now as you have noticed we have used
+this quick uh these quick sort uh
+calls in a quick sort function so
+basically this is an iterative method
+oh sorry recursive method
+next we will have a print array function
+this will print print out the array
+then we have our main function here we
+have first declared our array
+then printed out the unsorted array
+before that we have also
+stored array length in n
+to utilize it using
+for our print array function then we
+have our quick sort function
+as you have noticed we are using the
+zero the which is the low and high as n
+minus one which is the errors last index
+then we have our
+console write and print array to print
+out our sorted
+sorted array part
+now let's try it
+now as you can see it has printed a
+sorted array then it has printed out of
+sorted array
+now let's get back to slides
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you liked this session then like
+share and subscribe
+now
+if this video gets a like of more than
+2000 then i will make the same kind of
+videos again
+so do let us know in the comment section
+if you want more of these types of
+videos
+and thanks for watching and stay tuned
+for more from simplylearn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

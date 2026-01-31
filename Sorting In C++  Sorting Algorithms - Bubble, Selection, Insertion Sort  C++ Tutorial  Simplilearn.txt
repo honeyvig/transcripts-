@@ -1,0 +1,1010 @@
+hey everyone this is harsh bharadwaj and
+welcome back to another video by simply
+learn
+in this session we will learn about
+sorting in c plus
+so let's go ahead and have a look at
+what we'll be covering today
+we will learn what is sorting in c plus
+then the categories of sorting which are
+internal and external sorting
+after that we will understand types of
+sorting in c plus that are bubble sort
+selection sort insertion sort and quick
+sort
+and at last we will understand sorting
+using c
+library
+but before we begin make sure to
+subscribe to our channel and press the
+bell icon to never miss an update
+so first is
+what is sorting in c
+plus sorting in c plus plus is a concept
+in which the elements of array are
+rearranged in a logical order
+now this order can be from the lowest to
+the highest or highest to the lowest
+rearranging them in a sorted order helps
+in dealing with many problems like
+searching the maximum element or the
+minimum element from an array of
+elements
+in c plus sorting is categorized into
+two types that is internal sorting and
+external sorting
+so let's understand these
+in internal sorting the data to be
+sorted is present in the main memory
+and the process of sorting will also
+take place in the main memory itself
+while in case of external sorting the
+data is not always present in the main
+memory because the data is large
+so data is filled in the main memory in
+small portions
+so this is the difference between
+internal sorting and external sorting
+now coming to types of sorting in c plus
+there are various types of sorting in c
+plus that are bubble sort selection sort
+insertion sort and quick sort
+so let's start with bubble sort
+bubble sort is one of the easiest
+sorting techniques in c plus
+in this technique the comparisons are
+done starting from the first two
+elements
+the adjacent elements are compared if
+the element on the left is greater than
+the element in the right then the
+swapping is done
+and it will proceed till the end of the
+array
+so first the comparison will start from
+the first two elements that are 22 and
+13
+and as we know that 22 on the left is
+greater than 13
+so we will swap these elements and make
+them 13 on the left and 22 on the right
+now it became 13 22 5 7 11.
+so now we will compare 22 which is at
+index 1 with 5 that is at index 2
+and as 22 is greater than 5 we will swap
+these elements as well
+then again we will compare it with the
+next element
+and if 22 is greater than that element
+as well then we will swap them as well
+so in this way round one of comparison
+is complete as one of the element
+reached its actual position
+two more rounds of the comparisons will
+occur till the array becomes sorted
+it is because for n elements the number
+of comparison are n minus 1
+so number of comparisons here would be 3
+as the elements are 4 in numbers
+now
+coming to selection sort
+in this selection sort technique
+the smallest element is fetched by
+comparing itself with the rest of the
+elements
+and is sorted at the first position of
+the array
+once the first element is sorted
+the search for second minimum element
+begins from the rest of the array and is
+positioned at the second place
+similarly one by one all the elements
+are positioned like this
+so this is selection sort
+now
+moving to insertion sort technique
+in this sorting technique the elements
+are sorted by comparing the second
+element with the first element
+if the second element is smaller than
+the first
+then we will swap it
+after that we will compare the third
+element with all the elements that are
+before it
+similarly it goes for the fourth element
+and so on
+once all the comparisons are done the
+elements becomes sorted
+as we can see in the figure
+so this was insertion sort technique
+next is quick sort technique or quick
+sort algorithm
+quick sort algorithm is one of the most
+widely used algorithm and the most
+efficient sorting
+algorithm the quick sort algorithm
+follows a divide and conquer approach
+in this approach a paper element is
+selected and the array is partitioned
+into two halves on the basis of this
+pivot element
+the elements that are smaller than the
+pivot element are shifted to the left
+side of it and elements greater than the
+pivot element are shifted to the right
+side of it
+after this
+both the left and the right sub arrays
+are sorted and combined
+for example
+let's suppose we have 6 elements
+5 15 1 8 22 and 6
+and we want to sort them using quick
+sort so first of all we will select any
+pivot element let's say 6.
+now we will divide the array to two sub
+arrays based on the pivot element
+in such a way that the elements smaller
+than the pivot element are on the left
+and the elements greater than the pivot
+element are on the right as you can see
+in the figure elements smaller than 6
+are on the left and elements
+greater than 6 are on the right
+now we will sort both of these sub
+arrays separately
+we will select a pivot element from each
+of the sub array
+like we can see
+from the first sub array we have
+selected 5 and the second sub array we
+have selected 15.
+similarly if the element is less than
+the pivot element then adjust it on the
+left otherwise on the right
+by doing this both the sub arrays will
+become sorted and now we can combine
+them to become a complete sorted array
+so this is how quicksort algorithm works
+so as we have understood about the
+sorting technique
+now let's understand how to sort using c
+library
+we can sort using the c
+library as well
+to use that library function we must
+include the hash include algorithm
+header file
+this function compares each and every
+element within the range
+the syntax of function is sort
+then
+within the brackets there will be the
+starting iterator and the ending
+iterator
+and we must include this algorithm
+header file with hash include which is a
+preprocessor
+so as we have understood about these
+sorting algorithms
+so let's move to our code editor that is
+vs code to do some examples on this
+sorting algorithms
+all right so this is our code editor and
+here we will do some examples of sorting
+techniques
+so let's first of all create a new file
+and let's name it
+sort
+one dot cpp
+so let's add first of all
+the header file hash include iostream
+then the name space standard
+so first of all we will do an example of
+bubble sort algorithm
+and now we will create
+the main function
+inside the main function we will create
+some variables
+let's say into i in
+j
+and a temporary variable
+temp
+after that we will declare an array arr
+and let's say the size of the array is 8
+and the elements of array are
+12
+let's say 3
+1
+5
+18
+and
+10
+7
+and 35
+so these are the elements of the array
+now we will
+display these elements
+so we'll
+display a message unsorted array as we
+know that these area elements are
+unsorted so
+we will print the message unsorted
+with slash n
+all right
+now
+we will
+write the for loop in i equal 0
+that runs from i 0 to i 8
+because you want to print the array
+i less than equal to 8 i less than 8
+i plus plus
+now here we will print the array
+arr
+i
+so one by one all the elements will get
+printed
+and we'll add the slash t
+to add the horizontal space between each
+element
+all right
+now
+for space we will
+write we can write endl
+now we will write the logic for bubble
+sort as we know in bubble sort the
+swapping is done starting from the first
+two elements and if the element on the
+left is greater than the element on the
+right then the swapping is done
+so we'll do that
+we'll write a for loop
+which runs from i 0 to 8
+and i equal 0
+i
+less than
+8
+i plus plus
+and
+the second for loop would be
+int
+j equals
+i plus 1
+j less than 8
+j plus plus
+now i'll explain both of these loops
+but before that let us just write the if
+condition for swapping
+if
+a r r
+i
+is less than
+a r
+j
+oh
+i write the opposite of that which i
+have to write
+let's make it i
+yeah if a r of j is less than a r of i
+then we'll do the swap so now i'll
+explain this part
+here when i is at
+0
+then j is at 0 plus 1 that is at index
+1.
+so now comparison will take place
+between element and index 1 and element
+at index 0.
+if the right element that is index 1
+element is smaller than the left element
+that is index zero element then swapping
+will take place
+and similarly one by one each element is
+compared with the next element and it
+will proceed till the end of the array
+so now here we will write the
+swapping logic
+we will store the first variable into
+the temporary variable
+and then we will store the second
+variable into array of i
+then will again store
+into area of j
+the value holded by the temporary
+variable
+all right so this is how swapping is
+done
+now all we need to do is to just print
+the array elements because it
+because we have to show the sorted
+elements of the array so
+we'll first display a message
+sorted
+elements
+all right
+and then we'll use slash n as well
+now here again we will use the for loop
+and
+which runs from i 0 to i 8
+e less than 8
+i plus plus
+and now we will print the elements of
+the array of sorted array
+just to add the horizontal space we can
+write slash d
+and now
+after that
+return zero
+let's save it and let's hope it will
+work
+so as we can see this is the unsorted
+array 12 3 1 5 18 10 7 35 and this is
+our sorted elements of the array 1 3 5 7
+10 12 18 35 so as you can see these
+elements are sorted
+and
+using the slash t we have added the
+space between each of these elements
+all right now let's do another example
+so now let's do an example of insertion
+sort first of all let's save it
+and let's name it as
+sort
+2
+dot cpp
+now let's add the head files
+hash include iostream
+then
+write the namespace standard
+then we'll start with the main function
+in main
+now we will
+write the variables like
+and i int j and
+num variable
+then the temp variable temporary
+variable
+and we'll also initialize the array
+let's
+make it 30 size
+now we'll take the input from the user
+so
+right enter the elements
+enter the number of elements first of
+all
+all right
+we'll take the input
+as num
+and then
+we'll ask the user
+to enter the
+elements
+all right
+now
+using for loop
+sorry
+using for loop
+i
+equals to 0
+till i less than
+num
+i plus plus
+we will take the input
+of the elements of the array one by one
+so
+num is the size of the array so one by
+one all the elements
+will the user will enter all the
+elements
+all right after that
+all right now we'll write the code for
+insertion sort
+please keep in mind in insertion sort
+we start by comparing the second element
+with the first element if the second
+element is smaller than the first
+element then we will swap it
+after that we will compare the third
+element with all the elements that are
+before it similarly it goes for the
+fourth element and so on
+we can see this figure for reference and
+now we'll start doing the code
+we'll start by writing
+the for loop which
+starts from 0
+till num minus 1.
+less than m i plus plus all right after
+that
+we will store the array in the temporary
+variable
+once it's done
+then we'll write j i minus 1
+first of all we have copied the elements
+of array to the time variable then we
+have set j equals to i minus 1 because
+we have to compare it with the previous
+element
+and
+all right
+now we'll write the while loop
+okay so
+temp
+is less than a r of
+j plus one
+now
+only j
+and for termination j must be greater
+than zero
+all right let's
+make them inside the brackets
+all right now
+first of all let's write the code then
+and i'll explain the part
+i have j plus 1
+array of j
+we will move this element forward
+and then we'll write
+j minus 1 will decrement it
+then
+you have to insert the element in this
+place
+all right
+i'll explain this part
+in this part we have copied the elements
+of array to the temp variable first of
+all and then we have set j equals to i
+minus 1 because we have to compare it
+with one previous element
+and
+while in while loop we are checking if
+the value of element prior to array of j
+is more or less
+if it is less than removes the element
+in order to set it to the right position
+using area of j plus 1 equals to temp we
+are actually inserting the element in a
+proper place
+or the right position
+we are validating that j remains greater
+than equal to 0
+so
+this is how it's done and now we have to
+print the elements
+so now we have to print the sorted
+element so we will
+write the message will display the
+message
+sorted
+elements
+and then using the for loop
+we will display all the elements one by
+one
+i plus plus
+arr
+inside it will write i
+and
+will add some space
+once it's done then
+all is left is to write return 0
+return 0
+now let's save it
+once it is saved then now let's check
+if it is running fine or not
+as we can see enter the number of
+elements in the array let's say there
+are five elements
+right
+eight
+one
+four
+nine
+two
+all right eight one four nine two so
+our output is wrong
+let's check
+uh where it is
+i less than equal to
+this is the problem
+let's save it
+and let's check it once more
+five
+now
+eight
+five
+seven
+2
+6
+8 2 5 6 7
+all right now i get it actually we are
+checking from the first element so
+we have to start with the first index
+now let's save it
+and try one more time
+five
+nine
+five
+eight
+2
+and let's say 12
+2 5 8 9 12. so finally our output is
+correct
+because of some logical mistakes our
+output was getting wrong but now we
+finally can see that 2 5 8 9 12 the
+elements of the area are finally sorted
+and
+this is how you can do insertion sort
+now after this we'll do another example
+all right now let's do an example of
+selection sort
+let's name it as sort 3
+dot cbp
+so let's understand the selection
+sorting technique one more time in this
+technique the smallest element is
+fetched by comparing itself with the
+rest of the element and is sorted at the
+first position of the array
+after the first element is positioned
+the search for the second element begins
+from the rest of the array and is
+positioned and the second place
+similarly all other elements are
+positioned like this
+as we can see in the figure
+now let's do its practical
+implementation
+so let's start by adding the header
+files
+hash include iostream
+let me write the using namespace
+standard
+now we'll start with the main function
+all right so first of all we'll declare
+some variables like in i
+and j
+and
+num variable
+then
+a variable p
+and a temporary variable temp
+and we also need a minimum variable
+we'll name it min
+and now we will declare the array
+let's make it of size 10 and yeah
+now
+we will display a message saying that
+enter the number of elements
+all write enter
+the number of
+elements
+all right
+now we will take the input
+see in num
+now
+we'll ask them to enter the elements
+so we'll write slash n
+enter the
+elements
+all right now again we will use slash n
+once it's done now we can take the input
+of the array
+so we'll start with it int i equal 0
+i less than num
+i plus plus
+and now c in
+array arr
+index i
+so
+yeah
+now we can take the input from the user
+and now we have to do the actual part
+that is the selection sort we have to
+sort the array
+using the selection sort technique
+so let's start
+we'll write a for loop and i equals
+0 i less than num minus 1
+i plus plus
+inside this loop we will store the value
+of the first element of the array
+min equals arr of i we are storing the
+first
+element of array into this min variable
+so here we are storing the value now we
+have to store the index
+so
+the p variable which we have declared
+and we are storing the
+index i to this p variable
+all right after that we have to use
+another for loop
+where the actual comparisons
+begins
+now we will write
+j
+equals to i plus one
+and
+j less than num
+j plus plus
+now i'll explain you this for loop
+in this for loop we are doing i plus 1
+because here the comparison will take
+place and the comparison will occur with
+the preceding elements
+so we have to do j equals to i plus 1
+now we have to do inside this for loop
+we'll use a if condition
+so we'll write
+if
+minimum is greater than array of
+j
+that if
+that is
+if any element is smaller than the
+minimum element then that particular
+element will be set as minimum element
+so we'll do that we'll write
+min equals
+array of i arrive j sorry
+and we also
+have to change the index so we'll assign
+the index of j to the p earlier we have
+assigned the index i to p
+but if that particular element is
+smaller than the minimum element then we
+also have to assign the index to p
+now all we need to do is to swap
+so now let's do the swapping part as
+well
+all right
+so first of all the temporary variable
+temp we will assign arr of i
+we have to swap error of i and arr of b
+because the index j is assigned to p
+and we all know how to do the
+swapping
+of i
+now we will
+put the value of error of p into error
+phi
+now the value at temp
+goes to error of p so the swiping is
+done here
+and now we have to just print the sorted
+array
+so now let's first of all display a
+message saying that the sorted elements
+are
+right slash in
+sorted
+elements
+are
+slashing again
+now using for loop we will print all
+those elements
+equals 0
+i less than
+n
+num sorry i plus plus
+all right now we will
+just print the array
+and now in order to give some space
+we'll
+use the double quotes
+now it's done
+now return 0 will write
+now everything is done now let's check
+if it is working or not
+it's done by our end so let's save it
+and
+let's try to run
+enter the number of elements okay so
+let's add five
+now five elements are
+eight
+one
+five
+sorry
+one
+five
+three
+seven 1 3
+5 7 8 as you can see
+these are the sorted elements and this
+is correct
+so this is how we can do the selection
+sort
+this is our logic behind the selection
+sort
+you can try this example as well
+all right now we'll do an example of
+quick sort
+so first of all
+let's create a new file
+and
+name it as
+sort four dot cpp
+now as we know in quick sort follows the
+divide and conquer algorithm so let's
+have a look at it
+as we know in quick sort a pivot element
+is selected like
+here we have selected 6 as a pivot
+element and then the elements which are
+smaller than 6 are put on the left side
+and elements which are greater than 6
+are shifted to the right side and
+similarly
+same thing is done with the
+partitions or the sub arrays
+and in the end when we combine we get a
+sorted array so now
+practical implementation so first of all
+we'll start by creating a main function
+and before that
+we'll add the header files hash include
+iostream
+and the namespace standard
+all right now we'll start with the main
+function
+inside the main function we will
+declare a variable num and another
+variable i
+and
+declare an array arr size let's say 10
+now we'll display a message
+saying that enter the number of elements
+enter the number of elements
+all right now
+here it is
+now we will take the input
+from the user
+num
+now we will display another message
+saying that enter the elements
+and now we'll use for loop
+to take the input from the user
+i equal 0 i less than
+num
+i plus plus
+so inside the slope
+c in and ar i will
+take the input from the user
+user enters all the digits or the
+elements now we will call a function
+quick
+and we'll pass the arguments array and
+the starting index and the ending index
+the starting index would be 0
+and ending index would be num minus 1
+that is size minus 1.
+so this is where we are calling the
+quick function
+and after that we can
+display a message saying that
+after sorting
+the elements are
+and now using for loop again
+we can display
+the sorted array afterwards
+add some space
+yes
+and
+we'll write return 0
+so our main function is done
+now all we need to do is to make the
+quick function
+all right so let's create this quick
+function
+quick
+and its data type would be void
+quite quick and will pass the
+the arguments on the parameters are
+array and the starting index and the
+ending index
+start
+hint and
+so these are the parameters and inside
+this quick function
+we'll write the if condition
+that is if start of the index is less
+than end that is if the array element is
+more than 1
+then
+here we will find the point of division
+d
+and then there would be recursive calls
+for the divided sub arrays
+or the partitions
+so now
+we will make the division point d
+and
+now we will call
+the function divide
+and we'll pass
+the parameters array and the starting
+index and the ending index to this
+function as well
+so here
+d is the division point and by calling
+this function we'll find this division
+point
+after that we will do the recursive call
+for the left sub-array and the right
+sub-array
+so let's do that
+quick
+array
+in starting index
+and ending index
+but here ending index would be as it is
+a sub array as it is the left sub array
+so the division point is the point of
+division
+so the ending index for the left
+sub-array would be d minus one
+and similarly now again we'll call for
+the right sub array
+here the starting index would be
+d
+plus one
+and the ending index would be
+end
+let me explain this part again
+the first recursive call would be from
+start
+to d minus one and the second recursive
+call from is from d plus one
+to the end
+so these are the two sub arrays this is
+the right sub array and this one is the
+left sub array so d minus one is this
+element and d plus 1 is this element
+all right now we'll make this divide
+function
+and we have to make this divide function
+above the quick function otherwise it
+will show an error or
+if you don't want to do that then you
+can do the forward declaration but i'll
+prefer doing this only
+so
+it is the data type divide is the name
+and now
+in
+arr as we have passed the starting index
+and the
+sorry the starting index
+and the ending index
+all right
+now inside this divide function first of
+all we will
+set a pivot
+element
+so we'll do that and r
+we always we usually select the last
+element as pivot element or you can
+select the first element as well or any
+random element
+now
+we'll create another variable in index
+and
+we'll assign it start index
+now this variable will keep the track of
+elements in the array
+starting from all first element and all
+these elements
+so
+now
+we'll use a for loop
+and now we will do the comparison with
+the pivot element so inside the for loop
+int i equals 0
+sorry int i equals start because we'll
+start from the first element so i equal
+start
+i less than
+and we will not use
+less than equal to we'll use i less than
+n because we don't want to include the
+pivot element so that is why we'll use i
+less than end and now i plus plus
+all right now inside this for loop we
+will create
+if condition
+now in this condition if the array of i
+is less than the pivot element then we
+will shift it towards the left then
+we'll do the swiping
+arr i
+is less than
+pivot
+then
+temporary variable temp and we all know
+how to do the swapping
+so we'll do that
+arri index
+please note that index is storing the
+start
+and pivot is storing the end
+so keep in mind that
+now arr
+index
+this temporary variable
+now we will increment this index plus
+plus
+because this index plus plus will do the
+further comparison with pivot
+element
+so
+if
+that particular element is smaller than
+the pivot element then it will move to
+the left side otherwise on the right
+side
+all right now it's done
+now the only thing left is the
+positioning of the pivot element
+and to do that because we have to find
+the partitioning point so we have to
+position the pivot element at at its
+proper place so for that we'll use the
+temporary variable again
+and
+arr
+and index
+then
+we'll swap it
+with index
+so here we are done with the swapping
+now we have found the partitioning point
+so we will return the
+index
+now the pivot is at its proper position
+now all the elements on the left side of
+the pivot element are smaller than that
+and all the elements on the right side
+of it are greater than that
+now let's try to save it and run it
+i hope it works
+there are some errors let's check
+all right all right let's do it
+and this one is
+this one is extra
+all right now let's save it and run it
+enter the number of elements let's say
+we have entered five
+not that place
+five elements
+three
+one
+nine
+five
+seven
+one three five seven nine
+so this is our sorted elements of the
+array
+and we have done it using the quick sort
+method or the algorithm
+and this is our code
+and this is our logic behind the quick
+sort method
+you can also practice this quick sort
+algorithm it is one of the most
+efficient sorting algorithm
+and we have done the examples of bubble
+sort selection sort insertion sort and
+quick sort you can practice them all
+all right guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up i hope
+it really helped you all thanks for
+watching stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

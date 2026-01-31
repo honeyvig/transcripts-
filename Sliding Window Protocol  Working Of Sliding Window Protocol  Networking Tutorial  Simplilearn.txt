@@ -1,0 +1,216 @@
+with the increase in data exchange in
+the current thick era we require proper
+protocols and functions to maintain data
+exchange
+hi guys and welcome to yet another
+interesting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to remiss an update
+from us
+now without further ado let's take a
+look at the agenda for today's session
+to start with we will understand what is
+a protocol
+then continue
+with the types of protocol available in
+a network channel
+then we will start with what is the
+sliding protocol
+then look into the working procedure or
+sliding window protocol
+and ending a session with difference
+between stop and wait protocol
+and sliding window protocol
+let's begin with the first heading that
+is what is our protocol
+as we know in a networking concept
+protocols refers to the rules and
+instructions
+that governs the data transmission
+between different network models and
+devices in a communication channel
+the data transmitted using protocols is
+easily handled
+and is reliable to use
+as well as it provides a secure channel
+for the data to be transmitted
+now let's move on to the different types
+of protocols available in a network
+channel
+the protocols available in a network
+channel can be divided into two
+different types
+noiseless channels and noisy channels
+where the noise part refers to any
+external interference data error or
+duplicate transmission in the network
+channel
+furthermore noiseless channels and noisy
+channels can be divided into
+subdivisions let's take a look at the
+noiseless channels first
+noiseless channels can be divided into
+two types
+simplest type and stop in weight type
+whereas noisy channels are divided into
+three subdivisions
+stop and wait arq go back
+and arq
+selective repeat arq
+in the noisy channel go back in ar queue
+and
+selective repeat arq are the ones that
+apply the sliding window protocol for
+data transmission over the network
+channel
+now let's look into some information
+regarding sliding window protocol
+to begin with the sliding window
+protocol is a technique that allows the
+share of multiple data frames in a
+network channel
+where the number of frames shared is
+determined by the windows size assigned
+to the network channel
+also the frames sent during transmission
+are assigned with a sequence number for
+efficient frame transmission in the
+communication channel
+till this point in the video we have
+already learned about the definition of
+what is the sliding window protocol
+now let's look into the working steps of
+the sliding window protocol
+to begin with we have a center site and
+a receiver site in the network channel
+then we require the frames where each
+frame is given a sequence number
+for this example we are using 0 to 8
+which means a total of 9 frames are
+available at the sender side
+then using the window size we determine
+the number of frames that can be shared
+at an instance
+for example we'll be using 3 as a window
+size for this
+example let's start with sending the
+first frame that is 0
+to the
+receiver side
+after the frame is sent a sliding window
+appears on the number of frames
+now let's move on to the next
+that is frame one
+the point to be noted is
+before receiving any acknowledgement we
+have to send all the frames that are
+available according to the window size
+that is for this example the window size
+is 3 that means we have to send
+three frames before we receive any
+acknowledgement from the receiver side
+let's send the last frame that is frame
+2
+now we have to wait for the receiver
+side to send the acknowledgement signal
+to the sender site before we can send
+the next frame now that we have shared
+the maximum number of frames the
+receiver end will share the
+acknowledgement signal for frame 0 with
+the sender side
+after this acknowledgement is received
+by the sender side we can share the next
+frame in the list that is frame 3
+after the frame 3 has been sent
+see the positioning of the sliding
+window
+the sliding window now changes from 0 1
+2 to 1 to 1 3 frame
+this positioning of the sliding window
+represents that 0th frame has already
+been acknowledged by the receiver side
+whereas the third frame is sent for
+acknowledgement from the receiver side
+by the sender side
+and similarly we have to do the same
+pattern for the next two frames that is
+frame number one and frame number
+now the center side will receive the
+acknowledgement for
+frame 1 from the receiver side
+and we can send frame 4 from the sender
+side to the receiver side
+now see the movement of the sliding
+window
+the sliding window changes from
+1 to 1 3 frame number to 2 3 and 4.
+similarly we can move on to the last
+frame
+now let's draw some simple conclusion
+from all the working steps we have seen
+so far
+to begin with
+frame number 1 and 0 represents the
+acknowledged frames
+whereas the frames within the sliding
+window represents
+the frames that awaiting acknowledgement
+whereas the remaining frames 5 6 7 and 8
+are not yet shared with the receiver
+site
+now let's move on to the next heading
+for the session
+difference between stop and wait
+protocol and sliding window protocol
+the first comparison is on the basis of
+working mechanism
+where the stop and weight protocol is
+designed to send the data frame at a
+single time
+and wait for the receiver to send the
+acknowledgement to share the next frame
+as for the sliding window protocol
+sender can send multiple frames
+simultaneously and then wait for the
+corresponding acknowledgement from the
+receiver end
+let's move on to the next comparison
+that is based on the window size
+on the basis of window size the stop and
+rate protocol is always fixed at 1.
+as for sliding window protocol as we saw
+in earlier slides it varies according to
+the scenario in the network channel
+let's take a look at some other
+comparisons too
+the next comparison is based on
+efficiency and time delay
+as comparison on this basis the stop and
+rate protocol is efficiently low and
+suffers from more time delay
+as for sliding window protocol the
+efficiency is higher than the stop and
+weight protocol which provides lower
+time delay
+during data transmission
+let's move on to the last comparison
+sorting and transmission of data
+for stop and weight protocol sorting is
+not required
+and it applies half duplex system for
+data transmission
+as for sliding window protocol we
+require sorting for better efficiency
+and is full duplex in nature
+with this we have reached the end of the
+video
+if you have any questions regarding the
+topic you can ask them in the comment
+section thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

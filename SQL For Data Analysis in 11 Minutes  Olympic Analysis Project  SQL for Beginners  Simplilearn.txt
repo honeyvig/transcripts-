@@ -1,0 +1,224 @@
+foreign
+set which is Olympic events
+now
+in this data set
+we have columns like ID name of the
+Olympian sex age height weight the team
+which he or she belongs to the code of
+the country the games the year in which
+the Olympics were done season it was a
+summer olympics or Winter Olympics the
+city where the events were done the
+sport and the name of the event and
+whether the player or the participant
+won a gold silver bronze or whether he
+did not win any medal like any not
+applicable now so basically it's an
+interesting data set let's see what all
+inferences what all queries we can kind
+of fire in this and make some
+intelligence intelligent inference out
+of it okay so this is the basic query
+select star uh from your schema name dot
+the table name
+now first query which I want to find out
+is write an SQL query to find in which
+port or event India has won the highest
+medals it could be gold silver bronze
+but not any okay so I want to get a
+count of the total medals daily of India
+according to each event in which it has
+participated and I want the highest to
+lowest medal tally okay so now I'll just
+first break up this query for you
+so let's first say select star from
+Olympic events where team is equal to
+India
+now this is the entire data set filter
+data where India has participated and
+these are the participants now I am
+excluding which is not equal to
+I am excluding all this all those events
+where India has not won a medal so okay
+so now excluded those events so now
+India has medals with bronze gold and
+silver now I want account of all these
+medals per event now it makes sense for
+me to do a group by
+event so now I am doing a group by now
+in my select Clause I can have event or
+any other aggregation or number
+crunching which I want to do now my goal
+is to get the medals tally so Group by
+event and get the count of The Middle so
+India has won 28 medals in men's hockey
+one in shooting rifle and one in
+wrestling men's wrestling okay so total
+30 13 is the total count and out of that
+this is the breakup
+okay by default you can see the data is
+already sorted but you can also put a
+sorting Clause order by count of middle
+descending and you will get the same
+result 28 1 1. such a good inference you
+can check uh even if you want that in
+which year
+per year-wise breakup if you want
+so you can use this column here
+and say for example you just say ear and
+event
+now let's see what we get
+okay so now in this in 1932 men's hockey
+we got the maximum medals then 1952 then
+1928 either you can sort so we have
+sorted by descending highest middle
+count to the lowest middle count or if
+you want to order by year
+so here you have the latest one to from
+2012 to 1928 which is now the data is
+sorted by ear descending or you can say
+folders to low earliest which is 28 to
+2012. so all the options are available
+so but we want to see what is a problem
+statement which you want to solve
+next last example
+identify the sports or even which was
+placed most
+consecutively in the Summer Olympic
+Games okay so now
+similarly now we want only the Summer
+Olympics so what we will do is
+Olympic events where season equal to
+Summer
+okay now I have filtered that data and
+event
+Group by event
+and get the count of that particular
+event
+now I want to sort it my football men's
+football is the most uh played
+event okay so again say order by event
+count scripting descending
+okay so football men's football 1545
+events hockey uh base basketball water
+polo cycling rowing Athletics men 400
+meter uh relay 100 meters so this is the
+descending order of the events
+next example
+write an SQL query to fetch the details
+of all the countries which have won most
+number of silver and bronze medals and
+at least one gold medal now this is
+interesting we want a count of separate
+count of medals tally which is silver
+bronze and gold separately first okay so
+now we will take an example of a case
+statement now in SQL what I have to do
+first is I have to query the Olympic
+events table and I have to check in
+which case I have the uh the team or the
+player I want silver I'll say if someone
+has won silver give say then one l0 if
+someone has bronze one bronze then one
+l0 someone has won Gold one l0 so I have
+basically created three columns separate
+columns bases the condition of whether
+the person is winning silver bronze and
+gold now I'm just gonna run this query
+independently
+and if you see in the end now I have
+three new columns introduced z uh basis
+the count of the gold silver and drones
+so suppose for this example uh this
+player has won Gold so he has one in
+front of the gold okay
+someone has brown bronze so there's a
+one here now I'll use these three
+columns to do a sum to get the total
+tally of silver bronze and gold
+separately
+so now if You observe I have prepared a
+put this in a in a query and on top of
+this query now I am writing another
+query which is select team comma sum of
+silver column sum of groans sum of gold
+and I am grouping by team so now
+if you see this
+China has won 32 Silver 27 drones 41
+gold Denmark Etc now I have
+per team
+it's medals tally silver bronze gold but
+now I have to put a condition that I
+only want a list of teams which have at
+least won one gold means the sum of gold
+tally should be greater than zero so now
+I will use my having close so after
+doing my group ping I am applying the
+having Clause it means I should remove
+all the teams which does not which have
+gold equal to zero okay so now if I
+apply this
+there is no team now left in my data set
+which is having
+zero goals at least one gold is there
+okay now idea is to solve which has won
+the most number of silver and bronze
+medal now I have to do sort by silver
+let's do that
+okay so now if you see United States
+have won most number of silver and
+bronze medals but at least have one gold
+so this is the actual output which is
+what we want okay
+foreign
+and if you go to the bottom the last
+there is uh if you see Scotia or
+China 2 or any other example
+uh I'll just take another example
+Uzbekistan
+Ireland Indonesia if you see only one
+gold and one silver so that's why it's
+at the bottom of the table Uzbekistan
+for gold but at least they have one gold
+okay
+next
+another very obvious thing which you
+might come to mind which player has won
+the maximum number of gold okay so
+similar to the previous query we will
+again create a column with a case
+statement that give me a count of
+uh only gold and then on top of it I'll
+use the name of the player
+Group by name rather than the team and
+find
+and then sort by sum of gold
+see Matthew Nicholas has won eight goals
+Ole Aina 8 Hussein bold eight goals okay
+then Nikolai seven Victor all these so
+this is the
+sorted order of your
+gold Style
+next which sport has maximum events very
+simple Group by Sport and get a count
+star
+and then sort
+Athletics is the maximum events which
+have happened
+gymnastics swimming
+and again similar question which year
+has shown the maximum number of events
+which year wherever Max 1992 there were
+maximum events in 1988 then 2016 then
+2000
+so you can see you know 1992 was the
+maximum number of events which were
+played so these are the kind of
+you know intelligent inferences SQL
+mining you can do on
+on this data set
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,1045 @@
+hello and welcome to this session on
+sorting in python
+sorting is the most
+important algorithm which you might end
+up implementing in any programming
+language
+today we are going to talk about
+couple of
+sorting algorithms which you can
+implement in python in an effective
+manner
+now let's see what's in it for us today
+we will discuss what is sorting in
+python
+what is the importance of sorting
+we will discuss different sorting
+algorithms like bubble sort insertion
+sort
+merge sort and quick sort with examples
+what is sorting
+sorting refers to arranging available
+data in a particular format
+so
+typically when you have data
+in a
+non-sorted order generally there is a
+requirement in any algorithm where you
+would require
+the data to be
+organized either in ascending or
+descending order so if you take an
+example which is there available on the
+presentation
+here you have a list l1 where you have
+random numbers which are unsorted
+and
+then you have a sorted array which is in
+descending order means highest number
+first and the lowest later
+so generally any algorithm which you
+implement for sorting provides you
+a organized
+sorted list either in descending or
+ascending order
+now why is sorting important
+now you must have seen practically in
+your day-to-day life whenever you are
+navigating through a website or through
+an application
+you generally tend to
+or you want to see data in a sorted
+order either alphabetically or
+numerically
+it makes search
+faster and easier right it becomes easy
+to search an item
+when if it it is sorted alphabetically
+sorting is also used to represent data
+in more readable format so it allows you
+to read the data which is sorted easily
+it helps locate various patterns in the
+data so for example if you have an
+alphabetically sorted data then you can
+easily compare if there is a difference
+in pattern
+in the data which is lying in an excel
+sheet or which is shared with you in any
+other data format
+also and
+another important point is duplicate
+values you can easily find out if there
+is an occurrence of a duplicate value
+when the data is provided to you in a
+sorted fashion so all the basic
+utilities standalone utilities
+applications like microsoft excel
+or other utilities provide you
+basic functionality of sorting out data
+alphabetically or numerically
+now python has a built-in sorting method
+which is called as sorted and it gives
+you a data in ascending order whatever
+input you provide the list it will give
+you data in ascending order
+and python uses a time series
+sorting algorithm in build
+to perform this sorting
+so let's take a look of the inbuilt
+sorting algorithm which we are going to
+show you on my jupyter
+notebook so it's gonna be very
+straightforward what we're gonna do is
+we're gonna create a list
+and
+just
+invoke the list dot sort
+method and print it
+and just with one line of function call
+our list is sorted in
+ascending order 12 15 27 33 62.
+now
+with this inbuilt function if you want
+to
+change the sorting order right you want
+to reverse it in descending order you
+just have to pass a parameter saying
+reverse equal to 2 true
+and print
+the
+list
+so if you observe now you have your
+output in the descending order
+so this is an inbuilt function the
+sorted method but we are here to discuss
+custom sorting algorithm and we will
+start with bubble sort
+now what is bubble sort in bubble
+thought algorithm the first element is
+compared with the adjacent element
+and if the adjacent element is smaller
+than the first element the elements are
+swapped
+basically bubble sort is a sorting
+algorithm that compares two adjacent
+elements and swaps them until they are
+not in the intended order
+so just like the movement of air bubbles
+in the water that rise up to the surface
+each element of the array move to the
+end in each iteration therefore it is
+called a bubble sort
+it is the simplest sorting algorithm
+that works by repeatedly swapping the
+adjacent elements if they are in wrong
+order
+so we have to remember the point that
+they the elements
+in the array are swapped till the time
+the intended order is reached and the
+each element has reached to the last
+iteration
+so we will see this with an example
+now here you have a sample list which
+has unsorted data 9864
+now according to the bubble sort
+algorithm
+what it will do is
+first
+it will start from the zeroth element
+and compare it with its next adjacent
+element eight
+now in this scenario
+it is
+smaller than 9 so therefore we will swap
+it so 8 and 9 will get swapped and now
+you have 8 9 6 4.
+now again
+9 will be
+compared with its adjacent 6 and now 6
+is smaller than 9 it will be swapped
+coming down
+9 now compared with 4
+4 is smaller than 9 it will be swapped
+so till this point what has happened is
+9 has been compared and
+with each of its adjacent element
+and in this iteration now
+9 is at is correct place it's at its
+last place now we don't need to go
+to this iteration again we will only go
+till the
+second last iteration so now we will
+start from the beginning we will compare
+eight with six
+okay and 6 is smaller than 8 we will
+swap
+so now your output is 6849
+again
+it is compared with 4
+4 is smaller than 8 it is swapped
+now we will not go further because now
+we know nine is at its
+correct position
+eight is at its correct position now
+only we need to do one iteration of
+comparison between six and four
+now four is less than 6 we swap and this
+is the final output of 4 6 8 9 9
+so all the iterations depend
+on the size of the list
+but the
+in bubble sort the whole goal is that
+you keep it iterating till the time
+each and every element is compared with
+its adjacent element now
+let's write a piece of code
+in jupiter in order to compare our
+algo what we have discussed
+okay so what i'll do is i'll just create
+a list
+of elements
+now this is the list which i showed in
+my example and i want to sort it
+so i'll create a function
+bubble sort
+and i'll capture the length of the array
+now
+i need two loops one loop which will run
+n number of times
+the length of the array
+so i'll create a loop
+okay and
+then there will be a second iteration
+which will run
+from the first element of the array to
+the
+last element okay
+less one less than the last element till
+the time
+i have
+placed my sorted last element in the
+array so i'll show you that
+now
+in my example i'll print
+my
+j iterator
+and the
+adjacent element to it
+okay
+now
+what we have to do is we just have to
+write now the the condition
+that
+if
+the element
+to which my inner loop is pointing is
+greater than the next element then we
+will swap
+now in python it's there is a very easy
+way to write the swap code
+you
+are swapping the two adjacent elements
+with each other so you just have to
+write this line
+and now this piece of code will place at
+j position the adjacent element of j
+plus 1 and at the adjacent element it
+will put the previous element
+now just to
+show you i'll print the array at
+unsorted and sorted level so i'll print
+the array over here and here
+so that you can easily
+understand
+how the array has been
+sorted
+okay
+so now you have a one loop which is
+running for the
+number of times the length of the array
+and then the inner loop which is running
+from every time from the first element
+to the one less element
+length okay
+now let me run this
+okay
+okay so now what we have done is
+now i'll explain my example okay
+so what we have done is we have
+9864 okay
+now the length of this array is one two
+three four
+so the
+element the length will be n
+will be four my outer loop will run from
+zero to four from four times one two
+three four
+and now my inner loop j
+will
+run
+six times and i'll show you how
+so now
+first j at zero and its adjacent element
+is at one so what we are doing is we are
+comparing nine with eight
+and eight is smaller than nine nine is
+greater than eight we are swapping it so
+now this is my unsorted array and this
+is my sorted array so 9 and 8 are
+swapped you have 8 9 6 4.
+now i move ahead
+j
+is incremented to 1 and the adjacent
+element is incremented to 2 so now i am
+comparing 9 with 6
+as 6 is smaller than 9 i swap it so now
+my
+next set or array is 8 6 9 4.
+now i go to j 2 and adjacent 3 so g 9
+and 4 i compare
+9 and 4 4 is smaller than 9 i
+swap it
+now till this iteration now 9 has
+reached its correct position
+now i'll go back again and start
+my iteration from j0
+back again
+and go only till
+this element 4 so again i am comparing 8
+with 6 6 is smaller i swap
+then now i am comparing 8 with 4
+for a smaller i swap now 8 has reached
+its correct position
+again now
+i am going back to zero and will only go
+to the point of four i compare six and
+four four is smaller and i get my sorted
+list of
+four six eight nine
+now if you observe the number of
+iterations which have happened are
+one
+two three four five six it's because
+nine has traversed three times
+eight uh it has traversed two times and
+six has traversed one time three plus
+two plus one six iterations so that's
+how you get those iterations
+so this was an example of
+bubble sort
+now let's take example of insertion sort
+now what is insertion sort let's talk
+about that
+insertion sort places a given element at
+the right position in a sorted list
+so in the beginning we compare the first
+two elements and sort them by comparing
+them
+now let me show you
+how what i mean by insertion sort
+now in insertion sort whatever list you
+have
+the first element is always considered
+to be sorted and the rest of the other
+elements are assumed to be unsorted so
+you start your comparison of first
+element with the
+with its adjacent element right
+now just to simplify things
+insertion sort is like it's like playing
+cards
+but like you
+shuffle the cards and sort your cards
+playing cards
+in your hand it's just like that
+okay so the array is virtually split
+into sorted and unsorted parts
+values from the unsorted parts are
+picked and placed at the correct
+position in the sorted part
+so now in our example our sorted part is
+8 and unsorted is 4 6 and 9.
+now in the second iteration we will
+compare four with eight
+now four is smaller than eight
+we will put it before it and now we have
+sorted list of four and eight and
+unsorted list of six and nine
+now in the next iteration we will
+compare 6 with 8
+okay
+and if 6 is smaller than 8 we will
+insert it before 8
+and also we will compare 6 with 4 but
+now 6 is greater than 4 we will not swap
+it
+now my list is four six eight nine
+and four six eight is sorted and nine is
+unsorted
+now again i'll compare
+nine with eight and it's already
+greater than eight i don't need to swap
+it and i'll
+not go any further
+and i'll stop it over here so that's how
+my sorted list will get created so my
+final list is four six eight nine
+and i'll we'll see that within example
+so now let's create our
+insertion sort logic
+so in my example i want to create an
+array
+8 4 6 9 15 12
+and i want to create a function called
+insertion sort
+okay
+now it's pretty simple you want to
+traverse
+through the entire length of the array
+but you want to start from element 1
+not from 0 because 8 is your sorted
+element you are already considering it
+your
+sorted element
+now
+take a variable in which you
+capture the
+outer array and now i'm putting a while
+loop with two condition one is
+definitely the one which i explained
+that you compare the unsorted element
+uh with this sorted element so the
+previous element
+and
+you go till the point
+on the sorted side till the last element
+you don't need to go beyond zero right
+you need to only traverse through the
+first element which is the zeroth index
+and if you
+then you of course
+put the swapping code
+you swap
+the unsorted
+element with the sorted side and
+you need to go
+so from the right hand side you are
+going towards the left hand side of the
+array right from right towards left so
+that's why you need to decrease the
+number okay so what are we doing over
+here what we are doing is
+we are comparing 4 2 with 8
+now if eight is greater than four you
+swap
+and you only go to the point you have
+index zero okay
+like now if four and eight
+will get
+swapped now six will come six will
+compare itself with 8
+it is smaller it will swap 6 will
+compare itself with 4
+and it will stop over there so let me
+show you i'll
+put a print command
+so that
+it is easy to understand
+so let me print the array
+over here and see
+okay
+so what i've done is i have to print my
+array
+okay
+so this is my original array 8 4 6 9 15
+12 11.
+now in
+first time i compare 4 with it and swap
+it
+then i compare six with eight
+it's smaller i swap it but six and also
+compare six with four i don't swap it
+then
+i compare
+nine with eight it is not small i don't
+swap it and i stop it over there
+then i compare 12 with 9 it is not small
+i stopped it over there
+then i compare 11 with 12 it is small i
+swap it right and then of course
+15 i compare with 12 i stop it because
+it's already bigger so it is like you
+divide
+you always follow the approach of sorted
+and unsorted like i presented and you
+keep comparing with the
+unsorted side element with the sorted
+side element and keep moving towards the
+left hand side
+so now let's discuss another sorting
+algorithm called merge sort
+now merge sort is a divide and conquer
+algorithm
+so basically in merge sort you first
+divide the list into equal parts and
+then sort the parts and unite them as a
+sorted list so basically you split the
+list into halves and then keep
+halfing them
+reducing
+each half till the time there is a
+single element in each half and then you
+start merging them back in a sorted
+fashion
+so we will discuss this with an example
+over here
+now for an example we have our list over
+here
+with
+unsorted numbers 8 4 6 and 9.
+now as it is
+even number of
+items in this list so they will get
+distributed into two equal halves in the
+left half you have 8 and 4 and in the
+right half you have 6 and 9.
+now
+again recursively you will split each
+half the left half and the right half
+again till the time you have single
+elements so now you see 8 and 4 now
+again get split into individual element
+of 8 4 and 6 and 9 into 6 and 9.
+now you start merging
+the
+individual elements in a sorted fashion
+so first you will compare 8 and 4 now 4
+is less than 8 so you swap and put 4
+first and 8 at the second position
+similarly when you compare 6 and 9 9 is
+greater than 6 then
+the order of this particular set remains
+as is 6 and 9 are taken into the new
+array
+now you have
+two merged halves which are in sorted
+order 4 and 8
+and 6 and 9.
+now while merging you compare the left
+most elements of each array so first you
+will compare
+four and six
+so
+four and six now six is greater than
+four you place four and six at their
+correct positions
+now you compare now eight with nine now
+eight is the left most
+item in the array and nine is the left
+most item in its own array and both are
+in the sorted fashion
+so that's why you put 8 and 9 at the
+relevant position and this is your
+sorted output
+so definitely we will take a look at the
+example with our implementation in
+jupyter notebook
+okay
+so now let me take my list example which
+i had shown in the presentation
+and
+i want to perform a
+merge sort on this list okay
+so i'll create a function
+merge sort
+and i'll start off with checking
+that the list length of my list is
+greater than 1 if it is a single element
+then i don't need any sorting
+now
+i'll find the midpoint
+of my
+list
+and
+take
+the left part of the array
+list and the
+right part of the list
+so the convention which i am using is
+actually automatically taking means that
+the list starts from 0 till the midpoint
+and
+the list here will start from
+midpoint to the length of my list it's
+the same convention so you can
+keep zero or not it's up to you
+and the length of my list i have the
+double slash two means that
+it if the list is of
+odd number then it will divide by 2 and
+round it up to the nearest integer so
+you will not get the decimal output so
+we will get a integer rounded mid value
+now after i have done this i will
+recursively call
+the left array
+and the right array
+in my
+into this merge sort
+so using this
+i'll be able to get the split value of
+eight four six nine and i'll you this
+with this recursions i will reach to the
+point where i'll get individual elements
+of eight four six and nine
+okay
+now
+i have
+to
+iterate through the left
+array and the right array so i'll create
+two variables which will help me iterate
+through left and right
+array
+and i am also initializing a variable
+which
+i'll keep as a counter
+for populating a new array which will
+comprise of my
+merged
+list okay
+so now
+this is the logic i will loop from
+left
+element
+from 0
+index to the length of the left array
+and 0th index to the length of the
+right array
+and i'll compare
+if the left is less than equal to
+the right it means i already have my
+value in the sorted order i'll just add
+it to my
+merged array and
+put it at the kth position
+and
+increment my left
+array
+further
+else
+else
+i have to pick up the right array
+element so if the left array is smaller
+and greater than right array then i put
+it the left one in the merged list or if
+the right one is smaller than the left
+one then i merge put it in the merge
+list and increment my
+right list
+now while after this conditions are done
+i increment my
+merged
+list incrementer okay i move ahead
+now there could be a possibility that
+there might be some elements which might
+uncompared in the left list like for
+example if this would have been an odd
+number of
+uh elements then here would have been
+three and two then one element will
+remain uncompared so then
+i need to iterate through the remaining
+left array
+and
+just
+put them in my
+merge list
+and increment i and k by 1
+and same could be the possibility of the
+right array that there might be some
+elements which might remain
+uncompared or you know unsorted in the
+right array so i'll put them
+back in my
+merge list
+so my list is my
+list
+which i am
+updating
+constantly
+so now let me put some
+prints
+when i run this
+code
+i want to put some print out so that
+i can explain
+where my
+list is now this is my merge sort and
+i'm gonna run this
+okay so now what i have done
+we had a list of 8496 so in the first
+recursion the split the list got split
+into eight and four and nine and six
+okay
+now
+okay sorry let me just
+make it
+similar
+8 4 and 6 9
+then in the second recursion i have 8 as
+a single element
+4 as a signal element and in the third
+recursion i have 6 as in single element
+and 9 as a single element
+now after that
+my this logic gets executed where i
+compare left and right elements and
+emerge them
+okay so now i compare four with eight
+and four is less than eight i swap it
+move four to the left
+my common array and then eight
+then in in this case six and nine
+they're already in the sorted fashion i
+just move it into my common list my list
+and again now
+four 8 and 6 and 9
+are compared
+the left most element is 4 compared with
+6 it's shorter smaller it is put it in
+the common list 8 and 9 8 and 9 are
+smaller it is put it in the common list
+and you have the sorted array
+so this is the idea behind a merge sort
+where you have divided the list
+to the nth element to the zeroth element
+and then you start merging it back by
+comparing the leftmost elements
+now let's take an example of another
+sorting algorithm called quicksort
+quicksort like merge sort is also a
+divide and conquer algorithm but in a
+different way
+in quick sort first you choose a pivot
+element in the array
+then store elements less than the pivot
+in the left sub array
+and greater than the pivot in the right
+sub array
+and then keep doing this activity
+recursively for each subsequent left and
+right array which you have done
+after that
+we will call quick sort on the left
+sub-array and similarly we will call
+quick sort on the right sub-array so
+it's a recursive algorithm
+based on the choice of the pivot element
+which you have taken on the array
+generally
+the pivot element is generally taken as
+the right most element of the array
+now let me try to explain quick sort
+with an example over here and then we
+will look into the
+python code
+now i have an array
+with six elements
+where my last element is my
+pivot
+so now what i have to do is i have to
+create a left array where all the
+elements smaller than 34 should get
+aligned
+and then i have to create a write array
+which should be having elements greater
+than 34
+so in order to achieve that that is the
+whole algorithm which you have to write
+now
+i have taken two pointers the orange
+colors and
+the one on the left hand side and one on
+the right hand side this is i and this
+is j
+now what is the job of i pointer
+the job of i pointer is to find
+the elements
+which are
+less
+than 34
+and the j pointer
+is to find the elements which are
+greater than 34
+okay so i will
+keep on shifting towards the right until
+unless
+it finds an element greater than 34
+and in case of j element it will shift
+towards the left until unless it finds
+an element
+less than 34
+okay so we will see that
+now
+i
+will start its journey from the zeroth
+element always and j will start its
+journey from the one element less than
+the pivot always okay
+now in this example
+i
+is already pointing to a
+element which is greater than 34
+but
+j
+is
+pointing to an element which is greater
+than 34 but it should move towards
+the element which is less than 34 so now
+i will remain static and
+j will move one element further which is
+17 and then it will check
+whether
+j is
+less than
+34 or not
+if not
+then it will stop over here
+correct
+and
+i
+is less than a pivot or not if not
+then it will also stop over here okay so
+j will check if it is greater than 34 or
+not and i will check if it is
+greater than 34 or not
+now in this scenario
+40 and 17 now are meeting the condition
+that
+whether 40 is
+greater than 34 and 17 is less than 34
+we will make a swap of these elements
+so 17 will interchange will 40 and 40
+will interchange with 17 and then now i
+and j will continue their journey ahead
+what will happen now i moves to 21 j is
+at 40
+okay now 21 is less than 34 i will
+continue further
+it will come to 8
+okay
+8 is also less than 34
+i has now moved to 40
+right now 40 is not less than 34 i will
+stop over here
+now j
+what happened with j
+j is greater than 34 it will move
+further
+now j has reached 8 and i has reached
+40.
+now at this point when j has crossed i
+then now it is the point when you need
+to swap the pivots
+you need to change the pivot
+so at this point when j has crossed when
+j is
+greater than i
+you need to swap the pivots so in this
+case what will happen is
+40 will get swapped with 34
+and 34 will come in place of 40 and 40
+will go to the end
+now with this whole exercise what has
+happened now 34 has found its correct
+position in this entire array and if you
+monitor
+the all the elements on the left hand
+side of 34 are smaller to 34 and all the
+elements on the right hand side are
+greater than 34
+and this is what we wanted to achieve
+now the same logic will get applied to
+left array and right array
+in left array now 8 will be assumed as
+the pivot and in the right array 40 will
+be taken as the pivot
+now and applying the same logic now 8 is
+taken as the pivot
+17 and 21 i and j are pointing
+now as there are only two elements 21 is
+greater than 8 17 is also greater than 8
+so then automatically 21 will move ahead
+j will move ahead and i will move ahead
+and then 21 and 17 will swap each other
+so the final will become 8 17 21
+here we only have one element of 51
+okay 51 and 40 will swap
+amongst themselves as pivot and they
+will align themselves
+so i know it's a little confusing and a
+complicated algorithm but i'll try to
+explain this
+with my
+example
+now what i have to do is i have to
+create my data
+and i am
+creating a quick sort
+algorithm
+now
+in order to
+start the quick sort i need to send the
+0th index
+and the length of the array minus 1
+and of course if
+the
+length of left
+is less than right
+means there is some data then only i'll
+continue
+now secondly what i have to do is
+i have to find
+the index of the pivot element
+and pass it recursively to the quick
+sort
+so now we will create
+another function which is called
+partition which
+will encapsulate the entire logic
+so i'll create a my left pointer i which
+i was explaining
+the right pointer
+j which is
+one less than the right most element
+which is my pivot
+and i'll capture my
+pivot which is the right most element in
+our example 34
+and then
+i'll run a while loop
+for
+the duration when i while i is less than
+j right when i j becomes greater than
+less than i means when they cross the
+path then we will swap the pivot
+now first
+i will iterate move my
+left iterator i
+to the right hand side right when it is
+less than the right
+and i'll check
+my
+element on the ith index is less than
+the pivot because this is my left sub
+array
+and
+then i'll increment
+similarly
+i will
+move my j iterator
+from right to left
+compare
+that the element at the j pointer
+is greater than the pivot so because i
+have to create my right sub array
+okay
+now
+i am checking
+if
+my i index is less than j
+correct
+then i'll
+swap the elements
+and let me print the array over here
+now outside the while loop
+i'll check
+my
+arith
+array i index is greater than the pivot
+yes
+then i
+i am now changing my pivot
+basically pivot value i'm swapping the
+pivot value
+and i'll print it here for you
+and i'll return
+the
+i this is the index
+of the
+pivot
+let me
+indent it correctly
+and print it
+okay let's see what has happened
+now this is my original array where the
+pivot
+is starting from 34
+now
+as i told
+my i did not move the head because
+i is checking if my element of i is less
+than pivot 40 is greater 40 so i has not
+moved but j moved
+j moved from starting from 51 till 71
+still 17 and it stopped over here
+and at this point 17 and 40 got swapped
+17 com came over here and 40 came over
+here
+now here after i started moving forward
+i 21 is less than 34
+okay
+8 is less than 34 okay
+40 is less than 34 no so i stopped over
+here
+my j
+was at 40 it moved further
+8
+8 is greater than 34 no so i and j
+have crossed each other
+now this is the point
+where we have to make a swap between 40
+and 34
+okay so 40
+will move to the end and 34 will come in
+middle so now 34 has reached its desired
+and actual position and all elements
+left of 34 are smaller than it and right
+of 34 are greater than it
+now
+i am working on my left sub array where
+8 is my pivot
+now i will start
+from here
+j i
+so 17 it is greater than 8 it will not
+move ahead 21 it is greater than a 8 it
+moved ahead j and it reached 17.
+now 17 and 21 now j has crossed i they
+will swap each other
+okay
+and now my array position is 8 21 17 34
+5140 now my pivot changes to 17
+17 will be compared to 21 and this is
+the swap happening over here
+now coming to the right sub array my
+pivot is 40 only single element is there
+40 and 51 the swap will happen over here
+so as you understand
+quick sort
+you will better understand when you run
+it with multiple examples
+so i hope you had a great learning
+session on these sorting techniques and
+you will be able to apply them in your
+regular programming on python
+thanks for watching the video i
+look forward to meeting you in my next
+session thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

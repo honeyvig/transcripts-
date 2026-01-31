@@ -1,0 +1,452 @@
+hey everyone i'm vero khandewal and i
+welcome you all to simply learns youtube
+channel
+in this session we will talk about
+single linked list
+we shall begin a session by introducing
+a single linked list
+then we will try to implement it in the
+code editor
+after that we will try
+various operations on them like
+insertion and deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn
+so without any further ado let's get
+started with introduction to single link
+list
+a single linked list is the linear data
+structure made up of nodes
+these nodes consist of two parts
+data
+and reference to the another pointer
+these nodes can be traversed using
+pointers
+it starts from the head node all the way
+up to
+tail node
+now let's try to implement the singly
+linked list in the code editor start by
+creating a node
+to create a node we need a class
+let's declare a class node
+we will declare its member as public
+the first member is end data
+and the second member is node
+pointer
+next
+now we will go into the main block and
+initialize our first node
+to initialize a node we need to use node
+star
+the node name had
+equals to
+similarly we will create more nodes
+and at last repeat and our last node
+tail
+now we will allocate these four nodes in
+the heap
+to do that we will use
+a node name equals to
+new node
+star
+new node
+braces
+now we will allocate all the nodes in
+the same manner
+now we will assign data to our first
+node
+to access the member of the node class
+we will use arrow formation
+then we will use data
+equals to
+let's give it a value as 2.
+now we will link this first node with
+our second node
+to do that we will use head
+same error formation
+and next
+which will be equals to
+our
+n1 node
+and now we have
+created our first complete node
+now let's create other nodes as well
+n1 arrow
+data
+is equals to
+let's give it three
+and one arrow next
+is equals to
+n2
+and two arrow
+data
+is equals to
+5
+and to arrow
+next
+to arrow
+next
+is equals to
+tail
+now
+tail is equal still arrow data
+equals to 7
+and
+tail
+arrow
+next
+is given
+null
+now let's call up function to print this
+list
+we will give head as the argument
+as
+we can only traverse a linked list from
+its head
+let's write a definition for this print
+list function
+this function will be a void function
+argument is
+note star
+a
+we will use while loop to traverse this
+linked list
+we will give it
+it condition
+if a is not equals to
+null
+then
+c out
+is
+a data
+and l
+now
+we will change
+now we will change
+our cursor
+from the current node to the next node
+to do that we will use a is equals to a
+arrow next
+now let's try to execute this code
+as you can see we have traversed our
+complete linked list
+now let's get back to our slides
+we have now introduced the singly linked
+list
+now let's discuss some of the operations
+we can apply on a linked list
+first up insertion
+we can perform insertion at three
+different situations
+like at the beginning at the last or at
+a specific position after a node
+next up deletion
+similar to the insertion we can perform
+it in three different situation as well
+at the beginning at the last or at a
+specific position after a node
+let's talk about them in detail first up
+insertion at the beginning
+to execute this we have to give first
+node's address to the new node's next
+pointer
+next up insertion at the end
+to execute this we have to give new
+nodes address to the last node's next
+address
+next up insertion at a specific position
+to execute this we will change the
+previous node's reference address to the
+new node's address and the new nodes
+reference pointer to the next node
+address now let's try these operations
+in a code editor as you know a linked
+list is made up of node so we should
+start by creating a node to create a
+node we need a class
+node
+and we will define its members as public
+print
+data
+and
+node pointer
+next
+now we will create a function to insert
+a new node in front of the list
+for this function as an argument we will
+give the reference to the head of the
+list
+and integer dot new data
+now in the definition we will allocate a
+node
+new node equals to
+now we will put in the data in the new
+node
+we will use arrows to put to access the
+data
+equals to
+new
+now we will make the next of this new
+node as head
+now we will move the head to point to
+the new node
+now we will create another function to
+insert a node after a specific position
+as arguments we will give it
+the address to the previous node
+and
+the integer new data
+we will first check
+if the given previous node is null
+it is we will print
+given node
+and not
+and then we will return the function
+otherwise
+otherwise we will allocate a new node
+and then we will enter the new data
+now we will make the next of the new
+node as a next of the previous node
+and then we will move the next of the
+previous nodes as new node
+now we will write a function to insert a
+node at the end of the list
+as an argument we will give it
+a node pointer to pointer
+and
+and integer new data
+we will first allocate a new node
+we will also create a last node
+and give it
+now we will put in the data in the new
+node
+since this new node is going to be the
+last node so we will make its next as
+null
+now if the linked list is empty then
+we'll make the new node as head
+to check that we will use
+if
+star head
+is equals to equals to null
+if it is then we will do
+star head
+equals to new node
+else
+we will traverse it to the last node
+while
+last
+next
+not null
+last
+is equals to
+past
+next
+now we will change the next of the last
+node as new node
+now we will write a function to print
+this list
+while
+node is not null
+see out
+load
+arrow
+data
+and then
+and node
+equals to
+node
+now we will write the code for the main
+block
+first we will define a head node
+and mark it as null
+now we will start using those functions
+to make a linked list
+first we will use append function
+to add
+6 in it
+next let's let's use another function
+push
+and add seven in it
+now we will try to insert one at the
+beginning
+so we will use push again
+comma one
+now let's try to insert four at the end
+so far the list looks like one seven six
+four null
+now let's
+let's try to insert eight after seven
+to do that we will use insert
+as argument we will use head next as 7
+is present next to the head
+eight
+now let's try to print this linked list
+see out
+created
+linked
+yes
+list
+add
+return
+let's execute this
+as you can see we have created the
+linked list in the correct order
+let's get back to our slides now let's
+talk about deletion first up deletion at
+the beginning
+to execute this we have to change first
+node's next address to null
+next up deletion at the end
+to execute this we have to change the
+second last node's address to the null
+next up deletion at the specific
+position
+we will change the previous node's
+reference address to the next node's
+address
+now let's try these operations in a code
+editor
+we will start by creating a class
+in this class we will declare the
+members as public
+print
+data
+and the node pointer next
+now to insert the data in the node we
+will use
+a function
+push
+as argument we will give pointer to
+pointer node
+header
+and
+integer new data
+we will allocate a new node
+we will give this new node the data as
+new data
+and
+and new notes next as head
+now we will write a function to delete
+the node
+as argument we will give a node pointer
+to pointer
+head
+and end key
+now we will store head in a temp node
+and we will create a node prev
+as null
+if head node itself holds the key to be
+deleted we will use f
+amp is not equals to
+null
+and
+temp
+data
+is equal to equals to key
+then head
+equals to
+next
+now we will free the old node
+else we will search for the key to be
+deleted
+while
+amp
+is not equals to
+and
+temp data
+is not key
+so rev
+equals to temp
+and temp
+will be hydrated to its next
+if
+the key is not present in the linked
+list
+then we will just return the function
+else we will unlink the node from the
+linked list
+and delete
+now we will write a print list function
+to print the list
+its argument will be a node pointer node
+while
+a node is not null
+layout
+less than
+node
+data
+and we will iterate this node
+using node equals to
+node
+next
+now we will move on to the main block
+we will start with the empty list
+node
+star
+head
+equals to null
+now we will add the element to this list
+so push
+ampersand
+head
+comma seven
+next push
+next push
+ampersand
+comma
+nine
+now see out
+created
+test
+printless
+now we will use delete node function
+delete
+to
+we will use argument as
+ampersand head
+comma
+two
+now
+we will check
+the linked list
+of
+two
+print
+test
+let's try and execute this
+as you can see we have deleted the two
+from the linked list
+let's get back to our slides
+at last let's sum up what we have learnt
+in this session first up we have
+recognized single linked list as dynamic
+data structure
+next up the single link lists offer
+faster insertion and deletion operation
+next
+single link lists are unidirectional
+linked list that is you can only
+traverse it in one direction
+finally a single linked list is an asset
+in implementing other data structures
+like stacks and queues
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you liked this session then consider
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simpler
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
