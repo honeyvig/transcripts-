@@ -1,0 +1,834 @@
+foreign
+ER in the software industry do you wish
+to crack the most brain teasing data
+structures and algorithm questions to
+land in your dream company as a software
+developer
+then you're at the right place this top
+10 data structures and algorithm based
+interview questions are asked most
+frequently in major MNS this quick
+session on data structures and algorithm
+questions will keep you on a safer side
+while attending the interviews of your
+dream company
+data structures and algorithm questions
+play a vital role in every software
+development interview they have become
+essential to crack by every software
+engineer to get hired by the top tech
+companies like Accenture TCS Infosys
+Amazon and many more
+before getting started let me know which
+is your dream company you can let me
+know in the comment section below
+hey guys welcome to Simply learn today
+we'll be learning the top 10 DSA
+interview questions and answers and
+while we are at it please leave us a
+like if you find our content helpful and
+a sub to the channel would be
+appreciated so without any further delay
+let's get started
+and the top 10 question is
+consider a text file interrupted by a
+perk and all the text has been reversed
+due to this bug so which data structure
+would you choose to implement a program
+to revert the text file to its original
+the solution is stack data structure
+let's look at the problem we must read
+an existing element by element in
+reverse order sounds something like last
+to first as we all know stack follows
+first in last out principle in order to
+reverse a string we must create an empty
+stack to push all the string characters
+one by one
+and then what about the character one
+after the another
+so once performing the pop operations on
+a string all the string characters would
+be reversed and form into the original
+string
+now let's try to implement the program
+using stack data structure
+so as you can see here we have a reverse
+function which is declared and
+going to the function here we have a
+structure of Stack where we have top
+sides and array variables
+and we have a function called structure
+creation sorry stack creation
+so first we are allocating memory to a
+stack using mlog function and this size
+is assigned to stack of size and
+initially stack of top is equal to -1
+and then allocating memory to the stack
+of array
+then coming to is full function where it
+checks whether the stack is full so if
+we'll return stack of top is equal to
+stack of size -1 and checking if the
+stack is empty that is is empty written
+stack of top is equal to -1
+and then coming to the push function
+which is used to insert the item into
+the stack so it checks if is full if the
+stack is full of written where the item
+is assigned to stack of top
+and pop to delete the item from a stack
+so it checks it is empty then return
+intimate as written stack of array that
+is of stack of top minus minus that
+means stack is empty
+is decrementing a top by -1 and then
+coming to the reverse function here we
+have string length of string which is
+assigned to n and then calling this
+stack creation function to create an
+empty stack and from I is equal to 0 to
+n
+push all the stack or whatever is there
+in the string of I is pushed to the
+stack and for I is equal to 0 to I less
+than n Pop All the
+items to back to this string of I and
+then coming to the main function here we
+have a reverse string
+and here
+we are reversing a string so we are
+calling the reverse function which is
+this and it tries to reverse this string
+and get back to its original form
+so it prints the reverse string
+so let's try to execute it
+so as you can see here reverse string is
+simply long
+the top ninth question is
+consider you have been assigned a task a
+task in which you are given an array of
+numbers to be arranged in ascending
+order so with sorting algorithm would
+you choose to place the numbers most
+efficiently
+and the solution is quick sort algorithm
+quicksort algorithm helps research the
+information faster than any other
+sorting algorithm it is widely used to
+sort the elements faster also memory
+storage is utilized efficiently since no
+additional storage is required if the
+array size is small then the quick sort
+algorithm Works faster to sort the
+elements
+so now let's consider array of elements
+3 5 2 4 and 1 and let the pivot element
+be 3.
+so
+why are we taking private as a 3 because
+the left hand side element is greater
+than the right hand side element so if
+the right side element is lesser than
+the pivot element
+then swap out the elements
+next comparing the next left element
+with a pivot element and it checks
+whether 5 is lesser than the element 3.
+so if it's lesser than it will swipe
+with each other
+similarly comparing the next element to
+and since 2 is less than 5 it will
+remain in the same position next
+comparing the element 4 width 5. again 4
+is lesser than 5 so it will remain in
+the same position
+so now as you can see the left hand side
+elements are not at the proper position
+so considering the left hand side
+elements
+we will swap the elements
+so here it compiles 1 and 2. since 1 is
+less than 2 it will remain in the same
+position
+next compare 3 and 2 here 3 is greater
+than 2 so it will swap out the elements
+now let's have a look at the program
+implementation
+so here as you can see we have a quick
+sort algorithm function declaration and
+then going to quick sort algorithm
+function here we have array of size 24
+into left and into right so initializing
+the variables i j p and temp so if left
+is lesser than right then assign the
+left element to P that is Pivot element
+and
+assign all the left element to I and
+right element to J so while I lesser
+than J while array of I lesser or equal
+to array of p and I less than right then
+increment I by 1. while array of J is
+greater than array of P then decrement J
+by 1. so if I is lesser than J then we
+are doing swap so we are swapping the
+elements that means array of I is given
+to the or temp variable and whatever is
+there in Array of J is assigned to array
+of I and the temp variable is assigned
+to array of J and then changing the p
+that means the array of p is assigned
+are stored in temp variable and whatever
+is there in Array of J is given to RFP
+and whatever is then temp is given to
+array of J and then calling the quick
+sort orbital
+so coming to the main function here we
+have I count and array of size 25.
+so it's first asking to enter the number
+of elements so suppose you want to enter
+five elements to arrange in the
+ascending order then enter 5. so once
+you enter 5 it will ask to enter one
+element by element
+so from 0 to count it will last one by
+one
+so then we are calling the quick sort
+algorithm to sort the elements and then
+it will printed elements from I is equal
+to 0 to I less than count and we'll sort
+the elements one by one so let's execute
+the program
+so here enter the number of elements so
+let's enter 5
+and enter the elements one by one five
+so we have 2 5 6 3 and 1.
+so the elements are sorted one two five
+six and Thirty One
+of eighth question is
+you are given a list of numbers to find
+the minimum and maximum numbers
+Implement a c program using the
+appropriate type of data structure
+and the solution is array data structure
+the array data structure is used to
+store multiple data of the same type
+easily allowing random access to an
+element using the index number it also
+improves performance remarkably as it
+stores the element consecutively next
+the array use less memory space as there
+is no usage of pointer variables
+so now let's Implement a program to find
+the smallest and largest element
+so here we have array of size 50 then
+variable i n and
+variable to find the largest element and
+a variable to find the smallest element
+so first enter the number of elements
+input the array elements so one after
+the other from I is equal to 0 to n it
+will take the array element
+and initially the largest element and
+smallest element is assigned to array of
+0.
+and then coming to for Loop wherefore I
+is equal to 1 till I less than n if area
+of I is greater than array of L M uh
+sorry large element
+then assign array of I to the largest
+element
+if array of I is lesser than smallest
+element then assign array of I to the
+smallest element and then print the
+smallest element and largest element
+so let's execute it
+so enter the number of elements let's
+enter 5. and input the elements let's
+enter two
+five
+ten
+six
+one
+so as you can see the smallest element
+is 1 and the largest element of an
+arraylist is 10.
+the next top seventh question is
+assume you are given a task to store a
+set of elements with two conditions
+first memory resources drawn should be
+conscious second the data structure
+should be dynamically stable when new
+elements are added or existing elements
+are deleted from the data structure
+irrespective of the location
+and the solution is singly linked list
+s are not predefined data structures
+they are dynamically programmed data
+structures and utilize the memory blocks
+from the Heap storage this makes them
+available alternative to the array as
+the memory needed is judiciously used
+also whenever an element is deleted its
+memory block will be returned to the hip
+in a single linked list we can access
+the element easily because of the point
+of variable that points to the address
+of the next node in the list
+so here let's understand the program
+implementation so here we have a
+structure of a node where we have a data
+variable and a pointer variable called
+Next PDR
+we have a function Declaration of a node
+creation node count and print list
+so going to the node creation function
+here we are creating a new node where we
+are allocating memory for it
+we have a variable called data and I
+so it first checks if node is equal
+equal to null then memory cannot be
+allocated else enter the data for the
+node one so it takes the data
+so data is assigned to nodes data part
+and initially the node's next pointer is
+assigned to null so the node is assigned
+to PTR
+next for I is equal to 2 to I lesser or
+equal to n
+which whatever it creates a new node
+allocate memory for it and check if new
+node is equal to null then memory cannot
+be allocated so break is
+enter the data for the node
+that means the data is assigned to the
+new nodes data and in our new notes next
+pointer is equal to null and then new
+node is assigned to pointers next PTR
+and next point is next PTR is assigned
+to PTR
+then coming back to node count
+so this function is used to count the
+number of nodes in a list so initially
+the count value is equal to zero and we
+have a pointer PTR
+so point that node is assigned to PTR
+while PTR not equal to null increment
+count by 1 and PTR next pointer is
+assigned to PTR and return the count
+next coming to the print list that means
+it lists out all the nodes so we have a
+pointer and if node is equal equal to
+null that means no data found in the
+list else the node is assigned to PTR
+while it checks the condition PTR not
+equal to none then print all the node
+data
+so ptr's next PTR is assigned to PTR so
+now let's try to execute it
+so enter the number of nodes so if you
+want five nodes so enter the data so let
+us enter one two three four and five so
+as you can see
+the singly linked list elements are one
+two three four and five and the total
+number of nodes are
+five
+executing in this session and the
+question and answers we are discussing
+will be attached in the description box
+below so you can have a look at it and
+execute the code for a better
+understanding and if you face any issues
+while executing the programs then please
+let us know in the comment section below
+and our team of experts will be happier
+to resolve all your queries at the
+earliest
+the top sixth question is
+assume you have stored the elements
+randomly in the memory that means not
+contagious the memory elements are not
+stored in adjacent location memory
+blocks and suppose you want to remove
+the elements from a given position which
+type of data structure would you
+recommend for such a task considering
+minimum traversal to save time
+the doubly linked list is the clear
+solution as the question clearly
+mentions the memory blocks located are
+not adjacent now the second puzzle is
+about the minimum traversal out of all
+the variants in the linked list the
+doubly linked list is a variable option
+as it has the bi-directional traversal
+feature a w linked list allows you to
+traversal in both Direction since it
+uses two pointers to point to the
+address of the previous and next node it
+is easy to access the node using the
+previous pointer and delete the node
+from the list and here we have the
+memory representation
+so here let's understand the working of
+programs implementation
+so we have a structure of node and we
+have a variable called data and a
+pointer variable previous and next
+so first coming to the insertion and
+beginning so we are inserting the
+element so we are creating a new node
+and allocating memory using mlog
+function and then we are assigning our
+data to a new node and the new next part
+is holding the head and initially the
+new previous is assigned to null so if
+head is not equal to null then heads
+previous is equal to Nu and Nu is
+assigned to hit
+then coming to the void insertion at n
+so inserting an element at the end of
+the list
+so here we are creating a new node and
+allocating memory to it using m-log
+function and the last note is equal to
+head that means head is assigned to the
+last node and then the new data that
+means a new data is assigned to a new
+nodes data part and the next is assigned
+to none
+and we are creating a temporary variable
+where it is assigned to Temporary
+variable and checks the condition if
+head is equal equal to none then is
+assigned to new nodes previous part and
+new is assigned to that means a new node
+is assigned to head written and here we
+are using a temporary variable while
+temp next is not equal to null then
+temporary variable nodes like next part
+is assigned to Temp and new is assigned
+to attempts next and temp is assigned to
+news previous
+and coming to insertion at sorry
+insertion of the node
+so we are specifying the position here
+so if previous node is equal equal to
+null then the given previous node cannot
+be run
+again creating a new node and assigning
+a value to it and now previous notes
+next is assigned to new next and new
+node is assigned to previous notes next
+the new previous is equal to previous
+node so if new new nodes next part is
+equal to null then new nodes next next
+notes previous is assigned to new
+and then coming to the deletion of a
+node that means how to delete a node
+so first if head is equal equal to null
+or node to be deleted is equal equal to
+null then return if head is equal equal
+to node to be deleted then
+not to be deleted next part is assigned
+to head
+this if condition not to be deleted next
+part is not equal to null then assign
+node to be deleted previous to node to
+be deleted next node previous
+and then if node to be deleted previous
+is not equal to null then assign node of
+next to the node to be deleted previous
+notes next and free the node to be
+deleted
+and this display function will display
+all the elements in a list
+and then coming to the main function we
+are inserting value to a node that is
+five two one five and three sorry four
+two one five three it print the linked
+list element that it display all the
+elements and then after deleting an
+element so we are deleting a element
+heads uh next to next next that means
+fourth element and display the head
+I also we are displaying the element of
+the deletion so let's execute it
+so as you can see we have inserted the
+elements one two three four and five
+into the list so after deleting an
+element that is we are deleting the
+fourth element
+so after deleting fourth element we got
+the list is one two three and five
+fifth question is
+you are given a problem and you need to
+devise a solution the task is to build a
+job portal website and the problem is
+that the portal needs to pick the latest
+profile listed on the website so which
+data structure could fit in and solve
+this puzzle and how
+solution to this problem is stag data
+structure
+we can use stack as it follows last in
+first out and the latest profile would
+obviously be the last item to get in and
+the first item to get out of this stack
+in a linear data structure the items in
+a stack are stored in the order of the
+first in last out or last in first out
+so stack performs operations like push
+and power where push is used to insert
+the item into the stack when a swap is
+used to delete the item from the stack
+operations like insertion and deletion
+of an items are possible only from the
+one end of the stack that is on top of
+the stack
+so this program is to insert items into
+the stack and then delete the top item
+from the stack so here we have a
+structure of stack and we have a
+variable called top size and array
+we have a function declaration at the
+top
+then going to the stack creation
+so this is stack creation function where
+we are creating a stack and allocating
+memory to it using analog function and
+assign size to the stack of size and
+initially stack of top is equal to -1
+that means stack is empty and then the
+stack of array is assigned that means a
+memory is allocated
+and written stack then check whether the
+stack is full so using is is4 check a
+return stack of top is equal to stack of
+size minus 1 that means the stack is
+full if the stack is empty
+then return stack of top is equal to -1
+that means stack is empty
+then push function is used to insert
+item into the stack so it checks if it
+is full written else stack of a that
+means the item is assigned to the top of
+Stack and then pop is used to delete the
+item from a stack so it checks if the
+stack is empty already empty then
+written as
+decrement the stack of top by -1
+and coming to the main function here we
+have we are calling the stack creation
+so we create a stack and then push the
+items into the stack we are pushing the
+item 10 20 and 30. so the last element
+to get in is 13 so the first element
+will be popped out is 30. so now let's
+run the program and see the output
+so as you can see
+the first element was 30 so it is popped
+out
+the top fourth question is
+given a tray you have to find the prefix
+expression of a tree so which order of
+traversal would use those
+solution is pre-order traversal of a
+tree data structure
+so basically in pre-order traversal we
+Travis a tree from the root note to the
+left sub tree
+followed by the right substring so it is
+a quick way of searching and can easily
+get the prefix expression
+so as you can see this program is to
+perform the pre-order traversal of a
+tree data structure so here we have a
+structure of a node and we have a data
+variable
+then we have a pointer to the left node
+and right node
+first going to the creation of a new
+node we are creating a node and
+initializing memory for it that means
+allocating memory using M lock function
+and assigning data to a nodes data part
+and initially the nodes left node and
+right node is null
+then return the node
+then coming to display pre-order
+function
+here it tells how to do the travel so
+that is from first from the left node
+and then going to the right node so it
+checks the condition if node is equal
+equal to none then return
+and print the node data
+so first display pre-order we are
+calling the display pre-order function
+to display for a left node first and
+then the right node so coming to the
+main function here we have a root node
+values assigned 10
+and Roots left node values assign 20 and
+root right now right node is assigned
+the value 30.
+and then put s left notes left node is
+assigned 40 and Roots left notes right
+node is assigned 50.
+next print the pre-order traversal of a
+binary tree so calling the display
+pre-order function to display all the
+nodes
+so let's execute it
+so as you can see the pre-order
+traversal of a binary tree is 10 20 40
+50 and then 30 because 30 is the right
+time
+and uh 10 is the root child
+whereas these are the left chart
+the top third question is
+let's assume that you receive a software
+requirement that offers ticket booking
+services
+your job is to devise a solution that
+stores all the booking requests and
+response to the request based on the
+first come first serve approach which is
+the most variable and dynamically stable
+data structure
+the solution is Q data structure
+the queue is a linear data structure
+that follows the FIFA order and it also
+a dynamically designed data structure
+queue follows fifo which stands for
+first scene first out or in other words
+first come first serve
+in queue the elements are inserted from
+the back of the queue called NQ
+and the elements can be removed from the
+front of the queue called DQ
+as shown in the pillow diagram
+so in this function we have a size of 50
+and we have a function called NQ display
+and the variables area of size and
+initially rare and front is interest to
+-1 that means the queue is empty
+and next we have a wild condition so we
+print for the choice options that is
+first is NQ operation
+second option is display the queue list
+and third operation is exit
+and then enter your choice of operations
+to perform so it's asking you to enter
+the choice so if you enter one case one
+that means it calls the enqueue function
+uh if you enter case 2 that means it's
+calling the display function and in case
+the it calls the exit function by
+default uh if you print any other option
+then it will be it will display
+incorrect Choice return 0. so coming to
+the NQ function which is used to insert
+the item in or element into the queue so
+creating a new item
+so if rare is equal equal to size of
+minus 1 that means the Q is Overflow is
+if front is equal equal to minus 1 that
+means Q is empty then assigned front is
+equal to 0. and it's asking to enter the
+element to insert the insert into the
+queue
+so if you enter the new
+item then it will increment to rare by 1
+that means rare is equal to red plus 1
+so now new item is inserted into the
+array I mean list of Q and then coming
+to the display function we have the
+condition if front is equal equal to -1
+that means the queue is empty else
+from I is equal to 0 till I laser is
+lesser or equal to right it will display
+all the array elements
+so now let's run the program
+so here enter the choice let's enter one
+and enter the item 20.
+and enter the second choice that is 1
+enter the item 13. and now enter two and
+as you can see the list of items are 20
+and 30.
+third second question is
+Rahul has a large army he arranges them
+in an arbitrary order and everyone is
+given an integer ID so now Rahul wants
+to add one Army in the picnic now use a
+single pointer variable and it should be
+possible to traversal in both Direction
+Implement a program to solve the problem
+statement
+and the solution to this problem
+statement is circular signaling list
+a circular singly linked list is to
+perform a reverse table with less memory
+uses than a doubly linked list we
+require extra memory for the previous
+pointer in a doubling list so when we
+compare the circular linked list to
+where the both single linked list and
+developing list we don't find a null in
+any of the nodes instead the last note's
+next pointer holds the address of the
+first node so basically there is only
+one point of variable in the Surplus
+singly linked list
+so in this program
+we have a structure of node and then
+variable data and we have a single point
+pointer variable called next
+so to insert to the empty list
+we have we are checking the condition if
+it is not equal to null then return head
+let's create a new node allocate memory
+for it and assign a data to the new
+nodes data part and new is assigned to
+head
+and hit is assigned to hits next written
+hit
+and then insert at beginning so if head
+is equal to null written insert to empty
+list so again create a new node
+allocate memory and assign data to the
+new nodes data part and hits next is
+assigned to new next and new is assigned
+to head next
+and return head and coming to the void
+display function so it display the list
+of elements
+so it checks we have a pointer variable
+PTR and it checks if head is equal to
+null that means the list is empty so it
+will return
+and then the heads next is assigned to
+pointer
+and here we are using do while condition
+first it prints the data part
+so pointer next is assigned to PTR and
+then checks the condition y that is
+pointer not equal to head of next and
+coming to the main function
+uh we have assigned null to the Head
+and we are inserting element at the
+beginning of the list 30 then 40 and 10
+so then print listed elements a linked
+list elements are and we are calling the
+display function so this function will
+display all the elements so let's run it
+so as you can see the linked list
+elements are 10 14 and 30.
+the top first question is
+given a tree you have to count the
+number of nodes in a tree create a
+function and try to call the function
+inside the same function
+and the solution is tree data structure
+a tree consists of a root node followed
+by Panic node and a child node
+so this program is to count the number
+of nodes in a tray so here we have a
+structure of a node and we have a data
+variable and a pointer to left note and
+right node
+and then coming to creation of a new
+node so here we are creating a new node
+and allocating memory for it using mlog
+function and assign data to a nodes data
+part and initially the nodes left node
+and nodes a right node are assigned to
+null
+function to find the left height of a
+binary tree so this function is to find
+the height of a left height of a binary
+tree so initially the height is equal to
+0 so while node
+incrementing the height by 1
+so the notes left node is assigned to
+node so return height
+and then this function is to find the
+right height of the binary tree so again
+initially the height is equal to 0 while
+a node height increment height by 1
+when the nodes a right node is assigned
+to node so return the height
+next total load so this function is to
+count the number of nodes in a binary
+tree
+so if root is equal equal to none that
+means written 0. else we are assigning
+left height of a root to the LH and
+right height of a root 2 RH
+and checking if the left and right
+Heights are equal if they are equal that
+means a return to the power of height
+minus 1.
+else we are having a recursive call so
+we are calling a
+1 plus total node function
+plus the total node
+coming to the main function here we are
+assigning values to the node so root
+node is holding a value 10 15 is
+assigned to left node 20 is assigned to
+Roots right node and 25 is assigned to
+Roots left nodes and left node
+and we have Roots left notes right node
+is equal to 30. and root right snow left
+node is having 35 and Roots right notes
+right node is having 40. so now
+it will print the total number of nodes
+in a tree so let's check
+so as you can see the total number of
+nodes are 7.
+so here I have two bonus questions for
+you guys please try to find out the
+answers and let us know which data
+structure would you prefer to solve the
+problem statement and the first question
+is John has moved to a small village and
+likes visiting one of his best friend he
+wants to take this shortage route
+because he is in hurry to meet the best
+friend so now he has decided to take
+this shortage path John starts at
+intersection 1 and his friend is at
+intersection here each Road Links to an
+intersection from the start to its
+destination point so using which data
+structure would you solve this problem
+statement
+and the second question is let's
+consider there is a class of 25 students
+and we want to store the grades for each
+of their five courses is there a way we
+can keep all the information
+please let us know the solution for this
+question in the comment section below
+so with this we have come to the end of
+this session on the top 10 DSA interview
+question and answers I hope this session
+was informative and interesting if you
+have any queries regarding any of the
+topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happier to resolve all
+your queries at the earliest until next
+time this is Sanya from the simply
+learns team signing off thank you stay
+safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

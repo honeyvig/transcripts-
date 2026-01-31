@@ -1,0 +1,326 @@
+foreign
+data structure interviews to land in
+your dream company then you're at the
+right place this top 10 most frequently
+Asked data structures and algorithm
+based interview questions will keep you
+on a safer side while attending the
+interviews of your dream company so
+please stick till the end of this video
+while we give away answers to that one
+important programming question that is
+the most frequently Asked in software
+development interviews data set to play
+A Whiter role in the field of software
+development every interview will have
+questions on data structures and
+algorithms they have become essential to
+crack every software engineer to get
+hired by the top tech companies hey guys
+welcome to Simply learn
+today we will be learning the top 10 DSA
+question and answers
+and while we are at it please leave us a
+like if you find our content helpful and
+a sub to the channel would be
+appreciated so without any further delay
+let's get started
+and the top 10 question is what is data
+structure
+a data structure is a collection of data
+used to store or organize in an
+efficient manner to access it
+effectively in short it deals with how
+the data is organized in the memory
+next the top ninth question is what is
+the classification of data structure
+structure is classified into linear and
+non-linear whereas linear data structure
+is further classified into a static and
+dynamic data structure so now let's look
+at a complete classification of a data
+structure
+the data structures are classified into
+linear and non-linear in which
+non-linear data structure consists of
+tree and graph
+a linear data structure is divided into
+Aries queues stack and linked list
+so what do you mean by static and
+dynamic data structure the memory of a
+static data structure is fixed in size
+which means the memory is allocated
+during the compile time arrays are the
+example of a static data structure and
+in the case of dynamic data structure
+the memory is allocated during the
+runtime queues stack and linked lists
+are the example of a dynamic data
+structure
+the top eighth question is what are the
+applications of data structure
+the first application is Graphics that
+helps to represent the data virtually
+then
+data structures are used in artificial
+intelligence which is a manual machine
+to perform a certain task next
+data structures are used in creating
+operating systems such as Microsoft
+Windows Unix operating system Etc
+then
+compiler design which is used to compile
+the computer programs or translate the
+source code into machine code
+next image processing
+it is used to perform operations on the
+image or to get any kind of information
+from a particular image
+later
+numerical and statistical analysis
+numerical analysis is used to refer to
+the numerical facts whereas statistical
+analysis refers to analyzing and
+presenting the data and finally database
+management it is used to store and
+retrieve the data from a computer
+top seventh question is what is a stack
+and explain the operations performed on
+a stack
+tag is a linear data structure the items
+in a stack are stored in the order of
+first in last term or last in first dot
+so here let's consider an example where
+we have stack of books so suppose
+students were asked to keep books for
+the corrections one after the other then
+each one of them would keep the books on
+top of the other book therefore in the
+same way items are inserted into this
+stack another example could be a stack
+of clothes
+operations like insertion and deletion
+of an item are possible only from the
+one end of the stack that is on top of
+the stack now let's have a look at the
+operations performed on a stack
+push operation is to insert the item
+into the stack whereas pop is used to
+delete or remove the item from this
+stack
+and top will return the top item of a
+stack if MJ Returns the true if the
+stack is empty else it will return false
+size operation is used to return the
+size of a stack
+next top six question is
+what is sorting and mention the types of
+sorting all the terms in C
+ertain is the process of arranging the
+data in some particular order to access
+the data efficiently and the Sorting
+algorithms are
+insertion sort selection sort bubble
+sort
+counting sort
+Radix sort quick sort and merge sort a
+programmer can use any of the following
+sorting algorithms to arrange the data
+either in ascending or descending order
+therefore sorting reduces the complexity
+of the problem
+the next top fifth question is what is a
+linked list and what are the different
+types of a linked list
+which is a linear data structure
+consisting of nodes where each node is
+divided into two parts data and address
+every node in a linked list is linked
+together the different types of linked
+lists are
+singly linked list doubly linked list
+and circular linked list
+a single linked list is a collection of
+data called nodes where each node is
+divided into two parts to store data and
+address every node in a linked list is
+connected with the other through a
+pointer that points to the address of
+the next node a special note called the
+head node holds the address of the first
+node and the last note points to the
+none
+and a w linked list is a complex
+compared to a single linked list each
+node is divided into three parts to
+store data and the addresses of the
+previous and next node
+in a doubling list the first note
+previous and last note next pointer
+points to null indicating no notes
+before or after it it is easy to access
+elements in the doubling list since it
+consists of two pointers to travel from
+forward and backward Direction
+circular linked list in C programming
+performs a reverse table cell with less
+memory uses than a doubling case a
+circular linked list is a collection of
+data called nodes where the last node
+links to the first node
+the top fourth question is write a
+program to convert an infix expression
+to a post fixed expression
+so as you can see this program is to
+convert an infix expression to a postfix
+expression so we have a pop priority and
+push function which are declared and
+then we are declaring stack of size 50
+and top initially is equal to -1
+then going back to function
+push is used to insert an item into the
+stack so
+n is assigned to stack of plus plus top
+and pop is to remove or delete an item
+so if top is equal equal to -1 then
+return -1 that means top is empty else
+returns stack of top minus minus that
+means decrementing the top by -1 then
+coming to Priority function
+checks the condition if x is equal to
+open parenthesis then written 0 if x is
+equal to plus or minus then written 1 if
+x is equal to into or divided by then
+written 2 that means the priority of
+plus and minus are same and into n
+divided by are same
+then going to main function
+here we have the expression of size 100
+and then the pointer variable exp then
+asking to enter the expression to
+perform in fixed of post fix once you
+enter
+the expression is assigned to exp so why
+exp not equal to null then checks the
+condition
+so if is Al num X of expression that
+means if the expression is
+alphanumerical
+then print the expression
+as if
+prints a character and else if
+expression is equal to open parenthesis
+then push to X calling the push function
+then else if expression is equal to
+closing parenthesis while n is equal to
+pop not equal to
+closing parenthesis print character is y
+priority of stack of top is greater than
+equal to priority of expression then
+pops the character and push to the
+expression and incrementing the
+expression by 1 while top not equal to
+-1
+then pop that means if stack is not
+empty then property character return 0.
+so let's try to execute it
+enter the expression
+so let's enter a plus
+day of C into d
+and we got the output
+the code that I'm executing in this
+session and the question and answers
+that we will be discussing will be
+attached in the description box below so
+you can have a look at it and execute
+the code for a better understanding and
+if you face any issues while executing
+the programs then please let us know in
+the comment section below and our team
+of experts will be happier to reach out
+all your queries at the earliest
+top third question is what is a binary
+search tree and explain its properties
+a binary tree is a complete tray in
+which every node is spelled except the
+last level nodes in a binary tree are
+added from left to right
+topmost node is a root node of a tree
+and the sub tree consists of a parent
+note and a child node
+the properties of a binary search tree
+are the left sub tree of a node contain
+only nodes with a K element less than
+the root load scheme whereas the right
+subtree of a node contains the note with
+key elements greater than the root node
+scheme
+the top second question is what is a
+graph data structure in same
+a graph is a non-linear data structure
+it is a collection of a finite set of
+nodes called points connected through
+edges called lines as shown in the below
+diagram
+just to represent networks such as
+telephone networks circuit networks and
+social networks Etc
+now first question is how to implement a
+program to find the height of a binary
+tray
+so as you can see this is a program to
+find the height of a binary tree which
+means finding the levels of a binary
+tree
+so first we have a data variable and we
+have a pointer to left child and right
+child
+and then coming to hide function if node
+is equal equal to none then written 0
+else
+the height of nodes left child is
+assigned to left height and the height
+of nodes right child is assigned to
+right height so if left height is
+greater than right height then return
+left height plus 1 else written right at
+Plus 1.
+and then creating the new node and
+allocating memory for it using m-log
+function
+and then assigning data so assigning
+data for a nodes data and initially
+denotes left child and right child is
+assigned to null and written node
+and coming to main function we are
+assigning values to every node so root
+node is having the value 10
+and Root's left child is equal to 15
+Root's right child is equal to 20 and
+Roots left child's left child is equal
+to 25 and Roots left child's right child
+is equal to 30 and print the height of a
+binary trick
+so let's execute it
+so as you can see we got the output the
+height of a binary tree is 3.
+so with this we have come to the end of
+this session on the top 10 DSA question
+and answers I hope this session was
+informative and interesting so if you
+have any queries regarding any of the
+topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries at the earliest until next
+time this is Sanya from the simply
+learns team signing off thank you stay
+safe and keep learning
+foreign
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

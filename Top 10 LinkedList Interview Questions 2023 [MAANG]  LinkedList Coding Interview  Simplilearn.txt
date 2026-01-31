@@ -1,0 +1,690 @@
+would you like to crack the trickiest
+interview questions to land in your
+dream company then you are at the right
+place most of the trickiest interview
+questions include stack and kills
+sometimes you might also face dynamic
+memory related questions link list can
+be a One-Stop solution for all such
+strict data structure questions they
+have become essential to crack every
+software engineer to get hired by the
+top tech companies so please stick till
+the end of this video while we give away
+answers to that one important
+programming question that is the most
+frequently Asked in software development
+interview hey guys welcome to Simply
+learn today we'll be learning the top 10
+link list question and answers and while
+we are at it please leave us a like if
+you find our content helpful and a sub
+to the channel would be appreciated so
+without further delay let's get started
+the top 10th question is
+differentiate between three types of a
+link list the three types of Link list
+are singly link list dou link list and
+circular link list in singly link list
+the traversal is Possible only in One
+Direction whereas in W link list the
+travil happens in two ways forward and
+backward Direction and each note
+consists of data and the address of the
+previous and next note whereas in
+circular link list the traversal of a
+circular singly link list is is until we
+raise the same node we started in an
+index and in single link list and W link
+list the last node is pointing to null
+meaning no node ofate in a list whereas
+in circular link list the last node in
+an index points to the address of the
+first node no n is found in the
+list in singly link list every node in a
+link list connects with the other
+through a point variable that holds the
+address of the next note a w link list
+uses two pointer variables that points
+to the address of the previous and next
+node a circular link list uses two
+pointer variables that points to the
+address of the previous and next node
+and the last node next will point to the
+address of the first node in a
+list top ninth question
+is write a program to add a note at the
+beginning end and specified position in
+any link
+list so as you can see the screen this
+is a program to add a note at the
+beginning end and specified position in
+a link
+list so as you can see the screen here
+we have a structure of a
+Noe coming to the insertion at beginning
+function here we creating a new node and
+allocating memory to it using MOG
+function and then we are assigning a new
+data to a new noes data part and
+initially the new nodes next is holding
+head that means uh head head is assigned
+to the address of new notes
+next Now new is head then coming to
+insertion at the end so we are going to
+insert the node at the end of the link
+list so here we creating a new node
+allocating memory to it using mlog
+function and assigning a value using new
+data so new data part is holding new
+data and last note is equal to
+head so initially it's assigned to head
+but if we are checking the condition if
+head is equal equal to null that means
+head is equal to new return return else
+check the condition while last node next
+is not equal to null then last node next
+is assigned to last node and now last
+node next is equal to new then return
+then coming to insertion of Noe that
+means of the specified node so if
+previous node is equal equal to
+null then print the given previous node
+cannot be null
+return that means we are uh inserting a
+node at the specified position so if the
+previous node is equal equal to null
+then the given previous node cannot be
+null so for that we are creating a new
+node allocating memory and assigning a
+data using new news data is equal to new
+data and new data new notes next is
+holding previous uh previous node next
+and now previous node next is equal to
+new and this display function will print
+all the elements in a link list so when
+node is not equal to n then it will
+display the node data part and then
+assign uh nodes next to node coming to
+the main function here we are assigning
+values to the node so we are calling the
+function insertion at end and passing
+the value that is 25 insertion at the
+beginning passing value 15 insertion at
+the beginning again 10 uh insertion at
+the end we are passing 30 and insertion
+of to a specified note that is 20 and
+then print the link list element so for
+that we are calling the display function
+so let's run the
+program so as you can see the output
+here the link list elements are 10 15 20
+25 and 30 it has print in an
+order the top eighth question
+is find the sum of the nodes in a link
+list so in this program we are going to
+find the sum of the nodes in a link list
+so here we have a structure of a node
+where we have data variable and a poter
+variable next so we have a function
+called insertion to insert an element
+into the list so we are creating a new
+node and we are allocating memory for it
+using MOG function and assigning
+data so new node data part is holding
+the data and new node next is assigned
+to head that means now head is holding
+the address of the first node so head is
+equal to new node and coming to the main
+function we have a head which is
+initialized to n and initially the sum
+is equal to zero so now calling the
+insertion function and passing the value
+so we are going to insert the value 1 16
+26 and 30 that means we are assigning a
+value to the nodes and then we are
+creating a pointer which is assigned to
+the Head while pointer not equal to null
+then we are performing certain operation
+that is sum is equal to sum plus
+Pointer's data so
+calculating U that means we are adding
+the data of all nodes and then pointers
+next is assigned to PTR so that will
+calculate all this um data that means
+all this uh elements 1 16 26 and 30 and
+then it will display as a sum of all
+nodes so let's execute
+it so as you can see the sum of nodes is
+equal to
+73 the top seventh question
+is Implement a c program to reverse the
+elements of a singly link
+list so in this program we are going to
+reverse the elements in a single link
+list so as you can see see the screen
+here we have a structure of a note where
+we have a data and a pointer pointing to
+the
+next we have a reverse function so we
+have reverse function to reverse the
+data so coming here we are creating a
+previous which is initially initialized
+to null and then we have a temporary
+variable that is assigned to head and
+the next is equal to n
+so while let's make this
+temp so while temp is not equal to
+null then it will execute this statement
+that is the statements are used to
+reverse the elements that means the list
+of elements that we are given here will
+be
+reversed so for that we are performing
+this operation that is the temp whatever
+is there in the temp nodes next is given
+to the next variable and whatever is
+there in the previous is given to temps
+next and what's there in the temp is
+given to previous and finally uh the
+temp is equal to next that means
+whatever is there in the next is
+assigned to
+Temp and now head is equal to previous
+coming to the insert Noe we are going to
+create a new node uh then assigning a
+value using data so new node new noes
+data is holding the data and the next is
+assigned to
+head then that means um the first uh the
+head is holding the address of the first
+note that is new no address and then the
+head is equal to new note and then
+coming to the display function this will
+display all the list of elements that is
+we are using temp variable that is equal
+to head that means assigned to head
+while temp is not equal to none print
+the data so uh it will print the
+data uh so what data it's like temporary
+next whatever is there in the temp data
+it will print all the data all the nose
+data and then temp next is assigned to
+Temp then coming to the main function
+here the head is initially assigned to
+null and we are calling the insert node
+to insert the values that that is 10 20
+30 and 40 so it will print the given
+link list is and calling the display
+function so it will display all these
+elements and then calling the reverse
+function to reverse this element and
+then again calling the display function
+to display it back so let's try to
+execute
+so as you can see here we have the list
+of data that is 40 30 20 10 and the and
+the reverse data is 10 20 30 and
+40 the code that I'm executing in this
+session and the question and answers we
+are discussing will be attached in the
+description box below so you can have a
+look at it and execute the code for a
+better understanding and if you face any
+issues while executing the programs then
+please let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+quiries are the
+earliest top sixth question
+is write a program to count the number
+of nodes in a link
+list so in this program we are going to
+count the number of nodes in a link list
+so here we have a structure of a note
+where we have again same data and the
+variable or a poter to the
+next then coming to the insertion
+function this is to insert element for
+that we are creating a new node and
+allocating memory then assigning a data
+and the new next is holding head that
+means head is equal to new node head is
+holding the address of the new node and
+coming to the display function here we
+are going to display the what uh the
+count the node count so here we have a
+new node which is assigned to head and
+initially the Noe count is equal to zero
+while new Noe is not not equal to null
+that means new note next is assigned to
+new note and every time it is printed it
+will increment note count by one so we
+are using node count Plus+ that means it
+will increment um node by one so then it
+will display the total number of nodes
+in a link list so coming to the main
+function here we have head which is
+assigned to null and calling the
+insertion function passing the value 10
+20 and 30 so now now we have uh the
+values 10 20 and 30 and calling the
+display function to display the number
+of counts sorry number of noes in in a
+link list so let's execute
+it so as you can see the total number of
+nodes in a link list are three because
+here uh here we have given three values
+to three not so let's try to add one
+more so let's run it
+so as you can see now the total number
+of notes in A Link list are
+four while we are already discussing
+some interview questions let us know the
+trickiest ones you faced in your
+interviews in the comments below let's
+see if anyone responds with the right
+answers to your questions could be
+helpful for all the viewers with some
+extra questions to
+learn top fifth question is
+Implement a program to merge two sorted
+link list from their
+end so now let's understand the program
+to merge two sorted link list from their
+end so as you can see here again same we
+have a structure of a node and we are
+creating a pointer variable that is next
+and then we have a display function so
+this will display the
+elements so here we are creating a
+pointer variable PTR which is assigned
+to head while PTR it will print the
+data and then pointers next is assigned
+to PTR then coming to insert we are
+going to insert the element into the
+list so for that we are creating a new
+node and allocating memory for it after
+allocating memory we are assigning a
+data for new notes data part and the new
+node next is holding head that means now
+the head is equal to new node head is
+holding the address of the new new note
+then coming to the move
+function so here we have PTR and head
+well if head is equal equal to none then
+return is what we are going to do here
+is creating a new node which is assigned
+to head and then head is equal assigned
+to Heads next and pointer is assigned to
+new notes next and PTR is assigned to
+new note so this function here we are
+going to move the link list so
+this function uh these are the
+statements that we are going to perform
+and then coming to the reverse we are
+going to reverse to uh two set of Link
+list so the first link set of Link list
+is first and the second is second so
+while first and second initially result
+is equal to null if First Data is lesser
+than second data then call move else
+move function and pass the first set of
+data else call move and pass the second
+set of data
+while second then again we are calling
+the move
+function and and result uh that is we
+are um passing the reference result and
+second while first then we are calling
+the move and passing the first set of
+Link list then it will print the result
+so this is basically to reverse the link
+list so we are reversing the uh first
+set of as well as
+second and then coming to the main
+function here we have a first set of um
+link list that is first set assigned to
+null and whereas second set is also
+assigned to null so for I equal to 6 to
+I greater than 0 that means from i0 to 6
+I is equal to IUS 2 that means it going
+to it's going to print the even numbers
+from 0 to 6 calling the insert to insert
+the elements then so passing the first
+this that means this is the first set of
+Link list and this is the second set of
+Link list where I is equal to 9 I
+greater or equal to 1 then I is equal to
+IUS 2 that means from 1 to 9 it going it
+going to print the odd numbers so we are
+calling the insert function and passing
+the second set of that means this is the
+second set of um
+elements then print first list of
+elements so display first so this will
+display the first set of Link list and
+then again print the second list of
+elements calling the display function to
+uh display the second set of Link list
+then calling the reverse function to
+reverse first as well as second so after
+merging the link list so now um this is
+going to merge to link list so then
+after merging again we are calling the
+display function to display so let's try
+to execute
+it so as you can see the first list of
+elements were 2 4 6 and the second set
+of list is 1 3 5 7 and 9 so it going to
+merge this two link list from their end
+so this is the sorted uh link list so
+here we have 9 7 6 5 4 3 2 1 so this is
+going to sort the elements and then
+merge from there
+in the top fourth question
+is write a program to delete a note at
+the beginning end and specified node in
+any link
+list so as we have previously discussed
+on how to insert the nodes now let's
+understand on how to delete the node
+from a
+list so as you can see here we have a
+delete function that means to delete a
+Noe so we have last and key note as an
+argument that we have passed and if last
+is equal equal to null that means
+written that means there are no nodes in
+a list so and this function is to delete
+a note at the end so if last last data
+is equal to key node and the last next
+is equal to last then free the
+last and we are assigning the last equal
+to none and then it will return then we
+creating a temporary variable which is
+assigned to last and then we have a
+delete node a pointer to delete
+node so if last data is equal to the key
+Noe while temp next is not equal to last
+then whatever is that the temp notes
+next is assigned to Temp and the last
+note next is assigned to Temp next and
+free the last so once you free the
+memory of a last node then assign the
+last next that means the temp next is
+assigned to the
+last while temp next is not equal to
+last and temp next data is not equal to
+the key node then whatever is there in
+the temp next is assigned to Temp so if
+temp next data is equal to the key Noe
+and the temp next is um is assigned to
+the delete note now the delete note next
+is assigned to Temp next and then we are
+going to free the memory for the note to
+be deleted now calling the display
+function to display the list so if
+creating a pointer variable and if the
+head is equal to
+null if head is equal to null that means
+the list is
+empty then we are assigning pointer is
+equal to Heads next so do that means
+this will print that is uh it will print
+the notes data uh so once it prints the
+First Data again it will um the pointers
+next is assigned to the PDM then we
+print all the uh notes data and then
+checks the condition while PTR not equal
+to HS next coming to the main function
+as we have already seen how to insert so
+the elements that we inserting is 30 40
+10 20 and 10 sorry it is like 10 20 30
+and 40 and print the link list elements
+so we are calling the display function
+to print the elements
+and after deletion the link list
+elements are so which element we are
+deleting that is 10 so delete node we
+are calling the delete node to delete
+the element 10 then again we are
+displaying calling the display function
+to display the elements so let's execute
+it so as you can see the link list
+elements were 10 20 30 and 40 so after
+deletion the link list elements are 20
+30 and 40 that means we have deleted 10
+successfully top third question
+is write a program to remove duplicate
+elements from the sorted link
+list so here basically we have the
+elements these are the sorted elements
+that is u 10 20 30 40 and 50 and also we
+have a duplicate elements that means
+duplicate nodes so basically we are
+going to delete this so we are going to
+delete this 10 then 30 and extra 40 so
+for that uh we have a structure of a Noe
+and then we have a display function so
+in display function we are going to
+display the uh
+data so for that we have a pointer which
+is assigned to head while pointer it
+will print the data of all the no
+and we are um assigned pointers next to
+PD then coming to insert function this
+is to insert the elements or the note so
+creating a new note and allocating
+memory for it and then assigning a data
+and new notes next will be head that
+means um the new node address head is
+holding the address of the new new node
+and then we have a remove duplicate
+function so this function is basically
+going to remove this extra or the dup at
+10 30 and
+40 so in this function it checks if head
+is equal equal to null return that means
+there are no nodes then creating a
+pointer which is initialized to head so
+while pointer next is not equal to none
+then we are going to perform this so if
+check the condition if pointer data is
+equal to pointer pointer nodes next data
+that means if this and this is equal to
+uh if this and this element is is same
+so suppose this is the
+pointer and this is the pointer
+next so this is what your pointer next
+data so if those both are
+same then we are assigning pointers next
+next to next next and then free the
+space or the memory for the pointers
+next and next next is assigned to
+pointers next else we are assigning
+pointer next to the PTR and coming to
+the main function here we have I and the
+elements that um list of elements that
+is 10 20 30 40 and 50 and we have extra
+or the duplicate elements as well and we
+have n which is assigned to size of
+elements divide by size of elements
+starting from the index
+zero and initially head is assigned to
+null and for I equal to n minus 1 I
+greater than equal to Z we are inserting
+the elements and then decrementing I by
+minus
+one we are calling the remove duplicate
+function to remove the duplicates and
+then again display the uh list so let's
+execute
+it so as you can see here they have we
+have removed all the duplicates that is
+we had extra 10 30 and 40 so now um the
+duplicates are removed so now the list
+is 10 20 30 40 50 and the last is
+none top second question is
+Implement a program to rotate a link
+list so in this program we are going to
+rotate the list so for that we have a
+rotate list function so here we have a
+variable called P if p is equal equal to
+zero then return so p is nothing but the
+list if the link list is empty then it
+will return so let's consider the below
+example that is we have a list called 1
+2 3 4 and five so if p is equal to 4 so
+that means PTR is assigned to head first
+so current will either point to the p pa
+or null so if initially the count is
+equal to one while count is lesser to p
+and the pointer is not equal to null
+then we are assigning pointers next to
+PTM and we are incrementing the count by
+one so that means the current will point
+to the node four in the above example
+that means um this now the current that
+is PTR is is pointing to the
+fourth and if PTR is equal to null then
+it will return else now again the
+current points to K node that means uh
+here we have the P so the current points
+to P not store it in a variable so
+whatever is there the four here in this
+example it is four so this four will be
+stored
+in here it will store in the variable
+this one P
+note now the P points to the note 40 in
+the above example so now here while
+pointers next is not equal to null then
+assign pointers next to PTR and now
+pointers next is equal to head that
+means head is holding the address of the
+poins next and now uh P node next is
+holding head and again the P node next
+is assigned to null that means we are
+keeping the four as it is and rotating
+that means rotating in the sense
+now this three elements will come this
+side and this so it's kind of a it's not
+a reverse but it's just a
+rotating so coming to the insert
+function here we are going to create a
+new note uh and then assigning a value
+and first notes uh address will be uh
+holding head will be holding the address
+of the first uh new notes next and now
+head is assigned to new note and now
+this function is to print the element
+so while node is not equal to none then
+only it will print the all the data of a
+node no nodes data and now nodes next is
+assigned to note and coming to the main
+function here head is assigned to null
+so for I is equal to 6 I greater or
+equal to Z that means from 0 to 6 uh we
+are inserting values that means uh
+inserting the node so print given link
+list so whatever is given first it will
+display then after rotating
+now PTR is pointing to four so after
+rotating the list again we are going
+to display the list of elements so let's
+execute
+it so as you can see here the given link
+list is one 2 3 4 5 and 6 so after
+rotating it is 5 6 1 2 3 and
+4 our first question
+is Implement a stack using any link list
+so in this program here we have a
+structure of a node and in the top is
+assigned to null and push item that this
+function is used to push the items into
+the stack so using link list we are uh
+implementing a stack so here creating a
+new note and allocating memory for it
+and then assigning a value to a new
+notes data part so if the top is equal
+to null the new note next equal to null
+else the new noes next is equal to top
+so now the new node is top so if it is
+uh the top is equal to new node then
+item is pushed successfully that means
+inserted and pop item this uh function
+is to delete the item from a stack so if
+top is equal equal to none that means
+stack is empty else uh we have a
+temporary variable which is assigned to
+top so it will delete the top item from
+a stack so temp next is assigned to top
+and we are going to free the memory for
+a temporary variable and then printing
+the element that means printing the
+items in a stack so if top is equal
+equal to null that means the stack is
+empty else uh here we have a stuck node
+temp that means we creating a temporary
+variable which is assigned to top and
+while temp next is not equal to null uh
+then it will print the data of a temps
+data that means it will print uh the
+items in a
+stack so a temp next is assigned to Temp
+and then again it will print all the
+data so coming to the main function here
+we are having a choice and then item
+while one using while condition uh it's
+asking options that is push pop display
+and exit so first asking enter your
+choice so if you enter the choice the in
+case one we are going to insert the item
+into the stack uh so we are calling the
+push uh function that is push item
+function and then in the case two if you
+um select the option two then we are
+going to call the function pop item if
+it is third then print item if it's
+Fourth then it is exit by default if you
+if you enter anything apart from 1 2 3
+and four then it's going to print wrong
+choice so please try again with
+different
+choice so let's try to execute it
+so first let's enter the choice one and
+enter the value to be inserted that is
+10 again let's enter one and value 20
+now let's uh display so now the uh
+inserted on 20 and 10 so to delete let's
+enter Choice 2 so that means whatever
+was at the top is deleted successfully
+so top was 20 so now 20 is deleted
+successfully so now let's display three
+so as you can see now only 10 is in the
+list or in the
+stack so here I have one question for
+you guys and the question is Implement a
+program to check whether the list is
+palum please try to find out the answer
+and let us know the solution for this
+question in the comment section below so
+with this we have come to the end of the
+session on the top 10 link list question
+and answers I hope this session was
+informative and interesting so if you
+have any queries regarding any of the
+topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries at the earliest until next
+time this is s from the simply Lear
+stream signing off thank you stay safe
+and keep
+learning hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
