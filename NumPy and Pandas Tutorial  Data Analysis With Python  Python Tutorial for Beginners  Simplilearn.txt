@@ -1,0 +1,3722 @@
+my name is richard kirschner with the
+simply learn team that's
+www.simplylearn.com get certified get
+ahead
+what's in it for you and we're going to
+go over what is numpy installing and
+importing numpy numpy array numpy array
+versus python list basics of numpy
+finding size and shape of any array
+range and arrange functions numpy string
+functions and then in part two we'll
+move on to cover axes array manipulation
+and much more
+so let's start with what is numpy numpy
+is the core library for scientific and
+numerical computing in python it
+provides high performance
+multi-dimensional array object and tools
+for working with arrays and i'll go a
+step further and say there are so many
+other modules in python built on numpy
+so the fundamentals of numpy are so
+important to latch onto for the python
+so you can understand the other modules
+and what they're doing number's main
+object is a multi-dimensional array it's
+a table of elements usually numbers all
+of the same type indexed by a tuple of
+position integers in numpy dimensions
+are called axes
+take a one-dimensional array or we have
+remember dimensions are also called axes
+you can say this is the first axis
+zero one two three four five and you can
+see down here it has a shape of six why
+because there's six different elements
+in it in the one dimension array and
+they usually denote that as six comma
+with an empty node on there and then we
+have a two dimensional array where you
+can see zero one two three four five six
+seven and in here we have two axes or
+two dimensions and the shape is two four
+so if you were looking at this as a
+matrix or in other mathematical
+functions you can see there's all kinds
+of importance on shape we're not going
+to cover shape today but we will cover
+that in part two did you know that
+numpy's array class is called nd array
+for numpy data array now we're going to
+take a detour here because we're working
+in python and two of my favorite tools
+in python is the jupiter notebook and
+then i like to use that sitting on top
+of anaconda and if you flip over to
+jupiter.org that's j-u-p-y-t-e-r.o
+you can go in here you can install it
+off of here if you don't want to use the
+anaconda notebook but this is the
+jupiter setup the documentation on the
+jupiter jupiter opens up in your web
+browser that's what makes it so nice is
+it's portable the files are saved on
+your computer they do run in ipython or
+iron python and you can create all kinds
+of different environments in there which
+i'll show you in just a minute i myself
+like to use anaconda that's
+www.anaconda.com
+if you install anaconda it will install
+the jupyter notebook with the anaconda
+separate and you can install jupyter
+notebook and it'll run completely
+separate from anaconda's jupiter
+notebook and you can see here i've now
+opened up my anaconda navigator what i
+like about the navigator and this is a
+fresh install on a new computer which is
+always nice i can launch my jupyter
+notebook from in here i can bring other
+tools so the anaconda does a lot more
+and under environments i only have the
+one environment and i can open up the
+terminal specific to this environment
+this one happens to have python37 in it
+the most current version as of this
+tutorial and then you open a terminal if
+you're going to do your pip installs and
+stuff like that for different modules
+you can also create different
+environments in here so maybe you need a
+python36 python35 you can see we're
+having a nice framework like anaconda
+really helps so you don't have to check
+track that on your own in the jupyter
+notebook in your different jupiter
+notebook setups we'll go ahead and
+launch this jupyter notebook and then
+i've set my browser window for a deep
+fault of chrome so it's going to open up
+in chrome and you can see here this
+opens up a folder on my computer we have
+a couple different options on here
+remember i set the environment up as
+python 3.7 you would install any
+additional modules that aren't already
+installed in your python on this and it
+keeps them separate so you do have to
+for each environment install the
+separate modules so they match the
+environment on there and in here we have
+a couple things we can look up what's
+running
+you have your different clusters again
+this is i just installed this on a new
+machine so i just have the one a couple
+things in here that were run on here
+recently and what we go on here is we
+then have on the upper right new and
+from the pull down menu you'll see
+python3
+and this will open up a new window
+and now we're in jupiter python so this
+is a python window and we'll just do a
+print
+and this of course is so hello world
+and we'll run that and it prints out
+hello world in the command line there's
+a couple special things you have to know
+we're not going to do today which is on
+graphics if you've never seen this
+one of the things you can do you can
+also do a equals hello world and if you
+just put the a in there now if you do a
+bunch of these where you have a equals
+hello world b equals goodbye world and
+you put a b a and return b it'll only
+run the last one but you can see here if
+you put the variable down here it will
+show you what's in that variable
+and that has to do with the jupiter
+notebook inline coding so that's not
+basic python that's just jupiter
+notebook shorthand which you'll see in a
+little bit
+so back to our numpy numpy array versus
+python list python list being the basic
+list in your python why should we use
+numpy array when we have python list
+well first it's fast the numpy array has
+been optimized over years and years by
+multiple programmers and it's usually
+very quick compared to the basic python
+list setup it's convenient so it has a
+lot of functionality in there there's
+not in the basic python list and it also
+uses less memory so it's optimized both
+for speed and memory use
+and let's go ahead and jump into our
+jupiter notebook since we're coding best
+way to learn coding is to code just like
+the best way to learn how to write is
+right and the best way to learn how to
+cook is cook so let's do some coding
+here today
+and just like any modules we have to
+import numpy we almost always import it
+as np that is such a standard so you'll
+see that very commonly we can just run
+that and now we have access to our numpy
+module inside our python and then the
+most common thing of course is to go and
+create a number array
+and in here we can send it a regular
+list
+and so we'll go ahead and send this a
+regular array let's do one two three to
+make it simple and then i'm just going
+to type in a and we'll run this
+and so you can see down here the output
+is an array of one two three
+and we could also do
+print
+just a reminder that this is an inline
+command so that wouldn't work if you're
+using a different editor
+you can see that it's an array one two
+three but we'll go and leave it as a
+kind of a nice feature so you can see
+what you're doing really quick in the
+jupyter notebook
+and just like all your other standard
+arrays i can go
+a of 0. which is going to be a value of
+1.
+of course we do a of 1. you go all the
+way through this
+a of 1 has a value of 2 in it
+so whether you're using the numpy array
+or the basic python list that's going to
+be the same that should all look pretty
+familiar and it'd be pretty
+straightforward remember the first value
+is always zero
+and when we set on there so let's take a
+look why we're using numpy because we
+went over the slide a little bit but
+let's just take a look and see what that
+actually looks like and what we want to
+look at is the fact that it's fast
+convenient and uses less memory so let's
+take a glance at that in code and see
+what that actually looks like when we're
+writing it in python and what the
+differences are
+and to do this i'm going to go ahead and
+import a couple other modules we're
+going to import the time module so we
+can time it and we're going to import
+the system module so that we can take a
+look at how much memory it uses and
+we'll go and just run those so those are
+imported
+so we'll do b equals oh range of one
+yeah one thousand is fine
+and so that's going to create a list of
+one thousand zero to nine hundred ninety
+nine remember it starts at zero and it
+stops right at the one thousand without
+actually going to the one 1000
+and let's go ahead and print
+and we want system dot get size of
+and we'll pick any integer because we
+have you know zero to
+a thousand we'll just throw one in there
+five it doesn't matter because it's
+gonna whatever integer we put in there
+is going to generate the same value
+because we're looking the size of how
+how much memory it stores an integer in
+and then we want to have the length of
+the b that's how many integers are in
+there
+and if we go ahead and execute this and
+run this in a line we'll see oops i did
+that wrong comma
+if we multiply them together
+we'll see it generates 28 000 so that's
+the size we're looking at is 28 000 i
+believe that's bytes that sounds about
+right
+so let's go ahead and create this in
+numpy
+and we'll go with c equals np
+and this is a range
+so that's the numpy command to do the
+same thing that we were just doing in a
+list
+and we'll also use the same value on
+there the 1000
+and then once we've created the
+c
+value of c for np dot a range let's go
+ahead and print
+and we can do that by doing c dot size
+times
+c dot
+item size
+that's very similar we did before we did
+get the size of so the c size is the
+size of the array and each item size
+just reversed
+so it's the size of an integer five item
+size it's going to be the integers and c
+size and let's just take a look and see
+what that generates
+and wow okay we got four thousand versus
+twenty eight thousand
+that's a significant difference in
+memory how much memory we're using with
+the array and then let's go ahead and
+take a look at speed let's do um oh
+let's do size
+we tried this with lower values and it
+would happen so fast that the npra kept
+coming up with zero
+because it just rounded it off so size
+and let's create an l1
+moles
+range of size
+and we'll do an l2
+i'll just set up to the same thing it's
+also range
+of size on there there we go
+and then we can do on a1
+equals
+np dot
+a range size
+and then let's do an a
+two equals np dot
+a range
+we'll keep it the same size
+and what we're going to do is we're
+going to take these two different arrays
+and we're going to perform some basic
+functions on them
+but let's go ahead and just load these
+up now we'll go ahead and run this so
+those are all set in memory
+except for the typo here
+quickly fix that
+there we go so these are now all loaded
+in here and let's do a start
+equals
+time dot time
+so it's just going to look at my clock
+time and see what time it is
+and it will do result equals and let's
+do
+oh let's say we got
+an array and we're going to say
+let's do some addition here x
+plus y
+for x comma y in
+and we'll zip it up here
+two different arrays so here's our two
+different arrays we're gonna multiply
+each of the individual things on here l1
+l2
+there we go so that should add up each
+value so l1 plus l2 each value in each
+array
+then we want to go ahead and print
+and let's say
+python list took
+and then we'll do
+time dot time
+we'll just subtract the start out of
+there so time whoops i messed up on some
+of the quotation marks on there
+okay there we go
+time minus the start
+and we'll convert that to second so
+we'll go to this in milliseconds or
+times one thousand
+and let's hit the run on there it's kind
+of fun because you also get a view while
+we're doing this
+of some ways to manipulate the script
+and as you can see also my bed typing
+there we go okay so we'll go ahead and
+run this
+and we can see here that the python list
+took 34
+actually i have to go back and look at
+the conversion on there but you can see
+it takes roughly 0.34 of a second and we
+go ahead and print the result in here
+too
+let's do that
+we'll run that just so you can see what
+the what kind of data we're looking at
+and we have the 0 two four six eight so
+it's just adding them together it looks
+pretty straightforward on there and if
+we scroll down to the bottom of the
+answer again we see python list took 46
+a little different time on there
+depending on what
+core because i have this is on an eight
+core computer so it just depends on what
+core it's running on what else is
+pulling on the computer at the time
+and let's go back up here and do our
+start time
+paste that into here
+and this time we're gonna do a result
+equals and this is really cool notice
+how
+elegant this is so straightforward this
+is a lot of reason people started using
+numpy is because i can add the two
+arrays together by simply going a1 plus
+a2
+it makes a lot of sense both looking at
+it and it's just very
+convenient remember that slide we're
+looking at fast convenient and less
+memory
+so look how convenient that is
+really easy to read real easy to see
+and i don't know if we don't need to
+print the result again so let's just go
+ahead and print
+the time on here and we'll borrow this
+from the top part
+because i really am a lazy typer
+and this isn't the python list this is
+the numpy list or number array
+and let's go ahead and see how that
+comes out
+and uh we get 2.99
+so let's take a look at these two
+numbers 46 versus 2.99 so we'll just
+round this up to 3. that's a huge
+difference that's that's like
+more than 10 times faster that's like 15
+times roughly at a quick glance i'd have
+to go do the math to look at it and it's
+going to vary a little bit depending on
+what's running in the background the
+computer obviously so we've looked at
+this and if we go back here we found out
+it's much faster
+yes there's different going to be
+different speeds depending on what
+you're doing with the array very
+convenient easy to read and it uses less
+memory so that's the core of the numpy
+that's why a lot of people base so many
+other modules on numpy and why it's so
+widely used
+so we did glance at a couple operations
+when we were looking at speed and size
+let's dive into
+a little bit more into the basic
+operations
+and these are always nice to see i mean
+certainly you want to go get a cheat
+sheet if you're using it for the first
+time you know look things up google is
+your friend
+we did this we're the most basic numpy
+dot array or np dot array
+and we'll go ahead and create an array
+let's do
+pairs one comma two
+and then let's do three comma four and
+if we're gonna do that let's do five
+comma six
+there we go and if we go ahead and take
+this
+and run this and go ahead and do our a
+down here so it's in line and i'll print
+that out
+you can see it makes a nice array for us
+so we have a and if you look at that we
+have three different objects each with
+two values in them and hopefully you're
+starting to think well how many
+dimensions or indexes is that and you'll
+see three by two so let's go ahead and
+take a look and let's go how about a dot
+in dimensions speaking of which
+we'll run that and we have two
+dimensions for each object
+and then we can do the item size so a
+dot
+we saw this earlier we looked up how
+many items it was up here where we
+wanted to multiply item size times the
+actual size of the object so the memory
+is being used versus the item size
+and we should see
+four there
+memory is compressed down that's always
+a good thing
+and then the shape the shape is so
+important when you're working with data
+science and you're moving it from one
+format to another
+so we have our shape we just talked
+about that we have three by two three
+rows by two objects in each one
+generally i don't look too much at the
+size but the dimensions i'm always
+looking up this is nice you can automate
+it so you might be converting something
+you might need to know how many
+dimensions are going into the
+next machine learning package so that
+you can automatically just have it send
+that information over
+so we looked at a shape
+let's go and create a slightly different
+array np dot array let's go ahead and
+just do as our original
+setup here
+and one of the features we can do which
+is really important is we can do d type
+equals in this case let's do
+np
+float
+64. and so what we've done is converting
+all of these into a float and we type in
+a
+and now instead of having one two three
+four five six you see they're all float
+values one dot zero there's no actual
+zero in there just so it's a one dot or
+the one period two three period four
+period five period six period
+and this again data science i don't know
+how many times i've had to convert
+something from an integer to a float so
+that's going to work correctly in the
+model i'm using
+so very common features to be aware of
+and to be able to get around and use and
+we'll also do let's just curiosity
+item size
+we'll go and run that
+and we see that it doubled in size so
+it's not a huge increase well doubling
+is always a big increase in computers
+but it's not a huge increase compared to
+what it would be if you're running this
+in the python list format
+and then we did the shape earlier
+without having it set to the float 64.
+let's go ahead and do a shape with it
+set to 64. and it should be the same
+three comma two so it all matches
+so we've gone through and remember if
+you really if this is all brand new to
+you
+according to the cambridge study at the
+cambridge university if you're learning
+a brand new word in a foreign language
+the average person has to repeat it
+163 times before it's memorized
+so a lot of this you build off of it so
+hopefully you don't have to repeat it
+163 times but we did manage to repeat it
+at least twice here if not a little bit
+more
+and let's go ahead and take this we're
+going to look at one more setup on here
+and let me just take this last statement
+here on the converting our properties of
+our data and instead of float 64
+let's do complex let's just see what
+that looks like and let's go and print
+that out
+and run it
+and so we now have a complex data set up
+and you'll see it's denoted by the one
+dot plus zero dot j
+and if we flip over here and do a basic
+search for numpy data types
+better to go to the original web page
+but pull up a bunch of these you can see
+there's a whole list of different numpy
+data types
+shorthand complex we have complex
+complex 64 complex 128
+complex number represented by 264-bit
+floats real and imaginary components
+one option on there float16 float32
+float shorthand for float64 most
+commonly used and of course all the
+different ones that you can possibly put
+into your numpy array so we covered a
+basic addition up there we're comparing
+how fast it runs but some very basic
+components how to set up a numpy array
+how many dimensions it has item size
+data type item again we went to item
+size and there's also
+the
+shape probably one of the more used i
+use a shape all the time very commonly
+used
+and then down here you can see where we
+actually created a numpy complex data
+type
+so let's look at some other features in
+numpy one of them is you could do numpy
+dot
+zeros
+and we're gonna do three comma four
+there we go and we'll go ahead and run
+this and you can see if i do np dot
+zeros i create a numpy array of zeros
+this is really important i was building
+my own neural network and i needed to
+create an array where i initialized the
+weights and i want them all to be the
+same weight in this case i wanted him to
+start off as zero for the particular
+project i was working on and there's
+other options like you can do numpy ones
+and we'll do the same thing three comma
+four we'll run that
+and you can see i've created an array of
+numpy ones in this case it comes out as
+a float array
+and this is an interesting to note
+because we have let's go back to our
+python and do lrange five
+and we'll print the l so there's our
+list
+and if i run that
+it doesn't create the range until after
+the fact until you actually execute it
+that's an upgrade in python python27
+actually created the array zero one two
+three four this one actually creates the
+script and then once it's used it then
+actually generates the array
+and if we do that in numpy a range
+remember that from before
+and if we do numpy a range five
+and let's do uh l equals
+or we can just leave it as numpy that's
+fine there we go just run that
+you can see there we actually get an
+array 0 1 2 3 4 for the value the numpy
+arrange a range 5 generates the actual
+array
+and for part one we're going to do just
+one more section on basic
+setup
+and we're going to concatenation
+do a concatenation out example
+there we go we're gonna do strings let's
+take a look at uh strings what's going
+on with there
+and let's do
+oh let's see print
+let's do an np
+character something new here
+and we're going to add
+and then here's our brackets for what
+we're going to add
+oh and let's say
+let's do
+hello
+comma hi
+and
+in the brackets on there let's create
+another one
+and this one's going to be
+a b c
+and we'll do
+x y z so we're just creating some
+randomly making some up on here and then
+we'll go ahead and just print this
+if we run that and come down here
+and of course make sure all your
+brackets are open and closed correctly
+and then
+you can see in here when we concatenate
+the example in numpy
+it takes the two different arrays that
+we set up in there and it combines the
+hello with the abc and the hi with xyz
+and if we can also do something like
+print
+oh let's do
+np character dot
+multiply
+so there's a lot of different functions
+in here again you can look these up it's
+probably good to look them all up and
+see what they are but it's good to also
+just see them in action let's do hello
+space comma three
+and we'll run this one
+and run that without the error you'll
+see it does hello hello hello so we
+multiplied it by 3. and we can also
+let's just take this whole thing here
+instead of retyping it
+and we can do character
+center so instead of multiply let's do
+center
+and over here
+keep our hello going
+take the space out of there
+and let's do center at 20
+and fill
+character
+equals and we'll fill it with dashes
+so if we run this
+you can see it prints out the hello with
+dashes on each side
+and we keep going
+with that we can also in addition to
+doing the fill function we can play with
+capitalize we can title we can do
+lowercase we can do uppercase we can
+split split line strip join these are
+all the most common ones and let's go
+ahead and just look at those and see
+what those look like each one of them
+here we're going to do the hello world
+all-time favorite of mine i would like
+to say hello universe and you can see
+here we did a capital h with the world
+but so we want to capitalize so
+capitalize is the first one in the array
+so we get hello world on there and we
+can also take this
+and instead of capitalizing
+another feature in here is title and
+let's just change this to how are we
+doing
+how
+are you doing instead of
+do you
+let's run that
+and you can see here because we created
+as a title it capitalizes the first
+letter in each word
+and in this one we're going to do
+character lower
+two different examples here we have an
+array we have hello world all
+capitalized and we have just hello and
+you can see that one is an array and one
+is just a string if we run that
+you get a an array with hello world
+lowercase and hello lowercase
+and if we're going to do it that way we
+can also do it the opposite way there's
+also
+upper and let's paste those in there and
+you can see here we have character.upper
+opposite there python.data and that will
+do python is easy
+hopefully you're starting to get the
+picture that most of the python and the
+scripting is very simple
+it's when you put the bigger picture
+together and starts building these
+puzzles and somebody asks you hey i need
+the first letter capitalized unless it's
+the title and then we have you start
+realizing that this can get really
+complicated so numpy just makes it
+simple and we like that
+and so in this case we did python data
+it's all uppercase python is easy like
+shouting in your messenger python is
+easy and then if you're ever processing
+text and tokenizing it
+a lot of times the first thing you do is
+we just split the text and we're just
+going to run this in p dot character dot
+split are you coming to the party if we
+do that returns an array of each of the
+individual words are you coming to the
+party splitting it by the spaces
+and then if we're going to split it by
+spaces we also need to know how to split
+it by lines
+and just like we have the basic split
+command we also have split lines
+hello and you'll see here the scoop in
+for our new line
+and when we run that if you're following
+the split part with the words you should
+see hello how are you doing the two
+different lines are now split apart
+and let's just review three more before
+we wrap this up commonly used string
+variable manipulations we have strip and
+in this case we have
+nina admin anita and we're going to
+strip a off of there let's see what that
+looks like
+and then you end up with nin diminished
+it basically takes up all leading and
+trailing letters in this case we're
+looking for a
+more common would be a space in there
+but it might also be punctuation or
+anything like that that you need to
+remove from your letters and words
+and if we're going to strip and clean
+data we also need to be able to reformat
+it or join it together so you see here
+we have a character join we'll go ahead
+and run this
+and it has on the first one it splits
+these letters up by the colon and the
+second one by the dash and you can see
+how this is really useful if you're
+processing in this case a date we have
+day month year year month date very
+common things to have to always switch
+around and manipulate depending on what
+they're going into what you're working
+with
+and finally let's look at one last
+character string we're going to do
+replace
+if you're doing misinformation this is
+good pulling news articles replacing
+is and what in this case we're just
+doing here's a good dancer and we're
+gonna replace is with was
+and you can see here he was a good
+dancer hopefully that's not because he
+had a bad fall he just was from like you
+know 1920s and has gotten old
+so there we go we covered a lot of the
+basics in numpy as far as creating an
+array very important stuff here when
+you're feeding it in how do we know the
+shape of it the size of it what happens
+when we convert it from a regular
+integer into a float value as far as how
+much space it takes we saw that that
+doubled it item size you have your in
+dimensions and probably the most used is
+shape and we'll cover more on shape in
+part two so make sure you join us on
+part two there's a lot of important
+things on shaping in there and setting
+them up we also saw that you can create
+a
+zeros based array you can create one
+with ones if we do a range you can see
+how it is a lot easier to use to create
+its own range or a range as it is in
+numpy
+you saw how easy it was to add two
+arrays we saw that earlier just plus
+sign then we got into
+doing strings and working with strings
+and how to concatenate so if you have
+two different arrays of strings you can
+bring them together we also saw how you
+can fill so you can add a nice headline
+dash dash dash
+we saw about capitalize the first letter
+we saw about turning it into a title so
+all the first letters are capitalized
+doing lowercase on all the letters upper
+for all the letters just lower and upper
+nice abbreviation we also covered how to
+split the character set how to strip it
+so if you want to strip all the a's out
+from leading ai a's and ending a's or
+spaces you can do that very easily also
+how to join the data sets so here's a
+character join option for your strings
+and finally we did the character replace
+now let's go ahead and dive in there
+since we're going right into part two
+which is getting some coding going under
+our belt
+and here in our jupiter notebook we can
+go under new and create a new folder
+python3
+i think i forgot to do this last time we
+could just do the
+control plus plus which in any browser
+enlarges the page makes it a lot easier
+to see always a nice feature another
+beautiful benefit of using jupiter
+notebook
+and let me go ahead and show you a neat
+thing we can do in jupiter this is nice
+if you're working with people and you're
+doing this as a demo on a large screen
+i'm going to do the hashtag or pound
+symbol array manipulation kind of a
+title that we're working on and then i'm
+going to call this cell cell type
+markdown as opposed to code and you'll
+see it highlights it here and then if i
+run it it just turns it into array
+manipulation and then we're specifically
+going to be working on array
+manipulation changing shape to start
+with
+and we'll go ahead and mark this cell
+also a markdown so has a nice little
+look there and then it comes up and you
+can see it just like i said it just
+highlights it and makes it very in bold
+print just making it easier to read not
+a python thing but a jupiter thing
+that's good to know about especially if
+you're working with the shareholders
+since they're investing money in you
+of course the first thing you want to do
+is import we're going to import numpy
+as in p that should be standard by now
+by now you you start a python program
+you're doing some data science numpy is
+just something you bring in there and
+let's go ahead and create our array and
+we're going to do that as the np
+dot a range remember that's a 0 what
+we're going to do 0 to 9
+and then
+print
+a little title on the original array
+we'll just print that array a remember
+from the first lesson so we have our
+array which is 0 1 2 3 4 five six seven
+eight
+and let's add a print space in between
+let's create a second array b but we
+want this to reshape array a
+and what does that mean
+and the command is simply reshape and
+then we have nine items in here and this
+is so important right now so be very
+aware if i did some weird numbers in
+here it's not going to work
+and we want multiples of 9 we know that
+3 times 3 is 9.
+so we're going to reshape
+our a array by 3x3 and then we're going
+to print well let's give it a title
+oops i have too many brackets in there
+modified array and then let's go ahead
+and print
+our b and let's see what that looks like
+and as we come down here you can see
+we've taken this and it's gone from
+0 1 2 3 4 5 6 7 8 to an array
+of arrays and we have 0 1 2 3 4 5 6 7 8.
+and so we split this into three by three
+and you can guess that if i tried to
+reshape this let's just do a five by
+three which is fifteen
+that's going to give me an error so it's
+not going to work you're not gonna be
+able to reshape something unless the
+shape all the the data in there matches
+correctly
+so we can take this nine this flat nine
+and they call it flex it's just a single
+array and we can reshape it into a three
+by three array and first you might think
+matrixes which this is used for that
+definitely i use it a lot in graphing
+because they'll come in that i have an
+array that's x y comma x y 1 y 1 comma x
+2 y 2 and so the shape of it might be 2
+by the length of the number of points
+and i need to separate that into a x
+flat array and a y flat array you can
+see this can be very easy to reshape the
+array doing that and we can of course go
+back we can do b
+do a print and we'll do b dot
+latin remember i said it's called a
+flatten array
+and if we run that you'll see it just
+goes back to the original one it takes
+this 0 1 2 3 4 5 6 7 8 and flattens it
+back to a single array
+and then one other feature to be aware
+of is if we flatten it one of the
+commands we can put in there is order
+let me just go ahead and do that order
+equals
+f
+strangely enough f stands for fortran
+the whole fortran days i remember
+actually studying fortran programming
+language
+in this case you'll see that it uses the
+first like 036
+as the order so instead of flattening it
+like we had before zero one two three
+four five six seven eight it now does
+zero three six one four seven two five
+eight
+and if you go to the numpy array page
+you can see here that they have the
+flatten i just open up the numpy and d
+array flattened setup to look it up and
+they have three different options they
+have c
+f and a
+and it's whether to flatten in c which
+was based on how the c code works for
+flattening originally worked which is
+row major
+fortran which is column major or
+preserve the column fortran ordering
+from a so whatever it was in the default
+is the
+c version so the default that you saw
+you could put orders equal c and you'd
+have the same effect as we saw there
+before you could even do order equals a
+that would also have the same effect
+because that's the default so really the
+only other thing you really need to
+change on here is to change it to c if
+you need it
+and you can see right here or f i mean
+not c the only thing you really want to
+change it to is to your f for the
+fortron order which then does it by
+column versus by row and let's look at
+here we go
+reshape
+so let's create a range of 12
+and let's reshape it
+i will do 4 comma 3 for this one and
+remember this is numpy i forgot the np
+there
+in p dot arrange
+and we can type in just a for print or
+you can do full print a and of course
+the jupiter notebook even have a little
+extra print at the beginning we run this
+we'll see we create a nice array of zero
+one two it's reshaped it so we have
+four rows and three columns or you can
+call that three columns and four rows
+zero one two three four five six seven
+eight nine ten eleven
+but this one is so important we'll do np
+transpose
+a let's go ahead and run that
+and it helps if i get all the s's in
+there don't leave an s out and you'll
+see here we've taken our array if you
+remember correctly we had 0 1 2 3 4 5 6
+7 8 9 10 11
+and we've swapped it so we've gone from
+a three by four or a four by three to a
+three by four
+and this really helps if you're looking
+at like a huge number of rows and the
+data all comes in like let's say this is
+your features in row one your features
+in row two
+and this is x y z well when you go to
+plot it you send it all of x in one
+array all the y and not one array and
+all z in another array
+and so it's really important that we can
+transpose this rather quickly
+this is kind of a fun thing i can
+highlight it
+and do brackets around it and if you
+remember correctly
+because we're in jupiter it doesn't
+matter where we do the print or not
+it'll automatically print it for us and
+you see if i hit the run button it comes
+up with the same exact thing
+and let's play with the reshape and you
+know let's zoom this up a little bit
+here
+make that even bigger so you can really
+see what's going on and let's play with
+the reshape just a little bit more we'll
+do b equals
+np dot a range let's do 8
+and reshape
+we'll do 2 comma 4.
+let's go ahead and print
+b and then run that
+and you'll see we have now the two rows
+this is a bit more like so we have four
+maybe two rows of four things so this
+might be all of our x components and our
+y components so we can switch it back
+and forth real easy
+important to know here whether we do 2
+comma 4 or in the case of 4 comma 3
+this has 12 elements and so however you
+split it up it's got to equal 12.
+so 4 times 3 equals 12 that's pretty
+straightforward same thing down here
+2 times 4 equals 8.
+if i change this and let's say i do 2
+comma 3 let's just run that in and
+you'll find we get an error because
+you can't split 8 up into two rows by
+three
+you have to pick something that it can
+split up and arrange it in so let's go
+ahead and run that and just for fun
+let's go
+reshape our b again if i can type
+reshape our b again and what else goes
+into eight well we could do two by two
+by two
+so we can take this out to three
+different dimensions
+and then of course if we um because this
+is going to come out you you as a
+variable we can just go ahead and run it
+and it'll print it we can also do a
+print statement on there just like we
+did before and you'll see we have two
+different groups of two variables of two
+different dimensions
+so two by two by two
+and let's go ahead and assign this to a
+variable c equals b reshape
+and let's do something a little
+different
+let's roll the axes roll
+axes
+and we'll take our c
+and do 2 comma one
+and if we go ahead and run this it's
+going to print that out oops
+hit a wrong button there let's do that
+one again and you roll the axis and you
+can see that we now have a set of zero
+one two three four five six seven we now
+have the zero two one three four six
+five seven
+so what's going on here we're taking and
+we're rolling the numbers around and
+let's just simplify this we'll just do
+it with c comma one and run that and so
+if we roll a single axes you got 0 1
+and then it rolled the 4 5
+up and then we have 2 3 6 7 and if we do
+2
+let me see what happens there this is
+one of those things you really have to
+play with and start filling what it's
+doing we've now taken 0 2 4 6 1 3 5 7 so
+you can see we've now rolled by two
+digits instead of rolling the one set up
+we now rolled two digits up there and so
+if we go back and we do the one
+so we've rolled it up zero one four five
+and then we're gonna take the two in
+there and we've rolled the zero one two
+three four five and six seven
+so we start rolling these things around
+on here there's a lot of different
+things you can do on this
+but it's another way to manipulate the
+numbers on your numpy
+and finally let's go ahead and swap
+axes
+we'll do c
+and let's just go ahead and run that
+it's going to give me an error on there
+that's because it requires multiple
+arguments left out the arguments so now
+we can swap and we get the zero two one
+three four six five seven so you can see
+everything's been swapped around
+so next thing we want to go over is we
+want to go over numpy
+arithmetic operations
+how can we take these and use these let
+me just go ahead and put this cell as a
+markdown there we go
+we'll run that so it has a nice thing
+all right nice title on there that's
+always helpful
+and let's start by creating two arrays
+we'll do uh a as an ep np
+range a range nine and let's reshape
+this
+three by three so by now you should be
+saying this reshape stuff this should
+all look pretty familiar we have our
+zero one two three four five six seven
+eight on there and let's create a second
+one b
+and this time instead of doing a range
+let's do np array we'll just create a
+straight up array
+and we'll do an array of three objects
+so it's going to be
+three by one and if we go ahead and
+print a b out let me run that this is
+actually pretty common to have something
+like this where you have a
+three by whatever it is in a three
+by three array when you're doing your
+math you kind of have that kind of set
+up on there
+and what we can do is we can go um
+np dot add
+a b
+don't forget we can always put a print
+statement on there
+so if we add it you'll see that it just
+comes in there and it goes okay we're
+adding 10 to everything and we could
+actually do something more
+i'll make it more interesting 11 10 11
+12. so let's change b's now 10 11 12 and
+let's run that
+and you can see that we have
+10 and then you had 1 plus 11 is 12
+2 plus 12 is 14
+13 so 10 plus 3 is 13 11 plus 4 is 15
+and 12 plus 5 is 17 and so on
+we'll put this back since that's how the
+original setup was let's do 10 by 10 by
+10
+and run that and run that and get the
+original answer and if you're going to
+add them together we need to go ahead
+and subtract
+a b
+and we run that
+we get minus 10 minus 9 minus 8 just
+like you would expect
+so we have our subtraction 0 minus 10 is
+minus 10 and so on and if you're going
+to add and subtract you can guess what
+the next one is we're going to multiply
+and we'll multiply
+a b
+and this should be pretty
+straightforward you should expect this
+if we multiply 10 times 0 we got 0 10
+times 10 is 10 and so on
+and finally if you're going to multiply
+what's the last one we got is divide
+what happens we do divide a by b
+and we run this
+and we're going to get 0 and this is
+0 divided by 10 is 0. 1 divided by 10 is
+0.1 2 divided by 10 is 0.2 and so on and
+so on
+so the math is pretty straightforward it
+just makes it very easy to do the whole
+set up and again if we went this and
+let's say i'll just change this up up
+here instead of 10
+we do a
+hundred and
+make this a thousand there we go
+if we run that and then we do the add
+you can see we got ten
+plus a hundred plus a thousand
+same thing with the subtract
+same thing with the multiply
+then you can also see the same thing
+here with the divide so a lot of control
+there with your array and your math
+again let's set this back to 10. oops
+it's right up here wrong section
+there we go 10. we'll just go ahead and
+run these
+and get back to where we were
+and this brings us to our next section
+which is slicing and let's put in our
+just make this a cell
+cell type markdown and when we run that
+of course it gives us a nice looking
+slicing there and slicing means we're
+just going to take sections of the array
+so let's create an array in p a range
+let's just do
+20. and if you remember if we do a
+we have a 0 to 19.
+and then we can do a and remember you
+can always print these this can always
+be put in a print but because i'm in
+jupiter if you're doing a demo in
+jupiter that is it's just so great that
+you have all these controls on here so
+we can slice four
+on and this should look familiar because
+this is the same as a python and a lot
+of other different scripting languages
+if we do four go zero one two three it's
+the first four in the thing and the skip
+sum and starts with this one the first
+four skip then from there on
+you can also do the opposite
+and go till the fourth one if we run
+that we get zero one 3 quite the
+opposite on there we can do a single
+item so we can pick object number 5 on
+the list run that and 5 happens to be 5
+because that's the order they're in and
+then this one's interesting so i can do
+s equals slice
+and let's create a slice here
+and let's do 2 comma 9 comma
+let's leave a 2 on there so we'll create
+an s slice on here and then if we take
+our array and we do array of s we're
+taking our slice in there and let's go
+ahead and run that
+and let's take a look and see what it
+generated here first off we started with
+two so we have two at the beginning
+we're going to end at nine which happens
+to be eight so it stops before the nine
+remember when we're doing arrays in
+python and then we step two so two four
+six eight we could do this as three let
+me run that and you can see how the
+changes to five eight
+and we could do this as let's leave this
+at 3 and if we change this to 10
+oops let's make it 12. there we go
+when we run that we have 2 5 8 11. so
+that's pretty straightforward it's a
+very nice feature to have on here we can
+slice it and take different parts of the
+series right out of the middle so now
+that we've accessed the different pieces
+of our array
+let's get into iterating iteration and
+this is interesting because
+my sister who runs a college data
+science
+division the first question she asks
+is
+how do you go through data and she's
+asking can you do you know how to
+iterate through data do you know how to
+do a basic for loop you know how to go
+through each piece of the data and in
+numpy they have some cool controls for
+that this thing is a mark down there we
+go and run it
+and it's called the nd iter i'm not sure
+what the nd stands for but ndeiter for
+iterator
+so before we do that though let's create
+an array or something we can actually
+iterate through
+we'll call it a equals np
+a range
+let's do something a little funny here
+or funky
+and we'll do 0 45
+5. i'm not sure
+why the guys in the back picked this
+particular one it's kind of a fun one
+and if i run that we do this you can see
+we get 0 5 10 15 20 25 30 35 40. that's
+what this array looks like
+and that's just from our slice you could
+this is just a slice that's all that is
+is we created a slice of 0 45 0 to 45
+step 5. and so we can do with this we
+can also do a equals the shape let's go
+ahead and take and reshape this
+and since there's nine variables in
+there we'll do a reshape it three by
+three so if we run that
+whoops missed something there that is
+the a
+that really helps
+so if we do the a reshape
+and we'll go ahead and print that out we
+get 0 5 10 15 20 25 30 35 40.
+and then we simply do four x in
+our numpy and d enter of a
+colon and we'll just go ahead and print
+x
+and let's see what happens here when we
+run through this and we print each one
+of those
+it goes all the way through the whole
+array so it's the same thing we just saw
+before we got 0 5 10
+15 20 25 30 35 40. so it prints out each
+object in the array so you can go
+through and view each one of these
+and certainly if you remember you could
+also flatten the array and just do for
+a and that also and get the same result
+there's a lot of ways to do this but
+this is the proper way with the nd
+iterator because it'll
+minimize the amount of resources needed
+to go through each of the different
+objects in the numpy array
+and hopefully you asked this question i
+just did that
+and the question is how can i change
+this instead of doing each object
+so first of all let's go ahead and take
+my cell type and we mark that down run
+it and so we're going to work on
+iteration order c style and f style
+remember c because it came from the c
+programming and f because it came from
+the old fortran programming so let's
+give us a reminder i will do a print
+a and we'll do 4 x in
+np iterate
+a
+but we also want to do this in a
+specific order and you know what i'm a
+really lazy typer so let's go back up
+here
+this is the in d iterator i knew i was
+missing the nd part of a
+let's do order
+equals
+c
+we'll print x on there and let's do that
+again and this time order
+order equals
+f
+there we go order equals f let's go
+ahead and run this
+and see what happens here and the first
+thing you're going to notice our
+original array 0 5 10 15 20 25 30 35 40.
+when we do order c that's the default
+0 5 10 15 20 and so on and then when you
+come down here
+you'll see f order f is 0 15 30. so it
+takes the first digit of each
+on the sub arrays or the second
+dimension and then it goes into the
+second one 5 20 35 10 25 40. so slightly
+different order for iterating through it
+if you need to do that so we've covered
+reshaping we've covered math we've
+covered iteration
+we've covered a number of things the
+next section we want to go ahead and go
+over
+it's going to be joining arrays so we
+need to bring them together let me go
+ahead and take the cell and make it a
+markdown
+cell type markdown there we go and run
+that so let's work on joining arrays so
+we can bring them together and what
+different options we have
+and let's do uh we'll do an np array one
+two
+comma three four
+we'll go ahead and print
+let's do
+oops
+first
+these rays aren't that big so let's just
+go ahead and keep it all on one line a
+so if we run this first array one two
+three four oops i forgot that it
+automatically wraps it when you do it
+this way so we'll go ahead and keep it
+separate
+and print
+a there we go
+and let's go ahead and do a b
+and we'll do 5 6 7 8 and notice i'm
+keeping the same shape on these two
+arrays
+depending on what you're doing those
+shapes have to match
+let's go ahead and print
+second array
+do a print
+b
+we'll go ahead and run that oops
+missed something up there let me fix
+that real quick
+when i was reformatting it to go on
+separate lines i messed that up there we
+go run all right so we have first array
+one two three four second array five six
+seven eight
+and we'll put a carriage return on there
+and the keyword we use is concatenate
+and if you're familiar with linux it
+usually means you're adding it to the
+end on there and we're going to do what
+they call a long axis zero
+so we have concatenate a b along axis
+zero let's go ahead and run that and see
+what that looks like so we have one two
+three four five six seven eight so now
+we have an array that is four by two has
+a nice shape of four by two one here
+and if we're going to do it along the
+axis zero
+you should guess what the next one is
+we're going to do it along the one axis
+and let's see how those differ from each
+other let's just go ahead and run that
+and again all we're doing is adding in
+the axis equals 1. so we have our
+concatenate we have a b and then axes
+one remember a couple things one these
+are the same shape so we have a two by
+two
+same dimensions going in there you're
+going to get an error if you're
+concatenating and they're not if you
+have something that instead of one two
+is one two three four five six with a
+five six seven eight they'll give you an
+error on there in fact let's take a look
+and see what happens when we do that let
+me just take this
+one two three
+three four five let's run that and if we
+come down here oh we got there it says
+all the input ray dimensions except for
+the concatenation axes m must match
+exactly
+so it'll let you know if you mess up
+that's always a good thing let's go
+ahead and take this back here and let's
+go ahead and run that
+and so we have our zero axes which is
+one two three four five six seven eight
+we bring them together
+and you'll see a very different set up
+here when we do it along the axis one we
+end up with instead of
+four by two we end up with a two by four
+one two five six three four seven eight
+and that's just changing which axes
+we're going to go ahead and concatenate
+on what i find is when you're talking
+about the concatenate or the
+joining arrays you really got to play
+with these for a while to make sure you
+understand what you mean by the axes
+it looks very intuitive when you're
+looking at it actually 0
+1 2 three four five six seven eight axes
+one is then splitting in a different way
+one two five six three four seven eight
+when you're actually using real data you
+start to really get a feel for what this
+means and what this does
+so if we're gonna do that let's go ahead
+and look at splitting the array
+and do that on the markdown and run it
+there we go so we have a nice little
+title there
+and we'll go ahead and create an array
+of nine
+let's do np split
+we'll do a and we're going to split it
+by three
+let's just see what that looks like so
+if we split it we get an array zero one
+two three four five we get three
+separate arrays on here and remember
+we're looking at let me just print a up
+here
+so we're looking at zero one two three
+four five six seven eight and then we
+can split it into three separate arrays
+and let's take this we're gonna do this
+right down here just move the a split
+down here
+instead of the three let's do four comma
+five and put that in brackets
+and so we do it this way we have zero
+one two three
+four five six seven eight and that's
+kind of interesting i wasn't sure what
+to expect on that but we get when you
+split it a by four comma five you get a
+totally different setup on here as far
+as the way it splits the array
+and to understand how this works i'm
+going to change the five to a seven
+and this will visually make this a
+little bit more clear
+so we had four and five it went zero one
+two three four five six seven eight and
+you see the markers four and five when
+we do four and seven i get zero one two
+three four five six
+seven eight
+and so what you're looking at here is
+the first markers this is going to go to
+four
+so there's our first split at the four
+the marker of four and then the second
+split is going to be at position seven
+and this is the same thing here
+four position five that's why we're
+splitting it in those two sections we
+could also do it
+let's just see what that looks like run
+and you can see i now have zero one two
+three four five six seven eight
+so we can split in all kinds of
+different ways and create a different
+set of
+multiple arrays on here and split it all
+kinds of different ways and before we
+get into the graphs and other
+miscellaneous stuff
+let's go ahead and look at
+resizing the array i'm going to take the
+cell and set the cells a mark down and
+run it
+give us a nice title there and we'll do
+an array uh an input array of one two
+three and four five six here i'm just
+gonna just print
+let's go print
+a dot shape and we'll go ahead and run
+that whoops hit a wrong button there
+hit the comma instead of the dot so we
+have a shape of 2 comma 3 here
+and this is important to note because we
+start resizing it it's going to mess
+with different aspects of the shape
+and so we'll go ahead and do a print
+scoop in for a blank line there we go
+let's do b equals
+np dot resize
+we're going to resize a
+and let's resize it with
+3x2
+and then we'll just go ahead and
+print
+b
+and print
+b period shape not a comma
+i'll run that
+oops forgot the quotation marks around
+the end we'll go ahead and run that and
+let's just see what that looks like so
+we have
+one two three four five six our original
+array with a shape of two three
+and then we want to go ahead and resize
+it by three two and we end up with one
+two three four five six and we end up
+with the shape of 3 2. that shouldn't be
+too much of a surprise
+you know we got 6 elements in there we
+can resize it by 2 3 was the original
+one and then we're actually just
+reshaping is how that kind of comes out
+as when you resize it like that
+but what happens if we do something a
+little different
+and let's go ahead and just take this
+whole thing and copy it down here so we
+can see what that looks like
+and instead of doing 3 2 remember last
+time i did the to reshape it
+i messed with the numbers and it gave me
+an error when you resize it you don't
+have to match the numbers they don't
+have to be the same dimensions so we can
+instead of going from a 2 3 to a 3 2 we
+can resize it to a 3 3. so let's take a
+look and see how it handles that and we
+come down here to 3 3 we end up with 1 2
+3 4 5 6 and it repeats 1 2 3.
+so it actually takes the data and just
+adds a whole other block in there based
+on the original data and repeating it
+all right now at this point you know
+we've been looking at tons of numbers
+and moving stuff around
+we want to go ahead and do is get a
+little visual here because that
+certainly you can picture all the
+different
+numbers on there but let's look at
+histogram let's put this into a
+histogram let me go ahead and run that
+and to do that we're going to use the
+matte plot library so from map plot
+library we're going to import pi plot as
+plt
+and that's usually the notation you see
+for pi plot
+so if you ever see plt in a code it's
+probably pi plot in the matplot library
+and then the guys in the back did a nice
+job and gals too guys and gals back
+there
+our team over at simply learn put
+together a nice array for me 20 87 4 40
+53 with a bunch of numbers that way we
+had something to play with
+and what we want to do is we wanted to
+plot
+the histogram now remember a histogram
+says how many times
+different numbers come in and then we're
+going to put them in bins and we have
+been 0 to 20 to 40 to 60 to 80 to 100.
+you might in here with the matplot
+library they call them bins you might
+heard the term buckets or they put them
+in buckets that's a really common term
+and then we want to give it a title so
+the way it works is you do your plt.hist
+for histogram your plt title and your
+plt show and we're doing just a single
+array in here in the lumpy array of a
+and let's go ahead and run this piece of
+code
+taking a moment to come out there says
+figure size so it's generating the graph
+and you can see we have and let's just
+take a look at this and go down a size
+there we go okay so now we can see we're
+taking a look at here
+so between 0 and 20
+we have three values so we have a 20
+here we have a 4
+and a 11 and a 15
+one two three it's actually four values
+but they start at zeros remember we
+always count from zero up
+and from twenty to forty we got twenty
+this is one forty two
+three
+four
+five six
+and so you can see in the histogram it
+shows that the most common numbers
+coming up
+is going to be between the 40 and 60
+range least common between the 80 and
+100 this looks like a age demographics
+is what this looks like to me and you
+can see where they would have put it in
+the buckets of different age groups
+which would be a nice way of looking at
+this
+histograms are so important so powerful
+when you're doing
+demos and explaining your data so being
+able to quickly put a histogram up that
+shows
+what's common and how it's trending is
+really important
+and using that with a numpy
+is really easy
+and you know what let's take the same
+data and i want to show you why we do
+bins or why we have buckets of data i'm
+used to calling it buckets why we have
+bins let's do it instead of by 20 let's
+do it by tens and see what happens
+and what happens when you do it by tens
+is you miss out on the you can see a
+nice curve here on the first one
+and on the second one it looks like a
+ladder going up and a plummet a ladder
+going up and a plummet and a ladder
+going down
+so the first would be more indicative of
+an age group and the second one would be
+what you would get if you divide it
+incorrectly you wouldn't see the natural
+trend of
+i don't know what this would be maybe
+how much food they eat hopefully not
+because i'm in 50 so i'm right in the
+middle there that which means i get a
+ton of food compared to everybody else
+but it's some kind of democrat maybe
+it's mental maybe it's knowledge because
+we we hit a certain point and we start
+losing our marbles start leaking out or
+something so you start off knowing
+something and then as you get older you
+grow more but you can see here we lose
+that you lose that continuity in the
+thing if you split the histogram into
+too many bins or too many buckets
+and if you actually plotted this by the
+individual numbers it would just be a
+bunch of dots
+on the graph it wouldn't mean a whole
+lot
+and we've looked at graphs there are
+terms that are a ton of useful functions
+in numpy
+i'm sure there's even new ones that are
+going to be in here but let's just cover
+some important ones you really need to
+know about if you're using the numpy
+framework
+one of them is line space function this
+is generating data so we have a line
+space we have 1 3 10 and when we do that
+we end up with
+ten numbers so if you count them there's
+ten numbers they're between one and
+three and they're evenly spaced we get
+one one point two two two but these are
+all there's a total of ten here and it's
+right between the one and three range
+that can be there's a lot of uses for
+that but they're probably more obscure
+than a lot of the other common numpy
+arrays set up
+a real common one is to do summation so
+we'll do summation
+where you do in this case we create a
+numpy array of one of
+two different arrays one two three or
+two different dimensions one two three
+three four five
+and we're going to sum them up under
+axes zero which is your columns
+and if you remember correctly columns is
+the one plus three two plus four three
+plus five so we have three columns
+and if we change this we'll just flip
+this to one
+we get two numbers so we get one two
+three all added together which equals
+six and three plus four plus 5 which
+equals 12. we'll set this back to 0.
+there we go since this is we're looking
+to actually zero
+and these probably could have been some
+of these compared with our math section
+square root and standard deviation two
+very important
+tools we use throughout the machine
+learning process
+in data science
+and simply we take the np array we have
+again the one two three four five six
+three four five i don't know why i need
+to keep recreating it probably could
+just kept it but we can take the square
+root of a so it goes through and it
+takes the square root of all the
+different terms in a
+and we can also take the standard
+deviation how much they deviate in value
+on there and there's a rabble function
+we can run that
+and in p array is x we're going to do x
+equals hey we changed it from a to x
+x equals
+ravel and this sets it up as columns so
+we have one two three four five this is
+all columns on here very similar to the
+flattened function
+so they kind of look almost identical
+but we also have the option of doing a
+ravel by column
+and then another one is log so you can
+do mathematical log on your array in
+this case we have 1 2 3
+and we'll find the
+log base 10 for each of those three
+numbers
+there's a couple of them they don't you
+can't just do any number here after log
+but there is also log base 2.
+log base 10 is pretty commonly used on
+here
+run that there we go
+before we go let's have a little fun
+let's do a little practice session here
+on some more challenging questions so
+you start to think how this stuff fits
+together right now we just looked at all
+the basics and all the basic tools you
+have
+so let's do some numpy practice examples
+and let's start by figuring out how do
+you plot say a sine wave in numpy how
+what would that look like and so in this
+project we wouldn't have to do this
+because i've already run these but we
+want to go ahead and import our numpy as
+np and import our matplot library
+pipeline as plt so we get our tools
+going here and then we'll break it into
+two sections because we need our x y
+coordinates in here
+so first off let's create our x
+coordinates
+and our x coordinates we're going to set
+to an a range
+and we want this error a range since
+we're doing sine and cosine it's going
+to be between 0 and 0.1
+and then we use our np and we actually
+can look up numpy stores pi so you have
+the option just pulling pi in there
+directly from numpy it has a few other
+variables that it stores in there that
+you can pull from there but we have
+numpy pi and we generate a nice range
+here and let's go ahead and run this
+and just out of curiosity let's see what
+x looks like
+i always like to do that so we have
+point two point three point four so
+we're going uh zero to
+in this case nine point four three times
+numpy pi
+pi is like three point something
+something something that makes sense it
+should be about nine and we're doing
+intervals of 0.1 so we create a nice
+range of data and then we need to create
+our y variable and so y
+is going to simply equal np our
+numpy.sine
+of x
+and then once we have our x and y
+and if we print let's go and just print
+y
+see how that will do this let's do this
+so it looks print
+x print y
+so we basically have two arrays of data
+so we have like our x-axis and our
+y-axis going on there
+and this is simply a plt dot plot
+because we're going to plot the points
+and we'll do x comma y
+and then we want to actually see the
+graph so we'll do plot dot show
+and we'll go ahead and run that
+and you see we get a nice sine wave and
+here's our number zero through nine
+and here's our sine value which
+oscillates between minus one and one
+like we'd expect it to
+then for the next challenge
+let's create a six by six two
+dimensional array and let one and zero
+be placed alternatively across the
+diagonals
+oh that's a little confusing so let's
+think about that we're going to create a
+six by six
+two dimensional so the shape is six by
+six two dimensional array
+and let one and zero be placed
+alternatively across the diagonals
+now if you remember from lesson one we
+can fill a whole numpy array with zeros
+or ones or whatever so we're going to do
+np or create a numpy zeros and we're
+gonna do a six by six and we'll go ahead
+and make sure it knows it's an integer
+even though it's usually the default and
+just real quick let's take a look and
+see what that looks like so if i run
+this you can see i get
+six by six grid so six by six zero zero
+zero zero zero
+now if i understand this correctly when
+they say ones and zero placed
+alternatively across the diagonals
+they want the center diagonal maybe
+that's going to stay zero all the way
+down and then the next diagonal will be
+ones
+all the way across diagonally and then
+the next one zeros the next one ones the
+next one zeros and so on hopefully you
+can see my mouse lit up there and
+highlighting it
+so let's take a little piece of code
+here
+and we'll do z
+one colon colon two comma colon colon
+two
+equals one and wow that's a mouthful
+right there so let's go ahead and run
+this and see what that's doing and so
+what we're doing is we're saying hey
+let's look at in this case row one
+there's one and then we're going to go
+every other row two so we're going to
+skip a row so skip here skip here skip
+here so we're going down
+this way and we're going every other row
+going this way it's hard to highlight
+columns
+so you can see right here where the that
+we're not touching each row like this
+row right here is not being touched okay
+so we're going to start with row one and
+then we're going to skip a row and
+another one and so we're going every two
+rows and then in every two rows we're
+looking at every two
+starting with the beginning that's what
+this thing blank means so we're going to
+start with the beginning and we're going
+to look at all of them but we're going
+to skip every two
+so starting with row one
+we look at all the rows but we do we do
+it by two steps so we go one skip one
+you know one skip one one skip one one
+if you left this out it'd do every one
+this would just be once in fact let's
+see what this looks like if i go like
+this
+and run it
+you can see that i guess get ones
+so
+this notation allows us to go down
+each row row by row and we're going to
+do every other row
+set up on there and so if we're going to
+start with row one we also
+ctrl z
+try that there we go we'll start with
+row zero again we're going to go each
+row step two so we'll start with row
+zero
+and we'll go every other row
+and this time we'll start with one
+column one
+and again we go every other one going
+down
+step that's what that step two is and
+skipping every other one we're gonna set
+that equal to one so let's see what that
+looks like
+and you can see here we get our answer
+we get zero one zero zero but it has the
+ones going in diagonals
+on every other diagonal and zero on
+every other one
+a little bit of a brain teaser that one
+trying to get that one to work out so
+you can see how you can arrange your
+rows and here's your step in your
+different access on there
+and then the next one is
+find the total number and locations of
+missing values in the array the first
+challenge is to create some missing
+numbers
+so let's create our raise z we're going
+to do uh numpy.random.rand
+10 comma 10. and before we do the second
+part let me just take the second part
+out
+and let's just see what that looks like
+so let's run that
+and there we go so we have a 10 by 10
+random array it randomly is picking out
+numbers
+and
+next we want to go ahead and take our
+random integer size equals five
+and then we're going to do a random
+random 10 size equals five so in the z
+we're going to select
+a number of random spaces here and set
+them equal to
+null value
+and let's go ahead and run that so you
+can see what that looks like and if we
+look at the array
+we've created one two
+three
+four
+there should be a fifth one in here my
+eyes may be filling me so we've created
+a series of oh because zero zero to five
+zero one two three four so we got five
+there are different null values on here
+and
+this is kind of a neat notation to
+notice that we can generate
+random integers size equals five so this
+generates
+five by five miniature grid inside of
+this to tell it where to put the nands
+at so that's kind of a cool little thing
+you can do
+and then we want to look up and see how
+many null values are in there
+and this is simply just
+np is none of z
+simple
+so if it is none then we want to sum it
+up so we're going to sum up all of the
+different null values on there now let's
+do one more feature in here which is
+really cool
+let's go ahead and print the indexes so
+np arguer np is
+nan of z so we're going to create our
+own another np array and let's run this
+and we'll see here that comes up with
+the four indexes
+so we did count four of them up there
+it tells you where they are one nine two
+zero four six five four
+and then let's go ahead and run this
+again run run there we go this time i
+got five that's what good for random
+numbers another fun one
+that i always like to do it's very
+similar because we have np is not z dot
+sums we're summing the number of
+nands and we can get the indexes and you
+can reshape the indexes but you can also
+just do we'll do an inds where np is
+none of z
+and let's just print let's print that
+print
+inds let's see what that looks like
+and it's very similar we have we have
+zero one three zero six three eight six
+nine three
+but i've split it into two different
+arrays
+so we have our x and our y kind of
+coordinates going there and what i can
+now do is i can now do z
+inds
+equals and at this point you can also
+instead of getting the sum you can get
+the means or the all the numbers and
+that kind of thing or the average as it
+is
+so that'd be one thing you could do and
+you could pick up the average that's
+very common in data science to get the
+average and just use that for a value
+we'll go and just set it to zero and
+then let's go ahead and print our z
+and run that
+and you can see we come down here
+we have wherever there was a null value
+it is now
+zero
+and you can set this whatever you want
+this is another way to replace data or
+help clean data
+depending on what it is you're doing
+so wow we covered a lot of stuff so
+quick rehash going over everything we
+went into there we looked at array
+manipulation changing the shape
+how to switch that around we even had
+the flattened down there which remember
+we have another command lower that's
+similar we could change the order by f
+remember f stands for fortran very
+strange connotation but there's c and f
+c is the standard
+and f switches it to a different order
+to be honest i usually have to look it
+up because i almost never use f but when
+you need it you're like oh my gosh it
+was the other order just do a quick
+google so we talked about reshape making
+sure that the dimensions are the same
+you don't want to have like something
+that has 12 objects in it and reshape it
+to
+see 11 and 5 because it doesn't work it
+doesn't divide into 12. we can transpose
+so we can switch them so we can go from
+a 4 by 3 to a 3 by 4. oops i did that
+the other way around three by four to
+four by three
+we covered reshaping the array we did
+the roll the axes you can do some weird
+things with swapping and rolling axes
+and transposing the numbers
+we dug a little bit into the arithmetic
+so we talked about
+adding we talked about subtracting
+multiplying dividing
+and you know at this point it's so
+important we just look up the
+numpy mathematics and you can see here
+they have just about everything your
+trigonometry
+uh your hyperbolic functions roundings
+sums products differences
+there are so many all these different
+miscellaneous mathematical connotations
+so you know google it go to the main
+numpy page and look at the different
+setups you can do on there
+so we covered that
+and we did slicing how to break it apart
+we did iterating over the array
+we covered
+joining arrays and how to concatenate
+remember concatenate just means add on
+to it so in this case how are you adding
+b onto a is how you read that from linux
+you should catch the concatenate
+because that's used regularly there
+splitting the array we talked about how
+to split the array in different ways so
+you can split it in
+array of arrays all kinds of different
+ways to split the array up how to resize
+it and remember resize does not have to
+have the same shape
+but if you resize it
+it will take the data and begin at the
+beginning and add new rows on if the
+size is bigger if it's smaller it
+truncates it it just cuts the end off
+we looked at how to do a histogram and
+how to plot that
+we mentioned by buckets or bins as they
+call them in pi plot and then we covered
+a lot of other useful functions in numpy
+talked about the line space setup for
+doing
+numbers in a series how to sum the axes
+up again that's part of the mathematical
+formulas there that we looked at there's
+a sum there's also means and median
+all of those you can compute in num b
+and you can also do the square root and
+standard deviation
+the ravel function very similar to the
+flat
+to be honest i almost always just use
+the flat but you know the revel has its
+own kind of functionality that it does
+and then we went into some numpy
+practice examples we challenged you to
+create a sine wave in numpy and how to
+do that we're kind of looking for that a
+range remember how we do the a range and
+you can
+have your beginning value your n value
+which they did is three times pi and not
+be pi
+and we're going to do intervals of 0.1
+and then y just equals the numpy sign of
+x there's our math from the math page we
+were just looking at remember that it's
+right at the top
+and
+finally we went down here we had this
+kind of a little brain teaser how to do
+diagonal zeros and ones
+playing with the different connotations
+of z of the uh numpy array
+and then we did a random size and we
+played a little bit with how to with the
+null values playing with null values
+if you're doing any data science you
+know null values are like a headache
+what do you do with them big sets of
+data you get rid of them small debt sets
+of data you have to factor something in
+there like figure out the average or the
+median there and then replace it with
+that
+pandas really is a core python module
+you need for doing data science and data
+processing there's so many other modules
+that come off of it there it actually
+sits kind of on numpy so if you've
+already had our numpy array hopefully
+you've already gone through the numpy
+tutorial one and two so today we're
+going to cover what is pandas we'll
+discuss series we'll discuss basic
+operations on series and then we'll get
+into a data frame itself basic
+operations on the data frame file
+related operations on a data frame
+visualization and then some practice
+examples roll up our sleeves and get
+some coding underneath there and let's
+start with just some real general what
+is pandas pandas is a tool for data
+processing which helps in data analysis
+it provides functions and methods to
+efficiently manipulate large data sets
+now this is a step down from say using
+spark or hadoop in big data so we're not
+talking about big data here but we are
+talking about pandas when there is some
+connections there's like an interface
+going on with that so there is
+availability but you really should know
+your pandas because if you're working in
+big data you'll know there's data frames
+well pandas is a data frame primarily it
+has a couple different pieces we'll look
+at here and if you've never worked with
+data frames before a data frame is
+basically like an excel spreadsheet you
+have rows and columns you can access
+your data either by the row or the
+column and you have an index and
+different that kind of set up and we'll
+dig more into that as we get deeper into
+pandas but think of it as a giant excel
+spreadsheet that's optimized to run on
+larger data on your computer
+and then i said it that it's a data
+frame so the data structures in pandas
+are series one dimensional arrays and
+then we have data frame two dimensional
+array and it really centers around the
+data frame the series just happens to be
+part of that data frame and here's a
+closer look at a pandas series series is
+a one dimensional array with labels it
+can contain any data type including
+integers strings floats python objects
+and more so it's very diverse if you
+remember from numpy we studied they had
+to be all uniform not in pandas and
+pandas we can do a lot more and pandas
+actually kind of sits on numpy so you
+really need to know both of those if you
+haven't done the numpy tutorials and you
+can see here we have our index one two
+three four five and then our data a b c
+d and e very straightforward it's just
+two columns and we have a nice index
+label and a column label for the data
+and then a data frame is a
+two-dimensional data structure with
+labels we can use labels to locate data
+and you can see here we had if we go
+back one we had our index one two three
+four five so in each one of these series
+they would share the same index over
+there the row index so you have your row
+index df dot index and then you have a
+column index df.columns and this should
+look like i said this would be really
+familiar if you've done any work with
+spreadsheets excel so it kind of
+resembles that this does make it a lot
+easier to manipulate data and add
+columns delete columns move them around
+same thing with the rows so you have a
+lot of control over all of this
+now we're of course going to do this in
+our jupyter notebook you can use any of
+your python editors but i highly suggest
+if you haven't installed jupyter and
+haven't worked with it it is probably
+one of the best ways for easily
+displaying a project you're working on i
+skip between a lot of different user
+interfaces or ides for editing my python
+and it's just simply jupiter.org
+j-u-p-y-t-e-r.org
+and then i always let mine sit on
+anaconda anaconda.com
+and just real quick we'll open that up
+for you oops offline mode don't show me
+that again but you can see here that i
+have different tools that i can actually
+install in my anaconda including the
+jupyter notebook which comes by default
+and then i have access to the
+environments
+and again that's
+anaconda.com named after the very large
+one of the largest world's largest
+snakes and then jupiter notebook in this
+case jupiter.org and when we're in our
+i'm going to go in here to our jupiter
+notebook and we're going to go ahead and
+just do new and a python 3
+and this will open up a python 3
+untitled folder
+so diving right in let's go ahead and
+give this a title pandas tutorial and
+we'll go up to cell and we'll change the
+cell type to markdown so it doesn't
+execute it as actual code
+one of those wonderful tools when you
+have jupyter notebook so you can do
+demos with this and let's go ahead and
+import
+pandas
+and usually people just call it pd that
+has become such a standard in the
+industry so we'll go ahead and run that
+now we have our pandas has been imported
+into our jupyter notebook
+and then oh we can go ahead and let me
+do the control plus since it's internet
+explorer i can enlarge it very easily so
+you have a nice pretty view oops too big
+there we go and whenever you're working
+with a new module it's good to check
+your version of the module in pandas you
+just use the in this case pd dot
+underscore underscore version underscore
+underscore that's actually pretty common
+in most of our python modules there's
+different ways to look up the version
+but that's one of the more common ones
+and we'll go ahead and run that we get
+0.23.4
+and if we go to the pandas site we see
+0.23.4 as the latest release and of
+course a reminder that if you're going
+to environment you need to install it so
+you'll need to pip install pandas if
+you're using the pip installer we'll
+close out of that
+and the first thing you want to do is
+we're going to work with series a lot of
+stuff you do in series you can then do
+on the whole data set we need to do what
+create one we need to manipulate it
+take pieces of it so query it query it
+delete so you can delete different parts
+of it so we want to do all those things
+with the series and we'll start with the
+series and then almost all the code in
+fact all the code does transfer
+right into
+the actual data table so we go from a
+series of a single list of one column
+and then we'll take that we'll transfer
+that over to the whole table and we'll
+start by creating let's put up there we
+go
+creating a series from
+list
+and let's just call this arr equals
+and we'll do 0 1 2 3 4. if you remember
+from our last one we could easily do
+r equals
+range of 5 which would be 0 to 4. but
+we'll do r equals zero to four and we'll
+call this s1 and we'll go pd
+and
+series is capitalized this one always
+throws me is which letters do you
+capitalize on these modules they're
+getting more and more uniform but you
+gotta watch that with python and we're
+just going to go ahead and do arr
+so we're just going to take this python
+list and we're going to turn it into a
+series
+and then because we're in jupiter we
+don't have to put the print statement we
+can just put s1 and it'll print out this
+series for us
+now let's go ahead and run that and take
+a look
+and you'll see we have two rows of
+numbers so the first one is the index
+now it automatically creates the index
+starting with zero unless you tell it to
+do differently so we get 0 index row 0
+is 0 1 1 2 2 3 3 4 4. and because it's a
+series it doesn't need a title for the
+column there's only one column so why
+title it
+and this also lets you know that it's a
+data type of integer 64. so we print
+this out this is our series our basic
+series we've just created
+and let's do a second series
+pd and we'll use the same
+data list and let's go ahead and do
+order we'll give it an order
+equals oh let's do it this way
+let's go
+index
+equals order
+and it helps if we actually give it an
+order so we'll do order
+equals and let's do one two three four
+five so instead of starting with zero
+we're going to give it an order starting
+with one we're going to run that and
+we'll go ahead and print it out down
+here
+s2 and we'll see that we now have an
+index of one two three four five and
+that represents zero one two three four
+in the series and we're still data type
+integer 64. and very common as you're
+missing with numpy arrays is we can
+import our numpy as np remember that
+from our numpy tutorials we can go ahead
+and create a numpy out of random with
+the random numbers of five
+and let's just see what that end looks
+like so we can see what our number looks
+like so we have some nice random float
+values here 2.33 so on and that's from
+our last tutorial the numpy tutorial 1
+and 2. and instead of calling it order
+let's call it index
+and we're going to set our index equal
+to a b c d and e
+i want to show you that the index
+doesn't have to be an integer so it can
+be something very different here and
+then let's go ahead and create our we'll
+just use s2 again and here's our np for
+numpy
+series capital s
+and n is our
+np for numpy
+pd for pandas there we go switching my
+anachronisms so we have pd.series of n
+and we want to do our index
+equals our index we just created
+and then let's go ahead and see what
+that looks like s2 is a print it and
+let's run that
+and we can see here we have a nice
+series going on a b c d and e for our
+indexes so instead of being 0 1 2 3 or 4
+we can make this index whatever we want
+and you can see the numbers here going
+down that we randomly generated from the
+number array so we use numpy to create
+our panda series right here
+and so continuing on with creating our
+series this one i use so often
+we create a series from a dictionary so
+we have our dictionary in this case we
+went ahead and did a of 1 b is 2 c of 3
+d4 ef5 so each one of those is a key and
+then a value and then we're going to use
+oh let's use s3 equals pd for pandas
+series
+and then we want to go ahead and just do
+d in here
+print out s3 here and let's go ahead and
+run this and you can see we got a is 1 b
+is two c is three d is four e is five
+and it's still of integer 64 because the
+actual data is one two three four five
+and it's all integer 64 type 64. and the
+last thing we want to do in the creating
+section of our series
+is to go ahead and modify the index
+because we're going to start modifying
+all this data so let's start with
+modifying the index of the series and if
+you remember let's do a print this time
+s1
+i'll go ahead and run this and the
+reason i did print is because it only
+prints out the last variable so if i put
+s1 up here and we're going to do another
+variable back down lower it won't print
+the first one just the last one and
+we're going to go ahead and take s1
+the index and we're just going to set it
+equal to a new index and obviously
+the number of objects in our index has
+to equal the number of objects in our
+data and then because it's the last
+variable we can go ahead and just do an
+s1 and let's run that and you can see
+how we went from zero to zero zero one
+two three four as our index we've now
+altered it to a b c d and e
+so this would be much more readable or
+might be representational of a larger
+database you're working with
+so cool tools we've covered creating
+database based on
+our basic array python array we've
+showed you how to
+reset the index
+then we showed you how to use a numpy
+array
+so you can put a numpy array in there
+it's all the same you know pd.series a
+numpy array and then we can set the
+index on there and the same thing with
+the dictionary so it's very versatile
+how it pulls in data and you can pull in
+data from different sources and
+different setups and create a new series
+very easily in
+the pandas and then we looked on
+changing your index so now we have a new
+index on here
+and then we want to go ahead and do some
+selection let's do some
+basic slicing most common thing you'll
+probably do on here and we'll just do s1
+this notation should start to look
+really familiar again this is going to
+put an output so i'd usually it doesn't
+change s1 this just selects it so we
+might do a equals s1 and then print a
+and you'll see that it just looks at the
+first three zero one two and we can do
+the same thing by not having the a in
+there i'll go ahead and take that out
+but just a reminder that it's not
+actually changing s1 it's just viewing
+s1 so simple slicing on here and we can
+likewise do an append so before we do a
+pen let's just do a quick kind of fun
+one we'll do two minus one and you'll
+see it covers everything but the e of
+course you can do minus two on this side
+so one another way to select it is to go
+how far from the end and likewise we can
+do a two here
+cde to the end so it starts at the
+second one and another way we can do
+this is we can do a minus two over here
+and that looks at just the last two in
+the slice so you can see how easy it is
+to slice the data and of course
+there's no reason to do this but you
+could select all of them
+if you wanted to view all of them on
+there up 32 there's not 32 so it's just
+going to show the first three there we
+go and then we can also append so i can
+take and oh let's create another series
+and append one to it and if you remember
+we had s3 there's our s3 and we have our
+s1 we'll go ahead and do s1
+and let's go ahead and do
+oh let's call it s4
+equals s1
+a pin
+s3 so we're just going to combine those
+two into s4
+and if we go ahead and print s4 on here
+you'll now see that we have a b c d e a
+b c d e zero one two three four one two
+three four five because we started the
+data at one it's very easy to append one
+series to the next
+and if we're going to append one series
+to the next we need to go ahead and drop
+or delete one and drop is a key word for
+that and let's just do e or index e and
+so if i run this
+you'll see that it'll print it out and
+a b c d there's no e
+and remember all these changes if i type
+in s4 again
+you'll see that s4 still has e in it so
+this change does not affect the series
+unless you tell it to so i'd have to do
+like x s4 equals s4 dot drop e and
+there's another way to do that which
+we'll show you later on let me just cut
+this one out
+there we go
+all right so we've covered all kinds of
+cool tools here we have appending we
+have slicing we did all the creating
+stuff earlier as you can see here on the
+setup how easy it is to manipulate the
+series
+so next what we want to get into is we
+want to get into
+operations that happen on the series let
+me go ahead and change this cell to
+markdown there we go and run that so
+series operations what can we do with
+the series and let's start by creating a
+couple arrays we'll call it array one
+and we'll do zero through seven and
+array two six through six seven eight
+nine five i don't know why we threw the
+five on the end let's go ahead and run
+those so those load up into jupiter
+and we'll do this a little backwards
+we're going to do s5 equals a panda
+series of array two so i'm doing this in
+reverse and then when we do s5 you'll
+see that we have zero to four it
+automatically assigned the index
+67895
+for our series
+and let's go ahead and do the same and
+we'll call this s6 and we'll set this
+equal to pd series for
+our first array
+and if we do an s6 down here to print it
+out
+we'll see something similar i got zero
+through six
+zero one two three four five seven for
+the data so those are two series we just
+created series six five and six
+and one of the first things we can do is
+we can add one series to the next so i
+can do s5 dot add s6 and let's see what
+that generates and just a quick thing if
+you never use pandas what do you think
+is going to happen with the fact that
+this only has five different values in
+it and this one has seven values
+so let's see what that does
+and we end up with 6 8 10 12 9 and it
+goes oh i can't add this there's nothing
+there so it gives us a null return very
+different than the numpy that would have
+given you an error this instead tells
+you there's no value here because we
+couldn't generate one so we can easily
+add s5 dot add s6 and likewise we can do
+s5 dot
+sub for subtract s6
+and we'll run that and on the add the
+subtract and you guessed it we're going
+to do multiply and divide next again you
+can see there's null values where it
+can't subtract the two because there's
+no values there to subtract we can also
+do s5 multiply mul they're all three
+letters on these that's one of the ways
+to remember how they figured out the
+code for this so remember these are all
+three letters mole we'll go ahead and
+run this
+and you can you can see how they're
+multiplied together and then we can also
+do the s5 div three letters again
+s6
+and run that
+and you'll see here this goes to
+infinity because we have zero in the
+wrong position so it actually gives you
+a whole different answer here that's
+important to notice and then in the null
+values because there's no data and it
+can't actually produce an answer off of
+an old off of missing data and since
+we're in data science let's do s6
+median so let's look at the median data
+which is simply median sorry for those
+who are following the three letters
+because median is not three letters and
+you can see an s6 is 3.0 and let's do a
+print here and we'll do median
+or average
+s6
+and let's print max
+comma s6
+and just like median there's max value
+and if we're going to have a max value
+we should also have a minimum value so
+let's pop in minimum
+we'll go ahead and run this and you're
+starting to see something that would be
+generated like say an r where you're
+starting to get your different
+statistics we have a medium value of 3
+max value of 7 and a minimum value of 0.
+and what it does when it hits these null
+values if there is no values in there
+because we could still do that we could
+actually you know what let's go up here
+and do
+let's pick this one we multiplied let's
+go s7
+equals
+i'll go and print the s7 just so i keep
+it nice and uniform so i still have my
+s7 down there and run it and then i want
+to take the s7
+because s7 now has
+null values and an infinity value and
+let's see what happens
+this is going to be interesting because
+i want to see what it does with infinity
+and we end up with a median of 6 maximum
+of 27 and minimum of 0. which is correct
+it drops those values so when it gets to
+there and it had doesn't know what to do
+with them it just drops those values and
+then it computes it on the remaining
+data on there so it's important to know
+when you're making these computations
+you're looking at min and max and median
+you're not going to know that there's no
+values unless you double check your data
+for the null values it's a very
+important thing to note on there so just
+a real quick
+review on there we've done our created
+our pd series and we've gone ahead and
+done addition subtraction multiplication
+division all those are three letters so
+sub min div add
+and then we looked at median maximum and
+minimum so we're going to go ahead and
+jump into the next big topic which is to
+create a data frame so now we're going
+to go from series and we're going to
+create a number of series and bundle
+them together to make a data frame
+there we go cell type markdown let me go
+ahead and run that so we have a nice
+title on there it's always good to have
+a good title all right so our first data
+frame we'll jump in with some stuff that
+looks a little complicated we'll break
+it down first i'm going to create some
+dates and you know what let's just go
+ahead and do this i want you to see what
+that looks like what i'm creating here
+i've created a series of dates pd date
+range and we're going to use these for
+the index okay so when you look at this
+you'll see that it's just basically it
+comes out kind of like a basic python
+list or a number array however you want
+to look at it with our different dates
+going down and we've generated six of
+them and it's going to have whatever
+time it is right now on your on the
+thing for the date for the time that's
+that time stamp right there and then
+you'll see we have 11 19 2008 11 20 11
+19 and looking into the future there so
+that's all this is is generating a
+series of dates that we're going to use
+as our index and this is a pandas
+command so we have a date range which is
+nice it's one of the tools hidden in
+there in the pandas that you can use
+and next we're going to use numpy to go
+ahead and generate some random numbers
+in this case we'll do the
+np.random.random
+in 6 comma 4. you can look at this as
+rows and columns as we move it into the
+pandas and of course you could reshape
+this if you had those backwards on your
+data but we want the six to match the
+rows and we have six periods so our
+indexes should match along with the rows
+on there and then you know before we do
+the next one let's go ahead and just
+print out our numpy array so you can see
+what that looks like here we have it one
+two three four by one two three four
+five six four by six
+so it's a nice little setup on there and
+since working with data frames can be
+very visual let's give our columns we
+have four columns and we're going to
+give them names a b c and d so now we
+have columns on there also and then
+let's put this all together in a data
+frame and we can actually you know what
+let's do this since i did it with
+everything else let's go ahead and do
+columns and you can see there's our
+columns on there
+and we'll go ahead and do df1 equals
+pandas dot
+data frame and note that the d and the f
+are capitalized series it was just the s
+and i always highlight this because you
+don't know how many times these things
+get retyped when you forget what's
+capitalized on there it's a minor thing
+you'll pick it up right away if you do a
+lot of it and the first thing we want to
+do is we want to go ahead and take our
+numpy array because that's what we're
+going to create our data frame off of is
+the numpy array and then we want our
+index
+equal to our dates so there's our index
+in there and then we also have columns
+equals
+columns
+and then finally let's see what that
+looks like now remember we had all the
+different data that just looked like a
+jumble of data we have our column names
+and everything else our numpy array kind
+of just a jumble array over there four
+by six you could sort of read it but
+look how nice this looks i mean this is
+you come into a board meeting you're
+working with your
+shareholders
+this is pretty readable this is you know
+this is our date this is our a b c d
+whatever it is maybe it's one of these
+dates has your leads
+closures lost leads total dollar made
+you know whatever it is if it's in a
+business maybe it's measurements on some
+scientific equipment whether searching
+material you know where this is like
+higher the temperature low of the day
+humidity of the date whatever it is so
+you can see that we can really create a
+nice clear chart and it looks just like
+a spreadsheet you know we have our rows
+and we have our columns and we have our
+data in there now this one i use all the
+time if we're going to create we can
+create it like you saw here with our
+numpy array very easy to do that and
+reshape it you can also create it with a
+dictionary array so here we have some
+data let me just go down a notch so you
+can see all the data on there we have an
+animal in this case cat cat snake dog
+dog cat snake cat dog we have the age so
+we have an array of ages we have the
+number of visits and the priority was it
+a high priority yes
+no
+and then we're going to take that we're
+going to create some labels we have a b
+c d e f g h i and what i want you to
+notice on this is we have a title animal
+and then we have basically a python list
+and these lists they don't necessarily
+have to be equal because we can have
+non-data you know np.nand numpy array
+null value but we want to go ahead and
+create labels that are equal to the
+number in the list so a
+the first cat b the second cat c the
+snake d the dog and so on so we'll go
+ahead and create our labels which we're
+going to use as an index
+and we'll call this df let's do it this
+way we'll call this
+df2 equals pd for panda's
+data frame
+and then we have our data just like we
+did before and we have our index equals
+labels
+and if we're going to go from there
+let's go ahead and print it out so we
+can see what that looks like df2 so
+let's go ahead and run that another
+again you have a nice very clean chart
+to look at we've gone from this mess of
+data here to what looks like a very
+organized spreadsheet very visual and
+easy to read animal age visits priority
+and then a through j cats and all your
+different animals so on and so on and
+then when you do programming a lot of
+times it's important to know what the
+data types are so we can simply do df2
+d types
+and if we run that we can see that our
+animal
+is an object because it's just a string
+but it comes in as an object age is a
+float64 integer 64 and then priority
+again is just an object and exploring
+this this one's very popular let's go
+df2
+[Music]
+head
+and if we print that out the df2 head
+returns the first five and we can change
+this you don't have to do five you might
+want to just look at the top two maybe
+you want to look at
+let's see let's do six so maybe we'll
+look at just the top six in the database
+in your data frame
+and you can actually this creates
+another data frame so i could have a df3
+equal to df2 and this now takes the df2
+and just the first six values
+so if we do df3
+run get the same answer
+and if we do it the head of the data we
+can also do the tail it's the same thing
+df tail you can look at the last we'll
+just do the tell which by default does
+five the last five and of course you can
+just look at the last three of those
+real quick just to see what's at the end
+of the data and this is
+to tell i love doing the tail of one
+because i'll have like the index or
+something like that and it will just
+show me the last whatever the last entry
+was looking at stock values and i might
+want to look at just the last five days
+of the stock values i can do that with
+the data frame tail
+and some other key things to look up
+are the index so we can do df2.index
+and i want you to notice that this isn't
+a call function so if i put the brackets
+on the end it'll give me an error
+because index is not callable it's just
+an object in there
+so we do
+df2.index there's also
+columns so we can go ahead and let's do
+a let's print this
+remember the first one is not going to
+show unless i print it and then df2
+column so now we can see we have our
+indexes
+and we have our columns listed here
+df2.columns animal age visits priority
+it tells you what kind of object it is
+or what kind of data type it is and
+they're both object
+and then finally df2 dot
+values and again there's no brackets on
+the end of df2.values
+because this is an actual object it's
+not a callable function so we'll go
+ahead and run that and it creates just
+displays a nice array a very easy way to
+convert this back to a numpy array
+basically so before i go into the next
+section let's just take a quick look at
+what we covered so far with the data
+frame we came up here we created our
+data frame we did it from a numpy array
+first
+setting the columns and the index the
+index is setting it up is the same as
+when we set up the series so that should
+look very familiar so is the whole
+format the numpy array the index dates
+and the columns columns and remember in
+our numpy array we're looking at row
+comma column so six rows four columns is
+how that reads in the data frame
+and we went ahead and also did that from
+a dictionary in this case animal was the
+column name with all the date data
+underneath that column and then age with
+that data visits that data priority that
+data and then of course we added our
+labels in there for our index so there's
+no difference in there but it
+automatically pulled the column names
+important to know when you're dealing
+with a data frame and importing a data
+frame this way
+and then we did looking up d type we
+looked at head and tail looking at your
+data really quick
+we also did index and columns and values
+and note these don't have the brackets
+on the end
+so the next thing we want to do is go
+ahead since we're dealing with data
+science is we want to go and describe
+the data so we have
+df2.described to do that and we're going
+to manipulate it in just a minute but
+let's just see what this generates
+and you can see right here we have age
+and visits
+so looking at our data from up above let
+me just go all the way up here
+animal age visits priority
+and it does a nice job generating your
+age versus visits which has all the data
+you have your account your means your
+standard deviation your minimum value
+25 or in this group 50 75 and your
+maximum value so this should look
+familiar as a data science setup with
+your describe for a quick look at your
+data frame data so let's start
+manipulating this data frame moving
+stuff around and we'll start with
+transposing and it is simply capital t
+for transpose
+and when we run that it flips the
+columns and the indexes so now the
+indexes are all column names and the
+columns are all indexes animal age
+visits priority
+so if we had come in here with our data
+shaped wrong up above where we had a by
+six we can quickly just swap it if we
+had it backwards not a big deal and we
+can also sort our data uh something that
+you can't do which is more difficult to
+do with a lot of other packages in the
+data frame it's really easy to do take
+our data frame df2 and we're going to
+sort underscore values
+by equals age and so when we run this
+you'll see the default is ascending so
+we have 0.52 2.53 and everything else is
+organized so if you look at your indexes
+they've been moved around because each
+index it moves a whole row not just the
+one piece of data is not being sorted so
+very quick way to sort by age are
+different data in the data frame and in
+addition to sorting it we can also slice
+the data frame so i could do df2 and
+this should look familiar from earlier
+we'll just do one
+to three so we're going to pull out oops
+it does help if i use the df instead of
+just d and we're going to pull up just
+between 1 and 3 so we have no 0 which is
+a we have b which is 2 or b which is 1
+and c which is 2. so 1 2 and then it
+does not include 3 which is the standard
+in python
+and we can even do something like this
+we can combine them which is always fun
+because remember this returns a data
+frame so if i take df2 dot
+sort
+values and we'll do by
+equals age
+this is just kind of fun and then i'm
+going to slice it
+there we go double check my typing and
+run it
+and now you should see fa because fa are
+now 1 and 2 on there so you can very
+quickly create a whole string on here
+which narrows it you know that you can
+sort it then slice it and do all kinds
+of fun things with your data frame we'll
+just go back to the original one run
+there we go and if we can slice it by
+row we can also query the data frame so
+we can do df2 and this is a little
+different because i'm going to create an
+array within an array and in this case
+we're going to look at oh let's do
+age comma
+visits
+so look at the different format in here
+we have one to three so we've done this
+by
+slicing by an integer value and then on
+here i've done df2 age comma visits in
+an array and when i run this
+you can see that we get just these two
+columns on here we get age and visits so
+it's a quick way to select just two
+columns or select number of columns
+you're working with
+and if you stop there we did the slicing
+almost identical to slice is i location
+which uses the integer location one
+comma three
+there's a push in pandas to move to this
+particular setup instead of doing just a
+regular slice
+and that's because this can be confusing
+when we slice one to three and then we
+select agent visits
+so there is a push to go ahead and move
+to an eye location which does the same
+thing you can see here bc it's the same
+as up above there's also copy command so
+we can do df3 equals df2 copy we're just
+going to create a straight copy of it
+and of course if we do df3
+it'll be the same as a df2 on there so
+df3 equals df2.copy
+and then let's do df3 dot is null so
+we're looking for null values
+and this will return a nice map and
+you'll see that everything is false
+except when you go up here under the cat
+or h they had a null there and so if we
+go do i have a couple up here also
+underneath of let's see the dog okay
+there's a bunch of nulls in here there's
+d up here so let's look at d down here
+and you'll see false true there it is
+there's our null value so we can create
+a quick chart of null values you can use
+this to do other things we can leverage
+that null value to maybe take an average
+or something and fill those null spaces
+with data and we can also modify the
+location so here's our df3 location
+and notice this is location not i
+location ilocation has i for integer
+location uses the
+in this case the variables on the left
+and what we can do on here and we'll go
+and just set this equal to
+one
+five and then let's um i'll pick a spot
+let's go back up here where we had let's
+do f
+a just let's see what are we looking at
+oh here we go let's do f and h
+and up here f is set to age of 2.0 and
+we find out that that's incorrect data
+so we go ahead and switch to df3
+equal and then we're going to print out
+our df3
+and if we go to f and age it is now 1.5
+so we're just changing the value in the
+df3 and this is changing the actual data
+frame remember a lot of our stuff we do
+a slice
+and like it returns another data frame
+this changes the actual data frame and
+that value in the data frame
+so we've covered uh location and i
+location is null making a copy here's
+our i location which is equivalent of a
+slice and also selecting columns
+so now we want to dive just take a
+little detour here and let's look at df3
+means
+and this is kind of nice because you can
+do this you can either do this by as you
+can select a single column here by the
+way you can just add the column
+selection right here like we did before
+so we could have age
+look up the mean that just creates a
+series if i run that there's our age
+but if i take that out instead of
+selecting it we can do the whole setup
+and it has age and visits so why doesn't
+it have priority or animal
+well those are not integers so it's
+really hard
+they're non-numerical values so what is
+the average i guess you could do a
+histogram which probably will look at
+that later on but the only two things we
+can really look at is agent visits and
+we have
+the average or the mean on the age is
+3.375
+and the mean on visits is 1.9
+and let's do df3
+visits we'll go ahead and steal the
+visits again
+and remember all those different
+functions we looked at for a series well
+we can do those here we can do the sum
+so if we run that we'll see that these
+sum up to 19. we could also look up
+minimum if you remember that from before
+the minimum is one
+max
+so all that functionality is here
+i'll just go back to summing it up and
+adding it all together so real quick
+we've shown you how to take the series
+operations and put them into the data
+frame and then we can actually this is
+interesting one we can just do df3 sum
+run and you'll see the different
+summations on there
+it just combines them i like the way it
+just combines the strings on there for
+priority and animal we've looked at is
+null we've also looked at copying along
+with the different slices which we
+talked about earlier so let's talk about
+strings let's dive into the string setup
+on there and let's go ahead and create a
+string series string equals pd series
+and we just put it right in there we
+have a c d a a b a c a popped in a null
+value cow and owl i don't know why they
+picked cal and al in the background
+someone must like those animals and of
+course we can just do string if we run
+that you'll see
+leave the r out we'll get an error but
+if we put it in there you'll see that we
+have a simple series 0 a 1c 2d and it
+automatically indexes it 0 to 8.
+and then we can go string dot lower so
+when we're talking about our data frame
+in this case our data series string in
+this case we use the string
+function str and we're going to make it
+lower and if we go ahead and put the
+brackets on there and you'll see that
+we've gone from capital a capital c so
+on to abc and baca cba cow al they were
+all lower case already and of course if
+you want to go lower you can also do
+upper we'll go ahead and run that and
+you can see we now have acd aaa baca
+everything is capitalized except for the
+null value which is still null all right
+so we looked at a few basic string you
+can see that string functions upper and
+lower
+we're going to jump into a very
+important topic i'm even going to give
+it its own
+header on here because it's such an
+important topic what do you do with
+missing values
+panda has some great tools for that so
+we'll dive into those
+we'll call we'll work with df4 and if
+you remember the df copy from above
+we're just going to make a copy of df3
+and let's just take a quick look at the
+data we're working with oops df3 forgot
+the three on there there we go
+so here we have our cats snakes and dogs
+hopefully not all in the same container
+because that would be just probably mean
+to all of them so we made a copy we're
+going to be working with df4 and the
+reason we made a copy is we want to go
+ahead and fill the data and we just
+simply do fill in a and then we're going
+to give it the value we want to put in
+there we'll give it the value 4. so i
+can run in here and you'll see now that
+df4
+now has where the n a was is filled with
+the value of four same thing down here
+a lot of times we'll compute the mean
+first so i might do a mean
+age
+equals df4 and then we want to go ahead
+and do age
+and dot mean
+and then i'll do something like this df4
+i only want to select the age and i want
+to fill that
+with the mean
+age
+i run in there and you'll see that our
+df4h now has the means in there just a
+quick way of showing you how you can
+combine these let me go back to our
+original one there we go and run that
+and keeping with good practices df5
+equals df three dot copy
+and we'll print our df5 which should be
+the original one
+and then on the df5 we can now drop our
+missing data
+i'm going to simply drop in a and we're
+going to use how equals any so i'm going
+to drop any row that has missing data in
+it and you'll see we had d here with
+missing data and h
+and then let's go ahead and see what df5
+looks like when we do that
+there we go and there it is d is gone
+and so is h so we create a new data
+frame off of this missing those values
+now if you have a lot of data dropping
+values is a good way to take care of it
+because you don't miss some data if you
+have not a whole lot of data you're
+working with like the iris data set or
+something like that or something small
+you want to start trying to find a way
+to fill that data in so you don't lose
+your computational power the data you
+got
+so just a quick look at processing null
+values
+or missing values you can fill them
+usually with the means some people use
+medium or the mode there's different
+ways you can fill it one way is means
+and we can also just drop those rows
+those are the two main things we do with
+missing data
+here we go uh we're going to cover next
+this is i so love data frames for this
+file operations
+it saved me so much time because they
+have so many different tools for
+bringing data in and saving data so
+we're looking at the data frame file
+operations it's really streamlined i
+don't know how many times they'll go on
+to different data downloads and they'll
+have panda download standard on there
+just because it's so widely used so
+let's start with the most common file is
+a csv so we have df3 to csv or animal
+and let me just show you what the
+folders going into
+right now i have some untitled a few
+things in here but nothing labeled
+animal so we go ahead and run this
+and this has now saved the animal to
+my hard drive and you can now see the
+animal folder up here and if i let's do
+edit with a notepad oh let's open up
+with just a regular notepad there we go
+or word pad if i open that up you can
+see it's comma separated our titles they
+don't have an index on the categories on
+the top and the index comma then all the
+different data is separated by commas
+standard csv file on there and if we're
+going to send it to csv and notice the
+format is dot 2 underscore csv
+and it's just the name of the file we're
+sending it to you can also put the
+complete path by default it's going to
+go whatever the active directory this
+program is running on that's why those
+other folders are in there so we have
+our df3 to csv and then if we're going
+to put it in there we want to also get
+it back out and we'll call this one df
+underscore animal equals pd read
+underscore csv
+i always have to remember is two
+underscore csv and read underscore csv i
+always want to do like a capital in
+there and not the underscore we're going
+in here again it's the active directory
+so if i now do print out my df
+animal and let's just do the ahead we
+only want to look at the first three
+lines so if we go ahead and run this
+we'll see the first three lines and they
+should match up here what we saved to
+our csv
+so very easy to save and import from our
+csv files on here
+and it turns out
+df3 also has a two excel they actually
+have a lot of different formats but you
+know old school
+excel was real popular for so long still
+is we can go ahead and save it as
+animal.xlsx we're going to call the
+sheet named sheet1
+and then i can also do df we'll call it
+animal2
+animal2 and this one's going to come
+from and the same format on here there
+we go so we still have our animal xlsx
+the sheet one that's where it's coming
+from index columns equals none so we're
+not gonna we're gonna suppress the
+indexing on the columns any values and
+it'll just assign that zero on up on
+your indexes so if it says index columns
+equals none that's what it does and then
+we've added null values because there's
+no values in here and we want to just
+make sure that they're marked as n a
+and we'll go ahead and just print out
+the animal animal 2 there we go and
+let's run that let's make this let's
+just do the whole thing so we'll go
+ahead and run that and it probably
+doesn't help that i completely forgot
+the read so animal 2 equals pd.read
+excel there we go excel so now we go
+ahead and run it
+and what we expect is happening here we
+have the same data frame on here and if
+i flick back to my folder you can now
+see that we have the animal one of these
+is in excel and one of these is a csv on
+here and so there's our two file types
+on there and they have other formats
+these are just the two most common ones
+used and i don't know how many times
+i've had stuff from excel i need to pull
+out if you've ever played with excel
+it's a nightmare in the back end because
+of the way they do the indexing
+so this just makes it quick and easy to
+pull in an excel spreadsheet so we
+looked at two different ways to bring
+data in and save it to files we've
+looked at all kinds of different ways of
+manipulating our data set and slicing it
+and creating it for our data frame let's
+get in there put your visualization
+always a big thing at the end because
+one it lets you check to see what you
+did make sure it looks right and then
+also if you're going to show somebody
+else it makes it very clear what's going
+on if they see something visual so this
+is where really important part of data
+science is so let's go ahead and bring
+in our tools we're going to do import
+numpy as np we want to make sure we have
+our ambersign matplot library in line
+this just lets jupyter know that we're
+going to print it on this page if you're
+using a different ide you don't really
+necessarily need that but this does help
+it displays correctly in jupiter
+notebook and if you remember for earlier
+we could create a uh we're gonna call it
+ts we're gonna create a pandas which are
+cute cuddly creatures versus a pandem
+short for pandemonium no so we have ts
+equals pd series and we're just going to
+create a random
+setup of 50. we'll do an index we'll set
+it equal to the panda's date range today
+periods equals 50. so the 50 should
+match and i want you to notice something
+here i did not import the matplot
+library why because it's already in
+there pandas already has its built-in
+connection and interface with matplot
+library so you don't have to import it
+and we'll go ahead and do ts equals ts
+dot
+cumulative sum we're going to do the
+cumulative sum
+so a little reformatting there and we'll
+go ahead and plot it and let's take a
+look at what that looks like
+so we have a nice graph here we have the
+dates on the bottom we set this up so we
+have a nice range between in this case
+minus four to looks like about two maybe
+or one minus four and one so what we've
+done here we plotted a basic series just
+a single row of data and we've set
+indexes on there but we can also do the
+whole data frame on there and let's see
+what that looks like
+so first let's go ahead and create the
+data frame we have here random numbers
+we're going to do 50 by 4 and then we'll
+go ahead and create columns a b x and y
+just because we can index is the
+ts.index on there so we're gonna use the
+same index as before
+just to keep it nice and uniform we've
+already generated the dates to go with
+it and then we can do just like we did
+with the series
+we can also do with the data frame
+df equals df cumulative sum
+so we're going to sum the whole data
+frame and then we'll do simply df plot
+and let's put that in and let's go ahead
+and run this and look how easy and quick
+that was to generate a nice graph with
+all the different data on there so we
+have our shared index we have the shared
+columns and then we have the different
+data from each one that we can easily
+look at and compare so very quick way of
+displaying data you can imagine if you
+were working in oh i think i mentioned
+stock earlier because i've been doing
+some analysis of stock lately so you'd
+have your date down here and then you
+would have stock a stock b stock x y
+whatever it is and you can put them all
+on one chart and see how they
+what they look like next to each other
+and this isn't too far off from what
+some of those graphs look like and this
+is just randomly generated so stock has
+a lot of randomness in it which is one
+of the reasons i actually play with it
+for doing some of my models on for
+testing them out
+now there are a lot of features in
+pandas so we're going to show you one
+more thing on here there are some of the
+things like i didn't go too deep we
+looked at the top two for importing data
+from a csv and from an excel spreadsheet
+showed you how to quickly plot the data
+there's more settings in there you can
+do
+we're going to do one more thing down
+here and this is kind of a fun one
+change this to a markdown and run that
+so how would you remove repeated data
+using pandas
+and this is where you have a data set
+that comes in and maybe it's feeding
+from one location and instead of noting
+that it's repeated the date like oh
+let's go back to stocks that's a good
+visual we have the stocks from the 23rd
+and it adds another row and it's the
+same row it's importing the 23rd again
+and again so now you have that data
+repeated three times and you need to go
+back and figure out how to get rid of it
+how do you track that down
+so let's start by creating a quick
+database our data frame not a database i
+keep saying databases a data frame and
+we'll just make this data frame has
+using our dictionary going in this data
+frame only has one data series in it
+which is fine so if we do df to print it
+out you'll see a
+one two two two two four five four five
+six seven so on so how would you remove
+that well there is a neat feature in
+data frames called shift
+along with another feature that lets us
+select just certain date information and
+we'll go with
+the location function put that in
+brackets remember that from above
+location and then in the location let me
+just spread this out a little bit so
+it's really easy to read in fact i'm
+going to go upscale on that since we're
+doing some a little bit more complicated
+here
+what you can see on this on the location
+is i have
+dfa.shift
+so this is going to shift up one by
+default you can actually change this to
+two or three you can even do a minus one
+and it shifts the other way but it's
+going to shift up by one by default
+that's going to say if that does not
+equal df of a
+then we want that if you look down here
+we had one two two two two two when we
+run this logic on here and we do the
+shift
+it now gets rid of all the duplicates so
+we went from one two two two two four
+four five whatever it was here it is one
+two two two four four four five five
+five six six six two one two four five
+six seven eight
+and you'll see on the index it just
+deletes them out of there so the index
+stays the same obviously you don't want
+the dates to change if you're working
+with an index dated setup so it just
+deletes those duplicates out of there
+this is just a quick way to introduce
+you to
+one the fact that you can add logic
+gates into here and two the eye location
+allows you to use shift so there's the
+shift function and then the eye location
+selects that based on true or false
+wow so we've actually covered a lot
+today in pandas we've really covered
+into the basics of selecting your
+different series out of your column out
+of your data frame how to index rows how
+to slice how to plot
+hopefully you'll take this beyond that
+and start combining these different
+things and you can create long strings
+and really explore your data generate
+some nice graphs if you're in jupiter
+notebook it's a great demo to show
+others
+and i didn't know this about jupiter
+notebook you can do this in jupiter
+notebook and then you can download and i
+always i never really look too closely
+at all the downloads
+which you download as an html and post
+it to your blog so it's got a neat
+feature in there but any of this is
+really powerful tool all of this is
+really powerful tools for doing your
+data science
+which brings us a close for today which
+i hope you enjoyed learning about pandas
+and not the cute cuddly ones that live
+in china but the pandas in the python
+setup want to thank you for joining us
+today for more information visit
+www.simplylearn.com feel free to add
+comments or questions down below we do
+have people who are monitoring the
+youtube videos and they'll try to get
+back to you or come visit us on the
+website again my name is richard
+kirschner with the simply learn team
+thank you for joining us today get
+certified get ahead
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

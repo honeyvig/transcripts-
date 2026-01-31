@@ -1,0 +1,282 @@
+hello my friends and fellow traders
+today's lesson is covering the latest
+update to the panscript language that
+the trading view development team have
+added
+this new update is a great one it's a
+simple one
+but it does improve pine script quite
+dramatically in my opinion
+so this new update now allows us to
+organize script inputs
+in sections and lines so this is
+something i've personally wanted for a
+long time because i have a number of
+scripts
+with a huge amount of settings and it
+has always been
+extremely difficult to organize those
+settings visually
+on the user interface so that the user
+of my script
+can quickly and easily navigate the
+settings and keep everything neat and
+organized
+so this new update is just a simple user
+interface visual
+change to pine script and i'm going to
+show you how we can use this new change
+in our scripts to better organize
+our settings interface but before we do
+that let's read the words
+so it says here our latest pine update
+introduces two
+improvements to inputs the new group
+parameter allows programmers to define
+a section header for a group of inputs
+and the new inline parameter allows
+multiple inputs to be joined on one line
+using these new features you can
+organize inputs more neatly
+as we do here for our auto fib
+retracement indicator so you can see
+that they've
+used the inline parameter to merge all
+of these
+fibonacci settings into two columns
+instead of having these laid out all the
+way down
+on a single column they've also added
+the option
+to create section headers or titles
+so you can see here that this section of
+settings
+applies to the date range header so
+today's lesson is going to be a really
+quick and easy one i'm going to jump
+into the pine editor load up one of my
+existing scripts and we're just going to
+play around with these new parameters
+and as always i will leave a link in the
+video description to
+this article here and i'll also leave a
+link to the plan script
+reference manuals entry for input which
+describes
+how you can use these new settings
+in detail but i'll quickly read this out
+to you the inline parameter
+is a string parameter and it combines
+all the input calls using the same
+string or argument into one line
+the string used as an argument is not
+displayed it is only used to identify
+inputs belonging to that same line so if
+you apply the same
+inline parameter string to a bunch of
+inputs in your script then they will all
+be merged onto the same line
+where possible and the new group
+parameter is also a string parameter
+this creates a header above all inputs
+using the same group
+argument string the string is also used
+as the header
+text so this parameter is displayed on
+your chart
+inline is not it's just used to identify
+which inputs you want to merge on the
+one line
+so let's jump into the pine editor and
+play around with these new
+input parameters so here i am with a
+strategy script that i wrote
+it has a bunch of inputs here as you can
+see
+not as many as some of my scripts do but
+we're going to use this as an example
+we're going to
+segment some of our sections so this
+section up here
+is going to be our strategy settings and
+this section down here is going to be my
+auto view settings this is the settings
+i use to
+inform autoview how to auto trade my
+strategies
+and how to calculate my position size
+for each trade that autoview takes
+i'm not going to go into detail about
+autoview in this lesson this is purely
+for example purposes
+if you want to learn how to use autoview
+to automate your forex trading
+i'll leave a link to that in the video
+description and up
+on the right side of your screen right
+now will pop up a little eye
+icon that will take you to that video
+lesson that i did a few months ago
+on how to set up auto view but anyway
+today's lesson is going to cover input
+parameters so let's get into it
+so here i have a bunch of inputs bunch
+of user inputs completely
+unorganized we can now use the group
+parameter to specify which inputs we
+want to belong
+to each group that we define so here i'm
+going to just call this
+strategy settings and now if i save the
+script
+and we come up to the settings menu you
+can see that we now have a header here
+that says strategy
+settings but i've only applied it to one
+input parameter so far
+if i were to apply this to multiple
+input parameters they would all fall
+under this header
+and that is one way we can separate our
+script settings
+using this new parameter so let me copy
+this bit of code here and
+paste it over all of these input
+parameters
+now all of these ones here are for auto
+view all of these settings here
+are for the strategy script so now i can
+paste
+this group parameter into these other
+input variables
+and we can change this to say auto view
+settings
+and now i copy this bit of code and
+paste it over these few settings
+and i save the script now when i come up
+to the settings menu
+you will notice that all my strategy
+settings are grouped together
+under one header and all of my order
+view
+settings are grouped together under one
+header so on your more complicated
+scripts that have
+many different types of settings you
+might have a bunch of candlestick
+filters or candlestick patterns your
+script wants to detect
+like for example my ultimate
+pullback indicator i need to go back and
+modify the source code to the script
+to include these new group parameters
+and inline parameters because if i open
+up the settings to this script
+you'll notice that i have dozens of
+settings here
+and i have grouped them myself using
+check boxes blank check boxes that do
+nothing
+but i can now use this new group
+parameter to create a header
+for all of these different various
+script setting
+sections so for example here i have a
+section
+that determines what my candle patterns
+will be
+so using the new group parameter i can
+group all of these check boxes
+under a nice neat header that isn't
+as messy as using these blank check
+boxes
+so hopefully now you can see the power
+of this new update
+but let's get back to our script and
+i'll show you how the inline parameter
+works
+so the group parameter is extremely
+simple by combining the same group
+parameter for all of my inputs
+that groups them all together and the
+group string is also what is displayed
+in my settings menu the inline parameter
+is a little bit different
+it is not drawn onto your settings menu
+and it can be named anything
+so i could just write a one here if i
+wanted to i can copy this
+paste it there and now when i come to
+the settings menu after i save my script
+these two inputs will be merged onto
+just one
+line so let's save this script and i'll
+show you what i mean
+there we go come up here now these two
+inputs
+are on one line and this inline string
+doesn't really matter what i call this
+and that's really it it's quite a simple
+update but it's very powerful
+for organizing your script settings and
+something that i've personally been
+waiting for for many years now three
+years
+i could have used this feature and then
+finally added it to
+pine script and it is going to help a
+lot with making your scripts look more
+professional
+more organized now the inline parameter
+will
+only merge as many inputs
+as it can fit into your settings
+screen so if i were to add another
+inline here
+to the next input here and save the
+script now if i come to the settings
+menu
+these will not all be merged onto one
+line but instead
+they are just grouped together a little
+bit closer however one thing you can do
+is just put in a blank title for these
+settings and that will group them all
+onto one line so if i just backspace
+all of this and save the script let me
+come up to the settings menu
+now all of these boxes are on one line
+but they don't have a title explaining
+what they do
+but depending how you set up your script
+maybe this would be obvious to your
+script user you could use the header
+title to explain what these three
+boxes do and it's just a way to better
+organize your script settings
+one other thing i need to mention is
+that if you wanted to merge
+other boxes onto a single line such as
+these two here
+you would need to use a different inline
+string
+so here i can write inline equals
+two copy that code onto the next line
+save the script come up to the settings
+and now these two boxes are on
+a single line and these three boxes are
+on their own line as well
+so that's it for today's lesson i hope
+you found that interesting if you want
+to learn more about this new update go
+and read the documentation
+and go and play around with it with your
+existing scripts it may seem like a
+minor thing but if you've been using
+panscript for any length of time
+you will be just as excited as i am to
+have this new feature added
+anyway that's it i'll see you in the
+next lesson take care guys best of luck
+with your trading
+and i will speak to you soon

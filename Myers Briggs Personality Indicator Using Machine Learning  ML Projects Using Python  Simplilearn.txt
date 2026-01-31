@@ -1,0 +1,706 @@
+foreign
+today we will take you through the heads
+of lab demo of how you can predict
+percentage using python before we start
+I hope this screen is clearly visible
+and the audio is fine if yes please type
+in here if there are any issues do let
+us know in the chat section so that we
+can resolve them
+I'm repeating again before we start I
+hope the skin is clearly visible and the
+audio is fine if yes please type in yes
+if there are any issues do let us know
+in the chat section so that we can
+resolve them
+wait for some more minutes to let other
+people join
+let me tell you guys that we have
+regular updates on multiple Technologies
+if you are a tech geek on a continuous
+hunt for the latest technological Trends
+then consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+Lord
+I'm repeating again let me tell you guys
+that we have regular updates on multiple
+Technologies
+if you are a tech geek on a continuous
+hunt for the latest technological trends
+then consider getting subscribe to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+learn
+right I think we can get started so in
+today's session we will go through
+Myers-Briggs Personality prediction
+after that a hands-off lab demo of how
+to predict the person personality using
+Python and machine learning
+we will perform different function and
+different python libraries
+so before we move on to the programming
+part let's first discuss what is
+Myers-Briggs Personality prediction and
+proceed further for the same
+so what is myers-brick personality
+prediction
+to better understand personality
+characteristics in the broader
+population the mbti examination was
+created although there is no such thing
+as Better or Worse personality prevents
+the MBT examination can Aid individuals
+in understanding their strength weakness
+and potential difference from the others
+so there are some types of mbti
+indicator
+there is no best or better personality
+type than another
+it is not a device made to search for
+abnormalities and dysfunction
+it is sole purpose is to assist you in
+discovering more about yourself
+so there are four separate skills make
+up the actual questionnaire
+first is
+extrovert and introversion second is
+sensing and intuition
+third is thinking and feeling
+for this judging and perceiving
+So based in these four there are some
+types so there are 16 types
+istj istp isfj isfp isfj like this ENFP
+e and FJ entp and entg
+so what is meaning of isdj
+I means introversion s means sensing t
+means thinking and J means judging like
+this
+so dear Learners if you want to upskill
+your AI and machine learning skills so
+give yourself a chance to Simply learn a
+professional certificate program in Ai
+and machine learning which comes with
+completion certificate and in-depth
+knowledge of AI and machine learning
+check this course detail from the
+description box below
+so now let's move to our programming
+part
+so first we will open command prompt
+first we will open command prompt so
+here I will add Jupiter
+enter
+so this is landing page of Jupiter
+notebook so here I will go new
+python file
+so this is how the python kernels look
+like
+so here I will change name
+B minus big personality prediction
+okay
+so at first we will import some major
+libraries of python which will help us
+analyzing the data
+so here I will write
+lab
+report Rd
+or numpy as NP
+important
+pandas as speedy
+support matplotlib
+Pi plot
+as PLT
+T-Bone
+SNS
+then port
+broadly
+dot offline
+and
+okay
+then here import
+antly
+dot graph
+and this
+vgs object as good
+I'll import
+currently
+dot tools
+as TLS
+from
+bs4
+import
+ant
+then here I will write from SK learn dot
+model
+underscore selection
+port
+because underscore validate
+okay
+then again let me copy from here
+till import
+then here I will import straight
+ified
+so
+yes so here I will import sqlarn
+dot lenient
+or model
+port
+logistic regression
+so from this
+we'll write here SK learn
+okay
+done
+dot model underscore selection
+code
+to learn
+Dot
+fourth
+is
+okay so here I will write more from
+learn dot decomposition
+board
+truncated
+yeah
+so here I will write from
+SK learn
+Dot
+here
+underscore
+protection
+text
+import
+okay
+then from SQ learn
+dot pipeline
+Port pipeline
+from let's kill on
+dot is
+multinomial
+binomial NB
+and
+p y Dot
+in it
+underscore
+connected
+is equals to
+buy the python Library used for working
+with array it also has a function for
+working with domain of lineal algebra
+and matrices it is open source project
+and you can use it freely numpy stand
+for numerical python so panda is the
+software Library written for the pandas
+programming language
+for data manipulation and Analysis in
+particular it offers data section and
+operation for manipulating numerical
+tables and Time series
+the open source python Library based on
+matplotlib is called seabo it is
+utilized for data exploration and data
+visualization with data frames and the
+pandas Library c bond function with
+these
+matplotlib for Python and its numerical
+extension numpy matrotlip is a cross
+platform data visualization and
+graphical charting project
+as a result it presents a strong open
+source substitute for Matlab the api's
+format plotlib allows programmers to
+incorporate graphs into GI application
+Beautiful soap python software called
+Beautiful soup is called parse HTML and
+XML text
+for process Pages it generates a pass
+tree that can be used to extract HTML
+data for web scripting
+pipeline the pipeline goal is to put
+together several phases that can be
+cross validate while using different
+parameters
+so moving forward let's import some
+different data that you can download
+these data set from the description box
+below so here I will write train
+equals to PD Dot
+it underscore CSV
+and then here
+PTI
+one
+Dot
+and second one is
+equals to
+PD Dot
+treat
+underscore
+users
+let's see
+okay
+then there is one more
+equals to
+PD Dot
+p
+SV
+that
+forum
+such as
+so here I will write mbti
+question
+I
+say the key value
+so I'm writing a keyword
+version
+come on
+then okay
+next version
+it
+contributions
+uh
+capital
+one
+e then t means thinking
+f means
+healing
+J means
+judging
+loading
+so it's still loading for data set
+three different data set mbti1 cfp users
+and Forum messages you can download
+these data set from the description box
+below
+or you can find this link
+for the Drive Link
+so these are like large data sets so it
+will take time sometime
+importing is data says done so
+let's use shape function to see how many
+rows columns are present in train data
+set so here I will write train
+dot shape
+as you can see 865 8675 rows at two
+columns
+okay so let's move forward
+so we're to take a class
+repeat
+so we take a look to classes so it look
+like very unbalanced data set so here I
+will write CNT
+dot dot answer equals to
+train
+type
+value counts
+so here I will plot dot figure
+guys
+let's do
+12 comma four
+to
+sns.bar plot
+ENT
+that is
+dot values
+to 0.8
+of plot dot y label
+experiences
+size
+table
+types different types then font size
+13
+LT dot show
+okay
+so here you can as you can see different
+types of Personality infj infj INTP intj
+so on okay
+so these are number of occurrence and
+the types
+so moving forward let's group user ID
+and messages so I will write here
+visual
+yeah so here I will write PS
+message
+uh fill any
+yes
+Dot
+underscore join
+equals to PS dot Group by
+post
+right
+message
+Dot
+create here I will write
+all
+join
+hello
+that
+loading
+moving forward let's check accuracy with
+different classifiers and models
+so first we will check with extra tree
+classifier okay
+so for that
+right here like each extra tree
+classifier equals to
+increase
+[Music]
+classifier
+then underscore
+estimators
+equals to 20
+comma Max
+plus 2 4
+equals to
+minus
+so here I will write TF IDF
+question
+let me copy it from here
+and
+[Music]
+underscore range
+issue
+comma one
+yeah
+upwards
+SVD
+it was
+located
+opponent
+does
+first two
+pipeline
+PF
+I
+d f i
+the right here
+that
+foreign
+I am doing because of spelling mistakes
+and the kind of bits
+is to Pi
+Shuffle
+and here I will write NP Dot
+okay sorry
+NP dot random
+dot read
+ing
+soup
+Tracy
+vlog
+so
+please
+in
+Dennis type
+the red scoring
+good morning
+dots equals to minus n
+it is still loading
+okay
+now we will print so here I will write
+print
+TV
+done 0.4
+f
+and I will write
+plus minus
+hold on
+0.4 f
+B Dot
+mean
+result
+the
+position
+results
+copy at all and the chip
+accordingly
+so now F1 score whatever score we will
+write here F1
+same
+okay
+then here here right NP dot mean
+accuracy
+here you will write test F1
+underscore
+micro
+okay
+then same yeah
+test
+F1
+and
+for the negative laws
+right
+law
+good
+here I will write negative
+in this log underscore loss
+if
+underscore log
+underscore
+run it
+so
+of it let me make it
+so here you can see the accuracy and
+it's it is not that good with xrt
+classifier as the data set is very
+unbalanced F1 score is a better metric
+than accuracy
+so we will check with some alternative
+models so let's try if we can find a
+more accuracy with model another model
+although we haven't got a lot of data
+so here I will write TF
+clean
+next
+okay
+so here I will write text
+equals to
+beautiful
+ml
+three dot sub
+the
+with it
+r
+comma
+okay then text was to
+re Dot so
+http
+says
+button
+text
+here I will add train
+posts
+to
+train
+course Dot
+apply
+today okay done so let's check accuracy
+with first name base okay
+oh I'm done with the code because the
+code are mostly same so I just copied it
+from
+my documents okay so let me enter
+so here you can see the accuracy is far
+better than
+this x30 classifier
+okay so we will check from one mode we
+will let's check for logistic regression
+so let me write the code first then I
+will get back to you
+I'm done with the code let's see the
+accuracy of logistic regression
+so let me press enter
+loading you can see
+yeah
+so accuracy is far good than the both
+so is this model overfitting could we
+have a pattern model with more data
+let's see the learning curve okay
+so here I will write train
+underscore sizes
+comma train
+underscore scores
+comma
+pursue
+running underscore girl
+post
+and
+they
+apples
+jobs
+question
+equals to
+here right F1 underscore
+pane
+prices
+goes to NP
+Dot
+base
+1 comma one points
+no
+state
+one
+and press enter
+okay it is K false
+this dispatcher
+so for the learning curve it is a long
+code
+so let me write it for you again it's
+still loading
+I don't know what
+so I'm done with the code so let me run
+it
+now let's see the Curve
+so for that that's that import
+or we don't
+have that plot learning
+I think of
+chain
+posts
+comma train
+type
+train
+and devices
+again underscore scores
+come on
+test
+underscore this course
+comma one
+point
+zero
+figure size should be
+okay so if not 15 15 comma six
+okay
+elt dot show
+here as you can see
+training school cross validation Score
+Learning graph
+so it's look like that with more data
+the more model gets better and better so
+that is not overfitting
+so what we will do
+so moving forward let's see kaggle user
+personality let's apply our model to
+whole kaggle user commands let's see
+what is the most common kaggle user
+personality
+so for that I will write here PS
+underscore join
+then
+comments
+equals to
+this underscore join
+message
+Dot
+apply
+text
+that I will let model
+underscore learning dot fit
+train
+posts
+train
+type
+all equals to model
+it
+join
+it's loading here
+so moving forward what we what we will
+do let's create a bar graph to see
+kaggle user personality okay
+loading
+it will show the warning something like
+let me write the code for the paragraph
+okay it's a long code so I will write
+first then I will get back to you
+oh I wrote the code so let me run it and
+see the personality
+so here you can see e s f p is the most
+used personality
+so let's see the count personality count
+percentage count for that I will write
+here
+let's go
+DF
+percent
+to
+depiction underscore TF
+count
+and underscore DF then again count
+where I will add prediction underscore
+DF
+description
+personality
+X
+joint
+PTI
+right one
+test
+so here you can see the percentage count
+for every personality
+okay with description extraordin sense
+and feeling perceiving ESF
+so
+finally at the end we will see the
+personality distribution using pie chart
+okay so here I will write labels equals
+to prediction
+underscore TF
+I will write description
+yeah
+sizes
+equals to prediction underscore DF
+tent
+is equal to go
+Dot I
+equals
+to labels
+comma
+values
+first two sizes
+a out should be
+layout equals to go
+Dot layout
+pattern
+plus two
+okay
+user
+personalities
+data
+equals to
+Trace
+that
+and people
+Dot
+then
+data
+also data
+divide Dot
+I plot
+okay let me turn it
+let me run it
+so here you can see the pie chart
+so like most fifty percent is e s f p
+okay then 23 is introversion institution
+then
+so on okay so every thing is written
+here adding every color
+so apparently the most common calculator
+user personality is esfp this is 50.6
+percent okay
+so extroversion sensing feeling
+perceiving but we are getting this
+conclusion based on users command it is
+reasonable to think that user who
+participate more writing comments are
+more extrovert our sample data don't
+come from the kaggle users population it
+is only based on the comments
+it comes from the Kegel users command so
+our conclusion can't be applied to all
+kaggle users
+so like more accuracy models could be
+obtained the more data
+I hope you guys understand till here if
+you have any question or any good doubt
+you can ask in the comment section below
+our team will respond to you shortly
+I hope you must have understood how you
+can do
+the personality prediction using Python
+and machine learning if you have any
+queries you can ask in the comment
+section below our team will shortly
+provide you the correct solution or if
+you want this full code you can comment
+for the same thank you so much for being
+here if you enjoyed this video please do
+subscribe to our YouTube channel and
+give like to this video thank you and
+keep learning
+foreign
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

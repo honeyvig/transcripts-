@@ -1,0 +1,506 @@
+have you ever wondered how your email
+provider implements spam filtering how
+do online news channels perform news
+text classification how do companies
+perform sentiment analysis of Their
+audience on social media with a machine
+learning algorithms called na based
+classifier you can do all of these
+things hello everyone my name is mang
+and welcome to this fantastic video on
+the na based classifier in this video we
+will delve into na based classifier
+topics like what na Bas is the
+advantages of nabas classifier
+applications of Na Bas and understanding
+of Na Bas and machine learning at the
+end of this video we will Implement
+Hands-On using nabas classifier so just
+a quick info for you nabas is after all
+an algorithm that is based on AI and
+machine learning a professional who
+wants to switch careers in Ai and ml by
+learning from their expert then try
+giving simply learn postgraduate program
+in Ai and machine learning from part
+University in collaboration with IBM in
+this course you will learn in demand
+skills such as machine learning deep
+learning NLP computer vision
+reinforcement learning generative AI
+prompt engineering chat gbd and many
+more the link in the description box
+should navigate to the homepage where
+you can find a complete overview of the
+program being offered so take action
+upskill and get ahead so without any
+further Ado let's get started so what is
+Nave base let's start with a basic
+introduction to the base theorem named
+after Thomas base the name base
+classifier work on the principle of
+conditional probability as given by the
+base theorem the base theorem give us
+the conditional probability of event a
+given that event B has occurred so base
+theorem calculates the conditional
+probability of the occurrence of a event
+based on prior knowledge of condition
+that might be related to that event like
+with any of our other machine learning
+tools it is important to understand
+where the na Bay fits in the hierarchy
+so moving forward let's see some
+advantages of Na base the first one is
+it is simple and easy to implement the
+second one is it doesn't require as much
+straining data the third one is it
+handles both continuous and discrete
+data the fifth one is it is highly
+scalable with the number of predictors
+and the data points the sixth one is it
+is fast and can be used to make realtime
+prediction and the last one is it is not
+sensitive to irrelevant features so
+moving forward let's see some
+application of n base the first one is
+face recognition so as a classifier it
+is used to identify the faces or its
+other features like nose mouth eyes and
+many others the second one is weather
+prediction it can be used to predict if
+the weather will be good or bad the
+third one is medical diagnosis so doctor
+can diagnose patient by using the
+information that the classifier provides
+Healthcare professional can use name Bas
+to indicate if a patient is at at high
+risk for a certain diseases and the
+condition such as heart diseases cancer
+and other elements the fourth one is
+news classification with the help of n
+based classifier Google News recognize
+whether the news is political world news
+and so on so as the na based classifier
+has so many application it is worth
+learning more about how it works so
+let's see understanding of n bases and
+machine learning machine learning falls
+into two categories
+supervised learning unsupervised
+learning so supervised learning falls
+into two categories classification and
+regression so the na based algorithm
+falls under classification problem so
+moving forward let's jump into the demo
+part so this is a Jupiter G notebook so
+first we will Implement some or you can
+say we will import some major libraries
+right
+import import pandas as PD
+right okay Pand
+SPD then we will
+import
+import numpy as NP then we will import
+cbor as
+SNS then we will
+import M plot
+lip do p plot
+as
+PLT okay then from Escalon dot
+model
+selection
+import
+train
+test
+split okay then from SK Lear dot
+matrix
+import
+accuracy
+score got it
+then uh we will import classification
+report as
+well
+import
+sorry
+from escalan do Matrix
+import
+classification
+report okay uh then import R then import
+string okay let me run it okay it's
+still loading okay one cannot import
+name train test split sorry my
+bad
+OKAY model
+selection okay train test split it is
+then Escalon do
+matrix it's just a type of myri okay
+guys classification report okay what's
+the issue
+here
+okay
+uh
+yeah C must be small yeah everything is
+fine now so now we will import data
+set okay so I will add DF underscore
+fake to pd. read uncore
+CSV fake.
+CSV
+then same for the true. CSV so we have
+two data set fake. CSV and true. CSV
+okay you can download these data set
+from the description box
+below okay then let's check the fake
+data
+head this is our fake data
+okay then we can check the true data as
+well DF do true
+do
+head yes now you can check the true data
+as well let me give me some spaces for
+the better
+visualization okay so now we will insert
+a column class as the target feature
+right so for that I will write DF
+fake
+class to zero okay then DF
+fake sorry
+true then
+class = to
+one okay and
+DF
+fake
+okay press something
+wrong yeah so DF uncore fake do shape
+comma DF underscore through do
+shape so as you can see in fake data set
+we have 23481
+23481 rows and the five column and in
+true data set we have 2 sorry
+21470 rows and the five you know columns
+so now what we will
+do we will remove last 10 rows from for
+the manual testing okay or you can say
+we are taking for the manual testing for
+that I will write
+DF
+fake
+manual testing equals to
+DF fake do
+tail
+10
+right
+for for I
+in range
+2 3 4
+80 comma 2 3 4 7
+0 okay Min -
+one
+then DF dot sorry dfdore fake
+dot
+draw
+I comma
+XIs equal to 0 comma in
+place = to
+True
+okay then for the manual testing for the
+true data set as well it's quite
+same okay just we have to change here
+true
+okay then
+true it's
+21
+46 and here 2
+1 41
+6 right here I will change it to
+True
+okay okay
+okay true.
+tail okay one more
+error 23 480 not found in the
+AIS
+okay okay
+so for that what I will do I will copy
+it basic
+twice again some issue is there 2 3 480
+not found in
+Nexis
+okay it's 2 3 4 8
+1 4 not found in Nexis everything seems
+fine now what I will do
+DF
+fake
+manual
+testing right then Target variable
+class equals to zero then DF
+true
+manual
+testing then
+class = to one
+okay just ignore this
+right
+now if I want to check
+TF
+fake
+manual
+testing.
+head five
+rows so as you can see these are the now
+fake manual testing data right for the
+manual testing so we can check for the
+same for the true also true data set
+okay let me check for the true data set
+as
+well just have to
+write yes so this is for the true
+okay yeah so I will write
+here DF
+manual
+testing to PD do concave
+con get the board data
+set copy
+it and paste it here
+comma again and just here you have to
+change it to
+True okay then comma
+XIs equals to Zer in the same AIS I want
+then DF
+manual
+testing do
+to
+CSV
+manual
+testing.
+CSC okay
+access yeah right so here first I will
+now merge true and the fake data frames
+for
+that I will write DF
+merge equals to PD do
+concat DF
+fake comma DF
+true and the same XIs equals to
+zero okay then DF _
+March do
+head five rows I want to see so as you
+can see okay we have merged the data
+right so moving forward now we will
+merge the column DF merge
+dot
+columns okay so these are the column
+title text subject date and the
+class okay okay so now removing column
+which are not required so we don't
+require the title subject and the date
+so we can remove
+them mar.
+drop
+then
+title
+comma
+subject
+comma
+date comma AIS = to
+1 okay then DF dot is
+null okay
+DF
+dot is
+null do
+sum okay fine so now what I will do I
+will do
+some random shuffling of the data frame
+for that I will add DF
+dot
+sample flectional to
+one then DF
+dot okay sorry then DF do
+head okay so these are our top five rows
+so now I will
+reset
+index okay
+what is
+happening I will DF do
+reset underscore
+index in place equals to
+true then DF do
+drop
+index X is = to 1
+comma in
+place first two
+two
+okay right then DF
+dot columns so now we have only two
+columns text column and the class column
+class column is our Target column
+right so
+now what I will do DF do head you can
+see see we have only text column the
+class column 0 1 0 1 01 zero means fake
+news and the one means True News okay
+don't forget
+it so now we will create a function to
+process the text okay so I will write
+the function and then get back to
+you okay so this is our function wordp
+text okay so text. lower and this is
+what we write the question mark the
+https right it will return only text
+nothing like that then
+DF
+text equals to
+DF
+text Dot
+apply word
+opt
+okay
+right then we will defining the
+dependent and the independent variable
+so for x equals to
+DF then
+text then yal to
+DF class okay run
+it then here what I will do I will split
+the training and the testing data using
+train test split function
+xcore train comma xcore test comma
+ycore train comma
+Yore
+testal to
+train test
+split then X comma y
+comma
+test size = to 0
+.25
+okay so now what we will do we will
+convert text to vectors okay so
+from scalar
+dot
+feature
+extraction
+dot text
+import tfid
+vectorizer
+okay then I will write
+factorization equals
+to
+tfid
+vectorizer then XV
+uncore
+train
+to
+factorization dot fit
+underscore
+transform xcore
+[Music]
+train comma then XV uncore
+test to
+same okay I have to just remove this fit
+and here I have to write
+test
+okay spelling is wrong I
+guess here also
+wrong yeah so everything is fine so now
+I will
+first load the logistic regression then
+we will implement the na base okay so
+from skarn do
+linear model
+import
+logistic
+logistic
+regression okay then LR equals
+to
+logistic
+regression then LR dot
+fit
+XV train comma
+y
+train okay it's linear
+model yeah so it will take some time to
+load till then we okay it's run we can
+write
+prediction
+LR equals to LR dot
+predict XV
+test okay then I will write here
+lr.
+score then
+XV underscore test comma y underscore
+test okay so as you can see our LR score
+is 98 so accuracy is 98% which is very
+good so here I want to print
+classification report as
+well
+classification
+report of yore
+test comma prediction
+LR okay so so we will do same for the n
+as well so for
+that I will write from
+Escalon do na
+base
+import
+balii
+NB right then NB equals to
+butly
+NB
+right then NB do
+fit then
+XV uncore train
+comma Yore
+train okay yeah so the same I want to
+copy it from here then I will paste it
+here so instead of LR will come NB and
+here it will come NB
+here it will come and B that's it so as
+you can see our na base prediction is
+accuracy is
+94% and I want to write classification
+put we can copy it and paste it here and
+just change
+here
+NB okay so moving forward what what we
+will do now we will do the model testing
+the final thing
+right okay so I will write the code and
+the get back to you okay so I wrote this
+for the random for classifier and the
+dec classifier as well so now I have one
+news I took it from the internet you can
+take any type of news so it's a fake
+news right okay then see as you can see
+all our you know models are predicting
+right fake news you can try at you can
+try with the any news right you can just
+Google it just take out any news from it
+and copy paste it here and just check
+whether it is predicting right or wrong
+so with that we have come to end of this
+video I hope you like this video if you
+have any query please ask in the comment
+section below our team of expert will
+help you as soon as possible thank you
+and keep learning with simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

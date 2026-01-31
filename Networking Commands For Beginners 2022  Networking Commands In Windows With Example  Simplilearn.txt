@@ -1,0 +1,345 @@
+configuring the network settings for our
+system has always been an hassle
+but through the use of some of the
+important network commands we can easily
+configure and also troubleshoot network
+settings for our device
+hi guys and welcome to yet an advantage
+video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+now let's look into the agenda for
+today's video
+to begin with we will understand what
+exactly are network commands
+moving on with what are some of the
+important network commands
+and in the end we will see the demo for
+the network commands
+let's begin
+the first is what are network commands
+the windows operating system provides
+its user with numerous built-in network
+troubleshooting commands these commands
+allows its user to maintain the network
+stability of the system
+let's move on with network commands
+now let's look into some of the most
+important and mostly used network
+commands in the windows prompt
+the first one is ipconfig
+this is one of the most basic network
+commands used in the windows prompt it
+gives an overview of the network
+settings for our system
+moving on we have ipconfig all
+this is similar to ipconfig
+but it gives a more detailed view of the
+network settings for our system
+then we have ping
+this command is used to check
+or test whether destination host is
+available for exchange of services or
+information moving on we have tracearty
+this command provides the user with an
+overview of the path that has been taken
+by our iep address to reach the
+destination ip host
+then we have nslookup
+this command is used when we have to
+look into the server data of a
+particular internet server for example
+google.com
+now let's look into some of the more
+network commands
+this we have
+root
+the root command provides the data of
+routing data packets in the system over
+the communication channel
+netsat
+it is used to get an overview of all the
+currently connected networks from our
+system
+then we have arp the arp command is used
+to display the arp cache in an organized
+format
+then we have path ping
+using this command provides us with the
+output combination that is of both trace
+rt
+and ping to a certain extent
+and in the end we have system info
+this command provides us with the
+comprehensive overview of the device
+settings in a system
+now let's look into the demo for the
+network commands to better understand
+them
+to execute the network commands we have
+to access the windows prompt
+to do this
+type cmd
+and you will
+access your command prompt
+the first network command that we will
+execute is ipconfig
+the ipconfig command displays
+network settings as an output
+as we can see
+this is the main connection that my
+system currently have
+with the ip address
+192.168.1.3
+along with every ip address a subnet
+mask is included this is very important
+as already told ipconfig just shows an
+overview of the connection settings but
+if you want to look into more detailed
+version of the network settings for our
+system
+we use the command
+ipconfig
+all
+as visible ipconfig oil command provides
+us with a much more detailed view of our
+connection settings
+including dhcp settings
+along with the lease obtained for ip
+address
+the default gateway
+including the dhcp server settings
+also
+details about the dns server
+now let's take a look at the next
+network command in the list that is
+nslookup
+ns lookup command is used to access the
+ip address of a particular website or a
+host through its domain name
+this network command is helpful when we
+don't know the ip address and wants to
+know it
+but we only have the domain name
+let's take a look
+let's clear the screen for much proper
+view
+ns lookup
+by default the nth lookup command
+provides us
+with the data of our system
+that is the default server that my
+system is currently connected to
+and the ip address of my system
+to access some other website or host's
+ip address through its domain name you
+have to write
+ww dot
+in this case let's take google
+dot com
+and press enter
+through this from this part we can
+access the ip address that has been used
+by google.com
+let's try using some other domain name
+for example
+www.amazon.com
+as we can see
+the ip address
+the alias and the name from the
+amazon.com
+till this point we have seen what is
+ipconfig command ipconfig all command
+and the ns lookup
+now let's move on to the next command
+that is ping command is used to check
+whether our system
+can access a particular website
+let's take a look
+to come out of the ns lookup command do
+control c
+now let's try
+pink
+to access the ping command we will use
+the domain name
+www.amazon.com
+and press enter
+after the execution of the ping command
+we can see
+that our system sent four packets
+and
+the destination ip also received four
+packets that means the loss is zero
+this means that the amazon website is
+accessible from a system and there is no
+loss of data in during the transmission
+in case if we don't have a domain name
+for a particular website we can also use
+the ip address for example
+ping
+and followed by the ip address
+in this case let's take the amazon again
+the ip address is
+23.33.245.99
+and press enter
+as we can see the system has again sent
+four packets to the destination ip
+address and the destination has received
+four packets without any loss
+now let's move on to the next network
+command in the list
+that is tracearty the tracert command
+is used to trace
+the path that has been taken by our ip
+address to reach the destination ip
+address
+which is very helpful if we want to
+troubleshoot the part that has been
+taken
+but before we use tracert we need a
+destination source
+let's try using
+nslookup
+and
+use the facebook's ip address
+let's exit the ns lookup command
+using control c
+and type
+trace rt along with the ip address of
+facebook.com that is
+157.240.228.35
+and press enter
+on execution of the tracert command we
+can see the number of routers or network
+devices that our system's ip address has
+to go through to access facebook.com
+and we can see the number of hops that
+are available are 13.
+let's see the number of hops our system
+has to take to access facebook
+and seems like the number of hops it
+takes to access facebook from our system
+is
+it
+through the use of tracearty command we
+can see
+how many hops and what devices or router
+our ip address has to go through access
+a particular website
+now let's move on to the next network
+command
+that is root command
+root command is used to access and
+manipulate the ip routing table of our
+system
+you can access this command using route
+and print
+and this
+enter
+as we can take a look
+it provides us with the destination ip
+address along with the net mask gateway
+and interface
+all these are necessary
+for a network programmer to take a look
+of any details that are regarded in the
+target or the destination ip address
+host
+with this let's move on to the next
+network command that is
+netstat
+this network command is used to access
+the connections that are currently
+available on a computer system
+through the tcp and udp ports
+to display the result let's write
+netstat
+and press enter
+from this we can take a look the number
+of connections that are currently
+available
+or
+inactive
+or in case
+closed
+to the netstat command
+now let's move on to the next network
+command that is
+arp
+let's clear our screen
+and use arp
+the arp network command is used to
+access
+the ip addresses for a device along with
+their physical addresses
+to use this we have to write arp
+if you do this and press enter you'll
+access the help mode for arp command
+to access the output you have to write
+arp hyphen a
+in presenter
+with this we can take a look at the ip
+address along with the physical address
+and also the type of ip addresses they
+are for example the first one is
+a dynamic ip address whereas the rest of
+them
+are static
+now let's move on to the next network
+command in the list
+that is the pathping command this
+network command
+is used
+to access the path that our ip address
+take for the destination host along with
+the calculation of loss of the data that
+has been transmitted over the
+communication channel
+to do this
+type path thing
+along with the destination source that
+is for
+example facebook.com
+and press enter
+on doing this
+we get the number of routers and the
+path that has been taken
+by our ip address
+to the destination host
+partnering command might take some time
+to execute
+after the execution of the command this
+is the whole result that we receive on
+our
+window these eight represents the path
+and the statistic represent the loss
+at each point of ip address during its
+transmission over the channel
+now let's take a look at the last
+network command in our list that is
+system info
+after we suggest system info is used to
+access or display
+the whole overview of a system devices
+setting
+to do this write
+system info
+and press enter
+as we can see
+all the data regarding
+my system device is
+displayed
+as an output
+with this we have reached the end of the
+video
+if you have any questions regarding any
+of the network commands you can ask them
+in the comment section below
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

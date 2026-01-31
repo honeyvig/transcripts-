@@ -1,0 +1,288 @@
+foreign
+is a computer vision model that stands
+for you only look once fighter Jolo is a
+free and open source software tool it is
+a real-time method for detecting an
+object in an image to detect object in
+an image the YOLO algorithm employs
+convolutional neural network models the
+YOLO V5 detection algorithm offers High
+Speed and Performance in addition to
+excellent accuracy and precision by
+using one forward propagation to
+identify an object in the given image so
+the YOLO V5 is simple to install because
+it only need the torch and a few
+additional installed python libraries
+models can be trained more quickly which
+lowers the cost of model construction
+YOLO algorithm offers quick object
+deduction in real time and deliver
+prices result at the end hey everyone
+you are already watching simply learn
+and in today's video we're going to be
+learning all about YOLO V5 pytot if you
+love watching videos like this do hit
+the Subscribe button to never miss any
+updates from Simply learn if you want to
+become a machine learning expert
+consider professional certificate
+program in Ai and machine learning by
+simply learn and master those necessary
+skills check out the link in the
+description for more detail so without
+any further delay let's get started so
+the first thing is to install or
+download YOLO V5 repository so to do
+that just type YOLO V5 and this is the
+first link that you will get from the
+GitHub so you can just scroll down you
+can see all the files here and then
+click on the code and download zip so
+once you download this all the files
+will be downloaded
+so as I I can show you so here is my
+YOLO V5 Masters so these are the files
+that have got downloaded
+and after that let's insert python
+anaconda and pytot so to install python
+go to python.org so this is the website
+that you can download python so you can
+just click on the python 3.11.2 version
+or you can also see there are plenty of
+versions here as you can see you have
+the python release for Windows the
+version release for Windows so you can
+download any kind of python version so
+the latest version is Python 3.11.2 and
+so once you just click on this python
+then you can just run and install it and
+the next step is to install the pytot so
+also we need to install Anaconda
+so to download Anaconda just go to
+anaconda.com
+and here as you can see a green button
+download for Windows
+so since it's already installed in my
+system I will not download it right now
+and the next step is to install pie
+torch in your system
+so to install pytorch go to pytorch
+website pythons.org
+and here when you scroll down
+here you will get
+installed pytotch so here according to
+the pytorch build with a stable or
+preview just click on stable and your
+operating system if you have Linux Mac
+or windows so since this is Windows just
+click on Windows package go with the
+conda or pip
+since we have installed Anaconda I
+suggest you to select condom language
+Python and then compute platform would
+be anything according to your system
+requirements if your system is having
+GPU then you can go with the coda else
+go with the CPU and then run this
+command whatever command you got here
+just run this command in the comment
+prompt
+to install the pi torch
+so when successfully installing python
+anaconda and pytots in your system
+then the next step is to check whether
+if everything is running properly so
+open the Anaconda prompt
+and just type python
+so it will display the python version
+and next to check
+just type import torch
+so if there is no errors displayed then
+you're good to get started
+so after this we have one command that
+we need to install
+so using this python API you need to
+install all the necessary modules
+for uh yellow V5 so I will add this in
+my description so you can use it
+all the modules of YOLO V5 are required
+in my system so I will not uh install
+once again
+so open the command prompt
+so as you can see I have downloaded this
+YOLO V5 Masters in my desktop so to go
+there
+then show it once again just open the
+Anaconda
+and here
+to go to the folder YOLO V5 just type CD
+desktop
+since it's downloaded inside the desktop
+and then we have to go inside the folder
+YOLO V5 master so for that type CD
+YOLO V5 master
+and give enter so now we are inside the
+YOLO V5 master
+to install the requirements for YOLO V5
+we have one comment to run so that
+command will type it here babe
+install
+requirement
+requirements.txt so once we enter all
+the required modules will be installed
+so if at all displays any kind of error
+so what you need to do is it will ask
+you to download
+the visual studio tools so you can just
+type visual studio so as a so here as
+you can see uh
+visual studio and just click on the
+first link over here
+and then go to downloads and when you
+scroll down here you can see tools tools
+for visual studio so if you don't have
+you want to install the whole video
+Visual Studio software then you can just
+install the required tool so when you
+scroll down here you can see build tools
+for visual studio 2022. so just click on
+downloads and it will get downloaded
+hello V5 is easy to install as it
+requires only the torch and few more
+python libraries installed along with it
+and modules are trained faster which cut
+Downs the cost of building a module and
+YOLO algorithm offers a high speed of
+deduction to detect objects in real time
+and provide accurate result at the end
+so now finally to detect object and
+animate we have to run the following
+command so for that open command prompt
+that is Anaconda prom so here we need to
+run one command that is python
+just type python detect
+Dot py
+Thon source
+and then give the path image bar so
+suppose we have few images here
+so go to the folder YOLO V5 master and
+click on the data and here you can see
+image image folders We have three images
+over here so suppose
+we have this image here by submit
+so here when we give this image path in
+our Anaconda prompt it has to detect all
+the things which are in this image so if
+suppose this other person then you have
+it will say person and it must say this
+is It's a bus
+so for that
+let's give a part
+so we are inside the YOLO V5 master so
+just keep this command
+and falling to that just type data
+because we are inside the your YOLO V5
+master so next thing is to give data
+and the data we have images folders so
+type images
+and then inside that we have a image
+of a name bus just type bus of this
+image is of type
+jpg so div.jpg
+and once you enter it will take some
+time to process
+so as you can see the results save two
+runs
+so go to YOLO V5 Master go to runs
+folder detect
+as you can see
+this is our
+in it
+so as I said it will detect the bus
+person
+and all of that so suppose if you want
+to delete all of this which is already
+there I'll just delete it
+and run once again
+now I'll once again give the command
+now instead of bus
+let us keep
+let us take one image now
+so just give traffic signal
+just take any one image
+so suppose we want this image
+if you want this image I'll just copy
+paste it here
+and let me rename into signal
+and here just give signal
+signal.jpg and give enter
+your result is saved
+go to your Wi-Fi folder go to run
+detect and yeah
+so here we got all the things
+we got handbag person so since the image
+is small we got it in a small size
+but yeah if once again you want to check
+of the bus of this image if bus
+dot jpg
+and we got this second image as well so
+it's detecting as bus person how many
+persons we have so it's directing
+properly
+and now if you want to you know uh
+display through or detect something live
+using your webcam so just on the webcam
+and then place any object in front of
+you and it should detect the things so
+for that we have
+just type
+python detect dot py hyphen hyphen
+source so instead of giving path of any
+image we will give 0 here this is a
+default so it will on your webcam
+so once you give this it must on the
+webcam
+so as you can see it has on
+so suppose if I place the bottle
+so it's in water
+so if I have the phone
+so it will say cell phone
+so then
+so it should detect as remote so yeah
+right now it's confused okay we got it
+as a remote
+so finally here is the data that is
+detect one remote or whatever day it's
+detecting it will just be running here
+in the comment prompt
+so as you can see by giving the command
+python detect.py hyphen iPhone Source
+zero so when you give this your webcam
+will open and start detecting the
+objects that you have placed in front of
+the camera and give the accuracy result
+or parameters
+so instead of 0 if you give any other
+path image I mean image path so that
+will detect the objects that are in the
+image and give you the result
+so I hope it's very clear how to install
+python Anaconda by Dodge and the tools
+that are necessary from Visual Studio
+and also the YOLO V5 master
+so and with that we come to the end of
+this video on YOLO V5 by torch so if you
+like this video share it with your
+friends and before I sign off make sure
+you subscribe to our Channel and hit the
+Bell icon to get all the updates so
+we'll be back with more such interesting
+videos until then keep learning and stay
+tuned to Simply learn
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

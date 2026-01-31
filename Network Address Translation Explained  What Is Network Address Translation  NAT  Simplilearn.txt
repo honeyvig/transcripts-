@@ -1,0 +1,316 @@
+with the requirement to connect to the
+internet we need an arrangement or a
+setup that automatically assigns us a
+public ip address to help us get our
+devices connected to the internet
+this task is performed by nat that is
+also known as network address
+translation
+hi guys and welcome to yet another
+interesting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel or
+hit the bell icon to never miss an
+update from us
+now without further ado
+let's begin with the agenda for today's
+session
+to start with we will look into some
+details regarding network address
+translation
+continuing with knowing what is nat
+addresses
+different types of nat available in the
+network channel
+and in the end we will look into some
+disadvantages and advantages of applying
+nat in a network channel
+let's move on with the first heading
+what is network address translation
+the motif behind implementing
+nat is to allow several network devices
+to connect to the internet by a single
+public address
+the nart model is a method to conserve
+ip addresses by using a unique address
+to represent the whole private
+network and the mentioned public ip
+address is a globally recognized ip
+address to access the internet
+let's move on to some more details
+regarding network address translation
+the task of nat process is to translate
+a private ip address in a network
+to a globally recognized public ip
+address
+and vice versa
+that is the same process begins from
+public ip address to a private ip
+address
+this task is performed by a router or a
+nat firewall
+let's move on
+the flow of this process is something
+similar
+like the router configured
+acts as an interface between the private
+and network and the public network
+that means the private network will
+communicate with the router when it
+wants to access an internet
+same is the case for public addresses
+too when the public address wants to
+communicate with the private network the
+router will convert it to a private
+network id
+and allow us to access the internet
+the reason behind applying that process
+is to conserve public ip addresses
+to be more specific it's ipv4 addresses
+and it also provides much better
+security to the network
+now let's move on to the next topic
+nat addresses
+there are different types of terms using
+that process
+more specifically there are some
+addresses information that are necessary
+to understand the process which takes
+place during network translation
+we will discuss them one by one
+let's take a look at the first address
+before we begin
+let's take a look at the example
+this is a general or any simple form of
+nat translation process
+we have a private network
+a private device a router a public
+network
+that we can access internet through
+the first term that is used is known as
+insight local address
+this ip address represents the host of
+the private network
+and this cannot access the internet
+directly
+unless provided by an isp server
+after we have the inside local address
+through the private network we share it
+with the crowder
+when the router receives this private
+network id
+it converts it to the public network
+that is known as
+inside global address
+this ip address represents the whole
+private network
+for the outside network
+and is used to access the internet for
+the private network
+now let's move on to the remaining ip
+addresses for nat
+according to this example now we are
+returning from a public network to the
+private network please keep that in mind
+according to this
+the address type next comes up its
+outside global address
+this ip address represents the outside
+network address for the host before nat
+process took place
+then we have
+outside local address
+this ip address represents the actual
+address representing the host on the
+internet after the net process takes
+place
+now let's move on to the next setting in
+the topic
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+types of nat
+there are different types of nat
+available on the internet or on the
+network channel but we will discuss
+three
+generally used ones
+where the first one is known as static
+nat
+according to static nat process
+in the given private network
+each device will have
+a
+particular or a single ip address
+publicly
+designed to them
+that means if you have two devices in
+your private network
+you will have two different types of
+public ip addresses for each of those ip
+addresses
+that is available in your private
+network
+due to this property of the static nat
+process it is also known as one to one
+net
+and is mostly used for personal
+addresses
+for example please take a look at the
+diagram below
+if we have a single ip address
+in a private network
+we will have a single public ip address
+for the same
+again if we have another private ip
+address in the private network we will
+have
+a public ip address for the same
+this represents static network
+let's move on to the next one
+the next type of nat process
+is known as dynamic nut
+for the dynamic nat process
+private network addresses is translated
+to public addresses from a pool of
+public ip addresses available to the
+communication channel
+that is
+something similar to this
+according to the example if we have two
+private addresses available in the
+network then we have two poll of public
+addresses too
+out of which we can convert the private
+address to a public address
+and for example if we have a third
+private address and only two possible
+public addresses pool then the third
+address is dropped
+let's take a look
+at the diagram for a clarification
+this is the pool of public addresses
+available for this network
+out of which
+we converted
+192.168.32
+to
+213.18 0.123 to point 100
+now let's move on to the last type of
+nut available
+this nat is known as port address
+translation
+in port address translation of nat
+the process takes place something
+similar like this
+all the available private ip addresses
+in the private network are converted to
+a single
+available ip address publicly
+recognized
+that means if you have five private
+networks in your available network
+you will have a single public ip address
+available to all of them
+due to this nature of this process it is
+also known as not overload
+but
+the catches
+all the addresses in the private network
+available will have different port
+number assigned to differentiate between
+them
+for example 192.168.32.10
+is translated to 213.18.123.100.11
+where 101 represents the
+port number
+similarly for the second private network
+we have 192.168.32.12
+which translates to 213.18.123.100
+that is similar with the earlier case
+but the change comes over
+0.102
+that is the port number assigned to the
+second private address
+now let's take up a small quiz to
+refresh all the topics that we read so
+far
+and the first question is
+what does outside local address refer to
+in nand
+your options are
+name of insight source address before
+translation
+name of destination was before
+translation
+name of inside host after translation
+name of outside destination host after
+translation
+please read the options very carefully
+to answer this
+now let's move on to the next question
+and the question is
+pat address is also termed as
+part refers to port address translation
+option a static net
+option b one to one nat
+option c not overload
+and option d
+not overlapping
+you can give your answers in the comment
+section
+now let's move on to the last heading
+for this session that is
+advantages and disadvantages of applying
+nat in a network channel
+let's take a look at the first advantage
+of using nut
+nat provides privacy and security
+measures to the private address
+as it converts
+a private address to a public address
+through which we can prevent our id from
+being
+hacked
+over the internet
+let's move on to the next advantage
+that process is applied to conserve
+approved ip addresses over the network
+channel as discussed earlier in the
+previous slides
+nat process helps to conserve us ipv4
+addresses
+now let's look into some disadvantages
+of applying nat in the network channel
+and the first disadvantage is not
+translation leads to part delay and
+prevent some applications
+to lose their access over the network
+channel
+now let's take a look at the second
+disadvantage
+according to the nat process router is
+the one that translates a private
+address to a public address or vice
+versa
+during this process it does happen to
+tamper with the port numbers as we
+already discussed
+but according to the rules set by the
+network channel
+router is not usually allowed to hamper
+with the port numbers but it has to
+because of nat
+with this we have reached the end of
+this session if you have any questions
+regarding the topic you can ask them in
+the comments section
+thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

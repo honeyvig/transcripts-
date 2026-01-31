@@ -1,0 +1,224 @@
+hey guys welcome to yet another
+interesting and informative video by
+simply learn in this video we will
+understand the operators in c
+programming
+before we get started make sure that you
+subscribe to our simple inline channel
+and hit the bell icon to never miss an
+update from us
+so without further ado let's get started
+with the agenda for today's session
+first let us start by understanding what
+are operators in c and then the types of
+operators
+now let's begin with what are operators
+in c
+an operator is used to operate on
+operands of any type so in short an
+operator is a symbol
+in the example
+a is equal to 2 plus 3 2 and 3 are the
+operands and places the operator so
+basically the addition operation is
+performed on two operands
+now let's have a look at the types of
+operators in c
+based on the operands the operators are
+classified into three types
+first up we have unary operators that
+are used to perform operation on a
+single operand
+and the operators are unary minus
+increment decrement and logical not
+next is binary operators that operates
+on two operands
+arithmetic operator relational operator
+logical bitwise and assignment operator
+and then the ternary operator which is
+also known as the conditional operator
+great now that we know the types of
+operators in scene
+now let's understand the unary operators
+that perform the operation on a single
+operand with their symbols and examples
+let's start with the unary minus
+operator represented by the minus symbol
+which converts the positive value to a
+negative number
+consider the value y to be positive 2
+and after performing the unary minus
+operation the positive value 2 will be
+converted to negative 2.
+next increment and decrement operators
+are used to increase and decrease the
+value by 1 respectively for example plus
+plus y is pre-increment and y plus plus
+is post increment similarly we have
+pre-decrement and post decrement
+next is logical not that is used to
+complement the logical value for example
+consider the value for x and y to be 5
+and 2 and the condition is 5 lesser or
+equal to 2 which is false so the logical
+not operator we complement boolean value
+to true in that case
+i hope you got a clear understanding of
+unary operators
+next we have binary operators that
+operate on two operands
+first we have arithmetic operators used
+to perform addition subtraction
+multiplication division and modular
+operation
+let us know the performance of
+arithmetic operations with the help of a
+simple program
+we have included all the arithmetic
+operators in this particular program now
+let's run the program and look at the
+result
+here enter the value of a and b
+as you can see the result for all the
+operation is printed successfully that
+is 2 3 is equal to 5 2 minus 3 is equal
+to minus 1 2 into 3 is equal to 6 and 2
+divided by 3 is equal to 0.
+relational operators are used for
+comparing two operands
+first we have the greater than operator
+that checks whether the operand one is
+greater than the operand two for example
+x greater than y similarly we have the
+other relational operators that are used
+to compare to operands and they are less
+than less than or equal to greater than
+or equal to equal to and not equal to
+the following binary operator is the
+logical operator in that we have the
+logical and or and not operators so let
+us consider the example x greater than y
+logical and x less than z
+the logical and operator returns the
+value true if both conditions are valid
+otherwise it will written false
+next the logical or operator returns
+true if a the condition is true else it
+will returns the value false
+as discussed before the logical not
+operator complements the value
+let's understand logical operators a
+little better by executing a program
+as you all can see in this particular
+program we're gonna perform logical
+operations
+so let's run the program and see the
+output
+so here it's asking press logical and
+operator press 2 to perform logical or
+operation and press 3 to perform the not
+operation so let us enter one
+so enter three numbers let me enter two
+three and four
+so here since the condition is not
+satisfied the return value is zero
+next we have the bitwise operators in
+which we have bitwise and or xor
+complement right shift and left shift
+let us understand the bitwise operators
+with the help of through
+table the bitwise and operator compiles
+the bits if both the bits are high that
+is one then the result would be high
+else the result is row which is zero
+next is the bitwise or operator if
+either of the bit is high
+then the result is one else the result
+is zero
+next we have an xor operator in which
+the result is zero when both the bits
+are zeros or ones else the result is one
+following we have assignment operators
+you may understand better when you look
+at the example the assignment operator
+is used to assign a value to a variable
+as you can see in the example x is equal
+to 5 the value of pi is given to the
+variable x next is to sum and assign
+that is x plus equal to 2 means the
+number 2 is added to the value of x
+next subtract and assign that means by
+subtracting the number 3 from the value
+of x
+then multiply and assign operator which
+multiplies 2 with the value of x
+the divide and as an operator is used to
+divide for example 2 is divided by the
+value of x
+similarly the bitwise and and assign
+operator ends the value of y with x
+and then the bitwise or an assign
+operator will order the value of y with
+x
+so i think you got a good understanding
+of all the binary operators
+okay so let us now understand the
+ternary operator in c with the help of
+syntax and example
+the syntax is expression 1 question mark
+expression 2 colon expression 3 and
+semi-colon
+for example
+let us consider x is equal to 5 and y is
+equal to 2
+expression 1 must be the condition to be
+satisfied so basically if the condition
+satisfies it will execute the expression
+too otherwise it will execute expression
+3.
+as you can see in this example 5 less
+than 2 the condition is false so that it
+will execute the expression 3 which
+means print the value 2.
+now let's execute program using ternary
+operator the condition is satisfied it
+gonna print expression 2 else execute
+expression 3.
+so let's run it
+here enter two numbers
+so since the condition is not satisfied
+the expression three is executed
+i hope you got the idea of using the
+ternary operator right
+now let's see how this special operator
+works
+some special operators in c programming
+are comma address and sizeof
+now let's execute the program using
+special operators
+so in this particular program a comma
+operator is used while declaring
+variables next the symbol ampersand
+represents the address operator to fetch
+the memory address of a variable and the
+size of operator is used to know the
+size of data types occupied in the
+memory let's run it
+here let's enter the value for a and b
+so as you can see the values are printed
+successfully that is the value of a is
+equal to 2 the value of b is equal to 3
+and the size of int is equal to 4 bytes
+so with this we have come to the end of
+this session on operators in c
+programming i hope this session was
+informative and interesting until next
+time this is sania from simplylandstream
+signing off thank you stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

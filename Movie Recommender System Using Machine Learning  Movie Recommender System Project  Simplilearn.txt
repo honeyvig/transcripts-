@@ -1,0 +1,1119 @@
+in an ever-expanding sea of information
+finding the right content to satisfy
+your Cravings has become an overwhelming
+task whether it's seeking the perfect
+movie diving into a captivating book
+exploring new music genres or
+discovering exciting products the sheer
+abundance of choices can leave us
+feeling lost and frustrated that's where
+recommender systems come to a rescue
+like trustee guides leading us through
+multiple options opening doors to
+Uncharted Tire trees that align
+perfectly with the interest and
+preferences the commander systems have
+swiftly emerged as the unsung heroes of
+the digital age offering personalized
+suggestions that go beyond entire
+guesswork powered by Advanced algorithms
+and machine learning these intelligent
+systems have revolutionized how we
+navigate vast online platforms
+Transforming Our digital experiences
+into seamless journeys of exploration
+and satisfaction at their core
+recommender systems are the hidden
+engines driving the success of today's
+most prominent platforms from streaming
+services like Netflix Spotify and
+YouTube to e-commerce Giants such as
+Amazon and Alibaba these systems have
+become indispensable tools for curating
+personalized content recommendations
+that keep us engaged and attained and
+coming back for more but how do these
+systems work their magic
+through a complex interplay of data
+analysis pattern recognition and user
+feedback recommended systems unlock the
+power of collective intelligence with
+that in mind join us on a journey into
+the fascinating world of machine
+learning with our Caltech postgraduate
+program in Ai and ml in partnership with
+IBM this AIML course covers the latest
+tools and Technologies from the AI
+ecosystem and features master classes by
+Caltech faculty and IBM experts
+hackathons and ask me anything sessions
+this program showcases Caltech ctm is
+excellence and IBM's industry progress
+the artificial intelligence course key
+Concepts like statistics data science
+with python machine learning deep
+learning NLP reinforcement learning and
+through an Interactive Learning model
+with live sessions enroll now and unlock
+exciting Ai and ml opportunities the
+course link is mentioned in the
+description box below with that having
+said hey everyone welcome to Simply
+learns YouTube channel but before we
+dive into that don't forget to like
+subscribe and share and discover the
+inner workings of the these intelligent
+engines and unveil the secrets behind
+their uncanny ability to anticipate our
+desires let's delve into The Cutting
+Edge techniques and challenges that
+shape the future of personalized
+Discovery and unravel how recommended
+systems shape and how we navigate the
+vast ramps of information and
+entertainment in the digital era now
+over to our training experts so at first
+we will import some major libraries or
+python which will help us in
+mathematical functioning so
+so the first one is numpy import
+numpy as NP
+so number is a python Library used for
+working with arrays it also has a
+function for working in the domain of
+lineal algebra and matrices it is an
+open source project and you can use it
+freely numpy stands for numerical python
+so here NPD in NPS denoting numpy so we
+will import the next Library
+both
+pandas as
+PD
+is should be space yup
+so pandas is a software Library written
+for the Python programming language for
+data manipulation and Analysis in
+particular it offers data structures and
+operation for manipulating numerical
+tables and time series so
+after importing libraries we will move
+ahead and import data set so for
+importing data set we have to write
+like we have two data set with us
+let me show you the data set we have two
+data set with us
+the first one is credits
+this one
+and the second one is movies one
+movies one so don't worry you can get
+these data set link in the description
+box so let me write
+here
+credits
+let's go data frame equals to PD dot
+read
+underscore CSV
+here you have to give your location of
+the data set
+edits
+dot CSV
+the second one is movies
+let's go
+data frame
+this is for movie data frame PD dot
+treat
+so here you have to give the movie
+location movie data set location movies
+dot CSV
+okay everything seems good
+let me run this
+yeah
+so then
+here PD is for the pandas Library read
+is used for reading the data set from
+the machine and CSV is used for the type
+of file which you want to read so after
+this let's write code to see the data
+set so we will write here credits
+underscore DF
+and we will run it so this is our so
+this is our credit data set and next one
+is movies
+underscore
+so this is our movie data set
+so this is how our board data set look
+like so here you can see three dots
+this one and here also
+this one
+so we are unable to see our full data
+set like what if we want like full a4803
+rows
+so at that case we can write here
+PD Dot
+set
+underscore option
+okay
+and here we will write display
+dot Max
+underscore columns
+this
+and here we will write none
+same for the rows PD dot set
+option
+display
+dot Max
+underscore rows
+okay
+none
+let's run this
+so now if we will write credits
+underscore DF
+it is running yeah
+so now you can see your full data set
+like full credit data set with 4803 rows
+or four eight zero two rows because
+there is
+this is starting from zero that's why so
+what about movies data set
+okay wait running
+it is still running you can see here
+so here you can see the full data set
+movie data set with 4802 rows
+or if you want to see only five top rows
+so you can write here credits underscore
+DF dot hat
+so by this
+only five top rows so from head you we
+can see our five top rows and if we will
+use tail instead of head we can see our
+last five rows so here let me do with
+the movies one
+DF Dot
+tail
+yeah
+so here you can see four seven nine
+eight row four seven nine and Del four
+eight zero two so we'll tell we can see
+our last five rows
+so moving forward let's merge that
+credit data set to movie data set
+because if we will combine them the
+confusion will be less and at the end it
+will be better for us so we will write
+here movies
+underscore
+equals to movies
+underscore data frame and credits
+underscore DF
+on
+it okay T is small I guess yeah perfect
+there's Titan
+so let me do something something like
+this
+okay
+it is saying data frame object is not
+callable
+edits underscore DF
+please
+okay why because
+we haven't wrote merge here
+now it will work
+yeah perfect it's working so data is
+merged let's see the number of rows and
+column using share function so now we
+have only one so movies underscore DF
+dot shape
+okay let's run it 4809 and 2 3 23 but if
+we see here like in movies data set so
+in movies data set here here yeah yeah
+there are 20 and
+in here we are four columns in credit
+data set
+so
+like so you will be thinking that's why
+not 24 why only 23 columns that is why
+on title you can see here on title the
+titles in both titles are same you can
+see here
+both titles are same
+in both
+let me show you like this okay after
+Pirates of the Caribbean Spectra and so
+on here you can see after pirates of the
+academy inspector and so on
+so that is why on title
+written while merging so title are same
+so moving forward let's see our merge
+data set
+so we will write only movies
+underscore data frame dot head
+yeah
+so our data is merged you can see
+the last cast crew movie ID yeah you can
+see here movie ID title are the same
+they are most cast crew okay guys
+let me give some more
+for the better View
+yeah
+so you can see all Columns of credit
+data set are added to movies one so
+moving forward let's see another
+function like
+movies
+underscore DF Dot info
+so by this
+yes you can see
+so by this the data frame information is
+printed via the info method the data
+includes the total number of columns
+their labels data kinds memory use rage
+index and the number of cells in each
+columns like non-null values note that
+info method does indeed print the
+information
+so here you can see the all the
+information is printed
+okay
+like columns name and the all null
+values count and data types to like this
+int object and
+in which we are working most so after
+this let's move forward and select some
+main column in which you are working
+most so we will write movies
+underscore DF equals to movies
+underscore DF
+title
+comma and another one is overview
+okay why
+okay here we have to get like this
+yeah
+so here we have to write John R
+Jonah is complete and we will work on
+what keywords keywords are the main
+keywords okay keywords then
+it will cost
+then we will
+we will do recommendation with the crew
+as well
+okay
+by running this let me see
+our data again with seven okay okay
+there is one error okay this is movie
+the movie The Idea yeah not index okay
+got it got it
+why not Jonah
+it's Jonas I guess
+what it is it's John it's
+that's why
+it's Jonas okay
+yeah so let's see our data again with
+seven columns so I will write so I will
+write here movies underscore DF
+dot head
+here
+so you can see only our we have like
+movies ID same title overview genres
+keywords cars and crew only
+so here you can see the selected columns
+okay so let's move forward and once
+again let's see the info again like
+movies
+underscore TF Dot
+invoice come with selected columns and
+let's move forward and see how many
+missing values are present in particular
+column so like the columns is full we
+can see here but we don't know about
+that four thousand eight zero three
+values are filled or not so what we will
+do it we will see how many missing
+values are present there so
+here we will write like movies
+underscore DF dot is null
+dot sum
+not like this
+yeah perfect
+so the function data frame is null this
+one is null dot sum dot sum Returns the
+number of missing values in the data set
+so here you can see overview have three
+missing values
+so what we can do is we can write here
+movies
+underscore DF
+DF
+Dot
+drop n a
+this
+equals to
+true
+okay
+we will run it with sayings okay words
+documents
+also true okay fine
+dot underscore drop in it and yeah it
+will not create an issue so if you sat
+in place equals to true the drop any
+method will modify your data frame
+directly that means that if you set in
+place equals to true the drop any will
+drop all missing values from your
+original data set let's move forward and
+see
+movies
+underscore DF
+Dot
+duplicated
+so the duplicate method returns a series
+with true on false
+values that describe which rows in the
+data frame are duplicated or not use the
+subset parameter to specify if any
+column should not be considered when
+looking for duplicates
+so
+here let me run this first
+so here we are we are getting 0. y 0 so
+if you are like thinking there is no
+true or false return so if you write it
+without sum like if I will write it
+without some
+okay let me copy from here yeah and I
+will run this so
+here you can see
+false false false in whole data set
+so some will combine them and return you
+a value at the end zero represent false
+itself
+so we need to not need this so we will
+write something else
+so moving forward let me write First
+movies
+underscore TF dot I location
+0
+Dot johnnets
+let me run this
+so the I log function this one ilock
+function
+first let me do something like this
+it will go up okay huh
+Okay so
+from ilock function in Python is defined
+in the pandas module that helps us to
+select a specific row or column from the
+data set
+using the ilock method in Python we can
+easily retrieve any particular value
+from a row or column by using index
+value so here zeroth position line is
+coming
+which is here you can see
+so name action like name action name
+Adventure name fantasy this side
+physician
+this one science fiction yeah so this is
+because I am giving here Jonah that is
+why you can see here
+see ID 28 name action name something
+something like that okay
+so
+let's import something called ASG
+abstract syntax Factory
+so this is one of the major Library
+import AST
+let me run this import is a class
+defined is the AST module that is used
+to express the import statement in
+python in the form of abstract syntax
+tree so
+so an abstract syntax tree or just
+syntax tree is a tree representation of
+the of the abstract syntactic structure
+of text written in a formal language
+each node of the trade denotes a
+construct occurring in the text
+so let's convert some like literal to
+object and append them so here I will
+write Def
+convert
+obj object
+like l
+equals to
+blank array
+for I in
+St Dot
+Central
+bit
+e b
+J object
+okay
+l dot append
+return
+here we are converting is like here is a
+convert is a function and L is the array
+to append by using for Loop we can
+append them to name so let me write code
+then I will explain like what is
+happening so let me write full code so
+movies
+underscore TF
+honors
+okay because your movies
+Donuts
+and then dot apply
+what
+so then movies underscore TF
+then I will write keywords
+let's do movies
+underscore DF
+keywords
+reply
+Discord DF Dot
+foreign
+and that's keyword this keyword
+apps ID name and so on like ID that name
+like this type of things so it will
+create a message retrieving them so by
+using AST Library we just convert them
+to the normal one like title so got it
+guys so I hope you guys understand till
+here if you have any question or any
+query regarding any code or question
+just put as in comment our team will
+shortly provide you the correct solution
+attributing again I hope you guys
+understand till here if you have any
+type of questions regarding any code or
+something
+so just put as in comments our team will
+shortly provide you the correct solution
+so moving forward let's convert cash to
+and like same as previous way like like
+this only
+so what we will do here we will write f
+convert
+um
+here I am using
+so l equals to
+counter equals to zero
+St
+dot literal
+if counter
+does not
+equals to 3
+then
+l dot
+l dot
+dot append okay then here I have to
+write I
+to name
+counter
+equals to 1.
+if you want to write like count as
+equals to counter plus one it is like
+both the same
+else
+click
+done
+well
+so let me run this
+let me run this
+okay so after there's a small code we
+have to assign the values like
+we are doing it for Costner so movies
+okay moves let's go DF then cast
+let's show movies
+underscore DF
+asked
+Dot
+lie
+convert
+everything seems good
+so let's see the changes are visible or
+not so we will write here movies
+underscore TF dot hat
+you can ignore this like this is nothing
+so here you can see cast is also
+same like keyword and journal so like
+let's do for the creo2
+so like we are converting you can say in
+a structured way
+so let's do for the crew one two so let
+me put some
+yeah
+so here we will add depth like fetch
+which is nothing like a function name as
+director
+obj
+colon l equals to
+or I
+n s t Dot literal
+obj
+if
+I
+like go
+also is equals to
+like we can hit director
+so then
+l dot append
+l dot append
+um
+dot append to the same name
+but
+return
+okay capital l
+so we have to again write that movies
+video
+equals to movies
+in crew
+lie
+h
+just remember fetch director is a
+function name let's see changes
+so here I have to write movies then
+press enter so yeah crew is all set so
+changes are visible and data is looking
+good so what we
+like if I want to see the first movie
+Avatar overview this like this dot dot
+dot so I have to write here
+like movies
+overview
+Overview at 0th place
+so yeah
+so this is a full overview of Avatar
+movie like let me read for this in this
+2017 Century uh paraplegic Marine is
+dispatched and blah blah blah blah and
+civilization
+so moving forward that what we want to
+recommend movie in the basis of overview
+genre keyword cash so for that we need a
+separate separate words like in the then
+22nd century alone
+so if you will see in other columns all
+the words are separated but like here if
+you will see all the words are separated
+like action is separated Adventure is
+updated fantasy it's separated
+so
+there is a long sentence in this this
+one in the overview one there's a long
+sentence
+so it's difficult to recommend from this
+so what we are going to do is well we
+will separate them like like other
+columns so here we will write
+movies
+overview
+let's do movies
+and overview
+and Dot apply
+my bad sorry
+then Lambda
+colon x dot
+split
+error so let's see the results
+so movies
+yeah you can see in the Saturn so now
+you can see all the words are separated
+by comma so now it will easy to match
+overview to recommend a particular movie
+so moving forward so what we are going
+to do is if there is a two word and
+space between there so we are going to
+remove that space so here you can see
+science fiction are separate separate
+okay so we are going to re like remove
+this one this is space
+so let's write code for that
+so here I will write like
+overview is already done so we will do
+not do for that so let's write code for
+the rest columns
+so here I have to write
+movies
+like
+genres
+pursue movies
+and again
+Jonas
+dot apply
+amda
+X
+I dot replace
+come on
+to no space
+oh it seems good
+then I have to write for
+everywhere so for I in x
+it's for I in x 4 I in x
+movies genres equals to movie genres dot
+apply Lambda X
+I dot replace this to this for
+Sims code
+so let's copy paste this see
+one for keywords and one for cast and
+crew
+asked
+first
+you
+that's the same so let me run this
+okay no error seems good
+so let's see the changes so movies
+so now you can see the science fiction
+space is gone like here is science
+fiction spaces there
+now science fiction space is gone
+so like okay
+let's move forward and create one new
+column name as tag and put all the
+column data in a particular column
+okay let me do first yeah let me write
+movies
+this is a column one column name because
+two movies
+then first we will put overview
+Plus movies
+and genres
+and movies
+and what we have to give uh keywords
+keywords
+then again
+movies
+then
+asked
+let me run this
+okay
+so let's see the data frame movies
+okay still coming so like there is one
+problem I guess
+yeah no no no
+so here you can see all the data is
+merged in a under attack column yes you
+can see like in the second century blah
+blah blah so
+I hope you guys understand till here if
+you have any question or any query
+regarding any code
+or anything just put as in comment or
+our team will shortly provide you the
+correct solution okay so I'm repeating
+again I hope you guys understand till
+here if you have any question or any
+query regarding any code or like any
+question just put as in command our team
+will shortly provide you the correct
+solution
+so from here let's create a new data
+frame
+so let me create new data frame because
+now we don't need this overview car
+screw Joiner like columns like this we
+have already merged into a one one
+column like attack column so we will
+write here new
+DF equals to movies
+so
+like movies we need movie ID
+new data frame we need movie ID comma we
+need Title
+and we have everything in tag column tax
+column so we need tax column
+okay let's run this let's see our new
+data frame
+so this is our new data look likes with
+only three columns like movie ID title
+and tags so here you can see array
+brackets like this this area brackets
+so
+we are gonna remove them so we will do
+what we will write here we will write
+new
+data frame
+that n tags
+equals to
+new
+data frame
+tags
+dot apply
+Lambda
+X
+then I will give space
+dot join
+themes good everything is okay okay fine
+yeah
+so let's see the results so
+we will write a new underscore data
+frame
+so you can see the brackets are removed
+now let's see the data which is present
+in the zeroth index intact column like
+this dot dot in this
+okay for that we have to write here
+a new
+data frame
+tax
+we did it before like for the overview
+one so you have to yeah
+so this is the whole data in the first
+like first index zeroth index so some
+part of the overview like from
+civilization and some are you can see
+this action adventure fantasy science
+fiction these are some like genres
+and
+like here you can see like these are
+some Crews members
+and
+yeah like Sam Worthington like there are
+some cast crew okay
+so like moving forward like what we are
+going to do is just make them in lower
+case for the better prediction like
+something in capital something like
+smaller so let's make it to
+lowercase so new underscore DF
+tax
+equals to new underscore DF
+tags
+dot apply
+column X
+dot lower
+okay
+so don't worry about this error
+let's see the result uh new underscore
+DF
+Dot
+yeah now all the data present at TAG
+column is in small case or you can say
+lowercase moving forward let's do some
+feature extraction using count
+vectorizer so
+let let me write first from SK learn
+Dot feature
+instruction
+feature extraction okay cool
+dot text
+import
+count
+vectorizer
+DV equals to
+count
+riser
+X underscore
+features
+features
+equals to
+5000.
+oh
+words
+equals to
+English
+and this
+yeah
+so count vectorizer
+okay there's a
+I cannot import count vectorizer from
+SQL and from user
+okay okay sorry sorry my bad here V is
+capital
+okay guys so he be his Capital yeah so
+no error so count vectorizer is a great
+tool provided by the scikit-learn
+library in Python it is used to
+transform a given text into a vector on
+the basis of the frequency count
+of each word that occurs in the entire
+text so
+let me write something CV Dot
+with underscore
+transform
+if
+X
+like dot to array
+shape
+okay
+so the fit method like learns a
+vocabulary dictionary of all tokens in
+the Raw documents that is it creates a
+dictionary of tokens by default the
+tokens are words separated by spaces and
+like punctuation so that Maps e single
+token to a position in the output
+vectors so here CVS are like here CV is
+a counter vectorizer so let's convert
+into Vector to array so for this we have
+to write vectors
+vectors equals to CV dot fit
+okay then transform
+X
+in
+so here we have to write
+Dot
+to array
+yeah then we have to write
+vector
+its vectors
+yeah you can see Vector 2 array all the
+zeros
+okay so moving forward let's get the
+feature Name by writing
+yeah so we will write here
+Leanne LAN
+CV dot get
+feature
+names
+okay then bracket
+yeah
+so okay we have like 500 feature names
+so I'm repeating I'm saying again like I
+hope you guys understand till here if
+you have any question or any query
+regarding any code whatever it is so
+just put as in comments our team will
+shortly provide you the correct solution
+okay guys like any code or you are not
+understand anything just put as in
+comment our team will shortly provide
+you the correct solution
+so let's import some major Library which
+is import
+nltk
+so what is nltk
+the natural language toolkit nltk is a
+platform used for building python
+programs that work with human language
+for applying in a statical network
+language processing NLP it contain text
+processing libraries for tokenization
+parsing classification stemming tagging
+and semantic reasoning
+so moving forward like from let me write
+first from
+and
+nltk
+dot stem
+dot Porter
+import
+ER
+yes equals to
+Tal
+I mean is a process for reducing a word
+to its word stem that suffix and prefix
+or to the roots of words known as Alama
+timing is important in natural language
+understanding nlu and natural language
+processing NLP
+so here like I have to write
+so here I will write def stem
+text
+y
+equals to
+or I in
+text Dot split
+y dot append
+s
+dot stem
+done
+dot join
+y
+so let's apply this timing to attack
+column so here we will write new DF
+X
+equals to
+new
+if
+tag
+dot apply
+um
+so let's import a cosine similarity from
+SK learn so we will write from SK learn
+dot matrices
+Dot pairwise
+import
+cosine
+underscore see me clarity
+okay it seemed good from SQL and
+matrices
+metrics sorry Matrix Dot pairwise it is
+[Music]
+pairwise import cosine similarity okay
+let's run this no error so cosine
+similarity measures the similarity
+between two factors
+the similarity between two vectors of an
+inner product space it is measured by
+the cosine of the angle between two
+vectors and determines whether two
+vectors are pointing in roughly the same
+direction
+it is often used to measure document
+similarity in text analysis so here we
+will write
+cosine
+underscore Simi
+clarity
+vectors
+so these all are the vector present
+let's see the cosine similarity Vector
+column and row using space
+so here I will write cosine
+similarity
+vectors
+dot shape
+so it's still running you can see here
+yeah
+so 4806 rows and four eight zero six
+columns are there let's assign variable
+similarity to this
+okay so let's similarity
+will write like this write equals to
+cosine
+similarity
+is underscore here
+I did this because we don't have to
+write always this long sentence a long
+keyword you can say
+so moving forward let's see First Column
+like we will add similarity
+yeah so this is our first column uh so
+let's see the rows only so we will write
+here
+clarity
+zero
+Dot
+shape
+okay 4806 okay
+so let's move forward and let's create
+some like sorted list so
+for that sorted
+okay
+paste
+enumerate
+spelling is fine
+okay one more like Simi laity
+similarity
+0
+that I have to write reverse
+equals to true
+comma key
+equals to Lambda
+colon
+x dot capital x x
+to write 1
+colon six
+seems good yeah
+so the enumerate function in Python
+converts a data collection object into
+an enumerate object enumerate returns an
+object that contains a counter as a key
+for each value with an object making
+item within a collection easier to
+access so finally let's create the
+recommend function to check the movie
+recommendation system
+okay
+so
+so let's write here d f
+recommend
+we
+also new
+DF
+in the TF
+title
+movie
+X
+zero
+tenses
+versus similarity
+and movie
+okay so movies
+list equals to sorted
+rate
+already and rate
+distances
+reverse
+pursue
+true
+keyword
+sorry key only okay
+equals to Lambda
+colon X
+1
+and
+6.
+or
+I in movies
+list
+DF dot I lock
+I
+0
+dot title we because we need Title only
+so yeah it seems good okay
+so finally that like time is game
+so finally the time has come to check
+the recommendation of your favorite
+movies so you can comment in the chat
+section so I can check
+so let me write first recommend
+recommend for movie
+Avatar
+okay
+so here you can see the recommendation
+system is working fine so Titan a DOT e
+small soldier Independence Day are the
+recommendation for the movie after so
+let me check for the another one
+recommend
+like for
+one of my favorite movie Iron Man
+so here you can see Iron Man 2 Iron Man
+3 Avengers Age of Ultron Captain America
+and the Avengers are just
+recommendations for the movie Iron Man
+so let me check for the one more
+recommend
+layers
+liar
+things going on 30 and the last one is
+last one I want to check is
+Captain America Civil War
+let me copy from here only
+yeah you can see the Captain America the
+First Avenger the Winter Soldier Iron
+Man 3 age of ultron's the Avengers with
+this we have come to the end of this
+fantastic video I hope this video was
+informative and exciting if you have any
+queries regarding the Hands-On lab
+covered in this video or need help
+opening for this course please let us
+know in the comment section below our
+team of experts will happily resolve all
+your queries as soon as possible until
+next time thank you stay safe and keep
+learning staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

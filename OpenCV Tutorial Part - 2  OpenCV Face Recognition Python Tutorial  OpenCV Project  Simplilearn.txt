@@ -1,0 +1,420 @@
+that puts us on the demo which is facial
+recognition so let's go ahead and create
+a new oops where's our new there we go
+new uh Python 3 and you could see how
+you can combine the motion detector with
+the facial recognition detector um so
+there a lot of really cool things we can
+do here
+this will be um
+cross open
+CV
+facial
+recognition recognition
+rename there we go and so to start with
+uh let's go ahead and import our
+information on
+here we're going to import our CV2 as CV
+again this is a personal
+preference I go back and forth on this
+uh there's a lot of reasons to do it
+this way if they update it and it's
+Backward Compatible if it's not Backward
+Compatible that's going to cause
+problems uh but that's going to be fine
+we have a lot of files going on with
+this so as we start messing with the
+Kass and you want to have access to
+these files um let us know we can send
+you um you know compress them down and
+send them just put a note into the um
+send a note over to the simply learn
+team and they can help you with that so
+the first thing we're going to start
+with is the beginning we have face
+detection um we've got a picture of a
+lady a group of five people image uh we
+have a gray scale gray scale the people
+um let's go ahead and run we'll go and
+move this off to the side again like
+we've been
+doing and run it there we go and of
+course it appears right behind
+here move it off to the
+side and give that a second to pull
+in as of now we haven't done anything as
+you can see we just have two blank gray
+screens now because these aren't loaded
+all the way if you try to exit out of
+them uh they'll just kind of lock the
+system up with the when you're connected
+with the jupyter notebooks so we want to
+go ahead and just destroy all the
+windows let me run that and see that
+they are
+gone and so we have our two our um uh
+gray people gray those are gray boxes
+say that's what the great people are in
+there and we're going to bring in the
+it's called a Cascade
+classifier and when you look at the
+Cascade classifier um it's going to load
+the XML harace file right there this is
+real important this is all pre-built
+it's looking for edges that are common
+in faces that's what this
+means you look at the harace XML like
+it's looking at the edges is what it's
+doing there is all kinds of really fun
+stuff they have let me just bring this
+over from the GitHub this is the open CV
+data hard Cascades um GitHub and if you
+go into here uh you can see we have eyes
+uh let's see what is this eye tree with
+eyeg glasses frontal cat face I guess a
+lot of people like to identify their cat
+and photos uh frontal face frontal face
+so there's a lot of different full body
+left eye right eye
+um there's a Russian numbers you can
+also create your own so there's a lot of
+stuff you can do with an H with a hard
+Cascade file we're going to load that up
+specific to detecting faces in here so
+that's what this part is
+about let's go ahead and apply that uh
+and so you can see we created faces
+rectangle uh hard Cascade detect
+multiscale we're going to put our gray
+into there the what we where we loaded
+the picture in there and then it has
+some uh scale factor manyi neighbors
+there's a lot of different things you
+can do with this a lot of times these
+are very pretty much the default um
+default works pretty good on a lot of
+this stuff and then if you want to dig
+in deeper into why one would work more
+why you need more
+information um you can go back into the
+open CV but it's good to know about the
+horror Cascade detect
+multiscale and then when we're
+processing in these the first thing we
+want to know is we want to print um how
+many number of faces found you want to
+make sure we're not looking at a crowd
+of 500 people with you know a ton of
+different faces on
+there and just because go and put this
+back up here just because uh we like to
+see we like to have a view of it we're
+going to go ahead and create
+um Square it off so so it has just the
+face in there create the face rectangle
+and then we're going to go ahead and
+show those images um I'm like if you're
+like me I like to see what I'm looking
+at uh so let's go ahead and run this and
+when we run this let me go and put this
+back into half
+screen uh the first thing we do is you
+notice that number of faces found is one
+uh that's really what we're looking for
+is we want to make sure there's just a
+single face on here and you can see here
+uh there's our group of five people that
+says it's actually just one person it
+found in there um again you can see has
+a nice image of the person coming up in
+the different scales and colors and this
+is the one we really want to look at as
+you can see right here as it puts a
+rectangle right around the face this is
+really nice because now if you are
+processing this you're processing the
+face or maybe you're processing the
+background it could be used for either
+one to pull the background out from the
+face and blur it or take the face and
+Center it so there's a lot of different
+things you can do here if you know this
+is a face and then you remember from
+previous we did edging you can now draw
+an edge and find that edging around her
+head knowing that the center of the face
+where her nose is and then you could
+blur the background you'll see that in a
+lot of uh newer zoom and uh WebEx kind
+of things where they blur the background
+out so people can't see what's behind
+you when you're on one of those
+meetings now we're going to go ahead and
+clear this uh again this thing is set up
+in Jupiter um there's ways to get around
+this but for the most part it's just
+good to clean up after yourself because
+we're um extending it out there so we'll
+go ahead and destroy all the windows the
+next two steps or our final two steps
+are to go ahead and create a model and
+train it so we want to train our model
+and then actually apply it um use it for
+something and we're going to go in here
+let me just pull this
+up and what we got here is we have um
+our people we're going to look at
+pictures of Ben Affleck Elton John Jerry
+Seinfeld Madonna uh Mindy Kaling these
+are really easy to pull up images
+because these are you know famous actors
+um I don't recognize any of them no I'm
+kidding uh I actually know all of them
+um and we've got it in here we've got it
+set up uh in one of the files and we're
+just going to print the directory so you
+can take a quick look at that and see
+what we're looking at here um this is
+where it goes to let me go and pull that
+up so you can see what the actual files
+look
+like you can see here is um coming
+drilling down into it let me just go
+under Ben Affleck and you can see it's
+all these pictures this is what we're
+looking at as different head shots of
+Ben Affleck on here one of the things to
+notice is that at some point we probably
+need to resize because some of these
+photos are a little bit wider a little
+bit taller and that squishes things and
+expands them uh so a lot of these
+detections when we're St looking at
+faces is actually doing its best to um
+do the same thing compress and expand
+them into um and train it on that those
+different
+shapes and we'll go ahead and load our
+um H H har Cascade back in here with our
+face XML that we had before um being
+that we're in Jupiter notebooks it's
+probably still listed in there we want
+to go ahead and um create an empty array
+of features and an empty array of
+labels and we'll show you what that does
+here in just a minute this is for
+tracking um our different features in
+here so let's go ahead and uh we have
+our features and our labels let's go
+ahead and create the data this is what
+we're doing here uh so we have our
+person and people here's are all our
+people it's going to go through each one
+we have our path which is our directory
+always good to double check those make
+sure you go in the right direction uh we
+can actually print the path out so that
+as we go we know we're looking at the
+full path kind of a troubleshooting
+thing um usually at this point I've
+already deleted a lot of these things
+out of here and you can see that uh the
+guys in the back were when they were
+doing it they forget where they put the
+files or where they're going they get
+some kind of weird error and then you're
+like oh yeah yeah yeah I I moved the I
+moved the program over one or something
+like
+that and so we need to go ahead and
+create a
+label um people. indexers so we're
+creating a um a label for our training
+scenario and then for each image in the
+OS list directory per person we're going
+to look at each one of those
+images uh then we'll take that and we'll
+create the um uh image path image um
+array and here's our reader where we're
+going to read in the
+image um here we are in open CV we go
+and put that into a gray scale uh faces
+rectangle so we look at the find the
+faces on there and create a rectangle
+around it that's what this part is this
+is all from what we did before you
+already saw this programming in here uh
+and so we are basically taking our
+features and filling it up with um the
+different faces just the face we don't
+want to look at the whole body shot if
+you remember from the image one of them
+had I'm leaning against a tree some of
+them are close up some of them are far
+away so we really want to look just at
+the face and then we're going to go
+ahead and append our label so we have
+our um features these are each one of
+our images and the label that
+corresponds to each one of our um
+actors so once we've done that we have
+our setup on here and this is um uh for
+training purposes so that's what we
+really want to do is we want to create
+our
+trainer let me come back down
+here uh create our trainer we want to
+create we want to train our
+model uh so here we come in down here we
+have our features um we're going to
+print that the train is done so it's
+gone through and it's it's cleaned up
+all the features all the setup in here
+then we have our face
+recognizer this
+is the heart of what's going on the face
+recognizer uh it's an LBH face
+recognizer crate so we're creating a
+neural network right here that's the
+model and then we take our face
+recognizer and we train it with our
+features and our labels so now we have
+those different images and we're going
+to train them on this model here um and
+then we'll go ahead and just save
+it um save features. NPA features and
+save labels we're just saving everything
+that's all this is down here and this is
+interesting because there's so many
+things we can do down here let me just
+go aad and run this uh and you can see
+it's going through and it's opening up
+each of the files uh and then it goes
+through and the trending's really quick
+there's not a lot of data in here uh you
+know what a dozen pictures of each one
+this isn't like going through uh 7 GB of
+information that takes a day to process
+in one of these neural networks and
+trains I'm work two or three days in the
+case of a project I'm working on uh this
+is just a small amount of data so it
+processes rather quickly some of the
+things you can do on here is um to incre
+increase the data just with these images
+is you can uh tilt them you can take
+them and tilt it by 15% or 10% remember
+earlier we were looking at all those
+different commands that is one of the
+tricks they use for training um a setup
+and not knowing what angle the person's
+going to be at they might only have 12
+pictures and then if you tilt it 15 Dees
+and 30° in each Direction you've now
+increased it by five by a factor of five
+so now you have about 60 pictures that
+you're um doing for each person so
+there's a lot of cool things you can do
+as far as as your training setup we've
+now created our uh face recognizer it's
+trained it's ready to go so the next
+step is to go ahead and use it and let's
+see what that looks
+like so let's soad and create our face
+recognizer recognition setup um and
+we're going to reload this here's our
+people again same as before of course
+you can just leave it up there since
+with Jupiter notebook it automatically
+brings a lot of this stuff in and then
+we have have our features um pickle is
+true so we're loading up our features
+here's our labels we're going to load
+our labels remember we saved them up
+here and then we go ahead and take our
+face recognizer and uh we go and create
+that and then we're going to just read
+the face trained at the Y the the yml
+file we created so we're just loading
+back up what we had up here that's all
+that is this is really good to know
+about because this makes it very
+portable uh this way if you're using it
+in one location obviously you can
+download it um you know all your
+security cameras track your neighbors as
+they walk down the sidewalk next to your
+house and then we're going to just read
+a image
+in and this one we're just going to take
+right from the um Ben Affleck and we're
+going to do the first um the Ben Affleck
+number one image in there that's all
+that is
+and we'll go ahead and create our gray
+scale image and we'll show that just
+because it's good to see whatever we're
+working with um so this is taking our
+image in converting it to a
+grayscale uh show person in grayscale
+detect the face in the image this is
+nothing new this is from before we're
+doing the Mahar Cascade detect
+multiscale set up on there and then we
+want to go ahead and create that
+rectangle around it uh once we create
+that rectangle around it then we want to
+go ahead
+and do a prediction on it let's go ahead
+and do that here we go um so here's our
+our faces rectangle and so we're going
+to create
+that with our faces
+Roi and then here's the key right here
+uh here's our faces recognizer predict
+it's going to return the label and the
+confidence on here uh then we're going
+to go and print that label with the
+confidence of and it'll show the
+confidence and then uh we'll go ahead
+and put some text on there and print it
+out it's always nice to see what's going
+on and then another rectangle on there
+so we just we're just showing the image
+again so as it comes down this is a key
+though is we want to print out and find
+out what's the chances of this label
+being
+correct now right about
+now you should be guessing that it's
+going to get it correct and you're going
+to guess it's going to have a very high
+confidence rating and the reason you
+want to guess that is because we didn't
+take this image out and switch it around
+uh in other words this image was part of
+the training and so it should have a
+very high confidence and have it correct
+it's already in the model and let's go
+and see what happens we'll go ahead and
+run this and you can see the label says
+hey it's been afflect with a 99.53% and
+if we bring up the images here
+whoops me goad and half screen this
+again so we can see what we got going
+here
+and for whatever reason that doesn't
+want to put them on top hold on I lost
+my
+images there it is and you can see
+paired up on my far left monitor which I
+I don't know why I went there that was
+kind of weird and then there's the gray
+scale behind it and you can see here we
+were able to identify Ben uh Affleck
+with a confidence of
+99.53% to simplylearn for more
+information please visit www.s
+simplylearn
+docomo to nerd up and get certified
+click here

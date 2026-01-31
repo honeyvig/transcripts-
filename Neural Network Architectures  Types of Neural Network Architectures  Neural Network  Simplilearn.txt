@@ -1,0 +1,878 @@
+hello everyone
+um
+christopher himmel i
+am going to talk this evening about
+neural networks
+i want to give an introduction
+uh
+and also
+talk about the
+structure basic structure of neural
+networks
+so let's uh let's do it
+so
+if this is a basic agenda for what we're
+going to talk about uh we're going to
+first go through the biological
+motivation behind
+artificial neural networks
+talking about neurons and the
+what what they're made of then we're
+going to do
+a mathematical approximation of
+exactly
+what we started with which was that
+biological
+breakdown
+and then
+we're gonna
+show this simple perceptron which is the
+first time
+uh the the neuron was modeled uh you
+know many decades ago
+at least half a century ago
+and uh
+and then we're gonna
+build it up from there we're gonna start
+with a simple neuron
+the perceptron and then we're going to
+show how that is actually logistic
+regression when we start to
+put multiple
+points together you know it could be
+just one neuron but multiple inputs
+and we're going to
+show how
+when we make more complex
+neural network
+then we can represent this in
+mathematics with the matrices with some
+linear regression
+and also show
+one part of the neuron
+the activation function we're going to
+show
+all the math behind that
+so and then at the very end
+we're going to build a neural network
+from scratch start with a single neuron
+then we'll make it a layer of neurons
+and then we're going to make it multiple
+layers which actually is a deep neural
+network
+so
+that's
+what we're going to do tonight
+so let's start with
+the neuron structure
+biological
+what does a neuron actually look like
+and
+very shortly you'll understand why i'm
+showing you this but uh but yeah so
+there's really four
+major parts to a neuron neuron is a cell
+in the brain in the nervous system
+it's what makes us really smart is all
+these neurons so let's look at the
+smallest fundamental piece of
+a neural network of the brain is is a
+neuron
+neuron consists of the cell body which
+you can see here
+that's
+and it basically
+sends a pulse out if it gets enough
+input it sends a pulse out so we're and
+we're going to do that in math shortly
+so where does the senate pulse out to
+sends it out through this axon
+which this axon is actually where the
+learning happens
+uh the stronger this axon is the more of
+that pulse makes it to makes it out of
+the neuron out into
+this area which
+then goes through these synapses and you
+have to imagine okay for a second
+another neuron over here
+there's other neurons that these
+synapses are connected to
+so they activate the next
+neuron and how do they activate it they
+activate it through
+dendrites
+which
+these dendrites are activated from
+another neuron at this end you have to
+imagine more neurons
+uh that are sending out their pulse
+and coming in through the pulses going
+through the axon to the synapse
+and then into the next
+next one next to neuron through the
+dendrites
+okay so
+that was
+basically how a neuron looks
+now let's let's take the same pieces the
+cell body the axon the synapse and
+dendrite and let's look at how
+mathematically we would represent that
+so the axon is coming from other neurons
+and the axon is going to we're going to
+represent
+that
+pulse coming from the other neuron is an
+x
+it's that's the variable that is
+you know what how much pulse is coming
+from the previous neuron
+and
+um it's passing through synapse
+okay so the synapse is represented by
+this w or weight it says how much of
+this pulse
+makes it through
+to the next neuron
+um it's
+it's the strength of that
+uh that acts on the previous neuron
+firing going through
+to the next neuron
+and how does it get into the next neuron
+you send it to the next neuron through
+dendrites
+so if we multiply those two together so
+our synapse is controlling how much by
+multiplication
+gets through to the dendrite
+and this is when you multiply it
+together that's this is showing going
+into the next
+neuron
+the cell body
+and we have multiple of those dendrites
+coming from different synapses from
+different axons
+uh going into this
+the cell body
+and in the cell body it's just adding up
+all these inputs okay that's what this
+summation is it's adding them all up
+miss bias don't worry about it for now
+that's a mathematical
+construct to make sure that
+if all of your inputs are off
+okay you still have something
+coming in this this b makes it so that
+you don't have zero
+coming in
+and then that this once you
+add up all these
+and the the bias the b
+then it goes through uh this function
+and this is going to be the activation
+function which we're going to show
+all those so we're passing this
+summation
+through we're taking the function f of
+that
+and then that's going to be your next
+output
+which will become your x to the next
+neuron
+that's the axon
+so here we go
+so the output
+if we if we write what this value ends
+up being it's a f of
+whatever's in here which this is this
+remember this is the sum of all of those
+inputs
+f of all of that that's what goes into
+the output which goes to the next
+neuron goes to the next axon i should
+say that's an axon
+all right so
+really what i did i just showed you a
+perceptron
+now we're going to show you that math
+that i just showed you in a little bit
+different flavor which is more the
+flavor of
+how that
+uh how neurons were developed you know
+decades ago
+we have all those inputs
+all the x's
+and a bias
+okay we have all the w's
+we just showed all the w's those are
+those are weights those are strengths or
+the synapse
+then we have the summation and the
+activation in the cell body and the
+output being an axon
+so it's really
+uh the same
+same thing we just did
+uh drawn a little bit differently here
+we have all the inputs
+and i'm showing this over and over again
+so that you get into your head
+you know what this neuron looks like
+mathematically
+and you should be able to recognize how
+this looks
+just like that you know the the
+biological part of it
+so you have the inputs and the bias and
+we have all these weights
+okay multiply by the x's
+sum sum them all together and then pass
+through an activation function and we'll
+talk more about the activation function
+shortly
+okay so that was
+take converting that biological
+piece to
+the mathematical
+one neuron
+now let's
+write more math about this a little bit
+more
+and show how
+you know another picture of what our
+neuron could look like
+uh this is just one neuron
+just like we had before here it's g
+instead of f
+okay we have all these thetas
+which are multiplied by the x
+x's all your inputs
+um
+and if we just write it this way
+instead of the thetas we write w's times
+all the x's
+and then take this summation
+and just pass it through a function
+a g
+that's our
+activation function
+if you if you've done any modeling uh at
+all statistical modeling basic you know
+data science machine learning
+you'll recognize that this is which is
+the progression
+uh so our you know one neuron
+is exactly the same as our logistic
+regression equation
+you know passing through
+uh we have all these inputs and we have
+one output
+the output is
+again the activation function
+here is
+an activation function okay it's a
+sample one
+happens to be the most most popular one
+but it's only one
+where we
+apply that activation function to
+the summation of all of our weighted
+inputs
+okay you'll hear that a lot weighted
+inputs in neural network
+talk
+okay
+uh and
+something else about logistic regression
+if you remember your feature importance
+is something in linear and logistic
+regression is all these weights
+it says how important is each one of
+these inputs how much of them when you
+multiply
+are getting passed through
+and then our logistic regression is
+actual
+activation function
+okay
+so
+i just showed you one neuron
+let's make this more complicated instead
+of
+one neuron let's have three
+a1 a2 and a3
+this is these are not neurons okay if we
+go back
+with this picture these four things are
+not inputs remember they're just values
+coming in
+they're values coming out of
+the previous
+layer if we have a previous layer
+uh but that's your input to these and
+we've got three neurons instead of one
+so instead of having
+just one neuron and then four inputs
+and then four weights we now have
+four times three or 12
+weights
+so if we want to write that same
+function that we wrote before
+with
+uh with a matrix you know with linear
+algebra
+if we want to
+write it out we would write it like this
+where
+see these blue
+lines are for the blue weights
+the green lines are for the
+green weights
+and then the orange or for the
+orange weights for this third one
+so we take those
+write it like this with a matrix
+um
+write this inputs as a matrix
+and then we add that bias term one bias
+for each neuron
+we would get something like this you
+know when we multiply it out anybody
+that's done any linear algebra you you
+know
+when you multiply
+matrices together it ends up looking
+like this
+so
+you take
+this
+right here this will be three values
+you know once you add these together
+and
+pass it through the activation function
+you now have the output of the neurons
+so this is the way
+when you have more than one neuron it
+has to be you it's going to be more
+complicated the math
+is getting more complicated algebra so
+you write it in
+in
+[Music]
+linear algebra terms matrices
+multiplication
+and then we say this is our weight our w
+this is our x matrix this is our bias
+matrix
+and here through activation we get our
+outputs
+and
+this is how you'd write it
+as a function f of
+w x plus b
+equals a
+and then sometimes you write this as y
+because y is an output but in this case
+we wrote it as is a
+okay so that activation function
+when we talked about
+the biological
+part of this okay we said that
+the neuron turns on
+if it gets enough
+input
+so
+what we're showing here is if we have
+enough input so that's on the input
+input is along the x-axis
+and the output is
+the y-axis if we have enough inputs
+then our output
+goes high
+you know goes all the way on
+our input
+you know if we don't have enough input
+if it's if we add up all of our inputs
+weighted sum inputs
+then
+[Music]
+we have
+not enough and we have a zero coming on
+the output the at the neuron is not
+activated
+and this is just the way you would write
+that mathematically
+uh f of x equals zero for anything where
+our input our x is less than zero and
+one for anything were we have enough
+input
+this is the binary step
+activation function
+um and
+something you need
+uh down the road and then the next
+lecture we're going to talk about
+um how we how we have our neuron our
+neural network learn
+we need to take the derivative
+of this activation function so this is
+how
+the derivative would look like
+derivative is a slope
+for
+x not equals 0 we have a slope of 0
+for x when it's at 0 it's a vertical
+line which means an infinite slope so
+that's why we have a question mark
+don't worry about the derivative
+tonight um
+you know just just be aware that that's
+that's the case
+all right so another
+activation function
+um is this logistics sigmoid which is i
+showed you that here before
+1 over 1 plus e
+to the minus x
+and that's what it ends up looking like
+your input
+being negative
+gives you a small input
+and the bigger your input is
+the
+higher or the the closer to one it gets
+it converges onto one
+uh and
+here right in the middle uh right where
+x equals 0 we have a 0.5
+right and right at half
+when we take the derivative we get this
+we have no question mark you know we
+have no vertical line
+here so we can take the derivative of
+this curve
+that's why this one's preferable to the
+step actually because of that because we
+can take the derivative
+another
+uh
+very popular activation function
+where we're remember the activation
+function is what we're passing our
+weighted inputs weighted sum through
+another one is this rlu we're rectified
+linear unit
+which means that
+if we have a negative x
+okay
+negative input then we get zero
+our neuron is not activated
+if our
+if we have a positive output then we
+just
+get whatever that is on the output
+x equal y equals x
+f of x equals x for x greater than or
+equal to zero
+or zero if it's less than zero
+and for this
+the derivative it's zero
+for when it's less than zero and it's
+actually one
+if it's greater than or equal to zero
+uh greater than zero at zero
+it's undefined and that's the problem
+with
+this one is it doesn't have a smooth
+derivative
+okay so
+these different activation functions are
+just part of how the neuron works it's
+the it's what
+output is what
+you know turns on or off the neuron
+all right so now we're going to take
+we're going to build up
+our neural network this is the
+we went through the
+you know the the basis of okay where did
+the neuron neural network come from
+to
+what is the neural what is the
+mathematical part of it now we're going
+to start stitching them all together all
+those pieces we just built
+uh very we're going to start with
+the basic
+neuron that we started with one neuron
+okay and this is called
+a four by one
+neural network which means four inputs
+one output
+so one neuron with four inputs and it's
+our and we call this a layer okay the
+inputs even though it's not neurons it's
+just a layer of inputs
+and then we have our output layer
+so this is one layer
+and one neuron
+uh
+everything that we've been showing up to
+now
+it looks looks like this so let's make
+it a little more complicated
+uh now we're going to
+add
+some neurons in the middle
+okay
+originally we had an output and three
+inputs now we're going to stick these
+ones in the middle
+okay
+and then have our inputs feed that
+middle layer
+okay and our middle layer
+is gonna feed our output
+so now we have like this buffer in
+between
+uh and this is called a four by three by
+one
+neural network
+so that means four inputs three in the
+hidden layer this middle layer is called
+the hidden layer because
+you keep the output can't see it
+you know the input can't the inputs
+people can't see it because it's it's
+buffered you know by the input of the
+output
+so it's hidden
+uh so how many neurons do we have
+we still have four inputs but now we
+have three more neurons plus the one
+output neuron so this is four
+neurons
+basic four neuron
+two layer
+uh neural network
+and once you go to this level
+okay you've gone from
+a basic one-layer neural network to deep
+learning
+okay
+that's all deep learning means
+is more than one layer
+and
+what this means is you can represent a
+much more complex
+model with this because what we're doing
+is we're taking an input
+and coming up with an output so we're
+modeling a system
+and we can model a more complex system
+with this
+do we need how many arrows do we have
+one two three four
+five six seven eight nine ten eleven
+twelve so twelve just like before but we
+have more
+okay these are not the output this is
+the output
+so we have three more
+you know synapses weights whatever you
+want to call them we have three more
+arrows
+so we have a total of 15
+different
+uh synapses or axons you know dendrites
+and the synapse in between
+okay so now let's look at a wider
+network
+and the application for a wider network
+you get much more interesting
+things out of it
+this is
+also
+a
+two-layer neural network with
+you know these are the inputs
+and these are the hit this is the hidden
+layer and this is the output layer
+so how many neurons do we have
+uh well let's talk about inputs first
+how many inputs do we have the way we
+drew this
+okay with this dot dot dot we have 784
+inputs
+why i'll explain in a minute
+how many do we have in the middle
+we say 16 down here there's a dot dot so
+it's not five
+it's five plus whatever is here and what
+we're saying is 16. that's an arbitrary
+number
+the the
+how well this works
+depends on how many hidden layers
+on the output how many neurons do we
+have
+we have 10.
+okay because we have this dot dot dot 10
+outputs
+so
+what this is is 784 inputs
+16 hidden layers 10 outputs
+now what are we going to do with this
+network okay what if we take a 28 by 28
+grid
+okay and draw
+numbers on it handwritten numbers
+you know it's a grid it's like pixels
+everybody understands how to take a
+picture that that's a representative of
+you know it's represented by pixels
+we can basically
+tell what those handwritten numbers are
+and you know this will be another
+lecture is
+actually developing this
+with python uh
+developing this network and showing how
+you can do handwritten numbers and this
+is you know decades ago three decades
+ago at least
+that we were doing this
+level of handwriting recognition
+so the way this works is we put that
+we say
+which one of those pixels is lit up
+and then we give it a number
+going in
+all the other ones that are not lit up
+give them a zero
+one of these zero through nine
+will light up
+depending on
+what is
+on that input what
+is on those pixels
+and that's how this
+neural network recognizes handwritten
+numbers
+so this is just a way of looking at
+the count and that data set okay the
+handwritten numbers
+is a very popular data set the mnist
+data set
+uh early image recognition
+as in like
+you know
+what a while ago
+and so that's how many arrows do we have
+784
+you know by however many you have in the
+middle 16
+and then 16 by 10 on this layer
+that's how many synapses axons dendrites
+you have
+how many neurons do you have 16
+plus 10
+is 26 that's it
+to recognize handwritten numbers
+all you need
+is 26 neurons in exactly the same form i
+just presented
+that's all you need and you can do
+handwritten numbers this is how the
+brain
+works
+this is why we're so smart all we need
+is
+26
+neurons and we have 100 billion of them
+in our head
+to recognize handwriting
+it's pretty amazing
+it's how smart we are
+all right so
+let's talk about
+deeper neural networks you know that was
+a very
+uh basic
+deep neural network
+let's go and look at deeper neural
+networks
+so before we had just one hidden layer
+okay
+now let's do
+more hidden layers
+okay now we have two hidden layers
+we have the input
+okay we call that layer but it's not
+actual neurons
+then we have four neurons in this hidden
+layer four neurons in this hidden layer
+and then one in the output
+so what's the application of this one
+i don't know
+addition could be the application of
+this one and we'll yeah we would see
+that we can actually do that
+so this is a very simple
+deeper
+neural network where we just added one
+neuron or one layer
+uh
+but
+there's also even more
+than that
+we could have
+you know
+100
+pin layers
+okay and that's how convolutional
+networks have come about
+and the layer the neurons are a little
+different in just that they're different
+activation that's all there are all the
+activation we've been doing up to now is
+the same kind
+showed you before
+same thing is what's in
+logistic regression
+but you you do different guys like the
+relu you and then you can do
+uh what
+convolutional neural networks do which
+is better image recognition
+not just like handwritten numbers but
+like faces
+okay much more complex pictures more
+pixels
+there's also recurrent neural networks
+okay which is where
+instead of just feeding forward all the
+way through
+you have
+feeding backwards
+or feeding across
+so that's just that's all that is
+auto encoders are where you have the
+same thing on the input as you do on the
+output
+and you can do some special stuff with
+that
+okay so uh another
+uh so i just talked about these advanced
+neural networks uh like convolutional
+neural networks i'll show that structure
+in just a second recur neural networks
+i'll show that one as well and a very
+special type of recurrent neural
+networks is the lstm
+long short-term memory
+which you can actually you can do neural
+networks with a combination of these
+i know this is way beyond what we're
+talking about here what i'm doing is
+just i'm going to show you extensions of
+the basic neural networks
+so the cnn looks like this
+where you have this very complex picture
+at the beginning
+feeding through
+all these layers
+all the way to the outputs
+and
+very basic
+just neurons throughout all of these
+and you have different types of neurons
+neural
+uh layers convolution versus relu versus
+pooling
+you just
+one after the other after the other of
+all of these
+uh layers
+and we end up with
+being able to tell whether that's a car
+truck van or bicycle
+okay but it's all the very basic
+structure
+the structure i just showed you
+um just add more and more and more and
+more of it that's all it is
+so rnn recurrent neural network
+here's some some uh
+i'll stop this in the middle here
+um
+there i guess oh that's this one i can
+stop this one here
+so recurrent neural network i just run
+this one that
+um takes the the output
+and then puts it back to the input or
+puts it to the next one
+um
+and what you do with the recurrent
+neural networks is you you have a time
+aspect or an order aspect
+stored in it
+um like this is great with
+natural language processing language
+because language has an order to it you
+have words
+made up of
+symbols these letters and also then
+sentences made up of words in an order
+so like you put each word on the input
+and then you get the meaning on the
+output
+so uh that's
+you know how neural networks work how
+recurrent neural networks more advanced
+you know these are these are going to be
+more
+uh lectures that that we'll be showing
+in the future
+and then the combination uh
+between the two
+like if you have
+your cnn structures at the beginning and
+then
+the long short-term memory
+uh
+structures in the middle and then on the
+outputs you have just like this the
+basic structure that we started with
+um and the input being
+a picture
+or words
+and the output being meaning
+feelings is another kind of meaning
+all right
+so
+thank you guys i really appreciate your
+time uh hopefully you got a lot out of
+this
+uh thank you simply learn for
+putting this on there's lots of classes
+that simply learn offers that
+go into this in more detail walk you
+through the python
+you'll
+practice it
+and and also i'll be doing more lectures
+like this with more detailed subjects
+thank you and
+have a good one
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

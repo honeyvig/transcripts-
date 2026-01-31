@@ -1,0 +1,483 @@
+hello everyone welcome to another video
+on python series of tutorial by simply
+learn in this session we will look at
+numbers in Python now let's see the
+agenda for today first we will learn
+different number data types in Python
+then we will learn type conversion
+between number data types and after that
+we will understand how to represent
+binary hexadecimal and octal numbers in
+Python and then we will understand
+different number functions in
+Python a programming language needs to
+have support for numbers to carry out
+calculations in Python the numbers are
+categorized into different data types
+types are implemented in python as
+classes there are three numeric types in
+Python int for integers float for
+decimal numbers and complex for complex
+numbers let's explore these data types
+in jupyter
+Notebook I have opened my jupyter
+notebook and now let's see different
+data types in jupyter Notebook for
+example first we'll assign a number to a
+variable num variable equal to
+7 and now we will check the type of this
+num variable for that we'll write the
+command type round brackets num bracket
+close and then we'll run this
+command we will get int as the data
+type now we will assign a decimal number
+to the num variable that would be num
+equal to
+7.7 and now we will check the type of
+the num
+variable and run this command what we
+get is the float float as the data type
+for the num
+variable now we will assign a complex
+number to the num
+variable and we will check the type for
+this num
+variable and run the command we will get
+the complex data type as the
+result now if you want to get the real
+part of this complex number you just
+have to write the command num.
+real and just execute the command you
+will get
+6.0 as the real part of this complex
+number here you can see you just quote
+the number in flo data type the complex
+number in Python are stored in flo data
+types whether it's the real part or it's
+the imaginary part now we'll see the
+imaginary part num. IM Ag and now you
+will run this command you will get
+7.0 here also you can see that the
+imaginary part is also stored as
+float in Python for complex
+number now we will perform different
+arithmetic operations with these data
+types first we'll
+mention arithmetic operations
+now we will assign numbers to the
+variables and perform different
+arithmetic operations for that we will
+assign 17 as a number to the variable
+num one num one = to
+17 and the second variable number two we
+will assign the number
+25 and now we will perform different
+arithmetic operations first we'll start
+with
+addition so we'll write the simple
+command that would be print num
+1+ num 2 and just run the command you
+can see the result as 42 it's as simple
+as that in Python you just have to write
+print and in round brackets just write
+the operation you want to
+execute now we will see the subtraction
+part we'll write print
+num 2 minus num 1 and execute this
+command and we'll get the result
+as8 now we will see
+multiplication
+print num
+one into num2 and execute this command
+and we'll get the result as
+425 now we will
+divide print num 2 divide by num one
+and execute this command and we'll get
+1.47 here you can see as we have
+assigned int values to the num one and
+num two variable we got the result for
+addition subtraction and multiplication
+as in data type only but for division we
+got at as
+float this is because python always
+gives the output for division in decimal
+numbers only just to have minimum
+accuracy loss so
+if you want to just get the output of
+the division as an INT value you just
+have to perform
+this
+print num two and 2/ signs and then
+number one and then execute the command
+you will get one as the output so to
+just get int as the output of the
+division you can use two
+slashes next command will see is to
+raise a number to another number so to
+just get 2 to the^ of 4 we'll write the
+command
+print
+to two ASC symbols and 4 and Just
+execute this command you will get the
+output as
+16 we go 2 to the^ of 4 by just using
+two s symbols now to get the remainder
+of the div Vision we just have to use
+the modulus
+symbol so for that
+print 4 modulus 2 and just execute the
+command you will get zero as the
+remainder you can perform the same
+operations on Flo numbers and complex
+numbers now we'll see an arithmetic
+operation on complex number so we will
+assign a complex number to a variable
+that would be g = 1
++ 5
+J and another variable we will assign
+the value 2 + 3 J and we will assign the
+operation I equal to
+g/h that is the vision and print the
+output and we'll execute the command we
+will get the following result for the
+division of two complex
+numbers now we will see type conversions
+in Python for that we will
+move there are mainly two types of
+conversions between numbers in Python
+first is using arithmetic operations
+that is implicit type conversion and
+second is using built-in functions that
+is explicit type
+conversion let's understand the concept
+of conversion with the help of Jupiter
+notebook so here we'll write first
+conversions first we will assign a
+number to a variable that would be a =
+to
+196 and we have seen in the previous
+examples that it's type is int now if we
+put this number into double quotes
+and now we'll check its type that would
+be
+type A and run the command we'll get it
+as string so in Python when we just put
+a number in double quotes it will see it
+as a
+string and to get this number as an INT
+we just have to use explicit type
+conversion for that we will write
+B equal to
+int
+a and now we will check its type
+type B and run the command we'll get int
+as the data type for the B variable the
+a variable is still the string data type
+and B variable has now turned as int
+data type and now to turn a as a flow
+data type we can write c equal
+to
+float
+a and check its type
+type c and run the command and here we
+can see that it has turned into the
+float data type so a is still the string
+data type but C has been converted the a
+variable into the float data type
+we can also convert the a string data
+type into complex data type just we have
+to write t equal to
+complex and in Brackets we have to write
+a and we can check its
+type and we
+can
+print the T complex number and we have
+just execute the
+command and we can
+see that the complex number is 196 + 0
+J and we can also check its type by just
+writing
+print type D and we'll run the command
+and we can see that the class is complex
+for the variable D we can Define the
+complex data type by different methods
+one of the method is we just have to
+write
+print complex and in round brackets we
+just have to assign both real and the
+imaginary numbers that would be 3 comma
+6 and just execute the command and here
+we go to a complex number that is 3 + 6
+J now we have seen the explicit type
+convergence now we'll see some implicit
+type convergence that is using
+arithmetic operations for that we will
+assign a float number that would be
+2.6 to a variable a = to
+2.6 and B = to 6 and we will assign an
+arithmetic operation that would be C =
+to A+
+B and print the
+output and execute the
+command by using just arithmetic
+operations we have seen that the
+addition of a float number and the
+integer number turns out to be a float
+number so now we have seen the implicit
+type conversion
+example now we will see the
+representation of binary hexade decimal
+and octal numbers in
+Python all the integer numbers can can
+be represented as binary hexadecimal and
+octal to represent it as binary in
+Python we have to prefix it by using 0
+small b or 0 capital B and for octal we
+can prefix it by using 0 small o or 0
+capital O and for hexadecimal we can use
+0 x or 0 capital x let's see this
+representation in Jupiter notebook first
+we'll write representation know binary
+hexad decimal and octal
+numbers
+now we will first see binary to decimal
+conversion for that we will first write
+0
+b 1 1 0 1 1 0 0
+0 and then we'll just run it and see 216
+as the decimal conversion of this binary
+number
+now we'll see the same for the octal for
+that we'll write 0 small o 12 and just
+run this
+command and we can see that it has
+turned 10 in the decimal number system
+for hexadecimal we will write 0 small
+X and 12 and just run the
+command and we can see 18 as the decimal
+conversion of the hexadecimal number
+system we can also use 0 capital x 12
+and just on the command we'll see 18 the
+same output as of 0 small
+X12 let's see some operations with
+fractions for that first we will comment
+fractions now we will import the
+fraction
+module for that we'll write
+from
+fractions import fraction
+SF and first I
+will execute the addition operation for
+fractions for that we'll write
+print
+f 1 comma 3
+just for the fraction numerator would be
+one and the denominator would be
+three now we'll write the operation
+addition and F the second fraction that
+would
+be okay we'll write the same only 1
+comma 3 and on execution of the command
+we will get 2x3 as the
+output we can also perform different
+operations okay we will just see the
+reciprocal of the fraction for that we
+will write
+print
+1 upon
+F 5A
+6 and just run the command here we can
+see the reciprocal function that would
+turn out to be 6X 5 now we will explore
+different number
+functions first one that would be we
+would explore would be
+absolute absolute function would turn
+any negative number into the positive
+number for that we'll just assign a
+number that would be x = minus
+9.8
+and we will just apply the absolute
+function
+ABS on the variable
+X and just run the command here we can
+see that has turned X = to - 9.8 to
+9.8 now we will see some different
+functions for that we will import the
+math
+module
+import
+math and we have different values stored
+in the math module for example Pi we
+will print the pi value
+print math. pi
+and run the
+command here we can see the value of the
+pi
+3.141592653589793
+we also have exponential value in math
+module for that we'll write the command
+print math. e and execute the command
+here we will get the value 2.718 2818
+2845
+9045 for the value of e in the math
+module
+now we will also see exponential to the^
+10 for that we will write the command
+print math do exp round brackets 10 and
+execute the command we will get the
+value
+22026
+465 we can also perform log
+operations for that we will write the
+command
+print and we will get the log of 1,000
+to the base of 10 for that we'll write
+math
+DOT log to the base
+10 the value would be 1,000 and we will
+execute the command and we will get
+3.0 we can also get the factorial by the
+math
+module we'll write print
+math do
+factorial factorial of
+6 and we'll execute the command and we
+go the factorial of 6 that is
+720 now if we want the square root of a
+number we'll write the command
+print math do
+sqrt and in round brackets we will write
+the number for which we need the the
+square root we'll write 25 and execute
+the command and we'll get
+5.0 this square root number gives the
+float number as its
+output and we can also find out the
+maximum numbers from a bunch of numbers
+for that we have to write the command
+max round brackets and the bunch of
+numbers from which you want the maximum
+value 1A 33a 50
+55A 7A 99 and just execute the command
+you will get the maximum number that
+would be 99 and if you want the minimum
+number you can write the command Min and
+in round brackets just write the bunch
+of numbers 1 comma 3A 66 comma 88
+comma
+7 and just execute the command you will
+get the menu number that would be one
+now we'll see the ceiling function for
+that we'll write the command
+print
+math do SE and in round brackets we'll
+write the number for which we want to
+use the sing function Min -
+43.5 and execute the command you'll get
+- 43 so what the sing function does is
+it would give the highest value or the
+greatest value for the number we have
+entered in the ceiling
+function now we'll see the floor
+function for that we'll write the
+command
+print bracket math.
+floor and we'll write the number for
+which we want to use the floor function
+minus
+43.5 and execute the command we will get
+-
+44 so the floor function will give the
+output value just
+below the or just the lowest value of
+the value entered by us in the floor
+function now we'll see the power
+function for that we'll write the
+command
+print math. p and in round brackets we
+will write the
+number two and the power which we want
+that would be six and just execute the
+command here we can see that two to the^
+6 we have got the output value is
+64 now we'll see some trigonometric
+functions first we'll see COS of X like
+python number method cos Returns the
+cosine of x radians for that we will
+write the
+command
+print math Dot
+C
+of0 and just run the command it will
+give one as the
+output so this method returns a numeric
+value between minus1 and 1 like which
+represents the cosine of the
+angle we will see another example for
+course for that we'll write
+print math do course and in Brackets
+we'll write the angle math
+do
+PI and we'll execute the
+command and we'll get the output as
+minus1 now we'll see tan trigonometric
+function so the python method 10 it
+Returns the tangent of X radians for
+that we will write the command
+print math do 10
+of angle zero and we will execute the
+command we will get 0 as output this
+method returns a numeric value between
+minus1 and 1 which represents the
+tangent of the parameter
+X we will also see another example for
+10 we'll write
+print math do 10
+math do PI by 4 and execute the
+command it gives us
+0.99999 that turns out to be
+1 now we will explore some random number
+functions for that we will write the
+command import
+random and import the random module
+now we'll see the first function that
+would be Rand range for that we'll write
+the command
+print random dot Rand range and in
+circular brackets we'll write the range
+from which we want the random
+number that would be 10 comma 20 and
+execute the command here we go 12 as the
+random
+number now we will Define a list that
+would be x equal to
+square
+brackets
+1
+2
+3
+4 and
+5 now we'll see another
+function that would be choice and it
+would give any random number from string
+list or tle so for that we'll write the
+command
+print random
+dot choice and in circular brackets we
+will write or we will pass any list
+string or tle here we will pass this
+list X and execute this
+command we will get the random number
+three with that we have come to the end
+of this session I hope it was
+interesting and informative if you liked
+it please let us know in the comment
+section below also do subscribe to our
+Channel and stay tuned for more from
+Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,124 @@
+hey everyone i welcome you all to
+another session by simply learn
+in this session we will learn about
+asp.net navigation bar
+this video will explain you about
+asp.net navigation bar and guide you
+through it
+let's look at what's in it for you in
+this session
+we shall begin with understanding what
+is asp.net
+followed by which we will look at what
+is navigation bar
+and finally we will look at a demo on
+how to create a navigation bar
+but before we begin make sure you have
+subscribed to our youtube channel and
+click down the bell icon so you never
+miss an update from simply learn
+watch the video till the end so that you
+don't miss the demo so without wasting
+any further time let's get started
+what is asp.net
+asp.net is a server-side technology used
+for developing dynamic websites and web
+applications
+it is the latest version of active
+server pages
+microsoft released asp.net in 2002 and
+had an extension dot aspx
+what is a navigation bar in asp.net
+navigation bar in asp.net is used to
+create a navigation header for a website
+or a web application
+it makes it simple for an application to
+browse
+asp.net has three navigation controls
+dynamic menus tree views and site map
+path
+dynamic menu displays the standard site
+navigation menu
+whereas treeviews displays a multi-level
+navigation menu
+and sitemap part displays
+a trail to the current page and linked
+to the previous page
+now let us look at a demo on how to
+create a navigation bar
+so we have opened visual studio 2019
+go to file
+new
+create a new project
+we'll select asp.net core web app model
+view controller template scroll down
+so select this template
+click on next
+provide the project name
+since we are creating a navigation bar
+so write the project name as
+navbar
+click on next
+and if you want to change the target
+framework you can change it here
+i'll keep
+the default one
+click on create
+so here you can see the project is
+successfully created
+let's click on view and open solution
+explorer
+so now let us run this and see what is
+the output
+here you can see the build has started
+here you can see it is running on
+localhost and
+this is the default nav bar
+which is created so what we'll do is
+we'll go and
+change this navigation bar
+so go back to visual studio
+go to solution explorer
+go to views go to layout.cshtml
+open this file
+and here you can see
+if you look look inside the header this
+is the navbar
+so what we'll do is
+we'll delete this nav bar
+so this is the small code which i have
+pasted here so i have created a class
+nav bar and provided the background
+color as dark
+and i haven't provided any link as of
+now and i have named it as simply learn
+and similarly i have created another
+class
+in this class i have created a drop down
+in this top drawn i have named it as
+courses articles and others
+so let us go and run this
+and see the output
+so this is the navbar which we created
+they simply learn home about and we
+created a drop down
+resources in this drop down we have
+courses articles and others
+similarly we have contact us and we have
+this search bar
+so this is the nav bar which we created
+so we'll go back to the code
+so here we have created
+another class
+navbar contact us and this is where we
+created the search bar
+so with that we have reached the end of
+this video like and share it if you
+found it interesting thank you for being
+here keep learning and stay tuned to
+simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,381 @@
+in today's video we are going to be
+dressing another question from someone
+in the Mastery course and this someone
+wanted to know how to adapt the regime
+filter to work on multiple time frames
+so if you're not aware of what a regime
+filter is it's covered in great detail
+in Andreas clanow's fantastic book
+stocks on the Move highly recommend that
+book if you haven't read it already it's
+one of my favorite trading books same
+with Unholy Grails by Nick Raj he uses a
+market regime filter in his trading
+systems as well this approach is best
+suited to stocks although it does seem
+to show promise in crypto and certain
+other markets if you're creative with
+how you apply it but the general concept
+is that the market needs to be trading
+above a higher time frame moving average
+before you start taking trades on a
+lower time frame so in this case we're
+on spy we're on the S P 500 market index
+we're on the one hour time frame and
+this moving average here is a higher
+time frame EMA right now it's set to
+four hours but we could set it all the
+way up to one week and now you can see
+that it's turning green when price is
+trading above this moving average and
+turns red when it is not the whole
+concept here originally is for long only
+stock market strategies to only trade
+when the wind is behind our back so when
+the market is trending upwards on those
+higher time frames and this script you
+see down here
+is the regime filter script adapted to
+show three different time frames so
+we've got the 240 minute time frame or
+the um four hour chart we have the daily
+time frame and the weekly and if I hover
+over these labels on the end we can see
+the actual EMA value there so what is
+more effective than using one market
+regime filter not necessarily three but
+if one indicator is good then several
+must be even better now I'm joking a
+little bit there because a lot of
+Traders do like to throw on a lot of
+indicators on their charts and it's not
+helpful but in this particular case this
+Market regime Builder could be useful
+especially on Lower time frames so if we
+go down to like the 15 minute chart here
+and you would adjust these higher time
+frame moving averages you could really
+make a simple rules-based objective
+method for determining your directional
+bias for day trading you know sometimes
+it's difficult to know which way to
+trade a market when you're using just
+discretion but with an indicator like
+this it's pretty pretty clear where the
+momentum is and which direction you
+should be trading in and as a little
+bonus at the end of this lesson I've
+implemented this new Pine logging
+feature we open up the pine logs will
+actually tell us how often the market
+trades above all of these higher time
+frame moving averages so if we go to the
+one hour chart again you can see we have
+a 54 chance that a bar will trade on
+this time frame this one hour time frame
+we have a 54 chance that the regime
+filters will all be green what that
+tells us is that the market likes to
+Trend upwards at least on this one hour
+time frame and at least since 2009 until
+today which is a decent sample size by
+the way we have 20 000 one hour bars
+that we're analyzing here to get these
+numbers so yeah interesting script here
+let's break down the source code uh the
+source code is not particularly complex
+and hopefully you guys find it
+interesting so let's open up the source
+code here and break down everything so
+I've already written out the code
+obviously to save time the first thing
+we're doing is getting our user inputs
+so we have three time frames here we
+have a moving average length which is 20
+by default now this isn't trading advice
+but obviously depending on the time
+frame you're trading these numbers will
+matter a lot so on a lower time frame
+you would want these higher time frame
+moving averages to be a lot closer to
+your trading time frame so if you're
+trading a five minute chart you might
+want the 30 minute hourly and and four
+hour time frames for example you want
+the regime filter to be more sensitive
+to short-term momentum if you're trading
+a short-term time frame and if you're
+trading a higher time frame like the
+four hour or daily you might want this
+to be the daily one week in one month or
+something like that same with the moving
+average length the lower the time frame
+typically the lower you probably want
+this number to be the higher the time
+frame you might want to extend it to 50
+100 or even 200 not 1200 that's probably
+a bit too much the next input is our
+market so this is the market we're
+referencing to get all of these EMA
+values you could get rid of this input
+and simply pass in the Sim info dot
+ticker ID into all of these security
+function calls and then you would just
+retrieve all of the market information
+for the market that you've loaded onto
+your chart but the whole point of this
+regime filter in its original conception
+is to trade it on things like individual
+stocks if I go to S P 500 here
+and we jump on to what looks interesting
+Netflix now we are plotting the s p 500s
+regime filters over the Netflix stock
+chart and so what this will tell us is
+when the broader Market is moving
+upwards
+um you can see that the regime filter
+Now does not match the price action I
+have on my chart because this
+information down here is referencing the
+S P 500 while all of this including this
+higher time frame moving average is
+referencing Netflix's price action and
+how you would typically use this regime
+filter is to only trade these members of
+the regime filter universe so in this
+case members of the S P 500 when the S P
+500 is trending upwards if you were to
+use this on crypto you'd probably want
+to reference Bitcoin on altcoins and if
+you're using it on something like Forex
+maybe you want to reference the dollar
+Index when you're trading dollar
+denominated pairs like euro dollar
+dollar Yen Etc but anyway let's go back
+to the S P 500 for now and finish
+breaking down the source code so before
+we get any of this information we're
+creating a custom security function that
+does not repaint so I've gone over
+repainting many times in the course and
+on my YouTube channel so go back and
+check those videos out if you are still
+uncomfortable with repainting but
+basically including this code here these
+little historical operator checks this
+check is checking the real time price
+information the real-time bar if the
+real-time bar is currently a real-time
+bar not a historical bar we reference
+that bar otherwise if it is a historical
+bar we reference the previous bar now
+don't ask me why this expression
+eliminates repainting it's just
+Blackmagic that the training view
+developers have decided to implement on
+this particular function and it works so
+that's all I know and so when you're
+using the security function make sure to
+include this code expression if you do
+not want your script to act differently
+on real-time price movements compared to
+historical price movements that's a big
+problem with uh strategy scripts in
+particular if your script does not
+perform the same on historical data as
+it does in real time then you're
+obviously getting dodgy back testing
+results which can lead to the
+development of systems that aren't
+profitable but look profitable on paper
+anyway you don't need to have this
+security function this Custom Security
+function I just implemented this into
+the script because it makes these lines
+of code a lot easier to read otherwise
+we would have six of these really long
+lines of code on these six variables and
+so to make the code more readable I've
+just implemented this this custom
+function which by the way is easy to
+just copy and paste into your own
+scripts and then you have your own
+non-repainting security function anyway
+moving on we get our EMA values for the
+higher time frame so to do that we just
+get the current time frames EMA this is
+what is called an expression a code
+expression and the security function
+requires us to pass in an expression
+that's why this is called exp short for
+expression and that's what these three
+are and these three are so for our
+higher time frame EMAs we are passing in
+the EMA expression and this will
+retrieve this value from this market and
+this time frame so EMA value one will be
+our first time frames EMA value
+ema2 will be the second and so on and
+same with our price values we're getting
+our first time frames closing price
+second closing price and third closing
+price and then to validate our regime
+filters for each time frame we simply
+check if each time frame's closing price
+is above its moving average and that's
+it that's all we need for a market
+regime filter now if we just wanted to
+have one color down here we could just
+simply add in a new bull variable here
+called regime filter equals regime
+filter 1 and 2 and 3 Etc passing those
+but for today's lesson the student who
+asked this question wanted to see all
+three separately so that's what we are
+doing here which obviously complicates
+the script a little bit not a lot
+there's a bunch of code here that looks
+scary if you're new to paint script but
+it's all just copy and pasted blocks of
+code so I'll just go over one of them
+and explain what's going on here I
+simply wrote this code out once copied
+it and pasted it three times and change
+the variables so that they don't
+conflict with each other so for the
+first regime filter I create two H lines
+which are horizontal lines that's these
+black dotted lines on my chart here and
+once we have two H lines if we assign
+them to a variable we can then use the
+fill function to fill between these two
+H lines and we can specify the color
+that we want to fill between those two
+lines so to get the color of our region
+filter to make it either green or red we
+simply check is regime filter 1 true in
+other words is the closing price of our
+first time frame above its moving
+average if so we want to fill the two H
+lines as green otherwise we want to fill
+it as red and then just to make it a
+little bit clearer what each ribbon here
+represents I've added in some labels
+these labels here tell us which time
+frame each ribbon represents that just
+makes it a lot easier to understand
+what's happening just at a glance
+without having to remember which ribbon
+is which time frame so to do this I
+create a persistent label VAR means it
+does not reset on every new bar on our
+chart and in fact because we delete the
+label on each previous historical bar
+you don't need these persistent variable
+labels so I'll get rid of them for now
+just to make the code a little bit
+easier to read let's save that this
+should change nothing there we go so
+we're creating a label
+it's set to n a and then we check if we
+are on the last bar loaded onto our
+chart then delete the previous bars
+label and draw a new label on the
+current bar the reason we need to do
+this is because if we were to run this
+script on a real-time price chart and we
+had a few bars print these labels would
+start to shift to the left and be drawn
+over the top or underneath these ribbon
+colors which obviously is not what we
+want we want these to stay on the far
+right so we delete old labels and create
+new labels
+the new label
+just has our time frame as its text so
+240 is this time frame it has a tool tip
+so if we hover our Mouse over it will
+tell us what the EMA value for that time
+frame is it has a transparent background
+color white text and the label style is
+to the left which just means that it the
+label looks like this
+however I've set the background color of
+the label to transparent so we don't
+actually see that but the text
+is to the right of the current bar and
+that's it that's the script
+um I've simply copy and pasted this
+three times I've changed the price value
+that we're drawing each label so this
+label is drawn at 0.5 which is here this
+label is drawn at 1.5 which is here and
+this label is drawn at 2.5 which is here
+and the H lines simply draw between 0
+and 1 1 and 2 2 and 3 and that gives us
+these even
+um this even scale for this particular
+indicator and that's it for this script
+uh just as a little bit of a bonus outro
+or conclusion here is
+some code using the new Pine script logs
+functionality so what we're doing here
+is we're counting how many bars past all
+three regime filters so if all three
+regime filters are true then total bars
+past is incremented by one we add up how
+many bars had all of these filters met
+if we are on the very first bar in our
+chart we use the log dot info function
+to plot a bit of text here that just
+says our analysis starts here so we can
+see at a glance what the very first bar
+that our script ran on so that was back
+in January of 2009 and then we check if
+this is the last bar on our chart we
+calculate the percentage of bars on this
+time frame where all of our filters were
+met so in this case that's four 54 of
+the time so we have an obvious bullish
+bias on this one hour time frame from
+2009 all the way till today so that
+tells me that if I was to be day trading
+the S P 500 100 on the one hour time
+frame I should probably favor long
+trades over short trades objectively the
+market likes to Trend upwards or the
+momentum likes to be to the upside at
+least with the settings we've inputted
+into this current script and then we log
+how many bars passed out of how many
+bars have drawn on our chart so bar
+index on the last bar will simply be the
+number of total bars on our chart and we
+add in the percent here so that we get
+all of that information we had 11
+173 bars out of 20 000 bars that passed
+all three filters and then I also drew a
+table here table Z or Z I don't know why
+I put a z on the end it's just it can't
+be called table because that's a
+reserved keyword so we can call this
+whatever you want but basically this
+table has one column with three rows so
+one column three rows it's set in the
+middle Center and we set each row to
+each time frame so so that we can see
+which time frame which ribbon applies to
+which time frame even when we go back on
+historical data now the table isn't 100
+accurate if you extend this too much it
+uh gets out of whack but you get the
+idea at least At a Glance we can tell
+the top one is the weekly middle one is
+daily bottom one is four hour anyway I
+hope you found this lesson interesting
+it's a pretty cool little application of
+the security function and higher time
+frame information I'll leave this video
+here thanks for watching good luck with
+your trading and I'll speak with you in
+the next lesson take care

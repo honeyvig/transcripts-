@@ -1,0 +1,532 @@
+hey Traders thanks for tuning in in
+today's video we're going to be going
+over some of the latest feature updates
+to the Pine script language so here is
+the official blog post from last week
+from the trading view team and we'll go
+through it it's quite long we'll go
+through all of these new features that
+have been added to pilescript but before
+we do that I want to mention that a
+Trader by the name of Mark sent me some
+code improvements to my monthly
+performance table so this performance
+table here is showing my month on month
+performance for a trading strategy I
+published a video on the YouTube channel
+explaining the source code of the script
+a few weeks ago and I published an
+update this morning that significantly
+improved the script so now you can
+change the text size of the table you
+can also change how many years worth of
+information display so if I set this to
+six now we have six years of information
+on the table and you can cycle through
+the different pages which will show you
+previous years worth of information so
+you don't have to have your chart
+cluttered with this giant table so I'll
+leave a link in the pin comment below
+and in the video description to descript
+if you're interested in this you can
+copy and paste the code from this script
+everything from here down into any
+strategy script and it will add this
+table to your script so yeah go and
+check that out if this is something
+you're interested in and you want more
+information from the strategy tester
+that isn't provided with the vanilla
+trading view system now to today's video
+content the pine script features that we
+have to work with now there's a few more
+we can play with so the first important
+update here is that we can now run more
+realistic back tests on hike and ashy
+charts so hiking ashy is a type of
+Japanese Candlestick pattern it's not
+based on open high low close price
+values directly it's based on an average
+I can't remember how the formula works
+but it it Smooths out price action a bit
+I've never actually used it in a trading
+strategy let me turn off the debug mode
+here and jump onto a hike and ashy chart
+some of you may have never even seen
+this this Candlestick type you can see
+that it Smooths out price action a lot
+more the Candlestick colors are a lot
+more sort of consistent than not based
+on the traditional bullish and Parish
+where the price closed higher or lower
+it's based on averages go and Google the
+high can Ashley formula if you're
+interested but the important thing the
+trading view developers have added to
+the strategy tester is the ability to
+run our back tests using open high low
+close values on hike and ashy charts so
+what this means is if you code a
+strategy script in hikanashi which I
+wouldn't recommend you do unless you're
+very experienced at trading because
+these are synthetic price charts they're
+not actually displaying the true price
+value on these Candlestick patterns but
+if you know what you're doing and you're
+familiar with hikanashi and you do
+happen to create a script that uses
+hiking ashy you can now turn this
+feature on so that your script will
+execute orders based on real price data
+so to demonstrate this let's grab a
+script off the channel I'll just jump
+over to
+the strategy lab playlist and find
+something let's just do the mean
+reversion strategy here I'll just grab
+the source code off the website for this
+copy
+create a
+new blank script add it to my chart and
+have a look at what's going on here so
+if I change this back to normal
+candlesticks and we find a trade here's
+one here so this mean reversion script
+has placed a limit order at this green
+line it got filled on this bars open and
+then we close the trade after price
+rallied so now if I change this to hike
+in ashy what the script is now doing is
+analyzing all of its logic based on the
+hiking ashy Candlestick information so
+for example if my script requires a
+lower close than the previous candle in
+order to place a buy limit order one ATR
+below the low which is similar to what
+this mean reversion system does the
+setup is a little more complicated but
+let's imagine that's what we're doing it
+will base all of that the ATR value so
+the actual true range of the past x
+amount of candles I think it's five
+candles in this script it will base that
+true range based on the hiking ashy
+Candlestick information which is not the
+same same as the Open high low close bar
+information because we're working with
+averages here so you can see that each
+Bar opens in the middle of the previous
+bar that's not a real opening price
+that's not where the candle actually
+opens and by extension we cannot trade
+that open we cannot place a trade in our
+broker to open a trade at a synthetic
+bar open price so what would happen is
+if I open up my strategy tester here and
+I make sure I've got this off these
+strategy results are useless they're
+completely useless because they're not
+based on real price information it's not
+realistic we couldn't trade the prices
+that this script is trading if we find a
+trade that it did take look at this one
+you can see that the script exited
+portrayed at this bar is open but if we
+go on to a normal bar chart you'll find
+that this was not the actual opening
+price of this bar and so now if I turn
+this option on this new setting let's
+have a look at this trade here there we
+go you can see that the bar actually
+opened here at my blue line and so now
+the script is entering and exiting
+trades using the underlying real price
+information that these hike and Ashley
+bars are based on so I'm not going to go
+into any more information about that I
+don't recommend using hackenashi candles
+for anything really to be honest unless
+you're very experienced to trading
+because they're based on synthetic price
+values it's just dangerous if you don't
+know what you're doing you'll be not
+experienced so for those of you who are
+experienced we have this new cool
+feature to work with it's off by default
+that's important to mention so if you
+are working with a high can actually
+script make sure to turn it on you can
+turn it on permanently in your script
+code using this parameter here so if I
+copy that into my
+strategy parameters up here equal true
+now that setting will always be on so I
+recommend doing that if you're working
+with high kanashi
+next up we have this really cool feature
+which I'm actually happy to see in a
+past update the trading view team added
+an option to set our plots to specify
+how to draw our information up here on
+the indicators status bar so some
+indicators have dozens and dozens of
+indicator values and they clutter up
+your chart sometimes you want to know
+what some of these values are some of
+them are moving average values some of
+these values are important to know but
+the majority of them usually aren't like
+we don't need to know what each price
+value of each ATR Keltner band here is
+and that's what these three numbers are
+this is the moving average price so
+let's say we want to keep the moving
+average price but we don't want these
+drawing we can just add this parameter
+display dot Pane and if I paste that in
+here and save my code you can see the
+values have disappeared from up here and
+they're only displaying on the chart
+pane now you can also display them only
+in the data window here if I set that to
+you
+have done a window now you can see
+they're not drawing on my chart at all
+but they are drawing in here well now we
+can do that same functionality with our
+user inputs so if I come up to my user
+inputs here
+um let's say we don't want to see Middle
+High we don't want that text parameter
+displaying in my status bar I can say
+here now displayed up none now if I save
+my code middle has gone away but we
+still have high drawings so let's copy
+this parameter here paste it onto this
+user input that should get rid of high
+as well there we go now we only have our
+indicator values showing in the status
+bar of our user inputs so that's
+actually a pretty cool feature because
+um it's not uncommon to have scripts
+that have lots and lots of user inputs
+and they can really clutter up your
+chart with unnecessary information so
+now we can turn these values off without
+having to go into the settings menu and
+turn off arguments turning this off will
+remove all of our parameters but
+sometimes you you want to display some
+parameters but not all of them so that's
+what this setting is for this new
+feature very cool stuff next up we have
+some new built-in variables to access
+instrument information so information
+about the Market we are trading so
+Sim info is used to get symbol info and
+there's a lot of parameters here to work
+well not a lot but a decent amount of
+quite important information here and the
+trading view team have added a few more
+so now we have country what else did
+they add
+we have sector industry and Country so
+this is more for stocks here I've just
+quickly created a label that is going to
+display this Sim info.country value on
+the last part of my chart there we go so
+spy is us if we jump over to
+Dax is it Dax I think is a German index
+yeah German Index this should say
+something German d e if I jump over to
+all ordinaries we'll have a u I'm
+guessing don't know why that is not
+working I don't know why is last didn't
+work just because this bar is active but
+anyway
+there we go Au so you can get the
+country code we can also get the
+industry so let's have a look at
+what industries something like
+apple is
+let's see what the label says
+telecommunications equipment okay what
+else do we have if we had
+um sector as well so let's have a quick
+look at that electronic technology
+sector
+so
+given the fact that these strategy tests
+that cannot perform a portfolio level
+back test meaning it can't backtest
+multiple markets simultaneously I don't
+really know what the point of this will
+be for most people normally you would
+use this as like a filter so that you're
+only trading certain sectors or or
+avoiding certain sectors but I guess
+it's interesting and useful to have
+access to this information hopefully
+this is trading view working towards
+expanding the strategy tester in the
+future to be capable of portfolio level
+back test but we'll see I'm sure if that
+does happen it'll be a long way away but
+anyway I digress let's go over the rest
+of these feature updates
+we can now disable alerts for certain
+orders in strategy scripts so here you
+can see they've disabled the alert for
+exits so normally if you come up to the
+alert box here and you select a strategy
+script
+it will now generate an alert whenever a
+order is executed strategy alerts
+trigger when the strategy executes an
+order but for whatever reason you may
+not want to trigger an alert for every
+order maybe you only want to enter
+trades and then manage the exit manually
+for example you could use a third-party
+API to enter automate your trade entries
+so you can detect a setup you like to
+trade on the markets you like to trade
+generate an order on your broker but
+then let's say you want to use
+discretion to manually manage that
+position and exit that position if you
+don't want to send an alert to your
+broker or you just don't want to be
+annoyed by having hundreds of alerts
+like I do up here you can use this new
+feature disable alert equals true
+now when the strategy script closes this
+open trade if I have set alerts on this
+script an alert will not be generated
+for this particular order but it will
+still be generated for this so disable
+alert is going to be off by default but
+if you turn it on you will not generate
+alerts for specific orders so that's a
+great addition for you automated Traders
+out there next up we have this
+interesting one here that I read over it
+says calculation change for maximum
+drawdown and run-up in strategies the
+calculation of Maximum drawdown and
+maximum run up so this is your max
+drawdown the maximum the system lost and
+Max run up is your max favorable
+Excursion what was the maximum profit
+you had on the table versus what you
+realized what you actually took out of
+the markets trading view have improved
+this these metrics to take into account
+the potential Capital that could have
+been achieved within a trade previously
+only the capital values at the entry and
+exit points were considered so I guess
+Max drawdown will be worse now on an
+open open trade basis so let's draw out
+a bit of price action here let's see
+this is price values let's say you enter
+long here and you exit your trade for a
+profit here previously it seems the
+strategy tester did not include this
+underwater period of time in your max
+drawdown calculation it only considered
+the entry and exit points so it would
+only count the max drawdown if the trade
+was closed for a loss and vice versa if
+you
+entered a long trade here and then
+exited your long trade here this period
+of time here would not be considered in
+your Max run-up and so these values
+would not correspond to their maximum
+potential value so training view have
+changed how this works so that it should
+more accurately calculate your max
+drawdown and Max run up for open Equity
+so personally when I'm Building Systems
+I'm more interested in the realized
+drawdown and realized profit but these
+are interesting and useful metrics to
+track in certain situations so I
+definitely recommend coming and reading
+these two articles they're quite
+important to know if you are using these
+metrics in your strategy development
+process next up we have support for the
+varip modifier in user-defined types so
+the VAR IP
+um keyword is similar to the VAR keyword
+so VAR keyword makes your variables
+persistent across all the bars on your
+chart so typically Pine script will
+reset all of your variables on a new bar
+unless you put this keyword in front of
+the variable name once you do this the
+variable will retain its value across
+all the bars on your chart until you
+force it to update so this is very
+useful for things like trailing stops
+for example you want your trailing stop
+to be persistent across all the bars on
+your chart you don't want to be
+resetting it on every new bar or it will
+never get hit so the VAR IP modifier is
+similar to that but it allows variables
+to retain values between each execution
+of the script on the same bar so each
+tick update
+and this keyword can now be applied to
+fields of user-defined types so here's
+an example a bit of code let's copy this
+over into the pane editor add it to our
+chart so we're looking at at uh this
+indicator here
+so what's happening here is we're
+defining a user-defined type with a
+counter in it one of these has the VAR
+IP keyword one does not they're both
+being incremented by one every time the
+script executes on the current bar but
+one of them uses the VAR IP keyword and
+one does not you can see this one this
+first value is adding one to itself
+every time the script executes and your
+script executes on a real-time bar
+whenever volume changes so a trade was
+executed at the current price or the
+price itself changes if either of those
+two things happen your script gets
+executed a second time and now we can
+use the VAR IP keyword Within
+the context of a user-defined type so a
+bit of a niche feature update here but
+I'm sure it'll be very useful for
+certain use cases moving on we have a
+pretty cool new feature here that I'm
+very keen to play around with and that
+is currency conversion rate request so
+we can now use the request dot currency
+rate function which allows us to
+retrieve the conversion rate from one
+currency to another this function
+requires two parameters from and two
+each being a three letter string code so
+this is very very cool I really like
+this one because
+it helps with particular use cases like
+strategy automation if you're a Forex
+Trader and you're trying to send orders
+to your broker it can be a bit tricky
+sometimes to calculate the position size
+to send to your broker for example if
+you're using auto view you need to send
+the order size along with your order to
+auto view to be executed on your broker
+if you're using pine connector you don't
+need to do this because Pi connector can
+calculate your position size inside
+metatrader but for a third party like
+auto view or certain cryptocurrency
+Automation Services you'll need to
+specify your order size your position
+size and this new request.currency rate
+really simplifies that process for
+example in my ultimate pullback
+indicator
+I have a block of code here first of all
+look at how many parameters are in this
+indicator this UPI script I need to go
+through and use that new feature to
+convert all of these to display.num
+so that I can remove all of this clutter
+so I'm looking forward to doing that to
+a lot of my scripts actually if I come
+down here to determine position size for
+auto view
+this is the code I had to write out in
+order to get the correct currency
+conversion you can see there's at least
+seven lines of code here just to get the
+currency conversion rate so that when I
+pass in my account size into auto view
+here
+that it converts my position size
+correctly using my account currency or
+the denomination of my currency in my
+broker compared to what's on the chart
+so yeah this newrequest.currency rate is
+going to be very handy for that
+particular use case and last but not
+least the final feature update listed in
+this blog post is new functions in the
+array namespace four new functions were
+added for playing with arrays a redot
+first Returns the first element of the
+array last returns last element every
+returns true if every element of the
+array is true otherwise it returns false
+and sum returns true if at least one
+element contained in the array is true
+some quality of life updates for the
+array namespace here and that about does
+it for today's video it was a bit longer
+than I expected there are some pretty
+major not major but significant feature
+updates here they're not just little
+things so it's really cool to see
+trading views still expanding the pan
+language that keeps me in a job for a
+bit longer and it helps us to write
+better scripts so it's a win-win for
+everyone it makes training view more
+useful it makes coding in pain more of a
+pleasure still has a long way to go in a
+lot of ways particularly in the realm of
+strategy development and back testing as
+far as trading tool development goes
+like indicator development setup
+detection it's a pretty amazing language
+but as far as strategy testing goes it's
+lacking significantly in a lot of ways
+that I hope they improve in the future
+one big thing for me is portfolio level
+or basket testing being able to test
+multiple markets or even just run your
+script on multiple markets for example
+how amazing would it be if we could
+write a script that analyzes markets for
+setups and we could just plug it
+straight into the stock screener or the
+crypto scanner I can't believe 20 of you
+haven't added that feature yet it would
+be great to be able to write our own
+filters to scan the markets to detect
+certain conditions and setups there's
+probably third-party tools out there
+that allow us to do that but it would be
+great to have that all built into
+pinescript for now that will do it for
+today's video I hope you found these
+features interesting let me know in the
+comments what you plan to do with some
+of these feature changes and updates
+because I'm genuinely very curious to
+see what you guys plan to do with all of
+this anyway with all that said I'll wrap
+this video up here thanks for watching
+if you want to learn more about
+poundscript you can check out the video
+description below check out my links all
+that YouTuber stuff I have to say hit
+the Subscribe button hit the like button
+name your first child after me all of
+that helps the channel so appreciate
+your support have a great week ahead and
+good luck with your trading take care

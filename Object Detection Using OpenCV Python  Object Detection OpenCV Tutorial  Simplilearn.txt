@@ -1,0 +1,591 @@
+foreign
+there has been a significant and
+successful expansion of computer vision
+research in recent years much of this
+success can be attributed to the
+adoption and the adaption of machine
+learning
+While others can be attributed to the
+invention of innovative representation
+and models for specific computer vision
+issues object detection is the one area
+that has made significant Improvement
+hello everyone I am mayank and welcome
+to Simply learn today we will take you
+through a hands of lab demo of how to do
+object detection using opencv for
+amazing videos like this subscribe to
+our YouTube channel and press the Bell
+icon to stay updated so
+in today's session we will discuss what
+opencv is and moving ahead we will see
+what is object detection and at the end
+we will do a hands of live demo of
+object detection using opencp in fact
+study says there will be more than 2.3
+billion job openings in the field of
+artificial intelligence and machine
+learning by 2023 but you can beat the
+curve with a professional certificate
+program in Ai and machine learning
+co-sponsored by Purdue University and
+IBM which is designed after simply an
+intense bootcamp learning model AI
+animal certification code this course
+covers tools and techniques like python
+tensorflow Keras and ltk and many more
+along with industry project like social
+media by Twitter delivery service
+provider by zomato transportation
+service provider by Uber and many more
+Amazing projects so choosing this course
+you can get hired on renowned companies
+like Google Amazon LinkedIn and Adobe
+and an average salary high cost 70
+percent so what are you waiting for join
+the AI and ml certificate program and
+Excel your year in artificial
+intelligence the link is in the
+description box below before starting
+let us have a simple question to brush
+up your knowledge so opencv stored RGB
+pixels in word order gbr RGB vgr and vrg
+please answer in the comment section
+below and we will update the current
+answer in the pin comments or you can
+pause the video give it a thought and
+answer in the comment section before we
+move on to the programming part let's
+discuss what opencvs and proceed further
+for the same
+opencv open source computer vision
+library is an open source computer
+vision and machine learning software
+Library it is written in C plus plus but
+has a binding for various programming
+languages such as python Java Matlab
+opencv was designed with a goal of
+providing a common infrastructure for
+computer vision applications and to
+accelerate the use of machine learning
+perception in commercial product opencv
+is widely used in a variety of
+Industries including robotics automotive
+and Healthcare it's supported by a large
+community of developers researchers and
+users who contribute to its development
+and provide supports to its users it is
+supported by a large community of
+developers researchers and users who
+contribute to its development and
+provide supports to its users so now
+let's see what is object detection
+object detection is a computer vision
+technology that involves identifying and
+localizing the object of interest within
+an image or a video it is a challenging
+task as it involves not only recognizing
+the presence of an object but also
+detecting its precise location and size
+within the image or video object
+detection algorithm typically used deep
+learning techniques such as CNN to
+analyze the image or video for
+identifying the objects these algorithm
+can also determine the boundaries of the
+object by drawing a bounding box around
+them so after understanding what is
+object detection now let's move on to
+the programming part so this is a kernel
+python kernel here we will change this
+name
+so here I will write object
+detection
+demo
+okay
+so
+first we will import some major Library
+like opencv so for that we will write
+import CV2 and the next one is import
+matplotlab
+dot Pi plot
+as PLT
+so why we are writing PLT because we
+can't write again and again matplotlib
+dot pipelot okay it's a long one so we
+can write a short form PLT
+so yeah
+so let's run this
+so what is opencv opencv is an open
+source software library for computer
+vision and machine learning opencv full
+form is open source computer vision
+Library it was created to provide a
+shared infrastructure for application
+for computer vision and to speed up the
+use of machine learning perception in
+consumer products opencv has a BSD
+license software make it simple for
+companies to use and change the code
+okay so there are some predefined
+packages and libraries that make our
+life simple and opencv is one of them
+second one is matte broadly matte
+bloodlib is a easy to use and an amazing
+visualize library in Python it is built
+on numpy array and designed to work with
+broader sci-fi stack and consists of
+several plots like line bar scatter
+histogram and many others okay so moving
+forward we will import our file okay so
+here I will write config
+file
+equals to this is our file name SSD
+underscore
+mobilenet
+to V3
+large
+Coco
+22.
+14 dot BB
+okay
+so you can find this file in the
+description box below
+Frozen
+model
+question
+so I'll explain you
+every single thing
+inference
+graph
+dot PB okay
+so let me run it first
+mobilenet as a name applied the mobile
+net model is designed to use in mobile
+application and its tensorflow first
+mobile computer vision model mobile net
+used depth wise separable convolutions
+it significantly reduces the numbers of
+parameter when compared to the network
+with regular convolutions with the same
+depth in the rights this result in the
+lightweight of the deep neural network
+so mobilenet is a class of CNN that was
+open source by Google and therefore this
+gives us an excellent starting point for
+training our classifiers that are
+insanely small and insanely fast okay so
+what is this large Coco this is a data
+set Coco data set like with applications
+such as object detection segmentation
+and captioning the Coco data set is
+widely understood by the state of the
+art of neural network its versatility as
+a multi-purpose scene variations of best
+to train a computer vision model and
+Benchmark its performance okay so what
+is Coco the common object in context is
+one of the most popular large scale
+labeled images data available for public
+use it represents a handful of objects
+we encounter on a daily basis and
+contains Imaging notations in 80
+categories I will show you the
+categories I have with over 1.5 million
+object instances okay so modern day AI
+driven solution are still not capable of
+producing absolute accuracy and result
+which comes down to the fact that Coco
+dataset is a major Benchmark for CV to
+train test and polish refine models for
+faster scaling of The annotation
+Pipeline on the top of that the Coco
+data set is a supplement to transfer
+learning where the data used for one
+model serves as a starting point for the
+another so what is frozen Insurance
+graph like freezing is the process to
+identify and save all the required
+graphs like weights and many others in a
+single file that you can usually use a
+typical tensorflow model contains four
+file and this com contains a complete
+graph okay so forward let's create one
+model here I will add modern
+CV2 dot DNN
+model
+chosen
+and then
+config file
+so here I am giving the parameters two
+parameters like frozen model and config
+file
+score here yeah you run it first
+okay there is error written
+okay so either this cv2.dnn detection
+model returned as result
+with an exception set
+the question comes what is the meaning
+of detection model or DNN detection
+model for this class represent the high
+level API for object detection networks
+detection models allows to set
+parameters for pre-processing input
+image detection model creates net from
+file and with trained weights and config
+sets in processing input runs forward
+pass and return the result detections
+okay moving forward let's set the class
+levels
+class
+labels
+file name
+txt
+I will put this file on the description
+box below you can download from there
+open
+file name
+first labels
+the strip
+so here I created one array of name
+class labels so this is the file name
+what I am doing I am putting this label
+file into this class label okay so here
+if I will print
+class labels
+so these are the 80
+categories in the Coco data set
+okay this person bicycle car motorbike
+airplane bus train these all are the 80
+categories
+I will put this file label.txt in the
+description box below you can download
+from them
+okay fine
+so let's print the length of the Coco
+data set or you can see class labels
+it is 80 as you can see I have already
+told you
+the length will be 80.
+so here let's
+set this some model input size scaling
+mean and all so I will write here model
+Dot
+set
+put
+eyes
+320 comma 20.
+set
+input
+scale
+1.0
+127
+0.5
+okay I will explain you don't worry
+model dot set
+import
+mean
+127.5
+comma 127.5
+comma 127.5
+okay and then model
+dot set
+to web
+B
+will be
+what is set input size
+okay
+so set input size is a size of new frame
+the shape of the new blob Less Than Zero
+okay so this is the size of the new
+frame the second one is set input scale
+the set input scale is a scale factor of
+the value for the frame
+or you can say the perimeter will be the
+multiplier of the frame values or you
+can say multiplier for the frame values
+okay so at input mean so it set the mean
+value for the frame the frame in which
+the photo will come the video will come
+on my webcam will come so it set the
+mean value for the frame or the four
+parameters mean scalar with the mean
+values which are subtracted from the
+channels you can say and the last one is
+set input swap RB so it set the flag
+swap RB for the every frame we don't
+have to put every time a single frame
+for a particular image it will be set
+the true for the all the images okay so
+parameters will be swipe I'll be flag
+which indicates the swipe first and the
+last channels so moving forward we will
+put one image
+M read
+y dot jpg
+Dot
+I am sure
+so this is the size of 320 by 320 okay
+so first thing is
+you can download this the random picture
+from the Google I took from Google
+itself so now what we will do
+we will set the class index
+the confidence value
+box is the boundary box which I will
+create for that particular person cycle
+motorbike and the car
+okay
+because to model
+kept
+the confidence threshold
+threshold is used for
+if my model will confirm it's the
+particular image which is detecting is
+correct it will print the name
+okay
+so let me print
+pass
+class index is coming one two three four
+okay so one means person
+two means bicycle
+3 means car and four means motorbike
+this is the class index index for
+particular level what I will do I will
+print the boxes
+font
+here
+equals to 3
+and the font equals to CV2 Dot
+font Hershey
+again
+for
+class
+plus index and then
+confidence and the boxes
+x dot atom
+confidence
+pattern
+box the boundary box
+okay
+and I will write here CB2 dot rectangle
+to make the rectangle
+set the image
+and boxes
+I've
+comma 0 comma zero
+this is the color of the box and this
+will be the thickness
+okay then I will write CV2 dot put
+text
+image then
+first labels
+I will write class
+index minus 1
+because always index start with zero
+that's fine and the boxes
+zero
+and
+comma boxes
+and
+40
+okay
+and comma
+scale
+assume font
+scale
+okay
+color
+question
+this will be the text column
+0 comma 255
+comma 0
+and the thickness
+let me run it
+I am sure
+then CV2 dot CBT
+color
+then
+comma CV T2
+dot color
+then vgr
+to prg
+that is why we wrote
+swap RB equals to true because every
+time we will convert BGR to brg
+sorry
+GB
+RGB so we don't have to write again and
+again it will convert all the files into
+RGB okay run it
+okay as you can see the motorbike is
+coming
+bicycle is coming the person is coming
+the card will come the car is coming
+okay so it's detecting the right
+for the image now we will do this for
+the video and for the webcam
+we are done with this image one and then
+now I will write here
+okay
+so this is we'll do for the video
+for the video I will write here cap
+equals to capture
+you can write any name so CV2 Dot
+video
+capture
+so you can take any random video I took
+this pixels
+George
+you can comment down
+share the link
+before
+F dot is open
+so here I will add cap
+equals to
+be 2
+sorry CV2
+Dot video
+capture
+0.
+0 and if not
+cap
+dot is open
+then
+and raise
+output
+error
+and
+open the video
+and open the video
+here everything will be the same font
+scale
+equals to 3
+okay I want
+equal to CV2 Dot
+font
+e
+okay so here I will write while true
+from a frame
+equals to cap dot sheet
+this for the reading of the file
+the same I will write class index
+comma confidence
+from a boundary box
+question model
+dot detect
+name
+and the confidence
+threshold
+0.55
+okay everything is the same
+we did before so here I will print
+class
+index
+okay
+so here I will write if
+and
+the class index
+does not equals to zero
+then what to perform is here I have to
+add 4
+class index
+comma confidence
+comma boxes
+and zip
+Plus
+x dot
+flatten
+flatten is a layers
+okay
+confidence
+flatten
+view box
+and if
+class
+index is greater than equals to 80.
+then
+what to do then I will copy from here
+okay the same thing I have to write here
+so here I will write CV2 Dot
+I am sure
+this will be the return in the frame
+object detection
+by simply learn
+and frame
+so if CV2 Dot
+weight key
+to
+and 0
+f of x
+equals to
+Ord
+Q
+okay
+then
+here I will write Brink
+will you break when
+and get into two the weight key will be
+2.
+okay I will tell you what is the weight
+key
+so here I will write cap dot release
+and CV2 Dot
+destroy
+or Windows
+okay
+so now let me run
+it's here there will be error okay
+modules
+we run it again
+activate keys
+okay
+so video is here
+the video is here as you can see see
+bicycle the person the person the bus
+car traffic light the person person so
+it our object detection for the video is
+coming right okay person
+okay person traffic light bus
+this is how you can do for the video
+okay
+so now let's we will do for the webcam
+live
+so this is for the video so
+if
+we want to do for the webcam with
+okay so we need to just change
+one one thing only we have to change
+instead of giving the file we have to
+write one here
+okay the rest will be the same
+got it so I have to just shut down my
+webcam
+so
+let me shut down the webcam and get back
+to you
+so as you can see
+this is a 320 by 320 box so
+so this is coming right okay so I if I
+will show this the mobile phone is
+coming right now okay so this is how you
+can do the correct object detection okay
+so if you enjoyed this video
+and if you want this full code how to do
+so you can comment for the same
+okay if you want this full code you can
+comment for the same one code and if you
+have any queries related to python
+machine learning you can comment for the
+same
+so if you enjoyed this video please do
+subscribe to our YouTube channel and
+press that Bell icon to never miss any
+update from Simply learn till then thank
+you and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

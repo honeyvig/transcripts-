@@ -1,0 +1,132 @@
+hello everybody
+so today we will be discussing about
+how to basically install mobo db
+inside your macbook
+many people today use macbook and
+there's a common question we receive
+like how to do the necessary setup
+it is very simple
+first of all
+you have to
+go back to your terminal
+okay
+and inside this terminal to just type
+the command name for
+brew
+space update
+number one
+in case
+if you do not have a preview
+i would like to request you
+that you
+first of all try to install the brew
+first
+okay so make sure that you install the
+grid first
+and in case if you do not have the
+success or the privilege available to
+you so you first use sudo command before
+to make it possible
+okay number one so you have to just say
+brew update
+well
+next step while the brew update is
+happening next step will be you have to
+use the same command called sudo in case
+if you do not have a privilege
+we can use sudo space brew
+space
+install space
+mobile
+db
+so brew installed mongodb that is the
+first command you need to type it
+once
+you say pre-installed mongodb the
+mongodb will get installed in your
+system it will take some time
+depends on your intent speed once it is
+downloaded then in next step what you
+have to do you have to basically go back
+and create a new folder where because
+since it is a nosql database so it has
+to have some folder in which
+you have to
+provide the location where the data will
+get stored
+so after downloading you have to create
+a db directory
+this is where the files or the
+mobile data files will actually stay
+you can create
+this directory in the default location
+by running this call mkdir
+okay space hyphen p
+and say slash
+data slash db
+i'll be
+clear and also you have to make sure
+that you have
+the proper right permission because in
+macbook this is one of the very very
+common challenge
+okay you do not have a permission so
+make sure that the data db have a
+correct flight permission
+so in order to do this you have to use
+this command called sudo
+space
+okay ch1 and after that you can say
+hyphen r
+and then
+you have to use
+id
+space hyphen
+um
+okay and then you have to use slash
+data slash tb so like this you'll be in
+position to give the permission so it'll
+ask you the password post that you have
+to give the password whatever the
+password of your macbook it is
+and that's it
+and once it is ready
+your mobile db is all set
+and to start this mongod or mongodb you
+have to start the mongod as a server
+so if i just have to start so you have
+to start with this
+ d
+i'll be clear now so mobody then after
+after you hyphen iphone db path
+after that you have to give the standard
+sign slash data slash db
+you hit enter and you can see now your
+mobile database is now
+starting up and is now waiting
+for your
+ client to get connected to
+so you have to open the other terminal
+parallely
+i'm saying
+new tab
+and here we are just typing
+and there we go you
+are connected successfully
+just type show
+dbs
+and you are done so friends it is a very
+simplified way of how the mongodb can be
+installed
+into your
+macbook very very simplified steps i
+told you there are other options are
+also available but this seems to be more
+better i would recommend to use this
+step to make your mongodb installed in
+your in
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

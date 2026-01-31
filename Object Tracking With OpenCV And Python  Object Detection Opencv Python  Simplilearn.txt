@@ -1,0 +1,753 @@
+foreign
+of computer vision the ability to
+accurately track objects within image
+and videos has become a crucial task
+with numerous applications from
+surveillance systems to autonomous
+vehicles object tracking place a pivotal
+role in understanding and analyzing
+visual data and when it comes to
+tackling this challenge in Python one
+powerful tool stands out is opencv
+opencv short for open source computer
+vision library is a popular and widely
+used open source library that provides a
+plethora of functions and algorithms for
+image and video processing with its
+comprehensive set of tools opencv offers
+an extensive range of capabilities for
+object tracking making it a go to choice
+for researchers developers and Hobbits
+alike the process of object tracking
+involves locating and following a
+specific object as it moves throughout a
+sequence of frames in a video or images
+opencv leverages a variety of techniques
+to accomplish this task including motion
+analysis feature extraction and machine
+learning based approaches these
+techniques enable the system to detect
+and track objects based on their
+appearance motion or even both in this
+tutorial we will delve into the
+fascinating world of object tracking
+using opencv in Python we will explore
+various methodologies and algorithms and
+if you love to watch these types of
+videos please subscribe to our simply
+learn YouTube channel and hit the Bell
+icon to never miss any updates from
+Simply learn
+according to recent studies Am Machine
+learning related job postings have
+increased by 344 percent in the past
+five years companies across Globe are
+actively seeking professionals who can
+harness the power of data and build an
+intelligent systems and the average
+salary is 150 000 in the US and 15 lakhs
+in India become an expert Ai and machine
+learning professional with this a and
+machine learning bootcamp in
+collaboration with Caltech which will
+help you advance your career as an anml
+specialist this a and machine learning
+bootcamp includes live classes delivered
+by industry experts answer Labs industry
+relevant projects and master classes by
+Caltech professors this a and machine
+learning bootcamp provides caltex ctms
+academic progress to help you accelerate
+your data science career
+statistics python machine learning deep
+learning natural language processing and
+supervised learning are all included in
+the air and machine learning bootcamp
+caltex a and machine learning bootcamp
+is ideal for those looking for a
+competitive advantage in the age of new
+Cutting Edge Technologies the curriculum
+provides a thorough grasp of ai-based
+Technologies like machine learning NLP
+deep learning speech recognization
+reinforced learning and other topics
+enroll now and analog exciting a and
+machine learning opportunities the link
+is in the description box below so
+without any further Ado let's get
+started over to our training expert so
+hi there let's start with the
+object tracking using opencv python so
+in this I have this folder I have just
+opened this folder named tracking object
+in this I have one folder name at DNN
+model on that I have classes dot txt
+these are the person bicycle car
+motorbike the object you want to track
+okay and there is one YOLO V4 CFG what
+is
+YOLO V4 CFG okay so CFG this model
+definition files include Network
+definitions hyper parameters and anchor
+settings a template of this file can be
+found in the darknet OR CFG YOLO
+installation directory
+okay so this file must match the weights
+file
+this YOLO V for weights so what is YOLO
+V4 weights so like all other models
+in the YOLO family the YOLO V4 model is
+used for object detection object
+detection problems are where you need to
+identify where particular objects are in
+a given image or video or in webcam
+okay
+so these files I will put this in uh you
+know
+so these are the two videos in which we
+will detect the object and I will put
+these DNN model files in a drive and you
+can download the files from the
+description box below okay so I will
+here
+start with the object detection so here
+I will
+create a new file name
+object
+detection
+okay dot py
+okay
+so in this I will first import
+cd2
+okay then
+import numpy
+as NP
+so we are using visual code Studio you
+can use your you know favorite personal
+ID okay so what is
+CV2
+so opencv has a function to read video
+which is CV2 video capture we can access
+our webcam using pass 0 in the function
+parameter if you want to capture CCTV
+footage then we can pass rtsp URL in the
+function parameter which is really
+useful for the video analysis
+so this opencv developer chose when they
+created The Binding generators
+okay
+so the module import you can import the
+module using CV2 only
+and this numpy as NP
+so NP is nothing we wrote numpy is in
+short form and numpy can be used to
+perform a wide variety of mathematical
+operations on array it adds powerful
+data structure to python that guarantee
+efficient calculation with arrays and
+matrices
+and IT Supplies an enormous library of
+high level mathematical function that
+can operate on these arrays and matrices
+okay uh numpy at support for the large
+multi-dimensional array and matrices
+along with the large collection of high
+level mathematical functions
+okay
+so let's proceed further
+so here I will create one
+function name as object detection so I
+can use it in the tracking file okay so
+here I will add class
+I will write here
+object
+detection
+so here def is used for the Define of
+function
+in it
+self
+weights
+path equals to
+DNN
+slash model
+slash YOLO V4 this file
+okay this value
+see where is the path of the file and
+the DNN model folder there is one file
+YOLO V4 weights okay dot
+weights
+comma CFG path
+equals to
+DNN
+model
+slash YOLO V4
+dot ch
+okay
+so
+here I will like self
+Dot
+nms
+threshold
+was to
+0.4
+then self
+dot I will write here confidence
+threshold
+equals to 0.5
+okay then self Dot
+image
+size equals
+08
+so
+what is nms threshold
+so
+so it is used for the object detection
+we can easily process the images as well
+as the videos to identify the object
+faces
+and This Confidential threshold
+so it is a set of corresponding
+confidences like a box is a set of
+bounding boxes you can say
+a threshold used to filter Boxes by
+confidences in this case
+okay and these comes under the YOLO
+model
+so moving forward let's load the network
+yeah
+and let's load the network so I will
+write here Network
+CV2
+Dot
+DNN Dot
+read
+net
+it is a function of reading the network
+or CB2 the weights
+path then CFG path
+okay
+and here we will enable GPU queue. so
+for that I will write Network
+Dot
+set
+variable
+back end
+CV2
+dot DNN dot DNN
+back end
+quota
+okay
+then
+I will write here Network
+then dot set
+preferable
+Target
+then CV2 Dot
+DNN Dot
+then again DNM
+Target
+okay then Cuda
+then this is nothing we are just
+enabling the GPU queue okay so here I
+will write self dot model
+equals to CV2 dot DNN
+detection
+model
+net
+okay
+so here I will write Network
+so moving forward let's set the classes
+as a cell so self dot classes
+goes to empty array
+okay itself
+I think
+and self Dot
+load
+class names
+indentation error will come
+so self
+Dot
+colors
+equals to NP Dot
+random
+dot uniform
+then
+0 comma 255 comma the size will be
+80 comma 3.
+okay this type of project you can use in
+your resume or on your project you can
+show
+case in your University or College
+okay then self
+dot model Dot
+set input
+params
+then size
+equals to
+self
+dot image size
+then self dot image
+size
+comma scale it to
+1 by 255
+okay
+so
+here we will load the class names so for
+that
+I will write here
+DF
+load
+class names
+self
+comma
+classes
+path equals to
+where is the class path so again I have
+to go in DNN model
+then again class
+okay so here I will write
+DNN
+model
+slash
+classes Dot pxt
+okay
+then with open
+classes
+but
+do read format
+as
+as file
+object
+so for classes class names
+in file
+object
+dot read lines
+and we already know what is in the
+classes.exe these are the all the
+objects files okay 80 objects this is
+known as a quality data set you as you
+can see
+so
+read lines
+classes class
+name
+equals to
+class name dot strip
+then self Dot
+classes dot open it will append with the
+class name
+okay
+then here I will write just take care of
+these indentations in Python
+self dot colors
+than equals to NP dot random
+Dot uniform
+uniform
+here I will give 0 comma 255
+comma
+size
+question
+80 by 3
+okay then return
+cell Dot
+classes
+so here I will add this
+detect
+then self
+comma frame we will trade
+then it will return
+cell dot model
+Dot detect
+frame comma nms threshold
+threshold
+equals to
+sell
+Dot
+nms
+threshold
+okay then I will write here
+cons threshold
+confidence threshold
+equals to
+self Dot
+confidence
+ratio
+okay
+so
+so let's create one more file of the
+tracking
+so I will write now name your tracking
+dot p y
+so in this file what we I will import
+CV2 as we discussed we know what is CV2
+then numpy
+as NP we already know what is number
+from
+object
+detection
+port
+what was the function name
+this let me copy it
+and paste it here
+okay
+okay this
+yeah
+so import
+okay let me rename this
+uh the object detection I guess but it
+will work later on we can do
+and here I will import the math function
+so here first we will initialize the
+object detection to OD to the shorted
+form
+the
+okay
+then I will write cap capture
+foreign
+capture
+equals to CV2
+Dot
+video capture
+then
+first we will try in this video or
+this video
+okay so let's take first this pixels
+so I will write here you can take any
+type of video
+pixels
+Dot
+MP4
+okay then here we will initialize the
+count so count equals to zero
+and there's Center
+points
+previous frame
+tra
+and then tracking
+objects
+question
+okay my bad
+and track
+ID
+equals to zero
+then here I will write the small
+function while
+true
+then the rectangle or the frame
+equals to capture
+capture dot read
+okay if you will pass here in this video
+capture if you will pass here zero it
+will open the webcam of your laptop
+or your PC webcam
+and here I will write
+count
+plus equals to 1.
+okay
+not
+then
+okay
+so
+let me add the point for the current
+frame
+so here I will at the center
+points of the current frame
+okay
+then
+here
+here we will detect objects on frame for
+that I have to write class
+IDs
+of a scores
+boxes
+goes to
+audited
+frame
+then for
+box
+and boxes
+X comma y
+comma W comma h
+right like this
+for the better visual then box
+okay
+so here I will write c x
+question
+in it
+then X
+plus
+X plus weight
+divided by 2 okay x axis plus X is
+divided plus weight divided by 2
+then
+then here I will let C for the Cy
+in it
+y plus y Plus
+height
+because
+y point will be like this from like this
+and axis will be like this that's why we
+added the width to the X and the height
+to the Y
+okay divided by 2.
+so Center
+points
+current
+frame
+dot app and
+to the
+c x comma
+C1
+okay
+so here CV2 dot rectangle
+to the frame
+comma then X comma y
+come up
+X
+Plus
+width then y
+plus height okay
+then
+I will add one more
+zero comma 255 comma 0
+comma 2.
+and remember that only at beginning
+We compare previous and the current
+frame okay only at the beginning if
+count
+equals to 2
+that's for point
+in Center
+current frame
+4 point
+2
+in
+Center previous string
+then distance
+equals to
+math
+dot I plot
+I bought
+of pt2
+0
+minus PT
+0
+then pt2
+1
+comma PT
+1. okay these are the points
+so if I will write here if distance
+is greater than 20
+these are the 20 points so tracking
+objects
+track
+ID Professor PD
+okay
+I will try to
+like
+yeah
+and the track
+ID
+plus equals to 1.
+or else
+tracking
+objects then copy
+objects Dot
+copy
+it's a copy function it will you know
+drag and copy the particular object
+here I will write the center
+of points the current frame
+copy equals to
+Center
+parts of the current frame dot copy
+okay
+that's for objects
+ID
+comma
+in checking
+objects
+something
+copy
+dot items
+object
+s
+equals to false
+then for
+point in Center
+okay
+when the point will be in Center that
+the center points of the current frame
+copy
+it again
+then
+here the distance
+equals to
+math
+Dot
+High plot
+zero
+PT 0
+then here I will write comma
+1.
+1 minus
+DT one
+okay
+so here I will update the ID's positions
+so for that I will write if this stands
+is greater than 20
+then
+tracking
+objects
+then
+objects ID
+equals to PD
+it's objects
+what's happening
+okay then object
+object exist
+question two
+two
+and if point in Center
+points
+current
+frame
+press enter
+points of the current frame dot remove
+D okay here then continue if it
+means the same
+okay and here I will remove the ID which
+are the lost so if
+not
+object axis
+then tracking
+objects dot pop object ID
+okay
+and here
+I will
+add new IDs which are found for that I
+have to write for object
+ID
+dot PT
+and
+tracking objects dot items
+then CV2 Dot
+Circle
+frame
+PT
+5.
+0 comma zero comma 255
+minus one
+then CV2 Dot
+put
+text
+then frame
+TR
+objects ID
+and comma
+comma
+80
+one
+minus seven
+okay
+zero comma one
+these are the all the width and the
+height values
+okay
+then here I will write print
+the
+tracking object
+attacking objects
+then here I will write
+print
+the
+current frame of the legs left point
+current
+same
+for that I have to write print
+Center Point to current frame
+CV2 dot I am sure
+that
+frame
+comma frame
+okay
+and make a copy of the points for that I
+have to write Center
+points previous frame equals to Center
+points current frame dot copy
+k equals to CV2 Dot
+then what
+okay if
+k equals equals to 27
+okay
+so after that I will write cap Dot
+please
+release
+CV2
+okay here I have to write capture CB2
+dot destroy all windows
+okay so the code is complete let's run
+this
+okay it's running
+opensv okay
+so
+as you can see
+in our video
+it is tracking the object perfectly by
+frame by frame okay slowly and steadily
+by frame by frame
+c one two three four five six
+okay it's a huge video
+okay it's 4K video maybe that is why it
+is stucking little bit but it is it is
+reading on the basis of the frame by
+frame okay
+let's try the another video
+here first I will kill the terminal
+then I will change the name to
+one two three dot MP4
+and I will run it
+so as you can see it is tracking in the
+right order
+okay
+see it is tracking perfect see car is
+moving but it's tracking and here all
+the points we have measured that x axis
+y x is all it's coming
+okay see it's dragging perfectly
+and if you want this full code
+you can comment down the below and I
+will update all the necessary files and
+the libraries in the description box
+below you can download from that
+so with that said we have come to end of
+this video if you have any question or
+queries you can comment down below our
+team of expert we'll reach out soon as
+soon possible
+you can check the course from the
+description box below regarding AIML and
+thank you for staying with us thank you
+and keep learning staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

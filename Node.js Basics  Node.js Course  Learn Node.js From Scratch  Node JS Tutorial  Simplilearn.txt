@@ -1,0 +1,993 @@
+hey everyone welcome to this video on
+node.js basics
+node is a popularly used javascript
+framework for back-end development
+it has been widely adopted by developers
+across the globe
+this video will introduce you to nodejs
+we will first begin by understanding
+what exactly node is and what its salary
+trends are
+later we will understand its
+architecture and what makes it stand out
+from other frameworks
+after that our instructor will guide you
+through a step-by-step process to
+install node.js on your system
+and lastly you will learn how to connect
+react.js with the node.js platform and
+build a simple application
+but before we begin if you haven't
+subscribed already make sure to hit the
+subscribe button and press the bell icon
+to never miss an update
+so without further ado let's begin
+welcome to this video by simply learn in
+today's session we're going to learn all
+about node.js so without further ado
+let's begin and look at what's in store
+for us first up we'll understand what
+exactly node.js is then we understand
+the necessity of node.js then we'll
+learn about some of the parts of node.js
+node.js express framework node.js use
+cases and finally we'll look at some of
+the industry trends so what exactly is
+node.js now consider a scenario where a
+user interacts with the web application
+the user only interacts with the front
+end of the application but there's a lot
+of work that goes behind the scenes
+now in a web application there's a front
+end a server and a database the front
+end is developed using javascript and
+frameworks like angular and react while
+the server is built on java php or
+node.js and the backend database that
+stores the data usually consists of
+mysql or mongodb so node.js is an open
+source cross-platform javascript runtime
+environment for running server-side
+applications it is used to develop io
+intensive web applications like video
+streaming sites single-page applications
+online chatting applications and other
+web applications it is used by large
+established companies and newly minted
+startups nodejs was developed by ryan
+dal in 2009 and at the same time of this
+session its latest version is v13.3.0
+now that we know what node.js is let's
+go ahead and look at why it was so
+prevalent in the field of web
+development here are a few points first
+up node.js is extremely fast being built
+on google chrome's v8 javascript engine
+its library is extremely fast in code
+execution note package manager has
+around 50 000 bundles for developers so
+whatever functionality is required for
+an application can be easily imported
+from npm all apis of node.js library are
+asynchronous that is non-blocking it
+means a node.js based server never waits
+for an api to return data node.js
+dramatically reduces the processing time
+while uploading video and audio files it
+is also an open source platform and is
+easy for beginners for web development
+the above reasons more than justified
+the popularity of node.js platform and
+why it is being adopted by large number
+of organizations and businesses today so
+now moving on let's familiarize
+ourselves with the parts of node.js
+node.js consists of several components
+now let's look at them one by one first
+up we have modules now modules are like
+javascript libraries which are used in a
+node.js application to include a set of
+functions now we can use require
+function with the parenthesis to include
+a module in a node.js application
+node.js application has many modules to
+provide basic functionality needed for a
+web application some of them could be
+http util fs url query string stream and
+zlip next up we have console the console
+module provides a simple debugging
+console that is similar to the
+javascript console mechanism provided by
+web browsers now the console can print
+messages to std out that prints standard
+output messages and stdr to print the
+error messages the next component is
+cluster
+now nodejs is built upon the concept of
+single threading programming a single
+instance of node.js runs in a single
+thread to take advantage of multi-core
+systems the user will sometimes want to
+launch a cluster of node.js processes to
+handle the load a cluster can be added
+to an application in this way here's a
+small code for you the next component is
+global now global objects in node.js are
+available in all modules now these
+objects are functions modules strings
+etc some node.js global objects are
+mentioned in the table you have dir name
+that is a directory name file name
+exports module and require the next
+component is error handling now node.js
+applications experience four types of
+errors we have the standard javascript
+errors system errors user specific
+errors and assertion errors now errors
+in node.js are handled through
+exceptions now for example let's handle
+an error that would occur when we divide
+a number by zero now this error would
+crash the nodejs application and so we
+should handle this error here's a small
+code for you
+next up we have streaming a stream is an
+abstract interface for working with
+streaming data in node.js streams are
+objects that let you read data or write
+data continuously there are four types
+of streams first one is the readable
+these are these types of streams from
+which data can be dead writable these
+are the types of streams to which data
+can be written
+duplex these are both readable and
+writable streams
+lastly we have transform these streams
+can manipulate the data while it is
+being read or written moving on to the
+next component buffer the javascript
+language has no mechanism for reading or
+manipulating streams of binary data
+buffer is a module that allows handling
+streams that contain only binary data an
+empty buffer of length 10 can be created
+by this method next up we have domain
+domains provide a way to handle
+different io operations as a single
+group domain module intercepts errors
+that remain unhandled there are two
+types of methods that are used for
+intercepting these errors firstly we
+have internal binding in this case the
+error emitter executes its code inside
+the error method
+next up is the external binding now here
+the error emitter is explicitly added to
+a domain via its add method the next
+component is the dns the dns module
+enables name resolution for example it
+is used to look up the ip addresses of
+host names dns module is used to connect
+to a dns server and perform name
+resolution by using the method
+dns.resolve the dns module is also used
+for performing name resolution without a
+network communication by using the
+method dns.lookup the next component is
+the debugger node.js includes an
+out-of-process debugging utility
+accessible via a v8 inspector and
+built-in debugging client this node.js
+debugger is not feature packed but
+supports simple inspection of code it
+can be used in the terminal by using the
+inspect keyword before the name of the
+javascript file in order to inspect a
+file say myscript.js you can use the
+following method now that we are
+familiar with all the major parts of
+node.js let's go ahead and learn about
+the node.js express framework
+express is a flexible node.js web
+application framework that provides a
+wide set of features to develop both web
+and mobile applications you can assume
+express as a layer built on top of the
+nodejs that helps manage the server and
+the roots now let's have a quick look at
+some of the core features of express
+framework it is used to design single
+page multi-page and hybrid web
+applications it allows setting up of
+middleware to respond to http requests
+it defines a routing table that is used
+to perform different actions based on
+the http method and url it also allows
+dynamic rendering of html pages based on
+passing arguments to templates now
+moving on let's take a quick example of
+a simple hello world program now this is
+developed using express framework to
+gain a better understanding all right
+first up we have the word express now
+this is used to import express framework
+into our node.js application now the
+app.get method is a callback function
+with parameters request and response the
+request object represents the http
+request and has properties for the
+request query string parameters body
+http headers etc the response object
+represents the http response that an
+express app sends when it gets an http
+request now the application will listen
+to the defined port which in this case
+is 8.081 and variables host and port
+will contain the address and the port
+respectively lastly we have the
+console.log which is used to show the
+address and port in the command prompt
+so this is what the command prompt would
+look like and finally the output is
+displayed on the web browser having
+learned about the express framework now
+let's move on and look at the node.js
+use cases
+now it is no doubt that node stands out
+for its speed and intensive data
+exchange so top industry leaders like
+nasa paypal netflix among others
+incorporate node.js first up we have
+netflix the world's leading internet
+television network with over 117 million
+users is one of the top companies that
+trusted their services to node.js the
+reasons why the company chose to use
+node.js for application scalability and
+data intensive application now you must
+be wondering what application
+scalability is this basically the
+potential of an application to grow in
+time being able to efficiently handle
+more and more requests per minute and
+data intensive application allows
+millions of people to stream netflix
+simultaneously next up is walmart now
+walmart is the world's largest company
+by revenue with around 514 billion us
+dollars according to the fortune global
+500 list in 2019. again the reasons why
+the company chose node.js with
+asynchronous i o and efficient handling
+of concurrent requests now asynchronous
+io which is a form of input output
+processing allows other processing to
+continue before the transmission has
+finished nodejs is able to efficiently
+handle concurrent requests with the use
+of thread pool and event queues uber
+uber is an american multinational
+ride-hailing company offering services
+that include peer-to-peer ride sharing
+pride service healing and food delivery
+the reasons why the company chose
+node.js were asynchronous i o quick
+iterations and active open source
+community as mentioned earlier
+asynchronous i o permits other
+processing to continue before the
+transmission has finished now quick
+iterations now node.js is continually
+being updated and added new features
+that help in further improvement in the
+performance of web servers and finally
+active open source community resolves
+many problems that an organization may
+face in a particular scenario next up we
+have nasa now nasa is an independent
+agency of the united states federal
+government responsible for the civilian
+space program as well as aeronautics and
+aerospace research the reasons why the
+company chose node.js were reduced
+access times handling of data intensive
+tasks and the fact that the servers are
+active 24 7. now nasa has lots and lots
+of data and using node.js has really
+helped them in reducing the access times
+it is also continuously handling and
+working with large streams of data
+node.js is highly stable which helps in
+keeping the server active 24 7. next up
+we have paypal now paypal is an american
+company operating a worldwide online
+payment system that supports online
+money transfers as opposed to
+traditional methods like checks and
+money orders the reasons why the company
+chose to use node.js was the fact that
+node.js has extremely fast build times
+it allows tasks to be carried out with
+fewer lines of code when compared to
+other server technologies like java and
+php and nodejs being data intensive
+efficiently handles a large amount of
+data next up is medium medium is a
+popular online publishing platform
+developed by evan williams and launched
+in august 2012. the main reasons why the
+company chose to use node.js were a
+data-driven applications now these
+applications are ideal for being
+interfaced with node.js servers b to run
+a b tests now a b testing is essentially
+an experiment where two or more variants
+of a page are shown to users at random
+and statistical analysis is used to
+determine which variation performs
+better lastly node.js server maintenance
+is simpler than its counterparts moving
+on to the last topic of this session
+industry trends now node.js developers
+are in demand across the globe since
+many companies are adopting javascript
+libraries according to forbes it is one
+of the top 10 most in demand jobs
+according to note source the total
+number of nodejs downloads increased by
+40 in the last one year the use of
+node.js in production has increased
+dramatically since its release in 2010.
+with early adopters such as linkedin
+paypal and netflix among others node.js
+has seen an exponential increase in its
+use in web development the popularity of
+node.js is also accounted to javascript
+now since javascript is the most popular
+language as evident from a survey
+conducted by stack overflow in 2019 many
+developers can start working on node.js
+library with not much of a learning
+curve node.js developers are being
+offered better salary options than other
+web technology developers according to
+pay scale the average salary of a
+node.js developer in india is around 6
+lakhs 13 000 rupees per year the average
+salary of a node.js developer across the
+united states is around 105 000 us
+dollars per year hello this is matthew
+from simply learn and today we're going
+to jump into node.js and the
+architecture around node.js
+so why would you want to get involved
+with working with node.js well there's
+actually a lot of great reasons a lot of
+the top web applications that you are
+working on today are built with nodejs
+and the architecture beneath it allows
+you to not only just build those web
+applications but to be able to build
+end class applications and by enclaves
+we mean
+service driven applications or
+applications that are running on uh your
+phone on your desktop on your tablets
+they can all be built with nodejs
+and there are huge advantages around
+working with node.js
+one of the biggest ones being the huge
+community around node.js and node.js is
+just one of those standard solutions
+that you use for building out your core
+architecture when you're building out an
+application and there's just a lot of
+people out there that are using it
+so let's jump into web applications and
+how it'd be of benefit to you with your
+web solutions
+so
+with node.js you have the client side
+and the server side and the client side
+has the solutions that allow you to have
+hooks into the client side put together
+very easily
+so behind the scenes of the client you
+have service and technology and
+connections to your database so if
+you're building out your solutions with
+node.js it makes it very easy to be able
+to architect the entire solution from
+top to bottom for your entire
+environment whether you're building that
+locally on a test server whether you're
+building for a traditional data center
+or if you're working in the cloud
+so on the client you're going to be
+using technology such as react js and
+angular in the server you're going to be
+using node.js php and java
+and then the database itself is going to
+be something like mysql or mongodb and
+actually the number of databases that
+can be supported with node.js is
+increasing all the time
+so when you're working with writing your
+code in angular or react.js you can even
+use vue that's actually a great one
+working with node.js you have this
+client-side framework that provides the
+hook into the web browser whether it's a
+mobile web browser or a desktop web
+browser
+the server is then responsible for
+taking those requests that are coming
+from the browser and
+interpreting them and so on the server
+you're going to run node.js you're going
+to run it alongside with php and java
+php if you're not familiar is a really
+great way to get started with writing
+web applications that run on the server
+java is just a really solid traditional
+application language for building out
+web apps
+and then the server itself is going to
+be responsible for those client
+interactions with back-end services
+connecting with apis and reinforcing
+your security model now can you do all
+of that in the client yes you can do a
+lot of that in the client particularly
+with the frameworks from angular and vue
+they are really flexible you can do some
+great things there but one of the things
+you want to be looking at when you're
+working with building your web
+application is really three key things
+one is security the second is being able
+to scale your solutions and the third is
+speed and responsiveness and what i have
+found through my own architecture is
+that if i balance out between clients
+and server the load and the structuring
+of how you actually build those
+solutions it really helps
+create a very seamless solution to your
+customer
+and then at the back of all of this you
+have your database and my sequel a
+mongodb of two popular databases but you
+can also use node.js to connect to many
+of the cloud databases that are running
+on aws azure google cloud ibm other
+services they all have connectors in
+fire node.js into their databases
+so let's talk about the node.js
+architecture and understand why it's so
+good so to begin with node.js has what's
+called a single threaded event loop
+architecture and this allows you to be
+able to handle
+many many concurrent clients at the same
+time it's just a very flexible way of
+being able to scale up your support for
+many clients
+and then in addition to that we have the
+javascript event based model along with
+the javascript callback mechanism that
+allows you to have this standard
+approach to being able to connect with
+and talk and discuss interactions
+between the client and the server it's
+good to have these kind of standards
+where you're not using something that's
+unique to a specific framework or
+specific technology this just makes it
+so it's a more accessible for everybody
+so if we look at the actual node.js
+server itself everything centers around
+the the concept of the event loop and
+the event loop has a a an event queue an
+operation completed and fire requests
+threaded pull and then it'll actually do
+the actual computation or the file
+system interaction
+all of this interconnects in a nice
+seamless loop the great thing again with
+node.js is that it's not new technology
+it's been around for almost a decade
+it's very very well tried out many of
+the largest websites out there are
+running node.js
+so let's now dig into each of the parts
+of the node.js architecture so let's
+talk about requests
+so the way that the request works is
+that you have
+your framework uh such as angular
+on the client and that will then send a
+request to the website and there's many
+ways that those requests can happen
+through web workers through forms and
+through other interactions
+but at some point a request is sent to
+the server
+and so these requests can be for data
+they can be for deleting data they can
+be for updating data they can be for
+interacting with services as mentioned
+before but the goal is to have some kind
+of request now once that request
+actually hits the server and then we
+start actually getting into the cueing
+and threading process that centers
+around the event loop and this is where
+node.js really excels because it's able
+to use that single threaded model to be
+able to manage from just even a few
+requests to tens of millions of
+requests so it receives the actual
+request and starts the event queue and
+this is where a single threading process
+starts is by queuing everything up
+appropriately
+and then it then maintains the threat
+within a pool so you have the queueing
+process as one action and then you have
+a threaded pool which manages those um
+threads as well
+and then we have an event loop which you
+know goes through actually receives and
+processes those requests
+and then finally what we're doing is
+we're actually they're going to be
+interacting with a system and that could
+be a database it could be a cloud system
+it could be an api file system but we're
+interacting with something that's
+outside of the node.js server so the
+node.js server itself is doing some
+actions on the server but then it's also
+interact with things outside of its own
+server environment
+and so let's talk a little bit about
+that workflow
+so requests come in they go into the
+event queue and they get spiraled
+through the event loop and then we have
+a non-blocking operators which are going
+to be doing the input output polling
+such as kq epoll and other services and
+from there we're also going to be then
+interacting with the threaded pool and
+we're using the blocking operations to
+manage that threaded pull
+and that threaded pool is going to now
+then go outside of the server and
+interact with something beyond the
+server so whether that is a database or
+file system or api or microservice these
+are things that can be interacted with
+and so let's go through some of these
+advantages that we have here so so i'm a
+fan of working with node.js so i have
+lots of advantages so the one the big
+ones are right off the bat is the
+ability to be able to handle multiple
+client requests
+quickly and easily this really is
+important as we move into our digital
+ecosystems and we start scaling up
+solutions you'll find that as you build
+successful apps the demand for those
+apps will grow exponentially and what
+that means is you need to be able to
+have a solution that can interact with
+requests quickly and easily
+there's no need to create multiple
+threads because of the event loop again
+this is another thing that's really
+critical when it comes to building out
+solutions you want to be able to have a
+solution that can scale massively at the
+flip of a switch now particularly as we
+start working on building out
+cloud-based solutions
+nodejs also utilizes really low
+resources and memory again when it may
+seem like a small thing when you have a
+solution and it's using just a maybe a
+smaller amount of memory but if that
+solution keeps adding to that memory
+usage you then
+restricted for how big that application
+can grow so the less resources and
+memory a solution is using the faster
+and higher it can grow in scale in this
+video we'll help you install node.js on
+your windows system so without further
+ado let's begin the first thing you need
+to do is download node.js from their
+official website
+so go ahead and type
+download
+node.js
+navigate to their official website
+and here
+you can see the 64-bit version so go
+ahead and download that once the
+download is done go ahead and run the
+downloaded node.js installer
+accept the license agreement keep the
+default settings as it is
+and then say install
+so with that we finished the
+installation process
+once node has been successfully
+installed the next crucial step is
+verification now this process ensures
+that node has been properly installed
+to do so we first open the command
+prompt and then type in a few commands
+to verify the successful installation we
+type in this command
+node hyphen v now this command returns
+the version and if it returns the
+version it means it has been
+successfully installed
+so here we go it returns the latest
+version
+now the final step is to update the node
+package manager now this npm is bundled
+with node.js which consists of all the
+repositories and packages required for
+development purposes
+so to do that type in the command
+npm
+install
+npm
+hyphen hyphen
+global now that we're done with the
+installation of node let's go ahead and
+implement a small program for that we
+make use of a text editor in our case
+we've installed vs code so go ahead and
+download vs code once you're done with
+the installation this is what vs code
+looks like so go ahead and click on file
+and create a new file it's going to be a
+simple program where you're going to
+print a hello world message on the web
+browser to do that we make use of http
+modules so node comes with built-in http
+modules to transfer data across it
+so for that we make use of a require
+method we create a variable first say
+var
+http
+equals required
+and just say http within single quotes
+now the http module can create an http
+server that listens to the server ports
+and gives a response back to the client
+to do that we make use of the create
+server method
+so let's go ahead and type the code
+say http
+dot create
+server and internally it consists of a
+function
+now the parameters to this function are
+request and response now the response is
+basically used to write to the client so
+we say response dot write and here we
+type in the message say hello world
+welcome
+to this tutorial
+once you're done with that you end the
+response
+so the server listens to a port number
+to display the message by default it
+listens to the port number 8080. so we
+keep that as it is and we end it save
+your file
+say
+demo.js maybe demo1.js and say save now
+to run the program you have to open the
+command prompt so open your command
+prompt
+and mention the path to your file so in
+our case it's our desktop on the desktop
+so cd
+desktop and now to run it say node
+demo1
+dot js now you navigate to your browser
+and say localhost 8080 and here we go
+our message is successfully displayed
+welcome to this session on how to
+connect react.js with node.js and in
+this session
+we are actually going to look at
+how do we connect react.js with node.js
+so a very warm welcome to this session
+on react.js connectivity with node.js
+and in this session we are going to
+focus on how do we connect our react.js
+application with the node.js platform so
+we are going to dive into creating a
+hands-on demo which will have two parts
+to it we would have the client
+application that we will first create as
+a react application we will then create
+an express.js application with node.js
+and we will then try to connect both of
+those applications together so
+express.js is a rapid application
+development framework that allows us to
+create a web application very quickly on
+the node.js platform and we'll use it to
+create a custom api and then connect
+that endpoint to the react.js client
+application so let's dive into our demo
+and
+let's start with creating our client and
+node express applications and see how to
+set them up and then get them connected
+to each other let's start with our
+hands-on demo and we will first go to
+the node.js website nodejs.org we can
+download the lts version which is a
+stable version of node.js moment i click
+on this it will prompt me for a download
+it will download the msi file and then
+all i need to do is double click on it
+keep clicking on the next button and
+install that would install node.js for
+us next we'll open our editor you can
+use any editor of your choice so i'm
+going to use
+an editor called
+visual studio code and let's open up the
+terminal here and i also have the
+command prompt open where i've navigated
+to a folder that i've created called
+react.js demos now we'll invoke the npm
+package manager which is invoked by the
+command npx so npx will not only install
+packages but also execute them once they
+are installed so once they are
+downloaded it will execute the package
+and
+we will use npx to go and create a react
+application called client so while we
+give it time for the installation to
+complete we can then open it
+within our editor so we'll give it time
+uh so that the installation completes
+so the installation is completed and so
+we've seen here that the installation
+has now completed and let's uh go and
+open up this project so i will say file
+and open folder and
+let me pick up that folder and we will
+open this application called client so
+that's my client app let's fire up the
+terminal so
+okay so that has launched the terminal
+for us
+and here uh all we need to do to fire up
+this application and get it running is
+npm start which will compile and start
+up this application that is created
+let's close this we'll go to the browser
+and now let's say localhost 3000 so that
+gives us a startup page the sample uh
+default startup page for the first
+client application uh and this is going
+to work as a client we'll now go and try
+to create
+the back-end
+application which is going to be another
+application that we will set up and to
+create that
+let's say npx
+express
+generator api okay so this will uh
+create an express application on node.js
+called api and let's give it some time
+for installation okay so that's done
+clear this screen we'll come out here
+we'll open another instance of the
+editor we'll say open folder and that's
+the api application we'll say select
+folder and the api application is opened
+let's go to the terminal now in the
+terminal we will attempt to install all
+of the packages that are required that
+would be logged in the package.json file
+so the package.json file here would be
+listed uh so you can see we have a list
+of packages that it uses and npm install
+will go and install all of these
+packages that were pre-listed here so
+let me ensure it's executed correctly
+and we'll fire that once more that's
+done so npm install has installed all of
+the packages required and let me
+terminate this run by pressing a control
+c so this terminates
+the client application that was
+executing and now we will say npm start
+so that this application executes and
+let's refresh
+so that's the standard express
+application now that has got installed
+now let's go to the api application
+we'll go into the bin folder and here
+we'll have a file called www we will
+change the default port number from 3000
+to 9000 let me stop this application
+from executing we've just updated the
+port number now let's go to the routes
+and we'll create a new file in the
+routes folder called test api dot js
+here we will say variable express
+equal to require express
+and here we'll say variable router equal
+to
+express dot
+router and here we will say
+router.get we'll open this
+so that's the default route root route
+is going to be slash for which we'll add
+a callback function which will take the
+request and the response parameter and
+next pointer in case there is another
+function to call post that and here we
+will just send a simple message saying
+api is working okay a simple message
+sent out for the root default route and
+we'll have to export this so we'll say
+module dot exports equal to router all
+right so that's uh done let's go to the
+app.js file and here let us import that
+so here is where we will import this
+by saying app.use we want to use the
+test api file and that is
+test api router and this is exactly the
+same variable name that we will declare
+here which will be equal to require and
+we are going to say routes
+test api all right so let's try
+launching this now we would say npm
+start after adding this code let's go
+out here and 3000 test api is going to
+be the url to hit it's not three
+thousand but nine thousand now because
+we just updated the port so nine
+thousand test api and there we have a
+message which says that the api is
+working properly so this is tested now
+let's go to
+the client application in the client
+application let's go to the app.js file
+okay this is the file that
+we would have to revamp a bit so let's
+uh revamp this here we will declare a
+class app which extends so that creates
+a new module so it extends
+react.component
+and here we have constructor we will
+accept the props
+here i would pass props to the super
+class constructor and
+set the state to api response
+currently it just has an empty value
+next we'll add up a new function called
+call api which will generate a call to
+that
+api url which was http localhost 9000
+was the port and test api was the url
+once this is called we will then call
+the then function declare response
+generate a call to response.txt and then
+we will again say this dot set state api
+response
+is going to be equal to the response
+that comes in from that url which is
+nothing but a string which says api is
+working another function called
+component will mount so the moment the
+component is initialized on the screen
+and loaded we will generate a call to
+this function we created called call api
+then comes
+the render function in the render
+function we would go and return a div
+class name as app this would be app
+header the standard logo after which
+in the paragraph we wouldn't need the
+link here right after the header we'll
+add a paragraph where we will print this
+dot state and the variable we created
+called api response and we will data
+bind to that so that largely completes
+uh the return so we simply create this
+application uh that's the react
+application that will talk to this api
+that is and this uh url that is hosted
+on node communicate with it get a simple
+string as a response print that string
+inside this
+react application so once that's done uh
+we have the component wheel mount which
+is a life cycle method here it's a
+lifecycle event that gets triggered the
+moment the component loads and that's
+when uh we have actually gone and
+executed the call api custom function
+let's go to the api application we'll
+terminate the execution here there's one
+more step that we'll have to perform
+which is cross origin
+resource sharing which means that to
+allow the react application to
+communicate from another hosted domain
+to this particular domain server we will
+actually have to enable cross origin
+scripting and sharing otherwise it will
+block the request coming from another
+application so for that we'll have to
+install globally cross origin module and
+dash dash save indicates that it's going
+to do a global install for all
+applications
+that are on this particular system so
+we've installed this
+and we'll clear the screen let's go to
+the app.js
+and right here is where we would want it
+to go and use cards so we will say
+app.use course so that it uses this
+particular api and here is where we will
+declare the course variable and go and
+import the new library package that we
+just installed which is quartz so looks
+good and now let's
+fire up this application with an npm
+start let's also fire up client with an
+npm start and now when i go and
+try looking for localhost 3000 which is
+the react application the react
+application should go and talk to the
+api that is hosted on node.js which
+returns to me that string message so if
+i go and ping that api separately which
+is localhost
+9000 test api you can see this is a
+standard message so here i directly ping
+the api that's hosted in node.js now we
+are consuming it through the react.js
+application and if you scroll down you
+can see the message returned from
+node.js into react saying the api is
+working properly so the practical impact
+of this is to actually host restful
+services etc on node as a server and you
+can go and consume the data that is
+returned there could be in string text
+or json format directly into the
+react.js acting as a client application
+and with that we have come to the end of
+this tutorial
+i hope it helped you get an
+understanding of node and how it works
+thank you so much for being here and
+stay tuned for more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

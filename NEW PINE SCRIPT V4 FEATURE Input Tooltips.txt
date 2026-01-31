@@ -1,0 +1,187 @@
+hi traders i'm back with a really quick
+video here just to let you know about
+the latest update to the pinescript
+language that the trading view
+development team have added
+now this is an extremely simple update
+so this is going to be a very quick
+video
+but it's a pretty cool update the
+trading view team have added
+tool tip functionality to our inputs
+so let me read the words here you can
+now add a short description
+to any user input using pine's new
+tooltips if you've used tooltips before
+on labels it functions exactly the same
+it's easy to do simply use the new
+tooltip parameter in any input call to
+have an i
+icon appear next to the input little
+information icon
+hovering over the icon displays the
+string used as an argument for the tool
+tip parameter
+pretty simple the only extra thing worth
+noting is that when inputs are combined
+using the inline parameter meaning
+you've combined multiple inputs on the
+same line
+if you're not sure what this inline
+parameter is i'll leave a video up in
+the top right and in the video
+description
+linking to the previous video i did on
+the latest pan script update which was
+the inclusion of inline parameters and
+group parameters
+for organizing your user input interface
+but anyway if you have a bunch of inputs
+combined on the same line
+the tooltip will be displayed at the end
+of that line
+and basically it will apply to all of
+the inputs you have put
+on that line so you can read about all
+updates to pine in their user manuals
+release notes which i'll also leave a
+link to
+below this video and that's it the
+trading view team
+have been very busy updating the
+password language in the past few months
+it's great to see
+but let's jump over into the pine editor
+and i'll show you really quickly
+uh how we can use this new tooltip
+parameter all right here i am on trading
+view with just a
+simple strategy script added to my chart
+let's jump into the source code
+and we'll play around with this tool tip
+parameter so here are a bunch of my user
+inputs for this script
+the user inputs are actually pretty
+self-explanatory so this isn't the best
+example of why you would use a tooltip
+but i'm a huge fan personally
+of making your scripts as easy to use as
+humanly possible
+especially if you're going to publicly
+release them and so this is a great
+habit to get into
+early now that this feature is a thing
+so i would encourage you to do this
+for all of your inputs no matter how
+self-explanatory they may appear to be
+so to use this new parameter it's really
+easy we just need to write
+tool tip like we would any other
+parameter in this input function
+it takes a string argument and
+i'm just going to write test here really
+quickly just to demonstrate how this
+works
+visually now if i come up to the
+settings menu open this up
+we now have this little eye icon next to
+this input which is the first input
+in my code and if i hover my mouse over
+it
+we get a little pop-up there that says
+test
+so in this particular scripts case the
+positive atr filter
+means that the candle size must be above
+this multiplier of the atr in order to
+be considered a valid signal
+and the minus or negative atr filter
+means it must be below
+this multiplier of the atr so by default
+the way the script is set up
+if the candle size of the current bar is
+greater than three times the current atr
+then the script ignores
+that setup and so if i wanted to i could
+explain that
+using this tooltip parameter so that the
+user knows what these two
+inputs do so let's do that now i'll just
+write out here
+the minimum candle size compared
+to the current atr and then here i can
+say
+the maximum candle size compared
+to the current atr now if i save the
+script
+let that update on trading view servers
+and come up to the settings menu we now
+have two tool tips here that explain
+exactly in detail what these two input
+parameters do
+and just really quickly while we're here
+at the start of the video i mentioned
+that if these were grouped onto one line
+using the inline parameter then only the
+last tool tip
+would show on that line so i'll show you
+exactly what that means really quickly
+if i add in
+the inline parameter here and we have
+the same inline parameter on both of
+these inputs
+when i save the script one of these
+information tooltip icons will go away
+and there will only be one left
+and i believe it's the the last tool tip
+you used
+is what stays on your interface so let
+me save the script there
+come up to the settings menu and yes so
+now these are on
+one line because we have them both on
+the number one
+inline parameter and the tooltip here
+is showing the last tool tip we wrote
+for those inputs which is the maximum
+candle size
+so that's just something to keep in mind
+if you do use the inline parameter
+just remember that your tool tip will
+show for all of the inputs included
+in whichever inline group that you apply
+them to
+so another really cool feature here
+you've got to hand it to the trading
+view team
+they are always working to improve the
+transcript language
+this is the second quality of life
+update they've made to panscript in the
+past two weeks
+so if you're brand new to panscript
+you've picked the perfect language at
+the perfect time
+to get involved and learn this language
+because it is being constantly improved
+and the past few months have seen some
+major improvements in terms of the
+capabilities of panscript
+and the quality of life for users of the
+scripts that you write
+so that'll do it for today's video if
+you are brand new to pinescript head
+over to pinescriptbasics.com and sign up
+for my
+free pinescript basics course which will
+teach you the fundamentals of this
+language
+and if you're new to the channel or
+you're not new to pinescript hit the
+subscribe button because i will be back
+real soon
+with some more advanced partnership
+lessons take care everyone good luck
+with your trading
+i'll see you in the next video
+you

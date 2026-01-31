@@ -1,0 +1,740 @@
+with ethical hacking and penetration
+testing becoming mainstream in corporate
+environments trained personnel and
+relevant equipment are in high demand
+the right software framework can be the
+Tipping Point in a hacking Campaign
+which deals with intricate Hardware one
+such tool that has become a main stay
+for decades is nmap when it comes to
+scanning machines for open ports and
+services nmap has always been the first
+choice for hackers being lightweight and
+open source nmap has strong Community
+backing and receives regular
+updates let's take a look at the topics
+to be covered
+today we start by learning about the
+different phases in ethical hacking and
+where nmap is most valuable to ethical
+hackers we learn the basics of nmap and
+its purpose during a penetration testing
+campaign next we take a look at the top
+level approach of nmap as a scanning
+tool and how it conducts these scans on
+host
+machines moving
+on we cover the multiple modes and types
+of scans that can be performed using
+nmap on unsuspecting
+users we also look at some Alternatives
+that users can prefer if nmap is not
+something they comfortable with while a
+live demonstration of the powers of nmap
+will help in shedding light on the
+topics being taught
+today let us first understand where and
+why and map is
+essential there are essentially five
+phases in ethical hacking the
+reconnaissance phase is the first phase
+of the penetration test here the
+security researcher collects information
+about the target it can be done actively
+or passively or both it helps security
+firms gather information about the
+target system Network components active
+machines Etc this activity can be
+performed by using the information
+publicly available and by using
+different
+tools the scanning phase is more tool
+oriented rather than being performed
+manually
+the tester runs one or more scanner
+tools to gather more information about
+the Target by using various scanners
+such as war dialers port scanners
+Network mappers and vulnerability
+scanners the penetration tester collects
+as many vulnerabilities which help in
+turn to attack a Target in a more
+sophisticated
+manner in the gaining axess phase the
+penetration tester tries to establish a
+connection with the Target and exploit
+the vulnerabilities found in the
+previous phase the exploitation may be a
+buffer over FL attack denial of service
+attack session hijacking and many more
+basically the penetration tester
+extracts information and sensitive data
+from the servers by gaining access with
+different tools in the maintaining
+access phase the penetration tester
+tries to create a back door for himself
+it helps him to identify hidden
+vulnerabilities in the system while
+allowing him to come back to the system
+to retrieve more data further
+on in the clearing tax phase the tester
+tries to remove remove all logs and
+Footprints which might help the
+administrator identify his presence this
+helps the tester to think like a hacker
+and perform corrective actions to
+mitigate those
+activities nmap is most beneficial in
+the early stages of ethical hacking
+where a hacker must figure the possible
+entry point to a system it is necessary
+to know this before running the
+necessary exploits thus allowing the
+hackers to leverage any insecure
+openings and breach the device so the
+reconnaissance and the scanning phase
+are the points where nmap finds the most
+to
+use let us now understand what nmap is
+from a Layman's
+perspective nmap which stands for
+network mapper is a free and open source
+utility for network discovery and
+security auditing many systems in
+network administrators also find it
+useful for tasks such as Network
+inventory managing service upgrade
+schedules and monitoring host and
+service uptime the program is most
+commonly used via a command line
+interface and is available for many
+different Opera systems such as Linux
+free PSD and
+gento it is most beneficial in the early
+stages of ethical hacking where a hacker
+must figure the possible entry point to
+a system before running the necessary
+exploits nmap was developed for
+Enterprise scale networks and can scan
+through thousands of connected devices
+however in recent years nmap is being
+increasingly used by smaller companies
+as well nmap uses raw IP packets in
+novel ways to determine what hosts are
+available on the network what services
+these s are offering what operating
+systems they are running what type of
+packet filters and firewalls are in use
+and dozens of other
+characteristics it was designed to
+rapidly scan large networks but works
+fine against single horse as well the
+rise of the iot in particular now means
+that networks used by these companies
+have become more complex and therefore
+harder to secure since every application
+that connects to a network needs to do
+so via a port the wrong port or server
+configuration can open a can of worms
+that leads to a thorough breach of the
+system the recent emergence of iot Bot
+Nets like meai has also simulated
+interest in N map not least because of
+its ability to interrogate devices
+connected via the UPnP protocol but also
+to highlight any devices that may be
+malicious now that we understand what
+nmap is let us take a look at the
+workflow of how an ethical hacker uses
+this tool in penetration
+testing at a practical level nmap is
+used to provide detailed real-time
+information on your networks and other
+devices connected to them
+we have the hacker running nmap on a
+system with a victim machine running a
+standard installation of the operating
+system be it windows maccoss or
+Linux the nmap interface will send
+specially crafted package to generate
+some reply from the victim machine the
+victim machine in return will send some
+information back to the nmap host with
+replying some of the services and host
+that are being run on the computers nmap
+allows the network admins to find which
+devices are running discover for some
+open ports and other services this in
+turn helped discover the vulnerabilities
+and the possible entry points for
+hackers to breach
+into we are now aware of how nmap works
+on a basic level but there are many
+varieties of cans that users can run on
+local machines let's take a look at some
+of
+them the Ping sweep is a simple type of
+nmap scan where it pings to all the
+available IP addresses to check which
+IPS respond to icmp protocol
+if the users need to know only the
+number of IP addresses and not many
+details the Ping sweep is very useful
+it's fast and hence the results to be
+known are fetched very
+easily the SN scan is the most useful
+type of end map scan which does work
+very quietly it sends an SN packet via
+the TCP protocol or the transfer control
+protocol to all the intended ports if an
+acknowledgement pack is received to the
+system it is sure that a port is open
+there no response means that the port is
+either closed or not available here the
+acknowledgement pack is not sent back to
+the system assuming that the connection
+is not valid the scan is not shown in
+most of the scan logs and hence it is
+safe to use SN scan to identify the open
+ports the TCP connect scan is similar to
+SN scan in many aspects as it uses the
+TCP layer to send packets and is passed
+to all the ports here the difference is
+that the full connection is done by
+sending the acknowledgement back at back
+the logs can easily find the TCP scan
+and need more power from the machines to
+do the work but it is more
+accurate if all the accesses related to
+the OS are available to the user it is
+better to do a TCP scan than an s in
+scan as all the lowlevel and high level
+accesses are required for the scan the
+network is also loaded more and hence
+users must be careful about overloading
+the system and the
+networks the idle scan is really used to
+check whether any malicious attacks are
+planned on any particular
+Network users need not control the
+external host but an IP address and a
+port should be given to the same all of
+the requirements are taken from the
+scanner
+itself the RPC scans or remote procedure
+calls are done by hackers to make the
+system vulnerable to virus attacks it is
+thus necessary to know whether our
+systems answer such calls and make our
+system open to
+malware RPC scan is done to check this
+by finding the ports open with certain
+commands being run by RPC
+the windows scan is a simple scan where
+the application scans the
+acknowledgement packets receiv received
+from the posts once the SN packets are
+sent if there are any abnormalities in
+the AK packet received the scan reports
+the same and helps in recognizing which
+ports are functioning in a different
+manner the bounce scan is used to check
+the security in the file transfer
+protocol layer FTP layers mostly do not
+accept any packets and once it is
+rejected from the FTP layers there are
+chances that it might be sent to an
+internal layer so that can access the
+internal machines bounce can check this
+loophole by doing exactly the same
+process and identifies whether our FTP
+layer is open to vulnerability or
+not the F scan is similar to SN scan
+where the system that sends the packets
+receives the response back and it will
+be mostly be a tcpf packet if the system
+sends an RSD packet it is a false alarm
+and users need not be worried about the
+same the null scan is useful for other
+systems than Windows where the systems
+can easily identify what kind of packets
+they have received and respond back with
+either TCP packets or null responses
+null scans are not useful for Windows as
+they may not always produce the desired
+results when it comes to looking at
+Alternatives there's a wide range of
+free network monitoring utilities as
+well as free open- source vulnerability
+scanners available to network
+administrators and security
+Auditors what makes nmap stand out as a
+tool it and network security managers
+need to know is it flexibility and
+power there are some alternatives to
+nmap but most of them are focused on
+providing specific Niche functionality
+than the average system administrator
+does need frequently M scan for instance
+is much faster than nmap but provides
+less detail in reality however nmap
+provides all the functionality and speed
+that the average user requires
+especially when used along with other
+similar tools like netc cap which can be
+used to manage and control Network
+traffic and zenmap which provides a
+graphical user interface for nmap but as
+an allrounder solution to network
+scanning nobody can go wrong with nmap
+as their tool of
+choice let's now take a tour of nmap
+based on all the things we have covered
+today in this live demonstration we
+start by learning of how to install nmap
+on a fresh operating system that doesn't
+come pre-installed with the tool we also
+cover the different types of scans that
+can be run on local machines along with
+checking multiple inferences an ethical
+hacker can gather based on the scan
+output of an nmap screen finally we run
+scans on vulnerable machines to get an
+idea of how to proceed with the outputs
+We Gather using the student if getting
+your learning started is half the battle
+what if you could do that for free visit
+scaleup by simply learn click on the
+link in the description to know more the
+first step in our demonstration is
+installing n map now it depends heavily
+on what Linux distribution you're going
+to use to perform ethical hacking right
+now now I'm using parot security
+operating system if you're not aware of
+what parot security is or even what K
+Linux is we highly suggest that you
+check out the videos of those two
+operating systems on our YouTube channel
+so that you can get a fair idea of what
+they serve now if you are using any of
+these two operating systems nmap should
+come pre-installed by default to check
+if nmap is pre-installed or not you can
+just press on applications over here go
+to the pen testing section
+go to this information gathering
+Tab and you should be able to see n map
+right here now let's say you do not have
+nmap pre-installed maybe you're using a
+Linux distribution like Ubuntu or Linux
+Min or something that is based on depan
+operating systems one thing you have to
+make sure that nmap should be in the
+distribution repository once you check
+that or even if you do not know if it is
+present you can just this command should
+be sudo which is to give root
+permissions for installation a AP is the
+package manager of all Linux
+distributions that are based on Debian
+that goes for Debian stable Ubuntu Linux
+Min K Linux par security and anything of
+that
+nature AP is the package manager which
+handles the installation and removal of
+applications in these specific operating
+systems once you're here just write
+install and nmx
+press enter and it's going to ask you
+for the root password that you said when
+you install the operating system in the
+first place enter your root password and
+press enter again as you can see it's
+saying that nmap is already installed
+the newest version since I'm running par
+security operating system now should you
+be running this operating system or even
+K Linux you should receive a similar
+message and the installation is already
+done if you are using some other
+distribution let's say even black o Arch
+Linux or Manjaro anything like that the
+installation steps will be slightly
+different this Pudo AP install nmap
+command is for distributions that are
+derived from Debian and obano if you
+want to install in Arch Linux based
+distributions you have to use their
+package manager which is known as
+pamac but that is for a different step
+and if you want to get into ethical
+hacking the best way to start is by
+learning either K Linux or par security
+now that the installation is done we're
+going to learn how to use nmap one of
+the most basic functions of nmap is to
+identify active hosts on the network we
+can do this by using a ping scan the
+ping scan identifies all of the IP
+addresses that are currently online
+without sending any packets to these
+hosts now to run the ping scan we're
+going to write end map the flag we're
+going to mention over here is sp now
+these flags are the
+different traits of the nmap scan
+depending on what flag we use we can
+send different kinds of requests to the
+host that we are scanning now before
+moving forward with this let me open
+another terminal over here and check the
+IP
+address we're going to write the command
+if config and find the Subnet in which
+this system is present as you can see
+the IP address is
+192.168 72
+2131 now this operating system is being
+run on a virtual machine software known
+as VMware the VMware in itself is
+running on a Windows 10 operating system
+considering they are now a part of the
+local network this IP address is of par
+security and the Windows operating
+system which is the host system in my
+scenario will fall in this particular
+subnet so to run our
+scan we're going to Target
+1921
+168
+72.1
+d24 this command then Returns the list
+of hosts on your network and the total
+number of assigned IP
+addresses this is going to be capital P
+yeah if you spot any host or IP
+addresses on that list that you cannot
+account for you can then run further
+commands to investigate them further as
+of right now you can see the machine
+that is the parot security this IP
+address can be detected in the subnet
+the 19 192.168 72.1 is my local Windows
+machine that is running VMware software
+and ultimately this virtual machine the
+72.2 is the DHCP server that hosts the
+internet connection of the par security
+this we can ignore for now now now the
+Windows machine that we have over here
+let's run some tests on that going to
+clear our
+terminal and we can close this
+actually when scanning hosts and map
+commands can use server names ipv4
+addresses or IPv6 addresses a basic nmap
+command will produce information about
+the given host to run a basic port scan
+we can just use nmap along with the i
+now as you remember the IP is
+192.168 72.1 this is the IP of my local
+Windows 10
+machine as you can see it shows the
+ports that are open and the particular
+servers that these ports are
+running now we can also have a detection
+of the operating system now mind you
+this is not 100% correct and the
+reliability depends on the installation
+and what kind of fingerprinting measures
+are available now since this does TCP IP
+fingerprinting it needs some extra
+permissions the flag that we going to
+use is n map minus o along with the same
+IP
+address like I said since this just TCP
+IP finger printing it requires root
+privileges now to provide root
+privileges we're just going to add the N
+map and and Pudo
+keyword going to repeat the same command
+that we wrote
+above as you can see it has successfully
+detected that I am running Microsoft
+Windows
+10 with this Mac
+address it has also shown the correct
+build number of the Windows 10 system
+that I am
+using this is useful for troubleshooting
+scanning for few vulnerabilities or even
+locating some services that need to be
+updated now to get the necessary
+information about these services for
+example what versions they are using we
+have a command known as SV which stand
+for service version we use the same IP
+address and press enter
+now as you can see the scan is complete
+and if you can check the results of the
+scan above here we don't see any version
+number for the
+services here we can actually check what
+version they are running now this
+becomes helpful when we are trying to
+find specific versions to exploit for
+example if VM workstation 16. 1.2 had
+some particular vulnerability we can
+exploit it by checking this
+command apart apart from the host
+scanning Port scanning is one of the
+most basic utilities there are few ways
+that this command can be customized as
+well for example I've already checked
+that the 443 command is open but I have
+found out after running this lengthy
+scan let's say I only want to check if
+command if the port 443 is open and map
+I'm going to use
+the flag of minus P which stands for
+Port and give 443 as an argument here
+using the same IP
+address and you can see it says it's
+open but we already knew it is open
+let's say there was something else uh if
+let's say we're going to scan if the
+Apache web server port is open which
+usually runs on
+80 obviously since I'm not running an
+Apache web server it says it's
+closed now we can combine these two
+commands by running both Bo
+simultaneously to do that we can just
+put a
+comma and complete the rest
+similarly expected it is closed and 443
+is open another feature of end map for
+Port scanning is showing of ranges now
+ranges can be beneficial when you're
+trying to see up to a certain limit for
+example n map minus P we're going to
+check what ports are open between 100 to
+let's say
+2,000 this acts as a
+range everything else is the
+same and it checks all ports in the
+range of 100 to
+2,000 whatever PST is open in between
+that range it can be mentioned over here
+we're going to clear the screen now
+another flag that can be used with nmap
+is the SS command this runs a stealth
+scan which is a little harder to detect
+if you're the it admin of the system
+that is being
+scanned the results will more or less be
+the same although this will need
+elevated root
+privileges 2.1
+as you can see this is more or less
+similar to a port scan it just adds an
+extra mac address as well for good
+measure but like I said it's more about
+the stealth the normal scans usually are
+easier to detect when the logs are being
+checked stealth scans are relatively
+tougher to check on much more intricate
+systems this takes longer as
+well now that we're done with both
+scanning let's look at a vulnerable
+machine the system that is scanning
+right now is the my own personal system
+with everything is pretty locked down as
+much as it can
+be there is an attack box
+running in the cloud the IP address of
+which is over here now to be able to get
+into this network we need to connect to
+their personal network using a VPN so
+what I'm going to do is switch to a
+different workspace over here I'm going
+to open a terminal
+and if you can see over here there is a
+hack test. ovpn file I'm going to
+connect to their VPN network using this
+ovpn
+file and once we get the initialization
+sequence completed message we know that
+the connection has been established
+like we discussed this is the vulnerable
+device IP we're going to copy
+this and we're going to try to Ping this
+let's open a new terminal we're going to
+try to Ping this and check if we are
+able to reach this
+machine and as you can see we're getting
+a reply back which means we are now part
+of the local network where the
+vulnerable machine is
+present let's run run a service scan map
+with the respective
+versions We ran the similar scan on my
+local machine where we were able to
+detect what version each service was
+running what we're going to do over here
+is by checking what kind of services are
+open on the machine running on the cloud
+we're going to decide what we are going
+to do next and we're going to see if in
+map alone can point us to a Direction
+Where We can gain access to the machine
+as you can see the scan is now
+completed and we have some of the ports
+that are being opened over here and what
+kind of service they are
+running now like we discussed this is
+the first stage or sometimes even the
+second stage of ethical
+hacking what we can infer from here is
+what are the services that are being run
+now these two ports 139 and 445 are
+actually Windows SM SMP server ports
+which are above the Windows samb Server
+now every service has a particular put
+attached to it that will be consistent
+whichever machine you may use apar
+server will always run on Port 80 SM SMB
+servers will function on these two
+ports now SMB servers have had a
+vulnerability known as the Eternal blue
+exploit which was pretty well known as
+of right now from the scan results we
+are not able to detect if this machine
+has the similar vulnerability or not but
+since it has the SMB server open it's
+worth a shot that we try that exploit on
+this
+machine now to start the exploit on this
+we're going to open another terminal
+over
+here and we're going to use Metasploit
+for trying the exploit there we're going
+to write sudo msf
+console msf console is the keyword for
+launching the Metasploit
+console enter the root password and wait
+for metas plit to
+launch other than the ports we can also
+see that it has check the host name of
+the system and the operating system as
+well now that the metas SP is
+open we're going to launch the exploit
+now before launching we're going to have
+to check what exploits are there for the
+Eternal blue
+vulnerability we're going to write use
+exploit blue and we're going to check
+what kind of results we are getting over
+here as you can
+see serial number n exploit Windows SMB
+Ms 17010 internal blue it was first
+disclosed in
+2017 and SMB remote kernel buol
+corruption let's say we're going to use
+this particular exploit now all of this
+may be confusing if you're not aware of
+Metasploit but remember this is the next
+stage of ethical hacking which comes
+into the gaining access part we're going
+to use exploit number nine as we found
+above to use exploit number nine
+we're going to set a
+payload which is our malicious code that
+will run on the victim
+machine now we're going to
+check some options as you can see it has
+by default pointed it to the 445 Port
+since that is the port where SM SMB
+server can be accessed
+from the parameter that's missing over
+here is our host the r host is the IP
+address of the vulnerable machine
+basically the machine in which we want
+to attack now I'm going to use the set
+command to set the IP
+address now if we
+check we now
+have a victam IP address
+set another parameter that we can change
+is the L host this is basically the IP
+address of our own system where we are
+going to gain access now if you have
+remember we had connected using a VPN so
+we're going to be assigned a new IP
+according to the VPN so if you write if
+config and check this one T10 is the VPN
+adapter this is our IP address that we
+have been assigned in the server in the
+network where the vulnerable machine is
+present so we're going to copy this IP
+address we to move over this
+workspace and we're going to set
+lhost with that IP
+address with that our options are set
+now we're going to run
+exploit and it's going to check if samb
+server vulnerability is
+present as you can see it has written
+that the target is vulnerable to this
+particular exploit is going to send the
+malicious code and the malicious code is
+set in the payload that you sent
+above and we now have the shell command
+of the Windows
+machine as you can see C Windows system
+32 to be sure that this is in fact this
+Windows machine that is being used we're
+going to write ip config which which is
+a Windows only shell
+command as you can see this is the IP
+address that was assigned to the victim
+victim
+machine now while the major part of this
+process was done on
+Metasploit we would not have reached the
+stage had we not found out that the 139
+and 445 ports are open which basically
+pointed us that we can try the Eternal
+blue exploit of the windows Samba
+servers
+similarly all the scans that we run
+serve as a preface to the actual stages
+or the actual hacking stages of the
+campaigns this SV command was necessary
+because we could check what are the
+exact services that are being running in
+some cases if if it Apache server is
+being run there are particular versions
+which have particular exploits those
+exploits will not work on other versions
+so we're going to have to check what
+particular version is being run and
+accordingly apply the exploit that can
+be done either Metasploit or you can run
+some other tool but what exact exploit
+we have to run and which vulnerability
+we have to Target that is where nmap
+comes to
+help hope you learned something new
+today if you have any questions or
+doubts regarding this please feel free
+to let us know in the comments below and
+we will get back to you as soon as
+possible subscribe to our channel for
+more informative content like this and
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,369 @@
+hello and welcome to this session of
+operator overloading in python
+today we're gonna talk about this
+concept and how it is being implemented
+in python
+this concept is not new in any
+programming language it is a pretty
+common concept in languages like c plus
+class and java
+but today we will focus on how you can
+perform operator overloading in python
+so what's in it for us today
+what we will understand what is operator
+overloading and how to overload the
+operators in python we will perform
+these activities in the jupyter notebook
+now what is operator overloading
+python operators work for built-in
+classes in a predefined operational way
+but the same operator behaves
+differently for objects of different
+classes
+so you can make the operator work
+differently
+bases the requirement you have and the
+objects you have defined
+so for example the plus operator which
+is the most commonly used operator will
+perform arithmetic addition on two
+numbers or it can merge to less
+or if performed on two strings it
+concatenates the two strings so it means
+the programming language automatically
+understands that in which context you
+are using the plus operator
+this feature in python that allows the
+same operator to have different meanings
+according to the context according to
+the objects
+which are calling it or according to the
+data types which are being used in that
+operator it is called as operator
+overloading
+so if you see in this example 8 and 7
+are the operands and the plus sign is
+the operator sign
+so that is the whole goal of this whole
+exercise that we will show you how you
+can change
+the meaning of the plus operator
+depending on the kind of objects or kind
+of operands you are using along with it
+now how to overload the operators in
+python
+consider we have two objects b1 and b2
+of a class batchman
+now we must add these objects with a
+binary plus operator
+so now the task in hand is that we use
+the plus operator to add objects which
+is not possible until and unless we
+overload this operator
+otherwise it will throw an error because
+the compiler does not know how to add to
+objects it only knows how to add
+primitive data types like in strings etc
+so basically we will define a method
+for an operator that process and that
+process is called operator overloading
+so in the example which we will be
+showing you we will be taking two
+objects of batsman one and batsman two
+and we will be using two scores per
+patchmen
+and then we will add them so we will
+discuss that in the examples we will
+show you
+now
+we can overload all the defined
+operators so there's no limitation
+addition subtraction multiplication
+division
+greater than less than so there are
+certain magic methods or we can call it
+as the primitive methods or special
+functions that are automatically invoked
+when an associated path operator is
+being called
+so basically if you have to do the
+operator overloading you basically have
+to override these methods in your python
+program and that's how you will be able
+to
+override or overload the primitive
+implementations of these functions
+written in the compiler of python
+so
+let's see here in our example right for
+example when we use the plus operator
+the magic method underscore underscore
+add underscore underscore is
+automatically invoked
+in which the operation for the plus
+operator is defined
+now we are overloading it and in the
+example you can see
+we are adding
+the
+first score of each batchman right so we
+have customized the addition function
+we are adding the first score of the
+first placement with the first score of
+the second batchman and then we are
+printing the total so in our case we are
+adding
+and printing the first one 66 plus 23
+and if you print b3 dot s2 you will see
+the sum total of 78 plus 59 so the thing
+to be noted is this function add
+function where you are adding self dot
+s1 plus second dot s1
+and you are adding s self dot s2 plus
+second dot s2 and that is the whole
+customization what you have done in
+order to add two objects of patch now
+let's take a look at some of the
+examples of operator overloading we have
+just discussed
+so we will be executing some examples in
+our jupiter notebook
+now
+what i'm going to show you
+is about class batsman which we
+discussed in the presentation
+and i'm going to define the init
+function
+and
+initialize
+score 1 and score two of the patchmen
+now
+i'm gonna override
+the magic function add
+and
+add the score 1 and score 2
+of the batsman separately
+now with this over
+operator overloading
+when i will pass
+object for edition then only now
+my object will understand that it has to
+add
+score one
+of first batsman with the score one of
+second batsman
+and score two of first batsman with the
+source core two of the second batsman so
+we'll see how
+so what we are doing is
+one in the add
+operator
+we are adding these codes
+encapsulating in a new object batchman
+and then returning the object b3
+now let's create
+object b1
+batchman1 and batchman 2.
+now i am
+adding two objects batsman one and
+batchman two
+now without operator overloading if
+would i would not have done operator
+overloading of add then this would have
+failed because plus operator does not
+understand the object's batchman but
+with overloading done
+now i can independently print
+the score of
+the new batsmen the batsman's the b3
+object
+sum of score one of batsman one and
+uh score one of batsman two which is 66
+plus 23.
+okay
+so now let's take an example of a simple
+operator function
+like for example i am going to
+simply create a variable a with value 44
+and variable b with 7
+and
+print a plus b and if i run this
+this is the expected output
+python plus operator knows that a and b
+are primitive int variables so it's able
+to add that
+now behind the scenes when we printed a
+plus b
+actually this is what happened
+in
+primitive in variables add operator
+overloaded method got called
+and a and b got passed and 51 was
+calculated
+so it's automatically done because this
+function is implicitly written in the
+python language
+similarly
+i can also do this thing i can create a
+int variable
+and a float variable
+and if i try to print it
+i will get the expected output which is
+50.5 because the plus operator accepts
+the end and a float variable its
+implicitly written so that is also
+allowed
+now let us take another example of
+string operators
+string variables
+addition
+now irrespective of my
+i'm giving numerical values in the
+string print a plus b
+in string
+is is meant to do concatenation so
+446.5 it's a simple string concatenation
+what python has done
+and implicitly
+python is invoking
+the string
+method
+add operator overloaded which is
+overloaded and invoking it
+now i would like to show you like
+suppose for example i do an addition
+between an end and a string variable
+right and i say
+print a plus b
+now this operation is not permissible i
+will get an error because ideally with
+the plus operator either i can say in
+int float
+or string string intense string is not
+allowed because it's mathematically or
+functionally doesn't make any sense
+that's not how the way the python plus
+operator has been overloaded
+now
+let's try
+other operations on objects
+let's create a class person
+and i'll create a init
+function to initialize
+height and weight
+okay
+now
+print 8 means it's just printing the
+primitive data type
+now i want to
+print an object of
+class person
+now as i have not overridden the string
+magic function python will not
+understand what to print so it will only
+print the
+object it will it is printing the person
+object which definitely
+uh you can't uh figure any sense make
+out any sense out of it but as we have
+not overridden
+the str function the magic function
+that's why python is printing the object
+now in order to
+print a meaningful output
+what i have to do is
+in this class only
+i can override the str magic function
+correct
+and i just have to say format self dot
+height and weight so now when i will run
+this
+see
+instead of object now the output is 5.5
+comma 62 which are the input parameters
+which i sent in this object so if you
+remove this
+you get the object print and if you add
+this
+you get the actual meaningful output and
+that is the purpose of overloading
+now let's take another example
+we are creating a class jaguar
+defining the init method
+and overriding the subtract
+function
+okay
+then i am
+making another class audi
+and
+writing the init function
+now let's create an object of jaguar
+and
+body
+now if i
+do a print call
+x minus y
+it will invoke the
+subtract
+function of the jaguar class because
+it's the first variable
+and it's going to subtract the mileage
+of jaguar minus the mileage of rd
+and that's how you're getting the output
+three so ultimately in this scenario the
+subtract function
+of jaguar got called
+it took the variable value of 18
+and 15 which is is x and y
+and that did the operation
+similarly
+i will now overwrite the greater than
+function
+for
+checking who has a greater mileage
+jaguar or
+audi
+so i'll overwrite the init function
+then now i'm gonna overwrite the
+greater than function
+take values in a variable and
+write the condition
+if x 1 is greater than 1 y 1 then return
+true
+else
+return false
+okay so i have overridden the greater
+than function jt function
+and i'll close again create my class
+audi
+define the init
+okay
+initialize the variables like i did
+earlier in a similar fashion create
+objects
+jaguar and audi
+now i am going to perform the check of
+whether the object of jaguar which is
+mileage check is greater than
+audio or not
+and as i have initialized the variables
+of jaguar with 18 mileage and audi with
+15
+my expected output should be the jaguar
+mileage is
+greater and that's what it is now
+this has been only possible because i
+have over written the gt
+uh method in the jaguar class
+so i think this
+might have been a good learning
+exercises for you and
+you are able to understand the concepts
+of operator overloading
+i hope you had a great learning session
+and i'll see to you next time thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

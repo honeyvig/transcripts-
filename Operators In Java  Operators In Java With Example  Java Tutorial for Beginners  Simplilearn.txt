@@ -1,0 +1,1040 @@
+are you ready to explode the amazing
+world of operators in Java if you are a
+beginner this is a great place to start
+and if you are an experienced Java
+programmer you might be surprised by
+what you learn
+so what are operators in Java they are a
+group of characters that allows you to
+perform mathematical and logical
+operations on data types like strengths
+integers and bullions that means
+operators allow you to do everything
+from simple addition and subtraction to
+Advanced mathematical calculations but
+that's just the beginning there are so
+many different operators in Java and
+each one has its own unique
+functionality in this video we'll take a
+look at the most popular operators
+present in Java and you'll learn
+everything you need to know about how to
+use them what they do and how they can
+make your coding life a whole lot easier
+but before we begin if you enjoy
+watching these videos and find them
+interesting please subscribe to our
+Channel because we bring the best videos
+for you daily also hit the Bell icon to
+get notified whenever we drop a new
+video if you are eager to enhance your
+coding skills across various domains of
+software engineering you might want to
+consider a Caltech coding boot camp with
+a state-of-the-art Caltech coding
+bootcamp you can learn to code and
+become a full stack developer within 6
+months get fully immersed in this
+accelerated coding bootcamp and become a
+valued software engineer ready to take
+on any challenges on the job
+the key benefits of this program include
+caltex atme bootcamp completion
+certificate Caltech ctme Circle
+membership online convocation by Caltech
+ctme program director portfolio building
+on GitHub up to 17 CEUs from Caltech
+ctme
+and master classes from Caltech ctme
+instructors there are many more other
+key features this bootcamp covers the
+basic of several different Frameworks
+including spring boot web services
+servlets and jsps MVC JavaScript mongodb
+and much more these skills will Empower
+you to kick start your career as a
+versatile full stack developer so take
+advantage of this opportunity the course
+link is provided in the description box
+below keep watching this fun interactive
+and informative video on Java operators
+and by the end you will be using Java
+operators like a pro so let's get
+started let's get started with today's
+topic which is about operators in Java
+when we talk about operators in Java
+there are multiple types of operators
+like assignment operators arithmetic
+operators unary operators then we have
+conditional operators and logical
+operators and we also have bitwise
+operators and we will cover all of these
+operators one by one we will understand
+what what these operators are and how
+they work and we will also look at a
+demonstration of it so let's get started
+the first operators we are going to
+discuss is about arithmetic operators
+and assignment operators and we will
+also see if we can cover unary operators
+so when we talk about assignment
+operators I have again opened the
+official Java docs here if we understand
+assignment operators we have been using
+this operators all the while in all of
+the demos so far and the basic idea is
+very simple whenever you assign a value
+to a variable you use the assignment
+operator which is nothing but the equal
+sign we have already covered this in
+multiple demos so I will not cover this
+as part of the demo but what I'm going
+to cover in detail is about these
+arithmetic operators so arithmetic
+operators are basically used to perform
+any kind of arithmetic operation on a
+Java program it can be an addition
+operation it can be a subtraction
+operation it can be a multiplication
+operation a division operation or an
+operation by which you can find the
+remainder of the division so we will
+look at each of these uh with an example
+and as you can see the symbols are
+expectedly what you generally use in
+mathematics so you see the the plus sign
+here which is for addition you see the
+minus sign which is for subtraction you
+see the star sign which is for
+multiplication you see the slash sign
+which is for division and you see the
+percentage sign which is for finding the
+remainder of a division so let's see an
+example of each of these and how we can
+use them in a Java program
+so for the arithmetic operations I have
+prepared a demonstration of it in the
+Eclipse IDE again I'm using the same
+Java project which I have shown you we
+created in our previous lectures so I
+will for all the demonstrations I will
+just continue on the same project so
+again the way to create a class Remains
+the Same exactly the same as how I
+covered in the previous lecture in the
+hello world program where we created a
+class so here also I created a class I
+named the class as arithmetic demo and I
+have a public static void main method
+inside this particular class and I have
+basically tried to demonstrate each of
+the operation so let's start with the
+additional operation first so I create
+an integer variable here named as result
+and then I try to use the addition
+operator to make this variable store the
+result of this Edition so it's a simple
+one plus two you can also create two
+different variables for one and two
+let's say X equal to 1 and y equal to 2
+and you can also do int result equal to
+X Plus y it will have the same effect
+but just for Simplicity I have put the
+literal numbers here so result is
+storing the the expression value of 1
+plus 2 and then I am printing this value
+here you can see I am printing the
+result variable here with using system
+dot out dot println then I'm storing
+this result into a variable into a new
+variable original result with using the
+assignment operator and then I'm trying
+to subtract something from it so now I'm
+saying result equal to result minus 1 it
+means whatever the current value of
+result is subtract minus 1 from that
+value so the value was 3 here and here 3
+minus 1 becomes 2 so the new value of
+result becomes 2 the original result
+still holds 3 because it is storing the
+old value the new value of result has
+now become 2 so I'm printing the
+original result and then what I'm doing
+that I'm again assigning the new result
+which is 2 to the original result so now
+original result and result both are at 2
+then I move ahead and I try to
+demonstrate the multiplication operation
+so I take the same variable result and I
+say multiply it by two so whatever the
+value of result was which at this place
+should be 2 multiply that value by 2 so
+2 into 2 the new value of result should
+become 4 after this multiplication
+operation and again I'm assigning the
+value of original result to this
+particular variable and then I'm
+showcasing the fourth mathematical
+arithmetic operation which is division
+so you can see result by 2 here so
+basically whatever the current value of
+result is I am dividing that value by 2
+so 4 divided by 2 should become 2 so
+again the new value of the result
+variable should become 2 then I am
+printing the value and again storing the
+value back into the original result then
+the next operation is again an addition
+operation where I whatever the value of
+result is at this particular point which
+is 2 add 8 to that particular value so
+the new result value becomes 10 and then
+I'm printing that particular value again
+assigning the original result to the
+result and then to showcase the
+remainder operation I am doing result we
+call this particular operator as mod or
+modulus so result modulus 7 so the
+current value here is in this case would
+be 10 so I'm saying 10 mod 7 so 10 mod 7
+would become 3 because if we divide 10
+by 7 the remainder should be 3 and this
+modulus operator is used to calculate
+the remainder of a division operation so
+that 3 will be stored in this result
+variable and then we print that
+particular variable so that is what I'm
+doing if I take you back up there I will
+just minimize this window and this
+window as well so if I take you by back
+to the starting I am doing an addition
+first here at line seven then I am doing
+a subtraction at line 12 then I'm doing
+a multiplication at line 17 and a
+division at line 22 and then again an
+addition at line 27 and then our modulus
+at line 32 and I'm printing the
+respective values so let us run this
+program and see what results do we get
+so I right click I go to run as I go to
+Java application there is also a
+shortcut for it if you want to use the
+shortcut you can use that so I click on
+this and the output is is displayed here
+so you can see let me bring this output
+back to its original position yeah I
+just dragged it here to the top to the
+bottom so if you start from the top and
+see what all results did we get printed
+so line 9 says 1 plus 2 equal to the
+value of result so 1 plus 2 equal to at
+this particular point the result will
+value was 3 because 1 plus 2 equal to 3
+moving on the next variable here is
+minus so the current value was 3 we said
+3 minus 1 which becomes 2 and we store
+the value of result or 3 into this
+result variable and we print that value
+at line 14. so original result plus
+original result is 3 then a string here
+minus 1 equal to so this is just a
+string and then the actual current
+result value which is 2 so far so good
+we move ahead and then at line 19 we are
+multiplying the current value of result
+by 2 and again displaying the original
+result and the current value so 2 is the
+original result here because here 3
+minus 1 had become 2 so original result
+value was to multiply that by 2 becomes
+4 then moving on to the line 24 2 by 4
+by 2 should become 2 so 4 by 2 equals 2
+the current value of result then again
+and moving on to the next variable at
+line 29 now the result value should
+become 10 because 2 plus 8 is 10 and
+again we are printing the original
+result and then the current result value
+so the original result was 2 then we
+added 8 to it and the new result value
+had become 10 which is coming from this
+particular variable moving on to line 34
+we are again printing the original
+result which was 10 here and then we are
+saying this particular string which is
+modulus 7 and the current value of
+result is coming from this expression
+which is 10 modulus 7 and like I said
+modulus or mod operation is basically
+used to calculate the remainder of a
+division operation which so 10 divided
+by 7 remainder is 3 so that becomes 3
+and that's why you see the value 3. so
+this is a demonstration to show you how
+we can use the addition multiplication
+subtraction Division and modulus
+operators which are all the edit
+automatic operators engineering
+operators so when we talk about unary
+operators technically they are also
+arithmetic operators but they provide us
+a shorthand or they have a more advanced
+meaning so if you see on the screen
+these are the unary operators we call
+them as generic plus unary minus
+increment Operator decrement Operator
+and logical complement operator so when
+we talk about the engineering plus
+operator basically it is used to
+indicate a positive value so whatever
+value you are having it will just make
+that number as positive number you might
+be wondering that this plus has an
+addition meaning as well right which we
+saw in the previous example yes that's
+correct but when we use that addition
+symbol we use that between two variables
+but when we talk about Unity operators
+they are used with a single variable
+that is why the name unary because they
+are used with a single variable they
+require only one operand so generally
+plus basically makes any number positive
+usually minus negates an expression and
+makes that number negative increment
+operator increments the value by plus
+one decrement operator decreases the
+value by minus 1 and logical complement
+operator inverts the value of the
+expression from True to false or false
+to True let's understand this with the
+help of an example so I have created a
+class here called unary demo and I have
+a static void main method here and I
+have created a variable called result
+and the first example is about using
+unity plus so I'm creating a variable
+called as result assigning the value as
+1 and just putting 1 plus in front of it
+which makes this as positive value
+though we can argue that this also has
+the same effect as this and yes that is
+true but in case if this value was
+written as something like minus 1
+instead of plus then then we could
+basically make that number positive by
+just putting Plus in front of it so
+that's basically the power of unity
+operators and that's how you generally
+use Unity operators so I'll just put it
+back to plus one the next example is
+about decrement operators so the current
+value of result was 1 because we did
+this now we are saying result minus
+minus which means whatever the value of
+result is just decrement it by 1. so the
+current value was 1 so now the new value
+of result after this evaluation becomes
+0. so at line 14 we print the current
+value of result which is 0. moving on at
+line 16 we are using the increment plus
+plus operator here which means whatever
+the current value of result is just
+increment it by 1. so the current value
+of result was 0 till this line so it
+becomes 1 because this means increment
+by 1. so line 18 will basically print
+that value 1 and then at line 20 I'm
+using the unary minus operator which
+means whatever the value of result is
+just negate it just put a negative in
+front of it just make that number
+negative so if I just say minus result
+the current value of result was 1 so it
+became minus 1 and then to showcase the
+negation operation I created a Boolean
+variable named it as success assign the
+value of this variable as false and
+printed the value of success variable as
+is first and then print the value of
+success with a negation in front of it
+with an exclamation mark which will
+basically flip the value or invert the
+value of a Boolean variable so if this
+was false line 28 should print true if
+this was true line 28 should print false
+in this case this is false so the line
+28 should print true so let's right
+click on this and run this program and
+see if we get the expected output and
+yes we see the output here so let's try
+to interpret the output now the line 10
+should print 1 yes then line 14 should
+print 0 we see 0 here line 18 should
+print 1 because we use the increment
+plus plus so 0 plus 1 became 1 then we
+use the unary minus operator so the
+value should become -1 yes we see minus
+1 here and then for Boolean variable we
+should see first of all
+because the value is printed as is and
+then we are printing a negated value so
+we should flip the value from false to
+true and yes it is printing the value as
+true so this was about unary operators
+now when we talk about this increment
+and decrement operators what if I put
+this particular value in front of result
+what effect is that going to happen
+let's analyze that part as well so for
+that I have prepared a separate demo
+again I've created a class called
+pre-post demo and it has a public static
+void main method I'm declaring an
+integer variable I with the value as 3
+so the I becomes 3 here and then I'm
+saying I plus plus as we have already
+seen in the unary demo example this
+should increment the value of 3 to 4 so
+it will print 4 expected right then at
+line number nine I am putting this plus
+plus in front of I now what will happen
+now it is going to increment the value
+of IE and then and basically assigning
+the value of I so the whole difference
+between I plus plus and plus plus I is
+that in this case the value of I is
+assigned first and increment later in
+this case the value of I is incremented
+first and assigned later so here the
+value from 4 becomes 5 so at line 11 if
+you see if we print I it will print 5
+because we have we are saying that first
+increment the value and then update the
+value of I so increment happens on I
+equal to 4 and I becomes 5. at line
+number 13 it becomes more interesting
+because here inside the system.out.print
+Ln statement itself I am saying plus
+plus I now what will happen like I
+explained first the value will be
+incremented and then the value will be
+assigned so before printing the value is
+getting incremented so the value from 5
+becomes 6 here at line 13 but if I try
+to do this now I am saying first assign
+the value of I and then increment it so
+I at this line is still 6 because I has
+already been assigned 6 and as the post
+increment says if we put this plus plus
+after the variable it means that you are
+first assigning the value and then
+incrementing the value so anything which
+happens after line 15 the value of I
+will become 7 but at line 15 the value
+of I is still 6 because we are using a
+post increment operator so the value is
+still assigned to I as is and then
+incremented and when we do
+system.out.println the assigned value is
+printed not the incremented value so
+like I said after line 15 the value of I
+will become incremented by 1 and it will
+become 7. so hope you understood this
+example or and the difference between
+the pre-increment and post increment
+remember the thumb rule that if we put
+plus plus before a variable like at line
+number nine the value will be
+incremented first and then assigned so
+at line 13 the updated value will be
+printed because the first we are doing
+the increment and then we are printing
+the value for assigning the value
+similarly at line 15 we are first
+printing the value and then incrementing
+the value so when the value is printed
+at line 15 the old value 5 will be
+printed but after line 15 the new value
+of I will be accessible to the program
+so let's right click on this and run
+this program and now if we see the
+values we assigned I to 3 we did a post
+increment here so I becomes 4 we print
+the value of I so here the value of I is
+4 you see 4 here then at line line nine
+we are saying plus plus I so four plus
+one becomes 5 though this is is a
+pre-increment but since we are not
+printing this plus I as is it does not
+have any any change so the value of 4
+becomes 5 at line 11 we print 5 then at
+line 13 we are saying plus plus I which
+means increment the value of I first and
+then assign it so the value of 5 becomes
+6 and then I gets updated and printed
+similarly at line 15 first the value of
+I is assigned and printed and then
+incremented so at line 15 the value is
+still 6 you see this 6 here and then the
+value is incremented so after line 15
+the value becomes 7 so that's how we are
+basically using the unary operators
+equality and relational operators when
+we talk about relational operators they
+are sometimes also called comparison
+operators and the basic idea behind
+using these operators is to compare
+things or compare the value
+of variables or compare the objects in
+Java so in Java if you need to compare
+anything for example if you want to
+compare if something is less than the
+other thing or something is greater than
+the other thing or something is equal to
+the other thing then you need to use the
+comparison operators which are provided
+by Java here you can see I have opened
+the official Java docs and you can see a
+bunch of comparison or relational
+operators both of the terms are used
+interchangeably some people call them
+comparison operators and some people
+call them relational operators so you
+can see if I want to compare if an
+object or a value is equal to another
+value then I use the double equal sign
+if I want to compare for non-equality I
+will use exclamation with an equal to
+which means not equal to if I want to do
+a greater than comparison then I will
+use the mathematics greater than symbol
+if I want to do the greater than equal
+to or or less than or less than equal to
+they again follow the same kind of
+terminology as we see in mathematics so
+this is all we have in terms of the
+relational operators so let's understand
+the usage of these operators with the
+help of some examples so as you can see
+I have created a class here which is
+called comparison operator there is a
+public static wide main method inside
+this class and this method has two
+variables of integer type called value 1
+and value 2 value 1 has a value 1 and
+value 2 has the value 2 and then I am
+trying to compare the value 1 and value
+2 variables using the different
+relational operators we just covered for
+doing that I need to use a conditional
+operator as well we will be covering
+conditional operators in much much
+detail in the upcoming lectures but for
+now you can understand that when we talk
+about conditional operators we talk
+about if an else statement so f is again
+a keyword in Java which can be used to
+compare things and the syntax is very
+straightforward you write the if keyword
+and then you write the actual comparison
+syntax or the actual comparison
+expression so in the first example we
+can see that I am writing a condition
+which says evaluate if value 1 is equal
+to Value 2 I should put a curly braces
+around here you can see there are no
+curly brushes here but that is for a
+case when you have only one statement
+under it but again I will cover this in
+detail and I don't want to confuse the
+audience here so I will just put curly
+braces around all of these if statements
+so that it becomes easy to interpret
+what is actually going on in these code
+blocks as we know that these curly
+brushes are used to define a code block
+so the first if block says compare if
+the value 1 is equal to the value 2 if
+yes then this condition will become 2
+and the control of the program will go
+at line number 10. if this condition is
+not true then the control will not go
+inside 10 because this condition is
+false so it will never go to line 10 and
+it will move to line 11 or 12 instead
+similarly the next condition is we are
+comparing the value 1 is not equal to
+Value 2. so this condition will only be
+true if these two values are not equal
+or unequal and if that is the case then
+line 14 will execute it otherwise line
+14 will not be executed similarly in
+this condition I am saying compare if
+value 1 is greater than value 2 or not
+so if the actual value hold it by value
+1 variable is greater than the value 2
+variable then this condition will become
+true and the line 18 will be executed
+otherwise it will be skipped then
+similarly at line 20 I am doing the
+reverse I am comparing if value 1 is
+less than equal less than value 2 if
+that is the case then line 22 will be
+executed otherwise it will be skipped
+and At Last I am also showcasing an
+example of less than equal to operator
+that you put less than and equal to
+together and again you compare the two
+variables similarly you can also use
+greater than equal to variable
+comparison operator as well in this
+example so we have an example of
+equality not equal to greater than less
+than and less than equal to let's run
+this example to understand so for
+running the example I will just right
+click here go to run as and click on
+Java application and we can see the
+output here so as the value 1 holds the
+value 1 and value 2 variable holds the
+value 2 obviously 1 is not equal to 2 so
+the first condition is not going to be
+evaluated to true so line 10 will never
+be executed because 1 is not equal to 2.
+similarly if I talk about the next
+condition which was if value 1 is not
+equal to Value 2 then execute statement
+40 and yes 1 is not equal to 2 that's
+why we see this particular system dot
+out dot println here we see this printed
+moving on is value 1 greater than value
+2 so is 1 greater than 2 no it's not so
+line 18 will never be executed then the
+next one is is value 1 less than value 2
+so yes 1 is less than 2 so line 22 will
+be executed and we see the line 22
+output here system dot out dot print and
+output moving on is 1 less than equal to
+2 yes 1 is less than equal to 2 so this
+particular condition is also true and
+line 26 will be executed and that's why
+we see this here and that's all so we
+can see that we are able to use these
+comparison or relational operators to
+evaluate different conditions and we
+write those conditions using the if
+block and again if you do not understand
+the if block fully don't worry we will
+be covering the if blocks in detail but
+the focus here is in using the operators
+the not equal to operators the greater
+than equal to operators less than equal
+to operators Etc so I hope these
+operators give you better understanding
+of how to use them M now moving on to
+the next section of this comparison
+operators sometimes we also use some
+logical terms to do the comparison for
+example if I just move down here and I
+show you these conditions here we call
+them conditional operators conditional
+operators are used to evaluate the
+conditions like and or or and we use
+them in two two ways either we can use
+it as Ampersand or double Ampersand or
+we can use them as pipe or double pipes
+so the idea is basically to evaluate if
+one condition is true and other
+condition is also true or one condition
+is true or other condition is true so
+whenever you want to combine two
+conditions together that's where you're
+going to use these logical operators or
+conditional operators you can also use
+the simple English keywords like and or
+or you can use the logical
+representation of these keywords for
+example Ampersand Ampersand or double
+Ampersand is equivalent to to add
+similarly double pipe is equivalent to
+or so we can use these as well
+interchangeably you can use either of
+these operator representations to run a
+conditional check in composition meaning
+you can compare two conditions saying
+okay if one is true and second is true
+or one is true or second is true so the
+whole focus is here in and and or
+comparisons so let's switch back to the
+IDE and let's look at an example of this
+to understand this in detail so I will
+again take the similar kind of example
+again I have created two variables here
+value one and value 2 value 1 has value
+as 1 and second variable value 2 has
+value as 2 and then I am writing two
+conditions this time in the same if
+block you can see I am writing first
+condition saying is value 1 equal to
+equal to 1 and is value 2 also equal to
+equal to 2 so this whole if condition is
+only going to be true only if both of
+the conditions are true that's the
+property of and and will force that both
+the conditions on the left hand side of
+it and the right hand side of it hold
+true and then only the whole expression
+is going to hold true even if one of the
+conditions evaluate to false the whole
+if expression will evaluate to false
+similarly for or conditions we again
+write a left hand condition and a right
+hand condition and in between we write
+this double pipe we can also write o r
+or in English that will also have the
+same effect and this will evaluate in a
+way that this whole expression this
+whole expression will evaluate to true
+if even a single condition either on
+left side or right side of it becomes
+true so or we'll just need one
+expression to be true to make the whole
+if condition true whereas and will force
+both of the conditions to be true to
+make the whole expression as true so and
+will require two truths to actually
+become true but our condition will
+require only one true to become true so
+if we try to do uh understand this logic
+here I am saying that if value 1 is
+equal to equal to 1 which is correct and
+value 2 is equal to equal to 2 then make
+this condition as true so yes in this
+case this condition will evaluate to
+true because value 1 has value 1 1 and
+value 2 has value as 2 so it will print
+the line 10 whereas in the next
+condition I'm saying evaluate if value 1
+is equal to equal to 1 or value 2 is
+equal to equal to 1. so either of the
+expression if becomes true either the
+left side this expression or the right
+side this expression either of the
+expression becomes true this whole
+condition will become true and line 14
+will be executed line 14 will not be
+executed only in a case when both of the
+conditions here become false for example
+sample if I write it like this then we
+know that value 1 is not equal to 4
+because it's 1 and value 2 is not equal
+to 5 because it's true in that case both
+of the expression will become false and
+then line 14 will not be executed if I
+write it like this then the left hand
+expression is evaluated to true because
+value 1 is 1 but the right hand
+expression is false but it's fine the
+line 14 will still be executed because
+either of these side is true so the
+whole expression becomes true similarly
+here and will require both of the
+Expressions to be true and if either of
+them becomes false then whole expression
+becomes false so in the current state
+line 10 will be executed but if I change
+this to this then the left hand side of
+this Ampersand will evaluate to false
+and the whole expression will evaluate
+to false in that case and line 10 will
+never be executed let's try to run all
+of these scenarios to make a better
+understanding of this so in this case
+both of the conditions should work fine
+so I will just right click and run as
+Java application and yes we see this
+line 10 being printed and we also see
+this line 13 being printed so both of
+the lines are printed correctly both of
+the conditions are evaluating to true
+now let's try to play around with it let
+me change this value to 4 so now value 1
+this left hand side expression is false
+which should make the whole expression
+is false and it should not print the
+line 10 which is the statement so let's
+run this program and see if that works
+yes we see that this particular line is
+not printed now because this whole
+expression became false because the left
+hand side of this expression became
+false similarly in the r case either of
+them has to have to be true you can see
+currently value 2 equal to equal to 5
+condition will actually result in a
+false condition because this is not a
+true value 2 is actually two not five
+and still we see this particular
+expression because either of them have
+to be true if I make both of them as not
+true now both of the conditions on the
+left hand side of pipe and right hand
+side of pipe are false conditions what
+will happen now nothing will be printed
+the reason for that is that value 1 is
+also that this condition is also false
+and value 2 condition is also false so
+the whole expression became false and
+this was already false bitwise operators
+now bitwise operators are very less
+commonly used in the Java programming
+World generally we don't use them and
+generally we don't need to use them you
+would generally use them when you are
+doing really complex bitwise calculation
+where you need to manipulate the bits
+now what are actually bits so if you
+remember when we talked about the
+integer type variables we talked about
+how much memory each of the variable
+type or data type was going to consume
+we said that this will take one byte and
+this will take two bytes Etc one byte is
+basically made up of eight bits and bits
+are nothing but positions where either a
+0 is stored or one is stored actually
+the whole machine will convert your
+whole program ultimate directly in zeros
+and ones which are nothing but bits so
+if you want to do the manipulation at
+that level so now you can understand you
+are you are actually working at right at
+the Machine level understanding so if
+you want to manipulate the bits which
+are going to be understood by the
+machine at that level then you can use
+bitwise operators but like I said
+generally we don't need to use them now
+when we talk about bitwise operators
+there are multiple ways in which we can
+use them we can use them with the
+standard and or or operations if you
+remember we covered this and or
+operations in the previous lecture you
+see a difference here that in case of
+and we are using a single Ampersand or
+and not double Ampersand this is one of
+the concept which we did not cover in
+the previous lecture and I would just
+like to brief you about this concept
+that if you use double Ampersand that is
+also called a short circuit operator and
+if you use a single Ampersand that is
+called a standard operator to build an
+understanding about this I will just
+quickly recap of what we covered in the
+last lecture and we'll try to explain
+these Concepts as well so let's go to
+The Logical operator demo and here if
+you remember there were two ampersands
+and two pipes this is also a valid
+expression a single Ampersand is also a
+valid expression the only change is in
+this case even if the left hand
+condition evaluates to false still the
+right hand condition will be evaluated
+although we know that in case of and
+either of the expression needs to be
+false and the whole expression becomes
+false so Java provides an advantage or
+with that if you use double Ampersand
+and if the left hand operation becomes
+false then it will not cover the right
+hand operation it will not even evaluate
+the right hand operation because it
+doesn't matter if the left hand
+operation has already returned to false
+or evaluated to false then no matter
+whether right side is true or false the
+whole expression is is still going to be
+false right that's the property of and
+one of the side has to be false and the
+whole expression becomes false so why
+why evaluate two sides why waste the
+memory in evaluating the right side when
+the left side has already turned as
+false Java takes advantage of that and
+that's why if you use double Ampersand
+you save a bit of processing power of
+your computer by just evaluating the
+left hand condition and if the left hand
+condition is false it will skip
+evaluating the right hand condition and
+just make the whole expression false but
+if you use this a single n percent then
+both side of the expression will be
+evaluated irrespective of their output
+so in this case even if the left hand
+expression is false it is still going to
+evaluate the right side expression and
+similarly it works for the or case as
+well in this case in our case as we know
+if one of the condition is true the
+whole condition becomes true the whole
+expression becomes true so if the left
+hand side becomes true and if you use a
+single pipe then it will still evaluate
+the right hand side but if you use
+double pipe like this then if the left
+hand side becomes true then it knows
+that it does not matter if the right
+hand side becomes true or false because
+ultimately the whole expression is going
+to be true if either of the side is true
+so if the left hand side is already true
+it will not evaluate the right hand side
+and it will say the whole expression is
+true that's why you see the single
+Ampersand being used for bitwise just to
+explain why it why it is used and how it
+is used for our operations in bitwise
+you use this cap or whatever you want to
+call it as and for the inclusive bitwise
+or opera or operation we are going to
+use a single pipe you also use some
+shift operations where you shift the
+value of bit of a particular variable to
+either left or right again these are
+again very complex calculations if you
+want to use that please read about this
+and use that but in the in today's demo
+what we are going to cover is the and
+and or examples of bitwise operations
+so here I have again created a class
+called bitwise operator I have a public
+static void main method I have two
+variables here which are int a equal to
+5 and int b equal to 7. now these five
+and seven are actually stored as bits as
+zeros and ones in the computer's memory
+so how they are actually stored they are
+stored in a standard bit representation
+which you may have uh studied in your
+mathematics if to give your recap this 5
+will basically be written in a memory as
+this 0 1 0 1 and it starts from here 2
+raised to power 0 into 1 becomes 1 2
+raised to power 1 into 0 becomes 0 2
+raised to power 2 into 1 becomes 4 and 2
+raised to power 3 into 0 becomes 0 so 4
+0 plus 4 plus 0 plus 1 becomes 5 and
+that's how 5 is displayed to you
+similarly for 7 2 raised to power 0 into
+1 is 1 the plus 2 raised to power 1 into
+1 is 2 so 1 plus 2 3 plus 2 raised to
+power 2 into 1 which is 4 so 1 plus 2
+plus 4 7 and 2 raised to power 3 into 0
+is 0 so 0 plus 4 plus 2 plus 1 which is
+7 and that's how this 7 is built and
+stored and now if you try to do this if
+you try to write this condition you can
+also write the condition into a system
+dot out dot println block and it will
+basically evaluate this condition so now
+if you say A and B in this case this is
+going to do a bit wise operation because
+this is bitwise operand it is going to
+do a bit wise operation and the what
+would be the result if you do an and on
+this so again use the same logic as if
+in case of and if one is false then the
+whole expression is false so 0 and 0
+becomes 0 1 and 1 becomes 1 0 and 1
+becomes 0 because 0 means false and 1
+means true so if either of them is false
+the whole evaluation becomes false so
+that's why 0 or and 1 becomes 0 and 1
+and 1 is always one the value of this is
+again 5 as we already have evaluated
+similarly if you do a bit wise or and if
+you do this again we are doing an R
+operation so 0 or 0 or basically false
+or false becomes false true or true
+becomes true false or true should be
+true because one of them needs to be
+true so this is false but this is true
+so the whole value becomes true and the
+finally true or true is also true so
+this is the final bitwise or result and
+if we convert this into an integer
+representation that becomes 7 because 2
+raised to power 0 into 1 is 1 2 raised
+to power 1 into 1 is 2 so 2 plus 1 3
+plus 2 raised to the power 2 into 1
+which is 4 so 4 plus 2 plus 1 which is 7
+and plus 2 raised to power 3 into 0
+which is 0 so 0 plus 4 plus 2 plus 1
+becomes 7 and that's how you get
+actually 7. so let's see if we get 5 or
+7 in this bit wise operation yes we can
+see the values as 5 and 7. so this is a
+bitwise operation happening similarly
+you can also use the shift operations
+where in case if you're using the this
+particular kind of representation or
+this particular kind of representation
+they are called bits they are called
+left shift and right shift operations so
+if you use this in front of a variable
+then for example this one will be
+shifted here and this 0 will be shifted
+here and this one will be shifted here
+so that's how the whole value is going
+to shift all bits are going to shift one
+by one towards left similarly if you are
+using the right shift then all the bits
+are going to be shifted towards right by
+one bit that's the whole concept of left
+shift and right shift bitwise operations
+and if you want to know more about this
+please read some official examples from
+the Java Doc and some other examples
+available on the internet to build an
+understanding on this and with that we
+have come to the end of this tutorial on
+operators in Java I hope you guys must
+have got a good idea about what
+operators are and how to use them in
+Java if you feel that we have missed out
+on some important topic that we were
+supposed to cover in this video then
+please feel free to drop them down in
+the comment section below and the team
+of experts will definitely answer them
+for you so thank you so much for being
+here guys today we'll see you next time
+until then keep learning and stay tuned
+to Simply learn staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

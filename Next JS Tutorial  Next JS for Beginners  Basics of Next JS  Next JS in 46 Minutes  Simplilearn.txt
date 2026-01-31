@@ -1,0 +1,906 @@
+foreign
+in this tutorial we are going to cover
+the exciting new features of next.js
+so let's jump into it
+so hello everyone welcome back to
+another video by simply learn this is
+anubhub and in this video we are going
+to talk about next year's new features
+but before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and
+press the Bell icon so you will get all
+the updates from SIM dealer so for
+today's video we will obviously use
+nexjs13 and with that I am going to use
+Tailwind CSS
+but before that if you want to become a
+software developer consider the course
+on full stack developer mean stack by
+simply learn and master those necessary
+skills
+check out the link in the description
+box now I'll tell you how to install the
+next JS into your system
+the first thing you need to download is
+node.js just search node.js download and
+open this page
+here you will find two options
+open this link
+here you will find two options
+recommended for most users and latest
+version so we have to download the
+recommended one actually no JS is
+already installed in my system but I'll
+show you how to install it so if you are
+a Windows user Apple user or Mac User or
+Linux or any other user you can
+differentiate between them okay now
+when you'll install this node.json to
+your system to check whether it is
+installed or not in your terminal you
+just have to open the terminal and write
+a command node hyphen V
+okay let me just show you inside my
+terminal
+would you have to write to check just
+write node
+hyphen V
+and this or some other version will come
+on your screen and if it shows you
+version then it is installed cool
+now the next step is you should have a
+code editor in your system like I have
+Visual Studio code so where you can
+write the code right
+so there are so many code editors
+available but my personal favorite is
+Visual Studio code and I recommend this
+only after downloading and installing
+the vs code open the web editor and now
+we are going to write a command to
+install nex.js
+so I'm gonna write
+npx
+create
+next
+app at latest
+and then I'm going to press
+enter
+so it will ask me the project name so
+I'm gonna write next yes
+I'm going to press enter
+it is telling me do I have to add
+typescript in this project I am going to
+say yes
+now eslint I'm going to say yes yes
+laboratory okay
+and now
+it will install all the dependencies so
+let's wait couple of minutes
+while they are installing
+so
+our next year is is install in our
+system
+now let's go to this folder which is
+next.js
+okay we can find the
+position because I have put the space CD
+next.js and I'm inside my folder
+now I'm going to open my folder here
+so my
+folder is inside
+this only this is
+select folder
+and my folder is here
+now
+to install Tailwind in your system we
+need to add the command
+let's open the terminal first you can
+just press Ctrl and backed it
+but it's not opening here yeah opened
+okay now write a command npm add
+Tailwind CSS
+or css and Auto
+fix
+pre-fixer
+let me just read this command again
+Tailwind CSS
+or css Auto prefix okay
+let's press enter
+and it will again install all the files
+that we need okay
+now let's configure Tailwind CSS for
+that write a command
+X
+Tailwind
+PSS
+in it
+t
+yes
+so
+it is showing me the version this
+is fine
+now here
+I have written this command again
+to add the
+teluguin CSS file okay
+so this is in BX Tailwind now let's
+open the file
+Tailwind
+CS config.js now in this file in this
+array content I am going to write some
+lines of code
+just write it I'm also going to add this
+file in the description box so don't
+worry about the code just
+see
+okay
+let's add Js
+is obviously type in JavaScript
+DX
+and jsx what is jsx it is a JavaScript
+in JavaScript sorry it is a JavaScript
+extension
+and now I am going to add
+typescript hit stage
+right
+okay
+now let's add a comma here
+let's make it inside this line and this
+is really good
+now and I'm going to add once
+another
+okay
+ready I am going to tell you about
+everything here so just relax
+this is what I'm going to tell you about
+the routing and all
+okay
+so this is
+just a minute
+okay
+oh yeah
+yeah Dave's Creed TSX
+DSX
+yeah
+just save this part again
+now
+the next step we are going to do is
+after saving this file I'm going to open
+my file which is
+Global dot CSS okay
+and on the top of this file I'm going to
+add
+till when
+when base
+art tell me
+components
+so I I'll first tell you guys okay
+adding this in this way at the top
+is for the configuring till when
+okay
+so we're just configuring it the
+components the base and other things
+utilizers after this
+and you can
+tell when
+you know what is this
+let me just show it
+relativity
+okay fine
+it's cool
+let's save this file first
+so this is all you need to do
+to add okay
+let's open the file
+okay
+close this one
+next config.js
+and
+things look great here okay
+now let's again open the terminal
+and now I'm going to run this
+effect for that I'm going to write npm
+run there press enter
+and let's wait a couple of minutes
+it's just making our project ready
+for the running under server
+foreign
+let's see if it is compile it is
+compiled successfully
+okay
+now let's
+open window
+yeah
+this okay
+let's
+split the file
+like this
+okay
+it's fine
+now we're going to start doing the
+routing first I am going to tell you
+about the routing fundamentals
+so next is introduced a new file system
+based router built on top of react
+server components with support for
+layouts nested routing uh loading States
+error handling and more
+so we are going to first see
+the main parts of routing okay let's
+start with the static page routing okay
+so first thing that we need to do is
+let's create
+in this arboretry
+let's name it as
+okay
+count
+and inside this account I'm going to add
+one file
+page Dot
+TSX
+okay
+inside this and I'm going to write
+export
+the default
+async
+function then I'm going to write the
+name of the function
+which I'm going to add is
+okay let me just
+let's write let's see
+and set this I'm going to create
+return
+now inside this I'm going to add one
+depth
+let's say write an H1 so you can see it
+clearly
+not sure okay let's write this one here
+same design page
+let's save it
+okay let me just see everything is right
+here yeah now let's create another
+folder inside this app menu
+let's create one
+let's name it skill up
+okay now let's first just copy this
+thing inside this
+scalar we need to add one file and we
+will write
+data TSX
+okay now
+okay
+so this file is not created
+again here it is
+Dot
+TS6
+now I'm gonna paste that code here also
+here in this name of the function I'm
+going to change as
+good
+okay
+and I'm going to prepare right
+oh
+pitch let's just save this file
+and let's open this terminal where I'm
+going to write
+count
+it is automatically working
+right
+and as you can see here it is clearly
+shown best welcome to simple learn page
+so this is what a static
+routing looks like and I'm going to
+change from accounts to Skiller
+now let's see
+yeah
+so this is working
+fine now let's create another folder
+inside this
+scale up folder for that new folder and
+I'm gonna write this as ID
+okay let's just delete this one and
+and have
+inside the bracket
+see it's coming like that only okay
+let's leave this one
+and let's create another folder called
+ID inside this
+now let's do the dynamic routing for
+that inside this app folder
+will create another folder
+let's name it product
+okay
+products
+now inside this product I'm gonna add
+one more folder which is
+ID in the brackets
+so what these brackets is doing is which
+is helping us to do the dynamic routing
+okay so let's create a page now we are
+going to create
+a file
+let's name it
+page
+dot TSX once again
+and inside this I'm going to write short
+and s f c
+okay it's not the right one so let's
+just delete this
+and right here export
+and fold
+async
+function and let's name it
+product
+product page okay let's just
+because we have done in every file the
+name is this the product page now what
+we're going to do is
+we're going to add this prints and the
+curly brackets so the function structure
+let's just give it some space let's just
+okay
+fine let's create a constant of ID
+and
+yeah
+dot ID
+I'm going to show you how to do the
+dynamic routing you know page
+so let's flip down here
+again
+we're going to write div
+yeah
+so
+okay this is not inside the curly
+brackets I'm going to remove the code
+they've got it from here now it's fine
+yeah okay
+okay I'm going to read
+this
+is a simply line
+of course
+page
+and with the ID that is
+required okay
+now save it and
+let's go to the Chrome
+here and put products okay
+so enter but this is the error that I'm
+getting you must all will be getting
+this error this is all because I haven't
+this okay let's save this I think it's
+working fine now
+so let's just
+add the number
+10 so it is showing
+this simple learn course page ID
+which is I have written 10. so this is
+simply learns course page 10 okay so
+this is what a dynamic programming look
+like
+this is how the dynamic routing works
+you can use it whether with parameter or
+ID
+okay or arguments you pass that in the
+routes with the retrieve or the relevant
+of the corresponding data
+okay
+in this case it was the ID
+now let's move ahead
+now let's see the next part which is
+nested layout so
+what I'm gonna show you is let's write
+here
+this is features
+and I'm gonna open the
+page and here you will just see this
+line
+next.js has all the tools you need to
+make the web faster
+okay
+all right
+yeah
+so
+the first thing is client server
+rendering okay
+the next one is nested routing data
+fetching building optimization
+typescript support API routes middleware
+node.json edged runtimes CSS support
+this all's Commander
+next years with the help of Yap okay so
+now what we are going to do is we are
+going to study about the
+nested layouts okay
+after that we will learn about client
+and server entering and then streaming
+UI and suspense on This Server then
+we'll study data fetching and then API
+routes
+okay
+let's move ahead onto our code
+now
+for nested layout
+now a react model allows us to
+deconstruct a page into a series of
+components like we have created here
+okay
+and many of these components are often
+used between pages
+like I have created one page here and I
+have create one page this one page here
+okay I have created few pages like this
+okay so these are the components that
+often used for the pages
+like for example you might have the same
+navigation bar and footer on every page
+right if I'll create one web page and
+there are so many other web pages inside
+that like for products and for the one
+that product specific product and like
+that only the footer should be same in
+every
+page so for that we use nested layouts
+so this is how next is leverage on
+nested layout okay
+so let's talk about the client and
+server side components
+this topic is the widest and the most
+talk about
+now let's just okay first let me give
+you an example if you know react you
+must have worked on the client side
+projects
+or client components okay we will just
+let me give you an example or let's
+create a folder inside this app I'm
+gonna create a folder
+let's name it as
+it's right here
+home great
+and here I'm gonna write
+B dot d s x
+I haven't gonna write export
+default
+is it
+function
+you need this datas
+and page
+and inside the parameter I'm gonna cut
+this because I'm not gonna
+put the parameters right now
+let's return
+again I'm gonna add one there here
+and here I'm going to write in H1 done
+and this is a page
+let's save it
+and inside this let's
+check this one
+okay this is a home page right so till
+now this is what we have discussed
+earlier also right
+now I'm gonna write the client component
+inside this home file folder I'm again
+gonna create another file let's name
+this file as
+not Pages this name it as
+of course
+Dot
+bsx okay
+now let's import
+react
+let's first just to create one
+and export
+default
+let's just try the basic structure here
+first
+okay
+okay
+let's here
+[Music]
+yeah I'm gonna raid
+put it down
+okay till now I'm not doing anything new
+now
+here I'm gonna write
+you state
+we create real diamond applications like
+this only
+so inside this
+create a constant
+count
+set count
+okay
+let's use this view state
+inside this let's write numbers only
+but the end should not be kept till now
+let's try it right zero
+okay let's save it and here inside this
+there
+I'm gonna create another disk
+let's write this
+course come
+course count
+okay after that here I'm gonna write
+count
+okay
+and now
+I'm gonna create
+the div
+for button
+okay
+now
+I'll write here
+add button I'm going to create and
+inside this
+so I'm gonna write on click function
+which will set not Capital no
+said count
+okay
+as
+I'm gonna show you and see going the
+count plus one
+so I have declared one function here
+what this is doing is it is counting
+plus one again and again
+grade and here
+lead over error function
+right
+let's declare it
+here
+on the escort
+yeah
+it looks good
+let's just cut this one here so I can
+see this
+now let's save this file first
+and then
+let's go back to this inside the home
+one
+I'm gonna
+read here
+let's let's close it
+okay
+and after that I'm gonna write a client
+component here that we have just created
+push
+okay
+so let's import that
+only
+probably let me just here what station
+let's import
+of course okay
+let's just save it and it will
+showing us an error that
+we can't use the
+use
+state
+so we are only using the
+component of client here
+so that's the reason we are getting the
+so to remove these kind of errors
+what you have to do is open your page
+and here
+I'm gonna declare
+use
+let's now save it and you can see this
+working fine right
+awesome
+so the error that we saw earlier was
+because after next year is 13 version
+all the server components are run on the
+app directory on our server component by
+default
+okay
+so let's move forward
+so this is how no
+so let's check yeah it's working fine so
+this is a client component okay
+server and client component allow
+developer to build applications that
+span the server and client combination
+the rich interactivity of client-side
+apps with the improved performance of
+traditional server rendering
+this pH that we have just now created
+has the server and client components and
+how to use them in next application this
+is what I have explained you okay
+now let me just tell you what client
+components are in the end
+so client component enables you to add
+client-side interactivity to your
+application
+in next days they have prevented on the
+server and hydrate on the client
+you can think of client component as how
+just next 12
+like you can just think of just client
+components as how next js12 and previous
+versions worked okay now
+talk about server components server
+components allow developer to build
+leverage server infrastructure for
+example
+leverage dependencies that previously
+would impact the JavaScript bundle size
+on the client side
+instead remain entirely on the server
+leading to improved performance
+when a route is loaded with next.js then
+initial HTML is rendered on the server
+the HTML then progressively enhance the
+browser
+right allowing the client to take over
+the application and add interactivity by
+asynchronously like we did here
+okay
+so by this
+additional JavaScript is only added as
+client-side interactivity is used in
+your application through client
+components
+now
+I'm going to tell you about why to use
+server versus react component
+the server components are based because
+it because it fetches data and it is
+better than client components because it
+access backend resources and server
+components are best because it keeps
+information sensitive on the server like
+access tokens API Keys Etc or comes
+under server components but
+add interactivity and event listeners
+like on click on change that we have
+just done here
+one on click
+okay
+this is a client component and uh in
+client component we can use browser only
+apis
+we can also use custom hooks that
+depends on state effects or browser only
+apis
+we can also use react class components
+right
+okay let's move ahead now we'll talk
+about data fetching data fetching in
+next.js allows you to render your
+content in different ways depending on
+your application use cases
+these includes pre-rendering with server
+side rendering or static regen
+generation and updating or creating
+content at runtime with incremental
+static regeneration
+now we'll see
+what comes into this next.js
+so
+if you want to use the fetch function
+you can just write anywhere like
+let's see
+if here I'll create one okay let me just
+give you an example
+if I am here writing let me just find
+one file
+okay
+so where we can add this part
+okay
+okay
+let's add it here
+Okay so
+if we'll write we have to face data we
+will write const
+source
+the weight function
+in this await function we'll write Fetch
+and then in the parenthesis with the
+back tag I am going to give like
+for example
+opening simply learn
+and here
+just let me add one video inside link
+okay let's do open this one
+and let's copy the URL
+and paste it
+here
+okay
+so after pasting this one let me just
+this
+okay
+so it's showing
+to level up because we are not using any
+parents uh any other functions with this
+so
+we'll add the parenthesis of the video
+like from where to where we have I want
+to fetch this one
+or everything
+so let me just give you the brief about
+it
+just a second
+so let's open this one first okay
+so here inside the back end I am going
+to declare one key
+to clear one see here with the tallest
+sign
+and the
+in the curly brackets
+I'm going to write
+key
+I am passing the key here
+okay
+after that
+and right and and then I'll write
+part
+which I want to
+snip
+again dollar sign
+early brackets and the part
+select okay
+right here
+okay
+and the video ID I'm gonna declare it
+so again I'm gonna add the
+dollar sign
+and then curly bracket starts okay and
+we'll let it
+and
+and
+video
+ID
+put it like this start yeah
+so
+I will
+write
+video
+right
+now
+again we'll add the comma here and we'll
+declare the next yes
+re-validate function
+for that
+that's right next
+oh really curly where it starts I really
+did
+and then we'll add the
+numbers from where to where so I have
+added 30 here okay and then let's close
+this
+right
+so this is how we add the
+data fetching function
+now I have to fetch this also this is
+what I have declared here right I have
+to fetch this also
+so for that I am going to write
+if
+okay
+so if
+this resource that we have just now
+declare cons
+this
+will is stored okay
+and
+throw
+new
+error
+and we'll write the error and it should
+through when it get failed so fail to
+fetch data right
+now
+if not
+it will return
+resource dot text
+okay
+yes
+so
+this is the function
+how we can fetch the data right
+now okay let's move ahead on
+data switching client server
+let's now move ahead to API browse
+middleware is done let's talk about
+API layouts okay
+okay
+now
+let's create another
+file
+okay and let's name it as
+hello Dot
+d s okay
+no but before that I am going to tell
+you what the API routes are so API
+routes provides a solution to build your
+API with next.js okay any file inside
+the folder is mapped to API and will can
+treat it as API endpoint instead of a
+page
+so I'm gonna show you right here how to
+use that okay
+so for example let's import the files
+first I'm going to import
+type
+is one PPI next
+yes this one
+okay and let's just
+cut it and then next is coming okay
+let's cut this one
+okay
+I think this this because we need one
+more right there which is
+next
+response for responsible next API
+response from next years
+right now
+I'm gonna add here
+type or the data
+let's say type
+data
+equals to
+it is
+let's name it
+is free
+right
+now we'll export the
+Handler function
+code
+and look
+okay no not the Sprint we need straight
+brackets
+now we'll request for
+a guide request then we will write
+response
+and then we'll responds
+next API response and then data which is
+string name String okay
+let's close this one
+and then here
+I'm gonna declare
+Pawns latest
+so I am going to declare
+300 or 3000 anything then j7
+I'm gonna write name
+okay so I'm going to declare my name
+here as a number
+okay I'm going to come under
+okay
+okay
+let's see what's happening here
+right simply
+time to check whether our API is
+fetching here or not this is compiled
+successfully let's save this file also
+okay
+let's cut it
+from here
+let's run this file and see
+that our file is working or not okay
+first we'll write API slash
+hello
+so let's click it and see yeah it's
+fetching
+name
+simply
+so you can write anything to fetch the
+API so the request and response is
+I have told you earlier also it is a com
+incoming message to the server and the
+request is some is plus some pre-built
+middle ways and response is an instance
+for Server response plus some helper
+functions okay so finally I would say
+next.js is great when you want a static
+website with many updates so with this
+we have read the end of this video guys
+on what is next.js tutorial for more
+videos like this please subscribe to
+Simply learn thanks for watching until
+next time stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

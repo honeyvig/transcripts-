@@ -1,0 +1,257 @@
+hi Traders welcome back to the channel
+in today's video I'm answering another
+question that was sent to me and this
+Trader wants to know how to create an
+indicator that has multiple EMAs across
+multiple time frames drawing onto their
+chart so today's lesson is going to be
+quite short and simple let's jump into
+the code so I just recently got a new
+computer which I'm still setting up for
+my editing and recording software so I
+thought I'd just keep today's lesson
+really simple in the weeks to come we'll
+start uh going back into more complex
+subjects like um automation through Pine
+connector and uh maybe even some real
+test uh content like we saw in the last
+video on the channel but anyway for
+today's lesson let me get rid of all
+this code and I'll paste in these lines
+one by one and break down what we're
+doing here in order to achieve multiple
+time frame EMAs on the one indicator so
+here are our user inputs we have an EMA
+length and we have four time frames a 5-
+minute chart 30 minute chart hourly
+chart and 4-Hour chart the first thing
+we need to do before we get any of these
+higher time frame EMAs is make sure that
+we're not repainting so I've covered
+repainting in the past on the channel uh
+basically what repainting is is when
+your indicator draws information onto
+the chart that is different on
+historical data as it is on realtime
+data it's obviously a big problem
+especially when um using strategies and
+back testing scripts we want our scripts
+to be performing the same on realtime
+price action as it would on historical
+price action and so to eliminate repain
+ing I'm going to create a custom
+function here called request security
+NRP short for non- repainting and this
+function is going to take three
+parameters a time frame an
+expression and today we're using a bar
+merge parameter as well I'll explain
+what this bar merge parameter does when
+we get to drawing our EMAs so to define
+a custom function we need to give it a
+name and then these parentheses uh
+contain our parameters for this fun
+function and then we use the equals
+right arrow sign to um tell pinescript
+that the next line of code is going want
+to be what we want this function to do
+so we need to indent by one Tab and then
+uh for this function it's just one line
+of code we're using the request.
+security function and now we're going to
+pass in our current
+symbol and then our time frame parameter
+this guy here and then our
+expression and this is where we
+eliminate repainting the official
+trading view documentation if you scroll
+down here to this non- repainting
+section here says we need to pass this
+expression into the historical operator
+here and then we also need to pass this
+same expression on the outside of the
+security function however instead of
+having this expression here we need to
+flip
+these numbers here and now we have a
+non- repainting security function call
+but I'm going to add one more parameter
+here to the security function and that's
+going to be our bar merge parameter this
+bar merge parameter is going to be what
+we use to smooth this higher time frame
+EMA I'll show you what happens when we
+don't use the bar merge parameter when
+we get to that part of the script the
+next thing we need to do is get our EMA
+expression so that's just going to be
+EMA value equals uh ta library. EMA
+we'll use the closing price as our price
+source and our em length will be our
+input length which is this guy here so
+now we have everything we need in order
+to get our EMAs on the various uh time
+frames that we're using up here so to do
+that we're going to use our security
+function that doesn't repaint of course
+you could just copy this line of code
+and use this four times but it just
+makes the script a bit harder to read
+that's why I made a custom function to
+keep things a bit shorter because we
+know we need this parameter in all all
+of our security function calls because
+we want to reference the current market
+on every EMA and we want this expression
+on all of our function calls so that we
+don't repaint so now I'll create four
+new variables called emaor timef frame
+and then a number representing each time
+frame we'll pass in each time frame
+input which is this parameter here and
+then the expression which will be EMA
+value and this EMA value will get this
+value whatever EMA value is on the
+current time frame this security
+function will retrieve that value from
+this time frame so that's how we get
+multiple time frame indicator values and
+of course this will work on any price
+value volume indicator so we could get
+other indicator values High time frame
+RSI values Etc it doesn't need to just
+be an EMA and then finally we have our
+bar merge parameter so by default the
+security function has bar merge. Gap
+gaps off so it does not merge any gaps
+in the data series that the security
+function retrieves from a higher time
+frame I'll explain what that means in a
+moment once we finish getting all four
+of our time frames so 2 3 4 2 3 4 we now
+are retrieving four different time frame
+EMAs into four different variables the
+final thing to do is draw EMAs onto our
+chart using the plot function
+um I'll just write out one function here
+and copy and paste it four times so for
+the colors um I've just gone with
+different shades of red so the shades
+get slightly darker as we go up in time
+frame resolution so to do that I use the
+color. RGB function which is short for
+red green blue and then we just pass in
+255 would be full red 0 0 would be no
+green no blue and zero transparency will
+give us a bright red color and then I
+also made the line width two so that the
+line is a little bit thicker than the
+default plot line width so now we can
+paste this three more times change our
+values like so and then for the colors I
+just reduce the red slightly as we go up
+in time
+frame there we go that's our script
+completed if I save my code now keep an
+eye on our EMA
+lines now this is what it looks like if
+we have bar merge off if we have our
+gaps off What's Happening Here is if I
+zoom in a bit this first line is the 5
+minute time frame we're on a 1 minute
+chart and the reason why we have these
+steps here is because on the one minute
+chart we are constantly referencing the
+previous 5 minute bars EMA value so if
+we go to the 5 minute chart this EMA
+value was smooth because it's actually
+referencing each bar on our chart cuz
+we're on the 5 minute time frame this is
+a 5 minute EMA if we're on the one
+minute chart there's only one 5 minute
+bar for every five bars on our one
+minute chart and so a new 5 minute
+session just started and you can see
+that our EMA value stepped up a little
+bit higher so what this red line value
+here is is now the 5 minute EMA value
+over the past 5 bars and down here we
+have the 30-minute time frame and so
+this will represent the past 30 bars of
+price action so you can see we just
+started a new 30 minute time frame too
+it's currently 1:30 UTC time or 11:30
+a.m. my time um and this 1 minute bar
+just began a new 30 minute bar on the
+higher time frame and so our EMA value
+stepped up now this can make for an
+interesting um sort of support and
+resistance Zone as you can see up here
+you can create trading strategies around
+these levels you can see price being
+rejected off these uh two EMAs up here
+and you can see that the EMA actually
+looks like a flat line because we're
+analyzing what the lower time frame does
+when it interacts with that higher time
+frame EMA in a trending Market EMAs can
+act as Dynamic support and resistance um
+and so this can make for an interesting
+way to create trading strategies for
+Trend continuation uh where we use the
+higher time frame as a directional bias
+and the lower time frame as our signal
+time frame or trading setup time frame
+and so if that's what you're using this
+higher time frame moving average for you
+might want this Dept version as it is
+because it gives you a more accurate
+representation of what that higher time
+frame EMA value is on these lower time
+frames but if you're just using it for a
+discretionary uh Trend filter for
+example let's say that you're just
+trading um pullbacks above all of these
+moving averages so you want price to be
+above all four of these moving averages
+and then you're looking for breakout
+consolidation patterns like this flag
+pattern here um another one's forming
+here if that's the kind of thing you're
+using this um application of higher time
+frames for then you might want to leave
+bar merge on so if I put bmer on all of
+these four indicators and save my
+script now our moving average values are
+smoothed to look like they would if we
+were on the corresponding time frame and
+what it's doing is instead of stepping
+in between each missing bar it's just
+merging these values to get a smoothed
+version of that price series or that
+number Series so hopefully that makes
+sense um this is a very simple lesson as
+I said um in the weeks to come as I get
+my computer fully set up we'll um dive
+into more complicated subjects again but
+for today I hope this answers the tra
+tra's question so in summary we've
+covered how to uh disable repainting
+when using the security function to
+reference higher time frame uh indicator
+values again doesn't need to be the EMA
+this could
+be any one of these um ta namespace
+indicators um and this non- repainting
+code should work on all markets uh We've
+covered what the bar merge um gaps
+parameter does and we've also covered a
+slightly more um fancy way of color
+coding your indicators so with that said
+I'll wrap this lesson up here I hope you
+found it interesting as always best of
+luck with your trading and I'll speak
+with you in the next video Lesson
+hopefully next week take care and I'll
+speak with you
+then

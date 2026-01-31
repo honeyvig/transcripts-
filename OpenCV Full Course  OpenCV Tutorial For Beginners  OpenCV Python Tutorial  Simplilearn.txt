@@ -1,0 +1,3067 @@
+[Music]
+welcome to opencv tutorial my name is
+richard kirschner from the simply learn
+team that's www.simplylearn
+get certified get ahead
+and we're going to be going over the
+open cv tutorial and it's going to throw
+in some cross and we're actually going
+to be covering a lot of ground
+in this tutorial so i'll speed up for
+some of it and slow down as we focus on
+important aspects
+we talk about opencv
+we're really talking about computer
+vision so what is computer vision
+and i would say opencv goes way beyond
+uh computer vision it goes into graphic
+editors and all kinds of other things
+but we're going to be focusing a little
+bit on computer vision and we're going
+to cover the whole slew of the editors
+and all the other cool stuff that's in
+there
+computer vision is a field of machine
+learning whose goal is to help computers
+see
+its end goal is to make intelligent
+systems which can understand digital
+images
+and you can there's all kinds of
+different examples from handwriting
+identification categorizing of pictures
+is that a dog or cat in the picture and
+all that different things those are all
+part of the computer vision
+cars the the new automated cars and
+being able to drive down the road they
+usually use aspects of computer vision
+to do that
+for ais
+so
+what is opencv
+opencv is a huge open source library for
+computer vision machine learning and
+image processing it can be used to
+process images and videos to identify
+objects faces or even handwriting of a
+human
+and one of the cool things is it's um
+the opencv project is outside of python
+but it has a high integration with
+python so you can use it in other
+programming languages you're not set to
+just python with it and has a huge
+community behind it which is really nice
+that's what makes the open cv project so
+great
+we'll start with installing the opencv
+it's pretty straightforward in python
+you do a pip install opencv dash python
+you can pip install opencv can trip
+python headless
+opencv can be installed in windows mac
+os or any gnu linux distribution by
+using the pip command
+the first one the first command we went
+over is to install the main module
+packages and the second one is for the
+full package and usually you want the
+full package
+once you start digging into it it's so
+easy to use there's so much fun things
+you can play with
+so the most common thing is reading in
+image in opencv and we'll do this also
+in code so if i go a little quick on the
+slides it's so that we can roll up our
+sleeves and actually open up and do the
+coding on there
+so when we're reading an image in an
+opencv given an image to load it in we
+can use the opencv function imread the
+image can be displayed using the
+function i am show
+and so these are your two main
+categories on here
+uh and so your basic thing is to read an
+image in then you can manipulate it and
+then you can display it depending on
+what you're using it for and then we'll
+talk about manipulating it the most
+common thing is probably resizing images
+and videos so you can read in videos and
+we'll look at the command for that also
+and how you can process them frame by
+frame
+resizing is helpful in all kinds of
+aspects obviously on the display you
+might want to resize it so it fits the
+display a certain way a lot of times
+that's handled
+for the size of the image if you're
+uploading it to the web you might want
+to have a smaller image so you're not
+taking up a huge amount of memory
+not as big of a deal anymore and then a
+lot of times the actual web page would
+handle the size of the image once you
+upload it
+but what if you want to process all the
+images under the same
+neural network well they're going to
+look for the same size
+and that's also as huge as to be able to
+resize your images to go into that
+neural network so you're not looking at
+different sized images and images read
+in might not be of correct size or might
+not fit the screen correctly to overcome
+this we can resize the image and you can
+see it's a real simple command in the
+cv and we're actually using what they
+call cv2 a lot of times people just
+they'll import cv2 as or open cv2 as cv
+just to make it easy
+because it might have old code or
+something like that it's easy to swap
+things in and move forward
+and you can see here we just resize we
+have our image we have our new
+dimensions and then how do we resize it
+the interpolation is kind of a function
+in there as far as how to guess the
+colors because you're combining colors
+and different things
+and we can use a drawing with the opencv
+we can draw images in opencv allows us
+to draw various things like a rectangle
+circles lines
+you add text into the images and that
+kind of thing so there's a whole slew of
+different things we can do with the open
+cv and we'll look at these commands
+we'll glance through them
+and show you how they work in the actual
+software
+and they have basic image functions
+and
+this is just so cool because so much of
+this is built in you go back 10 years
+and people are writing the code to do
+this stuff and now it's all built in and
+people are continually optimizing it so
+you can do a lot of things without
+having to lift the hood up and
+really do the heavy lifting underneath
+uh so opencv has built-in functions
+which allow us to perform various
+operations on our images such as
+blurring resizing cascading edge
+detection and cropping
+and there's also motion detection and
+videos there's all kinds of things
+and you can see here we have blurring we
+can take an image and blur it slightly
+we can resize it
+it's easy to crop it you know that we
+can do the round
+head face cropping on a web page or
+whatever
+or identify where the object is and crop
+the background out kind of thing and you
+have image transformation we talked a
+little bit
+just a second ago on blurring
+we can also do things like rotating it
+we can transform the image
+various ways you can see here we can
+shift it so we can shift it left shift
+it right flip it crop it
+all these are very easy to do in the
+opencv package
+and then i mentioned a little bit about
+we start looking at motion detection and
+detecting different things
+there's contour detection which is built
+into the open cv package which is really
+nice and again this is stuff
+that
+usually was somebody in the back in
+programming this and now you have open
+cv which does almost everything for you
+so a contour is a curve or a line
+joining all points which have the same
+color intensity contours help us find
+the points which lie on the same plane
+and assist in edge detection
+and you can see here we've taken the cat
+and done a contour detection and it kind
+of looks it makes it look almost like
+someone
+stenciled it in there that's kind of
+cool little zen art going on there
+this is how the computer might using
+contour detection see the cat on the
+black background
+and then you also can adjust the color
+channels
+so you can play with all the colors any
+image is basically a combination of
+three main colors red green blue the rgb
+sometimes
+a quick note which um we won't cover in
+the programming is when you see that rgb
+it's not always in that order uh there's
+different formats for it and so there's
+also sometimes the alpha channels you
+might have rgb a where a is how
+transparent it is so you might actually
+have four channels which
+i like to work with when trying to take
+the background out because the edges of
+images actually have reflections
+and light is also a curve and wraps
+around so there's some cool things to
+know when you're messing with these
+things
+and opencv allows us to split our image
+into its respective color channels
+and you can see here we've taken the
+image of a
+little landscape and we've sorted it out
+into different channels and you can see
+how you have it all in the blues the
+reds and the greens and there's also
+color spaces
+color spaces are a way to represent the
+color channels present in an image
+they tell us the various color channels
+which are contributing to a particular
+hue
+so again we can pull things out based on
+the hue and the images and colors on
+there
+and blurring blurring
+is very popular right now because it's
+easy to find someone's face and then
+blur out the background
+without having to play with alpha
+channels and different things for the
+coloring around the you know you have
+the edging of the head and the coloring
+so blurring is a method used to remove
+noise from an image by applying a low
+pass filter over an image we smooth out
+the edges and make the transition from
+one color to another very smooth
+and you might not be able to see the
+difference in the cat video but you
+start seeing smoothness and sharpness
+have always been
+a mainstay of editing images and things
+like that over the years and so this is
+all built into opencv and then there's
+bitwise operations
+bitwise operations are the and or zore
+etc in image processing
+they are used to create a new image or
+for masking
+and we'll
+glance at masking but masking is huge
+so when we get into the code we'll talk
+a little bit more about masking i'll
+i'll probably
+maybe offshoot for a minute on that
+the operation is done between each pixel
+of two images
+and so you can see here we have the
+square
+plus the circle so if it's an and
+only where the white is so where it's in
+both images it then equals a new image
+with just the white parts
+in masking
+masking is used to bring certain parts
+of an image into focus by lowering the
+definition over other parts this is done
+by reducing the pixel quality of other
+parts of the image
+kind of a little short on the on the
+masking of what it is
+so in this case the masking would either
+be the background
+might be all ones and the cat and the
+fence might be zeros or vice versa we
+might put the cat as one and the
+background is zeros
+and then you can do a transformation
+on either the background or the
+foreground
+to maybe you want to blur the background
+out and make the foreground sharper or
+maybe you want to make the little circle
+with a cat in it
+take the colors out so it's one color
+masking allows you to separate your
+image out and do those different things
+and that's where the masking comes in
+and it has a lot of uses and then
+there's histograms uh histograms in an
+image processing histograms typically
+refer to a graph of pixel intensity
+values the intensity of each pixel is
+plotted in a histogram again we start
+with these histograms are the beginning
+of doing different identifications and
+can be used for different things
+you don't really publish a histogram
+onto your web page of the cats because
+it's just kind of silly but you can use
+that data in data processing to look at
+different things and pull different
+things out of the picture
+thresholding another important aspect of
+image processing a method of image
+segmentation it is used to convert an
+image
+of binary by setting a
+threshold intensity value and deeming
+all values above it as one converted to
+white and below a zero black
+and you can see here we were talking
+about masks
+in the threshold we're able to actually
+create a mask of the image in this case
+you have the cats which are mostly white
+stand out because we put whatever the
+value is
+to pull those cats out and put the
+background further back
+edge detection just like threshold it's
+another tool we can use to bring out
+an image
+so we can find different things on there
+a lot of cool things we can do with that
+you can see here we've taken a landscape
+same one
+we had before
+and we can find the boundaries of an
+image by consistency and brightness it's
+used for image segmentation and data
+extraction
+and you can see with this image of the
+buildings how
+powerful it is just to pull the whole
+sky out i mean you know where the sky is
+there's no debate on it
+so finding edge detection has a lot of
+cool things it can do when you're
+processing images and pulling the images
+apart if getting your learning started
+is half the battle what if you could do
+that for free visit scale up by simply
+learn click on the link in the
+description to know more
+so uh with that uh really the hands-on
+there's so much hands-on on this
+so
+we're gonna start with a real
+basic open cv setup in python
+we'll then take a look at some motion
+detection i usually don't put the video
+on here because my office is under
+construction you can see the partially
+finished wall in the back
+but when we do the motion detection
+we'll have the video up and show you how
+to pull this video in just like i'm
+doing here and utilize that in a program
+you can actually start detecting motions
+you could think of a wilderness webcam
+or something like that all kinds of fun
+things you can do with motion detection
+uh and then we'll get into
+melding a little bit with the opencv and
+write a a short cross
+neural network that will train and do
+facial
+identification so we're going to cover
+just a slew of really cool tools that
+you can do with opencv
+so here's my favorite package to work in
+the anaconda
+i'm going to be in python 3.8
+and then if you haven't yet you need to
+go under environments you can either
+install them through anaconda here
+or you can open up
+let's see where is it 38 you can open up
+your terminal and do the pip install
+like we discussed earlier in the slide
+and that was this slide right here pip
+install opencv contrib python headless
+i would just go right for the second one
+because it installs everything so it's a
+full package
+and you just go ahead and open up in
+this case pi 38
+there's my terminal window and i can
+simply do my pip command in here
+you can also
+if you're in anaconda
+we can go in here let's do all sorts of
+packages for opencv
+and you can see here's your opencv
+library opencv python opencv and i
+actually installed all of these all
+these are installed on my on my anaconda
+for the use of this
+setup didn't want to miss anything uh
+and then once we open this up uh we're
+going to go in here to new
+and create a new python window python 3
+in this case we're in 3.8 as i told you
+which is what's set up in here
+and we'll start with just uh opencv
+general
+so let's put that in here open cv
+that's just a general setup on there for
+doing our opencv
+and uh
+of course some people like to
+i'm not big and looking at my own face
+the whole time during these but we'll go
+and put my video back up there
+and when we talk about the opencv
+we want to go ahead and import all of
+our different aspects of what we're
+going to be working on in here
+and you'll see on this we have our
+import cv2 and i mentioned earlier that
+a lot of people when they see the import
+cv2 they just go ahead and automatically
+do it as cv that way if you're using
+older code
+it doesn't bother me too much to use cv2
+but a lot of people prefer to just keep
+that as an open someday they'll probably
+have cv3 who knows
+we want our numpy for our numbers array
+sometimes that comes in we have our
+matplot library kind of by default and
+we'll do our map plot library in line
+just because we're in jupiter notebook
+that way if we do any plotting
+it's not really going to affect what
+we're working on i just do it as a
+standard
+pretty straightforward
+and then before we get started let me go
+ahead and pull over
+we have a file set up on here with some
+images in it and some videos
+and just like any of our other
+setups and simply learn if you need a
+copy of some of these images of course
+it's pretty easy to come up with your
+own images and your own videos nowadays
+but if you want to rerun this and set
+this up you can certainly have them send
+the information over there with in this
+case we have the cat which is going to
+be an image
+we have a dog which is going to be an
+mp4 uh video
+and then we have we do facial
+recognition we took some of our
+very well known actors out there like
+ben affleck elton john the musician
+jerry seinfeld and other people so we
+can actually train a cross setup on
+there and do a
+facial recognition on there and again
+all of this you can send to simply learn
+and say hey can i get a copy of some of
+this information
+and so we're going to start out the
+first thing we want to do is just the
+most basic thing which is
+read in an image and display it
+and then i'm going to go ahead and let's
+see
+i'm going to cut this in half
+i used to have this in windows 10 where
+i just hit a button and it dropped my
+background and everything
+so we're going to look at the horrible
+blue color of the windows default
+you'll just have to ignore my icons up
+there and so we're going to be reading
+images and the reason i did a half
+screen here is because
+when they pop up they don't necessarily
+pop up by default in front in the
+jupiter notebook
+so you're not even going to see them
+they'll be hidden behind there
+the first thing i want to do is just a
+basic reading of an image in this case
+we're just going to read the file
+cat.jpg
+there's no path in here because i went
+ahead and saved it in the same folder
+that the program is running in but if
+you have it in a separate folder you
+want to put that full path in there
+and so it's real simple we have image we
+have cm dot im read
+or red i don't know which one they use
+um i am red
+and then cv i am show and that just
+stands for image show and cats and then
+image
+cats is the title of the window that's
+going to pop up and let's go ahead and
+run that and you can see here we have
+our window that pops up and there's our
+cat
+so that's really straightforward
+if you're looking at that it's there's
+nothing
+really difficult this is why i like
+opencv so much because it's so easy to
+use
+and if we're going to do the image if
+you remember we had dog
+video going on maybe my image up a
+little bit there we go
+we can go ahead and play a movie and
+that's that that is really cool and by
+the way
+when i was messing with this it does
+actually store the sound file with the
+mp4 so if you have the video playing and
+the microphone going it will store both
+of those as a second there's like
+another channel that stores in the cv
+when it's reading these things
+in this case we're going to go ahead and
+capture
+we need to go ahead and tell it where
+what file we're capturing
+in in the next video we'll actually do
+one of the next two sections we'll show
+you how to capture the camera you're
+actually looking at
+um but in this one we have capture cb
+video capture dog.mp4 pretty
+straightforward it just says here's the
+file we're going to capture
+and then it says while true
+and this if you're doing um a lot of
+programming in python you should
+recognize this
+uh instead of
+setting is true to true and then letting
+it switch each time we just say hey if
+not is true break and that will break
+the
+loop
+and so what we're doing here is we're
+going to read each frame
+of the video as it goes is true frame
+equals capture dot red
+um if is true is false it breaks so
+we're done we've hit the end of the
+video and then we're going to show the
+video in this case of the dog cute
+little puppy
+and it's going to be by frame so each
+frame is showing
+and you see we have a weight key here
+this has to do with uh the end code in
+the back so
+you could probably leave it out in here
+but it's usually good to leave these
+particular things in
+this particular key in there because it
+does actually there are times when that
+can affect the run time and you can see
+here's our little puppers you know
+smiling and having fun
+and it is it's playing each of those
+frames so as you're watching it uh it's
+going through i don't know how many
+frames per second probably 30 frames per
+second and so it's displaying 30 frames
+one after another
+um and if you have sound with it it by
+default will play the soundtrack with
+there just so you know um
+we don't we're not doing too much in
+sound on this one that we're just
+focusing on the opencv video
+and then when you're done with something
+uh you'll see me flash this up a bunch
+of times we're going to have the destroy
+all windows from the cv which closes
+everything we got going
+when we're dealing with videos
+one of the issues is you have a buffer
+in your video
+and so you'll see is you'll see this
+kind of coding where it says weight key
+60 and it's just waiting an extra period
+of time to make sure everything's
+cleared out of memory that's all that
+does and so you can see we just closed
+all the windows that came in on there
+and then one of the cool things we can
+do
+and we're going to do a bunch of stuff
+with images in just a minute but let's
+start with the video we can do resizing
+and so we have a rescale the frame we're
+going to submit the frame we're going to
+send it the scale and it's going to
+compute the
+height
+the width and the height based on what
+we send for a scale
+we'll put it into dimensions and this
+right here is our resize um
+cf resize the frame and this could also
+be an image it's not you're not stuck
+with just a frame when you do this kind
+of resize
+and then they have this is the code they
+use for resizing
+not a whole lot to look in there
+it does come up sometimes because there
+are a couple different mathematical
+codes of how to blend the colors
+together and make it smaller without it
+becoming really chunky or really i mean
+they used to just delete like if you cut
+it in half you just delete every other
+pixel
+and then of course you're deleting
+information instead of melding it
+together and this moves it over that's
+what this is doing right here this
+interpolation equals cv inter area
+and then we have the change the res
+we're going to be doing a live video so
+when you change the res the resolution
+again there's not a whole lot to look in
+here it's just
+uh helping us so that the resolution
+keeps it looking nice on there
+and then we have our this should look
+familiar from above we do our capture we
+need to set up where the video is coming
+from we gotta let the cv the opencv know
+what the vid which uh file it's using
+and then it says while true this is
+again just like above
+if not true
+if not is true break
+and here's our frame resize
+and then we're going to do a cv im show
+frame and we're going to do cv i am show
+framed resize this should look just like
+you saw before
+and then we have our
+this extra code here in case we need to
+break early
+now i'm going to run this and we're
+going to get if you have if you're
+looking at this
+you should say oh we have
+two different videos going
+one of them is labeled video and it's
+based on frame and one is video resized
+based on frame so we're going to end up
+with two completely separate videos
+playing at the same time
+and let's go ahead and run and see what
+that looks like
+you'll know one of the videos is
+obviously going to be the dog because we
+saw him before and you can see right
+here
+there the dog is resized
+and we could easily take this
+scale
+yeah we'll go this way just a little bit
+and instead of 0.5 maybe we want to do
+0.25 because we want it to be like a
+little little um thumbnail on there let
+me run that and you can see how it
+nicely rescales it down to a quarter of
+the size
+and then i'm going to keep the split
+screen uh you'll see why in just a
+second let me go ahead and destroy the
+windows and clean up our desktop that
+we're working on and we're going to go
+back to image editing
+so we're going gonna go through a bunch
+of image
+different editings you can do on here
+now this next part we're zooming through
+uh there are so many things you can do
+with
+the opencv
+first we're going to just draw a blank
+box i'm going to run this here's my
+blank box it's got nothing in it
+um and we can take if you notice i've
+created blank oops there's my blank we
+filled it with zeros so this is a 500 by
+500 by three channel
+there's actually can be four channels if
+you have the alpha which is the
+see-through uh and this will handle an
+alpha channel but you have the three
+channels in here and you create a nice
+blank box that's just playing black and
+in there uh and then if we're gonna do a
+blank box we can actually take let me go
+back in here there we go we're gonna
+take this blank box and we're just going
+to uh fill it i'll leave it called blank
+we'll run this and i'm putting in from
+200 to 300 that's actual pixel counts
+remember this is a
+500 by 500 box
+and we're going to do from 200 to 300
+and 300 to 400 that's the upper left and
+bottom right corners
+of the array and we're going to send to
+0 0 255 which happens to be green
+and this is rbg
+be a little careful because the some of
+the formats switch the order from red
+blue green to different colors
+and if we run this uh you can see here
+we've actually added oh i guess i did a
+um
+a red box for some reason i thought that
+was a green color i must have it
+switched around on there
+but you can see right here that we can
+actually go in and we can change any
+pixel in here and it works like a numpy
+array which is really nice because now i
+can edit
+my blank box here and do different
+things in the blank box and fill it in
+there and draw lines
+we'll go ahead and do
+a rectangle like i said some of this
+is going to be quicker to pasting in
+here and showing you
+um we're going to take a rectangle and
+oops it's hard to see here
+create the shape let me open this up a
+little wider there we go
+and in the rectangle
+we're going to use blank
+i'm going to
+show it we're going to give it a new
+window that's what this is doing down
+here if i left this blank it just put
+the rectangle on top of everything
+and we're going to use blank as our
+basis
+starting at 0 0
+and you can see our different dimensions
+and thickness minus one and there's my
+weight key on the bottom and let me go
+ahead and run that
+oops i should have done an im show
+which it did but was behind our chrome
+you can set where appears on the window
+we should probably do that on here
+but you can see it opened up a new
+window this window is called rectangle
+this one's called blank and so these are
+two completely different windows that
+we've set up on here if i change this to
+blank it would have just put the
+rectangle on top just like it did the
+red square earlier
+and we can do a lot with this we can go
+ahead and draw let's see a circle a line
+and then put some text on here and we'll
+take the same blank setup
+since that's our basis right here is
+blank
+and we'll go ahead and create all of
+those and let me go ahead and paste that
+in here and you can see here we have
+our cv circle it's going in on the blank
+we have our dimensions of the circle let
+me just
+bring these down a line so you can see a
+little bit better what we're looking at
+there we go
+um and then we're gonna do the color on
+this the thickness minus one and this is
+uh basically a radius of the circle kind
+of set up i'd have to look up to
+remember the exact um what these
+different numbers represent
+um but you have the the different sizes
+of the circle we have a line here we're
+going to draw a line uh blank in this
+case we have
+uh 300 400 255 and you can see a setup
+in here this is again
+the color the starting point the end
+point and a thickness of three
+so a lot of this is pretty
+straightforward and this is going to
+open up a new window called line because
+that's what we called it instead of
+putting it on the blank
+and then we'll do text
+now on each one of these we're adding
+the line to blank
+so it's in the original blank square
+that we've called blank
+but on each one of these we're putting
+it opening it up in a new window we
+could easily continue to put them in the
+same window and you could turn it into a
+video or some other kind of thing
+and you can see down here hello my name
+is jason my name isn't actually jason
+and we have our location that we're
+going to print jason on there and
+the font and the size and the color and
+dimensions of it and then show text and
+let's go ahead and run so you can see
+how all these show up on here
+and if i open up my screen a little
+wider you can see that we have our code
+and we did certainly put add a circle on
+here here's our circle we added a line
+on here here's our line and we've added
+text on here hello my name is jason
+probably should have picked a different
+color instead of matching it with the
+square box we put on there
+and just like all of this we want to go
+ahead and clear the data um
+keep a nice clean screen and i'm not
+sure why it keeps printing this stuff
+underneath i gotta go fix that
+and then the next section we want to
+cover
+is going to be
+your gray scales
+and blending and masking and stuff like
+that
+and let's go ahead and clear our little
+palette i don't know what else to call
+it
+it's a good name for it palette
+and here we go uh you'll remember this
+one we're going to load our image in
+this case we're going to load the image
+park and we're going to display park
+we get that nice view of the park that's
+what we did before
+and there's so many things that are
+built in to open cv on here uh one we
+can grayscale it and we're just going to
+take and you can see here we're
+converting
+blue green red remember i said there's
+three channels you got to be a little
+careful what order they're in
+i can never remember i have to actually
+pull it up every time i go in here
+because i jump around between so many
+editors and software it's just the
+nature of dealing with pictures
+sometimes but you really have to make
+sure you catch that and double check it
+and so we're just going to this is just
+a conversion and that's what the cvt
+stands for color
+and then we'll display this in
+gray gray skeleton and you can see it
+did a nice job there's our park oops if
+we can grab it
+and there's the grayscale on there
+and then we can do such things as blur
+so i can come in here and we can go
+ahead and
+this uses cv gaussian blur
+and there's a lot of settings as far as
+how the blur works
+um
+and then you can see here we got border
+default cv border default seven seven i
+believe that has to do with the square
+in the pixel reigns
+when you do a lot of blurring then you
+start messing with it and we can see
+here's the park up here
+we went ahead and grayscaled it oops
+there we go
+gray not responding because i hit the
+wrong button on this
+and blur there's our blur on there so we
+have a couple different setups on that
+there's also edge cascade
+some of these you just pretty much you
+really have to know your editing on
+videos i'm not a huge video editor
+so when i do a lot of this stuff i'm not
+really sure what it is i'm doing
+like i know a blur is obviously but i
+don't know what edge cascade is
+except for now that it comes out you can
+clearly see that it draws lines dealing
+with where the different colors meet and
+how they connect
+that's a really neat tool it puts a nice
+matte literally creates a nice mask of
+the edging and you can see where you
+could use this to pull out in this case
+the sky quite easily from the whole
+picture
+and there's dilated let me go ahead and
+run that and see what that looks like
+let's give it a second to pop up to the
+top
+and keep in mind that the dilated used
+the edge um as our input so we took
+um the canny the blur oh there we go
+yeah candy blur
+dilated use the candy so we have our
+blurred coming in from the canny edges
+quite the terminology there if you're
+trying to follow it all we have eroding
+let me just show you some of the
+settings on there
+um we have the number of iterations for
+doing a routing so let's go ahead and
+run this one
+and you can see how it changes the
+settings uh or the view on there and
+this brought in the dilated and then
+eroded it back into
+i'm guessing it kind of sharpens it
+from the from the blurriness we saw in
+the one before to dilate it
+and then of course probably one of the
+ones that i use the most
+and i use the resize and the reason i
+use this a lot is because i work in data
+science and so
+if i have it coming in as a certain size
+on there
+if this if the
+neural network is processing an image
+with a certain size
+all the images coming in have to be that
+size and so we have here resizing our
+image
+and let's go ahead and run that and you
+can see how we took the
+in this case we used the original image
+and we just resized it to a smaller view
+on there
+and if we can resize the image we can
+also crop it
+again data science loves cropping this
+is you could literally
+crop pictures and resize them and rotate
+them and make that your new import for
+doing categorization
+and we'll actually show you how we can
+automate that when we get to the facial
+recognition cross part of this tutorial
+but we can see here we can also crop it
+and we just take the picture and crop a
+small piece off of it there
+and just like we did before let's go
+ahead and clean our pallet start it over
+again
+and again we're just chugging through
+these
+these are commands
+that depending on what you're doing
+depends on what you need
+so if we're looking at
+changing it to grayscale
+sometimes processing something in
+grayscale and cross is easier it's able
+to pull out the dimensions better
+blurring that's more of a display kind
+of thing where you're going to display
+it with a slight blur
+finding the edges that's kind of cool
+you can actually come in there and maybe
+use those edges to help you find
+something in the foreground and in the
+background
+dilated give it a little blurry a look
+eroded bring it back into sharpness
+resize it and crop it
+all those are things that are just neat
+tools to have at your fingertips and
+easy to use some of them might be more
+for a website and bringing up icons and
+cropping the head shot or something like
+that where others are are kind of more
+generally used in just about any
+industry
+another feature is
+being able to translate
+transmatt float32 remember a lot of
+these things
+let me just full screen this here real
+quick um we have our image coming in and
+then we can translate it uh 100 in
+different directions on here
+there's so many different things we can
+do with this so as we go through this oh
+my goodness i
+hit a button on here okay give me just a
+second there we go
+okay so let's go to translate on
+translate on there and we have the cat
+and you can see how we translated it
+down instead of the full image of the
+cat that we had before
+we can also rotate
+rotation like i mentioned earlier is a
+fun thing to do
+and we'll actually do that when we do
+the cross thing because you can process
+the same image at different angles and
+then you just multiplied your input as
+far as doing identification
+in this case you can rotate on here we
+have the angle the rotation point
+none
+i believe it puts it in the center i'd
+have to look that up and then you have
+uh the image shape height width
+rotate point is none width height so
+this is actually going to put the rotate
+point in the middle
+if we send it a none to this little
+routine that they put together in the
+back
+and then we're going to
+warp this is the actual command here
+warp a fiend
+and you have the image you have your
+rotate map and you have your dimensions
+on here
+and if we go ahead and plug that in and
+we put the rotate in
+image at minus 45 let's see what happens
+and we're going to run that
+and you can see how it nicely rotated
+the cat's head although it's a little
+creepy the way it looks like it cut the
+cat's head off on there
+maybe move it translate it down a notch
+just so you can't see the the cutoff
+point
+and we already did the resize but we'll
+run that again so you can see how it
+gets resized on here
+and be aware when you resize them i do a
+lot of resizing for the
+putting it into
+neural networks or into some kind of
+machine learning setup
+but it does squish it it squishes it and
+stretches it and so if you're doing this
+for say display and re-editing you might
+want to be a little careful about that
+make sure that you maintain the same
+ratio unless you intentionally want the
+cat to look taller and thinner
+and we can also go ahead and flip it
+as you can see here we just flipped it
+upside down
+uh minus one you can probably flip it a
+couple different ways i'm curious to
+minus two does
+shoot same thing
+maybe if we put minus
+and a one is not well one is just
+flipping it all the way to the opposite
+side from left to right
+uh so you can see here we can flip it
+around a little bit that's kind of a fun
+thing to have
+one of those things you might have a
+hotkey for if you're doing some kind of
+picture editing and giving a lot of
+choices
+and we also already did the
+see there we go cropping
+uh so you can see here where we a
+cropped image
+equals the image and we just pick out
+the pixels we want and then we can show
+the cropped image over here and it's
+just a cropping of the face in this case
+we grab 200 to 400 as the upper left
+corner and 300 to 400 as a bottom right
+corner
+and let's clear our palette again
+and then we're going to do
+contour detection
+and there is
+so much that goes into all this i mean
+we're flashing through a lot of things
+and you can see how you might combine
+them and use them for different things
+so we're going to go ahead and get our
+cap back up as our image
+and let's go ahead and do
+um
+image shape we're going to take an image
+shape and we're just going to create a
+blank screen for it so this is just a
+blank screen here based on the shape of
+the cat
+and strangely enough uh this is done a
+lot the reason that we would create a
+blank thing as you can or a blank image
+is you might start filling in
+information on there and using that as
+your template for different things
+and so it becomes almost it becomes a
+mask of sorts there's an actual mask in
+the program a little bit different but
+you can imagine if this is your blank
+screen you start with you might add
+circles or squares or whatever on there
+and we can do the same thing here with
+um we can convert our picture to gray we
+did that earlier which is always kind of
+fun to see the the cat comes back
+and being that i'm missing with a lot of
+different feeds and stuff like that it's
+you can see you got another responding
+going on there when you do a lot of this
+stuff that's what you'll start seeing
+more of that
+as you mess with it it'll eventually
+come in you just got to give some time
+there it is there comes in my gray one
+on there
+and we have the gaussian blur so we can
+take it and blur the image
+and in this case we fed it the gray one
+so you can see the the very clear mouth
+underneath on the gray one and then the
+more blurry one on top on there
+if you remember we did earlier um
+come back on here
+candy edges so again we're doing
+detections and things like that looking
+for different things
+and there's another feature called cv
+threshold and or the thrust cv threshold
+and in this case we're going to send it
+the gray picture and let me just pull
+the coding down here
+there we go
+and you can see here we're going to do a
+cv threshold based on binary um
+let's set up on here and we'll go ahead
+and just run this you can see what this
+looks like run
+there we go that's that's actually
+really cool how it picks up on that
+on the threshold you can see how it just
+turns it into almost a black and white
+image that can be a lot of fun too and
+we can also look at the contours in the
+opencv
+so we talk about that we have our let me
+just open this up all the way so we can
+see the code
+we're going to return the contours and
+the
+hierarchies
+and we're going to pull this off of
+canny the canny one that we sent up up
+here earlier
+and
+they have the retrieve list
+and chain approximate samples there's a
+lot of options in here that we can
+follow
+let's go ahead and run that
+let's go back down here where are you
+up there we go
+and when we run this
+uh we get a nice set up on this it says
+hey there's 74 contours found on here
+um and that's that's actually uh turns
+this starts turning this into a math on
+whoops which one did we feed it uh we
+fed it the
+candy up here so we start to look at
+these different setups let me get this
+out of the way
+where's canny there's candy in the back
+and you can see that this drew 74
+different uh like line connections on
+here so now we're starting to actually
+turn this into almost a mathematical
+formula on this
+and when we're looking at these we'll go
+ahead and do draw contours
+and here's our contour let's return the
+contours up here
+and we're going to put this on the blank
+remember how we did the blank earlier
+so we're actually going to take the
+blank as remember i told you you could
+use it like a
+a base that set up on there and we can
+now redraw the contours but in this case
+uh we changed the color
+so now we're drawing the contours in red
+so that's just kind of a fun thing you
+can do on there to change the uh
+literally change the appearance and the
+setup on there
+and let's go of course clean up our
+setup destroy all our windows and move
+on to the next section
+and we're going to look at color spaces
+and let's start with um
+in the color spaces we're going to
+read an image in
+and i'm going to go ahead and show
+the image park let me just run that
+oops i forgot to put a
+the weight key in there
+a lot of times the weight key just helps
+because i'm pushing all these graphics
+out through
+a single kernel because i'm working in
+jupiter notebook and things get hung up
+and so waiting that extra 60
+milliseconds can sometimes really help
+sometimes as we start flashing these
+pictures up and down you'll see there's
+no response and other things come up
+that really is just because we're
+pushing so much out there
+now one of the interesting things on
+this is we imported matplot library and
+so matplot library
+can now easily be integrated with
+um
+our
+imagery and you just see all i do is
+just dump the image into the matplot
+library and now i have the image here
+showing on my matplot library setup
+one of the things you're going to notice
+on this is the colors all look off well
+again you see that and you see that
+they're supposed to be the same thing
+and you should jump and say oh uh one of
+these is rbg and the other is gbr or
+bgr or something like that and so it's
+reading the
+the
+reading the colors in a different order
+that's all that means and you have to do
+a transformation at some point to fix
+that
+uh so let's go ahead and take a look at
+we're going to go back and grayscale it
+again we're going to take our image of
+the park
+we'll put it into gray
+run there we go
+and in here we can convert our color and
+this is what we're just talking about we
+can convert the color scheme
+let me go and run this
+and you can see here we swapped the
+scheme out and then i'm curious because
+we did
+up here plot it
+what does this look like when we plot
+this new color down here this new scheme
+what does that look like on our setup
+let me go ahead and just go down
+there we go
+and we call this hsv
+so we'll go down here instead of image
+i'm going to plot
+hsv
+and let's run that
+and still
+way off on color schemes
+you can see we really mess up with this
+hsv is another type of color scheme i
+was curious because i did not think it
+would come up correctly but i wanted to
+see if it would
+and we can also do a conversion to
+what's called
+there we go
+bgr blue green red to lab
+and lab is just another color scheme on
+here um and so you can see when we
+swatch the color screen it has some
+really cool effects as far as
+uh what it looks like in their view uh
+lab ranges from
+it's kind of luminosity
+and then it has like uh then the
+channels coming in
+uh
+so it's a little bit different setup on
+this but really you have to just play
+with these to see what they look like we
+talk about all these different color
+schemes and all these switches on here
+now the one that we were talking about
+earlier
+i mentioned was the bgr to rgb because
+we use the bgr we'll just run this
+and we see the color change on that
+and then we'll go back up because i'm
+still curious
+um
+okay there we go copy
+if this is the same that matplot library
+uses and we'll just type in rgb down
+here
+because that's what we called our figure
+and we'll run this and it will display
+it oops it comes up there and gives us a
+problem because
+capitalization
+whoops
+rgb there we go so let's go ahead and
+run that
+and that looks pretty close to the
+original uh so this is when we're
+converting between matplot library and
+from the open cv
+we really want the blue green red to red
+green blue that's the conversion you
+want to use to get to the original
+picture on there
+and then we can also convert from
+hsv to the lab like i said these
+conversions
+you have to look them up most the time
+but it's important to start recognizing
+them so the very fact that you're in
+here looking at this we're talking about
+blue green red versus lab
+versus the um
+where was it h
+hsv setup on there
+when you're dealing with pictures that
+come in in all varieties and so really
+being able to switch between them is
+important on here
+so let's go ahead and take that
+particular setup conversions and we'll
+go ahead and clean up our palette
+hopefully that will save us some
+problems down the road
+and we're going to start looking at the
+color channels
+and with this we'll go ahead and reload
+the park back up we'll display that just
+to remember what the original picture
+looked like
+and then
+for right now let's go ahead and take a
+blank
+screen
+and create ourselves a blank zeros
+basically same shape as our park image
+d type
+new integer eight
+don't really usually that's the default
+anyway so you don't really need to even
+put that in there but it's good to have
+and this is an interesting
+line here that opencv allows you to do
+a cv split image and this basically just
+takes the three channels in your numpy
+image and you could use the numpy code
+and figure it out i'm sure and splits it
+into blue channel green channel and red
+channel
+and what we're going to do is we're
+going to go ahead and
+there we go
+we're going to do a cv merge blue green
+and red and what we're doing is we're
+merging the
+blank one
+as far as blue
+the blank green blank uh blank blank red
+so these are the new channels as we
+combine them that's what this merge
+thing does this is kind of fun because
+you could merge you could take like your
+cat with just the red whiskers
+merge that with something
+and then kind of mess with the images as
+to far as like you know what sticks out
+once that's back on there you get pretty
+creative with the
+imagery and then we're just going to go
+ahead and show blue green red
+we'll just do all these at once
+and you can see here
+the same image
+oops there we go i'll take it a second
+to pull it down
+and we can now
+see uh it's either black or blue red or
+blue or you know the different colors in
+here green or black
+kind of fun i mean really pull out the
+different colors and see how you can
+mess with them on there
+and then if we go ahead and
+just do a quick print of these shapes
+let me go run
+you can see here that as you expected uh
+you'll have the image shape which is 427
+640x3 well it's only 640 by 640. so each
+one of these is just the color of just
+the one color that's all we're showing
+on here
+the fact that we use the shape on here
+is very similar to your numpy and these
+are actually numpy in the back end
+so if you haven't messed with numpy
+real powerful setup on there you can
+dive in there and do a lot of stuff in
+numpy that comes back right into this
+over here
+and then we'll merge them back in
+shoot there we go and we see the
+original picture give it a second to pop
+to the front
+and you see here we merged the colors
+back we separated the colors we merge
+them back same image and that's what we
+expect on this because we didn't mess
+with any of the colors
+let's go ahead and destroy all that so
+we have another clear setup
+and let's go in and look at some more
+alterations we can do with um
+blurring and and altering the image in
+different ways
+for this we'll go back to our cat
+picture uh here's our image cv i am red
+cat jpeg
+and if we run that and view it there's
+our cat
+i guess we got tired i guess the guys in
+the back got tired of the cute puppy
+running around
+and the first thing we'll go ahead and
+give a shot on here is averaging these
+are different ways we can blur the image
+so if we average it it takes the average
+pixels based on
+three by three and if we change this to
+30
+just for fun
+you can see how it really blurs it on
+there
+so this is like a 30 by 30 pixel each
+pixel averages around it and we'll go
+back to 10
+kind of a little bit of fun stuff you
+can do on there and you can see that
+because i'm doing the average blur
+it knows to go to this frame right here
+that's why i can so easily jump in here
+and just make some changes on that
+that is a lot of fun when you're messing
+with videos because you can so easily
+throw that into
+your interface
+set up on there and be able to mess with
+it and here's our gaussian blur
+and the gaussian blur is very similar
+but the
+pixels that are closer are given more
+weight and let's just jump this up here
+to 30.
+we'll run that
+and whoops it didn't like 30. i guess i
+jumped too high for it let's do
+let's do five
+there we go you start to see the
+blurring on there and then the one let's
+change that and see what that does it
+doesn't make a huge difference on this
+until you start messing with let's see
+waited there we go run
+you start to see it starting to blur
+more and more depending on how we do the
+weight and how it kind of
+blends outward gaussian's nice because
+it adds a little bit more blending to it
+where this just blurs it where the
+average just blurs it out
+again those are the kind of things you
+almost have to play with them a lot
+to start seeing how they change
+and there's also the medium blur
+let's go ahead and run that one
+as it comes up there we go
+and the median works almost identical to
+the average uh it's very similar on
+there
+there are some differences and you
+really have to start looking at what is
+the difference between an average and a
+medium value
+because that's what this is based on
+this is based on the median value
+if we do it run 10 there we go there's
+our median i hope it didn't like the 10
+i'm not sure why i must have been too
+high of a value for it
+run
+oops
+let's try 0.5
+there we go um okay so and this has to
+be an integer for the medium blur and
+you can see it's similar to the average
+but there is a difference in the way the
+math actually functions in the
+background
+sometimes it comes out a little
+different
+and there's also a bilateral
+filter
+a lot of these you use to smooth
+sharp edges if something looks really
+sharp you can smooth it and this is
+literally what they're doing when they
+say smooth something
+and you're messing around with
+photoshop
+these are the kind of changes that are
+happening in the back end
+and then we have our bilateral let me go
+and run that
+and the bilateral
+you should that is one that's really
+important to remember
+because it works like the gaussian
+but it it's like a gaussian filter on
+top of a gaussian filter
+and one gaussian filter
+smooths out like blotches like if you
+want someone to have smooth skin
+but keeps the sharp edges
+and so when you're messing with this and
+you're doing a lot of work
+remembering the bilateral filter is
+really important if you're doing images
+especially
+if you look at my complexion i really
+need it i should be doing the bilateral
+on that one
+that's the kind of thing that you'd be
+using to really bring up people's
+features while smoothing out all that
+fuzzy noise that shows up on their skin
+and blemishes
+and again let's go ahead and clear our
+palette
+run
+another
+cool feature
+so we can do bitwise
+setup on here and i'm going to create a
+blank
+setup
+just so you can see what it's going on
+there here's our blank box 400 400 400
+it has a rectangle we're going to do
+from the blank copy and then we're going
+to do a circle
+the circle is going to be
+200 200
+set up on here
+so we're just building a circle and a
+rectangle like we did before let me just
+show you all the numbers on there so you
+can see what we're doing oops let me
+maximize it all right there we go
+let me
+ah always a question do you do it before
+or after the comma it really depends on
+what i'm working on and who i'm working
+with i do whatever they want so if it's
+uh sometimes it looks nice to have the
+commas in front and sometimes afterwards
+when you're splitting rolls it's purely
+visual on here
+uh so we're gonna have we're gonna go
+ahead and do build ourselves a rectangle
+and a circle here and let's just go
+ahead and display those so we can see
+what those look like
+so we're just going to show our
+two images these images are based on the
+blank so they're the same size as far as
+the image goes
+and that's important when you're working
+with bit wise
+so how do you overlap two things if you
+don't know which
+which parts are overlapping so they have
+to be the same size
+and we can see over here let me just
+pull this over
+we have our rectangle in our circle
+and we can do just like we do with
+any kind of bit wise functionality and
+let me pull i guess you can pull it over
+here without losing
+information on the screen
+i wish was the screen was 10 times
+bigger than it ever is it doesn't matter
+how big my screen is
+so here we have the bitwise and this is
+where the two regions intersect and it's
+like you expect
+you can see the white circle on the
+square but where they
+where they're both at but not where
+the black part is so it's only it's the
+and they have to have both white on both
+the square and the circle
+and just like that we can also do the or
+and hopefully your mind's already jumped
+ahead if we're doing the or cv bitwise
+or rectangle in circle
+uh we have the combination of the two as
+if you just pasted one over the other in
+this particular case
+and
+we have uh nor
+or zors is called
+control v
+so it's not x nor
+or not y
+and if you look at that that kind of
+makes a pretty pattern on there not x
+not y
+not x and y not not
+but that's a zoro on there you can see
+how the zor comes up on there
+and then of course there's just the
+bitwise knot on there
+i'm going to run that one and you can
+see here where the not set up on that
+in this case it just inverses the circle
+from
+black to white
+and just like before let's go ahead and
+clear our palettes we start with a clean
+palette over here also keeps my computer
+running smooth
+uh and we have we're now into masking oh
+my gosh i use masking so much
+and if you go into any program out there
+uh that does any kind of editing masking
+comes up so we want to go ahead and work
+with our masking on this
+and for masking let's bring the cat back
+sure is a cute cat in this case we have
+a bunch of cute kittens
+uh in fact a bucket of cute kittens
+that's a little scary
+uh and we'll go ahead and create a blank
+page on here
+and this is really interesting in fact
+i'm going to stop here and actually do
+a draw and i want you to notice right
+there oops
+right there is the two
+the shape and this is a numpy shape so
+what are we talking about with this
+numpy shape well this numpy shape is
+zeros or ones we're really looking for a
+black and white image a lot of times we
+talk about mass we're talking about true
+false and that is the same as in numpy
+like a true false mask just like you
+have a numpy
+and we'll go ahead and create the blank
+image over here and it's just like you'd
+think it's a black
+and then we can easily do both the
+circle and rectangle
+and you can see here we did an image
+shape
+this isn't too important right now
+because we're going to create the mask
+separately in just a second
+but you can see where we're creating
+our image here there we go so you can
+see all the different things in the
+window and it's going to create both a
+circle and a rectangle mask on here and
+let's go ahead and do a
+bit wise
+we're going to create the mask out of
+the bit wise out of the circle and the
+square we'll go ahead and run that so
+you can see what the mask looks like
+and in fact let's let's go back to
+let's clear up our things because our
+palette here we'll just go run that
+we're going to play with the
+let's see where are the kittens
+got to have our cute kittens on our
+display
+there we go there's our kittens come
+back okay our bucket of kittens
+that cracks me up a bucket of kittens
+uh and here's our mask run
+you see we have an interesting mask
+showing on there
+and then i'm gonna we're gonna take and
+uh combine these
+let's see here we go
+and we're going to do a bit wise where
+we have the image the image and masked
+equals masked
+so here's a bit wise set up on here and
+let's see what that looks like
+and it's just kind of fun i've created
+this mask adding all these things
+together and you can see how
+easily we can actually just kind of zero
+in there and show just the kitten on the
+mask
+so that's that's a lot of fun and you
+can also reverse this and have an image
+without the kitten on there just a black
+hole where the cat was
+so those are both things that can happen
+on here
+let's go ahead and clear our setup
+and masks can get so complicated you can
+see we added two masks together a square
+and a circle and got a half circle on
+there um i tell you i've gotten into
+so many layers of masks that i can't
+even track what's going on anymore
+um so you got to be a little careful
+with your masks and how you add them
+together and bring them together but
+there's a lot of things you can do with
+them you could just as easily swap the
+green channel in for one um so you have
+just certain areas where you have like
+just a circle it's just green or maybe
+the whole background is green and one
+area is actually full color
+so there's a lot of cool things or you
+can mask
+take the mask of the
+of a black and white image and then mask
+a section of it in color i've seen that
+done to make some really cool photo
+photographs
+histograms not something i normally
+think of when dealing with photographs
+but you can do a histogram of the
+information on there
+so let's bring back the kittens because
+they're just so cute
+and let's uh grayscale it
+bring them back in our gray-skilled cats
+and then what we can do with this
+is we can go ahead and do a grace a
+histogram on the grayscale
+boy we can get so much into histograms
+because histograms have so much cool
+data that you can bring in
+uh so a lot of times you can take images
+or something you can start looking at
+the number of pixels uh
+the bins that they fall in different
+setups as it pulls in but you can see we
+have a grayscale the histogram of the
+grayscale here
+and just like we do the
+grayscale we can also do a histogram of
+the
+colored skill too
+boom there we go and the same setup we
+got our plot figure our title we're just
+doing a histogram we're just gonna throw
+in the colors uh blue green red
+um and then we just go through each of
+the colors and we go ahead and mask them
+and then plot them on here let me just
+pull that over so you can easily see
+what's going on and the same thing with
+the grayscale all we did was come in
+here and just drop the grayscale right
+on here um with the setup and so we have
+our figure bins and a number of pixels
+and if we plot the red
+histogram of the colors
+you can see here some really kind of fun
+patterns and you could analyze these
+patterns
+on different things to
+i don't know about kittens um i don't
+really think of kittens with histograms
+i don't really wouldn't really do a
+histogram of a cat uh but you could see
+if this image was like a heartbeat image
+or something like that
+the histogram would really be showing
+and telling you exactly what's going on
+and we'll keep the cute kittens up there
+and look at thresholding uh so we have
+the threshold the thresh
+and the you can do a threshold on here
+as far as uh
+there we go let me just bring that down
+so you see some of the numbers that go
+into there and we're going to use the
+grayscale
+and just do a simple thresholding view
+on here and what we're looking at is the
+colors that come forward you can do
+different thresholds on different colors
+and here we're just saying hey if it's
+uh
+because we're dealing with grays
+if the certain color is over 150 or 255
+you can see we have a nice or it's over
+150
+then it just turns it black otherwise
+it's white and so we create a nice
+threshold and you could actually turn
+around and use this as a mask back on
+the original picture
+and it would bring the cats out and make
+some interesting pictures on there
+but that's a basic threshold on there
+there's what they call an inverse
+threshold
+let's go ahead and take a look and see
+what that looks like so you have an idea
+we'll run this
+and this is just you'll see right here
+up here we had
+threshold gray
+very similar
+but when we get down to there we go
+uh thresh binary uh inverse there's a
+key that changes it so it's still
+still is thresh in inverse equals the
+same uh call the same module cv
+threshold is just how do we process it
+on the end and if we run that
+if you guessed an inverse means inverse
+then you are correct give it a second to
+pop back up here on top
+there we go
+so very similar to the original thrush
+inverse but opposite and also makes for
+kind of a cool picture you could imagine
+taking either one of these and doing
+some cool things with them over the
+original pictures
+and then finally there's an adaptive
+threshold on here
+and the adaptive threshold let me just
+pull that over here
+there we go
+it doesn't quite show up on this
+we have adaptive threshold gaussians
+we're going to use the gaussian if you
+remember gaussian means that it is
+slow
+to bring it up
+slow that's not even quite the right
+word
+there we go
+okay i wanted to bring that over so you
+could see a little bit better
+gaussian means it's adaptive so that the
+weight closest to the pixel is very
+different than as you get further and
+further away as far as adaptive
+threshold
+and then the adaptive is based
+more on the difference between the
+pixels as opposed to
+the grayness on there
+and let's go ahead and we run it let's
+take a look on this and see what that
+looks like
+and we can see just quite the wild
+imagery again it almost makes it like a
+uh black and white etch etching or
+something like that so it has a really
+cool effect
+so
+a lot of these things are designed
+to help find
+edges which is our next section we're
+going to go over is
+pulling out the edges and finding the
+edge detection
+and so you can see how complicated it is
+it's not an easy thing to find the edges
+on these pictures what is the edge what
+are the colors how do you find that with
+the histogram we saw in the color scheme
+how they did a certain setup and you
+might be able to pull that information
+and use it to find an edge
+and so there's a whole thing on edge
+detection
+this is so central to a lot of stuff
+being worked on now
+because
+well let's face it if you're doing like
+any kind of imagery you want to know
+where the edges are so you can draw a
+box around it whether you're trying to
+program it to do a facial recognition as
+we'll do in the third section we're
+going to cover we're in the first
+section
+but let's go ahead and bring back our
+park
+run that uh and we're also going to do a
+nice gray picture on here oops let me
+put um
+the white key back in there i don't know
+why it does not
+when i run it without giving it that
+extra 60 milliseconds or whatever to
+pull it in there it sure gives me a lot
+of problems on on this machine
+and again it's because i'm doing the
+jupiter notebook
+when i put this into a widget or
+something like that and start using
+opencv or use as a backend for code i
+don't see these kind of problems it has
+a lot to do with just using it in
+jupyter notebook
+and so let's start with the
+sobel the subalx or
+the solo line detection on here we're
+going to put in
+our grayscale setup on here
+there's a lot of different settings on
+the siblex civil y
+and combine them back together
+so let's go ahead and take that
+and we want to go ahead and show oops i
+forgot to bring my shows over
+and i'm doing sobel first and the reason
+i want to do sobel first
+is because the other one is based on the
+math behind sobel
+that we're going to hit the the second
+one which is a
+which happens to be the laplacian
+and so this works on the intensity
+from one pixel to the next
+and it kind of creates a formula for it
+and as you can see as we get into the
+intensity from one set up to the other
+let me bring this down
+uh we can start to see some lines in
+here we have from the y direction and
+the x direction and we combine them and
+you can see there's an interesting kind
+of pattern set up in here
+now for a scene like the park it's not
+really pulling it in that good
+and
+like i said each one of these has a
+different
+strength to it
+with this one you might do images a
+little bit better
+close-up shots
+but let's look at the laplacian now the
+application is very similar how it works
+in the background as a sobel as far as
+intensity we take that formula for
+generating the intensity on there
+and whoops
+happened there
+okay uh
+we take that intensity for that
+laplacian
+there it is
+and they use the second derivative
+and you can see how it really transforms
+the edges on this image
+and there's a lot of things we could do
+with this if you remember from earlier
+we talked about taking out noise
+blurring
+if you use some of those features on
+here like the foreground would just
+disappear with the right blurring
+technique or the right transposition
+technique
+and it really becomes an art form uh
+trying to jump between all these and
+figure out which one's going to work for
+your picture
+and your
+setup on there
+um and then you run the histogram to
+kind of maybe find some try to find a
+mathematical thing behind it it's really
+a challenge to take the background out
+or bring the background in and sort
+those things out
+and all these tools are slowly being
+built and that's what opencv works so
+good
+just because to just to address that
+and then we already did the canny setup
+we'll go ahead and run the
+line detection under kanye
+and the cany literally combines all of
+the different math functions of our
+of the
+application
+and the sobel setup and you can see here
+does a really good job of drawing lines
+and putting in areas on there
+and again this is just a starting point
+one of the cool things you can do with
+here is blur it and then
+like get rid of the bumps in the
+beginning and clean it up and do all
+kinds of things to create a mask on
+there
+and let's go ahead and clean up our
+screen or pictures and
+images and then we're going to dive into
+uh the next the second step stage of
+this which is motion detection now we
+covered a huge amount in all these tools
+uh that they have on there from our
+canny edge detection to
+bit wise mapping to
+masking that's a lot of stuff to cover
+some of those tools we're going to use
+in the next setup or the next two one of
+the next two setups
+but we're going to start with motion
+detection
+which is kind of fun if you have a web
+camera or you have
+there's all kinds of reasons you could
+use it an outdoor webcam that's my what
+i've always wanted to put one up there
+to because i live up in the mountains
+it'd be fun to track the animals going
+by
+but you could also use the motion
+detector to track somebody coming into
+an area and then do facial recognition
+on them
+so you can see the motion detector
+has a lot of cool tools on there and the
+fact that we're going to grab from the
+camera
+is really helpful also so let's go ahead
+and go in here and open up a new let's
+see
+new
+python3
+and we'll go ahead and rename this real
+quick
+open cv
+motion
+detector there we go
+so let's dive into our uh motion
+detector and there's
+so many we're going to actually use a
+lot of the tools we looked at earlier uh
+so
+um let's go ahead and start by importing
+our
+opencv and we went ahead and just did
+opencv 2. remember last time i said
+sometimes we leave it as cv
+or import
+cv2 as cv and so on we're just going to
+import it as cv2 in this one
+and we're going to do date time for
+tracking um we have this thing called
+static back
+it's uh um
+we want to be able to reset something to
+none and so having it as a global
+variable here makes sense
+and then i'm going to have current
+motion
+and motion list
+and what it is is the current motion is
+going to have a start time and an end
+time that's when it detects a motion
+going on
+and then the motion list is just going
+to keep tagging those on so we have a
+new one and an ending one
+now we're looking at a lot of code here
+so the first piece of code that's i
+really want to draw your attention to
+is this one right here um cv2 dot
+capture video
+and then the number is if you had
+multiple videos in here you can actually
+capture actually capture the video off
+the different video cameras and so we're
+looking for the main default one
+that's going to be set up in here
+this is actually kind of cool because i
+always had the idea of having uh the
+front-facing camera and a side-facing
+camera so that you could flip between
+them and do different things as far as a
+final edit and that kind of thing
+but this is the video
+is looking at this camera we're just
+setting this up right now for which
+camera to look at
+now when we're dealing with video
+uh we're kind of creating an infinite
+loop and so at some point we have to put
+a break in it and we'll we'll do that
+we'll show you that break here in a sec
+in fact
+i'm going to skip between the two
+um
+and skip the code in the middle so you
+can see the beginning and the end and so
+we have an infinite while loop and we're
+going we're going to stack images as the
+video goes and display them
+and then when we get to the end of this
+infinite while loop we need a way out
+in other words you don't want it just to
+go on forever until you hit the escape
+key
+you could do that if you want
+but we like to actually add something in
+there and we'll go ahead and do
+here we go
+this
+we're going to tag on the end here
+uh key weight
+key q2 and then just break
+now
+this won't work like this unless we're
+actually displaying a video and that
+video screen is highlighted
+all this does says is if we are active
+in the active video screen when we do
+the display when we get to that
+break now i kind of jumped ahead because
+we actually have to create a display in
+the middle but i wanted to put this all
+together so you could see it all in one
+shot here
+we have our while loop we're working
+with
+we're going to go ahead and initiate our
+frame outside of here says hey this is
+video
+whenever i do video this is what we're
+looking at then we're going to read the
+video and you'll have two returns on
+here check and frame
+and the frame is nothing more than the
+image coming in that's what that is and
+the check is hey is do we have an image
+coming in if you remember from earlier
+we played the dog video it came up with
+check would come out false when you got
+to the end of the video because this is
+an indefinite loop we never do anything
+with the check
+we don't have to worry about that too
+much
+so here's here's our kind of our wrapper
+and we're going to add a couple more
+things before the end of the break on
+this
+uh
+and then we're going to initialize
+our motion
+so up here i initialized the current
+motion as having nothing in it uh so
+this is a current motion there's no
+action going on we haven't started an
+action there's no end of the action
+and then when these fill up we'll put
+them into the motion list
+and so we're going to go ahead and add
+in our motion equal to zero so we're
+initializing the motion in the loop and
+it starts out and says there's no motion
+going on
+now
+we're going to go ahead and do some fun
+stuff here and this stuff comes these
+next lines of code come off of what we
+just went over
+we're going to grayscale it uh very
+straightforward so whatever's coming in
+the camera is going to have a grayscale
+to it
+and then we're going to do a gaussian
+blur
+this makes it easier to find the changes
+we're looking for sharp edges that are
+moving that's how we're going to do our
+motion detector
+and if everything's a little blurry
+that means the edges are going to stick
+out when they move
+because everything because they're kind
+of blurring it to those edges
+and then we're going to go ahead and do
+a
+if static back is none static back
+equals gray so we're going to
+assign our very first value to the first
+frame that comes in that's all this is
+doing on here
+and then continue on there
+now i'm kind of zipping through these
+steps i'm going to go back through them
+in just a second so it'll make it a
+little bit more understanding as we go
+a difference between static background
+and the current frame which is a
+gaussian blur
+so we want the difference between the
+two frames this is just kind of a fun
+abstract way of finding hey what's the
+original frame and how much has it
+changed
+and then if there's a change and you're
+going to hopefully already have guessed
+that there's some problems with this
+piece of code right here
+and i've run into this what if your
+image is your outdoor cam and the grass
+is blowing in the wind
+or the lighting changes because the sun
+rises and sets
+so it might work great in a room that
+has consistent lighting not so good for
+a wilderness cam and you've got to start
+thinking about these things and there's
+ways around it
+if there's a change between static
+background and the current frame is
+greater than 30 it will show
+white color so this is kind of fun where
+here's our first threshold we're looking
+for a threshold between the background
+and the foreground
+uh so we're starting to find a little
+bit there on the setup and then we're
+going to go ahead and take
+our threshold frames the difference from
+the background and the foreground
+we're going to put that into
+the thresh
+frame copy
+into a find contours and we're going to
+use the chain approximate sample for
+finding the contours
+so this is going to find some contours
+for us
+and then what we want to look at is on
+the contours
+so we're counting lines we're counting
+how many contours or how many lines are
+in here and if there's over 10 000 of
+these lines that are the difference
+between the initial frame and the new
+frame
+then the motion's going to be one
+wow that's a lot to unpack
+so let's go back up here and just go
+over that real quick because i did each
+line as we went in there first thing
+we're doing is we're converting it to
+gray why it's easier to see gray you can
+see the differences in movements and
+things like that in gray a lot better
+than in color
+next we're going to blur the gray this
+just makes it so it's easier to see the
+changes going on
+we've reset our static back to none so
+we initialize our background to gray
+so if it's none then we want the static
+back to be
+whatever the gray value is of our first
+frame so when i turn the camera on i'm
+going to be outside the camera so you
+can see the back wall of my office which
+is
+still under construction
+just a wall socket and some weird stuff
+back there
+and that's what i'm going to use for my
+basic setup and then when i go back in
+and move around or actually i'll just be
+in it and just try to hold still and
+move around a little bit
+and then we have the difference between
+the static background and the gray frame
+so this is the gray frame coming in
+versus aesthetic background
+and then we take that and we make our
+threshold
+and we basically create a bunch of
+lines we find the contours of the
+threshold the difference between those
+and so that's where we get our nice
+lines and if we have enough lines on
+there then that means we have a motion
+equals one
+so that's a lot of fun motion equals one
+so the next stage is if we have a motion
+equals one
+we want to track it
+and so uh we'll go ahead and do that
+here just throw that one in
+and it says hey if this is a motion
+equals one
+and our current motion that we're
+looking at and our zero slot has nothing
+in it
+and the motion equals one then we want
+to go ahead and stamp the date time in
+there
+so now we're tracking the start of
+movement we have the beginning of
+movement
+and we can do a bunch of really fun
+things and this next part we're going to
+use
+for a bounding rectangle
+and this is going to come up in a
+display we're going to show you in a
+second this this one like you know
+tracking the current motion
+uh you know it's it's kind of cool you
+can if it's either zero one
+really looking at the contour area
+and figuring out how much value to put
+this at we put it at 10 000. that's
+really part of the opencv
+another thing with the opencv is we're
+going to start looking at these contours
+and we're going to create a rectangle
+around them
+and then cv2 rectangle
+we're just going to take the frame and
+write a rectangle right on top of that
+frame
+now
+if for some reason
+i stopped moving
+we want to know about that so now we've
+created a rectangle around movements
+we've detected our motions
+if it didn't detect any motions and
+there's nothing going on
+then we want to go ahead and take and
+append
+the end time so if motion equals zero
+and current motion equals of zero is not
+equal to an empty set
+then we've had movement going on and the
+current motion of one needs to equal the
+date time
+we'll go ahead and just tag the current
+motion right on top
+and then the current motion is reset to
+an empty set
+so that's all it is is we're just
+creating an array
+of the emotions
+and this is just kind of fun right now
+um we're going to go ahead and do
+displaying the images we'll start with
+uh image gray frame
+and there's our gray on there and if you
+remember up here
+we drew a box on it so you're going to
+start seeing the rectangle
+on the frame
+coming in and then we're going to go and
+display start displaying the gray frame
+because we converted everything to frame
+we want to go ahead and display the
+differential
+so you can see what what's going on in
+there and why that looks different
+we want to spray both the
+threshold frame and the color frame so
+we're going to do all of these up here
+there we go okay
+so we basically are showing up
+everything that we put together so that
+it's going to show up on the screen in
+little boxes
+and then we have our key weight and i
+said i need to fill some more stuff in
+here
+well if we're in the middle of detection
+of motion and i hit the q button
+it'll be nice to know that it'd be nice
+to tag that on to the end
+so we'll go ahead and tag that on to the
+end here
+and if motion equals one and current
+motion of zero is not equal to an empty
+set then current motion of one equals
+date time now
+and motionless append the current motion
+and then break that takes us out of
+the loop completely
+and then once we hit the break
+uh we'd like to see what's going on with
+our motion this that's what it's all
+about is the motion list
+so do a quick display on our motion list
+i don't want to go past 30 if i do too
+many start and stops
+this is important let me go ahead and
+highlight this right here
+we want to release the video
+and of course destroy all our windows
+okay and that's just cleaning up always
+good to clean up on there
+and these are nothing more
+let me go back up to the top here we go
+we've already talked a lot about the
+show
+so we're showing the gray frame that we
+created
+we're showing the difference frame that
+we created we're showing the threshold
+frame
+and then we're showing the actual
+color frame that's actually coming in
+the frame that's coming in
+so wow that's a lot to break down let's
+go ahead and run it hopefully i didn't
+miss something when i was coming over
+here
+and we should see it coming through it's
+setting up it's accessing the window
+and i have to minimize excess behind it
+and there we are
+still moving there we go move back and
+forth this is kind of cool because you
+can see as i move back and forth look at
+the lines around my face
+especially on the
+difference frame you can see where it's
+putting nice contours on there and
+setting it up
+so i need to go ahead and click on one
+of these boxes because i move the mouse
+on the other one and then we'll push the
+q button
+and then we'll bring back up our
+opencv and you can see here every time i
+start and stop
+and put the start time and an end time
+and we could have easily put the frame
+count you can put just about anything
+you want on there
+and i'm going to go ahead and run this
+one more time
+and then move
+then hold still
+and then click on then go and hit the q
+and we can see here that instead of
+having um
+there we go boom
+that it it picked up on a number of
+different start and stops on here one
+two three four five six seven start and
+stops
+so not bad you know a little motion
+detector um again you can see up here
+where we're capturing the video we're
+looping through and finding the video on
+each one
+and then we do all of our fun
+transformations on creating the
+grayscale and gaussian blur
+anything to make it cleaner as far as
+counting up the threshold lines to see
+whether we should make it a motion or
+not
+and then of course we tack the emotion
+the motion on there
+we added these little boxes around the
+contours
+was kind of fun because you could see as
+i moved how it changed and there's still
+like this weird blur in the background
+and then of course if we stop it tags on
+an n value
+and here's all of our displays and voila
+we have a motion detector or at least a
+start to one
+you got to mess with it a little bit
+there's obviously you might want to do
+like every
+one of the tricks that i use is where
+you have the static right here
+is we revert to the gray static view
+this one is if it's um
+you might just revert this to a new
+frame every so many frames
+uh that kind of thing so there's a
+little bit lots of play in here that you
+can do with this
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit skill up by
+simply learn click on the link in the
+description to know more that puts us on
+this demo which is facial recognition
+so let's go ahead and create a new
+whoops where's our new there we go new
+python 3
+and you could see how you can combine
+the motion detector with the facial
+recognition detector so there's a lot of
+really cool things we can do here
+this will be
+cross
+open cv
+facial
+reek recognition rename
+there we go and so to start with let's
+go ahead and import our information on
+here
+we're going to import our cv2 as cv
+again this is a personal preference
+i go back and forth on this there's a
+lot of reasons to do it this way if they
+update it and it's backward compatible
+if it's not backward compatible that's
+going to cause problems
+but that's going to be fine
+we have a lot of files going on with
+this so as we start messing with the
+cross and you want to have access to
+these files
+let us know we can send you
+you know compress them down and send
+them just put a note into the
+um
+send a note over to the simply learn
+team and they can help you with that
+so the first thing we're going to start
+with
+this is the beginning we have face
+detection um
+we've got a picture of a lady a group of
+five people image uh we have a grayscale
+grayscale the people
+um let's go ahead and run we're going to
+move this off to the side again like
+we've been doing
+and run it
+there we go and of course it appears
+right behind here
+move it off to the side
+and give that a second to pull in
+as of now we haven't done anything as
+you can see we just have two blank gray
+screens
+now because these aren't loaded all the
+way if you try to exit out of them uh
+they'll just kind of lock the system up
+with it when you're connected with the
+jupiter notebooks so we want to go ahead
+and just destroy all the windows let me
+run that and see that they are gone
+and so we have our two our
+gray people gray those are gray boxes
+that's what the gray people are in there
+and we're going to bring in the what's
+called a cascade classifier
+and when you look at the cascade
+classifier
+it's going to load the xml hard face
+file right there
+this is real important this is all
+pre-built it's looking for edges that
+are common in faces that's what this
+means
+i mean look at the har face xml like
+it's looking at the edges is what it's
+doing there is all kinds of really fun
+stuff they have let me just bring this
+over from the github this is the opencv
+data har cascades
+github and if you go into here
+you can see we have
+eyes
+let's see what is this eye tree with
+eyeglasses
+frontal cat face i guess a lot of people
+like to identify their cat in photos
+frontal phase funnel face so there's a
+lot of different full body left eye
+right eye
+there's a russian numbers you can also
+create your own so there's a lot of
+stuff you can do with an h with a har
+cascade file
+we're going to load that up specific to
+detecting faces in here so that's what
+this part is about
+let's go ahead and apply that and so you
+can see we create a faces rectangle uh
+har cascade detect multi-scale we're
+going to put our gray into there the
+where we loaded the picture in there and
+then it has some
+scale factor many neighbors there's a
+lot of different things you can do with
+this a lot of times these are very
+pretty much the default
+default works pretty good on a lot of
+this stuff and then if you want to dig
+in deeper into why one would work more
+why you need more information
+you can go back into the opencv
+it's good to know about the har cascade
+detect multi-scale
+and then we're processing these the
+first thing we want to know is we want
+to print
+how many number of faces found you want
+to make sure we're not looking at a
+crowd of 500 people with you know a ton
+of different faces on there
+and just because let me go and put this
+back up here
+just because we like to see
+we have to have a view of it we're going
+to go ahead and create
+square it off so it so it has just the
+face in there create the face rectangle
+and then we're going to go ahead and
+show those images
+i'm like if you're like me i like to see
+what i'm looking at
+so let's go ahead and run this
+and we run this let me go ahead and put
+this back into half screen
+the first thing we do is you notice that
+number of faces found is one
+that's really what we're looking for is
+we want to make sure there's just a
+single face on here and you can see here
+there's our group of five people that
+says it's actually just one person it
+found in there
+again
+you can see it has a nice image of the
+person coming up in the different scales
+and colors and
+this is the one we really want to look
+at as you can see right here as it puts
+a rectangle
+right around the face this is really
+nice because now if you are processing
+this you're processing the face or maybe
+you're processing the background it
+could be used for either one to pull the
+background out from the face and blur it
+or take the face and center it there's a
+lot of different things you can do here
+if you know this is a face and then you
+remember from previous we did edging you
+can now draw an edge and find that
+edging around her head knowing that the
+center of the face where nose is
+and then you could blur the background
+you'll see that in a lot of
+newer zoom and
+webex kind of things where they blur the
+background out so people can't see
+what's behind you when you're on one of
+those meetings
+now we're going to go ahead and clear
+this
+again
+this thing is set up in jupiter
+there's ways to get around this but for
+the most part it's just good to clean up
+after yourself because we're
+extending it out there so we'll go ahead
+and destroy all the windows
+the next two steps or our final two
+steps are
+to go ahead and create a model and train
+it so we want to train our model and
+then actually apply it use it for
+something
+and we're going to go in here let me
+just hold this up
+and what we got here is we have
+our people we're going to look at
+pictures of ben affleck elton john jerry
+seinfeld madonna
+mindy kaling
+these are really easy to pull up images
+because these are you know famous actors
+i don't recognize any of them no i'm
+kidding
+i actually know all of them um and we've
+got it in here we've got to set up uh
+one of the files and we're just going to
+print the directory so you can take a
+quick look at that and see what we're
+looking at here um
+this is where it goes to let me go and
+pull that up so you can see what the
+actual files look like
+you can see here is coming drilling down
+into it let me just go under ben affleck
+and you can see it's all these pictures
+this is what we're looking at is
+different head shots of ben affleck on
+here
+one of the things to notice is that at
+some point we probably need to resize
+because some of these photos are a
+little bit wider a little bit taller
+and that squishes things and expands
+them
+so a lot of these detections when we
+start looking at faces is actually doing
+its best to
+do the same thing compress and expand
+them into
+and train it on those different shapes
+and we'll go ahead and load our
+h-a-r-h-a-a-r-har cascade back in here
+with our face xml that we had before
+being that we're in jupiter notebooks
+it's probably still listed in there
+we want to go ahead and
+create an empty array of features and an
+empty ray of labels
+and we'll show you what that does here
+in just a minute this is for tracking
+our different features in here
+so let's go ahead and we have our
+features and our labels let's go ahead
+and create the data this is what we're
+doing here uh so we have our person and
+people here's our all our people it's
+going to go through each one we have our
+path which is our directory always good
+to double check those make sure you go
+in the right direction
+we can actually print the path out so
+that as we go we know we're looking at
+the full path
+kind of a troubleshooting thing usually
+at this point i've already deleted a lot
+of these things out of here and you can
+see that
+the guys in the back were when they were
+doing it they forget where they put the
+files or where they're going they get
+some kind of weird error and then you're
+like oh yeah yeah yeah i moved there i
+moved the program over one or something
+like that
+and so we need to go ahead and create a
+label
+people.indexed person so we're creating
+a
+label for our training scenario
+and then for each image in the os list
+directory per person we're going to look
+at each one of those images
+then we'll take that and we'll create
+the
+image path image
+array
+and here's our reader where we're going
+to read in the image
+here we are in opencv we're going to put
+that into a grayscale
+faces rectangle so we look at the find
+the faces on there and create a
+rectangle around it
+that's what this part is this is all
+from what we did before you already saw
+this programming in here
+and so we are basically taking our
+features
+and filling it up with
+the different faces
+just the face
+we don't want to look at the whole body
+shot if you remember from the image one
+of them had them leaning against a tree
+some of them are close up some of them
+are far away so we really all look just
+at the face and then we're going to go
+ahead and append our label so we have
+our
+features these are each one of our
+images
+and the label then corresponds to each
+one of our
+actors
+so once we've done that we have our
+setup on here and this is
+for training purposes that's what we
+really want to do is we want to create
+our trainer
+let me come back down here
+uh create our trainer we want to create
+we want to train our model
+uh so here we come in down here we have
+our features
+we're going to print that the training
+is done so it's gone through and it's
+it's
+cleaned up all the features all the
+setup in here
+then we have our face recognizer
+this is
+the heart
+of what's going on
+the face recognizer
+it's an lbh face recognizer crate so
+we're creating a neural network right
+here
+that's the model
+and then we take our face recognizer and
+we train it with our features and our
+labels so now we have those different
+images and we're going to train them on
+this model here
+and then we'll go ahead and just save it
+save features.npa features and save
+labels we're just saving everything
+that's all this is down here
+and this is interesting because there's
+so many things we can do down here let
+me just go ahead and run this
+and you can see it's going through and
+it's opening up each of the files
+and then it goes through and the
+training's really quick there's not a
+lot of data in here you know what a
+dozen pictures of each one
+this isn't like going through
+uh seven gigabytes of information that
+takes a day to process in one of these
+neural networks and trains them or two
+or three days in the case of a project
+i'm working on
+this is just a small amount of data
+so it processes rather quickly
+some of the things you can do on here
+is
+to increase the data just with these
+images as you can
+tilt them you can take them and tilt it
+by 15 or 10 percent remember earlier we
+were looking at all those different
+commands
+that is one of the tricks they use for
+training
+a setup and not knowing what angle the
+person is going to be at they might only
+have 12 pictures and then if you
+tilt it 15 degrees and 30 degrees in
+each direction
+you've now increased it by five by a
+factor of five so now you have about 60
+pictures that you're doing for each
+person so there's a lot of cool things
+you can do as far as as your training
+set up
+we've now created our
+face recognizer it's trained it's ready
+to go
+so the next step is to go ahead and use
+it and let's see what that looks like
+so so and create our face recognizer
+recognition setup
+and we're going to reload this here's
+our people again same as before of
+course you can just leave it up there
+since with jupiter notebook
+it automatically brings a lot of this
+stuff in
+and then we have our features
+about pickles truce we're loading up our
+features here's our labels we're going
+to load our labels remember we saved
+them up here
+and then we go ahead and take our face
+recognizer and we going to create that
+and then we're going to just read the
+face trained at the y the the yml file
+we created so we're just loading back up
+what we had up here that's all that is
+this is really good to know about
+because this makes it very portable uh
+this way if you're using it in one
+location obviously you can download it
+you know all your security cameras track
+your neighbors as they walk down the
+sidewalk next to your house
+and then we're going to just read a
+image in
+and this one we're just going to take
+right from the ben affleck
+and we're going to do the first
+the ben affleck number one image in
+there that's all that is
+and we'll go ahead and create our gray
+scale image and we'll show that just
+because it's good to see whatever we're
+working with
+so this is taking our image in
+converting it to a grayscale
+show person in grayscale
+detect the face in the image this is
+nothing new this is from before we're
+doing the mahar cascade detect
+multi-scale
+set up on there
+and then we want to go ahead and create
+that rectangle around it once we create
+that rectangle around it
+then we want to go ahead and
+do a prediction on it let's go ahead and
+do that there we go
+so here's our our faces rectangle and so
+we're going to create that
+with our faces roi
+and then here's the key right here
+here's our faces recognize or predict
+it's going to return the label and the
+confidence on here
+and then we're going to go ahead and
+print that label
+with the confidence of and i'll show the
+confidence
+and then we'll go ahead and put some
+text on there and print it out it's
+always nice to
+see what's going on and then another
+rectangle on there so we just are we're
+just showing the image again so as it
+comes down
+this is a key though as we want to print
+out and find out what's the chances of
+this label being correct
+now right about now
+you should be guessing that it's going
+to get it correct and you're going to
+guess is going to have a very high
+confidence rating
+in the reason you want to guess that is
+because we didn't take this image out
+and switch it around
+in other words this image was part of
+the training and so it should have a
+very high confidence and have it correct
+that's already in the model
+and let's go and see what happens we'll
+go ahead and run this
+and you can see the label says hey it's
+been afflecked with a 99.53 percent and
+if we bring up the images here whoops
+let me go ahead and half screen this
+again so we can see what we got going
+here
+and
+for whatever reason it doesn't want to
+put them on top hold on
+i lost my images
+uh there it is and you can see uh
+peered up on my far left monitor which i
+don't know why i went there that was
+kind of weird and then there's the
+grayscale behind it
+and you can see here we were able to
+identify
+ben
+affleck with a confidence of 99.53
+thank you for joining us today with
+simply learn for more information please
+visit www.simplylearn.com
+get certified get ahead
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

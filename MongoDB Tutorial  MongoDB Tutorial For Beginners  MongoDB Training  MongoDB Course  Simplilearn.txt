@@ -1,0 +1,2478 @@
+hello everybody and i welcome you all
+so
+today as you know it very well
+we're to start working with the mongodb
+and
+this particular topic which we have
+decided to work on it is very
+interesting in this current scenario
+because if you see carefully lot many
+companies are moving towards nosql
+database
+and there is a reason behind this why
+mongodb is very very popular
+so it is not actually replacing your
+existing rdpms which is there in the
+market but it is giving you complete
+different approach
+where you can be completely free
+from all those restrictions what a
+traditional idb message is going to
+offer it to you
+so in this particular tutorial we will
+be learning
+what mongodb is all about and their
+advantages and some practical
+demonstrations so let's get started now
+so here in mongodb we would like to
+discuss about what is the mongodb so as
+we know the mongodb is known to be
+called a traditional
+document based database
+okay which stores the data in a document
+okay no sql means
+it doesn't says like no to sql
+instead it says not only sql that means
+it is not only sql but it is supporting
+the other approaches too
+okay so the document based when you talk
+about it actually represents the typical
+hierarchical relationship using the
+single records
+that means how the records are related
+with each other so that's how exactly it
+represents
+and it is a pure schema free environment
+so that you really do not need to have
+a schema before you go and develop this
+program so it is a pure schema-less
+involvement
+due to that it is giving you far more
+better flexibility when you talk about
+completely unorganized environment
+so what is nosql so the here's the idea
+about a nosql
+so it is completely into the
+non-relational database like
+traditionally if you see
+any non-relational database
+you talk about
+typical nosql
+it's purely into the document base here
+nosql does not use any tables like in
+rows and columns a traditional rdbps
+approach if you see there they are using
+a complete table structure like they
+talk about columns they talk about rows
+and are all about
+so here
+in nosql it stores a relationship data
+in the documents
+so the different type of nosql databases
+are available like you talk about called
+document based you talk about key value
+base you talk about white column based
+and graph based
+different options are available for the
+nosql but the one which we are using it
+mongodb it is a purely document based
+database
+now here we would like to go ahead with
+some demonstrations like talking about
+like how mongodb installation works and
+the other aspects
+okay everyone so now we're gonna start
+working on the first option called
+mongodb installation
+okay
+see mongodb installation is very simple
+if you open a website and go for
+this website name called
+mongodb
+download
+if you talk about mobile db download you
+gonna see
+the official website called mongodb
+community download is available
+when you click here
+so you can see it is taking the current
+version to 4.4.6
+mac os it by default detected my
+platform however you can select depends
+on which platform you have it and after
+that you will be clicking on this
+download
+okay so
+it'll get ready for if you're from
+windows
+i would say in this windows
+you can
+select
+appropriate option like two options are
+available you can talk about msi or talk
+about zip
+my recommendation is you can stick to
+the zip power portion because it won't
+start any mobile db services behind the
+scene
+that is really helpful because you
+really do not want the mobility to be
+there running unnecessary even if it is
+not required
+my suggestion is to stick to the zip
+file so
+here once the mongodb is there so you
+will be seeing that two files available
+inside the mongodb folder inside the bin
+so once you download the zip you will
+find two different type of files are
+available let me mention those
+so inside the bin folder
+you will see two files one is called
+mongodb
+okay another file which is available
+called mobile
+mobile d is to basically start the
+mongod server
+and the t mobile is actually the
+client which will connect with the
+mongodb
+clear so if you are in
+windows environment
+so once you are inside this bin folder
+of your
+zip file
+you will get the mongod so you have to
+double click on this it will start a new
+command prompt so you do not need to do
+anything further just minimize this
+command prompt and go inside the bin
+folder again and click on the
+another binary file called so it
+will get start as a client
+okay since i'm using the macbook here
+the concept is little
+different about how mongodb
+can be used
+okay so this is just a basic way of how
+the mode is being used into your code
+okay everyone so now
+as we are in the
+macbook so here to start mongodb we have
+a very special way to start with so here
+i'll start with my terminal
+and here i would like to paste one very
+simple command to start my mongodb
+database
+that is called mongod
+and after that you could say hyphen
+iphone db path it is the place where
+your database will be starting and one
+more important thing i forgot to mention
+like
+momodi would not start automatically
+inside your
+windows machine unless
+inside your c drive you have to create a
+new folder name called data and under
+this you have to create a new folder
+name called db
+because automatically when the mongod
+starts it looks inside the c drive data
+inside a db folder there your all
+records will get stored so do not forget
+whenever you're trying to use the
+mongodb so you must make have you must
+have this particular
+folder structure
+in place in your local machine otherwise
+this is not going to start
+every time you start your mongodb
+without this
+location it automatically terminates so
+to avoid those make sure that you have
+this data db folder ready with you
+however you could also change the
+location of this particular folder
+structure for which we will discuss it
+little later on but as of now
+we can see i'm giving my
+location that is called iphone 7 db path
+slash data db
+i hit enter you can see now my mobile db
+is starting now and since it's stuck so
+i have to start the new terminal now
+so here i open the another tab
+and type
+and the moment i type mobile now you can
+see it is now connected with my mongodb
+and now it is ready
+that's the first thing you need to
+remember
+okay
+now to check
+which other databases are available to
+you so you can just type show
+dbs
+so it will show you the number of
+databases which are already there inside
+your existing
+newly installed mongodb
+but you can go back and create
+new database too here you can see some
+databases are already present however
+you go back and create the new databases
+into your system
+and to create this database
+we have very simple option available
+here
+name call
+use
+simply db
+if i say use simplydb it automatically
+creates this database and take you
+inside
+let's see now you can see you say use
+simplydb it automatically creates though
+it is not there but automatically takes
+you in while creating
+those okay so that means you are in
+current database name for simplydb
+so if you are not sure which database
+you are in so you can just type dbs
+or db
+and it will show you that your current
+database is simply db
+that's it so your database is set
+and we are all good to go ahead with our
+next level development
+hello everybody and welcome back
+in a previous videos you have seen like
+how to create a database and
+how to identify whether my database is
+there or not so if you remember
+previously we have created our database
+using use keyword so if i just see my
+databases which we have created is last
+time so how we can check this out we can
+say
+show
+space dbs
+okay so you can see we have a got
+database
+list but we do not have any database
+which we have created last time is
+registered here that's quite surprising
+because
+when we have created up a database it
+should be listed here but it is not
+let's do one more time i'm saying use
+sn db
+and
+i'm saying switch to sldb
+now when i say once again show
+dbs so i still don't see my databases
+listed here there is a reason
+the reason is according to the mongodb
+rule unless we have minimum one
+record or collection is stored inside my
+mongodb it really can't show in the list
+now i want to tell you about a few
+important things
+now
+here when we talk about called mongodb
+in this mongodb
+compared to the relational database here
+the table which is actually
+in rdb message is called here it is
+called
+collection
+okay
+db
+is still called db here
+okay that means the database will be
+still called database but
+row
+what you use this word in a traditional
+rdbms here it is known as called
+document
+if you remember i told you
+like it is a document based database so
+here every single record what you try to
+insert it is not called
+a typical row it is instead called a
+document so every table is called
+collection and every single row it is
+called
+document
+that's what exactly the difference is
+okay
+now here once it is ready we will go
+ahead and talk about our next feature
+now
+well
+we have to basically go and create a new
+collection
+okay so what you can say db dot
+create collection and here i can pass my
+collection name i can say
+demo
+collection
+so once it is done
+i can see it is collection is created in
+typical language i can say the table is
+created and now when i try to see same
+show dbs
+i can see my database is now listed
+okay that's how exactly it works so the
+very simplest way of how we use in my
+code
+well in our previous examples we have
+seen like how we can create a collection
+and we can give the name and i can see
+the details are listed
+when i say show dbs but there is a
+another alternative option available
+where you can just do that without even
+saying db.createcollection
+well
+if i want to create a collection i
+really don't need this particular
+functionality called create collection i
+can directly use this statement name
+called
+db
+dot
+db
+dot sl
+student
+dot
+insert
+and here
+we would like to add the property like a
+name
+and here we can say
+admin
+now what is that meaning is when you say
+db.slstudent.insert
+and i hit enter you can see the
+uninserted one
+and surprisingly when you try to say
+press enter
+you will see this sl student is not a
+collection which we have created earlier
+so what this line does this line
+not only create the collection for you
+but also add a record inside with this
+property called name because that is a
+mongodb and mongodb is always following
+the json-based structure and due to that
+it goes with the key in value appears
+so db is a predefined keyword sn student
+is a collection name insert is a command
+through which you are trying to insert a
+record
+now to check how many collections are
+there
+okay so we have one
+property called
+show
+show collections
+when i say show collections i can list
+down those number of
+collections or else i can set tables in
+a typical rdbms language which are there
+added in my system
+so essence student in which i can see
+the record is inserted so if i want to
+confirm i can simply say
+db dot
+sl
+student dot find find is a function
+through which i can list down those
+number of records which are added i say
+find and you can see that the records
+are
+received at the same time when i say db
+dot the name call demo collection
+okay db.democollection.find
+i'll find no record reason because this
+collection was created but there was no
+record which was inserted in
+but you will see when i
+write this command called sl student dot
+insert it not only
+create a new collection for me but also
+insert the record into my
+table also called a collection
+that's where exactly
+it is giving you the advantage when you
+want the collections to be created along
+with the data this is the way how you
+can really do this
+clear
+but
+whenever you talk about
+db dot create collection many people
+always think about what is the
+significance of having this db.create
+collection look
+db.createcollection is having its own
+significance we never recommend this
+technique
+okay to create a collection because when
+you create a collection you always
+bring some restrictions some terminology
+which missed out whenever you talk about
+this line
+so having this db.create collection you
+can also offer some
+additional capping which is not possible
+when you use t bit or
+collection inverted insert so you might
+be thinking what those cappings you're
+talking about let me try to brief you
+when i say db
+dot
+create
+collection and here we are providing the
+first name called support student
+okay when i say student
+so after this is student
+additional parameters what we can pass
+is this when i say
+capped
+colon
+true
+what are we saying cap colon true so you
+are enabling the capping
+after that the next parameter i am going
+to pass that is normal is called size
+in this size we are providing the size
+suppose i am saying
+5 2
+4 and also we are saying 2 8 0 that is
+the size of 5 mb and here we are giving
+call max
+colon
+5.
+what exactly that meaning is see the
+meaning is very simple whenever you try
+to bring this create collection option
+so capital means you are enabling the
+capping so what is that meaning is it is
+trying to say
+in this particular collection name
+called student
+maximum number of
+documents can be either 5
+or less than 5.
+clear and the collective size of
+documents cannot be increased to more
+than 5 mb that means you're trying to
+say
+either
+by adding the total number of five
+records the collective size of five
+document will reach to 5 mb
+okay or else the maximum number of five
+documents can be
+stored so whichever fills earlier you
+may have a total number of four
+documents which are pretty heavy and
+they
+reach to the size 5 mb and beyond that
+the next document won't be added or else
+you can have the five documents which
+has not yet even reached so any option
+will help you to achieve this
+so that's where exactly you can offer
+the capping but this is only possible
+when the user is trying to
+say db.create collection this option is
+not possible when you're trying to use
+so that's the benefit of having this
+db.create collection and this is what we
+always recommend
+well
+now we would like to talk about our next
+feature here
+inside the same
+mongodb so we now know how to create a
+collection how to create a database and
+how to switch from one database to
+another database
+now we will tell you like how to insert
+a document so far we have already seen
+how to insert a document inside a
+mongodb now we would like to also show
+you how we can insert the documents
+using multiple techniques
+so remember one thing
+mogu tv comes with two different type of
+documents
+one is called
+relational document and second is called
+embedded document
+mostly while working with mongodb we
+always recommend you to use
+embedded documents because that helps
+you to scale up your application without
+any hurdle
+okay the embedded documents means what
+that means the
+i would say the parent record as well as
+the child records both stores in the
+same location
+fine so
+how exactly that is let's take a look
+about this example
+here we would like to insert some
+records by saying db
+dot
+student i do not have a student
+collection but i'm just telling you
+db.student
+dot
+insert
+here
+we would like to add
+some records what i'm trying to say the
+registration number
+registration number i'm just saying
+uh
+one two three four
+you can give anything
+now the next one will talk about caller
+name
+this name we can say
+student one
+followed by
+the next one i'm talking about which
+course the student has registered so we
+can say
+course
+inside this course we would like to say
+the course name let's say
+course name
+we are given the course name called
+mca
+okay
+followed by
+another property called duration
+okay i'm giving this duration
+is called
+three
+years
+like that
+after that
+this curly braces is closing
+that means
+see
+the idea is like you see the course is
+an embedded document because from course
+you have a few more properties like in
+course name and duration
+i am closing this and starting the
+another
+property and that is called address
+okay
+sorry let me remove from here
+and from address
+and address we can say one more curly
+braces
+and inside this address we can say city
+i'm giving the name called what
+another one we are using that is called
+state
+let me remove this state
+colon
+ka
+okay and the third property we are using
+that is called country
+here is saying
+i.e that is called
+india so it is closing here
+okay and it is closing here so the inner
+document and out document both are
+closed
+hit enter and now you can see the
+records are inserted one thing you might
+notice
+the course
+and the address these two are embedded
+documents and they do not have
+any
+primary key of its own instead the
+course and address both are directly
+dependent on the student object
+or the student database so
+i will say student have the registration
+number
+fine
+and the primary key so the primary key
+will be associated with the most outer
+document and the inner documents are
+directly
+associated associated with them and now
+when i try to say db
+dot
+student
+dot find
+you can see now the records are
+fetched
+i can understand many of you are
+thinking every time
+while adding the record we do not add
+any object id
+and here you might have observed and
+there also you have option
+then what exactly that id is now let me
+brief you this id is nothing but a
+unique primary key your mongodb has
+offered you
+that means mongodb says whichever data
+you are inserting it
+so by default with every single document
+mobodb will associate this by default
+property called underscore id which you
+can't even ignore
+however you can overwrite
+i haven't provided any
+underscore id as a property because this
+is a predefined property associated with
+every single
+mongodb document if you want to override
+it you can override
+from this value to any value because if
+you do not pass any value
+this value will be automatically
+provided that is a typical hexadecimal
+value
+however if you want to override it you
+can override the value of underscore id
+but you can't change the key name
+let's try
+with some
+another record
+so same record if i try to add
+let's go
+i'm using call
+student two
+and here i'm saying one two three four
+five here if i want to override it i can
+just say underscore
+id
+colon now i can give the value call what
+1 0 1
+this you need to remember so i'm
+overriding this value with 1 0 1 now
+adding it now the records are added now
+let me call find now you see this time
+the records when i fetched
+so in this record
+the first record contains a default
+underscore id in a second record it is
+the one which i have provided
+and remember one thing in mongodb you
+really can't offer any property other
+than underscore id as a primary key
+here there is no concept of having the
+cons
+like a composite key which you used to
+do
+in tradition
+rdbms here you have only underscore id
+and this is the only property which you
+can override it else by default the new
+value will be
+given to you so this is the first way of
+how the insert document has been done
+will be telling you the another ways
+where the other documents are also added
+okay so
+in the previous examples we have seen
+like how we can add the records
+but i also tell you there is another
+alternative options are available if you
+want to insert the records in a bulk
+that option is also possible in tv
+how we can do let's try to understand
+here
+here we would like to use one very
+simple concept for var
+my
+emp equal to now starting with
+a typical
+object
+like this and after that i mean
+adding this
+and within this i'm adding
+the first property called emp
+id
+colon one
+after this
+okay now you can see it is not
+understanding because there is a
+challenge when we talk about call
+uh
+you know
+the logical part
+because you go with multiple lines it is
+not supporting however you have to
+follow the same lines now
+emp id1 and we just give the second
+property called emp name
+so
+amp id
+just
+remove this i just say emp id and i say
+amp
+name
+colon
+admin
+okay adding it here
+so
+first record here
+again i'm adding another one that is
+called
+emp id
+colon2
+okay and now
+colon
+manager
+okay again
+colon 3
+and
+colon
+qa
+add it
+okay and this curly process is closing
+after this
+your square bracket is also closing
+and once it is done you come down
+and say db
+dot
+new amp
+dot
+insert
+okay and here you pass the name
+of the object called my
+afb
+and you can see now it is telling you an
+inserted tree that is known called bulk
+insert when you're inserting multiple
+records in a single shot
+see how easy it is for you
+okay
+now you simply use
+db
+dot the collection name is what
+your new erp
+dot find
+and you can see now all three records
+are inserted with its default object id
+okay so that
+is a really nice idea to have
+the id to be provided
+okay remember this statement
+so
+you understood finally how we can
+add the records in a bulk
+going forward we will also talk about
+which is related to your
+update as well as delete in your
+upcoming demos
+okay but here that is the first thing
+which you realize it how we can perform
+those kind of operations in very very
+simple and straightforward manner okay
+everyone so now we have got three
+records with us and in case if i'm
+planning to perform update on any of my
+records how will i do this now so we
+have a predefined functions available
+name called update function
+let's see how this update function can
+really work so we use this statement
+name called db
+dot
+what is my collection name which is
+known as call a new emp new emp
+okay
+dot
+update
+okay
+so
+what i will do i will say tp dot new emp
+dot update here
+okay
+now when we talk about call update we
+have a
+statement available
+okay what is that that is called
+emp id we call emp name so we say
+wherever the emp id is this i want to
+change what the name how can i do this
+now
+very simple
+uh
+to perform this what i would like to do
+now
+i want to basically add few more records
+to give you some more better idea
+um you can see now here we have a call
+admin
+id name
+so
+i just do one thing
+i just change the ids
+one two three i just say four
+iso 5
+is 6
+okay
+and i
+call this
+again the three records are inserted now
+let me try to call find
+now we have total number of
+six records are available where
+admin is repeated manager is repeated qa
+is
+repeated now let me try to update the
+record
+okay now i want to say db
+dot
+new emp
+dot
+update
+here
+i would like to perform the property
+like in what
+[Music]
+name
+by the emp name
+amp name
+colon
+i say admin
+okay
+so i just close that
+and i use
+another curly braces with dollar
+set so that means you want to set the
+new value
+here we are giving
+emp name
+okay what i want to do
+i say wherever the name is admin change
+to what
+admin new
+that name i want to change it
+close this
+close this
+and run
+now you can see it is saying n match to
+one
+and the record fields are updated like
+this let me check
+well here i will see
+uh the value called admin new is updated
+but i have one more admin called admin
+it is not changed and that is something
+which you need to notice
+what you need to notice is
+notice is like when you try to perform
+update
+so what mobo dv does it starts from the
+top
+find the first record change the value
+or modify the value and come out from
+the loop
+it doesn't carry forward its search
+process for the next level of results
+and that is something which is
+i really want to do that so in case if
+you are planning to change those values
+multiple times so what you need to do
+let's take a look here in the similar
+example here we have a column name admin
+second property we will call manager
+let's try to say
+managers are repeated twice we just want
+to change to
+new
+underscore
+manager and i want to update multiple
+values so what i will do here
+i will put
+comma and say
+multi
+colon
+okay saying multi colon true that you
+want to say hey i want to update
+multiple
+search or multiple repetitions hit enter
+this time you can say it is saying
+and match to and modify to that means
+two records found and two records are
+modified let's check
+there we go we have got new manager is
+updated in both the location
+that's something which is really
+awesome
+because this is how you try to perform
+the multiple changes
+well in our previous examples you see
+like how we can perform the update part
+but we have one more beautiful feature
+available inside the mongodb and that is
+called how exactly we can perform absurd
+clear let's talk about upset upset is a
+combination of update and insert
+let me try to show you one magic here
+here
+when we talk about call update part
+you see now
+here
+we are trying to say
+uh
+this point
+yeah you see what multi true we have
+used
+now here
+this
+multi true
+is we're trying to update
+but let's talk about something called
+manager 2
+enter now you can see it is saying no
+records formed
+clear now no records found
+but there is one concept available name
+called absurd absurd means if i try to
+perform upset it means if the records
+are not available it will insert the
+record i want to show you one simple
+example now here we are using
+multi-troop
+okay
+so
+as i can see we're using something
+called name
+and we're performing this update part
+so in this update part we are using this
+dollar set new manager
+so here rather than using multi true
+we are saying
+abstract rule
+when i say absurd rule so what happened
+now
+they say
+n matched 0 and up inserted 2 and
+modified with id this that means
+when i try to call this find function
+you will be seeing now we have got
+the another record has been added
+are we clear now
+as a new record
+so absurd does what absurd says like if
+the records are found
+i will update it if it is not i will
+insert it that means if i try to call
+the same thing manager to
+find it is added as a new manager now if
+i just try to say
+uh
+not manager to i will call qa
+qa and here we say emp equal to new
+underscore
+qa and now you can see it is saying n
+matched one and upset at zero and
+modified one so it is clearly telling
+you like hey i did not find any
+uh
+inserted part but yes i matched one
+record i found one record and the one
+record is updated now that is very very
+beneficial feature when you really want
+to perform absurd so that is the
+advantage of upsell that is called
+update plus insert
+very
+important feature that depends on the
+requirement if you want to add you can
+certainly add this so the way we have
+tried to add this
+up certain part we can also try to
+perform the delete part also
+okay so momodb
+also helps you to perform the delete
+part and how you'll be trying to add it
+now let's try to understand here in my
+code if i want to perform any delete
+part i have this statement name called
+db dot
+the option we are using it that is known
+collection name emp
+new emp sorry
+dot we have option number remove
+in this remove we would like to offer
+the property
+okay and what we're talking about now
+here let's try to add
+the id here
+or the name which you would like to
+import so i want to say like
+emp name admin new so we just say
+name
+okay
+and then
+name scoreboard
+admin new
+okay emp name admin new when i say
+remove
+we can see it is record removing the
+first record
+so you can see now the records are
+removed
+fine because there is only
+one admin news available
+okay now in a similar way if i try to
+remove
+the property call
+new underscore manager
+new underscore
+management hit enter now you can see the
+three records are removed so it's not
+like update which removes only one sorry
+update only one record it can also
+eliminate more than one records at the
+same time
+that's the benefit of remove so now you
+can see we have already implemented some
+records
+as i seen earlier like we have
+performed the delete part now
+now when i try to say db
+dot
+new emp dot find
+three records are available with me
+three four and six now
+when it comes to c in third part we have
+seen update part we have seen delete
+part we have seen now it's time to
+basically fetch the records
+so find function we've already seen but
+in find function we also have some
+conditions so called queries so in case
+if you want to limit the number of
+records into your application you can
+also do that
+let's see db
+dot
+new emp
+dot
+find
+clear now so in find you can also
+pick up the specific records too
+like when i'm saying dot find and here
+we can just say
+name
+colon
+admin
+sorry
+here to put curly braces
+it says there is no record with a name
+called admin
+because it is a emp name not a name so
+let me change back to
+now i can say it finds
+one record
+so like that you can also apply a
+condition
+okay enter your code
+now
+in a similar line if you really don't
+want to offer any condition
+okay but you want to limit the number of
+records to be shown
+so we have this function available name
+called
+limit
+to to means only two records now you can
+see
+though i have three records but it is
+only showing me two records because i
+have limit
+those number of records into my code
+also
+we can perform sorting in case if you
+want to perform the sorting in ascending
+and descending order that also you can
+also do
+so here rather than saying limit
+we just put this option name called sort
+and in this sort on which property you
+want to sort it that out you can mention
+so we can just say emp name
+okay and using ascending order or
+descending order so we can just say
+minus one let's go descending order
+hit
+now you can see it is showing the
+descending order
+now if i just say
+minus one if you just say one
+what is showing you in an ascending
+order so you can pick up the specific
+property we have on which
+you can tell it should be either on
+descending order or ascending order so
+that option really works very fine
+okay
+so that's like how you can perform the
+queries but remember one thing you can
+also
+search
+the records based on their embedded
+columns too because if you see in a
+previous records we have
+some records added
+okay that is
+let me try to say show
+collections
+i will call
+sl student
+and student
+okay
+db
+dot
+dot
+find
+okay
+you can see we have records which are
+embedded records
+now if you want to search the records
+based on their embedded properties like
+i'm talking about address this is one
+property name called city
+fine so if you would like to pick up
+those records these are also possible
+so how you can do this
+very simple so you say tb dot
+student
+dot
+find
+okay so inside this file you can provide
+the specific properties
+like
+my outermost property name is called
+what address so we are using this option
+called
+address
+dot
+dot
+city
+so we say
+city
+are we clear colon
+i'm giving the city name called what
+bangalore
+okay
+let me close this
+and that's it
+okay
+so we have to start passing
+another curly braces here hit enter and
+you can see now i find two records
+because both the records belong to what
+bangalore so i'm getting this
+city bangalore with me
+that's really awesome like you can also
+pass the city accordingly
+apart of that we also have
+the other details also
+okay in which
+you can
+have the conditions based on less than
+greater than
+or whatever values you would like to
+make it
+is available and possible
+okay so that's how the conditions are
+satisfied
+so suppose if you would like to pick the
+users
+i'll be clear
+where the range which you would like to
+consider so those are also possible like
+you can see we have this property name
+called what emp id 3 and 6.
+i just want to pick up only those
+records whose id is greater than
+what two so what i can say
+db
+dot
+new
+emp
+okay
+dot
+find and inside this file we can say
+the property
+okay so what's property we're using emp
+id we're saying emp
+id here
+colon here we'll be using
+dollar
+jt
+gc stands for what greater than colon we
+are giving the value called what one
+fine
+close this
+run you can see you have received
+three records three four and six
+in case if i just look forward for
+higher than five
+you will see only one record so greater
+than
+that's called gt
+okay
+same option if i just say lt
+you can see we have found
+two records so less than greater than
+okay so that's how exactly you offer it
+okay and also you can provide
+the condition so-called limit as i can
+say find emp id the way we provide it
+so here i will not use
+less than
+okay
+instead i'll be providing another
+property let me show you what
+so here in emp id whatever we have taken
+so let me try to take the property call
+file and here you're providing emp
+id
+and then
+and we're using other curly braces and
+we're using dollar in
+is very important property dollar in
+colon here you provide the details i'm
+saying
+inside so the properties three four six
+we are saying
+three
+comma
+six
+close this
+and you can see we got two records
+which matched with three and six that's
+the benefit of having
+this
+okay everyone so in our previous example
+we have already seen lot many activities
+this time we are trying to offer you
+something very interesting feature and
+that is known as called working with
+indexing
+see mongodb is one of the most popular
+tool
+and one of the reason why it is very
+popular because it is having the
+facility of having indexing now what
+exactly the index does so friends main
+job of having this index is to basically
+give you the concept of like how
+uh one particular
+uh
+document which is huge document
+in case if you would like to perform any
+sort of indexing inside this how you
+will be applying this
+so to apply indexing into my code
+let's
+try to understand why index is really
+required
+without indexing
+and with indexing how will be making a
+difference into the code
+so to make it happen we would like to
+insert some records
+to confirm
+okay
+so what i will do is in step number one
+previous records if i see i have got
+four six three four one depends on
+what early records we had it
+so we had a call
+new emp
+so db dot new emp
+dot find
+so we have total number of three records
+are available so it's okay we can have
+this three requires with me
+now
+let me try to apply indexing
+without indexing if i want to find a
+result what outcome i'm gonna receive so
+to know about
+how much time it gonna be taking if if i
+have a got large number of records with
+me i'll be using this statement name
+called tv
+dot the name is called new emp
+dot
+explain and here i will be using one
+predefined functionality called
+execution stats
+execution starts
+okay
+now here after the execution stats will
+be using dot
+fine
+we'll be using the first property here
+okay
+and
+what user would like to find it that you
+need to basically offer it so we are
+giving the name called emp name
+colon
+i'm giving the name call
+qa
+okay let's close
+okay
+now when i pressed hit enter execution
+stats is a predefined
+functionalities which will tell me
+when the query was executed what exactly
+the query plan was
+hit enter and now you can see
+a lot of details
+are available with me
+like you can see
+pass query winning plan and everything
+one thing you need to remember by
+default
+here when i try to run
+it says and return one
+advance one need time
+total everything it is showing me
+but one important thing which you will
+see here
+is
+total number of documents is scanned
+so it is telling me total number of
+document examined is three
+clear now
+and return one that means one result is
+returned
+and the total number of documents
+examines three
+in order to find this record
+just imagine a use case here
+when i say total number of documents
+examine three in case if i ever got
+millions of records with me
+that means to search the record it will
+examine all the millions number of
+records to search the result which
+certainly gonna be taking huge amount of
+time
+and that's where exactly when you try to
+search the record
+fine when you have no indexing is
+available
+okay so you need to understand one
+important thing is
+by default
+index is applied
+on your underscore id db
+dot
+new emp
+um
+yeah db dot nump dot
+when i say
+db.newemp.getindex is a predefined
+function it tells me like hey
+by default index is applied or
+underscore id
+that's the
+fact because by default
+index is applied on underscore id not on
+the other properties
+so i need to identify
+which are the properties are required to
+be get indexes
+mongodb advantages it is supporting
+multi-column indexes
+and that's what exactly we would like to
+see
+so let's see in our next demo
+now we will try to apply indexing on our
+own property
+okay so to apply the index what we need
+to do we have to say db
+dot
+certainly we will be talking about
+called collection name call
+new emp
+dot
+create
+index
+here you have to pass
+two things number one
+on which property you would like to
+apply
+okay and it has to be ascending or
+descending
+so i'm trying to apply on
+emp
+name
+and i want the index to be applied on
+ascending order
+okay so here
+colon one
+hit enter you can see now
+it is telling me
+like uh
+number of indexes before one and number
+of indexes after two that means earlier
+index was available only on one
+particular property now it is applied on
+two properties
+if you want you can check
+now you can see there is another
+properties added called emp underscore
+now if i try to execute a similar query
+which i executed earlier
+qa
+now you'll be seeing there's a different
+statistics all together
+here
+if i see
+in my code
+see it will tell you total document
+examined one
+see now earlier the number of document
+examined were three but since this index
+is applied now it is telling me the
+total number of document examined is one
+so performance is
+certainly improved
+so to search your document it won't be
+searching the complete
+collections
+okay rather it will search what
+only
+that particular column in which it is
+actually applied for
+so that's the benefit in fact i would
+say when you will be using these kind of
+indexes
+into your code
+okay
+so hope we all are clear and understood
+about this concept
+so let's go ahead and get this
+implemented into our system
+well this is the first way of how the
+index can be applied so you can also
+apply index on multiple properties
+clear so that we will show you one by
+one how it is
+okay everybody so we have already seen
+in our previous example how we have
+applied
+indexes in our existing mongodb
+application
+so
+it is also a possibilities where we want
+to also apply the index on other number
+of properties too as you can see in our
+existing database
+okay an existing collection my
+collection name is new emp which
+contains
+two different properties one is called
+emp id and second called emp name
+just now we have applied index on our
+emp name but in case if i want to apply
+index on emp id i'll be using the same
+technique okay let's try to apply index
+on the same
+so first of all get indexes i'm having
+this index applied on two different
+properties now we would like to say
+db
+dot
+create
+index
+and here in this db dot create index we
+can just
+i will say db dot collection name so our
+collection name is called new emp new
+amp
+dot create index
+first parameter is certainly the name
+of which property we are applying so
+here we are saying emp id
+and in this emp id we will just offer it
+has to be ascending or descending let me
+decide descending order
+so we are saying
+minus one
+okay
+now let's
+press enter and check the status
+okay now you can see earlier indexes
+which we have created that was 2 and now
+it turns to 3 so it is very clear that
+index is improving now let's check this
+out
+uh
+dv dot
+new mp dot get indexes now we have a
+total number of three indexes are
+available
+so you can apply index or
+n number of columns if you want
+okay at the same time
+the way we have created the index in
+case if i want to drop an index
+so we can also drop so what we can do db
+dot new emp
+dot
+drop index
+drop
+index
+and in this drop index we have to
+provide
+which particular index we would like to
+draw
+remember this point in case if you're
+planning to drop any sort of index so
+you need to provide which
+index so you should have that particular
+index name
+okay so here
+we are providing my index name so it
+should not be uh i would say the
+traditional name called emp id no it has
+to be emp id
+underscore minus one or
+emp name underscore one so this should
+be the name i'm saying emp
+name in case if you try this
+you see it is saying index not found
+with the emp name because internally it
+maintains with this name
+let's try this out we say emp
+name
+underscore one let's try
+and now you can see new index was
+three okay one
+okay
+now you can see we have a call emp id
+and underscore id
+so
+now we have
+only two indexes left
+there's no emp name anymore this is how
+exactly you can drop the indexes
+so it is very simple and straightforward
+way of how
+in mongodb you can perform your
+activities hello everybody and welcome
+back
+in a previous examples of mobo db you
+might have considered
+we have used lot mini operations in our
+last video we have seen how to utilize
+uh indexing into our code now in our
+next
+journey of our mongodb we will see how
+aggregation works see in mobo db
+aggregation plays a vital role and
+aggregation comes with so many handy
+functions with mongodb which will help
+you to perform
+and to apply
+some very simple code snippets into your
+ongoing
+uh i would say the requirement which can
+make your query so much seamless now we
+will see how this aggregation really
+works and to work on an aggregation we
+have taken some default database name
+called aggregate db and here we have a
+call student as a by default collection
+in which we have some set of records are
+already added
+now
+if i just want to apply aggregation now
+i would like to tell you about what
+exactly the aggregation is
+see ideally when you talk about call
+aggregation
+okay so aggregation is nothing but a
+call aggregate like rdbms if you see
+medical aggregation there so the unix
+command like you talk about shell
+pipeline means the possibility to
+execute an operation on some input and
+use that output as an input for the next
+command
+that means the output of one particular
+execution becomes an input for others
+so mongodb also supports same kind of
+concept in aggregation framework there's
+so many type of functionalities are
+available which we will see one by one
+into our next code
+okay now here we want to confirm about a
+few important things
+now here let me try to bring some of the
+important
+well-known
+i would say the functionalities of our
+aggregation framework first we use the
+term name called dollar project
+the project is basically designed for
+select
+a specific
+specific fields
+dollar project is designed to select
+what is specific fields from the
+collection we used to talk about call
+what
+dollar match
+the match is responsible
+to filter out the operations
+are we clear now it is designed to
+filtering out the operations
+you talk about dollar group
+talk about dollar group so it does the
+actual aggregation
+fine we talk about call dollar
+sort
+okay it basically sort the document
+okay like that there's so many
+operations are available which we will
+see one by one in our aggregation
+behavior now my first example the one
+which i want to execute i have a call
+student record with me which contains a
+student name
+okay the section
+and the marks and the subject on which
+subject the person or the student is
+appeared
+now here my first requirement is we want
+to filter
+data based on a section a because
+students belong to the different
+sections
+as you can see now it is a they belong
+to this different section section a b c
+d
+so i just want to
+filter the data based on a section a
+okay so for filter out i would like to
+use dollar match
+let's see how it works so i just would
+like to filter out only those students
+who belong to the section a
+so how we would like to use it now i
+will say
+db
+dot
+student dot
+aggregate
+and inside this we would like to use
+this
+square brackets and then curly braces
+and then use
+dollar
+match
+with this
+i would like to use another curly braces
+can i say
+section
+a
+okay and i close this
+close this
+close the square bracket close this okay
+so db dot student dot aggregate
+aggregate should be always associate
+match is known as aggregate
+functionality section a hit enter and
+you can see now it lists down all those
+students who belong to the section a
+okay very simple and straightforward
+example
+now we would like to use the second
+example
+so we want to find out all the records
+where the section is a
+and we are using and operator
+marks is greater than 80 there are so
+many students over different marks like
+17 19 and whatever
+so we want to use both the conditions
+together so how are you going to be
+using this now remember
+not only the section a
+but also marks were greater than 80.
+so similar thing we have a call
+match
+okay after this match we are starting
+this curly braces
+okay
+so
+after this match we would like to bring
+and
+we say dollar
+and
+and again colon
+again we are starting this square
+bracket now
+okay we talk about what
+section a
+number one
+and after the first
+curly braces we would like to use marks
+we say
+marks colon and once again
+they would like to start
+curly braces and here we use
+dollar
+gt that is called what
+a greater than
+colon
+80
+okay
+all are closed
+so you see like here we ever got this
+square bracket in noun brackets
+so
+what else is left
+so we recall 80 we are using another
+curly braces needs to be closed here
+and then
+square bracket
+okay and followed by again curly braces
+green curly braces
+again
+square bracket
+again round brackets
+okay
+let's see where it is gone wrong
+so we're using this db dot student dot
+aggregate we use this
+yeah square bracket
+then curly braces then we use
+dollar match
+okay after the dollar match
+we are using another curly braces
+and we have a call and operator
+after this and we have a call
+this square bracket then curly braces
+section a
+outer section is getting closed we are
+using another curly braces marks
+colon
+dollar gt
+okay and we are using what
+colon
+80
+after that we are closing this
+and using two more curly braces square
+bracket in this
+okay so this where exactly you can
+utilize that
+so db dot db.student.aggregate and like
+this it will be able to get it now okay
+so in a previous example that was the
+only missing point was after this
+uh
+this dollar match we didn't apply this
+curly
+braces that was only missing point which
+was there and now we have applied
+another code is giving me this outcome
+and i have only one user who's scoring
+greater than 80. well that was the first
+thing which we have it now
+along with this i would like to go ahead
+and talk about few more things now i
+just would like to bring selective
+fields not all the fields like as you
+can see we have a call student name
+section marks everything i'm getting it
+so i really don't want to bring all the
+properties from this
+document i would like to selectively
+take specific property
+so
+let's talk about how we can use this so
+we'll be using project you remember
+about project is responsible to select
+the specific record so
+i just use this statement name called db
+dot
+student
+okay dot
+aggregate we're using it now after that
+now square bracket
+and curly braces
+now we are trying to say
+dollar
+project
+what we would like to use dollar
+project and colon we are trying to use
+student name
+okay
+colon
+okay remember one thing one means i want
+those zero means i don't want so
+whichever property will be enabling it
+by giving the one as a digit that means
+it is
+it is expected to be displayed so i'm
+saying one
+comma i'm saying section
+column
+one
+okay and i'm also
+looking forward for marks
+colon one
+that's it so now
+you can see now i am once again picking
+up only those
+like student section and marks now if i
+go back and
+remove some properties like
+i only want
+student and section you can see i have
+only student and sections
+are used
+here if i just use this statement name
+call
+underscore
+id colon 0
+now you can see only
+the names
+and sections are visible id is not
+because i really don't want id by
+default id is shown but if i says is 0
+that means the id will not be visible
+here so like that you can select
+the columns or the properties
+accordingly that was the one way another
+thing i would like to use
+what if we want to find out the student
+name
+section and marks from student once
+again we want to find out the student
+name
+section and marks from the student
+collection where the section is a
+okay so here it will be the combinations
+of match as well as the project
+how we can use this let's take a look
+towards my implementation
+if you see the previous one what we have
+used here
+you remember about we have used this
+statement called aggregate match
+okay so now we would like to go back and
+utilize
+after this dollar match
+this is the curly braces i'm giving
+section
+colon
+a
+okay section colon a and after this i'll
+close this
+okay
+and close this again
+again i'm opening it up
+by using this option called
+project
+dollar
+project we're picking up the project
+right now and here with this colon
+symbol we can use again
+and say
+student name
+student name
+colon we're using one
+comma
+section colon one
+and
+one
+marks colon one
+and now
+this
+now you can see i got those
+so the requirement was
+we want to find out the student name
+section and marks from student
+collection where the section is a
+so you are not only using the match
+okay but also using what the selective
+details like this you can
+implement it
+okay that's where exactly the projection
+really works so projection
+gives you lot many opportunities
+which you can utilize it for your own
+and also it comes with lot many
+predefined functions like in some avgn
+and all
+so let's talk about those
+functionalities too
+so this is the first thing which we have
+seen aggregations are taking place
+now in case if you would like to perform
+the group like if i want to find out the
+total marks
+group by
+okay
+section like each and every section i
+would like to confirm the total marks
+in every section then how do i basically
+do that
+so let's try to get this example also
+so here
+let me try to
+go back
+and we will not be using match here
+because i would like to use the group
+part
+so
+after this curly braces
+we want to use
+dollar
+group
+okay that is called group by rdbms how
+you use it
+here we use this curly braces
+again
+here we are passing this underscore id
+okay you have to provide underscore id
+in a group because you cannot skip it
+that part you need to be always remember
+you really can't skip dollar id whenever
+you're trying to talk about code group
+this is a compulsory field you need to
+have it
+after that
+i'm using this
+section
+in this section
+we are saying dollar
+section
+because we would like to make it on a
+section basis
+after this
+closing
+and here we are using what
+total marks
+colon
+here curly braces
+again
+dollar
+sum
+okay colon on which we have i want to
+use it mark so i can say dollar
+marks
+naming convention is very important
+because it is a javascript so it is a
+case sensitive
+okay then
+and you can see now
+section wide i'm able to get all the
+marks
+isn't this an amazing that's where
+exactly the aggregations are playing
+very important role while retrieving
+such kind of records
+so hope you are clear about how we
+utilize this together
+so in a previous example we got it like
+hope you are basically taking this
+marks in my application
+fine so
+we are clear about how we are picking
+that up but what in case if i would like
+to take a marks for the specific section
+so it is also possible so we'll be using
+the same group but only thing is what
+will be bringing the match between
+because here we are trying to get
+the all the section marks but if you
+would like to bring it only for the
+specific section we know it very well
+what we need to do so here
+before i talk about call dollar group we
+can use one more curly braces here
+okay so we can use this option called
+dollar
+match
+okay and here we are using this
+uh option called section a
+sorry
+here
+in dollar match we are giving this call
+section
+colon
+here we're giving
+so closing this
+closing this
+followed by
+the other areas like in group which you
+want to start now
+so you can start with this curly braces
+hit enter and you can see now only the
+specific section you're able to receive
+the records
+and that's very simple now
+okay so
+that's where exactly would like to
+perform and there's another option like
+in case if you would like to perform an
+average suppose if you want to fetch the
+count of student in each section and
+total marks
+and average marks as well as so total
+marks as well as the average marks we
+want to get it so how are we able to
+take it now
+so it is very simple as you have seen
+earlier also
+into our code how we have taken call
+group underscore id section talking
+about section
+total marks with this sum
+we are also using this after that we can
+also use the average
+okay
+so
+this is we have taken
+group underscore id sum
+so here onwards we will start
+so when we say some marks
+after that
+we can just put curly braces
+and we can just use
+count
+okay
+and
+after this
+we'll be using this colon
+curly braces and use
+dollar
+sum
+okay
+colon
+one
+okay and after that i'll put
+comma here
+and we use
+average
+and inside this average i will use
+in curly braces we can say
+dollar
+avg
+okay
+colon of what
+dollar marks
+very simple
+so curly braces is closed
+okay so total how many three curly
+braces will be closed
+one square bracket and round brackets
+and now you can see you got the average
+markings
+in each and every section so just
+imagine how easy it is for you to deal
+with the aggregations so aggregation
+seems to be very very simple approach
+provided by mobile tv that really create
+a difference of how
+the
+aggregation changes the way how you
+react
+okay everybody so after going through uh
+the idea of like how we can utilize
+the concept of
+aggregation it's time to talk about like
+how
+when it works with mobile db mobile db
+is properly known for
+i will say
+for replication that is called high
+availability and that feature comes by
+default with mongodb you really don't
+need to install any software for this
+because it is a built-in feature for the
+mongodb
+so when you download that it
+comes along with this so no additional
+uh configuration setup is really
+required when it comes to the mongodb
+part
+okay so let's get started and talk about
+how mobodb
+can offer the replication see the idea
+behind the replication is what
+the idea behind the application is like
+you are replicating it
+okay
+so when you talk about your application
+you are replicating your data to where
+the multiple child so here in mumbo db
+we have one concept available
+okay that is known as call
+master okay
+and
+slaves
+okay master is one and there will be
+multiple slaves
+okay so these slaves where your records
+are actually stored
+and this is a master which will be
+responsible to replicate the data to all
+its childs when the request comes due to
+that
+in case if one particular
+node
+fails so automatically the data will be
+taken from the other nodes
+that's the beauty of having this master
+and node slave process so to make this
+possible to be a very simple option
+available
+in mongodb we have one concept like
+called mongodb atlas so there we can go
+and get our cluster ready
+so here we start with the concept name
+called
+db atlas
+let's search for mobile db atlas and
+here i see mongodb atlas database as a
+service see this is a free
+tool
+it's the cloud environment where you
+really don't need to install mobo db in
+your local machine it is a cloud-based
+mongodb support which is free to use
+with a limited amount of space but yes
+for the testing purpose it is the best
+suitable
+so i can start with the start free or
+else i can say the login here
+okay from there onwards i can go ahead
+now it is getting ready
+now this is the place from where you can
+start working on your cluster
+see as i've told you like initially when
+you will be working on this
+mobile tv it will ask you
+to create a cluster
+initially
+okay since i already have a cluster with
+me
+okay so
+i really don't need to create it and as
+a free
+tier it will not
+allow me to have more than one cluster
+set up ready
+so if i say create a new cluster
+okay and i say
+by default aws
+okay and let me close on this
+notification aws you can select any
+other cloud provider
+and
+8gb ram cloud backup cluster name you
+can see now it is taking me
+0.54 per hour
+reason being because i already have a
+cluster with me hence more than one
+cluster is not allowed in a free tier
+cluster so i have to cancel this
+but
+you can go and create a cluster the way
+it was offered there so if you want to
+create you can just go ahead and do
+nothing just select by default aws
+select your location
+okay give the name of the cluster you
+want to give anything you can give it
+here otherwise let it be the by default
+name cluster and say create cluster it
+will take a while minimum
+two to three minutes depends on the
+availability it creates a cluster for
+you and your cluster once it is ready it
+looks like that
+okay so
+here in this application
+you have to go back and understand what
+is there in a crystal when i click on
+cluster zero
+you can see now
+here we have a got
+three nodes available one is called
+primary node which is called master as i
+suggested earlier
+and now we have a call slaves
+automatically when the clusters are
+created inside this mongodb by default
+it will be three node cluster where the
+one will be the primary and two will be
+secondary based on your package
+whichever you have taken it you can
+increase the number of nodes later on
+but as a free i'm gonna get or i will be
+receiving total number of three nodes
+available here
+so records whichever will be stored
+it will get stored automatically in both
+the nodes
+secondary nodes and from the primary
+i can insert the record and secondaries
+i can read the records remember you
+can't insert the records into the
+secondary so you can only insert a
+record only in your
+primary record secondaries are not
+allowed
+to insert
+so this is your replica set okay these
+are the nodes which are available to you
+so when you click on this primary here
+you will see
+it is telling you no whatever no data
+available no data available
+nothing is there because i haven't
+stored any records as such
+so i just go back to my cluster
+so initially i would like to go back and
+create few things now okay i would like
+to go back and set up few initial things
+at a time of creating the clusters
+because when a cluster is created
+clear now so in that point of time no
+setting is configured you have to do few
+settings now
+first setting is you have to put it and
+remember the steps first step will be
+your network access so in network access
+you have to go
+and you have to say add ip address
+and in this ad ip address you have to
+select this option
+from which location you would like to
+accept
+only those ip addresses will be white
+listed
+otherwise what you can do you can see
+here in my options i have given
+0.0.0 that means all ip addresses are
+acceptable
+so all ip addresses are used
+okay so this you have to enable it
+otherwise you won't be able to get
+this network access from any third-party
+locations
+next you have to talk about call
+database access which is required for
+you to create a new user there are
+already some new users are created but
+it is recommended that you to go and
+create a new users here
+okay so you can go back and add a new
+user
+so by default it is username and
+password is given
+so you can go back and create a new user
+when i say add user
+you can give
+the username as well as the password
+as per your own convenience so new user
+i'm going to create it that is called
+sl
+okay
+user
+and here we're giving call
+admin
+123 so sl user admin 123
+remember this will be the username and
+password i'm saying add user
+new user is automatically added sl user
+and we went to three
+so
+once you have provided this network
+access database access
+next you have to create a new data
+so what you need to do when you go back
+to your
+statement okay network access database
+access it will ask you
+like you want to create a new database
+so i just go back to my project zero
+there will be one option called
+collections
+you have to go back and create a new
+collection here
+now it is
+retrieving the list of databases
+now you can see there are already some
+collections are there mrdp is one of the
+database which is there
+demo db is there lot many databases are
+there
+so you can go back and create some new
+database and connect through
+so i just create database i already have
+a simply learn db with me
+user app
+is already when collections are created
+so creating a databasing correction is
+very easy if i give you the quick demo i
+say create database
+give the collection name called
+sl demo
+okay and give the username call
+amp
+slw employee i say create
+now you can see slw create it is there
+with me
+so there is no record right now
+and once it is there ready
+so remember sl demo
+and employee i'll go back to my uh
+code again project zero
+and from here i can say connect
+because i want to connect it so to
+connect it from because your mongodb is
+already there so you want to connect it
+through so to connect it through here
+very simple option available you can
+just click on this
+connect option multiple options are
+there through mobile share connect your
+third party application of the mongodb
+compass
+so
+since i already have a shell with
+me
+so mac os i have this mac os with me
+so you can just use this line
+okay so if you have a window you can
+select your window since i have this mac
+os
+i'm selecting this line
+but i need to replace with this
+you can see this username
+okay
+and you have to give the username here
+i'll selected this i open my terminal
+okay and this is i'm just closing this
+and opening up
+another terminal here
+since i want to connect to the
+shell now
+so
+what i need to do here in this
+i'll just paste that
+the command which i have it now
+username is
+you remember i told you
+you
+call some users which you have already
+created
+let's check
+here
+sl user
+i say
+sl user
+i hit enter
+it lasts me the password so i've given
+the password admin
+and now you can see it is connecting
+with me
+to this particular
+see
+now see it is connecting me to this a
+particular replica set you can see in a
+logs it is telling you very clearly
+okay saying that it is a username 4.2
+and you can see it is correcting with
+your shard cluster the cluster which is
+created and this is where exactly i have
+it with me
+so i'm connecting with this environment
+so primary is there if i just want to go
+back and say
+show
+show collections
+so i can go back and create a new
+collection here
+okay so
+it's up to you now
+by default collection which is their
+employee so i can say tb
+dot
+employee dot
+insert
+and now here we can just add
+name
+okay
+now you can see
+some exception is raised
+so
+you understand
+now you can see the records are added
+into my primary cluster so if i just go
+back and
+go back to my project zero where we have
+got
+collections
+here you will be getting
+the
+sl demo
+employee
+loading the documents
+so it takes time to get this but this is
+where exactly
+you see
+the records will be stored
+okay
+so that's where exactly it works fine
+for all of you
+so we have this
+record
+okay so when i say
+show collection so we have a call
+employee
+and i say dv dot
+employee dot
+find
+so i can see we have got new collection
+name called
+this is added right now
+okay so like this you have got
+the first connection established and the
+records has been inserted so guys that's
+what exactly the concept of
+mongodb replicates
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

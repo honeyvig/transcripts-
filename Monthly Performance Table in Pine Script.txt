@@ -1,0 +1,1280 @@
+g'day Traders welcome back to the
+channel in today's video I've got
+something really cool for you guys now
+this script took me way way longer than
+it should have to complete I've been
+working on this for a few weeks now and
+what you see on my chart is a monthly
+profit and loss breakdown based on
+realized Equity so we're talking closed
+trade basis only and the table is
+showing our intra month p l and our Max
+drawdown for the year so I'll just
+quickly break this down we've got our
+year
+on the left here
+we have our months up here
+we have the total return for the year
+and the max drawdown for that year and
+then a green cell means we turned a
+profit for this month
+a red cell means we took a loss for that
+month and then the table is adding up
+the total return for each year
+and each Year's corresponding Max
+drawdown now the code to the script has
+been made as modular as possible meaning
+that you can copy and paste the code
+I've written into your own strategy
+scripts and it will work Straight Out of
+the Box you don't need to touch anything
+it'll just display on your chart as you
+see here now I'm on spy so the S P 500
+ETF which has data going back to the 90s
+so we have quite a large table here now
+the script I'm using for today's example
+this strategy is the simple pullback
+strategy from a few months ago recorded
+a video
+where I took someone else's strategy
+rules and built out a pine script system
+based on those rules it's completely
+open source but for today's lesson I'm
+not going to explain the rules of this
+system because I've already done that in
+its own video but just so you guys know
+that's what I'm working with today a
+link to that lesson and the source code
+to that script will be below in the
+video description in the pinned comment
+so with all that out of the way this is
+going to be probably a slightly longer
+lesson than average because I need to
+break down all of this source code now
+you don't need to understand what this
+code is doing you can copy from lane
+from this line down
+and paste all of this into your own
+system and it will work straight away
+but for today's video I do want to take
+the time to explain to you guys what I
+did here so that you can learn from the
+hours and hours I put into this script
+so without further Ado let me enlarge my
+screen and get started breaking down the
+code all right so first of all I need to
+get a disclaimer out of the way if
+you're going to use any of this code to
+inform your own trading process or back
+testing process you do so completely at
+your own risk while I've done my
+absolute best to ensure this code is as
+accurate as possible it's possible that
+I've missed something in my testing
+everything seems to be working fine but
+there's always a chance I've missed
+something especially with complex
+systems so always do your own due
+diligence don't just take my word for
+everything or anyone else's word for
+anything always do your own testing and
+confirmation that things are behaving as
+advertised now first of all why did I
+make the script in the first place when
+we have all this information here well
+first of all the strategy tester does
+not give you a month or yearly breakdown
+of your p l it only gives you a running
+p l breakdown or performance summary at
+the very end of your back test now you
+can export this information into Excel
+and with a bunch of complex formulas you
+can get pretty much the same thing I've
+done here yeah but I wanted something
+that I could just throw on to the charts
+and look at at a glance really easily
+without screwing around with Excel and
+all of that the other problem with the
+performance the strategy test is
+performance metrics is that this is
+based on open Running P L not on a
+closed trade basis so your max drawdown
+for example let's say you had a script
+that never had a losing trade but your
+profit dipped at times and came close to
+your stop-loss let's say that this is my
+stop loss each line this number here
+will factor in these declines even
+though you didn't close a trade for a
+loss because it's calculated based on a
+running p l basis now that's useful for
+useful information to know but for me
+when I'm testing a system I only really
+care about how much it lost on a
+realized basis on a closed trade basis
+and so that's what this table does it
+breaks down your p l on a monthly basis
+and a yearly basis and it's based on
+closed trade Equity not open trade
+Equity open p l now with that said let's
+get into the source code here is the
+source code to the simple pullback
+strategy that I mentioned earlier I'm
+not going to go into this it's a very
+simple script it's just simply buying
+pullbacks on the Spy ETF and it does so
+when price closes between two short-term
+Mas so it's a long only system just to
+keep things simple
+so if we scroll down this is where the
+monthly table code is whereas my
+grandmother would say this is where it
+lives now if you copy all of this code
+into your own systems
+and paste it at the bottom of your
+strategy code you should be getting a
+table just like this without having to
+modify anything so if you're not
+interested in how this code works that's
+fine you can just go and get the source
+code and paste it into your script but
+if you are interested let's get started
+breaking it down so before we continue
+it's important that I mention the source
+code to the script is based on a
+different script created by Quant Nomad
+and here is a link to their original
+script code I have severely or severely
+I have significantly adapted this source
+code or changed the source code added to
+it so my script barely resembles the
+original script but I need to give
+credit where credit is due and Quant
+Nomad laid out the core template for
+this script particularly the table code
+so go and check this script out if
+you're curious to see the difference
+between mine and this one so first of
+all as always I have a bunch of user
+inputs so the user inputs we're working
+with today in this script are under this
+label here so I've grouped them all into
+rows so everything's a bit tidier we
+have the on off switch which does
+exactly what you think it does we have
+the debug mode now debug mode
+um I think I'll leave this in when I
+publish the source code just because
+it's there I might as well it's off by
+default but if you turn this on now we
+get let me turn the table off because
+I've made my screen massive and it's
+taking up my whole chart now
+um these debug labels are showing the
+profit and profit and loss as a
+percentage on a closed trade basis so if
+I scroll in here let's look at uh the
+month of April so here's the first
+trading day of April
+so here's the first trading day of May
+so the system closed a trade in April
+for a 1.17 gain which means if I turn on
+my table we should see for the month of
+April 2023 a 1.17 gain and if I hover
+over each cell that's a tool tip that
+will tell you the max drawdown for each
+month and the max favorable Excursion
+for each month that's what MFE stands
+for and that's just a fancy way of
+saying how much profit did you make in
+that month versus what you ended up with
+at the end of the month so if you had a
+bunch of winners at the start of the
+month and then a few losers the MFE will
+be higher than the actual monthly return
+and this is just a useful metric to give
+you an idea of how much profit your
+system is potentially leaving on the
+table but anyway this debug label is
+just to allow you to confirm that the
+information you're seeing on the table
+is accurate and if you hover over the
+label there's a tool tip that gives you
+a bunch of information on a month by
+month and year by year and total basis
+so that's what the debug mode does then
+we have decimal Precision this is
+um the Precision of the table so if I
+set that to three we we now have three
+decimal places after the full stop but
+that is set to two by default because I
+find that having more than two makes it
+a bit more difficult to analyze the
+information here the script does round
+these numbers so they are going to be
+slightly inaccurate and that's why I
+included an option to increase the
+decimal Precision if you need to dive a
+little deeper into certain numbers and
+then all of these here are just
+formatting colors so here's the year
+profit color I could change that to Aqua
+if I want to and that's going to change
+the color scheme of the table let's set
+all of this back to the default settings
+turn debug off and get back to our code
+so that's the user inputs after we get
+our script inputs I then Define a custom
+function and a few custom types data
+types so this custom function is for
+getting decimal precision based on a
+given number I just said that you can
+change the decimal Precision of the
+chart itself to three or more decimal
+places but you'll notice that some of
+these cells actually override that
+setting and have three decimal places
+even though I've set it to two the
+reason for this is so that any number
+that falls between greater than zero and
+less than 0.5 or less than zero and
+greater than negative 0.05 then we set
+the decimal Precision to three that's
+because if we don't do that the script
+will round some of these numbers down to
+zero and so you'll see on this for
+example this is the cell that I first
+noticed doing this because it's 0.004
+this was rounding down to zero and so I
+had a green cell with a zero in it and
+it didn't really make any sense to the
+eye just looking at the chart the table
+so I made an override that if the number
+is very very small it is automatically
+set to three decimal places that way you
+can actually see what happened in this
+month so this month was basically a
+break-even month but the table would
+show a zero in a green cell if I didn't
+do this so that's what this functions
+for
+if the number Falls outside this range
+it just returns whatever setting you've
+put in here
+next up we have our custom data types
+now these weren't really necessary I
+just did it to keep the script tidy keep
+everything organized so the first type
+data type here is defining an open
+trades cost which is used to calculate
+commission costs on a trade by trade
+basis so we have the entry time of the
+trade the entry price and the commission
+cost I'll explain how we use this later
+on but next we have the strategies
+monthly return type so this stores a
+running monthly profit drawdown the Peak
+return for that month and the time stamp
+of that month and then we have the exact
+same data type
+structure except this is for yearly
+returns now so monthly and yearly
+returns have their own data type but
+they all keep the same information the
+total profit the worst drawdown the peak
+profit and the time stamp of that a
+month or year so we use these later on
+in the script we'll get to that soon
+alright so next up we have a whole bunch
+of data types here now they're all
+pretty self-explanatory we have our
+cumulated monthly p l our accumulate
+accumulated yearly p l
+our accumulated total p l
+we have our best monthly p l and our
+best yearly p l these numbers get stored
+into these data types at the end of each
+month or the end of each year and then
+these data types are put into an array
+which we'll get to soon this is storing
+the accumulated p l value so the running
+tally for the current month and current
+year next up we have our drawdown values
+so there's quite a few variables here we
+have our Equity Peak this is a total
+Equity Peak for the entire back test we
+have our current yearly Equity high and
+our current yearly drawdown and our
+Year's Max drawdown for the current year
+then we have our worst drawdown for the
+entire back test period then we have our
+monthly Equity High same as yearly
+Equity high but for the month same with
+current monthly drawdown and monthly Max
+drawdown so some of these variables are
+identical to each other but on a monthly
+and yearly basis next up we store our
+long and short trade count that's just
+so that we can see
+um where does it say if I hover over
+one of these values here we go the total
+return if I hover my mouse over there we
+get a tool tip that pops up telling me
+my win rate on a long and short trade
+basis so different groups now this
+system I have on my chart is a long only
+pullback system so it only ever took
+long trades and so the win rate for long
+trades is identical to the overall win
+rate but if I had a script that was
+taking long and short trades we'd be
+able to see here how the two different
+directional biases play out in our
+system and that is only possible because
+we tracked these values here so we track
+our total break even trades total long
+trades total one long trades
+total short trades and total one short
+trades and this is all the variables we
+need in order to generate this entire
+table so let's move on to where we start
+doing the actual calculations so first
+we need to store the open trades
+commission cost in an array I'll explain
+why in a moment it's a little bit
+complex it took me a while to figure out
+a solution to the problem that this
+solves but we'll get to that in a moment
+so the first thing we do in the script
+is detect an opened trade and save the
+cost of that trade so to detect a newly
+opened trade a fresh open trade we check
+if the current open trades count on the
+current bar is not equal to the open
+trades count on the previous bar and our
+closed trades is equal our current
+closed trades account is equal to the
+closed trades count on the previous bar
+because open trades will not match the
+previous Buzz open trades if a trade is
+opened or a trade is closed but we only
+want to detect opened trades so we need
+to make sure that we didn't just close
+the trade we actually opened a trade
+once we detect this condition this code
+gets executed and this code calculates
+the cost of the current trade by
+subtracting the current bars gross loss
+sorry subtracting the previous Bar's
+gross loss from the current bars gross
+loss because the trades just been opened
+we haven't actually lost any money yet
+but this gross loss will actually factor
+in the commission cost of the trade so
+when we open our trade gross loss will
+increase by the commission cost and so
+this is how we can detect the cost of
+the open trade then once we have the
+cost of the open trade we push a new
+trade cost type so that's this type I
+explained already we need an entry time
+and entry price and the cost so we push
+this new trade cost type into our array
+using the push function and we create a
+new trade cost type with the entry time
+so we get the strategy.open trades list
+and we get the entry time of our current
+open trades count minus one now I know
+this this gets a bit confusing but
+basically we're getting the most recent
+open trades entry time that's what this
+line of code is doing it's saying get me
+the entry time of an open trade with the
+open trade index of the last one in the
+list which will be the most recently
+open trade um then we do that same thing
+for the entry price exactly the same
+code but for the entry price and then we
+pass in our cost of trade as well and
+that adds the current trades cost to our
+array so that later on when this trade
+gets closed we can factor in the
+commission cost of that closed trade
+accurately because remember each
+position that gets open is going to have
+a different commission cost based on how
+many contracts were traded so this is
+the best way I could come up with to
+track the commission costs accurately
+there could be a better way in fact
+there probably is a better way but this
+was the best solution I could come up
+with and it works so I'm sticking with
+it until I can think of a better
+solution so now this script it only
+takes one trade at a time but
+theoretically this code should work with
+scripts the pyramid that open multiple
+positions that's why I did it this way I
+could have made this a lot simpler but I
+wanted to make it as robust as possible
+so that it works with all kinds of
+different systems not just this system I
+added to my chart this simple pullback
+strategy so now that we're tracking our
+commission costs the next thing we need
+to do is detect when a trade is closed
+this is where the core the heart of the
+script is all of this code under this if
+statement is where we add up our profit
+our loss our all of the data we need in
+order to populate this table so to
+detect a closed trade it's a lot easier
+than detecting an open trade we just
+need to check if the current bars closed
+trade count is not equal to the previous
+bars closed trade Cal and then what we
+need to do is track the cumulative
+profit percent server open strategy
+tester and go to list of Trades that's
+this see this 0.62 0.3 nine percent one
+point one seven percent Etc this is the
+cumulative profit on a closed trade
+basis so when the trade is closed this
+is how much of a percentage return we
+made on our account balance I need to
+simulate that in this table
+and in order to do that unfortunately
+there's no simple way to do this there's
+no strategy dot um cumulative profit
+list in the
+strategy Library there's no like closed
+trades dot cumulative profit I can't do
+something like this unfortunately I
+really wish they had this this function
+implemented it would make this script so
+much easier to code but unfortunately we
+don't have that option and so I need to
+replicate this formula myself so I went
+into the trading view documentation and
+this is how they explain this is their
+explanation for how cumulative profit
+percent is calculated it's calculated by
+dividing the trade profit or loss by
+your initial Capital plus the cumulative
+profit of all the previous trades that
+your script has taken multiplied by 100
+to turn it into a percentage so the
+first thing we need to do in order to
+execute this mathematical formula is
+calculate our trade profit to do that we
+also need to factor in the commission
+cost so that's why we have all this code
+up here and so when a trade is closed
+the first thing we need to do is
+retrieve the trade cost for this close
+trade from our commission array so to do
+that I create a new float variable
+called trade cost it's set to zero now
+when this trade is closed and we
+calculate the trade cost we also need to
+remove the commission cost from our
+array because we've already taken it
+into consideration we don't need it in
+the array anymore so I also keep a
+remove index variable here to tell the
+script which array index to remove from
+our commission cost list after we have
+retrieved the cost so to retrieve the
+cost we use just a simple for Loop here
+starting from zero looping up to the
+cost of our open trades array size my
+minus one you always need to subtract
+one from an array size because it starts
+counting at zero but the size so if
+you've got one array element size will
+be one because you've got one array
+element but if you go to reference that
+array element using the get function you
+start from zero so if an array contains
+any elements its size is always going to
+be one index larger than we can actually
+reference so we need to subtract one
+from the array size When We're looping
+through an array so that's what we're
+doing here then we're creating a trade
+cost type data type called TC
+and this trade cost TC is equal to our
+cost of open trades array dot get this
+current Loop index so We're looping
+through all of the open trades in our
+commission cost array list and getting
+them all one by one and then we're
+checking if that entry time is equal to
+the closed trades entry time of the
+trade we literally just closed so if
+this trade we just detected has closed
+the last closed trade in our closed
+trades list or array if the entry time
+of that closed trade is equal to the
+entry time of our commission cost when
+that trade was opened and the entry
+price of that open trade where we saved
+the commission cost if that open trades
+entry price is equal to this closed
+trades entry price then we've found a
+match for this closed trades commission
+cost and so we saved the trade cost we
+save the remove index the current Loop
+index and we break out of the loop and
+the rest of our code here is executed so
+the first thing we do is we check if
+remove index is not equal to negative 1
+that means we actually found a relevant
+trade in our closed trade list and we
+need to remove the commission cost from
+our array because we no longer need that
+information we've already got the trade
+cost so that we can calculate our
+cumulative profit percent so the next
+thing we need to do is calculate our
+Equity before the trade was closed now
+I've got a note here that
+strategy.equity will not do for this
+because Equity strategy.equity changes
+on a bar by bar based on open profit and
+loss not realized profit and loss so
+what that means is if I can pair the p l
+of um let's look this trade here closed
+here actually that's a bad example
+because it opened here and closed here
+let me find a trade that was open for a
+few bars here we go so this trade was
+opened here and on each bar that prints
+my strategy dot Equity so this variable
+here
+will change on each bar even though the
+trade hasn't closed yet so that will not
+give what we need here we need to
+calculate the equity the current
+realized Equity before the trade close
+so in other words our account balance
+before the trade closed regardless of
+what open profit we have on that trade
+so to do that I need to add our net
+profit on the previous bar remember net
+profit will only update when a trade is
+closed
+so we can add the net profit on the bar
+before our trade closed to our initial
+Capital the capital we started with and
+that will give us our pre-trade Equity
+our account balance before the trade was
+closed now once we have this we can now
+calculate the profit and loss plus the
+cost of this trade now this is where
+things get a little bit confusing and
+this is something that took me a way too
+long to figure out but for whatever
+reason gross profit takes into account
+the commission cost over trade but gross
+loss does not I can't I don't know why I
+couldn't figure this out but the numbers
+just did not add up until I did this and
+I included the trade cost in the gross
+loss so that's why I went to all this
+trouble of tracking the open trades
+commission cost so that when it comes to
+calculating the actual p l for losing
+trades we need to add in the trade cost
+in order to get an accurate number here
+so what I'm doing here is I'm checking
+if our losing trade count is greater
+than the losing trade count on the pre
+previous bar that means the trade we
+just closed was a losing trade and so we
+need to set profit loss to the current
+bars gross loss minus the previous Bar's
+gross loss minus the commission cost of
+that trade and then we multiply it by
+negative one to get a negative number
+because gross loss is always going to be
+a positive number we need to turn it
+into a negative number in order to get a
+negative profit loss number here and
+otherwise if this condition is not met
+then that means that we just had a
+winning trade or a break-even trade and
+we can simply set profit loss to our
+gross profit on the current bar minus
+the previous Bar's gross profit now we
+have our profit and loss later on we'll
+get to it in a moment we use this number
+to calculate our cumulative profit
+percentage which is this number here so
+all of this code so far is just to get
+this freaking number here and now you
+can see why this script took so long and
+why I get a little bit frustrated when I
+talk about how long it took so far we
+have all the numbers we need in order to
+calculate our cumulative cumulative
+profit and loss for each trade as it's
+closed not on a running open p l basis
+but on a closed trade basis so now that
+we have an accurate profit and loss
+value to work with the next thing I do
+here is just simply check if this trade
+was a long or short trade and if it won
+or lost so if our position size was
+positive on the previous bar that means
+we had a long trade open because a long
+trade has a positive contract number and
+a short trade has a negative contract
+number and if it's equal to zero then we
+have no trade open
+so if the previous bars position size
+was greater than zero then we had a open
+long trade so we can add one to our long
+trade total long trade counter
+and if profit loss
+a p l for this trade was positive then
+we had a winning trade so we can add one
+to Our Winning trade counter for long
+trades then we do exactly the same thing
+for short trades but the opposite
+direction and we can use this
+information later to analyze our win
+rate for long trades and short trades
+and then here we also check if the trade
+broke even so this is going to be very
+rare with this particular system based
+on the way it exits trades but there is
+a chance that we could have a flat p l
+on the trade and if our profit loss is
+equal to zero then we increase our total
+break even trades counter and then
+finally we get to calculate our
+cumulative profit percent this number
+here
+finally uh the relief cumulative profit
+percent is equal to the profit and loss
+on this trade as a dollar value divided
+by the equity of our account balance the
+close trade Equity the
+non-running p l of our account on the
+previous bar before this trade closed
+and we multiply that by 100 and this
+number here
+is equal to this number here regardless
+of position size and commission cost and
+now we can finally break all of this
+information down into a monthly and
+yearly format but before we do that we
+need to track some other values such as
+our Equity Peak this is for calculating
+our Max drawdown and Max favorable
+Excursion
+Etc so here we store the highest peak
+value of our Equity our account balance
+and we can now use strategy.equity since
+Equity is updated to realize p l on this
+bar so I just explained earlier how
+strategies.equity updates on a bar by
+bar basis so if you've got an open trade
+for several bars your Equity will change
+based on where price action is in
+relation to your stop loss and take
+profit but since this code in this if
+statement
+is executed after a trade is closed we
+can now use strategy.equity so anyway we
+store our highest peak value of equity
+and then we also calculate the total Max
+drawdown for this system
+which will be slightly different to this
+number because as I mentioned this
+number takes into account our open p l
+whereas my Max drawdown worst drawdown
+only factors in losing trades so it adds
+up our losing trades cumulative profit
+or in this case cumulative losses and
+that gives us our Max drawdown the worst
+drawdown for this total system back test
+so to calculate the drawdown we need to
+subtract the current bars Max Equity
+from our Peak Equity the highest Equity
+value we ever reached and we divide that
+number by our Equity Peak and multiply
+it by 100 to get a percentage and this
+will give us our Max drawdown as a
+percentage or the current drawdown is a
+percentage and if the current drawdown
+is worth less than or less than our
+worst drawdown then we want to save the
+current drawdown into our worst drawdown
+and override whatever the previous baby
+drawdown was as Nick Raj likes to say
+your worst drawdown is always ahead of
+you and so this will be updated forever
+and ever into the future there will
+always be a worse drawdown than the
+previous worst drawdown and this code
+will make sure that we track that
+information anyway moving on we then
+store our accumulated monthly and yearly
+profit and loss into these three values
+or variables so our accumulated monthly
+p l is going to be the cumulative profit
+percent this value here which is
+this number here we are adding this
+number onto the accumulative accumulated
+monthly p l on the previous bar and then
+later on when a new month starts this
+gets reset to zero and we store whatever
+the value this variable was at the end
+of that month and this is how how we
+track the accumulated monthly p l to
+display on the table then we do the same
+thing for our yearly profit and loss out
+accumulated yearly p l and our
+accumulated total p l and then when a
+new year starts we reset this to zero
+and when a new month starts we reset
+this to zero and save whatever those
+values were at that end of month or end
+of year period now there's a few more if
+statements here where we just save some
+various data performance metrics so here
+we save the max favorable Excursion for
+this month which is our Peak return as a
+percentage so if our accumulated p l is
+greater than our best accumulated
+monthly p l this is the opposite of Max
+drawdown so max drawdown for the month
+will track how low our Equity got during
+that month before we ended the month
+this tracks how high our Equity got
+before the end of the month and so this
+will track our Max favorable Excursion
+which is a fancy
+way in this context of tracking the
+opposite of Max drawdown Max adverse
+Excursion would be the opposite it would
+be how close did price get to our stop
+loss without actually touching it
+because if it touched it then that
+becomes a drawdown metric if it didn't
+touch it that's the max adverse
+Excursion now I don't track the max
+adverse Excursion in this script because
+I don't think it's really necessary we
+probably don't even need to track them
+Max favorable Excursion to be honest but
+I did it because I was curious and it
+wasn't very difficult to add it to the
+script and it just makes it a little bit
+more
+uh you know there's just a little bit
+more information to work with so why not
+so anyway we tracked the MFE for this
+month and the MFE for this year then we
+tracked the max Equity high for our
+total drawdown calculation the worst
+drawdown the system has encountered then
+we tracked the max Equity high for the
+current year so that we can track the
+max yearly drawdown
+for this current year so this is the
+total worst drawdown this is the current
+Year's worst drawdown and then the next
+thing we do is check if our yearly
+realized Equity High minus the current
+realized Equity exceeds our Max drawdown
+for the year in other words this
+statement here checks if we have just
+lost some money and if so then we update
+our current yearly drawdown and if our
+current yearly drawdown is worse than
+our Max drawdown for this year then we
+save that to our yearly Max drawdown and
+then when a new year begins we store our
+Max drawdown for the year our profit for
+the year our Max favorable Excursion for
+the year Etc into a data type that gets
+displayed in our table later now I have
+some unfinished comments here this uh
+this tracks the max Equity High over
+current month for Max monthly drawdown
+calculation
+and I can pretty much copy this comment
+this does the same thing as that code
+but for monthly so check if our monthly
+realize Equity High minus current
+realize Equity exceeds our stored Max
+down for the month and update if
+necessary and save worst drawdown
+doesn't need to be worst rundown ever
+it's the worst drawdown for that month
+all right so sorry if I lost you there
+all of this code here is identical it's
+copy and pasted
+this here is tracking the yearly Max
+drawdown and this here is tracking the
+monthly Max drawdown and then that's it
+for our closed trade information we
+calculate everything we need to know in
+order to display our performance table
+at the very end of our if statement here
+we have the debug label so if I turn
+this on these blue labels here that show
+our p l our cumulative p l as a
+percentage
+and this tool tip that gives information
+on what the script is currently doing is
+all done here by this label so if debug
+is turned on
+we create this giant string where we add
+up all of these different variables
+values debug information
+and then we display a label with this
+very long string as a tool tip so that
+we can use a somewhat of a magnifying
+glass and see what the script is doing
+on a trade by trade basis I used these
+labels to confirm that the performance
+table was showing accurate information
+but this is turned off by default so
+unless you run into an issue with the
+script or you just want to verify that
+the information is correct you don't
+need to turn this on you don't need to
+worry about this label so now moving on
+I need to get rid of this test code
+that's not needed the next thing we do
+here is prepare a raise to store our
+yearly and monthly P L's so we have two
+persistent arrays here VAR arrays one is
+storing our monthly returns one is
+storing our yearly returns and the table
+code at the end of the script will Loop
+through these arrays and display that
+information as a table but before we do
+that we need to detect one a new month
+and a new year begins so new month will
+be true when the current month time
+stamp is not equal to the previous
+month's timestamp that means we've begun
+done a new month and same for New Year
+so now that we have a new month and New
+Year detected all that is left to do is
+detect a new month I need to get rid of
+this so we're detecting a new month and
+storing its return profile so by profile
+I mean it's accumulated p l for the
+month it's drawdown for the month and
+it's Max favorable Excursion for the
+month and the time stamp of the month
+the start of the month so to do this I
+create a new strategy monthly return
+data type which remember is this guy
+here and this data type takes a profit a
+drawdown a peak equity and a time stamp
+value
+so that's what I pass in here our
+accumulated monthly p l for this month
+the worst drawdown for this month and
+the best Equity high for this month
+as a percentage of our account balance
+then we pass in the timestamp we push
+this data type into our monthly returns
+array and we reset all of the monthly
+performance metric variables
+to zero so we're starting a new month
+everything goes back to zero and we
+start the whole process again of
+calculating our monthly p l drawdown
+Equity High Etc and because we've
+started a new month if this month is
+January then we have started a new year
+as well so within this new month if
+statement we also check
+if we have a new year and if we have a
+new year we do exactly the same thing as
+we do here we store this year's this
+past Year's performance metrics into the
+yearly returns array this code is
+identical to the monthly code but
+instead of tracking the monthly p l
+metrics is tracking the yearly p l so
+the past 12 months worth of information
+and that's it all that's left to do is
+to display this onto a table so here are
+some more debug code if we have debug
+turn on and we turn these on
+these two BG color functions will light
+up when we have a new month or a new
+year so red means New Year green means
+new month and this just makes it easier
+for you to dial in
+see what happened within a month a given
+month so this is February 2023 so for
+this month February 2023 we should have
+in our table a return of 1.32 because we
+only had one trade in that month and it
+was a winning trade we did open a second
+trade in that month but that trade did
+not close until March for a small loss
+so this doesn't get counted in the
+February p l because we didn't know this
+was going to lose until the next month
+so so this month should show 1.32 in the
+table let's turn the table on
+look for February 2023 1.32
+so that's why I include this uh debug
+code to make it easier to verify that
+the script is doing what it should be
+doing now let's go over the table code
+briefly to wrap up this script uh lesson
+I don't think I need to go into too much
+information about this table I've got
+lessons on tables already it's not
+exactly rocket science there's just a
+lot of copy and pasted code to format
+the whole thing so the first thing we do
+is Define our table data type as
+performance table and then if this is
+the last bar in our chart then we
+display our performance table so if the
+table is turned on
+in the settings menu and this is the
+last confirmed historical bar on our
+chart
+then performance table
+is created
+with 100 rows
+which equals 100 Years of data which
+should be plenty for all markets you can
+barely fit 30.
+um years worth of data on the chart when
+your screen is at a normal resolution
+but if you're trading a market that has
+a lot of historical data I couldn't find
+a way to only display a certain amount
+of information so I tried to write some
+code that would only show the past 10
+years of data or whatever and I couldn't
+get it to show accurate metrics down
+here it can be done but it was just so
+complicated that I just decided against
+that I wanted to keep the script simpler
+and to be honest to be completely honest
+with you I'd spent so much time on the
+script already I just wanted to be done
+with it maybe I'll revisit it at a later
+date when I have less coding PTSD for
+this project and I can try and add a
+time-based window for this performance
+table but instead of doing that all I
+did was add the monthly and the the
+table headers at the top of the table
+you can't see them here because they're
+off my chart but I added those same
+table headers to the bottom of the table
+so no matter how big this chart gets you
+can still see what each column
+is representing so anyway we are
+displaying a lot of data I don't think
+there'll be any Market you'll find any
+data source that will have more than 100
+Years of data on the chart in fact I
+don't think tradingview will even be
+able to to display that many bars at
+least not daily bars maybe monthly bars
+but anyway it's not important we create
+a giant table the next thing we do is
+set our column headers so we set our
+column headers by
+using the cell function and in fact we
+can actually use the new
+this new
+method for doing this uh like so we
+might as well use it so in the past we
+needed to use the table dot cell
+function in order to achieve this but
+now we can actually use the cell
+function directly on the table type
+which makes the code just that slightly
+more efficient just less characters to
+achieve the same thing so the first two
+numbers in the cell function
+are the column and the row so 0 is the
+very first row on our table and then
+zero is the First Column one is the
+second column and so on so this sets our
+table headers for each column
+then we cycle through the total yearly
+returns array size with the year index
+we get the yearly return for this Loop
+for this year
+of the current Loop and we set the year
+number in the first column
+and then determine the color of the cell
+we also populate the cell values so if I
+turn on my table well the table's
+already on this for Loop is looping
+through each year one by one so it will
+start at the very first year of our
+backtest data and cycle up to the
+current year through this for Loop and
+so the first thing we do is set the year
+title so that's this
+cell here and then we determine the
+color
+of this cell which is our profit and
+loss cell for that year so if the year
+turned a profit so our yearly return dot
+profit remember this is a custom data
+type we created up here that stores
+profit drawdown Peak equity and
+timestamp if we turned a profit then we
+set y color year color
+to profit color which is
+this setting here and then here's lost
+color and break even color that's what
+this line of code does and then we
+create a tool tip for that year so the
+max drawdown for the year and the mass
+favorable Excursion so if you hover your
+mouse over this end of year return it
+will tell you the mass favorable return
+so you can see here on 2011 we actually
+had a return of positive 12 at one point
+but we ended the year down half a
+percent
+so it's interesting information to know
+that means we had a pretty bad
+turnaround this year you can see that
+here we lost
+all of our profit in one month
+essentially and then we use the
+performance.sell function to set our
+yearly return profit we round that
+number up or down based on our get
+rounding Precision remember that's the
+custom function we created at the very
+start of the script that forces these
+numbers into three decimal places if the
+number is very very small so that's how
+we populate the yearly values the next
+thing we do is set our monthly values we
+do exactly the same thing we Loop
+through our monthly returns array we get
+what year this month fell within we get
+what month number January would be 1
+December would be 12. that gives us our
+column starting here so January would be
+one so the column would be one
+and then someone all the way to December
+and then we get the month row which is
+the current year minus the very first
+year
+um that we have on our table here and
+that gives us which row
+we are working with so we've got our
+monthly columns and now we've got our
+row based on the year that this month
+fell within and then finally we have yet
+another bit of somewhat confusing code
+here because and I'll explain this
+comment here it says we need to shift
+all month cells back one cell
+this is because our profit and loss
+values are added to the array at the
+start of a new month
+so all of our array values are
+technically off by one month so there
+might be a better way to achieve what
+I've done here that's less hacky I did
+try to manipulate the array values
+themselves but I honestly couldn't
+figure out a simple way to do this and
+so this seemed like a better solution
+and what I mean by all of our values are
+off by one month is let's use the latest
+here as an example the data for February
+the monthly data for February is not
+known until the 1st of March
+and so technically if we don't shift all
+of these cells back one
+then March would be showing 1.32 because
+on the very first trading day of March
+we get February's trading data because
+the month is confirmed to be over and
+it's much easier to detect a new month
+than it is to detect the final day of a
+month and so what we're doing here is
+Shifting all of these cells back one
+this is pretty easy to do except for
+when you're in this cell here because
+you need to shift this cell all the way
+back to here so December's data for 2022
+is not known until the 1st of January
+2023 so we need to shift this value all
+the way back to this cell and that's
+what this code here does now I don't
+need this Boolean value in here I think
+that was just for testing purposes
+uh but basically we are setting our
+month call to the month call minus one
+and if our month column equals zero so
+that would be this column here then we
+need to shift it back to this column
+and uh so that would be column number 12
+or month number 12 December and we also
+need to shift the month row back
+um from this road to this row so if this
+cell gets shifted back to this cell then
+we need to set the column to 12 to
+December and we need to move it back one
+row to this row
+that's what this code here does then we
+determine the color so this background
+color for each cell is determined by
+this line of code here that just checks
+if there was a profit if so then we set
+the profit color otherwise uh if it was
+Break Even we set the Breakeven color
+and otherwise it must be a loss so we
+set it to the lost color now you'll
+notice that these cells are brighter the
+backgrounds are brighter than these
+cells I found a really easy way to
+achieve this just using the transparency
+of whatever this value is so if I set
+this to Aqua for example you'll notice
+that all these yearly cells are brighter
+than the monthly cells so they're easy
+to differentiate between
+I did this really easily by just
+creating a new color for this end of
+year
+um column and adding 20 transparency to
+the profit color so color.t will get the
+colors transparency
+and I add 20 transparency that way we
+don't need a lot of different color
+inputs here we can just keep one input
+and at one click of the button the table
+will
+keep its uh color formatting in terms of
+the end of year columns being brighter
+than the monthly columns and then
+finally we set the monthly tip tool tip
+so that's this when you hover over it
+tells you the max drawdown and Max
+favorable Excursion for each month
+depending on the system these numbers
+could be very different or almost always
+the same on this system they're almost
+always the same but there will be times
+when
+we had a nice profit and then lost some
+of that profit during the month because
+this system doesn't take many trades
+during a month there's not too much of a
+fluctuation between the p l for that
+month but here on the 0.002 you can see
+that at one point we were up 0.57 but we
+obviously had a winning trade and a
+losing trade in that month that brought
+us back down to
+basically break even and then finally if
+this is the final array element and we
+haven't completed the year yet then we
+need to fill the current Year's p l
+so this code here detects if our monthly
+index our Loop is equal to the final
+element in our array and we are not in
+December then we still want to display
+our accumulated yearly p l for this year
+and our Max drawdown for this year so
+that's what this code does it just
+forces the table to display this year's
+p l end of year p l even though the year
+hasn't finished yet and then finally we
+set the yearly table titles last because
+we are shifting all these cells back one
+uh cell like this you know each first
+month is shifted back to the December
+cell at the top of our table this method
+can override our table can override some
+of our table headings
+so at the end of all of this display
+code we set the yearly table titles last
+putting this last fixes my shifting of
+each monthly cell back one cell which
+overrides table titles if they're set
+before the loop above and then we
+calculate the performance metrics based
+on realized p l so that is this
+information here we have our compound
+annual growth rate our Max drawdown for
+the system overall our ma ratio which is
+our
+compound annual growth rate divided by
+Max drawdown that gives you an idea of
+how quickly the system can recover from
+losing streaks and our total return and
+we have tool tips on each value here to
+explain what each value is so this is
+where we calculate those performance
+metrics so our percent return is very
+simple
+that's just getting this number here
+which is our net profit divided by our
+initial Capital multiplied by 100 to get
+a percent our compound annual growth
+rate is a little bit more complicated
+you can Google the formula for cagr if
+you want to you don't need to understand
+how this math works but this gives our
+compound annual growth rate and then we
+have our ma ratio which I just said is
+our kagger divided by our worst drawdown
+then finally we populate our performance
+data these cells down here
+and the tool tips so we have them so we
+have our various tool tips as well
+and then at the very end we set our
+column headers at the bottom of the
+table which is all these values down
+here and that's it that's the end of our
+performance table code as I said you can
+copy all of this code into your script
+and it should theoretically work with
+most scripts there are going to be some
+that it might not work with depending on
+the complexity of your system and how
+many positions it trades I definitely
+encourage you to verify that the
+information on the table is accurate
+I can't guarantee that it will be for
+every system on trading view but it
+should work for most with that said the
+source code will be below in the pin
+comment and the video description if you
+want to learn more about pinescript and
+take your coding to the next level make
+sure to check out the Mastery course if
+you already experienced the pine then
+you might find my indicators and
+strategies course more interesting you
+can find all of that at
+partnerscriptmastery.com make sure to
+subscribe if you haven't already because
+I will be back very soon with a new
+video thanks for watching I love you
+guys and I will speak with you in the
+next video good luck with your trading
+and take care

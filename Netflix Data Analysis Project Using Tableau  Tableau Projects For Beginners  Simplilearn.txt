@@ -1,0 +1,280 @@
+foreign
+in today's session we are going to take
+example of the Netflix database which we
+have and we'll prepare certain reports
+in order to identify what kind of
+reports we can generate from such a data
+set
+So currently on my screen what you can
+see is the Tableau the Netflix data
+sheets the data sources where you have
+the Netflix shows movies their
+Associated duration uh what kind of
+shows or movies are there they release
+here are the associated rating
+description and a key which is the show
+ID now this is the unique identifier for
+each show in this Netflix title sheet
+and with this show ID all other sheets
+are related like you know who are the
+directors of the show in which country
+the show was released what is the cost
+of each show all that information is in
+this sheet and to which particular
+category basically the listed in
+category is being uh listed in this
+particular sheets so what we're going to
+do is first we are going to import this
+sheet into tableau
+okay and then create relationship
+between them using the Tableau
+relationship canvas so first our the
+primary transaction table the sheet in
+which all the information related to
+movies is there or shows is there is in
+Netflix titles and then we will drag
+sheet like Netflix cast titles cast now
+W has automatically identified the
+relationship between the show ID of
+titles and show ID of titles cast and it
+has made a join
+so if you double click this
+you can see this relationship
+cardinality and the related fields
+similarly I'll drag relation titles
+category countries and directors
+Now by virtue of this all the sheets
+have now been joined with Netflix titles
+and with this relationship ready we can
+start preparing our reports
+now let's create a basic report where we
+can just glance the data like you know
+whatever we were seeing in the Excel how
+it looks in w
+so you have all the types of movies then
+for example I drag the release Here
+now first I do not want to consider it
+as a
+Dimension so I'll just
+release Here per category per type there
+is a release Here
+and then I'll drop the listed in
+so now these are the categories so per
+year the details of the categories right
+and then you can
+drag the title and the associated rating
+so this is just a view of your data
+we can name it as shows listing report
+now let's try to create some report for
+some
+measures some numbers
+Etc
+so now let's check in which country how
+many movies or titles were released you
+know what is the count
+so first let's drag the
+country
+so as soon as we drag the country
+uh field it is identified that it has
+the geographical names and identified
+the latitude and longitude details so
+Tableau internally does that
+automatically and it has identified the
+spots across the globe of the relevant
+country
+now let's drag the listed in on the
+color section
+now what it is doing is it is showing in
+which country what different kind of
+uh category wise movies are or shows are
+being released like in Sri Lanka
+documentaries have been released in
+India action and adventure United States
+action and adventure like this
+now let's
+put
+account of
+the titles right so if you see 247
+action adventure movies or shows have
+been released in United States
+okay so this is one inference by this
+particular report you can
+identify
+so let's save this report as
+listed
+in
+by country
+okay now let's create another report
+we will call it as the per year
+statistical report in this first I'll
+put the release years in the column
+now
+count of Netflix titles so this is the
+count of Netflix titles per year 2017
+2016 14. and then count of Netflix
+titles in the countries
+this is the second bar chart okay now
+what I'll do is I'll combine it into one
+so one report
+we are
+moving in the bar creating the bar and
+one in the line now I just have to
+so we will click on the count of Netflix
+titles by country right click Market
+dual access
+so now as soon as you click click this
+both the uh charts have been combined
+and right click over here and say
+synchronize access
+okay
+okay so now if you can see see right in
+2017 you had uh 2 303 Netflix releases
+across all categories and one one five
+nine
+titles right one zero six three titles
+in 2017. so this is a descending
+representation of the count of titles
+release per year across category and
+across titles
+so let's call this as
+per year
+stats
+now let's create another report
+number of shows
+but title okay
+so or or sorry per rating so we will
+drag the rating column
+and
+we will
+count of titles
+unique count of titles and unique count
+of show IDs
+okay
+one is bar and one is line
+okay
+so this is a report which shows rating
+wise titles and the show IDs
+happens
+so in the tooltip you can see the
+listing count of titles and show ID per
+rating
+okay so let's call it
+shows per rating
+now let's create another sheet
+call it as
+shows
+by cast
+so in this
+what we're going to do is first drag the
+cast column on the rows section you have
+name all of all the cast and then we
+drag the
+show ID on the column section and put a
+count d and sort it okay
+you can remove
+the null cast
+and this is your
+sorted order and on the labels section
+you can say show Mark labels and you
+will see the count that don't open care
+has done the maximum then on Shahrukh
+Khan om Puri nasruddin Shah so this is
+the details on this sorted order that
+who has done how many shows okay
+then next is
+shows by director similar to shows by
+cast
+dragged
+director into rows
+or differently if you want to prepare
+into columns
+and then count of
+show ID
+okay sort it
+and you can actually filter out the null
+director value
+and this is the account put the label
+so you can see Jan's Twitter has the
+maximum shows
+okay
+then create another report
+shows by category
+now similarly drag the listed in
+in the rows and show ID count
+remove the null category
+and sort
+labels show Mark labels so International
+movies are the highest category dramas
+the next comedy International TV shows
+this way
+you have your category
+now let's create a dashboard in which we
+want to bring combine all these reports
+and
+take a common view so first let's drag
+listed in by country
+then
+shows by director
+also please let's set the size as
+automatic
+then let's drag shows by category
+and shows by cast
+now these four reports are on a single
+dashboard we will link them to each
+other so go to worksheet actions
+add action
+filter
+select dashboard one
+only select shows by category here
+and in Target dashboard one
+except shows by category keep everything
+else
+and in the source sheet just select
+click select
+click ok
+now whatever category you will select
+over here
+that related category data will
+automatically be shown in other reports
+like see International movies across the
+globe across countries directors of only
+International movies who has done the
+maximum
+Johnny Tow and uh shows by cast right
+that who has done the maximum
+International movies or dramas
+or comedies
+travel has a maximum number of comedies
+and then if you see the comedy movies uh
+you know these are the count of comedy
+movies released across the countries and
+the who is the director
+another a very interesting report which
+you can prepare is that for example you
+want to check in which country maximum
+duration of
+uh your
+maximum duration of
+movies have been released so
+first let's create a measure
+and remove this
+okay
+so if you see
+maximum duration of the movies or the
+entire Netflix content is maximum United
+States then in India these many minutes
+next is United Kingdom and you can also
+change the colors
+whatever you feel is as per your
+standards or as per the convention you
+can change the color combination
+so there are multiple ways you can
+generate reports and uh hope you have
+understood how you can leverage such a
+data to create your reports
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

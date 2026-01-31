@@ -1,0 +1,337 @@
+are you tired of remembering tons of
+passwords or concerned about hacking
+attempts on your valuable data then this
+video is for you the world we live in is
+becoming increasingly digital and with
+that comes the increased risk of
+security breaches and cyber attacks one
+way to combat this is by using
+authentication systems that verify the
+user's identity before allowing them to
+access to your systems in this video we
+will explore why authentication is
+important and how it can protect your
+data authentication is a process of
+verifying a user's identity before
+allowing them to access to a system or
+resource by using authentication systems
+you can ensure that only authorized
+users have access to your data
+preventing unauthorized access or use by
+hackers authentication comes in many
+forms including passwords tokens and
+biometric identifiers two very important
+ways of implementing authentication are
+multi-factor authentication and
+two-factor Authentication MFA and 2fa
+are both methods of securing access to a
+system but they approach Security in
+different ways 2fa requires the user to
+enter a password and provide an
+additional authentication form such as a
+one-time code sent to their phone MFA
+requires the user to provide two or more
+forms of authentication before gaining
+access to a system or application the
+importance of authentication cannot be
+overstated with the increasing usage of
+digital systems the risk of cyber
+attacks have been higher and the choice
+between MFA and 2fa ultimately comes
+down to an organization's specific
+security needs and budget each method
+has advantages and disadvantages the
+best option depends on the circumstances
+so if you want to learn more about these
+two authentication methods and how to
+implement stay tuned with us until the
+end of this video and before we begin if
+you are someone who is interested in
+building a career in cyber security that
+is by graduating from the best
+universities for a professional who
+elicits to switch careers with cyber
+security by learning from the experts
+then try giving a shout to Simply learns
+postgraduate program in cyber security
+with modules from MIT schwarzman College
+of Engineering and the course link is
+mentioned in the description box that
+will navigate you to the course page
+where you can find a complete audio of
+the program being over and if these are
+the types of videos you would like to
+watch then hit the Subscribe button like
+and press the Bell icon to never miss on
+further content so let's delve into the
+agenda of our tutorial so first we'll
+explore the concept of authentication
+and its importance in cyber security We
+Begin by defining authentication as the
+process of verifying the identity of a
+user or entity it involves three factors
+that is knowledge possession and
+inherence knowledge refers to something
+the user knows such as a password
+possession involves something the user
+owns like a smartphone inherence relates
+the biometric traits like fingerprints
+we then discuss the limitations of
+single Factor authentication that is
+primarily relying on passwords Within
+increasing sophistication of cyber
+threats single Factor authentication is
+no longer sufficient to protect
+sensitive information this leads us to
+explore two-factor authentication and
+multi-factor authentication 2fa requires
+users to provide two authentication
+factors while MFA demands two or more
+factors these additional layers of
+authentication and hand security and
+mitigate the risk associated with single
+Factor authentication and the script
+also addresses the question of whether
+MFA is more secure than 2fa the answer
+depends on the specific authentication
+methods used in each case both MFA and
+2fa can be effective if implemented
+correctly incorporating strong
+authentication factors finally we
+briefly introduce 5f authentication
+which includes additional factors like
+behavioral and locational based
+authentication while these factors
+provide supplementary layers of security
+they are not widely adopted due to their
+early development stage and potential
+vulnerabilities overall in this tutorial
+we aim to educate yourself about the
+importance of authentication the
+differences between 2fa and MFA and the
+considerations involved in choosing the
+right authentication method to protect
+personal and organizational data in the
+digital age so starting with the
+introduction so did you know that nearly
+8 billion passwords have been leaked
+it's a constant reminder to be hygienic
+and responsible with our user
+credentials unfortunately the internet
+and dark web are filled with exposed
+passwords in today's video we'll explore
+the importance of authentication and the
+role of two-factor authentication and
+multi-factor authentication in keeping
+our data secure so we'll start with what
+is authentication before we delve into
+the authentication methods let's clarify
+what authentication actually means
+authentication is the process of
+verifying a user's claimed identity
+ensuring that they are who they say they
+are and authenticator so an
+authenticator on the other hand is a
+software device or token that aids in
+this process authenticators can come in
+various forms such as mobile apps
+smartphones code generators or even
+wearable devices that provide a one-time
+password or a pin for authentication
+first there's a single Factor
+authentication which relies only on a
+password or pin then we have two Factor
+authentication that is also known as
+two-step verification which requires two
+authentication factors for successful
+user authentication finally there's a
+multi-factor authentication MFA which
+prompts the user to provide two or more
+authentication factors adding an extra
+layer of security now let's take a
+closer look at the three factors of
+authentication that are involved in
+board 2fa and MFA the first factor is
+knowledge which refers to something the
+user knows such as password or pin and
+the second factor is possession which
+involves something the user owns that is
+like a hardware token smart card or or
+smartphone the third factor is inherence
+which relies on biometric authentication
+such as fingerprint or face recognition
+and now you'll see why a single Factor
+authentication not enough this is the
+single Factor authentication method and
+this is not sufficient now so while
+relying solely on a password process
+significant security risk cyber
+criminals have various methods to
+correct password such as key logging
+phishing and Brute Force attacks that's
+why 2fa nmfa Solutions are essential for
+strengthening security to Vector
+authentication and multi-factor
+authentication are inexpensable
+components of the cyber security
+ecosystem although they may sound
+similar they have distinct differences
+today we'll explore the disparity
+between these two authentication method
+and answer the question of whether MFA
+is better than 2fa or node now let's
+talk about two Factor authentication or
+2fa as the name suggests it requires
+users to provide two factors us to
+identify themselves the first factor is
+typically a password something the user
+knows the second Factor can be something
+the user has like a smartphone or a
+token to further verify their identity
+the second Factor can take various forms
+not just physical devices it could be a
+code sent via email or text message
+additionally security questions or even
+a unique key known only to the user
+implementing the second Factor adds an
+extra layer of security making it harder
+for threat actors to gain access in case
+of password leakage now moving on to
+multi-factor authentication or MFA as
+the name implies it involves multiple
+authentication factors MFA is a more
+robust user access management tool
+combining different types of security
+elements and it may require a password a
+confirmation code and a biometric data
+to confirm the user's identity these
+factors can be categorized into
+knowledge factors that is passwords or
+security questions or possession factors
+that is second one that includes
+Hardware devices mobile apps or otps and
+the next is inherence vectors that is
+Biometrics or context vectors based on
+user location so by providing complex
+evidence from various sources MFA
+enhances security and reduces the risk
+of unauthorized access so now we will
+discuss is MFA more secure than 2fa so
+the answer is that it depends the
+security of both MFA and 2fa relies on
+the authentication methods used if an
+MFA implementation combines multiple
+strong authentication methods such as
+pen that is a knowledge
+OTP and fingerprint it can offer a
+higher level of security however there
+can be scenarios where a 2fa method with
+just a push notification and fingerprint
+can be more secure than an MFA method
+requiring three factors ultimately the
+security level depends on the specific
+authentication methods employed to sum
+it up more two-factor authentication and
+multi-factor authentication are
+essential Tools in securing our
+sensitive data well 2fa requires two
+factors of authentic further by
+incorporating multiple factors MFA
+offers higher security but both methods
+are more secure than relying solely on a
+single password now let's talk about
+balance between security and friction in
+authentication methods adding layers of
+security doesn't always mean increased
+friction with the widespread use of
+mobile devices Security checks can be
+performed seamlessly without burning the
+end user for example location based
+authentication can be achieved without
+any user intervention the key is to
+strike the right balance by using the
+most secure authentication methods with
+the least amount of friction so this is
+the balance between security and
+friction in authentication methods so
+now we'll see a 5fa authentication
+method so you guys may be wondering what
+about 5fa or five Factor authentication
+so what does this entail we'll see now
+so in addition to the previously
+mentioned knowledge possession and
+inherence Factor so in addition to the
+previously mentioned knowledge
+possession and inherence factors 5fa
+incorporates two more authentication
+factors that is behavioral and location
+however it's important to note that
+behavioral authentication is still in
+its early stages and using it as the
+sole factor of authentication may carry
+risk similarly location-based
+authentication can be easily spoofed
+using vpns these additional factors
+currently serve as supporting layers of
+authentication and aren't explicitly
+regulated and when choosing the right
+authentication method for your company
+consider factors such as productivity
+existing security measures and budget
+striking the right balance is crucial to
+ensure efficient and effective security
+and this was all for this session thank
+you for joining us today as we explore
+the world of authentication and the
+differences between 2fa and MFA remember
+implementing strong authentication
+measures is a vital step in safeguarding
+your data and with that we have reached
+the end of this tutorial and let's take
+a minute to hear from our Learners who
+have experienced massive success in
+their careers hi I'm Philip I'm 61 years
+old and last year I upskilled with
+simple Learners post program at cyber
+security after working 30 years in the
+IIT sector in various different profiles
+I'm happy to tell you that I was able to
+clear and pass my cissp and ccsp
+certification exams on the first attempt
+after taking the course course I must
+say was packed with practical examples
+it was led by highly skilled certified
+instructors with many companies before
+the security analysts and the architect
+on a contract basis but I needed some
+stability which I got with the job I
+just started with Infosys as a cyber
+security consultant happened on the
+first and if you have any questions
+please feel free to comment and we'll
+have it answered for you as soon as
+possible until next time thank you for
+watching stay safe keep learning and get
+ahead staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

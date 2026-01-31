@@ -1,0 +1,443 @@
+the execution of numerous tasks or
+activities simultaneously is known as
+multitasking
+the windows operating system is also a
+good example of multitasking since it
+can execute many processes
+simultaneously such as google chrome
+notepad ms office and so on
+the operating system uses a notion known
+as process to run all of these programs
+simultaneously
+and on that note hey everyone i am weber
+khandelwal and i welcome you all to
+simply learn creative channel today we
+will be going over the concepts such as
+threads
+and multi-threading
+but first let me remind you that we have
+our daily updates on
+numerous technologies so if you are a
+tech geek looking for the latest
+technological innovation then try
+subscribing to a youtube channel and
+don't forget to hit the bell icon so you
+never miss an update on simplylearn's
+youtube channel
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin our session with the
+discussion on what a thread is
+then we will have a brief discussion on
+the topic multi-threading
+following that we will discuss the
+thread life cycle and its various
+features
+finally we will end up this session with
+a demo explaining
+a single thread model and a
+multi-threading model
+so without any further ado let's get
+started
+with the discussion on what a thread
+class is
+first
+a thread is defined as a program
+operating root
+that is every thread creates its own
+distinct control flow
+next a threading reduces cpu cycle waste
+and it also improves a program's
+efficiency
+threads are created using a thread class
+which is
+lets you specify a thread's precedence
+and it also displays a current status of
+the thread
+next let's go over a few pointers on
+multi-threading
+but first let's understand what a single
+threaded model is
+every program has a one thread that
+performs the logic of a program by
+default and this thread is known as a
+main thread
+hence every program or application is a
+single threaded by default
+but there is a disadvantage to these
+single threaded architectures
+the single thread executes all of the
+processes in a program synchronously
+that is one after the other as a result
+the second process needs to wait until
+the first process completes its
+execution
+so the second process will take longer
+to process
+but to overcome this disadvantage we
+have multi-threading
+multi-threading refers to the use of
+many threads
+inside a single process
+each thread here serves a separate
+function
+so the main advantage of multi-threading
+is
+that it operates concurrently meaning
+numerous jobs may be executed
+simultaneously
+finally a multi-threading also maximizes
+the cpu's resource consumption
+next let's discuss threads life cycle
+typically a thread's life cycle begins
+with the creation of an instance
+of the system dot threading
+and a thread class
+and it terminates when the thread is
+stopped or it finished its execution
+now a thread's life cycle has four
+states
+the unstarted state
+a ready state
+the not runnable state
+and the dead state
+let's go over them
+one by one
+first is an unstarted state
+it occurs when a thread object is
+created but the threat method is not
+invoked
+next we have a ready state
+in this state
+the thread is ready to execute but it's
+still awaiting cpu cycle
+then we have a not runnable state
+when a thread is not executable
+because
+either the sleep method has been invoked
+or the weight method as has been
+involved
+or the input activities
+are causing a bottleneck
+then
+at last we have the dead state
+it is the state in which threats
+execution is
+either completed or aborted
+now that we have thoroughly discussed
+the thread and their life cycles
+we have also discussed a single threaded
+model and a multi-threaded model
+so now let's implement these models in a
+visual studio code
+let me move to my visual studio code
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+so let's start
+with some basic using commands so using
+system
+then we will have
+using
+system
+dot
+threading
+then we will have our namespace
+with the name as
+thread
+demo
+now
+let's have a class
+as public
+class
+main thread
+one
+now in this thread we will have a static
+method
+so
+public
+static
+void
+th rd
+1
+this will be a thread name
+let's write code in this
+function
+so we will have a for loop
+and
+t is equals to zero
+then t is less than equals to
+10
+then we will have t plus
+then we will have a console
+dot
+write line
+thread
+one
+is
+then we will
+place
+a specifier
+input
+so what these
+curly braces
+zero will do is it will replace the zero
+curly braces zero with the t
+but
+when the value of
+this t is equals to five then this
+method must go sleep for six seconds and
+after six second it should resume its
+working so to do that we will have if
+statement
+and we will have t is equals to equal to
+five
+then for the query basis we will have
+a thread
+dot
+sleep
+and we will have 6000
+now let's create another thread
+so we will have another function as
+public static
+void
+phrd 2
+this will also print numbers from 0 to
+10
+so for loop
+and
+p
+is equals to 0
+p
+less than equals to 10
+and p
+plus plus
+i will have
+console
+dot
+write line
+thread
+2
+is
+comma
+e
+now let's write
+our main class
+so for that we will go for the public
+class
+and
+main thread
+two
+then
+in this
+we will have
+static
+public
+void
+main
+then
+we will call our starting methods
+so
+main
+thread
+one
+dot
+thread
+one
+then
+we will again call man third one dot
+thread
+two
+now
+let's save this
+and run this program
+but first let me explain what this code
+does so that so here what will happen is
+first this thread one will be executed
+now when t
+this folder will cycle t so from 0 to it
+will go to 9
+but when t reaches 5 this if statement
+will relaunch and this will let
+let go this thread to sleep for six
+seconds the six thousand represents six
+seconds
+now
+while these six seconds are over this
+thread two is still in the waiting
+process
+so this whole for loop will be on sleep
+for six seconds after the six second
+this thread will again run so then it
+will start printing out
+six
+seven
+eight nine
+and so on and 10
+then this thread 2 will be
+started and then this will go from 0 to
+10
+straight up it will not go to slip
+because this thread doesn't have this
+sleep function
+now this is what a good example of
+single threaded
+process now let's run this
+now as you can see it has already
+printed from zero to five now it's on
+weight
+then
+after six seconds it printed out the
+rest of this thread one then thread two
+now
+let's write the code for the
+multi-threading
+let's kill this
+and let's delete
+everything
+now
+let's create
+let's have a public
+class
+main
+thread
+then we will have a static method one
+so public
+static
+void
+thread
+one
+then in this we will print numbers from
+zero to ten
+so four
+and
+x is equals to 0
+then x
+less than equals to 10
+then x plus plus
+we will write
+console
+dot
+right
+line
+thread
+one
+is
+co
+comma
+x
+now when the value of r
+x is not equal is equals to 5 then this
+method should go to sleep for 6 seconds
+so
+we will have again if x is equal to
+equals to 5
+then at that point this if statement
+will send the thread
+dot sleep
+for six thousand
+now
+let's write another set static function
+i forgot to add space here
+yeah
+so now we will have
+public
+static
+void
+thread two
+then we will have
+a for loop
+which will again print numbers from 0 to
+10
+so end
+y is equals to 0
+y less than equals to 10
+and y plus plus
+this will also have
+console
+dot
+right
+line
+then we will have
+thread 2
+is
+0
+comma y
+now
+let's write a main method
+so we will have static
+public
+void
+main
+now we will be creating and initializing
+these threads
+so first we will have thread
+as
+t1
+equals to
+new
+then third
+for dhrd1
+then we will have another thread
+t2
+equals to
+new
+thread
+for dhrd2
+now we will start each of these threads
+so t1 dot start
+and
+t2 dot
+start
+here what we are doing is we are
+creating and initializing two threads t1
+and t2
+now using this thread class
+now using t1 and t2 start
+we are basically starting the execution
+of both of the thirds now the both of
+the threads are running simultaneously
+what it will do is the processing of t2
+will not depend on the processing of t1
+like in a single thread and model
+let's see how it will work let's run
+this
+now as you can see it has run thread 1
+from 0 to 5 then it holded and then it
+goes to 0
+thread 2
+then it finished and after six seconds
+this thread one is finished
+this is the prime example for a
+multi-threading function where
+a thread one was started
+when it went to sleep after this six
+website x equals to five
+it went for sleep for six seconds
+after
+since it went to sleep a thread two
+which was already running it started
+work
+printing out its result so it went out
+its results up to 10.
+by the time it finished this third one
+was also back
+so now it was starting running then it
+finished its process and then the whole
+both of the threads stopped running
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+questions then you can drop them in the
+comment section below thanks for
+watching and stay tuned more from simply
+learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

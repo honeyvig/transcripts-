@@ -1,0 +1,252 @@
+online analytical processing olap and
+online transaction processing in short
+oltp are two popular database systems
+that have evolved separately to serve
+distinct purposes while both systems
+offer data storage and retrieval
+capabilities they differ significantly
+in terms of their architecture data flow
+and performance characteristics olap is
+designed specifically for data analysis
+and Reporting while oltp is designed for
+online transaction processing such as
+online banking inventory management and
+order processing olap is optimized for
+analyzing large volumes of data and
+Reporting metrics while oltp is
+optimized for quickly processing
+individual transactions there are many
+other differences between these two
+crucial data processing systems so in
+this video we'll be discussing the major
+differences between these two and how
+you can Implement these in large
+transaction processing systems so
+without any further Ado let's get
+started also if you're an aspiring data
+analyst looking for online training and
+certifications from prestigious
+universities and in collaboration with
+leading experts then search no more
+simply lands postgraduate program and
+data analysis from Purdue University in
+collaboration with IBM should be your
+right choice for more details use the
+link in the description box below and
+with that in mind over to our training
+experts
+approaches stand out in data processing
+and data analysis online analytical
+processing that is olap and online
+transactional processing oltp although
+they share the common goal of handling
+data these methodologies differ
+significantly in their purpose data
+structure performance characteristics
+and design principles olap is a powerful
+tool for organizations seeking to
+extract valuable insights from vast
+volumes of historical data its
+multi-dimensional data model organized
+in cubes comprising dimensions and
+measures allows for sophisticated
+analysis and in-depth Exploration with a
+focus on aggregating and summarizing
+information
+olap empowers users to identify Trends
+patterns and correlations across
+multiple Dimensions despite longer
+response times which are acceptable due
+to their analytical nature all AP excels
+in providing flexible ad hoc query
+capabilities for inputs data
+Explorations conversely oltp is designed
+to handle real-time transactional
+processing ensuring the integrity and
+consistency of daily operational
+activities by adopting a normalized data
+model oltp optimizes the storage and
+retrieval of individual records in high
+speed environments its primary objective
+revolves around efficient data
+modification such as inserting updating
+and deleting records to support
+concurrent transactional operations with
+a focus on rapid response times and
+maintaining data accuracy at record
+level oltp caters to the needs of time
+sensitive business operations
+understanding the distinctions between
+olap and oltp is crucial for
+organizations to choose the appropriate
+data processing approach based on their
+specific requirements today we will be
+understanding the difference between
+olap and oltp by going through the
+following details mentioned in the
+agenda we will get started with the
+first one which is its purpose then data
+structures data volume response time
+query complexity data modification data
+granularity concurrency data backup and
+recovery and finally the system design
+so with the briefing of olap and Olt we
+discussed and the agenda for the session
+discuss let's put the point of today's
+session that is the major or top 10
+differences between ol apple and oltp
+firstly we will go through the purpose
+open reporting enabling users to gain
+insights from large volumes of
+historical data it focuses on providing
+aggregated and summarized views of the
+data oltp oltp is designed for real-time
+transaction processing handling
+day-to-day operations such as inserting
+updating and deleting individual records
+its primary objective is to ensure data
+integrity and support high-speed
+transactional operations
+next is data structure olap uses a
+multi-dimensional data model called a
+queue it organizes data into Dimensions
+such as time geography and product and
+measures such as sales and profit to
+facilitate multi-dimensional analysis
+and drill down capabilities
+then we have oltp oltp uses a normalized
+data model with tables and relationships
+aiming for efficient transaction
+processing it minimizes the data
+redundancy and ensures data consistency
+through the use of normalization
+techniques
+next ahead we have the data volume
+olap deals with large volumes of
+historical data typically containing
+years of data it focuses on analyzing
+and summarizing this vast amount of
+information
+next is oltp oltp deals with relatively
+smaller volumes of data usually
+representing real-time transactions
+happening within a shorter time frame
+moving ahead we have response time olap
+allows for longer response time since it
+deals with complex queries and large
+data sets users expect analytical
+reports to be generated within minutes
+or even hours
+coming into oltp oltp requires vast
+response times to support real-time
+transaction processing users expect
+quick responses usually in milliseconds
+or seconds a lot faster than Google AP
+moving ahead we have query complexity
+olap queries are usually complex
+involving aggregations grouping
+filtering and calculations across
+multiple Dimensions users need flexible
+ad hoc querying capabilities to perform
+data analysis moving ahead we have oltp
+oltp queries are relatively simple
+primarily focused on retrieving or
+modifying individual records based on
+specific transactional needs queries are
+typically short and transaction oriented
+moving ahead we have the sixth one that
+is data modification olap is read-only
+or minimally updated data is loaded into
+Old AP cubes periodically example daily
+or weekly to update the analytical
+database with the new information
+coming into oltp oltp involves frequent
+data modification including insertions
+updates and deletions it ensures that
+the transactional database remains up to
+date and reflects the current state of
+business
+next in the docket we have data
+granularity olap deals with aggregated
+and summarized data providing with a
+high level view of information across
+various Dimensions it focuses on Trends
+patterns and overall performance
+analysis next we have oltp oltp operates
+at a detailed level capturing individual
+transactional data with a focus on
+maintaining accuracy and integrity at a
+record level
+next we have the eighth point which is
+about concurrency olap involves a low
+level of concurrent users since users
+typically perform separate analysis and
+Reporting tasks that emphasizes on
+analytical activities rather than
+concurrent transactional processing next
+oltp oltp requires a high level of
+concurrency to handle multiple users
+simultaneously accessing and modifying
+the same data it focuses on maintaining
+data consistency and isolation amongst
+concurrent transactions nine point data
+backup and Recovery olap is usually
+derived from oltp system and backup and
+Recovery are less critical it can be
+generated from the transactional
+database if necessary in case of oltp
+oltp data is critical and backup and
+Recovery processes are essential regular
+backups are taken to ensure data
+integrity and provide the ability to
+store this system in case of failures
+and lastly we have system design all AP
+systems are typically designed with a
+focus on read intensive operations they
+employ specialized data storage and
+indexing techniques optimized for
+analytical queries and aggregations all
+AP databases are often denormalized to
+improve query performance and in case of
+oltp oltp systems are designed to handle
+a high volume of concurrent read and
+write operations
+they prioritize data consistency and
+transaction Integrity often using
+normalized database structures to
+minimize redundancy and ensure data
+accuracy with that we have reached to
+the end of the session on olap versus
+oltp should you have any queries or if
+you need any assistance regarding the
+PPT or any of the resources used in the
+session please feel free to let us know
+in the comment section below and our
+team of Expos we'll be more than happy
+to resolve your queries at the earliest
+until next time thank you and keep
+learning stay tuned for more from Simply
+learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+foreign
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

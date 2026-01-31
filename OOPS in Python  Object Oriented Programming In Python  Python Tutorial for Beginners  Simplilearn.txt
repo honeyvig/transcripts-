@@ -1,0 +1,568 @@
+hello and welcome to this session of
+python
+today we are going to talk about the
+concept of object oriented programming
+in python
+so we will talk about certain concepts
+and terminologies which you will learn
+in today's session on oops in python
+now what's in it for you today
+let's glance at the topics
+object-oriented programming in python
+some major principles of object-oriented
+programming and then we will touch upon
+topics like class in python objects
+methods
+inheritance
+the concepts of inheritance the
+different type of inheritance then the
+definition and examples of polymorphism
+encapsulation and abstraction
+so all these topics will be
+supported with examples
+and the relevant
+terminologies and definitions
+now what is object oriented programming
+python is an object-oriented language
+like any other programming language like
+java c
+and the object-oriented programming
+language concept is not new
+and each and every mature programming
+language
+has these concepts imbibed in it
+now the concept of object oriented
+programming in python focuses primarily
+on creating project objects and making
+reusable codes so whenever we start
+programming at a large scale or for a
+big project it is very important to
+identify the objects within that
+particular project which you want to
+define
+now for example in this
+in this
+presentation what you are seeing is that
+we are covered with full of objects like
+car
+dog tiger tree or a balloon so these are
+typical examples of objects which you
+encounter in day-to-day life
+now what are the major principles of
+object-oriented programming so these are
+the different kind of uh you know
+terminologies
+classes are there there are objects
+there are methods
+then on these classes and objects you
+apply inheritance polymorphism
+encapsulation and abstraction
+now what is a class
+class is nothing but a collection of
+objects or we can say a user defined
+data type right so basically it's a
+complex data type which has a collection
+of objects and within the objects you
+have primitive data types like in string
+float etc
+so a class also holds the methods
+the functions
+which basically perform operations on
+these objects
+right and also it also holds on to the
+attributes of the objects so let's see
+with an example right
+so if you have an employee class
+then it would contain attributes and
+methods such as email id name age salary
+these are the attributes and on the
+methods like you know perform tasks give
+presentation
+increase salary
+etc etc these are will be the methods
+now let's talk about what are objects in
+python
+now object is known as instantiation of
+a class right an object is a group of
+interrelated variables and methods
+so when a class is defined only the
+description for the object is defined
+therefore no memory or storage is
+allocated at that point
+so for example if you see in this
+motorbike is a class
+but the different objects of the class
+are different kind of bikes by different
+brands like bmw suzuki royal enfield so
+they all have inherited the attributes
+of the class motorbike and then on top
+of it define certain variables
+additional variables and methods
+on top of it to enhance the motorbike
+and make it look different or function
+differently
+now what are methods in python methods
+are functions defined inside the body of
+a class right so basically methods are
+something which like which you which you
+perform on a
+attributes of a class right method is a
+function that is that is associated with
+an object
+so you create an object of a class and
+on that object then you can execute
+those functions
+in python a method is not unique to
+classed instances
+any object type can have methods
+and the methods define the behavior of
+an object so that's why a bmw motorbike
+will be different from royal enfield
+because the behavior is different the
+methods are different
+so if you see the example over here you
+have a class bike and in that there is a
+init function which will get invoked
+when you initialize the object of class
+bike and then you can set the brand name
+and the year of manufacturing for that
+particular object
+now inheritance
+what is inheritance inheritance is
+something which you derive
+from a
+parent so inheritance is like creating a
+new class that uses all the properties
+and behavior of another class
+now the new class is called the derived
+class or the child class and the
+existing class whose properties are
+inherited is known as a base class or
+parent class
+it provides and the basic view
+functionality the usage of inheritance
+is that reusability of code so if
+anything is defined in the parent class
+then you don't need to rewrite that
+particular code in the child you can
+just inherit it
+so as i mentioned let's take a look at
+the different types of inheritance which
+are available
+you have single level in which only one
+child is narrating
+the properties and the attributes from
+the parent
+then you have multi-level in which
+first child has inherited
+from the class a class b has inherited
+and then you have another class c which
+is inheriting from class b so this is an
+example of multi-level and we will be
+supporting all these concepts with an
+example in our python notebook
+then there is hierarchical then there
+are two different classes which are
+inheriting from a single class
+and then multiple inheritance that
+single class is inheriting from two
+different parents so these are different
+set varieties of inheritance basis what
+is the demand what is the business
+requirement you can define
+now what is polymorphism polymorphism in
+python
+what does it means
+polymorphism consists of two words poly
+and morphs
+poly means many and morph means shape so
+basically it means
+many shapes
+so it is
+it means using a familiar interface for
+multiple forms right so you can use
+a single name of the method and which
+can perform different behavior
+based on the object in which it is
+invoked so in simple terms we understand
+that a task can be performed in various
+ways
+let's support it with an example
+like you have a plus operator now the
+plus operator can be used for integer
+data types to perform arithmetic
+operations
+whereas when you use plus operator to in
+string data types it can be used for
+concatenation
+so it's a very typical example very
+good example in terms of
+how an uh
+same operator
+can behave differently bases what data
+types are being used
+now let's talk about encapsulation
+using oops in python we can restrict
+access to methods and variable
+so basically in
+in python you can you can create
+something like as private
+variables but of course you can't use a
+private keyword unlike java so in in
+python we use underscore or double
+underscore in order to define private
+attributes so basically
+these attributes can be only used within
+the class and cannot be exposed outside
+a particular class
+so we will see this with an example
+now what is abstraction data abstraction
+and capsule encapsulation are often used
+as synonyms abstraction is used to hide
+internal details and show only
+functionalities
+for example
+you know how to turn on or offer light
+using a switch but you don't know what
+is happening behind socket
+similarly an abstract class can not be
+instantiated
+which means you cannot create objects
+for this class you can only
+define
+the methods
+which have to be implemented by the
+classes which are inheriting the
+abstract class
+so basically abstract class provide only
+the method signatures
+and rest the other functionalities and
+the implementation has to be done by the
+child classes
+so let's now move to the
+our
+jupiter notebook and we will
+start performing certain examples
+now as we are saying
+like python has objects so let's create
+object
+we will create a class
+bikes over here
+and within the class
+we will define the init method
+and
+in the init
+we will
+instantiate two variables brand name and
+here
+now
+we will create an object
+of
+bike
+which we will we are calling as bmw and
+another we will create an object called
+ducati so what we are doing in this
+two scenarios is
+that we are just instantiating the byte
+of bike object with
+variable
+bmw and ducati we are instantiating
+now let's
+print
+the
+year in manufacturing here the brand
+name and the ear
+for bmw and for ducati and let's see
+right so what we have done is we have
+created an object for bikes one we are
+calling bmw and one we are calling
+ducati and how we are differentiating
+between these two bytes is basis the
+brand name and the year of manufacturing
+now
+let's take a look at the example of
+methods
+i'm going to
+rewrite my init method
+and now i am
+creating an
+function
+a method of top speed
+and
+a function of type
+now
+i'm gonna
+create an object of bike
+now this
+method this object bike
+can invoke methods top speed and type
+because they belong to the same class
+bytes
+so initially when i created my object
+bytes i'm instantiating it with bmw and
+the ear
+and
+then i am
+making a call to the
+method top speed
+and then i am making a call to the
+method type
+and printing
+so basically i am printing the output of
+the function top speed and output of the
+function bmw
+form the object bmw which is of class
+bikes
+now let's take a look
+at an example of single level
+inheritance
+let's
+create a parent class called animal
+and
+create a
+method called sound
+and let's create a child class
+cat which inherits animal
+and let me just put a method over here
+okay
+so now i have
+object parent class animal child class
+cat which has an edited animal
+and the parent class method is sound and
+the child class method is meow
+so now i'll create an object called cat
+and with this object
+i'll be able to invoke both child class
+method
+and the parent class method
+and as you can see
+the child class
+has inherited both
+parent and child class
+functions methods
+now let's take a look at
+multi-level inheritance example i'll
+start off
+with creating exactly the same
+parent class called animal
+then
+i'm i'm already created another class
+i'll create
+same child class cat
+and
+now i'll and create another
+class which will inherit cat class
+so cat has inherited animal and cat
+child has inherited cat
+let's validate its syntax
+and similarly now i'll create an object
+for cat child
+and this cat child now
+can
+invoke the same methods
+which are in child
+parent and the
+super parent
+so this is an example of multi-level
+this is an example of
+single level inheritance
+now
+let's take an example of polymorphism
+we are going to click create a class
+parrot
+and define the function fly
+and
+swim
+now we are gonna create another class
+mind you there is no inheritance here we
+are just creating an independent class
+called penguin
+and same methods now the same name
+fly
+and
+swim
+okay
+now let's make a
+function
+in which we will pass
+an object
+and bases
+that what is the instance of the
+particular object bird it the
+corresponding method will get invoked
+so let's see
+in the method flying test
+whatever instance of the bird object
+will be the corresponding of method will
+be called
+so now let's create a
+object of parrot class and then
+let's create a object of penguin class
+now in my flying test
+method
+first i'll send a object of instance
+parrot
+and then
+i'll
+send the object of instance penguin
+so now base is the instance type
+when this bird dot fly
+method will be called it will be called
+basis the instance so in the first case
+the parrot it will call this method
+and in case of penguin it will call this
+method fly
+so please note what is the output the
+output is a parrot can fly but a penguin
+cannot fly
+and it has been decided
+by the python
+at the time that which particular method
+to be invoked bases the instance
+so it's a very important concept
+now let's take an example of
+encapsulation
+i'll make a class cars
+define its init method
+now within that init method i have
+created a
+private variable with underscore
+underscore max price and given a value
+of
+9 lakh
+now i am creating another
+function called sell
+and in that i am printing the
+max price
+and then
+i am creating another function in which
+i am modifying the private variable set
+max price
+so i will pass any value in the set max
+price and it will replace
+the max price which i have set during
+the initialization at this point
+now let's create an object of class cars
+and
+see if i sell this then the selling
+price is
+9 lakh what i had in it at the set at
+the time of initialization
+now what i'm trying to do is i'm trying
+to modify a private variable
+directly
+c underscore underscore max price
+and i i i want to check
+if i'm trying to create a modify a
+private variable
+will it still show me 9 lakh or 10 lakh
+value
+and it's still showing me the 9 lakh
+value it means that i can't
+directly
+approach or access the
+private variable
+i can only modify it
+if i access it through a
+method which is set max price in this
+now i am setting the max price to
+thousand
+and now if i print what is my max price
+it will print as
+thousand
+so this is the concept of encapsulation
+you have a private variable which is
+accessible within only the methods
+of the
+class you can't access it directly
+now let's take a look at hierarchical
+inheritance
+i'll create a class employee
+and
+create a init method
+within that you have
+three variables name agent salary so an
+employee with has name agent salary
+now
+i'm going to create a class
+child class called child employee 1
+which is inherited from employee
+and child employee 2
+which is also inherited from
+employee
+so what i'm gonna do is i'm gonna create
+a
+object
+per child class
+and
+print
+so this is a typical example in which
+you have two child
+classes which have inherited from the
+single parent
+arkl in narratives
+now let's take a look at
+our last concept which is abstraction
+so now
+i'll create a class car
+and define a method
+mileage but i am not
+giving any definition to it i am just
+giving a signature mileage
+the child
+classes which will inherit abstract
+class
+will be giving the definition
+so i am giving
+creating a class
+bmw which will again
+which has inherited the car abc car but
+given the definition now
+similarly
+i am creating another class
+jaguar which has inherited the class car
+but now it is giving a different
+definition
+it's printing mileage 25 kilometer per
+hour
+and
+another class
+range rover
+and another class
+renault
+okay
+so four
+classes
+which have implemented the abstract
+class method mileage in a different way
+now i'll create an object of first
+bmw
+and
+invoke method
+mileage
+so it has method invoke the method
+mileage and bmw car and printed mileage
+is 30 kilometer
+similarly
+i'll do for renault
+jaguar
+and
+range rover
+so if you see
+the
+parent class
+abstract parent class has not
+implemented the method but just given
+the signature of the method and all
+other classes have implemented it and
+that's the concept of abstraction
+so i believe with all these concepts and
+points you had a great learning session
+and i look forward to connect with you
+in my next session
+thank you and have a good day
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

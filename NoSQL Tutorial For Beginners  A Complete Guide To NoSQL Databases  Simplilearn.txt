@@ -1,0 +1,432 @@
+foreign
+I hope you're doing well and staying
+safe I welcome you all to yet another
+interesting tutorial I hope my audio is
+fine and the screen is clearly visible
+if you guys are facing any issues let us
+know in the comment section below and
+we'll try to fix it as soon as possible
+in today's session we'll be going
+through nosql database and we'll
+understand what exactly our nosql
+database how they came into existence
+why we use them and how they are
+different from traditional relational
+databases
+let us just wait for another two minutes
+so that rest of the people will also
+join the session in the meantime guys I
+would like to update that we have
+regular updates on multiple Technologies
+on our channel so if you are a tech geek
+and love watching Tech videos consider
+getting subscribed to our Channel simply
+code to stay updated with all the latest
+Technologies and also hit the Bell icon
+to never miss an update from us
+alright as you all know we are living in
+the era of Big Data where massive
+volumes of data are generated per second
+worldwide so handling and storing these
+huge chunks of data is pivotal are
+Paramount for all the companies around
+the world traditionally relational
+databases were used to store this data
+prior to when the internet came into
+existence now in the early 1990s the
+internet gained extreme popularity and
+the relational databases could not keep
+up with the flow of information and data
+demanded by the users as well as the
+large variety of data types that
+occurred from this Evolution this led to
+the development of non-relational
+databases often referred to as no SQL
+the not only SQL are commonly known as
+nosql databases is an approach to data
+management and database design that may
+be useful for large sets of distributed
+data and unstructured data it basically
+consists of collection of Technologies
+and architecture that seek to address
+Big Data performance and scalability
+issues that relational databases cannot
+address so this database is used when
+businesses and Enterprises require
+access to an analysis of large amounts
+of unstructured data now these
+unstructured data can be of any type it
+can be a text file it can be an image or
+video and others that are stored across
+multiple servers so it is important that
+we understand how this nosql databases
+work so in today's session we'll be
+going through all the concepts that are
+needed to understand what nosql
+databases are and how it they exactly
+work so without any further delay let us
+jump straight into today's topic
+firstly let us go to the agenda for
+today's session we'll start the tutorial
+by understanding what is SQL and then
+we'll look at why we use SQL and after
+that we'll understand what is nosql
+database and then we'll understand why
+we use nosql up next we'll understand
+how to use nosql and how exactly it
+works and then we'll look at some
+different types of nosql databases and
+after that we'll have a detailed
+comparison between SQL and osql database
+and finally we'll conclude the session
+by understanding some advantages and
+disadvantages of using nosql and will
+also look when to use SQL as well as
+nosql so without any further delay let's
+dive straight into today's topic on SQL
+versus nosql firstly let us understand
+what is SQL SQL as it stand is defined
+as structure query language is basically
+a standardized programming language that
+is used to manage databases and it
+performs various operations on data in
+them initially created in 1970s SQL is
+widely used by many companies and
+Technologies nowadays
+SQL is used for modifying database
+tables and index structures it is also
+used in adding updating and deleting
+rows of data it is also used to retrieve
+subsets of information from within the
+database management system
+now SQL is used to perform various
+actions such as to insert data to update
+data modify and delete the data in the
+database as well
+now when we talk about SQL it is
+important that we talk about relational
+database systems as well a relational
+database system or RDM rdbms is a
+database system that stores and fetches
+data in the form of table that is in the
+form of rows and columns tables are used
+to store data and relational databases
+about related objects each column
+contains attributes of data whereas each
+row holds a record of unique data known
+as a key which helps in making
+relationship between different data
+points that is present in different
+table which makes us easy to understand
+now these relational databases or rdbms
+are managed using SQL language
+to perform various operations therefore
+SQL codes are used to retrieve
+information from these relational
+databases by doing various interactive
+operations like using join create
+truncate delete alter and Etc
+let us now look at some popular SQL
+databases some popular SQL databases
+that are available are MySQL Oracle
+database Microsoft SQL
+server sqlite and postgresql
+now that we have understood what is SQL
+let us now understand what is non SQL
+that is no SQL sorry no SQL database is
+a non-relational database management
+system that does not require a fixed
+schema that is the data is stored is not
+stored in the form of tables in nosql
+databases
+basically it avoids any uh joining or
+creating or scaling the databases in SQL
+the major purpose of using a nosql
+database is for distributed data storage
+which is having high volumes of data
+storage needs nosql is used for big data
+and real-time web applications like for
+example companies like Amazon Facebook
+Google correct terabytes of users data
+and every single day
+so basically nosql database stands for
+not only SQL or not SQL and it is
+introduced in the year 1998 by Karl
+Strauss a traditional rdbms uses SQL
+syntax to store and retrieve data for
+further insights now instead a nosql
+database system encompasses a wide range
+of database technologies that can store
+structured semi-structured as well as
+unstructured data
+let us now understand why we use nosql
+we use
+hierarchical storage structure instead
+of a table like structure
+that means uh before relational
+databases companies used a hierarchical
+database system which with a tree-like
+structure for database tables now these
+early database Management Systems enable
+users to organize large quantities of
+data however they were complex often
+required a particular application and in
+a limited way which they could uncover
+the data that is stored now these
+limitations eventually led to the
+development of relational database that
+is the data that is stored in tables uh
+so a skill provided an interface to
+interact with relational data and
+allowing the analyst to connect Tables
+by merging on common fields But as time
+passed the demand for faster and more
+desperate usage of larger data sets
+became increasingly more important for
+emerging Technologies for e-commerce and
+other big change for that nosql has
+become the alternative for everyone
+now another reason is it is now we have
+constant addition of new features and
+functions in the nosql database right
+so that means like we know that
+technology is being rapidly evolved and
+huge enormous amounts of data has been
+released on a daily basis and it's
+important that we store this data and
+access in a quick way now noise the best
+database to use for large amounts of
+data or for Ever Ever Changing data sets
+it is also best use when you have to
+have flexible data model or need that
+don't fit into a relational model
+and finally when if if you want that uh
+there is no relationship between any
+stored data and the field is not
+important then you can use nosql as well
+let us now look at some popular noise
+scale databases some popular nosql
+databases are mongodb Apache hbase
+Cassandra redis neo4j and Etc
+let us now look at some types of nosql
+databases that are present
+firstly we have document oriented the
+document database typically stores
+self-describing Json XML and piece on
+documents they are similar to key value
+stores but in this case a value is a
+single document that stores all the data
+to related to a specific key popular
+fields in the document can be indexed to
+provide faster interval without knowing
+the key as well each document can have
+same or different data structure
+mongodb couchdb cloudant are some
+examples of document based nosql
+database next we have key value pair
+database the data in this is stored like
+a key value pairs key value pair data
+stored in database in the form of a hash
+table each key is unique in this case
+the value stored may be an integer
+string a binary object a Json object Etc
+the key Value Store based database is
+simplest database among all the data
+databases in nosql database
+redis coherents are examples of some key
+Value Store databases
+next we have column based or column
+store database in nosql which is in this
+the data stored in grouped columns
+instead of rows every column values are
+stored separately it delivers high
+performance on aggregate functions like
+count some Max minimum group of columns
+are data stored in key spaces like
+schema and rdbms key spaces contains
+group of rows or columns
+and hbase bigtable aquilmo are some
+examples of column store databases
+and finally we have graph oriented or
+graph store databases data in this is
+represented in the form of a directed
+graph it consists of notes and edges
+nodes represent an entity and any Edge
+represents the relation between the two
+nodes node H to be unique social
+networks Logistics paytl data used uh
+graphical storage database neo4j
+infinite graph Orient DB flock DB are
+examples of some graph storage database
+next let us understand how exactly nosql
+database works for that I am going to
+take the example of mongodb database now
+mongodb is based on the nosql document
+store model in which data objects has
+stored as separate documents inside a
+collection instead of a traditional
+column and row of a relational database
+now uh mongodb groups data through
+Collections and basically a collection
+is simply a grouping of documents that
+have a SIM or similar purpose a
+collection acts similarly to a table in
+a traditional SQL database however it
+has a major difference a collection is
+not enforced by a strict schema that is
+it does not have any fixed schema at all
+instead documents in a collection can
+have slightly different structure from
+another as needed this reduces the need
+to break items in a document into
+several different tables at as it is
+often done in an SQL implementation now
+coming to document a document is a
+representation of a single entity of a
+data in mongodb database a collection
+consists of one or more related objects
+major difference that exist between
+mongodb and SQL is that in that
+documents are different from rows row
+data is flat with one column for each
+value in the row however in mongodb
+documents can contain embedded
+sub-documents providing a much closer
+inherent data model for your
+applications now if I just have to map
+what uh what are exactly and how it is
+different from rdbms a collection in a
+mongodb is equivalent to the tables in
+rdbms and a document in mongodb is
+equivalent to the rows in rdbms and
+Fields in mongodb is equivalent to the
+columns in rdbms
+so this is how a document looks uh in a
+mongodb as you can see this is similar
+to a row in rdbms but we just have a
+field and a value that is taken
+separately in instead of a tape tabular
+value
+and another important thing to note note
+here is that mongodb supports Dynamic
+schema which means one document of a
+collection can have a number of fields
+while the other document can have less
+or same number of fields that is if a
+collection can have a four Fields while
+other document can have only just two
+fields which is basically not possible
+in a relational database which does not
+exist uh as it it does not support
+because it needs a particular and a
+fixed schema in that
+let us now understand some differences
+between the SQL and nosql firstly SQL is
+a relational database and nosql is a
+non-relational database that means SQL
+databases are in the form of tables that
+can contain rows and columns and they
+have fixed logical schema design all the
+data in SQL is arranged in tabular
+format and it is well suited for complex
+queries and on the other hand nosql
+databases is a non-relational database
+that means it does not store data in the
+form of tables and contains Collections
+and inside every collection there is a
+document that contains the data of a
+single entry we store this data is
+stored in the form of a key value pair
+unlike SQL where we store data under the
+fixed schema
+so as we discussed uh SQL has a fixed
+schema design and structure and nosql
+has a dynamic schema design and
+structure
+SQL can handle complex queries whereas
+no SQL can handle large volumes of data
+now SQL is vertically scalable
+now uh SQL databases support vertical
+scaling which means it improves a single
+server by increasing Ram SSD or CPU in
+vertical scaling we are restricted to a
+single system and we can improve it as
+much as we want till the Practical limit
+whereas in nosql database we can do
+horizontal scaling because they support
+distributed computing or distributed
+systems in horizontal scaling we can add
+another node or computer for better
+performance and we can add in number of
+such servers or nodes as per a
+requirement so as discussed we can add
+as many as nodes as we want and this is
+why we prefer nosql for high scalability
+because there is no limit for scaling
+and finally it follows acid properties
+that is atomicity that means transaction
+should be performed at once or it
+shouldn't happen at all consistency that
+means the state of a database should
+remain consistent before and after the
+transaction isolation that is one
+traction one transaction shouldn't
+affect another transaction and it
+shouldn't and should be independent and
+we lastly durability now successful
+transaction should be reflected even if
+there is any system failure whereas the
+noise skill follows cap property
+that is consistency availability and
+partial tolerance
+let us now discuss some advantages and
+disadvantages of using nosql firstly let
+us discuss about the advantages
+nosql provides high performance and
+scalability and it also has a lot of
+availability and flexibility it is open
+source and it is schema less as well
+that is you can directly uh download the
+nosql databases from the internet unlike
+some commercial databases that are
+available in the internet
+while on the other hand there are some
+disadvantages as well that is it is it
+lacks the standardization that means it
+does not have a fixed query uh in order
+to retrieve data from the databases
+which result in in consistency issues
+and since it has all these consistency
+issues and does not retrieve data
+properly it it has a limited query
+capabilities
+so that brings us to the end of today's
+session on SQL versus noise scale guys
+so you might have a doubt that when you
+need to use SQL and when we need to use
+nosql now SQL is easiest to work with
+relational databases that is it is
+useful when you want to perform complex
+queries using various operations like
+join and Etc and if you want to perform
+quick data storage and retrieval
+operations you can use SQL whereas uh if
+you want you can use nosql if you are
+designing a distributed systems and if
+you want a hierarchical storage
+structure instead of a tabular like
+structure also nosql gives you the
+flexibility to create Dynamic structures
+and and can add features as you as you
+want
+as also there is no asset properties
+during the creation of any applications
+while creating a
+noise scale databases as well so in this
+way you can use nosql and SQL as per
+your requirement
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

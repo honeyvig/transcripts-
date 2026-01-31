@@ -1,0 +1,201 @@
+foreign
+by this point that open year has created
+a wide range of tools and Technologies
+like Dali open year codex jpt and many
+more that are used across various
+domains and industries the tools that
+are created by openai are beneficial to
+everyone irrespective of the field they
+work in users can apply these tools and
+Technologies to improve efficiency
+accuracy and decision making on that
+note welcome to Simply learn YouTube
+channel today we are here with an
+interesting video on openai whisper
+whisper is after all a tool that is
+based on artificial intelligence if you
+want to become an expert in the field of
+AI and machine learning then take up the
+professional certificate program in EI
+and Ms by simply learn and master those
+necessary skills check out the link in
+the description for more details so have
+you ever needed a transcription tool to
+understand your speech and translate it
+into text well transcription tools can
+help for several reasons such as
+traveling Healthcare business and
+especially in education where students
+prefer to take notes in written format
+instead of listening to a recording
+multiple times to take notes they can
+use a transcription tool to convert the
+audio into the text quickly therefore in
+September 2022 openai introduced a tool
+called whisper to convert speech to text
+or in other words we can say to convert
+transcripts spoken words into text it is
+an open source tool that approaches
+human level robustness and enables it to
+accurately transcript spoken words with
+a high level of accuracy despite the
+fact that there exits free speech to
+text apis and EA models like assembly AI
+Google speech to text and AWS transcript
+if choosing the finest open source
+speech to text conversion tool might be
+difficult you may need to consider its
+accuracy performance features such
+security and other factors so open EI
+has created whisper a Cutting Edge
+machine learning space to text system
+that uses deep learning algorithms to
+convert audio into text the best part
+about this tool is that it works with
+various languages even when there is a
+lot of background noise and it works
+regardless of accent whispered was
+trained using 680 000 hours of
+supervised web-based multilingual and
+multitask data openia uses a large and
+distinct data set to enhance the model
+efficiency also it permits translations
+into English from various languages as
+well as to transcription in those
+languages as a free tool whisper can be
+installed and used right away so now
+let's have a look at the whisper
+installation so let's run the command
+using Google collab so here you can go
+to the files and click on the new
+notebook and once you click on that you
+can change the name here
+so let's give a name
+whisper and then so from the GitHub you
+can take the command to install the
+visible so I will provide the GitHub
+Link in the description so you can check
+that out
+so when you scroll here it has given the
+explanation of what is whisper and the
+approach
+then you can see the setup so if you
+haven't installed pytots or any
+necessary libraries then you can just
+click on pytorch to install Python and
+here you can click on this hanging face
+Transformers to you know install
+libraries and then since we are you know
+running it in the Google collab we need
+not install any of those just click here
+copy this command and in Google collab
+you can just paste it and you can run it
+so once you run
+the The Whisper tool will be installed
+so as you can see it is successfully
+installed so next as you scroll here you
+can see you can copy this
+so here it is another tool that has to
+be installed on your system so which is
+available for most packages so you can
+see for Ubuntu for a Windows Mac so
+let's copy this and let's run it so
+before that just click on run time
+and change runtime you can give
+GPU and Save
+and you can run this code
+so once it is done
+you can just scroll
+and here you can see the command line
+usage
+so just copy this command maybe this
+copy
+and paste it here
+so here instead of all this let's give
+the audio file
+if you don't have audio so let's do one
+thing
+so now I will show how a whisper tool
+will be taking audio file and converting
+it into a text
+so now let's look out something one
+evening heena was making her way through
+the road that ran through the fields
+with her new bicycle by her side when
+she was safely away from the side of her
+friends all of whom were already expert
+at riding their bicycles heena started
+practicing again tomorrow she would
+finally join her friends for going out
+to the playground and not be late so
+let's save
+and already saved so you can just take
+this so you click on the files
+and go to the folders that where you
+have you know save the recordings
+so take this
+and paste it here
+okay let's rename this
+so let's give it story
+okay now you can run this
+so when you get an error saying that
+command not found then maybe you have to
+run these comments once again so just
+run the comments and check the you know
+check the output
+so as you can see the screen here the
+audio you know it's checking or
+detecting the language that we have used
+so it says that the detected language is
+English and then
+has translated or you can say it has
+converted or the audio file into the
+text
+so now let's give the another audio
+so here I have an audio
+so when you upload here it should show
+so here you can see the audio
+now
+with MP3 audio
+select MP3 audio
+and let's give whisper
+and copy this
+filing
+and paste it here using the double
+quotes
+and run it
+the language that we have used in this
+audio is again English and this is the
+audio that it has converted into text
+so here you can see this diagram or we
+can say architecture
+so this is a simple encoder decoder
+Transformer used to construct The
+Whisper architecture and end-to-end
+strategy and encounter receives input
+audio that divides into 30 second
+segments and transforms into a log mail
+spectrogram with the help of specific
+tokens that instruct the single model to
+carry your task like language
+identification phrase level time
+stamping multilingual voice
+transcription and to English speech
+translation a decoder is trained to
+predict the corresponding text caption
+so guys what are your thoughts on the
+how effective the whisper tool by open
+EI is for space to text conversion do
+let me know in the comment section if
+you like this video share it with your
+friends before I sign off make sure you
+subscribe to our Channel and hit the
+Bell icon to get all the updates we'll
+be back with more such interesting
+videos until then keep learning and stay
+tuned to Simply learn
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
