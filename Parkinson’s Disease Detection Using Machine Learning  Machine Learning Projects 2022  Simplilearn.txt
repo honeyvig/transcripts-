@@ -1,0 +1,680 @@
+foreign
+today we will take you through the hands
+of live demo of how you can detect
+Parkinson's disease using python
+before we start I hope this screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them so
+wait for some more minutes to let other
+people join until then let me tell you
+guys that we have regular updates on
+multiple Technologies if you are a tech
+geek on a continuous hunt for the latest
+technological Trends then consider
+getting subscribe to our YouTube channel
+and press that Bell icon to never miss
+any updates from Simply learn
+okay great I think we can get started so
+in today's session we will go through
+the hands of lab demo of how you can
+detect Parkinson's disease using machine
+learning we will perform different
+function and analyze the data set using
+python to find who has Parkinson's
+disease and who has not using different
+different python libraries
+before we move on to the programming
+part so here is one question for you
+guys
+will give you exactly one minute for
+this you can comment or you can give
+your answer in the chat section so I can
+see if the answer is given by you are
+right or wrong
+so the question is which of the
+following character is used to give
+single line comments in Python
+option A double slash option b hash
+option C star option D slash star let us
+know your answer in the chat section
+so I am starting the timer of one minute
+you can just type your answer in the
+comment section or in the chat section
+so I'm starting the timer of one minute
+let us know in your answer in the chat
+section
+foreign
+characters used to give single line
+comments in Python
+double slash has star slash star
+I kindly ask that everyone take part in
+this
+which of the following characters is
+used to give single line comments in
+Python
+15 seconds remaining which of the
+following characters used to give single
+line comments in Python
+one
+after the allotted time has passed Those
+Who provided the correct response will
+receive a response and those Who
+provided the incorrect response will
+receive one now let's move to our
+programming part to implement
+prediction system of Parkinson's disease
+so first we will open a command prompt
+to write command to open jupyter
+notebook so here we will write Jupiter
+notebook
+press enter
+so this is the landing page of Jupiter
+notebook and select a new Python 3
+so this is how the Jupiter notebook UI
+looks like so at first we will import
+some major libraries of python which
+will help us in creating a prediction
+system of Parkinson's disease
+so I will write here first I will rename
+this
+Parkinson
+prediction
+so I will write here
+quote
+numpy
+as NP
+and the second one is import
+pandas as PD
+and the next one is
+from sqln
+port
+svm
+then from
+SK learn
+dot matrix
+import
+accuracy
+underscore then score
+after that from
+Escalon
+Dot pre-processing
+import
+standard
+scalar
+then from
+SK learn
+dot model
+underscore selection
+port
+train
+underscore test
+underscore split
+then press enter yeah
+so numpa is a python Library used for
+working with arrays it also has function
+for working in the domain of linear
+algebra and matrices
+it is an open source project and you can
+use it freely numpy stands for numerical
+python
+and the second version pandas
+panda is a software Library written for
+the Python programming language for data
+manipulation and Analysis in particular
+it offers data structure and operations
+for manipulating numerical tables and
+Time series
+Escalon the most effective and reliable
+python machine learning library is
+called sqln or scikitlan
+through a python consistency interface
+it offers a variety of effective tools
+for statical modeling and machine
+learning including classification
+regression and many more
+svm svmr utilized in web pages and
+chosen detection phase identification
+email Gene classification and
+handwriting recognition
+among other applications we utilize svm
+in machine learning for some reason
+including this
+both classification and regression
+linear and non-linear data are supported
+Escalon matrices the SQL and matrices
+module implements several laws score and
+utility function to measure
+classification performance
+some matrices might require probability
+estimate of the positive class
+configuration value or binary decision
+value
+and the next one is accuracy score in
+Python the accuracy score function of
+the sqln matrices package calculates the
+accuracy score for a set of predicted
+labels against the true labels
+SQL and pre-processing the SQL and
+pre-processing package offers a number
+of universal utility function and
+Transformer classes to modify
+unprocessed feature vectors into a
+format better suited for the subsequent
+estimators in general standardizing the
+data set in advantages for learning
+algorithm
+then standard scalar each feature of
+variable is scaled to unit variance once
+standard scalar has is moved this mean
+this process is carried out
+independently based on features since
+standard scalar estimate the empirical
+mean and standard deviation of each
+feature if they are present in the data
+set
+and the last one is train test split
+python train test split method divides
+array or matrices into random sepsis
+for the train and test set of data we
+will import the train test split
+function into our application as shown
+import the train test split variable
+from the sqln model selection
+so after importing major libraries let's
+import data set
+so for that we will write here
+DF equals to
+PD dot read
+underscore CSV
+sorry CSV
+then data set name
+disease
+dot CSV
+you can download this data set from the
+description box below so let's see our
+data set now so here I will write DF
+so this is how our data set looks like
+with 195 rows and 24 columns
+so here you can see like we can't see
+all the 195 rows okay like top five rows
+and
+so
+here you can see the three dots
+this three dots but if I want to see all
+the 195 rows so for that I will write
+here
+Ed dot set
+let's go option
+display
+dot Max
+underscore columns
+here I will write PD dot set
+option
+display
+dot Max
+close
+comma none
+and here I will write the data set name
+DF
+yeah
+so you can see now we are unable to see
+the all the 195 rows
+okay
+all the 195 rows
+so moving forward we will use head
+function to see only top five rows
+so first I will do like this
+okay here I will write
+DF dot head
+so here you can see we can see only top
+five rows of our data set
+so
+so basically head is used for showing
+first five rows of the data set
+if we will use tail instead of head so
+it will show last five rows of the data
+set
+so let's move forward and see
+and using info function to see the
+information about the data set
+so I will write here DF dot info
+yeah
+so the data frame information is printed
+by the info method the data includes the
+total number of columns their labels
+data kinds memory use raise index and
+the number of cells in each column like
+non-null values note that the info
+method does not indeed print the
+information
+okay so we all know all the column names
+and the data for types so here you can
+see these are the column names and
+non-null values then data types
+okay
+yeah so moving forward let's see some
+statical values using describe function
+so for that I will write DF Dot describe
+press enter yeah
+so here you can see all the statical
+values of every column like mean
+standard deviation count like 25 percent
+50 percent 75 percent the maximum value
+of that particular column okay for every
+column
+so moving forward let's see how many
+columns and rows are present in the data
+set using the shape function
+for that I will write here
+DF dot shape
+so here you can see we have 195 rows and
+24 columns present in our data set
+okay like 190 it represents
+rows and this represents columns okay
+so moving forward we will see how many
+null values are present in the data set
+so for that we will write
+DF dot is null
+then dot sum
+then press enter
+is showing data frame objects here oh
+sorry for that
+this is is null
+yeah then press enter yeah
+so here you can see there is no null
+values present in our data set no zero
+zero Z all the zeros are there
+so we can say this is a good data set
+okay
+so I will just
+yeah so moving forwards we will
+distribute our Target variable columns
+okay
+so for that I have to write here DF
+status
+status is our Target variable okay
+Target column
+dot value
+underscore
+counts
+and press enter yeah
+so here you can see zeros and ones like
+147 ones and zeros are zero sorry 48 are
+0.
+so one means those who are affected by
+the Parkinson and 0 means negative those
+who are not affected by the Parkinson's
+disease
+so moving forward what we will do we
+will group database on the target
+variable okay so for that I have to
+write here DF dot Group by
+then status
+dot mean
+yeah
+so here you can see that we group data
+based on the target variable for each
+column for each column
+all the 24 columns okay
+so I hope you guys understand till here
+if you have any question or any query
+regarding any code like any code till
+here
+so you can just put us in comments or
+our team will surely provide you the
+correct solution okay
+so moving forward like we what we will
+do we will separate features and Target
+variable
+so what we will do we will drop the two
+columns like first one is name column
+and the second one is status column and
+in another variable we will put status
+column
+let's see
+I have to write x equals to
+at DF dot drop
+then columns
+equals to
+first one is name
+and the second one is
+status
+okay
+comma X is equals to
+1.
+then in y
+I will put
+DF
+status
+so let's print X and Y
+so I will print here
+print
+y here
+yeah
+so here you can see all the X values
+and here you can see all these status
+value like zeros and ones only
+zeros and ones okay
+let me do this yeah
+so moving forward we will split data set
+into training and testing using train
+test split function
+so for that we will write
+X
+underscore train
+comma X
+underscore test
+comma
+y underscore train
+comma
+y underscore test
+also
+train underscore test underscore split
+comma y comma
+test
+underscore
+size
+equals to 0.2
+comma
+random underscore State equals to 2.
+yeah
+so here what I did I split training and
+testing data into 80 and 20 ratio eighty
+percent for training data and twenty
+percent for testing
+in prediction like this is the best
+ratio
+so moving forward let's see how many
+rows and columns are present in training
+data and in testing data so for that I
+have to write your print
+dot shape
+comma
+X underscore train
+dot shape
+comma X underscore test dot ship
+yeah
+so here you can see
+like in training and testing there are
+22 columns why because we already
+dropped two columns name and status
+okay let me show you first
+and we checked this before there are 24
+columns okay
+so now we have only 22 volumes why
+because we dropped the name and Status
+column
+so X train has 156 rows this 156 rows
+why this is 80 percent of 195. okay and
+this is 20 of 195. this is training this
+is testing
+so I hope you guys understand till here
+if you have any question or any query
+regarding any code or any machine
+learning topic and python so you what
+you can do just put us in comments our
+team will shortly provide you the
+correct solution
+so moving forward what we will do we
+will do data standardization okay
+so the process of transforming data into
+a standardized format so that user may
+process and evaluate it is known as data
+standardization
+most businesses use data from a variety
+of sources including databases data
+warehouse Lakes cloud storage and
+storage areas
+okay so for that I will write SS equals
+to
+standard
+killer
+we all know what is standard scalar
+yeah so press enter
+so we use a standard scalar for it so I
+will write here SS dot bit
+then X underscore train SS means
+standard scalar okay
+don't confuse yeah so using standard
+scalar we fit training data into it so
+moving forward we will transform
+training data and testing data using
+standard scalar Library okay so I will
+write here x underscore train
+equals SS dot transform
+let's go train
+yeah
+then X underscore test
+equals to SS SS means standard scalar
+dot transform
+test
+yeah then press enter
+so transformation is done now let's see
+our training and testing data for that I
+will write here print
+X underscore train
+so this is our training data
+and print
+X underscore test
+so this is our testing data okay
+yeah so I hope you guys understand till
+here if you have any question or any
+query regarding any code or any machine
+learning topic just put us in comments
+our team will shortly provide you the
+correct solution so moving forward we
+will train our model using svm method
+SMR utilized in web pages intrusion
+dissection page identification email
+Gene classification and handwriting
+recognition among other application we
+utilize svms in machine learning for
+some reason including this
+okay so we will do model training using
+like svm so I will write a model
+equals to
+svm dot SVC
+that will write a kernel
+question
+linear
+and press enter
+okay
+sqln.svm has no attribute SVC okay my
+bad
+C is capital
+okay let me check
+okay
+should be small
+then press enter yeah now it's working
+fine
+so let's train svm with training data so
+for that I will write here
+model dot fit
+X
+underscore train
+comma y underscore train then press
+enter
+yeah it's working fine
+so moving forward what we will do we
+will do model evaluation so for that I
+have to write here x underscore
+then train
+underscore
+prediction
+equals to model Dot
+predict
+X underscore train
+train underscore data
+accuracy equals to accuracy
+underscore score
+y underscore train
+and then
+X underscore train
+then
+prediction
+let me do one thing I have to write D
+here
+for the better understanding
+yeah then press enter from this we what
+we are doing we are doing prediction and
+checking the accuracy of the model svm
+so like we will check accuracy for both
+training and testing data okay yeah so
+let me check first print
+accuracy of
+training
+data
+data
+here I have to write train
+underscore data
+underscore
+accuracy
+press enter
+so the accuracy of training data is
+almost 89 percent like which is not a
+bad number
+so let's check accuracy of the testing
+data
+so for that I have to write here x
+underscore test underscore prediction
+equals to model
+dot predict
+then X
+test underscore data
+underscore accuracy
+equals to accuracy
+score
+y underscore test
+comma
+X underscore test
+prediction
+yeah
+so now let's see the accuracy of testing
+data so for that type light print
+accuracy of testing
+data
+test
+code data underscore accuracy
+so here you can see the accuracy of
+testing data is almost 88 percent so
+we're done with the model building and
+the accuracy part so let's build
+predictive system now
+okay for that
+I will write
+okay first let me do one thing yeah
+so I will write here input
+data
+okay
+and we will change data into numpy array
+so for that we will write input
+underscore data underscore NP equals to
+NP dot as array
+and input
+underscore data
+okay
+so now what we will do
+we will reshape this array
+okay we will receive this number array
+for that I will write input underscore
+data
+underscore for a shape I will write only
+re
+so input
+underscore data
+score NP
+dot reshape
+then
+1 2
+minus 1.
+okay
+so now we will standardize the data for
+that I will write here s underscore data
+equals to SS dot transform
+input
+underscore data underscore
+so now I will make prediction model
+prediction equals to
+model dot predict
+the standardized digital so as data
+so you have to print
+question
+so for that I have to write here if
+if prediction
+zero equals to equals to zero
+okay
+then it should be print print
+negative
+no
+Parkinson's
+okay
+else
+print
+positive
+Parkinson
+Parkinson's found
+so we are done with the our coding part
+so what we will do I will go on the my
+data set
+open with Notepad
+so this is our data set okay we will put
+any random value
+like this value okay
+yeah
+put it here
+so here you can see the status value to
+the zero
+so
+zero means negative no Parkinson found
+it should print no Parkinson found so
+what I will do I will remove this to
+check whether model is giving
+the right answer or wrong then press
+enter yeah
+here you can see it printed Parkinson
+found
+so now we will check from the another
+one
+we'll take the random
+we'll pick
+we'll pick this one
+I will remove this status value
+then press enter
+okay something error one error picture
+okay okay okay okay
+let me copy it again
+the
+then
+copy it again here
+we'll remove this
+and then press enter
+yeah here you can see positive Parkinson
+found because there is one status is one
+so so you can see the results are coming
+amazing and correct so I hope you guys
+understand till here if you have any
+question or any query regarding any code
+so just put us in comments
+just ignore this warning
+okay
+I hope you guys must understood the
+concept of how we can detect Parkinson's
+disease using machine learning
+if you have any queries you can ask in
+the comment section below our team will
+respond you as soon as possible and if
+you want this full code just comment for
+the same
+thank you so much for being here if you
+enjoyed this video please do subscribe
+to our YouTube channel and give a like
+to this video thank you and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

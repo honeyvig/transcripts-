@@ -1,0 +1,182 @@
+hey guys welcome back to another video
+by simply done in today's video we're
+going to be learning all about point
+essentially but before we begin if you
+haven't subscribed to our channel
+already make sure to hit the subscribe
+button and the bell icon to never miss
+an update so now without any further
+delay let's begin
+this session will help you to understand
+what pointers in c is
+next pointer declaration
+later let's understand the pointer to an
+array and followed by a pointer to
+function and finally a pointer to
+pointer
+now let's get started with what a
+pointer in c is
+a pointer is a variable that holds the
+address of another variable to be
+executed which can be of data type int
+care array etc pointers are used so that
+we can easily access the memory location
+and it reduces the storage space
+pointers also help us to increase the
+speed of a program's execution
+let's look at the example
+int asterisk p where p is a pointer
+variable holding address of another
+variable of type integer
+similarly a pointer variable can hold
+the address of a variable type cad float
+array etc
+now let's look at the pointer
+declaration
+we have data type followed by asterisk
+symbol and name of a pointer variable
+to assign a variable to a pointer we use
+ampersand symbol so for example let's
+declare a variable of type int after
+that let's declare a pointer variable
+that is p and then a variable a is
+assigned to a point of variable p
+so this means that a pointer is holding
+the address of a variable type in
+now let's look at the diagram and
+understand how pointers work in c
+language
+so basically when we declare a variable
+memories are located and the value of a
+variable is stored in that memory at
+some address so in this example let's
+consider the address to be 2000
+similarly when a pointer is declared
+memory spaces are located at address
+thousand and the value stored in that
+memory is the address of a variable a
+now let's execute a program using
+pointers
+so in this particular program we have
+assigned a variable a to a pointer
+variable p
+so now p is holding the address of va
+and we are trying to print the edges of
+pointer variable p and the address of a
+variable e let's run it
+as you can see the output the pointer
+variable p holding the address of a
+variable a is similar to the address of
+a variable a holding a value 5.
+all right
+up next we have a c pointer to an array
+an array is a collection of homogeneous
+elements having same name and type c
+uses a pointer to an array to reduce the
+memory space of the program code
+in a pointer to an array the address of
+the first element of an array is
+assigned to the point of variable
+let's consider the below example
+where we have declared and initialize
+the array of elements and then the first
+element of an array is assigned to the
+point of variable p
+once the base address is assigned the
+other elements of an array can be easily
+accessible
+suppose the array elements are 5 10 15
+20 and 25
+and they are stored adjacent in the
+memory
+then the memory space is allocated to
+the point of variable at some address
+and it holds the address of the first
+element
+then by incrementing the pointer
+variable by 1 the address of the next
+element of an array will be stored in
+the pointer p
+considering the below example so once
+the pointer is incremented by 1 the
+address 1 0 0 1 will be stored in the
+pointer p
+now let's look at the example program
+using a pointer to array
+choose from over 300 in demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+as you can see from this program we will
+fetch the address of an array element
+so for that we have assigned a variable
+a to the pointer p
+and with the help of for loop
+we can access the address of the next
+element by incrementing the point of
+variable p
+so now let's run the program and look at
+the output
+as you can see we got the address of all
+the elements in the array
+now that we know pointer to array in c
+language let's move ahead and understand
+pointer to function in c
+as we all know the function is a set of
+statements that perform a certain task
+to generate an output
+syntax to declare a pointer to a
+function is return type point of
+variable followed by list of arguments
+to understand a little more about
+pointers to function let's run a program
+so in this particular program we have a
+print function
+in which we are performing addition
+operation
+and we are trying to get the address of
+a function by assigning the function
+name to the pointer variable
+so this pointer to a function must
+accept two integer basically it's
+holding the address of a function print
+now let's run it
+so successfully we got an output using a
+pointer to a function
+we got the value of a and b is five and
+three so the sum is eight and the point
+of variable p holding address of a
+function is
+four one nine and seven eight which is
+similar to the address of a function
+let's now look at the pointer to pointer
+pointer to pointer is nothing but a
+pointer variable holds the address of
+another point of variable for example
+first we have declared the integer
+pointer variable p and in the second
+declaration we have ptr which holds the
+address of another integer point of
+variable p
+let's understand better by looking at
+the diagram
+so here variable a is holding a value 5
+at the address 2009
+and the pointer variable p is holding
+the address of a variable e
+another pointer variable ptr is holding
+the address to 1000 of the integer point
+of variable p
+hope you got a clear idea of how pointer
+to pointer in c works
+so with this we have come to the end of
+this session on the pointers in c i hope
+this session was informative and
+interesting until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

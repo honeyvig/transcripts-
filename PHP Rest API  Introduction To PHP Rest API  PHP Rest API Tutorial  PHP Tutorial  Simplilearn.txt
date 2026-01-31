@@ -1,0 +1,233 @@
+hello everyone and welcome to Simply
+learn today we will learn what is rest
+API with PHP now let's get started now
+suppose you want to create a weather app
+for weather forecast in your area now to
+do that you have to set up a superc
+computer and a satellite to monitor the
+realtime weather but I wish everyone
+could be that rich now for those who
+cannot afford the setup you can get the
+same information from an existing web
+service using an API now an API acts as
+a medium between a web service and your
+application which helps you communicate
+your request with the service and get a
+response so in this video we'll be
+learning about what is rest API
+principles of rest API how does a rest
+API work and finally creating a sample
+rest API with the help of
+PHP now let's move on and see what
+exactly is rest
+API API stands for application
+programming interface Now API is a set
+of protocols which acts as a medium of
+communication between programs in other
+words it is a way two programs talk to
+each other now let us understand this
+with an
+example suppose you the client go to a
+restaurant to eat now here the
+restaurant is supposed to be the server
+how do you communicate your order to the
+kitchen here the waiter comes in the
+picture now here the waiter acts as a
+medium between you the client and
+restaurant the server to send your
+request to the kitchen and get food in
+return as per requested this is exactly
+what an API
+does so now that we have an
+understanding in of API let us look at
+what rest means in rest
+API now rest stands for representational
+State
+transfer it is an architectural style
+which defines a set of Protocols of how
+an API is
+written now rest follows a set of
+principles for the design and
+development of an
+API now it is a very efficient
+technology as rest takes less bandwidth
+over over similar other
+Technologies so now that we know what
+rest API is let us move on to
+understanding the principles on which a
+rest API is
+designed now the first principle is
+client server the second stateless third
+cachable fourth uniform
+interface fifth layered system and sixth
+code on demand now let us understand
+understand these principles one by
+one client server a rest API design
+works on the concept that the client and
+server should be isolated from one
+another and develop
+independently this helps in increasing
+manageability across various
+platforms stateless now according to
+this principle rest API should be
+stateless which means calls can be made
+independent of one another also every
+request sent from the client to the
+server must include all the info needed
+to comprehend the
+request cachable this principle states
+that a rest API should be able to hold
+cachable data the data in the response
+should be indirectly or directly
+categorized as cachable or
+non-cashable uniform interface according
+to this principle there should be a
+uniform interface across all devices
+and platforms for the interaction
+between application and
+server layered systems now rest API
+architecture includes several layers
+that operate together to construct the
+hierarchy that helps generate a more
+scalable and flexible application now
+due to the rest API layered system the
+application has better security as
+components in each layer cannot interact
+outside the subsequent layer moreover it
+balances loads and offers shared caches
+for stimulating
+scalability now the last code on demand
+now this is optional but this principle
+allows for coding to be communicated
+through the API as executable code to
+the client to be used within the
+application we now know on what
+principles an API is designed now let us
+see how an API
+work rest API makes use of HT HTTP
+methods to implement various tasks based
+on the client risk request so the HTTP
+method uses grud to perform various
+operations on the server grud here
+stands for create read update and
+delete now in case of HTTP methods post
+method is used to create get method to
+read data put method to update it and
+delete method to delete data
+so I hope you have some understanding of
+what risk apis are principles on which
+they are designed and how do they work
+now let us move on to creating a sample
+risk API with the help of
+PHP so first let us open the zamp
+control
+panel and start our Apache and MySQL
+servers
+now what I'm going to do is I am going
+to
+create a
+database for my
+API let us name it
+API and let us name the table as
+users it will have four columns
+first one would be ID integer and it
+will be Auto
+[Music]
+incremented the second let us name it as
+name third would
+be
+Ag and finally
+email now name would be a text an email
+will also be a
+text let us quickly save
+this and now we have a table for
+us now let us add some data into the
+table
+so
+Mac age would be 21 email would be
+Mac
+xyz.com now
+let us create another
+entry name could be simply
+learn
+age
+30 email simply learn atate xyz.com
+now as you can see we have added two
+rowes with the data that we just
+entered now let us move on to the visual
+studio code
+and see Zam HT
+dos and let us create a new folder let's
+name it
+API and
+open with Visual Studio
+code let's create a new file let us name
+it
+tutorial.
+PHP and now let us start writing our
+code now first what I'm going to do is
+I'm going going to connect my
+database with this
+code now since the database is locally
+hosted it will be Local Host
+root since there's no password this
+field has to be empty now
+what was the name of a database that is
+API that is what we have to enter
+here now this is a
+variable to get the response from the
+server for the database
+okay there's something
+wrong now it seems like my opening curly
+veres key is not working so I had to
+open this on screen
+keyboard we don't need you right
+now now let us create and another
+variable named
+SQL now this is Select this command will
+select all the data from a table users
+users
+again we going to need the curly
+[Music]
+braces what I'm doing here is I'm
+creating a
+variable as a counter and I'm going to
+give it a value of zero now let us
+create a v Loop and in this V
+loop I am going to fetch the
+data and display it in Json format
+now we are going to write the names of
+all the rows that we created in a
+table now I'm just going to copy paste
+tast it otherwise we'll have to use this
+on screen keyboard again and
+again second one
+was
+name agent email
+now what I'm going to do is I
+will Plus+ the
+counter now to display it as in in Jon
+format we have to
+write disant
+code with the response for
+error message and now let us and the
+code let us go and
+quickly save our
+code open a
+browser go to the Local Host post API
+this is the folder that we created now
+as you can see our tutorial. PHP is
+visible here and when you click on it
+you can see the data from the database
+being extracted with the help of API in
+JM
+format so this was all about R API with
+the help of PHP thank you for watching
+and if you like this video do hit the
+like button and subscribe to Simply
+learn stay safe and keep
+learning hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,1185 @@
+hey guys and a very warm welcome simply
+learn
+in this video on php web development we
+will learn how to create a website with
+the help of php
+we'll also be using html css bootstrap
+and mysql in this tutorial
+so get ready to create your very own
+website
+now before we get started with the step
+by step tutorial let me give you a
+glimpse of website that i'll be building
+in this video
+so let me just quickly go to my browser
+and type in localhost followed by the
+name of the folder where i have created
+the website
+so i'll be making a photo gallery
+website
+like this
+so in case you're a photographer you can
+build a similar website in order to
+showcase your talent
+and if not you can always create your
+own personal website for anything you're
+passionate about
+so
+without any further delay
+let's get right on to a tutorial
+so first things first let me show you
+the environment that we'll be working on
+while creating a website
+so we are going to be needing
+two softwares that is
+visual studio code that we'll be using
+as our id the code editor
+and the second one would be
+xampp
+now zamp is a web server solution
+package which we generally use in order
+to manage our database and create a
+local web server
+you can download it from these
+respective websites
+since i've already downloaded downloaded
+both of these softwares so
+we'll be skipping that
+now
+let us begin
+so
+after that you've installed both of
+these surface just go to your
+c drive
+locate xampp folder
+and inside the xampp folder look for
+htdocs
+and inside this htdocs
+name a folder you can
+name it anything
+i'll be naming it photo since i'm
+creating a website regarding photos
+and then right click inside this folder
+and click on open with code
+so this opens up our visual studio code
+and as you can see our photo folder is
+visible here
+now also one thing that we need to do is
+go back to this photo folder
+right click
+and create two new folders first one
+would be css so it's considered a good
+practice even if you're using a single
+just a single css file it is considered
+a good practice to create a separate css
+folder inside your project folder
+also
+create another folder
+and name it images so this is where
+we'll be keeping all the images for the
+website
+so let us go back to visual studio code
+so as you can see both of these folders
+are now visible here
+now
+go on and click on new file
+the first file
+that we are going to create is index.php
+inside this index.php will be writing
+the code for the main page of a website
+so let us start
+first
+click on an exclamation mark
+and as you can see a block of code
+already written is
+visible here now
+so
+we just need to add a few things
+first
+let us
+put the title the title would be
+of course
+go to
+gallery
+next up
+we need to add a few links to our
+webpage in order for it to function well
+so
+the first link
+would be
+this is a link to
+link this page to
+bootstrap
+you can also easily find it on the
+internet
+or you can just
+type in from here
+let me just go to the browser to check
+if this link is working
+yeah
+seems fine to me
+now we are going to add
+another
+link to it
+now this link will be for the link for a
+css file that we'll be creating later on
+since we'll be
+putting that css file inside a css
+folder
+i am going to link it to
+style.css
+so that's it
+we are done for the first part of a code
+now let's
+end this head section
+and
+move on to the body section of our web
+page
+so inside this body section what we
+first need is
+to add a few scripts
+for our page which will be responsible
+for the design of our web page
+so
+these are the three scripts
+that i'll be linking to a webpage you
+can just
+look and
+write them as it is
+also keep these three scripts at the end
+of your
+body so
+any code that will be writing inside
+body will be above these three scripts
+now let's
+design the web page
+so the first thing that we'll be needing
+is a navigation bar in a web page so let
+us quickly go to the browser
+so instead of writing an entire big
+block of code
+we can just copy it from the internet
+so
+bootstrap provides it
+you with many such designs so what we're
+going to do is we will type in navbar
+bootstrap
+and hit enter
+so as you can see
+just
+scroll down and as you can see this is
+the navigation bar
+which this code will display
+also
+there are different navigation bars
+according to your need
+along with the code so you can just
+copy any of the one you like i'm going
+to be copying this one
+click on copy
+go back to the code and
+just paste it
+so now what we have here is our
+navigation bar ready
+so
+let us go to the browser and check
+how does our web page look
+so after the host what we're going to do
+is we will write the name of the folder
+in which we are writing a project which
+is photo
+well there seems to be some
+problem since this nav bar is lacking
+the css design let us go back to our
+code and see
+what went wrong
+well yes this css file that we linked
+here after css there is not a dot but a
+slash i think it should work fine now
+well
+the problem still persists
+let me go back and recheck
+well yeah i've made some spelling error
+here
+this is bootstrap not bot strap
+and let us go back
+reload
+and yes as you can see our navigation
+bar is
+well and good
+let's go back and make some changes to a
+navigation bar the first change that i'm
+going to be making is i will
+change the color theme of the navbar
+to
+dark not mark
+yeah go back
+reload
+and looks better
+now
+here
+auto gallery
+good
+also
+since i'll be using the drop down menu
+it is absolutely up to you if you want
+to use it or not since i'll be using it
+i'll just change the
+name
+to
+categories
+and the three category
+will be the first is
+nature photo photographs
+the second would be
+architecture
+and the third
+would be
+travel
+so let's go back
+refresh categories nature architecture
+and travel so this travel looks a little
+different from this nature and
+architecture
+so as you can notice this this line that
+is dividing
+this section to this section so let's go
+back so
+that line
+comes from this part of the code so
+we'll just copy
+and paste it here
+looks good
+now that we're back we don't need
+this
+disabled
+and the search bar
+so i'll be removing that
+particular part of the quotes
+and this form2
+go back to the browser refresh
+and
+all of the parts of the
+navigation bar that we don't need are
+now have now been removed
+also this link
+would be
+for
+about section of the webpage and we will
+also add another section or another link
+that would redirect us to the contact
+part of the web page so to do that to
+add another link we will just copy this
+code
+and paste it
+and instead of about
+this will be contact
+go back refresh
+home contact about categories so this
+categories should come before
+these two
+so
+what we're going to do is we will just
+copy this section of the code
+and put it after the drop down menu
+right
+now go back
+refresh
+until we copied it instead of
+cutting it so
+it's now visible twice
+reload
+home categories contact and above
+looks perfect
+so you see now that's the beauty of
+building a website you don't have to
+write the entire code by yourself
+there are
+codes already written for all these
+kinds of stuff this navigation bar the
+carousel that i'm going to be using in
+the website the blocks of photos that we
+are going to display
+on the web page and a lot of design
+templates you can call them have already
+been written for you to use them instead
+of wasting your time and writing the
+entire
+long blocks of code
+now next up what i'm going to do is i'll
+just go back
+to our photo folder
+and inside this
+images
+i'll just
+copy the images that have already
+downloaded
+copy
+go
+back
+images and paste it here
+so now that we have our photos inside
+the images folder
+let's go back to our code and
+write
+a
+carousel code or just copy it from the
+bootstrap
+go back to bootstrap
+here
+look for carousel
+so as you can see this is what a
+carousel looks like so a big
+photo
+in
+on the front of your web page as you
+already saw when i showed you the
+website
+these are the different types of
+carousels available on the bootstrap
+website
+you can use any of them
+so
+the first one is just a single photo
+second one
+is slides of photos
+third is slides photos with this marking
+and the final one would be all of them
+combined with captions so of course
+we'll be using the final one
+so copy the code for the final
+carousel or whichever one you like and
+go back to your code
+and here
+after this navigation bar
+paste your calendar code
+click on save
+go back
+and refresh
+so
+since we haven't added any images here
+there are none visible but you can see
+this
+carousel has been added to our webpage
+so
+let's go back and now we are going to
+add the images that we just
+pasted in this images folder
+so in this carousel code
+look for
+image src so this is the location
+of the image that will be displayed
+so
+type in images that is the name of the
+folder from where you will be picking up
+the images
+for slash and
+let me just
+go back to this images architecture or
+yep
+so architecture 4
+in this alt
+type in
+architecture and here
+is the heading so this is part of the
+caption
+of the
+carousel so
+i'll be writing arcade texture
+here and i'll make this heading a little
+bigger
+it's three i think h3 would do and i
+don't want to add any more descriptions
+if you do you can write all of that
+inside this paragraph
+but
+i won't be so i'll just remove it from
+here
+i'll do the similar
+with
+this
+so
+what we're going to do is we will write
+images
+slash
+and go back
+what image i'm going to be adding nature
+4 would do
+nature
+or
+type in
+nature
+similar
+to what we did
+above
+h3
+h3 remove this
+and now
+here the last one would be
+travel
+h3
+h3 and
+let me just
+type in the
+travel five
+travel
+pipe
+and in this alt
+type
+travel
+and we are good to go
+okay let's reload
+and voila so our
+images are visible here with this
+beautiful carousel
+and you can forward them and
+well
+does this not look beautiful to you
+so architecture
+nature
+and travel
+but
+as you can see we have some problem here
+the images are way too big to fit on
+this part of the screen
+and it's going all the way down
+and this part of the carousel is not
+visible on the main page when someone
+opens the website which absolutely does
+not look good
+so
+what we're going to do for it
+now to fix this what we're going to do
+is we will go back to a code editor
+inside the css folder
+we will create the file that we linked
+at the start of our tutorial style.css
+and
+here
+just
+write this code
+margin
+0
+adding also zero
+and
+box sizing
+would be border box
+so
+now
+to display the images
+on the
+just on the main page of our website
+what we're going to do is we will
+put a dot go back to the
+main index.php and from here
+copy this
+name of the class carousel item
+go back to style.css
+paste it here carousel item
+and type ing
+and inside this
+we will define the width
+and the height of the image so the width
+would be 100
+and we are going to keep the height at
+95
+we h so that it does not go beyond the
+webpage
+let us quickly save it
+go back
+reload
+and yes
+it looks great
+and
+it's also visible on our screen now
+now next up what we're going to do is we
+will be creating different sections on
+this very
+webpage
+for the different categories that is
+nature architecture and travel
+so
+go back to the code
+under this
+carousel code
+let us start writing our first section
+that would be
+section
+class
+so
+i'll be using
+my four and by four
+the first depth
+so what we want is we want the text to
+be in the center of the page so
+the class would be text center
+and
+the first category is nature
+now the next thing that we need to do is
+we need to add the images to it so how
+do we do that
+also we are
+not to display a single image
+on
+on the entire web page what we need is
+we need to display small
+three blocks of images in a row
+so
+we
+need to create another div
+class
+and inside the class
+we will define the column
+for large
+systems
+for the
+mid ones
+and
+for the mobile devices
+so
+after you've written this class after
+you've written this div
+the images
+doesn't matter the size of the screen
+only three images will be displayed on a
+large and middle screen and a single
+image will be dis visible when open on a
+mobile phone so
+all in all your website will be very
+responsive to all the
+devices that you will be using
+let's just close it and inside this tip
+what we're going to do is
+we will link our
+image
+and
+the image
+would be
+since this is nature
+let's use nature1
+which image would give we have already
+used in the carousel
+nature 4
+so let's skip that
+and
+put the class as
+fluid
+and padding
+bottom padding would be three
+well i think
+it's
+done so this is the
+first section let's go to our page
+refresh
+so nature and our first image is also
+visible here so what we need is we need
+to display two more images in this row
+go back
+and it's now all copy and paste
+just
+not this part
+this part of code
+copy
+paste
+and paste
+so
+now
+nature to
+and nature 3
+go back
+refresh
+okay there seems to be a problem here
+let us figure out why this is happening
+okay we forgot to add the
+road if
+and without the road if the images will
+not be displayed in a row
+but of this
+so
+container
+fluid
+i'm using this
+since
+just a second
+let me paste it here
+yeah
+and
+we will create another div
+named row
+and
+our entire code
+will go inside it
+and we'll paste it
+let's go back and check if it changes
+anything and it does so our images are
+displayed perfectly
+our first section that is nature for our
+categories is complete now
+now next what we need to do is
+i think you guessed it
+we just need to
+copy this section
+and paste it
+twice
+since there are two more sections so
+after the first section
+in the second one would be
+for
+architecture
+the images we need to change
+architecture 1
+architecture 2
+and
+architecture three
+yeah
+refresh
+nature architecture
+and well nature again because we did not
+edit the third part of the code
+so the third part of the code
+will be for
+travel
+let us quickly
+add the images
+so travel 2
+travel 4
+and i
+think we use travel
+five already
+so
+travel six
+and go back
+refresh
+and travel images architecture and
+nature so
+half of our website is already done guys
+now
+what we need to do is we need to create
+two more sections for the contact and
+about so
+for the contact part of the webpage
+we'll be needing a form that we will
+then go on and
+link to a database that we'll be
+creating later on and the about section
+will be responsible to
+give
+some information regarding the website
+regarding the photographer that have
+uploaded the images
+so
+let's go back to our code and
+move on to creating another section for
+the
+contact
+so
+wait let me just copy only this section
+of the code
+and of course
+we'll be needing a closing tag
+this will be
+contact
+us
+and
+let's
+create another div
+class will be
+50 and m
+auto so
+why i'm doing this is because
+inside the contact will be creating a
+form
+where there will be columns
+and to manage the width and margin of
+these columns i am writing the class for
+it
+inside this tip
+we will write a form
+inside the form the first thing that we
+need is action
+and the action for the form
+will be
+about
+dot php this is a file that we'll be
+creating later on
+and
+the next thing is method
+which will be post
+let's close this
+create another div
+class named
+form group
+okay
+from group
+close it
+inside
+this i'll write a label
+that would be
+name
+this will be our first column input
+type text of course
+let's give it a name so this is very
+important
+so the name that you're going to write
+here
+should be
+matching should be matching with the
+name in the database
+and class
+from
+control
+now
+just copy this
+paste and
+paste
+so the second section would be for
+email
+type will also be
+email
+name will also be
+email
+third would be for the number
+let us keep the type text in case
+someone wants to enter the
+sud codes
+and let's go back
+refresh
+check
+contact us
+the fields are visible now what we need
+is a submit button
+so after this step
+let me
+create a button
+type
+submit
+class
+so this
+will make the button look
+green adding some
+css
+and
+the button would be called submit
+go back
+refresh
+submit button is here
+now
+let us also create a section for the
+about part of the page and then we'll
+move on to
+making our database
+so to do that what we need to do is
+we'll just copy this section
+for the about
+paste it here
+close the section
+and here
+let's
+start writing the code
+the class
+container
+fluid so
+why are we using this container fluid
+class is because sometimes when you
+don't use this class
+the images or text from your web page
+tends to
+create
+so you can see a scroll bar here
+vertically it tends to create another
+scroll bar
+horizontally which we don't want
+so container fluid
+close the step
+inside it
+let me create a class
+text
+center
+it will say the name mac
+you just kept some space
+and
+write a paragraph
+with a class of course
+text
+center
+otherwise the text will start from the
+extreme left it would look weird
+and
+close it
+let's add some bold
+and right
+let's see i am a
+passionate
+photographer
+interested
+in
+working
+architecture
+nature and
+travel
+photography
+next would be
+um
+[Music]
+a
+full-time
+freelancer
+with an
+experience of
+five
+yes
+i think this would do
+refresh
+oh we did not change this we'll just get
+right on to it
+contact us i'm a passionate photographer
+interested in working architecture
+nature travel photography
+freelancer and all of the things that we
+just written about mac
+we just need to change this
+to
+[Music]
+about
+and i think we're done
+yes
+so
+our web page is almost complete guys
+now we need to do some
+changes
+or add some things so the first thing
+that we'll be adding is
+an
+about
+php file
+and inside this about.php file we will
+be creating a connection with our
+database
+and fetching the data from it
+or sending the data from our form to the
+database
+so before that
+let's go back
+to the browser type in localhost
+followed by php
+my
+admin
+click enter
+but before that
+you must
+open xampp control panel and start the
+apache server and mysql server since i
+already did i did not show you the steps
+so after the mysql server has been
+started you can see this phpmyadmin
+panel and from here we can create
+databases
+so inside this phpmyadmin
+click on new
+and let us name our database as
+graphy
+click on create
+now what we are going to do is we will
+create a table
+where the data
+will be stored from our form
+let us name the table as users number of
+columns would be four
+the first column would be
+course id
+which will be auto incremented
+the second column would be named
+type variable character
+250
+third is
+email
+also
+variable character 250
+and the final was our number
+variable character
+250
+and
+click on save
+so as you can see the structure of our
+table
+the table users has been created inside
+the database photography
+now we need to go back to our code and
+write the code php code to connect
+our form to this database
+so first variable that i'll be creating
+is
+con to connect
+the database
+since a server is locally hosted the
+name of the server would be
+localhost
+root
+that is the default
+now if
+connection
+so this
+if condition will check if the
+connection is successful or not and if
+successful display
+connection
+successful
+next
+also
+add if the connection is not successful
+we should always have an error message
+connection
+[Music]
+failed
+next what we need to do is we need to
+mysql i
+select
+underscore
+bb
+and inside this
+we need to mention the name of our
+database which is
+let's just go back and recheck
+photography
+because the name is
+very important if you
+mess with the name the entire code goes
+away
+now
+let me create some variables which will
+fetch
+the data
+from the form
+in order to send them to the database
+so
+let's keep the same names so that we
+don't
+create any confusion
+email and of course
+number
+post
+so now that we have our variables we
+need to run
+a
+query
+so
+since we are fetching the data from the
+form and inserting it into a table we
+need to run a query for insert
+into the name of the table that is users
+and then
+name
+email
+number
+followed by the values that
+we'll be
+giving them
+so
+notice this is the
+name of the
+fields that you've given in your table
+and
+this
+these values are these variables that
+we've just created
+so
+inside it
+name
+second would be
+email
+and third would be
+number
+i think the query is done
+now
+to check if
+it works
+we will run another query
+and i am going to add a header file here
+because once you click on submit button
+let me just go back so if you click on
+submit button here
+the page will redirect
+to a different page which will just
+display connection successful we don't
+need that we need to stay on this page
+itself so in order to do that
+i am writing this header file
+with the location
+of
+index.php
+enter
+and
+i think we are done here
+now
+let's go back
+and
+add some details mac
+mac
+address simply
+learn.com
+number would be one two three four five
+six seven eight nine
+zero
+click on submit
+go back to your database
+click on browse
+and if the connection would be
+successful you can see the
+data here
+and we can mac
+email and number
+that's great
+so
+now let's move on to the final section
+of the website
+so
+how do we make this categories
+navbar work
+well it's pretty simple we just need to
+redirect to a section
+of a web page whenever clicked a button
+so when we click on nature we need
+a web page to be redirected to this
+section
+so
+let's just go back to our code and what
+we're going to be doing is we will
+create
+links just a second
+for every section of our webpage so
+let's go back to the first section that
+is
+nature
+and here
+right
+give it an id
+so the id for this section
+would be
+nature
+close the tag
+cut
+and
+paste it here so as you can see
+this id
+this section of our web page is enclosed
+in this id so now with this a tag we can
+refer
+our this section of the web page
+to any button
+similarly
+we will add
+another id here
+so the id would be
+architecture of course
+make sure the spellings are correct
+put it after the section
+now
+go back a id
+this would be
+travel
+okay
+just
+a second
+cut it
+place it here
+again
+what i'm going to do is instead of
+writing it again and again
+i'll just copy it from here
+paste it
+since this is
+contact us
+let me just put
+con
+detector contact yep
+and the section
+right
+and
+this will be
+of course
+about
+yes
+good now what we need to do is we need
+to refer these sections with the
+respective ids to the buttons
+go back to the navbar code on your
+webpage
+so here is a navbar code so inside it
+you can see after every button there's a
+reference you just need to
+add the name of your id
+do not remove this
+and
+architecture
+travel
+contact
+and
+about
+let's go back
+refresh
+click on categories
+okay
+what happened here okay no
+nature
+yep
+travel yep
+contact
+about so everything works perfectly now
+so while we're added let me just okay
+let me first show you
+rob
+probably
+start dot com
+one two three four five five five five
+five
+click on submit
+so as you can see whenever you click on
+submit
+it redirects you to the front of the
+webpage
+i don't want that
+yeah the database is working so just go
+back
+to the about.php
+and here we added the header location
+index.php so it is redirecting
+the
+code to the
+start of the web page
+what we need to do is we need to
+redirect it to a particular section that
+is contact so just add
+contact in front of it
+save
+go back
+scroll down
+tony
+tony
+stark industries.com
+one two three seven seven seven seven
+seven seven
+click on submit
+and as you can see after you click on
+submit the page does not go back to the
+starting it just stays here while the
+data
+has been submitted
+to our database
+now that we have completed our website a
+quick question for you guys
+if you were asked to create a website
+based on your interest what would the
+website be about
+let us know in the comment section below
+so
+that's it for this video guys thank you
+for watching and i hope you liked it and
+if you did do hit the like button and
+subscribe to simply learn for more such
+content
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,181 @@
+hello everyone
+i welcome you all to simply learn
+in today's session we'll discuss psn's
+correlation and how you can use excel
+and python to calculate the correlation
+coefficient
+before we move ahead if you haven't
+already subscribed to our channel please
+do so so that you never miss on an
+update
+let's discuss the agenda for today's
+session
+we'll start by discussing what is
+correlation and correlation coefficient
+then we'll move on to discuss pierce's
+rank correlation and its formula
+then we'll move on to excel and python
+to see how you can calculate the
+pearson's rank correlation coefficient
+so what is correlation
+the two variables are said to be
+correlated if the change in one variable
+results in the corresponding change in
+another variable
+it can be positive or negative
+for example
+the price and demand of a product are in
+correlation as the demand of a product
+increases the price increases
+simultaneously
+the value of the correlation always lies
+between minus one to plus one
+minus one shows a strong negative
+correlation
+zero shows that there is no relationship
+between the two variables and plus one
+shows there is a very strong correlation
+between the two variables
+some of the examples can be
+the time spent on e-commerce website
+versus the money spent by the customers
+it can be taken as an example of
+positive correlation
+number of unique users versus sales in a
+day are also correlated
+correlation can also be used to measure
+the patient's blood pressure and the
+medication used
+now let's discuss what is psn
+correlation
+pss correlation coefficient is a
+statistical test that measures the
+relationship or association between the
+two continuous variables
+it is known as the best method for
+measuring the association between the
+two variables because it gives the
+relationship between the magnitude of
+the association as well as the direction
+of the relationship
+the formula to calculate the psn rank
+correlation is r
+is equal to sigma x i minus x bar
+bracket y i minus y bar divided by under
+root of sigma sigma x i minus x bar
+whole square y i minus y bar whole
+square
+in this case r is the coefficient of
+correlation x y is the mean of x
+variable and y bar is the mean of y
+variable
+and x i and y are are samples of the
+variable x and y
+now that we know the pearson's rank
+correlation let's move on to excel and
+then python to see how you can calculate
+this rank correlation coefficient
+so here we are on our excel workbook
+as you can see we have two columns one
+is test scores and others are spent on
+studying
+we have to find the correlation between
+the two
+that means how the test scores and the
+number of hours spent on studying affect
+each other
+so to do that we'll first move on to
+data tab
+and we'll set data analysis
+here we'll go on to correlation and
+click ok
+now it is asking for input range
+so here we'll select both the columns as
+an input range we have the labels in our
+first row so we'll check on the labels
+now for the output range we'll give the
+output range in the same sheet so
+we'll select this results for our output
+range we click ok
+and now you see the test scores and our
+spent on studying are very positively
+correlated that is 0.98 which shows a
+very strong correlation it means as the
+number of hours spent on studying
+increases the test score will definitely
+increase
+there is one more way to calculate the
+correlation
+using function so
+to calculate the correlation between
+test scores and ask spent on studying
+we'll type equal to
+corel tab
+and now it's asking for array one and
+arrow two let's open this function
+so this is asking for array1
+so our array 1 is this range
+and our arrow 2 is our spent on studying
+when you click ok you'll get the same
+value it is 0.98
+so there are two ways by which you can
+calculate the correlation
+that's it i hope you understood this
+example
+now let's move on to python to see how
+you can calculate the correlation using
+the python
+so here we are on a jupiter notebook
+let's see how you can use the jupyter
+notebook and python to calculate the
+correlation coefficient that is
+pearson's correlation coefficient
+so first we'll feed the data that we
+have used for our excel example
+let's start by importing numpy
+now
+in our data sheet we had the test scores
+so we'll write
+this co rds goes
+and the scores were 95 36 58
+95 36
+58
+97 99 42
+97
+99 and
+42
+for the duration of ours we have
+6 1 3 5 6 2
+6
+1
+three
+five six
+two
+so we have entered both the data of
+scores and ours
+now to calculate the correlation
+coefficient we'll use the function
+corr correlation
+coefficient
+and will mention both the data sets
+that is
+scores
+and us
+now let's run to see if we get the same
+value as in excel
+so you can see we have the same value of
+0.980 as our correlation coefficient and
+it matches with our excel data
+so in this way you can calculate the
+correlation coefficient using python
+that's it
+we have come to an end to this tutorial
+if you like this video don't forget to
+subscribe to our channel and hit that
+like button
+thank you again and happy learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

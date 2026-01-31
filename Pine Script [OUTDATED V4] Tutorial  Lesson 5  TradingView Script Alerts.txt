@@ -1,0 +1,161 @@
+hey guys this is Matt welcome back to
+zen and the art of trading today's video
+is gonna be extremely short I'm just
+going to explain to you guys how to add
+alerts to your scripts so you can add
+this alert functionality to scripts that
+you create or scripts that you download
+from other people say you find a script
+on tradingview that you like they look
+off but it doesn't generate alerts by
+adding this functionality to the script
+you can basically turn any script out
+there into an alert generating script so
+I'm gonna be building off lesson 4 so if
+you haven't watched that video I'll
+leave a link in the video description
+and go back and watch how we did this
+the script just generates RSI signal so
+when the RSI goes overboard or oversold
+it just plots as visual signals to the
+chart so I'm just gonna rename this to
+lesson 5 now this is going to be
+extremely simple we're just adding one
+line of code here and this is going to
+send out an alert if this particular
+candle meets our conditions so all you
+need to type here is alert condition
+open parenthesis and now this function
+here takes three inputs takes a boolean
+input which is the trigger for the alert
+if the boolean is true then the alert is
+sent out it takes a title which is for
+the pop-up box and the email heading and
+it takes a message which is like the
+body the text body of the alert so I'll
+explain all this as I go first of all
+the bully and we're going to combine
+these two boolean values here into one
+so what we're going to do here is were
+going to say if the RSI is overbought or
+the RSI is oversold , this alert will be
+triggered now the title of the alert is
+going to be RSI signal and then we'll
+put another comma and then the message
+is going to be set to RSI signal
+detected for and now trading view added
+this
+this new cool alert functionality here
+where you can use these placeholders
+special placeholders in order to inject
+certain information from the chart so
+you can inject the closing price at a
+time etc if you hit the question mark
+here it'll do it have a whole list of
+things so what we're going to use here
+is probably just the ticker the ticker
+will do so you can see here that if you
+were to use all of this text this is
+what it would replace as so you can
+reference the exchange or the in forex
+this case the broker you can list the
+ticker symbol the currency pair in our
+case you could have the price on there
+and volume and there's a whole bunch of
+things you can choose from so I'll leave
+that for you to look through in today's
+example we're just going to be using
+ticker so if I just throw that in there
+hit save that's literally it this script
+is now ready to generate email and pop
+up alerts SMS alerts push notifications
+all of that stuff straight to your phone
+whenever one of these signals is
+generated so it's amazingly simple it's
+what my fit one of my favorite things
+about trading view is how simple they
+make this stuff and just quickly before
+I move on I just thought I should better
+point out the fact that if you hover
+your mouse over a function did you run
+familiar with it'll tell you exactly
+what inputs it takes so you can see here
+it takes a condition a title and a
+message and if you hold down ctrl or
+command on a Mac and you click on the
+function it will pop up this help box
+which will explain in great detail what
+the function does so now if you hit the
+create alert button the way that you
+would set an alert for the script is you
+just come down here and click the name
+of your script and that's it it's ready
+to go you select your options here
+notify an app show pop-up etc you can
+play a sound whatever you like and you
+can change the message down here so yeah
+that's up to you that's personal all of
+this is personal preference but up here
+in under options you can set how the
+alert is triggered so you can set set it
+trigger only once and that means that if
+the signal shows up on your chart you
+get one alert and then the alert will
+disable itself once per bar means that
+it will repeat every time there's a new
+bar so if you get multiple signals like
+this it'll send out an alert on this one
+then you won't get an alert for these
+this to these two candles here but then
+you get another one here another one
+another one all in a row so that's
+pretty helpful for day trading but if
+you are trading in the higher time
+frames it just gets annoying so you
+probably don't want to have that set my
+favorite one to use is once per bar
+closed so this will only trigger see
+once per bar will trigger even before
+the candle closes so if you get an alert
+here say that this next candle went
+overboard and then you got an alert st.
+was overbought but then the candle
+closed and the signal was invalidated
+you still get an alert even though the
+setup didn't really occur so once per
+bar closed is my personal favorite
+setting to use that means it will only
+send out alerts for confirmed signals
+and once per minute it's
+self-explanatory
+and that's it all you do is hit create
+it'll be added to your list of alerts
+let me clear out some of these inactive
+alerts and there you go done simple as
+that so if I just quickly change these
+settings to the traditional RSI values
+just for this example hit OK and create
+a new alert
+I'll take show pop-up so we'll get an
+actual pop-up to my screen I'll change
+this to that change it to once per bar
+closed and hit create then once this
+candle closes here we should get an
+alert sent to our charting platform and
+my phone so let's wait and see what
+happens
+three two one dawn and there we go
+there's our alert and I can hear my
+screen beeping in the background she's
+probably gonna wake my girlfriend up
+it's a bit early here in the morning so
+whoops forgot about that but anyway
+that's it done so that's the end of this
+lesson
+good luck with your trading good luck
+with your coding and I'll see you in the
+next lesson where we'll go over how to
+detect
+patterns see there have a great day
+goodbye
+[Music]

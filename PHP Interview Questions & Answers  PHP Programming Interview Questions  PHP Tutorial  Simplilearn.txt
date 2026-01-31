@@ -1,0 +1,861 @@
+hey guys and a very warm welcome to
+simply learn in this video we'll discuss
+some of the frequently asked questions
+in php interviews
+now the questions are categorized in two
+sections beginner and advanced questions
+so without any further ado let us get
+started with the beginner questions
+now the most basic question
+is what is php
+so php stands for hypertext preprocessor
+it is a server-side scripting language
+that is embedded into html and is
+generally used for dynamic web
+development
+php is also a very compatible language
+that is it also works efficiently with
+almost 20 different databases such as
+mysql post resequal etc
+next question
+what is a session in php
+now sessions in php are used to store
+data for users under a unique id which
+can be then used across multiple web
+pages of a website
+next what is peer in php now peer
+stands for php extension and application
+repository
+it is a framework and repository for the
+reusable components focus on reusable
+components of php containing code
+snippets and libraries
+next
+is php considered a case sensitive
+language so this is a very often asked
+questions in interviews
+so php is partially case sensitive since
+variables in php are case sensitive
+while functions and user defined
+functions are not
+next
+name different types of data types in
+php
+so different data types in php include
+integer float
+string
+boolean
+array object
+null and finally resource so there are
+total eight different data types that
+exist in php
+next question
+how is echo different from print
+now echo it can output multiple strings
+at a time while in case of print it can
+output only a single string
+now echo does not have a return value
+while print always returns one
+that is the reason that is echo is
+faster because it does not have to
+return a value
+while it is print is slower in
+comparison to echo because it always
+returns a value now as you can see
+both of these commands echo and print
+are used in the exact same way
+next
+what are the rules for naming a variable
+now there are certain rules which you
+have to follow or certain
+good coding practices which you have to
+follow while naming a variable in your
+php code
+so variable name must always begin with
+underscore or a letter so it cannot
+begin with a number or a special
+character for that matter next variable
+names can include numbers but not
+special characters so suppose you want
+to name your variable number one to
+three so you can use this variable but
+you cannot use number at the read one
+two three since special characters are
+not included
+next a variable in php is declared using
+this dollar sign followed by the
+variable name
+now as you can see this is how we
+declare a variable dollar my underscore
+variable you can also put a number in
+between or at the end while naming a
+variable just not at the start
+next
+name some popular php frameworks so some
+of the popular php frameworks include
+symphony codeigniter cake php and
+laravel
+moving on how to check if a defined
+variable is null or not
+so is a thank function is used to check
+if the defined variable has any value or
+not so to use this suppose you have this
+block of code in front of you so
+suppose you want to check if this x
+variable that you've defined is null or
+not so what you do is you put the is it
+function inside the if condition
+and it will return true if it's
+not null
+while it will return false
+if it is a null value since it is not
+null it returns true and we can display
+echo as variable x is not null while in
+the case of variable y it is a null
+value synth so
+the if condition will be false and it
+will not display anything
+next
+how are objects in php passed so objects
+in php are always passed by value not by
+reference
+next question
+how to display output directly to the
+browser now
+in cases you want to display your output
+directly onto the browser while running
+a piece of code you can use it use
+these special tags
+to display an output directly to the
+browser now as you may notice
+these tags does not contain the php
+written you can use them directly and
+replace php with an equal to sign
+followed by what you want to display and
+end it with a question mark and a
+closing bracket
+moving on
+what is defined function used for in php
+now define is used to declare a constant
+in php
+also in contrast to the variables
+there's no need for a dollar sign before
+declaring a constant since the value of
+a constant does not change
+this is how you can use the defined
+function to declare a constant suppose
+you want to declare the value of pi
+as 3.14 throughout your php code and
+which cannot be changed so we can use
+define for that
+next question is related to this
+question since
+what is constant function in useful in
+php then so constant function returns
+the value of a constant it is not used
+to define a constant but it returns the
+value of a constant so
+suppose you define a function constant
+using this defined function and you want
+to return this value
+you can use this constant
+function for that
+next
+is multiple inheritance supported in php
+so php only supports single level
+inheritance which means a class can be
+extended from only one class using the
+keyword extended
+next
+what are the different types of loops in
+php so php consists of a while loop
+a do while loop a for loop and finally
+up for each loop so php consists of
+total for loops
+next question
+how to concatenate two strings in php
+now
+two strings can be easily concatenated
+using the dot operator in php now to do
+that
+i'll show you with the help of a code
+suppose you want to concatenate or join
+these two strings str1 hello guys and
+the second string would be and welcome
+to simply learn and want to display
+these strings together so to do that you
+need to use this dot operator in echo as
+you can see
+this dot operator so first you write
+this name of the first string then
+followed by the dot operator i've given
+this space
+and then the next order operator because
+this is also going to considered as a
+string and then the third string
+variable
+and this is how you concatenate two
+strings
+next question what is the use of
+function num ar argument
+now this function as you can see
+is used to return the number of
+arguments pass in a function
+so suppose you pass a certain number of
+arguments in a function and want to know
+how many
+values or arguments for past
+you can use this function for that so
+suppose
+in this sample code you want to know how
+many
+arguments were passed in this
+sample function so to do that we declare
+a variable number of arguments and we
+will equal it to the function of number
+function number argument
+now we will display it
+and this sample has passed three
+arguments so the output would be three
+moving on
+what are super global variables in php
+now some predefined variables in php are
+known as super global variables because
+they are always accessible from any
+function file or class regardless of
+this code so in all in all they are
+globally accessible so suppose you write
+a piece of code and you declare a
+variable inside it it would be a local
+variable and could be accessed only in
+that part of the code but in case of
+super global variable they are
+accessible throughout the entire code
+they include
+global server requests posts get files
+enb cookie and session
+moving on
+how to invoke single line and multi-line
+comments
+now a single line comment in php can be
+made using this hash followed by the
+comment or
+double slash followed by the comment
+while in case of multi-line comments you
+can use this hash star and write your
+comments in multiple lines and enclose
+it with a star and slash
+what i'm going to do now is i am going
+to show you
+the
+use of these comments in actual vs code
+now let us take this block of code for
+example now suppose you want
+to add a com single line comment after
+this variable so what you will do is
+you can use this double slash
+this
+is
+a
+variable
+also you can use
+slash
+this is also a
+variable so this is a single line
+comment now if you try to write
+something else after this in the next
+line it will take it as part of the code
+not part of the comment
+so what do you do
+when you need to write multiple lines of
+comment so suppose
+you need to write two three lines about
+this
+line of code what you'll do is you'll
+use a slash
+star
+now write the comment
+this
+is
+displaying
+simply learn
+so this is a three line comment which
+you can end simply
+by star and a slash
+this is how you write single line and
+multi-line comments now let's move on to
+the next question that is
+name some common applications of php so
+some of the
+most commonly used php applications are
+system functions
+firm handling so php is very commonly
+used to handle the forms that you see on
+the web pages
+cred tasks now crud tasks are create
+read update and delete so when you will
+be working with databases this is a very
+important part of using databases that
+is crud and php is used very commonly in
+that next accessing cookies variables
+and set keys
+and finally data encryption php provides
+security through some of its frameworks
+which can be used
+and is used very commonly throughout a
+lot of websites
+so now that we have gone through the
+beginner level questions that are
+frequently asked in php interviews let
+us now move on to the advanced level
+questions
+so
+the first question would be how can you
+execute a php script from the command
+line now a php script from a command
+line can be executed by by opening the
+command line
+and inside the command line you have to
+specify the name of the script or name
+of the php file that you want to run
+suppose you want to run a php underscore
+script.php
+so you type in the name
+of the php script that you want to run
+and that particular php script will be
+executed
+next
+differentiate between a dollar variable
+and double dollar variable so what is
+the difference between the two
+now in case of a single dollar variable
+is it is a simple variable that is
+simply used to store data so as we
+discussed earlier
+it is a variable that we defined to
+store different data types such as
+integer float strings etc while a double
+dollar variable is a reference variable
+of variable so
+this is used to reference already
+existing variables
+now to use
+or to understand how these two work
+you can see this particular block of
+code here now in this code what you need
+to focus on is this is a simple variable
+hello which contains the string welcome
+to learn and we have defined another
+variable as where
+which contains a string hello now in
+this
+echo as you can notice what we are doing
+is we are using this
+also before that you need to notice is
+this is
+the same string as the name of this
+variable so first we are displaying this
+variable
+and then we are referencing this
+variable here
+so what it is doing is it is referencing
+the value to another variable so hello
+variable is being referenced so
+when you execute this block of php
+script what you get the output is hello
+since this is the variable hello and
+after that what you'll
+get is welcome to simply learn since
+this variable is a reference to this
+variable
+next
+differentiate between get and post
+method
+now
+get method is used to submit form data
+while post method is also used for the
+same feature
+so the difference between them is get
+method sends data as part of php page
+url
+sorry web page url while a post method
+sends data through http header
+in get
+the data since the data has been sent
+through the url it is displayed in the
+url of the web page so it is not secure
+while in case of post method it is a
+secure form of
+data transfer
+hence
+when developing a website for some
+security purposes
+usually we prefer post method
+next up
+how to connect to a database using a php
+script
+now suppose
+if you
+are asked this question in an interview
+what you need to do is you need to just
+write this block of code and explain it
+to the interviewer now suppose we have a
+php script
+and we want to connect it to a database
+what we need to do is we will create
+three different
+variables that is server name username
+and password now
+what we're going to do is we will create
+another variable con that will be used
+to connect it and then we'll use the
+mysqli functions which will then pass
+these variables to create a connection
+so these variable values are localhost
+username password these are the default
+values now to check if the connection is
+connected
+what we're going to do is we will
+use an if condition
+if the con variable
+gets and connect error we will display a
+error message that is connection field
+if not we will display connected
+successfully
+now as you can see here
+these names can be the name of the
+server that you're trying to connect i
+have used localhost username password
+for the default values you can use the
+name of the database that you're trying
+to connect your php script to
+next up
+what does final class and final method
+mean in php
+now a final class in php means that the
+class cannot be extended
+while a final method means that it
+cannot be overridden
+now as you can see in this block of code
+we have used the final keyword for a
+class and the final keyword for a
+function now suppose
+this final class is
+being inherited by this child class what
+the program will return is an error
+because once you use this final keyword
+this class can not be inherited and
+similarly
+suppose this function is trying to be
+overridden
+by this part of the code
+it cannot be because we have used the
+final function
+next question
+differentiate between function
+overloading and overriding
+now function overloading the same
+function is used for different purposes
+based on the number of arguments inside
+the function while in case of function
+overriding
+the same name and same argument function
+is used in parent and child class
+respectively to change the behavior of
+parent class method now let me show you
+and demonstrate the difference with an
+example
+so
+let us look at this code so suppose you
+have a function named show title which
+does have contain a single parameter and
+displays when called upon using this
+parameter displays function1
+now if you want to use the same
+name of the function for a different
+purpose what you can do is you can
+increase or change the number of
+parameters inside the function that is
+it now contains two parameters so when
+the same function is called using two
+parameters it will function differently
+and display function overloading so this
+is how function overloading works
+next from this piece of code we can
+understand
+function overriding suppose you display
+a function demo in a base class and you
+want to override this demo function
+inside the
+derived class so what you do is you make
+another function with the same name
+inside the derived class with some
+different properties as you can see it
+displays something different
+now you create an object for the base
+class and when you use this base class
+object to call this demo function you
+can use the properties of this function
+here while if you create another object
+that is object 2 for the derived class
+and you use this object to call upon the
+same demo function
+you are overriding this base class demo
+function that was inherited instead what
+it will use is it will use the
+properties of the derived demo function
+so that is how you overload or override
+a class
+function in php now let's move on to the
+next question that is differentiate
+between equal to equal to and triple
+equal operator
+so a double equal operator is generally
+used to check if the value of two
+operands are equal or not it is
+generally used in case of conditional
+statements
+while a triple equals to operator
+performs a type save comparison which
+means that will that it will only return
+true if both operands have the same type
+and the same value
+so
+you can understand this more with this
+piece of code so suppose
+in this case
+since they both are equal it will return
+true
+while in this case they both have the
+same
+type hence it will return true now
+let us
+next check this equals to equal so since
+they both are one and in php it will
+display as true since they are equal
+while
+when you are type checking that is you
+are checking if they're equal with the
+same type and same value it will display
+a false since one is an integer and the
+other one is a string value
+also if you check two different strings
+with the type save it will also display
+true
+next question
+how does exception handling work in php
+so when an exception is thrown
+code following the statement will not be
+executed and php will attempt to find
+the first matching catch block so if an
+exception is not caught a php fatal
+error will be issued with an uncaught
+exception an exception can be thrown and
+caught within php
+so what we do is we use this try and
+catch
+method to
+try the code and if an error occurs we
+can catch
+if an exception occurs we can throw it
+and the catch function will catch
+the exception and if doesn't we do not
+include the catch function it will
+result in a fatal error
+next up
+differentiate between require and
+include
+now require if a required file is not
+found it will throw a fatal error and
+stop the code execution while in case of
+include if an essential file is not
+found it will produce a warning and
+still execute the remaining scripts so
+as you can see both of these include and
+require i use in the exact same way with
+different functions next up
+explain different types of errors in php
+now php consists of mainly three errors
+notice
+warning and a fatal error now notice is
+a non-critical error which means that
+something minor went wrong during
+execution and
+a lot of times you just don't pay
+attention to it
+a warning is a critical error now it is
+given in condition where suppose an
+include function
+that we just discussed in the previous
+question
+then to retrieve a non-existent file so
+suppose you use an include function and
+the file does not exist it will display
+a warning and final is a fatal error so
+it is a critical error resulting in
+termination of the code so as we discuss
+in the try and catch part of the
+question if an exception is thrown and
+we do not have a catch function for it
+it will display a fatal error which will
+return in termination of the code
+next question
+how to call a function by a reference so
+ampersand sign is used to call a
+function by reference now in case of
+reference the actual value is modified
+if the value passed inside the function
+is also modified while in case of value
+the
+value of the original
+value does not change
+so this piece of code here is
+an example of how you can call a
+function by reference here as you can
+see this ampersand sign will call this
+function by reference and any changes
+made in the variables here will affect
+the original ones next question
+create a singleton class in php so how
+do we create a singleton class in ph
+before that let's have a look at what is
+a singleton class now a singleton class
+in php is a class that can have only one
+object and hence provides only a single
+point of access so in generally
+generally in class you can create as
+many objects as you want and it will in
+turn create
+different access points into that block
+of code
+so in a singleton class you can only
+create a single object hence
+singleton
+so this piece of code as you can notice
+is used to create a singleton class
+now in to create a singleton class
+you need to have the constructor
+function private
+now here
+as you can see a singleton class is
+created using this private construct
+and it then checks
+if there's only one instance created and
+if it is
+it functions properly and displays
+initialize only once
+next question
+how to encrypt a password using php so
+php
+can be used for encryption techniques
+now the password underscore hash
+function creates a hash password from
+the password string using hashing
+algorithm so suppose
+you create a password string and enter
+your password as password at the right
+one two three and you put it inside the
+password has hash function
+so what it will generate is we are
+echoing this generated hash
+so what it will generate is
+this so this is the this is random it
+changes every time you generate the
+password since it is encrypted and
+same when you pass
+this password to the database using
+hashing algorithm even in the database
+the password will not be visible so your
+data is secure
+next question
+mention different sorting functions for
+errors in php now let us understand this
+question in the vs code so php consists
+of different sorting functions which you
+can use to sort and give an array
+automatically so if you want to sort an
+array in ascending order what you need
+to do is use this sort function so it
+will sort this array in ascending order
+now if you want to sort it in descending
+order
+use our sort that is reverse sort
+similarly suppose you want to
+sort an array in terms of value in
+ascending order so you need to use a
+sort function that is this
+so in terms of value what in terms of
+value means is suppose in a given error
+there are keys and values so it will
+sort the array based on the values that
+is this 22 27 and 37 so the array will
+be the same since
+the values are already sorted
+now if you want to sort the array in
+according to key that is this
+you can use k sort that is key sort
+function that is provided in php so in
+case of key sort
+what it does is it will sort the array
+in key that is the first one would be d
+that is duke second m mac and the third
+r that is raw
+now if you want to sort
+this
+array
+in descending order in terms of value
+you use instead of a sort you use a
+reverse sort
+similarly if you want to sort an array
+in terms of key
+in descending
+you use k instead of k sort k r sort
+that is k reverse sort so these are the
+different sorting functions that are
+inbuilt into php moving on
+what will be the output of the following
+code now
+if this code is given
+let me give you some time and try to
+pause this video and think of what will
+be the output of the following code
+so the output of this code will be 21
+comma 21 or 2 1 comma 2 1
+how did it happen
+but before that if you got it correct
+congratulations
+but if you want to understand it see
+a is a variable that contains the value
+1 while a b is a variable that is
+getting the value of a variable through
+reference
+now we make changes in the b variable
+with 2
+followed by this variable again which is
+calling the value of a by reference so
+if we make changes here we also make
+changes in the value of a now if we
+display this since the value of a is
+already changed by reference it will
+display 2 1 that is the value here and
+again since the value of b is already 2
+1 it will again display 2 1.
+moving on
+what are construct function and destruct
+function in php so a constructor or
+construct function is automatically
+invoked when a new object of a class is
+created and then can be used to
+initialize value in class
+so when you create a object
+an object for a class a constructor
+function is automatically invoked
+but this can also be so it does not
+contain any value when it is invoked but
+you can also use this construct function
+to initialize some properties to give
+some properties to the class
+which will act as its default properties
+if nothing or
+no new properties are given to the class
+next is a destruct now a distract is
+automatically invoked when an object of
+a class is destructed suppose you end
+the part of the code of a class you want
+you are destroying the object when
+you're ending the piece of code a
+destruct function is automatically
+invoked to clean up the resources
+next
+is how can php and javascript interact
+now php and javascript can not directly
+interact with each other since php is a
+server-side scripting language while
+javascript is a client-side language
+but there is a way that these two
+wonderful languages can interact with
+each other so we can swap variables
+since php can produce javascript code to
+be implemented by the browser so yes you
+can produce javascript code from php
+which can then be implemented by a
+browser and then it is probable to pass
+those precise variables back to php
+via a url next question is
+explain type hinting in php
+now in php type hinting is used to
+specify the expected data type that is
+array object interface etc for an
+argument in a function declaration
+now during a function call suppose if
+arguments does not match the expected
+data type the run time will display an
+error and the probe that is a fatal
+error and the program will then
+terminate now in this code here what we
+are doing is we are type hinting so this
+is this code is for string type hinting
+and this code is for integer type
+hinting now if these
+particular set of functions that have
+already specified the type they are
+expecting does not
+receive the same type of variable inside
+them the
+program will return in a fatal error and
+it will terminate so
+moving on to our final question of this
+video
+write a class so yes this is a an
+assignment a kind of assignment for you
+guys so what you need to do is you need
+to write a class to solve the following
+question which i'm going to say so
+implement a class named basketball we
+all like basketball right so implement a
+class name basketball with an attribute
+named baskets so you have to create an
+attribute name basket and initialize it
+to 0 as the starting position
+and then
+create a method name score now when the
+score method is invoked the baskets must
+increase by 1. so let's see the solution
+now so this is how you create a class
+that is basketball
+now
+inside this class what we are going to
+do is we are going to initialize the
+number of baskets that is this variable
+as 0 as the starting position so to do
+that what we're going to do is we will
+be using construct function as we
+discussed to initialize some
+default properties for the class
+so this construct function is
+used to initialize this basket's
+variable to 0. now suppose we do not
+call this function score which is
+increasing the number of baskets the
+default value will be displayed as 0
+every time now suppose we invoke this
+core function every time a basket is
+code
+this will increase the number of baskets
+by one
+so this is pretty simple and this is how
+you create a simple class which will
+perform
+the following question
+so
+thank you so much guys for watching this
+video
+hope you all liked it and if you did do
+hit the like button and subscribe to
+simply learn for more such content
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

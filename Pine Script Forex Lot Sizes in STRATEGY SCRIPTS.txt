@@ -1,0 +1,632 @@
+hey Traders welcome back to another
+video in this video I want to
+demonstrate how to calculate your Forex
+Market position size in terms of lots
+when testing scripts through the
+training view back tester system so in
+this video I'm going to be building on
+the script we created in the previous
+video If you haven't watched that video
+I'll leave a link in the video
+description but this is basically a macd
+crossover system it's pretty simple
+we're just buying crosses of the macd
+signal line below the zero point while
+trading above or below this 200 period
+moving average it's not a super Advanced
+system but it is profitable on a few
+markets so over 360 trades about 44 of
+our trades uh close for a profit and we
+made a 38 return over those 360 trades
+so there's something to this system it's
+quite interesting but one issue we have
+is that we are calculating our position
+size in terms of units now some brokers
+will allow you to trade in increments of
+a single unit so a Wanda or oanda is a
+good example of that they're a Forex
+broker that allows you to trade any
+position size you want in terms of the
+lot sizing but most Brokers will have a
+system where you can only trade standard
+Lots mini Lots or Nano lots and each of
+those different baskets of position
+sizing are basically increments of 1000
+units so a nano lot is 1 000 units a
+mini lot is 10 000 and a standard lot is
+one hundred thousand units of whatever
+currency you're trading but you can see
+here that this script is trading
+increments that do not match that lot
+sizing system so for many Brokers uh
+trading 32 530 units may not be possible
+and so our back testing results are
+going to be slightly inaccurate to what
+is realistic or what can be
+realistically achieved in real life
+given in the fact that many Brokers
+don't allow this position sizing format
+so today's lesson is going to show you
+how to do this I've already done it
+obviously to prove it's possible if I
+turn this option here use Lots instead
+of units on these numbers here will
+change there we go you can see now that
+we are trading 33 000 units which is the
+closest equivalent to that initial risk
+but in terms of lot sizes so this would
+be 33 mini lots and then we close out
+eight mini Luts which is a quarter of
+our position and then the remainder of
+our position gets closed at our second
+profit Target here so before we begin
+I've created a really simple example
+script here that goes over the pseudo
+code and the math behind this solution
+and before I even get into that I should
+mention that if in case you haven't
+noticed the training view team have
+changed the pine script editor
+dramatically so very different to what
+it used to be like I'm still getting
+used to it myself there are some things
+I really like about it and some things I
+don't like at all but
+sure we'll get used to it over time but
+anyway let's break down the code to this
+example math for lot sizing in Pine
+script so the first thing we need to do
+is get our position size in units so for
+this little example script I just have a
+user input where we can just input the
+position size just to test the code in a
+real script this is where you would
+place in your actual position size
+calculation based on your stop loss the
+distance from your entry to your stop
+loss and so on but for now let's just
+focus on the theory behind this solution
+so if I open up the settings here we
+have
+2164 units or 2.1 mini Lots what we need
+to do in order to get this as a lot size
+is we need to divide this into
+increments of 100 000 and now I've got a
+function here that I'll cut out just
+temporarily and we'll add that back in
+later because I don't want to confuse
+people let's keep it really simple for
+the moment so we're getting our units
+and now we need to convert these into
+lot format so to do that we need to
+divide our units amount by 100 000 or
+one standard lot so in this case if I
+bring over my calculator two one six
+four divided by 100 000 gives us
+0.02164 so now that pretty much gives us
+our position size in Lots so if I open
+up my window here for trading or placing
+orders if I put in a stop loss
+it doesn't matter where my stop loss is
+but if I set my risk to one percent you
+can see that I don't quite get a flat
+one percent risk here
+because my position size has been
+rounded down or to the closest mini lot
+amount so in this case that's 0.19 Lots
+or 19 mini lots and that gets me as
+close as possible to one percent risk
+based on a 46 pip stop loss now global
+Prime c460 Pips but it's actually 46
+Pips it's 460 points in this case but
+that's not relevant so just ignore that
+for now 46 pip stop loss 0.96 risk is as
+close as we can get to one percent risk
+using the lot sizing system so what I
+need to do with this number is I need to
+get rid of these decimal places because
+if I open this back up I can't type in
+0.95 I can only put two digits in here
+specified amount is not a multiple of
+the instrument quantity step of 0.01 so
+we need to round our
+0.02164 number down to two decimal
+places fortunately that's really easy
+and simple to do in panscript we can
+just use the math.round function so we
+reassign our Lots variable to math.round
+lots to two decimal places and that will
+give us 0.02 in this case since we'll be
+rounding down if this was to 6 7 4 or
+something like that this might get
+rounded up to 0.03 if you want to make
+sure that this number always gets
+rounded down instead of up you'll need
+to use a different function than the
+math.round function basically you need
+to use a truncate function that just
+strips off all of those decimal places
+regardless of whether it should round up
+or down one way to do that is to use my
+zen Library
+if you import my zen library and give it
+an alias and we type in Zen dot truncate
+this will cut the excess decimal places
+off any given number
+so if I pass that in there and replace
+math.round Lots with my truncate
+function and now while we're here you
+can see this is turned purple because
+it's a library function that's one cool
+new feature about the uh new pinescript
+editor that I do like I like how it
+differentiates between Pine scripts and
+build functions and custom functions and
+libraries but anyway if I save this
+script now and I open up the settings
+menu and change this number to two seven
+six four this should still round down to
+2000 units there we go but if I change
+this back to math.round lots to two
+decimal places and save the code
+this same number will round up to three
+thousand because the number we're
+getting when we divide by 100 000 is
+0.027 and when we're rounding to two
+decimal places that obviously gets
+rounded up to 0.03
+but if you don't want that to happen
+you'll need to use a truncate function
+like the one I've created here and by
+default this function truncates to two
+decimal places but you can also specify
+the amount of decimal places you want to
+strip a number down two but anyway for
+today's example so that we're not
+dealing with too many moving parts and
+complexity I'm just going to leave the
+standard round math.round function as
+the way we strip those decimal places
+off now once we have our position size
+as Lots rounded down to two decimal
+places in this case 0.02 that is the
+position size we would be sending to our
+broker normally under normal
+circumstances if we were to take a trade
+and our position size in the strategy
+tester told us to buy or sell
+2164 units when we enter our position in
+our broker we would actually type in
+0.02 Lots since that is the closest
+value or position size we can send to
+our broker based on this number to tell
+well the strategy tester to take trades
+with a position size based on this
+format this lot size format so that we
+get a more accurate back test output we
+need to convert this number back into
+units because the strategy tester only
+works in units at least on Forex so the
+way to do that is just to Simply
+multiply this number we have by 100 000
+which will convert it back into Lots as
+it's equivalent in units so what that
+will give us is this number here 3000
+units based on a position size of
+2764 units if we were to input this math
+into a strategy script and use this
+number as our position size that's how
+we get the strategy tester to take
+trades based on lot sizes but before we
+continue There is a cleaner way to go
+about this and that's using a custom
+function so I can get rid of all of this
+code here paste in my custom function
+and now this function here will do what
+we just did but it's a little bit tidier
+it's all kept within a custom function
+you could add this to a library and
+import that Library into all of your
+scripts your strategy scripts and then
+you have a convenient way to quickly
+convert units into lots and I need to
+get rid of that int keyword there that
+way we can pass in floats and integers
+into this function so now if I save that
+code we'll be getting the exact same
+thing so now what we can do is we can
+cut this custom function
+copy this out I can get rid of the
+script I don't need it anymore I'll get
+rid of the macd as well since we don't
+need that on the screen it's just adding
+more clutter now if I open up the source
+code to the script we created in the
+previous video again I won't explain too
+much about this script since I've
+already done that in the previous video
+go and watch that if you haven't already
+where I explain how we built this script
+but basically this script already
+calculates our position size for 4X as
+units now we can just copy and paste
+that function into this script so I'll
+paste it I'll paste it below our user
+inputs so here is the custom function
+now what I need to do is first of all
+I'll add a user input here below this
+Forex risk per trade percentage input
+I'll just copy this line of code over
+this is just a Boolean input that we can
+turn on or off and this will tell this
+script to use Lots instead of units so
+if you're trading through a broker like
+oanda you can turn this off since you
+can actually trade this position size
+but if you're trading through a
+different broker that uses lots you'll
+need to turn this on when you're back
+testing so now that we have our user
+input switch and our custom function all
+that's left to do is convert the
+position size that gets calculated in
+this block of code here into Lots so
+I've got a separate video on how this
+code works here but basically this code
+takes into account the conversion rate
+between your base currency so in this
+case that's for me that's Aussie dollars
+on this account that I'm
+um using as an example so when I'm
+trading us yen in Aussie dollars I need
+to convert my position size based on the
+exchange rate between
+um the quote currency on this symbol and
+that's what this code here does and if I
+scroll down to where our positions get
+entered here we are long trade and short
+trade you can see that I use my custom
+Library function here AV stands for auto
+view and auto view is a Forex auto
+trading plugin for Chrome that you can
+use to Auto Trade Trading view scripts
+that's why I originally created the code
+that I'm using to calculate this
+position size for the Forex markets but
+this method applies to testing as well
+so this can work for the strategy tester
+as well as real live auto trading
+through auto view and for today's
+example what we need to do is convert
+this position size value from units into
+Lots before we pass it into our entry
+function so to do that I can can use a
+ternary or conditional operator here to
+say is
+input underscore use Lots turned on
+if this is true then we want to convert
+our units to Lots
+and passing our position size otherwise
+we just want to use our position size as
+units
+so again this is a bit confusing
+especially if you're new to Pine but
+what we're saying is we're saying set
+the quantity of this position we're
+entering the position size quantity
+should be set to
+is use Lots turned on if so set it to
+units convert it into Luts
+using our custom function we pasted
+earlier
+other ways you've used Lots is not
+turned on then just pass in the position
+size as it is
+and now we need to do the same thing for
+our short entry so I'll just copy and
+paste some code over there to save time
+it's exactly the same formula
+and that's it we are now entering our
+positions based on Lots if this setting
+is turned on in the settings menu so now
+if I save my code we are nearly done
+there's one last thing I want to explain
+before we wrap up the video but
+quickly if I turn on use Lots instead of
+units
+this number here should change to a lot
+format in terms of units so right there
+is 43 mini Lots or nearly half a full
+lot but we now have a problem with our
+exit code so normally if you're just
+using a one in one out approach so just
+one profit Target or if you're exiting
+based on a candle pattern so you exit
+your full position based on a
+Candlestick pattern or something like
+that then you can stop watching the
+video here you don't need to do anything
+else to your script however you can see
+that because we are taking two profit
+targets here the first profit Target is
+25 of our initial position the second
+one is the remaining 75 we are telling
+the strategy tester to exit a
+uh position based on units still so down
+here 10 750 units we can't send that to
+our broker we can't send
+0.1075 because our Brokers only allow up
+to two decimal places so what we need to
+do is in this particular script we need
+to change our exit code slightly so down
+here is where our exits are made
+initially all it does is exit based on a
+percentage of our open position so I
+underscore Target is this user setting
+here so by default when price hits our
+first Target we take off 25 of our
+position so we exit 25 of our position
+from the entry called long
+based on if price hits our trade Target
+or our Trade Stop for that matter
+and then the second line here exits the
+remaining position the remaining 100 of
+our position based on if price hits our
+second target or our stop loss so what
+we need to do here we can leave the
+second line exiting 100 of our remaining
+position is what we still want when our
+second target is hit but our first
+Target cannot be a percentage of our
+open position we need to actually
+calculate that percentage of our open
+position and then convert that same
+number into Lots so to do that to make
+it easier to read there's plenty of ways
+we could do this but for today's example
+I'm going to create two new float
+variables
+the first one is going to be called exit
+partial units
+and this is going to be set to strategy
+dot position underscore size divided by
+100 divided by our first Target
+percentage
+so in this case I Target is 25 by
+default and so
+100 divided whoops divided by 25 will
+give us four and so our position size
+will be divided by 4 in order to get a
+quarter you could also multiply this so
+you could just do I Target divided by
+100 so flip these around
+that gives us 0.25 and then you could
+multiply that by our open position so if
+we had a thousand units open that would
+close out 250 units either method should
+work fine but that's what we're doing
+with this line of code we are
+calculating the units we need to close
+out based on the user setting here of
+how much of our open position to exit on
+our first Target when our first Target
+is hit now there's one problem with this
+line of code and that is that the
+strategy tester
+when it goes short has a negative
+position size so when we go short here
+we actually have a negative 43 000 units
+open as our position so what we need to
+do here is wrap this code in in math.abs
+the math dot ABS function is ABS stands
+for absolute it's short for absolute and
+that will convert the given number
+within the parentheses here into a
+positive number so if the number is
+already positive it does nothing if the
+number is negative it turns it into a
+positive number so in this case here
+negative 43 000 would be converted into
+forty three thousand and to get a
+quarter of 43 000 negative 43 000 and
+then it's going to divide that by four
+that gives us negative 10 750 and then
+the math.abs function will get rid of
+that negative sign and we'll have 10 750
+units but now we need to get rid of that
+750. in order to convert this into Lots
+so to do that I have a second float
+variable here that I will call exit
+partial lot
+and that is going to be set to units to
+lots and then we pass in our exit
+partial units
+variable from this line of code here so
+we have our position size we want to
+exit as a percentage of our total
+position size in units we then convert
+that into Lots now what we can do is we
+can get rid of the percentage of our
+quantity parameter in our exit function
+so exit underscore percent equals 100
+we'll exit 100 of our position qty or
+quantity is set to now if I pass in our
+exit partial units that will do the same
+thing as exiting in this case I Target
+one is 25 by default so this would be
+the same with the default settings this
+would be the same as saying quantity
+percent equals 25 but now that we've
+converted them into units what we can do
+is use a similar
+um ternary operator as we did up here
+down here so we can say uh is I
+underscore use Lots turned on
+if so we want to use this quantity to
+exit our initial position the initial
+percentage of our open position
+otherwise if used Lots is not turned on
+then we just pass in the
+units version of our initial Target so I
+can copy this line of code down into
+this parameter as well and now we're
+done
+we have a script that is entering and
+exiting our positions based on Lots as
+an equivalent of units so I know it's a
+bit confusing but if you look down here
+we are now exiting 11
+000 units instead of 10 and 750 and then
+we're exiting the remainder of our
+position 32 000 units when our second
+target gets hit by Price action or in
+this particular trade we actually exited
+for break even so our first Target was
+hit our stop loss was moved to break
+even and then the remainder out of our
+position since it didn't get hit by this
+Wick gets exited for break even and we
+exit our 32 000 remaining units and now
+the strategy tester is giving results
+based on what we would be getting if we
+were to trade this system on the Forex
+markets using Lots instead of units and
+if I come up to the settings menu and we
+turn this setting off
+that will change our numbers
+not dramatically but it will change them
+slightly so if you keep an eye on our
+returns here 38.29 when we are trading
+in units if I turn this on to Lots we
+get a slightly higher return but
+probably a slightly higher Max drawdown
+as well that's because some positions
+are slightly greater than one percent or
+whatever this setting is set to and some
+positions are slightly smaller than one
+percent because as I mentioned
+towards the start of this video
+if for example I was to take this trade
+here
+and I put my stop loss there and take
+profit there
+create a limit order and I set my risk
+to one percent I actually can only get
+as close as 0.98 which is 0.2 Lots or
+too many Lots so over time you know over
+a few hundred trades
+um this slight percentage difference is
+going to make a noticeable but not
+significant difference to our strategy
+tester results but as Traders we should
+always strive to get the most accurate
+back testing results we possibly can
+um there are limitations to historical
+data and back testing but we can
+mitigate a lot of those limitations by
+simulating as closely as possible what
+our system would have done in the past
+had we been trading it so a few of those
+things to consider is commission costs
+slippage we can know for certain in many
+cases what our commission would be we
+don't know for certain what our slippage
+might be that's an unknown factor we
+just need to account for in our system
+development and the theory and the
+conceptualization of what our system is
+possible or capable of anyway that will
+do it for today's lesson it's a little
+bit of a confusing one I understand and
+I apologize the reason it's a little
+confusing is because we're building on a
+previous lesson that was already quite
+complicated building out this strategy
+script but in future lessons when we
+cover this material I can link back to
+these two videos we can build on this
+information so whenever I create a Forex
+based system to test through the
+strategy tester we can copy and paste
+this block of code this custom function
+and basically our entry code here so
+once we calculate our stop loss distance
+in Pips that's all we need to know in
+order to use all of that code we just
+went over that I can copy and paste so
+we plug in our stop loss distance and
+the position size that is calculated
+based on that stop loss distance we pass
+that information into these functions
+and there's these blocks of code that we
+can copy and paste into future scripts
+and that will make our lives a lot
+easier
+so what I might do is cut this code and
+I'll paste it in here
+so we'll keep all of our Forex position
+sizing code in its own
+block of code that we can copy and paste
+into future scripts and that will make
+things a lot easier in future lessons to
+build on this information so what I also
+might do since we only use my zen
+library in this system to calculate the
+position size I might cut this line of
+code out from where it is and I'll paste
+it down in here as well and some of you
+might not be aware of this but we can
+also add on a curly brace here and a
+closed curly brace here
+and
+now we can actually hide that entire
+block of Code by just clicking on this
+little drop down box here if we want to
+and now all of this code Within These
+two comments can be pasted into future
+lessons and we can build on this and
+what I also might do by the next video
+that I publish is I might put this
+custom function into my zen Library
+itself so that we can have that cut out
+we'll import the next version of my zen
+Library when that's published and we'll
+have that custom function ready to go
+without needing to include those five or
+six lines of code into our scripts every
+time we want to do this unfortunately I
+can't put this code into a library or I
+would have already because you cannot
+use the request function the security
+function in custom libraries but anyway
+that will do it for today's lesson I
+will leave the source code to this
+modified script Below in the video
+description you can copy and paste all
+of this code in into your Pine editor
+and basically all you need to do is
+adjust your default strategy parameters
+based on whatever system you're trading
+and whatever Market you are trading
+crypto stocks Etc will have different
+default strategy values you'll need to
+change your user inputs based on the
+system you're trading all of this can
+stay as it is but this code here where
+we calculate the indicator values and
+our entry conditions and exit conditions
+you'll need to change this to suit your
+system and then when you enter your
+trades you can pretty much copy and
+paste all of this code here so perhaps
+in the next system that I break down in
+the next strategy video we'll take
+everything we've learned here and build
+on that build out some templates that we
+can copy and paste into future scripts
+and that sort of thing but for now I'll
+leave this video here hope you found it
+interesting and valuable and I will
+speak with you in the next video take
+care good luck with your trading and
+have a great day

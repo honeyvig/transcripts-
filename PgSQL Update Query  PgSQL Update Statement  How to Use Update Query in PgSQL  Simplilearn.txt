@@ -1,0 +1,136 @@
+foreign
+'s YouTube channel in this session we
+will learn how to use update query in
+postgres SQL but before we begin let me
+tell you guys that we have daily updates
+on multiple Technologies if you're a
+tech gig in a continuous hunt for latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+Simply learn now without further Ado
+let's get started with our one point
+agenda that is how to use update query
+in postgres SQL now we are on the PG
+admin flow so that we can execute our
+postgrad SQL commands this is similar to
+the MySQL workbench which we usually use
+for the SQL since this is the postgresql
+PG admin is the best one now let's start
+our query
+so we have the query tool opened
+now before we run the update query let's
+try to create some tables
+so let's create the simple employee
+table
+so we have the SQL like query here which
+is create keyword table keyword and the
+user defined table name that is the
+employee and the parameters which we
+will be having or the column headers we
+will be having are employee employee ID
+employee Department salary and address
+let's execute the command by pressing
+the F5 key
+there you go the table got successfully
+created and next
+step would be to add the information
+into this particular table
+we can use the insert command for the
+same
+there you go so we are using the same
+insert into keywords completely similar
+to the SQL queries and here we have
+employee table name and the parameters
+of the column headers which are the
+employee Name ID Department salary and
+address so next is the values keyword
+and we will be entering the comma
+separated values each and every Tuple
+right each and every row is separated by
+a comma and at the end we don't have to
+use the comma because this is the
+indication with States this is the end
+of the row right now let's run this
+particular command by pressing the F5
+key there you go now let's quickly check
+our table
+using the select command select star
+from
+employee
+semicolon
+F5 so this is the data that we have in
+our table right now now what is the
+update query now let's understand the
+update query in much more detail here so
+this is the set of employees that are
+working in your company and let's say
+there is some error in certain row let's
+say the employee ID is wrong or let's
+say you are going to conduct a hike
+session let's say Richard performed
+really well and Richard meets a height
+his current salary is 18 000 and he want
+to improvise our upgrade his salary to
+twenty thousand right that's when the
+update command comes into picture now
+let's discuss the syntax or update
+command
+so the syntax is as follows
+we having the update key then the user
+defined table name then the set keyword
+and followed by that the column name and
+the value then we have the WHERE class
+now let's say we wanted to improve
+reshaps salary so update keyword then
+the employee which is the table name
+after that we have the set keyword
+followed by that in the column name
+which is salary equals to value
+currently it is 18 000 let's say we want
+to increase it to 20 000 then we have to
+use 20 000 number in the Value Place
+then we have the WHERE Clause followed
+by that we have the condition where
+exactly what to change it where the
+employee ID is equals to
+the employee ID of pressure right now
+let's practically see that on PG admin
+for
+there you go we have the update keyboard
+employee which is user defined table
+name set keyword employee salary is the
+column we want to
+change then the value will be 20 000
+since it is currently 18 000 and a where
+condition and the Clause is where
+employee ID is equals to 1001 right this
+is the ID of Russia now let's quickly
+execute this command and see the output
+F5 is the shortcut key to execute the
+commands in PG admin
+and now let's try to execute this
+command once again to check if the table
+is updated or not
+Select Staff from employee
+F5 and there you go the current salary
+of reshap is
+20 000. here it is
+so that's how you use the update command
+in postgres SQL with that we have
+component of this session on postgresql
+update command if you have any queries
+regarding any of the topics covered in
+the session then do let us know in the
+comment section below and our team of
+experts will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

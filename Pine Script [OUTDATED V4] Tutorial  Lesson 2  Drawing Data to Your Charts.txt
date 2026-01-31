@@ -1,0 +1,496 @@
+[Music]
+oh my god I'm doing it again what's
+wrong with me dude
+hello everybody welcome back to lesson
+two it my Pyne script class my name is
+Matt I run zen and the art of trading
+comm and today I'm gonna pick up where I
+left off in my last video if you haven't
+seen that I'll leave a link in the
+description but let's just get straight
+into it in this video I'm gonna go over
+a couple of new methods of using pine
+script to achieve certain things on your
+charts today we're going to be covering
+plotting the lowest low and highest high
+over a set period of candles this will
+just give you an introduction to a
+couple of the pine script methods and
+functions I'll also go over certain
+things like color and linewidth and
+transparency a few things like that that
+will help you down the line if you come
+down here open up your pine script
+editor and here we go now I've already
+started this script chords lesson too
+but apart from this if you open this
+with a blank script then this should be
+all the same as mean except for the
+script name you can name your script
+whatever you like I'm going with lesson
+2 just for consistency's sake I'm going
+to be making a lot of these lessons so
+I'm just going to call them by the
+lesson name so the first thing we're
+going to do here is we're going to
+detect the highest candle over the past
+50 candles and it's really simple to
+achieve that all we have to do is type
+this in highest oops caps lock
+good old caps lock gets you every time I
+should mention real quick that a lot of
+these functions that if you use the
+wrong case it won't work if I go save
+here I'll get an error could not find
+function or function reference a lot so
+keep that in mind spelling is extremely
+important when it comes to programming
+putting in the wrong bracket putting in
+the wrong quotations anything like that
+will result in errors it's very
+important that you develop an attention
+to detail when you're coding you'll work
+that out through experience so I don't
+need to go over that too much
+but for the most part you should really
+just copy what I'm doing note for note
+this is in school they teach you not to
+not to copy other people's work in
+programming it's the complete opposite
+don't try and be too original otherwise
+you're going to run into all sorts of
+problems so the first thing we're going
+to do here is type in highest high and
+the highest high is going to be set to
+this equal sign means set this variable
+we're creating to this value we're about
+to define and here we're going to use a
+pine script function an in-built pine
+script function this all these functions
+make our job so much easier then if we
+were to have to code this stuff ourself
+and here's a good opportunity to show
+you another inbuilt feature of plan
+script that you'll find extremely
+helpful in your coding especially as a
+beginner but if you type start to type
+high and then put an e on the end there
+because we're going to type highest but
+if you press ctrl and then space it'll
+list the inbuilt functions built-in
+functions of pine script and so we're
+going for highest here we're going for
+highest and then all functions inbuilt
+functions which are equivalent to
+basically inbuilt scripts this will
+return a value we need to tell it what
+we're looking for here so we're looking
+for the highest high and we're looking
+over a period of 50 candles that's all
+we have to write in here you could write
+low in here or close anything like that
+and it will detect the highest low over
+the past 50 candles I'll go over that in
+later videos but for now just keep it
+simple because this is only lesson two
+so that's going to detect the highest
+high but if I change this close to high
+click Save and then add to my chart
+you'll see oops I forgot to set overlay
+to true that's another thing that you'll
+learn through experience when and when
+not to use that so now if I add it to
+chart you'll see it draws the highest
+high oops I made another mistake sorry
+it's a bit early in the morning here
+I've only had my first coffee
+this is drawing the high of the candle
+you know before it had said close now
+it's just drawing the high and we don't
+want that we want the highest high which
+is this variable we created here now I
+save that
+there we go you see so now it's drawing
+the highest high over the past 50
+candles so if I do this you see 49 bars
+on the fiftieth bar this line starts to
+drop and that's because it's detecting
+the next candle down then the next
+candle down and so on until it's hit by
+price action and I don't need to explain
+what this is useful for there's all
+sorts of applications of this sort of
+code but we'll go over that in later
+videos for now I'm just showing you how
+this stuff works so we're gonna write in
+one more here and it's gonna be all what
+is it wrong with me today lowest low is
+set to the lowest low of the past 50
+candles now if I come down here type in
+another plot you can have infinite
+amount of plots as far as I can tell
+I've never reached a limit so you can
+plot as much data as you want on to your
+charts and this one is going to what the
+lowest low and now if I hit save we'll
+see another line up here at the bottom
+here similar to this top line where it
+will be detecting the lowest low of the
+past 50 candles I click Save there you
+go you can see that the line started to
+rise here and then it rose and rose and
+then price action hit it and the low
+began to drop because this became the
+new lowest low over the past 50 candles
+and so on so on and then now this is a
+current lowest low and this is a current
+highest high of the past 50 candles so
+that's about it for this technique but
+what if you want to change this on the
+fly right now if you go up to the
+options you've got no way to change this
+50 value and that can no one wants that
+the the whole point of making scripts is
+to make it convenient you have to come
+down here and change this number every
+time you want to change the value that's
+going to be very inefficient so let's
+add an input function we're going to
+call this input function the look back
+so this will be the look-back period we
+get you know if you've got the RSI on
+your chart I'll just show you real quick
+for those who might not understand
+exactly what's going on here that this
+length 14 is saying calculate the RSI
+value over the past 14 bars so we want
+to do the same thing without with our
+look back now highest high lowest low
+indicator and we're going to
+call on another inbuilt function called
+input input allows you to create a
+settings menu where you can have all
+kinds of all kinds of value inputs from
+numbers to timeframes to words what you
+know whatever you want to use in your
+script so there's three or four
+variables we need to define in this
+function in order for it to work how we
+want it to the first is a title if you
+don't put a title in I'm pretty sure
+that when you open up the settings menu
+it will just be called whatever the Val
+the variable is so we want to call this
+say look-back period or you could call
+it length whatever you prefer and we
+need to define what type of input this
+is is that a number is it text is it a
+time frame in this case it's going to be
+a number and like I said in the previous
+video there's a lot of jargon in
+programming that you'll have to learn
+one of those is that numbers aren't
+called numbers in coding they called
+integers the reason for that is because
+there's all different types of numbers
+there's numbers with floating decimal
+points in pine strip that's called a
+float a floating number a floating-point
+number but we're not going to go into
+that just yet because again that's a
+little more advanced we're just going to
+deal with a normal whole number which in
+our case is an integer so we need to
+type in that this type of input is an
+input dot and then if you press control
+space here's a list of inputs you can
+choose from
+we've got bull which is short for
+boolean we went over that in the last
+video
+we've got float which I just spoke about
+which is a decimal point number that can
+be helpful for dealing with things like
+ATR multipliers and stuff like that
+we've got integer which is a whole
+number that's what we're dealing with
+today
+I've got resolution which is time frame
+basically we've got session which is a
+like real world time setting so you
+could set say between 9:00 a.m. and 3:00
+p.m.
+using this we'll go over that in later
+videos we've got source which is open
+high close that sort of thing that can
+be useful for say we could change this
+to a source input and so you could
+change this to be high hello
+close all of that in the settings menu
+but again we'll go over that in another
+video
+I'm going to keep
+today string is text just like boolean
+is a jargon for true or false and
+integer is jargon for whole number
+string is jargon for text and finally we
+have symbol symbol is the currency pair
+you're going to be trading or the market
+all that sort of stuff you can actually
+reference other markets in your pants
+trip codes so if you wanted to compare
+the price of the British Pound and the
+US dollar to say gold against the
+Australian dollar for I don't know why
+you'd want to do that but you can do it
+in this script using the symbol input
+function which is pretty cool that
+allows you to achieve some some really
+cool stuff really advanced stuff we'll
+go over that there again in another
+video so today we're going to click on
+input integer now we also want to set
+the default value of this input because
+we don't want it to be 0 otherwise every
+time you add the script to your chart
+it's just going to show the height of
+the read most recent high so we're gonna
+type in de FV al and that's short for
+default value and we're going to assign
+this to 50 and that way we can replace
+this later with this lookback variable
+and it'll look exactly the same when you
+first add the script to your chart but
+then you can come up to the settings and
+mess around with the look-back period
+and we might as well while we're here I
+can do this isn't really necessary but I
+can show you how to set the minimum Val
+the minimum value which is mi n VAR min
+Val the minimum value we'll just set it
+to 1 here because there's no point in
+going below 1 with this sort of script
+and just change this now to say look
+back which is referencing this variable
+we just created
+put that on both of these because we
+want to look back to be consistent
+across both lines here you don't have to
+do that you could have a separate look
+back for the hires and a separate look
+back for the lows if you wanted to you
+just have to copy this line change the
+variable name and put that in here but
+now if I click Save nothing will change
+unless we come up here and we play with
+this new variable setting that's shown
+up on our user interface so we can set
+this to whatever we want say we want a
+longer look back we can go
+hundred and if I click okay here this
+these lines will get longer because
+we're looking over a longer look-back
+period see and there you go you can
+change this to whatever you want you
+change it to a thousand if you wanted to
+yeah that's about it I'll go over a
+couple more features while we're here I
+can show you a few more basic features
+like changing the color of these lines
+and the line width and all that sort of
+thing but I should also mention that you
+can we'll go over this again in later
+videos is so much to cover I can't do it
+all in one video but you can even
+reference other time frames so you could
+be drawing the weekly high or the weekly
+low or the monthly high monthly look
+daily high daily load whatever you want
+pretty much any time period you want you
+could do the three and a half hour high
+if you wanted to there's a lot of
+customizability I think that's a word in
+pine script so yeah even though this is
+quite simple these foundational
+functions and features can work together
+to create some really cool stuff which
+we'll get to over the course of this
+course if this is too simple for you
+don't worry we're going to get much more
+complicated as we go on and we're gonna
+create some really cool stuff so while
+we're here I might as well go over some
+of these other features say you want to
+change this top line to be red colored
+we have to change the plot function
+we're going to add a couple of new
+variables to this we're going to say we
+want to set the color color is set to
+color dot and this color dot is going to
+select from the group of color names so
+if we press control space here you'll
+see here's a list of colors we can
+choose from and we want color dot red
+because this is a resistance level
+theoretically because it's a high this
+is likely to act as resistance on price
+not support so there's that we're also
+going to set the transparency to zero
+and the reason for that is because it
+makes the lines a little bit more
+vibrant makes the color stand out a
+little more so transfer is P is short
+for transparency so we're just going to
+leave that as trance equals zero that
+will set the transparency to zero if you
+set this to 50 it'll be half transparent
+but today we're going to leave it as
+zero and then we're going to have the
+line width is set to two
+I'm gonna set it to do that right now
+this is set to one which is quite thin
+you can set this as high as you want I'm
+not sure how look that - I know - looks
+pretty good so believe it is - and
+that's it for that one we'll come down
+to the lowest low and we'll set the
+lowest low to blue you could also set it
+to green if you wanted to but we'll set
+it to blue for now I will also set the
+transparency on this to zero and we'll
+set the line with two as well to be
+consistent just like in trading you want
+to be as consistent as possible with
+your coding and so that's it we click
+Save and that will change the color of
+these lines and the line thickness just
+like that and there you go you've got
+your first little script setup you can
+change this variable you can change the
+colors of these so you wanted this to be
+green instead of blue and you wanted
+this to be pink because you're crazy and
+there we have it you've got your first
+little customizable script and I've gone
+over a couple of really standard pine
+script functions and features and
+variables that you're going to be using
+in your scripting and this is a pretty
+good start I feel if you're brand new to
+pine script then this will give you if
+you study what we did here and you play
+around with this stuff you're going to
+learn a lot of the basics of pine script
+coding and you're going to be using a
+lot of these features and functions
+quite often I hope you found that useful
+and helpful I'll go over a couple of
+other things really quickly how the
+first thing is all of these values are
+calculated on each tick each price tick
+so it's calculated on a bar by bar basis
+but it's also calculated in real time so
+if we go down to the 1-minute chart and
+I set this value to zero
+oh one is our minimum value and it
+appears the markets closed right now
+which is bizarre I didn't think they
+closed on a Tuesday morning I'll have to
+go to a different currency pair to see
+if we can get some movement I might just
+go to Bitcoin because bitcoins always
+moving
+come on Bitcoin you can do it you can
+move further than that
+there we go so you can see this low is
+being drawn but that the
+you hold this candle you have really not
+helping me here Bitcoin I was hoping
+you'd be moving more than this right now
+and they save bitcoins the volatile I'm
+just kidding I know this is a one minute
+chart doo doo doo doo where are the
+bitcoin whales at come on I'm gonna
+change this value to I'm gonna change
+this to say close and I'm gonna comment
+out this line just so that we can
+quickly get get the idea here
+see that line just moved down it's being
+calculated in real time based on the
+tick's of price action you can change
+that functionality in the script if you
+want it to only calculate based on
+closed candles and not current candles
+you can do that but I'll get over that
+not in other videos but that's something
+important to remember is when you when
+this code is executed each time price
+moves and one last thing I want to go
+over is well first of all on my website
+here I've got a few more lessons here if
+you want to jump ahead it was going to
+be take me a while to make some of these
+videos but if you want to learn a little
+bit more advanced stuff I've got things
+here such as how to detect candlestick
+patterns and that sort of thing so just
+go to zen and the art of trading comm if
+you want to find this stuff I'm gonna
+make videos on all of this obviously
+when I get to it
+but if you want to steal the code and do
+a bit of cheating here you go you can
+come here and do that if you're a little
+more advanced and this stuff is too
+simple then come on over here and you
+can learn a little bit more advanced
+stuff before I get around to it with
+these videos one other thing I want to
+get into I want to show you behind
+script wiki and you come up to the first
+link here just tradingview com4 slash
+wiki forward slash pine underscores grip
+up I'll put a link to this in the
+description you come here and well
+nevermind have moved it okay I'll put
+this link into the description so this
+is the new documentation for the latest
+version of pine script which is version
+4 ah to be honest this guide looks a lot
+better than their old guide so it's
+probably a good thing they did this so
+if you want to learn a lot of the
+specifics like language fundamentals
+this will quite be quite important
+especially view if you
+want to get into really advanced stuff
+I'll teach you most of this stuff myself
+but it can be helpful to come here and
+find out some of this information these
+are your like average everything I can't
+speak this morning these are your
+arithmetic operators so for dealing with
+numbers and stuff like that you'll find
+some really good stuff on here so this
+is this can be quite useful obviously
+there's also the autocomplete function
+here but you need to know what you're
+looking for before you can find it so
+this site can be helpful for that this
+is a great reference site and that's it
+for today's video it's already gone
+longer than I wanted it to I there's the
+volatility we've been looking for
+Bitcoin finally you've been asleep on us
+and now you're awake or awesome anyway
+that's it for today's video thanks for
+watching I'll see in the next one and
+we'll go over what the hell happened yet
+we'll go over some more advanced
+features of Pyne scripts see you then
+guys have a great day good luck with
+your trading good luck with your coding
+and I'll speak to you soon see you guys
+later
+[Music]
+you

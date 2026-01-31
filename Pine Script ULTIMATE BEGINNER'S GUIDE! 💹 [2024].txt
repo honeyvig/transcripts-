@@ -1,0 +1,2487 @@
+hey what's up traders! welcome 
+to my pine script basics course!
+the material in this video is taken from my 
+website over at pine scriptmastery.com this  
+is basically a stripped down version of my free 
+pine script basics course the official version  
+on my website goes into a lot more detail it's 
+more geared towards complete beginners who have  
+never written a line of code in their life so 
+if that sounds like you you might want to go  
+through the official material as there's a lot of 
+presentations and information about programming in  
+general like how to get started what programming 
+is all the technical jargon i explain all of that  
+stuff in the official course i've stripped all of 
+that out for this version because there's four or  
+five hours of content in my official basics course 
+on my website and i wanted to keep this video as  
+close to two hours or less as possible i think 
+it's going to be a little bit over two hours  
+but it's going to be worth going through 
+because the material you are about to watch  
+will teach you everything you need to know in 
+order to get started with pine scripts and start  
+writing your own scripts i'm going to teach 
+you the core fundamentals of pine how to use  
+some of the more common basic functions like 
+drawing to the chart getting user input generating  
+alerts and referencing inbuilt indicators so i 
+hope you find the course material interesting  
+if you do make sure to hit the subscribe button 
+and like button and all that youtube stuff  
+and uh i hope you enjoy it i really do 
+i'm really passionate about trading and  
+especially pinescript and i hope that passion 
+rubs off on you throughout this material with  
+all that said i'll get my ugly mug out of your 
+face and let you get started with the content uh  
+have fun best of luck with your trading and i'll 
+speak with you in the lessons to come take care
+hi traders in this video i'm going to be showing 
+you a basic overview and breakdown of the pine  
+script editor so the pinescript editor is inbuilt 
+directly into the tradingview platform and you can  
+open it and use it directly through your browser 
+so here i am on the tradingview platform to open  
+up the pine editor we just click on this tab here 
+so we click on that that will bring up the pine  
+editor so this is what the editor looks like when 
+you first open it up with a blank script there are  
+a few things to go over here first of all you can 
+open existing scripts by clicking on this button  
+here if i open that you can open an existing 
+script from your own script library you can  
+create a new default built-in script so this will 
+create a new script based on an inbuilt indicator  
+so if i scroll down to let's find the let's go 
+with a just a moving average if i click on that  
+this will create a new script with the source 
+code for the inbuilt moving average indicator  
+and if we come up and open a new blank indicator 
+script that will open a new blank indicator  
+template and if we open a strategy this is the 
+template for a new blank strategy then we have  
+our new blank library script and this will create 
+a new blank library now don't worry we'll go over  
+what each of these different types are there's 
+really only three we've got an indicator script a  
+strategy script and a library script we'll go over 
+all of these throughout the course next up we have  
+save so if i click save on this blank script 
+i can name this script it doesn't matter what  
+you name it but i would recommend getting into a 
+habit of some sort of consistent organized naming  
+system so for me for example i like to put 2021 or 
+the current year 2022 whatever the current year is  
+in square brackets in front of my script 
+or something like that just to organize  
+my scripts if i open up my scripts here if i 
+go open my script you can see that i have a  
+significant amount of scripts here and a lot of 
+them aren't organized but i have recently begun  
+organizing them by a year and also by subject so 
+you can see i have a bunch of psmc scripts here  
+this is a part of script mastery course this 
+is from the previous version of this course  
+from version 4 of pine script from when pine 
+script was version four it's now updated to  
+version five so i'm re-recording this entire 
+course so whenever i create a new script for  
+this course i will probably call it p psmc version 
+five dash and then the name or something like this  
+that way when i open up my scripts i can just type 
+in psmc and i get a list of all my psmc scripts  
+you don't need to do this but this is just a good 
+habit to get into early if you plan on writing  
+a lot of scripts so let me open up a blank 
+indicator here and save it and i'll call this  
+psmc v5 dash pine editor let me save that script 
+and now we'll move on to add to chart so if i  
+click on add to chart that will add the script to 
+my chart and now we have our script here and then  
+next we have publish script this will publish your 
+script to the trading view library we'll go over  
+this in more detail in a future lesson but this is 
+where you can publish your script you can give it  
+a description as detailed as you want it to be um 
+you have your privacy settings so you could make  
+it a public or private script a private script 
+means it's only visible to those with the link  
+a public script is visible to all uh traders 
+on the tradingview platform but you can protect  
+your source code so that only you can see it but 
+people can still use your script or you can make  
+it an invite-only script so that only you can see 
+the source code and you choose who can use it this  
+is particularly valuable or useful for creating 
+premium scripts that you can charge traders money  
+to use such as my ultimate pullback indicator 
+which is a good example of using this invite-only  
+version of a public script but let's cancel 
+out of this publish script dialogue and move  
+on to this little button here if we click on 
+this we have a whole bunch of resources here  
+so we can make a copy of our current script 
+that we have open we can view the pine script  
+official documentation we can view the plan script 
+official reference manual this is the same thing  
+but as a pop-up so if i click on this we have the 
+reference manual pop up within our browser this is  
+really useful when you're learning pan script 
+if there's something that doesn't quite make  
+sense to you or something i haven't covered in the 
+course material you can search through the search  
+box here for whatever that is so for example 
+if we're looking at an rsi lesson and i don't  
+cover something in enough detail and you want to 
+learn more then you can just click on this ta.rsi  
+at the top of this list and that will give you 
+the reference manual for this function and it will  
+tell you in detail exactly how it works and how 
+to use this function but let's close out of that  
+the next thing we have is our pine editor keyboard 
+shortcuts this is a useful thing to look over  
+and try to memorize some of these key 
+shortcuts if i click on this drop down  
+box under pine editor we have a whole bunch of 
+keyboard shortcuts for use in the pine editor  
+so for example you can save your script by just 
+pressing ctrl s which is useful and then we have  
+a bunch of lesson resources here so the pinecoders 
+and codify are kind of tutorials and examples  
+of how to use pine they're kind of just written 
+guides one other thing to mention in regards to  
+the pine editor keyboard shortcuts is that when 
+you're writing out your code pressing control  
+space will list all of the available functions 
+and inbuilt variables we have to work with  
+so for example if i wanted to see what technical 
+analysis functions we have i can type t a dot and  
+then control space will list all of the functions 
+we have that deal with technical analysis so here  
+we have the atr if i click on that we now have the 
+atr so if i put in a period length here like ta  
+dot atr 14 if i wanted to plot this to my 
+chart i could just cut this ctrl x and paste it  
+into the plot function save the script and 
+now we're plotting the atr onto my chart  
+so this is the power of pinescript just how easy 
+it is to get certain information and plot it onto  
+our chart but that's something to keep in mind the 
+control space feature of pine script is extremely  
+valuable you'll be using that keyboard shortcut 
+a lot in your coding and i believe it's command  
+space on a mac next up we have this little 
+button here which just renames your script  
+then we have this favorite button 
+if you click on this this will add  
+your script to your favorites menu so when you 
+click on the indicators and strategies button  
+your favorite scripts will be at the top of the 
+list up here mine are taking a while to load  
+because my internet sucks but yours should load 
+a lot quicker than that hopefully and you can see  
+here that these are all my favorite scripts some 
+of them are other people's scripts and some of  
+them are my scripts then we have the search button 
+here this is useful for finding and replacing  
+things in your script so you won't be using 
+this very often on smaller or simpler scripts  
+but on longer and complex scripts this is a really 
+useful tool especially for refactoring or changing  
+parts of your code if you click on this little 
+button here that will drop down the replace text  
+box and in here we could write something like 
+atr let's replace atr with rsi to do that you can  
+click on this button which will replace the first 
+instance of this atr so the very first time this  
+tool finds atr in your script it will replace 
+it with rsi if we click on the second button  
+it will replace all mentions of atr with rsi 
+and if you want to add more filters to this  
+find and replace tool you can click on this button 
+here and we can match case we can match the whole  
+word or you can use regular expressions which is 
+basically patterns in text you don't need to worry  
+about this unless you're an advanced programmer 
+now the final thing worth mentioning here is this  
+button here this is your revision or script 
+version button if i click on 1.0 that will load  
+into the pine editor the very first revision 
+of the script we have loaded into this editor  
+so this will load the script before i made this 
+change of plotting the atr so let me click on 1.0  
+and now we're back to our blank script and 
+if i want to load the latest version of the  
+script i can click on 2.0 and that will load 
+back the latest version as far as i can tell  
+there is no limit to how many revisions every time 
+you save your script and make a change to your  
+script there will be a new revision added to this 
+list so i have scripts with hundreds of revisions  
+and i can drop back to any prior version of my 
+script this is particularly useful for debugging  
+scripts so let's say you're trying to add a new 
+feature to a script and after several changes to  
+your script you realize you've broken something 
+in the script and you can't work out what you did  
+using this as a as a sort of undo button can 
+undo any changes you've made to your script  
+and reload a previous version so it's basically 
+like an inbuilt backup tool in the pine editor  
+anyway that's about all you need to 
+know about the pine editor itself  
+in the next few lessons we'll cover some 
+practical coding examples i'll see you there
+now before we get into actually writing code it's 
+probably a good idea for me to go over some of  
+the basic things you will need to know about the 
+compiler for pinescript so the compiler is what  
+compiles our code converts it into information 
+that trading views servers can understand so all  
+of this english written code will turn into 
+computer code that the computer can run and  
+execute our commands the pinescript compiler is 
+responsible for doing that so when i click save  
+here i'm just going to delete this script after so 
+i'll just name this delete my script just compiled  
+and i know it compiled because i didn't get 
+any errors if however we do something like  
+this let me get rid of one of these parentheses 
+here and save the script now we have a problem  
+we have a syntax error this red line here now the 
+wonderful thing about most programming languages  
+and compilers is that they will usually tell you 
+where the error happened so we get the exact line  
+that this error occurred on it occurred on line 
+six this line here so that makes it really easy  
+for us to you can even click on this um it's 
+a link that will take you to that line of code  
+in your script if i click on that it takes me 
+straight there now every error message will be  
+different depending on what you messed up in your 
+script a lot of these error messages are quite  
+cryptic so end of line without line continuation 
+even i don't know what that really means um it's  
+kind of it's amusing to me some of the error 
+messages you get in some programming languages  
+sometimes they're really helpful sometimes you're 
+just like wow thanks compiler that was really  
+helpful so now if i close this off and save my 
+scripts we don't have any errors the compiler  
+compiled our code without any problems let's 
+try getting rid of one of these quotation marks  
+save the script now we get a different error 
+mismatched character this character here means we  
+have a new line starting so pan script got to 
+the end of this line and then a new line started  
+but it was expecting this quotation 
+mark to close off this string of text  
+and so it through an error on line five so most of 
+the problems in your script are going to be pretty  
+obvious and intuitive when you see an error pop 
+up usually it means you didn't close something off  
+you missed a comma you missed a bracket something 
+like that and within just a few seconds of reading  
+your code back you should be able to spot the 
+problem now some errors will be a little more  
+difficult to solve but in part script 
+it's very rare that you run into an error  
+that can't be solved very quickly because usually 
+it's a result of a typo of some kind and you don't  
+even need to know what the error message means 
+you can just click on that line of code and see  
+at a glance that you missed something relating 
+to the syntax i will cover errors in your code in  
+much more detail in its own section of the course 
+towards the end of the course so if you run into  
+any problems maybe jump ahead and check out that 
+section but the last thing i'm going to show you  
+here is what happens if we get rid of the compiler 
+directive if i get rid of that and save the script  
+now we're going to get all kinds of weird problems 
+and errors with our code the reason for that is  
+that the compiler now doesn't know what version of 
+panel script we're using so right now we are using  
+the original version of pinescript the versionless 
+version of pinescript the first iteration of this  
+language i have no idea what the syntax is for 
+that language i wasn't around when that was a  
+thing i started using pine script when it was in 
+version three and so recently version five has  
+released so i've had to learn the new syntax of 
+pine script three times now i started with version  
+three so i learned version three syntax then it 
+updated a version four and i learned version four  
+syntax now we're on version 5. the good news 
+is it's not that much different to version 4.  
+if i set the version to 4 say the script we'll 
+still get the same error because in version 4 of  
+pinescript we don't use the indicator annotation 
+function we use the study annotation function to  
+create an indicator so now my script just compiled 
+fine and so it's very important that you keep  
+this compiler directive in and that you get your 
+syntax correct in your code you don't need these  
+comments if you don't want them there this will 
+compile just fine as well the reason why we have  
+this compiler directive that allows us to target 
+older versions of pine script is for backwards  
+compatibility so there are hundreds if not 
+thousands of scripts that have been written from  
+the beginning of trading views existence that are 
+still very useful even though they were written  
+in an old version of pinescript and rather than 
+force all of those coders to update their code  
+to version 5 of pinescript tradingviews simply 
+allow you to target old versions of pinescript  
+so that you don't need to update your scripts for 
+them to work the only reason you would want to  
+update your script to version 5 of pinescript 
+is to take advantage of the new features  
+of that version so i have dozens of indicators 
+written in version 4. i'm not going to convert  
+all of them into version 5 of pinescript except 
+for the ones that i use regularly now one last  
+thing i want to mention about the compiler 
+is that it is not particularly picky about  
+where you put some of your syntax for example 
+if you have a plot function that has a lot of  
+parameters which we'll cover in future lessons you 
+can separate them across multiple lines now there  
+are some rules with this that takes some getting 
+used to but let me just quickly demonstrate what i  
+mean by this so for example we could put a space 
+between our plot and our parentheses save the  
+script and this will work just fine no problems no 
+compiler errors we can also split our parameters  
+across multiple lines so if i press enter here 
+and i tab indent this line of code and i save the  
+script we'll get an error in pinescript if you 
+want to indent your parameters across multiple  
+lines you need to put a space after your tab so 
+now if i say the script this compiles just fine  
+so the purpose of being able to do this 
+is maybe you have a bunch of parameters  
+in your plot function that stretch way off your 
+screen you can separate these onto multiple lines  
+to make it easier to read your code so for 
+example if i put a comma here and then enter  
+i could say offset equals one comma title 
+equals plot close comma a line width equals two  
+comma and let's set the color to color dot black 
+and then let's move this parenthesis down one  
+line now if i save the script this compiles just 
+fine so we'll cover this sort of thing in future  
+lessons i just wanted to make you aware of the 
+fact that the compiler is quite flexible when it  
+comes to your syntax just so long as everything 
+is in the right order and you respect some of  
+the indentation rules which we'll cover in future 
+lessons as well but anyway i just wanted to make  
+you aware of the fact that we can do this sort 
+of thing in pinescript the compiler will allow us  
+to separate our code across multiple lines under 
+certain circumstances as long as we respect  
+certain syntax rules i'll leave it there because 
+i don't want to overwhelm you guys with too much  
+information before we actually cover what all of 
+these parameters do but now at least you know that  
+when we get into future advanced lessons that this 
+sort of thing is possible if you need to separate  
+your code across multiple lines anyway that about 
+sums it up for the compiler i'm sure we will run  
+into other issues that i haven't covered here 
+that we'll address in future lessons especially  
+the error section of the course so i'll wrap 
+this up here and i'll see you in the next lesson
+all right traders welcome back i was thinking 
+while recording this material about my early  
+days as a programmer and i thought this would 
+be a fun lesson in this lesson we're just going  
+to plot the text hello world onto our chart now 
+technically we're already doing that you can see  
+i've got an indicator here indicator function with 
+the title hello world and that's drawing under my  
+chart but we're going to do something slightly 
+different we're going to plot a shape onto our  
+chart with the text hello world above it but 
+before we do that i want to sort of reminisce on  
+my early days as a programmer i first discovered 
+programming when i was in high school i was  
+playing a computer game called runescape it was 
+an online computer game and in that game you  
+had to do a bunch of repetitive clicking tasks it 
+was like an old school game kind of like pokemon  
+where you had a little character that would run 
+around the screen and you'd have to click on  
+things to make him walk there or mine a rock or 
+do some fishing or whatever now i can't remember  
+where i found out about this but at some point i 
+discovered that some people were writing scripts  
+that were playing the game for them and performing 
+some of the more repetitive tasks that weren't fun  
+so there were elements of the game that were a lot 
+of fun and there were elements of the game that  
+were extremely monotonous and boring a lot like 
+trading actually i'm getting ahead of myself but  
+that's kind of why i got into coding and trading 
+as well is i wanted to automate some of the more  
+boring tasks and hopefully this course will help 
+you do the same in your own trading but anyway  
+back when i was a teenager i was around 14 or 15 
+i discovered the world of coding in the context of  
+a computer game and so i was writing scripts 
+to perform tasks in this computer game that  
+i didn't want to do in real life because my time 
+was limited i had to be at school all day i'd get  
+home from school and only have a couple of hours 
+to play and i didn't have time to do everything  
+i wanted to do and so i wrote these scripts 
+that would play the game while i was at school  
+and it would level up my character and do all 
+these things technically it was cheating and i did  
+get banned for it in the end luckily in trading 
+automating your processes is completely legal  
+we're allowed to do that in trading but anyway 
+back when i was learning to code this was before  
+the wealth of information on the internet 
+you couldn't just google how to learn coding  
+and be met with thousands of examples and guides 
+and i mean youtube was barely a thing when i  
+first started learning to code and there was 
+not that much educational content on youtube  
+so i had to learn all of my coding from 
+books i had to buy books rent books  
+from the library and it was a really monotonous 
+job learning how to code but i remember when i  
+got my first hands on a coding book to learn java 
+and one of the first lessons in that book showed  
+me how to write the words hello world into the 
+command prompt on windows and i still remember the  
+feeling of getting that short sentence to appear 
+on my screen it was absolutely exhilarating to see  
+my own work my own hands telling the computer to 
+output something nowadays that's kind of normal  
+i mean everyone has some experience in scripting 
+or excel or just generally telling computers to  
+do something on your behalf but back then it was 
+pretty revolutionary to me and so i hope that this  
+course can inspire that kind of feeling in you 
+as we go through it i hope that you get excited  
+about what is possible with coding especially 
+in pine script as you learn to translate your  
+trading ideas into code i hope you get excited 
+over the possibilities because they truly are  
+almost infinite almost endless there are 
+some limitations you'll run into as you  
+learn to code but for the most part most basic 
+processes can be done in code and you can automate  
+a significant part or semi-automate at least a 
+significant part of your trading process your  
+analysis process setup detection indicator signals 
+all of that stuff but anyway for this lesson  
+let's just quickly write the words hello 
+world onto our chart to do that i'm going  
+to use the plot shape function now this 
+plot shape function takes a boolean  
+series meaning true or false so i'm just going to 
+pass true in here and in fact that's all we need  
+if i save the script we'll be having a cross drawn 
+onto our chart you can see all these crosses here  
+drawing onto our chart um let's first of all 
+set overlay to true so this is actually drawing  
+onto price action so let me save the script 
+remove that and add it back to my chart  
+now let's add some text to this shape to do that 
+we can use the text argument or parameter so text  
+equals and now let's write hello world and when 
+i save the script we're going to be getting hello  
+world drawn all over our chart on every bar here 
+so let me save the script and you can see it's  
+pretty unreadable we have way too many shapes 
+drawing onto our chart now so let's change  
+that really quickly let's just add on a boolean 
+condition here let's say bar state dot is last so  
+now this will only draw our shape on the last bar 
+on our chart so let me save the script there we go  
+we are plotting the words hello world onto our 
+chart as simple as that literally one line of  
+code we have our indicator function you need this 
+line of code in every script same with this but  
+if we get rid of this and i save it technically 
+three lines of code and we're drawing text onto  
+our chart that is incredible it's amazing how 
+far the world has come in technology back when  
+i was learning how to code it took over a dozen 
+lines and a heck of a lot of times setting up the  
+programming language java the runtime environment 
+finding a word editor a code editing they call  
+them integrated development environments they 
+weren't even really a thing back when i was  
+learning how to code in java or at least they 
+weren't available to everyone for free and now  
+in 2021 as i'm recording this we can do all 
+of this in our browser right through the  
+tradingview platform in a handful of lines of 
+code it's just it's absolutely phenomenal it's  
+so exciting the world we live in and what is 
+possible for everyday people like you and me  
+so this is just the beginning of your journey 
+as a coder and the beginning of your journey  
+taking your trading to the next level so i hope 
+you're as excited as i am to teach you this stuff  
+and as excited as i was to learn this stuff in 
+the beginning believe it or not this right here  
+is the basic building blocks for every script 
+you're ever going to write in pine script  
+and it really is this simple you can obviously 
+make this as complex as you want you can change  
+the shape we're drawing you can change the 
+color you can change all kinds of things the  
+location of the shape all sorts of things but 
+it's not difficult it's not complex all it is  
+is learning new habits and new rules coding 
+is still in english this is all english words  
+but the rules in which we express the commands we 
+want to give pinescript are important but they are  
+very simple so you will learn them throughout the 
+course don't be afraid if this is the first time  
+you've ever learned any coding if you follow 
+the lessons step by step one after another  
+you will be able to write your own scripts by 
+the end especially if you take the whole mastery  
+course so strap in we're going to cover some 
+really exciting stuff in the lessons to come  
+i can't wait good luck with your trading 
+and good luck with your coding speak soon
+all right traders so in this lesson i'm going 
+to be breaking down how comments work in pine  
+scripts so comments are basically a way 
+of leaving notes in your code for yourself  
+or for other traders or coders who read 
+your script so right here i have a blank  
+indicator script using the default 
+template that tradingview have created  
+and you can see two comments at the top here these 
+are automatically added to all scripts that you  
+create through the pine editor this top comment 
+here is saying that our source code is subject  
+to the terms of the mozilla public license and 
+here's a link to that license if you want to read  
+what this means here's the license here and 
+just really quickly while we're here i figured  
+we might as well go over this as i'm sure some 
+of you are interested in what what this means  
+if you haven't seen it before but basically 
+this just limits your liability as a coder  
+so it just says the covered software which is our 
+scripts is provided under this license on an as-is  
+basis without warranty of any kind the entire risk 
+as to the quality and performance of the covered  
+software is with you and you being the script user 
+or anyone who uses your script basically is using  
+your script at their own risk most open source 
+software will operate under a license like this  
+and then next up we have our copyright so this is 
+a copyright and then it will automatically insert  
+your trading view username here now both of these 
+comments are not read by the pinescript compiler  
+what that means is when the engine that runs your 
+script through the tradingview platform does its  
+thing it ignores these lines it's like they 
+don't exist and this is all the compiler will  
+see in fact it will really only see this so these 
+comments are really just for your eyes only and  
+the way you write them is with two forward slashes 
+you can put them anywhere they don't need to be  
+at the start of the line they could be after the 
+line so i could say here i declare my indicator  
+here we could say plot the close and you can even 
+use them to comment out code so let's say we want  
+to get the rsi here 14 period rsi on the closing 
+price let's say there's a problem with our code  
+or there's something we want to test and we want 
+to temporarily remove this code without deleting  
+it we can just add two comments in front of it 
+and now this code is ignored by the compiler  
+so that is the purpose of comments to leave 
+notes to yourself one other purpose which  
+we'll cover in future lessons is what's called 
+annotation comments so this right here is a  
+annotation comment it's a special comment that 
+is not ignored by the compiler but technically  
+isn't code you could think of this as kind of 
+like metadata if you're familiar with metadata  
+so this is just telling pinescript that we want to 
+work with version 5 of pinescript if we get rid of  
+this and compile our script we're now dealing 
+with the original version of pinescript which  
+had no version and we're going to get all kinds 
+of errors because of that because the syntax of  
+version five of pine script is very different 
+to prior versions and by syntax i just mean  
+the grammar of the language the way we express our 
+code is different in version five than any other  
+version if i bring back that annotation comment 
+and save the script now it compiles just fine  
+so that's the purpose of comments we'll be using 
+them a lot in our scripts i highly encourage you  
+to comment your scripts heavily it's always better 
+to have too many comments and not enough comments  
+the reason for that is there will be times when 
+you write a script and you'll come back to it  
+weeks maybe even months or years later and you 
+might not remember why you did things a certain  
+way or why your code was written the way it was 
+having comments can help remind you why you did  
+what you did and it can help other traders know 
+what you're trying to do with your code as well  
+so if you're writing public open source scripts i 
+definitely encourage you to comment them and it's  
+just a good idea in general to get into a habit 
+of commenting your code regularly and extensively  
+so that you know what you're doing and it's kind 
+of like um if you remember in school when you  
+did math stuff you always had to show your work 
+you needed to explain how you got to your answer  
+comments are basically the same 
+thing using comments can explain  
+how you got to where you got to in terms of your 
+solution in your code if i open up a script i've  
+been working on recently which is my zen library 
+you can see that this script has i think more  
+comments in it than actual lines of code in fact 
+it certainly does have more comments in it than  
+actual lines of code now that's not a normal thing 
+you wouldn't normally see that in most scripts but  
+because this is a library and we'll get into 
+libraries in future lessons i don't want to  
+overwhelm you with too much information but each 
+comment here explains what each block of code does  
+in great detail the reason for this is that this 
+library is designed so that i could give it to a  
+complete stranger who knows nothing about me who 
+knows nothing about how i like to code and they  
+can work out exactly exactly to a t what every 
+single part of my code does if i got rid of all  
+of these comments the code becomes significantly 
+harder to read because there is no explanation  
+on um what is happening if we get rid of all 
+of these comments and we're just left with this  
+this is not useful to most traders most 
+traders will see this and they'll just  
+move on to a different script because 
+no one has the time to reverse engineer  
+and deconstruct exactly what this code does 
+but by having all these comments suddenly this  
+script is much much easier to read for anyone 
+who um is unfamiliar with what the code does  
+so that's the purpose of comments we'll 
+be using them a lot throughout the course  
+so as i said before it's a good idea to get into 
+a habit of using them but don't worry you'll see  
+lots of examples of how to use comments in your 
+code in future lessons so this doesn't quite  
+make sense to you don't worry it will by the 
+end of the course see you in the next lesson
+all right hey traders welcome back in this 
+lesson we're going to be covering the indicator  
+annotation function now annotation function could 
+be also thought of as like a directive function  
+it's a special function that tells pan script 
+important information about the general nature  
+of your script so this comment here of at version 
+equals five is what's called a compiler directive  
+so this is directing the compiler to version 5 
+of pinescript it's telling pinescript the engine  
+that runs pinescript to treat the code of this 
+script by the rules of version 5 of pinescript  
+the indicator annotation function does the exact 
+same thing except that it tells pine script to  
+treat the code of this script as an indicator the 
+reason we need to use this is because there are a  
+couple of different variations of script types 
+so we have strategy scripts so if i call this  
+strategy that changes the rules of this script 
+if i say library that changes the rules again  
+so we only have three to work with indicator 
+strategy and library but each of those have  
+different rules that govern your script for this 
+lesson we're going to break down the indicator  
+function which is probably the script type that 
+you'll be working with the most especially in the  
+beginning of your pine script journey so let's 
+break down the parameters of this function so by  
+calling this an indicator function that gives 
+the script access to a different subset of  
+inbuilt functions and commands to work with so for 
+example let's try and use a strategy function here  
+let's say strategy.close and we need to pass an id 
+here let's just say close our buy trade if i save  
+this script we'll get an error here that says you 
+cannot use strategy functions in indicator scripts  
+please replace indicator with strategy so that's 
+why we need to use these annotation functions if  
+i change this to strategy suddenly the script is 
+treated differently by the pine script compiler it  
+has different functionality and features but let's 
+stick with indicator for this lesson and let's  
+break down what we can do with this indicator 
+function so if i hover my mouse over indicator and  
+hold down control or command on a mac and click 
+on this function on the name of this function  
+we'll get the pinescript language reference 
+manual popping up here and this will tell us  
+all of the various arguments we have to work with 
+here it'll give us a description of each one i'm  
+going to break down the most common ones here that 
+you will most likely use in most of your scripts  
+so let's get rid of our title for a moment here 
+and hover my mouse over this function name and  
+we'll get a list of arguments so the first one 
+we have is title so this is your long title  
+so let's say i want to call this my super fancy 
+script and if i save this and move this down a  
+bit you can see that my script name has changed 
+there and if i were to publish this script to the  
+trading view library this is what it would be 
+called on the trading view library this is its  
+long title this is its more descriptive title but 
+you can see that it takes up quite a lot of space  
+on my chart and if we had a lot of plots 
+here a lot of numbers plotting out here  
+having a long indicator title name could be a 
+problem so let's say we want to abbreviate this to  
+msfs to do that we just add in a comma here all 
+of our arguments in any function are separated by  
+commas so to add another argument or parameter 
+to this function we need to put a comma there  
+and then i need to pass in short title and then 
+this is a string as well so we open up with  
+two quotations and let's say we want to call this 
+msfs now if i save the script watch our title name  
+here it's now abbreviated to msfs but our official 
+title is still my super fancy script and if i were  
+to publish this to the training view library that 
+is still what this script would be called but when  
+it's added to our chart this is what it will say 
+in the indicator box so that's how our titles work  
+next up we have overlay so by default overlay 
+is set to false so if i save the script having  
+it set to false draws into its own box you can see 
+we're in our own oscillator box here like the rsi  
+or stochastics macd those sorts of indicators they 
+are drawn into their own indicator box they're not  
+drawn directly on the price action like a moving 
+average would for example but if you want to draw  
+overprice action say you're working with a moving 
+average script for example you want overlay to be  
+set to true overlay just means it overlays over 
+your price action so if we set this to true and  
+save the script first nothing will happen because 
+we've already added the script to our chart so to  
+update this particular parameter we need to remove 
+our script by clicking on this remove button here  
+and then re-add it to our chart so now when 
+i click add to chart overlay will be updated  
+and it will be drawing over price action so if i 
+zoom in here you can see that this script is just  
+plotting the closing price so it's connecting the 
+closing price of all of these candles on my chart  
+directly over price action so that's what overlay 
+does next up we have format so let's set overlay  
+back to false and remove the script save it add 
+it back to my chart and let's say we want to plot  
+volume instead of the closing price so now let's 
+save the script and it will update whoops we'll  
+update and now it's plotting the volume of each 
+bar on my chart let me go to the daily so that  
+we get a higher number here so notice this number 
+down here is an exact number of the volume printed  
+um it's not that readable we don't really need 
+to know the exact quantity of shares traded on  
+on a stock or in the crypto market how many of a 
+particular crypto asset was traded in this case  
+we're dealing with ticks price ticks on the 
+forex market tick volume we don't need to know  
+the precise number so if you are dealing this 
+is mostly useful for volume this i don't really  
+know of any other use cases where you'd want 
+to do this but this format parameter you can  
+see down there above the blue underline format can 
+be set to format dot and if i press control space  
+or command space on a mac you get a list of the 
+various formatting options we have to work with  
+here i'm not going to go over all of these you 
+can play around with these in your own time to  
+see what they do it's not often you will need to 
+change the format of your script anyway but in  
+today's example we're dealing with volume right 
+now so let's click on volume and save the script  
+now keep an eye on this number here it's now 
+changed to a smaller number with a k after it  
+so if i hover over the last bar on my 
+chart that says 6.037 k so roughly 6 000  
+volume on this latest bar so that's the purpose 
+of the format parameter in the indicator function  
+next up we have precision this is your decimal 
+precision so let me get rid of this format  
+for now and let me get rid of this really 
+quickly and save the script to update it  
+um the precision argument changes 
+your decimal precision of the  
+numbers that draw onto the chart in your script 
+so by default the precision is going to be set to  
+the decimal precision of your price so right now 
+we have five decimals here on euro dollar if we  
+were to go to a different market like uh bitcoin 
+for example now we have a two decimal precision  
+and you can see after the decimal place here 
+we have two digits but if we wanted to override  
+that to a higher precision or a lower precision 
+we can do that using the precision argument in  
+this function so let me set this to 5 and save the 
+script now you can see 5 decimal places after the  
+decimal place on this script now in this 
+particular case we're just plotting the  
+closing price so that's not that useful seeing 
+five extra or three extra decimal places  
+on this price value but what if we were 
+plotting other values other indicator values  
+where we wanted to see those extra decimal places 
+but we couldn't see them because of the number  
+of decimals on our price so for example what 
+about a relative volume indicator let's say we  
+want to compare today's volume or this bar's 
+volume to the average over the past 10 days  
+and we want to know that number to a three decimal 
+precision instead of just two that's where this  
+argument comes into handy you can change 
+the precision override the precision of  
+your indicator plot values with this argument we 
+will be using this in future lessons but for now  
+we can move on i'll show you practical examples of 
+this later on in the course next up we have scale  
+so this is the axis the scale axis you want 
+to plot your values onto so by default your  
+indicator is going to plot onto whatever price 
+access you have on your chart so in this case we  
+have price plotting onto our right axis but if we 
+wanted this to plot onto our left axis for example  
+you can use the scale argument here so we can set 
+scale to scale dot control space let's set it to  
+left and save the script and we need to remove the 
+script to update this and add it back to our chart  
+now you can see that our our values here are being 
+plotted onto the left scale not the right scale  
+so again not often you will need to do this but 
+there is the option to if you need to let's get  
+rid of that for now save the script remove it add 
+it back to our chart so whenever you're dealing  
+with a visual update like scale or overlay you 
+need to remove the script and re-add it back to  
+your chart so if you make a change to your script 
+and it doesn't update a general good rule of thumb  
+is to try removing it had it back on that will 
+force tradingview to update your script entirely  
+now the next parameter we have to work with is max 
+bars back this is not something you will often use  
+in your scripts i've never used it in my scripts 
+to be honest but it's here if you need to use it  
+now this tells the script how many bars back it 
+can reference from whichever current bar it's  
+calculating on so if we're looking at the final 
+bar on my chart and we set max bars back to 10  
+for example and i save the script whatever code 
+is running on this last script this last bar on my  
+chart the script can only reference the past 1 2 3 
+4 5 6 7 8 9 10 bars so only this price action here  
+now personally in my own coding i've written 
+dozens of scripts over the years i've never  
+used this feature i've never used this max bars 
+back i've never had to i've never had a reason to  
+but if you do run into a situation where you need 
+to use this function this feature this is how you  
+would do it you can set your max bars back to 
+10 just keep in mind that this is in reference  
+to the current bar so when your script is 
+running over historical price action each  
+bar on your chart can look back 10 bars and then 
+this bar can look back 10 bars and then this one  
+etc so that's how that argument works but let's 
+get rid of it for now since we would rarely use  
+that the final parameter i'm going to cover here 
+that is commonly used is time frame so time frame  
+specifies what time frame your script can run 
+on so for example let's drop down to the four  
+hour chart and change this to d short for daily 
+and save the script now my script is plotting  
+the daily time frame closing price onto my chart 
+instead of the four hour so if i zoom in here  
+you can see that each time this updates we 
+get a new value down here so on this bar here  
+a new day began and the previous day's closing 
+price was five four six nine zero and then on the  
+bars in between we get n a because these four 
+hour bars are plotting in between the next day  
+and then on that next day's beginning we get the 
+previous day's closing price which was five seven  
+four eight seven and so on so that's one way 
+to hard code your script to only reference a  
+particular time frame i wouldn't recommend doing 
+this there are better ways to do this depending on  
+the script if you have a script that you only want 
+to reference a particular time frame you might  
+want to hard code it this way but if you have a 
+script that you want to be able to use on multiple  
+time frames you're better off using user inputs 
+to specify the time frame of your script and we  
+will cover that in future lessons i don't want to 
+overload you with too much information so we'll  
+leave this lesson here if you want to see what 
+these other parameters do again just hold ctrl  
+and click on this function name and you'll get a 
+list of the arguments we have here with detailed  
+descriptions on how they work but anyway that'll 
+do it for this lesson i'll see you in the next one
+hey traders in this short lesson i will introduce 
+you to the concept of namespaces so namespaces  
+in pine script are what we call the keywords 
+that contain certain functions or variables so  
+that might sound a bit confusing but when i show 
+you a visual example it should make perfect sense  
+there are several namespaces that we have access 
+to in our pine script code the first one i'm going  
+to show you is the technical analysis namespace so 
+for example let's say we want to get the rsi value  
+to do that i can create a new variable called 
+rsi and we can assign this variable or initialize  
+this variable using the equal sign so rsi is 
+set to and then we need to reference the ta  
+or technical analysis namespace so if i 
+write ta here then a full stop and then  
+control space or command space on a mac we get a 
+list of all of our technical analysis functions  
+so if i start writing rsi here is our rsi 
+function and you can see here that it is  
+underneath the ta or technical analysis namespace 
+so we'll click on that we pass in as price source  
+close and 14 default period there we go we have 
+an rsi value and if i cut this plot down here  
+and change the plot from the closing price to the 
+rsi value we just retrieved let's save the script  
+we're now plotting the rsi so pinescript makes 
+it really easy to access all of the most popular  
+indicator tools that traders typically use and 
+you'll find all of your indicator functions  
+under the ta namespace so that's really it 
+for namespaces that's all you really need to  
+know you can also create your own libraries 
+um we'll cover that later on in the course  
+but when you create your own custom library it 
+behaves pretty much identically to these inbuilt  
+name spaces so for example if i type in import zen 
+and the art of trading control space here is one  
+of my libraries i've created if i import this as 
+zen i can now reference my zen library namespace  
+the same way we did the technical analysis 
+namespace so for example if i write here zen dot  
+control space command space we get a list of 
+all of my custom functions these are functions  
+that i created that i wrote in my own code 
+in the zen library script and i published  
+this to the trading view platform i can now 
+reference all of these functions the same way  
+we can reference the inbuilt functions that 
+tradingview offers what pinescript offers  
+but as i said we'll cover libraries in a future 
+lesson because it is quite an advanced concept so  
+i just wanted to make you aware of that feature 
+and so you can basically think of a namespace as  
+a collection of functions or tools that you've 
+written either you've written or the trading  
+view pan script developers have created so before 
+we end this lesson um we'll go over just a couple  
+of other namespaces for example if we're dealing 
+with strings so text this is a string right here  
+if i create a variable called my string 
+and we just call this a string of  
+text i can now use the string name space so str 
+is short for string if i put in a dot and then  
+control space or command space we get a list of 
+all of the different functions we can use relating  
+to strings so for example um if i set this to 
+the text 10 and then i use the two two number  
+function and we pass in my string if i cut that 
+and paste that into our plot and save the script  
+we are now plotting the number 10 after using 
+the string namespace to convert this text  
+into a number and there are a whole bunch of 
+other namespaces we have the strategy namespace  
+when you're dealing with strategy scripts so you 
+have your trade commands and various variables  
+that you can reference such as your current 
+account balance and things like that  
+we also have the request namespace which we'll 
+cover in future lessons this is where you retrieve  
+or request financial data about stocks you can 
+reference quandl which is a third-party resource  
+uh that offers all sorts of things like um 
+sentiment interest rate information all kinds  
+of stuff we'll cover quandl in a future lesson and 
+then we also have the security function here which  
+we use to reference other symbols and other time 
+frames so you use the request.security function  
+to request for example we're on euro dollar 
+one hour chart here maybe i want to check  
+what the daily high and low is and then plot 
+that information over this one hour intraday  
+time frame to do that we would use the 
+request.security function and so that is  
+a quick crash course on pine scripts 
+namespaces and we'll be using these frequently  
+in our scripts so you'll get used to using 
+these and you'll soon memorize them all very  
+quickly anyway that's it for this lesson 
+i will speak with you in the next one
+all right traders welcome to the price series 
+lesson in this lesson i'm going to be showing  
+you how to reference candlestick price data so 
+you're open high low and close this is obviously  
+going to make up the backbone of most of your 
+scripts you're going to need to reference this  
+data very frequently in your scripts since what is 
+price analysis without referencing price so it's  
+quite simple to access this data obviously the 
+challenge comes with what you do with this data  
+first of all let me get rid of precision one 
+that's from a previous lesson so here i have a  
+blank script let me save the script to show you 
+so we're just plotting the closing price onto  
+our chart so by default this is the default 
+template for any new script we already have  
+our closing data being referenced and to reference 
+the other price points on your chart is as simple  
+as you might think so let's say we want to get 
+our candle open price i'm going to declare a new  
+variable here called candle open and it's going 
+to be set to the open price value next up we'll  
+get our high so candle high is set to high then we 
+can get our candle low is set to the low and then  
+candle close is set to the close now you don't 
+normally need to do this you can just directly  
+reference open high low and close in your script 
+but for today's example i thought this might be  
+a little more intuitive to see what's going on 
+here so now let's save the script and let's draw  
+these values onto our chart so i'm going to use a 
+comment here say draw candle data onto our chart  
+i'm going to paste candle open in there copy this 
+and i'll paste it four times and i'll just paste  
+in each variable here and let's change the color 
+of each plot because if i save the script now  
+we're going to get four blue lines drawing 
+on our chart and we can't tell what's what  
+so let's set the color of the open to color dot 
+blue and now i'm going to copy this line of code  
+and paste it in and let's change the color of 
+each data value here let's change the high to red  
+we'll change the low to green and let's change 
+the clothes to purple and save the script we  
+should get four different colors plotting onto our 
+chart here now and each color corresponds to each  
+candle price so it's as simple as that to get 
+our price data which is what we're doing here  
+so now let's say we want to do something useful 
+with this data let's say we want to get the  
+current bar's size in points so we want to 
+subtract the high from the low so now let's  
+create a new section of code here and i'll say 
+analyze price data and for this we're going to  
+create a couple of variables the first variable 
+we create is going to be called candle size and  
+to calculate the candle size is really easy all 
+we need to do is subtract the low from the high  
+so high minus low will give us our candle size 
+in points and let's plot this onto our chart  
+as well so we'll call this candle size we'll set 
+this to color dot orange and in fact let's comment  
+out all of our open high low close because we 
+don't really need to see that data on our chart  
+save the script we should be getting an orange 
+line drawing here now which is showing the candle  
+size in points or pips in this case so right now 
+as i hover over the last bar on my chart here  
+our candle size is 6.9 pips so as you can see it's 
+really easy to analyze price data obviously it  
+gets more complex the more complex analysis you're 
+doing but it's really simple to access this data  
+and to analyze it let's try something a little 
+bit more complicated to demonstrate the historical  
+operator so let's say we want to reference 
+a historical bar on our chart this will  
+reference the current bar and this will run on 
+every bar in our chart so as i hover my mouse  
+let's hover over this bar here which is quite 
+large if i hover my mouse over that you can  
+see down here this number says 65.2 pips so 
+this script is running on each historical bar  
+on our chart and so every bar on our chart 
+will reference its own open high low and close  
+but what if we wanted to reference let's say 
+10 bars back so we want to reference 10 bars  
+in the past let's go back to our current bar and 
+let's say we want to compare the current bar's  
+candle size to the candle size of a bar 10 bars 
+ago to do that is really simple let's just create  
+a new variable here called candle size 10. and 
+we'll set that to the high of the bar 10 bars ago  
+minus the low of the bar 10 bars ago so to 
+reference historical data we use square brackets  
+and then we pass in a number an integer number a 
+whole number this whole number is your look back  
+count so this will get the candle size 
+of the bar 10 bars ago so let's compare  
+these two values to do that we'll say candle size 
+ratio and we will divide our current candle size  
+by the candle size 10 bars ago and let's plot 
+that onto our chart as well candle size ratio  
+with the color of purple so when i save the 
+script we'll be getting another line drawing  
+onto our chart that is comparing the current bar's 
+size to the bar size 10 bars ago save the script  
+and there we go so the current bar is 130 percent 
+the size of the bar from 10 bars ago or 1.3 times  
+and it's that simple that's how we reference 
+historical price data very easy and this  
+historical operator works on any series of data 
+that we can reference in pine script so this  
+applies to indicator values as well it applies 
+to basically anything that has a series of data  
+that we can reference so for example let's say 
+we wanted to get the atr value of the current bar  
+to do that we could just create a new variable 
+here called atr is set to ta.atr and let's just  
+pass in the default 14 length period 
+so this will get the current atr value  
+and let's say we wanted to plot the atr 
+from 10 bars ago we can do so just like that  
+so this plot function now will reference the 
+atr value from 10 bars ago save the script and  
+now our white number here is drawing the 
+atr of 10 bars ago really really simple  
+to reference historical data and this applies 
+to anything as i said we could reference the  
+volume from 100 bars ago if we wanted to let's say 
+234 bars ago save the script now our white line  
+is the volume from 234 bars ago there is a limit 
+to how far back you can look so if i set this to  
+99999 and save the script we'll get a error you 
+can see this little warning sign pops up here  
+if i click on that it says too large max total 
+bars back and then we have our large number here  
+the maximum is 300 000 bars which is still quite a 
+lot of bars so let's set this back to let's say 10  
+save the script and there we go so that's how you 
+reference open high load close data that's how you  
+reference historical data using the historical 
+series operator and this technique applies to  
+any value indicator values as well so if we wanted 
+to compare the atr from 10 bars ago the same way  
+we did here we could just say atr 10 and then 
+atr ratio is atr divided by hr10 this will work  
+just fine the same way this did now obviously 
+this is a pretty useless example of how to use  
+price series and indicator series 
+in our scripts but in future lessons  
+we'll be covering more complex more practical 
+demonstrations of analyzing price action using  
+this information and that brings me to the 
+end of this lesson i'll see in the next one
+in this lesson we're going to be covering the 
+fundamental commonly used data types that you  
+will be using in most of your scripts to perform 
+your calculations and analysis the first data type  
+you're going to be working with in all of your 
+scripts for the most part will be number types  
+so there are two types of numbers in 
+pinescript we have integer type this is  
+whole numbers so for example 1 would be a 
+integer this could be 1 10 100 20 whatever  
+just as long as it's a whole number and there's 
+no decimal in it that will be called an integer  
+next up we have float type this is like an 
+integer except it has a decimal place after it  
+so any number with a decimal place is considered 
+a float the reason this is called a float type is  
+because there is no fixed number of digits before 
+and after the decimal place so the decimal place  
+can float around and so that's why they call it 
+a float programming can be weird like that don't  
+ask me why that became a thing but you'll get used 
+to it so there's a lot of technical jargon you'll  
+need to learn in coding integers just mean whole 
+numbers there is more nuance to this for example  
+there is a maximum number that an integer can be 
+but you don't need to know about that because it's  
+extremely unlikely you're going to run into that 
+issue in pine script i certainly never have in the  
+three plus years i've been working on all kinds of 
+scripts but anyway moving on we have our floating  
+point numbers float type numbers um for example 
+a closing price is a float because there's a  
+decimal number in it you can see here on bitcoin 
+we have two digits after the decimal place that  
+means that this price here is a floating point 
+data type next up we have it's not another data  
+type it's just a different way of using floating 
+points so float type e we'll call this and if i  
+were to say 0.1 and then use the mathematical 
+operator e and then put 2 on the end here  
+what this is saying is return the number or 
+the result of this equation which is 0.1 times  
+10 to the power of 2. now it's not often you'll 
+need to use this if ever but the option is there  
+if you need to or if you're mathematically 
+inclined for me personally i'm terrible at math  
+which is interesting considering i became a trader 
+and programmer but that's a beauty of modern  
+programming you don't need to be good at math to 
+be a programmer but if you are talented at math  
+this is a tool your disposal the next data 
+type we have to work with is what's called  
+boolean values so a boolean data type is 
+simply yes or no true or false one or zero  
+in pine script it's represented by the word true 
+and the word false so a bull type or boolean type  
+would look something like this true for true false 
+for false so let me leave that as true this is  
+quite simple to understand you'll use this data 
+type quite a lot in your scripts in fact these  
+first three data types will make up the majority 
+of your scripts in terms of how you calculate  
+stuff the next data type we have that will be 
+commonly used is color types so color types  
+in pine script are their own data type and to 
+reference color data types you can use the inbuilt  
+data types that panes could provide if i type out 
+color and then a full stop and hit control space  
+or command space on a mac and i scroll down you 
+can see a list of inbuilt colors here so if i  
+say color.red that will give the pine script 
+inbuilt red color as a data type and this can be  
+passed into any of my drawing tools so for example 
+we've got a plot here that is plotting our float  
+type e if i change this to say color equals color 
+type whoops and i save the script our line will  
+turn red so you can see there so that's what 
+color data types are like you can also use um  
+hexadecimal colors so if i wanted to color this 
+red in hexadecimal that would look like ff000  
+i save that we get bright red we'll cover 
+hexadecimal colors in a future lesson  
+you don't need to know them in order to to use 
+colors in your script but if you are familiar  
+with hexadecimals from web development primarily 
+these are used in web development so if you're  
+familiar with working on websites you'll know 
+how hexadecimal colors work or you can use a  
+hexadecimal color picker just look up hex color 
+picker on google and this can be an easy way to  
+fill out custom colors in your scripts one other 
+option we have to work with in pan script is the  
+color dot rgb function this we can pass in three 
+values or four values actually red green blue  
+and transparency so for example if i wanted full 
+red i could type in two five five comma zero green  
+zero blue and zero transparency 
+now the transparency is optional  
+if i just put in rgb as two five five zero 
+zero save the script this will stay red  
+actually let's change this color so that we 
+can actually see the difference so this will  
+now be bright green there we go because we've set 
+green to full so rgb colors range from 0 to 255  
+0 being none and 255 being the maximum and 
+if we wanted to change the transparency let's  
+say we wanted to make the line completely 
+transparent we could set transparency to 100  
+save the script and now the line will disappear 
+from our chart but it's still plotting up here so  
+that's a one way of plotting values onto your 
+chart without the user seeing the actual line  
+being drawn i use this quite a lot in my scripts 
+to draw information onto the chart that i want  
+to reference in my indicator values but 
+that i don't want to see on the actual  
+chart such as stop loss sizes and things like 
+that don't worry if this was a bit confusing  
+we'll cover color types in future lessons in 
+great detail and in more practical examples  
+the next data type we have to work with that 
+you will commonly use in your scripts not all  
+scripts but some scripts will be the string 
+data type so this will be string type equals  
+text so string is just what programmers call 
+text and in order to define it we need to put  
+two quotation marks on either side of our text the 
+reason why we do that is if we just say text here  
+then pinescript doesn't know the difference 
+between this and an actual function or variable  
+in our script if i save the script we'll get 
+an error here it'll say undeclared identifier  
+text if we put quotation marks around it and 
+save the script will get no error because  
+now pine script knows that this is text now 
+you can use quotation marks or you can use  
+single quotation marks as well that will work 
+just the same if i say the script this is  
+treated exactly the same as if we'd used quotation 
+marks so it's really just a matter of preference  
+which one you use i prefer to use the double 
+quotes personally just because i'm used to that  
+from other programming languages but if you're 
+experienced in a different language and you're  
+used to using single quotes you can use them in 
+your scripts if you want to and just as a side  
+note while we're here if you want to include 
+a single quote in your text you can't just add  
+another single quote because now that's treating 
+this as a string and then we just have a single  
+quote on its own if i save the script we'll 
+get an error because we didn't close off  
+this string here if we add a backslash in front 
+of this text pinescript will now know that we want  
+to include this quote within our string then this 
+backslash is telling pinescript we want to include  
+this single quote within our text so 
+for example let's change this to it s  
+bullish now if we were to draw this onto our 
+chart using a label or any other text drawing  
+function a table or something like that 
+this text would display on our chart as this  
+so this quotation would be included in the 
+text and the backslash would be removed  
+so that's the purpose of the backslash you can 
+also do things like backslash n and that would  
+move bullish onto a new line and so if we were to 
+draw this onto our chart it would look like this  
+it's bullish on a new line there are several 
+escape characters you can use in your strings  
+we won't cover that in today's lesson because 
+it's outside the scope of this lesson i'm just  
+introducing you to these concepts i don't want 
+to overwhelm you with too much information  
+and so let's just get rid of all this and go 
+back to text and we'll cover escape characters  
+and stuff like that in future lessons so before 
+we wrap up this lesson let's plot all of these  
+types to our chart and we'll just have a quick 
+look at what they look like so we have integer  
+type float type flow type e and bull type we 
+can't plot a boolean directly onto our chart  
+so we can only plot these numbers at the moment 
+directly onto our chart so let me change this to  
+color dot white and i'll change this to 
+color.white as well and we'll save the  
+script so now you can see that we're plotting our 
+integer type as 20 it's just a whole number and  
+then our float type let me change my float 
+type to [Music] 33.3 and save the script
+now here's our float type 33.30 now remember in a 
+previous lesson i talked about precision of your  
+script because we have two decimal places 
+after our market price we have two decimal  
+places on our indicator values so even though 
+i set this number to 33.3 it displays as 33.30  
+if i didn't want that i could change my precision 
+to one save the script and now it's certainly  
+plotting to one decimal place and so here we're 
+plotting our integer number as a whole number  
+our float number and then our float type 
+e number and in our integer plot we are  
+passing in our color type now let's use our 
+bull type here let's say if bull type is true  
+then let's overwrite our color type to color dot 
+red so now when i save the script this color here  
+this plot will turn to red because bull type is 
+set to true and we just said if bull type is true  
+override color type with the color red and to 
+override something we need to use the colon equals  
+symbol we can't just use equals because that's 
+declaring a new variable we want to overwrite this  
+variable with this new one and don't worry we'll 
+cover this in future lessons i'm just showing this  
+to you before we wrap this lesson up how ball 
+types work so now if i save the script this  
+color will turn red because bull type is true and 
+we've overwritten our color with red if i change  
+this to false the color will go back to green 
+because bull type is no longer true say the script  
+there we go so that's it for this lesson there 
+are several data types here that we'll work  
+with these are the common data types there are 
+other data types too like tables labels drawing  
+objects things like that but we'll cover those 
+in future lessons once you become more familiar  
+with the basics of pine script so don't worry 
+if you're overwhelmed by any of this lesson  
+throughout the course we'll be using all of these 
+data types quite regularly in practical scenarios  
+and over time you'll learn how they all work 
+and how you can use them in your own scripts  
+so that'll do it for this lesson i 
+hope you're enjoying the course so far  
+and if you are stick around because 
+it's about to get a lot more interesting
+hi welcome back to another partnership lesson 
+in this lesson we are going to be covering how  
+to appropriately uh or correctly declare your 
+variables in your scripts so variables are used  
+in all programming languages we've already covered 
+a few examples of them in this lesson we're just  
+going to keep things simple and cover the basic 
+fundamentals of variable declaration in order to  
+declare a variable we need to basically give it a 
+name and then that name is like a key so we have a  
+key and a value so in today's example we're going 
+to be counting candles in our chart so i want to  
+count how many green candles are on my chart so 
+i'm going to say green candle count is set to zero  
+so right here we have declared a variable 
+we've declared a variable with the name or key  
+green candle count and we've given it the 
+value 0. now pi script will automatically  
+determine what data type your variable is based 
+on what value you give it so pinescript knows  
+that 0 without any decimal places is an integer 
+value a whole number value so whatever we do  
+with this variable will be treated as an integer 
+value if we were to add a decimal place like 0.1  
+suddenly this becomes a float and now whatever 
+we do to this variable needs to be governed by  
+the rules of floating point numbers and there 
+are certain things you can and can't do with  
+data types so it's important that you understand 
+how the data types work the good news is you'll  
+pick this up throughout the course it's not 
+particularly complex but it is important that  
+you understand how data types work now you can 
+explicitly tell pinescript what type of variable  
+you want for example we wanted to tell pinescript 
+that this green candle count needs to be a float  
+we can just add the word float in 
+front of it and save the script  
+and now pinescript knows that even though there's 
+no decimal place after this whole number value  
+this essentially becomes 0.0 pinescript is 
+now treating this as a floating point number  
+even though we gave it an integer value now if we 
+were to change this to text for example a string  
+this won't work if i save the script pinescript 
+says declared typefloat is not compatible with  
+the assigned type string so whatever data type 
+you give it you need to make sure it's accurate  
+but the option to explicitly define what data type 
+your variable is is possible using these data type  
+operators so this can be useful in certain 
+situations for example if i get rid of this  
+and i set green candle counter n a or not a number 
+this is basically null nothing i've set green  
+candle count to literally nothing it's not a data 
+type of any kind if i then want to draw that onto  
+my chart so let me paste the green can account 
+into the plot save the script you can see that  
+it says down here line seven value with n a type 
+cannot be assigned to a variable that was defined  
+without a type keyword so we cannot declare green 
+candle count as n a but if we add float on the end  
+and save the script this will now compile 
+and we are now plotting n a onto the chart  
+so that is one useful way of declaring a data type 
+with nothing as its initial value so we don't want  
+this to be zero we want this to be nothing the 
+only way to do that is to explicitly give this  
+variable a type keyword but we don't usually need 
+to do this so i'm going to get rid of that and  
+set this back to 0 and save my script so now we're 
+plotting just zero onto our chart on every bar  
+now let's say that we want to count every green 
+bar on our chart to do that we need to check if  
+the closing price is greater than the opening 
+price then set green candle count to green  
+candle count plus one now notice that i used the 
+colon equals operator here and i didn't just set  
+equals now the reason for this is because once a 
+variable is already declared in order to overwrite  
+the value that we've given this variable we 
+need to use the equals the colon equals operator  
+to reassign this variable to a new value so for 
+example if i set this to 50 and i save the script  
+we will still be plotting zero here and we get an 
+error or a warning this orange writing down here  
+is a warning not an error it's just bringing 
+to our attention that maybe we made a mistake  
+it says here that shadowing variable 
+green candle count exists in the parent  
+scope did you want to use the assign operator 
+instead of the initialize operator or equals  
+so when you're first declaring a variable you need 
+to use the equals that initializes the variable  
+you can't use the assigned variable until the 
+variable already exists so if i save the script  
+now we'll get an error that green candle count 
+is an undeclared variable so the equal sign is  
+for declaring a new variable and the colon equals 
+is for reassigning an existing variable and new  
+value so now if i change this to colon equals 
+instead of plotting 0 onto our chart like we do  
+here if i use the colon equals we will now be 
+plotting 50 because our green candle count is  
+being overwritten with the number 50 but only 
+on bullish bars so let's say we want to count  
+all the green bars on our chart to do that we need 
+to set green candle count two green candle count  
+plus one so that will increment this variable by 
+one it will get whatever its current value is and  
+add one to it so let me save the script here 
+and you'll notice that on each bullish bar in  
+our chart we're only drawing one onto the chart 
+and on bearish bars we draw zero the reason for  
+this is that our variables are re-declared on 
+every new bar on our chart so every time a new  
+bar historical or real time begins drawing onto 
+our chart our script code is run all over again  
+it just keeps looping our code so every time our 
+script runs green candle count is set to zero  
+and so it never gets past one because on every 
+new bar this code is run again green candle  
+count is reset back to zero and then incremented 
+by one on bullish bars if we want this variable  
+to not update on new bars but to persist across 
+all of the bars on our chart we need to use the  
+var operator so var converts this green candle 
+count variable into what is called a persistent  
+variable so this variable will now persist across 
+all of the bars on our chart and so whenever  
+we detect a green bar the green candle count 
+will increment by one whenever we encounter a  
+red or bearish bar nothing will happen 
+because our little if statement here  
+will not be true don't worry we'll cover if 
+statements in more detail in future lessons  
+but for now if i save this script we will now 
+be counting every green bar over historical  
+price data so if i save the script there you 
+can see that our line is incrementing slowly  
+from bottom left to top right if i reset my 
+chart and hover over this last bar on my chart  
+we have 11 771 bullish bars on our chart from 
+whenever our historical price action began  
+so that is the purpose of the var variable now the 
+reason um not all variables of va are variables  
+are because let's say we want to draw a shape 
+whenever we detect a bullish bar if i change draw  
+shape to true and then we use the plot shape 
+function and we pass in our draw shape variable  
+if i save the script now you can see 
+an x plotting in our box whenever a  
+bar is bullish so for every green bar here we have 
+an x if i change this draw shape to a var variable  
+and i click save all of these bars will have 
+an x above them because the very first time  
+we detect a bullish bar draw shape will be set 
+to true and it will never reset back to false  
+because we're using a var variable so let me 
+save the script here to show you what i mean  
+you can see we have all these x's if i go back 
+to the very first bar on my chart using the alt g  
+shortcut here you can see that the very first bar 
+in our chart is bullish and so draw shape is set  
+to true and it is never set back to false because 
+this is a persistent variable and so we draw xs on  
+every single bar if i get rid of var and save the 
+script now draw shape is reset on every new bar on  
+our chart and we want that to happen in this case 
+for this particular variable because we want it to  
+be reset on every new bar we want each new bar to 
+be considered as a brand new calculation so that  
+is why not all variables are persistent with this 
+var tag and we need to explicitly tell pine script  
+when we want a variable to be saved across all of 
+the bars on our chart this var can be useful for  
+all kinds of things such as saving your stop 
+loss and target until one is hit and drawing  
+that onto the chart it can be useful for keeping 
+track of certain market conditions so for example  
+maybe you want to check when the rsi goes 
+overbought so you would set your var variable  
+to true when the rsi goes overbought and then you 
+want to wait for a bearish candle and once that  
+happens maybe you enter short for example and 
+then maybe you reset your rsi flag or your rsi  
+overbought monitoring variable those 
+are some practical use cases for this  
+variable type let's get rid of our draw shape 
+variable here for a moment and let's just count  
+every single bar on our chart to do that we can 
+rename our variable to total bars and get rid  
+of our if statement and get rid of this and just 
+plot total bars down here now before we continue  
+i should probably quickly go over the naming 
+conventions for variables the most important  
+thing you need to know is that variables cannot 
+start with a number so if we change this to one  
+total bars and save the script we'll get an error 
+down here because you cannot start a variable  
+name with a number you can have it after text so 
+we could say t1 odual bars and save the script  
+that will work just fine you can have any number 
+on the end of your variable name and that will  
+work just fine you can have an underscore in 
+front of your name your variable name that'll  
+be okay you can't use any other symbol so 
+we couldn't use a dollar sign for example  
+that will give us a compile error 
+so you can only use underscores  
+and text to begin your variable name and 
+you can have numbers and underscores in  
+your variable names but that's as creative as 
+you can get with your variable names so that's  
+important to keep in mind but anyway let's wrap 
+this lesson up by counting how many bars in total  
+have drawn onto our chart to do that all we need 
+to do is increment our total bars by 1 whenever  
+our script runs on a new bar so let's save the 
+script and see how many bars drew onto our chart  
+there you can see a diagonal line all 
+the way from bottom left to top right  
+you can see that we've had 23 553 bars plotted 
+onto our chart in total you could also get this  
+number by using the bar underscore index so if i 
+plot that onto our chart you can see we get the  
+same number minus one the reason for that is that 
+everything in programming starts from zero and  
+so the very first bar on our chart is 
+considered by our index zero and our script  
+would have incremented our total bars to one so 
+in our scripts case let's plot total bars with the  
+color of color dot purple and save the script now 
+we'll get two lines drawing um offset by one so if  
+i hover my mouse over this very first bar you can 
+see that our script says that this bar number one  
+whereas bar index says it's bar number zero the 
+reason for that is that our total bars number is  
+incremented on the first bar whereas bar index 
+is not it's only incremented after that bar is  
+finished drawing so it starts from zero one two 
+three so on all the way to our final bar and our  
+total bars starts from 1 and counts all the way 
+up to the last bar so that about does it for our  
+variable declaration rules and fundamentals we'll 
+be covering variable declaration in quite some  
+detail in the lessons to come and in much more 
+practical use cases so again if this is all brand  
+new to you and you're a little bit overwhelmed 
+don't worry just keep going through this content  
+and eventually it will start to click you can 
+always re-watch the lessons or send an email  
+to support the artoftrading.com if something 
+doesn't make sense to you and i can help guide  
+you to understand these concepts better but with 
+that said that brings me to the end of this lesson  
+i'll see you in the next one where we will cover 
+getting user input in your scripts see you there
+okay so in the official pinescript basics course 
+over on my website at pinescriptmastery.com  
+this is where i would get into how to 
+get user input from the settings menu  
+in your scripts now the problem i have here 
+is that this video alone is 40 minutes long  
+almost and would make this youtube video three 
+hours long and i wanted to try and keep this  
+at two hours or less so instead of copying this 
+lesson from the official course into this youtube  
+series i'm just going to briefly go over the 
+basics of user input so in the official lesson  
+i go into great detail about each input type 
+and all of the parameters we have to work with  
+when getting user input but for this lesson 
+i'm going to keep things extremely simple we're  
+just going to get a couple of user inputs 
+without bothering with all of these extra  
+optional parameters and if you do want to learn 
+the specifics of all of the various advanced  
+user input functionality and features we have to 
+work with in pine then it's definitely going to be  
+worth signing up to the official pine script 
+basics course and going through the material  
+so let's jump into the pine editor and go over 
+some basic user input so that you can at least  
+get started with adding options to your scripts 
+so here i am with a blank script all i'm doing  
+is plotting an a to the chart so that my script 
+will compile and let's get started with getting  
+some user input so the first type of input i 
+want to show you guys is a boolean input and to  
+get a boolean input which is just a true or false 
+value we use the input dot bool function and this  
+function has several parameters we can work with 
+i'm just going to show you how to use the title  
+and the default value so i can title this some 
+true false setting and set the default value  
+to let's set it to true save my code and now 
+i've opened up the little settings menu here  
+we have our some true false setting that we can 
+turn on or off and we can reference this in our  
+script like we would any other variable the next 
+two inputs i want to show you are number inputs  
+so the first one is going to be an integer input 
+that's just a whole number so input.int will get  
+you a whole number input again this has several 
+parameters we're only going to cover a couple  
+of parameters here the first one is going to 
+be title we'll set this to an integer input  
+we'll set the default value to 33 and we will set 
+the minimum value to zero and the max val to 40.  
+and let's also set the step to two so now 
+when i save my code i'll explain what each  
+parameter here does open up the settings menu 
+we now have a number input the step parameter  
+tells the interface how many numbers to increment 
+or decrement when we click the up and down arrows  
+here so if i click up you can see it's going up 
+in steps of two and now that we've reached 39  
+we cannot go any higher because our maximum value 
+is 40 and because this up arrow is trying to  
+increment this to 41 it's not working you'd have 
+to type in manually 40. and that will work if you  
+type in anything higher if we type in 50 it will 
+do what i just did there just cut off the zero  
+let's try something different let's try 77. let's 
+try 99. yeah you can see it's just cutting off  
+the second number there and rounding down to the 
+first number um and same with our minimum vowel if  
+we go down to zero because we're incrementing in 
+steps of two we're trying to go to minus one but  
+we can't here because we've set the minimum value 
+to zero if i set this to negative ten save my code  
+open the settings now we can go down into 
+the negative numbers so that's how we  
+get integer inputs from the user let's have a 
+look at float inputs or decimal numbers to do that  
+we just use the input.float title this decimal 
+input we'll give it a default value of 11.1 and  
+if i hover over this function name you can see 
+it has a bunch of other input function parameters  
+now i won't bother with min val maxval and step 
+i just showed you how to do that with integers  
+it's exactly the same with floats but what 
+i will show you how to do is use the confirm  
+parameter so if i set confirm to true save my 
+code for this to work i need to remove the script  
+from my chart and when i add the script to my 
+chart now that i've set confirm equals true  
+on this input variable watch what happens when 
+i click add to chart i now have to confirm  
+this input so this confirm dialog popped up 
+anything you set confirm equals true to will pop  
+up when you first add the script to your chart and 
+now you need to set this to whatever this setting  
+is supposed to be then you click apply now when 
+you open up settings menu everything is uh back to  
+normal so that's a float input very simple there 
+pretty much the same as an integer one slightly  
+different input i'll show you how to use is the 
+price input so price input is essentially a float  
+input except that it's treated as a price value so 
+if i set price input let's set the default value  
+to zero and set confirm equals true watch what 
+happens now when i click uh save and add the  
+script to my chart actually let me get rid of this 
+confirming true since i already showed you how  
+that works this one is slightly different a price 
+input is slightly different to a float input and  
+i'll show you what i mean if i click add to chart 
+we now have to set the price input price for our  
+basic user input script and you can see we have 
+this horizontal line that tracks with my mouse  
+this is making me forcing me to select a price 
+value with my mouse so for example if you're  
+writing a script maybe that detects candlestick 
+patterns around a support and resistance level  
+and alerts you so that you don't need to babysit 
+your charts all day you could use this type of  
+input to place this line at a support level like 
+i see here if i click right here and i open up my  
+settings menu my price input has now been set to 
+the price value that i just clicked on so that's  
+a really cool feature in pine you can also do this 
+with time inputs so if i quickly show you a time  
+input input dot time and i forgot to mention if 
+you press control space after you write input  
+here is a list of all the input 
+functions we have to work with  
+i'm not going to cover all of them because that's 
+why the other video is 40 minutes long in the  
+main transcript basics course on my website 
+but i will quickly show you how to use a time  
+input the same way we just uh used the price 
+input so let's just set the default value to zero  
+and set confirm equals true and watch what happens 
+now if i get rid of the confirm equals true in our  
+price input and i save my code and i remove the 
+script and add it back to my chart now i have  
+to select the time input for this variable and 
+we now have a vertical line tracking my mouse  
+which is showing the time that i'm hovering over 
+this is perfect for something like an atr trailing  
+stop there is a video on my youtube channel if 
+you search my channel for atr trailing stop i did  
+release a video lesson explaining how to create an 
+atr based training stop where you use this type of  
+input to select where to begin trailing from and 
+once you select the bar the script begins trailing  
+below price action until price comes down and 
+hits it so that's a really cool input there  
+now i think i'll wrap this lesson up here to keep 
+it short hopefully you get the idea by now anyway  
+that will do it for this particular part of the 
+basics lesson video here on youtube if you want  
+to go into more detail about some of these other 
+parameters or some of the inputs i haven't covered  
+here make sure to go to pine scriptmastery.com 
+and sign up for the basics course it's completely  
+free but there is a lot more information 
+there there's at least a couple of hours  
+of extra content anyway with that said i will see 
+you in the next lesson coming up right about now
+hi traders in this lesson i'm going to be showing 
+you the fundamental concepts that you need to know  
+regarding alerts in pine script so there are 
+two ways to trigger alerts in pine script both  
+ways depend on boolean triggers so true or false 
+triggers if the trigger is true an alert is fired  
+if it is false no alert is triggered 
+so for today's example we're going to  
+keep it extremely simple i will cover practical 
+alerts for things like setup detection indicator  
+conditions that sort of thing in future lessons 
+for now i'm just going to give you an overview  
+of the basic functionality of alerts so to do 
+that we're going to create a really simple uh  
+alert condition for this lesson we're going to 
+detect higher closers and lower closers so hc  
+is going to stand for higher close and that's 
+just going to check does the current bar close  
+higher than the previous bar's high and then 
+lower close is the same but the opposite  
+does the current bar close lower than 
+the previous low and this is the first  
+time you're seeing the greater than and less than 
+operators in a future lesson in the next section  
+we'll cover all of the different math operators 
+and pine script operators we have to work with  
+don't worry about that for now basically today 
+we're just dealing with two boolean variables  
+high close lower close if the current bar closes 
+higher than the previous high higher close is set  
+to true otherwise it's set to false and the same 
+for lower close but the opposite it needs to close  
+lower than the previous bar's low and so now we 
+have two different ways we can trigger alerts  
+with these variables the first way is to use the 
+alert function the second way is to use the alert  
+condition function and i'll go over the 
+differences now so first of all let's use  
+the alert function the way this works is an alert 
+function triggers an alert as soon as it is called  
+so for example if we check if hc is equal to true 
+fire our alert and this alert function takes two  
+parameters message which is a string and frequency 
+which is an inbuilt variable or built-in variable  
+so we have three options here once per bar once 
+per bar close and both of these options basically  
+so if we set this to once per bar close this 
+alert will only fire if the current bar closes  
+as a higher close bar and the message can be 
+anything so we could make our string anything  
+i'm going to say here that this bar closed 
+higher than previous bar and then i'm going  
+to add a colon on the end and then i'm going to 
+add on the current closing price of the bar to our  
+alert so to do that we need to use the tostring 
+function because you cannot add a number directly  
+to a string and we need to use the str name space 
+here we'll go over namespaces in a future lesson  
+but we need to say str.2 string and then pass 
+in our number and this will convert the current  
+closing price into text into a string and so when 
+we get a higher close bar that closes so our alert  
+frequency is set to once per bar close if we get a 
+higher close bar an alert will be fired with this  
+text so that's one way we can trigger 
+alerts it's quite simple really and now  
+you don't need to specify these parameters 
+here the function will assume that the first  
+parameter you give it is a string so we could get 
+rid of message equals i mean it will also assume  
+that the next parameter will be a alert frequency 
+so we can get rid of that so we have our alert  
+function triggering with a string argument and 
+a frequency argument only on high close bars we  
+could do the same for if lower close i could copy 
+this string paste it in there change that to lower  
+and now we've got an alert firing on a 
+lower close candle and just to demonstrate  
+that we can do it let's change this to frequency 
+once per bar so this will not wait for the bar to  
+be confirmed it won't wait for the bar to close 
+so that's one way to fire alerts and it's my  
+preferred way to trigger alerts in my scripts but 
+there is also another option here and that is the  
+alert condition function so this alert condition 
+function cannot be placed in an if statement  
+it needs to be in your main script scope so it 
+can't be in an if statement it needs to be in  
+your main scripts sort of body of text so it needs 
+to be checked on every single bar on your chart  
+and this function takes three parameters instead 
+of two the first is the condition the boolean  
+condition to trigger the function so in this case 
+if we wanted to trigger an alert for higher closes  
+we would pass in h c comma that's our condition 
+if hc is true then the alert will fire and then  
+we have our title so here i'm going to say um 
+hire close alert and then we have our message  
+so for this i'm just going to say the same thing 
+here this bar closed higher than the previous bar  
+let's save the script and make sure that 
+compiles and there we go no problems there  
+now how this will work is on our real-time bar on 
+the current bar in our chart this alert condition  
+function will check is hc true if it is then 
+fire an alert with the title higher close alert  
+and the message this bar closed higher than 
+the previous bar now there are a couple of  
+differences between these functions the first 
+important one is that we cannot just add on our  
+closing price as a string here the same way we can 
+with this alert function if i save this script now  
+we will get an error cannot call alert condition 
+with argument message equals and then our series  
+string so a series string just means a string 
+that can change based on certain conditions so  
+the closing price can obviously change at any time 
+the alert condition function does not accept any  
+parameter that can change at any time it needs 
+a constant string meaning a string that never  
+changes such as this right here the only 
+exception with this is that we can use placeholder  
+tags so if i come up to the alert button here and 
+click on that and i scroll down to the bottom here  
+you can see this text here you can use special 
+placeholders such as close time plot zero etc  
+if you click on this little question mark button 
+here you can see all of the different placeholders  
+we can use in our alerts and there are quite a 
+few of them when we are using the alert condition  
+function the placeholder tags are the only way 
+to put in variables that change so for example  
+if we wanted to put in the closing price we would 
+need to do two curly brackets and then right close  
+and then to close curly brackets this placeholder 
+would be replaced by trading view when the alert  
+fires with the current closing price so now if 
+i save the script and we come up to the alert  
+button and i select our script alerts if i click 
+on this little drop down box here you'll see  
+that we have our any alert function call as an 
+option that is this function here so we could  
+set up an alert so that either of these get fired 
+or we can select our higher close alert which is  
+our alert condition so if i click on that and 
+i say once per bar and turn off my web hook  
+uh we'll cover web hooks in a future 
+lesson don't worry about them for now  
+but if i just set now an alert as this 
+is right now i've set it to once per bar  
+because the current bar's price is greater than 
+the previous bar's high this alert should fire  
+immediately so let me click create we'll wait for 
+price action to move as soon as price action moves  
+there we go our alert is fired so you can see 
+when i hover over that alert it says this bar  
+closed higher than the previous bar and then it 
+has the closing price so our little placeholder  
+here was replaced with the closing price you 
+could also put in the ticker if you wanted to  
+so now if i save the script and set a new 
+alert and select hire close alert and click  
+create now we have a new alert that fired and you 
+can see that it now says the market the ticker id  
+of the market that fired this alert so that's how 
+you pass in dynamic information into your alert  
+condition functions the alert function on the 
+other hand is a lot easier to pass in information  
+so this particular function is definitely the 
+preferred method for dealing with third-party apis  
+for example for trade automation using tradingview 
+alerts you would be better off using this  
+alert function if you can this alert condition on 
+the other hand is great for manual alerts because  
+you can give each alert a title so for example 
+i could copy this paste it down here change  
+this to lower close and change the condition to 
+our lower close variable change that to lower  
+so here's our lower close alert and then let's 
+say we want to merge both of these so we want to  
+say if we have a higher close or we have a lower 
+close then we have a hclc alert and then we could  
+just say this bar closed higher or lower than the 
+previous bar now if i save the script and we come  
+up to the alerts dialog and select our script 
+when i click on this drop down box we have three  
+different alerts to choose from here we have a 
+higher close level close alert high close alert  
+and lower close alert with their own titles so 
+this is really useful for setting manual alerts  
+in your scripts say you have a script that 
+is designed to help traders trade your script  
+manually and you want to detect things like 
+a certain candlestick patterns or certain  
+indicator conditions that sort of thing this is 
+a great way to separate your alerts with a title  
+to make it more intuitive for the user whereas 
+this any alert function call will literally fire  
+for any alert function call that we put in our 
+script now if i were to create this alert nothing  
+would happen because i've set my alert frequency 
+to once per bar closed so we would have to wait  
+for the bar to close higher than the previous 
+bar for this to fire let me get rid of this  
+close out of our alert frequency so this should 
+now fire immediately as soon as i set an alert  
+on this any alert function call so let me 
+first click show pop-up and then click create  
+we'll see what happens there we go an alert just 
+fired on euro dollar it fired based on the any  
+alert function call condition and we get our text 
+here that we wrote out here so this bar closed  
+higher than the previous bar and then we have 
+our bar price our closing price so for example  
+let's say we wanted to pass the current rsi value 
+to our alert as well we could replace um this bar  
+close higher than the previous bar and then set 
+the rsi value in there so now it will tell us  
+the current rsi value when we set our alert so let 
+me select alerts leave that as it is click create  
+there we have it now you can see our rsi value now 
+there's a lot of decimal places here um i'll show  
+you in a future lesson how you can truncate 
+or cut excess decimal places off your alerts  
+but for now that's not important you can see 
+the the current rsi value over the 14 period  
+is 68.62 or 63 if we round it up and that's 
+really all you need to know for alerts we  
+have these two methods for setting alerts both 
+have their pros and cons the pros for the alert  
+function is that we can easily pass in values so 
+price values indicator values third-party syntax  
+for sending your alerts to a service that 
+automates your trades based on your alerts  
+if you're using a service like that they will 
+require a certain syntax for your alerts so for  
+example you might need to say um set my stop loss 
+to and then in here you could set tostring your  
+stop loss price and then you might need to put in 
+a comma take profit equals and then put in your  
+take profit price etc and then you could send 
+this information to a third-party api using a  
+web hook using this so for example i've been 
+using pine connector recently to automate  
+some of my trading strategy scripts if i send 
+the right syntax in an alert message to this  
+url using the trainingview alert functionality 
+pi connector will automatically manage my trades  
+for me based on the commands i give it in my 
+alert message and i can pass in my stop-loss price  
+breakeven distance trailing stops limit order 
+entry prices all that sort of thing just using  
+this technique that you see right here so that'll 
+do it for this particular lesson on alerts this  
+is the basic core functionality of alerts we'll 
+cover more detailed practical applications of this  
+information in future lessons especially when we 
+get into setup detection and indicator conditions  
+that sort of thing so i hope you found this lesson 
+interesting and i'll see you in the next one
+hi traders welcome back to another lesson in this 
+lesson we're going to be breaking down the plot  
+function and i'll be demonstrating how you can 
+use it to plot data onto your chart so the plot  
+function is used to plot numbers onto the chart 
+and numbers only we can't plot any other data type  
+other than numbers using this particular function 
+so here we are just plotting the closing price  
+onto our little indicator box here if i change 
+this to anything else let's try and plot a boolean  
+plot true i'll save the script we'll get an error 
+cannot call plot with argument an argument of bull  
+type was used but a series float type was expected 
+so we can only plot numbers let's try a string  
+text save error cannot call plot with argument 
+text an argument of string was used but float is  
+expected so we cannot plot any data type other 
+than numbers using this function to plot other  
+data types we need to use other types of functions 
+but the plot function is still extremely useful  
+for plotting things obviously like indicator 
+values and so on and so for this particular lesson  
+i'm just going to plot the closing price i'm 
+going to walk you through the various parameters  
+that this plot function takes that we can use to 
+manipulate its output so the first thing it takes  
+is a series and this could be anything it could 
+be a price value open high low close it could be  
+an indicator value it could just be a number that 
+we want to plot so here we can plot the number one  
+across our chart we can also title the function 
+so i'm going to call this our plot save the script  
+and now if i open up the settings menu by clicking 
+on this little cog icon here on the style tab you  
+can see that our plot now has a title if we don't 
+title our plot then it would just be called plot  
+so the purpose of titling your plots is to make 
+it easy for your user the users of your script  
+to know what your plot does and maybe they want 
+to turn it off or change its color or its style  
+the next parameter we have to work with with our 
+plot function is the color parameter so you can  
+set the color to anything you want by default 
+it's usually blue but you can set this to any  
+inbuilt color or custom color that you want so 
+for now let's set it to purple save the script  
+and we have a purple line the next parameter 
+this plot function takes is line width so this  
+ranges from one to five i believe so by default 
+it's one which is the thinnest line you can plot  
+if we set it to five it becomes very thick like so 
+one valuable use case for this line width function  
+is when plotting things like a moving average 
+maybe you want your longer term moving average  
+to be thicker than your shorter term moving 
+average for example i created a script here called  
+multiple moving averages if i add that to my chart 
+and we zoom out if i turn on all of the moving  
+averages you can see that they range from thin to 
+very thick at the bottom here based on the length  
+of the look back period for that moving average 
+so that's one useful practical use case for this  
+line width parameter the next parameter we have is 
+style so this is the style of the data that we're  
+plotting to change the style you just type in plot 
+dot and then control space and any of these style  
+built-in variables will dictate what your data 
+looks like so you can set it to circles save the  
+script now we're plotting um actual circles 
+under the chart you could set it to an area  
+for example it's hard to see the peaks and valleys 
+of this area because price action is so tight on  
+this time frame if we go out to the weekly we can 
+see a little bit more of that we could also plot  
+columns if we wanted to so if i set this to 
+columns and save the script now we're plotting  
+price as a column so this is obviously most 
+useful for something like plotting volume so if  
+we change the plot to volume now we're plotting 
+volume as a column let's change this back to  
+a simple line and i'll change our plot back to 
+the closing price as well now the next parameter  
+we have to work with with our plot function is the 
+track price parameter so track price is a boolean  
+parameter true or false it's false by default 
+so it's turned off by default but if you want to  
+turn it on you just set this to true and what this 
+will do is just plot a horizontal line across our  
+chart like you see there which is tracking the 
+current price of our plot so if i go down to a one  
+minute time frame you'll notice this line moving 
+around as price action moves and it's literally  
+just tracking the price the current price of 
+this plot the next parameter we can use in this  
+function is the hist base parameter so hist base 
+is short for histogram base and this is the base  
+price of histograms columns and let me open up the 
+plot documentation so it says here that hist base  
+is the price value used as the reference level 
+when rendering plot with histograms columns or  
+areas so if i drop out to the four hour chart 
+and we change our hist base to let's say 117.  
+if i set it to 1.17 and i set my style to style 
+columns and save the script our hist base is now  
+1.17 and so any value that prints above 1.17 will 
+be a column that prints in the upper half and any  
+value that prints below 1.17 will be in the lower 
+half so that's the purpose of hist base you might  
+have seen this style of plotting in something 
+like a macd and it works on columns as we just  
+saw it works on areas as well so there's an area 
+with the hist base applied and it also works with  
+histograms so if i save the script we get the 
+same sort of effect now let me change this back to  
+a simple line and get rid of our track price and 
+hist base and we'll go over some of these other  
+parameters that we have to work with so the 
+next parameter we have to work with is offset  
+now offset does exactly what it sounds like 
+it offsets the plot so if we want to shift  
+this plot 10 bars to the right you would set 
+offset to 10 and now watch when i save the script  
+our line here will shift over 10 bars to the right 
+here so if you want to shift to the left you would  
+use negative 10 if you want to shift to the right 
+you use a positive number so let's shift this line  
+10 bars to the right let me save this script 
+and now you can see that the plot is plotting  
+with an offset of 10 bars so the current value is 
+being plotted 10 bars to the right if we wanted  
+to plot this line 10 bars back you would just add 
+a negative sign in front of that offset parameter  
+and now the line is drawing 10 bars back now there 
+are a handful of reasons why you would want to  
+use this offset parameter in your plots we're 
+not going to cover them all in today's lesson  
+but we will in future lessons when we get into 
+more practical use cases of these parameters in  
+actual indicator and strategy scripts so now 
+let's get rid of this offset for a moment and  
+look at the last few remaining parameters 
+the next one is join and the join parameter  
+is a true or false variable and it basically 
+just adds a joining line between our plots now  
+when you're plotting a line like we are here you 
+don't need to use this parameter it's useless but  
+if we were using something like let's try a style 
+cross save the script zoom in a little bit you  
+can see these crosses have gaps in between them 
+we're plotting the closing price so it's jumping  
+up here as this big green bullish bar printed 
+the cross jumped up here if we set join to true  
+and save the script now we have a line connecting 
+all of our shapes so any shape that has a gap  
+between it you can draw a line between them 
+using the join parameter and setting it to true  
+the next parameter we can work with is editable 
+so by default all of our plots are editable but if  
+you want to stop the user from changing your plot 
+for whatever reason personally i've never used  
+this parameter but maybe there's a reason why you 
+might want to prevent users from editing a certain  
+plot in your script you can set this to false 
+so by default this is always true but if we set  
+it to false watch what happens before i say the 
+script we'll open up the settings menu and here's  
+our plot here if i save this script wait for it 
+to update and then open the settings menu again  
+you'll notice that our plot style settings are 
+gone we can no longer change the style of this  
+purple plot again i don't know why you would want 
+to limit the customization of your script by your  
+users but the option is there if you need to 
+now the next parameter we can work with is show  
+underscore last and show last basically just 
+tells the script um how many plots to display  
+on the chart so if we set show underscore last to 
+10 for example we will only show the last 10 plots  
+onto our chart so let's save the script and now 
+you can see we only have 10 plots drawing onto the  
+chart so you won't need to use this often i never 
+have but it could be useful in certain scripts  
+where you don't want to show historical analysis 
+you only want to show the most recent analysis  
+onto your chart for example maybe you want 
+to reduce clutter from your chart if you're  
+drawing something like support and resistance 
+levels for example maybe you don't want your  
+chart covered in lines that were drawn hundreds 
+of bars ago you just want to show the last handful  
+and now the final parameter we have to work with 
+when it comes to plotting data to our chart is  
+the display parameter the display parameter just 
+basically turns on or off the drawing of your plot  
+so by default it's obviously enabled but if you 
+want to you can hard code your plot to set it to  
+display.none and then the plot will not draw onto 
+your chart this is great for debugging so maybe  
+you have some functionality in your script that 
+you want to be able to check visually what it's  
+doing from time to time but you don't actually 
+want that information drawing onto the chart all  
+of the time you can set display.none in your plot 
+parameter and then in order to actually see this  
+drawn to the chart you need to come up to the 
+settings menu and turn it on here by clicking  
+on this little checkbox now when you set this 
+to display.none it does stop drawing the actual  
+indicator value as you can see here we don't get 
+our value plotting so this essentially just turns  
+the plot off completely but let's say that you 
+don't want the data actually plotting onto your  
+chart but you still want to see the number the 
+best way to achieve this is using transparency  
+now we'll cover the color functionality in 
+pan script in a future lesson we won't go  
+into detail in this lesson but just really quickly 
+to show you how it's possible to set a plot to be  
+transparent you can use the color.new function so 
+here i'm creating a new color i'm using the color  
+dot new and then passing in the purple color 
+if i add a comma on the end here and type in  
+100 and then close off this parentheses we opened 
+here we're now creating a new color of the color  
+purple with 100 transparency and now if i save 
+the script you'll see our plots disappear but the  
+value is still plotting on the indicator status 
+bar so this is another great debugging tool  
+or a way to plot something like the atr for 
+example maybe you want to plot the atr in your  
+script but you don't want the atr actually drawing 
+over the top of price action this is how you could  
+go about doing that and that brings us to the 
+end of this lesson i'll see you in the next one
+let's have a look at one of the most simple 
+technical analysis conditions we can check for  
+in pine script which is moving average crosses now 
+this is not a trading lesson i do not encourage  
+you to trade moving average crossovers and cross 
+hunters they may be profitable with the right  
+rules the right set of rules and entry reasons etc 
+i personally don't trade them but for the purposes  
+of this lesson they are a great example of how 
+easy it is to detect certain market conditions in  
+pine script so to get started we of course need 
+two moving averages in order to detect a cross  
+so let's get some mas and again just today 
+because it's my favorite moving average i'm  
+going to use an ema an exponential moving average 
+but you can use any moving average type you like  
+i'm going to set ema 1 to ta.ema and we'll base 
+it on the closing price as always and this one  
+will have a length of 50. and then the second 
+ema will have a length of 100. so now before we  
+proceed let's draw the mas onto our chart and i 
+will style the first one with the color of color  
+green and the second one can be red so let's save 
+the code make sure that this is working fine there  
+we go two moving averages on our chart now let's 
+detect our crosses our crossovers and cross unders  
+so we'll create two variables here two new 
+variables called ma cross over and may cross  
+under now for our crossover and cross under 
+we're going to use the inbuilt function t a  
+dot and then if i start writing cross here we have 
+our various options now cross will detect either a  
+crossover or a cross under for today we're going 
+to separate these two into their own variables  
+and so for crossover i'm going to use crossover 
+obviously and for cross under we'll use ta.cross  
+under and now these functions take two 
+parameters two values that need to cross  
+these could be any values they don't need to 
+be moving average values they could be anything  
+macd lines for example um or the rsi crossing over 
+a certain threshold for today we're just going  
+to put in ema1 and ema2 if i copy that into our 
+second function here we are now detecting our m8  
+crosses and at the bottom of our script i'm going 
+to draw crosses and here i'm going to set bg color  
+to ma cross over question mark if the moving 
+average has crossed over the other moving  
+average if ema1 is crossed over ema2 i'll set the 
+background color to color.green otherwise i'll do  
+nothing with the background color set it to n a 
+i can copy this line of code paste it underneath  
+i'll change this to cross under and we'll change 
+the color to red and now if i save my script  
+we'll be getting the background color of our 
+chart changing based on which cross happened  
+so click save and that will do it for this lesson 
+very simple one here just again introducing you  
+to the ta namespace and combining some of the 
+things we've learned so far to create practical  
+uh indicators that can be actually useful in our 
+trading anyway i'll leave this one here and i'll  
+speak with you in the next lesson the source code 
+will be below if you want to play around with this
+hello my friend well done you made it to the very 
+end of this very long video congratulations you  
+are one of the few traders who actually commit 
+to learning this stuff obviously i have access  
+to the metrics and analytics of my videos in both 
+youtube and on my course website and you would be  
+surprised how few traders actually commit and 
+make it to the end most give up halfway through  
+so well done for making it this far you should now 
+be able to go out and start playing around with  
+pine script and start writing your own scripts 
+but if you do run into trouble or you want  
+further guidance make sure to check out my mastery 
+course i recently re-recorded all of the content  
+for pine script version 5. so this is the new and 
+improved version i've stepped up the content a lot  
+and the new course has over 140 lessons and 
+counting i haven't even started recording the  
+strategy section yet i'm about to start doing that 
+this week so if you found this free basics course  
+interesting i think you will love the mastery 
+course we have a lot of great reviews here from  
+traders who have gone through the course 
+you can come and read these here if you're  
+not convinced that it's worth your time and 
+money there is a lot of content here from  
+obviously the basics which we just covered to um 
+some of the more intermediate things like how to  
+analyze price how to detect candlestick patterns 
+how to use all of the various inbuilt functions  
+and variables as well as the inbuilt indicators 
+i've got a lot of material on indicators here then  
+we go into information about accessing other time 
+frames and markets using the security function  
+we cover arrays this is still in 
+progress this material here arrays  
+are quite an advanced subject as far as pine 
+script is concerned we cover libraries and  
+soon i will be expanding into strategy scripts 
+and even automation how to automate your pine  
+scripts through third-party apis so if this 
+sounds like something you'd be interested in  
+head over to my website pine scriptmastery.com 
+i have another course here as well where i share  
+the source code to all of my published indicators 
+and strategy scripts including a bunch of private  
+scripts that i've never actually released and 
+the source code to my really popular ultimate  
+pullback indicator which is the most advanced 
+and sophisticated profitable trading script i've  
+ever written but anyway i'll leave it here 
+thanks for watching the video again if you  
+liked this content make sure to hit the subscribe 
+button because i will be back soon with more free  
+pan script material if you're not yet ready to 
+commit to learning more about pine script and  
+signing up to the mastery course at least hit 
+the subscribe button because i definitely will  
+be back soon with more free content with all of 
+that said well done getting to the end good luck  
+with your trading i hope you kill it out there in 
+the markets i hope pinescript helps you to enhance  
+your edge and take your trading to that next level 
+and i'll leave you here have a great day or night  
+wherever you are in the world whatever time it is 
+and i'll speak with you in the next video goodbye
+[Music]
+[Music]  
+you

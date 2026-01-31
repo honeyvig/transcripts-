@@ -1,0 +1,301 @@
+what's up Traders I'm Kevin Hart and in
+today's video I'm going to be showing
+you how to install Pine connector into
+metatrader 4 so that we can automate our
+trading view scripts now I've already
+done a video on metatrader 5 that is the
+platform I will be using personally to
+go through the rest of this series but
+for those of you who have a broker that
+does not offer metat trator 5 or you
+prefer metat trator 4 I'm going to
+quickly show you how to set up Pine
+connector for this platform now if you
+want to know more information about Pine
+connector go and watch the metatrader 5
+version even though it shows you how to
+install Pine connector on metatrader 5 I
+also go into a lot of information about
+what Pine connector is and how it
+functions and I'm going to skip all of
+that for this video to keep it really
+brief I don't want to repeat myself
+unnecessarily so if you're new to Pine
+connector and you have no idea what it
+is go and check that out uh the metat
+trator 5 version of this instructional
+video now before we continue I need to
+mention that this is not trading advice
+I'm not a financial adviser this is
+risky stuff if you don't know what
+you're doing if you're not a competent
+Trader I recommend you stay away from
+Pine connector or at least spend a lot
+of time on the demo account before you
+even consider uh live trading using this
+expert advisor there is a lot that can
+go wrong you can lose money very quickly
+if you don't know what you're doing but
+in this video series on Pine connector I
+will walk you through each step of the
+way and for those of you who are
+comfortable with the risks involved in
+automated trading we will automate a
+script by the end of this series I can't
+promise it'll be profitable cuz it's an
+example script but I will show you guys
+how to set up a fully automated script
+through trading View and pine connector
+so that you can execute trades on your
+broker while you sleep anyway with that
+out of the way let's continue with the
+instructions let's download the windows
+version of metatrader 4 and let's
+install this onto my system next and
+then click finish we can close this tab
+I need to select server 01 next existing
+trade account paste in my um metatrader
+account number I'm going to change these
+account numbers these are demo accounts
+anyway way um but if you're doing this
+yourself don't give this number out uh
+because people can try to screw around
+with your account so click finish to log
+in hopefully this
+works there we go incoming mail there we
+go we have logged in and once again we
+need to turn off these obnoxious sound
+effects so I'm going to go to tools
+options events and stop that click okay
+there we go all right so let's jump over
+to the Pine connector instructions and
+download the metatrader 4 expert advisor
+for Pine connector so here I am on my
+members portal the first thing I need to
+do is change my account number because
+I've already set this up on metatrader 5
+so if I go to file uh login copy this
+number and paste it in here now my
+license will work with this new
+metatrader account number now you need
+to use your own metatrader account
+number number this will not work with my
+number it needs to be the one you've
+logged into your platform with so now
+that I've done that I need to download
+the metatrader 4 expert advisor so I can
+open this folder up right click this EX4
+file cut open up metatrader go to file
+open data folder then we need to go into
+mql4 experts and paste this file into
+here now I can open up my expert
+advisors tab down here right click on
+this and click refresh and here is our
+Pine connector expert advisor but before
+we use this we need to change a few
+settings so we need to come up to tools
+options um expert advisors we need to
+click to allow automated trading and we
+also need to allow these dll Imports now
+this allows expert advisers to do things
+like access the internet outside of the
+platform which is required for uh Pine
+connector if you're not comfortable with
+this make sure to reach out to the Pine
+connector support team to discuss any
+apprehensions you have but personally I
+trust these guys I've used them for a
+couple of years now so I'm going to
+allow that click okay and the final
+thing we need to do is make sure this is
+turned on make sure this is green um now
+let's go through the instructions here
+if I click EA guide let's make sure I
+haven't missed anything we click on
+metatrader 4 I've downloaded the EA I've
+installed it into my data folder into
+mql4 I have allowed dll Imports I have
+enabled auto trading the final thing to
+do is attach the pine connector EA to my
+chart so I can right click this and
+click attach to chart now I need to come
+to commment make sure allow live trading
+is turned on and allow dll Imports is
+turned on as long as these two options
+are on the expert advisor should be able
+to execute trades through our broker
+through the metatrader platform now we
+need to come to inputs this is where we
+put in our license ID now there'll be a
+link in the video description if you
+haven't used Pine connector before it's
+an affiliate link so if you do sign up I
+do get get a small cut of your payment
+at no extra cost to you so if you want
+to support the channel that's one way to
+do it but if you don't want to support
+the channel for whatever reason uh
+that's fine to just go to the Pine
+connector website and sign up for a free
+trial you get a 7-Day free trial um get
+your license ID from your uh the main
+site dashboard so if I go to members
+portal scroll down and copy this number
+I can paste that into here and click
+okay and now assuming I've done
+everything correctly this should enable
+Pine connector there we go we have
+successfully connected to Pine
+connector's server everything is good to
+go so let's jump back over to the
+instructions here I've allowed live
+trading and dll imports on the expert
+advisor settings tab I've inputed my
+license ID we have successfully
+connected to the server so our
+connection is good um the final thing to
+do is send a test alert to make sure
+this is working correctly so first we
+need to find a symbol so if we go back
+to to metatrader and I go file uh or
+view where is it here symbols you can
+press control U on a Windows computer or
+just click symbols here uh we go to FX
+Majors we need to make sure that the
+symbol we want to trade is enabled so if
+we double click on these you can see
+they turn gray that means that trading
+is not enabled on these symbols and the
+expert advisor Pine connector uh will
+not be able to execute trades on these
+symbols if we send alerts to these
+symbols so we need to enable all the
+markets we want to trade once these are
+enabled we can click close now notice in
+my symbols list we're going to send a
+test command to open a long trade on
+euro dollar and my euro dollar symbol in
+this list has a suffix so depending on
+the broker you are using you may have a
+prefix or a suffix on the market you
+want to trade in my case I have a suffix
+which is a full stop a I need to send
+this entire string to Pine connector in
+my alert if I want to open a trade on
+euro dollar so let's do that now let's
+scroll down through the instructions we
+have enabled euro dollar we have gone
+over the suffix here so the final thing
+to do is um copy this line
+here go to trading view let me delete
+the metatrader 5 test alert click ADD
+alert make sure that euro dollar is
+selected um I went over this in the
+metat trader 5 version of this video but
+it is IDE to use the same broker feed
+you can see here this says pepperstone
+that is the same broker I'm using on my
+metatrader platform this is not
+necessary you don't have to use the same
+um data feed as long as you send the
+correct symbol the correct
+symbol oh my goodness Euro doll. a as
+long as I send this to the correct link
+with the correct license ID it doesn't
+matter what Market I trigger this alert
+on the trade will go through to Pine
+connector here but obviously does help
+to be using a data feed that is as close
+as possible to whatever your uh
+metatrader platform is using so in this
+case I'm using euro dollar on metatrader
+and uh trading view through pepperstone
+um and the data feed is pretty close so
+we shouldn't have too many issues with
+trades being executed at um different
+prices on both platforms so now I can
+paste in what I copied from the pine
+connector website and now I need to
+replace my license ID and my symbol with
+the corresponding parameters to trigger
+an alert on euro dollar so to do that I
+can come back to this page copy my
+license ID I paste that in here now this
+license ID again corresponds to your
+metatrader account number so you can't
+use my license ID don't even bother
+trying you need to create your own um
+but there is a one week free trial for
+those of you who aren't ready to commit
+any money to this and you just want to
+play around make sure to sign up to the
+free trial um go to your member
+dashboard copy your license ID in here
+buy means we are going to buy at Market
+risk equals 1 means with the default um
+expert advisor settings with the default
+settings here uh we will go over these
+settings in detail in future videos but
+for now using the default settings
+sending a risk equals one command will
+open one standard lot on the symbol we
+specify and for the symbol remember we
+need to type out the um the market we
+want to trade and then the suffix so a
+now I need to change my condition to
+greater than zero and now this alert
+will trigger as soon as I create it and
+price moves because obviously price will
+always be greater than zero unless the
+world has imploded and the euro is no
+more uh but hopefully by the time you
+watch this video that hasn't happened
+anyway the next thing we need to do is
+come to Notifications make sure web hook
+URL is turned on and this link is pasted
+in you can get this link from the uh
+instructions here so you need to copy
+this URL paste it into the web hook turn
+the web hook on all of these other
+settings do not matter they're optional
+if you want to be notified when your
+script executes a trade then you might
+want to set these up when you create
+your alerts but for today's test we
+don't need to worry about that um and it
+looks like we're good to go I'll just
+change this to Pine connector test mt4
+now when I click create this should
+trigger immediately and we should either
+get an error in the experts tab or trade
+should be executed there we go it looks
+like our trade executed just fine there
+we go we have a trade opened we have
+opened one standard lot on euro dollar
+at Market um using an alert sent from
+Trading view amazing stuff now if you
+get an error in this experts tab uh when
+you try to trigger this alert if there's
+an error code here like a number then
+you need to come to pinec connector.com
+error and then if you you search for
+your error
+code um there should be a description on
+what the error means and Rec and
+recommendations on how to rectify that
+error but we didn't get an error luckily
+uh this works straight out of the box
+with the default settings so I can wrap
+this video up here and in future videos
+we will go into more detail about the
+settings of this expert advisor I'll be
+doing most of my um personal examples on
+metatrader 5 but you guys should be able
+to follow along on metatrader 4 if
+you're using metatrader for because
+these settings are pretty much identical
+on both platforms with all that said
+I'll wrap this video up here I'll speak
+with you in the next one take care and
+good luck with your
+training

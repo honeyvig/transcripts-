@@ -1,0 +1,239 @@
+Pine script finally has a console that
+we can print stuff to I mean this is
+this is a dream come true for me I've
+been coding in pinescript since uh 2017
+and I have dreamed of this day for years
+I mean it's such a basic feature of any
+programming language that is so
+invaluable for debugging your scripts
+and figuring out why it's not doing what
+you wanted to do which is let's be
+honest more often than we'd like and
+oftentimes depending on the complexity
+of your script it can be quite difficult
+to figure out what the heck is going on
+under the hood and what you have
+overlooked in your code this new feature
+helps us figure that out so let's go
+over some of the uh the words here so we
+now have a new log function I love the
+Simplicity of this it's very easy this
+will be a short lesson or video because
+it's not rocket science this new feature
+thank goodness it's really easy to use
+if you've been following following the
+channel for a while you'll know that I
+recorded a video a few weeks ago or
+months ago you're now demonstrating a
+script by he who must not be named a
+prominent Pines scripter who created a
+table that did this functionality it
+printed logs onto our chart the catch
+was there was a table on our chart and
+you can't copy text out of a table on a
+training view chart and so you could
+display the text but you couldn't do
+much with it you definitely couldn't
+search through the logs which you can
+now so this new feature is incredibly
+useful so we now have three new
+functions log dot error log.info and log
+dot warning and they have a screenshot
+here the gray text is a log.info the
+yellow text is a log dot warning and red
+text would be a log dot error there is
+no difference between these three other
+than the color coding in your Pine logs
+now importantly Pine logs work
+everywhere they work on historical bars
+they work in real time and they work in
+replay mode and they can be called from
+any type of script so indicators
+strategies live libraries and from
+anywhere in the script including local
+blocks loops and from inside
+request.security and similar functions
+so let's copy the example code here jump
+into the pine editor and I'll break down
+what's happening so here is the example
+script that they provide in the blog and
+what we're doing here is we're just
+demonstrating all three different log
+types so the first log.warning function
+caller here is plotting every 100th bar
+index into the logs and first of all I
+should probably show you how to open the
+pine log console it's pretty simple all
+we do is click on this little elliptical
+hamburger whatever they call this thing
+in the corner here and come down to Pine
+logs now I need to add this to my chart
+I believe before it will do anything so
+let's save this script and add it to my
+chart and I'll hide this script here
+we'll get to what this is in a moment
+just hide these two scripts and open the
+pane editor come up to here and then
+Pine logs and that's fantastic
+thanks Elon Musk my starlink apparently
+has a poor internet connection one of
+the beautiful things about living in
+Australia in Queensland at least is that
+we have terrible internet here but
+anyway first of all problems right let's
+break down what's happening here so we
+have every 100th bar index is being
+plotted onto my Pine logs here in yellow
+because it's a warning log then we have
+real-time bar processing here so if I go
+to a different Market that's live and we
+go to let's go to a one minute bar now
+you can see that these varip variables
+allow us to manipulate variables on a
+real-time bar so if we zoom in here
+every time this bar moves or the volume
+changes we're going to get a new log
+print here this is obviously really
+useful for seeing what your script is
+doing it's like having a magnifier on
+your own code and so now a new bar is
+about to start which should get a new
+log here now this was an error log so
+it's in red
+so when a new bar started we error
+logged to the console and there we have
+it then if the bar is not new and it's
+not a historical bar that means it's a
+real-time bar and our info log is
+plotting uh price information now this
+particular script uses a few different
+methods for formatting our logs so this
+is an expression we can pass in to the
+log functions server hold down control
+and click on this you can see that we
+have the option to just pass in some
+text or we have the option to pass in a
+format string followed by several
+different arguments or parameters so
+this is telling the log function how to
+format this number same with this here
+so we have 0 is our first parameter one
+is our second parameter or argument and
+two is our third and then we pass in one
+two three numbers
+but you don't need to do this if you
+don't want to you could just pass in
+something like this
+uh plus str.to string bar index that
+will do exactly the same thing but if
+you are comfortable with slightly more
+advanced text formatting options you
+have these options here for quickly and
+easily plotting lots of number
+information into the log functions the
+final thing to note is that this
+functionality is only available in
+scripts that you have the source code to
+and that you have added to your own
+chart so if you get a script from the
+script library and you try to check the
+pine logs they won't be there you need
+to have added the script code to your
+chart yourself and have access to the
+script code in order for this to work at
+least for now that's what it says on the
+log blog post now next week I have
+another lesson planned that is going to
+show how to create a multi-time frame
+Market regime filter and this script is
+also using the new panscript log
+function another way to get to the log
+console by the way is to hover over your
+script click on this and click Pine logs
+and here you can see I've done some test
+printing here I'm printing when the very
+first bar on my chart started so this is
+January of 2009 and I am printing how
+many bars on this time frame past all
+three regime filters so I'll explain all
+of that in next week's video make sure
+to hit the Subscribe button if you
+haven't already the script is telling us
+that on this time frame the market has
+bullish momentum on 54 of 20 000 bars in
+our charts so out of 20 000 bars all the
+way back to 2009 this Market the S P 500
+has a 54 chance to be trading above its
+one week 20 EMA as one day 20 EMA and
+it's 4 hour 20 EMA so in other words it
+has an objective bullish bias which is
+useful to know and obviously you could
+display this information in other ways
+using pinescript features but it's
+really cool to just be able to quickly
+print this sort of information to the
+log console and just see it and we can
+also copy and paste this out of the
+console which we couldn't do before so
+really powerful stuff we can also search
+so
+you can type in keywords and it will
+search the logs you can filter the logs
+you can set a start date to display the
+logs I believe there's a 10 000 log
+limit so it's useful to be able to
+filter your logs so that you can see a
+certain time period see what your script
+was doing during certain market
+conditions you can disable logging here
+and you can also search using rejects or
+regular expression if you know how to
+use that search formatting function but
+anyway I think that's all there is to
+cover about this new feature we'll
+obviously be using this a lot going
+forward in certain scripts so we'll come
+back to this in future videos but for
+now that's how we use this new awesome
+simple feature to debug Alpine scripts
+I'll leave a link in the video
+description and the pin comment below to
+the two-part video series I did on
+debugging Pine script code including for
+loops and functions that sort of thing
+obviously if you watch those older
+videos just replace whatever I'm using
+in there's all videos with this new log
+feature these new log functions because
+this is much easier than the options we
+had in the past it's a lot more
+efficient and a lot more powerful
+actually before I go I should mention
+that there was just a new blog post
+released yesterday announcing yet
+another new feature to Pine script which
+is Maps now maps are very similar to
+arrays except that you use a key instead
+of an index to reference the members of
+this map so I'll explain this in future
+videos we'll I'll probably do a video
+just on this when I get time
+um it's not something I personally use
+very often in my scripts but there are
+reasons why you might want to use this
+for example in this example code here
+they put various colors into a map and
+you can reference these Colors by their
+names instead of um array index number
+so it just makes it a little bit more
+intuitive to work with certain types of
+data or data for you Americans out there
+but anyway we'll come back to this in a
+Future video just thought I'd mention
+this since it just came out hot off the
+press so with that said thank you for
+watching good luck with your debugging
+and your coding and your trading and
+I'll speak with you in the next lesson
+take care have a great weekend and I'll
+speak with you soon

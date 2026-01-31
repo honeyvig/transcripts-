@@ -1,0 +1,754 @@
+foreign
+that provides the extensive capability
+for data visualization and plotting
+Matlab plotting functions allows you to
+create a wide range varieties of plot to
+visualize your data starting from a
+simple line plot and scatter plot to a
+complex 3D plots and customize
+visualization on that note welcome to
+Simply learn YouTube channel today we
+are here with a fantastic video on
+Matlab plotting which will help you to
+learn how to use plotting functions in
+Matlab are you aiming to get certified
+as a data analyst and want to build your
+career in data analytics in that case
+you can check out the data analytics
+certification course by simply learn
+which will open the dose for the best
+career opportunities to find the details
+of the data anal certification course
+click the link below the description box
+it could be an ideal solution to help
+you to build your career in the right
+direction and we have a special discount
+coupon for our YouTube members to Avail
+the deal use the coupon code ytb 15. and
+if you haven't subscribed yet please
+subscribe to our simple and YouTube
+channel and hit the Bell icon to never
+miss an update from us
+before we get started here is a question
+for you in Matlab what is the comment
+used to save a command window text to a
+file let us know the answer in the
+comment section below now just quickly
+go through on the agenda for today's
+session
+today we will start the session by
+understanding what is plotting then we
+will move on to learn how to create
+plotting then we'll learn how to create
+multiple plots followed by we will learn
+how to add line color and marker style
+to a graph then we will learn how to
+generate a subplots at last we will
+learn some of the 2D plotting functions
+in Matlab
+now let's begin the session by
+understanding what is plotting
+plotting is a graphical representation
+of a data set that indicates the
+relationship between the two or more
+variables Matlab plotting plays an
+important role in the fields like
+mathematics finance and statistics and
+data analytics now it's time to learn
+how to create plotting in Matlab
+creating a plots in Matlab is very easy
+if you are creating 2D plots you have to
+take a vector a coordinates and a vector
+B coordinates and connect them by a
+straight line I am taking a variable a
+which is equal to
+one two three four
+and we'll take a one more variable B
+which is equal to minus 1
+0
+1 and 2.
+in Matlab to create or to plot any graph
+we use a plot function so I am using a
+plot function and pass a variable A and
+B
+as you can see we have got a line graph
+where minus 1 corresponds to 1 and 2
+corresponds to 4. similarly 0
+corresponds to 2 and the 1 is
+corresponding to 3. like this you can
+get a simple line graph using a plot
+function
+now what if if the vector a and Vector B
+does not contain the same number of
+elements can we plot the two vectors
+which does not have a similar elements
+let us try I am taking one more variable
+as C which is equal to 1 2 3 4 and 5. we
+have five elements in Vector C
+now I'll take one more Vector which is
+called D which will be equal to minus 1
+0
+and 1.
+again we will use same plot function to
+plot this
+plot of C comma d
+as you can see we have got an error
+because to pull in the plot function the
+vector must have the same length then
+only we can use the plot function to
+plot any graphs in Matlab
+using this plot function we can also
+plot some trigonometric functions like
+sine cos tan secant and cosecant
+now let's try one for example first I'll
+take a variable a which is equal to some
+elements like 1 2 3 4 0 5 minus 1 and 3.
+and I'll take a one more variable C
+which is equal to sine of E
+now again using the plot function
+we will plot a and C
+as we can see we have got a graph
+according to our values that is we have
+given some mixed values of integers and
+negative numbers according to that we
+have got the graph now what if if we use
+the standard functions of gravities
+using pi 2 pi 3 Pi like that let's try
+for example I'll take a is equal to
+0 to
+pi to represent Pi in Matlab we will use
+p and I
+divided by 100
+from 3 to
+3 into pi
+and with the semicolon now again I'll
+take a variable C which is equal to
+sine of a
+now we will use plot function to plot a
+and
+C
+as you can see now we have got a perfect
+sine wave for our equation that is 0 to
+pi divided by 100 to 3 pi
+as you can carefully observe the graph
+it starts from 0 and increments to pi
+divided by 100 and stops when it reads 3
+pi in Matlab it automatically increments
+by 1. now let's see how to add title
+axis labels and annotations to this
+graph to add a label to x-axis values a
+function called X label
+and will pass the name of that label as
+X within the single quotes and end with
+the semicolon if not you can also leave
+it like this one that only and then for
+y axis we'll use same y label
+and I'll give as a sign of that X
+and
+close the bracket
+and to give the title for that graph we
+use a function called title and within
+that will pass a title that is a
+plot of the
+sign
+function and close the code and the
+bracket
+and enter
+as you can see in the graph we have x
+axis labeled as X and Y axis labeled as
+sine X and we have a title for our graph
+that is plot of sine function like this
+you can create a simple graph using plot
+function and add a title X label and Y
+label now we'll learn how to create
+multiple plots in Matlab now we will
+learn how to create multiple plots in
+Matlab for that first I'll take a
+variable a which will be equal to some
+equation that is 0
+2 pi
+which is divided by 100
+2
+pi
+and end with a semicolon
+I'll take a function C which is equal to
+sine of
+a which holds the results of sine a
+then I'll say plot
+a comma C
+as we did before we are plotting a sine
+wave
+then I'll say
+hold on
+hold on function is used to hold the
+current plot and edit that plot then
+I'll also take new plot and pass the
+same variable a
+and C
+and also I'll pass one more variable
+which is equal to R which will represent
+the color map of our graph and I am
+using a
+codes to represent the dotted lines of a
+graph one one graph would be a normal
+line and another graph will be dotted
+line and end with the bracket
+now I'll use Legend function
+and I'll pass
+sine
+and
+cos
+Legend function takes the argument
+indicating the plot lines in their name
+now I'll just press enter
+as we can see we have two waves that is
+a dotted one red wave as you can it is
+called a COS wave and the normal blue
+line is a sine wave the two waves here
+has been overlapped because we are doing
+it for the same equation
+now we will do same for the different
+equations for example now I am taking a
+variable B and assign a equation 0 to pi
+divided by 100 from 3 pi and then I'll
+say
+C is equal to
+sine of that b
+and I'll plot
+B and
+C
+then I'll say hold on
+and I'll give one more
+equation which is equal to a and I'll
+change this equation by 2 pi
+now now I'll say C is equal to
+COS of that
+new equation that is a into semicolon
+then I'll say
+plot
+r a
+comma C comma d r that is the color
+and
+I'll say legend of
+sine
+and cos
+and X
+label
+as
+X
+and I'll say y label
+as
+sine of x
+and COS of
+X
+I'll just say sine X
+and
+cos x
+and for title I'm giving
+plot of
+sine and
+cos function
+and just will say enter
+and as you can see we have our exercises
+and y axis our title and we have our
+Legend where it says this first graph is
+a sine and a dotted line is a COS
+like this you can plot a multiple graph
+in a single plot in a single graph now
+let's learn how to add lime color and
+marker style to the graph now let's
+learn how to add line color and marker
+style let me just clear my screen
+and clear all the variables
+a style option in plot command are the
+characteristic string that consists of
+one or more characters that specifies
+the color and the line Style
+to make it more clear I'll take an
+example of a vector which consists of
+elements from 1 to 5.
+and I'll take a vector B which is equal
+to sum of the elements like 0.5
+10.5
+40
+.0
+36 point
+one
+and at last I'll take it as
+5 point
+close the bracket make sure if then we
+are via Vector a consists of one two
+five elements then the vector B also
+consists of five elements it is one two
+three four and five
+we have five elements and then
+I'll just say plot
+i a
+B
+and now I'll specify the marker size the
+markers I should be oval and the color
+should be K K represent the black color
+and I want the graphed line should be
+dotted
+so I'm using this codes and this enter
+as we can see we have got a graph with a
+marker Style
+old and a dotted line and a color black
+like this you can customize your graph
+with any using any of the marker style
+color and the line
+in the Matlab now it's time to learn how
+to generate subplots
+the subplot function is to display the
+multiple plots in a different sub
+regions on the same window
+the subplot functions required three
+Arguments for example if we take that
+three arguments is M and P M cross n
+will be the Matrix and P will be the
+parts of window
+now let's understand it with an example
+before that I'll just clear this screen
+first we have to create a vector for
+that I will take a variable X which is
+equal to some equation that is 0 to Pi
+divided by
+Phi 2
+3 pi
+3 into
+5 this is my equation I am taking
+then we have to create a set of matrices
+using the cylinder function
+for that I'll take a variable as a b and
+c I'm taking a three different variable
+which is equal to
+I am using the function called cylinder
+within that I am passing a function that
+is 5 into
+COS of
+RX
+and end with the semicolon
+now this cylinder function will Returns
+the coordinates of the cylinder unit
+I have to just press enter
+now we will enter the subplots uh using
+the keyword we'll use sub
+plot
+of we have to as we discussed we have to
+pass a three
+parameters that is I'll give it as 2 2
+and
+1
+and I will name that
+as a mesh of
+e
+and I'll give it as a title which title
+will be
+ah just forgot to
+do this and then
+once a block subplot is created likewise
+we will do the same
+as replacing the values as I'll do it as
+position two and it will be for
+B and the title will be
+B again same thing and now the position
+will be
+3
+and it will be for uh C
+and the variable title name will be also
+C
+now at last I'll take one more position
+it will be 4 and the mesh
+will be for all three together like is
+one
+like I'll give all the variables that is
+a b and c
+all together and the title will be like
+same that is
+it will be a comma
+B comma C
+now we will just
+a small mistake I'll just delete this
+and enter
+foreign
+plots plotted in the same window window
+it is equal to subplot a subplot B
+Supply C and subplot ABC together like
+this you can create subplots and you can
+create multiple plots in a single window
+it's time to understand some of the 2D
+plotting functions in Matlab we have
+numerous difference categories into the
+plotting functions like line plots data
+distribution plots discrete plots
+geographical plots polar plots and we
+have numerous subcategories in each
+categories like line plots contains line
+plots log plots and functional plots in
+data distribution plots we have
+histogram pie charts Etc in District
+data plots we have bar graphs Scatter
+Plots Etc in geographical plots we have
+visualization of data and map in polar
+plots we have polar in polar coordinates
+the first category is land pots inline
+plots we have three different categories
+that is land plots locked plots and
+function plots let's see have an example
+for line plots first I'll take a
+variable a and I'll give a line space
+of within the line space I am taking an
+0 is X1 potential and 2 pi
+as is X2 potential
+and
+red is the number of points
+and I'll just close it by the semicolon
+and I am take a variable Y and I'll just
+say it as sign off X which Returns the
+results of sine X
+and as we know we'll for simple line
+plot we will use a plot function and we
+will plot X and Y by passing the
+variables and enter
+as you can see we have got this simple
+sine graph for a equation
+like this you can plot any type of lime
+plots using a plot function well coming
+back to lock plot I'll take a one more
+variable which is equal to X and we have
+to pass a value for that variable using
+a log space
+within the bracket I have to pass the
+values I will take it as value a as
+minus 1 and
+value b as 2 and the semicolon then I'll
+just take a one more variable which is
+equal to y y is equal to
+2 to the power of x
+here just have to mention dot I just
+made a mistake now I'll use a function
+called log log
+of X comma Y and also else I want the
+grid of My Graph to be on and also I'll
+say grid on
+as you can see we have got our log plot
+which is for the equation Y is equal to
+the power of E X and our grid of our
+graph is also on
+like this you can also plot the log
+plot num coming back to function we have
+to use a float function for that I am
+using the F plot
+at the rate of within the bracket at the
+rate of one more bracket X
+sine of
+X
+as you can see we have got a function
+plot for sine X now I will try the same
+function plot for two different equation
+that is sine X and cos x for that I'll
+just take a variable x t
+which is equal to of function plot
+of a t into
+I'm just passing the equation of cos 3T
+this is
+this is the equation for x t
+s likewise we'll just give it an another
+equation which is of Y of t
+and it will be of sine
+2T Now using F plot
+you will plot x t versus
+y t
+you can see we have two graph that is a
+COS 3T and sine 2T has been overlapped
+using and we have done this using a
+function called a plot which represent
+the function plot coming back to our
+second category we have data
+distribution points in database
+distribution points we have histograms
+pie charts Etc let's see how to
+implement them in Matlab first I'll just
+clear my screen and the workspace
+to create an histogram I'll take in
+variable X which is equal to a random
+integers
+from
+1000
+comma 1.
+and I'll take a variable H which is
+equal to histogram to plot histogram I
+am using a keyword called histogram
+of the variable which has been created
+and enter
+we can also customize the width of the
+histogram using the function
+been waited for example I'll take what
+that variable Edge and I'll pass
+as say histogram of the same variable X
+and I'll specify
+the bin
+width
+this should be within the
+quotes
+and the width is 5 and just enter
+now as you can see in our graph
+now as you can see we have created a
+histogram plot where the bin it is Phi
+that is 0 to 5 that this is 0 to
+minus 5 to 0.
+now we will move on to one more example
+of this category that is pie chart
+in pi we can create a pie chart using a
+keyword called Pi for that I'll take a
+variable again X which is equal to 1
+3
+0.5
+anywhere random variables like three
+point
+four and nine
+I'll just call a function that is
+Pi off X
+you can see we have a pie chart which is
+of 56 percent six percent eighteen
+percent three percent and two percent
+which is divided based on a value on
+given in the variable X
+now I'll just use a function called
+explode which will
+create a gap or differentiate our
+pipelot
+if it is like the zero
+one
+zero one
+and
+zero
+this is the value for explored
+and again I'll call a function called pi
+explode
+first we have to pass a variable comma
+explode
+close with the brackets enter
+as you can see we have gave some space
+between the graph and separated some
+pipe plots in the given plot we can do
+this giving an export function and
+passing a while for that
+now we can also label our pie chart by
+using a keyword or a function called
+label
+and a third category is discrete data
+points in discreta points we has graphs
+like bar graphs Scatter Plots
+Etc let us take one example of bar graph
+like let me clear the screen
+I am taking a variable X which is equal
+to some
+values like 1
+9 0 0 2 10
+to 2000
+and I am taking a variable Y which is
+equal to some
+values like 75
+[Music]
+91
+105 sum of the floating points
+also 131
+[Music]
+150 179
+[Music]
+do not three 249
+[Music]
+185.5
+[Music]
+now to plot a bar graph I'll just
+take a function
+and pass the variable X comma y
+as we discussed before the length of the
+two variable must be same I'll add
+one more to this list that is comma 2
+6.
+make sure the variable at the vector X
+and the vector y or the variable X and
+the variable y must contain the same
+number of elements the length must be C
+now I'll call a function that is bar X
+comma y
+you can see the bar graph has been
+created here based on the timeline from
+1990 to 90 100 to 2000
+now what we'll do we'll group this bar
+graph and display them in a group
+for that I'll take a one more variable Y
+which is equal to 2 comma
+like two space two space three
+and one more Group which is 2 Phi and
+six
+one more group of two eight and nine
+and one more group of 2 11 and 12.
+handles pass
+this Y into bar
+now you can see we have four different
+group of variables which is equal to
+zero to two zero to two in between two
+and four which is equal to 3 same as 2 5
+6 2 8 9 and 2 11 12. like this you can
+also create a different group of bars
+and display them in a single graph
+coming back to our next category which
+is a polar plots plotting a polar
+coordinates
+for the tab I'll take a variable called
+Theta which is equal to a coordinates
+that is 0 to 0
+.0122
+into pi
+and with the semicolon then I'll take
+one more variable
+and I'll give a equation that is sine of
+2 Theta
+into
+cos 2 Theta
+and with the semicolon and Inter now
+I'll just use a keyword called
+polar plot of
+Theta
+into
+uh yeah I just made a mistake in the
+polar
+see like this we can we have got this
+polar plot for the equation of sine 2
+Theta into cos 2 Theta this is the
+format of a polar graph it will be in
+the form of fla as you can see it looks
+like a Petals of flower and this entire
+graph is in the form of LA
+the last category is animation
+to display an animation line we use a
+loop to add a thousand points of line
+after adding each new Point use a
+drawdown to display the new point on the
+screen
+now let's create this displayed animated
+line in Matlab
+for the time taking a variable H which
+is equal to
+animated line which is a function
+then we'll take axis c z of
+0 to 4
+pi
+and minus 1 2 1.
+close the square bracket and column in
+it
+oh I just forgot to mention I here
+pi
+and enter
+okay now I have to use uh where two
+variables for that I'll take first
+variable as X which is equal to a I'll
+create a line space
+line space of 0
+4 into pi
+and 1000 which is the number of
+points that we have to create and and
+with the semicolon and one more variable
+is equal to Y is equal to sine of X and
+with the semicolon enter
+now within a for Loop that is 4
+K is equal to
+1 starting from 1 to
+length of a x
+now we have to add points within that we
+are having adding points
+to her H comma X of
+key
+and Y of
+key
+now we will use a function called
+draw now
+and
+end the for Loop
+now just brush up all the plotting
+function that we have learned in this
+tutorial by running some examples on the
+plotting graph
+first I'll take an a variable X which is
+equal to a line space
+inside that I am passing a value that is
+0
+2 pi
+and the number of points as 100
+and I'll
+press enter now take a variable that is
+uh I'll just say it as
+sign off
+X just we are plotting a simple
+sign
+plot
+now
+using figure
+function is also used to create a one
+more figure block when you are you
+dealing with the multiple plots or
+multiple figure block you can create a
+new figure block and then generate your
+graph now I'll say
+plot
+X comma y
+as you can see we have just plotted a
+simple sine wave as we did before for an
+equation passing in the X variable
+you can also enable this give title and
+also you can on the grid and we can also
+set the access level for example you can
+give grid on
+and
+access
+level as equal
+you can see we have a grid is on the
+axis is equal 0 5 1 1.52011.52
+this axis is equal like this you can
+customize your graph based on the color
+the line size marker size marker style
+and everything
+you can also save your plot as an image
+using the function as safe as function
+like for example I'll just say
+save as
+G
+c f
+sine wave
+it will be the name which which it will
+be form and the format is PNG
+and close the bracket enter
+I have to give it a sorry made a mistake
+in save as
+you can see in the file section assign
+web.png has been saved like this you can
+save any graph that you have plotted in
+your file section and then download it
+if you want or import it and use it
+whenever you need it
+here we have used a function called GCF
+which stands for a get current picture
+and used to retrieve and handle the
+current figure
+and also it pass an input argument to a
+save as function with this we have
+reached the end of this session today we
+have learned what is plotting how to
+create plotting in Matlab how to create
+subplots and some of the 2D plotting
+functions in Matlab
+please share this video with your
+friends and family for more such videos
+please visit our simple learn YouTube
+channel for any query regarding this
+topic please mention it in the comment
+box thank you keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

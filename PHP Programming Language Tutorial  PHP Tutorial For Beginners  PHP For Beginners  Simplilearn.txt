@@ -1,0 +1,1200 @@
+hello everyone and welcome to simply
+learn
+in this video on php programming we are
+going to discuss different php concepts
+from the very basics such as syntax
+hello world program up until learning
+how to collect form data using php
+scripts and also cover a lot more
+concepts in between
+so without further ado let's get started
+now before moving on to programming
+concepts let us first see what is php
+and some of the reasons why it is useful
+now php stands for hypertext
+preprocessor which is a recursive
+acronym but was originally known as
+personal homepage
+php is an open source server-side
+scripting language that is embedded into
+html and used for web development
+now two main terms for focus here are
+open source and server side scripting
+now open source is a term for technology
+that is freely available to everyone
+while server-side scripting means that
+the entire php script is processed on
+the server side while the user just
+enjoys the result
+now let's move on and see why is php
+useful
+because websites developed in php
+functions faster
+with php you can create dynamic web
+pages
+php frameworks provide security
+encryption
+it is a cost efficient and an easy to
+maintain language
+and is platform independent that is php
+scripts can run on any platform without
+the need of any special plugins
+so now that we have some understanding
+of php and why it's useful let us move
+on to its programming concepts
+now the first thing that we need to do
+is set up the environment for our php
+programs
+to do that we just need two softwares
+one is
+visual studio code
+now this is where we'll be writing all
+of our programs all of our php scripts
+you can download the visual studio code
+for windows linux and mac
+and the second one and a very important
+one is
+sam
+now zam
+is a web server solutions package
+generally used for creating local web
+servers and databases
+as you can see it is also available
+available for windows linux and mac as
+well
+now i have already downloaded and
+installed both of these servers on my
+system
+let us see how to make use of them
+now what we need to do is to use visual
+studio code
+what we do is we go to c drive xampp
+folder or wherever you have installed
+your xampp software we go to that folder
+locate htdocs and let us now create
+another folder and you can name it
+anything that you want to based on your
+project
+since we are discussing the concepts let
+us
+name it
+concepts
+now right click on it and
+here as you can see it shows open with
+code
+when you click on it
+you can see that it opens visual studio
+code for you
+along with the concepts folder that we
+just created now this is where you will
+create all your files for your project
+and will be writing all your all of your
+php scripts
+now let's create the first php file from
+here
+new file
+let us name it tutorial
+dot php
+and
+see how a php
+syntax looks like
+so a php syntax begin with an angular
+opening bracket question mark
+php
+and ends with a question mark and a
+closing angular bracket
+while
+the php
+script
+goes in between
+so this is the very basic syntax of how
+php scripts are written
+now let us move on and see
+how to write a hello world program using
+a php script
+so
+to print something on php
+echo is used
+now to use echo what you need to do is
+just write the string that you want to
+print in front of it
+and save the program
+so
+hello
+and
+welcome to
+simply learn
+let us close it
+and
+save the file
+now i am going to show you how to use
+the sam software in order to run php
+scripts
+go
+and open your xampp control panel
+and from the control panel you have to
+start this first service that is apache
+now this is going to start a local web
+server on your system
+now open your browser
+go to a new tab and type localhost
+followed by the name of the folder that
+we just created into htdocs that was
+concepts
+and hit enter
+here you can see the file that we just
+created tutorial.php
+and when you click on it
+you can see your first program visible
+here hello and welcome to simply learn
+now suppose you have a program that
+needs to print this exact same string
+again and again throughout the program
+so
+what are you going to do
+type the entire echo statement
+through your code
+or make it simpler
+now to make it simpler what we need to
+do is we need to go back to our code
+and discuss the concept of
+variables
+now to create a variable
+what we need to do is we need to
+use this dollar sign
+followed by the name of the variable you
+can name it anything you want so let us
+name it
+str and
+type
+hello
+and
+welcome to
+simply learn
+so
+this is a first variable now this
+variable str stores this string value
+also you can create different variables
+for different purposes such as if you
+want to store a number suppose so
+you can store number five
+and
+suppose you want to store a floating
+variable
+and that would be float
+and a floating variable is a number of
+decimal points so 7.6
+so now we have three variables in a
+program
+now one thing to notice if you're coming
+from a different programming language is
+that you don't need to
+define the type of variable in php that
+is if it is a string number or a
+floating variable
+now to print this
+we can use echo but when you want to
+print a variable in echo you need to do
+things a little differently so
+let us start with h1 heading
+now to print a variable what you need to
+do is you need to use
+dot
+followed by the name of the variable
+that would be
+str
+and another dot
+followed by if you want to type
+something
+along with the variable
+i'm going to copy this code
+and paste it
+now
+let us change the size of the headings
+and also change a variable so in the
+second line we are going to print num
+and in the third
+the float that we created
+so now we have all of our
+variables into our echo
+now let us save this program and see
+what it does
+so as you can see
+the variables are printed on your
+program and you don't have to write them
+again and again you can simply write
+name of the variable along with echo and
+dot and print it along
+now that we know about variables
+suppose you want to print the names of
+different laptop brands available in the
+market
+now what you're going to do
+do you create different variables for
+each name that is a variable for hp a
+variable for lenovo variable for a
+source
+or do you want a single variable to
+store store all of the names of the
+laptop brands available
+now with arrays it is possible to store
+different information
+of the same data type that is
+integer string
+under a
+single
+variable
+the condition is all of the
+data that is stored under the variable
+should have the same data type
+now
+let us see how array works
+now
+array
+stores multiple values in a single
+variable as we already discussed
+now to make an error
+first what we need to do is
+name a variable
+laptop
+brand
+and
+type in
+array function
+and under that function
+we are going to write the names of
+different laptop brands that is hp
+with separated by commas
+lenovo
+asus
+and
+dell
+so
+suppose these are the four laptop brands
+that are available in the market in your
+area
+now
+what you need to do is you need to print
+what is
+in this particular
+variable that is laptop brand
+so
+to print it
+you need to first create
+variable dump now what variable dump
+does is
+it as you can see here
+it
+exports the variable that is in its
+function
+now
+we are going to
+[Music]
+write the variable that we just created
+into the variable dump function and it
+will just return the data type and value
+now suppose you want to print it so to
+print it what we need to do is just add
+echo in front of it
+okay now before moving on to seeing the
+result of this program let us just
+make this part of the code
+inactive
+now to do that
+we are going to learn a new concept in
+between that is comments
+so comments are the lines in a code that
+are not
+executed while
+the program is run
+so
+a single line comment starts with do
+slash and anything written in front of
+it is does not run along with the code
+so
+these comments are very useful when
+you're writing a
+code
+to make your code readable and more
+understandable by any coder who will
+or might later on using the code that
+you've just created now suppose what we
+can do with
+comments is
+i'm going to write a comment just in
+front of it
+this is a
+string
+variable
+now
+after these
+slashes
+anything written is not executed when i
+am going to run the program
+also now
+what do you do if you want to
+make this whole part of the code not
+functioning
+do you add
+two slashes in front of everything
+or you can use a much simpler method
+that is multi multi-line comments to use
+multi-line comments what you're going to
+do is
+you slash
+star
+this marks the start of the multi-line
+code and to end this use star and slash
+again
+and everything in between
+does not run when you're going to run
+your program
+so
+we will now see
+how this
+array works
+we will just
+reload this page
+and as you can see
+hp lenovo asus and dell are visible here
+also you might notice
+this array 4 shows the length of the
+array
+and this shows
+the position where all of these strings
+are inside the array that is an array
+starts with the zero position not one
+but zero so the first would be zero
+position that is hp
+and then one lenovo and subsequently
+asus and dell
+now suppose you just want to print the
+second variable in your array what you
+need to do is you need to go back to
+your code
+and
+in front of the variable you need to
+write the position that you want to
+print
+under square brackets that is the second
+position
+in array would be number one
+and save the code
+go back to the browser
+and only the second
+array is the second
+variable in the array is visible
+now suppose instead of a variable you
+want to create a value that you don't
+want to be changed throughout your
+entire program
+so
+consonants are used for the same purpose
+now consonants are very much like
+variables except
+that once they are defined they cannot
+be changed or undefined
+so
+let us see how consonants work
+first
+we will
+put this code
+under a comment
+and now start writing a consonant
+so to define or create a consonant what
+you need to do is
+use the
+define function
+and inside the define function what you
+need to do is
+you need to
+write the name of the consonant
+and
+okay first let us write the name of the
+consonant
+suppose
+laptops
+followed by
+the value
+of the
+hp
+consonant
+lenovo
+and asus
+and that's it and you close the define
+function and there you have defined your
+consonant in your php script
+now this cannot be changed or undefined
+throughout your program
+now to print it what you need to do is
+type echo followed by the name of the
+consonant that you just created so the
+name of the consonant is laptops
+save the code
+go back
+and hp lenovo and asus
+are visible here
+you can also create consonant errors
+along with a normal consonant now to
+create a consonant array
+you just need to add a square bracket
+just a second
+let me close this one
+separated by
+commas
+and now we have
+the names of the laptop as an array
+which
+by the way cannot be changed or
+undefined through your throughout your
+code just like any other consonant
+now suppose you want to just print the
+name of the third laptop that is
+available in the market
+now what you need to do is you need to
+write the position and the third
+position in case of arrays would be
+number two
+save
+and only asus is visible here
+so this is how consonants and variables
+work in php
+now before moving on to the next section
+let me give you another situation
+now suppose
+i want you to print
+a number only and only if it is greater
+than 7
+how do you do that
+now since it is a condition conditional
+statements are used to perform different
+actions based on different conditions
+now some of the conditional statements
+include in php
+are if
+if else
+if else if else and switch and we're
+going to discuss them one by one
+no so the first one is if
+now
+let me create a variable let us name it
+there
+and
+write the value 8.
+now
+the example that we just discussed
+if we want to
+check if
+this variable is greater than 7 and only
+and only then
+print the variable on the screen
+now to do that what we need to do is
+type in
+if
+and in the bracket we need to type the
+condition that we're going to check that
+is
+if
+variable
+greater than
+7
+now
+use curly brackets
+and inside the curly bracket
+write the code that you want to execute
+only and only if the condition in
+of this
+if is met
+so we need to print this variable
+so echo
+where
+and go and save it now go back
+and reload and you can see it is printed
+here
+now let us go back and change the value
+of the variable to
+5.
+and save it
+go back reload
+and as you can see
+nothing is printed on the screen since
+the condition that we just mentioned
+inside if does not meet
+now suppose
+i tell you that
+if the condition does not meet you have
+to print
+a string
+saying that the condition does not did
+not meet
+how do you do that
+to do it what you need to add after if
+is
+else
+and else does not need to have a
+condition since as
+the english
+word suggests it is else
+which means the condition of if did not
+meet
+and inside the else we're going to write
+the code
+echo
+the
+condition
+did
+not
+meet
+save it
+the condition did not meet
+now time for another condition
+now suppose i want i ask you to check if
+a number is
+divisible by 2
+3 or both
+how do you do that
+now to do that
+first
+let us
+create a number
+six
+now check if
+variable
+percent
+two
+is equal to equals to 0 now what this
+shows is this
+brings out the remainder and if the
+remainder is 0 that means it is
+divisible by 2.
+and we need to add one more condition
+here
+and and
+variable
+percent 3
+equals to equals to 0
+and
+what this does is it checks if both of
+these conditions are true that is
+if the number inside the variable is
+divisible by both 2 and 3
+we will display
+divisible
+by
+both
+now
+what we need to do is we need to
+check if it is divisible by 2.
+so
+else if
+since it is else if we need to add a
+condition in it too else if
+variable
+percent
+2
+equals to equals to
+0
+echo
+there is a
+bill
+by
+two
+similarly
+divisible by
+three
+another you can add as many else if
+statements as you want
+and the final else will show
+okay
+let us go back and save our program
+since a variable is 6
+it should show divisible by both
+and you can see it shows exactly the
+same divisible by both now let us change
+the value
+and see if our program works
+so what we are going to do is we are
+going to change the value to 4
+save a program
+and run it again
+this by two
+similarly
+nine
+divided by 3
+and finally
+13
+not divided by either two or three
+so this is how you can make use of if
+else if and else statements
+now the next conditional statement is
+switch statement
+now the switch statement is used to
+perform different actions based on
+different conditions
+so let me again give you a situation so
+that you understand better
+so suppose
+you're playing a game
+which has four different levels
+and
+first level is easy medium hard and
+extreme
+so
+you need to print that
+now what will you do
+you can also use if else if but it's a
+lot of code
+switch statement makes it a lot simpler
+and more readable
+so
+what we need to do is we need to
+type in switch
+okay first what we need to do is first
+we need to create a variable
+so a variable
+suppose
+let us name it level
+and
+level is three
+to create a switch statement you need to
+type in switch and
+enter the name of the variable that will
+be passed into the switch statement to
+check for the conditions
+level
+and it also begins with a curly bracket
+and inside
+the search statement what you need to do
+is you need to type
+case
+that is
+the first case would be case
+one
+followed by a colon
+and the statement that you want to
+execute that is
+echo
+you
+are
+playing
+at
+easy
+level
+and since you want
+your program to stop here itself what
+you need to do is you need to type in
+break
+similarly for rest of the levels i'll
+just copy this code here
+two three and four
+and just make the changes
+and
+similar to if else statements you also
+need to add
+another statement that would be
+default
+if any of the conditions are not met in
+the switch statement suppose the value
+of your variable is 20 which does not
+make any sense to the game
+then
+what you need to do is
+you need to
+display
+a default error message and that would
+be
+invalid
+input
+and you also need to
+end the switch statement
+with
+a curly braces
+and end the
+php program
+all right let us save it
+go to a browser
+and run you are playing at hard level
+i guess you must have understood the
+concept let us just one more time
+change the value of the variable to 20
+save it
+go back
+invalid input
+so this is how the conditional
+statements in php work
+next what we're going to talk about is
+php loops
+now suppose you want to run a block of
+code or a part of code again and again
+and again or in other words in loop
+so php has that functionality known as
+php loops
+to do the same task
+now there are different types of php
+loops available that is while do while
+and for loops which we will be
+discussing
+in this part of the video
+now let us start with the while loop now
+the while loop
+loops through a block of code as long as
+the condition that you have entered or
+specified in the while loop
+is true
+so
+let me just
+remove it
+now to write a while loop what you need
+to do is
+type while
+followed by
+the condition
+and to write the condition what we need
+to first do is let us create a variable
+and
+we'll
+give it a value of 2.
+now the condition
+which we are going to write is this is
+just an example
+so if
+or while
+the value of variable
+is
+less than equals to
+10.
+and then we follow along with the curly
+braces
+and type the code that we want to run
+again and again until
+the value of a variable becomes 10
+or till the value of a variable is less
+than 10.
+suppose
+number
+and then the variable that is
+where
+and that's about it
+now what we need to do is we need to
+increase the value of the variable else
+this code this code will run for an
+infinite amount of time and the system
+might crash
+so
+to increase the variable in each
+iteration what we need to do is we need
+to use the plus plus operator
+which will increase the value of the
+variable by 1 in each iteration
+now we're going to save the code
+and run it number two three four five
+six seven
+and so on
+let me just
+add
+break here and you can see all of the
+numbers up until 10
+are visible here
+and after 10 the loop just stops
+so let me
+explain it again
+so
+what we are doing is we are writing
+while
+along with the condition until
+then the code is supposed to be run
+again and again
+so the condition is if the value of the
+variable
+is less than or equals to 10 since a
+value of
+value of our variable is 2 the condition
+is true so the code inside of this vial
+is executed and the code will display
+the value of the number
+and the
+variable
+value will increase with each iteration
+until it becomes greater than 10 and
+then the loop will exit
+now the do while loop is very very
+similar to the while one the only
+difference being
+in case of a do while loop
+a
+code
+this this code will execute at least
+once
+i'll show you how it works
+so
+in case of do while
+we start with two
+curly braces
+let us use this same
+example
+and after the curly braces what we do is
+we
+write
+while along with the condition
+that is
+equals to 10.
+let me just
+okay
+now let me tell you what do we need low
+value suppose
+the value of a variable
+is
+11. now since the condition
+does not meet
+in case of the while loop it will not
+even run once now suppose you want to
+display the current value of the
+variables whether or not if it meets a
+condition at least once
+so
+in case of do while
+it will first go into this do loop
+run the code and then after the do loop
+is complete this part of the code is
+complete it will go on to the vile part
+and check the condition
+now if the condition does not meet the
+loop will end here and if it meets it
+will continue until the condition does
+not meet the while part
+so it will run at least once
+now
+save this
+and go back to a browser
+and reload this program and as you can
+see number 11
+is visible here
+so
+do while is helpful
+in some cases which you'll realize as
+long as
+you start coding more and more
+now next up is follow now for loop is
+used when
+we already know how many times you want
+the loop to run so for loop is used when
+you want to run a piece of code a
+specific number of times
+now let me show you how it works
+now the for loop is written in three
+parts here we don't need to define a
+variable beforehand
+the first part of the for loop is
+defining the value of the variable so
+variable is equals to let us
+value it at one
+now we want to make it
+run till suppose six values
+so what we need to do is
+we need to
+write the condition
+in the second part of the for loop
+a variable less than equals to 6
+and in the third part will be the
+incremental part so as you can notice in
+while and do while we put the
+incremental part inside the block of the
+code here the incremental part is inside
+the for function itself
+variable plus plus
+and then we start with the curly braces
+and we write the
+code similar to
+i'll just
+copy it from here
+and now let us
+just save it and print to show you
+how it works
+number one two three four five and six
+now these loops are a very important
+aspect of programming and you all should
+try out different problems based on
+loops by yourself
+now next up in php is php functions
+now functions are very very useful and
+very important part of programming in
+any language
+functions are of two types
+built-in functions and user-defined
+functions
+now built-in functions are the functions
+that are already present inside the
+framework of your programming language
+a very popular example
+of a function built-in function of php
+is echo echo is a function that is
+already built in php and is used to
+print out variables strings and values
+on the screen
+now
+user defined functions are functions you
+create yourself
+to use a code
+repeatedly in your program
+so i'll explain you with while writing
+the code itself
+so suppose you want to use this for code
+four or five times in your program
+so
+or even more maybe 10 20 30 40 100 times
+in your program if you're writing a very
+very large program you want to print or
+use this part of the code 100 times in
+your program what do you do do you write
+this entire code or copy paste this
+entire code again and again 100 times
+and make your code
+lengthier or do you just want to use
+this piece of code from here
+from anywhere in your program
+now to do that we need to
+put this piece of code inside a user
+defined function so how do we do that
+we do that by
+writing
+function
+followed by
+suppose you want to call
+this function a name
+name
+and start with curly braces
+now this is a user defined function
+named name
+now inside this name function
+is a piece of code
+this
+for
+now how do we reuse it
+i'll show you in a second
+so
+suppose you are
+a long way from your code from this code
+you don't even know where it is
+you want to use
+this code again after writing hundreds
+of lines of code so how do you do it
+you just type the name of the function
+that is name
+and close it that's about it this is
+called calling a function so it is
+similar to calling a friend for help so
+here you just called your friend name
+to execute this part of the code
+here
+save
+and
+where there are no changes since the
+output will be the same
+let us make some changes
+add another echo
+i'm
+going to
+run it
+again
+later
+and
+call this function again
+save it
+and as you can see
+once the function is called the output
+is printed and i'm going to run it again
+later and then again the function is
+called
+and it
+uses the same piece of code again and
+again and again
+see how simple coding can be
+when you know what to use
+when now we move on to the final part of
+the video
+that is
+creating a form and collecting its
+information to display on a screen using
+php
+so
+what i am going to do is i'm going to
+create a new file
+say
+form.html
+and start writing
+some html code for a form
+form
+action
+now
+here what i'm doing is you need to pay
+a lot of attention
+what i am going to do is i am going to
+write form dot php now this is the file
+that i am going to be creating later on
+which will be linked to this html file
+which will in turn run the php script on
+the html page
+on a web browser
+we also need to
+write the method
+that will be
+post
+now let us create
+a very simple form that will display the
+name
+email
+and
+i think that's about it
+name
+input type would be
+text
+second would be
+email
+input
+type
+would be
+text
+name
+no this would not be name
+this will be email
+also this is just for example you can
+also put the input type as email
+for an email and input type as password
+for a password
+and let's add one more field
+only two fields will not look good so
+let's say
+blood group
+input type
+would be
+text
+named
+b
+group
+and i think our form is complete let us
+have a look now what we're going to do
+is since we created a new file we have
+to
+go
+to the concepts
+folder and look at the new file
+form.html click on it and as you can see
+it is the basic form that we just
+created name email and blood group
+now
+we need to add one more thing
+in our form that is the submit button
+which will submit the details of the
+form
+let us go back
+and
+save
+reload
+and here we have a submit button
+it does nothing
+yet
+now
+we are going to
+create
+form dot php file
+and write a php script
+to collect the form data
+let us start
+our php script
+let me add and
+indent it a little bit so
+in this php script what we're going to
+do is we are going to create three
+variables separately for all the three
+values in a form that is
+you can name it anything so the first
+variable could be the same as name
+now to retrieve the value from from the
+form what you need to use is
+an array
+post
+now this
+super global
+array
+is used to retrieve the value from the
+form
+now in this
+post array what you need to enter is the
+name
+that you just entered for the values in
+the fields so
+we named it name
+second thing second variable would be
+for the email
+email
+you can name it anything else
+what you need to
+have same is this name
+with this name
+now
+third let us change the name the third
+was blood group so we'll
+type in the complete blood group
+use a post
+global variable
+and here
+we will write the name
+what we've just given here which would
+be
+b group
+and now what we need to do is we need to
+display
+this information that we just retrieved
+from the form on our page so to display
+it
+echo
+information display
+let us start with
+me
+and
+copy this code instead of writing it
+again and again
+[Music]
+email
+blood growth
+and go
+save it
+and enter the details in her form
+mac email address would be mac at the
+rate simply learn dot
+com
+and blood group would be
+be positive
+which we all should be
+and let us click on submit
+information display as you can see name
+email and blood group is displayed
+so
+let me just add
+you
+save it
+go back
+and
+the information displayed a little
+neatly now so you get the point
+we use post method to
+retrieve the information from our forms
+we also can use get method but it is not
+secure in case of get method all the
+information is also displayed in the url
+section of the web page
+hence it is not usually recommended in
+case of secure transaction specially
+so these were some php concepts to get
+you started with php program there is a
+lot more to learn so stay tuned
+thank you for watching if you like this
+video do hit the like button and
+subscribe to simply learn for more such
+content
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

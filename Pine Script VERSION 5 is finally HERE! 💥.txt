@@ -1,0 +1,560 @@
+it finally happened traders panscript
+version 5 has finally been released and
+my workload just increased significantly
+but i'm super excited about this
+stick around and we'll break down
+exactly what we can expect from the new
+changes and improvements to the latest
+iteration of the pine script programming
+language
+so first of all the good news is these
+changes to pan script this latest
+version of the pinescript language
+improves and builds upon
+version four so we don't need to relearn
+everything if you've been following my
+lessons for a while or you've bought any
+of my courses
+all of the information you've learned
+so far is still very much relevant there
+are a few new
+new answers we'll need to learn a few
+new changes to how we call certain
+functions that we'll need to learn
+basically new habits we'll need to
+develop but it will be worth the trouble
+because these changes are intended to
+make pine script even more intuitive
+even more simple to use and in this
+video i'm just going to break down some
+of the changes they've mentioned and
+explained in this blog post and from now
+on all of my new lessons will be in
+version 5. so if you've already bought
+any of my courses i am going to go back
+and update the core lessons to be
+relevant for version five and any new
+lessons i record are going to be in the
+latest version of pinescript but anyway
+with all that said let's break down this
+blog post and have a look at what we can
+expect going forward out of pinescript
+alright so here is the blog post the
+official blog post from tradingview
+there'll be a link in the video
+description and it is time to say hello
+to panscript version 5.
+pine is now more powerful than ever so
+let's go over a few things the first
+most important thing to point out is
+that there is an inbuilt converter that
+will automatically convert your version
+4 pine scripts into version 5. to do
+that you just click on this little
+ellipses button hamburger icon thing
+whatever people call this and click on
+the convert to version 5 button so just
+real quick let's jump over to the pine
+editor and test this out so here's the
+script i was working on this morning um
+my rvol by time of day indicator that
+converts volume based on intraday
+times of day if i open up the source
+code to this you can see that this is
+version 4 of the script let's try this
+out let's convert to version 5.
+and there we go easy as that first thing
+i notice
+is that version 5 looks pretty cool
+there i like that
+we now call our indicator scripts
+indicators not study scripts and we have
+things like this ta.change so normally
+in version 4 you would use the change
+function but
+the training view team have added what
+they call name spaces and so
+now to call certain functions relating
+to certain use cases in this particular
+case this is a technical analysis
+function so it falls under ta so i
+imagine if i type in ta here and press
+ctrl space
+we'll get a list of all the functions we
+can use
+relating to technical analysis which is
+pretty cool because in the past you
+would need to look up
+all of these functions there's a bunch
+here i've never even seen before
+certainly never used before and didn't
+even know existed because you'd have to
+read through the
+training view documentation to find out
+about them
+and so that's pretty cool so now
+whenever you want to use something
+relating to technical analysis
+we can just type in ta control space and
+get a list of functions we can use so
+that's a cool new change that i'm sure
+will be very helpful when it comes to
+coding scripts but let's jump back over
+to the blog post so that's cool we can
+convert our old scripts to the latest
+version that's very handy
+another very very cool feature of this
+version five that i'm super excited
+about is libraries
+so a key addition to pine that comes
+with version five is libraries
+libraries are a new type of publication
+so i'm i'm guessing they mean you can
+publish this
+the same way we publish scripts onto the
+trading view script library
+and this new type of publication allows
+you to create custom functions to be
+reused in other scripts this is
+effing awesome to be honest with you
+this is something i've been hoping they
+would add
+for quite some time i have a lot of
+scripts that rely on certain custom
+functions that i need to copy and paste
+across all of my scripts now i can
+publish a
+zen in the art of trading panscript
+library that includes all of my custom
+functions for things like converting
+pips to whole numbers truncating decimal
+places
+just random utility functions i've
+created over the years that help with
+certain
+repetitive activities that we that i
+often do in my scripts so this is really
+really cool once a library is published
+other scripts
+be it indicators strategies or even
+other libraries can import it and use
+its functions
+you can use libraries to include complex
+algorithms or frequently used functions
+so that you
+or the whole pine community can easily
+reuse them this is huge this is a really
+really really
+awesome feature to be added to pine and
+i'm excited to explore this one
+in future lessons
+they also include a user manual page
+here on libraries so if you want to
+start using them before i get around to
+recording lessons on them go and read
+this i'm sure it's going to be a
+fascinating read for anyone that's
+interested in pine and at the end of
+this post
+on this user manual you will find
+library examples published by members of
+their
+pinescript or tradingviewpinecoders team
+so this will be great for referencing
+how to go about creating libraries for
+yourself
+next up a small thing here but pretty
+cool as well is the default values for
+user defined functions so this is an
+improvement that goes hand in hand with
+the new libraries functionality or
+feature a default value can be defined
+for parameters in user-defined functions
+so this would be a user-defined function
+right here
+just a custom function that you anyone
+can create and you can now assign a
+default value to the parameters in your
+own functions so normally you couldn't
+do this you couldn't have exp equals two
+um you would probably in order to
+achieve the same thing need to use a var
+variable with a or an input user input
+and you would need to use a conditional
+statement to overwrite this based on
+whether or not
+your script needed to use a different
+value than the default now you can just
+define the default straight up in your
+custom functions parameters that's a
+cool little feature not something most
+of us would use frequently but
+definitely a great quality of life
+improvement particularly when
+working with libraries and that i
+imagine is why they've added this new
+feature to custom functions
+so that's cool next up we have switches
+switches are great um they're they're
+basically they operate like an if
+statement it's like having a bunch of if
+statements so a great example of
+um when you might need to use a switch
+statement is this
+uh script here that i've created this
+arvol indicator i was just showing you
+which i was just showing you how to
+convert to version five
+in this script i have a bunch of color
+schemes inbuilt color schemes that the
+user can select
+and they
+change the
+color scheme of my
+relative volume indicator if i open up
+the source code to the script and scroll
+down to where the colors are defined
+this is an example of something that
+would
+be much better converted into a switch
+statement so instead of having four
+different if statements here i could use
+one switch statement pass in the bar
+color option and then i could structure
+my switch statement to be a lot more
+efficient from a coding perspective we
+could do the same thing i'm doing here
+with
+quite a bit less code so that's really
+cool and something i will definitely be
+exploring in future lessons
+here is an example of a switch statement
+so this is a custom function for getting
+a
+moving average based on whatever the
+user has selected from the settings menu
+so we have an rma and sma and ema and a
+wma this switch statement passes in the
+smoothing input option so whichever
+one of these the user has selected that
+gets passed into our switch statement
+and then our switch statement here
+checks
+is this value rma then get me an rma if
+it's sma get me an sma and so on
+normally you would need to use if
+statements to do this and so you would
+have an extra line of code for each
+option here
+now we can do it in a switch statement
+which is really cool that
+makes coding a lot more efficient in
+pine next up we have drawing collections
+i'm not really sure how often i'll be
+using this particular
+functionality uh we'll cover this in
+future lessons too probably but this is
+a pretty niche thing i don't think many
+people will need to
+work with drawing collections
+next up we have a while loop so this is
+pretty cool this is very very similar to
+a for loop
+in that it's a loop for one thing um but
+instead of passing it a number an index
+to skip through so instead of saying for
+example four i equals 0
+to 10 which would loop uh 10 times
+we can now use a while loop which will
+loop infinitely
+that's my
+drawing of an infinity sign you're
+welcome
+the while statement will execute
+indefinitely until it is either broken
+out of or the boolean condition that
+you're looping on
+becomes false so this is um
+it's like a for loop except instead of
+counting
+we pass it a
+boolean value so while that boolean
+value is true the loop will continue to
+loop and as soon as that boolean value
+becomes false or we use the break
+operator break command to break out of
+the loop then the loop will continue to
+loop forever and ever this is useful for
+certain use cases that we'll get into
+[Music]
+in future lessons i'm sure and the next
+up we have runtime error which is a new
+function that now makes it possible to
+halt the execution of a script and
+display an error message
+on any condition you can define in pine
+this will come in handy for script
+creators who want to prevent users from
+using their indicators incorrectly
+it can also be used as a debugging tool
+um
+so yeah this will be interesting to play
+around with i'm sure we'll explore this
+in future lessons i love to throw
+detailed errors in other languages when
+i'm working
+with code so for example in java when
+i'm coding in java i like to make sure
+that all of my errors
+if the script encounters an error
+i like to make sure that it's very clear
+what the error was and how to isolate
+why it happened and so this could be
+really useful in pine under certain use
+cases for example down here we have
+runtime.error
+session based vwap does not show
+meaningful data on time frames above the
+daily chart
+please switch to a lower time frame so
+this is a cool little uh
+sort of function
+designed for users of our scripts i
+guess
+more than us ourselves unless we're
+using it for debugging
+so that's a cool little thing all of
+these little things
+do
+um
+help to make planscript
+uh
+sort of it helps to bridge the gap
+between panscript and other more
+advanced programming languages in terms
+of feedback to the user
+in terms of
+just making it a more mature programming
+language so that's really good to see
+and the next up we have new strategy
+parameters good news for strategy coders
+we have added a whole bunch of new
+variables and functions to give you
+visibility on trade properties
+statistics and metrics
+their values update as the broker
+emulator executes your orders so you can
+follow values as your strategy
+progresses
+so that's pretty cool i have no idea
+what variables and functions they've
+added
+but we'll
+almost certainly explore that in future
+lessons and certainly explore it in the
+mastery course for anyone who has access
+to that course so if you're a mastery
+course student don't worry i will be
+exploring all of these new features in
+detail in the course as well as updating
+old lessons when i find the time
+finally we have our new namespaces so
+this is a great feature
+our community of pinecoders tells us
+they appreciate the unprecedented rate
+of additions we have made to pine in the
+last few years certainly that is true
+for me i certainly appreciate it
+and
+trading view intend to sustain the same
+pace into the future
+this however creates a constant stream
+of new pine functions and built-in
+variables and because
+as i mentioned earlier in this video
+these inbuilt
+functions and built-in variables were
+hidden in the documentation you would
+have to go and read the documentation to
+find out what they were now panscript
+uses what is called namespaces so
+they've already been slowly implementing
+this feature this functionality into
+pine over the past few updates for
+example their overhaul to how coloring
+or colors work in pine is a good example
+of a namespace so
+as you would know if you at all
+experience with pine the latest updates
+of pine if we want to specify
+transparency for example in our script
+we need to
+do so using the color namespace
+so we need to write out color
+dot
+and then if you press ctrl space you'll
+get a list of functions built-in
+functions relating to the color name
+space so this is our namespace
+and then we would say for example
+color.new
+and then
+color
+dot red
+and then specify transparency so let's
+say we wanted 50
+transparency
+this color dot
+is a name space
+and now
+all the built-in functions i think well
+most of the built-in functions
+in pine
+will now use a name space so now for
+built-in functions and built-in
+variables relating to technical analysis
+for example a moving average we need to
+write out t a
+dot
+and then whatever technical analysis
+function or tool or utility or variable
+that we want to reference so namespaces
+are a common
+feature or functionality of most
+programming languages definitely in
+python
+javascript
+in java this would be called a class
+instead of a namespace but it's all the
+same thing it's basically a group it's a
+collection so ta holds a collection of
+uh functions and and variables relating
+to technical analysis
+size
+um contains a list of different sizes we
+can use for our drawing tools um str
+is short for string so str will hold all
+of the functions relating to our
+working with strings
+and you get the idea this will just make
+it more intuitive to work with the
+built-in functions and variables in pine
+script so really really cool updates
+here obviously there are going to be a
+influx of new updates and features being
+added to panscript in the month to come
+so this is just the beginning this is
+just laying the foundation for the
+new chapter of pine script so you've
+picked a great time to start learning
+the language if you're new to it and if
+you're an experienced pine coder you
+have even more to be excited about so
+before we wrap up this video let's just
+have a quick read over their release
+notes and migration guide so again there
+will be a link to this in the video
+description but here we go october 2021
+pine version 5 is here
+here's a list of the new features we
+just covered
+pretty much all of these that are listed
+here
+so these are the uh new features um you
+can read about these in your own time we
+already covered most of them uh and then
+there's changes um and there's a couple
+of interesting changes here like
+changing study to indicator which i
+think is a good change i think that
+makes more sense intuitively and then we
+also have
+request.security instead of just calling
+the security function
+by itself so i'm guessing request is now
+a new namespace and probably contains
+several
+built-in variables and functions
+relating to requesting data from other
+time frames other markets and as it says
+here this consolidation
+implements a more rational nomenclature
+and provides an orderly space to
+accommodate the many additions planned
+for pine that's really exciting to to
+read
+and i think this is a great improvement
+to the language
+and then finally we have our migration
+guide here which helps you convert your
+scripts into pine5
+there's a list of important changes here
+which will be important to read over i'm
+not going to cover all of this in
+today's video you can go and read about
+this in your own time if you're
+interested we will be covering all of
+this in future lessons all my future
+lessons will be written in pine5 so
+we'll learn all of this stuff gradually
+over time
+one thing that catches my attention here
+is the split of input into several
+functions okay so they've changed how
+inputs work so now input is a name space
+and we need to reference
+certain types of inputs which is
+interesting
+at first glance here it does look like
+it makes it a little bit easier to write
+it's just a little bit less code here
+now instead of specifying a type we just
+use an inbuilt um function of the input
+namespace
+and trans has finally been deprecated so
+we can no longer use transp in version 5
+of pinescript which was a long time
+coming all right so i think that'll just
+about do it for today's sort of um
+overview and introduction to what's
+coming or what is now here with pine
+script version five
+my future lessons as i've mentioned
+several times now will be written in
+pine script version five so we will
+learn all of this stuff
+gradually
+there's not a lot to learn here just
+some new habits to develop
+which is fine that this is this is what
+programming is you can't stagnate as a
+coder we are always forced to adapt grow
+as coders learn new features
+and it's all in the quest of making pine
+more useful more powerful and easier to
+use in the long run so even though this
+is a inconvenience for some of us who
+are very familiar with version 4 of
+pinescript especially for me where i've
+recorded hundreds of hours of content on
+version 4. now most of that is still
+relevant to today's version of password
+version 5 so i'm not too bummed out
+about that but there are now some
+um
+important changes to panscript that i
+will need to learn and i will need to go
+back and update a lot of my old lessons
+i'm going to need to re-record the
+entire basics course my free password
+basics course and several of the lessons
+in the mastery course but that's fine
+it's going to be worth the trouble and i
+will be back very soon with a new lesson
+in pine script version 5. i'm really
+excited about that
+and i will speak with you soon enjoy the
+rest of your weekend take care be safe
+good luck with your trading next week
+and into the future
+and i'll speak to you soon take care

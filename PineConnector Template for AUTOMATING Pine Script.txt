@@ -1,0 +1,935 @@
+hi Traders welcome back today we are
+going to be doing more Pine connector
+material in the previous video I did a
+simple script template for automating
+your Pine script strategies through Pine
+connector using trading view alerts in
+today's video we are going to be
+dramatically or significantly expanding
+on that previous script to create a very
+Advanced template script that will allow
+you to automate pretty much 99% of most
+systems out there all you need to do is
+replace my strategy code with yours and
+the rest of the script should work
+mostly out of the box now for those of
+you who are not familiar with what Pine
+connector is make sure to go and watch
+the previous videos in this series it's
+basically a metatrader Plugin or expert
+advisor that allows us to automate our
+trading view scripts using trading view
+alerts directly from our pinescript code
+so it adds full automation functionality
+for um mostly Forex Traders but if your
+broker allows you to trade other markets
+you can automate those markets so crypto
+CF C fds Commodities some Brokers offer
+cfds on stocks that sort of thing if
+your broker offers the market through
+your metatrader platform then you can
+automate it through trading view scripts
+so this video is going to significantly
+ramp up the complexity of the previous
+videos so if you haven't watched them
+make sure to go back and watch them to
+get Pine connector all set up properly
+otherwise you're going to get lost in
+this video with all that out of the way
+let's get started so here is the source
+code this will be available on my
+website check out the uh pinned comment
+below so we're just dealing with a very
+simple strategy here it's not a
+particularly Advanced system all it does
+is buy and sell overbought and oversold
+um conditions so the RSI 14 period RSI
+is overbought it will buy bullish
+candles if it's oversold it will short
+bearish candles today's lesson is not a
+trading strategy lesson it's purely a
+pine connected template um so the whole
+idea here is that you rip out my
+strategy code this bit of code here
+these three lines of code you change
+these to your systems entry criteria and
+then with some minor adjustments
+elsewhere in the code you should be able
+to adapt this code to work with any of
+your systems now there are some
+exceptions for certain systems but I
+will get to that throughout the video
+let's get started with breaking down the
+user inputs so this script comes with a
+bunch of strategy settings for my sort
+of simple template strategy we have a
+stoploss distance this is in Pips if ATR
+multiplier is set to zero so if ATR
+multiplier is zero then stop-loss
+distance Is pips based it's a fixed pip
+stop-loss distance now if I set this to
+one that will override our stoploss
+distance in Pips and we will be using a
+average true range multiplier um for our
+stop loss so if I set this to one then
+we will have a 1 ATR distance from our
+entry the closing price of our signal
+candle down to our stop loss for a long
+trade or up to our stop loss for a short
+trade we can also so change this setting
+here to high low and then the stop loss
+will be calculated from the candles high
+or low so those are our stop- loss
+settings the next few settings here are
+our profit risk reward profile so if
+this is set to one then we have a one:
+one risk reward from our entry so we'll
+have if we have a 10 pip uh stop loss
+then we'll have a 10 pip Target Break
+Even is exactly the same except this is
+for triggering our break even stop- loss
+so if I set this to one and this to two
+then if price hits a 1: one target from
+our entry our stop loss will be moved to
+break even and then finally we have our
+trailing stop distance this is the same
+as these two but for our trailing stop
+so for example if we set this to 5 to1
+now we have a 5x Target from our entry
+so if we have 10 pip stop loss we have a
+50 pip Target uh but that's obviously
+not going to get hit very often so maybe
+we want to move our stop loss to break
+even at 1:1 so now our stop loss will be
+moved to break even when price moves 1
+to one in our favor and then finally if
+we want to start trailing our stop loss
+we could set this to 2: one and it's
+going to be hard to find a trade that
+actually triggers these conditions but
+I'm sure we'll find one I see one here
+here we had a trade enter nearly got
+stopped out then our break even Target
+was hit our stop loss moved up to break
+even and then our trailing stop Target
+was hit
+and our stop loss began trailing to lock
+in profit had this trade continued in
+our favor this stop loss would have
+trailed upwards to lock in profit so
+those are our simple strategy settings
+um there were two more options here for
+exit reasons so if I turn exit on higher
+close on or off now the script will um
+let me find an example real quick um
+it'll be easier if I turn these settings
+off to find an example here we go this
+will do so if I have this setting
+setting turned on exit on higher close
+lower close and I'm in a long trade as
+soon as our Green Line gets hit that's
+our take profit if I'm using an exit
+reason here then we don't place a fixed
+Target instead the script will wait for
+price to touch this um Target and then
+when our exit uh condition is detected
+the script will exit our trade so in
+this case we're waiting for a lower
+close so this candle closed lower than
+this candle after our takeprofit was hit
+our profit trigger was hit and then we
+exit the trade on the next bars open
+after this lower close obviously for um
+short trades it's the opposite so for a
+short trade we would be looking for a
+higher close so in this case here we
+went short and then we had a higher
+close we exit on the next bars open and
+then here we have another exit reason I
+just wanted to show you guys how to use
+multiple exit reasons with pine
+connector these are purely for example
+purposes they're very simple exit
+reasons they can be effective on some
+systems I do use these sorts of exit
+reasons on some of my trading systems
+but you probably want to add some more
+complexity to these a little bit more
+sophistication you probably want to
+combine indicator conditions that sort
+of thing with your exit reason higher
+close lower close is a pretty good exit
+reason but opposite color bars not
+really you'd probably want to combine
+that with something like a um indicator
+overbought over sold condition again
+this is example purposes this is about
+the pinescript template not about the
+system itself um so yeah this will exit
+an open trade based on an opposite
+direction higher close or lower close
+this will exit the trade based on an
+opposite direction bar in general so if
+we're in a long trade and we print a red
+bar we exit and vice versa for a short
+trade so those are our system settings
+very simple system um but again you
+should be able to convert most training
+systems that are simple the more
+complicated a training system is the
+more difficult it's going to be to plug
+it into this template but personally all
+of my systems are very simple I can copy
+and paste probably all of my systems
+into this script and get it working um
+so for those of you with access to the
+Mastery course or my indicators and
+strategies course um feel free to play
+around with any of those scripts you
+should be able to copy and paste the
+majority of them um the entry conditions
+you should be able to replace this with
+the entry conditions from any my scripts
+and this script will work almost out of
+the box you will need to tweak a few
+things here and there for certain
+strategies but should be pretty simple
+so that's it for our system let's go
+over the pine connector settings this is
+this is the uh point of today's lesson
+all of these settings below this label
+here so if you watch the previous lesson
+on my simple template you'll recognize
+most of these settings but there are a
+bunch of new ones that I've added to
+make this Advanced template uh useful
+for most Traders this should cover 90%
+of requirements for Pine connector if
+this is off and you set up your alerts
+then they will not be sent to Pine
+connector so uh but this is on by
+default the next setting is obviously
+very important that's our Pine connector
+license ID if we don't have the correct
+ID then our order will not be routed to
+metatrader so make sure to put in the
+correct ID here then we have our risk
+per trade again I went over these
+settings in the previous videos this is
+BAS on your Pine connector expert
+advisor settings so if you've set pine
+connector up to use Lots then this would
+open one standard lot if you've set it
+up to use a percentage of your account
+balance then this would risk 1% of your
+account on the on any trade that is open
+by this script entry Pips is for our
+entry limit order so in the previous
+script we used Market orders in this
+script we can either use Market orders
+or we can use um limit orders so limit
+order will place in the case of a long
+trade let's say we get our awesome
+looking bullish candle here and this
+triggers our long trade um if we set
+this with this turned on our alert would
+send a limit order let's say this is the
+candle's um closing price the script
+would send a Buy limit order 0.1 Pips
+below that closing price over on
+metatrader so whatever the price is on
+metatrader if we had entry Pips set to
+0.1 and this turned on when we um set up
+our alert then we would place a buy
+limit order 0.1 Pips below the signals
+confirmed closing price if you want to
+just use Market orders to enter your
+orders immediately then leave this
+setting off and then this setting here
+is
+ignored spread filter is another pine
+connector setting this will only execute
+trades if the current market spread on
+your broker is below this pier amount um
+I personally leave this on in most of my
+scripts just to prevent my um my system
+from taking trades during some sort of
+Market Calamity like if if the spread is
+greater than about three Pips on my
+broker that I use um then something's
+gone horribly wrong because my spread is
+usually around 0.1 Pips at least on the
+major pairs that I trade the next
+setting here is our break even offset so
+let me show you what this does if I set
+what do we want here we want this I'll
+set this to 5:1 and my break even to 1:1
+let's find an example yeah this one will
+do when my break even um price is hit
+what happens here when this order is
+sent to uh Pine connector is this is our
+signal candle the RSI my settings are
+different here Al So currently for
+testing purposes I set my RSI period to
+three I was a bit confused there why
+this was a buy signal when the RSI
+wasn't oversold but let me just change
+this to be consistent with the script so
+let me explain what happens here what
+happens here is our script detects this
+green candle as our entry condition when
+this bar closes green while the RSI is
+oversold we have our long conditions met
+when this bar closes if I have alert set
+up then trading view will trigger my
+alert and the script will send the
+syntax to open a trade to Pine connector
+so with the settings I have here we
+would open a market order so at Market
+our stop loss would be down here and our
+break even price would be also included
+in our alert to Pine connector so when
+Pine connector receives our alert it
+would receive a command telling it that
+we want our stop loss to be moved to
+break even when price reaches this
+threshold so this is a 1: one distance
+from our entry to our stop loss here 1:1
+now this is a p value when it's sent to
+Pine connector so if I measure out
+roughly from our entry up to the Blue
+Line This is what would get sent to Pine
+connector so if I bring the syntax over
+real quick for Break
+Even This syntax command be trigger
+automatically moves the stop loss of
+whatever position we tell it to manage
+when be trigger is satisfied so in this
+case my script would tell Pine connector
+set my be trigger to 1.3 we're on a 1
+minute time frame here again for
+demonstration purposes I don't recommend
+trading this time frame not even with an
+automated script due to all kinds of
+reasons mostly slippage and commission
+costs um but anyway that's up to you
+this isn't trading advice uh make sure
+to read the disclaimer if you haven't
+already um this 1.3 pip Break Even
+trigger would be sent in this order so
+when this order is sent it would be be
+trigger equals 1.3 then Pine connected
+knows that when we enter our trade if
+price moves up 1.3 Pips then we want our
+stop loss to come up to break even so
+our break even functionality is handled
+completely by Pine connector the moment
+our trade is opened be trigger uh sorry
+be offset uh this setting here is how
+many Pips we want to offset our break
+even order so if I throw an array here
+um so actually I had to reset my
+settings here because my offset wasn't
+accurate but anyway let me start again
+with this example here's our entry price
+the open of this red candle so that's
+our entry price right there if I set
+Break Even offset to 0.1 now our break
+even price will be 0.1 Pips above our
+entry so the point of this is really
+just to cover the spread so if you set
+this to zero and price comes down and
+hits your break even um technically it's
+not really Break Even because you've got
+spread to account for and commissions to
+account for so um if you exit the trade
+at exact ly the same price you bought it
+at you're going to take a tiny loss
+because you're going to take the hit
+from the spread and the hit from the
+commission so for Traders who are
+sensitive to that maybe your system has
+a very thin Edge and you don't want
+those trading costs to infringe on your
+Edge or you just don't like um losing
+money on a break even trade uh then
+that's what this setting is for I
+wouldn't recommend setting it too much
+higher than the spread so just have a
+look at whatever your average spread is
+on your um whatever Market you're
+trading through your broker and
+if you want to then that's what I would
+set this to I would set it to whatever
+the spread usually is so that's all of
+these settings the next few settings
+here are use limit order we already went
+over that if this is off then we send a
+market order if it's on we use a limit
+order this many Pips from our entry
+price our signal price the candle that
+triggers our order use pip based entry
+is recommended to be on with uh Pine
+connector's documentation recommends
+using this setting and not not using
+this setting so so it recommends using
+Market orders to enter trades and pip
+based um stop- loss and takeprofit for
+your limit orders um that's because
+there is a slight difference a very
+slight inconsistency between trading
+views price data and metat Traders price
+data it shouldn't matter on most time
+frames but on the lower time frames it
+does matter a little bit and so to keep
+your script as consistent as possible
+with metatrader they recommend Pine
+connector recommend using pip based
+orders because that way no matter what
+price your trade is opened at over at
+metatrader your orders will be exactly
+the same distance as they are on trading
+view so that should mitigate any issues
+with price discrepancies or
+inconsistencies if you're not sure what
+I'm talking about go back and watch the
+previous couple of videos in this series
+where we went over that in detail so use
+pit based entry is for our entry limit
+orders so let me find our debug
+label here it is um if I turn use limit
+order on then our label here will change
+this is what gets sent to Pine connector
+we are sending a buy limit on Aussie Yen
+and our price value is
+0.1 Pips from um in this particular uh
+case we are looking at this trade here
+as our debug
+trade um if I was using a by limit order
+with these settings then we would place
+our by limit order 0.1 Pips below um the
+trigger price if I turn this off now our
+script is sending a price value when
+this updates in a moment slow today
+there we go now we're sending a price
+value instead of Pips to Pine connector
+now you need to make sure that whatever
+you've set your script up here is
+consistent with whatever you've set pine
+connector settings to be uh so if you've
+set your Pine connector settings to use
+price values then you need to ensure
+that your script template here is also
+using price values but if you're using
+the recommended settings for Pine
+connector you would would want to leave
+this on you would want to set pine
+connector up to use pip based orders and
+then having these settings on will
+ensure that your stop loss is sent in
+Pips your take profit is sent in Pips
+and your entry limit orders are sent in
+Pips however if you have a reason why
+you want to use price values and it's up
+to you U personally I use price values
+in all of my Pine connector um
+automation scripts and I've never had
+any issues but that's probably because
+the broker I use has very very close
+price data to metatrader and trading
+view so um it's I haven't really run
+into any issues where one platform had a
+very significant different price to the
+other but if you have a broker that does
+some Brokers do have like as much as a
+whole pip or even a couple of Pips
+difference between the two platforms
+that is going to be a big problem if
+you're sending price orders to Pine
+connector so if that is the case you'll
+want to use these settings for me
+through pepperstone the broker I've been
+using for the past year or so I haven't
+had any issues with that anyway let's
+move on to the final optional settings
+here um I've included a metatrader
+symbol override for people who use my
+ultimate pullback indicator they have
+run into issues where some markets have
+totally different symbols to what
+they're trading on trading view so for
+most Forex pairs the symbol will be the
+same on both platforms but there might
+be a prefix or a suffix again if you if
+that sounds like gibberish to you go and
+watch the previous videos but on my
+broker for example o Yen when I'm
+sending an order it would need to look
+like this AUD do uh audjpy a if I don't
+put a on the end of my symbol then the
+order will not be sent to my broker or
+my broker will not accept the order so
+in this case I I would just add a on
+metatrader suffix and then any order
+that gets sent if I look at my label
+here my debug label you can see that my
+symbol now says audjpy do a if I wanted
+to override the symbol
+entirely I would put override um
+whatever text I want to override it to
+in there and now that's what gets sent
+to Pine connector so there's very very
+rare edge cases where this would be
+required so I just included that in the
+template why not most of the time you
+don't want to touch this 99.9% of the
+time you will not want to touch this
+unless you really know what you're doing
+and you're running into that issue where
+the symbols don't match at all on
+metatrader prefix is the same as suffix
+but it puts it be uh before wellow can't
+type before so now we'll get before
+before our symbol so uh yeah that's
+pretty
+self-explanatory um strategy ID is for
+running multiple strategies on the same
+Market same symbol so if I'm running a
+hedged account account or hedging
+account through my broker that allows me
+to open long and short trades at the
+same time or I'm running two systems
+that only trade in the same direction so
+if I'm um trading two long only systems
+one on a 5 minute chart and one on an
+hourly chart and I want both systems to
+run through the same account over on my
+broker through metatrader I can separate
+the systems using a strategy ID so if I
+type strategy one into this box now
+whenever my orders get sent for this
+particular setup so if I set an alert
+right now any alerts that are triggered
+by the script will include this comment
+and this comment is how we use multi
+strategies so multi strategy
+documentation here for Pine connector
+says um if you want to use multiple
+strategies you need to include a comment
+and all orders with the same comment
+will be handled um as if they're their
+own system so you can trade multiple
+systems on the one Pine connector ID
+through the same broker on the same
+Market um using this strategy setting
+this is obviously for advanced Traders
+only if you're not particularly Advanced
+with trading or experienced I'd stay
+away from this completely and just use
+one um script per symbol on your Pine
+connector setup uh for me personally I
+only run one script per symbol on my
+Pine connector as you might have noticed
+by now if you've been following me for
+any period of time I'm a simple Trader I
+prefer Simplicity over complexity any
+day of the week if I can make a system
+simple even if a particularly complex
+system would make me more money unless
+it's significantly more money then I
+prefer the simple system because
+Simplicity works it's easier to work
+with it's less headache there's less to
+go wrong there's less confusion when
+things do go wrong um but then again I
+do trade a lot of markets I trade um
+crypto stocks and Forex if you're only
+trading Forex then you may want to
+increase the complexity of your system
+setup through Pine connector um but I'll
+leave that with you guys this isn't a
+trading course right now this is just
+teaching you how to get P connector
+working through your trading view
+scripts in the future I do plan to
+expand the channel to cover more broad
+trading Concepts and techniques that I
+use but uh for now um that is not what
+we are talking about so that's it for
+the settings let's briefly go over the
+code because the code is a bit it's just
+a wall of text but it all it is pretty
+simple it looks more complicated than it
+is um again you can copy all of this
+code into a blank script replace your
+strategy settings with whatever settings
+you like to tweak replace the um if you
+just a quick tip if you press crlf and
+type for SL SL exclamation mark this
+will take you to the couple of um places
+where you need to replace your my code
+with your code so this is my entry
+criteria for long trades and short
+trades I'll change this back to
+14 so here we need the RSI to be under
+30 and we need a bullish candle and we
+can't have any open trades currently so
+this system only takes one trade at a
+time it does not pyramid it does not
+trade in multiple directions it's just
+one direction at a time one trade at a
+time very simple entry criteria short
+trades are just the opposite direction
+you'd want to replace these conditions
+with your systems conditions and that's
+it if you want to use different exit
+reasons so these are my exit reasons
+here that we already went over then you
+would um add those settings up here add
+in your exit settings so here are my two
+onoff values for my exit reasons and
+then you would need to again come down
+here change these to whatever your exit
+inputs are and then if use exit reason
+is on the script will behave slightly
+differently based on those exit reasons
+and then of course you'll need to come
+down to where the exit reasons are also
+triggered so these are my exit criteria
+if I have higher close lower close
+turned on and we get a bar that closes
+below the previous Bar's low then we
+exit our trade if exit trade is
+triggered then Pine connector will send
+an alert to close any open long trades
+so again just really quickly if you want
+to change the script to work with your
+code change this code here to match your
+your entry criteria or conditions the
+indicators you want to use the price
+conditions Etc make sure to change your
+exit reason criteria if you're using
+exit reasons and that's pretty much it I
+mean unless you're using particularly
+obscure trailing stops that don't use an
+ATR trailing stop or or if you want to
+change the ATR trailing stop distance
+you might want to add some more inputs
+to this I try to keep this script as
+simple and stripped back as possible I
+could have added a lot more settings
+here we could have had a setting for for
+our ATR distance or period we could have
+had a uh setting for our RSI period and
+our overboard oversold settings but
+these weren't relevant to the script
+today so I didn't include those
+obviously if you're working on your own
+script you might want to add those user
+inputs uh but anyway let's just wrap up
+this video by going over the important
+stuff here so you shouldn't need to
+touch any of this with your scripts this
+just prepares some um constant variables
+so it prepares things like our symbol
+that we send to Pine connector it just
+sort of helps us build our string this
+is our text string that gets sent to
+Pine connector this is all handled here
+um and we just pass in the relevant
+parameters so this function here PC
+alert entry and in fact let me rename
+this I'll rename this
+to
+PC entry alert to be more consistent
+with the styling of the script there we
+go
+so this function here is going to
+terrify some of you guys especially
+those of you who are new to pinescript
+don't worry about it you don't need to
+know what this does you can copy this
+into your script and it will just work
+it's a it's just a function that takes a
+few parameters and all it's doing is
+building a string so it's just adding
+all of the text up together in such a
+way that
+um Pine connector can read so it
+assembles this text alert in the correct
+syntax to be sent to pinec connector all
+we need to do is pass in a direction our
+price entry price if we're using a limit
+order our stop- loss value our take
+profit value our break even trigger
+value and this truncate here is purely
+for the label uh for some reason with
+trading view scripts if you're working
+with float numbers so decimal numbers it
+will add like an extra 10 decimal
+numbers after the decimal place um and
+so to make make this label easier to
+read I made sure to truncate or strip
+out the extra decimal places um so that
+we don't have so many numbers in our
+debug label but whatever is in this
+label will be sent to Pine connector now
+as far as I know Pine connector can
+accept as many decimal places as you
+send it but um if you are running into
+issues with having too many decimal
+places in your alerts for whatever
+reason just change this to true and that
+will make sure that the alert text that
+gets sent to Pine connector always only
+contains five decimal places that should
+fix any issues that you encounter on any
+markets out there there may be some very
+slight rounding errors on things like
+crypto that have a 100,000 Satoshi
+decimal places but it should be fine to
+do that if you run into any issues um I
+might even leave this on by default
+because I can't really think of any
+reason why rounding to five decimal
+places would break any scripts as far as
+I know there aren't many Market out
+there other than crypto that have more
+than five decimal places in their price
+quote and even if they do rounding the
+remaining six plus decimals shouldn't
+really affect anything significantly so
+I think I'll just leave this on by
+default but if you're having issues play
+around with this uh set it to false or
+true um or if you're having any issues
+with this uh just send an email to Pine
+connector support team and they should
+be able to walk you through a solution
+but I haven't encountered any issues
+with this um function I use this in all
+of my automated scripts so yeah that's
+it uh the next thing we do is we get our
+pip size so for Forex one pip is 10
+points so so one
+pip is 10 points on stocks and other
+markets that's usually not the case
+usually one point is one pip so on Forex
+we want to set our pip size to 10 points
+on other markets it should be okay as
+one here is where we store all of our
+stops and targets Break Even prices this
+is mostly for drawing things onto the
+chart so in this case um drawing our
+stop-loss prices and break even prices
+Etc um when our alerts are sent to buy
+connector other than a trailing stop
+alert everything else is sent straight
+up when we um enter our trade so all of
+these variables here are mostly just for
+drawing the signals onto our chart so
+that we can see what's happening next up
+we calculate our stoploss distance so if
+we're using an ATR we take that into
+account if we're not using the ATR then
+we just use um our stop our stop loss
+distance settings here converted into
+Pips then we have our entry conditions
+we have this other custom function here
+which takes all of our trade parameters
+so our Trade Stop distance or Price our
+profit distance it takes all of that
+information our stop- loss our take
+profit our break even distance and and
+it uses this function that we just went
+over to build a string that gets sent
+through our alerts to Pine connector and
+that's what this code here does next we
+check if we have a long trade conditions
+met if we do have a long trade then we
+calculate all of our strategy parameters
+um build all of that together into into
+our string and that gets sent to Pine
+connector if Pine connector is enabled
+we also have our strategy code here if
+we're using a limit order then we need
+to use a bu limit in our strategy entry
+to match what gets sent to Pine
+connector otherwise we pass in na if
+this setting is turned off then we don't
+use a b limit order this will just enter
+at Market through the strategy tester
+short trade is obviously identical but
+the opposite direction then here I just
+update my entry price from the close of
+the signal candle so here for example
+when this bar closes and we open our
+trade on the next bar our stop loss and
+take profit is calculated from the
+signal CLE so once our sign signal is
+confirmed we calculate our stop loss and
+take profit but for things like a
+trailing stop and break even price we
+need to calculate that information based
+on where our trade was
+opened and so this bit of code here just
+makes sure that our entry price is
+consistent with what the strategy tester
+is working with um next up we have our
+long strategy management code this is
+for the strategy tester when our trade
+is opened I already went over this the
+break even trigger is sent in our alert
+to open the trade so we don't have to
+send any alerts to Pine connector that's
+all handled by Pine connector when our
+trade is opened but we still need to
+tell the trading view strategy tester
+that our trades at break even and we
+need to draw that information so that's
+why this code is here next up we have
+our trailing stop activation code so if
+I turn that on uh trailing stop distance
+let's set that to one and set this to
+zero now the line will turn orange when
+price touches this line that triggers
+our trailing stop to start locking in
+profit so that's what this parameter
+does if we have a trailing stop turned
+on and price exceeds that um activation
+price then we begin trailing our stop
+loss we'll get to that code in a moment
+but next up we check our exit reason
+code so this is the same basically as
+our trailing stop activation but it's
+for our profit price so again if I set
+profit let's turn trailing stop off and
+set our risk reward to 2:1 now when this
+green line is touched by Price the
+script will begin looking for our exit
+reasons so in this case that is a lower
+close which we get here and our trade
+exits at Market on this bars open and
+here if we are using a limit order and
+price exceeds our takeprofit
+price that means that if our trade has
+not yet been filled so let's say we've
+set our B limit order to 10 Pips for
+whatever reason I wouldn't recommend it
+you want this as close as possible to
+price um but if I set this to 10 Pips we
+got our entry signal and our buy order
+was placed down here and it was never
+touched by price so we never got filled
+on our long trade but price came up and
+touched our takeprofit then we want to
+cancel this pending limit order because
+now we're out of sync with our strategy
+tester code so that's what this does if
+our takeprofit is hit if our would be
+take profit is hit and we are using a
+limit order then we want to cancel that
+pending limit order um next up we have
+our confirmed bar code so when a bar is
+confirmed so the bar closes this is
+where we check for our exit reasons so
+if our exit criteria is met then we send
+an alert to Pine connector to close our
+long trade at market and we also close
+our strategy test to trade to be
+consistent with um the strategy tester
+and pine connector and then finally we
+have our long trailing stop code so if
+our trailing stop is activated and our
+new long stop loss is greater than our
+current stop- loss then we want to
+update our stop loss so if we're using a
+fixed stop loss up here so this is a
+fixed stop loss and this is turned off
+then we want to Trail our stop loss the
+same amount of distance from whatever
+we've Set uh this setting to so if we
+set it to close then on each bar that
+closes we would Trail our stop loss up
+in the case of a long trade by 5 Pips
+from the closing price if we set it to
+high or low then it would be 5 Pips from
+the low and if we're using an ATR traing
+stop then it will obviously be an ATR
+distance from the close or the low in
+the case of a long trade and then if
+Pine connector is enabled then we send
+an alert to Pine connector to update our
+stop loss to do that we use the new
+stop-loss take profit long command and
+we pass in our new stop loss and also a
+strategy if we're working with a
+strategy ID and then our short
+management code is identical to long but
+obviously in the opposite direction then
+we have our trigger stop-loss takeprofit
+orders in the strategy tester so this
+passes in our stop- loss price and our
+um takeprofit price if we're not using
+an exit reason so if I turn exit reason
+off this green line just becomes our
+takeprofit if I have an exit reason
+turned on then we don't want to place a
+take profit because out exit reason will
+trigger the exit at Market when it's
+detected so that's what this code here
+does and then finally we have our debug
+label which just shows what is going to
+be sent to Pine connector if a trade is
+detected so the next time a trade is
+detected um with the settings I've just
+set up we would send our Pine connector
+ID we would buy Aussie Yen at Market
+with a 5 pip stop loss and a 10 pip take
+profit with 1% of our account balance or
+one standard lot with a spread filter of
+three so if the if the spread is greater
+than three then the trade will not be
+placed we will not buy oen at Market so
+the spread filter is obviously most
+useful with Market orders if you're
+using limit orders to enter your trade
+it's not that big a deal if the spread
+is elevated because you won't be filled
+on your trade unless price exceeds your
+limit order price including the spread
+so the spread is useful for Market
+orders um but any anyway that's outside
+the scope of today's lesson hopefully if
+you're using pine connector you are
+experienced enough with trading to know
+what I'm talking about um finally we
+have all of our plots for drawing our
+orders and that's it that's the script
+it's a long video I apologize for that
+but there was a lot to cover here the
+source code will be on my website as
+mentioned at the start of the video
+check out the pin comment below in the
+video description if you want to learn
+more about pin script or get your hands
+on all of my personal systems and
+strategy IES go and check out our
+website pinescript mastery.com I'll
+speak with you in the next video take
+care best of luck with your trading I'm
+not sure what we'll do on the next video
+maybe we'll apply this template to an
+existing system that I've already
+published on YouTube um that might be a
+good way to wrap up this sort of
+tutorial series to demonstrate how you
+can copy all of this code into a blank
+script and Port over one of my existing
+systems to use this um template and with
+that said I'll leave this video here
+thanks for watching best of luck with
+your trading I love you guys make sure
+to subscribe if you haven't already and
+I'll speak to you soon
+goodbye

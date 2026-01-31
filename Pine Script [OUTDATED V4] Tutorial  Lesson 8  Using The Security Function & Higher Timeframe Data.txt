@@ -1,0 +1,514 @@
+a traders welcome back to another pine
+script tutorial today's tutorial is
+going to focus on the security function
+in order to use higher time frame data
+so the example I'm going to use today is
+implementing a higher time frame EMA so
+what we're going to do is we're going to
+access the 50 day EMA on these intraday
+time frames so on this four hour chart
+when we're finished it will be plotting
+the 50 day EMA as opposed to the 50
+standard EMA so let's get straight into
+this one it's going to be called less
+than 8 today because that's what we're
+up to the first thing we need to do is
+set the overlaid to true so that this
+will draw on to our charts the next
+thing we need to do is get some user
+input so the first input I'm going to
+get is the time frame what time frame do
+we want a reference so this is going to
+be called EMA time frame it's going to
+be a type of input dot resolution we're
+working with resolution here which is
+which means time time frame and the
+default value is going to be D for daily
+chart you could also set this to 1440
+which is 1440 minutes 1440 minutes is
+one day otherwise just use D for short
+the next input is going to be the EMA
+length so MA length and a type of
+integer integer and the default value is
+going to be 50 typos everywhere today
+all right the next input is going to be
+whether or not to color this EMA now
+this will make more sense later but what
+basically what this is going to do is if
+price action is above the EMA the EMA
+will be colored green and if price
+action is below the EMA to be colored
+red this is just something I like to do
+with my indicators the ones that use
+emas so red obviously means I'm looking
+for short trades and green means I'm
+looking for long trades and so I'll show
+you how to do that
+in this tutorial today as well so this
+will be called color EMA
+and it'll be a type of input bool
+boolean and the default value is gonna
+be true
+last but not least is going to be our
+smoothing function now I'll explain this
+one later when we actually have the EMA
+plotting to the chart but this is going
+to also be a boolean input so input
+title equals smooth type whoops
+type is input bull and this one is going
+to be set to true as well
+I'll save that and we'll move on to the
+next bit of code which is going to be
+get actually getting the EMA value
+itself so I'll call this calculate EMA
+and we'll begin here by establishing an
+EI
+EMA variable so this EMA variable is
+going to be set to the inbuilt EMA
+function if you hover your mouse over
+this it'll tell you what you need to
+input in order to get a return value and
+this EMA function takes a source and a
+length source is high low close that
+sort of thing length is obviously the
+period length of the EMA so we want to
+calculate this EMA based on the closing
+price and it's going to be a length of
+Len of our variable we created here so a
+default of 50 the next thing we need to
+do is get the higher time frame EMA so
+we're going to basically plug this liner
+code into the security function in order
+to use this to calculate this EMA value
+based on the daily closing price or
+whatever time frame you set in your
+resolution input so we're going to get
+to email use here and this is gonna be a
+little bit complicated to explain but
+I'll do my best
+basically when you're calculating a
+higher time something like a higher time
+frame EMA you've got to remember that if
+I go down to a one-hour chart for
+example there's 24 one-hour bars in a
+day 24 one-hour bars make up one daily
+bar and so there's gaps between the star
+of this 24-hour period and the beginning
+of the next four-hour period there's
+gonna be gaps in price data on that
+higher time frame and so what we're
+going to do in order to compensate that
+is we're gonna have to EMI values one is
+going to compensate for that value and
+the other is not so basically one is
+going to be a smooth higher time frame
+EMA value and one is going to be a
+stepped higher time frame EMA value so
+this will make a lot more sense when
+this is drawing to the chart so let's
+just write the code first and then I'll
+come back to explaining what's happening
+so the first EMA value are going to get
+is the smooth EMA value and we're going
+to assign this one this variable to the
+security function and now I'll explain
+what goes into this one if you hover
+your mouse over the function name it
+will tell you what inputs it takes and
+it outputs whatever it needs to
+floating-point numbers like price price
+data integers boolean's color which I
+believe is candlestick color today we're
+going to be working with the float
+because we're going to be calculating an
+EMA value which is a float because it
+has decimal point numbers just like
+price action does because it is a an
+average of price action values the first
+input this thing takes this function
+takes is what's symbol do you want to
+calculate this data on so you can
+actually use this to reference other
+symbols so you could reference and we're
+on Ozzy CAD here Australian dollar
+versus Canadian dollar but you could
+reference the euro dollar or or a stock
+commodity whatever you feel like so I'm
+not going to go into detail about that
+in this tutorial this is just
+introducing you to the security function
+but in future tutorials I'll show you
+how to reference other markets today is
+market we're just going to reference the
+current symbol so we need to write in
+here sim info which is short for symbol
+info press control space and you get a
+list of of variables you can you can
+grab from this basically this this
+collection
+of instrument data and so out of this
+list we want ticket ID and this will
+give us the Australian cat AUD C ad and
+I believe it will also get it from the
+same brokerage so so whatever broker
+you're on it will get the price action
+data for the symbol you're on from the
+same broker which is important obviously
+because different brokers have different
+price data and so you want this to be
+consistent with the symbol you're
+referencing on your charts so trading
+view takes care of that all for you just
+by this little happy little line of code
+here to reference Bob Ross but the next
+variable we need to input here is the
+resolution what time frame are we
+referencing and we can just reference
+our time frame important from up here so
+just type in res sorry I could have
+taken lots of breaks between writing
+this out because my neighbors are
+redoing their lawn and there's someone
+out there shoveling a whole lot of
+gravel I don't envy them today that's a
+harder job than writing code that's for
+damn sure
+so the next input variable we need to
+get we need to plug in to this security
+function is it's called expression here
+you can see expression is a third input
+basically this is any expression any
+line of code and so we're going to be
+plugging in this here into into this
+expression slot or whatever and what
+this is saying is on the current symbol
+ticker ID or Z CAD on the current time
+frame or that are on the reference time
+frame the daily time frame it's saying
+tradingview please get us the EMA
+variable from this information so this
+will be the daily clothes on the daily
+chart and we'll be calculating a 50
+period EMA with that information but
+we're not quite done yet
+we also need to plug in the gaps
+variable and the look-ahead variable and
+I'll explain what those do next so the
+first one is gaps and we're gonna write
+in here
+bar merge dot and
+press control space and that will show
+us the available variables for bar merch
+basically if you put bar merge caps on
+what that will do is remember I said
+that there's 24 one-hour bars in a day
+well this will merge the gaps between
+the start of the day and the start of
+the next day and basically what that
+will give us is a an average of the
+average we're going into EMA inception
+here and we're calculating a average of
+the EMA the exponential moving average
+and merging the gaps between price
+action so again that'll make more sense
+when you can see it on the chart so for
+this one we're just going to write gaps
+on so we're turning bar merge on
+emerging the gaps of any price action
+gaps on the higher time frame we're
+turning that feature on the next input
+is an interesting one as well this is
+the look ahead so if I type bar merge
+dot control space we have look ahead on
+or look ahead off basically what look
+ahead is is that in historical data when
+you're referencing a higher time frame
+pine Script obviously has access to the
+days closing price the current days
+closing price so right now the day daily
+chart hasn't closed on this time frame
+so if you were to turn this to look
+ahead on it would be referencing the
+current days closing price and that's
+how you would run into what's called
+repainting issues I'll get into that in
+another lesson because it's a little bit
+advanced for this stage of this this
+course but basically in layman's terms
+what that means is that if you set this
+to look ahead on throughout historical
+price action the script will be able to
+look into the future to see what the
+day's closing price was before the day
+would have closed in live action so
+first of all there's all sorts of
+reasons why you would want the script to
+be able to cheat and look ahead
+but I'm not gonna go into them today I'm
+just gonna say that for the most part
+for most scripts that you create it's
+probably safest to just turn look-ahead
+off so this script is going to merge any
+price action gaps between any missing
+price action gaps and it's going to not
+look ahead and basically when you turn
+this off what that means is that instead
+of on historical data instead of
+referencing the days closing price and
+cheating seeing looking ahead to see
+what the day's closing price was it will
+simply reference the previous day's
+closing price instead which in this case
+for the purposes we're using this higher
+time for an EMA for is exactly what we
+want so we'll leave that off and the
+next step in this tutorial lesson is to
+create the EMA steped version and then
+I'll will plot these to the chart and
+it'll make a lot more sense what these
+to do so again we're going to reference
+the security function we're going to do
+all the same here we're going to
+reference the same symbol that we're
+currently on the same higher time frame
+setting the same EMA expression the only
+difference on this line of code is that
+we're going to set Bar merge gaps off
+and the BOM merge look-ahead
+is also going to be off so literally the
+only difference between these two lines
+of code is that this one has gaps off
+and now we can plot these two variables
+to our chart so let's do that here now
+we don't want to draw both of these EMAS
+at the same time which is why I have
+this smooth setting here so whether this
+is turned on or off we'll determine
+which one of these EMA is we draw it to
+the chart so this is going to be a
+little bit of a messy line of code but
+I'll explain it as we go first thing
+we're going to use is what's called a
+conditional operator if you're not sure
+what this is just go back and go through
+my previous lessons where I explain in
+detail how this works but this is like
+an if if or else statement so we're
+going to say if smoothing is on if this
+smooth bullying is set to true in the
+settings menu then we want to draw the
+EMA smooth
+otherwise if this is set to false we
+want to draw the EMA step value then
+comma for that the next function setting
+for this this plot function is going to
+be the color what color are we going to
+draw this EMA at and that's where this
+color variable boolean comes into play
+or you want to say if we're coloring
+this EMA then we want it to be green if
+the current closing price on this time
+frame is above our higher time frame I'm
+gonna use EMA step for this and I'm not
+gonna explain why but that'll make more
+sense if you if you go over this lesson
+a couple times and you and you really
+think about what these two lines of code
+do but anyway here we're going to stack
+two conditional operators on top of each
+other so we're gonna say if the color
+variable is turned on this boolean is
+set to true and the if the closing price
+is above the higher time frame EMA then
+we want to set the color to green
+otherwise if color is set to true and
+the closing price is not above the EMA
+higher time frame EMA then we want to
+set the color to red and then we'll draw
+another semicolon here otherwise we're
+just going to paint it black as the
+rolling stones would say I'll just go
+over this one more time because the
+nodes would be confusing to look at but
+what it's saying is if the color
+variable is set to true if the user has
+set this boolean to true this check box
+is ticked and the closing price is
+currently above the higher time frame
+EMA then we want to set the EMA color to
+green otherwise if it's the closing
+prices below the EMA or equal to it then
+we want to set it to red and if this
+color variable input variable is not set
+to true meaning the check box is not
+ticked then we're just going to paint it
+a solid black color and that's it for
+this section now we're just going to set
+the line width to two so that it's just
+a little bit thicker I feel that that
+works better on EMAS especially a higher
+time frame EMA and we're going to title
+this plot function so that our users can
+go into the
+settings menu and change these colors if
+they want to so I'm going to say EMA in
+brackets
+hiya time frame and that's it for this
+script basically we can hit save and add
+to chart hopefully there's no errors
+doesn't look like it add to chart and
+there we have it it's now plotting to
+the chart but because we're so zoomed in
+on this one hour time frame we can't see
+it so zoom out a little bit let's go up
+to the 4-hour chart and here we have the
+higher time frame EMA 50-day EMA being
+drawn to our 4-hour chart but we do have
+smoothing turned on so if we come up to
+here and we turn smooth off now we have
+our stepped 50-day EMA and so I'll just
+quickly explain this stepped EMA again
+now that we can see it on our chart and
+that'll be the end of this lesson so we
+go down the one-hour chart zoom out a
+bit if I count the amount of bars
+between each step you'll see that it
+adds up to 24 so during this whole day
+of price action the EMA was one solid
+value and this was the previous day's 50
+EMA value based on the closing price and
+this is exactly what we want if you're
+going to use this information to trade
+off this is what you want on your chart
+and now this script isn't quite perfect
+if I am if you look up here you can see
+that it's it is actually repainting it's
+still repainting even though we set look
+ahead to off I'm not going to go over
+how to fix that in this in this lesson
+because it's it's quite a detailed
+process and the lessons already long
+enough but this is the gist of what you
+would need to do in order to achieve
+working with higher time frame data
+using the security function in future
+lessons we'll do other things like
+drawing the higher time frame high or
+low but that sort of thing but this is a
+great introduction to the security
+function and what all the variables do
+and so yeah this if we turn this to
+smooth if we turn the smooth function on
+you can see that it's merging the gaps
+and so we're not getting that stepped
+effect but but this is an inaccurate
+50-day EMA reading looks a lot
+better looks cleaner on your chart and
+it could be useful for things like just
+performing general technical analysis on
+your charts but if you wanted to use
+these levels to trade off it would be
+much better to have this depth version
+on so that during this day you are
+referencing the previous previous days
+50 EMA value instead of the current days
+50 EMA value which really we won't know
+until the end of the trading session and
+that and the current daily chart closes
+so yeah that's it for this lesson I hope
+that made sense if not leave a question
+in the comment section and I'll get back
+to you as soon as I can
+if you found this lesson helpful please
+subscribe to the channel that there's a
+lot of motivation to continue making
+these videos and I'm glad to be able to
+help you guys learn this new skill and
+just before I leave I just wanted to let
+you guys know that there is a lot that
+goes into creating complex and practical
+useful Pyne script scripts and
+indicators and so I'm considering
+creating a very in-depth advanced plan
+script course for you guys going into
+detail maybe going over how I create my
+own indicators my own complex indicators
+such as my ultimate pull back indicator
+which I actually used to trade the live
+markets forex markets and this is
+painting pull back signals to the charts
+so you can see it's it sends me an alert
+telling me when to go long or short
+tells me my stop-loss my target
+placement and you can see it's had a
+couple of winning trades here I'm
+considering teaching you guys exactly
+how I made this sort of indicator the
+catch is this information is quite
+valuable it took me a long time many
+many many hours of work to get something
+like this working and I don't really
+feel comfortable giving away all of my
+secrets for free so I'm considering
+creating a premium pine script course
+where I'll go into much more detail
+about how to practically apply all of
+this information and I'll make it
+affordable when it is finished and by
+the end of it you will be able to create
+your own strategy scripts your own
+indicators
+and tools to aid in your own trading and
+so over the next few maybe months I'm
+going to be working on that and building
+that and making that as great as I
+possibly can and I'll let you guys know
+when it's ready and for those of you who
+really want to take this to the next
+level that'll be a great resource for
+you guys to really enhance your edge and
+in that course
+I may even include a mentorship option
+where you can get one-on-one access with
+me and ask me questions and I'll help
+you to create your own scripts because
+right now I'm getting a lot of questions
+from traders and coders and I just I
+really don't have the time to help
+everyone and so I'd love to offer a
+service where I can help you guys but
+obviously with the amount of time I
+spend on my own trading and content
+creation I just don't have the time to
+do that for everyone so I'll have to
+find a way to prioritize that and maybe
+the core students can get that priority
+and so if you're interested in that I'll
+leave a link in the video description to
+sign up to my PI inscript mailing list
+and anyone who signs up before the
+course is released I'll send out an
+email to you when it is released and
+I'll give you a significant discount on
+the opening price for supporting me and
+for pursuing success and being proactive
+about your trading because I respect
+that and I will reward that where I can
+so we'll speak to you guys in the next
+lesson good luck with your trading best
+of luck with your coding keep at it I
+know this stuff can be confusing and it
+takes time to learn but it's extremely
+extremely valuable information to master
+and once you do you will be able to take
+your trading to the next level
+completely and possibly even automate
+your strategies that'll be another thing
+I'll cover in the paid course how to use
+third-party api's to automate strategy
+scripts so take it easy everybody I've
+enjoyed this time with you I hope you
+did too and I'll see you in the next
+lesson
+good bye
+[Music]

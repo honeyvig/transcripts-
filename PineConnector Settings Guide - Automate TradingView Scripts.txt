@@ -1,0 +1,558 @@
+hey what's up Traders I'm Guy Sebastian
+and in today's video we're going to have
+another look at Pine connector today
+we're going to break down the pine
+connector settings and the syntax
+commands for sending alerts from Trading
+view to metatrader to autot trade our
+Pine script indicators and strategies
+I'm going to open up the settings for
+this expert advisor um in the previous
+video I recorded on a 4K resolution so
+you'll notice this dashboard thing looks
+kind of janky in the first video of this
+series I'll record on 1080p for the rest
+of the series so this looks normal don't
+be alarmed by all the red in this uh
+dashboard I accidentally left the trade
+open from the last video and it racked
+up a pretty big loss on euro dollar but
+luckily this is a demo account that's
+why we use demo accounts for this sort
+of thing when we're learning and setting
+up um tools like this I do have pine
+Connector running on a live account it's
+running on my ultimate pullback
+indicator um you can get more
+information about that on our website
+pinescript mastery.com if you're
+interested it's um got full integration
+for Pine connector all you need to do is
+insert your license ID and any relevant
+parameters for Pine connector and it
+will automatically send any trading
+signals to Pine connector and it's
+working really well over the past few
+weeks so towards the end of this series
+after we've gone over a lot of the um
+core fundamentals of pine connector I'll
+revisit that script I'll show you what
+the results are and we'll break down
+what I've learned from that experience
+and what tips and advice I can give you
+guys um but anyway let's get into the
+pine connector settings if this is the
+first video you're watching make sure to
+go back and watch the first video in the
+series I've got an instructional video
+on how to set this up for metatrader 4
+and 5 two different videos I'm using
+metatrader 5 but it shouldn't matter
+what platform you use the settings will
+be slightly different in some areas but
+the core fundamentals are all the same
+so I'm assuming you've already set up
+Pine connector and today we're going to
+open these settings to do that we can
+just right click our chart we come down
+to expert list and then click properties
+now again you will need to use your own
+license ID you can't steal mine um
+because it's linked to your metatrader
+account number so yeah don't try to use
+mine but the good news is you can sign
+up for a onee free trial if you're not
+confident that this is worth your money
+yet and you can play around with the
+full functionality of the tool for that
+full week all right so let's break down
+the core settings here I'll just do
+these quickly because in future videos
+we'll go over practical examples of
+these settings with actual scripts so
+obviously you need your license ID
+that's the most important input here if
+you don't put this in correctly then
+this tool will not work the next most
+important setting is our stop loss and
+take profit setting so by default it's
+set to Pips that is the recommended
+setting for Pine connector but there are
+other options here so if we set it to
+Pips then when we send SL and TP in our
+alert syntax so open up the charts these
+settings here and it does matter which
+order you put these in by the way when
+whenever you send an alert to Pine
+connector we need to first put our
+license ID then a buy or sell or pending
+limit order command then the currency we
+want to trade then we have our stop loss
+and take profit and risk if I set both
+of these to 50 and we open up the
+settings and have this set to Pips then
+our stop loss will be 50 Pips from the
+current market price when our trade is
+executed so we would have a 50 pip stop
+loss in a 50 pip take profit if I change
+this to price then these values need to
+be price values so if I wanted to put my
+stop loss at uh
+1.58 I would type in here
+1.58 and now my stop loss would be a
+price value but my takeprofit also needs
+to be a price value so we change this to
+1.62 that would give us a roughly one:1
+risk reward profile if our trade were to
+be entered at 1.06 the current market
+price and then the final option here is
+percentage that's exactly the same as
+Pips but obviously percentage based so
+most Traders probably wouldn't use this
+option maybe crypto Traders might uh but
+for Forex Traders it's unlikely you
+would ever use percentage based stop
+losses and take profits most of you will
+be working with pips but we do have the
+option for price as well if you need to
+use that option again the recommended
+option is Pips because that helps
+alleviate the issue of the pricing
+discrepancy between metatrader and
+trading view when your trade is entered
+it's entered at metat Traders price and
+so if you enter your stop L and take
+profit based on Pips that keeps
+everything as consistent as possible
+across both platforms next up we have
+risk so the default setting is set to
+Lots so if we set our risk to one and
+look on the left here we have these um
+example parameters if we set risk equals
+1 in our alert then our position size
+will be whatever number we put here so
+in that example it would be one standard
+lot if we put 0.1 it would be one mini
+lot 0.01 would be a micr lot there are
+other options here dollar amount
+percentage of balance based on lots and
+margin available margin and then finally
+percentage of account balance as a loss
+so this is the most commonly used one I
+would imagine this is the one I use in
+all my scripts and this limits my loss
+based on a percentage of my account
+balance so if I set risk equals 1 and I
+have this set up in the pine connector
+settings then if my trade loses I will
+only lose 1% of my account balance
+now on the settings page there is more
+information here so under volume there
+is a description of each setting so go
+and read this if you want to know more
+about these middle three options but for
+me I will mostly be using percentage of
+account balance so that's what I'll
+leave this on for now next up we have
+our pending order this is our entry
+order so if we send an alert of buy or
+sell like this that's a market order but
+if I change this to buy limit or sell
+limit now we're placing buy and sell
+limit orders and if we are sending buy
+or sell limit orders this setting comes
+into into play so by default it's set to
+Pips from current market price so if we
+send an alert that says price equals 10
+then our buy limit will be set 10 Pips
+below the current market price on Pine
+connector uh on metatrader same as our
+Target type so our Target type has Pips
+price and percentage so does our entry
+pending limit order Pips price and
+percentage most most of the time we will
+be using Pips um but I'll show you some
+examples of these others in future
+videos finally we have account filter
+basis and we have four settings here
+balance Equity margin percentage and
+free margin let's go over to the
+settings page and read what these do so
+this setting helps filter the trades
+that Pine connector can take so if we
+choose balance and we set account filter
+to 1,000 then the signal will only be
+processed if your account balance is
+greater than 1,000 if it's set to equity
+then our open Equity needs to be greater
+than 1,000 if we set it the free margin
+then our margin needs to be greater than
+1,000 and margin percentage is the same
+as uh free margin but uh but obviously
+this will only be processed if your
+margin percentage is more than the
+specified number so I personally don't
+touch this setting in my own trading or
+rather I don't send this parameter in my
+alerts but this parameter here is there
+for you guys to basically control your
+risk that's what this setting would be
+mostly used for that way
+that way if your script goes ballistic
+and starts pumping out dodgy trades um
+you have like a a break an emergency
+break limit um if your account balance
+Falls below a certain number the expert
+advisor will stop taking trades or if
+you just have a lot of um signals being
+generated and you don't want to take any
+trades when your margin is used up for
+example so you're not getting margin
+calls anyway moving on to input so here
+is like a master override that you can
+um input so that when you're trades are
+received by the expert advisor these
+settings are used instead of whatever
+you send from your alert I've never used
+these settings um so I'm not going to go
+over these but this option is here for
+you if you need to do this for whatever
+reason um personally I like my script to
+send my trade parameters so I leave this
+setting as it is um so let's move on to
+General pyramiding so typically
+pyramiding is used to add to winning
+trades the first setting is on if you
+set this to on then all incoming trades
+will open without restrictions so if you
+have a hedging account that allows open
+long and short trades on the same symbol
+then any long and short trades that come
+in will be will be allowed to execute if
+you select on if symbol and direction in
+profit so this setting here then the
+trade will only open if if you have no
+open trades on euro dollar or your open
+trades on euro dollar have a profit
+that's Break Even or better and if we
+set it it to off either one buy or sell
+then if you have one trade open on euro
+dollar then a short trade will not open
+or if you have one uh Buy trade long
+trade on euro dollar another long trade
+will also not open and then finally we
+have off only one buy and one sell this
+will allow one long trade and one short
+trade to be open on the same symbol so
+these are advanced settings for accounts
+with hedging enabled um some Brokers
+allow you to have that setting enabled
+so that you can have long and short
+trades open simultaneously I personally
+have never played around with that just
+because it adds a lay of complexity to
+the back testing process that I'm not um
+comfortable dealing with I just can't be
+bothered I'd rather have a simple system
+that trades either long or short at any
+given time it's a lot easier to back
+test and prove that it works on
+historical data so I keep this um off
+typically so I'd usually have this off
+either one buy or one sell um or there's
+another setting down here Max open open
+positions per symbol I'll usually just
+set that to one and leave this on that
+way only one trade is open at a time but
+anyway we'll get to that next up we have
+close on reverse close on reverse
+determines the treatment of opposite
+signals so this is another setting that
+I've never played around with personally
+perhaps we'll cover this in a future
+video if you guys are interested in this
+but personally I leave this off and as I
+said I I stick to simple systems when
+I'm automating my trading next up we
+have Shadow targets I'm actually not
+sure what this is let's have a quick
+read Shadow targets hides your intended
+stop loss and take profit now I actually
+have no idea what this is we'll have to
+play around with this in a future video
+I've again I've never used this setting
+I'm not sure what that does Shadow
+targets hides your intended stop loss
+and take profits I'm guessing it means
+it doesn't enter these stop loss and
+take profits into the market to hide
+your stop- loss and take profit from
+your broker I'm guessing that's what
+this does we'll have to play around with
+this in a future video moving on partial
+close percent percentage this determines
+the percentage of your positions to
+close when using the close long percent
+and close short percent commands so we
+have three options 25% 34% and 50% this
+is obviously useful for scaling out of
+positions instead of exiting your trade
+entirely this is also not a setting I've
+ever played around with perhaps we'll
+cover this in a future video if you guys
+are interested in that uh next up we
+have Max open positions this defines the
+maximum number of positions across all
+of your symbols so if it's set to zero
+the pine connector EA will not limit
+your position count if it's above zero
+then uh Pine connector will limit how
+many open trades you can have
+accordingly so let's say you set up
+alerts on like 20 different markets but
+you only have enough money in your
+account to have three or four open
+trades you might want to set this number
+to three or four that way you won't be
+getting margin calls and trades trying
+to execute when you already have a lot
+of open trades um and then finally we
+have Max open position positions per
+symbol which does exactly what it sounds
+like defines the maximum number of
+positions per symbol um I typically set
+this to one um because I as I said I
+trade simple systems that only have one
+open trade per symbol I prefer to trade
+lots of symbols and only have one trade
+per symbol then have lots of Trades
+executing on a single symbol just makes
+it a lot easier to go through the
+strategy development process and back
+testing for me personally the way I do
+things all right let's wrap this video
+up with the last few settings categories
+here next we have dashboard that is this
+dashboard here and um we'll maybe break
+this down in a future video cuz there's
+a lot of information here to dissect but
+uh this shows you your p&l and your
+performance metrics for your system
+since um from Pine connector's
+perspective based on live executed
+trades you can see my giant loss here
+from the trade I left open from the
+previous video and if we go to the
+documentation here um the settings we
+have to work with are profit computation
+so by default it's set to calculate your
+p&l while including commission taxes and
+swap fees so that's really cool that
+gives you a very realistic portrayal of
+your systems performance metrics um then
+you also have the option to display this
+information without commission taxes and
+swap um but your results will be um
+better than realistic when you have this
+setting turned on because it's not
+taking into account all the hidden costs
+of trading in terms of system
+development so your back testing results
+will usually not show this information
+at least not on trading view since
+trading view doesn't have access to this
+information from your broker directly so
+these are the sorts of things you need
+to factor in during your system
+development and back testing process but
+by running your system on a demo account
+or a small real money account for a
+couple of weeks you should get a pretty
+realistic representation of how your
+system's performing with these fees um
+included in that performance you can
+also change the font size and turn the
+dashboard on or off um so if we go to
+experts properties
+dashboard um you have three options here
+Tech size on or off and the uh
+calculation technique then we have some
+risk parameters here so let's go over
+the documentation for these um first we
+have daily profit this determines your
+daily account takeprofit the daily
+recompute occurs at midnight GMT so
+that's important to know if you're using
+this set if it's off then your system
+will just continue taking trades
+regardless of how much profit you make
+in a day if it's below one then you're
+using a percentage amount so 0.1 in this
+parameter here would turn your system
+off it would stop allowing Pine
+connector to take new trading signals if
+your profit for the day exceeds this
+number personally I've never been a fan
+of limiting The Profit I make in a day
+but there are probably reasons to use
+this um especially if if you're trading
+a managed account and you're trying to
+keep your performance metrics and your
+Equity curve volatility in a certain
+range so a number below one would be a
+percentage amount so 0.01 would be 1%
+0.5 would be 50% so on good luck making
+50% in a day um but if you do more power
+to you if you set this setting to a
+number greater than one then this is a
+dollar amount so 100 would mean that if
+your account makes $100 worth of profit
+your
+um expert advisor will stop taking
+trades and you can check the day's
+profit Target using your experts log
+which is this setting here next we have
+daily loss which is exactly the same but
+obviously limits your daily loss which
+is a setting that it makes a lot more
+sense for me to use Um this can stop
+your system from going haywire if your
+system is taking a lot of Trades and
+you're racking up losses quickly um
+setting a daily loss limit can protect
+your account from that happening again
+if you're trading managed accounts you
+might want to turn this on so that you
+don't exceed your daily loss limit if
+you're a retail Trader you probably use
+this mostly to protect your account from
+something going wrong with your system
+or maybe you're a day trader and you
+want to limit your loss for the day not
+a bad idea to use this setting if you're
+trading lower time frames especially and
+it works exactly the same way as the
+daily profit limit um but obviously this
+is losing percentage and losing dollar
+figures and then we have our action so
+this is the action the EA or pine
+connector will take if one of these um
+thresholds are hit so halt EA will stop
+the EA for the day and it will restart
+automatically on a new day which I'm
+guessing is midnight GMT as it says up
+here so at midnight GMT your daily p&l
+will reset and if you have the setting
+turned on um the new day's p&l
+cumulative p&l will be acted on on
+accordingly you could also set it to
+close all positions so if your daily
+profit or loss is hit it exits all of
+your open positions or the third option
+is to close all positions and halt the
+EA so if you just have halt EA on and
+your daily loss limit is hit for example
+then all your open positions will still
+play out so if you've got stops and
+targets set the trades will play out as
+they were set up um but no new trades
+will be taken however if you set close
+all positions and hold EA then it will
+exit any open position positions and
+also hold the EA so you'd probably want
+to use this setting if you're going to
+use a loss limit on your uh account next
+up we have cumulative profit so this is
+like the daily p&l um setting except
+it's for cumulative profit since
+Inception so since you started running
+your system um this setting will add up
+your pnl so we open up experts
+properties so we have a daily profit and
+daily loss limit limit and an according
+action and then we have a cumulative
+profit and cumulative loss limit um
+and a ea action so we can hold the EA
+for a day we can hold the EA permanently
+until we turn it back on manually and
+then we have our same options but we
+close all positions or we close all
+positions and pause the EA for the day
+or we close all positions and turn the
+EA off until we manually override this
+and that's it that's the core settings
+for Pine connector again we'll go into
+more detail on these settings in future
+videos as we start coding scripts to
+send this information these parameters
+directly to Pine connector from Trading
+view alerts so that we can automate our
+trading um so far we've only done test
+alerts using uh test alert syntax in
+future videos we will code all of this
+and I'll give you a template for a
+script that includes all of this
+information so that you can set up your
+alerts like I have here with my UPI I
+can select my script select any alert
+function call make sure my web Hook is
+turned on and my license ID is inputed
+into the script and then whenever my
+script detects a training setup an alert
+will be generated and sent to P
+connector you can see here a signal is
+being detected if this signal closes
+valid so this bullish engulfing candle
+closes with all the conditions met in 45
+minutes from now uh Pine connector will
+execute a trade on my Live account so
+really cool stuff here really powerful
+um it's a really powerful tool for
+systematic Traders I hope you found this
+video interesting thanks for watching I
+love you guys I'll speak with you in the
+next video where we'll start coding
+we'll go into more detail about the
+syntax so so far we've only really
+covered fixed profit and uh stop losses
+and risk in future videos we'll cover
+more Dynamic stuff like trailing stops
+how to exit trades so for example based
+on exit reasons so if I come up to the
+settings of my UPI and scroll down to um
+exit settings I've got the option to use
+a trailing stop here that will use a a
+trailing stop to lock in profit so once
+my target is hit the script will start
+trailing my stop loss until it's hit we
+can send alerts to Pine connector to
+update our stop loss as it changes or I
+can tell Pine connector to close a trade
+when an exit reason is detected so if I
+say so for example if I turn on use
+higher close lower close exit as soon as
+my target is hit and we get a candle
+that closes above the previous candles
+high I can tell Pine connector to exit
+that trade at Market so there's some
+really cool powerful combinations of
+settings and script parameters and code
+that we can use to create pretty
+versatile trading view systems that can
+be automated through our broker using
+pine connector that's where the fun
+stuff will start to happen in this
+series so make sure to subscribe to the
+channel if you haven't already and I'll
+speak with you in the next video take
+care good luck with your trading now
+none of this is trading advice be
+careful out there it is possible to lose
+a lot of money if you don't know what
+you're doing with this stuff so take it
+slow start with the demo account if
+you're going to play with this tool
+treat it with respect and you should do
+just fine have a fantastic day and I'll
+speak with you soon
+goodbye

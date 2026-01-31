@@ -1,0 +1,328 @@
+[Music]
+hi traders welcome back to Zen on the
+auto trading today I'm going to be
+covering basic inputs in pine script
+this is lesson 3 in my pine script
+tutorial course so if you haven't seen
+the other videos you might want to go
+back and watch them unless you're a
+little bit experienced with pine script
+so let's get straight into this one I'm
+going to start with a blank script here
+all I've done is changed the script name
+to lesson 3 what I'm gonna do here is
+just show you how to use all the basic
+inputs I'm not going to go over
+timeframes and sessions and symbols I'm
+just going to go over the basics such as
+number inputs boolean inputs which means
+true or false float inputs which is just
+floating point numbers decimal place
+numbers and string inputs which is just
+text inputs I'm gonna plot all these
+inputs on to the chart to show you how
+to use them in the script we're not
+going to actually do anything with these
+values I'm just going to show you how to
+get input from the user
+these concepts will come back later in
+future lessons so it's very important
+that we go over these now get it out of
+the way and then some of you more
+advanced users can start playing around
+with them yourself in the mean time so
+let's start with boolean input the
+boolean input is set to the input
+function and we're going to call it
+boolean it's going to be type we're
+gonna set its type to input dot and then
+you can press control space here if you
+forgot about that and it'll list all of
+the inputs here we're going to go with
+ball input bool and then the default
+value def val is going to be set to true
+and obviously you can set this to
+whatever you want true or false so in
+order to plot the boolean to our chart
+there's no way to plot a true or false
+value to the chart because there's no
+way to visually represent that other
+than using numbers so we could use a 1
+for true and a 0 for false that's what
+I'm going to do in this example and now
+the way to plot this
+the easiest way to plot this is using
+what is called a conditional operator
+this is a little bit advanced but it's
+not that advanced and it's very useful
+to know so I'm going to teach you that
+in this lesson so in programming there's
+what we call if statements so the way
+that would work is we type if and then
+next we put in a boolean value so in
+this case we'd write boolean input now
+this next line will not be executed
+unless the boolean value is true so an
+example of that would be this if I would
+write data equals say negative 1 here we
+could say if the boolean input is true
+we could set the data value to 1 and now
+if we change this to plot that data
+value and I save the script and I add it
+to my chart you'll see it's plotting 1
+because data was set to negative 1 but
+because this is set to true the script
+changed data to 1 now if we go into the
+Settings menu here and we turn this off
+it's now plotting as a negative 1 you
+see down here on the right axis an
+easier way to do this is to use what's
+called a conditional operator so what we
+can do here is we can say plot boolean
+input question mark now what this is
+saying is that if this value is true if
+this boolean is set to true then we want
+to plot one and then if you do a colon
+symbol and then you write say 0 on the
+other side what this is going to do if I
+click Save it's going to do exactly the
+same thing here it's going to plot this
+line is 1 because this value is set to
+true and now if I change this to false
+it'll plot as 0 and watch on the right
+axis and there you go it's plotting a 0
+so that's the power of these conditional
+operators they can really save you some
+time you don't have to write out all
+that code we did earlier you just just
+write it out in this format here now
+we're going to change
+this to plot in the color red so that we
+can differentiate this from the other
+inputs that I'm about to show you so
+that's the first input value and you can
+see we can play around with that here in
+the settings menu now and it will adjust
+the plotted value the next example is
+going to be an integer input which is
+just any whole number so if I say
+integer input is set to input function
+or the title of integer and the type is
+input dot integer and the default value
+is let's say because this is 1 and 0 we
+don't want to plot another one so we'll
+set this to 2 and then if we come down
+here and I type in plot integer input we
+don't need to do any conditional values
+here there's no if or else about this
+it's just a straight-up
+number input and we'll set the color to
+this time we'll set it to blue 5 click
+Save that'll update these scripts and
+there you go we've got to plot it up
+here in blue and we've got one floated
+down here in red which is our boolean
+input and our integer input so that very
+simple to get these inputs from the user
+if we go up to these settings menu you
+can see you can change this now I can
+change it to 1 and then it paints over
+the top of our boolean value if I change
+it to 0 it plots below it so I'll leave
+that as 2 for now the next example is
+going to be a float input so if I type
+in float input is set to input function
+title is float the type is input dot
+float and the default value in this case
+is going to be let's say one point five
+now I come down I've got a plot it to
+the chart so plot float input and the
+color is set to color dot purple this
+time why not click Save and there we
+have it we've got our three input
+functions plotting to the chart right
+now you can go into the settings and we
+can fool around with this change it to
+0.5 1.1 whatever floats your boat pun
+not intended alright next input is
+string we're going to go with a little
+bit of text he
+this is gonna be a little bit advanced
+as well because the only way to plot
+text to your chart is to use a label
+function that's quite an advanced topic
+so just focus on the input section here
+you more advanced programmers can play
+around with the label function later but
+this is a bit of a taste of what's to
+come I guess for you for future lessons
+so this is the last in base this is the
+last basic input that we're going to
+cover here there's a lot more advanced
+input supertype and input control space
+we're not going to go over resolution
+session source or symbol in this video
+I'm gonna go over those inputs in a
+future video the reason for that is that
+these two plot these two your chart
+requires quite a bit of complex Pyne
+scripts compared to what we're writing
+here and I don't want to overload you
+guys when we're only on lesson three so
+let's get this string input working so
+I'm going to call this input string and
+it's gonna be type input dot string the
+default value is going to be let's just
+call it some text and now we need to use
+what's called an array an array is
+basically a collection of values in this
+case it has to be called options so if
+we say options equals open square
+bracket and then close that square
+bracket off anything we write in here is
+basically a list it's gonna be a list of
+values that can be selected from in this
+settings menu so I'll show you what that
+means right now we'll just type in some
+text and then you separate these list
+values these list entries using a comma
+so if I say some text other value and
+then final option if I click Save here
+we come up to the settings menu this cog
+icon we now have this drop-down box next
+to string and there's a number of things
+you can do with this type of input you
+could use this to set for example
+another symbol so say you wanted to plot
+data on your chart on euro dollar here
+from let's say the sp500 don't know why
+you'd want to do that but you can't with
+this sort of function here we'll go over
+that in more advanced lessons but just
+there you go that's how you would get a
+list of string inputs to show up in your
+settings menu here now if I get rid of
+these get rid of this line and save it
+to chart and we go up here now you can
+type whatever you want in here so you
+know whatever you whatever you feel like
+and then you see up here in the
+indicators values it's changed the text
+so if that didn't make sense to you just
+go over this video a couple of times
+I'll cover a raise in a future video
+because they can be quite complex
+compared to what we've covered so far so
+we'll go over that in the next video
+today's video I'll just leave this is
+this because I want to keep it simple so
+if we go down here now this is going to
+be a little bit complex so you can
+ignore this part if you want to I'm just
+going to draw this to the chart just to
+show you that we can interact with this
+string input so first of all I'm going
+to use this if this is a good example of
+an if statement so I'm gonna say if bar
+state is last what that means is that if
+the current candle that we're
+calculating the script on is the last
+bar in price action so this current bar
+then this next few lines of code will be
+executed we're going to create a label
+example and the label example is gonna
+be set to label dot new so we're
+creating a new label the location of the
+label is going to be the current bar
+index which will be the current bar if
+you were to type current a bar index
+minus 2 then that will draw this label
+two bars back from the current bar but
+we don't want to do that in this case
+the next input is not relevant so we're
+gonna put in na and then the next input
+after these two is string input that's
+going to draw our string that we've just
+created up here then we can set the
+color I'll set the color to color green
+now this is the color of the label
+itself and then we can also
+set the text color so I'll set the text
+color to colored on white and then I'm
+going to set the style to label dot
+style label down there's a couple of
+different styles you can go over such as
+style label left label right label up
+non-square blah blah blah blah blah I'm
+just gonna go with label down for now
+and then the Y location is where on this
+y-axis do you want to do an it above the
+bar do you want to below the bar so in
+this case we're going to set it to Y
+location Y lock dot above bar and now
+that's our label created if I hit save
+so I've got a couple of areas here I've
+done a few typos done a couple of
+whoopsies let's have a look I have first
+of all a misspelled example because it's
+early in the morning and I'm like that
+at early in the morning I've also forgot
+to put style in front of this option so
+yeah another example of what happens
+when you're not paying attention with
+your coding you'll get errors but at
+least the errors tell you what's going
+wrong that's the best thing about pine
+scripts and how easy it is to use and
+learn so this should work theoretically
+if I save now it should add a label to
+the end and there we go there's our
+label that's the end of this script and
+this lesson to just recap let's just say
+real quickly what we've done here so
+first we created a boolean input we use
+the input function we titled it boolean
+so if I open the settings menu
+we've got boolean here we can set that
+to true or false and that will move the
+plotting of our boolean value which is
+assigned here to 1 or 0 based on whether
+this boolean is true or false I'm sorry
+it's this red line it's moving not this
+purple line I don't know it looks like
+the purple lines moving but if you can
+look down on this right axis you can see
+that the red line is plotting 0 and if I
+turn it to true it's plotting 1 the next
+thing we did was create an integer input
+so if I adjust this this will move the
+blue line at the top and it adjusts
+scale of the right axis obviously and we
+changed this value the next thing we did
+was create a float input floating
+decimal point input and that's plotting
+the purple line so this one in the
+middle so if we change this to say one
+point one it will go down here above
+just above our boolean input by changes
+to one point zero one you can see you
+can get quite a fair bit of precision
+here so you can see here we've got one
+two three four five decimal points on
+this euro dollar so you can have one two
+three four five decimal numbers after
+the decimal point that's it for today's
+lesson I hope you found it valuable hope
+it wasn't too overwhelming just watch
+this video a couple more times if it
+didn't make sense to you or feel free to
+leave any questions in the comment
+section and I'll get back to you but
+that's it for basic user inputs we'll
+use this information in future videos so
+make sure you practice with this in the
+meantime thank you for watching guys
+I'll see you in the next video have a
+great week trade green good luck with
+your coding take it easy guys goodbye
+you

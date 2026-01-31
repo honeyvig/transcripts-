@@ -1,0 +1,493 @@
+hello everyone and welcome to today's
+video on OSI model at and in this video
+we are going to explore its key function
+including how it ensures a reliable data
+transmission between the devices we will
+also study about the differences between
+connection oriented and connectionless
+services so you can definitely
+understand how a data is securely and
+efficiently transferred across the
+networks so guys whether you are new to
+networking or just looking to brush up
+your knowledge this video has got you
+all covered craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we move on just a quick
+info guys simply L has got a
+post-graduate program in cyber security
+this program is designed to equip you
+with the skills required to become an
+expert in the rapidly growing field of
+cyber security the cyber security
+program aims to help you stay a breast
+of all the latest trends in cyber
+security as well so let's get started so
+guys let us first understand what is OSI
+model so guys OSI stands for Open System
+interconnection model it is basically a
+conceptual framework which is used to
+understand and standardize how different
+networking protocols interact to enable
+communication over a network it was
+developed by intern National
+Organization for standardization or ISO
+in 1984 it breaks down the complex
+process of data communication into seven
+distinct layers each with its own
+specific function now let us try to
+understand each of this layer one by one
+so guys the first layer which we are
+going to study is a physical layer
+moving ahead we are going to understand
+about the data length layer then we will
+go through Network layer moving ahead we
+will have the transport layer then we
+will have the session layer then we will
+the presentation layer and finally we
+will have the application layer so now
+let us try to understand first what is a
+physical layer so guys the physical
+layer is the lowest level of the OSI
+model handling the actual physical
+connection between the devices it is
+responsible for transmitting data in a
+form of individual bits from one device
+to another when data is received the
+physical layer converts signal into
+binary bits zeros and ones and passes
+them into the data link layer which then
+resembles into Data then into frames now
+let us discuss more about what are the
+key functions of physical layer so guys
+the key functions of physical layer are
+the first one is bit synchronization so
+actually guys this layer ensures that
+bits are synchronized by providing a
+clock that coordinates with both the
+sender and receiver maintaining
+synchronization at a bit level then you
+get bit control it basically defines the
+rate at which bits are transmitted the
+number of bits per second then you get
+the physical topologies the physical
+layer it specifies the arrangement of
+devices or nodes in the network such as
+a burst star or mes topologies then you
+get the transport mode in which you
+determine how data flows between the
+connected devices with possible modes
+including Simplex in which is a one way
+half duplex which is two-way but not
+simultaneously and in full duplex you
+have two-way simultaneously so guys at a
+physical layer you encounter devices
+like hubs repeaters modems and cables to
+oper at this layer now let us move to
+our next layer that is the data link
+layer so guys the data link layer is
+responsible for the direct transfer of
+data between nodes on a network its
+primary role is to ensure that data is
+delivered error free from one nodee to
+the next over the physical layer when a
+packet arrives at a network device the
+data link layer handles its delivery to
+the appropriate host using devices Mac
+address the data link layer consist of
+two sub layers so guys the first layer
+is logical length control and the second
+one is Media access control so let us
+get a little bit deep about it when a
+packet from the network layer reaches
+the data link layer it is further
+divided into frames on the based of the
+frame sizes which is supported by the
+network interface card the data link
+layer also adds the MAC address of the
+sender and the receiver to the frames of
+the header to determine the receiver's
+Mac address the data link layer uses the
+address resolution protocol or ARP it
+sent sends out an ARP request asking who
+has this IP address the device with the
+matching IP address then responds with
+its Mac address now I hope so you would
+have got idea like when a data is
+received from the network layer what has
+happened in the data link layer so we
+have two sub layers which are
+responsible for doing these tasks The
+Logical link control layer and the
+medium Access Control layer now let us
+try to understand what functions are
+involved in this layer the first one
+that we have is Framing and physical
+addressing if we talk about framing guys
+this function involves encapsulating
+data into frames with special bit
+patterns at the beginning and at the end
+to Mark the start and end of the frame
+ensuring the receiver can correctly
+interpret the transmitted bels then you
+have the physical addressing the data
+link layer adds the Mac addresses of the
+sender and receiver to header of each
+frame enabling accurate delivery of the
+frame to the correct device then we have
+the error control it provides a
+mechanism to detect and correct errors
+in data transmission such as
+retransmission frame that are damaged or
+lost so guys this is under the error
+control next you have the flow control
+to prevent data loss due to mismatched
+data rates flow control manages the
+amount of data sent before receiving an
+acknowledgement ensuring there is a
+consistent data transfer rates and
+finally we have the access control when
+multiple devices share a single
+Communication channel the max sublayer
+determines which device can use the
+channel at any given time avoiding
+conflicts and ensuring orderly
+communication now let us move on to our
+third layer that is the network layer so
+guys the network layer is responsible
+for transmitting data between hosts that
+are located in different networks it
+manages packet routing which involves
+selecting the most efficient path for
+data to travel from the source to the
+destination the network layer also
+handles addressing by placing the IP
+address to both of the sender and
+receiver in the packet header now the
+functions of the network layer are the
+first one that we have all over here is
+routing this function involves
+determining optimal path for the data to
+travel from the source to the
+destination routing protocols helps to
+find the best route among several
+available paths to ensure efficient data
+delivery then you have the logical
+addressing basically guys a network
+layer defines an addressing scheme to
+uniquely identify each device across
+networks it assigns the IP addresses to
+both sender and the receiver which are
+included in the packet header this
+addressing scheme allows devices to be
+distinguished and located across the
+entire network so guys in this we have a
+packet so in the network layer the data
+unit is called packet and it is referred
+to as segment of the data that is routed
+across the networks we talk about the
+networking devices the network layer
+functions are implemented by devices
+such as routers and switches which
+handles packet routing and forwarding
+between different networks now let us
+try to understand about the transport
+layer so guys this is our fourth layer
+basically this layer ensures the
+complete and accurate inin transmission
+of messages between devices in this
+layer data is transferred to as segments
+the transport layer handles
+acknowledgement of successful data
+transmission and retransmits data if
+errors are detected now there are two
+types of services which are provided by
+the transport layer the first service is
+connection oriented service and the
+second one is connectionless service so
+guys if we talk about connection
+oriented service so in this a connection
+is first established between the sender
+and the receiver before data
+transmission begins then once the
+connection is established then the data
+is transmitted in an organized manner
+the receiving device sends an
+acknowledgement back to the sender after
+receiving each packet or a group of
+packets ensuring that the data has been
+received correctly now after the data
+transmission is complete the connection
+is properly terminated to free up the
+resources this type of service is
+reliable and secure because it ensures
+that data is delivered accurately in a
+correct order with mechanisms to detect
+and retransmit lost or corrupted packets
+if I talk about the connectionless
+service or it is one phase process in
+this data is sent from sender to the
+receiver without establishing a
+connection first the sender simply
+transmits the data and the receiver does
+not send back any acknowledgement upon
+reip this approach allows for faster
+communication between devices and it
+eliminates the overhead of establishing
+and terminating a connection and waiting
+for acknowledgements while faster
+connectionless service is less reliable
+than connection oriented service because
+it does not provide mechanisms for
+ensuring that all data is received
+correctly in a correct order now if we
+talk about the functions of Transport
+layer guys the first function is
+segmentation the transport layer
+receives the complete message from the
+session layer and breaks it down into
+smaller and manageable units call
+segments now after that each segment is
+assigned as a header that contains
+essential information for a proper
+delivery so that is reassembly at a
+destination the transport layer
+reassembles these segments back into
+original message ensuring that the data
+is correctly reconstructed for the
+receiving application now the next one
+is service Point addressing to ensure
+that the message reaches the correct
+application process on receiving the
+device the transport layer adds a
+special address known as the service
+Point address or a port address to each
+segment header this addressing allows a
+transport layer to direct the message to
+the appropriate process such as specific
+application or service running on the
+device ensuring accurate delivery so
+these were the functions of Transport
+layer now let us move on to our next
+layer that is session layer the session
+layer manages the connection between
+applications on different devices it
+ensures that communication sessions are
+properly established maintained and
+terminated additionally it handles
+session security and synchronization now
+let us discuss the functions of session
+layer so guys the first one is session
+establishment maintenance and
+termination this function allows to
+application to set up use and close a
+connection it ensures that the session
+remains active during a communication
+and is probably terminated when it's
+done next we have the synchronization
+the session layer adds checkpoints or
+synchronization points within the data
+stream these points help manage error by
+allowing the data to be resynchronized
+and ensuring that no messages are lost
+or cut off prematurely the third one we
+have the dialog controller it controls a
+dialogue between two systems enabling a
+communication in either half duplex
+which is One Direction at a time or full
+duplex both directions
+simultaneously so the session layer
+along with the presentation and
+application layer is combined into
+single application layer in the tcip
+model this is something notable which
+you should know and these functions are
+typically managed by the network
+application itself these layer are
+referred to as upper layers or software
+layers so if I talk about example
+includes net bios or pptp now suppose
+let us take an example imagine a user is
+sending a message through a Messenger
+application in their web browser the
+Messenger application provides an
+interface for the user to write and send
+a message then there will be data
+processing the message data is
+compressed and optionally encrypted for
+security then you have the session layer
+which manages a connection between user
+browser and managing service ensure that
+session is maintained throughout the
+message transfer and properly closed
+afterward then you have the data
+transmission the message is converted
+into binary bits zeros and one for
+transmission or the network with
+synchronization points ensuring data
+integrity and successful delivery so
+till here you can understand how the
+data flow is happening now let us move
+on and understand about the presentation
+layer the presentation layer also known
+as as a translation layer is responsible
+for transforming data from the
+application layer into a format suitable
+for Network transmission it ensures that
+data sent by application layer is
+correctly formatted encrypted and
+compressed the functions of the
+presentation layer are the first one is
+the translation it converts the data
+between different formats or character
+sets for example it can translate text
+from ASCII to ebcd I encoding ensuring
+that data is readable and usable by
+different syst systems then you have the
+encryption or decryption it basically
+encrypts the data to secure its
+transmission and decrypts it upon
+received encrypted data or Cipher text
+is transformed into readable format or
+plain text using cryptographic keys next
+we have the compression compression
+basically reduces the size of data to
+minimize the amount of bandwidth
+required for transmission this helps
+speed up the data transfer process and
+reduce Network congestion now let us
+talk about the protocols of formats
+available aailable at this layer common
+examples include jpeg for image
+compression MPEG for video compression
+and JF for image format now let us
+discuss about the application layer so
+guys the application layer is a topmost
+layer of the OSI model and directly
+interacts with the network applications
+it provides Network Services to the end
+user applications and facilitates the
+communication between software and the
+network the functions of the application
+layer are as follows the first one that
+we have is Network virtual terminal
+basically it enables a user to log onto
+a remote host allowing interaction with
+remote system as if it will local now
+let us discuss about the functions of
+the application layer the first one that
+we have all over here is Network virtual
+terminal it basically enables a user to
+log onto a remote host allowing it for
+interaction with the remote system as if
+it were local next you get a file
+transfer access and management ft this
+basically provides capabilities to
+access retrieve and manage files on a
+remote host it enables operations like
+file transfers and remote file
+management and finally you have the mail
+services basically this layer handles
+email communication by providing
+services for sending receiving and
+managing email messages so Guys these
+were some of the applications of
+application layer so for example you
+have applications like web browser Skype
+messenger and email clients which
+operate at the application layer the
+application layer is also referred to as
+a desktop layer so common protocols
+includes SMTP simple mail transfer for
+email services and there are many more
+protocols which are available at this
+layer now let us take a recap on how
+data travels actually through the OSI
+model so guys something like this the
+first step is sending the data from
+sender to the receiver to at the
+application layer the sender suppose
+Alex writes an email using his email
+application like G email then the email
+application formats and encrypts the
+email content which is happening at the
+presentation layer then the data will
+move to the session layer where a
+connection is established between Alex
+and his friend device then you have the
+transport layer where the email is
+broken into segments with error checking
+added then the data moves to a network
+layer where each segment is packed into
+packets and routed through the internet
+using IP addresses then the data finally
+moves to the dat link layer where the
+packets are framed for local network
+transmission and error is checked and
+finally to the physical layer where
+frames are converted into signals and
+transmitted over the network like
+through an ethernet cable or Wi-Fi now
+let us take a look at the receiving data
+from receiver back to the sender so at
+the physical layer Jam's device or his
+friend's device receives signals and
+converts them back into the frame then
+at the data link layer the frames are
+unwrapped to extract packets and error
+detection is performed then the data
+moves up to the network layer where the
+packets are reassembled into segments
+and directed into the J's email server
+then the packet moves to the transport
+layer where the segments are reassembled
+into original email and error checking
+is completed moving ahead the data moves
+up to the session layer where session
+connection is maintained and managed
+then finally the data moves to the
+presentation layer where the email
+content is decrypted and formatted and
+at the application layer Jim's email
+ation displays the received email so
+guys East leer plays a very crucial role
+in ensuring that data is transmitted
+efficiently and accurately across the
+network so guys basically the OSI model
+provides a clear and structured approach
+to understand the network communication
+facilitating interoperability between
+different systems and Technologies it
+helps in troubleshooting network issues
+by isolating problems to specific layers
+and also allows for development of
+modular and scalable Network
+Technologies so guys this was all for
+today's video I hope so you would have
+enjoyed our today's video on OSI model
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI I machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

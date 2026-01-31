@@ -1,0 +1,356 @@
+hey everyone welcome to Simply learn
+today we will explore the physical layer
+in the computer network let's understand
+this with the help of an example imagine
+you sending a message to a friend across
+the globe you type it out hit send and
+within seconds your friend receives it
+have you ever wondered how this magic
+happens this seamless communication is
+all thanks to the physical layer in the
+computer networks according to Cisco
+global internet traffic reached an
+astounding 79 zabt that's 79 trillion
+gabyt of data flying around the world
+facilitated by the intricate workings of
+the physical layer the physical layer is
+the Bedrock of any computer network
+responsible for converting Digital Data
+into signals that can travel through
+various media like copper wires fiber
+optics or radio waves think of it as the
+road system for your data ensuring that
+your message navigates the was digital
+landscape efficiently
+and arrives at its destination intact so
+in this video we'll uncover the
+fascinating details of the physical
+layer exploring how it makes mod
+Communications possible get ready to
+dive into the world of bits signals and
+cables and discover the hidden
+infrastructure that powers are digital
+lives craving a career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or or
+aiming higher simply learn has your
+back and before commencing guys just a
+quick info for you if you're an aspiring
+cyber security professional looking for
+online training and certification from
+prestigious universities and in
+collaboration with leading experts to
+enhance your credibility then search no
+more simply learch postgraduate program
+in cyber security from MIT University in
+collaboration with EC Council should be
+a right choice for more details use the
+link in the description box and P
+comment and if these other types of
+videos you would like to watch then hit
+the Subscribe button like and press on
+the Bell icon to never miss on future
+content so let's get started so first
+have an introduction to computer
+networks so computer network is a
+collection of interconnected devices
+that can share data and resources and
+these networks enable communication
+between devices allowing users to send
+emails browse the web and share files
+think of a computer network as a city's
+transportation system just like roads
+allow cars buses and bikes to travel
+from one place to another a network
+allows computers to send information
+back and forth these could be emails web
+pages video calls just about any data
+you can think of networks can be small
+like a network in your home connecting
+your family's devices or incredibly vast
+like the internet which connects
+millions of computers worldwide so this
+was about the computer networks now
+we'll have an overview of the OSI model
+so the OSI model that is open system
+interconnection model is a conceptual
+framework used to understand Network
+interaction in seven layers so each
+layer has a specific role like a team in
+a company where every department handles
+a different aspect of the business
+number one is physical layer this is
+like the ground or roads in your city
+analogy it deals with the literal
+physical components of the network like
+cables radio signals and ethernet it's
+concerned with transmitting row bits or
+a physical data link connecting network
+noes then comes data link C imagine this
+as traffic Management systems that
+organize data flow so that bits can find
+the way without crashing into each other
+it provides Note toote data transfer a
+link between two directly connected
+nodes it also handles error correction
+from the physical layer then comes the
+network layer that is layer three this
+is like the navigation system that finds
+the best path for data to travel across
+networks it determines the physical path
+the data should take BAS Bas on network
+conditions priy of service and other
+factors then comes transport layer that
+is layer four consider this as the
+delivery service that ensures that the
+entire message arrives intact and in
+order making sure the data is error free
+and complete it's essential for managing
+and maintaining data flows between host
+then comes the session layer that is
+layer five this layer sets up manages
+and ends connections between application
+it's like a conductor who starts and
+stops the Orest performance at the right
+time then comes the presentation layer
+layer six think of this as the
+translator that converts the data from a
+format the network understands to a
+format the application can use it's like
+someone translating a foreign movie into
+your language and then comes the
+application layer that is layer seven
+this is the top layer for application
+access network services this layer
+represents the data and services that
+most users interact with like emails
+browsers and other applications so this
+was all about the OSI model so let's see
+an example imagine allies there's a
+person allies who sends a letter to Bob
+and allies writes her letter that is
+application layer puts it in an envelope
+that is presentation layer and goes to a
+post office to mail it that is session
+layer and the post office decides which
+truck route will be the fastest for the
+letter to reach Bob city that is
+transport level and once on the road the
+letter is sorted with others headed in
+the same direction that is Network L
+then physically moved across the country
+in trucks and planes that is data link
+lay finally the letter is delivered to
+Bob's male B that is physical l so this
+journey from Alice to Bob illustrates
+how data travels through the layers in
+the OSI model so this was about the OSI
+model now moving to the physical layer
+and we'll see the importance of physical
+layer so the physical layer is the first
+first and the lowest layer in the OSI
+model of computer networking it is
+fundamentally responsible for the road
+transmission and deception of
+unstructured data streams or a physical
+medium it connects the hardware devices
+like computers routers switches to the
+transmission media such as cables or air
+in the case of Wireless this layer is
+crucial because it serves as the Gateway
+between the data that networks work with
+and the physical means by which the data
+travels so let's understand this with
+the help of an example imagine you are
+sending a text message to a friend when
+you hit send your phone converts the
+message into electrical signals so this
+is the example here so when you hit the
+send your phone converts the message
+into electrical signals that travel
+through cables satellites and wireless
+networks to reach your friend's phone
+where it is converted back into Rea data
+this seamless process is thanks to the
+physical lb now that we have understood
+or introduced the physical l and its
+role in The OSI model let's dive deeper
+into the specific functions it performs
+so understanding these functions will
+help you grasp how the physical layer
+ensures smooth and reliable data
+transmission across networks so let's
+start with the functions of the physical
+layer number one is data encoding and
+Signal transmission so the physical
+layer converts data into signals that
+can transmit over physical media like
+cables or Airwaves this process is
+called encoding the signals can can be
+electrical Optical or radio waves
+depending on the transmission medium
+example think of encoding as translating
+a message into more code the message
+that is data is encoded into dots and
+dashes that is signals that travel
+through a telegraph wire that is
+transmission medium so this was the
+example now mov to the next function
+that is bit synchronization and rate
+control so bit synchronization ensures
+that the sender and receiver are aligned
+in time so the data bits are correctly
+interpreted rate control manages the
+speed at which data is sent to prevent
+congestion and ensure efficient
+transmission for example imagine two
+people talking over a bokit toi they
+need to speak at the same Pace that is
+rate control and wait for the over
+signal before responding that is
+synchronization so this is the example
+for this function now move to the next
+example that is physical topology
+management so the physical layer
+determines the layout of devices and
+Connections in a network known as
+topology common topologies include bus
+star ring and mesh so let's understand
+this with an example so think of network
+topology like a city map the layout of
+roads and intersections that is Network
+typology determines how vehicles that is
+data travel between locations that is
+devices so now coming to the fourth
+function that is interface with
+transmission media so the physical layer
+interfaces with the actual transmission
+media example cables fiber optics
+Wireless to send and receive signals it
+ensures the proper connection and
+interaction between devices and media
+for example consider plugging a USB
+drive into computer the USB port that is
+physical layer enables the driver to
+communicate with the computer by
+providing the physical connection so
+this was about the functions of physical
+L now that we have understand the
+functions of the physical layer let's
+explore the types of transmission media
+it uses to send and receive data so
+transmission media can broadly
+categorized into wired and wireless
+media so let's start with wir media so
+number one in wi media is twisted pair
+cables so these are pairs of insulated
+copper wires Twisted together to reduce
+interference example they are used in
+telephone lines and ethernet cables then
+comes qual cables so these consist of a
+central conductor insulating layer
+metallic shield and outer cover they are
+less suspectible to interference for
+example they're commonly used in cable
+television networks and then comes fire
+Optics so these are light signals to
+transmit data through strands of glass
+or plastic offering high speed and low
+signal lows example they're used in
+highspeed internet connections and
+longdistance communication then comes
+wireless media and in wireless media
+number one is radio waves so these use
+electromagnetic waves for data
+transmission or long distances without
+physical connectors for example they're
+used in Wi-Fi am or FM radio and mobile
+Communications then comes microwaves so
+these are highly frequency radio waves
+that provide high-speed communication or
+long distances for example they are used
+in Satellite Communications and pointto
+point links and then comes infrared so
+these are infrared light for short range
+communication typically within a line of
+sight for example used in remote
+controls and short distance data links
+so these transmission media are the
+physical paths that connect devices in a
+network enabling the flow of data across
+the globe so after learning about the
+types of transmission media it's
+essential to understand how data is
+transmitted or these media so we'll have
+a look at the signal Transmissions so
+number one signal transmission is analog
+signals so analog signals are continuous
+waves that vary in amplitude and
+frequency for example think of a
+traditional am or FM radio where the
+sound is carried by wearing wave
+patterns then comes digital signals so
+digital signals are discrete with two
+states high that is one and low that is
+zero for example imagine how a computer
+processes information using binary code
+that is ones and zeros then comes
+modulation methods and in that we have
+amplitude modulation so that varies the
+amplitude of the carrier wave to encode
+data for example used in AM radio
+broadcasting and then comes the FM that
+is frequency modulation that VAR is the
+frequency of the carrier wave to encode
+data the example is that is common in FM
+radio broadcasting and then comes phase
+modulation so that varies the phase of
+the carrier wave to encode data and the
+example is it is used in digital data
+transmission and some radio
+communication systems and then comes the
+number third that is baseband and
+Broadband
+transmission so baseband transmission is
+that transmits data or a single Channel
+using the entire band width of the
+medium for example ethernet networks use
+baseband transmission and when we come
+to broadband transmission that transmits
+data or multiple channels dividing the
+bandwidth into separate frequencies
+example is cable TV and internet
+services they use Bron band transmission
+now that we have covered signal
+transmission techniques now we know
+about the physical layer and with that
+guys we have come to the end of this
+session I hope you found it useful and
+helpful if you find it useful please
+like share and subscribe if you have any
+doubts comment down in the comment
+section below thanks for watching stay
+tuned for more from Simply learn staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

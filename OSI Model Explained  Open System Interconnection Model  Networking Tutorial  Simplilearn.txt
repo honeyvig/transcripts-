@@ -1,0 +1,315 @@
+with the increase in the data
+transactions over the network channel
+have any of us ever wondered what
+procedures or protocols does the data
+must have to go through when transmitted
+over the network node
+well this is what we will see in today's
+topic
+hi guys and welcome to yet another
+interesting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+now without further ado let's take a
+look at the agenda for today's video
+for today's topic firstly we'll
+understand what is an osr model
+then we'll see the structure for the osi
+model
+continuing with knowing the layer
+structure and information in the osi
+model
+let's start
+to better understand the osi model let's
+take a look at a scenario
+assuming we have two different systems
+with different operating system
+installed in them
+and there is a communication channel
+between them over which the data is
+shared
+but sometimes during transmission of
+data
+it faces some problems
+these errors often arise due to the
+different operating system installed in
+the system or due to a network problem
+during a transmission
+but to overcome such situations
+the osi model structure is used
+using the osi model structure we can
+make the transmission of data over the
+communication channel error free
+let's take a look at the definition for
+the osm model
+the osm model stands for open system
+interconnection model
+or a specifically designed set of
+protocols and standards that governs the
+modeling and conversion of the data for
+proper transmission over the network
+channels
+the osm model is based on the layer
+structure where it consists of seven
+different layers where each layer has
+different set of protocols that are to
+be applied on the data during the
+transmission
+over the network channel
+let's take a look at the different
+layers of the usm model
+the osm model consists of seven
+different layers
+which perform specific functions and
+apply different protocols at different
+layers to maintain the quality and
+prevent the data from getting corrupted
+when it is transmitted over the
+communication channel
+let's take a look at each of them the
+first layer is known as the application
+layer
+which is a top most layer
+then we have the presentation layer
+session layer
+transport layer
+network layer
+data link layer
+and physical layer which is the last
+layer of the asm model
+the upper four layers in the isi model
+represents the host layers
+that is they interact with the
+application related issues when the data
+is transmitted over the communication
+channel whereas the lower layers are
+termed as network layers
+they specifically deal with the
+transmission related steps for the data
+over the network channel
+let's take a look about some information
+in regards to the layers
+now let's take a look at the function
+and the data format that is handled by
+each of the layers during the
+transmission of data
+the first layer is the application layer
+which interacts as a gateway for the
+host datum and network applications
+and handles the data format
+then we have the presentation layer
+which handles the initial step towards
+the conversation of data for transfer it
+also handles the data format
+then we have the session layer
+session layer establishes a connection
+between the network devices for the data
+transfer
+then we have the transport layer which
+oversees the data that is transferred
+without any error and is in the same
+pattern needed by the destination system
+the data format handled by this layer is
+segment format
+next we have the network layer which
+determines the part for the data
+transfer
+it handles packet related data
+then we have the data link layer which
+performs the task of connecting the
+physical nodes for the transfer of data
+it handles frame data
+and in the end we have the physical
+layer
+which is used to transfer the raw bits
+that is in terms of ones and zeros over
+the physical mode
+now that we are clear about different
+layers that are present in the osm model
+and some information regarding them
+let's take a look at each of the layers
+in detail
+we'll start with top to bottom that is
+the application layer will be the layer
+that will be starting with
+let's take a
+look the topmost layer in the osi model
+is the application layer which acts as
+an interface between the user
+and the applications that are being
+accessed which can be
+internet explorer chrome or
+any email client
+it also handles different protocols that
+are needed for the data transmission
+over the network channel which can be
+given as
+hypertext transfer protocol the http
+protocol
+and the smtp protocol which is the
+simple mail transfer protocols
+now let's move on to the next layer
+the next layer is known as the
+presentation layer
+the presentation layer is responsible
+for performing conversion tasks over the
+data that is received from the
+application layer
+the conversion of data is done
+in accordance to the required format
+it also performs encryption over the
+converted data so as to prevent it from
+getting hacked by cyber criminals or
+hackers
+the compression of the encrypted data is
+also performed by the presentation layer
+so that it can be passed on to the
+session layer
+the next layer in the osi model is known
+as the session layer
+in this layer
+the communication channel between two
+different devices is established
+the network devices are individually
+known as session
+the data that is transferred is to be
+done over these session channels
+the layer that is the session layer
+establishes and terminates these
+sessions in case of an error or some
+other unforeseen event
+this layer is also responsible for
+authentication checks regarding the data
+that is being transferred and also
+provides data recovery options in case
+an error occurs over the communication
+channel it's a model list let's take up
+a question
+the question is what is the main action
+that takes place at the presentation
+layer
+and the options are
+first option data segmentation
+second option encryption of data
+third option framing of data
+and the fourth option
+bit conversion of data
+you can provide your answers in the
+comment section below
+let's move on with the next layer
+the next layer in the osm model is known
+as the transport layer
+the main task performed by this layer is
+to break the data that is received
+from the session layer into different
+segments
+these segments comprise of protocols
+which are udp protocol and tcp protocol
+along with the data that is
+segmented from the received data
+then the segmented data along with the
+udp and tcp identification it
+transferred over to the transmission
+channel where then it's further
+transferred to the network devices that
+requested for the data
+this layer also performs a very crucial
+part
+which is the flow control
+let's understand flow control over the
+network channel through a small example
+in this example the server has a
+capacity to send 50 mbps of data at once
+whereas the receiver side has a capacity
+for 10 mbps
+when the data is transferred from the
+server to the client it transfers 50
+mbps
+but it isn't possible to transfer all
+this data at once due to the lower
+capacity on the client side
+which is why the flow control changes is
+required which is provided to the server
+side by the transport layer
+now let's move on to the network layer
+which is the third layer from the bottom
+in the osm model
+this layer is responsible for breaking
+down the segments into data packets
+by adding ip address to them that is
+received from the transport layer
+these data packets are then further
+transmitted over to the best possible
+route to the destination system which
+are governed by the internet protocols
+including ip and ipv6 protocols
+for example if we have a data that is to
+be transferred to the network device too
+we
+choose the best option
+that is the root to be transferred over
+to that network device
+now let's move on to the next layer in
+the osi model which is a data link layer
+this layer is responsible for
+maintaining and terminating the
+established connection between the
+devices over the network
+the mac address in this layer is added
+to the data packets
+which are collectively known as data
+frames
+these data frames are then further
+transmitted over to the physical network
+these are divided into two different sub
+layers
+medium access control that is mac which
+controls the established connection
+device
+and the second sub layer is logical link
+control layer llc which identifies the
+address and provide flow control for the
+data
+this data frame as earlier told is
+transferred over to the physical layer
+now let's take a look at another
+question to brush up whatever we
+learned so far
+the question is
+which layer includes the mac sub layer
+in the osi model
+option 1
+application layer option 2 session layer
+option 3 data link layer option 4
+transport layer
+you can give your answers in the comment
+section below
+let's move on to the last layer in the
+osm model which is a physical layer
+this layer is responsible and provides
+the physical medium over which the data
+frame is transferred
+but the transfer data is converted into
+bits before it's transferred
+the transmission of data is covered by
+different protocols that are embedded in
+the physical layer
+the transmission of once and 0's format
+data is done it also responsible for
+maintaining the data quality by applying
+different necessary protocols and
+maintaining the bit rate throughout the
+transfer of data whether it be
+wired medium or wireless media with this
+we have reached the end of the module
+if you have any questions regarding the
+topic you can ask them in the comment
+section below
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

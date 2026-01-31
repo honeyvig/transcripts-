@@ -1,0 +1,331 @@
+hey traders welcome back to another pine
+script tutorial my name is matthew from
+zen and the art of trading and today i'm
+excited to ramp things up a notch and
+explain to you how to create a higher
+time frame indicator that references the
+previous day's high and low and doesn't
+repaint
+now that sounds like a mouthful to you
+that you just don't understand then I
+highly recommend you go back a few
+lessons maybe to the start if you're new
+to Pine script but what are we doing
+here well let's go out to the daily
+chart first of all and hide this
+indicator and let me draw in a couple of
+lines so first of all let me draw in the
+high of this day and the low of this
+previous day the script that I'm going
+to teach you how to code today will do
+just this it will draw the previous
+day's high and low over your intraday
+charts so now if we drop down or one
+hour chart you can see that the high of
+the day was this wick here and the low
+of the day was this wick here and
+everything that is happening today as at
+this bar here is within the context of
+this previous day's high and previous
+day's low so all of these bars this is
+basically all of today has been an
+inside bar meaning that the high and low
+of today's bar is contained within the
+high and low of the previous day's bar
+and so if we get a breakout today
+that'll create a new high new daily high
+and that's the purpose of creating the
+script I'm going to show you how to
+create today we can use this script to
+see how price action is performing
+within the bounds of the previous day's
+high and low but I'm gonna take this
+lesson one step further today and I'm
+going to show you how to achieve this
+without repainting to your chart so
+before I continue if I turn the script
+off this um today I'm going to recreate
+a script I made a while ago so if you
+type into the indicators box HTF you'll
+see here this indicated by a zen and the
+art of trading called higher timeframe
+high and low if you click on that this
+script does basically the same thing the
+difference is I haven't updated it yet
+let me change this to daily but this
+script repaints repainting is the
+arch-nemesis of all beginner pan script
+coders basically what this is doing is
+that on historical bars it's referencing
+the previous day's high which is what we
+want but on the current bar as it's
+moving as the price is changing our
+value is changing so if I hover my mouse
+over the current bar
+you can see that that's where these
+values change they diverge from the
+historical values the reason for that is
+that these historical values are
+referencing the previous day's high and
+this current value is referencing the
+current daily bars high because every
+time price action moves it recalculates
+the higher time frame values we don't
+want that not on this particular script
+and some scripts you may want that but
+on this particular script we do not want
+this what we want is this a clean line a
+clean value that shows us the previous
+day's high in context of the current
+price action so you can see here that
+price action is actually breaking
+through the previous day's high but if I
+turn on the repainting script our high
+is changing with price action so today
+I'm going to show you how to eliminate
+that I'm going to show you how to
+manipulate a higher time frame data to
+show the high and low of the previous
+day or week change this to week and it
+will show the previous week's high and
+low and so all of that and more in
+today's lesson let's get straight into
+the coding so first things first let's
+start with a blank slate I'm gonna
+create a new blank indicator script and
+I'm going to save it and call it lesson
+9 and so here we have a blank script
+I'll get rid of some of this because
+it's unnecessary for today and now we
+have a clean blank script or blank
+canvas if you will so I'm going to
+rename this script lesson 9 you can call
+it whatever you want to and I'm going to
+set the overlay to true now as always
+I'd like to begin my scripts by getting
+the user input variables so I'm going to
+write a comment here saying get user
+input and the first input we're going to
+get is what time frame to reference so
+I'm going to call this res short for
+resolution I'm going to use the inbuilt
+input function it's going to have a
+title a settings title of time frame and
+it's going to be of type input dot
+control space to bring this box up
+resolution is what we're looking for
+so that's another word for timeframe the
+final variable we're going to put into
+this input function is the default value
+and today we're going to be using D so
+our default higher time frame reference
+is going to be the daily chart you can
+change this to whatever you like you
+could change it to W for weekly or even
+M for monthly but I'm going to leave
+mine is D for daily because that's what
+most intraday traders will be
+referencing that's the only input
+variable we need for this lesson so
+let's move on to the next line of code
+so the next thing we're going to do here
+is create our own custom function now
+this is going to be a little bit
+advanced so if you're new to pan script
+don't freak out this is gonna be a
+little bit difficult to understand but
+I'll do my best to explain it in a way
+that makes sense to both people who are
+proficient with programming and those
+who are new to this stuff
+a function is something like plug you
+can see this is an inbuilt Pyne script
+function created by the pine script
+development team and the
+tradingview developers but you can also
+create your own custom functions so say
+that there's a repetitive complex task
+you want to keep doing in your scripts
+that pine script doesn't provide an
+inbuilt function for well you can just
+create your own and today I'm going to
+show you exactly how to do that we're
+going to create our own security
+function that eliminates repainting and
+the first thing we need to do just like
+any variable in pine script we need to
+define what the variable is called so in
+this case I'm going to call it RP short
+for repaint underscore function so this
+is our repaint function or in should be
+called NRP non repainting function but
+I'll keep it RP for short because it's
+just easier to to write and this RP
+function unlike a typical variable which
+is assigned a value based on a inbuilt
+pan script function or operation this
+function actually requires input
+variables so the input variables were
+going to reference here is the symbol
+the current market we're trading and the
+res resolution the current time frame
+we're trading and also source so our
+open high/low or closed so now we've
+defined
+and our custom function and we've
+defined what inputs it takes now we need
+to assign it to an expression basically
+we need to tell pine script what this
+function does and the way we do that is
+using an equal sign just like when we're
+assigning a variable to a value but
+instead of just leaving the equal sign
+we're also going to put a right arrow on
+the end so this is saying the repaint
+function with these inputs is defined by
+this next line of code and so what we're
+going to reference here is we're going
+to reference the inbuilt security
+function so our custom function is going
+to return the inbuilt security function
+while taking our custom inputs into
+consideration and so the way we do that
+is will write underscore symbol
+underscore R as an underscore source and
+so now we can hit save and this will
+compile and it's still plotting the
+closing press but our function is
+created and right now this is just
+duplicating the security function it's
+returning exactly what this would do if
+we were to say if we were to use this
+inbuilt security function with the
+default values so I'm gonna leave this
+for now and we'll come back to it in a
+second first of all we're going to get
+our price data in this case it's higher
+time frame price data and what we want
+to get is the higher time frame high and
+the higher time frame low and so higher
+time frame high is going to be assigned
+to our custom repaint function and for
+the market the symbol is going to take
+our current symbol Aussie CAD so we're
+gonna write in sin in fur dot ticker or
+ticket ID
+sorry ticket ID so that's the ticket
+identification tag in this case AUD C ad
+it's going to take res which is this
+variable here we created so we can
+change our time frame value so by
+default it's going to take a daily time
+frame input and the source is going to
+be the high so the high time frame low
+is going to be exactly the same repaint
+that takes an input of symbol info
+ticker ID our custom resolution variable
+which is set to daily by default and
+it's going to reference the low source
+the source for this custom function
+input is going to be low so high and low
+high timeframe high high time frame low
+so now we can draw these values to our
+chart
+so let's overwrite this clothes value
+with a higher time frame high we're
+going to color it red and we're going to
+title at higher time frame high then
+we're also going to plot the high time
+frame low it's going to have a color of
+blue and it's going to be titled higher
+timeframe low if I hit save that should
+draw these values to our chart and there
+we go but notice it's repainting every
+time the current intraday bar changes
+its value so does the higher time frame
+high and low we don't want that we want
+to eliminate that so that this high
+previous day is high continues drawing
+until the current days bar closes so how
+do we do that let's come back up to our
+custom function this is why we created
+this custom repaint function now if we
+add on to the end of source two square
+brackets and the conditional statement
+then we can eliminate repainting
+altogether so our conditional statement
+is going to be if the bar state dot
+control space is real time question mark
+one otherwise zero what this is saying
+is if the current daily bar higher time
+frame bar is real time meaning it hasn't
+closed yet it's not a historical bar
+then we want to reference the previous
+day's source high low close open
+otherwise if this bar is not real time
+meaning it is a historical bar then we
+do want a reference that days high low
+and now you can see that repainting has
+gone away as the intraday bar changes
+its value the high and low is no longer
+changing with it and so we've just
+eliminated repainting we're drawing the
+previous day's high and low to our chart
+and if we go out to the daily chart we
+zoom right in as this daily chart bar is
+moving the high and low is not moving
+when this daily bar closes these lines
+will adjust for today's closing prices
+high and low and those lines will draw
+over tomorrow's intraday price action
+and so there we have our completed
+indicator it's not repainting it's
+drawing the high and low the previous
+day's the higher time frames bar and we
+can adjust this to what every one we can
+change this to one week and it will now
+draw the previous week's high and low
+and so if price action gets down here
+there's a good chance it could act as
+support and so that brings me to the end
+of today's lesson I hope that this was
+helpful to you hope that it made sense
+to you if not go back and watch the
+previous lessons that may make this
+lesson make more sense if you haven't
+watched them yet otherwise if you want
+to take your pants trip coding to the
+next level I've left a link in the
+description to my advanced pine script
+cost and I'm working on where I go into
+far more structured detail about all of
+these different functions of pine script
+and how they all come together to create
+a indicator or strategy script so if
+you're excited about buying scripts and
+you'd like to take your coding to the
+next level I highly encourage you to
+check that one out and I should quickly
+mention that anyone who signs up to my
+mailing list to be informed of when the
+Advanced Course
+releases will receive a 50% discount off
+the opening price so if you're
+interested in that head over now to my
+website the link is in the description
+and sign up to be notified about the
+course release otherwise I'll be back
+soon with their new free pine script
+tutorial where I think I'll probably
+cover time zones and I'll show you how
+to plot data within a particular time
+zone so thank you for watching guys if
+you have any questions leave them in the
+comment section below and I'll get back
+to you as soon as I can
+otherwise I'm excited to see you guys in
+the advance pilot script course or on my
+next free video
+so I'll speak to you then take it easy
+everyone goodbye
+[Music]

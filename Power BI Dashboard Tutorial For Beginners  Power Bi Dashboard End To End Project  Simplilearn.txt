@@ -1,0 +1,455 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn how
+to build a realtime social media
+analysis dashboard and powerbi along
+with practical demonstration that's said
+if these are the type of videos you'd
+like to watch then hit that like And
+subscribe buttons and the bell icon to
+get notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the descript
+destion to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upscale master power Pi skills and
+land your dream job for grow in your
+career the num explore simply learns
+pl300 Microsoft PBI certification
+training simply learn offers extensive
+FBI training this program enables you to
+solve business problems and improve
+operations this course helps you to
+master development of dashboards from
+published reports discover better
+insights from the data and create
+practical recipes for various tasks that
+you can do with Microsoft powerbi that's
+not all you also get 30 plus hours of
+Blended learning industry based projects
+for experimental and experienced
+learning dedicated live sessions by
+faculty of Industry experts industry
+recognized course completion certificate
+and many more after completing this
+certification thousands of our Learners
+have transitioned into a data analytics
+role as a fresher or moved onto a higher
+paying job profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the pin comment and description box
+below to find the details on pl300
+Microsoft prob certification training
+now without further delay let's get
+started now this is the data set that we
+will be using today so we have a user ID
+usern name platform state region
+followers views likes shares comments ID
+Revenue Source Revenue date Etc so let's
+imagine that you run a consultancy for
+social media influencers and you have
+about thousands of clients right and you
+need to build out a report and tell them
+what what's the performance and where
+are the places that needs uh or that
+needs attention for improvement Etc and
+what's their annual revenue monthly
+revenue or weekly Revenue right you
+might want to build that dashboard right
+right so U before before we proceed with
+the analysis we needed this data set but
+this data set is not original okay this
+was a chart GPD generated dat set so
+nothing in this particular dat set is
+authentic right so we have created a
+believable data set which has the right
+values but not true so Drew Johnson's
+may be existing or may not be existing
+but this particular data is completely
+created out of charity this is
+artificially generated data set not real
+no in this particular data set not real
+okay so before we create this particular
+data set let me walk you through the
+prompt that we Ed for for this
+particular data set so we're going to
+drop that prompt in chat jpt so let's go
+through the prompt I need your help in
+creating data set for 10,000 R for
+social media as stash bar I would like
+to have platform columns considering
+five platforms so we are considering
+five platform here so mainly uh the
+platforms which the social media
+influencers use Twitter or x Facebook
+Instagram Snapchat and YouTube so have a
+column uh have a date column consider
+data for 5 years so we are considering
+2020
+2024 and include a state column so for
+all the US states that we have and
+include a region column north south east
+west and Central regions and include
+columns like followers views likes
+shares and comments so the most
+important criteria which the influences
+to make sure that they are getting the
+good amount then we have the respective
+usern name and user ID so username can
+be a readable right it should be a
+readable name valid readable name and uh
+user ID can be alpha numeric a little
+bit of alphabets and a little bit of
+numbers so that should be fine so for
+example we will be having the user ID
+usern name and platform followers views
+likees shares and comments and the user
+may or may not have accounts in all
+platforms right so someone might have be
+active in all the five platforms or
+someone might be focusing solely on one
+of the platforms or someone may not like
+a few of the platforms right so the user
+may or may not be existing in that
+particular platform and have a column
+for Content ID so let's say each content
+that you put on um each of these
+platforms should have a unique ID right
+let's say you want to find out or
+extract that particular content which is
+generating a lot of views that made you
+viral and that's generating a lot of
+Revenue right so you want to track that
+down so for that you might also need the
+cant ID please include Revenue sources
+so the revenue sources could be
+sponsorship collaboration consultancy
+patreon guest appearance right so these
+can also be your revenue and include a
+revenue column for that and dollars and
+basically I want to know the top
+performer of the platform for highest
+you can do that right and we can also do
+this on a regional level so let's say
+nor regon who is the guy or who is the
+girl who has the highest number of
+followers highest number of Revenue
+right and help me out with downloadable
+data set so you can just copy this and
+paste it on the chat gbd prompt and send
+it there so the prompt has been sent now
+it is helping us with the
+downloadability set so it's giving us a
+brief us ID usern name platform date
+state region followers right all the
+parameters that we included or wanted to
+have in our uh set right it's giving a
+brief and here's your downloadable CSV
+file in a moment so you'll be having a
+clickable link here so there you go it
+has analyzed and and if you expand that
+section you can see some python codes
+over here and if you scroll down you can
+see the downloadability
+link we've already downloaded that
+particular Des set and this is what I
+explained you before so user ID usern
+name the platform here or she is
+following state region followers views
+likes shares commments content ID
+Revenue Source the number for the
+revenue on which date so this is what we
+have and uh so the this is the prompt
+that we created this the data and now we
+can switch back to the P PI right before
+that uh let's also quickly jump into the
+PowerPoint window right here so you can
+see this is the background that we want
+to have for our dashboard so we will be
+having a client drop down menu over here
+along with the search bar so you can
+search for the client and when you
+select the client you will have his or
+her followers views likes shares
+comments and revenue and you can also
+specifically give a platform if you're
+exploring for Twitter or Rex if you're
+exploring for Facebook or meta Instagram
+you can also select that in the state in
+a specific state in a specific region
+and the amount of Revenue the source of
+Revenue right so you have a revenue
+section here the total revenue you have
+generated in that area and how's the
+month- on Monon views performance and
+how's the month-on-month performance
+right so these are the things on a
+glance that every social media
+influencer would like to have right so
+this is how you can create so you can
+just make use of some shapes and boxes
+in the PowerPoint and you can create as
+I've got some logos here and text boxes
+have made this right so if you want to
+make use of this we will drop this image
+in the description box below to the
+Drive Link and you can have access to it
+so this is how we uh have a background
+and now we can quickly jump to Microsoft
+powerp so we've already tried starting I
+mean already started to create so let's
+not continue with this let's create a
+fresh page right so in this particular
+fresh page we will try to add some
+backgrounds so go to
+visualizations and uh go to Canvas
+settings and here so canvas background
+sorry not canvas settings canvas
+backgrounds so we will make use of the
+same image that we created so it should
+be in pictures and scroll down a little
+there you go socials background and uh
+fit is normal so you can fit it and and
+we have 100% transparency there you go
+so we will make it zero and if you would
+like to have it a little more maybe 5%
+it's good so I'll go with 5% and we
+ready for visualizations so now we're
+ready to insert the visualizations onto
+the dashboard now so uh let's begin with
+the visualizations so open data and open
+visualizations so here we will be having
+the drop downs right so let's go with
+the bottom so the top down approach
+let's let's finish the drop downs first
+so for that we might have to insert some
+filters or slices so we have a slicer
+over here let's move the platform to the
+field have the platform now and if you
+go to the format visual option here you
+can go to slices settings and instead of
+a vertical list go with the drop down
+right and uh fine and general again so
+you don't want the header icon so I
+don't want the header icon and I don't
+want the slicer header remove that and
+that should be fine and um you can go to
+General again and FX so we don't want
+the background here so increase
+transparency to 100% and that should be
+fine and if you want to increase the
+text size you can also do that right and
+let's continue with what we have let me
+quickly push that to the platform
+section there you go we have it you can
+also eliminate the Border if you want
+but for now let's keep it as it is right
+and here the Tre TOS option go to search
+so that you have a search bar so the
+thing is we have just five here and you
+you'll understand that when we go to the
+client drop down right so when you have
+a search bar you can just search and
+you'll have what you want to search for
+right now you can go with maybe a copy
+option but let's continue with adding
+more slices copy Visual and uh paste it
+so we have pasted it copy it again and
+paste it there we go paste it once more
+and you have it right now we will make
+some modifications to this particular
+field right so we' have selected this
+and instead of uh platform we will have
+state because this is based on state
+hold and drag and drop and there you go
+so we will have all the US states here
+and this one will modify that one as
+well inad of state or inad of anything
+else select that this particular one is
+selected right so select that and now
+instead of platform have region drag and
+drop into the fields and you have the
+region and now is you're the ne the you
+you're at the next stage where you will
+replace the platform with the region not
+Southeast West Central right that's the
+one drag and drop the field and you can
+also copypaste the visualization once
+again and you can drop it right here
+where you have the clients right expand
+this particular one so that we have
+bigger names right and now instead of
+platforms you can directly drop the
+username here right now you will
+understand what's the importance of
+search so you have about 10,000 rows
+right and let's say you wanted to find
+out Alex Davis what you can do is just
+type Alex space D this and you'll find
+them right so that's how you do it and
+uh the first top section for slices and
+dropdowns is done now we will add the
+some cards right so we will add some
+cards so that we have the number of
+followers views like shares comments and
+revenue the sum right that's that's what
+we looking for so go to card insert a
+new card and U we will go with followers
+as the field and we want sum and you can
+go to visualizations and you can remove
+the category labels so that you just
+have number going into General FX you
+can make it 100% transparent so that you
+just have the number there and if you
+want the visual B boundary you can have
+it if not you can remove it header icons
+you can remove the header icons so that
+you don't want to right now so U and the
+text size you can also increase or
+decrease the text size for that go to
+title properties and here you have the
+height you can reduce the height to
+about 40 or 50 according to your request
+or your decision is completely your
+decision and width can be um a little
+maybe around 150 or let's keep it 200 so
+that it fits the section correctly and
+now you can also copy this copy visual
+paste it align it the way you want paste
+it once again align it properly and
+paste that once again make sure
+everything is aligned properly and one
+last paste and you're done there you go
+we just left out with some minor edits
+so instead of the field of some
+followers we will have views so some of
+views in the fields and instead of likes
+we will go with instead of U follows we
+will go with likes here which is
+summation of likes in the field so you
+have U likes so I think I drop views
+again so we should be dropping likes
+there you go and uh make sure it aligns
+properly now shares so instead of
+followers we will remove followers and
+add shares from this section drop it
+into the field so we have the number of
+shares and commands so remove followers
+here and check for the commments and add
+it into the field and revenue so instead
+of so instead of fields in instead of
+follows in the fails so we will have a
+revenue let's check for the sum of
+Revenue there you go you have the
+revenue now check the alignment there
+you go now we have the data for
+followers views like shares comments and
+revenue for all the clients all the
+platforms all the regions all the states
+all the sources right now let's also
+create a line graph for views month- on-
+month views right so you can either go
+with the area chart or line chart I'll
+go with the line chart let's undo that
+quickly uh click on the uh background
+here anywhere on the background and
+click the line graph once again so that
+we get a new one now in the x-axis we
+want months right so you can have months
+in the
+xaxis and uh views on the Y AIS you got
+the line graph over here expand that and
+you can also go into visualizations I
+mean the effects of visualizations and
+make some app to it go to visuals and uh
+go to General and here you have the
+title so I don't want to title that and
+header icons I don't want the header
+icons tool tips I don't want tool tips
+and everything is good to go and if you
+want you can add some um Shadows if you
+want and go to the general
+visualizations and here you can add some
+markers which which will give you the
+drops the points of drop or rise right
+so these these are the things the are
+the things how it's going on with the
+views and you can again copy paste this
+double click copy visualization and
+paste it drag it down to Performance
+Revenue performance align it and there
+you go and change some of the parameters
+here right so in y axis so instead of
+not not not the y axis that's the xaxis
+you want to change right no it's the Y
+AIS sorry for confusion instead of view
+you will be having Revenue in y axis
+there you go so your dashboard is now
+ready now let's select one of the
+influencers let's go with Alex Davis
+there you go and let's select the
+platform Instagram and this is what he's
+making and select the stage California
+or you can just ignore the state or you
+can just on a country level you go you
+can go with North or you can go with
+Central so you can see where he's
+dropping where he's winning right so
+he's getting high on Revenue but views
+are dropping maybe uh he has that uh
+revenue from sponsorship and let's see
+okay I think we missed some minor edits
+here let's go with the visualizations
+once again so here in the uh let's open
+the data again so intive region have
+source of uh revenue revenue Source into
+the field so that we have all the
+revenue sources so we can go with the
+sponsorship of collaboration one of
+these is really helping Alex Davis let's
+go with collaboration and there you go
+so likewise you can have a completely
+functional dashboard for all your
+clients who are social media influencers
+and check their performance in terms of
+uh their uh social media in terms of
+Revenue like shares comments Etc from
+different regions different platforms
+different states and their sources right
+so that's how you create a fully
+functional real time interactive
+dashboard using powerp and that brings
+us to the end of this session on the
+complete realtime PBI dashboard project
+should you need any assistance pbd and
+other resources used in this session
+please do let us in the comment section
+below and our team of experts we'll be
+happy to help you as soon as possible
+until next time thank you for watching
+and stay tuned for more from Simply
+learn staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts ch choose
+any of our programs and set yourself on
+the path to Career Success click the
+link in the description to know
+[Music]
+more hi there if you like this video
+subscribe to the simplylearn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

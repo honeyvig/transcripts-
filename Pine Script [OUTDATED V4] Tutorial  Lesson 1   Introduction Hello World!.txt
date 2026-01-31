@@ -1,0 +1,321 @@
+a little hey guys this is Matt and
+welcome to my trading view pine script
+guide for beginners in this video series
+I'm gonna cover topics regarding pine
+script which is a trading view
+programming language it's a very basic
+programming language but it can allow
+you to achieve some pretty powerful
+stuff I've been using the scripting
+language for a couple of years now I use
+it to create trading tools that assist
+in my trading process now pine script
+doesn't allow you to automate your trade
+execution or trade management unlike a
+language like MQL but what it does allow
+you to do is automate a significant part
+of your trading process such as analysis
+stop-loss sizes trailing stops setup
+detection all kinds of things and so
+basically the way I treat pine script is
+I use it to be my second pair of eyes on
+the market for the most part I either
+use it to create scripts that send me
+alerts so I can stay on top of the
+market I use it to create tools to help
+in my back testing process that's a big
+one and overall I've just found that if
+you can master the basics of pine script
+you can dramatically increase your edge
+over the markets we live in a world
+where technological prowess and
+understanding technology and and
+computers and programming languages is a
+very valuable skill to have now when I
+first started learning how to code I was
+probably 16 or 17 I used to make
+computer games I'm embarrassed to admit
+this but I used to make runescape
+private server right up until the
+creator of that game try to sue me and
+shut down everything I was working on
+but I had a lot of fun with that and
+I've always had a passion for computer
+programming
+I started out learning Java which is an
+intermediate programming language and I
+got quite good at it but over the years
+I've lost that skill because I haven't
+practiced it enough but thankfully I've
+moved over to Pine script now which
+is very similar to a lot of programming
+languages that are out there but it's
+also very lightweight it's very simple
+very easy to pick up very easy to learn
+you don't need to be an expert in
+programming to learn this stuff and I'm
+excited to show you what's possible with
+Pyne script in this guide so without any
+further ado let's get into this stuff
+I'm going to assume you have zero
+experience with programming or and
+specifically Pyne scripts so if you're a
+little bit ahead of the beginner stages
+you might want to skip this video and go
+into more advanced topics but if you're
+new to this stuff this is going to be
+really important to learn so first of
+all you want to take this mouth of yours
+come all the way down here and click on
+the pine editor this will open the pine
+script editor and this is where the
+magic happens now this is the default
+script everyone will get this when you
+open this for the first time and I'm
+gonna run you through each line of code
+here and just tell you what it does so
+that you have a basic understanding of
+what you're looking at so this first
+line here is just a bit of legal jargon
+it associates the Mozilla public license
+with any code you create and basically
+that's just like an open-source license
+I'll go into detail about your options
+later down the track in terms of keeping
+your scripts private and protecting your
+source code if that's something you you
+want to do but for the most part if
+you're anything like me you'll want to
+release most of the things you create to
+the public and so this this license here
+will just protect you from nefarious
+actors on the Internet that's just a
+standard tradingview precaution and here
+you'll get a little copyright symbol and
+then your training view username these
+these two lines here are what is
+referred to as comments you see these
+two forward slashes at the start of this
+line what that is saying is it's telling
+pine script it's telling the interpreter
+or the compiler which is a fancy word
+for a computer translator so all of this
+English language code needs to be
+translated into a language that the
+computer understands that's all done for
+you that's the magic of being a program
+in the modern day is you don't have to
+know what's going on behind the scenes
+in order to code many years ago you had
+to write in what's called assembly code
+and it was an absolute nut you had to be
+a NASA level intelligence in order to
+achieve anything meaningful with that
+language but today
+even a monkey can create if I can create
+some of the scripts I've created with
+this then you'll be amazed of what
+you'll be able to achieve because I'm
+hardly a rocket scientist I come from a
+music background I was a musician before
+I became a traitor and I was a dabbler
+in programming languages but now I have
+a pretty firm grasp on this stuff and if
+I can learn it you guys can too so I
+hope that's encouraging to you but
+anyway these two lines here it's telling
+the computer interpreter to ignore these
+lines these aren't relevant to the
+script this is for human eyes only you
+can use these comments to say whatever
+you want for the most part it's used to
+either explain what your code does or to
+leave notes for yourself or you can
+comment out certain lines of code that
+you don't want to delete because they
+might be valuable later down the line
+but maybe you're dealing with some bugs
+and you want to isolate what's going on
+you can just comment out a couple of
+lines of code and using this in there
+and the script will you just ignore
+those lines but for the most part you'll
+be using comments to leave yourself
+notes or leave notes for others so you
+could say something like the script is
+for teaching beginners how to use pie in
+script simple as that the interpreter
+the compiler will ignore this line but
+you know exactly what it means and
+that's very valuable when you start
+creating extremely complex scripts I
+have a bunch of scripts that I've
+written in the past that I have no idea
+what they do anymore because I didn't
+comment them heavily enough so this is
+something this is a good habit to get
+into in the beginning this third line
+here even though it starts with two
+forward slashes it's technically not a
+meaningless comment it's not it's not a
+comment that's ignored by the compiler
+but it's also not a part of my own
+script code what this does is it tells
+the compiler what version of Pyne script
+to target so the best example I can give
+is is the English language we have Old
+English from many centuries ago which
+you know Shakespearean type English
+which isn't appropriate for today's day
+and age and if you were to talk that way
+you wouldn't make friends very easily
+and so that's an old version of English
+of the English language and today's
+version is for 2.0 English 2.0 and it is
+colloquial it's easy to understand
+there's a lot of slang that sort of
+thing
+and so you could think of Old English as
+version one and if you were to speak in
+that language hardly anyone would
+understand you but there's times where
+that's appropriate because maybe you're
+studying Old English or you're trying to
+write something in that context
+but for the most part you'd want to use
+the latest version obviously and it's
+the same at pine Script so pine script
+has version one two three and now it has
+version for each variation of these pine
+script versions have different features
+different syntax different syntax is
+another word for grammar basically its
+programming jargon for grammar so commas
+brackets that this is syntax in here you
+know you've got the two quotes and you
+got brackets that's referred to as
+programming syntax if you change this to
+version 3 there'll be certain features
+of pine script that you wouldn't have
+access to anymore so for the most part
+you can just leave this line you'll want
+you'll unless you're working on an old
+script that's the purpose of this is to
+allow for backwards compatibility with
+previous pine script versions for the
+most part you're gonna want to leave
+this as it is because you're going to
+want to work with the latest version of
+pine script obviously if you want access
+to all the latest features and bells and
+whistles then you're gonna want to leave
+this as version 4 now moving on this is
+where things get a little more
+interesting a little more complex so
+this first line here dictates what type
+of script this is going to be now
+there's two types of scripts that you
+can create in pine script one is an
+indicator like any other indicator you
+would have seen like RSI MACD moving
+averages that all falls under indicator
+the other script option is a strategy
+script now a strategy script is used for
+back-testing strategies over historical
+data automatically I'll show you a quick
+example of one of the strategies scripts
+I've created so here you can see that
+the script places market trades so you
+can see it went long here at the close
+of this candle and exited for a profit
+at the profit target and now adding up
+all of these over about 208 trades over
+the past year or two of data it had a
+53% win race so 53% of these trades hit
+target before they hit their stop-loss
+so this is quite advanced we'll go over
+this stuff much later in the course but
+I'm just showing you what this strategy
+script is for for the most part we're
+going to be working with standard
+indicators so to write a standard
+indicator script you need to name this
+study now this line here is sort of like
+a letterhead you know on a letter you
+would have something at the top of the
+page explaining what the letter is for
+or who it's intended for that's what
+this does for the pine script compiler
+it tells a pine script compiler that
+this script or writing is an indicator
+script not a strategy script and so the
+two scripts get access to entirely
+different features we don't want to be
+working with any of the mock trade
+features so we're just gonna leave this
+as it is for the next few videos and you
+can name this whatever you want I'm
+gonna call this beginner script just for
+an example describing this next line
+will be easier basically add to chart
+you'll see that now this this blind plot
+is telling the script to draw the
+closing price to my screen and it's that
+simple
+from three lines of code you can delete
+these if you wanted to and this will
+still work and there you go three lines
+of code and we're already drawing the
+beginnings of an indicator I'll show you
+one more thing before I wrap this up and
+then we can move on to the next video
+where I'll go into much more detail
+about the code part of this if you just
+simply add this line of code in here oh
+this is saying set the variable called
+overlay to true and true this is called
+a boolean it's a funny word you'll get
+used to it but it's called a boolean in
+programming and that's just another
+fancy word just like how lawyers have
+their own jargon as you would know the
+financial industry has its own jargon to
+make things overly complex so that only
+other financial experts can understand
+it programming is exactly the same
+there's a bunch of jargon terms that
+only other programmers will understand
+and boolean is one of them all it means
+is that yes or no 1 or 0 it's pretty
+simple so this little line here is
+saying set the inbuilt
+variable overlay to 1 / yes / on /
+now if I remove this from my chart save
+it and then click Add to chart now we'll
+draw the line it's a bit hard to see but
+you can see it draws the line on to the
+actual chart instead of to its own box
+now this is obviously really useful for
+drawing moving averages or like some of
+my scripts this script is an overlay
+script and it draws directly to the
+chart you can see it draws a moving
+average in a bunch of signals and
+stoploss placements targets I'm gonna
+show you guys exactly how to build
+something like this and this is the
+beginnings of that and so that's it this
+lesson I hope you found it interesting I
+hope you found it useful and strap in
+because we're gonna get into much more
+complicated stuff than this in the
+videos to come alright thanks for
+watching everyone thanks for listening
+good luck with your trading good luck
+with your coding and I'll speak to you
+in the next video
+[Music]
+[Applause]
+[Music]
+you
+[Music]

@@ -1,0 +1,896 @@
+hi Traders welcome back to another video
+today I want to start a new YouTube
+series and this series is going to be
+kind of a strategy development
+investigation kind of process where I'm
+going to go and find strategy ideas out
+on the web on the internet I know how
+dangerous that sounds but don't worry
+we're going to vet these ideas using
+code and running trading ideas through
+the strategy tester and the whole
+purpose of this series series is one I'm
+doing it anyway it's something that I do
+in my spare time anyway but two
+hopefully it will give me a good
+opportunity to show you guys demonstrate
+to you guys some coding practices
+techniques Concepts um that are
+practical that we can build on and
+hopefully this series these videos that
+I'm going to start creating over the
+months and probably years to come will
+help inspire you guys and motivate you
+guys to go and find your own trading
+ideas convert them in the code adapt
+them to suit your personality your
+personal trading style and we can all
+become better Traders together now as
+mushy as that sounds that's the whole
+purpose of my YouTube channel and what I
+do here I'm a Trader I want to get
+better at trading why not share the
+journey with you guys and we can all get
+better together and so without further
+Ado let's get into today's video it's
+going to be a bit of a longer one
+compared to the recent videos I've done
+but I think it's going to be extremely
+valuable recently I've been going
+through a mentorship program with Nick
+he's an Australian Trader quite well
+known if you haven't heard of him go and
+check out his chat with Traders podcast
+episodes they're brilliant they have
+some really really powerful trading
+ideas and lessons included in them I'll
+leave links Below in the description
+this morning I was just going through
+the Forum here and reading up on um some
+trading system articles that Nick Raj
+particularly has posted there's other
+students that post strategy ideas but
+I'm always very interested in what Nick
+Raj finds interesting
+because he is such a great Trader I like
+to try to emulate his thought process in
+the markets I have very similar
+philosophy on the markets to him he's
+obviously far far more experienced than
+I am he's been trading for decades I've
+been trading for maybe 5 years actively
+but this post here caught my eye this
+morning so Nick posted this video here
+by um JB marwood the YouTube channel JB
+marwood um now I don't know anything
+about Joe but I did watch this video
+today and and I was really impressed by
+the concepts here and so today I wanted
+to convert some of these ideas into Pine
+script show you guys how to build out a
+simple strategy script to test an idea a
+trading idea in Pine so before I get
+started hopefully Joe doesn't mind me
+doing this um I'm obviously giving a
+shout out to his channel go and check it
+out there's some really cool trading
+ideas here some really powerful
+stuff um today I want to go over his
+simple pullback trading strategy and
+convert the idea the rules into Pine and
+when we're done we'll get something like
+this now my results aren't 100% accurate
+compared to his results but that could
+be because he's using different data to
+me um he's using a different back
+testing software but the results are
+similar enough and profitable enough to
+Warrant investigating in pinescript so
+before I get started I'll play a short
+clip from his video just to um
+demonstrate the rules that he lays out
+and again when you uh finish with this
+video or even now if you want to I'll
+leave a link below in the description to
+this video I definitely encourage you to
+go and watch the whole video because
+there's some really important ideas that
+are laid out in this video but anyway
+let me break down his rules and again
+hopefully he's okay with this if you
+ever see this video Joe and you you're
+not happy with me um basically stealing
+your work let me know and I'll take this
+video down uh but I just want to share
+this with my audience because I think
+this is really important information and
+an important template um that Traders
+should be aware of Traders especially my
+experience I obvious have a lot of
+Traders come through my Mastery course
+um there's a lot of questions I get
+where Traders are over complicating
+trading in a way that I feel is
+unnecessary trading does not need to be
+very complex in order for you to make
+good money out of the markets and this
+strategy right here is a good example so
+let me skip forward to the rules here
+and I'll just play a quick clip from
+this video so now let's look at the
+exact rules of this simple pullback
+strategy so the buy rules first of all
+we're going to want a close a above the
+200 day moving
+average and a close below the 10day
+moving average so very basic rules the
+longer term trend is the 200 day moving
+average we want to be above that but we
+want to close below the 10day moving
+average so we've got a small pullback
+within the longer term Trend now the
+sell rules are extremely important here
+um we're going to we're going to sell
+when the close Rises back above that
+10-day moving average so we're not
+looking for long
+term trades here we're just looking for
+shortterm trades um short pullbacks and
+the other rule is we will sell if we get
+a 10% loss so if we get a 10% loss we're
+going to exit on the next bar open okay
+we need some more settings um that we
+can put into our back tester um so that
+we can run an accurate back test so
+position size going to use just all
+right I'll stop it here I don't want to
+play too much of his work on my channel
+uh again go and check out this video if
+you're interested uh so the rules are
+incredibly simple we're waiting for
+price to close above the 200 day moving
+average and close below the 10day SMA
+simple moving average that's it buy
+rules couldn't be simpler that's
+something I really love about Nick R's
+work um in his books and his um videos
+online he's a huge advocate for using
+simple and robust trading rules he goes
+so far as to say that he doesn't believe
+that the entry
+reasons or entry criteria for strategies
+is a very important aspect of a trading
+system there are other aspects of a
+trading system that are far more
+important um such as the overall concept
+of the system why it makes money um and
+obviously your exit reasons are super
+important and your money management risk
+management um approach plays a massive
+role in the profitability of any trading
+system the entry criteria is one of the
+least important criteria it's not not
+important but it is one of the Le lesser
+important aspects especially when we're
+trading a robust system so this strategy
+is extremely simple we're waiting for
+the entry rules here and then the sell
+rules are also very simple we um we're
+waiting for the the candle the bar daily
+bar this is a daily long early strategy
+by the way on the S&P 500 ETF that's
+what the strategy was designed to be
+traded on but it uh in my preliminary
+testing it seems to be profitable on
+several other markets as well but anyway
+the sell conditions are once we're in a
+trade if price closes above 10day SMA uh
+we exit our position we're just trying
+to capture small chunks of the overall
+long-term Trend um the secondary rule is
+that if price declines by 10% from our
+entry price or in other words we have a
+10% loss on a closing basis we exit on
+the next bars open uh we have a position
+size of 100% of our Capital no Leverage
+is used starting capital in this back
+test is
+$50,000 commissions is 0.005 cents per
+share which is the Interactive Broker
+rate and um execution is entering trades
+on the next bars open which is luckily
+how the training view strategy test to
+work so that's really easy to emulate in
+today's lesson so let's jump into the
+pine editor and start coding this into
+Pine code now before we do that I should
+probably mention the um overall metrics
+of this system according to Joe's back
+testing using Amy broker which is a much
+more powerful strategy tester system
+than trading view but it's also much
+more complex um I might consider
+exploring Amy broker code in future
+lessons if you guys are interested in
+that I'm learning how to code in AFL the
+um programming language for Amy broker
+it's a it's a it's a very powerful
+program but it is also much more complex
+than Pine there's pros and cons to that
+the pros are that you can do very
+extensive statistical analysis of your
+strategy results over historical data
+the cons are it's expensive you need
+extra data so data from a data provider
+and the code is is just harder to learn
+compared to Pine but anyway that's IR
+relevant for today's video so the
+metrics here have a decent annualized
+return um but it is less than Buy and
+Hold so Buy and Hold Returns on average
+about 10% per year on the S&P 500 this
+strategy returns about
+7.6% so it's less profitable than just
+simply buying and holding the Spy ETF
+however look at our maximum draw down
+the Max draw down of just holding the
+S&P 500 ETF is 55% of your Capital so
+you lose over half half your Capital by
+just doing nothing and holding the ETF
+but you do make about 10% per year which
+is okay uh but this would make a lot of
+investors uncomfortable and I'm sure a
+lot of Traders and investors would sell
+as you near that Max draw down and then
+that will affect your annual annual
+return negatively and so there's a lot
+of psychological reasons why Buy and
+Hold is not a good strategy despite the
+fact that it does have a 10% return on
+average per year whereas this system has
+a slightly less return turn but look at
+the max draw down 12% I would take a Max
+draw down of 12% any day of the week on
+any strategy that is well within my risk
+tolerance and so that's kind of the idea
+of this strategy it has a much better
+risk adjusted return than Buy and Hold
+and it also has a very high win rate 75%
+win rate is pretty impressive now to
+achieve that win rate it doesn't make a
+lot of money on each trade so half a
+percent per trade but its Edge is in its
+win rate so this is a strategy where the
+win rate plays a major part in its
+profitability um I usually trade
+strategies that are the opposite so the
+risk reward profile is what accounts for
+the profitability rather than the win
+rate so I can trade strategies with 40
+45% win rate but with a high risk reward
+and that is how I tend to make my money
+whereas this strategy is kind of the
+opposite we're taking small wins but
+very frequently anyway let's jump into
+the pine editor and code all of this
+into Pine all right so here we are with
+a blank script a relatively blank script
+all I've done here is input my default
+strategy parameters so we have overlay
+set to true so we're drawing over price
+action our initial capital is set to
+$50,000 our default quantity type for
+this strategy is set to percentage of
+our equity and our quantity value is set
+to 100% of our account balance so on
+each trade we get involved with we're
+trading 100% of our account balance with
+no leverage our commission type is set
+to cash per contract and the commission
+value is set to 0.005 cents per share
+which as I mentioned earlier is
+interactive brokers commission rate and
+interactive brokers is probably one of
+the most common if not the most common
+stock trading platform and so that's why
+we're using this as our default
+parameters now if you've watched my
+previous video on the latest update to
+trading view strategy tester you'll know
+that they've recently added this uh bar
+magnifier setting and I said in that
+video that we should always turn this on
+on every single script we write now that
+is true but only on scripts that have a
+stop- loss and takeprofit like a fixed
+stop-loss fixed takeprofit or entry
+limit orders um for a strategy that
+operates solely on candle closes it's
+not necessary because there is no risk
+of intra bar price action negatively
+affecting our back testing results if
+you're not sure what any of that just
+meant make sure to go back and watch the
+previous video on this channel about the
+latest uh strategy tester update oh
+leave a link to that in the description
+as well so we don't need bar magnifier
+for this particular strategy let's move
+on to getting our user inputs so to save
+time I'm just going to copy and paste
+some code I've already written because
+it's not important how the user input
+code is written but we need several
+inputs here so we need two moving
+averages one is the 200 SMA the other is
+a 10 SMA 10 period SM so a long-term and
+a shortterm moving average the second or
+third parameter here is our stoploss
+percentage so by default that's set to
+0.1 or 10% so if price declines 10% from
+our entry we exit our position so that's
+basically a fail safe stop loss so if
+price never closes back above the 10
+period SMA we can still exit our trade
+for a loss to cut our losses short
+instead of letting our losses run too
+far the final inputs here are just a
+start date and an end date filter these
+are used for analyzing in Sample and out
+of sample periods um I'm not going to go
+into too much detail about statistical
+analysis of our back testing results in
+this video because it will make this
+video way too long that's a subject that
+deserves its own series let alone video
+and maybe I'll cover that in the future
+if you guys are interested in it I'm no
+expert on that stuff I'm not very good
+with mathematics to be perfectly honest
+with you guys but I am learning a lot
+about this stuff through Nick rager
+courses and so in the future I will
+probably record uh lessons on this super
+important subject of deep and robust
+back testing processes but for now we'll
+keep things as simple as possible and
+just focused on the pine code so today's
+lesson is just an example a strategy
+example how to code a really simple
+concept into code into Pine code and
+then test that theory in a simple but
+quick manner the next thing we need to
+do is get our indicator values so again
+I'll just paste this code to save time
+it's really simple we're just getting
+two moving averages two smas using ta.
+smma both based on the closing price
+Source price source and one with a 200
+one with a 10 period now I need to
+replace these with our inputs so that we
+can adjust these moving average length
+in the settings menu uh if we want to so
+now if I save my code we should have
+these settings up here there they are
+and they have little tool tips
+explaining what each setting does this
+is completely optional I'm only doing
+this because this is a YouTube video
+script and I want you guys to fully
+understand what each user input does now
+now next thing we need to do is get our
+date filter so again I'll paste that
+code in really simple here we're just
+checking if the current Bar's time is
+greater than or equal to our start date
+and time and is the current Bar's time
+less than or equal to our and date and
+time so this allows us to filter what
+trades get taken based on a date period
+now we get to the juicy part where we
+check our buy and sell conditions
+so remember the rules are really simple
+um the first thing we need to do before
+I get to the rules is save our Buy price
+so I'm just going to initialize a
+persistent variable V variables mean
+that they don't reset on every single
+bar it's a float type so it's a number
+type with a decimal place and it's going
+to be set to Zero by default on the very
+first bar on our chart and then we'll
+obviously overwrite this with our Buy
+price when we enter a trade that way we
+can actually calculate our stop loss
+that 10% decline from our Buy price so
+that we can ex exit trades that go
+against us now our buy condition is the
+closing price greater than our ma1 which
+is our long-term moving average the 200
+period moving
+average and is the closing price on the
+current bar less than our short-term
+moving average or the 10 period moving
+average those are our basic entry
+conditions but we also need to make sure
+that we're not already involved in a
+trade because this strategy does not
+include pyramiding so we want to check
+is our position size equal to zero if
+it's equal to zero we're
+flat and we want to check our date
+filter so I'll throw in the date filter
+here this just checks if the current bar
+Falls within our two time periods and
+that's it for our buy conditions um now
+before I continue let's draw some pretty
+colors onto the chart um and by that I
+mean our moving M averages so we're
+going to plot our ma1 and ma2 onto the
+chart save my script and now what we're
+looking
+for is price
+to be trading above the 200 period
+moving average and close below the 10
+period moving average and then we buy on
+the next bars open and we sell when
+price closes back above that 10 period
+moving average or Price declines by 10%
+that's it that's all we're looking for
+so let's finish coding this out we have
+our buy condition next up we need our
+sell condition and that remember is just
+is the closing price greater than our
+short-term moving average or
+ma2 let me indent these a little bit to
+make it easier to read the second
+condition for selling is that we are
+currently involved in a trade so to
+check if we're involved in a trade we
+just check if position size is greater
+than zero that means we have open
+contracts and that's it for our basic
+cell condition the next thing we need to
+do is uh check our stop loss so our stop
+loss remember uh I'll start with calling
+it stop distance and stop distance is
+going to be set to and now this is
+completely optional what I'm about to do
+next it does make the code a little bit
+more difficult to read but it will make
+our plots easier on the eyes when I'll
+show you what I mean in a moment but
+what I'm going to do is check is our
+strategy. position size greater than
+zero question mark if so if this
+condition is met then we want to
+calculate our Buy
+price minus the closing price divided by
+the closing price this will give us the
+stop- loss distance as a percentage on
+the current bar so this will calculate
+the percentage decline from our entry so
+let's say we entered on this bar here
+I'll put a horizontal line there that
+red line this code here will calculate
+the percentage decline from this red
+line on each bar on our chart on a
+closing basis so each bar that closes
+below this red
+line um this code will calculate this
+number here
+6.53% or minus
+6.53% this will calculate this as a
+positive number so in this case it would
+be 6.53%
+-
+6.53% and we use that to check our stop
+loss but before we do that the next
+thing I want to do is calculate our stop
+loss price so that's going to be again
+is our position size greater than zero
+so are we involved in an open trade if
+so we subtract our Buy price from our
+Buy price multiplied by our stop
+percentage so this is our stop loss
+percentage Again by default it's 10% or
+0.1
+so this stop price will calculate again
+using this red line as our Buy price the
+stop price will be by default 10% below
+this line so all the way down about
+here at 1 uh 42 1.45
+is so that's our stop loss if we entered
+on this bar here our stop loss is down
+here and if we never get a bar that
+closes Above This short-term moving
+average but price closes below this uh
+red line then we exit our trade for a
+loss that's our stop loss and then
+finally the final thing we need to write
+out here for our buy and sell conditions
+is our stoploss condition itself and for
+that again we check is the position size
+currently greater than zero so we're
+involved in an open trade and our stop
+distance so the current deine on a
+closing basis on a percentage basis from
+our entry price
+is greater than our I and I stands for
+input so input stop
+percent then that means price has
+declined by our stop loss percentage
+point and we need to exit our trade
+that's it now I know I went over that
+pretty quickly but I'm trying to keep
+this video relatively short you can
+always slow down the video or watch this
+a couple more times if this went over
+your head um but this is all we need to
+enter and exit our trades the final
+thing we need to do is actually tell the
+strategy tester when to enter and when
+to exit and that's actually really
+simple so for enter positions we're
+going to check if by whoops by condition
+remember Pan's case sensitive so if by
+condition is
+true then we use the strategy. entry
+function to enter a trade we need to
+give it an ID so I'll just call this
+long where long only remember this is a
+long only strategy I believe this kind
+of strategy is called a long beta
+strategy so we're just trying to capture
+long only returns out of the market and
+in this case we're not even trying to
+beat the market we're just trying to
+beat the Market's Max draw down while
+maintaining a decent return annual
+return but anyway the next thing is a
+direction we need to tell the strategy
+tester which direction we want to enter
+our trade today we're long early so we
+just set that to strategy. long that's
+it we're entering our trades based on
+our buy condition now the next thing we
+need to do is save our Buy price so that
+all of this code here can actually be
+calculated so so far we haven't actually
+saved a Buy price we do that obviously
+after we've entered a trade so we need
+to put that code below our buy condition
+now because we are entering on the next
+bars open after the signal or the
+condition is met so once our buy
+condition is met the strategy tester
+let's use this candle right here as an
+example again so here we get a confirmed
+entry we're above our 200 period moving
+average we just closed below the 10
+period shortterm that's our entry
+criteria met on this bar that criteria
+gets met but the strategy tester won't
+enter our trade until the next bars open
+which will be about
+here so when we save our Buy price we
+don't want to save the um signal candle
+closing price we want to save the next
+Bar's open price as our Buy price so to
+do that we can just check if we had a
+buy condition on the previous bar so if
+buy condition on the previous bar is
+true then we save our Buy price as the
+current Bar's opening price and now we
+have our Buy price saved and all of our
+metrics here will be calculated properly
+and that's it for our entry conditions
+the next thing is to check our um exit
+criteria to do that really simple we
+just check if Cell can do
+so if we have our standard takeprofit
+sell condition uh which is that the
+current bar closed back above the 10
+period moving average so here for
+example we're trading above both moving
+averages and then we get a close below
+the 10 period SMA we would enter long
+right here we would hold our trade until
+price closed back above that 10 period
+moving average and then we would sell on
+the next bars
+open so that's what our sell condition
+is but we also have our stop condition
+remember so that can also be combined
+with our sell condition so if we have or
+sorry or if we have a sell condition or
+a stop condition then we want to exit
+our trade and to do that we can simply
+use the strategy. close function we need
+to tell it which um order to exit in
+this case that's our long order so we're
+exiting our entry ID of long on this
+function here and to make it clear when
+we exit for a profit or for our stop
+loss being hit I'm going to add an
+optional parameter here which is our
+comment and the comment is just going to
+say
+exit so normally it will just say exit
+if we close our trade however I'm also
+going to add on a conditional statement
+here that will say if and let me make
+some some more room here if we had our
+stop condition
+met then add-on
+SL equals true so this is text that's
+going to display on our chart and it
+just simply says stop loss equals true
+so we exited our trade because our stop
+loss was hit otherwise add nothing to
+this string because we don't really care
+we don't this will just differentiate
+between trades that close back above the
+10 SMA And Trades that close below our
+10% decline from our entry that's it the
+final thing I'm going to do here is just
+overwrite our Buy price to n a this is
+purely for drawing purposes we'll get to
+that in a moment but now there's only
+two more lines of code to write and our
+script is completed and that is I'll
+just copy this code over to save
+time it's just two more plots so we're
+going to plot our Buy price onto the
+chart so that we can see when the script
+bought which price it bought at and
+we're going to plot our stop loss onto
+the price so that we can see where the
+script will exit our trade if price
+declines beyond our stop- loss and I set
+the offset on our stop loss to minus one
+because the way we've written our code
+up here it won't actually draw the stop-
+loss until we've been in the trade for
+one bar so we want to shift our stop
+loss line back one bar so that the two
+lines are drawing in sync so I'll show
+you what I mean if we save my code here
+hopefully this compiles without any
+errors and there we go it definitely did
+not so where is our error it's on line
+30 I didn't finish our conditional
+statements here
+so for these two statements we're just
+going to add na on the end so our stop
+loss
+distance if we are not involved in a
+trade our stop distance is going to be
+set to na so that we don't draw anything
+onto the chart so here stop price is set
+to na when we're not involved in a trade
+if we don't do this um we'll have lines
+drawing all over our chart even when
+we're not involved in a trade we don't
+want that so when we're not involved in
+a trade we set our our stop price to Na
+and our Buy price to Na and that way we
+don't have lines drawing all over the
+place so now when I save my code
+hopefully this compiles there we go
+there's our script completed so let's
+find a good example here here's one that
+I was using before as an example so
+here's our entry conditions met trading
+above the 200 SMA trading uh closing
+below the 10 SMA on this bar we enter on
+the next Bar's open we enter long and
+then we hold this trade until price
+closes above the 10 period SMA or we
+close below our stop loss now in this
+case that never happened we
+actually uh we didn't hit our we tested
+our stop loss we didn't close below it
+uh but we did close back above the 10
+SMA below our entry and so this
+technically was a losing trade so here
+uh This Bar closed back above the 10 SMA
+we exit we sell on the next bars open
+and so here we took a loss of about 3.7%
+but there's our script completed and if
+we open up the strategy tester here's
+our metrics so we have approximately a
+12% Max draw down from um 1995 until
+today so I set my end filter to 2099
+we're obviously nowhere near that yet
+the way time's been flying this year I
+feel like it won't be long before into
+2099 but for now we're trading up until
+the current day from 1995 and these are
+our metrics so a net profit of 351
+according to the trending view strategy
+tester some of these metrics I feel like
+the strategy tester calculates a bit
+weirdly compared to what I'm used to but
+anyway that's another subject for a
+different day for now we have a decently
+profitable strategy over 457 trades over
+several years with a decent Max draw
+down and a half decent return annual
+return nothing spectacular but
+considering that this would just be part
+of a portfolio of strategies uh this is
+a really cool concept to investigate
+further and now before I wrap up this
+video one thing that Joe speaks about in
+his video at the very end is talking
+about how we could expand on this
+strategy by adding extra rules or
+conditions to the strategy because it is
+very very simple now I like to start my
+strategy development with a really
+simple idea or concept A arguably too
+simple idea is better to start with and
+then you build on that idea so right
+here we have a strategy that is
+profitable with a really high win rate
+that's great how can we improve the
+results of this strategy what's a simple
+way we could improve this strategy one
+way that I can see here that I thought
+of earlier this morning is it doesn't
+make a lot of sense to me to just exit
+as soon as price closes above the 10 SMA
+I prefer to have a reason to exit my
+trades and it doesn't have to be a very
+complex reason but I prefer it to be a
+little bit more complex than simply just
+closing back above a moving average and
+so what if we
+added here's a perfect
+example look at this we we're trading
+above our 200 SMA we close below our 10
+period we enter long on this bars open
+and then we exit on this bars open after
+we close back above the SMA what is this
+this is like a what 1% 2% gain 1% gain
+that's pitiful considering how this
+Market rallied from here so what if we
+added a really simple exit reason such
+as a lower close so we only exit our
+trade if price is trading above the 10
+SMA and we get a candle or a bar that
+closes below the previous bars low and
+then we exit on the next Bar's open
+let's add that to our code and see how
+that affects our strategy
+results so for this I'm going to add a a
+user input and I'll just copy some code
+over to save time so here we've added a
+new user input that says iore so input
+lower close and it's a Boolean input
+it's set to false by default and this
+setting exit on Lower close simply waits
+for a lower close before exiting above
+our short-term moving average if I come
+down to our sell condition line of code
+here I can add on one more little
+condition here I can check do we have
+our standard exit reasons or conditions
+met so did we close above our short-term
+moving average while involved in an open
+long trade and is iore lower close not
+turned on so that would return true so
+if we do not have that setting turned on
+we will just exit when price closes back
+above the SMA otherwise if we do have
+this turned on then we want to check if
+the current bars closing price is lower
+than the previous bars low that's it
+really simple just a couple of
+characters of Code here and let's see
+how it affects our bottom line so I'll
+save that code let's look at this
+particular trade right here if I come up
+to our options or settings here bring it
+over here we enter long here on this
+bars open let's see what happens when I
+click exit on Lower
+close so now we stayed in this trade we
+entered long here rather than exiting
+right here we held our POS position
+until we got a price action confirmation
+that we should exit now it's a really
+simple confirmation just a simple lower
+close so this bar here closed lower than
+the previous bar so we exit we sell our
+long position on the next bars
+open and that turned a 1% winning trade
+into a 6% winning
+trade and we still have our standard
+stop- loss reasons so here's a here's an
+example of a losing trade based on our
+stop loss so exit SL equals true we
+entered long on this Bar's open after a
+close below the 10 period SMA while
+price was technically above the
+long-term moving average and then
+unfortunately the market rolled over but
+rather than holding on to our loser we
+eventually exit our trade for
+approximately I'd say this is like a
+99.8% loss roughly so let's drag that
+down
+9.5 9.5% loss on that trade but we are
+now holding our winning trades for much
+longer um here's a good example of why
+we use a stop loss back in the covid
+crash on the market when the market took
+a dive uh this is why we use stop losses
+um but let's have a look here let's look
+for a trade that really played out
+nicely here's a good one so we enter
+long here we hold all the way up to this
+lower close and then we get back into
+the market uh soon after that exit
+when price closes back below this SMA so
+this is a really cool strategy and now
+here we have a
+problem price did not
+close uh above our SMA when we got our
+lower close and so the script did not
+exit our position so that's this rule
+here if you wanted to you could play I'm
+not going to in today's lesson I want to
+wrap this up here but if you wanted to
+you could negate this rule when using
+the lower close rule and that way the
+script would have exited up here but
+because we have our prerequisite of
+price being above um ma2 it waited until
+here to exit that trade if you want to
+that could be some homework for you I
+guess to go and edit this code to
+include that feature and see how that
+affects your results but now let's look
+at our metrics our draw Down's gone up
+slightly gone up by 2% but our return
+has gone up
+significantly because our average trade
+profit has gone up significantly whil
+still maintaining a very high win rate
+now I'd need to do some more testing to
+make sure that I haven't missed
+something and this is actually giving
+out results that are accurate but the
+whole point of today's video is not to
+give you a strategy to go out and test
+or trade but rather a concept to think
+about some examples on how you can
+achieve these things and yeah now I hope
+this helped you better understand the
+strategy development process I hope it
+inspired some ideas for you to go out
+and play around with and I'll wrap this
+lesson up here as always the source code
+will be below a link to the source code
+will be below in the video description a
+link to the original video by Joe that
+inspired this video um basically I just
+stole his trading idea and adapted it to
+suit myself in pinescript but you get
+the idea this is the strategy
+development process basically is going
+out finding cool ideas and then adapting
+them to your personality your personal
+preferences and then through the power
+of pinescript we can really quick
+quickly test this stuff and decide if
+it's something that we are interested in
+pursuing further this video is long
+enough as it is so I'm going to wrap
+this up here thanks for watching I
+really appreciate it I hope you have a
+fantastic weekend and I'll speak with
+you in the next video take care and good
+luck with your trading as always

@@ -1,0 +1,339 @@
+hey traders welcome back to zen in the
+art of trading
+my name is matt and today i'm going to
+be creating another pinescript tutorial
+lesson
+and this video is going to be covering
+how to use inbuilt indicators for this
+lesson i'm going to be covering the rsi
+indicator
+but in future lessons we'll go over
+other indicators and
+how to combine the indicators with price
+action in order to generate trading
+signals
+so let's get started let's open up the
+pine script editor here we have a blank
+script
+i'm going to call mine lesson4
+and i'm going to set the overlay to true
+so that this
+draws straight to my chart i'll save
+this as lesson
+4
+and then click add to chart and it'll
+just plot the closing price for now
+so the first thing that we're going to
+do is get
+some user input now these inputs are
+going to allow us to customize the rsi
+indicator
+the in build rsi that we're going to be
+using in the script
+so the first thing we're going to get
+from the user is
+what source what price source they want
+the rsi to be calculated with
+so we're going to say rsi source is set
+to
+input and the title of this input
+is going to be rsi source
+the type is going to be set to input
+dot source and the default value
+is going to be candle closes we want
+this rsi to be calculated using candle
+close
+the next variable we're going to get
+from the user is the rsi length
+so rsi length is set to input title is
+rsi length the type
+is input dot integer for
+whole numbers and the default value is
+going to be the same as the rsi's
+default value which is 14.
+the next input we're going to be getting
+is the uh
+rsi overbought threshold so
+when the rsi exceeds this number
+we will consider the price action
+overbought and we'll plot
+sell signals to the chart now obviously
+it's not a great idea to trade
+these sell and buy and sell signals
+blindly i'm just using this as an
+example
+so this one we're going to call rsi
+overbought
+level it's going to be type
+integer and the default value
+is going to be set to 80 in this case
+normally at 70.
+the traditional overbought oversold
+readings for the rsi is
+70 and 30 but today we're going to be
+using 80 and 20.
+we want the most extreme overbought and
+oversold levels we can detect
+and this is just an example of how you
+can tweak these indicators to suit your
+own
+preferences so the next input we're
+getting is rsi oversold
+is set to input title
+rsi oversold level
+and the type is the same as the others
+input dot integer
+and the default value is going to be 20.
+so if i save the script we should get no
+compile errors
+hopefully yup there we go so now we're
+ready to
+get the actual rsi indicator value
+so the way that you get an rsi the way
+that you get an
+inbuilt indicator is using the inbuilt
+plan script functions
+normally they're named the same as the
+indicator so in this case we're going to
+say we're getting the rsi value
+and the rsi value is in this case it's
+going to be assigned to
+the inbuilt function called rsi very
+simple
+now this rsi indicator this particular
+script
+requires two inputs in order to get its
+calculation in order to calculate its
+value
+the two inputs it requires is the rsi
+whoops rsi source
+and the rsi length now obviously you can
+hard code these two values to be
+whatever you want but by allowing the
+user
+to change these values in the settings
+menu
+it really really adds to the user
+experience
+it makes it a lot easier to adjust
+things on the fly
+when you need to now we have the rsi
+value
+in order to determine whether or not
+price is overbought or oversold
+we need to compare this value to our
+overbought
+and oversold thresholds so in this case
+we're going to create
+a boolean value remember the boolean
+value is just a true or false you know
+one or zero
+essentially binary value and
+we're going to call it is the rsi
+overbought i like to put
+a question at the start of my booleans
+like is just so that i know
+that it is a boolean but in this case
+we're going to say is
+rsi overbought and this is going to be
+true
+if the rsi value is greater than
+or equal to the rsi
+overbought threshold
+so this operator in here is just the
+same as mathematics normal mathematics
+this sign here is greater than
+and this combining these two is saying
+set this rsi overbought value to true
+only if the current rsi value
+is higher than or equal to 80.
+pretty simple so the next thing we need
+to do is determine when
+the rsi is oversold so here we'll say is
+rsi oversold is assigned to
+true only if the rsi value
+is less than or equal to the rsi
+oversold threshold and that's it
+it's done these two variables here will
+tell us
+when the rsi is greater than 80 or lower
+than 20.
+and so the last thing to do is to plot
+this information to the chart
+visually so now we're going to plot
+these signals
+to chart and the way we do that is using
+what's called the plot
+shape function so if we write plot
+shape open bracket the first
+value that this function requires is a
+boolean value
+so we're going to plot the shape only if
+the rsi is overbought
+we're going to title this if you title
+this to something that you recognize
+you can go into the settings menu later
+and you can change the color of the
+shape
+the size of the shape etc so it's always
+a good idea to title
+your shapes that you plot to the chart
+the next variable that this function
+takes is the location
+where do we want this shape to be
+plotted
+we want it to be plotted location dot
+if you press control space you'll get
+all the valid options
+for locations today we're going to be
+using above bar
+so we want the over bought shapes the
+overbought signals to be plotted above
+the candles
+on this chart the next
+variable that we can put in is the color
+so with this we're going to set the
+overbought
+signals to red because typically red
+means sell
+green means buy so overbought is going
+to be red
+we want to set the transparency to zero
+so we don't want any transparency
+on this shape well not in this lesson
+you can just play around with this if
+you want to
+see how it looks on your chart and the
+next uh
+input that this function takes is the
+style what style do we want
+the shape what you know what what do we
+want the shape to look like
+so if you type style is set to shape
+and then a full stop and then control
+space you get a list of all the valid
+shapes you can choose from
+i'm going to stick with triangle up and
+triangle down for this lesson just
+because it
+suits what we're going for but you can
+play around with all of these shapes
+when you
+when in your own time and you might find
+others that you prefer
+but today we're going with triangle down
+for a cell
+signal and the next variable
+that we can put in here is the text that
+is drawn
+to the actual chart so this is different
+to the title the title is for the
+settings menu
+the text is for drawing onto the actual
+chart so in this case we're going to
+call it
+ob we want this signal to have the text
+ob next to it now in pine script
+you have to plot at least one thing
+either plot a
+price action variable like the close the
+high the low etc
+or a shape so we can now get rid of this
+plot close
+and the indicator will save and it will
+add
+this uh code to our chart so on this
+time frame there is no overbought
+signals if you go down the 15-minute
+chart there we go
+we have our first rsi overbought signal
+being plotted directly to the chart so
+that's great
+let's move down and start plotting the
+oversold
+levels for buy signals so this
+we're going to use exactly the same
+function plot shape
+and we're going to copy this basically
+copy this entire
+line of code so we're going to change
+all these values to represent oversold
+levels but it follows the same format so
+the first variable is a boolean this is
+the flag the trigger
+to plot the shape if this is false it'll
+just plot nothing
+as you can see on all of these other
+charts there's no nothing being plotted
+that's because this overbought boolean
+is false
+it's the same for oversold so if we go
+rsi
+plot the shape only if the rsi is
+oversold
+we'll call the settings menu oversold
+so this plot shape will be called
+oversold in the settings menu
+the location is location dot below bar
+this time because it's a buy signal we
+want it under the candle
+the color will be color.green
+for a buy signal transparency is zero
+again
+style is going to be set to start oh
+sorry
+it's going to be set to shape dot
+triangle
+up for a buy signal and the text is
+going to be set to oversold
+now we hit save our chart will update
+and there we have our oversold
+rsi signals simple as that now obviously
+this is
+just a very rudimentary example of using
+an indicator
+in future lessons i'll show you how to
+detect candlestick patterns alongside
+these rsi values so for here for example
+you could make a strategy script out of
+this by detecting when the rsi goes
+oversold
+and then detecting a candlestick pattern
+while this condition is true
+so here for example we could make the
+script detect engulfing candles
+or high high higher close candles only
+when the rsi is oversold
+and then you could create a counter
+trend trading strategy or mean reversion
+trading strategy out of this
+information so this code is very useful
+i know it's very simple right now but if
+you practice this
+uh you'll be able to create some very
+impressive things
+in the future so just quickly you can
+change this text to whatever you want so
+say you wanted this to say
+sell and oversold signals to say
+bye if i hit save that'll change this
+text up here
+to say sell signal and buy signal
+and that's all you need to code in order
+to detect these
+market conditions now obviously you
+could change this to anything you wanted
+you could use stochastics or you could
+combine this
+with other indicators like a ema or the
+atr indicator anything you really
+want to so that's it for this lesson i
+hope you found that
+helpful i'll see you in the next lesson
+where we'll go over candlestick patterns
+so i'll see you there have a great
+trading day good luck with your trading
+best of luck with your coding i'll see
+you in the next video goodbye traders
+[Music]
+you

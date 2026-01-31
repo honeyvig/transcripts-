@@ -1,0 +1,861 @@
+hey guys and welcome to simply learn in
+today's video we'll be creating a basic
+ecommerce website with the help of php
+mysql html css and bootstrap
+now let me show you a glimpse of the
+website we'll be creating which is
+called techbyte.com
+but you can obviously create a website
+for the product of your choice
+so let me just go to the browser
+type in
+localhost website and this is the
+website that we'll be creating this is a
+very basic website for e-commerce
+services but as you can see we have
+displayed the top products on the front
+page of a website and here from the drop
+down menu you can see laptops
+and phones
+so without wasting much time
+let's get started
+now before we begin let me tell you that
+we'll be using visual studio code as the
+ide our code editor
+and
+zam as the web server solutions package
+which will be hosting a local server
+server for the website
+now
+another thing that we need to do before
+beginning
+is we need to go to a browser
+and type in
+bootstrap
+download
+go to this website
+and from here
+download the bootstrap
+file
+this will be a compressed file you can
+download it from here and i'll tell you
+later what we're going to do with it
+now let's go and set up a coding
+environment
+so let me just close this
+go to see
+exam folder
+locate htdocs folder in it and
+create
+any name for your project
+i'll be writing website
+and inside this website what you're
+going to do is
+go to your downloads
+now this bootstrap folder that we just
+downloaded we are going to extract it
+inside
+that
+website folder
+so
+let's just go back
+so
+we
+need them outside
+delete this
+so as you can see we have got a css and
+js folder and we will be using this in a
+website
+now
+let us begin
+our code
+so right click
+open with code
+now this is our visual studio code and
+as you can see
+our website folder is visible here and
+from here we can create a new file so
+our first file would be
+index dot php
+now let's start a code
+type in exclamation mark
+and hit enter and you can see
+this block of code
+will be visible here
+now we need to add a few things
+well not a few quite a lot
+first would be
+title
+the title would be
+well
+since my website is take by i'm going to
+keep the title of stick by
+next what we're going to do is we are
+going to add
+some links
+to this index.php
+so these are the links for the css files
+present inside this folder that we just
+downloaded from bootstrap
+and we'll be linking some of the files
+from this folder onto
+our website so that the website looks
+good yeah
+now the reference would be
+css this is the folder and
+the file is bootstrap
+dot m i n dot css
+so this is the first file that we're
+going to be linking
+next
+let's add
+a script here
+so this is a pretty popular script and
+you can find it on the internet easily
+jacks
+well yeah
+this ends a script here
+let me just recheck if i typed
+it correctly
+yeah seems fine
+now moving on
+we are going to be adding another script
+that would be
+javascript
+and
+it will include boots
+jquery
+sorry bootstrap
+i'm just going to find it
+bootstrap.man.js
+here this ends a second script
+now let us just
+end
+this title
+and move on to the
+body part of the
+code
+now
+what do we need to produce or create
+first
+now the first thing that we need is a
+navigation bar
+so
+to create a navigation bar i'll give you
+a pretty easy way to do that instead of
+writing a hefty big code you need to go
+to your browser
+since we are using bootstrap why not
+take the best out of it
+now type in bootstrap
+navbar
+go to this link navbar bootstrap
+and as you can see this bootstrap
+this navbar can be
+accessed using this
+code just copy it go back and paste it
+in your body
+now we'll be making a few changes to a
+navigation bar according to our
+e-commerce website but before that
+we need to check if this navigation bar
+is visible correctly on the web page now
+to do that
+first
+let's open a zam control panel
+start our apache server
+and go to a browser
+now to see the result of your code to
+see if this code that you've just
+written
+is
+how does it look on a web page we need
+to type in localhost followed by the
+name of the folder that you created for
+your project since the name of my folder
+is website i've written website here
+click on enter
+and well our navigation bar looks a bit
+weird
+there's no designing to it now let me go
+back to
+the code and see what i did wrong
+well yeah
+we don't need this bootstrap reboot.
+reboot.min.css instead
+we need
+just bootstrap.min.css
+let's
+save it go back and reload
+well our navigation bar is visible
+let's go back to the code
+and start making some for changes
+the first change that i'm going to be
+making is
+i will change the
+color theme of this navigation bar
+and
+yeah looks much better
+now let me remove
+some things
+first
+let's change the name to
+techbuy.com
+well
+second
+let us let it be home
+so this is the drop down i will be
+changing it to
+products
+the first product is
+laptop
+the second one
+owns
+we don't need this here
+and
+let me put the divider
+in between
+we don't need this
+disabled part
+either
+and
+neither do we need the search form
+now i want to make a few changes to the
+navigation bar
+so this navigation bar seems a little
+thin
+let me add
+just a little bit of breath to it
+yep
+looks good
+and as you can see
+laptops phones and this dividing line
+now what we need to do create a front
+page that is the top featured content on
+the front page that will be visible on
+our e-commerce website so to do that
+create a div class
+let us name it
+and
+this will be a column
+div inside this
+another div class
+this will be for the row
+and now
+just a second
+yes
+this will also need a class since we
+want our
+text
+in the center of the page
+and
+top
+products
+okay
+let me
+just add some spaces
+well
+before adding those
+images and the products onto a page we
+need to prepare a little bit more so
+before that let us just save this piece
+of code and
+see how does it look so it displays top
+products in the center of the page
+looks great
+now what we need to do before we can
+display the products on this
+page is we need to create a database in
+where
+we are going to store all the
+information regarding our products and
+we will fetch that data from the
+database and displayed on our website
+now to create the database just go back
+to the xampp control panel and start the
+mysql server too now
+here
+type in localhost
+php
+myadmin
+and you can see you
+are now redirected to the php my admin
+control panel
+where you can create
+different databases
+so as you can see i've already created a
+database named tech by
+under which i have got
+another table that is products
+with some data here
+now
+i'll show you how to create a database
+from scratch
+now to do that we need to go to this new
+part now since we already have a tech by
+database let us name it something
+different
+e-commerce
+and
+create
+now
+we have created a database named
+e-commerce and inside the e-commerce
+what we need to do is we need to create
+a table
+let us create the table and name it
+products
+now our table with will mainly consists
+of around
+six or seven
+columns and let us keep it seven
+the first would be id of course and it
+will be auto incremented
+the second
+title of the product
+which will be a variable character
+to 55
+price of the product
+since
+prices can be
+in decimal
+let us keep this decimal
+and
+the values would be 10 comma 2
+next is brand name
+this is variable character
+100 would do
+image now this
+column here will
+contain the location of the image on our
+server or
+on a system since our system is the
+local server so
+this will also be a variable character
+255
+next would be description
+this will be a text since a description
+can be long
+and
+last could be featured
+all right
+let us save this table
+and we have a products table here
+in our new database that is e-commerce
+now we need some images for this
+image file for our products
+now i've already downloaded some images
+let me just
+copy them
+now go back to a c drive zam
+what we're going to do is we're going
+back to our website folder
+and
+we'll be creating a new folder inside
+the website folder and let us name it
+images
+and paste your
+images here
+let me go back to
+this visual studio code and as you can
+see
+our images are visible here we'll be
+using them very soon
+let us go back to
+this
+and let me add an entry here
+so we'll be working
+with one product and once you understand
+the concept you can add
+many more products later on
+so
+the title would be
+google
+pixel 5
+the
+price extra 5000
+brand name goes google
+image
+now to add the path of your image
+what you need to do is you need to go
+back here
+images now the path would be inside
+website
+and inside images folder so
+website
+images
+and then followed by the name of the
+image since the name for my
+google phone is g pixel
+i'll be writing g
+pixel dot png
+make sure you do not make a mistake
+while writing a name
+and in the description
+well i've copied some description from
+the internet i will be posting
+the same here
+google pixel 5 5g 8gb ram 128 gb
+space now
+inside the featured part
+we'll be numbering it one and click on
+go so go back to browse
+and you can see
+your field that you just created visible
+here
+so now that we have the entry
+for our image for our product that is
+google pixel 5 phone in our database let
+us go back to the code to see how to
+retrieve this
+information from this database into a
+code and display it on our screen
+let's go back to our code
+and in our code
+let's go back to the top
+and
+here
+we are going to be creating a
+php
+script
+and inside that script
+i will be
+accessing the database
+now
+let us create a connection to the
+database using mysqli
+connect
+and inside this what we're going to do
+is we will be writing the name of
+loop the server since the server is
+localhost
+and then
+this
+next would be
+root now
+again
+mysqli
+now here select
+db database
+and inside this
+we'll be selecting a database from
+the my admin panel
+so what we need to do is we need to
+write the variable name followed by the
+name of the database that we need
+information from so our the name of our
+database
+was
+e-commerce
+yep
+so
+e-commerce
+so here we have created a connection
+with the database now
+let us create another file sql
+so
+for this this variable will be accessing
+all the information stored in our table
+products so
+we'll be writing some
+sql commands
+select star that is all the details from
+name of our table
+products let me just recheck
+products yep
+and
+the
+featured
+is equals to one
+so remember that
+while
+creating a
+entry we put this featured value as one
+so
+this part of the code is done
+now
+let us go back down
+where we stopped last and
+write
+our
+php
+script
+so
+here
+what we are going to do is we will be
+creating a while loop
+now inside the while loop
+we will create another
+variable
+as products
+which will be equals to
+my
+sqli and this function is used to fetch
+the data from the database
+and feature
+well there's something that we missed
+we did not create the variable featured
+here
+and
+well it would have given an error
+so
+what featured would do is featured would
+use the connection
+to query
+the
+sql command
+now
+go back
+here
+what this while loop will be doing is
+this while loop
+will be fetching
+the data
+from our table under the category of
+featured number one
+so
+next what we're going to do is next we
+will create another
+div class
+which would be
+inside this edge for
+another
+php
+script
+is equals to product
+now
+inside this
+we are since this will be the title we
+will be displaying the title from here
+so what we need to do is
+we need to add the title
+and
+close the
+php script here
+next
+we need to display
+the image
+so
+here in this
+image src we don't need to write the
+path of the image since we have already
+entered that into the database what we
+need to do is we need to specify
+the path
+from where we need to fetch the image
+from the database
+so
+it's pretty simple
+again
+the same thing
+product
+and as you
+would have guessed it it will
+be
+image was it image or images
+let me just recheck
+it was image
+close this close the file
+and
+here we have retrieved our image
+now
+product
+inside this product what we are going to
+get is
+the price
+title so that if one would hover over
+here it will display the title of the
+product
+and
+that's it
+we need to close it
+set
+[Music]
+okay
+so
+[Music]
+yeah
+looks good
+next
+we will display
+the price of the product
+to do that
+we will create a class
+let us name it
+price
+close it
+rupees
+we're doing it again product
+and
+here
+what we need to do is we need to get the
+price and close this
+similarly
+whatever details that we need to display
+here from the database we are going to
+be accessing them
+through
+this script with changing the name of
+the column that we need to access
+so
+now that we have all this
+let us
+also create a reference page
+and
+i'll be creating another file
+details.php
+which will display the details of the
+product
+but
+before that let me create a button
+type button
+class
+button success
+now the name of the button would be more
+and
+well
+this ends here
+also what we need to do is we need to
+let me
+just see what we need to do is we need
+to end this
+while loop
+and while
+here
+and
+just
+close it
+so
+this
+div
+and this div
+everything's good
+save
+let's go back
+and see if it's working
+and voila
+we have our first product
+displayed here
+on the front page of our ecommerce
+website google pixel 5 the phone the
+more button does not work yet
+but we'll be working on it but
+it feels good doesn't it
+now let us go back to the code
+and
+see
+how to create this details.php file
+first
+details.php and inside this file what
+we're going to do is we are going to
+just copy paste some part of the code
+here
+and
+also
+this part of the code
+okay
+and
+we don't need it
+now we need
+one or two more things to be displayed
+here so
+just copy this
+paste it
+and paste it again let's go back to
+[Music]
+our localhost and what we need to
+display here is
+so we have already displayed the title
+the price
+and the image
+so the things that we're left with is
+the description
+and the brand name
+so let's go back
+price is already here
+just add this script
+and
+brand name
+was it brand name
+yep brand name
+description
+that's good
+change
+class name here
+okay
+so
+what we're going to do is we will be
+refreshing this page and clicking on
+more
+and
+well yes good the details of our product
+are visible here
+now let's go back and
+make a little changes
+so the first change would be
+this
+so
+this would be
+product
+details
+and
+save
+click
+and there's still
+a big gap
+yes looks better
+now
+let me just
+you can add some
+bold or
+italics
+or whatever you like
+in this code
+um what did i do
+so i've added bold in the title
+let's see if it works
+i'm not sure if it does
+okay since it's already a heading
+my bad
+let me
+add it here
+okay
+save it so this is the price
+and yes price is in bold now so you can
+make a few changes so look make
+your description look better
+and let us go back to the main page and
+what we're going to do is we are going
+to
+create two new files for this laptops
+and phones to display them separately
+when we click on any drop down menu
+since they don't work yet
+now let me show you an example to create
+a file for this product laptops
+and
+you can create
+the rest yourself so
+first thing that we need to do is we
+need to go back to this database
+into a table
+and
+create another entry
+so the title would be
+associated laptop
+price would be
+1 lakh 20 000 brand name asus
+image so the image is website
+images
+and the name of the image is
+broke asus
+dot png
+bro
+start png
+and
+i've copied some description for the
+from the internet
+and
+now the one thing that you need to
+notice is we are going to be keeping
+this featured part as
+2 instead of 1
+and go back to browse and you can see
+the detail that we just created with the
+feature number two so now go back to our
+code
+and create another file let us name it
+product
+laptops dot php
+let me just see
+yep
+i have
+so yeah i may have skipped this part so
+in the drop down menu when we created a
+navigation bar here it was written
+this
+so we need to replace this reference
+with the name of the
+php file that we just created that is
+product dash laptops dot php so pro
+duct dash laptops dot php
+and inside this
+first thing that we need to do is copy
+this code paste it here
+now here change it to
+two
+and
+drop down
+top products everything looks
+fine
+save it
+since the feature number will be 2
+let us go back
+refresh
+click on laptops
+and here you can see the asus rogue
+laptop visible
+now let me
+add another product on our feature page
+that is a front page to show you how do
+we display more than one product with
+the same code so
+go back to this database and create
+another entry
+let's say
+hp laptop
+price would be
+80 000
+okay i think i just
+created an entry
+let me delete it
+go back
+hp laptop
+price
+80 000
+brand name hp
+image
+website
+images
+name of the image
+that is hp underscore laptop dot png
+hp underscore laptop dot png
+and the description which i have copied
+from the internet
+and in this feature we are going to be
+writing one
+since we are displaying this on the
+front page of our website
+go back to browse here are the details
+now let's get back
+we don't need to change anything just
+save it
+go back and refresh
+and
+as you can see we have our hp laptop
+visible here and similarly
+we can just re add products into a
+database and this single piece of code
+is enough to display them all
+on a web page
+so guys these are some of the basics of
+an e-commerce website you can add more
+products choices more detailed
+descriptions and add more designing
+using css bootstrap cards
+and
+buy sell
+sections on your website
+just play along with the code and start
+making your own web pages
+so thank you so much guys for watching
+if you like this video do hit the like
+button and subscribe to simply learn to
+follow more such content stay safe and
+keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

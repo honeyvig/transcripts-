@@ -1,0 +1,179 @@
+foreign
+in today's video we're gonna be learning
+all about Pointer versus a recency but
+before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's get
+started with the one point agenta that
+is pointer versus adjacency
+a pointer is a variable that holds the
+address of another variable to be
+executed which can be of data type int
+care array Etc
+a pointers are used to access the memory
+location easily and it reduces the
+storage space also helps to increase the
+speed of a program execution
+let's look at the syntax
+so in asterisk symbol followed by the
+name of the pointer variable where p is
+a pointer variable holding address of
+another variable of type integer
+similarly a pointer variable can hold
+the address of a variable type cat float
+array Etc
+so to understand in a better way let's
+have a look at the memory representation
+of a pointers
+so basically when we declare a variable
+memory is allocated and the value of a
+variable is stored in that memory at
+some address so in this example let's
+consider the address to be 200.
+similarly when a pointer variable is
+declared memory space is allocated and
+the values stored in that memory is the
+address of a variable a
+so now let's execute a program using a
+pointer variable
+so as you can see my screen
+let's create a main function and inside
+that let's
+declare a variable
+in a and assign a value 10. then
+creating a pointer variable
+and then we cannot assign EA here
+so we have to give a reference of EA not
+a variable e and then let's print the
+value of a
+so this this statement here printed
+statement will print a value of e that
+is 10 so let's execute it
+so as you can see the value 10 is
+printed successfully
+and now if you want a reference of a
+that means address
+let's give you a reference
+to know the address of a
+and let's execute it
+so here
+is stored at the address this
+and now
+let's see uh print the a sorry print the
+variable p
+foreign
+so as you can see what p is holding here
+that is the address of a variable 10. so
+as you can see the same address so here
+this is the address where 10 is to and
+this is the p p is holding the address
+of a
+and now let's see where p is stored at
+so here
+you can see but this is the variable 10
+and this is the address where a is
+stored at and this is what p is holding
+the address of a and this is where p is
+stored at at the address this
+I hope it's clear
+now we got some basic idea of how to use
+pointers in C so moving ahead let's
+understand what arrays in C is
+an array is a homogeneous collection of
+elements of the same data type similar
+types of elements are stored and a one
+name called an array name and also the
+array of elements stored in a
+consecutive block of memory suppose you
+want to store 10 numbers in that case
+you must create 10 variables separately
+to hold the values instead you can use
+arrays that contain more than one value
+under a single RNA which becomes easy to
+access the elements through the index
+and also it avoids memory overflow array
+syntax is data type followed by rename
+and the array size
+so now let's look at the memory
+representation of an arrayancing
+for example int as a data type A is an
+array name and the size is 5. so here
+array initialized to 10 20 30 40 and 50.
+so as you can see the index starts from
+0 to n minus 1 which is up to 4 and all
+the five elements are allocated
+consecutively in the memory so now let
+us try to execute a simple program to
+understand the array declaration
+so here let's declare a variable that is
+array
+of 5 we are giving a size of Phi equal
+to
+and assign a values 10 20 30 40 and 50.
+here we are giving a for Loop in order
+to print the elements one by one so
+let's give I also here
+so for I is equal to 0
+till I less than 5.
+and I plus plus
+print
+the values
+and here we are giving here I
+thank you
+okay so let's execute it
+so as you can see the values are printed
+10 20 30 40 and 50.
+so here as you can see a of 0 so
+initially I is equal to 0 and I up to
+less than 5 so here as we know this is
+index 0 1 2 3 and 4. so up to this up to
+4 it will print all the values so
+initially I is equal to 0 it checks
+whether 0 is less than 5 if yes then it
+will print the first value that is 10
+then again go back to the for Loop
+increment I by 1 so now I is equal to 1
+so
+it comes to the control comes to the
+next position and checks whether one is
+lesser than 5 if yes then prints the
+second value and it goes up to I is less
+than 5 that is 4 is less than 5 then it
+will print the last value that is 50.
+following let's say the basic comparison
+between pointers and a recency
+so first let's see the Declaration so in
+pointers we have int asterisk pointer
+that is the pointer variable and then in
+arrays we have int as a data type A
+array name and the size 5. then coming
+to the working a pointer is a variable
+that holds the address of another
+variable to be executed and in arrays
+the array is a collection of an element
+having a similar data type
+and storage of a pointer a pointer is
+used to store the address of another
+variable whereas arrays the arrays used
+to store the value of a variable
+so basically in pointers it only holds
+the address of variable but whereas in
+arrays it holds the value of a variable
+and coming to the capacity of a pointer
+a pointer can hold only one address of a
+variable whereas arrays array can hold
+or store n number of variable values
+foreign
+so with this we have come to the end of
+this session on pointer versus rsnc I
+hope this session was informative and
+interesting until next time thank you
+stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,433 @@
+hey friends welcome back to another
+plane script coding lesson my name is
+matthew from zen and the art of trading
+and today i'm gonna be showing you how
+to use the ATR indicator in your scripts
+so in the previous lesson i showed you
+how to use the RSI indicator to create
+overbought and oversold signals in this
+lesson I'm going to show you how to use
+the ATR indicator to create a trailing
+stop so we're just going to draw onto
+the chart our trailing long position
+stop and a short position stop I'm going
+to do it this way because it's just a
+lot more simple to demonstrate the
+logistics behind using this indicator in
+your scripts but in future lessons I'll
+come back to this lesson 6 script this
+RSI script and I'll show you how to plot
+your stop-loss
+and target placement so say you wanted
+to go along here after the RSI went
+oversold then we got a bullish engulfing
+candle so you want to have a 180 our
+stop loss and a 180 our target then you
+can actually plot these values directly
+to your chart using pine script but
+today's lesson we're not going to cover
+that I'm just going to keep it simple
+we're gonna delete the script I'm gonna
+start a new blank script and I'm going
+to call it lesson you guessed it seven
+keeping it really simple for you guys
+here alright so the first thing we need
+to do is set our overlay to true now
+overly to true if you if you set this to
+false then if I save this and add it to
+my chart
+it'll draws an oscillator box so now
+we're plotting the price we have a line
+chart that is separate to our main chart
+so that's useful when you're creating
+oscillator indicators basically like the
+RSI stochastics when you're working with
+those sorts of those styles of
+indicators but today's script we're
+going to be drawing directly to the
+chart so that I can visually represent
+the information I'm going to show you so
+if I click Save there delete this script
+and add this back to my chart we now
+have the closing price plotted directly
+to the chart so let's get straight into
+this one so first thing we're going to
+do is we're going to get
+inputs from the user because it's always
+useful to be able to adjust these values
+on the fly the first thing we're gonna
+want to get is the ATR length by default
+this is usually 40 a 14 period ATR so
+we'll leave that as the default setting
+but it's also great even creating
+scripts especially to release to the
+public it's always considered good
+etiquette to include as many options as
+you can for customizing the scripts so
+I'm gonna get in get you guys into that
+habit early on and so we're gonna call
+this 180 our length and we're going to
+have a type of input integer it's gonna
+be a whole number we're gonna have a
+default value of 14 and a min value of 1
+might as well this isn't necessary but
+the ATR length can't be calculated
+beyond a 0 or negative value so might as
+well get into a good habit of using this
+min Val function as well or feature the
+second input we're going to use is a
+boolean and we're gonna call this one
+use structure so I'll explain what this
+does later first of all let's just code
+it in so we're gonna say use structure I
+like to put question marks on the end of
+my boolean inputs just out of habit you
+don't have to do that the default value
+is going to be true in this case this is
+going to be used for detecting swing
+lows and swing highs to trial stop-loss
+the alternative method is to just have a
+180 R or whatever multiplier you want of
+the a TR from the closing price so
+that'll make more sense later I'll
+explain that later on so we're gonna
+have two more inputs the next one is
+look back this is for the structure look
+back so title is how far to look back
+for high-lows and we're gonna make this
+a integer as well because it's gonna be
+a whole number and we're gonna set a
+default value of 7 so we're gonna look
+back seven bars for swing high and swing
+lows the min value be 1 as well on this
+input and then we're going to create one
+more variable called the ATR stop
+multiplier and I'll also explain what
+this does later this will make more
+sense later I just like to get these
+inputs out of the way early so we're
+gonna say ATR times question mark and
+this one is going to be an input dot
+float it's gonna be a floating point
+variable and if I just quickly add the
+ATR indicator on to my chart you'll see
+why that is see if I hover my candle my
+cursor mouse cursor over any of these
+bars the it'll show you down here in the
+left-hand corner of this indicator this
+oscillator box it will show the ATR
+value and that's obviously a
+floating-point number it's not a whole
+number it's got a decimal point zero
+point zero zero zero one six is one
+point six pips I'm on the 1-minute chart
+here if you're wondering why the ATR is
+so low I just figured that the
+one-minute chart would be the best time
+frame to demonstrate this technique on
+but this script will obviously work on
+all time frames so for this one we're
+going to have a default value of one
+point zero so we're going to have a
+default value of a one ATR stop
+multiplier so whatever the ATR indicator
+is giving us that will be our stop loss
+so say above this swing high will have a
+one ATR stop above this swing high we
+don't need to set a minimum value for
+this but might as well while we're here
+and I'll set it to zero point one if
+you're going lower than a zero point one
+ATR multiplier then you might as well
+not use this at all so that's all of our
+inputs we're going to be using today so
+now the next step is to calculate the
+data that we're going to be plotting to
+the chart so we'll call this comment
+calculate data just for our own
+reference and the first thing we need to
+do is get the current ATR value so we're
+going to call this variable ATR just
+keep it simple I like my scripts to be
+as simple as possible we'll call it ATR
+and we'll use the ATR function to get
+the current ATR value with our specified
+ATR length so
+this by default is 14 that's the that's
+what this see 14 RMA is giving us a
+default AGI reading and so we'll this
+line of code here so these values will
+be identical and I'll show you that
+right now actually if we click the save
+and we look up here that at the top left
+of the chart you can see that those
+numbers are identical so we're plotting
+a 0.2 for now fit ATR it's the same on
+both indicators so that's good let's
+move on to now calculate our stop losses
+so our long trailing stop is going to be
+plotted below price and that's for long
+position so if we were to have gone long
+here then it will plot where our
+trailing stop should be which will be
+180 our below the most recent swing low
+so let's type that in long stop is set
+to and then this is going to get a
+little bit complicated here but it's not
+that crazy it's just gonna be a bit
+confusing to read so I'll explain it as
+I go but we're going to use the
+conditional operator again and this just
+saves space in our code and we can put
+all of this if-then statement into one
+line of code so we're going to say use
+structure question mark if we're using
+structure if we've ticked YES on this
+you structure input then we want to
+calculate the stop loss based on the
+lowest low over our look-back period
+otherwise if we're not using structure
+then we just want to use the closing
+price so this line of code here now does
+two things if we have this ticked as
+true use structure is true then we're
+going to search back seven candles
+that's the default value of our
+look-back variable we're gonna look back
+seven bars and we're going to find the
+lowest low in those seven bars so in
+this case that would be this low in here
+and then we will calculate the stop loss
+as one eighty are below this swing low
+so the way we do that is
+we're gonna - because our stop loss is
+below price we're gonna - this lowest
+low or this closing price by the ATR
+value which is here but we're not just
+going to do that because otherwise we
+can only use a standard 180 our trailing
+stop what if your user wants to have a
+two ATR or three ATO or half ATR
+trailing stop well the way that you
+achieve that is by timesing this value
+this calculation by our ATR stop
+multiplier so if I type that in there we
+now have our trailing long stop so if I
+just quickly I'll just demonstrate what
+this looks like so we'll type in plot
+our long stop the color is going to be
+color dark green it's going we're going
+to use a little bit of style here we're
+gonna say style equals plot style
+underscore line break line be are the
+short for line break then we're going to
+call it we're gonna title it long
+trailing stop we're going to set the
+transparency to zero we don't want any
+transparency on this if I hit save here
+you can see we are now plotting our
+trailing stop and it's plotting 180 are
+below the lowest candle or the lowest
+low of the past seven candles so say you
+wanted to use a standard trend following
+technique and you wanted to trail your
+stop-loss below the low of the pullback
+preceding the breakout the most recent
+breakup so in this case it would look
+like this we have a swing high here a
+couple of candles pullback then we break
+in close above the swing high on this
+candle here if you were to hold your
+mouse cursor over this candle look back
+seven bars the ATR indicator over this
+candle here this trailing stop will be
+plotting the lowest low below these
+seven bars so on this one-minute chart
+you might want to make these look-back
+period a little bit shorter than seven
+bars because you can see here that
+that's that would put you on this bar
+here which is lower than the swing low
+of the pullback but let's just say we
+hover our mouse over this
+here this will give us the trailing stop
+value so say you went long down here on
+this bullish engulfing candle and you
+had a 180 ah stop below this entry which
+would put you around here somewhere and
+say that when this breakout happened you
+wanted to trail your stop-loss up a
+little bit you would move your stop-loss
+you'd hover your mouse over here look
+for the value which up in the top left
+here is zero point six zero three eight
+eight so you would help bring your your
+stop-loss
+up to this green line here and so that's
+how this indicator would work in
+practical terms but that's not important
+for the demonstration so let's just
+continue onwards now and we'll draw the
+short trailing stop so the short stop is
+going to be set to use structure
+question mark are we using structure if
+we are we want to use the highest high
+over the pier over the look-back period
+as our reference price otherwise we
+won't just want to use the close and
+because this is a trailing stop that is
+above price action we've won the plus we
+want to add to this value so we're going
+to add the current ATR times our ATR
+stop multiplier so by default this is
+set to one so this is just one ATR but
+as you can see if you want to change
+that to say - ATR that will widen your
+stop-loss or a zero point five ATR which
+is why we set this to a float not a
+whole number we can set it even tighter
+it's up to you that's a matter of
+preference
+so now we've got that we can now plot
+I'm just going to copy this line of code
+I'm going to plot our shortstop and the
+shortstop's going to be colored red
+everything else can stay the same we'll
+change this to say short trailing stop
+click Save and it will now plot our
+short trailing stop above price so if
+you had word to have gone short up here
+on this little double top up here maybe
+you had a 180 our stop above the high
+then as price went into your favor
+you were just simply every time we had a
+breaking close below a swing low so we
+had a break and close below
+the swing low here you'd hover your
+mouse over that candle and then whatever
+value you get up here is where you would
+put your stop loss and so that's a
+practical way of using this particular
+indicator this script and so I'll do one
+last thing before we finish this lesson
+and that's we're going to keep plotting
+this ATR indicator but we don't want to
+actually plot the value if I scroll this
+right down right down you'll see that
+it's actually plotting our ATR to the
+chart we don't want that because it's
+gonna on some instruments that may draw
+over price action and we don't we don't
+want that so what we can do is use the
+transparency function so what we'll do
+here is I'll set the color you can set
+the color to whatever you want I'll
+leave it as blue in this case I will
+also title it so that our users of our
+script can adjust this color and
+transparency as they wish and we'll set
+the transparency in this case to a
+hundred we wanted a hundred percent
+transparent here we have zero percent
+transparent because we want it to be
+drawn to the chart clearly here we don't
+want to drawn at all if I type that in
+hit save and now if I scroll right down
+you'll see that it's not plotting to the
+chart anymore and so that's the end of
+this demonstration we now have a
+trailing stop 180 our indicator so I can
+you can see if I hover my mouse on any
+of these candles the blue line up here
+that's plotting to the top left is the
+same as the actual ATR indicator in the
+bottom left down there so we can now
+remove this and we now have our trailing
+stop indicator and if account to the
+settings first of all you can adjust our
+values here see that we've titled our
+plot our drawings so that we can
+actually change the color of these so if
+you wanted a blue trailing stop and an
+orange a blue long trailing stop and an
+orange short trailing stop you can
+change that in here and of course if you
+wanted to adjust the ATR multiplier in
+come up here and have a one and a half
+eighty our multiplier that'll widen your
+stop-loss or if you want to change the
+look-back period of the ATR the ATR
+length you can change that in here to
+say calculate
+the ATR based on the past seven candles
+instead of the past 14 or you can adjust
+this so you might want to make this even
+less of a look-back so maybe three
+candle look back and now it will detect
+the highest high and highest low of the
+past three bars to draw our trailing
+stop above or below and there we have it
+I hope that all made sense if not feel
+free to leave any questions in the
+comment section I'll get back to you as
+soon as I can and the reason why I'm
+making this lesson is less than seven is
+because the future scripts that I go
+into are going to use the ATR indicator
+probably quite a lot so it's important
+we get this out of the way early and
+this is the simplest method I can think
+of to demonstrate how to actually use
+the ATR indicator on your charts so that
+brings me to the end of this lesson I
+hope you enjoyed it please leave any
+feedback in the comment section any
+suggestions of topics you'd like me to
+cover anything I missed or didn't make
+clear enough shoot me a question I'll
+get back to you as soon as I can
+I've been getting a lot of positive
+feedback from these lessons and it's
+really encouraging I'm really glad that
+you guys have finding value out of these
+lessons and I'm glad I'm helping you
+guys advance your own trading career
+this stuff has really dramatically
+improved my own trading and I'm just
+super grateful to have these tools at my
+disposal and I'm really excited to pass
+them on to you as always if you have any
+questions head over to Zen in the art of
+trading comm there's a link in the
+description I have heaps of lessons over
+there written lessons and a whole
+library of free indicators free scripts
+that I've created myself I've created
+dozens and dozens and dozens of scripts
+some of them premium you have to pay for
+them because they took me quite a long
+time to create like my my ultimate pull
+back indicator for example if I throw
+that on the chart this will just give
+you an example of what you can achieve
+when you master this skill so you can
+see here this indicator is plotting
+signals to the chart pullback signals so
+if I turn off lesson seven it's plotting
+my stop-loss one eighty are above the
+swing high and my target one eighty are
+below
+the entry point and it's using the EMA
+has changed color based on price action
+all of this stuff you I'll teach you
+guys how to do yourself but if you want
+to skip ahead head over to my website
+and check out some of my free indicators
+the source code for my free indicators
+is readily available so you can go there
+and use them as reference material if
+you want to that's it for today see you
+next time guys take it easy trade green
+and good luck with your coding
+[Music]
+you

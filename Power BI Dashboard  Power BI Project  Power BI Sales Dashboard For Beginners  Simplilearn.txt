@@ -1,0 +1,661 @@
+hey everyone welcome to Simply learn
+today we will learn data analytics with
+PBI and build an endtoend PBI sales
+dashboard that's said if these are the
+type of videos you'd like to watch then
+hit that like And subscribe buttons and
+the bell icon to get notified just for a
+quick info if you want to upscale
+yourself master data science and data
+antic skills and land your dream job or
+grow your career then you must explore
+simply learn SC of various data science
+and data analytics programs simply learn
+offers various certifications and
+postgraduate programs in collaboration
+with some of the world's leading
+universities like Caltech Purdue IIT
+conour and many more through our courses
+you will gain knowledge and work ready
+expertise and skills like Advanced Excel
+python machine learning data
+visualization generative AI and over a
+dozen others that's not all you also get
+the opportunity to work on multiple
+projects and learn from industry experts
+working in top di data and product
+companies and also academic GS from top
+universities after completing these
+courses thousands of Learners have
+transition into a data science or data
+analytics role as a pressure or moved
+onto a higher paying job profile if you
+are passionate about making your career
+in this field then make sure to check
+out the link in the pin comment and
+description box Bel below to find a data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with our powerbi project for
+beginners which is a sales dashboard in
+real time now before getting started
+let's consider a simple use case for our
+realtime sales dashboard business group
+so the context is let's imagine there's
+a client and the client owns a business
+operating across various regions and
+product categories with goals to grow
+and improv performance now let's discuss
+the challenge the client struggles with
+limited visibility to sales data traffic
+to lead ratios and lead to conversion
+rates this lack of information leads to
+missed opportunities and inefficient
+resources location now let's plan a
+solution to this with our realtime sales
+dashboard a realtime sales dashboard
+provides the client with a clever view
+of critical business metrics which
+includes the following firstly eight the
+dashboard will show real-time sales
+across regions and states allowing the
+client to identify which areas are
+performing well and which are the ones
+which need more attention second one
+product category performance sales
+breakdown by product category will help
+the client determine which products are
+driving revenue and which may need more
+Focus this allows for targeted marketing
+and inventory management now the third
+one traffic to lead ratio the dashboard
+will display the percentage of website
+visitors converting into leads if this
+ratio is low the client can improve
+website usability or come up with
+promotional strategies fourth one lead
+to order conversion rate tracking lead
+to order conversions reveal how many
+leads become customers a low conversion
+rate signals the need for changes in
+sales process for improved checkouts now
+the last one which is the impact on
+business strategy the dashboard gives
+the actionable insights to focus
+resources where they are needed the most
+understanding which regions and product
+categories are underperforming allows
+for timely adjustments so in conclusion
+a realtime sales dashboard enables the
+client to monitor critical metrics
+address inefficiencies and make
+datadriven decisions now that's the
+importance of a realtime dashboard now
+let's continue with the most powerful
+data analytics tool which is the powerbi
+and built a real time sales dashboard
+now this is our data set so if you could
+see here we have certain entries or
+columns just a moment yeah there you go
+so we have order ID order date and
+delivery date customer ID product
+quantity traffic leads orders Revenue
+Etc correct now we will make some
+modifications to this particular data
+set and we will continue with an
+automation where we will use powerbi and
+power query to make make some
+transformations to this particular data
+and pull this data onto powerbi
+dashboard or powerbi platform and then
+build a completely functional and
+interactive
+dashboard now we are on powerbi so we
+will select a blank report so this is
+how a blank report looks like so we can
+directly start off with importing the
+data but before that now we can directly
+start off with pulling the data from
+Excel data source or you can also pull
+data from SQL Server if it's data you
+can just pull it to the platform that's
+how powerbi works but before we do that
+before we import the data to the powerb
+platform let's add a background so this
+particular background acts as a
+dashboard template now you can add a
+dashboard template by selecting the
+visual option over here and selecting
+the canvas background and browsing the
+image so my image is in the download
+section so this is the one papia
+dashboard
+open and here you can have 100%
+transparency or you can reduce the
+transparency to about
+90% there you go now image fit should be
+fit there you go now we have the
+template ready now we can get started
+with importing the data now if you can
+see the data you can you can see uh I
+have 20 22 23 24 and 21 but inside this
+for I just have one file which is 2020
+so we dealing with five data sets right
+so we're dealing with five data sets and
+uh I'll tell you why I'm doing this
+right so uh today we are in 2024 but
+tomorrow we'll be 2025 and later 2026
+and so on right so it is obvious that
+every year a new or fresh data is
+generated now if you give a location to
+your platform which is powerbi and
+whenever new data is generated if you
+just pull the data the data will be
+automatically analyzed and your data set
+or your dashboard will be updated right
+so we're trying to automate that so
+let's follow that particular uh option
+so to do that go to file option and here
+you can see import button or sorry get
+data and here uh go to the get data
+started to get started and here you'll
+have a bunch of options so you can
+directly choose an Excel work work text
+XML so we will choose the folder one
+right now connect to the
+folder browse add the folder path it's
+in downloads and
+uh so this is the one powerbi aers data
+just cross check
+once yeah this is the one PBI aers
+data with one single folder yes perfect
+I can close the file
+press okay now that you have set a
+location of your data press okay now it
+will automatically select the data set I
+just click on
+that so instead of before loading we
+would like to or I would like to do some
+transformations to it so order of all
+those four options uh instead of loading
+I chose the uh transform option right
+now we are on the power query now click
+on this button which shows us double
+down arrow keys to have a preview of
+your dat set now select the first option
+which happens to be the sheet
+one now
+okay now you have a brief overview of
+your data right now let's do the
+Transformations which we're looking for
+the first one so here you can see a
+column known as Source name so we have
+an entire entry of source names here but
+we don't want that what we can do is you
+can just remove that particular column
+now you can see one of the columns has
+been removed so that step has been
+monitored right so order ID is fine it's
+an integer or number format now let's
+check the order date and the delivery
+date so we want this information so make
+sure that the data type is perfect it
+should be in date data type nothing else
+and coming into customer ID here you can
+see there is a small problem with it so
+the customer ID is is
+13278 along with the name right now
+let's imagine we want two different uh
+columns let's imagine we want customer
+ID as a separate column and customer
+name as a separate column can you do
+that yes we can so all you have to do is
+choose the option
+of split column by D limitter and you
+will have a new window popped up and
+here you can choose uh the D limitter so
+it has already recognized it it is
+showing hyphen but the thing is we are
+keeping it as space hyphen space because
+in the column it is located as the same
+or it is mentioned as the same just
+press okay and there you go now you have
+customer ID and customer id2 so this
+will be not customer ID do1 it will be
+just customer ID and this will not be
+customer ID do2 it will be
+customer name make sure that you watch
+everything here right the rename column
+step is also being recorded here now if
+you want to change the data type you can
+also change the data type go to type and
+here you have the whole number option
+it's fine and also check the audit date
+and uh delivery date change type or uh
+change uh it isn't dat it's fine now um
+we have customer name category product
+quantity traffic leads orders cost to
+company now let's let's say I want a new
+column which shows me profit now how do
+you calculate profit so profit can be
+calculated by subtracting revenue from
+cost to the company so select the first
+Revenue column second will be the cost
+to company because we are trying to
+subtract revenue from cost of the
+company now what you'll do is go to add
+column and here choose
+subtract there you go now instead of sub
+R fraction rename it as
+profit and I you can drag and drop this
+particular column right next to cost to
+company right and sometimes you may get
+negative numbers don't worry because the
+client try to offer some discounts and
+if you're selling some products on
+discount then it's obvious that you'll
+get a negative number it's fine not a
+problem he's trying to uh you know kind
+of send out the or finish the
+stock from the inventory right now if
+you come to the uh initial states where
+you have audit date and delivery date
+let's say I want to calculate number of
+days taken by the delivery agency to
+deliver the product to your customer now
+that can be calculated by subtracting
+delivery date from ordered the date
+right now choose the delivery date
+column first next the order
+date right now same go to add column and
+here subtract days now again it will go
+all the way to the last instead of
+subtraction you can rename it as days to
+deliver there you go you're fine now you
+can drag and drop this particular column
+next to the order datea and Order uh
+delivery
+date there you go now check the data
+type for your profits and
+revenue so now we are back to the column
+Revenue cost to company profit select
+all three columns at once and right
+click or double click change type to I
+want the data type not as decimal number
+or anything else I want it to be
+currency let's check for the option as
+currency it's okay U as of now I'm
+unable to find out where exactly we have
+the column or settings to change it to
+currency format or dollar format but if
+you know please feel free to comment uh
+in the comment section below so that our
+Learners will also have that information
+so far I'm comfortable with the data
+transformation now what I can do is just
+go to home and in this option you can
+close and
+apply shortly the data will be
+loaded there you go if you drop down
+here you have everything you require
+category cost to company and you can
+just select this option over here table
+View and you will have a complete view
+of your data set so we have order ID
+audit date delivery date days to deliver
+which we made a new transformation and
+customer ID separated from customer name
+category product and we also added cost
+to company profit calculation which is
+also available here right now go to the
+visualization view right now here we are
+supposed to add the um kpis traffic kpi
+leads kpi ers kpi and revenue kpi and
+here since we also have uh in the
+initial stage we discussed about four
+five different years right so we have
+2020 2021 2 3 4 and five so we will be
+having about four to 5 years so for now
+I just selected 2020 right so once we
+add all the remaining data sets we will
+have an option here drop down option
+which will show the year data as well in
+case if you wanted to track down the old
+years data how the product performance
+was available in the last year or last
+before you can go through that here
+we'll have a drop down option for state
+and here you'll have a drop down option
+for product if you want to specifically
+search for a specific product
+performance you can also do that and all
+state sales so you'll have a map chart
+over here and you'll have a
+month-on-month sales line graph here
+status so order delivered in the in
+pursuit or if cancelled you'll have all
+that status here and category so we have
+about three to four categories and we
+have five regions so you can see the
+sales data in bar graph and regions so
+let's proceed with that I hope I made a
+brief overview of that now what we will
+do is add the kpis first which is
+traffic leads orders and revenues so
+here you choose the
+card and here you can add it now select
+traffic
+data drop the data here and uh check the
+aggregation that is some
+fine and you can make some settings to
+it right you can go to visualizations
+here and you can select
+uh the layout and here you have call
+outs and go to General again and if you
+don't want the header ion you can remove
+it and you can go to FX and you can
+increase transparency there you go so
+that you have a background there and if
+you don't want the visual body you can
+eliminate it
+so you can remove the background as well
+and now push this particular kpi to
+here so the background is
+off you can adjust the uh height and
+width of U your card as well or you can
+manually do it over here
+which is also
+fine we want values and transparency
+will be 100% I don't want okay that's
+the text
+transparency so that's the value
+transparency we want we don't want to
+label sum of traffic and uh here you can
+also select transparency here fine so
+far so
+good
+layout I don't want the background for
+label I don't want a border for label I
+just want the value I can just keep it
+here there you go Center
+align Center align as per our request
+and now what you can do is just copy and
+paste the same card once again here we
+will change the data values right so
+initially we had sum of traffic now we
+don't want traffic here I want leads
+drop the data value leads to here check
+the aggregation it should be
+sum now you can copy paste it once again
+and paste it in orders now we want
+aggregation of orders so we will remove
+the leads here and and we will add
+orders make sure that the aggregation is
+some sometimes it may change so pay
+close attention to it copy paste once
+again and you will have Revenue numbers
+here make sure that you are adding
+Revenue here most of the time you will
+be focusing on Revenue very rarely
+profit
+okay if you want specifically profit you
+can also add that there you go now here
+so copy paste once again
+here you will add the value as date
+order
+date so if you could use the drop down
+here or drill down
+option from here itself hierarchy you
+can pull here okay you can eliminate
+this one pull here and add to the data
+field so that you have U okay we don't
+want the count aggregation we
+want okay it is considering it as a
+value but not to worry we will check
+this later proceeding ahead let's add
+state so for that we want a slicer right
+so we will add slicer here make some
+changes to it
+go to visuals to the
+slicer let's try to add state to it and
+then try to make some changes to it so
+we we
+have okay we did not include State here
+but anyways we can have a customer name
+option over here right so we can call
+out customer name and add it to the
+field and we can make some changes to it
+right and here if you use this
+particular
+option
+here in you can include a search bar
+okay along with that if you go to the uh
+visualizations option over
+here you can change the slices settings
+to a drop-down option and
+uh you can go to
+General and you can also remove the
+header icon and inside the FX you can
+remove the
+background and you can also remove
+the title
+the slicer header now what you can have
+is just simple name of customer over
+here uh we will have that state renamed
+as customer name not a big
+problem just select it align it to the
+center there you go now you can copy
+paste this particular filter or Slicer
+in here and you can change
+the customer name to product
+name so here we have the product added
+to the field there you go now you can
+have the search bar and you can also
+specifically check for a specific
+product so we missed out a few columns
+uh during our data transformation so we
+use some be lookups and updated the data
+now we have the required columns
+together the state and the region
+columns so we can proceed with the
+visualizations as per the previous plan
+right now we also added the a column so
+there was some data manipulation to be
+done here as well so we did that we
+added a filter uh I mean a slicer and as
+per the data we just have one year here
+2020 so we will select that and uh here
+we have the states of United States all
+states current states in United States
+of America and here we have the product
+details right now let's proceed with the
+next part of our dashboard for which
+will be the uh bar graph or column graph
+so we will have the uh column graph and
+Status uh so that we will have a brief
+explanation on how many number of orders
+are delivered and how many number of
+orders are not so we will use order ID
+in uh y axis and it should be uh sum of
+all the orders and in xaxis we will have
+the
+status all status which will be in
+x-axis total number of Autos delivered
+and total number of Autos not delivered
+in transit so we'll have a detailed
+information on that front and uh now we
+will do some settings so that we make it
+uh similar to the other ones so we we
+don't want title we don't want header
+and Tool tips maybe we want them and if
+we go into efforts background I don't
+want the background it should be plane
+as for the
+plan you can adjust the scale of the
+graph there you go we have the order
+status now category wise sales let's
+take a donut chart is it here and we
+will have the
+values
+sales St and we have
+Revenue
+here add it to the values and the legend
+should be
+category there you go now we have the
+category wise sales go into visual
+effects we don't want the
+legend we might use the details and in
+general you don't want the title of the
+graph header icons and to tips and in
+the FX I want it to be a transparent
+background now adjust the
+scale there you
+go
+region now we can have a finnal graph
+here and in values we can add revenue
+and uh the aggregation should be sum of
+Revenue and in a category we will add
+the
+region so we have
+Central north south east west regions
+going to visuals data labels category
+labels okay we want category
+labels in general we don't want the
+title header
+icons eliminate them and Tool tips just
+have a look and after to that FX I want
+it to be a transparent background there
+you go adjust the
+scale back to
+visuals now we have the conversion rate
+as well now let's proceed with the map
+chart go to visuals select map
+chart there you go now adjust it to the
+scale before we add the values
+so that on a quick Lance you have all
+the states details right now let's add
+the locations so state will be the
+location and in The
+Legend So state is the location here and
+in the values we will
+add data field which is
+revenue there you go now go to the
+visuals and in general you don't want
+the title you already have the title
+right here and
+uh go to effects make it look
+transparent so we don't want the
+background here and on a glance can just
+increase the size of the map and reduce
+the size so that that you have an
+overall view in one location right just
+like that so we choosing the North
+American or total All American states
+here you can choose accordingly now
+let's proceed with the line dra so one
+thing to remember whenever you're
+working with dates right so whenever you
+have calendar or date related data
+entries in your dat set go with the line
+graph to check the performance on day by
+day week on week month month on month or
+year on year levels right so there you
+go now let's add xais here so expand the
+date or you can choose audit date here
+let's choose the audit date and we will
+have month in the
+x-axis and in the y axis we will see the
+revenue again if you want Revenue you
+can go with that if you want to see
+traffic details or if you want to see
+any other detail you can just change the
+values here
+right there you go now you can see uh
+one last thing uh go
+to General and here FX remove the
+background title we have already placed
+the title here so we don't want that and
+to
+tips there you go so the fully
+functional and
+interactive dashboard is now ready right
+and now this particular dashboard
+works now let's save
+it save it as PBI sales
+dasboard there you go now what we have
+to do is let's add the remaining data
+correct so we have created a template we
+have created a similar vpa type similar
+uh query or kind of automated the
+process now whenever we add the new data
+into to that file that initially created
+powerbi will automatically extract that
+particular data and give you an updated
+report right now let's go back to the uh
+files and go to download section now
+what we will do
+is Select these files cut and drop them
+into the powerbi data
+folder and just close
+it right now go to home home and just
+click on
+refresh to
+refresh and now we have 10,000 rules
+correct now for for the validation
+purpose let's check the years here now
+we have all the other years now let's
+select 2024 the latest year and you have
+the latest reports currently on your
+dashboard now you can select a specific
+State for the
+final reports and you can also select a
+specific U product I would like to go
+with the chair and you have an updated
+report right here and including the map
+correct so this is how you can create a
+completely interactive and automated
+realtime powerbi dashboard an end to end
+powerbi dashboard and with that we have
+come to an end of this session on
+realtime powerbi end to end dashboard
+project
+if you have any queries regarding any of
+the topics covered in this session or if
+you require any of the resources that
+used in the session like PP data set or
+the queries then you can let us know in
+the comment section below and our team
+of experts we'll be happy to help you as
+soon as possible until next time thank
+you for watching and stay tuned for more
+from
+s craving a career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FastTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video sub
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

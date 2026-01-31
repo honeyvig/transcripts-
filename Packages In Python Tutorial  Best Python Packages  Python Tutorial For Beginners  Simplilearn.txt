@@ -1,0 +1,211 @@
+hello and welcome to this session on
+packages in python
+today we are going to talk about how can
+we leverage packages and create in
+python
+so now let's discuss what's in it for us
+today
+we will discuss what are python packages
+how do we create those packages and we
+will be supporting them with an example
+and then we will discuss different ways
+to access python packages
+so as we have discussed in our earlier
+sessions that you know we can create
+modules but packages are one level above
+they allow you to structure your modules
+in a more organized fashion and we will
+see how
+now what are python packages
+packages are the same
+as a directory they are like you're
+creating a directory structure and
+within the directory you can create sub
+packages and modules in a structured way
+making the sub packages and modules easy
+to access and easy to understand
+so basically it's like an analogy to a
+folder
+like you create structured folders in
+your computer and organize your data you
+create subfolders so that you can easily
+navigate and remember where you have
+kept what
+that's the same concept which is
+applicable in python packages
+packages helps us keep other sub
+packages and modules to be used by the
+other user when necessary so basically
+when the other
+programmers or the python files
+import the packages you have a modular
+structure you have a directory structure
+and it makes it easy to import
+now the first step in order to create a
+python package is to create init dot py
+file
+that underscore underscore init
+underscore underscore dot py file is a
+mandatory file to be kept in a package
+and that's how
+you signify you notify
+the python interpreter that you know
+there's a package which has been created
+now the init.py file can be empty
+if it is empty it means that all the
+modules all the functions
+within that particular package are
+allowed to be imported
+and if it is not empty then you can
+specify which particular
+function in a particular module is
+allowed to be imported
+other than that anything nothing else
+will be allowed
+so it's a very important file which has
+to be present and we will see in our
+example
+now a package can be imported the same
+way as we have learned in the past how a
+module is imported syntactically it's
+very similar and you will observe it
+now here is an example of a typical
+package structure and we are going to be
+showing this example
+now we have created a package called
+music application
+and the music application package has
+its own init dot py file
+and we have created a sample signup.p
+wi-fi
+in which
+we will import
+uh the functions from sub packages like
+options playlist filter
+and play
+and each sub package if you see also
+have their own independent dot py file
+and within that you have your modules
+speed repeat shuffle under options
+single genre album under playlist filter
+and start next previous under play
+so in our example we will be invoking
+certain functions in few of these files
+and showing you how to invoke
+functions under the modules of a sub
+package
+now let me show you
+my package structure
+now this is my jupyter
+and under my jupiter notebook the root
+folder i have the music application
+now if you see the structure as compared
+to what we were showing in the
+presentation
+i will just
+now here you have the music application
+and under that you have init dot py
+okay which is empty which means uh we
+are allowing to import all the functions
+and modules and then we have the
+signup.py
+so indeed in this we are going to invoke
+our sub packages options and play so we
+are going to invoke sub package options
+and play and the functions
+uh within that so this is the module
+speed option speed and within that we
+have option underscore speed function so
+i'll go to options
+speed
+and this function we're gonna invoke
+right so this is one sample invocation
+and then we're gonna also invoke a
+function underscore and in play
+so we go to play
+and then within play we are saying start
+and we're going to call a function play
+start
+okay
+so this is our sample
+package structure
+which we are leveraging for our example
+just a description
+and then uh you know you can use
+different syntaxes to import the package
+and within the package you can import
+the
+module name the sub package and the
+respective module name
+whatever way you want but all these
+syntax
+says are available to you in python
+in order to
+uh invoke the relevant function within
+those packages and modules
+so if you see this
+signup.py we are using this syntax
+import
+package name
+module name which is the speed module
+okay
+you can also use import
+package name sub package name then the
+module name etc so you know all those
+relevant options are available to you
+now let's try to invoke uh
+certain sub packages and modules so like
+i am writing
+uh import option speed
+so i'm gonna be invoking
+options
+speed and then i'm going to import the
+function option underscore speed
+so this is
+one this is that invocation and then i
+have import play.start and then i'm
+pointing the function play start
+which is
+play
+start play start
+okay and if you run and then similarly
+within the play previous
+i'm playing the play previous function
+you run it and you get the you print the
+sops
+which are there
+similarly you can import playlist
+underscore filter dot singer
+this is another package
+and i am calling it in from my
+sample
+jupiter notebook file
+now you can also invoke your
+sign up dot py file directly here
+what you just need to do is
+type percentage run signup.py and just
+run it and all the commands
+all these syntaxes within that file will
+get executed
+so with this what we have learned is
+that you know you can packages is a very
+simple concept in python it is just
+about structuring your modules
+structuring your sub packages
+and
+keeping it in a you know understandable
+and a
+reusable manner so that you can easily
+point to the correct module and allow
+others to import it for uh utility or
+for you know code inheritance so that
+makes the life easy for the developers
+also
+so i hope you all had a great learning
+session and i'll meet you in my next
+session thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

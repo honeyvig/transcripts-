@@ -1,0 +1,1820 @@
+hey what's up traders welcome to my
+office my name is matthew and today we
+are going to be breaking down another
+trading view strategy
+um this is a macd
+crossover strategy or system
+and as you can see here it's decently
+profitable on uscn on this 30 minute
+time frame
+today i'm going to be breaking down the
+source code to this system explaining my
+thoughts on the system
+it was recommended by someone on the
+last video that i published on my
+channel and that someone was john
+here
+who said you should watch the trading
+rush channel video on the macd plus 200
+ema system
+probably worth coding and testing so
+that's what we're going to be doing
+today i do read every comment on my
+videos i can't always reply to all of
+them i'm a pretty busy dude these days
+but i do my best to address the ones
+that i can including this one here
+where i apparently upset someone due to
+the way that i pronounce data data
+i'm really sorry about that sparkles or
+sparkle unfortunately i have an
+incurable affliction
+and that is that i'm australian and i
+guess
+we pronounce data or data a little bit
+differently over here
+but i'll try and keep that in mind from
+now on i'll try and say data so before
+we begin i'm just going to play
+a minute or two of this clip
+where trading rush he or she or they
+explain uh their trading rules for this
+particular system
+and then i'll give you my thoughts on
+this system so i'll play a few minutes
+of this clip goal analysis of stock
+prices and can be applied on a stock
+trading or forex trading chart this is
+what macd indicator looks like
+by default macd indicator will come with
+two lines a blue line called macd and a
+red line called the signal line macd
+crossover strategy is simple once the
+macd line crosses above the signal line
+it is considered as a buy signal
+furthermore you should only take buy
+signals that are way below the zero line
+of the histogram
+but there is a big problem with this
+trading setup there is no way to
+identify a good direction of a trend
+using macd indicator alone to be a
+profitable trader as a beginner you
+should always trade in the same
+direction as the market is trending so
+to identify the trend we are going to
+use 200 period exponential moving
+average if the market is above 200 ema
+it is considered as an uptrend remember
+only buy when the macd gives a buy
+signal and the market is in an uptrend
+here's an example of a buy setup the
+market is above 200 ema so it's an
+uptrend the macd is showing a crossover
+below zero line of the histogram in this
+buy setup entry is at the macd crossover
+and the stop loss is below the pullback
+of the trend your profit target should
+be more than the risk you are taking on
+the trade so if you lose one and win one
+you will still be in profit there are
+different ways to set profit targets
+personally i will take 25 off the trade
+when the trade reaches one times the
+risk and will move the stop loss to
+break even
+then i will set a second profit target
+of two times the risk i originally took
+on the trade so even if the trade never
+reaches my second profit target i have
+already taken 25 off the trade in profit
+and will not lose money here are some
+all right i'll leave it there if you
+want to watch more of this video i'll
+leave a link in the video description
+um a couple things i want to mention
+here
+the first thing that just stood out to
+me is this macd crossover
+there's a bit of subjectivity and
+discretion involved in this particular
+crossover
+according to my
+eyeballs which are
+pretty good at identifying
+um
+visual patterns this crossover here
+occurred much sooner than where
+trading rush is
+pointing out where their entry was so
+that's hindsight bias coming into play
+here it's very dangerous when we're
+testing systems especially
+in this case it's not a big deal since
+it's just explaining the rules but
+this crossover actually occurred
+somewhere around here
+if we're getting really technical which
+we should since we're coders so that's
+one thing i want to point out a bit of
+subjectivity there that could influence
+how the system actually performs when
+back tested using code
+the other thing is the stop-loss
+placement trading rush says to place
+your stop-loss below the low of the
+pullback i don't know what that means
+um that's subjective they didn't say one
+atr below the swing load they didn't
+say x amount of pips or percentage
+points
+none of that they just said put your
+stop loss below the swing low so that
+could mean anything
+as coders we are going to have to come
+up with a rules based system for stop
+loss placement for today's video i'm
+probably just going to use a simple look
+back period there are more advanced ways
+to detect swing lows and swing highs
+in pullbacks but for today's video it
+should
+work just fine to use
+say yes i like seven for some reason
+maybe i just like the number but seven
+to ten bars look back from our entry
+if we look for the lowest low over that
+period
+um that can be our stop loss placement
+and then we can put our stop loss let's
+say
+half an atr below that swing low that
+way i like using atr stop placements
+instead of fixed stops because that way
+our system
+adapts based on volatility based on time
+frame and based on market
+so if we use the fixed pip stop loss
+that complicates things because
+how far one market moves could be very
+different on a different market so
+pound yen for example moves
+significantly more pips on average
+than um aussie dollar for example and so
+that's something that i like to factor
+into my systems especially on forex
+markets obviously crypto stocks can be a
+little bit different
+particularly stocks but atr is a good
+way to go so i'm going to use an atr
+stop loss below the
+swing low over the past seven bars let's
+start with that
+then the take profit they said
+is one to one and they take a quarter a
+quarter of their position off at one to
+one now i'm not going to go into too
+much detail about my thoughts on that
+because that's a matter of preference if
+you like to take profit a partial profit
+it's completely up to you there are
+systems that work with that personally i
+like to keep things simple
+i do have some systems that trade two
+positions and then one takes um
+half my position off at one to one and
+lets the other half trail
+or ride to try and capture more profit
+so
+that's okay with this system i'm okay
+with that so we're going to use that in
+today's system too and that also gives
+me a good
+opportunity to show you guys how to use
+um
+multiple positions in the training view
+strategy tester so we can close out a
+quarter of our position at one to one
+and then i'm going to set my second
+profit target at two to one
+and take off the remainder of our
+position at two to one
+so that keeps things simple
+um for today's video there's one last
+thing in this video i want to mention in
+case you go and watch this video
+at around 4 minutes and 25 seconds
+trading rush whoever this person is
+says later switch to euro jpy
+this strategy works on any time frame
+and also works on both forex and stock
+markets here i'm using 30 minutes time
+frame
+no
+this system does not work on all markets
+in all time frames
+there is no system in existence that
+works on all markets in all time frames
+and there never will be
+the reason for this is that
+trading strategies before well i
+probably shouldn't say definitively that
+there is none and there never will be
+but the odds of a system performing
+within certain performance metrics that
+you're comfortable with over all markets
+and time frames
+is uh
+nick raj who was a veteran trader i
+highly respect and
+um consider
+a mentor i
+learn a lot from him i i respect him
+greatly he's got a book called unholy
+grails i highly recommend you go and um
+obtain a copy of that book if you can
+it's fantastic that what what this
+trader here just laid out is the
+definition of a holy grail which nick
+raj would um suggest doesn't exist and
+he's been trading for 30 40 years or
+something now so he's he would know um
+i've never met a professional trader who
+would claim that any system that they
+trade works on all markets in all time
+frames crypto is very different to
+stocks stocks is very different to forex
+forex is different to commodities and
+futures you get the idea there are a lot
+of different markets out there that can
+be traded different time frames
+different um restrictions different
+challenges with different time frames
+you've got commission costs slippage
+um
+liquidity issues
+depending on the time frame and your
+your account size
+you've got leverage restrictions
+uh there's so many different things
+that can influence
+a system's profitability across
+different markets and time frames that
+to say or to claim that a system works
+on all markets and all time frames is as
+far as i'm concerned lying at best
+and
+downright catastrophically dangerous at
+worst because if you believe that and
+you go out and try and trade a system on
+different markets and time frames that
+you haven't tested to prove whether or
+not it actually works you're going to
+lose money maybe all of your money
+which is obviously not ideal
+but anyway with all that said let's jump
+into the pine editor and start coding
+the system and then we can actually run
+some tests on some markets and time
+frames and see how it performs
+all right so as you can see i've already
+written out the source code to the
+script that we'll be using today in
+today's example
+uh a link to that source code will be in
+the video description if you want to
+follow along
+but i'll
+write out the code again with you guys
+and explain each line of code as we go
+before i begin i want to make it clear
+that this is not trading advice this is
+not investment advice i'm not
+encouraging you to trade this system
+whether or not it's profitable i don't
+care this is not
+a system that um should be blindly
+traded i'll put a disclaimer up here
+that you definitely should read and take
+it very seriously
+uh trading is not a game
+uh it's game like the points are money
+and you want to make as many points as
+you can
+but
+it's very serious and there are very
+serious risks in trading
+and i don't want you guys to take those
+risks lightly don't take anything i say
+as fact make sure to go out do your own
+research i can be wrong about some of
+this stuff especially on youtube
+i do my best to vet the content i put on
+youtube i do as much testing as i can
+but my time is limited i don't
+stringently test every system i teach on
+youtube or show on youtube because these
+systems are meant to be examples not
+necessarily an end product i'm not
+giving you systems to go out and trade
+i'm giving you ideas to play around with
+and demonstrating concepts in pine
+script so let me be very clear about
+that if you do want to trade this system
+take the time to back test it yourself
+properly over hundreds preferably
+thousands of trades go through that
+process to make sure that the system
+performs within metrics that you are
+comfortable with all right so before we
+start it's probably a good idea to put
+in the source code here some comments
+explaining
+the rules of the system i'm going to be
+using these rules let me check my notes
+to make sure i don't miss anything so my
+version of this macd strategy is going
+to be first of all we are using the macd
+indicator with default values according
+to trading view
+we are also going to be using the atr
+indicator
+i believe i just use a 14 period atr
+i think that's it for indicators
+the
+first rule of this strategy
+is that price must be trading above or
+below the 200 ema
+i should probably add ema 200 to our
+indicators then the second rule
+is that
+this is one that i came up with while i
+was building up the system i found that
+it significantly increased the
+profitability of the system because it
+removed a lot of noise from the system
+and this filter is that only one bar
+can close above
+whoops can't spell today
+above or below
+blue
+above or below
+the 200 ema
+over the past five bars
+my goodness
+i have fat fingers today i'll explain
+that rule in more detail when we get
+into um
+you know when we have more code
+written and we can see some visual
+examples on the chart
+the third rule is we take the first
+macd
+cross and ignore subsequent signals
+until our take profit or stop loss is
+hit
+now the fourth rule for this system is
+that our stop loss is going to be
+0.5 atr's or so half an atr above or
+below
+the recent swing high low
+over seven bars the fifth rule is that
+our first take profit is at one to one
+we're going to take off 25 percent of
+our position
+the sixth and final rule is that our
+second take profit is at two to one
+where we take off the remaining
+uh the remainder
+of our position that's it let's get
+coding so i have some code already
+written out here
+some of this is copy and pasted from the
+previous video
+all i've done here is set overlay to
+true so that we're drawing over price
+action i've set calculate on order fills
+to true that means that when a position
+is filled on the open of a bar the
+script executes its code
+again after that position is filled what
+that ensures is that if our first take
+profit is hit on our entry bar so we
+enter long
+let's
+let's pretend
+this probably wouldn't be a signal but
+let's pretend we entered long at this
+open and our stop loss for argument's
+sake was down here so it didn't get hit
+and price came up and hit our first take
+profit on this bar if we don't set
+calculate on order fills to true then
+the
+strategy tester will not exit our
+position
+on our entry bar
+so we need to set that to true for this
+particular system not all systems need
+this on but for this system i want that
+on the next thing i'm going to do is use
+the bar magnifier this is optional but i
+definitely highly encourage that you use
+it if you haven't seen my previous
+videos explaining what this does
+make sure to go and check them out i'll
+leave links in the video description if
+i remember next up i set my initial
+capital to a hundred thousand i'm
+actually going to drop that to ten
+thousand because for forex trading
+that's probably more appropriate for
+stock trading
+typically a hundred thousand
+is a
+sort of benchmark figure for stock
+trading uh for forex trading i'd stick
+to 10k
+when i'm developing a system to see if
+it's profitable
+uh default quantity type is going to be
+percentage of equity default quantity
+value is going to be 100 of our balance
+invested on each trade this is for the
+stock market primarily and maybe crypto
+for forex we're going to be using
+leverage and i'll use a different
+position size calculation technique
+which we'll get to when we get to that
+part of the script
+and our commission type is going to be
+commission.cash per contract again
+you need to set this up to however your
+broker handles commission costs if you
+go to the properties tab of your system
+your script
+interface
+come down to commissions
+it's a good idea to fill this out as
+accurately as you possibly can which is
+difficult on trading view because i
+don't know about you but i don't trade
+in japanese yen i typically use us
+dollars or aussie dollars
+i don't know why it's
+commission is set to yen per contract
+but
+probably because we're on usn
+but in any case you should set
+commission up to appropriately track
+your broker's commission
+um table that will give you a more
+accurate reading on the system's
+performance so those are our default
+strategy parameters for this system
+the next thing we need or the next thing
+i like to do in my scripts is get my
+user input so for today's lesson i'm
+just going to copy and paste all of this
+to save time
+so there's a lot of user inputs for this
+system half of them are macd inputs and
+these are just the default macd
+parameters i haven't changed them from
+the
+uh default macd so if i take the macd
+off my chart on your chart to add the
+macd
+just come up to indicators metrics and
+strategies type in macd and spell it
+properly
+and you want this one here moving
+average convergence divergence
+and the default settings
+are what we're going to be using in
+today's lesson but because our script
+cannot speak to this script
+we need to
+um replicate the macd in our
+system script our strategy script so
+that we can get
+these values here
+so that's why we have these inputs i
+also have my system entry settings so we
+have our ema filter length which is 200
+period by default um we have our max
+bars above or below the ema
+this should be set to one one bar by
+default is allowed to close above or
+below the 200 ema
+preceding our entry signal
+so our stop loss multiplier is set to
+0.5 this is a multiplier of the atr so
+half atr stop loss by default our stop
+loss look back is seven bars um our
+system risk settings
+for our first targets risk reward it is
+set to one so one to one so when we put
+our position on it's going to be
+one to one so 39 pips stop loss would
+mean a 39 pip
+take profit distance for our second
+target it's going to be two to one by
+default our 4x risk percentage is what i
+mentioned earlier for
+forex markets we're going to calculate
+our position size slightly differently
+i'll explain that later and then we have
+our first target percentage this is how
+much of our position to take off at our
+first target so by default it's set to
+25
+or 25 of our total position size will be
+closed out when price hits our first
+target and the remaining 75 will
+continue to run until it either hits our
+take profit
+i forgot to mention one of the rules
+here
+is that we move
+our stop loss to break even
+after the first target is hit
+i forgot to mention that very important
+rule so
+once our first target is hit
+we close out 25 of our position once our
+second target is hit we close out the
+last 75 percent of our position or if
+our break-even stop-loss is hit we exit
+the trade for breakeven
+then we have our macd settings which i
+won't go over
+you can google the macd if you want to
+know what all of these different
+parameters do so that's it for our user
+inputs next thing we need to do is get
+our macd values because that's integral
+to this system
+so we'll get that first to do that we
+can use the ta namespace or library the
+technical analysis library so ta.macd
+will give us the macd parameters and
+we're using what is referred to as a
+tuple here the tuple gets three
+different parameters
+simultaneously from a single function
+call so this macd function returns a
+macd line a signal line and a history
+line or histogram line so we get all
+three of those values from one function
+call we pass in all of our macd settings
+into that function call and that gives
+us our
+blue line our orange line and these bars
+here this histogram
+so once we have that information we can
+then detect crosses of these lines
+and we can check whether those crosses
+occur above or below the zero mark of
+our histogram that is a terrible line
+industry
+but you get the idea
+hopefully hopefully i'm doing a good job
+of explaining
+um what i'm doing here
+the next thing i do is get some more
+indicator values so we just get the ema
+based on the closing price based on our
+ema filter which is 200 bar look back by
+default then i also get our atr with a
+14 period look back by default next up
+we need to check for the macd crosses
+so
+cross up we'll check if ta.crossover for
+our signal line and macd line is true so
+our signal line is our
+blue line so this right here would be a
+valid long signal we're below the zero
+point on the macd and our signal line
+crossed over the
+macd line and cross down is the opposite
+direction
+so this here would be a valid short
+trade because our signal line crossed
+down over our macd line while
+it was above
+the zero point on our histogram next up
+we have a few more general filters
+um so
+i
+like to do this in my trading strategy
+scripts i like to check that the ema and
+the atr are not n a
+so the only time these indicated values
+will be n a or not a number
+is on the very first few bars in our
+chart so for example the ema is the
+easiest one to demonstrate
+the 200 ema
+obviously requires
+200 historical bars before it can start
+plotting onto our chart before it can
+calculate its value
+so on all of these bars here before the
+200th bar
+the 200 ema value will be n a
+and so if we're detecting signals while
+the ema is n a that's going to be a
+problem because we don't have an emitter
+reference it's going to be especially a
+big problem
+if we take a long signal or a short
+signal and the atr which is a 14 based
+atr
+so
+we need to wait 14 bars
+before the atr will calculate its value
+if we were to take a long or short trade
+on any of these bars before that 14th
+bar our stop loss in our take profit are
+going to be n a
+as well because if you do any
+mathematical calculation on a value
+that's n a the resulting value is n a
+and if you have a n a stop loss or an n
+a take profit your trade will never
+close
+so that is going to be a problem in our
+strategy tester so i like to make sure
+that all of my
+indicator values are not n a and this is
+a good practice to employ on any script
+you trade you
+code
+that uses an indicator value the next
+trading conditions we need to check
+is our trend conditions so is the
+closing price above or below the ema
+that gives us our up or down trend
+filter
+that's a simple one next we need to
+check our long and short trading
+conditions
+so for long conditions we're checking
+our trade filters so that's making sure
+that our indicators are not n a
+and the macd line is below
+zero
+so let me bring that up a bit
+so the macd line remember is our blue
+line
+so it needs to be below zero
+and
+the signal line now this is on the
+previous bar so
+on every bar that we run our script on
+it's checking to make sure that the macd
+line on the previous bar was below zero
+and the signal line was also below zero
+so our red or orange and our blue lines
+must both be below zero
+in order for our long and short
+conditions to be met and also our
+indicator values cannot be an a next up
+we need to confirm our long and short
+signals now you could combine all of
+these parameters into one
+boolean condition i'm splitting them up
+like this just to make the script a bit
+easier to read especially since i've
+blown up my screen size here my
+resolution if i were to combine all of
+these onto one line it would go off my
+screen so that's why i'm separating them
+like this you don't need to do it like
+this but it does make the code a lot
+easier to read so next up we need to
+confirm our long and short setups to do
+that i just combine all of our
+conditions so do we have our long
+conditions met and do we have an uptrend
+and did the macd cross down or cross up
+so once we have all of these conditions
+combined then we can check later on to
+make sure that we're not already
+involved in an open trade and if we are
+not involved in an open trade then we
+can take a position because our entry
+criteria is met but before we enter any
+trades we need to calculate our stop
+loss and our targets
+so to begin with we need to get our long
+stop and our shortstop now remember i
+said that for my version my variation of
+this macd script i'm going to be placing
+my stop-loss half an atr above or below
+the recent swing higher low and the
+recent swing higher low is defined over
+a seven bar look back so that's what
+this code here does
+it checks for a long trade that we're
+buying the market we want the lowest low
+over our look back period which is seven
+bars by default and then once we have
+that price we subtract the current atr
+value multiplied by our stop loss
+multiplier
+which by default
+is 0.5
+so this would subtract half an atr from
+the lowest low over the past seven bars
+that gives us our long stop and for sure
+trades is the same thing but the
+opposite direction we're looking for the
+highest high overall look back period
+and adding our atr
+stop-loss value to that
+so let me save my code now make sure we
+don't have any compiler errors
+everything is fine
+so now that we have our long and short
+stops we can
+check if we have an entry signal if we
+have an entry signal we can calculate
+our take profit based on our stop-loss
+distance
+and we can start running this system
+through the strategy tester so before we
+do that we need to
+get a or prepare a bunch of persistent
+variables that are going to save
+the open trades stop loss the first take
+profit
+and the second take profit now stop
+distance
+don't really need stop distance to be
+saved
+we only need these three variables so
+trade stop trade target 1 and trade
+target 2.
+these will all be
+overwritten with the current trades stop
+loss price and take profit prices
+because there were two targets
+right so now that we have that there's
+one more filter we need to
+get in our script
+and that is our ema filter the how many
+bars close above or below the moving
+average
+so here i'm declaring two integer values
+or whole number values bars above m a
+and bars below m a and then we loop over
+the past five bars and we
+add up how many bars closed below and
+how many bars closed above
+the ema value over those past five bars
+and then we can use
+these two variables here to eliminate
+any trades that had more than one bar or
+more than
+uh whatever this is set to
+one by default if more than this number
+of bars closed above or below the m a
+the trade setup is invalidated that
+removes a lot of noise from the system
+from when trade from when price action
+is
+trading
+really closely to the ma or in other
+words consolidating this system doesn't
+work well during consolidation
+uh during sideways markets and so
+this is one way to sort of mitigate that
+issue there are other ways but this is
+the simplest way i could think of that
+isn't going to over complicate the
+script for today's lesson because it's
+already going to be a particularly long
+lesson so now we have everything we need
+in order to determine whether or not we
+have a valid long or short trade and
+that's what we do next
+i'll copy this code over and explain
+what i'm doing
+i'm combining all of my signal filters
+so everything we've done so far gets
+combined into long trade and short trade
+we check if we have a long signal and
+the bars counted below
+our 200 moving average
+is less than or equal to
+however many bars we've set this to and
+we are flat so we don't have any
+positions open so our position size will
+be set to zero strategy.position size
+will be set to zero whenever we have no
+contracts open
+if we are long this will be a positive
+number if we are short this will be a
+negative number so now we have
+everything we need in order to start
+entering our positions
+there we go that appears to work fine
+so for forex markets now before we
+continue with this video i just want to
+quickly mention that this code here
+i discover later in the lesson that this
+code doesn't actually work the way i
+wanted to at least not on yen pairs it
+works on dollar based pairs like euro
+dollar and that sort of thing for some
+reason it doesn't work on yen pairs i
+haven't figured out how to get it to
+work properly yet so just ignore
+this code here
+and focus on this code here this is the
+code we'll be using to enter our
+positions
+later on in the lesson sorry for any
+confusion this causes i'll explain this
+in more detail towards the end of the
+lesson and then the next thing we can do
+is the same thing for short trades so
+i can also copy this if statement down
+here so this is exactly the same
+as our long trades but in the opposite
+direction obviously but we're doing
+exactly the same thing here we're
+setting resetting all of our trade
+variables to na now the next thing we
+need to do is calculate our stops and
+targets once a position is entered
+so
+i'll start with long trades first and
+explain this code so once we've entered
+a long trade this next bit of code will
+execute so once we've entered
+strategy.entry has put us into a long
+trade so our position size is greater
+than zero and our trade stop is n a so
+we've reset our trades up to n a if
+these two conditions are met we're in a
+long trade without a stop loss we need
+to specify our stop loss
+to do that we set our trade stop
+variable
+to long stop and that should be
+on the current bar not the previous bar
+so we set trade stop to long stop now
+stop loss distance i removed as a
+persistent variable so now it's only
+existing within the scope of this if
+statement so we cannot access stop
+distance outside of this if statement
+but that's okay because we don't need to
+all we use stop distance for is to
+calculate our risk reward profile so
+what we're doing here
+is we're saving our stop loss price into
+trade stop this var variable now var
+variables do not reset on each bar so
+this will persist across all the bars on
+our chart until it gets reset uh to n a
+so once we've saved our long stop loss
+to trade stop we then calculate our
+distance stop loss distance to do that
+we use strategy.position average price
+so that gets the average fuel price of
+our open long trade and we subtract our
+stop loss price
+that gives us let's say we we went long
+on this bar for whatever reason and our
+stop-loss was there this code here will
+give us the distance
+from our entry price
+down to our stop loss in pips or this
+not this number here
+once we have that we can use this
+distance variable to calculate our
+reward distance
+by multiplying that distance by our risk
+reward
+profile
+which is
+this first setting here and then for our
+second target we do exactly the same
+thing but instead of taking in our first
+risk reward target we take into
+consideration our second target which is
+two to one so we have a one to one
+target to start with once that gets hit
+we move our stop loss to break even and
+the remaining position gets taken off at
+two to one
+unless outbreak even stop gets hit
+so that's what this code here does
+next we need to do the same thing for
+short trades so exactly the same thing
+but opposite direction and i need to get
+rid of that historical operator so we're
+checking if our position size is less
+than zero if that's true then we have
+negative contracts open which means we
+are short
+so if we are short and our trade stop is
+n a
+which happens up here so once we enter a
+short trade our stop loss is set to n a
+if we've entered short and we do not
+have a stop loss we need to set one to
+do that we set our trade stop to
+shortstop which is this variable up here
+these two variables are calculated on
+every single bar in our chart but only
+saved to here once we have an actual
+entry signal so once we enter short we
+save our stop loss we calculate our stop
+loss distance and we
+calculate our take profits our two
+targets based on our stop-loss distance
+same as long trades except we're
+subtracting that distance instead of
+adding it let's save our code make sure
+that compiles okay so far so good
+um the next thing we do we're nearly
+done with this script there's only three
+more things to do the next thing to do
+is to exit our trades when our stop loss
+or our take profit is hit the second
+thing to do
+is to handle our break even stop and the
+third thing to do is to draw all of this
+information onto the chart using plot
+functions so let's do that next the next
+thing is handling our
+trade exits so let me explain what these
+four lines of code here do the first two
+are for our long trades or long trade we
+we have two exits exit number one exit
+number two exit number one exits from
+entry so that that from entry is the
+trade id that we want to exit in this
+case of our long exit we want to exit
+this entry both of these entries only
+one of these will get executed depending
+on which market type we're on if we're
+on 4x this one will get executed if
+we're not on 4x this one will get
+executed the only difference being our
+position size for 4x is calculated
+slightly differently they both have an
+id of long so
+this line of code here will exit
+our entry id of long if our limit so
+limit is our profit target and it's a
+price value you can also specify pips
+value i like to work with price it's a
+lot easier for me to wrap my head around
+when i'm coding so i stick to price
+typically
+so we have a limit order set at trade
+target one which is a one-to-one
+distance from our entry price if our
+first take profit is hit then we exit a
+quantity percent of
+i target one i stands for input target
+one is this parameter here which is a
+percentage of our position our total
+position size by default is set to 25 or
+a quarter of our total position size
+gets exited if our take profit is hit if
+our stop loss is hit it also exits 25
+percent of our position and then on the
+next line of code here
+the remainder of our position will also
+get closed out if our stop loss was hit
+however the second line of code the
+second strategy.exit call long exit
+number two is exiting the same trade id
+same stop loss price but the difference
+here is we set our take profit to our
+second target and our quantity percent
+is set to 100
+so this first exit if our take profit is
+hit our first target is hit we'll exit
+25 of our position the second exit if
+our take profit is hit we'll exit 100 of
+our remaining position so hopefully that
+makes sense a little bit confusing
+um but just re-watch this video a couple
+of times if it doesn't click
+and this will eventually make sense to
+you especially if you play around with
+this code basically we have one position
+open but we have two exits and then it's
+the same for short trades if our first
+target is hit we exit 25 of our position
+if our second target is hit we exit the
+rest of our position or if our stop loss
+is hit all of our position is exited for
+a loss so that's how we handle multiple
+targets in pine script in the strategy
+tester at least that's one way to do it
+that's the way i
+thought of when i was coming up with
+this
+example script the final thing to do is
+well the last two things to do
+draw all of this information to the
+chart and handle our break even stop
+loss so let me paste in this code and
+explain what we're doing here and i need
+a sip of water i'm getting a sore throat
+from talking so much this is a long
+lesson
+so the comment here says
+handle both long and short trade
+breakeven stops so we handle both long
+trade breakeven stops and short trade
+break-even stops with this block of code
+and we do this after
+our first position has exited above and
+that's this
+first exit number one for long in shorts
+if
+our position size is greater than zero
+so we're involved in a long trade
+and the current bar's high is greater
+than or equal to our trade target
+so
+now before i continue i've just
+sort of realized as i'm thinking about
+this
+there's a problem with this line of code
+actually in that it won't take into
+account
+slippage
+if you turn slippage on in the settings
+properties here
+this part of the code won't factor in
+slippage
+so i'm thinking of a different way to do
+this what i think would be better here
+i'm sorry this is going to be a little
+bit confusing but um this is an
+afterthought after i've already written
+this code out what i'm going to do
+instead here is i'm going to create a
+new variable here called var
+now i'm not sure is is position size a
+float or an integer i can't remember
+it's a float
+so
+we're going to create a float
+value called trade
+size and it'll be set to na by default
+and when we enter our position
+i'm going to save trade size as
+strategy.position
+size so let me save that for short
+trades as well
+now it doesn't matter what this value is
+all that matters is that when we exit
+our first position our position size is
+obviously going to change
+it's going to be reduced so instead of
+checking if price hits our first take
+profit
+what i can do here is get rid of all of
+this code and i can just say if our
+current position size
+is not equal to
+our trade size our saved trade size
+which is the position that was
+originally opened if this condition is
+met so our current position size is not
+equal to what it was when we opened our
+trade that means we have partially
+closed
+our position
+and we need to move our stop loss to
+break even
+this is a much better way to achieve
+what i'm trying to do here because that
+will
+in theory
+take into account slippage if this is
+turned on so what we're doing here is
+we're setting we're overriding our trade
+stop value
+to our entry price and we are setting
+our first target to n a so now i can
+copy over my plot code
+and this will draw all of the
+information to the chart so we're
+drawing our ema value and i'm colorizing
+this based on where the price is above
+or below the ema if price is above it
+the ema will be green if it's below
+it'll be red i am drawing triangle up
+and triangle down to identify long trade
+and short trade signals and then i'm
+also drawing my stops and my targets so
+if i have an open position so my
+position size is not equal to zero so
+it's positive or negative
+then we are involved in a trade and i
+draw my trade stop i also draw my first
+target and my second target
+otherwise if my position size is equal
+to zero we are not in a trade and we
+draw n a or nothing so now watch the
+magic when i click save we will now have
+hopefully not a compiler error and there
+we go although we do have an issue here
+and our script is no longer taking any
+trades and just after
+pausing for a moment and having a quick
+look at what was happening
+what i need to do is move
+this new
+trade size variable
+what i've done here is i've set it after
+we call
+strategy.entry but our position size
+doesn't actually change until the next
+bar
+so this function doesn't execute until
+the next bars open
+so what i need to do is cut
+our trade size from our entry code
+and put it into here
+which checks on the next bar if we're
+involved in an open trade and we don't
+have a stop loss set then we set our
+stop
+so if i paste that on the end here
+that should fix our script so let me
+save that code
+and make sure we're getting there we go
+signals are being generated again
+and we are pretty much done
+uh we're drawing
+our data our signals our stops and
+targets our
+ema
+our
+signal arrows so that this green and red
+arrow will appear on the setup bar the
+bar before our entry and then we'll
+enter on the next bars open
+our stop loss
+is set once we enter our trade
+when our first target is hit
+our stop loss gets moved to break even
+on the remainder of our position so if i
+scroll up here
+our position size is tiny so something's
+gone wrong
+with my
+4x code all right so now i'm going to
+add
+a
+4x position sizing code to the script so
+that we can actually test this strategy
+on forex markets while risking a
+percentage of our account balance
+now the strategy test that doesn't allow
+this by default we only have three
+options here
+fixed contracts
+fixed dollar amount
+and a percentage of your equity now
+percentage of equity doesn't do what you
+think it would do it doesn't
+you know if i set this to 1
+what this would do is if i have a 10 000
+account it will buy
+100 worth of usn that's not the same as
+what we want what we want is
+to risk one percent of our account on
+dollar yen which means buying a
+significantly
+larger position size than a hundred
+dollars
+we need to use leverage in forex the
+reason for that is because forex markets
+move so um
+in such small increments so half a
+percentage move in forex might be the
+average move on a on a volatile day
+um if you're trading one percent of your
+equity on a half percent move you're not
+making much money
+so i had to come up with a custom
+solution for forex markets in order to
+achieve this the strategy tester does
+not support this type of position sizing
+by default unfortunately i really wish
+tradingview would add this in it would
+make
+forex traders lives a lot easier but for
+whatever reason they haven't done that
+yet so i've come up with my own solution
+it's not perfect but it is the next best
+thing and it's a hell of a lot better
+than the options we have here so i'll
+show you how i did that before i wrap up
+today's video but before i do that just
+to prove that this
+code actually works or is at least
+highly accurate i'm logged into one of
+my accounts here my discretionary
+account i have 9500 real australian
+dollars in this account
+and i've set up my script so that if you
+look up here
+my account balance is 9504
+and i've set my base currency in the
+strategy tester to aussie dollars
+so i've got my account balance in the
+strategy tester as close as possible to
+my real account balance i've put on a
+position tool here on this latest signal
+the signal
+of this macd
+system was generated an hour ago
+and here's my stop loss my entry and my
+initial take profit if i right click
+this and click create limit order and i
+set my risk to 1
+my position size is 0.13 or 13 mini lots
+or
+13 000 units
+if we look at the position size that
+my script has put me into this trade
+with an account balance of 9504
+the script is saying that we should be
+buying 12 939 units which is very very
+very close to 13 mini lots and in fact
+due to the fact that global prime only
+allow a minimum of one mini lot this is
+just rounding up to the nearest
+lot size or in this case rounding down
+to 0.99
+if you are trading through oanda or a
+different broker that allows trading in
+units
+you could have this exact position size
+in your um lot size your position size
+portion of the risk management
+calculator on training view
+so anyway all of that is just to say
+that this code is
+as accurate as i can get it again full
+disclaimer this code is provided as is
+it's just for example purposes there
+could be things i'm missing it could
+potentially not be accurate
+um it's up to you guys to do your own
+testing to see if you're comfortable
+using this code in your own back testing
+process but with all that said let's
+wrap up this video by quickly adding in
+this code that i'm talking about so the
+first thing i've done here is i've set
+my base currency to us dollars in the
+strategy annotation function that way
+whenever we add a script to our chart
+most of you i imagine would be trading
+in us dollars if you are not and you
+want to be trading in one of these
+currency pairs or one of these base
+currencies sorry put that into your
+currency so for me i mostly trade us
+dollars but my discretionary account is
+in aussie dollars so i would put aud
+here
+if i was testing strategies with
+australian dollars as my base currency
+but for now i'll leave this as us
+dollars and i will scroll down a bit
+here and explain what this is this is my
+custom library it's public it's um open
+source so if you want to check out
+what's in this library you can go i'll
+leave a link below if i remember
+otherwise just google zen library or
+search it on the tradingview platform
+and you'll find it it simply contains a
+bunch of my own sort of utility
+functions functions i use very
+frequently in all of my scripts any
+function that i use a lot goes into this
+library and it just makes it easier for
+me to share code between indicators
+without having to copy and paste tons
+and tons of code for this particular
+script we don't use many functions out
+of this library but we do use a few that
+saves a ton of lines of code
+in our script and just keeps it a bit
+tidier keeps everything neat which i'm a
+huge fan of if you haven't noticed by
+now i'm a little bit ocd with my code i
+like it to look good it makes it easier
+to work with less likely to make errors
+so i import my zen library here and then
+i add one user input risk per trade and
+just to be consistent that ocd kicking
+in again i'll
+add i underscore so that i'm
+aware that this is an input parameter
+and then i need to replace this and the
+easiest way to fix this in my script is
+just to save it and go through all the
+errors
+and there we go that's fixed
+so i get a risk per trade amount this is
+for forex so i'll add in here 4x risk
+per trade any other market that's not
+forex this will be ignored and will not
+be used
+so this is only applicable to forex
+markets and then next up i copy and
+paste a bunch of code that i use in all
+of my automated scripts that
+allows me to calculate my position size
+particularly for auto view if you're not
+familiar with autoview
+i've done videos on that in the past
+this code is primarily used for
+calculating calculating my position size
+when auto trading through auto view
+which i don't do very often anymore i
+use pi connector mostly but anyway
+that's outside the scope of today's
+video what this code does is it
+calculates my position size based on the
+currency conversion rate so if i were to
+change my strategy based currency to us
+dollars here if you keep an eye up here
+it's now tracking the us yen conversion
+rate and that conversion rate is being
+taken into account when calculating my
+position size so that we get a more
+accurate reading on the position size i
+explain all of this in much more detail
+in my mastery course so to keep today's
+lesson short i could do a whole lesson
+on this and in fact i have in the
+mastery course so i'm going to leave
+this here i'm not going to explain too
+much more about this code
+if you want to learn the inner workings
+of this you can check out my course if
+you don't want to learn it that's fine
+you can just copy and paste this code
+and it should work just fine
+if you follow the template that i'm
+laying out here again disclaimer i make
+no promises that this code is flawless
+it is just code that has worked for me
+in the past and i encourage you and in
+fact beg you to go and test this
+yourself before putting any real money
+at risk so this block of code here will
+determine our currency conversion rate
+which is used to calculate our position
+size so now if i scroll down the final
+thing i've done here is add this block
+of code to our long and short entries so
+for our long entries we're checking if
+the symbol type is 4x
+then we calculate our position size
+using my custom library this function
+here has a bunch more code in it complex
+code that i won't go over in today's
+lesson
+but in the library i have this av
+underscore get position size function
+this will get my position size based on
+my current strategy equity my risk per
+trade input and my stop-loss distance
+and the currency conversion rate if
+applicable one other thing i need to
+mention here is that we are actually
+calculating our position size based on
+the closing price of our signal candle
+so that's important the way i've written
+this
+script we actually
+calculate our stop loss based on the
+entry bar
+so what happens is the script detects
+the setup bar
+tells the strategy tester to enter long
+in this case on the next bar's open and
+on that next bar is open we calculate
+our stop loss or we save our stop loss
+price for our uh risk
+calculation code our position size code
+it actually works slightly differently
+so it actually works off the closing
+price of our setup candle and whatever
+the stop-loss price was for this setup
+candle so this stop-loss price may be a
+little bit different to the entry candle
+not by much but it might be a little bit
+different just the way that this script
+is
+set up the reason it's set up this way
+is because we actually enter on the next
+bars open and so
+to calculate our stop loss based on the
+previous bar's closing price might not
+be accurate because price might open
+down here and the distance from our
+closing price to our stop loss is going
+to be very different now if you're okay
+with having a slight difference in your
+entry price based on the next bars open
+in forex that's not normally a big deal
+because there are very very rarely gaps
+on intra-bar price action very rarely on
+stock markets however there are frequent
+gaps and so this becomes a bit of a
+problem with stock market strategies if
+you're only using the script on forex
+markets i'd probably encourage you to
+take out this code here and move it into
+your entry code so before your position
+size is calculated
+you would take all of this out and paste
+it in here for example and then you
+could paste stop distance into here and
+instead of using long stop subtract from
+the closing price and this would give
+you a more accurate consistent
+reading for forex markets but because i
+wrote the script to be usable on forex
+crypto stocks it's a little bit more
+complicated calculating
+um our stop-loss distance because of the
+fact that our entry price is going to be
+different to our setup candles closing
+price and we won't know our entry price
+until the bar that we entered on and so
+that complicates things in the strategy
+tester um what we could do here to keep
+it more consistent is i could copy this
+it's going to make the script a little
+bit more complicated to read but
+it should make it more consistent
+in terms of execution i can paste all of
+that in there copy this if statement
+actually just this here i can say and
+symbol info is not equal to forex and
+then this stop-loss code will only be
+executed if we are not on a forex market
+and this code will only be executed if
+we are on a forex market now if i save
+this script let's see if this works i
+think it should in theory uh not quite
+because our average uh position average
+price is not known until the next bar
+after we have entered so what i need to
+do here is change this to say close
+so if i change all of these to say close
+and i set this to n a
+and this to close
+close
+close n a um now the problem we're going
+to have is our trade size is not known
+until the next bar after our setup
+candle so remember all of this code here
+is executed on the setup candle and on
+the next bar our position is actually
+open so
+trade size is not known until that next
+bar so what i need to do now is add
+one more
+handle forex
+trade size
+tracking
+um variable
+we need to say if sim info dot
+type equals 4x and
+strategy dot position
+size not equals zero and
+trade size
+is n a
+then we want to assign trade size to our
+strategy.position size this way our
+breakeven code will still work because
+remember our breakeven code only
+executes when our open position size is
+not equal to the trade size that was
+opened initially meaning we closed out a
+portion of our position now if i save
+this code hopefully this should work
+okay we should be entering positions
+again uh i've made a mistake here i need
+to indent all of these um this code here
+otherwise as soon as this code gets
+executed because this was not in the
+scope of this else statement it
+immediately overrides our stop loss to
+na and then our trade never actually
+gets closed so now this
+should work perfectly fingers crossed
+there we go that looks right here we go
+okay so we're fixed now
+let's jump over to a stock market really
+quick to make sure that it's still
+taking trades there there we go so
+everything's okay
+um
+here's some examples of the issue with
+gaps so here for example if we had this
+setup candle occur on this bar we
+actually wouldn't have entered our trade
+until the next bar is open and that's a
+very different stop-loss distance than
+this closing price so that's something
+to keep in
+consideration when working with stock
+markets in particular in a future lesson
+i'll cover some ways to mitigate this
+issue but this lesson is already long
+enough so i'm going to wrap this up here
+let's jump back over to
+a couple of forex markets and just see
+how this
+system performed
+i flagged a couple of markets it seems
+to do well on forex markets so here we
+have a 22 return with a 12 drawdown not
+too bad
+um us yen
+is even better
+38 return with an 11 drawdown
+approximately um over 356 trades pretty
+good that's not bad we are on a 30
+minute time frame so we're not testing
+over years and years of data just a
+couple of years of data so not super
+robust but
+um still profitable
+i would say going forward
+this strategy probably won't continue to
+perform this well into the future but
+it's very unlikely to suddenly stop
+working and so and there's a good chance
+this would continue to be profitable at
+least a year or two into the future
+especially as market conditions remain
+as they are with volatility being the
+way it is um anyway that's it for the
+forex part of this lesson or the video i
+will leave the source code below as i
+mentioned earlier and i'll wrap up this
+lesson with a few afterthoughts
+so here i have a watch list of the s p
+500 if i jump over to the first stock
+here and i change this to
+100 of my equity so now we're buying ten
+thousand dollars worth of carnival
+corporation
+and
+based on where our stop-loss is or our
+take profit is determines how much money
+we want to lose so on a percentage basis
+on this particular trade here we would
+have made assuming our account balance
+was ten thousand dollars which it
+wouldn't be here because we've already
+taken several trades but if this our
+account balance was at ten thousand
+dollars on this trade
+uh we would have made two point five
+percent
+on our 25
+uh initial target and then we will stop
+down for break even on our second
+position everything is all good
+open up the strategy tester and now
+these metrics are a lot more accurate uh
+they'd be even more accurate if i added
+in commissions and slippage
+so let's do that now
+for interactive brokers i get
+a commission rate of about 0.005 cents
+per
+contract
+so i'll leave that as that
+slippage you can play around with this
+yourself if you want to
+it's probably worth doing
+let's set it to 10
+so that's way too much
+let's set it to one tick
+see what that looks like yeah that's a
+little bit better that's probably more
+more realistic
+so now we're getting about a one point
+slippage or zero point one percent on
+this particular market slippage
+on our exit and entries so when we enter
+a trade we get a one point worse price
+than we
+should be getting sorry we entered here
+so we get a one percent worse price or
+one point worse price on our entry due
+to slippage that
+it's not perfect you know just you won't
+get slippage on every single trade
+it won't always be a fixed slippage
+amount and sometimes slippage works in
+your favor
+and when your take profit is filled
+you might make more money
+than you were
+hoping to
+usually it doesn't work that way usually
+you lose more money than you were hoping
+to
+but that is important to include in our
+back testing it gives us a more accurate
+representation of
+the strategy's performance at least on
+historical data now as i mentioned at
+the start of this video this lesson is
+not intended to be a trading lesson i'm
+not i'm not encouraging you to go out
+and trade this system this is purely for
+demonstration purposes only
+just to show you
+how to achieve
+certain things in pine script in today's
+lesson
+that is how to combine
+several indicator conditions we didn't
+have any candlestick patterns in this
+lesson it was quite a simple system but
+i've covered plenty of candlestick
+patterns in my previous lessons if you
+want to go and check them out and maybe
+even add them candlestick pattern
+confirmation to this script to see how
+that affects the performance
+we've also demonstrated importantly i've
+never done this before on my youtube
+channel or in my um courses for that
+matter i've demonstrated how to take
+multiple targets in the strategy tester
+so we've taken a partial precision off
+at one to one and now full position off
+at two to one i did include these as
+user inputs
+so if i come up here
+you can change how much of your position
+is closed
+at our first take profit so for example
+we could take off half our position
+um i i can get rid of these two inputs
+too i was playing around with them for
+my forex
+trading
+experiment but yeah now we can take off
+however much we want to we take off half
+our position and see how that affects
+our metrics in this case it didn't
+improve them at all
+let's try
+taking off 75 percent that didn't change
+much either
+i'll leave it as 25 for now and let's
+jump through a few markers here because
+i did flag a few that um this strategy
+was surprisingly
+quite profitable on which i didn't
+expect
+if i scroll through here you'll see that
+many of these markets are not profitable
+which is why i say not to go out and
+trade this stuff blindly go and do your
+own testing
+in this case i made a 40 return with a
+30 drawdown pretty rough drawdown but
+remember this
+not trading advice but if you were to
+trade a system like this it should be
+part of a portfolio of markets
+potentially time frames
+and you would usually have multiple
+systems in play
+and so
+something like a 30 drawdown on one
+market might equate to
+a couple of percent on a portfolio basis
+so
+keep that in mind this is if we were to
+trade this market solely with a hundred
+percent of our capital these are the
+returns we would get theoretically
+this includes
+my fixed commission it doesn't anymore
+for some reason
+deleted my commission rate that's
+fantastic
+let me add that back in
+and let's cycle through some markets see
+what we get
+um rost was quite profitable here we go
+61 return over 382 trades with a roughly
+approximately 43 win rate so 43 of
+trades closed for a profit
+um and a 13 mass drawdown pretty solid
+would not expect that to continue into
+the future since it's a single market
+and single markets tend to change their
+behavior over time quite significantly
+uh depending on the market
+capitalization you know
+penny stock is going to behave very
+differently when that same penny stock
+becomes a blue chip stock over a period
+of 10 years or so
+or you know if that were to happen so
+keep that in mind
+this is not
+a robust
+testing
+process i'm going through just
+demonstrating
+some of the results here
+so there were a few markets here that
+were profitable
+adding in commission cost did
+significantly change the
+profitability of some of these markets
+if i get rid of the commission cost in
+slippage
+the returns are quite significantly
+different this one's now returning 100
+with an 18 max drawdown if i add in
+commission costs and a little bit of
+slippage
+that is completely nerfed to 34 matched
+drawdown and 36 return so that shows the
+importance
+of
+adding in commission costs and slippage
+especially on lower cap stocks stocks
+with a
+smaller um
+price
+are going to attract much higher
+commission costs and also slippage due
+to
+the reduced liquidity typically
+in these lower capitalized stocks so
+keep that in mind
+but yeah very interesting system here
+align technology performed quite well
+with this system over the past couple of
+years
+24 percent max drawdown is not bad not
+bad if this was part of a portfolio
+of markets and systems
+um it could have been a nice moneymaker
+there anyway this video is long enough i
+hope you found it interesting
+first and foremost
+the script itself is pretty interesting
+it's a good sort of template especially
+if you are the type of trader to take
+multiple targets this is a good
+base template to
+cut out what you don't like and paste in
+what you do want and
+specifically this section here and the
+two targets should be enough for you to
+go out and test multiple target systems
+if that is something you are into
+for now
+i'm going to wrap this video up here i
+need to go and get myself some dinner i
+started this
+video much earlier in the day
+but three coffees later and several
+hours later
+it's done
+i hope you enjoy it and i will speak
+with you in the next lesson as always
+best of luck with your trading
+and take care
+goodbye
+you

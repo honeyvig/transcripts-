@@ -1,0 +1,981 @@
+[Music]
+hi everyone I'm amarja and welcome to
+the simply Lear YouTube channel in this
+session we will create an OTP
+verification GUI using python but before
+we begin if you love watching Tech
+videos subscribe to our Channel like the
+tutorial and hit the Bell icon to now
+miss an update and before we start I
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes and if there is any issue do let us
+know in the chat
+section and let us have a simple
+question to brush up on our knowledge
+and please answer in the comment section
+below and we will update the correct
+answer in the P comment and your
+question is how is a code block
+indicated in
+Python and your options are brackets
+indentation key or none of these you can
+pause the video give it a thought and
+answer in the comment section moving on
+first we'll see what's a project and how
+it looks like
+so we will save it and run the
+program you can see that the Tinker
+window has appeared and this is our
+project and this is what we're going to
+make in this video so using too I have
+received the OTP on my mobile phone and
+that is
+4601 and if I submit
+it I can see the show info window that
+says that the verification is
+successful and we have one more window
+for you
+guys if you
+want you can also make it uh we will
+also discuss this in this video
+so you can see this is the first window
+we will create and after we click on the
+generate OTP
+button it will redirect to the second
+window that is verify OTP and there you
+could just type in the OTP you get on
+your mobile phone and the OTP I code is
+6709 and I will just click on the submit
+button it will show that the
+verification is
+successful there's a recent OTP button
+and there's a timer as the quo tokens
+they are default available for 10
+minutes only so I have set up an timer
+for 10 minutes if you want you can also
+make the timer else you could just go
+with the verify OTP GUI and the recent
+button it will
+just make that will you send the OTP
+again to our mobile phones if there's
+any difficulty in reaching the OTP to us
+so moving on now we will start with our
+project that is first we will create a
+folder and name it as OTP verification
+and
+inside we will open the command
+prompt and now we'll open the editor I
+will be using the visual studio code you
+could choose any editor as you like or
+you have the hands on any
+edor so for that I will write the
+command code space period and press
+enter so here
+we
+will create the name of the file as
+program 2.
+py and now we should install and import
+the modules uh for T Ander we don't have
+to install it like T is a python module
+that is used to develop GUI that is
+graphical user interface there's no need
+to install any module as T module is a
+part of the standard python library and
+here we need to install
+too so for
+that we will open the command prompt and
+write the
+command pip
+install too and press
+enter as it states that the requirement
+is already satisfied I have already
+installed the too module and used it in
+the project so you just have to write
+the command and press enter in the
+command prom or in the terminal of your
+editor
+and the rest would be done for
+you so moving
+on we
+will import the
+modules so from take
+enter we will import all the classes and
+files and from to
+video we import the client
+class and to generate the OTP we will
+use the random module and generate the
+OTP with the Rand function so we import
+random and uh we would also using the
+message box but here we will see it
+later
+on so now we'll we create a class in the
+T
+inter so in order to initialize the
+class we use the uncore uncore init
+function this creates a method that runs
+itself when we form an object from the
+class so we will make a
+class and name it as OTP verifier _
+verifier and inside we will pass
+TK
+colon and as I said we
+will make
+the in
+it and pass self in
+it so we will create a root window and
+display it on the screen for that we
+will just run window. main Loop to out
+the ti into
+window and for
+that and before we will just
+write the
+super yeah
+T provides many methods and one of them
+is the geometry method this method is
+used to set the dimensions of the D
+enter window and is used to set the
+positions of the main window on the
+users text door so for that we will use
+the geometry function and write the
+command self not
+geometry and inside the C PES uh sorry
+Circle
+bases we'll set the Y
+AIS as th000 CL
+xais with
+580
+and you would make it shift with 200
+dimensions and Y
+AIS and 80 dimensions in the x-axis
+now we will configure the window so we
+will use the config function so config
+and configure function they both are
+same and they can be used on any widget
+to change settings that you may have
+applied earlier or haven't applied yet
+so for that we'll write the command
+self.
+configure and inside we will set the
+background color
+as white only for the T enter
+window and use the hexa code for the
+colors you go use hexa code or just
+write white so for white
+we
+have 6fs you can search for the code the
+XA code or you could just write the
+white color now we will use the
+resizable function so this method is
+used to allow T root window to change
+its size according to the user's need as
+well as we can Pro the resizing of the
+tendle window so basically if you want
+to create a fix size window this method
+can be used in resizable method user can
+pass either positive integer or true to
+make the window resizable if you want to
+prohibit the resizing of the window you
+could just pass false or zero so we
+would just prohibit it uh will write the
+command self do p
+sizable so we have prohibited our
+window and
+now before executing code python
+interpreter read source file and Define
+few special variables or Global
+variables if the python interpreter is
+running the source file as the main
+program it sets the special variable
+that would be the underscore
+uncore name variable as value equal to
+main that
+value would be equal toore
+uncore Main if this file is being
+imported from another module so the name
+variable will be set to the module's
+name module's name is available as value
+to name variable that is the global
+variable so to execute it we'll write
+the
+command if name equal to Main and
+that would be the inverted
+commas here first we will
+Class Window equal to
+verore
+verifier and
+now I'll write a command to run the main
+L that is the main thing to get a window
+popped up so we'll save the file and run
+it
+so we got to Arrow
+here so is Du to the
+spaces we
+don't have Make spaces in the geometry
+method and now we'll save it and run it
+you can see that the T window has poed
+up now we will make its GUI and before
+that we will see the too so this is the
+too console you have to log into that
+and that would be your account S ID your
+token and the phone number from which
+you will get the
+OTP so I will show you the demo for
+that you can just visit the to
+website so to is an American company
+that is based in the San Francisco which
+provides programmable communication
+tools for making and receiving phone
+calls sending and receiving text
+messages and Performing other
+communication functions using it web
+service
+apis so this is the website here you can
+just go sign
+up as I have the account already I will
+just log in in it you will just write
+the first name last name email and
+password that should be 16 plus
+characters and after that you will
+accept it and start your free trial it
+doesn't need any credit card or
+something you can just use it without
+any payment mode and after that it will
+ask you to get your phone number
+assigned or it will ask first it will
+ask you like what purpose are you
+serving the TW so you could just make it
+that uh you want want to run it for your
+project or any code purpose and after
+that you have to generate the phone
+number from which you will get the
+SMS so I have my console already I have
+logged
+in so mov to the code part now we'll use
+toio to get our OTP on our mobile
+FS
+so for that we'll write the
+command in the class only that is RB
+verifier we will use the Cent function
+for that we will create a variable self.
+client and that is equal to
+and use the client
+function and inside we'll pass two
+parameters that would be from the
+console that would be the account S ID
+we will copy
+that and we'll paste it in the inverted
+commas and the next parameter will pass
+is the authorized token that would be
+unique for
+you we will paste this and that would
+also B the inverted commas
+only and next you'll write the command
+self. client.
+messages that is we'll use the variable
+above that was the client
+variable and we'll create the
+messages and here we will write our
+phone
+number
+that yeah two and equal to and
+inside the brackets we will write the
+contact number you want to receive the
+message so here I'm writing my contact
+number
+and not highlight
+it as
+it as I can get the Spam messages or
+spam call so I would not highlight it
+and we will write the contact number
+that we have got from Theo
+and that contact number is M your phone
+number we will copy
+that and write
+from so from
+underscore and here
+that will your phone
+number comma and then the body what body
+we want to receive as a text message
+from this number so the body we want to
+receive
+ANP so for that we will use the random
+module and generate an
+OTP so first we will create a variable
+store it in a variable
+n for that we should use the random
+module to generate the OTP for that we
+will just make a function and name it as
+OTP
+only and inside we will pass
+self and and in this function we will
+return thep and that will generate with
+the rant range
+function and pass the
+range so this function will choose any
+number from this range and return to us
+so we will ask this function to generate
+a four number OTP
+yeah so we have made the function for
+the OTP and now we will assign it to the
+variable we have declared
+above so in this variable the we want
+that the OTP should be passed as a
+string because body would take as number
+as a string only so with that we'll
+write the command s
+strr s
+OTP in the body will get the variable
+and
+only for that we'll write the command
+self
+now we
+will save
+it and run
+it
+so is an issue
+here and
+it code successfully executed so
+sometimes it takes time
+okay and now we'll start with the GI GUI
+and for that we'll create a function so
+that we can store all the widgets
+there and we will name the function as
+labels
+and first thing we will create would be
+the canos widget the canos widget lets
+us display various graphics on the
+application it can be used to draw
+simple shapes to complicated graphs we
+can also display various kinds of custom
+widgets according to our needs so first
+we will create a
+variable and name it as
+C and inside
+we will make the canvas
+widget and now we set it background
+color and that I will use the hexa code
+only you could just
+see that's the three
+color you could use the hexa code or you
+can just write the name of the color or
+if you want you can just search on the
+web you would get the hexa codes and you
+would get the variations of all the
+colors in hexa code and now set the
+width for the canvas and width would be
+equal to 400 as you can see that it is
+in the
+comments we have to put the hexa code in
+the inverted
+commas yeah so we have set the width and
+now we will set the height
+that is
+280 and
+now we will place this canvas for that
+we will use the place function and that
+place function allows you explicitly set
+the position and size of a window either
+in absolute terms or relative to another
+window so for that we'll write the
+command self. C do place
+and the X Dimension would be equal to
+290 and Y Dimension will be equal to
+120 and
+now we'll just save
+this and run the
+file so we have to call the labels
+function
+also we'll save it and run it
+again you could see that this is the
+canvas the gray canvas and moving on now
+we will create a
+frame and that would also be in the
+labels function so frame is a
+rectangular region on this screen and
+that can also be used as a foundation
+class to implement complex widgets it is
+used to organize a group of widgets so
+we will create a upper frame and inside
+that we will place a small image for
+thep verification and the
+heading that would be to verify the
+OTP so for that first we'll create a
+variable and we will name it as upper
+uncore frame
+and inside we will create a
+frame
+and the f is capital for the frame
+widget and inside we will pass
+self and set the background
+color equal to Blue and that would be
+the D blue and I will use the hexa code
+for that hexa code is
+46 82 P4
+that yeah this is the color you can see
+here and now we'll set its width and
+before that we
+will get this into the inverted commas
+and we will set the
+width width would be equal to
+1500 and now we'll set its
+height height should be equal to
+130 and now now we will place it so we
+should be in the tier window for that
+we'll use the place
+function write the command self
+doore
+frame dot
+Place
+yeah so we will place it at xal to0
+and Y = to0
+only so I'll save the file and run it
+for you so you can see the output side
+by
+side yeah you can see that this is the
+frame and we have set the color as blue
+and it we have placed it at X = to0 and
+yal to 0 we have created the
+canvas so now moving
+on we'll use the labels
+and in the labels only first we will
+place the image in the
+frame for that
+uh first I will choose the image uh as
+I've already made the project I have
+chose the images and I have pasted it in
+the
+folder that is piix
+and
+these and we paste it in
+our project folder so first I will be
+using the password one image and I will
+set it in the frame only and in take
+enter like some widgets can display an
+image such as label and button and we
+would be using label to display this
+image and for buttons also I have
+created the images as you have seen in
+the
+folder so I will show you how to use
+these images and show them as a button
+so these widgets take an image argument
+that allows them to display an image so
+for that we will create a variable and
+name it as
+picture and the widget is photo
+image and inside you have to pass the
+location of the file where the image is
+stored so we have just placed it in the
+same folder so we will just write the
+name of the image and that
+was
+password
+one there was no spaces and that was the
+PNG
+file yeah after creating a photo image
+object you can use it it will you can
+use it with other widgets that except an
+image argument the image object is
+returned by the photo image function
+that we have used and it's that easy to
+display a picture in Python however the
+photo image class only supports the GF
+and PGM PPM formats which is a concern
+jpeg jpg and PNG are the formats that
+are most often
+[Music]
+used so
+now we will
+place the image in the
+frame for
+that first create a label for that and
+we will create a variable and name it is
+K and create a label
+widget and teer label is a widget that
+is used to implement display boxes where
+you can place text or images so here we
+will be first placing the image and then
+the text so inside the label
+widget pass the argument that was the
+variable for the upper frame and then
+the image object
+that isal to
+S
+picture and set the
+background as the same as of the frame
+for that we will write
+BG equal to and the hexa code that is
+same that is 4682 B4
+and now we will place
+it so write the command here only that
+is
+dot
+place and
+X would be equal to
+200
+20 and Y =
+35 and
+we will save this and run the
+file you can see that the image has been
+placed here so now we will write verify
+OTP and we'll also create the label for
+that first use
+the now inside the label function
+only we will create another label
+for the text and first we'll create a
+variable and name it as
+J and inside we will create a label
+widget
+and inside the upper
+frame write a
+text that could be verify OTP
+set the font for
+it that would be than New
+Roman you could also set the size as 38
+and make them bold
+and now we'll set the background color
+for
+that that would be in the inverted
+commas and that would be the blue only
+for that we'll write the hexa
+code that was
+4682
+B4 and now we will set the foreground
+color that would be the text color as
+white and here we will not use the
+hexapod I would write the name name of
+the color for that we WR the command
+foreground
+color that is equal to
+White and now we will place this
+label
+X
+place at 220 so we is at around 270
+and why would be
+same and that would be 35
+only now we save this and run the
+file we have get the label verify OTP
+but they both are inside in so we will
+just change the coordinates for this
+label and we'll set
+as
+320
+300 we save the file close the previous
+T enter
+window save the file and run it
+just go so you can see that it has shown
+the verify OTP but still it's not in the
+center so we just again change the x
+coordinate for that and that would be
+400 we will save the
+file and run
+it could see
+that now it is in the
+center place it accordingly like I would
+be creating the GUI and if you want
+Perfection you can do that by
+own and now moving on we will place a
+simply learn image
+just on the file and show you like where
+we we place the simply lar
+image we place it just uh at the bottom
+right so for that we will create the
+label again and first we'll use the
+photo image to create the photo object
+photo image object and first we'll
+create the
+variable and name it is
+simply underscore
+logo and inside we'll use the photo
+image and write the name of the file as
+you have to write the location of the
+file as we have the files in the folder
+only
+and we have the simply Lear file with
+the name simply Lear space
+logo so we just use the file
+name just want to check that is the
+yeah that's
+it
+file
+simply
+space
+logo and the extension of the file is
+PNG
+and now we will create a label for the
+photo image
+object for that we will create another
+variable and name it as
+D and use the label
+widget I will pass self and image equal
+to self
+do simply
+Lear
+space
+logo and we'll set the foreground
+color equal to White and for that we use
+the hexa code for white color
+and now we will place this
+label at X = to 8
+70 that would be the bottom right and 5
+= 530
+show an
+ER okay we have used the image name here
+we have to use the
+variable that is simply underscore
+logo so
+now save this and close the
+previous take
+window and run the
+file
+okay that
+is
+okay
+spelling for the image file now I'll run
+it and save it
+save it and then run
+it takes time to R
+up you can see that the simply Lear logo
+has been placed at the bottom right now
+moving on okay I will show you what we
+will execute next
+so we will place an text widget here in
+which we can just enter the OTP and
+after that we will make the buttons
+verify OTP and the recent OTP first we
+will make the text in which we will
+write the
+OTP so for
+that we won't make it in the labels
+function with that we will create
+another
+function and name it as
+entry we will enter thep
+there and we
+will make a variable that would be
+username and use the text widget so text
+widget is used where I use user wants to
+insert multi-line text Fields this
+widget can be used for a variety of
+applications where the multi-line text
+is required such as messaging sending
+information or displaying information
+and many other tasks we can insert media
+files such as images and links also in
+the text
+widget and for
+that for to enter the OTP we will create
+the text widget
+and write text and inside
+self and now we'll set the font size in
+which we would enter thep and it would
+set it as
+calib and the size for the font would be
+20 and now we'll set the Border
+width for the
+text so it should have a border width so
+we could see on that
+canvas and we'll use W so if the word
+with the text it exceeds the width of
+the text widget it would just wrap it
+and send it to the next line and that
+we'll write
+word and set the
+width equal to
+23 and height
+equal to
+one and now we will place
+it and we'll place it in the canvas that
+was of the gray color so that we'll
+write the command self do the variable
+name user
+underscore name and we'll place
+it X =
+330 and Y =
+200 save the file and run it and see
+whether text widget has been created
+successfully or not and before that we
+have to run this
+function entry
+save this and from the
+file that
+you it's window
+it's appear
+here okay an eror
+okay and we
+not the
+font so F equal to calib we'll save this
+and run
+again yeah it has appeared so this is
+the text widget in which we will write
+our OTP and verify it now we'll make the
+submit button and the recent OTP buttton
+and write the functionalities for
+it so the button widget is used to add
+various types of buttons to the python
+application python allows us to
+configure the look of the button
+according to our requirements and for
+that we'll create a
+function buttons and we'll write all the
+buttons here that would be two buttons
+only that is submit and check note
+submit only will check the OTP the
+second but would be desend
+OTP and first we will create a variable
+for the submit button image we'll create
+the submit button
+first we'll create a variable and name
+it as submit
+button and first we
+will assign the image to that button
+we already have the submit image in our
+folder we will use this
+image call the photo
+image
+sorry so we call the photo
+image and inside we will pass the
+file address and
+I
+submit and
+now the photo image object has been
+created so we'll create the submit
+button we'll create a
+variable as the name of submit button
+only
+and to make a button we'll use the
+button widget and inside we first pass
+self and then the image that should be
+appeared and that would be equal to the
+variable name that is submit button
+image
+okay and now we'll set the command so
+command is used to call the function so
+what function does this button do that
+would be stored in the
+command and that would be equal to we
+will name the function as check OTP as
+submit Buton would check the OTP
+only we'll create this function after
+this pattern only
+and now we will set the
+border and we won't make the B we will
+set it at
+zero now we will place the submit
+button for that we'll write the command
+self to submit button
+place and X would be equal to
+440 and yal to
+330 and now we will start with the
+recent button recent OTP button and
+after that we will create the check OTP
+function so for the recent OTP button
+first we will create the photo image
+object that we will write a
+variable we
+send
+OTP that
+be name ascp
+image and pass the file name
+so
+onlyp
+PNG now we'll create the button for that
+we'll write the command self to desent
+OTP variable
+and use the button
+widget and inside pass self and then the
+image that would be set as the button
+image that would be equal to the
+variable name of the photo image object
+that is
+resent OTP image
+[Music]
+add
+image okay
+Mr
+coma
+yeah now we'll set the command and that
+would be the
+function that will store the
+functionalities that this button will
+do and we'll name the function as we
+send OTP only
+and to call that would also use self as
+pass the self there and that could be
+applicable to check OTP
+also and now let's set the order equal
+to zero for the recent
+OTP image and now we will past it
+and we'll place it at 420a
+430 so that will'll write the command
+self do pend
+OTP
+place and set X =
+420 and Y = 430
+so both the buttons have been
+made
+here
+buttons save the file and run it
+so it's saying that the check OTP that's
+not the attribute here so first we'll
+create those functions only check OTP
+and the recent
+OTP yeah so first we will create the
+recent OTP function
+so
+it and
+inside we will paste the same as we just
+write the commands to get the
+OTP these are the
+commands get it pasted
+so this is the recent OTP function now
+we'll create the check OTP
+function so that
+we'll
+write function name that is check
+OTP and pass self to
+that and
+inside we use
+try so if any exception occurs we would
+get it easily
+solved and here we will create the
+variable with the name user
+input and get it stored an integer
+value so it will convert the text that
+was string which have passed as the body
+so it
+will take the text and convert it into
+integer
+and it
+would take that value from the user
+underscore
+name would be writing the OTP there
+only yeah
+now we will write some conditions to
+check if thep is correct so we will get
+the message box poed
+out and for that we'll write the command
+if s to user
+input is equal to equal
+to integer value of self to 10
+then we will make the message spoked out
+and we will import the message box class
+also as we have already imported all the
+classes from the Tak but again we will
+import
+it and if this condition goes
+true we want a message
+[Music]
+box to show info
+and inside we have to pass the show
+info and we will make it as verification
+successful or you could write anything
+like the is verified
+write verification
+successful and now if self to
+and we to done
+so thep would be done there
+else else also pop out the message box
+and for that we'll write the command
+message
+box don't Jo
+for and inside we will pass the
+variables show info and we will get the
+indication as wrong
+OTP no
+we will make the exception here as we
+have used the tri BL we have to use the
+accept BL also and here also we will use
+the message
+only show for inside pass
+it would tell us invalid
+OTP and here we will import the message
+box
+class for that we'll write the command
+from teer import message box
+as you can see that we have created both
+the functions that is check orp and
+desent
+OTP now I will save the file and run it
+s of TR
+okay now we'll save the file and run
+it as you can see that the T window has
+popped up and I have received the OTP on
+my mobile phone that is
+1856 and I will click on the submit
+button so it's showing
+fromp okay we will desend
+it I WR the new OTP as
+[Music]
+2851 click on the submit button it says
+that the verification is successful so
+so we have made the verification OTP GUI
+successfully and you could add the timer
+also in
+it for that I will just copy paste the
+code for the
+timer uh I will also provide the source
+file in the description if you want you
+can see there or if you want to know how
+the timer is made you could just see our
+another video in the description or on
+the I button
+just copy paste the
+code so this is the runtime of function
+so you can see that the timer has
+started and it's for the 10 minutes as
+Duo default tokens are valid only for 10
+minutes and received another OTP we will
+resend it
+again and it's
+7848 you'll click on the submit button
+it says that the verification is
+successful and if you want to make the
+first page you can see the source
+code I will make it available for you
+guys
+I will make file that would be program.
+py name it as program 1.
+py and inside you can see that we have
+imported the teer class and imported the
+program to module and we have installed
+the module sub processes and we are
+calling the import
+class and here we have made the class
+generate OTP and inside we have set the
+geometry and configured the color as
+white for the first window and we have
+made
+it that the window could not be
+resizable that's why we pass the false
+and false arguments to the
+resizable
+function and here we have created the
+labels as you would see in the first
+window and the button generate
+OTP so we will save the file and run
+it first P this
+now we'll save it and run the file
+ER for the simply learn
+logo so the file name is simply learn
+logo I will replace
+that save it and run it again see the
+first window that is OTP verification
+and is Val for 10 minutes and click on
+the generate OTP button generate OTP we
+click on generate OTP button and it
+would redirect to the second page that
+is verify OTP so we have done with our
+project with that we have come to the
+end of this session I hope it was
+interesting and informative if you liked
+it please let us know in the comment
+section below also do subscribe to our
+Channel and stay tuned for more from
+Simply Lear
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

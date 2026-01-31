@@ -1,0 +1,378 @@
+hello everyone and a very warm welcome
+to simply learn in this video we will
+learn how to create a registration page
+using php html some css and xampp
+software
+then
+we will use that data
+and store it in a mysql database
+so let us begin and start writing a code
+first
+now to do that
+we need to go to my computer c drive
+now zam folder this is the folder where
+the xampp software is installed
+here
+locate to htdocs
+and let us now create a folder for our
+tutorial and
+name it tutorial
+now we'll open this folder in visual
+studio code
+and start writing a program
+so let us create a first file here and
+name it
+register
+dot
+html now this will be the html file that
+is the whole structure of how a
+registration page will look
+now
+[Music]
+registration
+page now this will be the title
+of a webpage
+i think that's enough
+now let us move on to the
+body of the page
+now i'm going to write
+register
+in an h1 point
+for the heading
+and
+now we'll create a form
+action would be
+the name register.php
+and method
+or tree
+post
+okay so
+the first label that i'm going to create
+will be for the username
+so in a registration form i'm going to
+keep it simple i'm just going to include
+three categories that would be username
+password and a third one would be email
+so
+to create a label for
+username
+so you always have to keep in mind
+whatever name you're giving here or in
+the database whichever you write first
+since the name has to match
+so i'm giving username the name username
+and that's it for a label
+now let us create another label
+for
+before that
+input type for this
+will be
+text
+name as we've already written
+will be username
+please holder with display
+username
+and i am going to put this field as
+required
+which means that the
+user cannot leave this field empty
+second one would be
+label for
+password
+now i am going to give its input type
+as
+password
+and you will know the reason later
+you can also give input type for the
+password as text but it will not be
+secure then
+password
+id will be
+password
+and this is also a required field
+now let us move on to
+the label
+for our last section that will be email
+and
+give it
+input type
+email yes and email can be set as an
+input type
+name
+email
+placeholder will display
+email
+and
+you guessed it right this is also
+a required field
+i think
+this is it for the registration html
+now we move on to
+creating our
+css page in order for this html
+structure to look good
+well wait a second i left off of a
+pretty important section of the
+registration form that is the register
+button itself
+so
+let me just
+not form
+let me just create
+the
+registration
+for
+registration button
+it will be of type submit
+and value
+displayed would be
+register
+now we'll move on to creating the css
+file
+and
+let us create a new file and name it
+style.css
+so the code for style.css is already
+prepared so instead of writing the
+entire code line by line i'm just going
+to paste it
+and
+you can see how it works
+so this is the css code that will make
+a registration form
+look a little better
+so i have created different sections
+for different sections of the
+registration form so this will be the
+registration from input button
+this is for the color of the
+submit button
+and
+the rest of the form as you can see
+now in order for the style.css file to
+work
+we need to link this file
+style.css to
+register.html now how do we do that
+we go on to the register.html
+back
+and we add
+just
+one extra line in the head of the
+program
+so here what we are doing is
+we are referencing our style.css page
+into this page itself
+now that's it
+now both of these pages that we've just
+created are linked to each other and now
+at least a registration form
+structure is complete
+it does not work yet but it will soon
+now before creating the register.php
+code
+let us first create a database
+so that we have some understanding of
+what is going on around everything so to
+create a database what we need to do is
+open sample
+start the apache and mysql server
+now go to your browser
+and open the localhost
+phpmyadmin
+now create a new database
+let us name it
+form
+click on create
+now let us name our table as users
+number of columns would be
+four
+the first column will be id
+which will be auto incremented
+second will be username
+make sure to use the same name that
+we've used in the code so that
+the code does not malfunction
+it will be of type
+variable character
+password will also be a variable
+character
+email
+and now
+so as you can see this is the structure
+of our
+table
+of database
+form now let us move on to finally
+writing the
+rest of the code for our registration
+form
+so now that we have a database complete
+let us move on to our back to our code
+and create the register.php file
+now the first thing that we need to do
+while creating the php code is
+we need to
+connect our code with our database that
+we just created so this is why i stopped
+in between and created a database so
+that you need you understand better how
+this code is functioning
+now database host
+since
+we are using sam to locally host a
+server
+this will be
+localhost
+a user will be the root user
+since we have not set any password on
+the database it will be empty
+and finally
+the name of our database
+what did we name a database
+it was form
+now i will create
+a variable con
+to
+connect
+to connect a database
+with a code
+so we have created host
+user
+password
+and
+finally name
+now
+we have got to add an error message
+which will check
+if
+the database is connected or not
+so
+will be
+[Music]
+connecting to the
+database
+now let us add some code
+to check if any variable is
+empty or not
+foreign
+now if any of the field is left empty
+while filling the registration form it
+will display the following message empty
+field
+now
+let us add another
+code and check
+up
+so now that we have added validation
+into a code
+now what we need to do next is
+check
+whether the username or the details that
+have entered that the user has entered
+into the registration form already
+exists or not
+and if it does
+display an error message and if
+the details are new enter the details
+into a database
+now to do that
+let us write another if statement
+now here i am writing
+an sql command which will
+select
+id
+password from users that is the name of
+a table
+where username and
+here we are going to check if the
+username entered still exists or not
+look
+you
+now if the number of rows is greater
+than 0 which means username already
+exists so we need to display
+an error message that would be username
+already
+exists
+try
+again
+and if it does not
+now in this else part we will be writing
+the code
+for to send our data into the database
+now here
+instead of selecting we are going to
+insert the data into
+users which is a table
+and
+the fields will be username
+password
+email
+and that's it
+um
+now the password variable
+is going to fetch
+the details
+of the password field
+and email
+add another statement
+to
+execute
+and display
+another message now since we have
+entered it into the database we need to
+display
+a following message too
+this would do
+now
+this will display
+an error message in case something goes
+wrong
+and now
+since we have completed this part of the
+code
+let us end a statement
+close the connection with the database
+here and end our php script
+so now that our code is complete now let
+us run
+the code and check if it works fine
+so
+our apache server is running
+let's go back to a browser
+open the localhost name of the folder
+so as you can see register pages are
+visible here
+register.html
+and create
+a user
+you have successfully registered and you
+can now login
+so
+let us now check
+if it's visible in our database
+so our database is forms
+users
+and as you can see the
+file that we just created tony
+is visible here in a database
+along with the email and
+one thing that you may notice is that
+the password is not visible here since
+we use the hash protection for passwords
+so passwords will not even be visible to
+the
+database admins
+so this is how you create a registration
+form with the help of html php exam and
+mysql database
+so thank you guys for watching this
+video if you like it please hit the like
+button and subscribe to simply learn
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

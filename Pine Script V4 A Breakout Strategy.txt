@@ -1,0 +1,603 @@
+what's up my friends and fellow traders
+welcome back to another partnership
+video i've got a good one for you today
+i'm sorry it's been a couple of weeks
+since i posted a video
+i've been extremely busy lately working
+on my own trading but today's lesson is
+going to address a question i got from a
+student of my pantry mastery course so
+here's the question here from dj and dj
+wants to know how to create a script
+that first draws the previous days low
+and high onto his chart
+and then he wanted to do something like
+entering a trade i'm guessing in the
+back tester system he didn't say that
+explicitly here but i'm assuming he
+means enter a trade in the back tester
+system
+with a buy stop order three pips above
+the previous day's high a stop loss five
+pips below his entry and his take profit
+ten pips from his entry so two to one
+risk reward
+and using a buy stop order above the
+previous day's high and i'm assuming
+also below the previous day's low and so
+that is exactly what i'm going to show
+you how to do today so here we are with
+a blank strategy script i'm going to do
+things a little bit differently today
+instead of writing out each line of code
+as i go to save time and be a little
+more efficient and concise i'm just
+going to copy and paste blocks of code
+over into the editor and explain what
+that code does as we go so as you know
+if you've watched any of my previous
+lessons the first thing i like to do in
+my scripts is get my user input so i'm
+going to paste in my user input for this
+script here one other thing or one new
+habit i've gotten into with my scripts
+is just lining up all of these equal
+signs so this particular script only has
+three user inputs entry pips stop pips
+and target pips they're all pretty
+self-explanatory entry pips is
+the distance from the daily high and low
+that we want to set our buy or sell stop
+order
+stop pips is our stop-loss distance in
+pips from our entry target pips is our
+profit target our take profit uh
+distance in pips from our entry they're
+all using the data type float floating
+point numbers so they are decimal
+numbers meaning we could have 3.1 pips
+as our
+entry pips if we wanted to and then
+finally i'm using the new tooltip
+feature of pinescript was not that new
+but it was added a couple of months ago
+and now we can explain what each setting
+does so that when we hover over this
+little i information icon
+this little tool tip pops up that
+explains what that setting does these
+settings are very self-explanatory so
+let's just move on to the next block of
+code which is getting the daily high and
+low
+so i'm going to copy this code over here
+to get these values we use the security
+function
+when you need to reference either
+another market or another time frame we
+do that using the security function
+the security function takes a bunch of
+input parameters i've left
+our gaps and look ahead as the default
+settings if you want to learn more about
+this function just hold down control and
+click on it
+and there'll be a description that pops
+up here and a few examples
+but basically all we're doing today is
+we're referencing sim info or symbol
+info dot ticker id
+and that will get the current market
+that we have loaded onto our chart
+in this case that would be euro new
+zealand dollar
+from the oanda
+price source or data feed so ticker id
+would be replaced with a string
+that looks like this oanda
+colon euro new zealand dollar
+if we just put in ticker then it would
+just look like that but we don't want
+that we want to actually get the price
+data from the
+exact same market that we've loaded onto
+our charts here
+then we reference a resolution or time
+frame in this case we're referencing the
+daily chart you could also put 1440 here
+for 14 40 minutes which is a daily
+resolution as well but to keep it simple
+i just left mine as d next up we need to
+reference an expression now this
+expression could be anything it could be
+an indicator value so for example we
+could get the daily ema 50 ema
+or the daily rsi value in this case
+we're just referencing the high price so
+we're getting the high and the low from
+the daily time frame on the current
+market that we have loaded onto our
+chart
+pretty simple now we get to the more
+complicated part of the script which is
+calculating our entry price stop loss
+price and take profit price so we'll
+copy these in one at a time
+the first thing we do is we determine
+our buy
+and sell point that should say and sell
+point uh and it's going to be above
+below
+the high slash low
+so our buy point is going to be the
+daily high
+plus
+our entry pip setting so
+3.0 by default
+multiplied by 10
+because
+pinescript deals in points not pips and
+so we need to multiply anything dealing
+with pips by 10 in order to convert that
+into points
+and then we need to multiply
+our
+points
+by this symbol info or siminfo dot
+minimum tick value and this is just the
+last decimal place on our price chart so
+it would be 0.00001
+obviously depending which market you're
+on this value will be different and
+that's why we need to do this
+but moving on we then do the same thing
+for our cell point now one thing i
+didn't do here is replace the default
+three pips with our user setting so this
+is how it should look
+that multiplied by 10 multiplied by our
+minimum tick
+so our buy point is our entry pips above
+the daily high previous daily high our
+sell point is our entry pips
+below the previous day's low
+the next thing we need to do is
+determine our stop loss and our take
+profit so to do that we subtract our
+stop pips multiplied by 10 to turn it
+into points multiplied by our minimum
+tick value and then we subtract this
+number from our buy point and then we
+add that number to our sell point so for
+longs our stop obviously goes below
+our entry and for shorts it goes above
+so we need to add in the case of our
+short stop loss
+next up we get our take profit price to
+calculate that we do exactly the same
+thing as our stop loss except in the
+opposite direction and using our target
+pips instead of our stock pips so we add
+to our buy point our target pips
+converted into the correct amount of
+points for this market so that's it for
+our trade entry data
+the next thing we need to do is detect
+when a new day begins
+and when we detect that new day
+beginning we place our stop orders our
+buy stop order and our sell stop order
+at our buy and sell point now this code
+here is a little bit more complicated so
+let me just paste in the first part of
+it
+and go over what's happening here let's
+save the script make sure there's no
+errors and we're all good
+so
+next up we check if a new day has
+started and we're flat meaning we have
+no positions open no trades open then we
+want to place a buy stop and a sell stop
+above and below the previous days high
+and low before we can do that we need to
+detect
+when a new day begins the easiest way
+i've found to do that is to use the
+change function inbuilt change function
+and then pass it in this time function
+that references a resolution or time
+frame so this new day variable will be
+set to true
+if
+a change is detected in the daily time
+frame and a change will only be detected
+on the daily time frame if a new daily
+bar
+begins
+and then i have a bunch of var variables
+these are persistent variables that are
+stored across our chart so they're not
+recalculated on every new bar like these
+ones are these variables will stay as
+0.0 until we overwrite them
+with a different value
+and that's what we do next so first we
+check if we have a new day
+then we want to check if
+our strategy dot position
+size is equal to zero that means we do
+not have any trades open
+then if these two conditions are met we
+have a new day starting and we have no
+trades open then we want to enter our
+buy stop and sell stop orders because
+obviously if we have a position open
+that means we took a trade yesterday
+that has not yet hit its stop loss or
+take profit and we don't want to enter
+any new trades because this
+particular strategy is not
+a pyramiding strategy it's just a one in
+one out very simple
+approach to trading daily breakouts so
+let's start with our long orders first
+let me copy in our long code
+so the first thing we do is we save our
+long stop loss price
+by overriding this var variable with the
+current stop loss long and then we save
+our take profit price
+then we use the strategy.entry function
+to place our buy stop order and the way
+this works is we need to give it an id
+to reference so that we can close this
+trade later if our stop or target is hit
+then we need to tell panscript which
+direction we're trading in so we set
+long to strategy.long or you could also
+write true here but just to make it more
+readable i like to leave it as
+strategy.long then to place a by stop
+order we use the stop parameter and then
+this parameter takes a price
+and so we pass in our buy point which we
+calculated up here our buy and sell
+point which is by default three pips
+above the daily high and three pips
+below the daily low and then i use
+a couple of new parameters that we
+haven't covered before in any video that
+i've ever done and that is the oca or
+one cancels all parameter
+so oca name is the name of our one
+cancels all group and then the oca type
+tells pinescript what we want to do with
+this group so this is completely
+optional you don't need to add this you
+could cut this out if you want to
+but i included this just because it was
+a good
+opportunity to demonstrate this
+functionality basically what i'm doing
+here or what i plan to do is
+when we set up our shorts as well
+and it might be easy to show you this
+visually so let me copy over my short
+entry code which is exactly the same as
+our long entry but obviously for the
+short side so we're saving our shortstop
+and our short target and then we're
+using the strategy.entry function to
+enter a short cell stop at our cell
+point but you can see here that these
+both have oca name set to x you could
+set this to anything any string just so
+long as they're the same string
+and the type is set to the same type so
+this is a one cancels all order meaning
+that if we get filled on a long trade
+then our short
+entry sell stop will be cancelled in
+other words we're only taking one trade
+per day so if we get filled on a long
+breakout and then that trade either hits
+its profit target or reverses and stops
+us out and then we
+clear or break through the previous
+day's low
+rather than enter a new short trade
+nothing will happen
+and again this is optional you could
+remove this i haven't noticed it affect
+the profitability much at all in my
+preliminary testing uh probably because
+it's not a common occurrence that the
+previous day's high gets taken out and
+then the previous day's low gets taken
+out it does happen but not that
+frequently so this is just for example
+purposes just to demonstrate how you can
+use the one cancels all in your strategy
+scripts so the next thing we need to do
+is tell pinescript when to exit these
+trades so i'm going to paste in that
+code now
+so here we are exiting our trade if our
+stop loss or our take profit is hit to
+do that we use the strategy.exit
+function
+we give it its own unique id and then we
+need to tell it which
+order which entry we want to exit so
+from underscore entry needs to
+correspond to one of our open orders in
+this case
+we have our strategy.entry with an id of
+long
+and a strategy.exit with a from entry id
+of long so this will exit
+this
+trade but it will only exit this trade
+if our take profit is hit by price
+action or our stop loss is hit by price
+action
+so limit is for your take profit limit
+order
+stop is for your stop loss order and
+then we do the same thing for our short
+trades we exit from our short trade only
+if our short take profit is hit or our
+short stop loss is hit so that's pretty
+much it the strategy is written um the
+only thing left to do is visually plot
+this information to the chart
+so that's what i do next i'm just going
+to copy this entire block of code in
+down here
+and i'll explain what we're doing so
+it's all pretty self-explanatory we're
+just plotting all of the relevant data
+for this strategy script so we're
+plotting the daily high we're plotting
+the daily low we're plotting our buy
+price or our long buy stop price
+and then we're plotting our stop loss
+and our take profit for our long trades
+and then the same for our short trades
+we're plotting our sell stop price
+our short stop loss price
+and our
+short take profit price and then we're
+setting the color of each plot
+our daily high and low has a line width
+of two so it's just a little bit thicker
+stands out a little more and then i've
+titled all of these plots so that we can
+adjust them in the settings menu under
+the style tab so let's save the script
+make sure it compiles without any errors
+and there we go
+open up the strategy tester you can see
+that
+because we're on a euro yen
+and i did set the default quantity value
+to quite a high number uh this is off
+the scales
+i need to come up here and drop our
+position size just a little bit
+to get more reasonable results here and
+we're pretty much done with our script
+let's just go over a couple of trades to
+see what it's actually doing
+here's
+a trade here
+so when a new day begins
+as it did on this bar right here
+we start plotting the previous day's
+high
+and we place a buy stop order three pips
+above that high on this purple line so
+if i measure that out that should be
+three pips
+it's exactly three pips you can see that
+the strategy tester entered long here
+and then exited our long trade at our
+profit target which is 10 pips
+from our entry and our stop loss down
+here was 5 pips so we've got a 2 1 risk
+reward profile 5 pip stop loss 10 pip
+take profit
+and this was a example of a winning
+trade now one thing to be aware of is
+i'm not 100 sure how the tester system
+knows that this trade did not um come up
+and fill us on this order and then
+decline to hit our stop loss and then
+rally to hit our take profit so for
+example let's just draw
+this
+information onto the chart
+and then we'll drop down to a 15 minute
+time frame
+and see exactly what happened here so
+let's draw a line there drop down to the
+15 minute chart
+and have a look at what actually
+happened on that day
+yeah and just as i thought
+this trade did not play out how the
+strategy tester thinks it did let me
+change the color of these lines
+this is our entry this is our take
+profit and this is our stop loss
+so you can see the price action rallied
+here
+filled us on our order and then on that
+same bar retraced all the way down and
+then hit our stop loss before it rallied
+to hit our take profit but if we drop
+out to the one hour time frame
+and turn on our strategy script you can
+see that the backtester system
+picked this up as a winning trade
+and so that is why i'm very skeptical
+that this strategy has as high of a win
+rate as the tester is telling us it has
+and there's really no way to verify
+how a trade played out at the moment at
+least without doing it manually the way
+i just showed you so that is why i'm
+always telling traders to be very
+skeptical of the backtester system in
+trading view
+quite frankly i don't like it at all
+the backtester system is quite popular
+among a lot of traders and you can see
+why i mean every trader wants to speed
+up their process no one enjoys
+backtesting i don't think i've ever met
+anyone who enjoyed back testing and if
+they do
+they're either lying or they're nuts
+because it is one of the most boring
+things you could ever do
+but
+this is an example of why you should
+manually back test your strategies if
+you want accurate results there is no
+way to shortcut that process
+at least not with pinescript one other
+thing to mention is that the strategy
+tester is trading a fixed position size
+which is not something i would normally
+do normally i trade with a percentage of
+my account balance so in every single
+trade i might risk one percent or two
+percent
+maximum of my account balance
+this tester system doesn't allow you to
+do that
+instead it is just trading a fixed
+position size in this case of ten
+thousand contracts
+or one mini lot on a hundred thousand
+dollar account
+so basically our max drawdown and our
+net profit are not accurate figures and
+so this is a great example of how the
+strategy tester can be misleading and so
+while the backtester system can be
+helpful in identifying potentially
+profitable strategies
+do not under any circumstances
+take this information as accurate it
+should only be used as a very very rough
+indication of a strategy that might have
+potential to be profitable you still
+need to manually back test all of your
+strategies in order to get accurate
+results and again if you're not sure how
+to back test there will be a link in the
+video description to
+a guide i made a couple of years ago on
+how to manually back test strategies and
+with all that said there are some
+strategies that perform a little bit
+better in the backtester system
+basically the more simple your strategy
+is the better as strategies become more
+complex the backtester system can give
+more and more misleading results but
+anyway for those traders who insist on
+using pine script 2 test strategies
+i hope that you found this lesson
+interesting
+at least there is a
+decent back testing tool here
+if you change this to a study script and
+remove all the references to the
+strategy
+functionality we've got a pretty good
+indicator here to assist in the back
+testing process for a breakout strategy
+like this anyway that'll do it for today
+i think in my next video i'll record a
+example of why the back tester system
+on trading view
+should be treated with a huge amount of
+skepticism
+and why when something like this seems
+too good to be true it probably is so
+this strategy might be profitable but we
+can't know for sure unless we manually
+back test it because the tester system
+who knows how many times this has
+happened
+over 773 trades
+where it gave a false reading
+and the trade was filled but then
+stopped out before our target was hit
+and the tester system never accounted
+for that but anyway to be honest um the
+more simple your strategy is and
+especially if your strategy operates on
+candle closes instead of
+like limit orders and buy stop orders
+like we have here
+or like we used here
+then the chances of this sort of thing
+happening are significantly reduced the
+reason for that is say we were trading
+daily breakouts but we only entered on
+the closing price of this bar the
+closing price of this bar would have
+factored in that dip below our stop loss
+and then rally back up to here
+and so this trade would have gone from a
+losing trade
+into a winning trade just by operating
+based on candle closes now the one time
+that this does affect
+strategies that operate on candle closes
+is if your take profit and your
+stop-loss is hit on the same bar
+uh there is no way to know how the
+tester handles that sort of situation
+and so a trade that is recorded as a win
+might have actually been a losing trade
+depending on which price got hit first
+on that intra bar price action
+so anyway i hope you found this lesson
+interesting at least
+um
+it's a good cautionary tale but it's
+also
+um i think interesting code and there
+are a lot of ways you could use this
+like i said if you remove all the
+strategy code out of the script we've
+got a decent indicator here to assist in
+trading breakouts manually and if you
+were to forward test this kind of
+strategy over a few weeks
+or months even you might find it to be
+profitable i'll leave it there
+thanks dj or daniel for sending in this
+question and for all of you traders who
+are not involved in the panscript
+mastery program if you'd like to take
+your coating to the next level or you
+simply just want to steal the source
+code to every script i've ever written
+head over to panscriptmastery.com to
+check out some of my courses over there
+otherwise i'll be back soon with a free
+lesson here on youtube so if you haven't
+hit the subscribe button make sure to do
+that as well and i will see you in the
+next video take care best of luck with
+your trading and be careful
+using the trading view strategy tester
+goodbye
+you

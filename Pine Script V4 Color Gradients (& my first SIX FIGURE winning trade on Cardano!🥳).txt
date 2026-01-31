@@ -1,0 +1,286 @@
+hi traders in today's video i'm going to
+be showing you how to use a new feature
+that
+the tradingview team recently added to
+pinescript
+this week i was planning to release the
+seventh video in my auto view series
+where i show you how to expand
+the strategy script that we wrote in the
+previous lesson
+and add a bunch of filters to that
+script but this week we had a gigantic
+market crash in the crypto markets and
+so i've been
+very very busy managing my own money and
+actively trading this week
+i actually had the most profitable day
+of my entire career
+yesterday trading this correction on
+cadano i managed to buy
+very very close to the bottom
+at one dollar and four cents u.s which
+resulted in me having my very first
+six figure profitable trading day which
+was pretty exciting to say the least
+i managed to sell up here at 2.37
+i sold roughly half of my holdings and i
+bought back in at a dollar and four
+cents which is the best trade i've ever
+made in my entire life
+and here is the proof that on the 16th
+i actually did sell half of my kadano
+position
+at 2.37 cents up on this week here
+just really quickly the reason why i did
+that was because on a five minute time
+frame
+uh we began making lower
+lows and lower highs and so i sold on
+this retracement here
+and i was fully prepared to buy back in
+if i was wrong and price
+broke out above this previous high but
+price never
+did break through that previous high and
+in fact
+we had one of the biggest market crashes
+that i've seen in crypto
+in a very long time but anyway i'm not
+saying all this just to brag
+i'm just pointing out that over the
+years i have become very very confident
+in my own trading techniques and
+processes and i do plan to
+create a trading course later this year
+demonstrating and explaining how i
+analyze charts
+why i picked all of these key support
+and resistance levels on my chart
+why i sold up here and brought back down
+here and in fact i sold some more of my
+position
+in here at around 1.80 on a lower time
+frame and
+i have already bought back in to my
+position down at
+a dollar seventy so in a matter of two
+or three days i have significantly
+increased my cardano holdings
+using extremely simple trading
+techniques and i'm really excited to
+pass on the knowledge that i've learned
+over the past four or five years of
+trading
+and so if you're interested in learning
+how i trade keep an eye out for that
+course which i'll start rolling out at
+some point later in the year
+hopefully if i get time it's actually
+really hard to find the time to make all
+of these videos when i'm actively
+trading my own accounts and managing my
+own investments
+but anyway enough about that let's get
+into today's video
+next week i'll pick up where i left off
+in the previous auto view video
+but for today we're just going to cover
+an extremely simple but interesting pine
+script update
+that the team made where we can now work
+with color gradients
+so overnight the pine script team added
+a new functionality or feature
+to pine scripts dealing with colors so
+we now have more control over the colors
+we use in our scripts
+it's a small change but it's a nice
+change for those of you who like to have
+your scripts look more aesthetically
+pleasing so this will just be a quick
+video
+explaining the new changes and how you
+can use them in your scripts so they've
+added a couple of new functions
+2pin script the first one is this
+color.rgb function
+which takes four function parameters
+which is your red color green color blue
+color and transparency now those of you
+who are familiar with other programming
+languages and have used rgb coloring
+before
+we'll already be familiar to this sort
+of method
+for generating colors so the numbers are
+between 0
+and 255. 0 being
+no green or no red or no blue and 255
+being
+bright red bright green bright blue so
+this is a little bit different to
+hexadecimal coloring
+and perhaps a little more intuitive so
+i'll leave a link to this article
+beneath this video the pinescript team
+have included a couple of examples of
+how to use
+this code but we'll jump over to the
+pine editor in a moment and play around
+with an example so that's the first
+change that made is this new color.rgb
+function
+the second function that they've added
+is this color.from gradient
+function which allows you to change the
+color of something on your chart
+based on where the value falls between
+two
+numbers so in this particular example
+the script is plotting the rsi and the
+closer the rsi is to 70
+the more red the rsi turns and the
+closer it is to 30
+the more green the rsi turns and this is
+all achieved
+using this new from gradient function so
+you can see here they're passing the rsi
+value
+they're passing their lower limit and
+their upper limit and the two colors
+they want to
+calculate the gradient between and the
+closer the rsi value is to 30
+the closer the color is to lime green
+and the closer that value is to 70
+the closer the color is to red and you
+can see that this allows
+you to achieve some pretty cool stuff on
+your charts it can really make some of
+these scripts look a lot more futuristic
+and modern so let's jump over to the
+pine editor and
+break down this particular example i've
+just added a few comments
+to this script to better explain what's
+going on here
+so this script is just plotting an rsi
+standard rsi
+14 length period with the price source
+being the closing price
+the first thing that's happening here is
+we're creating a custom function
+that takes two parameters one is the
+color we want to work with
+and the other is the transparency we
+want to work with
+and so later on the script is filling
+the background it might be a bit hard to
+see because of how
+faint or transparent the coloring is but
+the background of this rsi
+is changing color based on the color of
+the rsi so we'll come back to this
+custom function in a moment
+let's go over how the rsi coloring works
+first because this function depends on
+the rsi color being a parameter so the
+first thing we do is just get the rsi
+here
+the second thing we do is get the color
+gradient of the rsi so that's the actual
+color
+of this line that is plotting onto the
+chart we do this using the color.from
+gradient function
+which takes several parameters the first
+one is the value
+we want to reference the second
+parameter
+is our bottom value so the closer this
+value gets to
+our bottom value the closer the color
+will be to our bottom color
+and the closer this value is to our top
+value
+the closer the color will be to this top
+color
+so we wanted to we could change this to
+anything we could change this to
+blue and color.green for example
+if i save the script the gradient will
+change
+so this is a really cool feature that
+makes it extremely simple
+to basically create like a heat map kind
+of
+effect so let me change these back for a
+moment
+and move on to this custom function here
+so the next thing we do is we just draw
+our upper and lower limit
+we're using the new color color.rgb
+function
+just to demonstrate how this works so
+this is your red
+green blue value and as you can see this
+upper
+limit the overbought limit has a higher
+red amount than
+blue and green and that makes the color
+more red and once we plot our upper and
+lower limit
+we then fill the background between
+these two limits with this color
+function here which is this custom
+function and we're passing
+the color gradient of the rsi so the
+color of our rsi line
+into that custom function along with a
+transparency amount which in this case
+is 90 so 90
+transparency then this function is
+getting the red
+value from our rsi color then
+it's getting the green value and the
+blue value and then we are rebuilding
+that color using the color.rgb function
+we're passing in the red value the green
+value the blue value and our
+transparency
+here which is again 90 so there are
+obviously more efficient ways to do what
+the script is doing this is purely just
+demonstrating
+how we can use these new functions in a
+practical manner
+in our scripts and it's actually pretty
+cool for example one use case for this
+might be
+a heat map like i mentioned so i have a
+arvol by time script here that i created
+uh many months ago
+and it has a heat map color scheme here
+and i had to custom code the color
+gradients here so the more volume that
+was printed on
+a bar the brighter the color is i could
+actually
+add this color gradient functionality to
+this script
+which would mean i don't have to hard
+code
+the color gradients so that's it for
+today's example of this latest pine
+script update
+if you want more information i'll leave
+a link to the blog article beneath this
+video
+i've got a few more examples over there
+a few more code examples
+but that'll do it for today thanks for
+watching best of luck with your trading
+and coding and i'll see you in the next
+lesson
+you
