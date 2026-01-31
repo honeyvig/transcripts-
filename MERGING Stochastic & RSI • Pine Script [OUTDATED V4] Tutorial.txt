@@ -1,0 +1,257 @@
+hi traders in this lesson I'm going to
+show you how to draw the RSI indicator
+over the top of a stochastic indicator
+by creating our own our a science to
+cast ik code so let's get into it start
+a blank script here gonna remove this
+script going to call this PS MC
+stochastic and RSI I'm gonna save these
+scripts add it to my chart and we're
+good to go so the first thing I want to
+do here as always is get my user input
+user input and we needed several inputs
+here in order to draw a fast stochastic
+we need the K input we need the D input
+we need an overbought level and we need
+an oversold level so I'm going to use
+the input function for all of these and
+this first input function is going to
+get our K length so I'm going to title
+this input function K length I'm gonna
+give it a type of input integer and a
+default value of 14 which is the
+standard default for a stochastic
+indicator next up we need to get our d
+input which is going to be a moving
+average of the k variable so here I'm
+going to give it a title of d.length a
+type of input integer and a default
+value of 3 so these are the default
+parameters for your standard stochastic
+indicator we have a key length of 14 and
+a moving average a simple moving average
+of the K length of a 3 period moving
+average and when we calculate the actual
+stochastic this will make sense later on
+in the script so next up we need our
+overbought and oversold levels so I'm
+going to title this over board threshold
+and I'm gonna give it a type of input
+float and a default value of 80 so you
+could set this to integer if you wanted
+to but I find that it's better to set it
+to a float because then your user can
+come up into the settings menu and
+change the overbought level or oversold
+level
+more minutely so you could change this
+to 80 point one for example it just
+gives you a little bit more control a
+little bit more flexibility with your
+scripts parameters so I'm just gonna
+copy this line of code here and change
+this to say oversold and change the
+default value for the oversold to 20 so
+by default we're using our overbought
+and oversold levels as 80 and 20 but you
+could change these to whatever you
+wanted to nineteen point nine for
+example something like that but we'll
+leave it as 1820 for now and let's move
+on to calculate our stochastic so in
+order to do that the stochastic
+indicator is similar to the RSI
+indicator in that it's an oscillator
+that oscillates between a value of 0 and
+100 now there's a mathematical formula
+for this indicator that's quite simple
+you no need to know this and need to
+understand what this is or how it works
+in order to use it but I like to have a
+thorough understanding of all the
+indicators that I use and so I will
+write out the formula for this
+stochastic and it goes a little
+something like this 100 times the closed
+minus the lowest low over the past 14
+candles divided by the highest high over
+the past 14 candles minus the lowest low
+over the past 14 candles or of course
+this 14 could be whatever we set out
+k.length to so let's write this out in
+prime code so we need to create a new
+variable called K and we're gonna set
+this to 100 times we need to open a pair
+of parentheses here I'm gonna get the
+closing price minus the lowest low over
+our K input length so by default 14 then
+close that parenthesis you don't need to
+have these parentheses here in closing
+this entire statement this would work
+just as well but I like to just for
+visuals sake I like to wrap any equation
+in parenthesis so I just know for sure
+what arithmetic operators are being
+executed within these parentheses but
+anyway now we need to divide whatever
+this result is by
+the highest high / out key input length
+- the lowest low / our key input length
+and I'm just gonna wrap this entire
+calculation in a set of parentheses just
+so that we know for certain that this
+value here whatever this turns out to be
+is going to be multiplied by a hundred
+here so there's our stochastic formula
+that will give us our fast stochastic
+next up we need to calculate our D
+variable which is simply a simple moving
+average SMA this will use the inbuilt
+simple moving average function we need
+to pass it our K input and our length
+which is d input so now we're
+calculating a simple moving average of K
+based on a three period length and our
+user can change this to whatever they
+want by changing the D length input
+parameter in the settings menu so that's
+it we have now calculated how stochastic
+I'm gonna get rid of this formula here
+just to tidy the script up a little bit
+and all that's left now is to draw data
+to chart so for this I'm going to plot
+out K variable I'm going to give it a
+color of color purple I'm gonna give it
+a title of K so that we can adjust this
+in the settings menu if you want to next
+I'm going to plot the D variable here is
+D value and it's gonna have a color of
+color orange and a title of D then we
+need to pluck our over board an oversold
+levels so OB level will give it a color
+of color dot red and a title of
+overbought and I might set the line
+width here to two as well just so it's a
+little bit thicker and it stands out a
+little more on our indicator box and
+then finally I'm just gonna copy this
+entire line of code paste it down here
+change this to oversold level change the
+color to green and change our title to
+oversold so now we're drawing our
+stochastic and if I save these scripts
+and we minimize this pine editor there
+we go just like magic
+we are drawing our stochastic indicator
+onto our chart and everything appears to
+be working perfectly
+so just before I move on I should point
+out that you can achieve this
+calculation using an inbuilt function in
+pine script so I've written this formula
+out manually because I thought you guys
+might find it interesting how to achieve
+this so that if you ever run across an
+indicator out there in the wide world of
+the internet that pine script doesn't
+provide an inbuilt function for you can
+just write out the formula yourself but
+if we wanted to we could have just used
+the inbuilt stochastic function so this
+function here takes four input variables
+it takes a source a high a low and a
+length so we could write in here close
+high low and just we could put 14 in
+here for a default stochastic length or
+just copy our K input into that and now
+if I saved these scripts I'll be getting
+exactly the same thing drawing onto our
+chart but for the purposes of this
+demonstration we're just going to leave
+this custom formula in just because it
+makes this lesson a little bit more
+interesting so now if you were to try to
+detect setups
+whenever the RSI goes overboard or
+oversold we'll try to identify
+divergences such as this divergence here
+you can compare whatever price is doing
+to your K variable or your D variable so
+if you wanted to detect the market being
+oversold you could see if the closing
+price is below K or D and then if this
+condition is met then you can do a bunch
+of other calculations and we're not
+going to go into that in this lesson
+because this lesson is just about
+drawing the stochastic and the RSI which
+we'll get to next onto your chart and
+I've already shown you how to detect
+candlestick patterns and work with
+conditions so if you want to make this
+more complicated you can go ahead and do
+that in your own time but next up before
+we finish this lesson let's draw our RSI
+on as well so here I'm going to create a
+new input variable called RSI length and
+we're gonna give it an input title of
+our side length a type of input integer
+and a default value of 14 so by default
+we're gonna calculate the same arrow
+sign length as out K and on here I'm
+just gonna add and RSI and we're going
+to calculate our
+using the inbuilt RSI indicator function
+which takes two input parameters and
+that is a source price so in this case
+we're just going to calculate it on the
+closing price and we're gonna give it a
+length of RSI lengths so by default this
+will be a 14 period RSI and now if we
+come down here we'll plot the RSI onto
+our chart I'll give it a color of color
+black and I'll give it a line width too
+as well so that it stands down a little
+more and we'll give it a title of RSI so
+now if I save the scripts we'll be
+getting our our side drawn over the top
+of our stochastic so that we have it and
+just before I finish this lesson I'm
+just gonna change the color of this RSI
+to red or green based on whether it's
+overbought or oversold just so we have
+some visual cues of what's going on with
+that so here I'm gonna change this to
+say is our RSI level greater than our
+overbought level question mark then if
+this is true then set the color to color
+red otherwise is the RSI less than our
+oversold level question mark if so and
+set the colored color green and if
+neither of those conditions are true
+then we set the color to black and I
+should probably change these to less
+than or equal to and greater than or
+equal to so if the RSI hits our
+overbought or oversold level the color
+of the RSI will change color and if I
+come to the settings menu change the RSI
+length to let's say seven and I save
+those settings here we go you can see
+that when the RSI goes over bought we
+get a red RSI drawing and when it goes
+beneath the oversold level it turns
+green and there we have it we're done so
+that's it for this lesson I hope you
+found that helpful if you did and you
+want to learn more about Pine scripts
+head over to pine skip mastery com here
+you'll find my advanced pine script
+courses and my basics course which is
+free so if you want to learn more about
+pine script head over here and you'll
+find out a little bit more about me and
+a little bit more about pine scripts I
+hope you found this lesson interesting
+and helpful I'll see you in the next one
+[Music]

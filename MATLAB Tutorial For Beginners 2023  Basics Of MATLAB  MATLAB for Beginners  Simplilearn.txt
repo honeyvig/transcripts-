@@ -1,0 +1,1276 @@
+hey everyone welcome to Simply learns
+YouTube channel today we are here with a
+fantastic video on Matlab tutorial
+Matlab is in computer programming
+platform that engineers and scientists
+use to analyze and design a product that
+transforms the world Matlab is used by
+millions of Engineers and scientists
+worldwide for a wide range of
+applications in the industries and
+academic including deep learning and
+machine learning signal processing and
+communication image and video processing
+and so on understanding the importance
+of Matlab simply known as created this
+amazing video on Matlab tutorial which
+will give you an complete idea of Matlab
+software and how to use it and if you
+haven't subscribed yet please subscribe
+to our simply learn YouTube channel and
+hit the Bell icon to never miss an
+update from us agenda for today's
+session is as follows
+first you will understand what is Matlab
+then we will look at the Matlab GUI and
+understand the software in detail next
+we'll understand the Matlab variables
+next we will learn the types of
+variables in Matlab and how to execute
+them then we will see the Matlab data
+types Matlab operators and we'll learn
+how to create scripts in Matlab next we
+will execute some of the basic math
+operators and then learn the Matlab
+functions at last we'll understand how
+to define Matlab functions and how to
+execute them now let's speak in the
+session by understanding what is Matlab
+Matlab is a versatile computer program
+that performs mathematical computation
+visualization and programming a tight
+speed
+you will be amazed to discover more
+about the software once you begin to use
+it
+even if you are not a coder or know
+nothing about coding you should not be
+worried because Matlab is a beginner
+friendly software now let's see Matlab
+GUI that is a graphical user interface
+the GUI of Matlab is very user friendly
+and interactive here
+you will see the available tools where
+they are and how to use them and also
+get familiar with the Matlab software
+now we are in the Matlab software and
+this is how it looks like Matlab
+software has a three tabs like ohm plots
+and apps coming back to home
+the ohm as a five section files
+variables code environment and resources
+in files we have options to create a new
+script create a new live script open any
+of the script which exists upload a
+script go to file search for a file and
+menu in variables we can import a data
+we can save a workspace we can create a
+new variable open a variable which is
+already created clear all the variables
+and the values given to a variable in a
+workspace and in code we have options to
+put any of our code or favorites clear
+all the commands and in environment we
+can create layouts and in resources via
+options to learn Matlab and its software
+and where I have a help button where it
+will give us a online documentation to
+any of our queries next we have a
+current folder where it should show the
+folder in which you're working with via
+workspace which will show the variables
+and the value Ascent of variable and we
+have a command video where we will
+perform any types of comments or execute
+any types of programs this is the
+graphical user interface of a Mac it's
+time to understand Matlab variables here
+we will see what is Matlab variable how
+to create them and what are the
+applications in them generally a
+variable is used to store a data and can
+store any kind of data like scalar
+vector and Matrix basically
+there are three methods to initialize a
+variable in Matlab you need to assign a
+data to a variable in an assignment
+statement secondly take input data from
+the keyboard and at last read the data
+from a file now let's understand all
+this in the platform let's see how to
+assign or restore a variable for example
+if you are trying to assign a value to a
+variable a you can do that by doing a is
+equal to 10.
+see now we have assigned a value 10 to a
+variable a and also it is displayed in a
+workspace like variable a is greater and
+a value for it is 10.
+now we can let me try in a different way
+for example like C is equal to
+4 plus
+5 minus 1.
+we can see that it's a 4 plus 5 minus 1
+is a calculation we have assigned this
+calculation to a c now the answer of
+this calculation should be stored in C
+4 plus 5 is 9 9 minus 1 is 8 and we have
+created a variable in the if you see in
+the workspace there is a variable C and
+a value 8 is assigned to a or that
+variable
+now what if I am not assigning a
+variable to a calculation and just
+giving a calculation to the software
+will the software take up its
+calculation and give me the answer
+let's try I'll just give the calculation
+directly to the software without
+assigning it to a variable that is 5
+plus 6
+minus 1.
+see if you are not assigned this
+calculation to any variable still you
+will get an answer like that will be
+stored in the variable answer and the
+answer is 10. one more calculation like
+6 Plus 5.
+see as you can see the variable answers
+value is updated like the answer was the
+first it was 10 now it is not updated to
+11. you can see like in the workspace if
+it will be a value where it is recently
+updated for example you first the
+answers value was 10 now it recently
+added to 11.
+you can also change the value of any
+other variable which is already created
+for example a is already created and its
+value is 10 you can also change this
+value by a is equal to
+10 plus 1.
+sorry
+C now the value of a is changed to 11.
+like this you can see like you can do
+any types of you can create any how many
+types of variables you you can want and
+you can also assign enhancements as any
+values you want the value which is
+recently assigned to that variable will
+be displayed in the workspace
+now let's see how to insert a vector or
+a matrix into a variable for example
+I'll consider a variable y
+and I am I am now inserting a vector or
+a matrix to a variable y
+to do to do that I'll use Y is equal to
+square brackets
+and Space 4 space 5.
+and then press enter see as you can see
+I have inserted a vector for a variable
+Y which consists of element 1 4 5 and is
+also created in the workspace
+to create a vector to a variable you
+should give the various values in within
+the square bracket and should there
+should be a one space between the
+variables
+within the values that you enter you can
+also give it as Y is equal to instead of
+giving space you can use comma
+see the value is updated now the value
+is updated from one four five to
+separate it as one two three now let's
+see how to assign a n Matrix to value
+for an variable for example I am taking
+a variable X is equal to using square
+brackets I'll give one two three space
+and to separate one column from the
+column you will use semicolon
+then the elements for the next row that
+is 5 space 6 space
+then close the square bracket and enter
+now you can see we have a x variable
+which has a 3 cross 3 Matrix which
+element one two three for the first row
+four five six for the second row 7 8 9
+for the third row
+you can also do this using commas for
+example I'll update the X X is equal to
+open square bracket 1 comma 2 comma
+three
+and you use semicolon to separate the
+rows 7 comma 8 comma 9
+semicolon 4 comma Phi comma 6 squares
+close the square bracket and press enter
+see now the the values on The Matrix X
+has been updated these two rows has been
+interchanged as per the given input
+now what if if I don't want the values
+in any of the position for example I
+don't think the value in the second row
+first position in the position of when I
+don't want any value to be come there I
+want it to be a 0 or blank position how
+to insert a matrix like that
+let's try X is equal to
+First Row 1 Space 2 Space 3 semicolon I
+don't want any value in this position so
+I'll give only two values for that row
+that is
+8 Space 9 semicolon and the last row as
+it is four space five Space six
+close the square bracket and enter
+see
+we will find a error year
+because the arrays dimensions are
+completely different the software does
+not consider the change of elements in
+the rows and columns like as we entered
+three elements in the first row and
+three elements in the last row the
+middle row must should have three
+elements in the middle row and if you
+don't want any element in that first
+particular function you can do it as X
+is equal to where bracket I'll take the
+same elements 1 Space 2 Space 3
+semicolon now I don't want any element
+with this position so I'll mention it as
+0
+for the space 8 Space 9
+semicolon 4 space 5 space 6
+closest square bracket and it see in the
+place of survey now it is operated as
+zero
+if you don't want any value in any
+particular position you can just mention
+0 in that particular mention and give
+the value to the variable
+now what is if you want to create any
+Matrix or assign a value for a variable
+way that Matrix contains a random
+numbers like without a user input you
+should be a random for that we can do it
+as let's take a variable Z
+is equal to we will use a keyword called
+Magic
+Magic
+in the parenthesis you can see with like
+if it is a three cross three we can give
+three if it is uh if you want two cross
+two you can give two it's up to you and
+close the bracket and press enter
+now you can see this uh zMAX place as of
+elements which is a random elements from
+one to nine
+you can also do it the same to the two
+cross two like I'll take it as uh
+f is equal to
+magic of I will give two it will get 2
+cross 2
+Matrix see this mattress contains
+elements from one to F with within five
+this four one two
+three four it will
+arrange randomly you can if you want any
+number of maths any in math 3 cross 32
+cross two four cross Romantics with you
+with the random number you can use magic
+keyword to create them
+now what if can we create a mattress or
+a better without assigning them to a
+variable
+let's try
+open a square bracket one space two
+space three
+comma 4 space 5 space 6 or 7 comma each
+base 9 Space 1 close bracket end
+C
+we can also create a matrix without
+assigning to a variable as we as I said
+before it will print as answer is equal
+to that element and it will be updated
+in the workspace as we see and so before
+it was as we did in the did it in the
+UPS up and before like answer was 11 now
+it is updated as a matrix that is we
+enter the element like one two three
+four five seven and eight nine one
+like this if you you can create a matrix
+without assigning to a variable also
+now let's see can we create two cross
+three or three cross two Matrix it is
+without having an even number of rows
+and columns
+let's take it as Y is equal to square
+bracket 1 2
+only 2 rows sorry two columns
+three take again two and four comma 5
+and 4 and 5 Square printed close
+we can also create without having a even
+number for example without having three
+cross three two cross two we can also
+create two cross three or three cross
+two Matrix like again uh trying for one
+more Z is equal to where brackets I'll
+take one five four
+one six
+seven square bracket close and see
+we can do it we have already learned how
+to create variables in Matlab now let's
+see the types of variables in Matlab
+and the first one is numerical variable
+here we can assign a numerical value to
+a variable and the second one is a
+string variable here we can add words or
+a combination of sentence and a
+characters to a variable and the third
+one is a logical variable it is a
+variable that has only two logical
+values that is 0 and 1. let's see how to
+implement all these in Matlab if it is a
+numerical variable we can directly
+assign a value like as we did before a
+is equal to 10
+it will be assigned or
+C is equal to 10 divided by
+Phi
+like this for numerical variable
+directly you can assign a value to a
+variable
+and it comes for string variable we can
+assign a string variable to a variable
+like B is equal to we'll use a semicolon
+and enter
+hello
+hello close C we now we are we are
+giving a string variable or a string
+value to your variable B
+we can do this using string a keyword
+for example I'll update the value of B
+like B is equal to I'll use string
+and inside the bracket
+using semicol then we will give 5.
+now
+the B value is updated as I you can
+either give using semicolon or you can
+also use the variable string to give a
+string variable value to a variable
+for creating a logical variable we use a
+logical keyword like for example D is
+equals to
+logical
+open parenthesis in square bracket we
+have to enter the value we know logical
+layer variable contains only two values
+it is zeros and ones I'll do one comma 0
+semicolon 0 com 1 square practicals and
+and this equals see D is equals to A 2
+cross 2 logical array
+as we have creating a two cross two it
+will say two cross to logical array
+which contains 0 1
+and 1 0.
+now what if if we give any other numbers
+like 5 6 7 in the place of the real
+values like zeros and one what happens
+let's see
+MGA taking a variable e is equals to
+logical
+I comma six
+seven comma
+see
+while creating a logical variable if you
+give any value apart from 0 and 1 it
+will take it as 1. for example if you
+give a logical value here instead of
+giving 5 if you give 0 it will take as 0
+apart from zero if you give any numbers
+from 1 to 9 it will automatically treat
+it as one and print it as one
+for example let me say one more scenario
+x f is equal to
+instead of giving other numbers I'll
+give 0 for the first number and then
+give 5 for second one I'll give eight
+and nine
+see if you give zero an in logical it
+will take sorry like I forgot to mention
+logical let me repeat it
+0 comma five semicolon 8 comma 9 is
+see
+in the place of zero it directly takes x
+0 apart from zero if you give any
+numbers from 1 to 9 it will treat it as
+one only and take it as 1 and print it
+as 1. now let's understand Matlab data
+types
+in Matlab we have different types of
+data types like care complex double int
+logical single struct unit and fixed
+Point Let's understand how to implement
+all of them in flat verb with an example
+now while implementing the data types
+first we'll consider as a character data
+type like we will assign a character
+type must be also considered consist of
+an alphabets for example we can do that
+using Y we will take a y is equal to
+within the semicolon within the annotate
+commas we will give the values like
+double comma I'll give a low
+and enter
+you can see now we have uh given a
+variable y with a value which is a
+character type using a double ended
+commas you can also do use do this using
+a string variable as you did before
+when we have to assign a complex value
+for an variable now then we can say like
+Z is equal to 4 plus 6 I where I
+represents the complex step when we
+press enter you can see if Z is assigned
+with a complex number
+but similarly you can do this for the
+other radio types like integers floating
+Point etc for integers if you want
+particularly want some integer 16 byte
+value to be assigned for a variable for
+example X is equal to I need int 16
+bytes
+value to be assigned for a variable X
+now for that I'll give a value 6. now
+you can see the variable X as a value 6
+which is of in 16 data type
+you can do same for the in 32 like X is
+equal to
+int 32-bit
+or file give four
+x value is updated as 4 which is of in
+32 data type till now we have saw what
+is the Matlab GUI variables and data
+types now with let's understand the
+Matlab operators and operator is a
+symbol that tells the compiler to
+perform a various numerical or logical
+operations there are several operators
+in Matlab like automatic operator
+arithmetic array operator rational
+operator relational array operator
+logical operator and bitwise operator
+now let's see all these implementations
+in platform along with the size and
+whose operations
+before we continue with the operators
+you can see there are many variables
+created in the command window as well as
+in the workspace so many variables and
+values
+now how to clear them all as we don't
+need them like how to clear them all to
+clear all the like variables name and
+the values in the workspace we can use
+the command clear all
+like
+clear all
+you can see all the names or variables
+and its value which is assigned are
+which are used previously has been
+cleared from the workspace now how to
+keep all the commands in the comment
+window for that you can use clear screen
+command this CLC
+all the work all the work commanded is
+that you have done previously in the
+command window has been cleared
+today we'll start with the automatic
+operator
+we can perform the basic automatic
+operator like assigning or directly
+entering the value like eight plus five
+we are doing addition operator like it
+is 8 plus 5 is 13 and you can also do 5
+minus
+2 that is 3 and you can also do division
+like 24 divided by two
+it is 12 all these we can do without
+assigning to a variable where we can we
+have we already know that is the answer
+variable will have I have the answer or
+I will contain the value of the
+operation we can also do this by
+assigning a value or a variable to a
+value like a is equal to
+34
+divided by 2 like a will be a 17.
+similarly for multiplication I can do
+like
+C is equal to a into
+sorry a into
+now what we did is we already have a a
+variable which is a containing a 17
+assists answer which has been with given
+a calculation that is 34 divided by 2
+available as a value of 17 now
+we are multiplying this 17 that is the
+value in the variable into 2 and assign
+it to a c
+so 7 2 so 34 that c is assigned with the
+value of 30 34. like this you can also
+give now for example you can also
+perform division for like I'll take a d
+variable now I will divide the D
+variable
+now I will give the D variable should
+contain a value that is C divided by 2.
+it is 17.
+the C variable should have Isaac's value
+of 34 now the D variable should have a
+value which is of calculation of C
+divided by 2 as we know says 34 34
+divided by 2 is 17. like this you can
+give a performer arithmetic operator
+addition subtraction multiplication
+division any kind of automatic operator
+without assigning to a variable or with
+ascendant to a variable
+now we will see automatic operations
+with arrays
+we can create two Matrix as I already
+created one Matrix using a magic command
+3 which I have a random numbers of
+elements and one more Matrix which I
+have created you giving a user input
+now let's see the arithmetic operations
+for these two matrices
+now what if if I want to add this is
+these two Matrix
+like I'll do X Plus
+y
+X Plus Y is 8 plus 1 is 9 1 plus 2 is 3
+6 plus 3 is 9. likewise every each
+column and each row has been added X and
+Y elements and and printed the Matrix as
+an answer we can also do subtraction
+like x minus y like
+a nine minus again it divided 7 minus
+eight minus 1 is 7 and 1 minus 2 is
+minus 1 and 6 minus three is three and
+again it assigned one answer
+like what if if I want to multiply these
+two Matrix
+X
+into y
+C
+this entire Matrix has been multiplied
+like these two Matrix has multiplied
+eight one what is if I want to multiply
+a single Matrix with a particular number
+for example let's say x Matrix I'll
+print again this x Matrix I want this x
+to be here multiplied by an single
+number like element wise multiplication
+for that how to do
+for that I can do it as X
+into I'll put dot into I want this
+multiplied by 3.
+see
+now this entire X Matrix is multiplied
+by three like single element is
+multiplied by three
+likewise I can do it for y also first
+I'll print a y y Matrix this is a y
+Matrix now this entire y Matrix should I
+want this each element of Y Matrix to be
+multiplied by 2.
+see the ones are two Tutus are four two
+threes are six likewise each element of
+that Matrix has been multiplied by two
+similarly we can also give the power
+transposition or I can do division of
+matrices for example I can divide X by y
+I have got the floating Point values by
+dividing X by y I can also divide y
+divided by X
+now we can also uh next let me print X
+Matrix
+now we can also power like give the
+power raised to 2 3 or any numbers for
+each element element wise power we can
+also give we can do that by using x dot
+cap I want this to be each element to be
+power 2.
+you can do the same for y why I'll print
+The Matrix
+why in dot power of 3.
+this is how we can do arithmetic
+operations for arrays now let's see for
+the relational operator for relational
+operator now I'll create a two Matrix
+that is two cross two my two that is a
+is equal to from 1 2 3
+um
+sorry and one more row I'll include four
+six seven
+and one more B is equal to
+some random numbers like four
+three
+one then again four
+one and six
+now you can see this other two matrices
+A and B which I have been created using
+uh the
+usual methods of creating the Matrix
+as we will check whether the Matrix a is
+equal to Matrix B that is a equals
+equals B
+C
+as we did press enter we so we can see
+there is a true cross three logical
+array has been created
+now
+this array contains only 0 and 1 logical
+real values
+like how is it possible
+when we are performing an relational
+operators of into any Matrix in Matlab
+if the each element matches then it will
+print as one this does not matches it
+will print as zero for example as we see
+since the first element in Matrix a is
+one and the second first element in the
+Matrix B is 3 which is not matching so
+it is as printed as zero and the last
+last that is of in the position 4
+is first element in the second row and
+this first element in the second row of
+both Matrix A and B are equal so it is
+printed as one if the elements are
+matching in the both the Matrix it will
+print it as one if else it print as zero
+we can also perform other logical or
+sorry other relational operators like
+is
+greater than or equal to B
+if it is 2 it will print it as 0 if it
+is if it has one if it is false it
+displayed as zero now we can also check
+it for a is less than or equal to B
+we can also see
+a is not equal to
+C
+if a is not equal to B then it will
+print 1 if we A and B are equal it will
+print to zero
+if it's between a is equal greater than
+or equal to B and what is the difference
+between a is greater than or equal to B
+for example C I'll print a is greater
+less than or equal to B
+it is a logical array which has 1 1 0 1
+1 0 1 like first we will print what is a
+okay and well let me see check what is p
+you can see the first element
+in the a is one and the first element in
+the base 3.
+is 1 Less Than 3 yes so it printed as 1.
+and similarly for other elements so what
+if if you print a less than b
+C
+if when we are printing a less than or
+equal to B if the values are less than
+it will check for first condition and
+second condition it will check if it is
+equal for example when we say when we
+see the element 4 in the A and element 4
+in the B are matching it will print 1 in
+a less than or equal to B in the case of
+a less than b it will only check if the
+first value of element a is less than
+second value of element B
+if it true it will print 1 if not will
+print zero
+now while performing The Logical
+operator first we'll create a two Matrix
+of logical elements or real values let
+me take it as Z is equal to
+1 0 and 1.
+1 0 and 1.
+and one more element I'll one more multi
+so I'll take B
+or H is equal to
+1 1
+0
+0 1 1.
+now we have two real value Matrix that
+is a logical Matrix now let's see how to
+perform The Logical operators to this
+Matrix first we will perform logical and
+said
+and
+as we know how to how the logic logical
+and or or anything will perform so as
+per the values we have given it will do
+the calculations
+now to know the size of a particular
+variable we can use a keyword called
+size for example as I took as I we know
+we have created a variable called Zed
+we'll print that variable and makes you
+print size of Z it will give the size of
+a variability so it's a two cross three
+Matrix you can also do it for one more
+variable that is size of
+I'll take it as y
+see the size of Y is a 3 cross 3 Matrix
+you can do for any variable that you
+have created if you want to know the
+size of that particular variable we can
+get it by using a keyword called size
+now what if if you want to know more
+about the variable apart from the size
+in that scenario we can use whose
+keyword that is
+whose favorite holes here they will give
+what are the variables or the name of
+the variables which have been created
+while working or in the workspace and
+the size of that variable that is a 2
+cross 3 or what is the size what is the
+number of bytes which class which they
+have created the entire details of the
+variables created in the workspace now
+it's time to see how to create scripts
+in Matlab now let's see how to create
+scripts before getting into our scripts
+let me clear all the command window and
+the workspace by giving
+clear all
+and clear screen from it
+Now to create a script in Matlab first
+we have to go to the new script which is
+in the home button in the file section
+we have a we have a space or we have
+button called new script click on the
+new script now you can see our Command
+window is divided into two parts one is
+into a script part and one one has it as
+a command window
+now you can write any kind of scripts or
+a program anything inside the script for
+example I'll write a is equal to 5
+is equal to 6
+I want C is equal to a minus B
+now when we press enter it won't run
+as we were doing in the command window
+for example in the command window if you
+give a is equal to Phi
+and press enter it will show the output
+but in the script if you press enter it
+will go to the next line
+to get a output to get a run in the
+script you have to press it on the Run
+button
+as soon as you press on the Run button
+automatically it will ask to save the
+file
+you can save the file with any
+particular name you want and you have to
+mention dot m dot m extension extension
+is for Matlab then press on Save now you
+can see your file has been saved as a
+particular name we have given and inside
+the folder which I've been working I am
+working inside the Matlab inside the
+Matlab this file name has been saved
+saved with the extinction here
+now to get an output of this code you
+should just press run
+see as you can see first it will print
+the file name the file name it has been
+printed next it will print what is the
+variable age what is the value assigned
+to the variable that is Phi then what is
+the next variable that is B it is the
+value since the variable that is 6 and
+at last what is the calculation you are
+giving or what is the
+comment that you are giving foresee that
+is AC is equal to a minus b c is equal
+to a minus P that the answer is minus 1.
+now when you see our Command window you
+can see we have the input and the output
+both like the input which I have given
+by the user is also printed and also
+output is printed like now what is if
+you want if you don't want it input to
+be printed you just want the answer to
+be printed in the command window
+to that so after giving and assigning a
+value for example a is equal to 5 after
+assigning a value close using semicolon
+the both the input values then run
+you can see again it will print the file
+name and it will print only the output
+only the value C is equal to -1 like
+that you can avoid printing the input
+values in the command window
+like this you can also create n number
+of scripts as you want how many scripts
+and number of scripts you can create I
+can you can perform any operations like
+you can perform any basic programs by
+writing that code inside this
+and script and if you don't want it to
+be uh your inputs to be printed in
+command window you can enclose them
+using a semicolon and if you want your
+command line to become inputs to be
+come in the comment section you can
+erase the semicolon and just press enter
+using scripts you can write any basic uh
+programs like addition of two numbers
+reversing a function or two parent room
+uh prime number or not like that any
+basic programs you can write in the
+script function or using creating a new
+script you can
+use it if you after creating all this if
+you don't want to your script to be
+displayed in the window you can just
+cancel it if you want it you can see the
+changes if you don't want you can just
+delete it and your command window will
+be back let's have a look at some of the
+basic math operations in Matlab now
+let's perform some of the basic math
+operations in Matlab
+before doing that Let Me Clear My
+Command window and
+the workspace
+to perform a basic math operations I'll
+create two matrices that is a is equal
+to
+I'll create one three cross three Matrix
+of
+and B Matrix with the element
+six seven eight
+and I don't want uh to be any element in
+this first element of second row like
+I'll just give it as 0 4
+5.
+so then
+one close the bracket and hit
+now we have two Matrix
+basic operation first we'll do addition
+I'll say C is equal to a plus b
+C is equal to a plus b each element like
+1 plus 6 is 7
+snap 2 plus 7 is 9 3 plus 8 is 11. same
+process will be taken by the middle row
+and the last row
+now what if I want to perform a
+subtraction like same wise I'll do it as
+C is equal to a minus p
+our a first element was 1 minus 6 was
+minus 5. 2 minus 7 is also minus 5 3
+minus 8 is also minus 5.
+now what if I want to do multiplication
+of these two Matrix it is C is equal to
+a into
+that is five
+our first met is seven
+now the matrix multiplication three row
+and column as the matrix multiplication
+takes place it will expose the first row
+First Column second row second column
+and third row third column well the one
+of the important point that you have to
+keep in your mind while doing Matrix
+Matrix multiplication is to maintain
+unit uniformity in the number of columns
+number of rows and number of columns for
+example if you have two Matrix that is a
+and b that should contain same number of
+rows and same number of columns because
+as we know matrix multiplication will
+takes place as per the first row First
+Column second row second column and
+third row third column to append the
+matrix multiplication the each Matrix
+should have a same number of columns and
+same number of rows
+for example let me take a matrix that is
+z is equal to one two three four five
+six
+and I'll take one more Y is equal to
+one
+one four one
+six five
+six five six four five
+enter now I have two Matrix that is z
+and Y which is of two two cross three
+two cross three
+now as I said before to do a matrix
+multiplication the number of rows and
+the number of columns should be same
+now let me see
+can I multiply
+Z into y in the matrix multiplication be
+happened between these two matrices
+no error because the number of rows in
+the columns within the Matrix set does
+not match the number of columns in the Y
+because it has 2 3 Dash 2 so to to do
+matrix multiplication the number of rows
+in one Matrix would match with the
+number of columns with another Matrix
+for example if I update the Y is equal
+to to 1 comma 2
+2 comma 4.
+and 4 comma 5
+and now perform a mattress
+multiplication between Z
+into y we will get the value
+so keep in keep in your mind that
+whenever you perform a matrix
+multiplication the number of rows of one
+Matrix should be always equal to a
+number of columns with the other Matrix
+now what is if you want the two Matrix
+of different rows and columns should
+have to multiply each other what to do
+in that case for example let me take let
+me print uh Z what will be what is z z
+was is a two cross three Matrix and I'll
+print y
+and I'll just change the values of Y
+into a 2 cross 3 Matrix that is one two
+three comma four five six
+now our Y is this and our Z is this I
+have two Matrix of two cross three now I
+want these two Matrix to be multiplied
+what to do for that I'll do it as
+assigning this to a one more variable
+called D is equal to
+Z dot star of Y
+see now the every each element of Y has
+been multiplied with every each element
+of set
+like this you can you can multiply the
+elements which are of different
+velocities which does not follows the
+rules of matrix multiplication it does
+not have a number same number of rows
+and columns
+let me take one more example and explain
+like for example let me see for one more
+example let me say x is equal to I'll
+take us 1 2
+and 4 5. it will be a 2 cross 2 Matrix
+and one more I'll take take test Y is
+equal to
+4 pi
+6 and 7.
+now I want to multiply I every element
+of X with the every element of Y
+that will do it as assigning D is equal
+to X
+star
+dot star of
+y every element of X has been multiplied
+with every element of Phi and it is
+assigned to a d variable
+it was for multiplication what if you
+want to divide two matrices for example
+let me just clear all my Works workspace
+clear call
+and see let's see now I'll take one more
+Matrix it is z is equal to with
+elements one two three four five six
+seven and eight
+and one more as y
+is equal to four five six
+comma seven eight nine comma 3 comma 2
+comma 1.
+now we have a two Matrix
+X now I have to divide X by y that is C
+is equal to x divided by one now you see
+how to divide this
+to divide this Matrix x divided by y we
+have to do it as X is equal to sorry C
+is equal to assign this to any variable
+C is equal to X
+dot divided by y
+now every element of X is divided by
+every element of Y
+like this you can do the division of two
+matrices and assign to a variable
+without us into a variable so we can do
+like we can do it as x dot
+division of
+it will assign to a variable called
+answer now it's time to understand the
+Matlab functions since other task or a
+set of tasks that are performed on a
+given set of input that converts the
+input into a preferred output some of
+the common functions in Matlab are
+trigonometric functions exponential
+functions logarithm functions square
+roots let's learn how to implement these
+functions in platform in trigonometrical
+function we know we have multiple
+functions like sine cos tan cosine
+cosecant and secant and also I have got
+now let's see how to implement or how to
+use all these trigonometry functions in
+Matlab
+first let me take sine sine of
+sorry
+sine of inside bracket LC sine of 0 what
+is the value of sine of 0 sine of 0 is 0
+let me check it for cos
+pass off zero
+is what
+now we know tan is signed by cos
+now let me see what is the value of tan
+of 0.
+tan of 0 is also 0. the 10 like 10 is
+caused by a sign that is 0 by 1 is 0.
+now these are some of the basic
+trigonometrical functions let's move on
+to the exponential before moving on
+let's clear
+all the workspace and command window
+you can also go for some of the other
+trigonometrical functions like cosecant
+cot secant
+and when it comes for exponential we
+will try some of the exponential
+comments how to do exponential uh
+operations in Matlab
+the exponential in Matlab is they
+represent or can be written as using ESP
+now let's see what is the exponential of
+1 the exponential 1 is
+2.7183 like that you can also check it
+as what is the exponential of
+Phi
+the exponential of Phi is
+148.41 like select that you can also
+give for what is the exponential of
+so take it as degree the exponential of
+180 is 1.4 something imaginative values
+now what if you want to find the log
+values for example what is the value of
+log of 1 log of 1 is 0 and what is the
+value of log of
+2
+log of 2 is
+0.6931 you can also find of log of
+exponential of 1.
+what will the log of exponential of 1
+like there is no log of exponential of 1
+because I am not closed the bracket let
+me try it once again
+log of exponential of 1 is 1. you can
+also use it as log of let me send log of
+exponential of 0 close 2 brackets
+and log of exponential 0 is 0.
+now what if in case if you want to find
+the square roots of a number for that
+you will use as sqrt
+where root of for example take it as
+100
+squared of 100 is 10 we can also try it
+for one more that is
+square root of
+4 I'll take it as four
+square root of 4 is 2. like this you can
+find the square root logarithm function
+or exponential value of any numbers that
+you want now we will see how to create
+or Define our own functions in Matlab
+now let's see how do we able to create
+or how do we able to Define our own
+functions
+by just mentioning or Define that
+particular function the soft will
+understand that you are giving the
+command to perform that particular
+functions in this command or in this
+operation
+to create our own function just go to
+the Home Tool and in the file section we
+have a button called new in that we have
+function click on the function we have a
+function in the output one and output
+parameter replace it has why I am giving
+as y then I should name my
+function I am naming my function as my
+fun and inside that I am passing a
+variable called X
+next we have to save what my function
+should perform
+I am printing this here like we will
+I'll give Y is equal to
+X Plus
+or Y is equal to 30 plus X
+first we have to take a create a new
+function in that we have to replace a
+function by a function name and pass one
+variable then as assign that variable to
+a one move function variable now
+inserted function we have to write what
+operation that that function should
+perform
+now I am writing that my function should
+perform that should add 30 for every X
+inputs for every input I give it should
+add by 30.
+now first we have to now we have to
+click on run it will automatically ask
+us to save the file while saving any
+function keep this point in mind the
+function name and the file name should
+be same
+the function name of my
+my function name is fun
+my fun and my file name should be my
+fund dot dot M is for extension of
+Matlab see now you can see my function
+name has been saved now why I got got
+here is here because I have created one
+variable my function of X now I have to
+pass a value for that my function so
+I'll do it as
+my
+function
+inside bracket I'll pass it as 20.
+C my function y is equal to 50 that is
+my function I have passed x value as 20
+and why it is already has 30 30 plus 20
+is 50. you can also again we can pass my
+function
+of
+100
+it is printed as
+the 130 as it has already has 30 and it
+is printed as 100. now
+you won't want this y y is equal to 30
+and answer is equal to 38 don't want you
+you don't want this to be repeated for
+that you can mention semicolon here and
+then if you run like my function fun of
+and red
+only the answer will be displayed here
+the Y value won't if you don't want your
+function to be displayed in your windows
+you can increase it by a semicolon like
+this you can create a function and you
+can name your function you can you can
+pass in any num n number of variables
+you want your function and then Define a
+simple equations as I mentioned a simple
+equation is y is equal to 30 plus X you
+can mention any kind of your
+equations to your variable and if you
+don't want that to be print in your
+command window in close it with the
+semicolon till now we have learned how
+to create variables operators how to
+create new scripts functions and how to
+define a function now let we will learn
+how to write a basic programs using this
+variables operators in Matlab for that
+first we'll take a new script
+and the first program in first program
+will take a variable and will assign a
+value and find the squares cubes and the
+square root of that particular variable
+for that I am taking a variable a which
+is equal to 3. and I am taking a
+variable B which is equal to a star a n
+which is a square of a then I'll take a
+variable C which is a star a star a
+which is a cube of a then I'll take a
+variable D and I'll give it as
+square root of K
+and to print I'll use statement F printf
+within the quotes
+I want this variable to be print and the
+value in the variable to prevent also
+I'll use four bytes of hands and
+integers which says
+query
+equals
+and again
+just do the same thing
+with a real number and end
+I'll read a variable a
+and B
+same thing I'll just copy
+and I'll use it by replacing a square by
+Cube
+Cube
+and the variable B
+by C
+again I'll do same
+I'll just press enter and I'll just copy
+paste
+here I want to print the square root of
+[Music]
+move
+of a that is a two bytes of unsigned
+variable
+is
+I'll read that variable as a floating
+point that is six point
+four F
+and I'll just read the variable as
+d
+save the file and run it
+we can say 3 square is 9 3 cube is 27
+and the square root of 3 is 1.73121
+like that we we found the square root of
+our value 3 which is into a variable a
+now one more uh we'll see a program on
+array where it will take a two array
+extract some elements in an array and do
+addition in that elements first I'll
+take a variable a is equal to within
+square brackets 3 4 and 7.
+and end with the semicolon and next one
+is B is equal to I'll take a 4 elements
+1 4 6 and 8. and the semicolon in
+variable C I'll give a of 2
+must be added with B of 3.
+and we'll just
+you can see the answer is 10. a of 2 is
+4 P of 3 6 4 plus 6 is 10.
+like this you can write any basic
+program which is based on arrays Matrix
+variables like matrix multiplication
+addition of two number subtraction of
+two numbers matrix multiplication many
+more basic programs in Matlab with this
+we have reached the end of this session
+today we learned what is Matlab its
+graphical user interface how to create
+variable scripts and functions in Matlab
+some of the basic operations in Matlab
+please like this video and share with
+your friends before more such videos
+visit our simply learn YouTube channel
+for any queries regarding this topic
+mention it in the comment section thank
+you keep learning
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

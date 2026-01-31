@@ -1,0 +1,260 @@
+hello everyone I am M and welcome to
+today's video where we will be talking
+about llm benchmarks tools used to test
+and measure how well large language
+models like GPT and Google Gemini
+performs if you have ever wondered how
+AI models are evaluated this video will
+explain it in simple terms llm
+benchmarks are used to check how good
+these models are at tasks like coding
+answering questions and translating
+languages or summarizing text these
+tests use sample data and a specific
+measurement to see how will the model
+perform for example the model might be
+tested with a few example like few short
+learning or none at all like zero short
+learning to see how it handles new task
+so now the question arises why are these
+benchmarks important they help
+developers understand where a model is
+strong and where it needs Improvement
+they also make it easier to compare
+different models helping people choose
+the best one for their needs however llm
+benchmarks do have some limits they
+don't always predict how well a model
+will work in real world situation and
+sometimes model can overfit meaning they
+perform well on test data but struggle
+in Practical use we will also cover how
+llm leaderboards rank different model
+ped on their benchmark scores giving us
+a clear picture of Which models are
+performing the best so stay tuned as we
+dive into how llm Benchmark work and why
+they are so important for advancing AI
+craving a career upgrade subscribe like
+like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we start here is a quick
+info for you dive into the future of AI
+with our generative Ai and machine
+learning course in collaboration with en
+ICT Academy I guti learns tools like
+chity open AI hugging face Python and
+more join Master Class LED by I go
+faculty engage in Hands-On projects and
+earn executive aluminized status this
+generative Ai and machine learning
+course enriches your career Journey with
+comprehensive coverage of machine
+learning deep learning NLP generative AI
+reinforcement learning computer vision
+and many more so don't forget to find
+the course link from the description box
+below and the pin comand so without any
+further Ado let's get started so what
+are llm benchmarks llm benchmarks are
+standardized tools used to evaluate the
+performance of La language models they
+provide a structured way to test llms on
+a specific task or question using sample
+data and predefined metrics to measure
+their capabilities these Benchmark
+assess various skills such as coding
+Common Sense reasoning and NLP tasks
+like machine translation question
+answering and text summarization the
+importance of llm Benchmark lies in
+their role in advancing model
+development they track the progress of
+an llm offering quantitive insights into
+where the model performs well and where
+Improvement is needed this feedback is
+crucial for guiding the fine-tuning
+process allowing researchers and
+Developers to enhance model performance
+additionally benchmarks offers an
+objective comparison between different
+llms helping developers and organization
+choose the best model for their needs so
+how llm benchmarks work llm Benchmark
+follow a clear and systematic process
+they present a task for llm to complete
+evaluate it performance using specific
+metrics and assign a score based on how
+well the model performs so here is a
+breakdown of how this process work the
+first one is setup llm benchmark come
+with pre-prepared sample data including
+coding challenges long documents math
+problems and real world conversation the
+task is span various areas like Common
+Sense reasoning problem solving question
+answering sumary generation and
+translation all present to the model at
+the start of testing the second step is
+testing the model is tested on one of
+the three ways few short the llm is
+provided with a few example before being
+prompted to complete a task
+demonstrating its ability to learn from
+limit data the second one is zero shot
+the model is asked to perform a task
+without any prior examples testing its
+ability to understand New Concept and
+adapt to unfamiliar scenarios the third
+one is fine tun the model is trained on
+a DAT set similar to the one used in The
+Benchmark aiming to enhance its
+performance on the specific task
+involved the third step is the scoring
+so after completing the task The
+Benchmark compares the models output
+with the expected answer and generates a
+score typically ranging from 0 to 100
+reflecting how how accurately the llm
+perform so now let's moving forward
+let's see key metrics for benchmarking
+llms so llms Benchmark uses various
+metrics to assess performance of large
+language model so here are some commonly
+used matri the first one is accuracy or
+Precision measure the percentage of
+correct prediction made by the model the
+second one is recall also known as
+sensitivity measure the number of true
+positive reflecting the currect
+prediction made by the model the third
+one is F1 score combines both accuracy
+and recall into a single metric weighing
+them equally to address any false
+positive or negatives F1 score ranging
+from 0 to one where one indicates
+perfect precision and recall the fourth
+one is exact match tracks the percentage
+of predictions that exactly match the
+correct answer which is especially used
+for the task like translation and
+question answering the fifth one is
+perpect gges here it will tell you how
+well a model predicts the next word or
+token a lower perplexity score indicates
+better task comprehension by the model
+the sixth one is blue bilingual
+evaluation understudy is used for
+evaluating machine translation by
+comparing and grams sequence of adjacent
+text element between the models output
+and the human produced translation so
+these quantitative metrics are often
+combined for more through evaluation so
+in addition human evaluation introduces
+qualitatively factors like coherence
+relevance and semantic meaning provide a
+nuan assessment however human evalution
+can be time consuming as and subjective
+making a balance between quantitative
+and qualitative measures important for
+comprehensive evaluation so now let's
+moving forward see some limitation of
+llm benchmarking while llm benchmarking
+available for assessing model
+performance they have several limitation
+that prevents them from the fully
+predicting real world Effectiveness so
+here are some few the first one is
+bounded scoring once a model achieves
+the highest possible scores on The
+Benchmark that Benchmark loses its
+utility and must be updated with more
+challenging task to remain a meaning
+full assessment tool the second one is
+Broad data set llm Benchmark often rely
+on Sample data from diverse subject and
+task so this wide scope may not
+effectively evaluate a model performance
+in edge cases Specialized feelds or
+specific use cases where more tailored
+data would be needed the third one is
+finite assessment Benchmark only test a
+model current skills and as LMS evolve
+and a new capabilities emerge new
+benchmarks must be created to measure
+these advancement the fourth one is
+overfitting so if an LM is trained on
+the same data used for benchmarking it
+can be lead to overfitting where the
+model performs well or the test data but
+struggles with the real task so this
+result is scores that don't truly
+represent the model's broader
+capabilities so now what are llm
+leaderboards so llm leaderboards publish
+a ranking of llms based on the variety
+of benchmarks leaderboard provide a way
+to keep track to the myard llms and the
+compare their performance llm
+leaderboards are especially beneficial
+in making decision on which model Su you
+so here are some so in this you can see
+here open AI is leading and GPD 40
+second and the Llama third with 45
+parameter B and 3.5 Sonet is there so
+this is best in multitask reasoning what
+about the best in coding so here open AI
+o1 is leading I guess this is the oran
+one and the second one is 3.5 Sonet and
+after that in the third position there
+is GPD 4 so this is in best in coding so
+next next comes fastest and most
+affordable models so fastest models are
+llama 8B parameter 8B parameter and the
+second one is L ma Lama 70b and the
+third one is 1.5 flesh this is Gemini 1
+and lowest latency and here it is
+leading llama again in cheapest models
+again llama 8B is leading and in the
+second number we have Gemini flash 1.5
+and in third we have GPT 4 mini moving
+forward let's see standard benchmarks
+between CLA 3 Opus and GPT 4 so in
+journal they are equal in reasoning CLA
+3 op is leading and in coding gp4 is
+leading in math again gp40 is leading in
+tool use cloud 3 opas is leading and in
+multilingual Cloud 3 Opus is leading so
+with this we have come to end of this
+video if you have any question or doubt
+please feel free to ask in the comment
+section below our team of experts will
+help you as soon as possible thank you
+and keep learning with simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

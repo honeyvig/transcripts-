@@ -1,0 +1,1095 @@
+these days we usually ask cd
+hey cd how far is the nearest fuel
+station
+whenever we ask something to siri the
+powerful speech recognition system gets
+to work and converts the audio into its
+actual form
+then is then sent to the apple server
+for further processing
+and then machine learning algorithms are
+run to understand the user's intent
+and then finally siri tells you the
+answer well this is happening because of
+these machine learning algorithms
+hey everyone i am ang from simply learn
+in this video we will learn what an
+algorithm is we will look at what
+machine learning is followed by machine
+learning types we will continue this
+session by understanding how algorithm
+work in machine learning followed by
+how algorithm work in programming
+further we will also see some popular
+machine learning algorithms in detail at
+last we will end this video by seeing
+some hands-on lab with python code
+but before we begin if you haven't
+subscribed to our channel hit the
+subscribe button and please don't forget
+to press the bell icon so you will never
+miss any update from simply love so
+without any further ado let's begin
+in computer programming an algorithm is
+a set of well-defined instruction to
+solve a particular problem
+it takes a bunch of information sources
+and deliver the ideal result
+most of us must be using snapchat to
+apply filters on your faces while making
+videos or capturing photographs
+but do you know how does snapchat
+recognize your face while capturing
+videos or photographs and put filters on
+it even if there are multiple faces it
+applies filter on every face accurately
+this became possible with the help of
+phase recognition technique which uses
+machine learning algorithms to detect
+phases and apply required filters on
+them
+so this is the basic idea of how an
+algorithms work
+let's move ahead in this video and we
+will now discuss how an algorithm work
+in machine learning but before that
+let's go through what is machine
+learning
+machine learning is a subpart of
+artificial intelligence the art of
+making commuters learn and act like
+humans by feeding data
+and make predictions based on experience
+as we saw in previous example when the
+data that is how far is the nearest fuel
+station
+comes in the machine or in our case seri
+immediately start analyzing data
+and machine accurately makes prediction
+and decision based on given data
+now that we have an understanding of
+what machine learning is let's move
+forward and discuss different types of
+machine learning
+machine learning is classified into
+supervised learning unsupervised
+learning reinforcement learning
+there are two sort of problems in
+supervised learning
+classification and regression
+certain types of machine learning
+algorithms fall under the
+classifications are decision algorithm k
+n algorithm logistic algorithms name
+base algorithm support vector machine
+algorithm svm however integration types
+of machine learning algorithms are
+linear regression regression trees
+non-linear regression and bayesian
+linear regression
+now talking about unsupervised learning
+there are two sorts of problems in
+unsupervised learning clustering and
+association algorithms that fall under
+clustering problems include
+k-means clustering algorithms principal
+component analysis algorithms however
+algorithms that fall under association
+problem are a priori algorithms fp
+growth algorithms in reinforcement
+learning there are two types positive
+reinforcement negative reinforcement
+reinforcement learning algorithms are
+mainly used in ai applications and
+gaming applications
+there are certain types of problems
+which falls under reinforcement learning
+are
+q learning
+state action reward state action
+s-a-r-s-a algorithms
+deep q neural network and markov
+decision process
+after discussing what machine learning
+is and its side let's move forward to
+see how algorithm work in machine
+learning
+everyone knows the algorithm is a
+step-by-step process to approach a
+particular problem
+there are numerous examples of algorithm
+from figuring out sets of number to
+finding roots through maps to showing
+data on a screen
+let's understand this by using an
+example
+every algorithm is built on inputs and
+outputs google search algorithm is no
+different
+the input is the search field and the
+output is the page of result that
+appears when you enter a particular
+phrase or keyword also known as serp or
+search engine result page
+google has a search algorithm so it can
+sort results from various website and
+provides the user the best result
+when you start a search you will see the
+search box will attempt to guess what
+you are looking for
+in order to better understand what the
+user is looking for the algorithm is
+trying to gather as many as suggestions
+from them as possible
+the results from the search field that
+best matches the query will be ranked
+the choose with website will rank and in
+what position using more than 200
+ranking variables now let's take an
+example of coding program and see how
+the algorithm works
+here we will use a case of counter
+program wherein we want to print the
+multiplication table of any number
+let's take two the algorithm start here
+and then it assign a value to a variable
+the variable i is having an initial
+value of 1.
+the system will read the number the
+number in case is 2.
+now the system has a condition a
+condition can now either be true or
+false
+if the value of i reaches 11 then the
+loop will end otherwise
+value of i will multiply by the number
+the initial value of i is 1 so for the
+first time the system output will be 2
+now value of i will be increased by 1
+according to the loop condition
+the system will then move back and check
+for the condition again
+the new value of i is 2
+which is still less than 11 the system
+will again print 2 into i which is 2
+into 22 on the screen
+the new output result will be 4.
+the system will keep following the same
+procedure repeatedly until the value of
+i becomes 11
+once the value of i becomes 11
+then only the algorithm will terminate
+after discussing how an algorithm work
+let's move forward and see some popular
+machine learning algorithms
+some popular machine learning algorithms
+are
+first one is linear regression algorithm
+second one is logistic regression
+algorithm
+and the third one is decision tree
+and the fourth one is support factor
+machine algorithm svm
+and the fifth one is knn k nearest
+neighbor algorithm
+the sixth one is k means clustering
+algorithms
+the and the seventh one is random forest
+algorithms
+and the last but not the least algorithm
+is a priori algorithms let's go through
+them in detail one by one
+linear regression is one of the most
+famous and straightforward machine
+learning algorithms utilized for
+predictive analysis
+linear regression show the linear
+connection between the dependent and
+independent factors
+the equation of line is y equals to m x
+plus b
+here y stands for the response variable
+or a dependent variable whereas x is for
+the predictor variable or an independent
+variable it attempts best to fit line
+between dependent and independent
+variables and this best fit line is
+known as line of regression or
+regression line
+let's take a real application example in
+predicting consumer behavior businesses
+use linear regression to forecast things
+like how much a client is likely to
+spend
+things like targeted marketing and
+product development may benefit from
+this
+walmart for instance use linear
+regression to forecast which good would
+be in high demand across the nation
+moving forward let's see types of linear
+regression
+there are two types of linear regression
+algorithm
+the first one is simple linear
+regression and the second one is
+multiple linear regression in simple
+linear regression if an independent
+variable is utilized to focus the worth
+of a mathematical dependent variable
+then at that point such a linear
+regression algorithm is called simple
+linear regression the equation of line
+will be y equals to a 0 plus a 1 x
+and the second one is multiple linear
+regression if the dependent variable
+declines on the y and the independent
+variable on the x then such a
+relationship is known as negative linear
+relationship the line of equation will
+be
+minus of a 0 plus a 1 x
+moving forward let's see logistic linear
+regression
+logistic regression is the supervised
+machine learning algorithm utilized to
+anticipate all the categorical factors
+or discrete values
+it could be very well used for the
+grouping issues in learning
+and the result of the logistic reaction
+can be either yes or no 0 or 1 man or
+woman and so on
+it gives the values which lies between 0
+and 1. for example a credit card
+business is interested in knowing
+whether the transaction amount and the
+credit score have an impact on the
+probability that a particular
+transaction would be fraudulent
+the business can use logitech reduction
+to determine how these two predator
+values can relate the probability that a
+transaction is fraudulent
+this response variable in the model has
+two possible outcomes
+first one is the transaction is
+fraudulent and the second one is the
+transaction is not fraudulent
+in logistic regression rather than
+fitting a regression line we fit an s
+form logistic capability which predicts
+two greatest value zero or 1
+the logic regression equation can be
+calculated from linear regression
+equation the steps to get logistic
+regression equations are
+the equation of straight line can be
+written as
+y equals to b 0 plus b 1 x 1 plus b 2 x
+2 till b and x n
+in logistic regression y can be between
+0 and 1 only so for that let's divide
+the above equation by 1 minus y
+then the equation will be y upon 1 minus
+y that is 0 for y 0 and infinity for y
+equals to 1 but range between minus
+infinity to plus infinity then we have
+to take the logarithm of equation and
+now it will become log of y upon 1 minus
+y equals 2 v 0 plus b 1 x 1 plus b 2 x 2
+so on till b and x n
+let's move forward and see types of
+logistic regression
+are three types of logitech regression
+that can be classified first one is
+binomial in binomial logistic regression
+there can be only two possible types of
+dependent variables like yes or no pass
+of faith man woman and many more and the
+second one is multinomial in multinomial
+logistic regression there can be three
+or more possible unordered ways of
+dependent variable such as horse cow and
+sheep and the last one is ordinal in
+ordinal logistic regression there can be
+three or more possible ordered ways of
+dependent variable such as small medium
+or large moving forward let's see
+decision trees in detail
+a decision tree is a tree structured
+classifier that could be used for
+classification and regression a decision
+tree is a tree in which each non-leaf
+node is assigned to an attribute
+additionally each r contain one of the
+available values for its parent node
+which is associated with each leaf node
+that is the node from where the arc is
+directed
+let's see some decision tree terminology
+first one is root that contains the
+entire dataset the next one is node
+attached for the data of a certain
+attribute and the third one is branch
+which connect the node to internal node
+or the internal node to leaf node and
+the fourth one is leaf node the terminal
+node that predicts the outcome
+let's move forward and see decision tree
+algorithms
+the first one is select the best
+attribute to use the current node in the
+tree the second one is for each possible
+values select the attributes the third
+one is
+partition the examples using the
+possible values of this attribute and
+assign these disjoint subsets of the
+example to the appropriate child node
+recursively generate each child node
+until
+ideally all examples for a node have the
+same label
+like class
+moving forward let's understand this
+recently
+for building a decision tree step one is
+select an attribute
+then split the data into its children in
+a tree continuous plating with available
+attributes
+and keep splitting until leaf node are
+pure like only one class remains a
+maximum depth is this a performance
+matrix is achieved let's move forward
+and see svm algorithm support vector
+machine algorithms
+a support vector machine is a well
+supervised machine learning model it is
+utilized for both information
+classification and regression
+it is regularly utilized for the
+grouping issues we can involve it in
+different life care system and we can
+involve it in typically happy or sad
+look arrangements
+we can involve it in filters
+if we make specific looks
+it would add the particular filter
+according to the expression
+the scope of articulation lies between
+happy and sad support vector machine
+helps in to recognize handwritten
+characters used widely like checks
+continue to be a significant part of the
+majority of non-cash transaction and are
+frequently written by the people
+the current check processing system in
+many developing nations involves a bank
+employee to read and manually enter the
+information in a check
+while also verifying the data like
+signature and date
+a handwritten tax recognition system can
+reduce expenses and labor hours because
+a bank must handle several checks each
+day
+moving forward let's see the algorithm
+of svm
+the objective of support vector machine
+is to make the best line or choice limit
+that can isolate n-dimensional space
+into classes
+so we can undoubtedly put the new data
+of interest in the right category later
+on this batch decision boundary is known
+as a hyperplane let's move forward and
+see types of support vector machine
+support vector machine can be of two
+types first one is linear svm second one
+is non-linear spm let's move forward and
+see linear sphere
+linear svm is utilized for linearly
+detachable information
+which implies if a data set can be
+ordered into two classes by utilizing a
+straight line
+that such information are named linearly
+separable information and a classifier
+is utilized called linear spm classifier
+moving forward let's see non-linear sbm
+non-linear spm is utilized for
+non-directly isolated information and
+that implies in the event that a data
+set can't be categorized by utilizing a
+straight line
+such information is named non-directed
+information
+and the classifier utilized is called a
+non-linear svm classifier
+moving forward let's see knn algorithm
+in detail
+knn is a supervised learning technique
+knn classifies new data into our
+targeted classes depending on the
+features of its neighboring points
+and also
+be used for the regression problems it
+is an instance based learning algorithm
+and a bit lazy learning algorithm k n
+calculation stores every one of its
+accessible information and orders
+another information point based on the
+likeness this means that when new data
+information appears it usually tends to
+be successfully categorized into a good
+suit classes using the canon algorithm
+let's imagine we have an image of animal
+that resembles a cow or ox however here
+we are not sure if it is a cow or ox
+as canon method is based on a likeness
+matrix it will identify the properties
+of new data that are related to the
+image of cow or ox
+and based on those quality it will
+classify the data is belonging to either
+cow or ox group
+moving forward let's see how does k n
+work
+the steps to implement k n algorithms
+are step one decide on the neighbors k
+numbers step 2 calculate the euclidean
+distance between k neighbors in step 2.
+third one is
+based on the determined euclidean
+distance select the k closest neighbors
+step 4 is count the numbers of data
+points in each category between these
+key neighbors step 5 assign the fresh
+data points in the category where the
+highest neighbors count
+and then k n model is ready
+let's say we need to add a new data
+point to the vital category
+at first we will decide on the numbers
+of neighbors therefore we will pick k
+equals to 5
+then the euclidean distance between the
+data points and then can be determined
+the distance between two points known as
+the euclidean distance can be determined
+by
+under root of x 2 minus x 1 whole square
+plus y 2 minus y 1 whole square
+then we determine the closest neighbors
+by calculating the euclidean distance
+there are 3 closest neighbors in
+category a and two closest neighbor in
+category b
+this new data point must fall with
+category a
+because as we can see its three closest
+neighbors are also from group a after
+understanding knl algorithm let's move
+forward and see k-means algorithms in
+detail
+the k-means is the cluster false under
+that is an unsupervised learning
+algorithm it is used to address machine
+learning clustering problems and utilize
+to tackle the grouping issues in machine
+learning
+it permits us to bunch the information
+into various gatherings it is a helpful
+method for finding the classification of
+groups in the unlabeled data set without
+the requirement of any training this
+k-means algorithm groups the data into
+similar classes let's see some
+application of k-means clustering let's
+see some applications of k-means
+clustering
+diagnostic system the medical profession
+uses k-means questioning in creating
+smarter medical decision support system
+especially in the treatment of lever
+alignments the second one is search
+engines clustering forms a backbone of
+search engine when a search engine is
+performed the search results need to be
+grouped and the search engines very
+often use clustering to do this
+moving forward let's see how k means
+algorithm works
+the steps to implement k-means
+algorithms are step one select the
+number k to set the number of clusters
+step two select a random k points or
+centroid step three assign each data
+point the closest centroid data forms to
+predefined k cluster
+step four determine the variance and a
+certain new gravity points for each
+cluster step 5 repeat the third step
+this means reallocating each data point
+to the new closest centroid cluster
+step 6 if a reassignment occurs go to
+step 4 otherwise go to exit
+step 7 the model is ready to use
+so now we have a clear understanding of
+how k means algorithm work let's move
+forward to see the graphical
+representation of k-means algorithm
+consider that there are two variables m1
+and m2 this is a scatter plot of these
+two variables along the x and y axis
+we should accept the number of k of
+punches that is k equals to 2 to
+recognize the data set and to place them
+into various groups
+it implies here we will attempt to bunch
+these data sets into two unique groups
+we really want to pick an irregular key
+point or centroid to frame this group
+these centroids can be either the focus
+of the data set or some of other points
+thus here we are choosing under two
+points as k points which are not the
+piece of our data set
+we will assign every data of interest in
+the scatter plot to the nearest k point
+or centroid
+we will register it by applying some
+math that we consider to find the
+distance between two points that is
+euclidean distance thus we will draw a
+median between both the centroids from
+the graph the left half of the line are
+close points to the right and the k1
+centroid green is near the orange
+centroid we should vary them as green
+and orange for clear representation as
+the need might arise to track down the
+nearest group we will repeat the cycle
+by picking another centroid
+to pick the new centroid we will figure
+out the center point of gravity of these
+centroids and we'll track down new
+centroids then we will reassign every
+piece of information to highlight news
+android for this we will repeat a
+similar course of tracking down a middle
+line the middle will be like as seen in
+the picture one orange point is on the
+left half of the line and two green
+points are on the right thus these three
+points will be appointed to the new
+centroids
+as reassignment has occurred we will
+again go to step 4 tracking down new
+centroids or k points we will repeat the
+cycle by tracking down the center point
+of gravity of centroid so the new
+centroids will be displayed as like this
+we now have new centroid so once more
+defined the middle boundary and reassign
+the data of intros by this graph there
+are no unique pieces of information on
+one or the other side of the line
+implying our model is shaped by the
+previous graph there are no unique
+pieces of information on one or the
+other line
+implying our model is shaped
+as our k means model is ready and the
+two class groups will be displayed as
+like these now we have a clear
+understanding of how k means clustering
+algorithm works now let's move forward
+to understand random forest algorithm
+random forest is an adaptable simple to
+utilize machine learning algorithm that
+produces even without the hyper boundary
+tuning
+an extraordinary outcome more often that
+not
+it is likewise quite possibly the most
+utilized algorithm because of its
+effortness and variety like it stands to
+be utilized for both grouping and
+classification tasks
+random forest is a classifier that
+contains various choice trees on
+different subsets
+of the given data set and takes the
+normal to work on the present exactness
+of the data set instead of depending on
+the choice tree the random forest takes
+the forecast from each tree and in light
+of the larger part of wards of
+expectation it predicts the final result
+now let's move forward and see how does
+random forest work
+we should see the random forest in order
+since the arrangement is now and again
+thought to be the structured block of
+machine learning this is what a random
+forest would look like with two trees
+the random forest has a similar
+hypermeter to their decision tree or a
+paging classifier luckily there is a
+compelling reason need to consolidate a
+decision tree with a badging classifier
+since you can undoubtedly utilize the
+classifier classes of random forest with
+random forest you can likewise manage
+tasks using the algorithm regressor
+random forest add extra bitness to the
+model while deploying the trees
+rather than looking for the man element
+while parting a node
+it looks to the best component among an
+irregular subset of highlights
+these outcomes in a varied variety often
+result in a superior model
+subsequently in a random forest just a
+random subset of the element is thought
+about the algorithms you might make
+trees more random by involving random
+edges
+for each component instead of looking
+for the most ideal limits like a typical
+choice tree does let's move forward and
+see some application of random forest
+algorithms
+random forest is involved at work by
+researchers in numerous ventures
+including banking stock exchanging
+medication and many more it is utilized
+to predict things which assist these
+businesses with running productively
+like client activity patient history and
+safety in banking random forest is used
+to identify clients who are more likely
+to pay back their dabs on schedule
+additionally it is utilized to forecast
+who will make more frequent use of bank
+services even fraud detection uses it
+the robber node of algorithms indeed
+random forest is a tool used by stock
+traders to forecast future stock
+behavior
+retail businesses utilize it to make
+product recommendation and forecast
+client satisfaction random forage can be
+used in health care industry to examine
+a patient medical history and detect
+disorders random forest is a tool used
+by pharmaceutical experts to determine
+the ideal mix of ingredients in
+treatment or to forecast drug
+sensitivity
+by seeing application of random forest
+algorithm let's move forward and see
+some difference between decision trees
+and random forest
+let's see the difference between random
+forest and decision tree the first one
+is while building a random forest the
+number of rows is selected randomly
+in decision trees it builds several
+decision trees and find out the output
+the second one is it combines two or
+more decision trees together
+in decision trees whereas the decision
+is a collection of variables or data
+sets or attributes the third one is it
+gives accurate results whereas it gives
+less accurate results the fourth one is
+by using random forest it reduces the
+chance of overlifting
+whereas decision trees it has the
+possibility of overlifting
+the fifth one is random forest is more
+complicated to interpreters whereas the
+decision tree is simple it is easy to
+read and understand
+after seeing what is random forest how
+it works let's move forward to see a
+priori algorithm in detail
+the apparati algorithm utilizes standard
+item sets to create affiliation rules
+and is intended to chip away the
+information bases containing exchanges
+with the assistance of these application
+rules it decide how firmly or feebly two
+objects are associated this algorithm
+utilizes a breakfast search and history
+to work out the item set association
+effectively
+it is the iterative interaction for
+finding out the successive item set from
+the huge data set
+let's move forward and see steps for a
+priori algorithms the steps for a priori
+algorithms are step one is establish
+minimal support and confidence for item
+set in the transactional database the
+second one is take all transaction
+supports with a greater support value
+the minimum or chosen support value in
+step two the third one is track down all
+the rules in these subsets with
+confidence value creator then the
+threshold value the fourth one is
+arrange the rules to lower the lift
+at last we will see some advantages and
+disadvantages of a priori algorithm
+the advantages of a priori algorithms
+are easy to understand an algorithm and
+the second one is the join and prone
+steps of the algorithms can be easily
+implemented on the large data set
+disadvantages of a priori algorithms are
+their priority algorithms work slowly as
+compared to the other algorithm and the
+second one is their priority algorithms
+times and space complexity are o of 2d
+which is very low compared to the other
+ones
+let's move forward and see some hands-on
+lab demo
+so we will see a hands-on lab demo on
+linear regression
+as we know linear regression is a way to
+find or to predict the relationship
+between two variables generally we use x
+and y
+so first we will open command prompt to
+write command to open jupyter notebook
+so we will write jupiter
+notebook
+and then press
+enter
+so this is the landing page of jupyter
+notebook and select open
+new python file
+so this is how jupyter notebook ui looks
+like
+so at first we will import some major
+libraries of python which will help us
+in mathematical functioning so the first
+one is numpy
+numpy is a python library used for
+working with arrays it also has
+functions for working in domains like
+linear algebra and matrices
+it is an open source project and you can
+use it freely
+numpy stands for numerical python
+so we will write like import
+numpy
+as np
+here np is used for denoting numpy
+so we will import the next library is
+pandas
+panda is a software library written for
+python programming
+for like data manipulation and analysis
+in particular it offers data structures
+and operation for manipulating numerical
+labels and time series
+so we will write import
+pandas
+as pd
+here
+pd is used for denoting pandas so our
+next library is matplotlib
+matplotlib is a graph plotting library
+in python that serves as a visualization
+utility
+matplotlib is open source so we can use
+it freely and it is most written in
+python a few segments in c and
+javascript for platform compatibility
+for importing metro lib you have to
+write import matplotlib
+product
+dot pi plot
+as plt
+so after importing the libraries we will
+move ahead and import data set so for
+importing data set we have to write data
+set
+equals to pd dot
+read underscore
+csv
+and here we have to give the path of the
+file
+data set
+dot csv
+here pd is for pandas library and read
+is used for reading the data set from
+the machine and csv csv is used for the
+type of file which you want to read
+so after reading let's see our data so
+we will write data set
+dot
+head
+and press enter
+here head is used for retrieving the
+first file lines from the data so our
+data is coming properly so moving ahead
+now let's first define x and y axis for
+x we have to write x equals to
+data set
+dot i lock
+bracket colon comma
+colon again minus 1
+dot values for accesses and for y axis
+we have to write y equals to
+data set
+dot i lock
+bracket colon comma 1
+dot values
+so if we will use data set dot i log for
+minus 1 values for x axis it will select
+till the second last column of the data
+frame instead of the last column
+and i know this is as the second last
+column value and the last column value
+for the row is different
+whereas if you will use for the y axis
+values return a series vector a vector
+does not have a column size
+so moving ahead let's see the value for
+x and y axis first we will see the value
+for x
+like just you have to write x
+and press enter
+so
+these are the areas value for x
+and for y axis you have to type white
+and then enter so these are the arrays
+value for y axis so after this now let's
+split the data set into training and
+testing separating data into training
+and testing set is an important part for
+evaluating data mining models typically
+when you separate a data set into a
+training set and a testing set most of
+the data set is used for training and a
+similar portion of data set is used for
+testing
+so we will split it into 70 and 30 ratio
+so for splitting we need to import some
+more libraries for this process so we
+will write from
+sklearn
+dot
+model
+underscore selection
+selection
+import
+train
+underscore test
+underscore split
+scikit learn like sk learn is most
+useful and robust library for machine
+learning in python it provides a
+selection of efficient tools for machine
+learning and statical modeling including
+classification regression and clustering
+so after importing let's write code for
+the splitting data so we will write here
+x underscore
+train
+comma
+x underscore test
+comma y underscore train
+comma y underscore
+test
+equals to
+train
+underscore test
+underscore split
+in brackets we have to write x comma y
+comma
+test
+underscores
+size
+equals to
+point three
+comma
+random
+underscore state
+equals to zero
+random basically
+with random state equals to 0 we get the
+same trend and test sets across
+different execution so after this let's
+see the values together
+so we will write x underscore train
+comma x underscore
+test
+comma y underscore
+train
+comma y underscore
+test
+so these are the values of array x and
+array y together moving ahead now let's
+work with regression first we need to
+import the library for regression so we
+will use from
+sklearn
+dot linear
+underscore
+model
+model
+both
+linear
+regression
+we already discussed sqlan is used for
+machine learning and linear regression
+is a major part of machine learning so
+after this let's make a function for
+regression as rhg for easy use so we
+will write reg
+equals to
+linear
+regression
+and brackets
+first we try to train and then test and
+compare so we will write here
+reg
+dot
+bit
+bracket
+x underscore
+train
+comma
+y underscore
+change
+now let's predict values but prediction
+values are always different
+so
+we will predict values for y first so we
+will write y
+underscore predict
+equals to red
+dot predict
+sorry predict
+or x underscore test
+so like y underscore
+reading
+and enter
+this is when the predict functions come
+into the picture python predict function
+enables us to predict the labels of the
+data values on the basis of training
+model the predict function accept only a
+single argument which is x underscore
+test here usually the data to be tested
+so when you will check the value for y
+test you will see the different values
+like
+white
+underscore
+test
+so you can see there are totally
+different values from x axis now let's
+display on graph for training data set
+so we have to write
+plt dot scatter
+x underscore train
+comma y underscore tray
+comma color
+equals to
+you can choose by yourself i will choose
+red
+and then plt
+dot plot
+x underscore train
+comma
+regression point for predicting values
+for x underscore
+training
+so this color is for the regression line
+and the plt dot
+versus experience
+and i will prefer this size would be
+80
+so let's set the
+labels for x and y axis and
+so x label
+year of employee
+of employee common size will be
+i will prefer size will be 50
+then
+for y-axis we will write
+here
+like salaries
+and i will prefer this same size 15
+let's show the plot by writing plt dot
+show
+then
+hopefully we are fortunate everything is
+going to be fine
+perfect so you can see
+we have linear regression line fitting
+through our data set so this is how the
+linear regression work for training data
+set
+let's see how it will work for testing
+data set
+now let's predict for test data set you
+can copy for the same and like you can
+change it
+so we can copy here
+so we can paste here
+so we have to just change here
+into text data set
+test here then again
+test here
+test here
+everything everything we will
+reduce some size
+to
+16
+let's see
+then it will use 12.
+so
+perfect so you can see we have linear
+regression line fitting through our data
+set so this is how the linear regression
+works for testing data set
+this video has introduced you to machine
+learning
+you realize that machine learning is a
+strategy of preparing machine to play
+out the exercise a human brain can do
+though a bit quicker and better than a
+typical person
+machine learning can be supervised or
+unsupervised
+if you have the lesser amount of
+information and a name for the preparing
+or for supervised learning
+unsupervised learning good for the most
+part result in better execution and
+enormous data sets
+we have reached the end of this video i
+hope you guys found this video
+informative and helpful if you have any
+doubts or feedback comments below and
+allow us to assist you don't forget to
+click the bell icon if you enjoyed the
+video and subscribe to our simply learn
+youtube channel thank you and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

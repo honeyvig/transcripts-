@@ -1,0 +1,337 @@
+ethical hacking has found its place
+among the most lucrative industries in
+the world for budding professionals
+recent trends side effects of a global
+pandemic and cybersecurity statistics
+reveal a huge increase in hacked and
+breached data from increasingly common
+sources in the workspace
+these can be mobile phones iot devices
+among other things
+on top of this kovid 19 has ramped up
+remote workforces making inroads for
+cyber attacks
+this kind of growth would not have been
+possible if not for several reliable
+tools and services
+from scripts that can find intricate
+details of companies the softwares that
+can boot for servers with a single
+command
+today's lesson is about a tool that can
+gather information about as many
+exploits as possible for a vulnerable
+system
+metasploit has been a staple in the
+ethical hacking industry for decades and
+we will learn how metasploit functions
+as an exploit chain
+the metasploit framework is a very
+powerful tool that can be used by cyber
+criminals as well as ethical hackers to
+probe systemic vulnerabilities on
+networks and servers
+because it's an open source framework it
+can be easily customized and used with
+most operating systems
+with metasploit the ethical hacking team
+can use ready-made or custom code while
+introducing it into a network to probe
+for weak spots
+as another flavor of threat hunting once
+these flaws are identified and
+documented the information can be used
+to address systemic weaknesses and
+prioritize solutions
+once a particular vulnerability is
+identified and the necessary exploit is
+fed into the system there are a host of
+options for the hacker
+depending on the vulnerability hackers
+can even run root commands from the
+terminal allowing complete control over
+the activities of the compromise system
+as well as all personal data stored on
+the device
+a big advantage of metasploit is the
+ability to run full-fledged scans on a
+target system giving a detailed picture
+of the security index of said system
+this also lists the necessary exploits
+that can be used to bypass the firewalls
+and the antivirus software
+having a single solution to gather
+almost all the necessary points of
+attack is very useful for ethical
+hackers and penetration testers as well
+now let's use the metasploit tool to
+break into a windows 10 machine and
+garner root access or the administrator
+privileges of the system
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+next we have to learn about what is
+metasploit
+the metasploit project is a computer
+security project that provides
+information about security
+vulnerabilities and aids in penetration
+testing and ids development
+we can open up the terminal here
+we're going to allow root access
+and to open up metasploit the keyword is
+msf console
+it's going to take a little bit of time
+to start it up
+now the metasploit console has been
+loaded
+from here we can decide what type of
+attack we want to launch and what kind
+of exploits we can launch against
+vulnerable targets for example like we
+already discussed i'm running this
+virtual machine on a windows 10 host
+machine so if i open the command prompt
+for my windows 10 over here
+if i need to check the ip address once i
+go with ipconfig
+here you can see the ip address of this
+local machine
+moving on
+if we have to attack that machine let's
+say we want to see what kind of exploits
+are going to work over there
+now we already know that windows has
+some common vulnerabilities one of those
+vulnerabilities is the hta server
+vulnerability hta is supposed to be a
+html application but when past the right
+payload it can be used to open a back
+door into a system
+to start off with the metasploit and
+accessing such applications
+we're going to use
+the command
+use exploit and the name of the reverse
+hta server is this windows
+misc for miscellaneous
+hda
+server
+as you can see it already found this one
+all right
+now
+there are some options that we need to
+set for this exploit to go through for
+example you can see some of the options
+over here there is a payload the payload
+is supposed to be the malicious file
+that we are going to send on the html
+application which allows us to give the
+back door
+for example right now the payload which
+is the malicious file is a windows
+meterpreter reverse tcp
+completely understandable now let's set
+the host
+l host and r host and srv host should be
+the one
+where we are going to launch the attack
+from for example
+if we launched another tab of this
+console
+and we just press i f config
+the ip address is
+192.168.72 130.
+so we're going to set the lhost as
+192.168.
+0.130
+and we're going to do the same thing
+with srv host
+we're going to set a port
+where we need to capture the backdoor
+access
+next
+the payload has already been set
+this payload will launch a back door and
+give us meter printer access to the
+system meterpreter is can be considered
+as an upgrade of a normal command prompt
+shell
+we will look into it once we get the
+access in the first place
+now that we have set the commands
+we can press on exploit and press enter
+now
+you can see we have a url over here
+we're going to copy this url
+once the url is copied we take it into
+the browser
+and paste it
+this will ask us to download this file
+now as per browser security settings
+this file should be blocked by default
+we can decide to keep it and with the
+correct formulation of this malicious
+package even the website browser
+antivirus software's will not be able to
+detect good payloads we're going to save
+this file
+and we're going to open it
+publisher could not be verified if we
+press run
+and we go back
+to our meetup data access over here
+you can see it has already captured a
+url fnhd server and it is writing
+delivering payload
+just have to wait for a few seconds so
+the payload is delivered
+it has sent
+this much amount of data meterpreter
+session one is opened
+and we should get the access soon
+there we go
+now
+to understand where is the session set
+we can write sessions
+minus i
+as you can see it has a metadata over
+here we're going to write
+sessions minus i
+the session id is one so we're going to
+write one
+and we have the meter beta access now to
+get a fair idea of the system
+we're going to write sysinfo and it's
+going to the computer name the os
+architecture all these things we can
+write the help command to see what are
+the things that we can get out of the
+system we can take screenshots we can
+control the webcam and start a video
+chat
+we can take a lot of things over here
+there are other commands as well where
+we can change the file directory like
+the cat command cd command there are so
+many things that work in the normal cmd
+which we can run on the meter beta as
+well now if you want to access this
+command prompt of the system directly
+we can go with this
+we have to write shell
+and there we go we are in the downloads
+folder right now to see if this is the
+same computer or not we're going to
+write ipconfig
+as you can see it is our mesh victim
+machine with 192 168 but 29.171
+we can just press exit
+and we're back with the meterpreter
+access this is how we can use
+meterpreter and metasploit to gain
+access to a windows 10 machine
+next let's take a look at how we can get
+root access from a windows 10 system
+we just learned how we can get a
+meterpreter access from a system
+we can background this meter predator
+session by writing background and
+pressing enter
+we can still see the shares
+session is minus i
+it's still present over here
+now
+these kind of access are not
+administrative access
+these are the kind of back doors that
+can be created for standard users but to
+get a complete access of a system
+including the program files the windows
+documents we need to have root access or
+administrative access
+to that we're going to use another
+exploit
+reminder that the meterpreter session of
+the standard access is already present
+and we're not messing with it right now
+we're going to set up another session
+albeit with the same machine
+that exploit name is
+use exploit
+windows local
+bypass uac
+event viewer
+and there we go
+now if we check the options that we can
+put in the system
+we have to choose an exploit target
+we need to put a session as well
+let's say we going to use the session
+one this is the session that has the
+meta beta access with the standard user
+it doesn't have the system user
+we're going to write
+set session 1
+and we're going to run exploit
+it's going to run a few commands and it
+opened a second meterpreter session
+as you can see it is the session 2.
+if i write this info
+you can still see i'm not the system
+user right now i'm still
+just
+a normal user how can we check that
+if you go to shell
+it still sees the usage generally
+downloads all these things
+if i press exit
+go back to the meter picture there is a
+command on meter peter
+get system it attempts to elevate your
+privilege to that of the local system
+which basically means you get promoted
+into root access so if we write get
+system
+and due to pipe impersonation we now
+have the system root access
+as you can see now it has become x64 and
+we are the admin users now if i go to
+shell
+i can easily go back
+windows
+and i can easily access these ones
+this kind of control over the windows
+folders and the
+program files folders these kind of
+things are not possible if you are not
+an admin access or the command prompt
+has not been run with admin permissions
+this is how we can use privilege
+escalation to get into an admin access
+system
+we use the second
+exploit which was the bypass us event
+viewer exploit
+and essentially used it with the first
+session as you can read here windows
+escalation usa protection bypass
+it was first disclosed on 2016 but it
+still works on some systems
+this is how we can get a root access on
+a windows 10 installation
+hope you learned something new today
+if you have any questions regarding this
+video feel free to let us know in the
+comments below and we will get back to
+you as soon as possible subscribe to our
+channel for more videos like this and
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

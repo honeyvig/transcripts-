@@ -1,0 +1,639 @@
+hello everyone I am M and welcome to
+Simply learn today we will take you
+through the hands of lab demo of how you
+can do a Market Basket analysis using
+python before we start I hope the screen
+is clearly visible and the audio is fine
+if yes please type in yes if there are
+any issues do let us know in the chat
+section so that we can resolve them I'm
+repeating again before we start I hope
+the screen is clearly visible and the
+audio is fine if yes please type in yes
+if there are any issues do let us know
+in the chat section so that we can
+resolve
+them let's wait for some more minute to
+let other people
+join until then let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek on a
+continuous H for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply
+I'm repeating again let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek on a
+continuous HT for the latest
+technological Trends then consider
+getting to subscribe to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+great I think we can get started so in
+today's session we will go through
+Market Basket analysis after that a
+hands off live demo of Market Basket
+analysis will be done using Python and
+machine learning we will perform
+different function and different python
+libraries before we move on to the
+programming part let's discuss what
+Market Basket analysis first and proceed
+further for the
+same so what is Market Basket analysis
+retailer utilize Market Basket analysis
+a data mining approach to boost sales by
+better understanding client B patterns
+large data sets such as purchase
+histories must be analyzed to identify
+products groups and items that are most
+likely to be bought together so dear
+Learners if you want to upscale your AI
+and machine learning skills so give
+yourself a chance to Simply learn
+professional certificate program in Ai
+and machine learning which comes with
+completion certificate and in-depth
+knowledge of AI and machine learning
+check this course details from the
+description box
+below so here is one question for you
+guys I will give you exactly 1 minute
+for this you can comment or you can give
+your answer in the chat section so I can
+see if the answers given by you are
+right or wrong so the question is
+which is the best language for machine
+learning Java C C++
+python let us know your answer in the
+comment section or in the chat section
+do let me know your answer please so I'm
+starting timer of 1
+minute so your time starts now which is
+the best language for machine learning
+Java C C++ or python
+you can type your answer in the comment
+section or in the chat section to let me
+know your answer please I kindly ask
+that everyone should take part in this
+which is the best language for machine
+learning Java C C++ or
+python 30 seconds
+more let us know your answer in the
+comment
+section which is the best language for
+machine learning Java C C++ or python
+15 seconds more which is the best
+language for machine learning Java cc++
+or python I cly ask that everyone take
+part in this 5 Seconds
+more Those Who provided the correct
+response will receive a response and
+those Who provided the incorrect
+response will receive one now let's move
+to our programming part to do Market
+Basket analysis using
+python so first we will open command
+prom to write a command to open jupyter
+notebook so here we will write Jupiter
+notebook press
+enter so this is the landing page of
+jupyter notebook and here I will select
+new python Z
+file so this is the how the jupyter
+notebook UI look like so at first we
+will import some major libraries of
+python which will help us in analyzing
+the data so here I will write
+import
+numai s
+NP and the second one
+is
+import
+pandas
+aspd and and the third one is
+import cbone
+as
+SNS and the fourth one is
+import M plot
+Li do
+PLT sorry do
+pyplot as
+PLT
+PLT so n is for linear algebra and uh
+pandas is for data
+pre-processing and cbone required for
+plotting and uh M plot lab also required
+for
+plotting so the first one numpy numai is
+a python Library used for working with
+arrays it also has function for working
+in the domain of linear algebra and
+matrices it is an open source project
+and you can use it freely number stand
+for numerical
+python so the next library is pandas
+Pand is a software Library written for
+the Python programming language for data
+manipulation and Analysis in particular
+it offers data structure and operators
+for manipulating numerical tables and
+time
+series and cbor an oper s python Library
+based on M plot Li is called cbon it is
+utilized for data exploration and data
+visualization with data frames and the
+Panda's Library cbor functions with ease
+for Python and its numerical extension
+numpy met plot Li is a crossplatform for
+data visualization and GUI as a result
+it represent a strong open source
+suitable for metl
+the apis for metrol allows programming
+to incorporate graphs into GI
+applications so after importing
+libraries let's import data set for that
+I will write here first I will rename
+this
+Market okay so here I will
+write DF equals to
+PD do read
+underscore
+CSU then file name here I will write
+groceries underscore data
+set do
+CSV
+okay and here I will write DF
+dot
+head then press enter yeah so here PD
+for Panda's Library read is used for
+reading the data set from the machine
+and CSV is used for the type of file
+which we want to read so then DF do head
+if you want top five rows of your data
+set you can use head and if you want
+last five rows of your data set you can
+use tail instead of head so here you can
+see member number date and item
+description okay so moving forward let's
+check data type information for
+validation purposes
+so here I will write DF do
+info okay then press
+enter so pandas dataframe doino function
+is used to get concise summary of the
+data
+frame it comes really handy when doing
+explor analysis of the data to get a
+quick overview of the data set we use
+the data frame. info function so here
+you can see column names no null count
+and data types okay then you here you
+can see the memory
+usage so moving
+forward let's check availability of I
+repeat let's check availability of null
+values for that we will write here DF
+dot is
+null DF dot is
+none and brackets do
+sum and Dot sort
+values in ascending
+order
+ascending to
+false okay then press enter so no null
+values so sum calculates the sum of
+elements for each row and column
+since I repeat since some calculate as
+2al to 1 and false equal to 0 you can
+count the number of missing values in
+each row and column by calling sum from
+the result of is null You Can Count
+missing values in each column by default
+and in each row with X is equal to 1
+okay then here you can see sort
+values so sort values is used for sort
+values in ascending or descending order
+okay so moving forward let's do type
+conversion
+from object to data
+type okay so here I will write
+DF
+date okay this is sorry
+DF DF date equals to PD
+dot to date
+time okay
+then again I have to write here
+DF data sorry
+date then press enter then again I will
+write DF do
+info and press
+enter okay ignore These
+Warnings
+so so the type conversion is done so
+moving forward let's do some schema
+check for that we will write DF
+dot
+head okay all seems fine I hope you
+understand till here if you have any
+question or any queries regarding any
+code or any question just put as in
+comments our team will shortly provide
+you the correct solution I'm repeating
+again I hope you understand till here if
+you have any question or any queries
+regarding any quote or question just put
+as in comments our team will shortly
+provide you the correct solution
+okay so moving forward let's create
+distribution of item sold for
+that I will write here item
+item _
+distribution equals to DF do group
+by
+then bys
+to item description
+okay dot
+size then dot
+reset underscore
+index name equals
+to
+frequency okay I will write here do
+sort
+underscore
+values
+by equals
+to
+frequency
+quency okay here f is also
+Capital then in ascending
+order sending equals to
+false and here I will write dot
+head
+then here I will give
+10 okay then
+enter so now I will declare C some
+variables so here I will write
+bars equals
+to item
+underscore
+distribution okay
+then
+item
+description okay
+then
+height equals to
+item underscore
+distribution okay then
+here's then X under score for position
+equals to NP do
+margin uh okay not margin I will write
+here
+arrange then length of bar
+length of
+bars so here I will
+Define okay for better view I will do
+here yeah that's
+good okay so we will Define here figure
+size so for that I will write PLT do
+figure then figure size
+= to
+16a
+9
+okay so we will create bars so PLT
+dot
+bar
+Exposition comma
+height comma
+color color equals to
+yeah I will do
+0.2 comma
+0.3 comma
+0.5
+0.5
+okay
+so everything is done let me set the
+title PLT do
+title
+like
+top 10
+item then X label PLT do X
+label like item
+name
+names then for y
+Lael like number of quantity
+sold quantity
+sold
+okay so let me do PLT
+dot like create names on the like x-axis
+okay X
+SES
+then xcore position comma
+bars okay then
+PLT
+do
+show then press
+enter okay NP arrange naai has no
+attribute as
+arrange okay here is spelling mistake so
+sorry
+yeah so here you can see the top 10 sold
+item for whole make other vegetable
+rolls and burns soda then
+yogurt till the citrus fruit so these
+are in descending order
+okay moving forward let's set date as
+index as index plotting purpose
+okay for that I will write here DF
+underscore
+date thenal to
+TF do set
+index
+date okay
+DF
+date then press
+enter okay so here you can see all the
+dates and the uh member number and the
+item
+description okay so date is
+set so I hope you understand till here
+like if you have any question or any
+query regarding any code or question
+just put as in comments our team will
+shortly provide you the correct solution
+okay I'm repeating again I hope you
+understand till here if you have any
+question or any doubt please comment
+down the below our team will shortly
+provide you the correct
+solution so moving forward let's make a
+graph again okay another graph so DF
+uncore date
+dot
+resample
+then here I will write medium
+m then item
+description item
+description do
+count Dot Plot
+bigger
+size equals
+to 20 point 20 comma
+8
+okay so let me continue
+here
+to here I will write
+grid equals
+to through
+then let me set the
+title title equals
+to okay number
+of
+number of
+item sold by
+month
+okay then
+comma set
+let me do dot set
+label X
+label
+to that's
+good
+date and VI
+question number
+of
+item
+sold
+okay so code is looking okay so let me
+run
+this so press enter so yeah so here you
+can see the number of of uh items sold
+by a month uh okay so you can see the
+graph so moving forward we will select
+only required variable for modeling and
+removing white space if any for that I
+have to write
+here I will write here
+count sorry I will write
+here customer
+level equals to DF
+okay
+then remember
+number
+comma
+item
+description okay dot
+sort
+values
+by equal
+to
+number WR
+here member
+number
+okay then
+comma
+sendings
+to false
+then like
+customer
+level to not equals to this
+time iton
+description okay then equals to
+level
+then
+item
+description Str
+dot
+then C Level okay so press
+enter so yeah okay s yeah so everything
+is good and fine so let's move forward
+and combine all the items in the list
+format for each customer so for that I
+will write here
+transactions equals
+to A
+one
+for like
+item
+description dot to
+list okay so here I will write for a in
+list then
+11 dot Group
+by then here I will write
+member
+number
+okay then press enter
+okay okay okay
+sorry
+forget yeah and press
+enter so now let's import a PRI package
+for the model
+creation here I will write
+from
+PI
+import
+a AI okay
+so so here I will write
+rules equals
+to a
+PRI
+transactions equals
+to
+transaction comma like minimum
+support equals to 0.02
+okay not
+0.2 and
+comma minimum confidence should
+be = to
+0.05 okay then minimum
+lift = to
+3 then minimum
+length equals to
+2 okay
+so this is for the model creation press
+enter okay
+rules equals
+to maybe you meant equals to instead
+of okay
+okay for
+good here's the
+thing to yeah
+10% yeah so model creation is done so
+moving forward let's store result in the
+list format for better visuals and let's
+see the results okay so here I will
+write this result
+s equal to
+list of
+rules and press
+enter Then
+results press
+enter so it's
+loading still loading this will take
+some
+time still loading taking some
+time so let me restart and run
+on so press enter yeah so here you can
+see the results so L I repeat so like
+kitchen towels like USD milk and potato
+products beef meat spreads domatic XS so
+these are the
+some examples so moving forwards
+creating user defined function for
+arranging the results okay in proper
+manner so obtain from model and readable
+format so here I will write for
+that
+DF
+inspect results
+okay for
+that LS equals
+to
+tle then
+results then
+two
+zero then again zero
+okay so here I will write zero
+again for
+result for result and
+results then
+rhs sorry
+rhs equals
+to let me copy from here
+and I will make the
+edits okay instead of zero I will put
+here
+one okay then
+support equals
+to so
+results result
+one
+for result and
+result so now
+confidence
+result
+2
+0 2
+for
+result in
+results
+and lips equals
+to
+result
+2 then
+0o 3
+for
+result and
+results okay then lift is
+complete then I will write
+return
+list
+zip
+LHS comma
+rhs
+comma supports
+comma
+confidence confidences comma
+lift
+lifts
+okay then I will write here
+result
+results in data
+frame go to PD
+dot data
+frame
+results
+comma column
+left hand
+side okay comma
+then right hand
+side okay then
+comma
+support then
+comma uh confidence
+confidences
+comma
+lift
+okay press enter so now I will run
+it so here like
+[Music]
+R in data
+frame f is small
+do n
+largest n largest and N = to
+10
+comma columns =
+to
+lift
+okay yeah so here you can see the the
+best possible scenarios okay then
+kitchen towels USD milk these are the
+some recommendation when the customer
+will buy this so these are the
+recommendation that he or she also buy
+this
+okay so I hope you are understand till
+here if you have any questions or any
+query regarding any code or question
+just put as in comments our team will
+shortly provide you the correct solution
+I hope you guys must have understood how
+you can do Market based basket analysis
+using python if you have any queries you
+can ask in the comment section below our
+team will respond you as soon as
+possible and don't forget to check the
+course link from the description box
+below and if you want this full code
+just comment for the same thank you so
+much for being here if you enjoyed this
+video please do subscribe to our YouTube
+channel and give a like to this video
+thank you and keep
+learning hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

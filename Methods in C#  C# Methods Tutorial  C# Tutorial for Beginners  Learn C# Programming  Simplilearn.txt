@@ -1,0 +1,279 @@
+hey everyone i am rabba khandelwal and i
+welcome you all to simply learn youtube
+channel
+today we will talk about one of the
+interesting topics methods in c sharp
+but before we begin i would like to
+remind you that we have dailies updates
+on numerous technologies
+so if you are a tech geek looking for
+the newest technological breakthroughs
+then try subscribing to our youtube
+channel and don't forget to hit the bell
+icon so you never miss an update from
+simply learn
+now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session by understanding
+what methods are in c sharp
+then we will discuss the components of
+methods in c sharp
+after that we will discuss how to pass
+parameters in methods
+following that we will try to implement
+methods in the code editor
+finally we will wind up this session
+with a quick summary
+now let's get started with what methods
+are methods in program a block of code
+or statements that allow the user to
+reuse code conserving memory time and
+most importantly increasing code
+readability
+this is the basic syntax we first
+mentioned the access modifier then
+return type method name with some
+parameters in the open braces and then
+add the method body in the curly braces
+now let's have a look at the components
+or elements of methods
+there are five components of methods in
+c sharp
+first up access modifier return types
+method name parameter list and method
+body
+let's discuss them in detail
+we will start with the access modifier
+it specifies the method success type
+that is how it can be accessed in your
+application
+in c sharp there are three types of
+access modifiers
+first of public
+all methods have access to the code
+next private in this only the current
+method will have access to this
+code next up is protected in this it is
+only available within the same class or
+the hierarchy of that class next up
+return type
+the data type of a value returned by the
+method is specified by the return type
+the return type is void if method
+returns null
+in c sharp the return type can be int
+void double string
+and so forth next up method name
+it indicates the name of the user
+defined method that the user invokes for
+example factorial which is preceded by
+open braces
+then method body it refers to the line
+of code that describes the duties that
+will be executed by the method during
+its execution
+it is kept in curly braces at last
+parameter list
+within the open parenthesis a comma
+separated list of inputs
+parameter is defined preceded by the
+data type if there are no parameters
+then empty parenthesis must be used
+there are three types of parameters
+value parameter reference parameter and
+output parameter
+now let's see how we can pass parameters
+in methods in c sharp
+c sharp methods can be classified based
+on the return type
+and input argument first up method
+without parameter and without return
+type for example this print function
+prints
+the string void parameters
+next up without parameters and with the
+return type for example since there are
+no parameter in this product function
+then we will define variables inside the
+method body and return the product value
+then we have with parameters and no
+return type for example this
+circumference function
+is using r parameters which then helps
+us to calculate the circumference and we
+will print it in the method body itself
+at last the width parameters and with
+return type for instance in this
+factorial function we pass the integer
+parameter n
+then we calculate the factorial n and
+then return that value
+now let's implement these in the code
+editor
+let's get started with defining some
+variables
+so
+we will be using
+and
+rad
+which we will give the value as 7
+and
+n
+which we can give value as 4
+and a variable get res
+now we will start with our first
+function that is print function
+this will be a void function that is
+without any return type and without any
+arguments so static void
+print
+and in the curly braces we will call
+console
+dot write line
+in braces
+we can type in
+like
+welcome
+to
+simply
+learn
+now
+let's try
+to execute this one
+so
+we will call the print function
+now save it and let's run it
+as we can see it is printing the welcome
+to simply learn
+ignore this
+warning
+it will be resolved when we will use
+these variables
+now let's get started with the next type
+that is without return type and with
+parameters so we will have
+static
+void
+circumference
+and
+are
+here we will directly print
+console
+dot
+writeline so circumference
+plus
+2
+multiplied by
+in closed braces we have 22
+divided by seven that is pi
+then
+star
+r
+we'll close it then
+we will write a function
+so we will call
+circumference
+with the argument as drag
+let's run this
+as we can see it is now printing the
+circumference is equals to 42.
+now let's write up another function
+which will have
+a return type without parameters
+so we have
+static
+end
+product
+here we will define
+and
+as x is equal to 7
+comma y is equals to
+22
+and this
+then res
+will equal to
+x
+multiplied by y
+then we will return
+rest
+now
+let's store the rest value in get rest
+to get
+res
+is equals to
+product
+then we will write up
+console
+dot write line
+and then
+get rest
+let's save this and run it again
+as you can see it is giving us 154 which
+is 22 multiplied by 7
+which the product function should do
+now
+let's write up another method to
+demonstrate with return type and with
+parameters
+so this time we will be writing up
+static
+and
+factorial
+and end
+n
+so end
+f1
+is equals to one
+for
+end
+i
+is equals to one
+i
+less than equals to
+n
+i plus plus
+f1
+is equal to
+f1
+multiplied by
+i
+can return
+f1
+now
+let's
+have get res
+and we will store
+factorial
+and
+then we will call
+console
+dot write line
+and we will print
+get press let's save it and run it
+as you can see it is now printing 24 as
+well which is a 4 factorial
+now let's wind up this session with some
+advantages of the method
+the method ensures that the program is
+well structured
+the use of methods improves the
+readability of the code
+it is also an efficient approach for the
+users to reuse the existing code
+it also reduces the amount of time it
+takes to execute
+and the amount of memory it uses
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

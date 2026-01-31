@@ -1,0 +1,331 @@
+hello and welcome to this session of
+python today we are going to talk about
+very specific functions which are very
+popular in python programming language
+map filter and reduce
+so what's in it for you today let's
+quickly take a glance
+we're going to talk about map function
+filter function and reduce function
+we're going to see
+the syntax which are applicable to these
+functions and what benefits these
+functions bring for us
+during the programming in python so
+we're going to see the syntax and we're
+going to run certain examples for each
+of these functions
+so let me first just give you a
+brief of what are the
+syntax for these functions what are the
+signatures what are the input parameters
+required and then we will jump into the
+jupyter notebook and run some examples
+so what is a map function the map
+function takes another function as an
+input and the second input is a sequence
+of iterables it could be a list it could
+be a set it could be an array or
+anything you want and it returns the
+output after executing the function
+which you have pass as a parameter on
+each of the element of that iterable so
+the function could add the values could
+multiply could divide or any
+mathematical operation you want to do or
+even you can perform certain string
+operations which we will take a look in
+the examples but the idea is that you
+want to apply the function on each and
+every iterable item individually so the
+map function helps you achieve that
+also in our examples we will take a look
+that you don't need to explicitly define
+a function you can also use lambda
+functions which are inline functions uh
+so you don't need to
+increase the line of code you can reduce
+the lines of code by just writing the
+function in line and that way it will
+make it more simple
+[Applause]
+[Music]
+the next function which we are going to
+talk about is the filter function
+now what is the purpose the purpose of
+the filter function is to reduce the
+size of the iterables based on the
+condition which you will pass to the
+filter function
+so syntactically it is very similar to
+map function but the only difference is
+that you need to pass a function which
+carries a condition for example you have
+a set of iterables one two three four
+five six seven eight nine and you want
+the function to return values which are
+greater than phi
+so
+your filter function should have a
+condition which says
+that the iterables
+greater than 5 should only be returned
+by this function
+so that's why you have to make sure that
+the filter function always have a
+condition which is either true or false
+so based on whatever condition matches
+as true
+the filter function will only return
+those values as an output so we will
+take a look
+and the same
+concept applies either you can make a
+explicit function or you can apply
+lambda function inline
+the third function
+which we are going to talk about is the
+reduce function
+the only difference between reduce
+function and the other functions which
+we talked about uh
+the map and filter is that reduce
+function always returns a single value
+so it combines all the
+values in the iterable your list your
+array your set and returns a single
+value so you can apply the mathematical
+functions like for example you want to
+add all the values in your write table
+or you want to multiply so it will
+multiply sequentially and give you the
+output
+and the same
+concept applies over here you can have
+lambda functions or explicit functions
+also with one thing which you need to
+remember is
+that you need to use function tools
+module
+to to import the reduce function
+so we will take a look at that while we
+will be running certain examples
+okay
+so here we have so we will start by
+running our examples so first we will
+start with map
+so let's start by
+defining a very simple function
+which adds
+two values
+right and returns you the added value
+right
+so in the next step
+we will define a
+list of iterables so here we have taken
+an iterable list of
+four items four six eight nine numbers
+now
+in this step
+we will apply the map function now
+please notice that we are sending two
+parameters to this map function one is
+the
+function name which is add and the
+list which is numbers
+okay
+now i'll print
+the out
+but it's an object so right it's not in
+a readable format so i need to convert
+the out object back to a list
+and now i'll be able to print
+and here is my expected output so i had
+four numbers in my list which is four
+six eight time and the map function have
+has added the numbers to itself four
+plus four six plus six eight plus eight
+nine plus nine and so that's how you're
+getting the output as expected
+[Music]
+now let's take a look at another example
+we're going to redefine our list
+and we are going to use now a lambda
+function
+instead of an explicit function which is
+going to multiply
+the numbers in my list within with
+themselves
+and we're gonna
+print my out object
+convert it back to a list
+and then i'll print my
+converted list object
+and here you go this is my output 4
+multiplied by 4 6 multiplied by 6 8
+multiplied by 8 and 9 multiplied by 9
+okay
+so here in this example we have seen
+about lambda function
+now
+we have been up performing mathematical
+operation as i mentioned earlier we can
+also perform certain string operations
+so let's take an example
+what i'm doing in this example is i'm
+creating a map
+and i'm just converting all my lowercase
+strings to uppercase
+and i'm just printing my list now
+after
+conversion so such kind of you know
+string operations are also possible
+let's take another example where we are
+going to print the length
+of each of the
+string which is there in my list
+and i'm using lambda function
+and here it is
+so now you can see the list
+the length of each and every string
+variable is three five six and seven
+okay
+so now these were the examples of map
+object
+map function now we will
+talk about
+filter
+so let's start with a simple example so
+as i mentioned the filter function
+should help always have a condition
+so let's create a
+function which has a condition saying if
+a is greater than 5 then return a
+it means that you need
+to only return numbers which are greater
+than 5 in my list
+so now i'm going to call this in my
+filter function
+so if you see the syntax here please
+notice filter you pass the fill and the
+list
+and then you print the out object after
+converting into the list
+and only the numbers which are greater
+than 5 are printed
+now let's take a look at
+a lambda function example rather than an
+explicit function
+the same example but now instead i'm
+using a lambda function
+and i'm going to print it
+output should be the same
+okay
+so the
+the only change is in the syntax of the
+function definition here we have
+explicit function and here we have a
+lambda function output is the same
+now let's take an example of
+a string operation string filter what
+kind of string filtering we can do
+so
+i have an example over here
+so
+what i'm going to do is i'm going to
+have a list of string arrays
+which is going to return me only those
+strings which have e in them occurrence
+of e okay
+so i've created a function veggies with
+e
+and within this list of veggies peas
+garlic ginger beetroot carrot i will
+only get those string variable values
+which have e in it
+okay so i've got the result p is ginger
+and beetroot
+right and garlic and carrot have been
+discarded
+now let's run this similar example with
+lambda function
+where i'm saying that okay give me those
+vegetables which have r in it so i'm
+just gonna run this
+and print my
+mac
+[Music]
+okay and here is my expected output
+garlic ginger beet root and carrot
+so what have we noticed is that similar
+to map filter function of course the
+only difference is the function should
+have a condition
+which should return a true or false and
+based on that the iterable list get
+filters out
+now
+let's talk about
+reduce
+now as i mentioned
+the first important thing is that
+we
+import the reduce function from function
+tools okay
+and then
+we apply a
+lambda function so we're going to start
+off with just taking an example of
+lambda so here is my list of four
+elements 10 35 50 and 20 and i'm adding
+the numbers in this list okay so so the
+map function is not gonna the reduce
+function is not going to add the numbers
+to itself but to the subsequent number
+in the list right
+so what is the expected output right
+expected output is 10
+plus 35 45
+plus 50 95 plus 20 115 so
+what the reduce function has done is it
+has added the numbers in the list
+amongst themselves right in the orderly
+fashion
+now let's take another example instead
+of addition we'll do a multiplication
+okay
+so here what we have done is we have
+multiplied 9 by into 7 into 23 into 4
+and we've got this answer
+so this is another way of doing it
+now instead of lambda function i'm just
+going to show you a simple
+um adding the numbers
+and define a function where you add the
+first and second number
+and then
+you pass the function name
+to reduce so custom sum and the list
+similar to what we had done for map and
+filter
+and now you can print the result
+one thing to notice is that this result
+is a single number you don't need to
+convert it back to a list so you don't
+need to do that transformation you just
+simply print the result
+and here it is 68 3 plus 4 plus 6
+plus 9 plus 34 plus 12.
+okay
+so i think with these examples and the
+basic understanding of these three
+functions i hope you had a great
+learning experience and i look forward
+to connect with you guys again thank you
+for watching the video
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

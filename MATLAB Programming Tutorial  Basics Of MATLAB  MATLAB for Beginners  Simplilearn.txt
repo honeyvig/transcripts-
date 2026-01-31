@@ -1,0 +1,839 @@
+foreign
+welcome to another video from Simply
+learn if you haven't subscribed yet
+please subscribe to our Channel and hit
+the Bell icon to never miss an update
+from us are you aiming to get certified
+as a data analyst and want to build your
+career in data analytics in that case
+you can check the data analyst
+certification course by simply learn
+which will open the door for the best
+career opportunities to find the details
+of data analyst certification course
+click the link below in the description
+box it could be ideal solution to help
+you build your career in the right
+directions and we have a special
+discount for our YouTube members to
+Avail the deal use the coupon code ytb
+E15 while enrolling the course before we
+move on I have a question for you
+which of the following is not a valid
+plotting commands in Matlab let me know
+the answer in the comment section if
+getting your learning started is half
+the battle what if you could do that for
+free visit skillup by simply learn click
+on the link in the description to know
+more
+agenda for today's session is
+try catch statement in Matlab arrays in
+Matlab at last we'll see some of the
+basic programs in Matlab let's begin the
+session by understanding environmental
+programming we have already learned
+about the graphical user interface of
+Matlab in our Matlab tutorial video now
+let's see some of the shortcuts in
+Matlab the first one is CNC may use CLC
+to clear the command window the second
+one is clear use to remove all the
+workspace and the variables created in
+workspace and the third one is dial here
+a copy of the input and the most of the
+output typed in the command window will
+be enclosed in the diary file along with
+this we have Diary of it suspends the
+input into our diary file under diary on
+which resumes the input file and the
+fourth one is which it will tell which
+versions of file is being executed and
+where it is located now let's see
+control statements in Matlab basically
+we have five types of control statement
+and the first one is a friend statement
+the if is a control statement that
+provides the functionality to select the
+block of code to execute at Trend type
+the syntax of if and statement is as
+follows the predefined if condition is
+checked first and the if condition is
+true it executes a statement inside the
+if statement if the condition is false
+it will move to the next statement and
+the second one is if else statement here
+the first if condition is checked and
+the if that condition is true the
+statement inside the if will be executed
+if the condition is false then the else
+statement are executed and the third one
+is if else if
+the ineffensive first the if condition
+will be checked and if this condition is
+true the statement inside the if will be
+executed if else then it will check the
+condition in if else statement if that
+condition is true then it will execute
+the statement inside the if else
+condition if both if and if else
+conditions are false then it will
+execute the else statement and the
+fourth one is nested if else statement
+the nested if else statement is the
+combination of multiple if statements
+first it will check the condition of the
+first if statement if it is true it will
+execute the statement inside that
+condition if not it will go for the next
+if expression and then it will execute
+the statement if it is true like that it
+will con check the condition of all the
+if statement and if any one of is true
+it will execute the statement inside
+that or else it will execute the
+statement in the else condition and the
+last one is Matlab switch
+in switch we have a switch expression if
+the switch expression matches any of the
+case expression it will execute the
+statement inside the case expression if
+not it will execute the default
+statement present in the otherwise
+expression now let's see the examples
+for control statements in the Matlab
+platform first let us consider the if
+statement let's take a small simple
+example for its if statement that is a
+is equal to 5 if a is less than 10 then
+it will print the number is less than 10
+else it will print the number is less
+than 10 minutes executed a is equal to 5
+the number is less than 10. now we don't
+want this a to be printed
+for that we can just mention a semicolon
+after 5.
+now the answer is printed the number is
+less than 10.
+you can also do this using script you
+can take a new script you can type here
+a is equal to 5.
+it is
+we use this to display text
+in the quotes
+right
+number is
+then
+then press enter
+else
+thank you
+and quote
+another device
+large
+and
+just
+now when you press on run
+we have to just save the file and so it
+has to save and again see in the comment
+prompt you can see the number is less
+than 10 you can see the output in the
+number is less than 10 and a is printing
+and this is the filing you don't want to
+again run
+file name the number is less than 10. if
+you give the input number as 12
+and then run
+file name the num is accident like this
+you can do it in the comment window or
+else you can also do it using an script
+or creating a new script now we came to
+know how if and if else will work when
+the value of a is less than this
+condition that is 5 and if we run the
+program
+condition is a is less than 10 then the
+Phi is less than 10 the condition is
+true then it will display the number is
+less than 10. when the value is more
+than the condition like here the value
+of a is 12 and if we run the program now
+the if condition fails so the else
+statement that is the number is less
+than 10 will be executed like this the
+if and the if else statement will work
+now let's see how else if statement will
+work
+now let's take one more script and let's
+consider a sample example for health if
+statement
+in that example we have n is equal to a
+random number of integers from 100 to 1.
+it will generate a random number that is
+an integer type and it will be a between
+1 to 100 and we are taking a variable H
+which is equal to 23 now if the value of
+n is greater than the age then it will
+display I am else if the value of n is
+less than the H then it will print your
+anger if the both the conditions are
+false then it will print we are of same
+now let's see what will be doubt
+because before executing let us save the
+file
+you can see the random number generated
+is 30. so it's printing your anger
+because 13 is less than the age number
+that is 23 let us run one more
+see now the random number generator is
+92 when 92 is greater than 23 it's
+printing I am younger like this the IFL
+statement will work if the first
+condition is satisfied then it will
+print the statement inside that
+Foundation or else it will check for the
+else if condition again if it is third
+true then it will print the answer if
+the both conditions are false then it
+will print the L statement now let us
+understand how the matlabs which will
+work I have taken one more script and
+let's take an example of a switch
+statement here N is a variable which has
+a input keyword input keyword is used to
+take the input from the user or a
+keyboard here we have printed as end
+error number the switch statement is
+here if the user if the number given by
+a user is equal to the any of the case
+statement it will print the statement
+and incented case condition otherwise it
+will bring the default statement
+now let's see by running this program
+now see the program name is printed now
+that it's asking for entire number and
+enter as what and press enter
+it is a positive one C the number
+entered by the user is 1 then it will
+check for the first case if the number
+matches it will execute the number does
+not matches then it will go for the next
+condition as the entered number is 1 it
+checked for K 0 does not match and the
+last case 1 is matched and will print
+the number as a positive number what if
+it does not give any of these numbers
+and if we give other numbers what will
+happen let's see
+the entered number does not match any of
+the case conditions so it will display
+the default statement that is other
+values like this switch statement in
+Matlab box we'll see Matlab looping
+statement a looping statement allows you
+to execute a statement or a group of
+statement multiple steps generally there
+are two types of looping State the first
+one is a form a for Loop is used to
+repeat a statement or a group of
+statement at a fixed number of times and
+the second one is a while loop a while
+loop is used to execute a statement or a
+group of statement an infinite number of
+times until the condition specified by a
+while is false now let's see some of the
+examples in this along with the break
+and the continue statement start with
+the Looting statement let me clear all
+the scripts
+and Let Me Clear My
+as we know for Loop is used to repeat
+the statement in a fixed number of times
+let us understand or look an example
+let's take in script I'll take for a
+variable called a
+is equal to number from 10 to
+20 yes
+printf
+sorry
+creative inside the bracket within
+single quotes
+I will write
+the value of a
+is
+move the single
+code and mention the variable
+and end with a semicolon and I will
+write and at the last now let's run the
+program
+save the file
+and run
+we can say the file name is printed and
+the value from 10 to 20 is printed the
+for Loop condition is H would print a
+value starting from 10 till 20. first
+the a value will be 10 it will print
+again it will come it will go to next 11
+print 12 print until it will print the
+value it will reach 20. now let's see
+how while loop will work let's take a
+new script and we I am taking in
+variable again a it will be assigned or
+10 and then
+while
+condition
+a is less than 20
+should
+think Loop value
+of
+I am using the same condition but in a
+while loop and we'll mention the
+variable and close the semicolon
+and then I'll increment a that is a is
+equal to a plus 1 I don't want that
+value to be printed so I will both times
+I will call it and at last
+and
+with the loop
+now just run the program
+save it
+and run
+C
+file name is printed the value of a is
+10 and we'll start the value of a is 10
+is 10 is less than 20 years it will
+print the value and it will implement it
+as a is equal to a plus 1 it will become
+11 now it will again check for the
+condition is 11 is less than 20 yes it
+will bring the value like that it will
+con continue until it will get 21 if 21
+is less than 20 no it's not the
+condition is false then it will end the
+loop if you don't want other 10 to be
+printed like I'll just mention a
+semicolon here
+and if you want this to be printed like
+if you do you want to know what time it
+is it is incrementing then it will
+remove the semicolon and it will run
+this again see for every iteration we
+will come to know first the value of a
+is 10 then it was incremented as 11 it
+is printed 12 printed 13 14 15 16 17 18
+and 90 and the value of 19 is printed
+and when the value
+a is equal to 20 20 is not less than 20
+if we have mentioned equal then it may
+be printed but we have mentioned less
+than 20 is not less than 20 the
+condition phase and the loop ends here
+this is our wild end of for Loop Works
+in a Matlab
+now let's see what is break statement
+and how it will execute in the Matlab
+a break statement terminates execution
+of for Loop or a while loop
+let's understand with an example let's
+take a new script
+I'll consider a variable a which is
+equal to 10.
+I don't want this to print in output and
+close to the semicolon
+and I'll consider a while loop
+with a condition a is less than 20.
+inside while loop I'll print this
+within the codes
+value of
+a
+is
+close the code and mention the variable
+and encloses within semicolon enter
+and I'll increment the a value a is
+equal to a plus 1. I don't want this to
+be printed in the output so again I
+would mention this semicolon
+again I'll mention
+a if statement
+if
+a is greater than 15. so this I'll write
+break and with a semicolon
+and end the if statement
+foreign
+as we can see in the output the values
+from 10 to 15 is printed
+as the first value of a is 10 if it will
+check for a while condition a is 10 10
+is less than 20 yes is less than 20 then
+it will bring the value then it will
+print the a value to 11. now it will
+check the if condition if 11 is greater
+than 15 no the condition fails and it
+does not come inside the if loop again
+it will execute the while loop it will
+continue until the value of a it will
+become greater than 15 and it will
+execute the break statement the program
+ends there now let's remove the
+semicolon and understand step by step
+see as we know the value of a is printed
+then again the a value of a is
+incremented to 12 13 14 15 and it lasts
+the value of a will be incremented to 16
+and when that case the if condition is
+checked it will satisfy and the break
+statement will run then as the break
+State Building learn it will execute the
+program and will exit the program
+that specialty of break statement
+whenever the break statement inside your
+program will be executed it will exit
+the program now let's understand how the
+continuous statement is worked in metal
+a continuous statement Works within a
+four or a while loop and passes the
+control to the next iteration
+let's understand with an example I'll
+take one more script
+first I'll take a variable a which is
+equal
+to the number from 1
+250
+and the difference between the numbers
+are 4 the number should be 1 to 50 and
+with difference between those numbers
+should be 4. and I'll n equals within
+semicolon
+and now I will take a for Loop for
+variable K is equal to
+from 1
+to the
+numeral of
+variable
+next I'll take an if statement
+is the reminder
+of a of K
+of K
+is equal to 3 now I will just say if
+this is to continue or else
+and the statement one if is ended then
+I'll say
+display the value of
+a of
+t
+form
+now let's learn the program
+save and done
+you can see
+the value is printed as 9 21 33 and 45.
+first let's see what are the numbers
+printed in a for that I'll remove the
+semicolon handle again write the book
+as I said before the numbers from 1 to
+50 is printed with the difference of 4 1
+4 Defense 5 like that it will continue
+till 50.
+first we'll check for the forward
+condition four conditions start with 1
+and it will come to
+if in if we are written a of 1 is
+divisible by 3 the a of 1 that is K
+value is 1 now a of square of 1 a of 1
+is 1 1 is not disabled by 3 though it
+won't come inside the if loop again it
+will go for the next it is a of 2 a of 2
+is 5 again it is not divisible by 3
+again check for a of three a of three is
+nine nine is divisible by three the if
+condition is satisfied then it will come
+inside the if Loop cutting the statement
+it will display the value 9 this will be
+continue until if the if statement is
+satisfied for example it will only
+satisfy for the multiples of 3 that is 9
+21 33 and 45. so only that values will
+be displayed and as it will come inside
+the loop it will say continue it will
+continue and it will display the values
+only the multiples of 9. like this the
+break and the continue statements Works
+in The Matrix
+now it's time to see the try catch
+statements in Matlab the try cash
+statement is an error Control Function
+let's see the syntax of that
+the try cats function has a try end of
+catch expressions
+the expression or a statement inside a
+dry Block it's true it does not it will
+not come into our catch block if it is
+false or it and any error occurs in this
+try statement then the catch block will
+be executed now let's see with an
+example I'll take an example with a
+variable a is equal to
+once of 4
+and a variable B is equal to
+zeros of 3 and I'll close both the
+variables with semicolon
+now I'll write the drive block try is
+equal to M given expression C is equal
+to square bracket a semicolon B close
+with a circle
+now
+catch
+Matlab exception I want this to be
+displayed in my output so disk of Matlab
+exception and at last end the try cash
+statement now let's run it
+as we know the statement or expression
+inside the try block is C is equal to a
+semicolon B which is an invalid
+expression so the Matlab exception that
+is the catch block has been executed now
+let's see some of the array Concepts in
+Matlab we have already learned how to
+create a basic array in our Matlab
+tutorial video now let's see how to
+create a multi-dimensional array and how
+to create a spare Matrix in Matlab let's
+understand one by one with an example
+array within more than two Dimension is
+called as multi-dimensional arrays let
+me create a three dimensional array
+function using once
+of
+three four and three
+and let me assign it to a variable
+called a
+three-dimensional array of
+created by three by four by three R will
+be created where it has a once all the
+elements inside this array will be 1.
+now let's understand the cell array in
+Matlab
+a cell function is a data object in
+Matlab it can contains any types of data
+or any array numbers strings structures
+or shell
+see how to create cell array in Matlab
+for that we will use a cell keyword or
+end function before that Let Me Clear My
+Command window I have to create a cell
+or that is true cross 2 array using a
+cell I'll do it as cell
+of
+2
+plus 2
+.
+a 2 cross 2 are array which is created
+using a cell
+we can also create a 3 cross 3 or a
+multi-dimensional array using cell like
+cell of
+3
+2 3
+.
+a 3 by 2 by 3 arrange created using a
+cell variable
+foreign
+to store a array of different size
+for that I'll take a new script and
+script will take a variable C is equal
+to
+sell off
+to
+2 comma 4.
+and the semicolon and I'll take a for
+Loop
+for n is equal to
+1 to 8.
+sea of
+is equal to using the magic keyword
+magic of
+n and double end
+for Loop just save it
+now we can see that a 2 cross 4 array is
+created
+now let me display C of
+foreign
+as we can see we using this program or
+using cell we have created an array
+which can store a different size of like
+different element of different size in a
+single array now let's understand how to
+create a spare Matrix in Matlab
+let me go back to our Command window
+a spare Matrix is a large Matrix in
+which a vast majority of elements will
+be zeros
+in another words we can say a spare
+battery is a matrix where the principal
+diagonal numbers will be same and rest
+of the principal diagonals the other
+elements will be zero
+now let's see how to create a spare
+Matrix in Matlab
+we will take a variable a is equal to
+I want a spare Matrix of element having
+two the principal diagonal of my spare
+Matrix would be 2.
+and you will start
+I
+off I'll mention
+five
+five line or a 5 row and Phi column has
+been created with only a principal
+diagonal of my array is 2. the rest of
+the other elements are 0. like this you
+can also create one more like a is equal
+to one I want one
+star
+10.
+see 10 cross 10 as created and all the
+principal diagonal way elements are one
+using star and I this function we can
+create a spare Matrix in Matlab
+now it's time to see some of the basic
+programming in Matlab in basic programs
+first we'll see a string program
+before that Let Me Clear My Command
+we'll see how to reverse a string in
+Matlab for that let me take a string
+like Str
+is equal to and I'll take my first
+string as
+the double
+dead now I'll take one more variable
+called
+new Str and I'll use a keyword called
+reverse
+and inside that I'll pass HDR
+and then enter
+you can see the structure Str variable
+has a value called Lo which is been
+reversed in new SDR
+you can also do it with an uh creating
+an array let me again update the Str
+variable with a
+array string like file create
+hello
+hand
+hi
+and next row should be here
+and
+welcome
+let's create the close square bracket
+and then enter you can see true cross 2
+array has been created
+now again we will say take the same
+variable it is new Str is equal to
+reverse of
+Steel
+as you can see the entire array elements
+has been reversed
+so what if if you want to reverse any
+particular
+variable or particular element in the
+array
+for third you should just mention the
+position of that Arianas like I have
+mentioned I want Hello to be reversed in
+this newest
+I just enter
+new as the in Str the allo has been
+reversed now I want some certain
+position for example from one to three
+it should reverse
+let me print what were the Str values
+this is my array
+now I want
+from 1
+3.
+it should give us
+first one reversed second one reversed
+and the third one has been reversed
+like that we can reverse
+the any types of strings or single
+string are a group of array string
+we can reverse our any Dimension array
+also you can use
+next basic program we will see on Matrix
+first let me create one Matrix X
+with the element of elements like one
+two three four the first row and four
+five six seven eight second row
+and one more I'll take it as V
+or Y
+which will have seven eight nine
+and ten
+level
+12 13 and 14.
+now I want to concatenate these two
+Matrix for the dialogue key a is equal
+to
+X semicolon y
+and press enter
+sorry instead of why I have mentioned 7
+there you just
+bye
+you can see the both the Matrix has been
+added first the X Matrix that is one two
+three four five six seven this Matrix
+and 7 8 9 11 12 13 14 both X and Y
+Matrix has been added
+now we can also add in extra elements to
+an already created Matrix for example
+I'll take B variable is equal to
+I want X
+variable to add an extra elements of
+level 12 13 and 14.
+see the X Matrix it is which has a
+elements of one two three four four five
+six seven as an extra
+elements added to this that is 11 12
+13-14 like this you can also add an
+extra row or extra elements to an
+existing Matrix
+now what if you want to add a row of two
+different Matrix for example a is equal
+to or a
+is equal to square bracket of x
+before that let me print a word
+why
+and I will do a is equal to
+X
+you can see
+the first row of X is added to our first
+row of Y
+and the second row of X then I do a
+second row of Y
+like this you can add a row of different
+different Matrix
+now let me see
+how to write a Fibonacci series program
+in Matlab
+a Fibonacci Sequence the type of series
+which each number is the sum of 2 that
+is preceding it
+now let me take a new script
+we'll take a keyword over and variable
+false
+and next
+we'll write the function
+foreign
+and close the
+same colon and I is equal to 3.
+and we will write a while loop
+for
+variables in n
+is I minus 1
+less than n
+feed the end of
+I is equal to
+save then now I minus 2
+Plus
+fig
+of I minus
+one
+now
+close the semicolon and enter and I
+should
+increment
+is equal to I plus 1 close the semicolon
+and end the value
+last
+filled in
+is equal to
+save b n
+f 1
+2
+and
+minus
+and you will and this function
+first you have to we are writing a
+Fibonacci series for Android
+numbers we took a fib and a variable so
+I assigned to a fib of VN
+and first two numbers of our paperwork
+series will be one by one and I will
+start from the third element
+if the fibofs N that is I minus 1 is
+less than n it will implement this
+formula and increment the I value the
+while loop will continue until the
+condition is true
+with large blueprint the Fibonacci
+series from 1 to last minus 1. now let's
+save the
+file and run it we can see the first two
+numbers of our Fibonacci series is same
+as we mentioned one and one from three
+on the subject is the third element of
+Series has been changed as we have given
+I is equal to 3. and it is printed till
+a hundred within a hundred
+like this you can write a Fibonacci
+series program in Matlab
+now let's see a palindrome program in
+Matlab
+I'll take a screen Str is equal to
+input
+forms
+input keyword is used to take a input
+from the user so I am using input
+what is your strip
+and I'll read that string as yes
+and I'll close the semicolon
+and if
+Str is equal to
+I am using a keyword clock flip r
+flip R is used to flip the string from
+right side
+and I'll pass the string variable
+Now using disc
+we will display
+this string
+sorry
+to close this symbol code
+and the SDI one
+single code
+incident that is a
+control
+and enter else
+is
+in the square brackets the
+chain
+let's take our
+days
+and two single quotes
+and then and the
+let me run the program I will ask what
+is your string I'll give it as hello
+and the string yellow is not a palette
+row once again I will run the program
+and then now I'll give noon as my
+string the string known is a palindrome
+like this you can write a palindrome
+Fibonacci series or any other basic
+programs in Matlab choose from over 300
+in-demand skills and get access to 1000
+plus hours of video content for free
+visit scale up by simply learn click on
+the link in the description to know more
+we have reached the end of this session
+today we have learned the environmental
+programming Matlab control statements in
+Matlab Matlab Loops try cash statements
+arrays in Matlab and it will ask some of
+the basic programmings in Matlab
+please like this video and share with it
+your friends for more such videos visits
+our simply learn YouTube channel for any
+queries regarding this topic mention it
+in the comment section thank you keep
+learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

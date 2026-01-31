@@ -1,0 +1,1332 @@
+foreign
+is one of the emerging programming
+languages according to the most recent
+figures python is the most used coding
+language for about 80 percent of
+Developers
+the syntax of this high level
+programming language is simple to
+understand Python's large Library System
+makes it a best choice for data science
+machine learning and artificial
+intelligence projects so hello Learners
+welcome to simple learns YouTube channel
+and today we will create a mind sweeper
+game using python but before we begin if
+you love watching Tech videos subscribe
+to our Channel like the tutorial and hit
+the Bell icon to never miss an update
+and now we'll see the demo of what we
+will create today that is the
+Minesweeper game
+so this is a Minesweeper game so first
+we have frame and we have a title here
+that is mindsweeper game then we have
+the cells left that is 36. we have set
+the size of the board to 36 only so
+Minesweeper features a grid of click
+cable squares that we can see here
+that has hidden Minds scattered
+throughout the port and the objective is
+to clear the board without detonating
+any mines with help from clues about the
+number of neighboring mines in each
+field
+as if I click on this field you will see
+two so there would be two mines near
+this box that could be here
+here here
+that could be like horizontally
+vertically or diagonally
+and that would be to the adjacent boxes
+only
+so here it could be a mine here here
+here
+so if you click on a mine the game would
+be over for you so you have to click on
+the numbers and be aware of not
+detonating the minds and solve the
+puzzle so moving on now I will have a
+simple quiz
+for you guys
+so your question for the quiz is which
+of the following concepts is not a part
+of python any options are
+first is pointers
+second is loops
+third is dynamic typing and the fourth
+is all of the above please answer in the
+comment section below and we'll update
+the correct answer in the pin comment
+you can pause the video give it a
+thought and answer in the comment
+section
+and I have an insightful for you guys if
+you are focused on building strong
+foundational skills for career growth in
+that case you can check out a free
+course to Learn Python Basics with a
+completion certificate from scale up by
+simplylearn you can check the python
+Basics course in the description box
+below
+we will give the link there you can just
+go and check it out
+so now we'll start with the tutorial
+and now we'll create a folder
+name it as Minesweeper
+foreign
+the command prompt
+and write the command code space period
+and press enter
+so we will get our Command Prompt open
+and here we'll create a file
+and name it as main.py
+and now we'll start off
+code
+to make a Minesweeper game so first
+thing we will import the package that
+would be the kinter
+so from enter
+we'll import all the classes
+and now
+we will create a root
+and initialize the taken stance
+and now we'll configure this window
+and using configure you can change the
+background color
+or text
+the window or any element or widget of
+the Kinder widget
+so here we would set the background
+color
+and we'll set it as black
+and moving on
+now we'll set the geometry
+that would be the size of the ticket
+window
+so first I will show you our window
+would look like
+for that I will write the command
+root Dot
+main Loop
+now I'll save this file
+and run it
+you would see that the tick enter window
+has appeared and it has the background
+color as black
+now we'll set the geometry of this
+window
+so that would be
+how much size
+it should appear
+when we just run our code
+so for that we will write the command
+root dot geometry
+and inside
+we will make the height and width of the
+window static
+not static will make it dynamic for
+static we can simply write 400 x
+700. and those would be in inverted
+commas
+we'll save this and run this file
+you could see that 400 is the width of
+the window and 700 is the height of the
+window
+so we have the window with 400 width and
+700 right but we want the window to be
+dynamic
+so for that
+we will set the width and height above
+only
+so we will write a variable width
+and
+set the width as 1400
+and
+equal to 720 pixels
+now
+in the geometry function
+we would declate the dynamic variables
+that would
+take the width and height
+from here
+and set the geometry
+first we'll clear that
+and for dynamic
+right
+and inside we'll write the width
+rows and that would be the height
+we can add a new file and name it as
+configure
+Dot py
+and inside that
+we will paste these diameters
+and we will import this file
+that would be import
+configure
+and using that file only
+we will set our
+show here we will set it as
+configure dot width
+that is we are importing width from the
+configure file
+configure module
+and here height also from the configure
+module
+so yeah
+now we'll save this and run it
+you can see that the window has taken
+the geometry function and
+made its diameters according to that
+only that is width equal to 1400 and the
+height is equal to 720.
+now we'll set the title of the window
+for that we'll write the command true to
+Titan
+and inside we will write
+the title you want for this game that
+would be mine sweeper game
+and will also
+use another function that would be
+resizable
+and make this
+as note resizable that will prohibit to
+resize the window
+it would have the particular diameters
+that we have defined
+so to make that project
+we will pass
+volts and Folds to the resizable
+function
+and save this
+and run it
+so you could see that the title has
+changed to main super game
+and the window is not resizable now so
+we can't see the arrow if we just hover
+the cursor
+on the edges of the window
+you need not able to see that Arrow
+so the window has set as note resizable
+and now
+in the window only
+as I have shown you the demo first we
+will create a frame here
+and inside that frame we will have a
+title that would be the Minesweeper game
+and the count of the tiles that would be
+on the board
+and inside another frame that would be
+just beneath this Frame we would set the
+cells of the board all the cells number
+of cells that we're going to have in the
+board
+so for that
+first we'll create a frame
+for our heading and the number of
+tiles or the number of cells
+so for that we will
+create a variable and named as top frame
+and using the frame widget
+and we will pass the root inside it and
+set the background color with the help
+of the command BG equal to
+and we'll set the color as Gray
+and now we'll set the width and height
+of the frame
+so we can also set the width and height
+with the normal method that is we can
+write the pixels and we can also use the
+percentage method
+so for that
+to fold that
+we will create a file
+and name it as new DOT py
+and inside that we will import the
+height and width
+that was stored in configured.py
+so we will write import
+configure
+and here we will Define functions for
+height and the width percentage so in
+the whole window if we want to set the
+frame height or width we'll just set the
+percentage or pass the percentage
+so for that we will create the function
+and named as height
+underscore
+prcd that would be percentage and inside
+will pass the percentage
+that we want to
+have in the whole window
+and we would do it on
+that would be
+configured Dot
+8
+and that would be divided by 100
+into
+percentage
+so this is the function that we have
+defined for the height
+and now similarly
+we will Define it for width
+with underscore
+yes ID we'll name this
+and we'll pass the percentage for width
+and in return
+you will get
+configure dot width
+and that would be divided by 100
+and then we'll multiply it with
+percentage
+so this is how we would be defining the
+height and width for the following
+frames or for the following any widget
+in our tick enter window and in our the
+project that is the main sweep project
+and moving to the main.py file
+here we are creating the
+frame and now we'll set its height and
+width
+so to set the width
+we will set it inside
+this only
+so
+right width that would be equal to
+configure
+Dot
+width
+that is we are importing the width from
+the configure that is the
+parameter of x axis so we want that
+frame to be in the whole taken term
+window so for that we have imported
+configured out width that was 1400.
+and
+the fourth height
+we will import from the new file that
+would be new
+and we have to import this new file also
+here
+of course that will write import new
+and now
+new DOT
+it underscore percentage you will just
+write the percentage
+for what we want to have the frame
+height
+so we will set it as 25.
+we will save this
+and run it
+so you would be able to see
+first we'll change the color so that
+you guys would be able to see the frame
+okay first we will place some widgets
+over there so that you can
+see the frame
+first we'll place this
+news third place geometry function here
+for that we'll write the variable name
+to open The Score frame and use the
+place geometry widget
+and inside we will pass it as x equal to
+0 and
+y equal to 0.
+so after placing this you would be able
+to see
+a frame in the window
+that is you can see that the width equal
+to 1400 and height we have set it as 25
+percent of the whole window
+that was 25 of the 720.
+so this is how we set the dynamic
+height and width for our widgets
+and now moving on
+we will set the game title
+foreign
+and by the way guys uh we have taken
+some reference from the pre-code camp
+so now
+we will set the game title
+and put that we would create a label
+we have used the label widget here
+that is capital l a b e l and inside
+would pass the top frame
+that is the variable
+in which we have created the frame
+so we have passed it so that the label
+that should be over or shifted on to the
+top frame only
+and after top frame we will pass
+VG that would will set the background
+color
+for this label and we'll set it as
+black
+and we'll set the foreground color
+as white
+and now we will write the text that we
+want to display
+so we'll use text
+equal to
+lines sweeper
+in game and now we will set the font
+for the heading
+for the title
+put that tool right font
+equal to and inside the circular
+brackets
+we would set the default font
+and the font size as 48.
+and no
+we will place this
+will use the place geometry widget to
+place this label on the frame
+so for that
+we would use the variable game
+underscore title
+and use the place widget dot place
+we will
+set the coordinates in the place
+geometry widget
+and
+put that right
+x equal to and we'll set it in between
+so for that we'll write x equal to
+that is we will
+use the function from the new file new
+DOT
+with underscore
+percentage
+and set the percentage as 25
+and why that would be equal to 0.
+10 error
+okay we haven't placed the comma here
+so now we'll save this
+and run it
+so you can see that we have the title
+here that is my simple game
+so here
+and we will just change the background
+color
+to that
+we'll use the hexa code for that color
+that would be
+I call it
+light violet or light blue
+you guys can differentiate which color
+it is so I have the extra code for that
+that is 5D
+60 70.
+so I have set the frame
+also the label
+I'll save this and run it so you guys
+can see that
+the color of the
+background of the title has been changed
+and it's light blue I guess
+and we will
+have the same color
+in the frame for background
+foreign
+position
+and when it goes so this is
+the color for the frame and we have just
+shifted it with the five percentage that
+is the total is 1400 we have started it
+from 30 to 1400.
+so x value is 30 of 1400 and Y value is
+0.
+now
+now we'll create
+now we will create another frame that is
+for the board
+of the game
+so for that we will create a variable
+and name it as
+Center frame
+Center underscore frame
+and
+for that we'll use the widget
+frame
+and inside we will pass root
+and after root we will set the
+background color
+as black
+and
+we'll also set the width and height of
+the frame
+so for width
+prove it will use the percentage
+function for that we will use the new
+file
+so that would be new DOT
+with underscore percentage
+and inside will pass the percentage and
+we will
+as the percentages
+75
+so the width of this Frame would be 75
+percent of 1400.
+and now we will set the height
+we would set the height in the next line
+I'm going to set the
+height
+that would be equal to
+we will also use the percentage function
+here for that we'll use new DOT
+height underscore
+percentage and inside we will pass the
+percentage
+and that would be 75 percent of the 720
+pixels
+now
+we will
+use the place geometry widget and place
+this Frame
+for that
+we will write
+X parameter and that would be
+using the percentage function only so
+for that we will write new DOT
+width underscore
+percentage and inside we will pass the
+percentage as 30.
+and for y dimension
+we will also use the
+percentage function and for that we'll
+write new note
+height underscore
+PR
+CT and inside we will pass
+30 unit 30 percent
+of the total height
+that is 720.
+and moving on
+now we will create the cells of the
+board
+but first we'll show what we have done
+till now
+so this is the frame here and we have
+set the title as mine super game and
+here we will create the total count for
+the cells and here we have also created
+a frame
+and we have set the background color as
+black only so you won't be able to
+differentiate that
+so for a time being
+we will make the color as white
+and run it for you guys
+so that you can differentiate
+so this is the frame uh we have started
+it
+from 30 percent
+just see
+that was 75 percent we have
+the width and 75 percent as height and
+we have started from 30 percent of the
+total width so we have started from the
+30 of the total width here
+so we have set the
+Place method from 30 of the total width
+now moving on
+we will create the board and then the
+buttons in it so we can click it and
+find out the which number is there or
+is there a mine
+so for that we will create a file
+and name it as unit
+Dot py
+so inside this unit dot py file
+we will create the class self and we'll
+create this class so that we can
+name it a cell and because we know that
+for each cell we also like to give some
+attributes that is if the cell is mine
+or not
+or if this is a cell that is already
+open or is it closed so that's exactly
+the time that it is a great idea
+thinking about creating a class
+and we'll name it as
+cell
+so for that first we will import the
+module
+from taken to
+import all the classes
+and here we would also import
+your random module
+and import
+new file with the new module
+and import the configure
+and also import the C types
+and one more import sys
+now we'll create a class and name it as
+cell
+and inside the class we will
+create the variable all
+and
+initialize it
+and now we will
+create an init function
+and inside that will pass self
+and a variable
+that would indicate whether this L is
+mine or node
+so first is underscore
+mine and first we'll set it as false
+only
+now inside this
+foreign
+and that is equal to is
+underscore mine
+and now we will create the button object
+so the cells of the board
+would be like the button only when we
+click on it whether it's a mind or it's
+a number
+so for that we will create a
+function and name it as create
+underscore button underscore
+object
+and inside will pass self
+and the location where we want to place
+the button
+and here we will create a button will
+create a variable BTN and inside we'll
+use the button widget
+and inside this widget
+first we'll pass the location
+and I will tell you how we'll set the
+location for that and that will set in
+the main file only
+and we'll set the width
+that would be equal to 12. and
+height
+that would also be equal to 12.
+or no height I want
+I don't want to create the square
+buttons
+so height equal to 4
+and now here
+we will use
+pattern dot bind
+that is
+here we will use the mouse functions
+and for that
+[Music]
+these brackets
+and
+button one that is the left button
+and
+for that
+write the functioning
+self taught
+I will create a function for that and
+we'll name it as left underscore
+click under selections
+and that would be for the left button
+and similarly
+we would use the bind function for
+right button
+and to Target the right pattern
+of the mouse will use button
+three
+and we will create a function for its
+functionality
+and name it as write
+underscore click underscore actions
+now after binding
+the functions to the left click and the
+right click we will Define these left
+click actions and the rightly actions
+but before that
+we will Define another function
+and name it as
+show mines
+show underscore mine
+and inside will pass self
+and inside
+we will use self Dot
+cell underscore
+button underscore object
+first we will declare this
+and inside the init
+function only will declare this
+self Dot
+cell button object
+equal to none
+here we have created the object for the
+button
+that is we will create all the cells as
+button only
+and now we will configure this
+so that will use configure
+and inside
+we will
+use background color as red for mines
+like if we detect the mind we'll be
+seeing the red color we would click the
+left click and if it's a mine it will
+show show info box else
+so if you click the mine it would show
+the background color as red
+and now
+if you clicked on a mine the game would
+be over for that you will use
+C types
+LL Dot user32
+and we will call the message box here
+message box w
+and inside we will pass 0 comma
+and the text
+you clicked on a mine
+play again
+and pass another parameter that is zero
+and after that we will exit the
+system and for that
+I'll use system dot exit
+and now we will create a function
+if we click on a mine so we should get
+all the boxes where there is a
+possibility to gather get a mine
+oh
+to get to guys understand I'll just run
+this
+and this is our game if I click on this
+box
+that is you click on mine and uh
+game gets over
+okay
+so my luck is not so good so yeah I
+clicked on this so these are the boxes
+that have the possibility of getting a
+mind so we can right click this
+and
+get them sorted so we will get all these
+coordinates so that they would help us
+assuming that there would be a mind
+so we will Define a function for that
+we will get back to our code
+and we will
+create a function that would be
+surrounded cells
+surrounded underscore
+cells and pass self in it
+and inside we will create
+cells equal to
+and here we will get self Dot
+get underscore
+we have to create
+a function
+get cell by access or we can name it
+anything we will create cell by access
+only
+so first we will
+create this function that would be get
+cell by access that it will help us to
+get the access or get the coordinates of
+the button
+so for that we will Define a function
+and name this
+I mean get
+well
+so
+if I
+access
+and inside will pass self
+and X and Y coordinates and if we enter
+these coordinates we'll get the cell
+and inside
+we will run a loop first we need a SIM
+it's very cold in here
+and now we'll run a loop that will be
+four
+cell
+that is the class name
+cell.tool
+if
+cell dot X would be equal to
+X
+X and
+cell dot y
+equal to y
+then return the cell
+okay
+if that cell is present what we have
+passed as the x and y coordinate then we
+would get the silent return
+and now to get the surrounded cells
+so and we will pass
+x coordinate that would be self protects
+minus 1
+as if you see
+we would be following the grid method
+and that would be the columns and the
+rows so this is 0 0
+this is
+on the x-axis we are going with this is
+1 comma 0
+2 comma zero three comma zero four comma
+zero five comma zero
+and that's it so this would be 5 comma
+2.
+okay
+so to get the coordinates
+uh like for this
+we would just subtract it that would be
+x minus 1 and y minus 1. for this we
+would subtract x minus 1 and y minus 1.
+so that would be
+5 minus 1 that would be 4
+and
+3 minus 1 that would be 2.
+so similarly we will write the
+coordinates
+self dot x minus 1
+and for the y coordinate
+we will write
+self dot y
+minus 1
+and this is the
+first one now we'll get the second one
+that would be this and for this we'll do
+no we'll get this first self dot x minus
+1 and y coordinate would be self dot y
+that is same only
+so self Dot get underscore
+sell underscore pi
+underscore axis
+and inside we will pass
+the coordinates that would be
+self.x minus 1
+and
+self dot y
+and the next would be
+self dot x minus 1 and cell dot y plus 1
+as y coordinate has been increased by 1.
+so we'll just copy this
+and after playing coma
+just paste it and x minus 1
+and Y Plus 1.
+and that would be
+the
+sorry I clicked on this
+so
+X would be same and Y has been increased
+self.x and cell dot y Plus 1.
+and now we'll move to the next one that
+would be cell dot X Plus 1 and the Y
+would be circled y Plus 1.
+so we'll paste this
+and that would be X plus one
+and self dot y
+Plus 1.
+and the next would be self Dot
+X Plus 1 and the Y would be same
+just a second
+okay you have to change it
+so root X Plus 1 and set dot y
+okay now it would be cell dot X Plus 1
+and self dot y minus 1.
+minus one okay
+and this is the last one that would be
+self dot x minus 1 and set dot y minus
+1.
+so these are all the coordinates
+and at the end we will close the square
+bracket
+and we will
+use a decorator here and that would be
+the like
+so now that we understood this that I am
+going to move all those lines of code
+into a separated method so that we could
+have a property that is going to
+represent the surrounded cells object
+now property is basically like an
+attribute that is read only
+so we can Mark these attributes as
+read-only attributes by using a
+calculator
+and we'll use a decorator that would be
+using at the rate and name the
+integrator as
+property
+that would be the read only
+and we'll place a condition here
+that would be
+sales equal to
+cell
+equals cell
+in cells
+if
+cell is not none
+then we should get
+sales in return
+now we will create another decorator
+and named as property only that would be
+read only
+and here we will Define a function
+that would be surrounded cells mind's
+length
+that would be if we go to number two so
+what would be the length of the mines
+underscore length
+and inside will pass self
+and we'll set the counter
+as 0
+and
+after that I'm going to run a loop
+for cell
+dot surrounded cells
+that is we have just seen what would be
+the surrounded cells here
+surrounded cells
+and then we'll
+use the if condition if
+cell Dot
+is mine if it's a mine then we'll
+increase the counter
+that would be counter
+plus equal to 1
+and we'll return the counter
+and now before moving on
+we will create some other
+variables
+that would be
+and before that we should Define the
+grid size
+that is how much it should be boxes on
+the board
+we are
+using the square only
+so we'll make the grid size as six
+and we'll also Define
+style count
+and that would be equal to
+great underscore size
+to the power 2
+and
+the minds count
+which should be the mains count
+it should equal to
+cell count
+and
+floor division so that it should be a
+integer only
+by four
+and moving to unit dot pyth file again
+now we'll create the variables
+and if it is mine if it's a mine and
+button object
+now we'll get if the
+button is opened
+and we'll set it as poles only
+and we'll create another
+that is
+is
+mine candidate that is if
+we have
+oh sorry
+that is if we have clicked on a
+button or a cell and a number comes out
+and if it's two then what are the
+chances that the other boxes can be a
+candidate to be a mind
+so
+we will
+also set it as false
+and we have set the button object equal
+to none
+and here we'll set cell dot x equal to X
+and
+cell dot y equal to y
+and we will pass X and Y init
+okay
+here we will
+get the cell count
+for that
+we'll use the configure file
+in which you have decided
+entered them
+cell count so for that
+values configure
+Dot
+cell underscore count
+and then we'll create another variable
+variable that would be
+cell underscore
+count underscore
+label underscore object
+and set it as
+and then
+and at first
+will
+append the list that would be append
+object to the cell dot or list for that
+we'll write cell dot Old Dot
+append
+and inside will pass self
+now we will
+create the functions for left and right
+click actions
+so for that we will create a function
+and we'll name it as
+left
+click actions
+and insideward pass self
+and event
+and if
+is underscore mine
+so we will self taught
+show mine
+else
+if
+self Dot
+surrounded
+cells
+Minds
+length equal to equal to zero
+and we will set it in the condition only
+and inside we will run a for Loop
+for cell underscore
+check
+in
+in self Dot
+surrounded cells
+cell underscore object
+Dot
+no underspose cell
+taught
+show underscore cell
+and if minds count is equal to the
+cell's left count then the player will
+be worn
+so
+we will write if
+cell Dot
+tell underscore
+count
+equal to equal to
+settings Dot
+and it's not setting let's configure
+dot mines underscore count
+so
+so we will do c types
+Dot
+window
+user
+32
+root
+message box
+W and inside will pass zero
+and then congratulations
+you won the game
+over
+and then would pass zero
+and now will unwind
+the mouse
+clicks so self taught
+cell underscore
+button under score object
+out and bind
+and will unbind the left key first
+you have to move button minus
+one
+and then we'll
+unwind
+the second key
+that is the right key
+button three
+and now
+now we will create a function for show
+cell
+so for that
+we will create the function
+show cell and pass self in it
+and inside
+to write if
+not
+self
+dot is opened that we have already
+assigned as false
+if it's not open then
+the class cell Dot
+cell underscore count
+minus equal to 1.
+now
+and cell dot cell button object will
+configure it
+send underscore button underscore
+object
+and configure this
+pass the text
+as
+cell Dot
+surrounded
+underscore cells
+let's go mines
+underscore length
+man now we'll put a foundation
+if
+cell Dot
+that is cell count level object
+we will just configure it
+remote configure
+inside will pass text equal to
+Lambda
+[Music]
+that would be cells
+left
+so we have created the function for show
+cell that is in the first frame we will
+be having the title that would be the
+main sweeper game and then we will
+having the how much cells are left
+so we have created the function for that
+and here
+we will configure this
+self dot cell underscore
+button underscore object
+dot configure
+and we'll set the background color
+and we'll set the background color as
+white
+oh self
+Will Change is open equal to true
+now it has been opened
+we have clicked on that
+and we have turned it as true
+now we have created the function for the
+show cell so if we click on the cell and
+if it's not open then the count would be
+-1
+and now we have configured it
+was planning mistake
+and we have configured it
+and at last we have set it as true
+now we will Define the function for the
+right click actions so we will name it
+as right underscore
+click underscore actions
+and inside will pass self
+and an event
+if
+not
+self
+tote is mine candidate if it snows the
+candidate
+we will set this as true
+else
+so
+let me repeat yeah
+if not self dot is main candidate
+then
+we will configure the button object and
+for that we'll write self taught
+cell underscore
+button underscore object
+now we'll configure it
+and set the background color
+as Orange
+and now
+set the is mine candidate to true
+so for that we'll write self taught
+is underscore mind underscore candidate
+and set it as
+true
+how else
+we will set the configuration for the
+cell button object
+for that we'll write
+self taught
+cell underscore button underscore object
+and we'll configure it
+and we'll set the background color as
+White
+and now we will
+set the is main candidate to false
+so for that we'll write self taught is
+underscore mine underscore
+candidate
+and set it as poles
+and now we will Define a static method
+or
+the randomization of the minds so that
+we can get the minds in a random way
+so first we'll create a decorator
+and a static method
+and inside this we will create a
+function
+s
+and inside this we will create a
+function
+and name it as randomize
+Minds
+and inside that we will
+create a variable and name it as picked
+underscore cells
+that is we will pick the cells that
+would be converted to random mines
+we will use the random function here
+that would be random
+or the random module that would be
+random Dot
+sample
+and inside will pass cell dot all that
+is
+we can choose that the random function
+would choose any from all the cells
+and the second variable you will be
+passing would be
+configure Dot
+mines underscore count
+and that was in capital
+and inside we will run a for Loop
+so that it would choose mine
+so for picked underscore cell
+in picked cells
+foreign
+[Music]
+and at last
+we would
+create a
+function
+and by itself in it
+and return a Lambda function
+that would be cell
+and self protects
+self.y
+it's now moving to the main.py file
+now we'll set the grid size here
+with that will
+run a loop for X in
+range
+configure Dot
+grid size
+and four
+Y in
+range
+configure Dot
+grid size
+and inside we will create an object for
+the class c equal to
+cell and inside will pass the parameters
+X comma y
+and first we have to import it
+import
+unit
+now
+you will
+create
+button object
+turn underscore
+object
+and inside
+will pass Center frame
+as these
+would be there in the center frame only
+and now
+the errors so
+okay
+so from unit we will import
+cell class
+and Center underscore
+frame
+and there's a spanning mistake for
+Center
+so it will be Center underscore frame
+and now we would set the grid geometry
+that would be C Dot
+where undersport button underscore
+object
+and reduce the grid geometry
+and set the
+column
+as X
+and row
+as y
+now
+we'll call the label from the cell class
+so that will write cell Dot
+create
+underscore cell
+in the score count
+underscore label
+and inside will pass top frame
+for the count of the remaining cells as
+we have seen earlier
+and for that
+we will write cell Dot
+cell underscore
+account underscore label
+let's go checked and use the place
+geometry method
+and x equal to
+we have
+Red Top functions
+in new files so x equal to new DOT
+wet underscore percentage and inside
+will pass the percentage we pass it as
+42
+and that is underscore
+and comma y
+y equal to Nu Dot
+right
+underscore
+percentage
+and will pass as 15 percent
+and we need that we will call the
+randomize
+Mains function cell Dot
+randomize
+underscore mines
+so
+our game is ready now we will run the
+main.py file we will save this and run
+it
+so you could see that our game
+is running fine
+so we have clicked on a mine
+so we have run it again so we have
+clicked on the second column so it shows
+that there would be three Minds
+so this this this and this is a
+candidate
+for being a mind
+and we are taking this we will click on
+this
+game over we click no never mind
+so guys our project is ready
+uh game is ready
+so guys our project is ready and our
+game is running fine
+so you guys can check it out
+and with that we have come to the end of
+this session
+and I have an insightful for you guys
+that is if you are aiming to get
+certified in Python Programming and want
+to build a python software development
+career in that case you can check this
+python certificate course by simply
+learn which will open the doors for the
+best career opportunities to find the
+details I will give the link in the
+description box below you could check it
+out and this would be the ideal solution
+to help you build your career in the
+right action and I hope the session was
+interesting and informative if you liked
+it please let us know in the comment
+section below and also do subscribe to
+our Channel and stay tuned for more from
+Simply love
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

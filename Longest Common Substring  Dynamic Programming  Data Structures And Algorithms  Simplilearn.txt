@@ -1,0 +1,201 @@
+hey everyone i am rebecca khandelwal and
+i welcome you all to simply learns
+youtube channel
+in this session we will discuss longest
+common substring
+we shall begin our session by discussing
+the problem statement
+then we will discuss the algorithmic
+solution to find the longest common
+substring
+finally we will implement the set
+function to find the longest common
+substring
+in the code editor but before we begin
+make sure you have subscribed to our
+youtube channel and clicked on the bell
+icon below so you never miss an update
+from simply runs youtube channel
+so without any further ado let's get
+started with the problem statement
+the longest common substring problem
+involves finding the length of the
+longest string that is the substring of
+two or more strings there might be a
+number of solution to a situation now
+let's discuss the algorithmic solution
+to find the longest common substring
+first we must determine the length of
+the longest common suffix for each
+substring
+of both strings and save it in the
+database
+now if the last characters in the
+longest common suffix match
+their length will be reduced by one or
+if the last characters in the longest
+common suffix do not match then the
+result will be zero
+now we will look at the suffix of
+distinct substrings that ends at
+different indices finally we will
+conclude that longest common substring
+is the longest common suffix with the
+maximum length
+we have now discussed the problem
+statement and the algorithmic solution
+to find the longest common substring
+now let's implement this solution in the
+code editor we will start with a
+function that will return the length of
+the longest common substring
+of a string x and y
+and
+lc
+sub
+str
+its argument as
+star care
+x
+comma
+character pointer
+why
+comma
+and
+the size of the first
+string x
+comma
+end
+and this will be the size of the
+another string wire
+now we will create a table to store the
+length of longest common suffixes of
+string
+now we will create a array lc surf to
+store the length of the longest common
+surface
+so
+end
+lc serve
+at
+m plus one
+and n
+plus one
+and another variable
+result
+equals to zero
+this will be used to store the length of
+the longest common substring
+now
+we will follow the steps to build the lc
+suffix in the bottom of fashion
+so for
+and i equals to 0
+i less than
+equals to m
+i plus plus
+another nested loop 4
+and
+j is equals to 0
+j less than equals to
+and
+j plus plus
+now the first row in the first column
+entries will have no logical meaning
+they will be used only for the
+simplicity of the program
+so if
+i is equals to
+zero or
+j
+is equals to
+0
+then
+lcs
+at i comma j
+will be equals to zero
+else
+is
+x
+at i minus 1
+is equals to
+y
+at j minus 1.
+then
+lc surf
+at i
+j
+will be equals to
+lc surf
+at i minus 1
+and j minus 1
+plus
+1.
+and
+the result
+will be equals to
+the maximum
+of
+result
+comma
+lc surf
+at i
+comma j
+else
+lc surf
+at i comma j
+will be equals to zero
+and we will return
+result
+now let's write the main block
+we will have
+string care
+x
+is equals to
+calm
+down
+and
+another string
+car
+y
+is equals to
+keep
+calm
+now we will store the length
+n
+m equals to
+str alien
+of x
+and
+n
+will have
+strln
+of y
+now
+we will print
+the length
+of
+longest
+common
+substring
+lcs
+str
+at x comma y comma m comma n
+now let's try and execute this
+as you can see we are getting the length
+of the longest common substring s4 which
+was khan and this was all for today's
+session hope you guys found it
+informative and helpful
+if you liked this session then like
+share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

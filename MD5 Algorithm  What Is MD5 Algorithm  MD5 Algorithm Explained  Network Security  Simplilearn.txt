@@ -1,0 +1,336 @@
+with the consensus aiming towards an
+educated public on digital privacy it's
+no surprise to see an increasing
+interest in encryption algorithms
+we have already covered the major names
+like the des and the aes algorithm
+md5 algorithm was one of the first
+hashing algorithms to take the global
+stage as a successor to the md4
+despite the security vulnerabilities
+encountered in the future md5 still
+remains a crucial part of data
+infrastructure in a multitude of
+environments
+so hey everyone this is baba from simply
+learn welcome to this video on the md5
+hash algorithm
+let us take a look at the topics we need
+to cover for today's video
+we take a look at what is hashing and
+its principles examples and applications
+we learn about the origin of the md5
+algorithm along with its methodology
+we take a look at the steps needed to
+create hashed values using the md5
+algorithm and finally learn about the
+prospective advantages for the same
+so let us first get acquainted with the
+concept of hashing and its examples
+hashing is the process of scrambling a
+piece of information or data beyond
+recognition
+we can achieve this using hash functions
+which are essentially algorithms that
+perform mathematical operations on the
+main plain text
+the value generated after passing the
+plain text through the hash function is
+called the hash value hash digest or in
+general just hash of the original data
+while this may sound similar to
+encryption the major difference is
+hashes are made to be irreversible
+no decryption key can convert a digest
+to its original value
+however a few hashing algorithms have
+been broken down due to the increase in
+computational complexity of the new
+generation computers
+there are new algorithms that still
+stand the test of time and are they are
+being used in multiple areas for
+password storage integrity verification
+etc
+like we discussed earlier websites use
+hashing to store user passwords so how
+do they make use of these hashed
+passwords when a user signs up to create
+a new account the password is then run
+through the hash function and the
+resulting digest is stored on our
+servers
+so the next time a user logs into the
+account the password he enters is passed
+to the same hash function
+if the digest matches with the one
+stored in the server then he is allowed
+to login to the account
+this way no plaintext passwords get
+stored preventing both the owner from
+snooping on user data and protecting
+users privacy in the unfortunate event
+of a data breach or a hack
+we also use hashing when it comes to
+verifying data integrity
+when a file is uploaded onto the
+internet it is also passed through a
+hash function
+once the hash digest is generated it is
+uploaded along with the file onto the
+internet
+when a user downloads the file for his
+or her personal use they can also get
+the hash downloaded with it
+once the file is run through the hash
+function again
+the digest is compared to the one
+provided by the uploader
+if the value of both the digests are the
+same the data integrity is verified and
+we can be sure that the data was not
+corrupted while transit
+to generate these hash digest from a
+standard input we use hash functions
+such an example of a hash function is
+the md5 algorithm
+let us learn more about it in our main
+focus for the day
+the md5 hashing algorithm is a one-way
+cryptographic functions that accepts a
+message of any length as input and it
+returns as output a fixed length digest
+value to be used for authenticating the
+original messages
+the digest size is always 128 bits
+irrespective of the input
+the md5 hash function was originally
+designed for use as a secure
+cryptographic hash algorithm to
+authenticate digital signatures
+md5 has also been depreciated for users
+other than as a non-cryptographic
+checksum to verify data integrity and
+detect unintentional data corruption
+ronald rivest founder of rsa data
+security and institute professor at mit
+designed md5 as an improvement to a
+prior message digest algorithm which was
+the md4
+as already iterated before the process
+is straightforward we pass our plain
+text message to the md5 hash functions
+which in turn performs certain
+mathematical operations on the clear
+text to scramble the data
+the 128-bit digest received from this is
+going to be radically different from the
+plain text
+the goal of any message digest function
+is to produce digests that appear to be
+random
+to be considered cryptographically
+secure the hash functions should meet
+two requirements
+first that it is impossible for an
+attacker to generate a message that
+matches a specific hash value and second
+that it is impossible for an attacker to
+create two messages that produce the
+same hash value
+even a slight change in the plaintext
+should trigger a drastic difference in
+the two digest
+this goes a long way in preventing hash
+collisions which take place when two
+different plaintexts have the same
+digest
+to achieve this level of intricacy there
+are a number of steps to be followed
+before we receive the digest
+let us take a look at the detailed
+procedure as to how the md5 hash
+algorithm works
+the first step is to make the plain text
+compatible with the hash function
+to do this we need to pad the bits in
+the message
+when we receive the input string we have
+to make sure the size is 64 bit short of
+a multiple of 512
+when it comes to padding the bits we
+must add one first followed by zeros to
+round out the extra characters
+this prepares the string to have a
+length of just 64 bits less than any
+multiple of 512
+here on out we can proceed on to the
+next step where we have to pad the
+length bits
+initially in the first step we appended
+the message in such a way that the total
+length of the bits in the message was 64
+bit short of any multiple of 512.
+now we add the length bits in such a way
+that the total number of bits in the
+message is perfectly a multiple of 512
+that means 64-bit lens to be precise are
+added to the message
+our final string to be hashed is now a
+definite multiple of 512.
+the next step would be to initialize the
+message digest buffer
+the entire hashing plain text is now
+broken down into 512 bit blocks
+there are four buffers or registers that
+are of 32 bits each named a b c and d
+these are the four words that are going
+to store the values of each of these sub
+blocks
+the first iteration to follow these
+registers will have fixed hexadecimal
+values as shown on the screen below
+once these values are initial
+of these 512 blocks we can divide each
+of them into 16 further sub blocks of 32
+bits each
+for each of these sub blocks we run four
+rounds of operations having the four
+buffer variables a b c and d
+these rounds require the other constant
+variables as well which differ with each
+round of operation
+the constant values are stored in a
+random array of 64 elements
+since each 32-bit sub-block is run 4
+times 16 such sub-blocks equal 64
+constant values needed for a single
+block iteration
+the sub-blocks can be denoted by the
+alphabet m and the constant values are
+denoted by the alphabet t
+coming to the actual round of operation
+we see our four buffers which already
+have pre-initialized values for the
+first iteration
+at the very beginning
+the values of buffers b c and d are
+passed on to a non-linear logarithmic
+function
+the formula behind this function changes
+by the particular round being worked on
+as we shall see later in this video
+once the output is calculated it is
+added to the raw value stored in buffer
+a
+the output of this addition is added to
+the particular 32-bit sub-block using
+which we are running the four operations
+the output of this requisite function
+then needs to be added to a constant
+value derived from the constant array k
+since we have
+four different elements in the array
+repeat
+since we have 64 different elements in
+the array we can use a distinct element
+for each iteration of a particular block
+the next step involves a circular shift
+that increases the complexity of the
+hash algorithm and is necessary to
+create a unique digest for each
+individual input
+the output generated is later added to
+the value stored in the buffer b
+the final output is now stored in the
+second buffer of b of the output
+register
+individual values of c d and a are
+derived from the preceding element
+before the iteration started meaning the
+value of b gets stored in c
+value of c get stored in d and the value
+of d in a
+now that we have a full register ready
+for this sub-block the values of abcd
+are moved on as input to the next
+sub-block
+once all 16 sub-blocks are completed the
+final register value is saved and the
+next 512-bit block begins
+at the end of all these blocks we get a
+final digest of the md5 algorithm
+regarding the non-linear process
+mentioned in the first step the formula
+changes for each round it's being run on
+this is done to maintain the
+computational complexity of the
+algorithm
+and to increase randomness of the
+procedure
+the formula for each of the four rounds
+uses the same parameters that is b c and
+d to generate a single output the
+formulas being used are shown on the
+screen right now
+algorithm
+unlike the latest hash algorithm
+families a 32-bit digest is relatively
+easier to compare when verifying the
+digest
+they don't consume a noticeable amount
+of disk storage and are comparatively
+easier to remember and reiterate
+passwords need not be stored in plain
+text format making them accessible for
+hackers and malicious actors
+when using digest the database security
+also gets a boost since the size of all
+the hash values will be the same
+in the event of a hack or a breach the
+malicious actor will only receive the
+hashed values so there is no way to
+regenerate the plain text which should
+be the user passwords in this case
+since the functions are irreversible by
+design hashing has become a compulsion
+when storing user credentials on the
+server nowadays
+a relatively low memory footprint is
+necessary when it comes to integrating
+multiple services into the same
+framework without a cpu overhead
+the digest size is the same and the same
+steps are run to get the hash value
+irrespective of the size of the input
+string
+this helps in creating a low requirement
+for computational power and is much
+easier to run on older hardware which is
+pretty common in server farms around the
+world
+we can monitor file corruption by
+comparing hash values before and after
+transit
+once the hashes match file integrity
+checks are valid and we can avoid data
+corruption
+hash functions will always give the same
+output for the similar input
+irrespective of the iteration parameters
+it also helps in ensuring that the data
+hasn't been tampered with on route to
+the receiver of the message
+hope you learned something interesting
+today
+if you have any queries regarding the
+topic feel free to ask us in the
+comments section and we will get back to
+you as soon as possible subscribe to our
+channel for more amazing content like
+this and thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

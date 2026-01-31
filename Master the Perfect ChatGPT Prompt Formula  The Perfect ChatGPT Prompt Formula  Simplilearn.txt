@@ -1,0 +1,384 @@
+hello everyone and welcome to the
+tutorial on prompt library for all use
+cases at simply The Prompt library is a
+comprehensive toolkit for mastering myad
+use cases with a whether you are delving
+into programming honing creative writing
+skills or exploring data analysis this
+Library offers a versatile array of
+prompts tailored to your needs now
+before we move on and learn more about
+it I request you guys that do not forget
+to hit the Subscribe button and click
+the B icon now here's the agenda for our
+today's session so guys we are going to
+start with first understanding the prom
+structure moving ahead we are going to
+understand testing and iterating then we
+are going to explore the prompt examples
+and at the end we are going to conclude
+our sessions with utilizing prompt
+libraries and
+resources craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back just a quick info guys simply learn
+has got a post-graduate program in Ai
+and machine learning you can boost your
+career with this AI ml course this
+course is delivered in collaboration
+with bir University and IBM you can
+learn the in demand skills such as
+machine learning deep learning NLP
+computer vision reinforcement learning
+generative AI prompt engineering chat
+GPT and many more so guys hurry up and
+join the course the course link is
+mentioned in the description box so guys
+in today's video we will be exploring
+the prom structure for various use cases
+now first let us try to understand the
+prom structure so guys I'll break down
+the prom structure so here first we have
+the action verbs so guys think of action
+verbs like a boss telling chat GPT what
+to do it's like giving chat GPT a job so
+for example if I say
+right you are telling chat gbt to put
+words on the page for example if I say
+write a story I'm telling chat gbt hey I
+want to you to make up a story for me so
+this is something like this now let us
+ask chat GPT hey so write is your action
+verb all over here so this is the first
+prompt structure that I would like you
+to apply now the second one you could
+give a theme or a topic about now if you
+say just write a story chat GPT is going
+to give any random story so we won't
+want that the next thing that we cover
+basically is topic or theme so what
+theme or topic you are looking about
+this is a part where you are giving chat
+GPT a subject to talk about imagine
+you're telling a friend let's talk about
+cats so cats are the given topic so if I
+say write about your favorite food I am
+telling chat GPT tell me about your
+favorite food so you have to always
+include a topic or theme along with your
+action work so here I can include some
+certain thing like this
+that write a
+story about
+food so you could see all over here chat
+GPT has given two uh responses this is
+response one and this is response to now
+the third thing that comes up all over
+here is constraints or
+limitations think of constraints as a
+rules or boundaries for chat gbt to
+follow it's like saying you can talk
+about cats but only in three sentences
+so if I say write a poem in 20 words
+it's like I'm telling Chad GB make a
+short poem using only 20 words this is
+one of the things that you have to
+always keep in consideration regarding
+what task you want to give so always
+include constraints or limitations
+fourth one is background or information
+context
+so this is also one of the most
+important parameters uh what exactly it
+means is like this Parts sets the scene
+for JG like giving it a background story
+imagine you are telling someone about a
+movie before they watch it so if I say
+imagine you are on a spaceship I'm
+telling Chad GPT pretend like you are
+flying through the space
+so this is also very very important for
+you to consider to give certain idea
+regarding your background or
+information now the fifth one is
+conflict or challenge guys this adds
+some spices to the prom it's like a
+puzzle for a problem for chat GPT to
+solve it's like saying talk about cats
+but tell me why some people don't like
+them so if I say CH GPT explain why
+reading is important but you can't use
+the word book I am challenging chat GPT
+to be creative so this is where conflict
+or challenge you have to give to chat
+GPT now example let us take one example
+on this so for example if I say the
+action verb as right we'll highlight
+this with red and the topic or theme
+could be like your favorite
+vacation if I talk about a background or
+context like say you are on a
+beach with your friends
+or conflict or challenge we can give all
+over here something like in just 50
+words so guys this is certain thing to
+follow while giving a prompt to char GPD
+so in this way putting all together you
+could combine all these three things and
+form a sentence and this prompt is going
+to be very very effective to solve the
+problem of generic
+responses now with the simple example
+you can see how different components
+come together to create engaging prompts
+for chat GPD to work with so guys
+whenever you are giving a prompt I would
+request you to always follow this
+structure so it's going to create a map
+for you to get a more precise answer now
+let's take a example and elaborate the
+prompt library with examples to make it
+more understandable so guys let's take
+another example of text classification
+so for text classification we'll take
+the action verb as classify and our text
+type would be product review example
+could be classify the following text as
+negative positive or neutral
+sentiment and after that you could give
+like the product
+review
+exceeded my expectation so if you give
+certain thing like this you would say
+this is a positive sence so making your
+prompts in this manner with a proper
+structure you are going to get a very
+particular response which fits what you
+need so always remember this structure
+whenever you are framing any BR now
+let's move to the second part that is
+testing and validation guys testing and
+iterating are essential steps in
+refining prompts and ensuring Optimal
+Performance from Chad gbd let us break
+down this process the first process is
+prompt validation so before using a
+prompt it's crucial to test to ensure it
+that it generates a desired response
+accurately then you evaluate the output
+you're going to generate responses using
+using the prompt and evaluate the
+quality relevance and coherence of the
+output third check for errors look out
+for any errors in consistencies or
+unexpected behavior in the generated
+responses compare against expectations
+compare the generated responses against
+your expectation or any requirements to
+verify that they meet your desired
+criteria the fifth one is solic set
+feedback seek feedback from peers
+colleagues or domain experts to validate
+the effectiveness of the prom for
+example like analyzing the results so
+you would say analyze the results to
+testing to identify areas of improvement
+or refining The Prompt next is modifying
+The Prompt based on the analysis make
+the adjustment to The Prompt structure
+next then fine-tune the parameters
+experiment with different variations of
+the prompt such as adjusting constraints
+changing topics or refining prompt to
+sess with the changes have resulted in
+improvements in the quality of the
+generated responses the fourth one is
+testing test the modified prompt again
+to assess whether the changes have
+resulted in improvements in the quality
+of the generated responses or not and
+the final step is iterate as needed
+iterate the testing and modification
+process as needed until you achieve the
+desired outcomes and generate high
+quality responses consistently so this
+structure you have to always follow when
+you are iterating so I'll give you an
+example so like we have given uh initial
+prompt as right write a product
+description for a new smartphone and I
+would say include details about features
+specifications and benefits and I would
+say add a constant all over here that
+keep the response in 100
+words this is your initial prompt which
+you are given now for
+testing the next comes is testing
+generate product descriptions using the
+initial prompt evaluate the quality and
+relevance of the generated descriptions
+check for errors if inconsistencies or
+missing information is there compare the
+description against the expectations and
+requirement so this process comes under
+testing okay so give it uh like change
+your prompt a little bit give a specific
+uh description regarding a certain
+product and you would ask that and just
+next process would be evaluate the
+quality and the relevance like what you
+are uh getting as a response check for
+errors like go to Google like see if
+it's same is coming up then what's the
+customer expectations regarding that
+product so if the overall structure is
+like technical structure is maintained
+so this gives the first phase of testing
+next one comes the analysis some
+descriptions lack detail and Fa to
+highlight its key features okay so in
+the scenario the descriptions vary in
+length and structure leading to kind of
+inconsistencies certain descriptions
+like here will focus more on technical
+specifications than the user benefits so
+overall the quality and the coherence of
+the descriptions needs Improvement so
+you have to take all these parameter and
+you have to reframe your prompts okay
+then next comes is iteration you have to
+modify this prompt to provide like more
+ofer to give a clear instructions and
+emphasize the user benefits write a
+captivating product descriptions for a
+new smartphone okay then move to
+retesting generate product descriptions
+using the modified prompt and for the
+outcome you would say that the Revis
+prompt should yield more compelling and
+informative product descriptions so this
+is how you have to do iterate
+continuously to get the proper response
+like which you would be needing okay
+guys now let's move to the final part of
+this video that is utilizing the prompt
+libraries guys utilizing prompt
+libraries and resources is essential for
+streamlining The Prompt writing process
+and access a wide range of pre-designed
+prompts for various use cases so you're
+going to get a of a predefined prompts
+okay so there's one website like which I
+want to show you this is called entropic
+so entropic has recently released a
+prompt Library so guys they have given a
+wide data of a prompt Library so if you
+just click on this so you're going to
+get like what are the effective prompts
+in all these domains so give it a shot
+uh try to see what are the uh like
+resources you're going to get all over
+here it definitely is going to fine tune
+your responses now let's move to the
+process so when we are talking about the
+prompt libraries the first step is
+explore the existing libraries so you
+can see that I have given a reference to
+a prompt Library all over here which is
+released by anthropic team for cloud and
+also workable for chat gbt next is you
+have to understand the available prompts
+familiarize yourself with the prompts
+available in this library and including
+their structures topics and constraints
+you have to also analyze how prompts are
+categorized and organized within the
+library to quickly locate relevant
+prompts for your needs third is adapt to
+prompts to your needs customize existing
+prompts to suit your specific objectives
+audience and use cases you can modify
+prompt by adjusting the action verbs
+topics constraints or background
+information which aligns with your
+requirement create your own prompts like
+combine different components such as
+action verbs topics constraints to craft
+prompts that addresses specific tasks or
+challenges next process you have to do
+is sharing and collaborating you will
+share your prompts with the community to
+contribute to the collective pool and
+resources so this is one way of learning
+that I really really want you to follow
+now you have to keep experimenting and
+iterating at the same time and finally
+you have to see the documents and
+organize all your prompts for the scene
+so what you can do best is see all the
+existing prompt libraries like I'll show
+you one more so prompt Library
+for
+charb GitHub for all use
+cases so you could see explore various
+repositories and GitHub like what are
+the uh kind of like prompts available
+like this repo specifically focuses for
+the academic writing so just visit this
+uh repository and uh you could see they
+have given a lot of things like for
+brainstorming they say so you can see
+the action verbs all over here try to
+like uh uh try this prompt and see how
+you are getting a response then for
+article sections like what's it's there
+so you're going to get a lot of like
+things and uh more of the experiment and
+more uh you are exploring the more idea
+you are going to get regarding this same
+so my advice would be just explore as
+much as libraries you can and depending
+upon your use cases you have to make an
+organized prom structure so following
+this format which I told you follows the
+action verb the topic or the background
+information then what are the
+constraints you have to give okay it's
+any particular theme is there you have
+to include all those things and use the
+existing prompt Library also so you can
+refine your uh prompt and always to get
+a good response it's my personal
+experience that you have to keep
+fine-tuning keep testing iterating
+analyzing in so that your result comes
+very fine so guys that was all for
+today's video I hope so you would have
+enjoyed our today's video on prompt
+library for all use cases thank you for
+watching this video staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click here

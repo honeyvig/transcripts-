@@ -1,0 +1,749 @@
+foreign
+hi everyone welcome to the simply learn
+YouTube channel meta is a social media
+Giant and Tech Powerhouse it is
+estimated that 2.6 billion people use
+the platform far more than any other
+social networking site it's a dream
+company for many graduates to work in
+millions of people use the platform
+daily which makes their employees work
+incredibly impactful you can be a part
+of this too you just need to drive in
+the right gear and reach the stop
+practicing meta interview questions will
+help you land your dream job at meta
+many developers look to grab this
+opportunity of working with a 52 000
+strong Workforce since the competition
+is fierce you'll have to prepare
+everything for the interview from how to
+answer questions to what are the answers
+to the questions go through the
+comprehensive meta interview questions
+and the step-by-step preparation guide
+before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to never miss an
+update so in this session you'll learn
+about meta its interview process and the
+top meta coding interview questions next
+you will come across the technical
+questions and finally you'll learn about
+some tips for meta interview preparation
+and at the ending we have FAQs before we
+head to interview questions let's go
+through the meta establishments So Meta
+is one of the top social networking
+sites globally created by Mark
+Zuckerberg in 2004. it's an American
+online social media site owned by meta
+platforms which believes in delivering
+change community building and better
+growth it ranked fourth in global
+internet usage in 2020 with around 2.8
+billion monthly active users in 2010
+meta became the most downloaded mobile
+app many well-renowned computer experts
+aim to get a job at meta because the
+latter takes the matter of employment
+benefits and perks seriously that makes
+people think about how their lives will
+be as software developers if they get a
+job in meta and get the opportunity to
+learn prosper and build an amazing
+career for themselves
+and here we have a simple question for
+you guys when was Facebook launched 2006
+2004 2003 or 2002 answer in the comments
+section and we will update the correct
+answer in the pinned comment
+let's go through the key stats about
+Meta Meta has raised more than 5 billion
+dollars to support the causes they care
+about they have inaugurated more than
+one billion stores worldwide they have
+more than 200 million connected
+businesses who use their services and
+they run a platform where more than 100
+billion messages are sent every day
+let's understand the meta interview
+process
+connect with HR the candidate's profile
+or resume should directly connect with
+HR further rounds take place once the
+candidate passes the HR around
+interview rounds meta conducts technical
+behavioral and situational interview
+rounds for various job positions there
+are seven rounds the first two are
+conducted over the phone and the rest
+are taken on site candidates get to
+interact with other employees in these
+rounds to learn more about the company's
+culture
+post interview process the interviewers
+judged the candidate based on their
+resume and the interview conducted
+another round may be conducted to
+discuss the final call with the
+candidate results if the candidate
+successfully creates his first
+impression and is selected the offer
+letter is sent to him by the recruiter
+with the understanding of the interview
+process let's go through the interview
+rounds
+interview rounds phone screening HR
+conducts two telephonic interviews the
+initial call is to decide whether the
+candidate is the right fit or Not by
+asking them behavioral questions and the
+second is the technical phone interview
+where the candidate is supposed to
+answer DS algo oriented questions a
+coding or technical rounds there can be
+four to five coding and Technical rounds
+each interview round can last from 30 to
+45 minutes the freshers are asked fewer
+questions than the experienced ones to
+judge their skills and abilities
+another question for you guys which of
+the listed platforms is acquired by meta
+platforms Snapchat Instagram Tick Tock
+or LinkedIn answer in the comments
+section and we'll update the correct
+answer in the pinned comment
+now be ready to get started with the
+coding questions
+number one you're given a set of random
+numbers write a code to shift all the
+zeros to the left so let's see the
+approach to solve the question create an
+array ARR and store the numbers in it
+now Traverse the given array ARR from
+right to left while traversing maintain
+count of non-zero elements in the array
+let the count be count equals zero and
+for every non-zero element arri put the
+element at ARR in minus count and
+increment count
+after complete transversal all non-zero
+elements have already been shifted to
+the right and N minus count is set as
+the index of first zero now all we need
+to do is run a loop which makes all
+elements Zero from count till end of the
+array
+number two write a code to merge
+overlapping intervals
+now let's see the approach to solve this
+question here's the explanation given
+intervals one three two four six eight
+nine ten we have only two overlapping
+intervals here one three and two four
+therefore we will merge these two and
+return one four six eight nine ten
+a simple approach is to start from the
+first interval and compare it with all
+other intervals for overlapping if it
+overlaps with any other interval then
+remove the other interval from the list
+and merge the other into the first
+interval repeat the same steps for the
+remaining intervals after the first this
+approach cannot be implemented in better
+than Big O of N squared time
+number three you're given a binary tree
+can you in place convert it into a
+doubly linked list
+let's see the approach to solve this
+question this can be achieved by
+traversing the tree in the in order
+manner that is left the left child root
+right node
+transverse left subtree and convert it
+into the doubly linked list by adding
+nodes to the end of the list in this way
+the leftmost node will become the head
+of the list then convert the right
+subtree into the doubly linked list
+algorithm Define a node class which
+represents a node in the binary tree it
+will have three properties data left and
+right where the left and right represent
+two children of a node root will
+represent the root of the binary tree
+head and tail node represent the head
+and tail of the doubly length list
+binary tree to dll will convert the
+given binary tree to a corresponding
+doubly linked list perform in-order
+transversal of the binary tree by
+converting the left subtree first
+number four
+can you print the given binaries tree
+nodes level by level in other words
+print all nodes of level 1 first then
+level 2 and so on
+level order transverse of a tree is
+breadth first traversal for the tree a
+simple solution is to print all nodes of
+level 1 first followed by level 2 until
+Level H where H is the tree's height
+the basic solution to this is use
+function to print a current level there
+are basically two functions one is to
+print all nodes at a given level print
+current level and the other is to print
+the level order traversal of the tree
+print level order print level order
+makes use of the print current level to
+print nodes at all levels one by one
+starting from the root
+number five the sky is dark blue can you
+reverse the order of the string
+to do this we first calculate how many
+words are present in the string then we
+shift each word at the end of the string
+to the left ensuring the words we
+shifted already remain unaffected sounds
+simple but no
+first we shift the rightmost word by
+shifting each letter in the word to the
+left of the string now the tricky part
+is handling the space after the word
+blue we need to move the space at the
+end of the string right after the word
+for this we shift just once only within
+the substring the sky is so the space at
+the end of the stream moves before the
+letter t once the word is shifted we
+need to repeat the same process but only
+for the substring the sky is
+number six you were given four words
+apple pear peer and pie
+can this be completely segmented if yes
+then how
+you're given a dictionary of words and a
+large input string you have to find out
+whether the input string can be
+completely segmented into the words of a
+given dictionary you can solve this
+problem by segmenting the large string
+at each possible position to see if the
+string can be completely segmented to
+words in the dictionary if you write the
+algorithm in steps it will be as follows
+number seven
+here is a list of daily stock prices
+return the buy and sell prices to
+maximize the profit
+Max profit with at most two transactions
+equals Max Max profit with one
+transaction and sub-array price
+0 to I plus Max profit with one
+transaction and subarray price I plus 1
+to n minus 1 I varies from 0 to n minus
+1.
+number one create a table profit zero to
+n minus 1 and initialize all values in
+it 0.
+number two transverse price from right
+to left and update profit I such that
+profit I stores maximum profit
+achievable from one transaction in
+sub-array price I to n minus 1. number
+three transverse price from left to
+right and update profit I such that
+profit I stores maximum profit such that
+profit I contains maximum achievable
+profit from two transactions in subarray
+price 0 to I and number four return
+profit n minus one
+those were some main recurring coding
+questions from meta there's a set of
+technical questions that are asked more
+frequently
+let's start with them
+number one how will you convert decimal
+numbers between 1 to 3999 to Roman
+numerals also can you do the reverse how
+one thousand nine hundred five hundred
+four hundred one hundred ninety fifty
+forty ten nine five four one base value
+which is just smaller or equal to the
+given number will be the initial base
+value or largest base value divide the
+number by its largest base value the
+corresponding base symbol will be
+repeated quotient times the remainder
+will then become the number for future
+Division and repetitions the process
+will be repeated until the number
+becomes zero
+number two can you find the triplets
+whose sum is zero now here's the
+approach the naive approach runs three
+loops and check one by one that sum of
+three elements is zero or not if the sum
+of three elements is zero then print
+elements otherwise print not found
+the algorithm run three nested loops
+with Loop counter i j k the first Loops
+will run from zero to n minus three and
+the second loop from I plus 1 to n minus
+two and the third loop from J plus 1 to
+n minus one the loop counter represents
+the three elements of the triplet check
+if the sum of elements at the ith jth
+and kath is equal to zero or not if yes
+print the sum else continue
+number three what is the largest subset
+whose elements are Fibonacci numbers a
+simple solution is to iterate through
+all elements of a given array for every
+number check if it is Fibonacci or not
+if yes add it to the result
+number four calculate the maximum value
+using the Plus or multiply sign between
+two numbers in the given string the task
+is pretty simple as we can get the
+maximum value on multiplying all values
+but the point is to handle the case of
+zero and one in other words on
+multiplying with zero and one we get the
+lower value as compared to adding with
+zero and one so use the multiplication
+sign between any two numbers except
+numbers containing zero and one and use
+the plus sign if any of the numbers is 0
+and 1.
+number five how will you convert the
+ternary expression to a binary tree
+if we see the symbol question mark then
+we add the next character as the left
+child of the root if we see the symbol
+colon then we add it as the right child
+of the current root do this process
+until we Traverse all elements of the
+string
+number six how will you count all
+distinct pairs with differences equal to
+K
+a simple solution is to consider all
+pairs one by one and check the
+difference between every pair
+following program implements The Simple
+Solution we run two Loops the outer loop
+picks the first element of the pair the
+inner loop looks for the other element
+the solution doesn't work if there are
+duplicates in the array as the
+requirement is to count only distinct
+pairs
+number seven
+given is an array of positive integers
+can you find the smallest subarrays
+length whose sum of elements is greater
+than a given number k
+a simple solution is to use two nested
+Loops the outer loop picks a starting
+element the inner loop considers all
+elements on the right side of current
+start as ending element whenever the sum
+of elements between current start and
+end becomes more than the given number
+update the result if current length is
+smaller than the smallest length so far
+number eight you have to find if the
+string is K palindrome or not can you do
+that
+explanation string cannot become
+palindrome by removing only one
+character
+the task is to transform the given
+string into its Reverse by removing at
+most K characters from it the problem is
+basically a variation of edit distance
+we can modify the edit distance program
+to consider the given string and its
+reverse as input and the only operation
+allowed is deletion since the given
+string is compared with its reverse we
+will do at most in deletions from the
+first string and in deletions from the
+second string to make them equal
+therefore for a string to be K
+palindrome two times n is less than or
+equal to two times K should hold true
+below are the detailed steps of the
+algorithm
+process all characters one by one
+starting from either the left or right
+sides of both strings let us Traverse
+from the right corner there are two
+possibilities for every pair of
+characters being traversed if the last
+characters of the two strings are the
+same we ignore last characters and count
+for remaining strings so if we recur for
+links M minus 1 and N minus 1 where m is
+the length of string 1 and N is the
+length of string two
+if the last characters are not the same
+we consider removing the operation on
+the last character of the first string
+and the last character of the second
+string recursively compute the minimum
+cost for the operations and take a
+minimum of two values remove last
+character from string 1 recur for M
+minus 1 and n and remove last character
+from string two recur for M and N minus
+1.
+number nine how will you find the
+minimum depth of a binary tree
+the minimum depth is the number of nodes
+along the shortest path from the root
+node down to the nearest Leaf node the
+idea is to Traverse the given binary
+tree for every node check if it is a
+leaf node if yes then return one if not
+Leaf node then if the left subtree is
+null then recur for the right subtree
+and if the right subtree is null then
+recur for the left subtree if both left
+and right subtrees are not null then
+take the minimum of two heights below is
+the implementation of the above idea and
+another approach is level order
+traversal
+number 10 you're given an unsorted array
+of non-negative integers and an integer
+sum can you find a continuous subarray
+that adds to a given sum
+explanation sum of elements between
+indices 1 and 4 is 4 plus 0 plus 0 plus
+3 equals seven
+the idea is to consider all sub arrays
+one by one and check the sum of every
+subarray following program implements
+the given idea run two Loops the outer
+loop picks a starting point I and the
+inner loop tries all subarrays starting
+from I Traverse the array from start to
+end for every index start another loop
+from I to the end of array to get all
+sub-arrays starting from I keep a
+variable current sum to calculate the
+sum of every sub array
+for every index in inner loop update
+current sum equals current sum plus
+array J
+if the current sum is equal to the given
+sum then print the sub array
+number 11. you can see two unsorted
+arrays how will you find all pairs whose
+sum is X
+a naive approach is to Simply run two
+loops and pick elements from both arrays
+one by one check that both elements sum
+is equal to given value X or not
+number 12. given are the 10 activities
+with their start and end times compute a
+schedule where the greatest number of
+activities take place
+greedy approach can be used to find the
+solution since we want to maximize the
+account of activities that can be
+executed this approach will greatly
+choose an activity with the earliest
+finish time at every step thus yielding
+an optimal solution
+the greedy choice is to always pick the
+next activity whose finish time is least
+among the remaining activities and the
+start time is more than or equal to the
+finish time of the previously selected
+activity we can sort the activities
+according to their finishing time so
+that we always consider the next
+activity as minimum finishing time
+activity so number one sort the
+activities according to their finishing
+time number two select the first
+activity from the sorted array and print
+it number three do the following for the
+remaining activities in the sorted array
+a if the start time of this activity is
+greater than or equal to the finish time
+of the previously selected activity then
+select this activity and print it
+number 13 what is the next number of the
+sequence 1 11 21 1211
+in each number one is increasing and
+decreasing the ones place if you look at
+the two numbers in the tens place it's
+also increasing after each sequence then
+see the third line after the two the one
+is also increasing and decreasing and at
+last we will add one as the one is added
+every time as with the two
+number fourteen
+given our two strings with binary
+numbers find the result obtained by
+adding those two binary strings and
+return the result as a binary string the
+idea is to start from the last
+characters of two strings and compute
+the digit sum one by one if the sum
+becomes more than one then store carry
+for the next digits
+number 15
+rearrange the given string of alphabets
+in sorted order and all the integers
+present in the Stream
+number one start traversing the given
+string a if an alphabet comes increment
+its occurrence count into a hash table
+B if an integer comes then store it
+separately by summing it up every time
+two using hash table append all the
+characters first into a string and then
+at the end append the integers number
+three return the resultant string
+number 16 map the digits of the given
+positive number corresponding to the
+alphabet in the mapping table also
+return the count of the total number of
+decodings possible take suitable
+assumptions before coding
+the possible decodings are a b a a u l a
+input the digit sequence initialize
+count equals zero
+if the last digit is non-zero recur for
+the next remaining n minus one digits
+and then add the result to the total
+count
+if the last two digits form a valid
+character or smaller than 27 recur for
+the remaining n minus two digits and add
+the result to total count
+number 17. can you rotate the given
+Square matrix by 90 degrees in a
+clockwise Direction the transformation
+should be done in quadratic time and in
+place
+to solve the question without any extra
+space rotate the array in form of
+squares dividing the Matrix into squares
+or cycles for example a 4x4 Matrix will
+have two cycles the first cycle is
+formed by its first row last column last
+row and First Column the second cycle is
+formed by second row second to last
+column second to last row and second
+column
+the idea is for each Square cycle swap
+the elements involved with the
+corresponding cell in The Matrix in
+clockwise Direction
+here's the approach the approach is
+similar to In-Place rotate Square matrix
+by 90 degrees set one the only thing
+that is different is to print the
+elements of the cycle in a clockwise
+Direction in other words an in by n
+Matrix will have Floor N divided by two
+square Cycles for example a three by
+three Matrix will have one cycle the
+cycle is formed by its first row last
+column last row and First Column for
+each Square cycle we swap the elements
+involved with the corresponding number
+18 state which histogram has the largest
+rectangular area also return the area of
+the largest histogram
+a simple solution is to one by one
+consider all bars as starting points and
+calculate the area of all rectangles
+starting with every bar finally return
+the maximum of all possible areas time
+complexity of this solution would be Big
+O for N squared
+we can use divide and conquer to solve
+this in Big O for n Log In Time the idea
+is to find the minimum value in the
+given array once we have an index of the
+minimum value the max area is the
+maximum of the following three values
+maximum area in the left side of minimum
+value not including the Min value
+maximum area in right side of minimum
+value not including the Min value number
+of bars multiplied by a minimum value
+the areas in the left and right of the
+minimum value bar can be calculated
+recursively if we use linear search to
+find the minimum value then the worst
+case time complexity of this algorithm
+becomes Big O for N squared in the worst
+case we always have n minus 1 elements
+on one side and zero elements on the
+other side
+and if the finding minimum takes big O
+for in time we get the recurrence
+similar to the worst case of quick sort
+number 19 you are given integers in the
+form of an array how will you print the
+largest sub-array sum having at least K
+numbers
+a simple solution is to generate all sub
+arrays of size K compute their sums and
+finally return the maximum of all sums
+the time complexity of this solution is
+Big O for n times k
+an efficient solution is based on the
+fact that the sum of a subarray or
+window of size K can be obtained in Big
+O for one time using the sum of the
+previous sub-array or window of size k
+except for the first array of size k for
+other sub arrays we compute the sum by
+removing the first element of the last
+window and adding the last element of
+the current window
+number 20 return the product of the two
+integers represented as strings we start
+from the last digit of the second number
+and multiply it with the first number
+then we multiply the second digit of the
+second number with the first number and
+so on
+we add all these multiplications and
+while adding we put ith multiplication
+shifted tips for meta interview
+preparation
+whether you will give your first
+interview over the phone via a video
+call or on-site on meta the following
+tips will help you get an edge over your
+fellow candidates
+have a clear approach to answering the
+interview's behavioral Technical and
+situational questions
+focus on every detail of the design the
+interviewer has asked
+answer the technical questions keeping
+in mind their practical applications
+provide a realistic solution to the
+problem with different approaches
+highlight the experiences and your
+ability to work in different typical
+situations
+do not panic if the question sounds
+alien to you try to relate to something
+similar and if that doesn't work
+politely state that you cannot recall
+the answer to the question
+practice coding and boost your ability
+to solve coding related problems quickly
+research various topics such as hash
+Maps arrays strings cues hash tables
+Stacks sorts graphs searches and more
+and increase the depth of knowledge
+practice time management by attempting
+several mock interviews to simulate the
+interview experience
+FAQs
+number one
+how many rounds of interviews does meta
+have well the recruiters at meta look
+for the right fit during the recruitment
+process usually there are three rounds
+of interviews for the developer role
+however the numbers can increase
+depending on the candidate's experience
+and answers the first round is the phone
+screening the second is the on-site
+interview and the third could be done by
+HR to make the final decisions before
+taking you on board
+number two why do you want to work at
+meta
+it is the most frequently Asked medical
+interview question the recruiter asked
+this question to figure out how
+motivated a candidate is about working
+at meta if you're applying for a
+developer role you must answer this
+question by stating your future
+aspirations of growing as a developer
+for the company if you're applying for
+the role of a senior developer then you
+must State your experiences and how your
+abilities will contribute to the company
+number three which programming language
+is used in a meta interview is python
+allowed in coding interviews
+for meta interview questions you must be
+Adept in Java C plus plus python Pearl
+and Ruby it would be best if you stick
+with one language depending on your
+comfortability while answering the
+questions in the interview
+number four is it hard to get hired at
+meta
+like other top tech companies getting a
+job at meta can be challenging but with
+the right skill set in-depth knowledge
+and experience anyone can crack the
+interview at meta they look for
+aspirants who have the agility to solve
+problems the presence of mind and are
+Keen to learn and grow with them
+number five what are the different
+levels of software engineers at meta
+instead of calling different Engineers
+principal fellow senior Etc meta has
+different levels for software Engineers
+who are bifurcated based on their salary
+there are six levels of software
+engineer positions one to six at meta
+number six how can I get a job at meta
+well the first stage is to read the job
+description carefully you have to
+prepare yourself to match the
+expectations of the recruiters at meta
+keep the documents ready with yourself
+and research the company its vision and
+the working environment and most
+importantly practice The Meta interview
+questions mentioned above to nail the
+interview in your first attempt keep a
+positive attitude while answering the
+questions if you want to create a strong
+impact on the interviews
+number seven what are the benefits of
+working at meta besides offering
+lucrative positions to the candidates
+meta provides flexible Health Care
+spending amounts Mental Health Coverage
+wellness centers maternity benefits paid
+parental leave Cancer Care programs
+dental benefits and much more according
+to a survey conducted by Glassdoor in
+2021 Meadow was voted as one of the best
+places to work
+and with that we've come to the end of
+this session I hope it was interesting
+and informative and if you liked it
+please let us know in the comments below
+and also subscribe to our Channel and
+stay tuned for more from Simply learn
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

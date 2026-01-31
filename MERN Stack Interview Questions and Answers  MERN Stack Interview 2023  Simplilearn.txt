@@ -1,0 +1,1948 @@
+foreign
+stack is a popular web development stick
+that includes four different
+Technologies mongodb crashes reactors
+and node.js mongodb is used for the
+database express.js provides the
+back-end framework react.js handles the
+front and node.js is used as the
+server-side runtime environment
+so this stack allows for creation of
+Highly scalable efficient and responsive
+web application
+hello everyone and welcome to Simply
+learns YouTube channel today we'll take
+you through the most frequently Asked
+interview questions in Moon stack web
+development in this video tutorial we'll
+cover all the Technologies related to
+Moon stack but before we begin let me
+tell you guys that we have regular
+updates on multiple Technologies so if
+you are a tech geek in a container Sun
+for the latest technological trends then
+consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any updates from Simply
+low for those interested in a
+comprehensive coding bootcamp we highly
+recommend the Caltech coding bootcamp
+with this program you can learn to code
+and become a full stack developer in
+just six months this state-of-the-art
+bootcamp will fully immerse you in
+accelerated coding training helping you
+become a valued software engineer ready
+to take on any challenges in the
+industry
+during this boot camp you will Master
+both front-end and back-end Java
+Technologies starting with the basics
+and progressing to the advanced aspects
+of full stack web development
+you'll also learn angular spring boot
+web services jsps and mongodb to help
+you launch your career as a full stack
+developer
+for those who are looking to deepen
+their understanding of full stack web
+development or simply want to become a
+full stack developer in a shorter amount
+of time a Caltech coding bootcamp is an
+excellent option so without wasting any
+more time let's hand over this session
+to our training export the react is
+interview questions
+now as we know it react.js is as
+important as like in other tools which
+you've already has seen so what is the
+jsx here jsx called JavaScript syntax
+extension
+okay so this syntax extension to the
+JavaScript in reactors is in the way
+how you express
+to bind JS and HTML together to result a
+j6
+content so by using j6 you can write a
+structure in the same file that contains
+the JavaScript code that is something
+more Innovative way because of that
+react.js is creating a more buzz in a
+market
+so jsx actually helps making code more
+easy to understand and debug and avoids
+a lot of boilerplate code okay inside
+the Dom structure
+now the next thing is what is the
+virtual Dom see the virtual Dom is
+representing a Dom in a memory
+okay that is called virtual Dom so
+manipulating the real term is much more
+slower and costly Affair okay because
+you need to repaint the Dom over and
+over the period of time when the user
+changes few things so
+when the state change virtual Dom
+changes and only the objects which are
+in real term
+okay
+update instead of updating the entire
+object so that makes your page to be
+load far more faster
+okay so in Virtual Dom what happens this
+is the real Dom this is a virtual Dom so
+the orange color portions which you're
+seeing that is basically the changes
+which has been made okay these are
+called Changed object okay so virtual
+Dom is basically compare it's to the
+previous state and understand which area
+it needs to send for the updates and
+avoid the other areas
+okay that's what this virtual Dom really
+works
+so what are react extension react
+extensions are many like you talk about
+like in flux it is a third party tool
+which is responsible to attach
+the State Management feature to talk
+about react native which is responsible
+to develop the hybrid mobile
+applications
+in JavaScript so these are two very
+popular and there are many more which
+are available okay so like you talk
+about
+architectural support you talk about
+server side rendering okay so Redux and
+there are lot many other tools are also
+available
+so what is an event in react and how
+you're going to create that so react is
+basically offering the ideas of handing
+the event very fairly easy so let me
+talk about clicking anything you talk
+about taking your mouse somewhere so
+these kind of options generate an event
+so for that we typically say alert and
+you click on this render you click on
+this button in a curly braces you call
+the function to trigger to event
+now what are the components in react
+so friends react components are nothing
+but a call View
+okay like a complex view can be divided
+into the smaller portions
+a complex UI can be distributed further
+to create more better and reusable views
+clear so it splits the user interface
+into the independent pieces of code
+which can be developed and joins
+later on okay so that's how you define
+the component in and react so in angular
+and react in both the areas the word
+component is very much used so the
+component meaning is very simple you
+talk about a view
+so what is the state in a react so state
+is react is nothing but is the one which
+identify what was and what is now okay
+if it stores the value for the specific
+period of time which changes and react
+is basically detecting those
+so it is changing because of some
+actions either taken by the users or by
+the applications okay so keep tracking
+about all those States what it was there
+like in I'm talking about an
+incrementing encounter so that is also
+the state a variable there okay so the
+state object is always initialized in
+the Constructor so it can contains the
+multiple properties so this dot set
+state is used to change the value of the
+state object and set state is
+responsible
+to
+perform the shallow merge between the
+new state and the previous state
+now the state holds the data that a
+component renders to the web page
+certainly because every time the state
+changes so it needs to be stored
+somewhere so this is how the state is
+accessed as you can see this example
+here
+in the Constructor we are defining the
+super props and the states has been
+initialized and you're rendering the
+states there are three different steps
+are involved initialize the state rent
+to the state and update the states
+what is the higher order component and
+pure component react higher components
+are the component which are typically a
+function okay that takes a component and
+return a new component to you by
+manipulating few things that basically
+designed for the reusing
+okay so the higher the components are
+typically a function that takes a
+component and return a new component
+okay so to in order to perform some
+reusability
+a pure components are the components
+okay is a variation of react component
+that doesn't
+that does a shallow comparison of props
+and State
+okay shell comparison basically checks
+what the equality
+are we clear now so that's what the main
+job
+going ahead what do we Implement and how
+do you implement react routing so to
+implement a react routing react routing
+also comes with inbuild
+react modules and that particular module
+to import it so
+here we Define the react modules by
+offering the route path where you have a
+call left hand side is the name and the
+right hand side is a component which you
+would like to deliver it now hello this
+is Matthew and we're going to be going
+through some of the simple questions
+that you would be asked during a node.js
+interview what we're going to do is
+we're actually going to break out the
+section into three key areas that'll be
+beginner questions there will be an
+intermediate questions and advanced
+questions and the expectation is as you
+go through this video is that these
+questions could be pushed together as
+you're going through the interview kind
+of think of it like this is if you've
+answered the beginner questions that you
+would get asked at the beginning of the
+interview with confidence and Surety
+then the client is going to then jump to
+those intermediate Advanced questions
+quite quickly and they're looking for
+people who can help them serve and solve
+their problems at that more intermediate
+and advanced level so let's just get
+started so the first question you're
+probably going to be asked is you know
+you know what is node.js you know do you
+know what it's for and essentially
+node.js is one of the most popular if
+not the most popular open source
+cross-platform JavaScript programs and
+it allows you to build out web
+applications that run on the server it's
+extremely flexible it allows you how to
+implement a lot of solutions outside of
+just the the core programming runtime
+and it allows you to build Solutions
+extremely quickly in an open source
+mindset for devops
+it is used essentially for creating
+client-sized web applications we'll see
+this later on and you may want to talk a
+little bit about you know using
+express.js and how you can build out
+apis uh to work with node.js and
+connecting to databases such as mongodb
+and that is also really good for being
+able to store a data intensive
+applications that are asynchronous and
+event driven in their model and this is
+important when you're talking about
+creating applications that can scale
+rapidly
+so you can then ask be asked you know
+how does node.js work well node.js
+itself is actually built on the V8
+engine and the V8 JavaScript engine is
+the same engine that runs JavaScript in
+your Chrome web browser extremely fast
+it allows for high output and
+non-blocking through your i o input
+outputs and is is single threaded event
+blue
+so you're going to be a man asked you
+know where can you use node.js and and
+the reality is the applications for
+node.js keep expanding but there are
+some core applications that you can work
+with node.js right now so such as web
+applications distributed system and
+network applications uh probably
+referencing the web applications is a
+really good starting point because here
+you can actually talk about maybe some
+examples that you've done where you're
+building out some of these web
+applications uh indeed one of the things
+that you want to be consistently doing
+and peppering your answers with is
+examples of work that you have done now
+it doesn't matter if those examples are
+purely experimental or training examples
+that you've done the fact that you've
+actually worked with node.js and created
+a distributed system or a web
+application is really valuable because
+it shows that the person that you're
+meeting with that you have knowledge and
+understanding and practical experience
+of applying the theory of working with
+new Js with the practice of working with
+node.js
+so we asked about you know your answer
+and essentially the io refers to the
+transfer of data in and out of a system
+and that's really it you know there's a
+reason why Google calls that conference
+IO it's the transfer of data in and out
+of our brains at that conference the
+application is same here it's about
+moving data in and out of systems
+through using node.js and that every um
+event can be tracked and whether it's on
+a physical device a network or files
+within a system again it's input and
+output
+so let's go through and you know you're
+going to be asked you know can you
+explain the difference between front end
+and back-end development and this is a
+question that I can ask a lot when I'm
+meeting with clients and you know people
+get really confused about what is the
+difference between front-end and
+back-end development bottom line front
+end is what gets resolved inside of your
+web browser or the app on your mobile
+device backend is what gets resolved
+essentially um what we call the the back
+office or server-side applications but
+it's becoming more and more synonymous
+for what gets run in the cloud
+so web applications
+um really get a lot of the functionality
+of the web application gets run in the
+front end and I think with CSS HTML5 uh
+client-side JavaScript so we can get
+right on the front end everything else
+such as connecting to a database gets
+run behind the scenes in the back end
+and so you know anything that's going to
+have like Graphics is going to be on the
+front end uh apis are going to be run on
+the back end and then just finally some
+of the scripting languages are using on
+the front end so HTML CSS JavaScript
+those are all Common Core scripting
+languages that you would use you can use
+Frameworks such as angularjs and
+react.js or view those would be a
+front-end Frameworks uh back-end
+Frameworks will include Java PHP Python
+and node.js are some of the back-end
+Technologies you'd also throw in their
+dot net as well and it's just a whole
+you know Litany of front-end and
+back-end Technologies and Frameworks
+that you can use and this is a actually
+a good point to kind of explain the
+experience you have outside of just
+working with node.js but other
+technologies that you've been working
+with that potentially that the client is
+also using
+so another question you're going to be
+asked when you're looking at node.js is
+you know can you tell me about npm and
+so when somebody asks you what is npm
+the first thing you're going to respond
+is do you mean node package manager and
+the reason why you want to respond like
+that is that you want to qualify that
+question with understanding that you
+know what they're talking about but you
+want them to verify that and so node
+packet manager is npm
+and it's responsible for packaging all
+of your modules that you're working with
+in node.js and we have a whole series of
+videos that we've done on node.js and
+every single one of them includes
+references to npm
+so you're going to be asked you know so
+okay you tell me um what it is you know
+can you go into a little bit more um
+details you know so you can provide two
+main functionalities and so one of them
+is being able to manage online
+repositories or modules and packages
+um so you can go to like
+search.nodejs.org and you can find a
+packages that you can install Into Your
+solution such as express.js and it also
+provides a command line utility that
+allows you to manage your packages very
+quickly through terminal window or
+command line
+I use vs code a lot Visual Studio code
+and it has a command line utility built
+right into it that allows me to interact
+with npm
+so what are some of the modules in
+node.js and so you know modules
+um in node.js they're essentially like
+JavaScript libraries so you can think of
+some of the JavaScript libraries that
+you may have used the functionality is
+somewhat the same but they're designed
+for node.js and to run on the server and
+there are ways in which you can go ahead
+and create some of those modules so for
+instance if we're creating a web server
+you can actually use the require
+commands to be able to require that the
+server be there so the example we have
+on the right hand side shows that we
+really do need to have HTTP which is a
+web server and we require that to be
+installed and so that if you're running
+that npm package it will actually
+install the HTTP server and then you can
+actually write some code to actually
+then listen on the localhost port 2000
+for where you'll be running your app
+application
+and there are just you know there's a
+whole bunch of modules like I come with
+node.js now right out of the gate and
+here are some of the modules that you
+have and we also referenced that just
+earlier on HTTP is a core module for uh
+running a web server uh you have a
+utility function that is useful for
+developers to assess features within
+your node.js project you have a URL
+module for any URL passing you'd be
+doing
+and you also have a stream which allows
+you to be able to stream data in and out
+of your system and be able to manage how
+that's been worked and then zlib which
+allows you to compress and decompress
+files so that you can keep your storage
+of files to a minimum
+so a question you're going to be asked
+is you know why is node.js being
+preferred over back-end Technologies
+such as Java and PHP and particularly
+with gyro it's a very mature stable
+language it's been around for more than
+20 years you know PHP
+um runs some of them the most powerful
+and largest websites out there such as
+Facebook so why would you use node.js
+well the first response is kind of a
+gimme but it is really fast and if you
+watched any of the videos that we've
+done on node.js building out Solutions
+and developing the solutions you'll see
+just how fast it is the second is the
+really kind of the secret sauce with
+node.js is the node package manager and
+no package manager allows you to install
+additional functionality such as Express
+or as a database into your
+solution really quick green and there's
+over 50 000 bundles available for node
+package manager
+if you're building out a real-time
+application that's data intensive and
+you need to have apis quickly developed
+then node.js is another great it's
+really the great solution for you it
+allows you to build out these Solutions
+really quickly
+and there is a easy synchronization
+between the server and the client due to
+the code base
+and then finally because the structure
+of node.js is Javascript if you are
+making the pivot from being a front-end
+web developer to node.js it's just going
+to make it a lot easier for you to pick
+up node.js because you have that common
+language of JavaScript and on top of
+that JavaScript is the world's most
+popular scripting language
+so let's talk about some of the
+differences between angular node.js and
+so and the reason why this question may
+come up is the person interviewing you
+is seeing whether or not you do know the
+difference between a front-end framework
+and a back-end framework and this is one
+of those questions where you can go well
+there are differences but the
+differences are because they complement
+each other so angular is a front-end
+development framework whereas node.js is
+a server side and framework are the
+differences though between the actual
+Frameworks themselves is that angular is
+written in typescript which is a
+modification of JavaScript node.js is
+written in C and C plus plus
+anger is used for building out single
+play client-side web applications and so
+that's a keyword there is client-side
+whereas node.js is about building out
+fast and scalable server-side Network
+applications uh so uh again the two
+complement each other
+uh angular splits web applications into
+the MVC and model view control
+components whereas node.js generates a
+lot of database crazy it does more than
+that as well but you can think of
+node.js as that glued to your database
+let's talk a little bit about when
+you're connecting to a database with
+node.js and so you're going to probably
+be asking what is the most popular
+database used with node.js and there are
+a couple mongodb is largely the most
+popular nosql cross-platform database
+MySQL is also very popular and that's a
+more traditional relational database
+you would go with mongodb for really
+more modern solutions when you're
+looking at creating an application
+that's going to really scale into just
+managing masses and masses of data that
+has to be created red updated and
+deleted very very quickly
+for some of the other popular libraries
+that you use for node.js express.js is a
+very popular one and I really like
+working with express.js allows me to
+build out web applications really
+quickly more importantly it allows me to
+build out apis very quickly and which
+you know apis are essentially web
+applications themselves but being able
+to do that very quickly with a framework
+like express.js is very useful uh
+Mongoose is an application that makes
+connecting to a database really
+easy so here is an example of express.js
+which is a in itself really a flexible
+but a solution that you can do lots with
+and Mongoose which is a more focused
+solution which allows you know to you
+make it easier to connect to your
+databases
+so you know what are the pros and cons
+of working with node.js there's lots of
+ways we explain this earlier on that you
+can actually build out applications that
+run on the cloud why would you you know
+what's uh the pros and cons so a pro is
+that node.js is extremely faster
+processing thing an event based model uh
+it really is fast I can't is if you have
+something that is a very heavy
+computational task it's not so good at
+that now I will caveat that this is that
+node.js is getting better all the time
+and so you might have to be provide an
+example of what a very heavy
+computational task is and that may be uh
+calculating a risk on an insurance
+application against many many variables
+that maybe something that's seen as
+computationally very heavy but what you
+can do in that example is you can then
+offload the task to another Solution
+that's designed for it and use apis to
+pass the data back and forth
+Pro JavaScript is used for building out
+your applications with node.js great
+lots of people know JavaScript
+a restriction and again this is evolving
+as JavaScript itself evolves is that
+when you do a callback you may end up
+doing lots of nested callbacks
+um if you're doing something that's very
+complicated again another way around the
+con and so this is one of the things
+that I always look for is if you have a
+blocker or a barrier
+how do you get around that barrier and
+so for instance when you're talking uh
+to your recruiter
+you can say look the reason why I use
+node.js is that it's fast it's event but
+it's driven I can use JavaScript there
+are some challenges and but what I do to
+get around those challenges are and
+that's where you can say that you know
+you may run the complex script off and
+you may write that in net or Java or PHP
+and then use an API to do the response
+back into node.js so you get the
+benefits of Both Worlds but minimize the
+investment in having to manage a complex
+environment such as Java versus a
+relatively simple environment with
+node.js the node package manager makes
+it extremely easy to access just an
+awful lot of functionality with over 50
+000 packages there's a package for that
+so from being able to have a tool that
+creates unique identifiers that you
+might need to have for generating
+content that gets posted into a database
+through to being able to connect to
+databases through you know to running so
+many different solutions and the npm
+package manager with its access to so
+many different packages makes it great
+for
+um getting access to all that content
+now Khan is working with relational
+databases with node.js isn't as easy as
+a nosql database now you can do it and
+there are ways around that and what I
+would do when this question comes up is
+always kind of pivot to say hey this is
+how you can actually then get around
+building out that application
+designed for streaming huge amounts of
+data in and out a con is that node.js is
+single threaded and so it can be CPU
+intensive but again there are ways
+around that and a good way around that
+is scaling Your solution and elastic
+environments such as the cloud
+so what is the command used to import an
+external library and so to import an
+external Library the command is the
+require command so an example we have
+here is uh you can assign a variable and
+the variable is going to be for HTTP and
+you're going to then require the HTTP
+service and that means that the
+application itself won't run unless the
+external Library the HTTP library is
+installed
+okay so those were our introductory uh
+questions for node.js this kind of pivot
+and take a look at the intermediate
+questions that you would be asked
+so what does event driven programming
+mean so event driven programming means
+that if something happens something else
+will happen in response so for instance
+if you click a mouse that Mouse click is
+an event that means something has to
+respond to that event just think of it
+as cause and effect it's just the basic
+motion of physics so that's what event
+driven programming means
+you also look at it as a callback
+function so that when an element is
+executed something will happen in
+response
+so what is an event Loop in node.js so
+an event Loop in node.js is when you do
+an asynchronous call and what that
+essentially means is that you are
+sending out data and then a non-blocking
+input output from node.js is pulling
+data back in
+what is an event emitter in node.js so
+an event meta has really two areas of
+focus one is that it manages uh the
+classes that hold all the objects uh
+within your event and we have an example
+of this on the right hand side and then
+whenever an event actually is thrown the
+functions are then called on that event
+synchronously so for instance we have in
+our example on the right hand side we
+create an event and then we have the
+functions and that executed in a series
+from that event
+so let's talk about the API functions in
+node.js so there are two types one is an
+asynchronous non-blocking function and
+the second is a synchronous blocking
+function and the difference between the
+two of them is asynchronous is that
+there is no structure to the order if I
+have the API is resolved synchronous
+means that when the feedback from the
+API is received you have to execute the
+response in a series for how the
+response is sent to you
+so what is a package Json file so the
+package Json file is at the heart of our
+node.js package when we actually will
+initialize a solution a folder to be in
+node.js package
+you'll find that the package itself
+holds all of the metadata that's
+particular to the project you're working
+on such as project name version
+requirements it is you have to have it
+installed in the root of the directory
+for the project and again look at any of
+the videos that we have on nodejs we do
+have demonstrations within those videos
+that actually then go through and break
+out how to create that root package and
+you'll see how you can actually then go
+ahead and update the instructions or the
+metadata within the package so here we
+have an example of what that metadata
+looks like so again this kind of
+continues that question of what is a
+packet Json file and you may be asked
+you know what is the metadata and why is
+it important and the metadata is a basic
+Json collection of pairing of key
+details such as name version description
+and then and the custom version that you
+put so for instance under name you could
+create a name for your project there
+can't be any spaces what is the version
+and the description and what is the main
+or starting path and for the solution
+typically that would be index.js but it
+could be anything.js but index.js is
+typical simply because
+index.html is the starting point for a
+typical web application
+so how would you use a URL module in
+node.js
+so with a URL module what it allows you
+to do is really two things one is that
+it provides the resolution passing of a
+URLs for Utilities in your application
+and then it allows you to extend your
+module with built-in Solutions and split
+up the web address into a readable
+format
+so in this example we have the URL and
+the response it would would give for
+that URL which will then be a year and
+month and it'll be in a readable format
+so they would read out as 2020 and then
+the month
+so what is express.js and you've heard
+me mentioned this a couple of times in
+the video and we actually have a
+separate video on express.js
+um I would express.js is a web
+application framework that allows you to
+build out Web Solutions for both mobile
+and traditional desktop right inside of
+node.js so it's very easy to use
+being able to install and web.js is as
+simple as requiring Express to be
+installed in the example that we have
+here on the screen it's a full solution
+of showing how to actually build out a
+solution with web.js so in this example
+you start off the first two lines
+required Express to be installed and the
+store comes from node packet manager
+then we have a simple application that
+will then send to the browser window a
+hello world message confirming that
+Express is up and running and then the
+third block of content starting with
+vars server actually will Define the
+port where your application is going to
+run so in this instance the port is
+going to run on localhost and the port
+will be Port 8081 and so you can
+actually go to localhost colon 8081 and
+when you do that that will trigger the
+Apple application that will forward up
+the message hello world and it's all
+coming from express.js
+so what are streams in node.js so
+streams are objects that allow you to
+read and write data continuously back
+and forth within your application and
+there's really four different types of
+streams there's readable writable duplex
+and transform
+the readable one stream through which
+data can be read
+the writable streams that you can
+actually write to a duplex is a stream
+where it is both readable and writable
+and transform our streams that can be
+manipulated the data while it is being
+read or written
+so how do you update and delete a
+dependency so say for instance we want
+to install something like Express so if
+you wanted to install Express what you
+would do is you would just write them
+inside of your project you want to go to
+terminal window and write in the command
+npm install Express
+if you want to update the dependencies
+within your node package manager to
+update all of them all you have to do is
+write the command npm update all
+dependencies
+and then if you want to explicitly
+uninstall a dependency such as
+express.js that's using the uninstall
+command and so that would again be going
+to terminal window and you would type
+npm uninstall Express
+and again it's really easy to create a
+simple server in node.js that will run a
+simple command the HTTP service is
+actually built into node.js you don't
+need to use express.js I typically use
+express.js when I want to do a web
+server because typically what I find is
+that I will want to go and do something
+more complicated but if you want to do
+something that illustrates just the core
+functionality within node.js you can
+actually just require the core HTTP
+service that actually comes as part of
+node.js and then you can actually then
+go ahead and tell it to create a service
+and then to write in plain text I
+command or text string such as in this
+case it'll be hello world and that would
+pop out and then the final line is to
+then listen that if you go to a web
+browser that's on
+port127.0.01 or localhost and go to Port
+colon 8080 once you actually go to that
+that will trigger this application and
+you'll get the text hello world pop up
+on your screen
+so explain synchronous and non-blocking
+apis in node.js
+so all the apis in node.js are
+asynchronous which means that they are
+non-blocking which means you can run
+them continuously and scale around that
+which is just fantastic it's one of the
+reasons why node.js can scale so fast
+and the eighth means that the apis can
+return data send data after it's been
+called and really increase the
+efficiency of events as they are
+triggered Within node.js
+so how do you implement async and you
+know JS and so the example that we have
+on the left hand side allows us to
+trigger async and it's using the async
+function and as you can see in this
+example it's actually something that can
+be done very quickly in this example
+we're actually making a command to logo
+host and an app that's running on Port
+3000 and then depending on what we get
+if there's an error message and then
+we'll have error message go to the
+console log which is the terminal window
+and if we get a response to an
+application then we'll actually get a
+positive response which would be fetched
+response so again very quick and easy
+that you use the async function to be
+able to build out and you to get your
+asynchronous code
+so what is the purpose of module exports
+so a module export is a way to
+encapsulate your the entire code for a
+solution in a single package and a
+single file and then you can then share
+that with other developers so you're all
+working from the same environment
+so what is a callback function in
+node.js a callback function is
+essentially that once you run and you've
+triggered an event mongodb has
+consistently been ranked as one of the
+top five nosql database Management
+Systems so if you're someone who's
+applying for a position in database
+management roles you will almost
+certainly be working with mongodb at
+some point now whether you are upgrading
+your skills or interviewing for a
+database management position using
+mongodb it's a good idea to be familiar
+with the most frequently Asked mongodb
+interview questions and answers in the
+latter case it is beneficial for you to
+prepare for the interview so that you
+are not God off guard even if you are
+just interested in learning about
+mongodb for the sake of upskilling keep
+in mind that acquiring this kind of
+knowledge may lead you to looking for a
+better job which means you'll be facing
+an interview sooner on that note hey
+everyone welcome to simple Channel I
+hope you guys are doing good and staying
+safe in this tutorial we'll be
+discussing some specially curated
+mongodb interview questions that you
+must Master to crack your next interview
+so without any further Ado let's get
+started with today's topic well but
+before we begin if you're new to the
+channel and haven't subscribed already
+consider getting subscribed to our
+Channel simply code to stay updated with
+all the latest tech content and hit that
+Bell icon to never miss an update from
+us so let's get started with today's
+tutorial so firstly let us discuss the
+agenda now this mongodb interview
+question is intended to give you a
+general idea of the types of interview
+questions you might face now we'll be
+covering some theoretical as well as
+practical questions in this tutorial now
+typically recruiters begin with simple
+questions and gradually increase the
+difficulty level so in this mongodb
+interview questions tutorial we'll start
+with the basics and the progress to more
+complex questions now before we begin
+with the types of questions that are
+being asked here's a simple and quick
+tip for everyone who is watching this
+video now make sure you have the never
+give up attitude I know it's that time
+of the year where placements are going
+in a rampant way but and I know you
+might be giving interviews uh regularly
+and what if you uh didn't get an offer
+in one of the interviews from that so
+make sure you have that attitude of
+never give up and prepare for your next
+interview and whenever you're giving an
+interview make sure you are interactive
+being interactive is one of the most
+best or best way you can say in order to
+get uh you know hired by the recruiter
+so make sure you're conversing properly
+with the interviewer while asking the
+questions and finally behave
+professionally which is another key
+aspect while giving an interview so let
+us now discuss the first question which
+is the basic question which will be
+asked which is explain what is mongodb
+and its features so this is how you can
+answer mongodb is basically an open
+source cross platform nosql document
+oriented database management system now
+noise sculpin can be utilized as a
+substitute for traditional relational
+databases like SQL and MySQL which is
+dependent on the SQL language right so
+if you want to work with large data sets
+of distributed data then nosql databases
+may be quite supportive which are used
+to store large volumes of data in the
+form of documents which will offer the
+developers the flexibility to work with
+the evolving data models as there is no
+fixed schema in this now relational
+databases such as MySQL and Oracle store
+data in tables and rows right they are
+based on a branch of a theory known as
+relational databases now these
+relational databases are structured and
+tables can be linked with each other via
+a foreign key which is a property of
+relational database which is asset
+property which is being Satisfied by the
+relational database but whereas the
+mongodb being a documented oriented
+database it can handle only that sort of
+information and store as well as
+retrieve information from these
+documents only it provides the
+flexibility as well as scalability that
+you want with the querying and indexing
+according to your requirement this
+mongodb basically is based on json-like
+documents where we store all the
+information in that so this is how you
+can answer the question which is what is
+mongodb and its features
+well the next question is what are some
+alternative nosql databases to mongodb
+now we have various Alternatives from
+mongodb such as Cassandra Apache
+Cassandra is a free and open source
+distributed nosql database management
+system which is again similar to that of
+mongodb to handle large amounts of
+unstructured data across the servers
+providing High availability with no
+single point of failure Apache Cassandra
+is a database which can be a right
+choice when you need scalability and
+also High availability without
+compromising performance next we have
+redis redis is actually another uh
+popular nosql database which is an open
+source which is implemented as a
+distributed key value store with
+optional durability it can be also used
+as a catchy Adam message broker also we
+have other types other popular noise
+databases like Amazon Dyno dynamodb
+Apache headspace and neo4j now HPS again
+is an open source non-relational uh
+distributed database guys it is
+generally written in JavaScript and it
+is also developed as part of the Apache
+software foundation so these are some of
+the examples and can be used in
+alternative to mongodb
+all right let us now move to the next
+question which is what type of nosql
+database is mongodb now in general we
+have four different types of categories
+when we talk about in which category
+mongodb comes under so basically we have
+key value column based document database
+and graph database now when I talk about
+key value these database store data as
+an index key and value pairs this
+database is stored data in a schema-less
+way example of a key value data store
+include Cassandra redis dynamodb and Etc
+next we have column based now column
+based or column store type of database
+is the one where these databases are
+designed to store data as Columns of
+data rather than as rows as data if it
+stores in a row type of data it becomes
+a traditional which is not a noise
+database right so again example of a
+column store databases are hbase even
+Cassandra comes under the column based
+as well next we have the document data
+database which is actually the type of
+nosql database that we are looking for
+which is mongodb now document databases
+had designed to store documents with
+each document having a unique key and
+popular document databases are couch
+base and mongodb and finally we also
+have a graph type of database where they
+are based on graph Theory so these
+databases are basically designed for
+data which needs to be represented as
+graphs so the data that is present in
+this sort of database is interconnected
+with multiple number of relationship
+between them in in the form of graphs
+and trees and a popular graph database
+is neo4j as well as big data so this is
+what mongodb is and it comes under the
+document database type of noise scale
+database the next question is how does
+mongodb store data now data in mongodb
+is stored in based on documents or the
+Json style data structures documents
+contain one or more fields and each
+field contains a value of a specific
+data type so mongodb stores data records
+as documents which are in the form of
+based on documents which are gathered
+together in collections so these
+documents as we said earlier has a sub
+specific data types including let's say
+arrays normal General data and these
+documents tend to share a similar
+structure which are organized as
+collection so you can say a group of
+documents are kept in a collection it
+may be helpful to think of documents as
+in a comparison to the rows in a
+relational database so fields are
+similar to columns and collections are
+similar to tables in mySQL database
+which is again a no it's a relational
+database so this is how mongodb stores
+data the next question is mongodb is a
+schemailers database if yes how do you
+create schema in mongodb now the scheme
+of a data base describes the structure
+of the data to be stored right in a
+relational database the schema defines
+its tables its fields in each table and
+the relationship between each field and
+each table so if you take SQL as an
+example which is a schema based database
+right so in schema is defined by the
+tables and the fields that is the
+columns and rows that are present in it
+and the relation between them
+on the other hand we have mongodb now in
+documented oriented databases like
+mongodb data is stored in collections of
+key value pairs now given that Json is a
+schema free data structure and that
+mongodb depends on it it would be more
+accurate to say that it has a
+dynamically typed data so whenever you
+create an insert a document to create a
+schema it will automatically create one
+for you so whenever a document is added
+the database will automatically create
+the corresponding collection
+the next question is how is mongodb
+different from SQL and better than MySQL
+now mongodb is again a documented
+oriented nosql database which is used to
+store high volume of data and which
+needs to process your huge data in a
+quick session now it is a database that
+came into picture around the mid 2000s
+and it is again considered into the
+category of a nosql database whereas
+when you take SQL SQL is a programming
+language used to communicate with and
+manipulate relational databases for
+example MySQL now there are quite
+differences between both of these
+databases basis right being being one as
+a relational database the other being
+relational and non-relational database
+there are quite differences between them
+so for example if you take the structure
+in SQL data is represented in tables
+whereas the data is represented in
+documents and this further documents are
+stored in collections now schema again
+SQL has a predefined schema so whenever
+you are creating a table you need to
+predefine its schema whereas mongodb
+does not have the implications of
+specifying any schema before working on
+it so it has basically a dynamic schema
+next we have this scalability the data
+in SQL can be vertically scalable and
+when it comes to mongodb both horizontal
+and vertical scalable of scaling of data
+is possible when I talk about
+transactions SQL also supports Atomic
+operations and follows asset properties
+whereas Bongo DB does not have proper
+support for transactions and it follows
+cap theorem and finally the type of
+operations now some operations that we
+perform in relational databases like SQL
+for example SQL supports join operation
+whereas we don't have the same sort of
+join operation and mongodb so in this
+way mongodb is different from SQL and in
+some ways it is better than MySQL in
+terms of processing a lot of
+unstructured data and also has certain
+features like replication sharding and
+mapreduce and some of more critical
+features that are not present in MySQL
+well the next question is what are the
+different data models in mongodb now
+data models are categorized into two
+types the first one is embedded data
+model the next one is referent data
+model now if I talk about Emirate data
+model embedded documents capture
+relationship between data by storing
+related data in a single document
+structure whereas reference data models
+store the relationship between data by
+including any links or references from
+one document to another
+moving on to the next question the next
+question is how does indexing Works in
+mongodb now a good indexing strategy be
+it a relational database or a nosql
+database it is essential for ensuring
+that your database returns your results
+as quickly as possible now mongodb
+indexing is a special data structure on
+which the index is created to hold the
+data of a specific fields in a document
+now in the absence of indexing in
+mongodb there is a need to scan every
+collection which is basically a
+collection scan so mongodb indexes make
+it unnecessary to perform a collection
+scan which involves looking through
+every document in collection from
+matches to your query it also provides
+effective indexing strategy now any
+collection in mongodb can have one or
+more indexes and those indexes can be
+made on one or more multiple Fields And
+even through throughout a mongodb
+database so you need a good indexing
+strategy to quickly add let's say
+effectively access the data you required
+from it and it also provide search
+efficiency now indexing is a necessary
+operation in mongodb which will bring
+search efficiency in various execution
+of statements so this is how indexing
+Works in mongodb
+so moving on to the next question what
+is mongodb replication and sharding now
+if I talk about replication replication
+means duplicating the same data across
+multiple mongodb servers so the main use
+of replication is the data is available
+at an instant way that is high
+availability of data and it also
+supports data redundancy and multiple
+copies of of the data are being saved
+across servers and also it provides data
+recovery and backup options as well so
+in a nutshell you can say that database
+replication is the process of copying
+data from one database in one server to
+another database in another server
+ensuring that the same data is available
+on more than one mongodb server so again
+the main purpose of using replication is
+data redundancy and high availability so
+by keeping data several copies or
+replica stored on physically separate
+servers it will ensure that the data is
+protected and it is also accessible
+whenever we need and also by generating
+multiple copies of your data replication
+enables you to increase data
+availability which is also another
+important factor this is especially
+helpful if a server fails so in that
+case you can use the replication and
+finally you can also recover the data
+that is lost due to any uninterrupted or
+any hardware failure issues
+now if I talk about sharding sharding is
+also similar to that of replication but
+it is a method of Distributing data
+across multiple databases and mongodb
+supports this deployment of data with
+having large data sets and high
+throughput via sharding
+so let's take an example so you can give
+an example to the recruiter like this
+let's say I have a database having 2
+million users and it has a capacity
+which is 2 million records now what I'm
+doing is I'm basically Distributing the
+data across multiple databases and I'm
+storing different data in different
+databases now we have two machines which
+has one million user capacity and
+another one million user capacity
+so in this way you can add more and more
+multiple databases in order to store
+your data
+so by adding more capacity to a single
+server such as adding more memory and
+processing units or adding more RAM on a
+single server that can be done using
+sharding
+let us now to move on to the next
+question which is explain horizontal and
+vertical scaling now vertical scaling
+refers to adding more resources like CPU
+Ram or any hardware or hard drive disk
+space to your server which is again a
+database or an application server which
+is done on demand on the other hand
+horizontal scaling refers or involves
+adding more processing units or physical
+machines to your server or databases now
+mongodb which is a nosql database
+handles horizontal scaling through
+sharding so in a nutshell you can say
+that vertical scaling can be used in
+order to increase or decrease the
+capacity of existing Services whereas
+horizontal scaling adds more resources
+like virtual machines to your system to
+spread out the workload across them the
+next question is when should we embed
+one document with another so you should
+consider embedded document that is sub
+document whenever you rely on these four
+factors that is when the relationship is
+one to few that is it can be one two one
+too many but not one to one so for
+unlimited use case you should start
+considering separating sub documents
+into another collection the next
+situation is when retrieval is likely to
+happen together which will improve the
+performance in such case you can embed
+one document with another the next
+factor is when updates are likely to
+happen at the same time you can use this
+multi-document transaction by embedding
+data model and finally when the field is
+rarely updated in such case you can use
+the embedded document
+well let us now move on to the next
+question which is what are replica cells
+and explain primary and secondary
+replica sets in mongodb the process of
+replication as we discussed earlier is
+done via using replica sets in simple
+words it is a group of mongod processes
+to keep the same data across different
+servers now a replica set is basically a
+collection of related mongodb nodes
+which must have three notes at least now
+one of them must be a primary and the
+rest secondary ones and a replication
+structure can have up to 50 nodes so the
+main types of nodes that we have is
+primary and the secondary or you can
+call it them as primary and secondary
+replica sets now when I talk about
+primary replica set it is the primer is
+the member in the replica set that
+receives the write and read operations
+but read operations can be pointed out
+to secondary nodes changing the
+configuration at the moment to perform
+the query beside is the replica set can
+have only one primary node at most and
+talking about secondary the secondary is
+the node where the data is replicated to
+maintain a copy a replica set can have
+one or more secondary nodes and the
+clients cannot write data to secondary
+ones only they can read from them and if
+at all there is any failed node it works
+as a secondary node again until it is
+until a new primary node will be
+replaced with that so this is what a
+replica set means and the type of
+replica set which is the primary and
+secondary I hope you understood this
+so moving on to the next question which
+is what is the use of capped collections
+now the size of collection in mongodb is
+typically unrestricted right so the
+collection increases its size as more
+documents are being added to that now a
+capped collection is a special type of
+collection that has either a fixed
+number of documents in a collection or
+fixed number of elements so it creates
+new documents by overriding the oldest
+documents present in that collection so
+collections can have maximum size or
+document counts that prevent them from
+growing beyond the maximum threshold
+that is being allocated and all capped
+collections must specify a maximum size
+and may also specify a maximum document
+count only now mongodb removes older
+documents if a collection reaches the
+maximum size limit before it reaches the
+maximum document count so overall the
+structure and functionality of a capped
+collection supports high performance for
+credit operations like create read and
+delete so this is what cap collection
+says and some of it characteristics and
+why we use it
+let us now move on to the next question
+which is how can you store images videos
+and other large files now we often need
+to store files in our databases but
+mongodb sometimes or it doesn't let you
+store any file larger than 16 MB in a
+normal document so what you have to do
+instead mongodb has a functionality
+specifically for storing large files and
+it goes by the name gridfs yes you have
+heard it right grid FS is a driver
+specification for uploading and
+retrieval of mongodb files which are
+larger than 16 MP in order to store
+images videos and other large files it
+is one of the most popular
+specifications and it it has a size
+limit of more than 16 MB so you can
+store images videos that have size more
+than of 16 MB now chunks of files like
+be it and audio it update of PDF file or
+anything it is being streamed as a
+chunks so these are streamed into the
+database and each chunk is limited 255
+KB in this size this means that the last
+chunk is normally either equal to or
+less than 255 KB so whenever you read
+from grade FS the driver resembles all
+the chunks as needed this means that you
+can read sections of a file as per your
+query range
+so I hope you understood uh what is grid
+fs and what is the process to store
+images videos and other large files
+which is of more than 16 MB so basically
+the interviewer want to know that
+whether you are not familiar with the
+concept of grid FS so that is the reason
+he might ask you this question so you
+have to be well prepared for it
+well the next question is explain
+aggregation in mongodb mongodb
+aggregation process the data records
+during an aggregation operation and
+returns a single competent result just
+like any other operations that are
+performed in a relational database
+similar to that aggregation is also used
+in order to act on a group of values
+from multiple documents present in a
+collection to perform operations for
+this grouped values and return a single
+competed results now it actually groups
+multiple documents which applies an
+aggregation operation and it is
+basically returning as the particular
+value that we want from that operation
+now there are various ways on how you
+can perform aggregation we have three
+different ways of carrying the
+aggregation process in mongodb the first
+one is aggregation pipeline next we have
+mapreduce and finally we have single
+purpose aggregation so you can further
+explain each of these aggregation uh
+depending upon the interviewer's
+preference so basically I will
+irrigation process in mongodb is modeled
+on the concepts of data processing
+pipeline so multiple document enter the
+pipeline and then these documents are
+being transformed into the aggregated
+results next we have the map reduce as
+the name suggests it does to operation
+which is mapping and then reducing that
+operation so it will map each document
+and process along with one or more
+objects for each document and reduce
+phase in which output of map operations
+are being combined together and finally
+we have single purpose aggregation
+operation where these operations
+aggregate all the documents from a
+single collection in mongodb now even
+though they provide a simple access to
+the basic aggregation operations they
+lack the flexibility that are being
+provided by the aggregation Pipeline and
+map reduce operation
+so these are the three uh aggregation
+pipeline method which they go through
+first is basically the math stage which
+will filter the records or the documents
+we need to work with uh and next it
+performs the group operation which
+basically is the aggregation and finally
+it will sort the data so it will sort
+the resulting documents the way we
+require that is an ascending and
+descending order now just like uh any
+other operations given by aggregation in
+mongodb we also have five different
+types of operations that we can perform
+which is sum which will add up the
+values of every document next we have
+average which will complete the average
+value of every document and we have Min
+which returns a minimum value from a
+document and we have Max which will
+written the maximum value within a
+collection and finally we have Push
+which will add the value to an array in
+the document moving on to the next
+question what is mean by ID field in
+mongodb ide is the field that uniquely
+identifies a document present in the
+mongod EB collection so when you are
+trying to insert a new document into the
+database mongodb will automatically
+create a unique ID field which will have
+a unique value to its name now by
+default mongodb creates a unique index
+for the ID field during the creation of
+any collection and the ID field is
+always the first field in the document
+and if the server receives a document
+that does not have any ID field first
+then the server will move the field at
+the beginning and also ID field can be
+avoided in the document that you want to
+return by setting the value of the ID
+field as 0 in the query
+so what are some utilities for backup
+and restoring in mongodb now by default
+mongodb shell does not include any
+import export of data or even
+duplication or retrieval of uh data from
+other uh you know applications but
+however mongodb provides the utilities
+and database tools to take backup and
+perform the restore operations now
+mainly we have four type of backup and
+restoring options which are import
+ export term and malware
+restore so you can use one of these
+utilities like Dom import export
+and restore to move your data in and out
+of your mongodb database now the most
+commonly used are mongodum and
+restore the mongodon utility creates a
+binary backup you know of a mongodb
+database the mongodom tool is the
+preferred method of dumping data from
+your Source mongodb deployment and if
+you're trying uh to restore the data
+that you have basically deleted or
+dumped you can use the Monger register
+in order to fetch back the data that you
+have dumped
+so the next question is can you explain
+about mapreduce process in mongodb
+mapreduce is basically a data processing
+Paradigm for condensing large volumes of
+data into useful aggregated results so
+basically mongodb provides the map
+reduce features for only aggregation
+purposes and generally there are two
+phases of the map reduce as you can see
+in the name which is mapping and
+reducing so in the first phase each
+document is processed and emits common
+and redundant part of the document to
+pass a unique record for the next phase
+and in the next phase all the unique
+part gets together and aggregated to
+produce a single result and finally we
+have a query here we'll pass the query
+to filter the resultant set so with the
+help of map reduce user can perform
+sorting filtering and document
+modification as per their need
+so moving on to the next question which
+is how does mongodb Ensure High
+availability of data
+in general High availability refers to
+the uh you know Improvement of a system
+or any applications availability by
+minimizing the downtime caused by
+routine maintenance or any hardware
+related uh you know issues so mongodb
+automatically stores copy sets and
+multiple copies of data distributed
+across servers and data centers now in
+general mongodb is one such database
+which can provide High availability for
+the users by using features like
+replication and sharding now in
+replication the replica sets help
+prevent website downtime using native
+duplication and automatic failures now
+mongodb has a great support for high
+availability without no thought through
+replication set but replica set is not
+enough for a production ready system
+that is it requires a bit of planning in
+order to deploy this so sometimes it
+might be an issue but in most of the
+cases if the system crashes or the
+hardware or software faces any issues uh
+you know ODB in the data mongodb helps
+you recover and backup your data in the
+system
+so the next question is what is the role
+of profiler in mongodb now so far we
+have discussed some of the basic to
+moderate uh level questions guys now
+from here on you will find some
+practical as well as you know advanced
+level questions so you might need to
+focus a little bit and even if you're
+not confident and if you don't know the
+answer which we are discussing now you
+can directly tell to the recruiter of
+the interviewer that you do not know the
+answer but you hope that you have an
+idea on this and you can work on that
+and you can get back to him so again
+let's get back to the question which is
+what is the role of profiler in mongodb
+now database profiler is used to collect
+information regarding the queries which
+are executed on an individual database
+instance so basically this uh profiler
+in mongodb database allows you to
+collect performance data about
+operations occurring on a mongodb
+instance
+the next question is can we use regular
+expressions in mongodb now in SQL we do
+have regular Expressions where we need
+uh where we write a query to find
+certain patterns that are present in our
+database table right in a similar way
+regular expressions are also used to
+match patterns in a document just like
+finding a pattern in an SQL tables so
+regular expression basically provides
+patterns a sequence of characters for
+matching and defining a search pattern
+and also retrieving an unidentified
+field using a certain pattern becomes
+easily within a document and querying a
+database in order to find a smaller
+subset of data within a collection we
+can use regular expression so regex
+operator in mongodb provides regular
+expression capabilities from pattern
+matching strings in the queries and the
+syntax is followed as DB dot collection
+name dot file mention the field name and
+mention the reex keyword and mention the
+pattern now the pattern can be of any uh
+of your choice
+so the next question is how do you
+search for documents in which a specific
+field has one or more values now you can
+say this is a bit of practical question
+guys the interviewer wants to know
+whether you are not uh whether or not
+you are comfortable and have an idea of
+using various operators in mongodb so
+you can use the DB dot collection file
+operation and also use a query operator
+which is dollar in in order to specify
+the field and the values that you want
+to retrieve or you want to search for
+inert document so for example I have
+given an example which says that in
+order to return all employees whose
+title is product manager or executive
+director in such case the query would be
+DB dot employees dot find mention the
+field which is title mention the uh in
+which is a query operator here mention
+the product manager and executive
+director which we are trying to find so
+if there is any record or the person who
+is associated associated with this title
+of product manager or executive director
+it will retrieve the record now we have
+a person name whose first name is Rahul
+and last name is Kumar whose ages 29 and
+title is product manager so this is how
+you can search for a document with a
+specific field which has one or more
+values
+so the next question is which command
+are used to insert single and multiple
+documents into a collection now we
+basically have two types of commands
+which is DB dot collection dot insert1
+which will insert a single document into
+a mongodb collection and it returns a
+document containing the inserted
+documents ID field and next we have the
+same uh command but the keyword changes
+which is insert mini which is insert a
+single or even multiple records uh into
+a mongodb collection again it returns a
+document containing each inserted
+document's ID
+well the next question is what is the
+difference between
+all and in operator in mongodb now both
+all and in operator are used to filter
+documents in a sub array based on a
+conditional statement so but there are
+some differences or subtle differences
+between all and in operator now when I
+talk about all operator all operator
+retrieves all the documents which
+contains a subset of the value we pass
+and this subset might be in any order
+but whereas in operator retrieves all
+the documents which contains the either
+of the values we pass
+moving on what is the next question is
+both rights and rates become faster when
+you add more slaves to replica set as
+the statement true or false explain the
+reason well this statement is false now
+a replica set can only have a primary uh
+at any particular time that is having a
+one master with other nodes the
+secondary nodes being slaves so all
+right operations are performed only on
+the master node read operations on the
+other hand can be performed on any
+instance which can be a slave or a
+master node so as a result adding more
+slaves to a replica set accelerates only
+reads operation and nods the and not the
+rights operation so the statement is not
+valid and it is a false statement we
+cannot uh you know write and read both
+uh operation when you add more slave to
+replica set
+the next question is what is Shard e and
+mention the components of mongodb
+sharded cluster now what is a short key
+chart key is used by mongodb to
+distribute the documents of a collection
+across charts now on charting a mongodb
+data set a Shard key is automatically
+created by default so the short key can
+be in the form of indexed field or
+indexed compound fields that will be
+used to distribute the data among the
+shots generally The Shard key is used to
+distribute the mongodb's collections
+documents across all the shots where the
+key consists of a single field or
+multiple fields in every document now
+the idea is to have multiple replica set
+with multiple primaries which would
+basically divide data and load it among
+themselves and each of these replica set
+is called as shard
+chat basically has three components
+which is basically Shard Mongoose and
+config serger all this together
+comprises of a mongodb sharded cluster
+now when I talk about Shard what is a
+Shard Shard contains a subset of the
+sharded data okay A Shard is basically a
+single mongodb server or a replica set
+that stores a partition of the
+application data that you have divided
+now next we have the mongos Mongoose
+router or the it is a router of
+operations now because each chart
+contains only part of the cluster data
+you need something to root operations to
+the appropriate charts that's where
+mongos comes in the Mongoose process is
+a router that directs all the reads
+writes and commands to the appropriate
+shard in this way mongos provides client
+with a single point of contact with the
+cluster and finally we have config
+servers now Mongo's process are
+basically a durable should be durable
+that means it must be in a position to
+store the metadata in order to properly
+manage the cluster right which we have
+formed with the short key so that's the
+job of the config server this metadata
+includes the cluster configuration the
+location of each database collection and
+the particular range of data there so
+this is what basically shark Key is and
+multiple components that are included in
+the mongodb sharded cluster
+so moving on to the next question which
+is the joint plus is a key feature of
+relational database systems what is the
+mongodb equivalent if any and are there
+any limitations now whenever we hear
+about joints we have like different
+operations like inner join after join
+left join and uh you know cross join so
+similarly we have a question here that
+means if we talk about no SQL that means
+we do not have no joints that means we
+do have joints or we do not have joints
+that's the main question but the thing
+is we have a joint equivalent in mongodb
+also which is the lookup operator which
+is a significant disadvantages that is
+it does not work in charted collection
+right so it's worth noting that rather
+than looking for a direct equivalent to
+join mongodb developers often simply
+denormalize the data and which
+eliminates the need for a join you know
+operation in a mongodb database so in a
+nutshell you can say it performs an
+outer join to a collection in the same
+database to filter the documents from
+The Joint collection for processing now
+the lookup operator adds a new array
+field to each input document and this
+new array field contains the matching
+documents from The Joint collection
+so the next question is mention some
+pros and cons of normalizing data in
+mongodb database now normalizing data is
+a key factor in relational database but
+what about mongodb now updated documents
+is fast for raw normalized data and it
+is relatively so slower for denormalized
+data well on the other hand reading
+documents is fast in denormalized data
+and slower for normalized data so
+denormalized data is hard to keep in
+sync and takes up more space so rdbms
+generally have this organic support
+for normalization and a lot of data to
+be managed as a separate entity whereas
+nosql dbmss like mongodb do not have
+this active support for normalization
+so the next question is what are the
+advantages of using mongodb now there
+are various advantages of using mongodb
+for example it is an open source DB that
+is it is ready readily available for
+everyone to download and perform the
+operations right away and it is also
+easy to use the syntax is also user
+friendly just like SQL it is also highly
+flexible which allows you to store and
+work on different data types and allows
+you to store unstructured data of
+different types in one or more documents
+and the security is also a Paramount
+Feature for any user right so mongodb
+provides Advanced security features as
+well and we also talked about high
+availability in our previous question
+and it also has reliable indexing for a
+faster retrieval of data it has a
+flexible schema design unlike the uh
+predefined schema in relational
+databases so this flexible or the
+dynamic schema design allows you to meet
+the ever-changing conditions of the Big
+Data applications uh you know with the
+vast amount of data that is being
+incorporated into the documents you can
+have a better Edge on the data if you're
+working on large scale applications then
+moment DB can be a great choice for you
+with all this it also gives you high
+performance which is another key feature
+of mongodb and one of its greatest
+advantage of a noiseql database
+and that gives us the last question of
+our interview question uh which is what
+are some applications of mongodb now
+mongodb being a nosql database is widely
+popular in many uh sectors nowadays and
+some of the major applications or
+real-time use case of mongodb is it is
+used in iot which is internet of things
+with the world rapidly uh advancing in
+uh you know in technology iot plays a
+crucial role and it is important that we
+uh as a user you know have these uh
+intention to store that data and have
+that data predicted in any sense now the
+data is only getting larger and larger
+and we also heard this phrase that data
+is the new oil so with the coming in the
+coming years the data is exceptionally
+going to rise and we need mongodbs to
+store this uh huge or huge volumes of
+data into our uh databases right so it
+is one of the applications of mongodb
+and we also have mobile applications and
+in order to perform real-time analysis
+and we also have uh it is also used in
+catalog management content management
+and for product management and various
+others sectors as well now companies
+also like to use noise databases uh
+because of its flexible uh design and
+the need of you know storing data
+without any uh predefined schema makes
+it a best nosql database like companies
+like eBay Shutterfly New York Times
+Verizon and many other big companies use
+uh mongodb nowadays and also the one of
+the real life application or use cases
+the best example you can give is aadhar
+card which is India's unique
+identification which is uh based on
+identifying a person's you know identity
+so the other uses mongodb to store this
+massive amounts of demographic and
+biography biometric data of over more
+than 1.5 billion uh you Indian users so
+other users mongodb in order to store
+the images QR code details you know the
+personal details of the user in its
+database so these are some of the
+applications of well that's a wrap on a
+moon stack interview question we hope
+you found this video informative and
+helpful by now you should have a good
+understanding of the different types of
+interview questions frequently Asked in
+month interviews
+and if you are interested in learning
+more about web development there are
+plenty of resources available online you
+can also check out our website for more
+information on full stack web
+development training courses and
+certifications
+thank you for watching and we'll see you
+next time
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

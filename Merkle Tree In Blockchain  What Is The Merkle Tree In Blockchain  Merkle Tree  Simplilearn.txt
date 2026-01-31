@@ -1,0 +1,221 @@
+hey everyone i'm shamley and i welcome
+you all to this new video of simply
+learn on merkle tree in blockchain
+in this video at first we will see some
+of the use cases of merkle tree
+and then we will understand what is a
+merkle tree
+followed by what is a marble root
+after which we will explore about
+cryptographic hash functions in
+blockchain
+and then we will understand how mongol
+tree exactly works
+after which we will discuss the benefits
+of mochal3
+and at last we will explore why is it
+essential to blockchain
+so without much delay let's get started
+with the video
+but before starting let's have a quick
+look at some general use cases of merkle
+tree
+of course there are more merkle trees
+implementations out there git a
+distributed version control system is
+one of the most widely used it is used
+to handle projects by programmers from
+all around the world
+interplanetary file system a
+peer-to-peer distributed protocol is
+another suitable implementation
+it's also open source allowing computers
+to join and use a centralized file
+system
+merkle trees are used to benefit of
+certificate authorities as well
+it's part of the technique that
+generates verifiable certificate
+transparency logs
+the final use case we'll look at is
+database systems like amazon dynamodb
+and apache cassandra
+during the data replication process
+merkle trees are used by these no sql
+distributed databases to control
+discrepancies
+now the very first thing we will discuss
+is what is a mockultry
+merkle trees also defined as binary hash
+trees are a type of data structure
+commonly used in computer science
+merkle trees are used to encrypt
+blockchain data more effectively and
+securely in bitcoin and other
+cryptocurrencies
+it's a mathematical data structure made
+up of hashes of various transactions of
+various data blocks
+in a particular blockchain network
+which acts as a summary of all the
+transactions in a block
+it also enables quick and secure content
+verification across big data sets it
+also helps to verify the consistency and
+content of the data
+now that we know about the merkle tree
+let's explore what is a merkle root
+a merkle root is a simple mathematical
+method for confirming the facts on a
+mogul tree
+they are used in cryptocurrency to
+ensure that data blocks sent through a
+peer-to-peer network are whole undamaged
+and unaltered muggle roots play a
+crucial role
+in the computation required to keep
+cryptocurrencies like bitcoin and ether
+running
+now that we know hash is a big part of
+mughal tree let's dive down and have a
+look at some of the cryptographic hash
+functions
+a hash function maps any type of
+arbitrary data of any length to a fixed
+size output it is commonly used in
+cryptography since it is a cryptographic
+hash function
+the hash functions are efficiently
+known for one property they can't be
+reversed it's a one-way function that's
+only meant to work in one direction
+message direct secure hash function and
+ripe message direct are some of the hash
+families available
+now let's take an example if you use the
+sha 256 hash algorithm and pass 101
+blockchains as input
+you will get the following output
+this concludes that hash functions have
+the following key properties
+deterministic
+pre-image resistant computationally
+efficient
+cannot be reversed engineered
+and collision resistant
+now that we know about various aspects
+of the merkle tree let's understand how
+the mercury works
+now that we have a basic understanding
+of hash functions we can move on to the
+working of mobile trees
+a merkle tree totals all transaction in
+a block and generates a digital
+fingerprint of the entire set of
+operations
+allowing the user to verify whether a
+transaction is included in the block
+merkle trees are made by hashing pairs
+of nodes repeatedly
+until only one hash remains
+this hash is known as the merkle root or
+the root hash
+they are built from the bottom using
+transaction ids which are hashes of
+individual transactions
+each non-leaf node is a hash of its
+previous hash and every leaf node is a
+hash of transactional data of each block
+here's the example of a mokul tree to
+help you understand the concept
+consider the following scenario
+a b c and d are four transactions all
+executed on the same block
+each transaction is then hashed leaving
+us with hash a
+hash b
+hash c
+and hash d
+now the hashes are paired together
+resulting in hash a b
+and hash cd
+a mogul root is formed by combining
+these two hashes
+hash a b
+c
+d
+in reality a merkle tree is much more
+complicated especially when each
+transaction id is 64 characters long
+but this should give you a good concept
+of how the algorithms work and why they
+are so effective
+now let's explore the benefits of mogul
+tree
+merkle trees provide four significant
+advantages validate the data's integrity
+it can be used to effectively validate
+the data's integrity
+takes little disk
+space when compared to other data
+structures the mogul tree takes up very
+little disk space
+timely information across networks
+muggle trees can be broken down into
+small pieces of data for verification
+and efficient verification the data
+format is efficient and verifying the
+data's integrity takes only a few
+moments
+now that we know the benefits of murkle
+free let's explore how it is essential
+to blockchain
+let's imagine a blockchain without
+mercury to get a sense of how vital they
+are for blockchain technology
+we'll focus on bitcoin because it's use
+of mongol trees is not only important
+for the cryptocurrency but also simple
+to grasp
+if bitcoin didn't include morgle trees
+for example every node on the mob
+network would have to retain a complete
+copy of every single bitcoin transaction
+ever made you can imagine how much
+information that would be
+any authentication request on bitcoin
+would require an enormous amount of data
+to be transferred on the over the
+network therefore you'll need to
+validate the data on your own
+to confirm that
+there were no modifications a computer
+used for validation would need a lot of
+computing power to compare ledgers
+well merkel tree are a solution to this
+issue they hash records and accounting
+thereby separating the proof of data
+from the data itself proving that giving
+tiny amounts of information across the
+network is all that is required for a
+transaction to be valid
+furthermore it enables you to
+demonstrate that both ledger variations
+are identical in terms of nominal
+computer power and network bandwidth
+well that is all about mercury we have
+almost reached the end of this video if
+i missed anything important do let me
+know in the comment section i hope you
+enjoyed this video on merkle tree in
+blockchain and learn something new from
+it
+if you like this video then please do
+hit the like button thanks for watching
+this video and stay tuned for more
+updates and videos from simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

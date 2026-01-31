@@ -1,0 +1,182 @@
+foreign
+YouTube channel today we are here with
+an interesting video on the min max
+algorithm in AI so without any further
+delay let us have a look at the agenda
+for today's session
+first let us try to understand what is
+min max algorithm in AI then let us know
+the properties of the min max algorithm
+and moving ahead let us go through the
+pseudocode of the min max algorithm and
+finally let us understand it's working
+so if you want to become an expert in
+the field of AI and machine learning
+then take up the professional
+certificate program in Ai and ml by
+simply learn and master those necessary
+skills check out the link in the
+description for more details
+the Minimax algorithm is a popular
+decision making algorithm in artificial
+intelligence used in Game Theory and
+decision Theory it is a backtracking
+algorithm that uses the depth first
+search concept to traversal all the
+nodes of a tree and it writes out
+different possibility in a systematic
+Manner and backtracks when a solution is
+not found the Minimax algorithm is
+commonly used in two player games like
+chess Checkers and tic-tac-toe the
+algorithm's main goal is to choose the
+best move for the player currently
+making a move assuming that the opposing
+player would also play optimally
+minimizing the player's maximum possible
+loss advancing let's have a look at some
+of the properties of the min max
+algorithm
+first we have completeness the min max
+algorithm will find a solution if it
+exists in the given find it game trade
+next optimal the algorithm is optimal if
+both players makes an optimal move
+then time complexity the time complexity
+of the min max algorithm is order of B
+to the power of M as it performs a depth
+first search of the game tree where B is
+the game tree's branching factor and M
+is the trace maximum depth and then we
+have space complexity the space
+complexity of the min max algorithm is
+the same as the depth first search order
+of B into M as it follows the same
+principle next we will move on to the
+pseudo code for the min max algorithm
+let's try to understand the pseudocode
+of the min max algorithm so here the
+function min max except three arguments
+that is node depth and max player so
+note the current game State and depth
+the maximum depth of the search tree and
+the max player a Boolean variable that
+indicates whether the current player is
+trying to maximize or minimize their
+score so first the function checks if
+the current node is terminal or if the
+maximum search depth has been reached so
+if either condition is true the function
+returns a heuristic node value next
+suppose the current player is the max
+player so in that case the function is
+initializes the best value to negative
+Infinity recursively calling the min max
+function
+it evaluates each child of the current
+node with Max values set to false here
+we have the max value that is set to
+false and then the best value is updated
+at the maximum of the current best value
+and the value written by the recursive
+call and then finally the function will
+return the best value else if
+the current layer is the mean player the
+function initializes the best value to
+positive infinity and by recursively
+calling the Minimax a function evaluates
+each child of the current node with the
+maths player set to true so here we have
+the max player set to true and the best
+value is updated as a minimum of the
+current best value and the value written
+by the recursive call and then finally
+the function will return the best value
+next let's move on to the working of the
+min max algorithm
+min max refers to the algorithm strategy
+of minimizing the maximum possible loss
+so the Minimax algorithm works by
+constructing a tray of all possible
+moves and their outcomes starting from
+the current game state
+a game tree is a graphical
+representation of the different moves
+that players in a game can make as well
+as the results of those moves it is a
+game tree that starts at the root note
+and branches out into different notes
+reflecting different possible moves in
+game theory and artificial intelligence
+game trees are often used to analyze and
+solve games they can be used to
+determine the best move for a player
+given a specific game state or to
+compute the predicted outcome of a game
+depending on the each player's move so
+let's consider this example where we
+have two players Max and Min and we also
+have the terminal nodes so let's
+consider a to be the initial state of
+the game tree so if max player takes the
+first move then according to the pseudo
+code to the maximizer it is the best
+value is equal to negative infinity and
+for minimizer it is the best value is
+equal to positive Infinity so we now
+find the utility value or score for the
+maximizer the maximizer will compare
+each value of the terminal node with its
+initial value which is negative infinity
+and choose the maximum value among all
+we have 4 or N2 so it will check the
+maximum value so in 4 and 2 it will
+choose the value 4 and then in minus 3
+and minus 6 the max player will choose
+minus 3 because minus 3 is the max value
+compared to -6
+and then it will check in 7 and 0 so it
+will compare and it will choose the
+value 7 then 5 and 8 it will choose 8.
+the next move is of minimizer so it will
+start comparing all the nodes value with
+positive Infinity so basically it will
+choose the values that are minimum and
+it will choose the values or score for
+the third layer so it will start
+comparing 4 and minus 3 so since minus 3
+is the minimum value it will choose the
+minus 3 and then in 7 and 8 it will
+choose 7 because it is a minimum and
+then again the next turn is of maximizer
+it will choose the maximum value from
+the node for the root node so
+here n minus 3 and 7 the maximum is 7 so
+the maximizer will choose the maximum
+value to the root node so this is the
+complete working of the min max 2 player
+game so we have just considered four
+layer game tray but when you take only
+two player games they will have many
+layers in it so just for our
+understanding we have considered this
+example but in online two player games
+we will have complex game tree and I
+hope you got the idea of min max
+algorithm
+so guys I have a simple question for you
+so looking at this game tree find out
+what is the optimal value and let me
+know in the comment section below so if
+you like this video share with your
+friends before I sign off make sure you
+subscribe to our Channel and hit the
+Bell icon to get all the updates we'll
+be back with more such interesting
+videos until then keep learning and stay
+tuned to Simply love
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

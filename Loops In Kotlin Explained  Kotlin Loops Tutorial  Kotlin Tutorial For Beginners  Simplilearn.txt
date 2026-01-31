@@ -1,0 +1,526 @@
+hey everyone welcome back to another
+video session by simply learn
+in this video we will be learning about
+loops in kotlin which is a very
+essential topic in kotlin
+so let's go ahead and have a look at
+what we will be covering today
+so we will start with loops in kotlin
+and then we will understand different
+types of loops
+we will learn about for loops for each
+loop and for loop with ranges
+after that we will understand why loop
+and do while loop in kotlin with the
+help of hands-on examples but before we
+begin
+make sure to subscribe to our youtube
+channel and press the bell icon to never
+miss an update from simply learn
+now let's go ahead and understand loops
+in kotlin
+are used to repeatedly execute a series
+of statements until a certain condition
+is met
+typically a process is carried out such
+as retrieving and altering data
+and then a condition is verified such as
+whether a counter has reached a
+specified value
+if it hasn't the next instruction in the
+sequence is a command to go back to the
+first instruction in the sequence and
+repeat it
+so until a specified or given condition
+is true or the loop is broken with the
+break statement
+a series of statements are going to
+execute
+there are various types of loops in
+kotlin like for loops for each loop for
+loop with ranges
+while loop and do while loop
+so let's go ahead and understand these
+loops
+now we'll start with for loop in kotlin
+a for loop is a conditional iterative
+statement that checks for a specific
+condition
+and then
+constantly executes a block of code as
+long as those criterias are met
+the for loop differs from other looping
+statements in that it provides an
+explicit loop counter that allows the
+loop's body to know the exact sequence
+of each iteration
+the for loop is used in kotlin to
+traverse over ranges areas and maps
+as you can see in the diagram first
+there is an initial statement then there
+is a condition and if that condition
+evaluates to be true then the statement
+inside the loop body are executed and
+updated the updation can be incremental
+or decremental
+then again the condition is checked if
+it's true then the same process will get
+repeated and if the condition is not
+satisfied then the control jumps out of
+the loop
+this complete process will keep on
+repeating until the condition evaluates
+to be false
+now
+let's understand for loop with the help
+of an example
+so this is our code editor intellij idea
+here we will be doing an example of for
+loop
+in which we will print the odd and even
+elements from an array
+so here we will use a for loop and if
+else condition
+so let's start
+first of all we'll
+make the main function
+function main
+inside this function
+let's declare an array
+val num
+num is the name of the array
+and the array of function
+inside this
+we'll mention the elements of the array
+let's say 7
+21
+then let's say 23
+these are the elements of the
+array now after this we will simply
+print a message let's say
+like the odd and even numbers in the
+list are as follows and then we will
+apply the logic
+right
+the
+odd
+even numbers
+are as follows
+right
+now we'll use for loop
+now inside this
+for loop item will be the name of the
+variable that will store the
+variables or
+elements of the num array one by one so
+num is the name of the array and in
+between there will be inoperator
+so one by one each element of the array
+will be stored in item and now
+we'll use
+if condition
+now we have to print even an odd numbers
+the logic is simple we'll write if item
+percent sign
+divided by two
+if the
+remainder is equals to 0
+then it means it is an even number so
+any even number on when it is divided by
+2 it will give 0 as a remainder
+so
+if it will give 0 as the remainder then
+we will print
+even number
+then here we'll write item
+that particular element will be printed
+all right now in else block
+we'll do
+println
+and here we will write
+odd number
+here again we'll write
+plus
+item
+so all right
+i think our code is done and
+we can
+run it
+let's try to run this one
+so as we can see even numbers and odd
+numbers are getting printed
+so 16 is an even number 2 is an even
+number
+all numbers 11 17
+28 2081 number or number 39 and even
+number 10
+so i think all the elements are getting
+covered
+here we go 721 odd number
+so yeah so this is how you can use for
+loop and here we also have used if and
+else statements
+now let's understand
+for each loop
+for each method in kotlin allows you to
+access elements in a collection or list
+and perform actions on them
+we can achieve the same thing using the
+for loop but several for loops would
+quickly make your code unreadable
+as we can see in this example there is a
+list name my list
+and like in arrays we use array of
+function similarly in list we use list
+of function
+the elements of the list are in winter
+is and coming so there are three
+elements first is winter then is then
+coming
+so to print each element of the list we
+will use for each loop
+as we can see
+here we have used my list dot for each
+that is the forage loop and then we will
+print the iterator to print all the
+elements of the array
+now let's do an example on for each loop
+to understand it better choose from over
+300 in-demand skills and get access to 1
+000 plus hours of video content for free
+visit scale up by simply learn click on
+the link in the description to know more
+so again we are back in our code editor
+here we will be doing an example of
+for each loop
+so this example would be a simple
+example function main
+and inside this function
+we will create a list
+let's say
+where
+a list let's name it a list
+okay
+so
+after that
+we'll use list of function
+and
+also let's mention the
+data type
+all right so now inside this
+list we will mention the elements let's
+say 110
+and
+265 and let's say 315
+so these are random elements
+all right now we will have to create a
+variable sum and initialize it with zero
+now using this list b
+sorry a list
+that is the name of the list we will use
+a for each loop to iterate through each
+element of of the list
+we'll use for each
+e must be capital
+after that
+right for each
+and now we will use
+this
+sum variable
+to do a simple sum of each element of
+the list
+sum plus
+here i t so i t will be storing each
+element one by one it will some with the
+help of sum it will add each element to
+one another
+so initially sum is 0 when 110 is added
+then 265 is added to 110 then 315 to
+both of them
+so all right now all we need to do is to
+print this we'll write print talents sum
+so here we go now i think we can
+try to run this one
+although it is showing an error but
+let's try to run this
+as i thought
+i think we have to write the correct way
+only
+this is
+the right syntax of for each loop and
+yeah so now let's try to run it
+so as you can see 690 is getting printed
+so we have to use for each bracket with
+for each
+only and we can't we can't enter put
+space
+with it so yeah so this is the syntax of
+it
+now let's move on to the next loop which
+is for loop with ranges
+a range is a set of values that fall
+within a specified lower and upper limit
+and the values can be numbers characters
+or objects
+ranges might be incremental or
+decremental
+but the difference between two values is
+always one as we can see in the example
+inside the for loop
+num in one two eight
+here dot dot is the operator it means
+all the numbers from one to eight range
+will be printed
+also we can use a step function to print
+the elements with a gap
+and we also have to mention the gap like
+step two
+there are more library functions that
+build ranges that aren't covered by the
+double dot operator
+for example down 2 creates a range that
+counts down
+while range 2 creates a range that
+advances to
+a certain value now as we have
+understood ranges now let's understand
+while loop
+while loops are used to repeatedly cycle
+a block of code as long as the specified
+condition returns true
+the condition is verified first and if
+it is true the blocks code is run
+every time it enters the block the
+condition is checked and as a result the
+code will keep running until the
+condition is met
+once the loop starts the condition is
+checked if that condition is satisfied
+then the set of instructions are
+executed and if the conditions are not
+satisfied then the control jumps out of
+the loop
+this complete process will keep on
+repeating and executing unless the
+condition evaluates to be false
+now let's understand while loop with the
+help of an example
+now here we will be doing an example of
+while loop
+so here we will use an array and we will
+create elements of the array like
+positive and negative
+then using the while loop we will print
+the positive numbers and the negative
+numbers separately
+so let's start
+first of all we'll create the main
+function
+and inside this main function will
+create an array let's say
+arr is the name of the array
+and here we are using the array off
+function
+inside this function we'll write down
+the elements like 50 to any random
+elements
+minus 77 we have to write some negative
+elements as well
+minus 67 let's say and
+minus 20
+all right after that we'll
+create a variable let's say i and assign
+it to 0
+initialize it with 0. so here we are
+initializing it
+now
+within the while loop
+we will write
+i less than
+arr dot size that the array size
+so it means
+this loop will keep on iterating
+till the size of the array is greater
+than zero
+and when it becomes zero the loop will
+break
+or the control jumps out of the loop
+all right
+so as we know i is 0 so that is why i
+less than arrow dot size we have used
+now in if condition will write a r of i
+greater than 0
+that is positive number
+if the element
+here if the element is positive that is
+greater than 0
+then we'll print
+positive number
+right now here are
+i
+so that is how we will print it now here
+we will write else block
+and inside the else block
+again we will print
+negative number
+arr of i
+okay so after that we have to
+increment i plus plus basically
+we have to we have to make the loop to
+keep on iterating so that is why we have
+used i plus plus for the updation like
+to move to the next element
+in for loop we don't do the updation
+part
+like ourselves but in while loop we have
+to do that
+now let's try to run this
+so here we go
+50 to 10 positive numbers
+minus 77 negative 82 is positive then
+there are negative numbers
+so here we have used the while loop
+and it is
+easy pretty much easy
+now let's move to the next loop which is
+a do while loop
+the do while loop
+the while loop and do while loop are
+quite the same kind of loops
+the only difference is that the function
+is run at least once before the
+condition is evaluated in the do while
+loop
+the while loop on the other hand checks
+the condition before executing the
+function
+so as we can see in the diagram
+the do while loop starts and the set of
+instructions are executed
+after that the while of condition is
+checked
+if it is true then again the set of
+instructions or statement will execute
+so basically in do while loop
+the set of instruction will execute once
+before checking the condition and after
+that it will check for the condition to
+be true
+so we can say the set of instructions
+will execute once even if the condition
+is not met
+let's understand do while loop with the
+help of an example here we will do an
+example of fibonacci series so fibonacci
+series is the series in which the
+sum of the
+previous two elements is equal to the
+third element
+so let's start first of all we'll write
+function mean
+now inside this we will create a
+variable let's i this is a counter
+variable so we'll start with 1
+and now another variable let's say n
+let's assign it 10
+after that
+we'll create a sum variable
+and sign it 0
+then where
+let's say f1
+and make it 0
+and where
+f2 and we'll make it
+1
+all right so we know in fibonacci
+sequence first two elements are 0 and 1
+all right so that is why we have
+assigned f2 as 1
+and we will print it
+now we have to do this example with the
+help of do while loop so first of all
+we'll write do
+and inside this do
+we'll write i plus plus that is we are
+incrementing the counter
+then
+we'll print
+f1 because
+in
+fibonacci series the first number is
+always 0
+write f1 we have assigned f1 as 0 so it
+will get printed
+now we'll write sum
+equals f1 plus f2 this is the logic
+and after this we'll write f1 equals to
+f2 that is we are assigning the value of
+f2 to f1
+and
+f2 equals
+sum
+so here what we are doing is
+for each iteration we are assigning
+second number to the first number
+and assigning the sum of the last two
+numbers to the second number
+so
+fibonacci sequence works that way
+0 1 1 that is the sum of the previous
+two elements is the
+third element like 0 plus 1 equals to 1
+then 1 plus 1 equals to 2 then 2 plus 1
+equals to 3 so that is how it goes on
+now
+after do block we'll use
+while loop
+inside the while loop will put a
+condition
+that if i is less than equal to n
+as we know the value of i is 1 on
+increment it become 2 and the value of n
+is 10.
+so the loop so this block will keep on
+hydrating till
+i becomes equal to 10
+and as we know that i is now 2 after
+this block executes which is less than
+10
+so again this block will execute
+so it keeps on iterating till n become
+till i becomes equal to 10
+so it will print up to 10
+that is 0 to
+10 digits of fibonacci series now let's
+try to run this one
+as you can see
+these are the fibonacci series 0 1 1 2 3
+5 8 13 21 34 there are total 10
+digits so as you can see 0 plus 1 equals
+to 1
+1 plus 2 equals to 3
+then there is 3 plus 5 equals to 8
+then there is
+8 plus 13 equals to 21 13 plus 21 equals
+to
+34
+so
+this is our fibonacci series and we have
+done it with the help of two while loop
+so these were some examples of loops in
+kotlin you can try some more examples on
+it it will help you understand this
+topic better
+so with that we have come to the end of
+this topic
+if you like this video please give it a
+thumbs up
+i hope it will help you all
+thanks for watching stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

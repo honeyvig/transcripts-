@@ -1,0 +1,344 @@
+hey everyone welcome to simply launch
+youtube channel in this session we will
+learn about merge sort in data
+structures
+now let us quickly look into the agenda
+for today's session
+we will first begin with understanding
+what exactly is divide and conquer
+algorithm next we will try to define the
+merge sort algorithm after that we will
+understand the working of merge sort
+algorithm later we will learn the pseudo
+code of merge sort algorithm after that
+we will understand the complexities of
+merge sort algorithm
+next we will see some of the real-time
+applications of merchant algorithm and
+finally we will wind up the session by
+understanding some of the important
+drawbacks of merge sort algorithm but
+before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn so without further ado
+let's get started with our first topic
+that is what exactly is divide and
+conquer algorithm
+a divide and conquer algorithm
+iteratively divides a problem into two
+or more sub problems of the same or
+relative type until
+they are simple enough to be solved
+directly the sub problem solutions are
+then integrated to solve the original
+problem
+there are three steps involved in the
+divide and conquer principle that is
+divide
+conquer and combine the first step is to
+divide the significant problem into
+smaller sub problems
+the second phase is to conquer the
+solutions to all divided sub problems
+then the final step is to combine and
+merge all of the solutions to create a
+definite solution
+we will understand this by an example
+right here on my screen
+suppose we have a large problem we can
+use divide and conquer technique to
+divide it into n number of sub problems
+such as problem 1 problem 2 problem 3
+problem 4 and so on until we reach the
+problem n
+then we conquer all the solutions to the
+specified sub problems as solution 1 2 3
+4 and so on and finally we match all the
+solutions to get one definitive solution
+now that was divide and conquer
+algorithm followed by that let us get
+into merge sort algorithm
+so merge sort is one of the most
+efficient sorting algorithms it is based
+on divide and conquer strategy merge
+sort continuously divides a list into
+numerous sub-list until each sub-list
+contains only one entry then merges all
+those sub-list into a sorted list
+there are four elements on my screen
+we have seven and three in the left half
+and five and two in the right half after
+dividing the four elements in half we
+combined all the items in ascending
+order that is two 3 5 and 7.
+in the next segment we are going to
+understand how it happened and we are
+going to learn the working procedure of
+merge sort algorithm
+there are two approaches to implement
+the merge sort algorithm the first
+method is top-down approach and the
+second method is bottoms-up approach the
+first method that is the top-down
+approach implies that it begins with the
+large picture from then it's broken into
+smaller chunks
+now the second method that is the
+bottom-up technique which starts with a
+specific number of jobs and works its
+way up to the general
+let's have a look at how to implement
+the merchant algorithm using top down
+approach the top down merge sort
+approach is the methodology that uses a
+recursion mechanism it starts at the top
+and proceeds downwards splitting the
+array into two halves making a recursive
+call and merging the results until one
+gets to the bottom of the array for a
+better understanding of the top down
+approach method
+consider the following scenario right
+here on my screen we have an example of
+an array of size 6 consisting of
+elements 7 3 9 5 6 and 4 starting with 0
+and ending with 5.
+using the following formula we'll divide
+the array by its middle that is middle
+is equals to left plus right divided by
+2.
+we have three elements on the left and
+three elements on the right near the
+middle so according to the drop down
+strategy we divide the given array in
+half resulting in three elements that is
+7 3 and 9 on the left and 5 6 and 4 on
+the right next we sort all these
+elements in ascending order by doing so
+the first half will be 3 7 and 9 and the
+right half will be 4 5 and 6 and after
+merging all of them we will have the
+sorted array that is 3 4 5 6 and 9.
+next we will understand the bottom sub
+approach
+an iterative process is used in bottoms
+up merge sort approach it starts with a
+single element array and then joins two
+neighboring items while also sorting
+them the combined sorted arrays are
+combined and sorted again only until one
+single unit of the sorted array elements
+remains
+now let us look at an example right here
+on my screen in the first iteration we
+will merge pairs of array sizes by one
+sorting each of the two elements when
+you iterate the array by size one the
+elements seven and three become three
+and seven similarly nine and five become
+five and nine and finally six and four
+become four and six
+we will merge the pairs of array size by
+2 in the next iteration with the bottoms
+up method as a result the elements 3 7
+and 5 will become 3 5 and 7 and the same
+way 9 4 and 6 will become 4 6 and 9.
+in the last iteration merge pairs of
+array size by 3 so that after sorting 3
+5 7 4 6 and 9 becomes 3 4 5 6 and 7 as
+sorted arrays
+after understanding the working
+procedure of merge sort algorithm we
+will now see the pseudo code of merge
+sort algorithm
+we have a function called merge sort in
+this pseudo code and parameter of the
+function contains an array named as
+array and two variables named as left
+and right
+if the number of elements in the left is
+greater than the number of elements on
+the right we will get a middle using
+formula left plus right divided by 2 the
+merge sort is called and this function
+now has an array a left variable and
+right variable by calling merge sort we
+have array left as middle plus
+one and right variable and finally by
+calling merge sort we have left middle
+and right variables in our upcoming
+segment we will implement the merge sort
+method in a practical demonstration
+in the next section we will discuss the
+complexity of merge sort algorithm
+first we will look into the time
+complexity of merge sort algorithm as we
+all know time complexity in data
+structures is divided into best case
+average case and worst case the best
+case of merced algorithm is big o of n
+into log n average case of merced
+algorithm is big o of n into log n and
+the worst case of merge sort algorithm
+is big o of n into log n
+the number of elements being sorted is
+given by n merge sorts time complexity
+is big o of n star log n in all three
+situations that has first average and
+best because it always divides the array
+into two halves and merges the two
+halves in linear time
+it takes up the same amount of space as
+the unsorted array as a result it is not
+a good idea to use it to search big
+unsorted arrays moving on to the space
+complexity of the merced algorithm the
+space complexity of the merge sort
+algorithm is large o of n
+in the merced algorithm we store the
+left and right parts of the merged array
+in the temporary arrays and then utilize
+the original array to keep the entire
+merged array in the worst case scenario
+the left and the right sub arrays will
+each be n by 2 in size and then the
+total auxiliary space will be big o of n
+resulting in a space complexity of big o
+of n
+following that we will look into several
+applications of the merge sort algorithm
+so the first application is merge sort
+is an efficient way to sort linked list
+in big o of n log n time
+subsequent application of the merced
+algorithm is for linked list
+merge sort implemented without taking up
+more space followed by that the mozart
+method is used to count the number of
+inversions in a list
+last application states that in internal
+sorting the merge sort is employed
+now let us look into some of the
+drawbacks of merge sort algorithm
+so some of the drawbacks of merchant
+algorithm are for smaller assignments
+merge sort algorithm is slower than the
+other sorting algorithms for temporary
+array the merge sort technique requires
+an additional memory space that is space
+of big o of n
+now let us look into a practical
+demonstration of merge sort algorithm on
+my screen we have an example for merge
+sort
+algorithm to define constants or micro
+substitution we use the hash defined as
+preprocessor directive with a constant
+variable max of 10. following that two
+arrays array 1 and array 2 are declared
+we declare array 1 and initialize it
+with elements like 8 4
+7
+6
+2
+3
+5
+9 10
+4 and 1.
+array 2 is used for temporary array then
+to implement the merge sort concept we
+declare a merge sort function we specify
+three variables in this function
+parameter that is left right and middle
+the left variable is used to display the
+left part of the array1 the right
+variable is used to display the right
+part of the array1 and middle variable
+is used to indicate the middle or center
+of the array in this function
+we utilize the for loop in this function
+setting the left 2 level 1 the middle
+plus 1 to level 2 and the left to
+variable i with the condition that level
+2 is less than or equal to the middle
+and level 2 should be less than or equal
+to the right of the array we have a
+condition in this for loop that if level
+1 of array 1 is less than or equal to
+level 2 of array 1 we will initialize
+all the consecutive elements of level 1
+of array 1 to array 2. else we will
+initialize all the successive elements
+of level 2 of array 1 to array 2.
+out of for loop all subsequent elements
+of level 1 of array 1 will be
+initialized to array 2 until level 1 is
+less than or equal to the middle all
+successive elements of level 2 of array
+1 will be initialized to array 2 until
+level 2 is less than or equal to the
+right of the array
+using the loop which will run from i
+equal to the left of i is less than or
+equal to right we initialize all the
+items of array 2 to array 1. we have
+declared one more function in this code
+namely sorting out of the merging sort
+function in which only the left and
+right variables are defined we specified
+the middle function in the sorting
+function with the condition that if the
+left is less than the right the middle
+will be calculated as left plus right
+divided by 2. then we called a sorting
+function passing left as middle as right
+and then another sorting function
+passing left as middle plus 1 and right
+finally we use the merge sort function
+passing left middle and right to the
+sorting array 1 otherwise we would
+return nothing
+we entered the main function out of the
+sorting function where we declared the
+counter variable i and printed the array
+before sorting using the printf function
+in for loop
+where i will run from index 0 to the
+array's maximum size after that we
+invoked sorting method
+passing left as 0 index number and write
+as the iris maximum value finally after
+doing the merge sort process we will
+print the array using the printf
+function and for loop
+we will run
+from 0 to the array's maximum value then
+we compile the program and run it
+now let's try to quickly execute this
+program and see the output
+so there you go the program got
+successfully executed and the list
+before sorting is 8 7 6 2 3 5 9 10 4 and
+1 and the list after sorting is 1 2 3 4
+4 5 6 7 8 9 and 10.
+and with that we have come to an end of
+this session on merge sort algorithm if
+you have any queries or if you need the
+code executed in this particular
+tutorial then please feel free to let us
+know in the comment sections below and
+our team of experts will be happy to
+resolve all your questions until next
+time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

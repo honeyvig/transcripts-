@@ -1,0 +1,511 @@
+hello everyone and welcome to another
+video on Python Programming in this
+video I will give you an introduction
+into lists and tuples starting off with
+lists lists are a collection of ordered
+orbit arbitrary objects that are similar
+to what we call an array in other
+programming languages but lists are way
+more flexible when it comes to python
+python lists are a type of sequence you
+might have seen what a sequence is when
+we were learning about strings and much
+like in sequences or any other sequence
+list objects are assigned a numerical
+index and whenever you want to
+manipulate an object in a list we use
+its respective index how do we Define
+lists the lists are defined using square
+brackets so this is a simple way or a
+simple list that I have just created and
+assigned to a variable a which contains
+three objects one two and three let's
+talk about some of the features of
+python lists python lists are are
+ordered and what this means is that even
+if two lists contain the exact same
+elements if they if the elements are
+placed in a different order the two
+lists are actually unique and different
+and I can check that over here I have
+created a list one two and three and see
+if I create another list two and one and
+three the same elements were in
+different order I will use the is
+function to check whether these two
+lists are the same and if they are the
+same when I use is function it should
+give me the value or the answer true and
+if they're not the same it should give
+me the value false and as you can see I
+get the value false because even though
+I have two lists with the same elements
+they are in different orders and so they
+are different and that's what we mean by
+lists are ordered the next property for
+lists are that they can be manipulated
+using their indexes or the elements and
+the objects inside a list can be
+manipulated using the indexes and we
+will see that in the section where I
+show you list operations the next
+property is lists are mutable what this
+means is that once we create a list
+object we can actually make changes and
+modify them without having to create a
+new list object the next property is
+that lists are Dynamic and what this
+means is that as we are making or as we
+are programming we can actually make
+changes to an already created list as we
+are programming without having to go
+through a compilation stage so if we had
+to say increase the or we had to add
+certain elements to an already created
+list that original list grows in size to
+accommodate for these new elements the
+next property is that lists can contain
+any arbitrary objects so if I created a
+list right now where say if I want to
+store some numbers
+say some floating Point numbers now
+and I can put strings as well into my
+list all of these are valid uh when it
+comes to objects that can be put inside
+a list we have no such restrictions so
+we can put any arbitrary objects inside
+our list the final property that I want
+to talk about is that lists are they can
+be nested to any arbitrary depth what
+this means is that I can put a list
+within a list and I can keep nesting it
+essentially by putting as many lists I
+want within my list and I'm only
+essentially restricted by my systems
+memory so if I created a list like this
+within this say I put any other list and
+within this list I put another list I
+can keep going on to by keep going on
+doing this and I'm only restricted by
+the memory of my system that I'm using
+so moving on let's move on and talk
+about some important list operations
+that we will be doing when it comes to
+lists so let's create a basic list
+called a where I'm storing six numbers
+so now say if I want to retrieve a
+particular element say if I want to find
+out what's on the index 3 this is how I
+would do it if I wanted a slice of my
+original list and much like strings I do
+it the same way so what this does is it
+tells python that I want all the
+elements of list a from index 1 to index
+4 but not including index 4. so it'll
+give me one two and three index objects
+so it should give me 2 3 and 4 in this
+case as you can see here two three and
+four I can do the same thing by
+considering elements say two at a time
+if I wanted to consider elements or
+consider every second element what I
+would do is this syntax I would use this
+syntax and when I give this command to
+python what it tells what it understands
+is I want every element from a from
+index 1 to index 4 but not including
+index 4 but I am gonna considered to
+every second
+element essentially so what it will do
+is it will go here and then it will skip
+one and then go here and then Skip One
+and that's essentially what we uh what
+it's essentially what we call
+slicing by using strides so I'm taking
+strides I'm not considering elements
+consecutively but I'm skipping certain
+elements in between if I wanted to
+consider every third element I would
+change this to three and fourth element
+I would change this to Fourth all right
+so let's see what happens when I take
+every second element it should give it
+should give me uh it will consider say
+from one to index three right so it
+should consider essentially this section
+but since it's going to skip one it's
+going to consider this skip this and
+then consider this it should give me two
+and four as you can see it has given me
+two and four and like in other sequences
+we can use negative indexes as well
+negative indexing essentially starts
+looking from the right hand side of the
+list so when I say A minus y one it's
+essentially looking at the last element
+of the list so it gives me the sixth or
+the last element which is the which is
+object six if I did a minus two it gives
+me the second last element similarly
+another neat trick that we can use for
+sequences is the following syntax double
+colon and we give a minus one what this
+tells the what this tells the system is
+I want the list a but with all the
+elements reversed as you can see I get
+my element uh my list a but the elements
+have been reversed right now let's move
+on to uh concatenation and replication
+well concatenation much like in strings
+is done by using the plus sign so as we
+know on either side of the plus sign
+should be two similar objects so if I'm
+doing a plus something a being a list on
+the other side it should be a list as
+well so let's add a list like this now
+let's see what's in a
+as you can see my origin list has a 789
+added to it and I can also add things to
+the beginning of a list similarly so if
+I wanted to add say zero you know at the
+beginning for this I just do it like
+this
+and I get the element 0 added to it it's
+very important to note that I I actually
+added 0 within a list because if I did 0
+like this it will throw me an error
+because like this 0 is just an end
+object and it's not a list but when I
+put the square brackets I make it a list
+and then this concatenation becomes
+valid because a is also a list similarly
+if I did a star 2 this is essentially
+replication or a replication function
+where I'm repeating the values in a
+twice if I did a star 3 it's the same
+function but now I'll have the elements
+repeated Thrice as you can see here
+let's move on to modifying list values
+uh this also shows the mutable property
+of lists that I had mentioned earlier so
+let's consider this example so I created
+a list with elements where it is the
+three strings eggs apples and carrots
+and I have five int objects one two
+three four and five now if I wanted to
+change say the first element all I have
+to do is take the 0th index and say if I
+want to replace x with same mango this
+is how I would do it now replace eggs
+with mango if I check what's in B you
+can see the eggs have been replaced with
+the element mango similarly I can use
+the slice syntax to replace a particular
+slice from my list with a slice
+essentially so let's look at this I'm
+replacing I want to replace the first
+three elements I want to replace mango I
+want to replace apple and carrot so what
+I will do is I will consider this since
+this carrot is the second index so I
+will consider 0 to 3 because third is
+not counted now I'm going to replace
+this with three different
+um let's see kiwi
+and say sponge now let's check what's in
+B you can see my three elements have
+been replaced in fact I don't have to
+replace like for like if I want to
+replace say three elements with only one
+or two elements that is also possible so
+now if I want to replace the first three
+elements kiwi orange and sponge
+with um just one element this is how
+I'll do it let's say wine now let's
+check what's here as you can see three
+elements have been replaced with one
+mine I can double vice versa as well I
+can replace smaller number of elements
+with a larger number of elements but
+here there is a slight caveat that I
+want to show you so an obvious way of
+doing this would be say if I wanted to
+replace the first element wine with
+three different elements an obvious way
+would be just consider that elements
+index and then put whatever objects you
+want say I want to add instead of wine I
+want to add beer I want to add ball and
+say Club yeah well let's see what
+happens now if I say B check what's
+inside my you can see my elements have
+been added but they seem to have been
+added as is you know I had entered a
+list over here and that whole list has
+been replaced uh or this wine has been
+replaced by this whole list in the first
+position but that's not exactly what I
+want it I wanted the elements within
+this list to be individually placed into
+my list and the way to do that is not
+this syntax but actually what I'm going
+to show you now if I want to replace one
+if I want to replace the index of the
+object at index 0 I would give this
+statement a slice statement where I will
+give 0 colon 1 so when I do this and if
+I
+um so let's create my old scenario again
+where I had wine and I had one two three
+four and five now if I do this B 0 but I
+give a slice then this slice is
+essentially a single object slice it's
+essentially the zeroth index again but
+because of this formatting or this this
+type of syntax that I'm using what
+python will do is now when I say peer
+and ball and club now what python will
+do is it will not consider this whole
+list and add it to in place of uh wine
+or whatever I want to replace it will
+actually consider the elements inside of
+this individually and then replace so if
+you see here now if you see my list I
+actually have the I've removed wine and
+in place of it I've put beer ball in
+club but these three are actually
+individual objects within my list and
+not objects within a list that is then
+placed within my original list so this
+is an important caveat that you should
+take note of so moving on let's talk
+about certain methods Associated to
+lists let's take a simple list now one
+two and three the first operation that I
+want to show you or the first method is
+the append method so when I do a append
+and say if I want to append the list by
+one object called four I just do it like
+this now let's see what's in a I put so
+as you can see the append has put the
+object 4 into my original list now say
+if I wanted to append three different
+objects I want to append five six and
+seven now let's see what append function
+does oh no as you can see it's done a
+similar operation to what we have seen
+earlier when we gave a single index or
+the single element replacement uh that
+we saw earlier it essentially put this
+whole list into this particular spot
+into the list and this is not what I
+wanted I wanted five six and seven to be
+individually placed and we do have a way
+of doing that and the way to do that is
+the extend function that is what I'll
+show you next now if I want to extend
+Say the original list by three different
+elements eight nine ten when I use the
+extend function it will not put this
+whole thing it will consider each object
+inside this thing individually and then
+add it to a so if you see my result this
+is exactly what I wanted now the next
+method that I want to discuss is the
+remove method so the remove method is uh
+what you how you use it is within the
+parenthesis you put the object that is
+present in the list that you want
+removed so you don't give an index over
+here you give the object itself so if I
+want the object eight all right this
+number if I want 8 itself removed what I
+will do is put the value 8 here and it
+will remove it from my list so if I
+check my list a as you can see the value
+8 has it's gone an X another similar
+function to remove is the pop function
+now the pop function by default will
+remove the rightmost value from the list
+but unlike remove the pop function
+actually outputs a value and that value
+is what we have popped out of the list
+so by default it will pop out the right
+route right most value of a list a
+rightmost element of a list and in this
+case that element is 10 so it should
+give me 10 but of course if we want to
+pop out any particular object in this
+case we will not give that particular
+object we give its index so now say if I
+want to remove this uh this list object
+from my bigger list
+um as I can see it's in index 0 1 2 3 4.
+it's the fourth index so if I want to
+remove the list which is at the fourth
+index I give the index value inside the
+parenthesis and it pops that out for me
+as you can see over here so this was it
+for list let's move on to tuples next so
+tuples are another ordered collection of
+objects much like lists but they differ
+from lists in two Key Properties first
+of all the tuples are defined using
+parenthesis instead of square brackets
+so this is how I would Define a tuple
+with elements one two and three and the
+next very important property that is
+different or that differentiates tuples
+from lists is that tuples are immutable
+and what this means is that once we
+create an object of type Tuple we cannot
+make any modifications to it we would
+have to only create create a new object
+if we wanted something different and
+this is obviously a key difference
+between a tuple and a list but apart
+from this every operation that we have
+done on lists are actually possible to
+do in the case of tuples as well so any
+operation that we did to lists that did
+not modify the list or that does not do
+any modification we can actually apply
+to tuples as well so if I wanted the
+first element of this difficult all I
+have to do is call it by the index 0 it
+should give me the value 1 as you can
+see if I wanted a slice I can do that as
+well it should give me 2 and 3 and if I
+wanted to reverse my Tuple well I can
+use my same neat technique that I've
+used for lists and that I can use for
+the sequence I mean strings as well so
+it gives me my old Tuple but with the
+elements reversed so now the natural
+question is why do we use Tuple server
+lists well one important difference is
+that when we can when we make a program
+execution where or where we are
+manipulating a tuple if we did the same
+thing for the exact same objects in uh
+that if it were present in a list it
+would be much faster in a tuple
+essentially program execution is just
+faster on tuples when compared to an
+identical list so use tuples over this
+when we want to be efficient while we
+are creating an ordered list of objects
+so whenever we create an order ordered
+list of objects that we don't need to or
+we don't want to make any further
+modifications to we don't need to create
+a list we can create a tuple and another
+very important area where we use tuples
+over list or why we need a tuple instead
+of a list is when we are using
+dictionaries dictionaries as we will see
+later is a data type in Python that
+needs an immutable component while we
+are creating the dictionary so if we
+want to use something that is like a
+list but since lists are mutable we can
+use a tuple instead and use that when we
+are creating our dictionary and we will
+see like what what I mean by the
+immutable component for a dictionary
+when we actually learn about
+dictionaries but yeah these are some of
+the places where we would use a tubers
+over a list a brief section on Tuple
+unpacking and packing is what I would be
+doing right now and what that means is
+that when I create when I give this sort
+of a statement
+you can assume this to be me packing
+this Tuple into a object or a
+variability now what's very interesting
+is and this is something that's very key
+to tuples is that I can unpack a tuple
+onto another Tuple so let me show you
+what I mean by that so now that I have
+packed one two three and four Tuple into
+T let's unpack it into another Tuple
+let's call this let's uh put these
+elements into this Tuple and I put this
+into T alright now let's see what I mean
+by unpacking something onto something
+let's see what's the what what happens
+when I put a if I just want to see
+what's in a it actually gives me the
+value one if I see what's in B it gives
+me the value 2. if I see what's in three
+pulling value three and D gives me value
+four so essentially if you think of it
+what I have done is I have matched this
+Tuple then put it into T and then put
+that Tuple T into this Tuple a b and c d
+so what it's what what has happened
+essentially is the element a has been or
+a better way to say this would be the
+element one has been packed onto or
+unpacked onto a two has been unpacked on
+to B three has been unpacked onto C 4
+has been unpacked onto D to show you
+what I've done in a single line is
+essentially this this is essentially
+what I've done
+I have assigned 1 to a 2 to B 3 to C 4
+to D I have matched these two tuples
+together like this and this is a very
+neat feature of tuples the only only uh
+important thing that you have to keep in
+mind is the elements of this Tuple and
+the elements of this Tuple uh should be
+equal so if there are four elements here
+there should be four elements here all
+right I in fact another very important
+thing about or a neat feature is that we
+don't really need to mention the
+parenthesis when we're doing this uh
+unpacking or packing so if I did X comma
+y comma Z if I did it like this if I put
+say five and six and seven this is also
+a valid way of packing and unpacking so
+now if I see what's the value in X it is
+actually five if I see what's the value
+in y it is six if I see what is the
+value of x and z it should give me a
+tuple containing five and seven as you
+can see over here so this is a neat
+feature of tuples called packing and so
+yeah this is it for lists and tuples and
+I hope you understood some of the
+concepts around English centiples and as
+always if you enjoyed this video do drop
+a like and uh do subscribe to our
+Channel it helps us a lot and I hope to
+see you in the next video thank you for
+watching
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

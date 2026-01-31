@@ -1,0 +1,684 @@
+hey everyone welcome to Simply loar's
+YouTube channel today we will learn
+about data cleaning for data analysis
+that said if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified just for your quick
+info if you want to upscale yourself
+master data analytics skills and land
+your dream job or grow in your career
+then you must explore simply learn go of
+various data analytics programs simply
+learn offers a data analytics
+postgraduate program from perg
+University in collaboration with IBM
+through this program you will gain
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts in Top Tire product
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transition into a data analytics role as
+a fresher or moved on to a higher being
+job profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+pin comment and description box below to
+find the data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with the session on data
+cleaning for data analysis so for today
+we will deal with this particular data
+set which is New York Airbnb open data
+2024 so this happens to be the latest
+Airbnb data set uploaded to kaggle on
+June 5th
+2024 so we will download this particular
+data set and uh let's presume that we're
+going to conduct some data analysis
+using this particular data set and we
+find some errors or in discrepancies in
+this particular and we'll try to clean
+it right so I have already downloaded
+this dat set and I've already extracted
+that particular Z file and here we have
+it let's try to open
+it following data conversions in this
+file convert large number of scientific
+notations do you want to permanently
+keep these
+conversions um you can just um you know
+you can just convert if you want and you
+cannot convert if you don't want it but
+I'll go with the convert option which
+might be recommended in few situations
+anyhow we will be cleaning the data set
+right so no worries on that part now if
+I expand the second column which happens
+to be the name column we already have
+some irregular discrepancies in the data
+if you go back to the website you can
+see it is a combination of okay let's
+scroll a little so you can see it's a
+combination of name rating and uh the
+configuration of that particular Swit
+room all right so it happens to be the
+name of the hotel rating and the number
+of rooms you have in there or the
+configuration of that particular hotel
+right by some error or by some way Excel
+is enable to recognize what exactly was
+there in the data set and it converted
+that particular data into a special
+symbol and remember you cannot work on
+this particular column you might think
+I'll use text to column s right you can
+uh say let's try it okay let's try it
+you might wonder I can go with text to
+columns uh solution and I'll use the D
+limiter as other and past that
+particular symbol here but it's it's not
+going to recognize it okay even if you
+copy it let's say I copy this value and
+try the option of text to columns by
+selecting the entire column and I'll
+give the D limiter as
+other is not going to paste it you don't
+have it right in such scenarios you
+might go you might you go crazy and you
+might not even have a solution for it
+right but what if I tell you a simple
+substitute function can help you here
+right seriously there are endless
+possibilities when it comes to data
+cleaning and the solutions are really
+simple and you cannot believe uh how
+easy it was right so uh this is the
+First Column and uh again if we go down
+to a little bit if you dig down a little
+bit you can see here the review date and
+uh you have neighborhood Hotel names and
+uh the latitude and longitude that means
+the location data and room type is it is
+it a private Suite or you know types of
+rooms try to understand your data try to
+read your data right that's when you
+understand what are the possibilities or
+what are the insights you can build
+using this particular data set right so
+read your data properly and uh here you
+have ratings right ratings is something
+which we can work with the cleaning
+process and um yeah so here you can find
+a few places where there is no rating
+right the rating is not provided here
+and if you come to the same row right if
+you go across the same row and if you
+come to the column B you can see we have
+rental unit in New York and all of a
+sudden we have one bedroom one bed one
+bath right so we don't have a
+combination of rating here and if you
+check out the cell uh B30 you have the
+rating and the configuration right in
+such scenarios if you try to split the
+cell you might end up with having
+discrepancies in the data set right so
+what you can do is wherever we have
+the rating as no rating or let's say no
+rating is equals to zero or Blank cell
+right we can replace these particular
+notating with blank cell and imagine
+that these are the blank cells that you
+might encounter in real life scenario
+and you wanted to eliminate those
+particular blank cells and rows because
+they might cause some discrepancy and
+you might end up getting a wrong report
+right so let's try to also work on that
+particular solution where we have blank
+cells in the data set and we remove the
+entire r or blank cells okay we can have
+a use case on that part as well and uh
+here we have another column that says
+license and uh we go down we have the
+configurations
+here right so that's it with the data
+okay and uh here if you check out we
+have a column called priceing right so
+it gives you the pricing details let's
+say uh I come from a different country
+right um let's say I come from India and
+I pay in terms of rupees or I come from
+UK and I pay in terms of let's say
+pounds right and you come from United
+States of America and you pay in um
+terms of English dollars United States
+right this causes a lot of discrepancies
+and for a report where you are trying to
+convert or where you're trying to
+generate an exact report what you want
+and you have some discrepancies in the
+data set it might end up giving you a
+wrong result but for now it's correctly
+formatted in terms of whole numbers no
+decimal places no special symbols no
+currency symbols right so it's just
+plain numbers so uh let's say I don't
+want those symbols and we have the exact
+number over here and let's say in case
+we have some decimal values you can also
+add and remove those decimal value so
+you can change the um so in case if
+you're facing that issue with the
+currency format you can change of remove
+the currency format and change the
+decimal values to the whole number and
+uh yeah so let's get started so that was
+the brief overview of the data set and
+let's get started with uh working or
+data cleaning right coming with the
+first one which happens to be the name
+column column B we have a new
+column let's try to add a few more you
+might want
+that there you go
+now since we are you know uh creating a
+new column and trying to eliminate the
+special character let's okay let's not
+name this we have multiple symbols right
+so let's try to use them first let's
+copy
+it the SYM we want to
+eliminate okay and here let's use the
+substitute equals to substitute
+function text box let's try to fix it
+with F4 column B is fixed and the cell
+numbers will change and old is this
+particular text so we're going to insert
+a text right so let's try to insert that
+simil in double codes and what you want
+to replace this with nothing just two
+double codes
+enter
+now get across all the cells and we have
+eliminated this particular symbol which
+was capital A now we have another type
+of symbol right so if you clearly check
+the entire data set we just have one
+more special symbol which happens to be
+the lower case a alphabet a and followed
+by that we have few f stops right now
+let's try to replace that as well we are
+going to use the same substitute
+function Cel address let's try to fix it
+with function key
+F4 column C is fixed the cell numbers
+will change 2 3 4 5 6 comma the old text
+since we are keeping text so double
+codes inside that we have the text close
+the double codes and what you want to
+replace it with nothing two double Cotes
+close the bracket and enter now we have
+the name of the hotel rating and the
+bedroom right the configuration of that
+particular hotel rooms now drag this
+across all the cells and there you go
+now you have the data in the way you
+wanted it right now you can just simply
+copy the entire
+[Music]
+column new column all
+together copy the entire column let's
+try that once again go to the new column
+and here go to the paste special you
+just need to paste the values over here
+and there you go you can copy this
+particular column name paste it right
+here where we have the cleaned data and
+he can eliminate all the remaining
+columns delete them right right now you
+have another catch you want to split
+this particular data cell into the name
+of the hotel rating and hotel
+configuration but in few scenarios we
+don't have a rating right in this
+particular column B 15th cell we have
+the name and configuration but there is
+no rating right this might end up in the
+wrong data and again another catch is
+you have spaces right rental unit in New
+York it has space space rating space one
+bedroom right so we have spaces in
+between and we have a full stop for
+rating now how could you
+recognize and how could you split this
+particular data set we have no idea on
+this right now uh let's say we want one
+two three uh column right so we want one
+column for the name of the hotel and one
+column for the ratings and one column
+for the configuration right we have
+created this particular um you know
+configuration but we don't know how to
+split it right how do you split this
+particular cell into three different
+columns now comes help from chat
+gbd just copy any of the cell I'll copy
+this particular cell and go to chat GP
+PT which is in my tab over here start
+chart GPT and explain your problem to
+chat
+GP I have a
+cell with
+data double codes enter the
+data I want Excel
+formula that that can
+split the given
+cell
+into as shown
+below right now paste the same data and
+split it first one name of the hotel
+second one the rating and third one the
+configuration right clear just be more
+specific about what you want uh chat GPT
+to help you with right so I want Excel
+formula that can split the given cell
+into uh three
+different columns as shown
+below right just enter and chat jbt
+should be able to help you so it is
+telling you to use the mid-end search
+functions and it has already given you
+three different formulas for three
+different occurrences let's try the
+first one which is with the name of the
+hotel right just place it over here and
+obviously you will get the value because
+the cell address is different so we are
+supposed to give B2 as the cell address
+let's try to fix the cell address so the
+column B will be fixed and cell numbers
+will be changing copy that particular
+cell address and paste it over here and
+press enter now you have the name now
+drag this across all the cell and you
+have the cell names I mean Hotel names
+right now let's go with the second code
+copy that paste it over here and same
+process you will have to change the
+address to
+B2 let's try to fix it using function
+key
+F4 column is fixed cell numbers will
+change copy that replace A1 everywhere
+in the formula now you will have ratings
+in a few cells and in a few cell we have
+the configuration which happens to be an
+irrelevant data because there was no
+rating provided by the user in that
+instant so we will remove that don't
+worry we will have a separate process
+for that and again equals to so we will
+replace A1 with
+B2 try to fix the column using function
+key F4 there you go copy the cell
+address replace all the a ones in the
+formula and to thank you chat gbd which
+help you with a beautiful formula right
+so places where you get stuck you can
+use some AI there right so there must be
+some mistake that we
+did undo it and I think we messed up the
+formula somewhere so let's try to copy
+the code AS provided by chat GPD and
+place it exactly where it's supposed to
+be going and replace
+B2 to fix the
+formula we
+paste paste paste it here paste it
+everywhere it's supposed to be press
+enter okay there must be some mistake
+let's check the formula properly once
+again I have a reference data set of
+this let's try to open the reference
+data and check the
+formula
+so I think it's with the prompt so we
+gave the prompt in this way so it has
+double spaces somewhere so I think let's
+check the formula once again go back to
+the original data set control Z and
+here I think we have single space no we
+have double space that's the
+problem
+yeah okay so we can ask CH GPT for a
+different formula and try a different
+formula in this particular location in
+case if it's not working then equals to
+the
+formula so in place of A1 we will have
+B2 we can fix the address
+F4 Cy place it right over here and this
+over here enter
+right okay it's not working
+properly
+okay we Chang the formula a little bit
+with addition of mid sege and length now
+if we enter this particular formula I
+think it's it's it's going to work just
+replace a1's
+with b2s
+everywhere with
+fixing and enter there you go now you
+can drag the same data set across same
+formula across all the cells and you
+should be having it
+now this is
+done let's try to copy all the
+data you have copied it now delete it
+and now you will be pasting the values
+only as
+required okay let's try to insert three
+new
+columns okay so I think we have the
+option
+of selecting the entire column and then
+deleting it and then let's try to copy
+and
+now right click insert copy cells now we
+still have the formula right so we don't
+want the formulas
+anymore let's try to work around it copy
+the cells
+insert three different new
+columns here and copy these three fghh
+columns and go back to here and now try
+to paste the values only values and this
+in this scenario you don't have any
+formulas embedded in this particular
+data now what you can do is just quickly
+delete these um cells which you don't
+want anymore in your data set
+that so I think you don't want EFG JK so
+I think we U mistakenly uh inserted the
+data twice so let's check the original
+data just for
+reference so I would always recommend
+you to keep a copy of the data set that
+you're working with so that anytime you
+have a problem just go back to the
+original dat set and have a look at it
+right now I think we don't even want
+this particular column over here so we
+have the name of the
+hotel
+rating and now if we come back to the
+rating section remember the blank cell
+elimination process we were discussing
+about that's the one so you can quickly
+uh select the entire data set go to sort
+and filter option and filter
+and here you can select the rating
+section and deselect everything and go
+with the last one new and rating okay
+now you have only the new and no rating
+options over here you can just quickly
+select the entire uh column and delete
+it which will end up giving
+you the approach of having FL sets Now
+quickly remove the filter
+option now you have some blank cells
+right now what to do with the blank
+cells simple contrl a go to contrl g go
+to special and here you have blanks
+select that and there you go now all the
+blank cells are
+selected it might take a little while
+because we have around some thousands of
+rows the blank cells are selected now
+press control and hold it there and
+theness press it it's the minus symbol
+right now you have different options
+just select the entire room you know you
+can just eliminate entire row with any
+discrepancies it might take a while
+again just give Excel it's time to
+delete the
+unnecessary uh blank cells and rows in
+the data set so that we have a
+completely formatted data set there you
+go I think we are good and now for
+verification if you check the
+configuration section or the rating
+section you will not have any
+discrepancies which fall into or they
+are spilling into the um rating section
+you know the configuration section
+should not be spilling into the rating
+section and that's how we do it so far
+it's good enough and I think there is
+one problem over here right so I think
+it uh this particular uh you know row is
+having some errors with this particular
+spell cell splitting function okay
+that's not a problem so we can quickly
+check for that discrepancy and uh you
+know we did the filters option right so
+quickly filter
+out and uh it should add a new
+filter so if it has anything else than
+numbers you should be having in the end
+so yeah I think we have a couple of
+celles with some irrelevant entries you
+can just quickly select those cells and
+eliminate them as
+well I'm un selecting everything and
+selecting only the cells that have some
+Text data so that you can have those few
+rows maybe around 7 to eight rows and
+eliminate those
+rows there go and now if you quickly
+remove the sort filter options we have
+the data set ready and now uh we will
+also learn the trim function before we
+go any ahead okay in some scenarios we
+might need that let's say I have okay
+let let me insert a new
+column let's say I have some irrelevant
+blank
+spaces and the spaces in between here
+which will cause a new problem for us
+while we are performing our data
+analysis jobs right in these scenarios
+if you use the trim function it will
+eliminate any improper spacings just try
+trim tap to select and enter and if you
+drag the same formula across all the
+cells you can eliminate any Extra Spaces
+here you see there are no spaces for the
+data that you have entered you have
+trimed out any excess spaces in between
+the text in the beginning of the text
+and at the end of the text right so this
+is again a good option for us you can
+just quickly undo everything so that you
+don't have to worry about the Extra
+Spaces right there you go and that's one
+way of removing Extra Spaces from your
+data set and uh let's say if you want to
+keep this in the form of uh uppercase
+let me insert a new
+column let us remove this
+and uh let's say I want in
+uppercase just tap to select there you
+go and you have it in uppercase right
+just drag the same formula across all
+the cells you have it and let's say you
+wanted the same in lower case you can
+just type in lower tape to select and
+there you go and in case if you had the
+same problem uh let's say the name is
+all in upper or lower and you want it in
+proper case you can just press proper
+and select select the function proper
+and there you go you have the proper
+case right that's another way of you
+know doing things or okay the text
+cases and uh now so far we have dealt
+with um splitting text into columns and
+uh converting the upper case to lower
+case and also trimming the Extra Spaces
+and uh also using the substitute
+function and U yeah we have uh also
+dealt with the currency format and uh we
+have a few more let's say we wanted to
+work with data okay I think this
+particular data set does not have the
+date column okay we do have it
+here last
+riew okay so I think it's uniquely
+formatted it does not have discrepancies
+with date with Am Pm right okay we'll
+we'll try to look at that from a
+different perspective different D set Al
+together don't worry about it now
+another common factor let's say I have
+some duplicate entries let's go back to
+the bottom section and let's say I have
+a duplicate entry of these three uh know
+rows
+copy and paste it over here now we have
+some duplicate data entry now you can
+select the entire data set go to data
+option and here we have something called
+remove duplicates option right if you
+click on that it will remove it will
+first it will select all the columns
+okay uh and remember to check this
+particular function check on my data has
+headers select all the uh columns don't
+forget any of the columns okay what it
+does is it will check all the columns
+and if there is an entry which is
+similar to all the columns right all the
+column headers are same to same and all
+the entries in each and cell every cell
+are uh under the column header are same
+to same then it considered and considers
+it as a duplicate entry and eliminates
+it so far according to our knowledge we
+should be having at least three
+duplicate entries let's see when you
+click on okay duplicate I think so it
+has already eliminated it so I think we
+didn't past it properly but that's how
+you can eliminate the duplicate entries
+in your data set let's try to do that
+once again and select all remove
+duplicates
+yeah one did not past the values
+properly previously but that's how you
+can remove the duplicates one duplicate
+value is found and removed so that's how
+you can eliminate duplicate entries in
+your data set and uh here so far so good
+we have learned the formatting thing we
+have learned the split to cells we have
+used chat GP to get our formulas we have
+formatted cells from upper lower proper
+and we did substitute functions we did
+the currency formatting and yeah what
+remains is about the date formatting so
+let's work on a different data set all
+together if we go to file and
+open this particular T set I think that
+should be beneficial for us or let's go
+to yeah yes this is the one I was
+talking about right now let's close all
+the previous dat sets don't save
+anything and this I think you might want
+to save let's save this for reference
+now we have this particular data set
+right in front of us and you can see we
+have um date and time formatting in 24
+hours and if you scroll a bit to the
+bottom you can find we have the same
+data in terms of date time that is 12
+hour timing and AM and PM right now you
+might wonder you can just directly split
+the data set into space You Know by
+giving the D limit as space and I can
+eliminate the timing but if you see the
+data set title it's about crime right so
+if you are going to perform some proper
+data analysis based on time location and
+date you might require the date in the
+form of date time amm and p.m. right you
+might want that time section you don't
+want to miss that right so in such
+scenarios you can take the help of
+custom formatting see here we have date
+month time and hours and minutes and a.
+and p.m. just select the entire column
+go to this particular formatting and go
+to custom and here remove General and
+past the data set formatting you want in
+terms of date month year hours minutes
+am and p.m. select okay and there you go
+00 got replaced with 12 a.m. which is
+the beginning of the day and the entire
+column is being now in having a uniform
+date time format so so these were the
+few tips and tricks about data cleaning
+for data analysis and should you fail
+that we missed out on any of the other
+important aspects of data cleaning
+please let us know and let us know by
+your information or data or any of the
+help that you can help our Learners to
+learn about a few techniques by adding
+that particular suggestion in the
+comment section below and help our
+community to learn new techniques of
+data cleaning for data analysis and with
+that we have come to of this session on
+data cleaning for data analysis and if
+you need any help regarding any of the
+topics covered in the session or the
+data sets that we used in the session
+please do let us know in the comment
+section below and our team of experts
+we'll be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply done staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career here we've got
+you covered explore our impressive
+catalog of certification programs in
+cuttingedge domains including data
+science cloud computing cyber security
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to no
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

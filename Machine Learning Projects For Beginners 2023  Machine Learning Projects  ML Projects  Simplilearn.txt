@@ -1,0 +1,3445 @@
+foreign
+hello everyone welcome to this machine
+learning project for beginners in 2023
+by simply learn
+this video will help you with all the
+concept and give you ample hands-on
+experience building machine learning
+models
+we have an experienced instructor who
+will take you through this Project's
+video
+but before we start let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+so in today's session we will go through
+her disease prediction using machine
+learning after that we will move on to
+the next project which is hate speech
+detection using machine learning and at
+the end we will see how to detect fake
+news using machine learning hope you
+guys are ready to learn something new
+so without any further delay let's get
+started so cardiovascular disease it
+still is the number one killer
+um over 12 million people die from
+cardiovascular diseases every day and
+what we have learned so far
+um is that these some of these deaths
+are preventable and so there's quite a
+lot of research that is going on uh both
+in the lab and in the field and as we
+will see here in the area of data
+science that is helping to make a
+difference and so there's the famous
+Framingham heart study started way back
+in 1948 and continues to to date in its
+third generation of participants but
+this study was uh instrumental in US
+beginning to collect data specifically
+for studying heart disease it's now been
+extended to start study other kinds of
+diseases but we can use the data which
+is now you know I amassed several um
+thousands of participants and we can use
+this data applying machine learning
+techniques to help us understand
+the disease how it is manifested how it
+you know what are the signs and symptoms
+of the disease and then use that also to
+uh you know predict the presence of the
+potential presence of the disease
+um in some in asymptomatic patients and
+so help to guide them such that they do
+not develop the disease also help those
+who have developed disease what steps
+can be taken to reduce their risk of
+dying from the disease so machine
+learning has been very helpful to
+Medical practitioners in the field of
+cardiovascular disease as well as other
+diseases if getting your learning
+started is half the battle what if you
+could do that for free visit skillup by
+simply learn click on the link in the
+description to know more
+I talk about the
+step on I want you to keep these five
+steps in mind right I use the acronym of
+Afters to help you remember
+um you know first there's the
+acquisition of the data or acquiring the
+data then you will filter and clean the
+data and then there are this
+transforming the data then you explore
+the data then you split the data so I
+think of it kind of like you are
+following a recipe so of course you
+first have to gather all the ingredients
+together that's the acquire or the
+acquisition of data States then next is
+you will be filtering your data similar
+to if you are baking a cake you want to
+filter and sift your flour and other dry
+ingredients to make sure that it's clear
+and clean and so too with the data we
+want to make sure that the data is
+accurate and that is suitable and then
+um you know when you're baking a cake or
+even making bread or you know any kinds
+of recipe sometimes it requires you to
+transform the ingredients and similarly
+when you just like you would be melting
+the butter
+um taking it from solid to liquid we
+need sometimes to transform our data
+from uh Text data to numerical data or
+transform feet to meters you know
+there's always some kind of
+transformation of our data is concerned
+so that we have one accurate data and we
+have a uniformity of the data that is
+suitable for our model requirements then
+the next step is after we've sort of
+transformed the data and we have it
+uniform we do an exploration of the data
+and this is where you get the
+understanding of your data so there is
+some exploratory data analysis
+um you know there's lots of General
+version of plots so for visualizing so
+there are some patterns and certain
+Trends in the data that you will begin
+to understand as you explore your data
+and that will guide the kind of machine
+model that you'll be able to build from
+your data and sometimes you will go back
+to the transformation or even the
+filtering stage so there's kind of a
+cyclic process here until you get your
+data in a state that is just right for
+making generating the model and then
+once you get to that state there's
+splitting off the data so you first are
+going to split into uh the X thetas the
+X variables and the y That's provided
+that you're doing some kind a particular
+kind of machine learning model meaning
+that you're making models where the
+labels are important
+or maybe not but you will require
+splitting and then there's another split
+that you do more of a horizontal split
+so you split your data more sometimes 80
+20 or even 70 30 so that you can save
+some or reserve some for the testing so
+the first uh 70 you will use for
+training your models and then the 30
+you'll use to test the performance of
+your model and evaluate it and then
+decide how and when if you need to make
+some changes so that you can improve the
+performance of your model so those are
+the main five main stages there are
+others that are involved and will see
+those as we go along but you want to
+remember acquiring filtering
+transforming exploring and then finally
+splitting up the data before you start
+modeling so acquiring data acquisition
+is the first first stage of any machine
+learning project and so there are
+various Ways by which you can acquire
+the data that you need it's important
+that that data is suitable of course to
+the problem the business problem the uh
+societal problem you know whatever the
+issue is the phenomenon that you are
+trying to model or or to learn or to
+gain Insight from you want to First make
+sure that you have suitable data so you
+can get the data by scraping the
+internet you can extract that data from
+another source you you can
+be involved in your own data collection
+in terms of whether it's a survey or
+some type of other activity and or you
+may have to combine data from different
+sources but these are ways that you can
+actually acquire the data that you need
+and so sometimes it's just simply
+getting the data from the internet as we
+will be doing my data acquisition
+stage is actually quite short because I
+am using data that is available when it
+comes to the Framingham heart study data
+set it's quite popular a lot of people
+use it you can get it from of GitHub you
+can get it from many different sources
+you can Google just Google Framingham
+hard study data set and it'll show up
+and so I've downloaded it and saved it
+to my computer and so I'm going to so of
+course first before I can load it onto
+my notebook which here is uh the Google
+collab notebook and so I need certain
+tools right so these are the tools that
+we need to start our
+um you know project and so first we will
+have the importing of pandas
+numpy matplotlib
+scipy escaler and Seabourn so a pandas
+is for the data frame numpy's for
+numerical type activities my matplot lab
+is for our graphs basic graphs and
+charts scipis for statistic sklearn as
+well as while Seabourn is also for
+graphing and SQL and the sport when we
+actually do the modeling so we will
+import those by running this
+cell here and once that has run we will
+then you install I need to install
+install this uh Pi read stat because my
+data set is in the sav form now yours
+may be in Excel or CSV so you would use
+a different uh function here method here
+for loading your data set but this is
+what I'm doing so now we have all of
+these modules now I can install my
+pirate stat
+module and then I can load my data so
+for that I am going to make sure that my
+data set is actually
+loaded here
+and
+so I'm going to
+make sure that I'm loading this data set
+that I need from my
+computer and
+here it's going to tell me that this is
+a temporary load and that's okay because
+we can always load it again so now that
+I have all of these in place now I can
+go ahead and actually read my data set
+in into my notebook
+and so once I've done that then I can
+take a look at my data set by looking at
+the first five rows and so that's what
+the dot head method does
+uh then I can see you know I'll give an
+example just a snapshot of what is
+contained in my data set in terms of the
+types of columns or types of features
+and then what the rows look like so it's
+showing here that I have 34 columns in
+all but we don't know how many rows so
+that's where the dot shape comes in so
+if I do that it gives me it says that I
+have 4
+578 rows the first value it's the number
+of rows and the second is the number of
+columns as we saw here then if I want to
+just take a more detailed look at what
+is in my data set I use the dot info
+method and that gives me a list of all
+of the columns in my data set as well as
+whether those columns are filled
+contained information or not to the
+extent that so we have four thousand
+five hundred and seventy eight rows and
+so we see ages all of the age uh rows
+are filled but not so much with
+cholesterol so anything that is less
+than
+4578 we know that it's missing some
+values also this dot info gives you
+information about the type of uh data
+that's in each column so summer floats
+and others are categories and then the
+final thing we do when it comes to just
+looking at our data is using the dot
+describe method so I can
+show here in terms of what the average
+value is for all of the features and
+then I can see what the minimum value
+and the Max and 25th and 75th percentile
+and so on so for that I've used the dots
+describe and so I've transformed The
+Matrix so that it's in a different
+Arrangement and then I've also applied
+this display dot float so that I can
+remove
+um the extraneous
+numbers after the decimal point so
+that's what we would do when it comes to
+you know just acquiring the data and
+taking a look at it and making sure that
+it is what we wanted it to be so after
+you have acquired your data this is the
+this is where you will do the filtering
+of your data and the main idea of the
+filtering is to get rid of the errors
+duplications any kind of data that
+doesn't belong that is not going to be
+helpful to you in your modeling process
+as well as looking for outliers and any
+kind of extraneous type of info that we
+may have to make some uh do some
+transformation to depending and so we
+would look for outliers of course then
+we'd see if you know there are values
+that are entered that don't belong we
+also want to get rid of duplicates
+because that could cause bias and
+inefficient modeling and we also want to
+look for invalid data right so if it's
+supposed to be measurements of heights
+then we want to make sure that it's all
+numerical and that there is no text in
+there
+Etc so that's what the filtering is in a
+nutshell so let's do some filtering of
+our data so for the filtering I noticed
+that we had first of all when I did do
+the dot describe now that mind you that
+gives you only the numerical or values
+that are labeled floats in this case not
+the ones that are categorical and if we
+looked at the dot info method right
+we'll see that there is uh as far as the
+seventh column or the eighth column is
+concerned there's a PID or some kind of
+ID and it's labeled as a float but that
+is it you know it's not an in
+information that we can use for our
+modeling and then there was another uh
+ID measurement somewhere in here in
+terms of the ID type so I wanted to
+First go ahead and remove those two
+columns so I'm using the dot drop Mouse
+method I put the tuned column names into
+square brackets as a list and then I
+identify the axis 1 to note that these
+are in the columns
+um ID so once we do that I reassign that
+back to the data frame we can do simply
+do an in place equals true as an option
+so I do that and now I've gotten rid of
+that and if I do dot shape again we
+would see that now we have actually
+32 rows to 32 columns now and we do have
+457
+rows so we have
+so one I get rid of the columns the PID
+and the ID type and I check my the
+dimensions of my data frame I can see
+that instead of 34 I now have
+32 columns and I still have the same
+number of rows so now we've gotten rid
+of those
+um you know invalid in in pieces of
+information they are not important to
+our modeling secondly now we want to
+look for missing values and that's where
+we use the is null so what that'll do it
+will show us wherever there are values
+missing it will say true if the values
+are there and they're valid that well
+whether they're valid as long as their
+value is there it will say false so we
+want to get a count of all the missing
+values in each of the columns so we
+would use the is null and then we would
+add the dot sum to it so it'll tell us
+for LDL cholesterol 67 values are
+missing for diabetes status 11 and so on
+and if I want to get that as a
+percentage of The Columns of the total
+number of observations I can then do
+divide by the length and multiply I by
+100 to get a percentage so for the LDL
+cholesterol column
+1.464 percent of the values are missing
+so that's how we would identify the
+missing values now there are other ways
+we can look for amazing values and that
+is using this missing goal module and
+once I import that then I can use the s
+m s n o to get a visual of my data frame
+so I would use
+msno.bar and I would put the name of my
+data frame into the uh as an argument
+and that is going to give me this lovely
+bar chart where we can see in anything
+that is not the length of the other bars
+we know that there are some missing
+values now our data set does not contain
+a lot of missing values so the bars look
+almost identical but just as an example
+alternatively we can use the dot matrix
+method and what that does it gives you
+to a printout of the Matrix where when a
+missing a number or value is missing you
+will get a white space
+not much missing so not much to look for
+then finally when it comes to missing
+values visualizing Missions at missing
+values we can use the heat map right we
+can now do the msno heat map and that
+gives us some idea of the
+um you know the correlation between the
+missingness of one column relative to
+another
+and so we can see that of course
+certainly glucose
+um times HDL so this is a interaction
+column or feature created from the
+glucose and the HDL measures and
+certainly that is going to be correlated
+with HDL cholesterol because it's
+generated from that
+um and so we can get an idea in terms of
+the relationship between the missingness
+of one feature relative to another
+because that's going to determine how we
+deal with these missing values right so
+depending on the nature of the
+missingness whether it's related to
+another column or not or whether it's
+related to the Target column or outcome
+variable that we're trying to model for
+or predict then we're going to treat
+those differently from those that mean
+who's missing this are not correlated
+with the target variable so you want to
+Bear those things in mind
+so when it comes to dealing with the
+missing values there are a number of
+things that we can do now
+we are in this case uh for example we're
+going to delete the rows from two of The
+Columns where they're missing values in
+fact not delete we're going to impute or
+we're going to fill those with the mean
+of that column so in the first place
+when it comes to the LDL cholesterol
+we're going to fill in all the missing
+values with the mean for the LDL
+cholesterol similarly we're going to
+fill in all the missing values for the
+fasting blood sugar with the mean of the
+fasting blood sugar and so once I run
+that that's what's going to happen and
+so if I do that now I can see that when
+it comes to LDL cholesterol there is no
+longer
+missing values as well as for the
+fasting blood sugar so they've now been
+filled in and so for the other column
+where there's still some missing values
+because the percentages are so low we
+can go ahead and simply drop the rows
+that contain missing values and that's
+what we use the drop and A4 and we apply
+that to our data frame and then
+reassign it back to the data frame we
+can also alternatively do and in place
+equals true when we so we don't have to
+reassign it it will actually happen to
+the data frame itself but we now have
+that and then if we check for
+missingness we see now all of our
+columns are complete so we are good to
+go as far as missing values are
+concerned no more missing values
+that's one of the ways there are other
+ways to um you know Python and sklearn
+comes with some very fancy modules or or
+um different programs algorithms that
+you can use for filling in missing data
+doing whether it's the mean or the
+median or the mode depending on what
+type of variable it is but these are
+some of the basic ways you can either
+fill in with the mean using the fill n a
+or in this case if the missingness is
+um usually not more than 10 percent then
+you can go ahead and drop those columns
+um so now we have accounted for all our
+missing values and so the last thing it
+would do for filtering as far as our
+data set is concerned is to check for
+any duplication and our data frame there
+are no duplication as far as the entire
+rows are concerned right there are no
+two rows that are the same now if we
+wanted to look for duplication by way of
+say you know one column or group of
+columns then we could use
+the the subset inside of the drop
+underscore duplication duplicates method
+right so this is giving you info here
+about this uh method and it's showing
+you that you know by default it's
+there's nothing that you will be using
+as kind of a subset so it's looking for
+the entire row and you know if it does
+find it it will generally
+um keep the first and you can stipulate
+whether you want to keep the first or
+keep the last and so that's because we
+don't have anything any miss any
+duplications then we can't really um we
+don't have to use this so that's what we
+would do for filtering we would First
+Look for missing values
+um in this case I also got rid of
+firstly the uh those PID numbers because
+we're not important to our modeling then
+I checked four missing values and I
+dealt with that and then I checked for
+duplicates and I also dealt with that
+so that's how the basic filtering method
+would occur so the third step in our
+machine learning process is that a
+transformation and remember these steps
+can be fluid there's no hard and fast
+rules because as you will see there's
+some
+um there might be some filtering going
+on in transformation and vice versa but
+essentially transformation
+um is mainly about changing the values
+into a form that is suitable for
+modeling
+so first and foremost the models can
+only accept numerical values and so if
+we want to use a certain column a
+certain feature in our model algorithm
+then we would have to change any text
+into a type of numbers whether that's
+integers or floats so that's the main
+model uh transformation that happens
+there's also
+um sometimes you know some mapping going
+on where we may be changing a continuous
+variable into some kind of a bin
+grouping binning
+um also there's of course
+the formatting when it comes to date you
+know if we're doing time series type of
+of modeling then we would want usually
+when we get the data set it comes in as
+text as far as the date values are
+concerned and so we would have to
+convert them to the special python date
+type
+um
+pictures so those are some examples of
+the transformation data transformation
+that we do when it comes to machine
+learning there are quite a few more but
+we'll just touch on some of the basics
+for now so the transformation that we're
+going to do here so first let's remind
+ourselves what kind of data we have in
+our data set and I think I made some
+changes so let me go back to I'm going
+to run all of this again just to make
+sure
+um I'm giving you everything so this is
+we load the data the then we did
+um we what were some of the other
+changes we got rid of these IDs then we
+looked at the missing values then we
+actually filled in those two columns
+with the mean and
+the also dropped other columns with
+missing values so that's the main steps
+that we've done so far so now with the
+data transformation so if we look at our
+you know data set as far as the data
+frame is concerned we see we have floats
+and we have some categorical variables
+some of which should be very it should
+be categoricals others possibly not but
+um so for example we have these date
+values that we're going to need to take
+care of if we want to use them in the
+model as they are intended
+um also things like gender now here it
+is a float so we also look at this
+diabetic status so that's if we saw what
+the categories are so it's non-diabetic
+diabetic so just two categories so this
+is labeled here in the data frame if I
+can find means diabetic status right and
+it's oh it is categorical here so
+um right now it's fine using it as
+categorical we can then see what those
+values look like in terms of if we
+wanted to get an idea of the
+distribution of diabetics in our data
+set we would do a values counts
+and that would give us what that looks
+like if we want to do it as percentage
+we would do normalize equals true and so
+.035 are diabetic very low percentage of
+diabetes diabetics in this data set but
+if we wanted to convert that to a
+numerical say we want to include it in
+our model then we can use the dot
+replace method and how that works is you
+identify the column using uh calling it
+out with the square brackets and you dot
+replace and inside of that method we're
+going to include the categories that are
+the original feature and then as a list
+and then we include another list for the
+values that we'd like to replace these
+with so if I run that so now I'm
+reassigning it back to the data frame so
+it's actually actually changing my data
+frame and then if I do the unique that's
+what happens now if we were to run this
+again a second time
+here then we would see that instead of
+saying non-diabetic and diabetic it's
+now saying one and two
+so that's one of the other ways this is
+a this is a second way that we can do
+some kind of data transformation and
+that is using uh the pandas get dummy
+and it's usually used when we have these
+categorical variables that we want to
+change into some numerical values so
+that we can now include them in our
+model and so what to get dummies does is
+actually going to
+um give each of the category
+its own numbers and so if we ran that we
+see here now it's doing one and we
+wherever there's that person is actually
+diabetic you would get a one here and
+then that person would be a zero so it's
+taken that one column and split it into
+two columns and so now we see whenever
+there's a diabetic it's one in this
+First Column and if that person is now
+um if that person is not diabetic then
+the one would be in in a in a different
+uh column for the diabetics for the
+non-diabetics so that's how that would
+work now if I were to say use this with
+a different column that maybe we can do
+the age group
+feature and if I ran that so the first
+thing we would do is let us
+see
+what are the categories for age group so
+if we did that we put our age group
+column in here and I want to make sure
+that I get the name correct so I would
+do age group and I would put that in
+here in place and that would give me so
+there are the age groups of this 26 to
+40 and 41 to 60 and 70. so 1 2 3 4 5 age
+groups so we could go ahead and we could
+do something like we did here
+for the diabetics column and so we put
+that in there we now are going to
+replace our age group so we have all of
+these as
+the various column headings now oh and
+we're going to use that here
+and this is also going to be age group
+as well
+and so for these now what we're going to
+do is we're going to replace
+these with actual text that we can use
+so less than 25 we're going to call
+these the young uh the youth let's say I
+owe you th and then the next grouping
+we're gonna say Young
+adults
+and then the 41 to 45
+we're going to call these adults
+then for 56 to 70 we'll say middle
+aged and then we will say old right so
+those will be the categories that we are
+replacing them with so we can run that
+and now if we were to do
+values count we can see how those
+are distributed in our data set
+so there we have it we have adults young
+adults middle age and if I wanted to do
+a plot of that I would do kind
+equal
+four so that's using the built-in python
+plotting method
+and that would generate this lovely plot
+so we can see the distribution and so
+that's how that would work and now if we
+also wanted to say do they get dummies
+what that's going to do it's going to
+create a new column for each of our
+categories
+and I think we did that
+now we have one two three four five
+columns and of course here this person
+is a doll so it's one here and zero
+elsewhere the first person is a young
+adult so it's one there and zero
+elsewhere and so on so that's what this
+get dummy does it's going to create an
+additional column for each of the
+categories so that's one of the ways
+that we usually convert categorical
+variables to numerical variables now you
+want to be careful that there aren't
+um excess of categories right because
+then you have the curse of
+dimensionality as far as your model is
+concerned so we want to avoid that
+there's other method here we can do is
+to use the label encoder and so we
+import that from the pre-processing
+module and once we've done that we
+create an instance or we get a a
+blueprint of that out algorithm we
+assign that to the name l e and now we
+can use it here we're using the model
+here and we're going to fit it and
+transform it on the data set for gender
+and I already did that here but that is
+what if we so if we took a look at the
+this column
+as it was originally in the data set so
+let's do a value
+counts on that
+and that would show us how many males
+and how many females
+um so it's giving us that two and one
+and I'm not sure which is which but we
+can also always check the data source
+and find out so if we do I think I
+already applied that to my data set
+which is why so let's go back
+so if we wanted to look at the
+categories in a categorical variable of
+course we always we can use the uh dot
+unique and that would give us just the
+name of the categories and so we see
+those categories here but if we wanted
+to find out what the distribution of
+those categories are that's why we use
+the values count so here we're seeing
+for the BMI grouping we have four
+categories now we could do um use the
+label encoder module
+that is built into
+python so we just load it
+um into our data to our notebook and
+once we have used that we create an
+instance we can use it to transcript and
+transform the feature or the column
+value and then we can see how it is
+distributed so what it is done it's
+converted all each of the names of the
+categories into numbers so now we have
+overweight is one and normal is zero and
+morbid obesity is now three and
+underweight is two so that's how that
+would work now the final transformation
+is that of transforming uh converting
+the text to a date time feature so we
+want to convert the text date
+to the pandas daytime feature right so
+it's state as a text
+and we're going to now convert that to
+pandas daytime and for that we use two
+underscore dates time and we include
+that column inside of the parentheses as
+the argument to that function so once we
+do that so it's PD to underscore dates
+time with the column identified here and
+we reassign that back to our data frame
+so now when we look at our data frame
+and here we we had date time as a float
+or whatever it was before now it is an
+actual pandas date time object so those
+are the main basic types of
+transformation that you would do to your
+data set in preparation for modeling so
+the fourth step in our data science
+machine learning project is that of
+exploration data exploration or
+Eda exploratory data analysis is an
+extremely important step in our modeling
+process right this is where we get an
+insight into the trends and the
+relationships that may exist in our data
+there we can find what the anomalies are
+we may also do some univariate biferate
+or even multi-period analysis and if
+necessary where we want to determine a
+relationship but it's not an obvious
+linear relationship then we would do
+some hypothesis testing whether that's
+between two of the predictor variables
+or between a predictor variables and the
+outcome and of course all of this is
+going to involve data visualizations so
+this is where you're going to generate
+your charts and graphs and
+um other types of visualizations that
+would help you to understand and what is
+the information contained in your data
+because looking at the numbers and uh
+data frame that is generally not going
+to give you all of the insights that you
+that is is contained in there and so
+we're going to do some of that now so
+when it comes to
+exploratory data analysis right so the
+first thing is understanding the
+distribution of the values in your
+variables right whether they are
+continuous variables
+integer variables so the numerical can
+be integer or they can be continuous and
+then for the categorical whether it's a
+binary variable or there are more than
+two categories so looking firstly at our
+Target variable which is CHD coronary
+heart disease we can do a value counts
+with the normalize equals true and that
+gives us a nice table showing the
+percentage of values or observations in
+each of the categories similarly we can
+add the Dot Plot with the kind equal bar
+and generate a graph for that and so we
+see significant imbalance which we're
+going to have to deal with before
+modeling but
+um another way we can look at the
+distribution of variable goals relative
+to one of the features so now we're
+moving on from you you know the universe
+type of analysis to buy variate analysis
+so we want to look at all of the
+variables as far as sex is concerned
+right so we are going to use the group
+by Method and then to that we're going
+to apply the mean so what the group by
+does it creates a data frame a separate
+data frame for each of the categories in
+a particular variable so here we have
+sex and it's going to
+divide our data set our data frame into
+the two categories and then find the
+mean for each of those values so so if
+we ran that what it shows us here now we
+have age and cholesterol and smoking and
+so for the gender labeled one we have an
+age an average age of 40.979 and for the
+gender labeled two we'd have an average
+age of 40.84 so not much difference as
+far as the age is concerned when it
+comes to cholesterol certainly there is
+a difference the gender age is up 1.19
+and those who are labeled two are
+1.07 and so if we
+um just from the fact that there are
+higher percentage of smokers in category
+one I'm going to assume those are the
+male I may be wrong but that's my
+assumptions over and then
+um there is a 13 you know as far as
+smoking is concerned there's a 13
+percent
+um measure of of smokers and then
+fasting blood sugar and so if we can
+look at all of the values
+um that we have here and see if there
+are any differences as far as the gender
+is concerned now if we wanted to say
+just focus on our outcome variable right
+we can just choose that and that would
+give us the distribution as far as the
+gender is concerned so for one uh there
+is a a point of 0.04 average
+heart disease whereas for two it's a
+point zero one five nine so we can you
+know choose other values here to to
+select from our sex group by but that's
+how you would do
+a binary type a bivariance type of
+analysis and you can also plot that as
+well if you did plot dot kind
+let's see kind equals bar here that
+would give you a general so now we can
+see here as far as the gender is concern
+the percentage of those with heart
+disease
+and that's uh that is binary bivariate
+distribution now because I wanted to
+convert those and based on what I had
+seen before in my table and I just want
+to go back to that to remind me again
+and I'm going to remove that because I'm
+saying here that
+two is female let's change that and that
+one is male
+and usually there's a info package which
+comes with these data sets so you can
+confirm that but uh so if we now instead
+of having the zeros in one which is good
+for modeling but when we want to do
+graphs and charts you know the
+exploratory type data analysis then we
+need to have that labeled so what I'm
+going to do is I'm going to create a
+separate
+um
+you know column an additional column now
+for gender or for sex and I'm going to
+call this
+um the categorical version so here
+um I do that and now if I do my group by
+again this time with my new column then
+I can see female and males there and so
+now what I want to do is generate a plot
+and resolve we can do it directly from
+you know using Python's syntax but if we
+wanted to use the SNS
+um module right so SNS allows us to do
+categorical variables and so you can use
+the female male categories and actually
+generate a plot so we have a heart
+disease and I'm going to replace this
+with our
+new um
+pictures I want to make sure that I'm
+identifying the right column and so now
+we can see a lovely graph that shows us
+the average
+um you know what average male percentage
+of heart disease is relative to the
+average female percentage of heart
+disease so on average males are for
+points well I'm saying 4.5 something
+percent whereas with a female it's
+probably 1.8 percent or so and so that's
+what that 1.6 actually so so that's how
+we would do our
+bivariate type of analysis in general
+right you can do the group by and then
+generate a chart or graph and support
+select a column in particular or we can
+actually use our cat plot where we
+identify the data frame then we identify
+the why you know values right so those
+are going to be what's you know is on
+the x-axis and then we choose the
+particular column so now for the x-axis
+and we can see what that looks like so
+that's uh you know we can also do things
+like we can do instead of just a cat
+plot we can do a uh scatter plot
+um for our variables and here we're
+going to have to use uh make sure that
+we're using you know continuous
+variables even though there's some
+variables in here that are labeled
+continuous that are not so what we're
+going to do is we're going to go back to
+our
+um list of variables and at least see so
+I'm assuming that this is a continuous
+variable and we're going to put that in
+here and then we'll choose another
+continuous variable and we put that in
+here and now we can generate a scatter
+plot for those two variables right and
+so that's what our scatter plot looks
+like and I'm going to just kind of make
+it a little bigger and for that I have
+to make sure
+that I have the object so I can do PLT
+dot bigger and then I can do big
+big size
+and I'm going to say 12 by 7 or so so
+um yeah so we need to have the equal
+sign there you see how it was telling me
+something is wrong so now we have that
+um now what does this mean let's see
+what happens here
+and it is saying that I need another
+comma okay very good so now we have our
+plot and it's you know bigger and we see
+we have some outliers here that's the
+other thing that data exploration helps
+you to see these outliers and the these
+anomalies right and so we'd have to
+figure out how we're going to deal with
+it so certainly when it comes to the
+cholesterol measure there is some there
+is an outlier
+um if we wanted now this is the
+bivariate analysis we can make this a a
+trivariate analysis by adding Q equals
+to
+um in this case we're going to use our
+Target variable and if we ran that now
+we get a plot and we can see where the
+those who are considered having had the
+heart disease they are how they're
+distributed so that's what we would do
+as far as these things are concerned now
+so if we wanted to we could also use the
+sns.reg or regplot and what that does it
+gives us a trend line so we can see if
+the variables the two variables that
+we're plotting if there is any uh linear
+relationship between those variables and
+so that would be this trend line
+depending on the
+um
+depending on the angle of the trend line
+if it's a steep angle that we know that
+there is a strong relationship if it's a
+small angle then there's a weak
+relationship if it's a straight line
+then there is no relationship so that's
+the general just of uh doing these type
+of bivariate analysis for our variables
+using either scatter plot or rank plot
+and then when it comes to the
+categorical variables we would use the
+value count or we would use our group by
+like we wanted to do a multivariate
+analysis
+right so we could separate our data
+frame into categorical variables and
+numerical variables so here I'm creating
+a subset of categorical variables and
+I'm using the select underscore D types
+method and here I identify the columns
+type that I want to select for so when I
+run that I get only the categorical
+variables or at least those that are
+labeled categorical variables and so I
+can now look at my variables and here
+this is where I am seeing you know so we
+see here that these are the different
+categories but if I were to look
+specifically at the variables that I am
+now identifying as
+categorical so we see those are the ones
+with
+only two three four the max here is
+seven categories right and so these are
+um these are the original variables
+diabetic status and then 10-year update
+and even there's a filter variable
+created here and we have these uh
+variables so this was an extra so they
+bend the variables so HDL they Bend into
+three groups then s b p the systolic
+broad pressure they built into four
+groups and BMI they also built into four
+groups age they built into five so this
+is all the variables where they created
+additional variables so they did some
+type of transformation essentially in
+this data set
+um and then if we wanted to we could
+actually now do some separation of our
+variables as far as as we can look at
+and what I want to show how we did just
+the numerical variables but what I
+noticed was that there were some
+variables that were a labeled
+categorical
+or not that were labeled either
+floats numerical values that were not
+necessarily
+categorical variables and I'll give you
+an example
+so if we looked at the number of unique
+values in some of our data set some of
+our columns for example
+smoking only has two unique values that
+tells me it is
+actually a categorical variable but it
+does not label the categorical because
+it doesn't show up when we separate
+those label categoricals from those
+label the not label category smoking
+should be categorical social sex it's
+not shown up here of course our Target
+variable is also categorical
+then tenure debate 10-year update there
+are a bunch of these variables that
+actually should be labeled as category
+or should be treated as categorical
+um and some of them are but others
+and some of them are but others are not
+and so when we go to our modeling we
+want to make sure that we have
+transformed the variables appropriately
+now let's look at uh the numerical
+values choose from over 300 in-demand
+skills and get access to 1 000 Plus
+hours of video content for free visit
+skillup by simply learn click on the
+link in the description to know more
+so continuing with our
+exploratory data analysis right so we're
+separating out the categorical variables
+at least those that are labeled
+categorical but when we do our DOT
+unique for the entire data set we see
+that there are some cats some of these
+features that are that only have two
+unique set of values that should ideally
+be categorical variables and they're not
+so what I'm doing here is I'm going to
+now
+assign the entire data frame you know to
+a separate data frame based on those
+unique values and then I'm going to
+um you know give this new
+data frame well by putting it as using
+dot reset index I've now converting it
+to a data frame effectively and so
+that's what it looks like here except
+that the column labels are weird so
+that's where I'm giving the the column
+labels actual names features here and
+categories and so one I do that now I
+can
+convert all of the data types
+to integers because Summer floats some
+are integers but what what I'm
+converting to integers are use these
+values right because I want to be able
+to sort those values and once I'm I've
+sorted those values now I well I
+probably didn't need to sort it
+necessarily but I am now going to uh
+create a subset
+of features
+that have unique
+categories less than 10 because those
+are the true categorical variables and
+so once I do that now I get a list of
+these uh columns that ideally that
+accurately should be labeled
+as categorical and so now I can use this
+list of feature name or column names to
+create my true
+um categorical
+data's frame subset and so this is what
+we have here and so once I have done
+that now I I don't need to to print this
+out again so I'm going to delete that
+but now once I've done that now I can
+use this data set which is of
+categorical variables and I can produce
+count plots so count plots is one of
+um the plot type in
+of the SNS module and that allows you to
+plot a categorically labeled variables
+and so you can see what those looks like
+look like as far as the distribution is
+concerned so if we did Count plot of
+this feature now when it comes to SNS
+you always have to do data and you have
+to identify the data frame
+and then you can identify what the X
+values that you are wanting to to count
+for
+um essentially so now we can generate
+that count plot if I spell it
+correctly
+and we can see here a distribution of
+all of the categories
+in that particular variable so
+um most of the data set is made up of
+those between the ages of 26 and 40 and
+41 and 45 so from 26 to 55 sorry that's
+the majority of and it gives you an
+actual count of observations in each of
+these categories so so now that these
+are all categorical variables I can
+include them in my for Loop so I am
+using a for Loop and I'm saying for I in
+and I'm enumerating over the list of
+columns and so when you use the
+enumerate identifies the index as well
+as the value so I'm enumerating over
+this list of columns and then so for
+every column name I will then use that
+of the first object identified for my
+enumeration and that's going to be the X
+and of course the data is coming from
+the data frame and now I'm using
+the hue
+as the target variable so I can see how
+each of my variable is distributed as
+far as the outcome variable is concerned
+now because there is such significant
+imbalance there isn't much to see we you
+know when it comes to the percentage of
+persons with heart disease it's so low
+that you know you get these very small
+very low bars but that's what you would
+do so we can see here for smoking so if
+this is the smoking category these are
+the people this is the count of persons
+without without heart disease whereas
+those with heart disease similarly
+um so there is not much to see here but
+if you had a data set where there wasn't
+as much imbalance this would be
+something
+um very useful as far as the
+distribution of our variables are
+concerned
+thank you
+so now we are moving to our continuous
+variables right and so we are looking at
+those variables labeled
+plots
+and if we generate a subset of the data
+set we would get these variables here
+now we see heart disease is still here
+and some of the others now what I could
+do is do a subset of the data frame that
+is actually
+um minusing all that I have chosen for
+my categorical variable so let's do that
+so I'm using the
+dot drop method and I'm going to drop
+all of the categories that I have
+uh considered now uh as all of the
+columns that I consider categorical
+variables so as I do that now I see that
+they're all listed as float but I also
+want to get rid of this date column
+because it's a different type of data so
+we get rid of that and now we have some
+um we have our columns here actually I'm
+dropping it from this data frame not the
+main data frame necessarily so now I
+drop that and apparently it's already
+dropped from the data frame
+so
+let's see if I ran this again
+it is
+still there so why am I not able to drop
+it from this data frame Siege date
+access equals one there we go so now
+it's dropped and now we can do some
+things with our numerical data set one
+of the first things that we could do is
+to actually generate a
+correlation Matrix and so for that we
+would have the name of our data frame
+and we'd use the dot core method and
+that would give us a nice Matrix that
+shows the correlation between each pair
+of variable now because it's you know
+not as easy to look at all of these
+numbers and this is where the charts and
+graphs makes things a whole lot easier
+so we're going to use a heat map and
+that will give us a nice visual as far
+as the relationship
+between our variables are concerned so
+now I'm going to try to make this
+bigger by using PLT but bigger and I'm
+not sure if this is going to work but
+we're going to try I may have to
+actually do it inside of the heat map
+hmm
+function itself so we are going to do 12
+and 7 and see what happens here oh that
+worked so now we see our data frame as
+far as the continuous variables were
+concerned and where there is some
+correlation now of course
+this and uh the data frame we're seeing
+a lot of correlation LDL is correlated
+with the
+the
+variable that's uh created from L from
+HDL HDL yeah so it's also correlated
+with this variable here
+which is
+um the cholesterol so we have LDL
+cholesterol this is a
+intersection or a bisection variable or
+a interaction variable that's created
+between LDL and cholesterol and so of
+course it's going to be correlated with
+LDL as well as correlated with
+cholesterol so the other variables that
+it's correlated with let's see anything
+uh other than those mentioned not much
+Happening Here and HDL cholesterol oh so
+if we look at our uh Legend here though
+light values is positive
+strongly positive correlation whereas
+the dark values are the negative
+correlations and these negative
+correlations are not more than minus 0.3
+so not to very strong so for light
+correlations though so we can see that
+the passing blood sugar BMI interaction
+is strongly correlated with systolic
+well let me see that's about the seven
+strongly
+yeah that's five strongly correlated
+with um mod directly correlated
+with
+systolic blood pressure
+here we have so so there's a so as far
+as the interaction variables are
+concerned quite a lot so not much in
+terms of inferring anything
+um you know if we looked at some of
+these raw values age is
+not very strongly correlated with
+anything so usually the heat maps are a
+lot more informative but in our case
+um not so much but we can do some box
+plots to see how the variables the
+distribution of the variables so for a
+simple box plot you would simply do dot
+box plot so using the built-in python
+plotting but of course because the
+variables are on different scales it's
+really kind of doesn't show much so if
+we do the facet grid now where we have a
+separate box plot for each of the
+variables and not only do we have a
+separate box plot we can also now
+um separate based on additional
+variables so we can do bivariate as well
+as a tri-variage type of analysis here
+so here we're looking at gender versus
+age and so we can get each of the age
+groups as a separate plot as well as we
+can see
+um you know how those age groups the
+count of the different number of
+observations in in each of those
+categories relative to the outcome
+variable so we have the rows
+representing the gender so we have
+gender in the roles here and these are
+the two genders so we'll have the male
+and female so this is X sex one for this
+row and sex two for the second row and
+then for each of the columns now we have
+of age groups so we have the young
+people the 41 to 55 here and the 56 to
+70 and then we have
+the ones who are less than 25 and then
+those that are more than 70. so we get
+an idea of how the
+heart disease is distributed now mind
+you it's showing here this is zero and
+this is one even you know ignore what
+the x-axis is so this would be no heart
+disease heart disease no heart disease
+heart disease and so on
+um and not much difference as far as the
+gender it's hard to see anything clearly
+uh alternatively we could
+use the facet grid and instead of the
+histogram now we're using a scatter plot
+and so we're looking at these two
+variables comparing these um you know
+the relationship between fasting blood
+sugar and total cholesterol but we're
+now dividing uh based on the age
+grouping so we have the age groupings
+here and we have uh the fasting blood
+sugar versus the total cholesterol and
+then we have the Hue for as far as
+thought whether that person had heart
+disease or not
+so that's how you do some of these
+bivariate and even multivariate type of
+analysis
+if we wanted to look at just
+one you know just doing bivariate
+analyzes
+for a particular variable then we could
+do that so here we have the X as the age
+grouping and then we have y as the total
+cholesterol so instead of having a
+series of maps or graphs or charts this
+would just be one so we can do that one
+at a time so we create our uh objects or
+plot objects that I'll pick an X is
+equal to PLT subplot and it's
+determining the size so when we do S and
+S box plot where we identify the X and
+the y axis from this data frame and we
+say the ax is based on this ax we
+defined here when we run that it gives
+us this really nice graph where we can
+see the relationship between the age
+groups and the total cholesterol in
+terms of the or the mean of these values
+for each age group so we see definitely
+that those under 25 had a lower a median
+value as far as uh the total cholesterol
+is concerned and then for the 26 to 40
+we see there is definitely some type of
+an outlier happening here now this is
+interesting because what it's showing
+here that there's a total cholesterol
+outlier but remember we have different
+measures for our cholesterol so if
+instead of the total cholesterol we use
+the LDL cholesterol in that plot
+and we replaced it here so what that
+would show us now is that there is no
+longer an outlier in this group
+so the
+extreme value is actually the HDL
+cholesterol because remember total
+cholesterol is the sum of LDL and the
+HDL so just some further insights and
+then there is this uh
+outlier here possibly but LDL
+cholesterol you know something that you
+want to be wary of you know HDL is a
+healthy cholesterol
+so just some ways you can gain some
+insight and then finally if we were to
+generate
+um these box plots for each of the that
+variables we can see the ones so there
+we see that total cholesterol with the
+outlier there and then if we were to
+look for specifically
+that LDL cholesterol so we see HDL so
+there is the outlier in HDL and not so
+much in LDL
+just looking at it and so that's what
+we're looking so now we've kind of
+looked at all the ways we can do
+exploration of our data whether it's
+categorical variables using
+um the count plot or numerical variables
+we looked at the heat map and then we
+looked at some box plots and and of
+course Scatter Plots so just some ideas
+of how you can explore your data there's
+a whole lot more to it but just to give
+you some idea but now that we have
+filtered our data sets we've transformed
+some of the variables now we're ready to
+generate our machine learning model
+so when we did our data exploration
+however we learned that our Target
+variable which is uh CHD or coronary
+heart disease disease is significantly
+imbalanced and what that means is that
+there are very few observations in
+one of the categories and in this case
+it is the category of Interest which
+represents the persons who've had heart
+disease so if we do our values count we
+see that of the fourth the 4500 or so
+only 125 actually
+are recorded as having heart disease and
+if we do normalize equals true that
+shows us that about
+2.789 or so are those who've had heart
+disease so that is would be considered
+an imbalance um and if we were to look
+at that graphically we'd see that in the
+bar chart here
+using plots dot uh kind equal barf on
+the value counts alternatively we can do
+a plot kind equal
+pie and get par chart and I've added the
+labels here as well as the Syntax for
+removing some of the numbers after the
+decimal point so this is just to
+illustrate just how imbalanced the data
+set is and so we would need to do some
+kind of bootstrappings you know over
+sampling to balance out that Target
+variable
+so before that though we first have to
+we're going to do a splitting of the
+data set so we would normally do two
+splitting into the X and r y or the
+input and output or the predictors and
+the outcome variables and then we would
+split that into our
+train and test so if we wanted we can do
+so here we see what our data frame looks
+like and we're using the numerical uh
+The Continuous variables
+um because these are more attenuable to
+smoting and we'll learn what that is in
+a second but we we want to do smooth
+this over sampling and so that's going
+to be based on the uh continuous
+variables so we've filtered out a subset
+of those variables and that is going to
+be our X Matrix or input Matrix or our
+predictor variables so we have the shape
+here
+4557 by 18 columns right and then of
+course the Y is simply going to be the
+column for with our Target variables so
+that's going to have the corresponding
+Dimension you know it's a matrix but
+this one has just it's just a series or
+just an array whereas the others it's a
+it's a two-dimensional
+so we now have our X and our y so we can
+go ahead and smooth our variables and
+smote stands for the
+synthetic minority oversampling so
+because our Target outcome or category
+is so low as far as the proportion is
+concerned we are going to do a sampling
+an over sampling but we're going to be
+over sampling of the minority set to
+generate synthetic observations so
+that's what the smoothing does so the
+first thing we do is we uh load the
+algorithm into our data set so we're
+going to get the small algorithm from
+the uh IMB learn over sampling module
+and so once we have that loaded then we
+create an instance of that algorithm and
+we assign it to the variable name Os or
+sampling then we take that over sampling
+algorithm the it's just a blueprint of
+the algorithm so now we're going to use
+the data to train this smote model and
+and get the features so we use fit
+underscore resample now with other
+algorithms we use fit underscore
+transform in this case we're using fit
+underscore resample and the parameters
+are the X Matrix first and then the Y
+Matrix or the Y series and we are going
+to assign the results of that fit
+resample back to what would be now our
+new X Matrix and our new y values
+created by the oversampling so once
+we've done that we can take a look at
+the dimensions of these new uh objects
+now for the X we see it has Dimensions
+88 60 by 18. now remember our X was 45
+57 by 18. so now it's 88.60 so we've
+doubled the number of observations right
+the number of columns remain the same
+similarly for the X variable we have
+doubled the number of outcomes
+to match our X and so we can take a look
+at that if we did a value counts on our
+y series here we would see that it's
+distributed
+equally remember what the distribution
+was here
+um it was 97
+to
+2.78 that was the ratio now that we have
+smoked the data set our new ratio is one
+to one
+so 50 of the observations are
+those who had heart disease and 50 are
+those who've had who've not so that is
+what the smoking does so it has used the
+uh the minority uh outcomes and over
+sampled for those to create synthetic
+variables and if we plotted the bar
+chart here we see that the both bars are
+the same using the Dot Plot if we use
+SNS it gives us a nice
+um colorful plot version
+but we can see definitely that the count
+for each category is identical now if we
+wanted to look at the distribution of
+these synthetic observations we could
+recombine the X and the Y back into a
+data frame such that we could do some
+um bivariate and even multivariate type
+analysis so that's what I did here so
+I've assigned the X Matrix to a dative
+created a data frame with it using PD
+dot data frame and this DF underscore OS
+is now the new uh over sampling or
+smooth data frame and then I add the
+outcome variable or heart disease to
+that data frame so now we have a
+complete data frame and we can do all
+the things we did with the original data
+frame here so in this case I'm creating
+a scatter plot with the data frame and
+I'm using BMI you choose any random uh
+any one of the many variables I'm
+plotting BMI versus age or age versus
+BMI because
+y uh versus X and I'm using heart
+disease as the hue
+so when I plot that I get this lovely
+scatter plot here and what you see is
+all of the Blues are the ones that did
+not have heart disease
+and now
+the orange are the synthetic well mostly
+mostly the synthetic observations and so
+you can see how it's distributed
+um as far as these two variables are
+concerned you can choose any of the
+other variables and substitute so we can
+look at uh we had agent BMI we can do
+fasting blood glucose against
+um so we'll just leave the age in there
+maybe he can do the fasting blood
+glucose
+and see so there we can see how the
+synthetic variables are created right so
+this is the blue no heart disease orange
+heart disease and so some of the
+synthetic are going over here into this
+sparse so that's the general idea of how
+the smoothing works so now once we have
+our smoted
+um data set we can now do our second
+split which is into train and test right
+and for that we're using the train
+underscore test underscore split uh
+method and I'll be using the X and the Y
+as Arguments for that method we identify
+the size of the split 0.3 would be the
+test and then we give a random state so
+when I run that I get now four
+matrices X strain X test y train y test
+so we're going to use x strain and Y
+train to train our model and X test at y
+test to test the performance of our
+model
+so before we actually
+you know fit the model we're going to
+standardize our data right because
+these data points or these features we
+we know from our when we did the box
+plot we saw that the ranges for these
+values were quite different you know for
+example
+um you know the age of course is going
+from the 18 to 70 something but you have
+things like blood pressure and others
+going up into the hundreds so in that
+case if we were to plot just the head
+values here just to see what that looks
+like right we can see age right so
+that's kind of the ridge maybe if I did
+a DOT to describe that would actually
+give ranges yeah so age is ranging from
+19 to 83 but when we look at some of the
+other values in our data set for example
+blood pressure is going from 70 to 196
+blood sugar is going from
+54 to 404 then of course these
+interaction variables that are created
+by combining two variables together they
+even have a wider range the glucose BMI
+interaction it is has a maximum of uh 16
+000 so the range is different so this is
+why we are going to scale our variables
+and to make sure that they're all in the
+same scale so we use the standard scalar
+and that's going to
+um convert all of the values to their
+z-score so the values are going to be in
+standard deviations essentially so we
+create an instance of the standard
+scalar
+and we fit that on the train data set
+and once we fit it we can then
+transform all of the variable based on
+those uh the the values in our standard
+scalar model so this is what our values
+now look like right so we have values
+going from in this case
+um there's no The Columns headings are
+missing but you can see there's minus
+1.8 and there is three so the values are
+all in standard deviations right now
+either one or two in some case three
+standard deviations above the mean or
+two or one point five standard
+deviations below the mean so the range
+is now much smaller so now that we've
+scaled our variables so we have this x
+underscore train underscore SC for
+standards scale and now we can use that
+in our model so we are going to do a
+linear a logistic regression model
+remember because our outcome is
+categorical so we're using let's just
+regenerating a logistic regression model
+and the logistic regression model is
+going to do a classification of yes or
+no binary classification 0 1 heart
+disease or not
+um so that's what the the logistic
+regression is going to tell you now
+there's a lot of
+um some math and some integration
+involved but just understand that it's
+doing a classification
+um we have identified the solar here as
+the lib linear and we generate an
+instance of the logistic regression
+model once we've done that we can use
+our data now we're using the X strain
+scaled and the y train to fit our model
+so let's run that and so now we have our
+model and we can test the performance of
+our model but now instead of the train
+data set
+we're going to use the test data set
+right because we don't want to test the
+model on the same data that was used to
+train the data right because you know
+we're going to get elevated
+you know performance and not accurate
+indication of how well our model will
+generalize to data that it has not seen
+before and that's the whole idea so now
+we are going to use the test data set
+but remember this model is built on
+data that has been scaled
+so we have to scale our test data as
+well so we generate us another instance
+of the standard scalar and we train it
+on the test data set we don't want to
+use the same standard scalar that we
+trained with the train data set because
+that's going to cause data leakage and
+so the features of the the scalar from
+the train model are going to be slightly
+different so we want to treat this tests
+data set as data fresh new data that's
+coming in from who knows where that
+we've not seen before so it's going to
+be subject to its own set of values and
+and inputs and so we are going to
+standardize and get new features for our
+scalar and then we will transform the
+test data and once we have that X
+underscore test underscore SC now we can
+use that X test scale and our y test to
+test the performance of our model and
+what we do is we do model name DOT score
+right so this is one of the attributes
+that are built in with the logistic
+model class and we can apply that
+directly to our model and as long as we
+put in the X values and the Y values it
+is going to give you a result so what
+it's going to do is it's going to take
+the X test values and uh put it into our
+model
+and generate results
+those are going to be our predicted
+results
+and then the algorithm will compare
+how many times the predicted results
+match the actual results in the white
+test data and give us an accuracy score
+and so that's what the results are and
+we multiply by 100 to get 100 to get the
+percentage so we run our model we do the
+X test and then we get the score for our
+model
+so now
+so now we can
+use the X
+test scaled and the white test to
+test the performance of our model and
+see what the accuracy
+percentage is so in this case it's 76
+percent
+accurate
+if we compare that with uh the train
+data set we see that it's 77 percent
+accurate so not much of overfitting
+happening but those are the results such
+four this is our base model then in the
+next video we're going to look at ways
+other ways we can test the performance
+of our models using other metrics and
+then even maybe some ways of improving
+on the performance but the general idea
+is you would get your data you would
+separate the X from the Y as we did here
+we had separate X and separate Y and we
+then smote our data sets if there is
+imbalance is smooth if not you just move
+right on to separating into train and
+test once you've done that you scale the
+Train the X train data and you use the
+that to fit that instance of the model
+that you generate so now you have your
+model and once you have your model you
+can now test the model but you've got to
+scale the X data whatever you did to the
+train you have to scale but with a
+different instance of the uh standard
+scaler and you then now use that scaled
+data to test the performance of your
+model so when we did our last uh version
+of the model this was the accuracy score
+77 so meaning every time we made a
+measurement uh we we generated a
+prediction using our Model 77 of the
+times we correct we're correct the other
+times we're not so we want to see if we
+get improved on that accuracy score
+somewhere right so remember these were
+the values these were the features we
+include included in our model the ones
+that were
+um numerical float data types
+specifically and these were the
+categorical mirrors that that were left
+out so what I did was I'm going to add
+some uh back some of these variables
+that I think uh will make a difference
+in terms of the performance of the model
+so I think gender is important I think
+diabetic status is important as well as
+smoking status so I'm going to add these
+back to my working data frame right now
+when I do that I'm going to notice that
+at least one of them is categorical so
+we can't use it in the model in that
+data type so I'm going to so this is how
+it's distributed non-diabetic and
+diabetic so it's um you know categorical
+with text labels so what I'm going to do
+is I am going to change that and I'm
+going to replace
+these uh text labels with integers
+right so now when I do my info I will
+see here that indeed my diabetic status
+is now of data type integer and so I can
+use it in my model algorithm as such but
+before doing so I want to generate a
+plot of the correlation between each of
+these features and the Target now this
+is only going to look at
+uh linear correlation and so it's you
+know just kind of a measure
+um and and this the graph is generating
+generated showing uh the different
+features and how they are
+contributing the correlation between the
+Target right so we can see age is very
+strongly correlated whereas LDL
+cholesterol is not so much HDL
+cholesterol on the other hand
+this is strongly correlated to not
+having a heart disease whereas age is
+strongly correlated to having heart
+disease so as the age increases the
+probability or the likelihood of a
+disease increases whereas as the HDL
+increases the probability of heart
+disease goes down
+um systolic blood pressure is strongly
+correlated with having the disease and
+so on and sex
+um you know going from one sex to
+another there is a stronger uh
+possibility and I'm going to assume that
+that's going from female to male
+there is a stronger likelihood of
+heart disease so I want to include these
+measures namely gender diabetic status
+smoking so that one is not as strong as
+these two so hoping that by including
+these two these three variables that we
+would get a higher accuracy right so now
+we have a new data frame with the
+additional of columns so instead of the
+19 that we had before 1890 we now have
+21 so then our y value is still the same
+and then now we can smote we're going to
+do that over sampling of the minority
+again and we are going to use that also
+I did not
+load my smooth
+algorithm and let's go ahead and do that
+it is inside here so I've done that so
+now I can go back
+to my uh smoting
+and I can then create
+that instance of the model and generate
+my new X and my new y so now with the
+new X and the new y I can now separate
+so remember there are two two divisions
+separating into X and Y and then
+separating into train and test so now we
+have our new train and test based on our
+new X and Y
+so now we can model
+we create an instance of the logistic
+regression model using the same solver
+again and then we use this uh this is
+our new model
+um you know framework it's the
+the blueprint
+but first we have to of course scale our
+data so we using the standard scalar
+here and we create scaled versions of
+the X and Y and just to show you what
+that looks like so now we have these
+values instead of age of 50 or 70 or
+something we now have them in terms of
+their standard deviation or their
+z-score I should say
+and so now we take these new X scale X
+trained and the Y train and we fit the
+model and now we are going to test the
+model and this is my test for the model
+I move that up here so we're using the
+test
+data set oh this way that's why this is
+Hereford because we need to scale the
+test value so we
+fit our standard scalar on the X test
+and then we transform all of the values
+so those values now look
+similar to what the trained Val extreme
+values are and now that they're more
+like that now we can put that into our
+model and we can generate our
+uh score
+not much of an improvement it went from
+77 to 78.
+um and as far as the training set yeah
+so not much of an improvement here but
+you know that was we added some
+variables that I thought were important
+um didn't prove to be so much but we can
+now look at some other things we can do
+as far as our model is concerned using
+some different
+um
+metrics right so we're going to do some
+cross validation and remember
+cross-validation is where we are
+separating our model our data set into
+test and train but doing so
+um several times and changing what
+values are in the train versus what's in
+the Trap test so we're kind of mixing
+things up as well so we created we need
+the k-fold algorithm and we need our
+cross ballast underscore uh score to to
+use for the cross validation so we're
+going to divide the data several times
+over and then we're going to test that
+the model each time and save the score
+and then find the
+ever
+so I wanted to show an example of what
+happens with the cross validation right
+so if this is our data set we would
+divide into the train and the test and
+we would trade use this uh proportion of
+the data set to train the model and then
+this proportion and the yellow to test
+the model then the next uh iteration we
+would Reserve is different different
+um set of observations for testing and
+use these in the blue for the training
+and then we will change that you know
+depending on how many
+um folds we have indicated in our data
+so that's what that is so we have the
+k-fold and the cross vowel that we are
+loading in the data set so now we create
+an instance of the k-fold we State how
+many splits we want so here this is
+um 10 this that's five splits we are
+using
+10 splits
+um you know the splits of course the
+more splits you have the more times you
+will be running your your training but
+you also have to take into consideration
+the size of your data set and how long
+each of these trainings are going to run
+and how much computing power it's going
+to utilize and you know different
+factors so we are doing 10 splits so
+instead of five we'll have ten and we're
+creating a random state so if you want
+to repeat what I'm doing you use the
+same random State and should get the
+same values and then we are saying
+Shuffle is true so we're changing around
+how the data is being split every time
+right so that's what that does so we now
+have our k-fold and then we have an
+instance of the logistic regression
+model
+so now we're using our cross validation
+here and we are going to use the model
+that we created here and then we're
+training it on the X string and Y train
+and that should be our scaled data and
+we're using the Y train so X train
+scaled and Y train and then for the
+cross validation we have this k-fold
+object that has all the information in
+there so when we run that we are going
+to get a set of values so we ran 10
+different models and each of them had a
+different
+accuracy score because that's the
+default
+metric that's been used so some had 77.9
+of those one had 80 and then one had 76.
+so the values are between like 75 for
+the lowest accuracy
+and
+82 for the highest accuracy and on
+average it had a mean of 78
+accuracy with a standard deviation of
+1.86
+now we can use a different scoring
+method other than the default accuracy
+and here we're using the negative log
+loss and we can run that with the same
+parameters and here we see that the
+average negative log loss is negative
+0.47 with a standard deviation of
+0.18 so that's another way of you know
+measuring the performance of your
+variable and you can then make changes
+and use the same kind of
+cross-validation again but we can also
+change it to
+um The ROC AUC or area under the curve
+method of uh estimation because this is
+a logistic regression and accuracy is
+generally not the best method for
+assessing the performance so if we use
+the ROC AUC so now we're creating a
+different model here retraining it and
+I'm forgetting to make sure that this is
+the scaled version
+of
+wait what am I doing
+the scale the version
+of my X strain
+so let's see if that uh didn't make much
+of a difference but here we have the X
+strain and the ROC as the measure and so
+it's given an RC score of
+an AC score of 86 percent and so we can
+look at that to see what that looks like
+graphically so we're going to use the
+confusion Matrix and the classification
+report so the confusion Matrix that is
+the Matrix that gives
+um an account so I should have those in
+there and make sure that I have one of
+these models
+as I rightly
+called them
+so after you've loaded the confusion
+Matrix and the classification report you
+can use them for different
+representations of the different types
+of metrics that you can use with your
+logistic regression to evaluate the
+performance of your logistic regression
+so if we did the confusion if we did the
+confusion Matrix using our X test and
+the predicted y predicted y meaning the
+values we would get from our model if we
+put in the test values or the values
+from our test data set that's been
+scaled we get a set of values and we use
+that to compare with the you know the
+what the actual values are in the data
+set and we would get we use it to
+generate the confusion Matrix and this
+syntax here is what is going to allow us
+to view the confusion Matrix as such and
+so we have our true positives here and
+our true negatives and we have our false
+negatives and our false positive so we
+can see where the model
+is doing well and where it is not and so
+this gives us a further insight into our
+model's performance and so we may care
+more about one type of performance in
+terms of whether we care more about the
+Precision or the recall or maybe
+um you know some balance of both right
+and so we want to make sure that we're
+doing that and when we have this
+confusion Matrix now we can see where we
+are now and in addition the um Precision
+recall we can also get the F1 score so
+we use the classification report again
+with the Y test which is what is in the
+actual data set and the predicted values
+and so we can see what the Precision is
+and the recall is for the one category
+of the data and the same for the other
+category of the data and then of course
+we have the accuracy score and then we
+have the macro average and the weighted
+average so that's what the Precision rep
+the classification report will tell us
+and finally if we wanted to look at the
+list of features and in terms of the
+feature important so what we do here is
+we are first going to get a list of the
+features named from our column right so
+now we have the names of all the
+features that are included in our model
+now we also can generate the
+coefficients for each of these
+um features in the model and we're using
+lr1 in this case that's our model and so
+this is the list of the coefficients
+that correspond to each of these
+features now to combine that into one
+data frame right so firstly we are going
+to
+um
+you know convert those
+coefficients into an array then into a
+list
+as such and now once we have that list
+we can use those two to the features and
+the coefficients the names and create
+two dictionary items right and that's
+what we're doing here and then we can
+change that into a data frame
+and we will sort
+by the coefficient values so this is
+what it looks like here and so we see
+that glucose is
+um the most the glucose blood pressure
+interaction is the strongest now it's
+kind of hard to see all of them here so
+then of course we can now that it is in
+the form of a data frame it's easy to
+plot that as a bar chart
+and so I plot it as a bar chart and then
+I've used the names of the features as
+the X tick labels and this is what you
+get so here we can see the contribution
+of each of the features to the model's
+performance so age is the strongest in
+this case negative indication meaning
+that as age increases you're more likely
+to have a cardiovascular
+disease so similarly the LDL cholesterol
+interaction and HDL cholesterol
+interaction those are strong
+contributors then we have here and I
+don't know why I have limited this to
+17. let's change that so we can get the
+names of all of them so now we have sex
+as being
+um possibly not the strongest so one of
+the strongest age it seems It's the
+strongest
+um contributor to heart disease diabetic
+status is also a strong contributor
+smoking is a strong contributor now
+remember when we did the linear
+correlation it was not because the
+correlation between smoking and heart
+disease apparently is not linear but it
+is strong and then fasting blood sugar
+BMI and fasting blood sugar
+cystolic systolic blood pressure so
+that's how you would do that so remember
+what I did I simply added back some of
+the variables that I thought that might
+have been important that God's left out
+so I added smoking diabetic status and
+sex and I didn't get much of an increase
+in the accuracy of the model but it did
+increase now we didn't measure things
+like the uh precision and recall prior
+to adding those so we don't know what
+those changes might uh occur you know as
+far as it concerned but we all we did
+the cross validation tenfold and we got
+the average values we also got the um
+the net neg log loss we got the rocaut
+score and we generated the plot for that
+as well as the classification report and
+then finally we did a table of picture
+importance that we plotted on a graph so
+that's how you would do your model
+optimization so you can keep on further
+tweaking and optimizing your model
+adding some more variables taking away
+others you know for example like we
+could probably lose some of these uh
+features here because they don't seem to
+be contributing much to the model's
+performance and just keep testing it and
+see what happens but that's it in a
+nutshell how you would do that now there
+are other types of models besides the
+logistic regression and maybe the next
+video I will do a decision tree or
+random forest and see how those perform
+but so what is head speech any speech
+that dispersed a group of people because
+of their race religion nationality
+national origin sexual orientation or
+gender identity is considered as hate
+speech
+hate to speech is frequently used to
+promote purgatory and hatred
+additionally it can be applied to
+threaten and intimate others
+people may experience loneliness anxiety
+and fear as a result
+hate crimes may also result from it
+additionally Health speech can harm
+between various racial and ethnic groups
+it is crucial to identify hate speech
+using since doing so can assist in
+stopping these negative impacts real
+Learners if you want to upskill your AI
+in machine learning skills so give
+yourself a chance to Simply learn
+professional certificate program in Ai
+and machine learning which comes with
+the completion certificate and in-depth
+knowledge of AI and machine learning
+check this course detail from the
+description box below
+so here is one question for you guys I
+will give you exactly one minute for
+this you can comment or you can give
+your answer in the chat section so I can
+see if the answers given by you are
+right.raw I'm repeating again here is
+one question for you I will give you
+exactly one minute for this you can
+comment or you can give your answer in
+the chat section so I I can see if your
+answer given by your right or wrong
+so the question is
+all keywords in Python are capitalized
+lowercase
+uppercase and none
+let us know your answer in the comment
+section below
+so I am starting the timer of one minute
+okay
+the time start now to let me know your
+answers please
+just type your answer in the comment
+section or in the chat section
+all python keywords are in
+capitalize lowercase uppercase none
+let us know your answer in the comment
+section below
+30 seconds remaining
+all keywords in Python are capitalized
+lowercase uppercase or none
+the second small
+keywords in Python are capitalized
+lowercase uppercase and none
+let us know your answer in the comment
+section below please
+five seconds more
+after the allotted time has passed Those
+Who provided the correct response will
+receive a response and those Who
+provided the incorrect response will
+receive one
+so now let's move to our programming
+part
+first we will open command prompt to
+write a command to open Jupiter notebook
+so here we will write Jupiter
+notebook
+Center
+so this is the landing page of Jupiter
+notebook and here you have to go new
+python
+this is the how the Jupiter kernel look
+likes
+so here
+we will import some major libraries of
+python which will help in analyzing the
+data so here I will write import
+ance
+as PD
+import
+numpy
+as NB
+then from
+Escalon
+section
+or text
+counter vectorizer
+okay
+then one more storm
+let's learn
+model selection
+it
+will test underscore split
+and from
+SK learn
+Audrey
+import
+ant
+okay
+okay counter vectorizer
+account vectorizer it is
+so numpy is a python Library used for
+working with arrays it also has a
+function for working with the domain of
+linear algebra and matrices
+it is an open source project and you can
+use it freely numpy stands for numerical
+python
+and pandas pandas is a software Library
+written for the Python programming
+language for data manipulation and
+Analysis in particular it offers data
+structure and operation for manipulating
+numerical tables and Time series
+this count vectorizer a fantastic
+utility offered by the python
+scikit-learn modulus count vectorizer
+it is used to convert a given text into
+a vector base on the number of times
+like count that each word appears across
+the full text
+train test split
+so our data is separated into train and
+testing data using the trend test split
+Technique we must first separate our
+data into features X and label y divided
+into X strain X text y train and Y test
+the data frame is the model is trained
+and fitted using extend and white train
+sets okay then this is entry
+a supervised machine learning algorithm
+called decision tree uses a set of
+principles to make judgments much like
+how people do okay move forward let's
+import some more libraries
+so here I will write import
+Ari then import
+lltk
+then from
+ltk Dot
+I will add here stammer
+equals to nltk
+Dot
+mobile
+okay
+in English
+that form nltk
+purpose
+upwards
+okay then we'll write import
+string
+and I will assign stop word
+equals to set
+up words
+and
+English
+foreign
+okay
+the function in the module allow you to
+determine whether a given text fields
+are given regular expression which is
+known as a regular expression or re
+or if a regular expression matches a
+particular string which comes down to
+the same thing
+nltk the nltk toolkit was created for
+python users to deal with NLP it offers
+us numerous test data as data set and
+different text processing libraries
+using an ltk a range of activities can
+be carried out including tokenizing and
+visualizing parse trees
+snowball stammer the stemming algorithm
+also refers to as Porter 2 streaming
+algorithm
+is an improved version of potent stammer
+because some of its shortcomings have
+been addressed
+okay so stop word a stop word is
+frequently used um that a search engine
+has been considered
+both while indexing items for searching
+and when retrieving them as a result of
+search query
+then import the string it is used to
+determine whether or not substring is
+part of the main string it gives back a
+pointer to the first instance of S2 in
+S1 I hope you guys understand till here
+okay if you have any queries any
+question regarding this please comment
+down below
+so after importing libraries let's
+import our data set so I will write here
+TF
+equals to
+PD Dot
+data set name Twitter
+data
+okay
+so
+print
+so this is the Twitter data set you can
+download it from the description box
+below and if you want to see the last
+five rows instead of top five rows you
+can use tail instead of head okay
+moving forward I will add a new column
+to this data set as labels which will
+contain the values as HP is detected
+offensive language detected or no hate
+no offensive language detected
+okay
+for that I have to write here
+DF
+equals to DF
+map
+if
+it's
+detect
+third one is
+okay
+the column so here I will add DF Dot
+at
+see
+we have added labels
+okay offensive luggage
+moving forward now I will only select
+the tweet and the label column for the
+rest of the task of training a hate
+speech detection model okay so here I
+will add DF equals to DF
+after that tweet
+I guess yeah you can see here
+tweet
+comma
+labels
+right here DF dot head
+as you can see
+it okay so moving now I will create a
+function to clean the text in the Tweet
+column like this
+that at the rate and this exclamation
+these type of words
+so here I will add
+DF clean
+text
+equals to
+HDR
+x equals to
+3 Dot substring
+Dash this Dot
+question mark
+then
+come on
+and I will write here text equals to
+re Dot substring
+https
+plus then
+w w
+it's Plus
+get comma
+text
+okay here I will write text
+to re Dot
+subscribe
+dot start
+us
+mama
+yeah then let me
+so here I will add text is equals to
+re Dot substring
+okay
+dot punctuation
+here again text equals to
+read Dot substring
+then
+passion
+for the next line
+Obama
+no d
+w
+ow
+[Music]
+text equals to
+click on stop
+that's equals one
+and I will add DF then column in tweet
+so DF
+we have to add print
+so everything will be clean like this
+let me run it
+okay so I hope you guys understand till
+here if you have any question or any
+query regarding any code so please
+comment down below so everything is
+sorted now everything is clean
+okay so moving forward now let's split
+the data set into training and test that
+and train a machine learning model for
+the task of edit speech
+okay so here I will write x equals to
+P dot array
+then DF
+foreign
+then DF
+found
+utilizer
+here I will add x equals to
+CV dot fit
+for transform
+X
+okay
+here I will write X underscore train
+let's go test
+again
+okay that's cool test
+X comma y comma
+size
+questions
+state will be
+25 equals to
+BC
+I will write classifier Dot
+fit
+okay let me run it
+okay d
+f
+the season tree classifier sorry my bad
+the input contains an n
+okay there is one empty
+it's working
+so
+moving forward now let's test this
+machine learning model to see if it is
+detecting say it is speech or not okay
+so here I will write test
+underscore
+yeah
+okay
+so I will give one sentence here like
+I
+and d f equals to
+transform
+test underscore data
+today
+then here I will print
+classifier
+as you can see
+it is which is detected because I will
+kill you there is something hate on that
+so let me write another sentence here
+like
+you
+we run it
+so here you can see no hate and
+offensive speech you are also
+so
+private another one
+like you
+okay press enter
+so here you can see it is not hit speed
+but offensive language
+okay
+I hope you guys must already understand
+how you can return hate speech using
+machine learning if you have any queries
+you can ask in the comment section below
+our team will respond as soon as
+possible
+don't forget to check the course link
+from the description box below and don't
+forget to download the data set from the
+description box and if you want to this
+full code just comment for the same
+what is fake news
+pause or misleading information that is
+reported as news is called fake news a
+common goal or fake news is to harm
+someone or something reputation or to
+profit through advertising
+the term fake news was first used in
+1890s a time when dramatic newspaper
+reports were common
+even though incorrect information has
+always been disamented throughout
+history
+however the phrase has no clear
+definition and is often used to refer to
+all misleading information high profile
+individuals have also used it to refer
+to any news that is not favorable to
+them
+so dear Learners if you want to upskill
+your AI and machine learning skill so
+give yourself a chance to Simply learn
+professional certificate program in Ai
+and machine learning which comes with a
+completion certificate and in-depth
+knowledge of AI and machine learning
+check this course details from the
+description box below now let's move to
+our programming part
+so first we will open a command prompt
+to write a command to open Jupiter
+notebook so here we will write Jupiter
+notebook
+Center
+and here I have to set new python kernel
+file
+okay so this is how the kernel look
+likes
+so first we will import some major
+libraries of python so here I will write
+import
+ance as PD
+and import
+numpy
+as NP
+then
+import
+c bond
+as SNS
+and import
+SK learn
+dot model selection
+port
+train underscore
+test the score split
+before that
+I will import
+matplotlib
+Dot pipelot
+as PLT
+okay then
+I will write here from SK learn
+Dot
+Matrix
+import
+accuracy
+or
+than from
+SK learn
+dot matrix
+Airport
+classification
+to report
+and port
+Ari then import
+string
+okay
+then press enter
+so it is saying
+okay here I have to write from
+everything seems good
+loading let's see
+okay till then numpa is a python Library
+used for working with arrays which also
+has function for working with domain of
+lineal algebra and matrices
+it is an open source project and you can
+use it freely
+number stands for numerical python
+pandas so panda is a software Library
+written for Python programming language
+for data manipulation and Analysis in
+particular it offers data structure and
+operation for manipulating numerical
+tables and Time series
+then seabon
+an open source python Library based on
+matplotlib is called C bone it is
+utilized for data exploration and data
+visualization
+with data frames and the pandas Library
+c-bond functions with ease
+than matplotlib for Python and its
+numerical extension numpy
+matplotlib is a cross platform for the
+data visualization and graphical
+charting package
+as a result it presents a strong open
+source suitable for Matlab
+the apis format plot live allow
+programmers to incorporate graphs into
+GUI applications then this train test
+split we may build our training data and
+the test data with the aid of SQL and
+train test split function
+this is so because the original data set
+often serves as both the training data
+and the test data starting with a single
+data set we divide it into two data sets
+to obtain the information needed to
+create a model like hone and test
+accuracy score the accuracy score is
+used to gauge the model's Effectiveness
+by calculating the ratio of total true
+positive to Total to negative across all
+the model prediction
+expression
+the function in the model allow you to
+determine whether a given text fits a
+given regular occupation or not which is
+known as re
+okay then string a collection of letters
+words or other character is called a
+string it is one of the basic data
+structure that serves as the foundation
+of manipulating data
+the Str class is a built-in string class
+in Python because python strings are
+immutable they cannot be modified after
+they have been formed
+okay so now let's import the data set we
+will be going to import two data set one
+for the fake news and one for the True
+News or you can say not fake news
+okay
+so I will write here
+EF underscore
+pick
+pursue
+PD Dot
+read underscore CSV
+or what can I say DF fake
+okay
+it underscore fake
+okay
+then
+fake dot CSV
+you can download this data set from the
+description box below
+then data Dot
+true
+equal to PD dot read
+underscore CSV
+sorry CSV
+then
+big news sorry true
+dot CSV
+okay then press enter
+so these are the two data set
+you can download these data set from the
+description box below so let's see the
+board data set okay
+then I will write here data underscore
+fake
+dot head
+so this is the fake data okay then
+data underscore true
+Dot
+and this is the two data
+okay this is not fake so if you want to
+see your top five rows
+of the particular data set you can use
+head
+and if you want to see the last five
+rows of the data set you can use tail
+instead of head
+okay
+so let me give some space for the better
+visual
+so now we will insert column class as a
+Target feature okay then I will write
+here data
+let's go fake
+Plus
+equals to zero
+then
+data underscore true
+and
+Plus
+was one
+okay
+then
+I will write here data underscore fake
+dot shape
+and
+data underscore through
+dot ship
+okay then press enter
+so the shape method return the shape of
+an array the shape is a tuple of
+integers these number represent the
+length of the corresponding array
+dimension in other words a tuple
+containing the quantities of entries on
+each axis is an array shape dimension so
+what's the meaning of shape
+in the fake world
+in this data set we have two three four
+eight one rows and five columns and in
+this data set true
+we have two one four one seven rows and
+five column okay so these are the rows
+column rows column for the particular
+data set
+so now let's move
+and let's remove the last 10 rows for
+the manual testing okay
+then I will write here data underscore
+fake
+let's go manual
+testing
+question
+data underscore fake
+dot tail
+for the last 10 rows I have to write
+here 10.
+okay so for I
+in range
+two three four
+eight one
+sorry zero
+comma 2 3
+4 7 0
+comma minus 1.
+okay
+and
+TF underscore not DF data
+underscore fake
+dot drop
+one
+instead of one I can write here I
+comma
+this is equals to zero
+place
+equals to true
+then
+data
+not here
+data underscore
+same I will write for I will copy from
+here
+and I will paste it here
+and I will make the particular changes
+so here I can write true
+that I can write true
+okay
+then I have to change a number
+two one
+416
+right
+2 1
+4 0 6
+-1
+same
+so press enter
+X is equals to zero
+pellets insects maybe you mean double
+zero or of this
+okay we will put here double course
+and I'm putting this
+take dot drop i x is equals zero okay in
+place okay
+they're also at equals to an equation
+yeah
+so
+okay axis is not defined
+now it's working so
+let me see
+now
+did the underscore
+fake dot shape
+okay
+and data dot true
+and
+data underscore true
+dot shape
+as you can see
+10 rows are deleted from each data set
+yeah
+so I will write here data underscore
+fake underscore manual
+testing
+class
+equals to zero
+and data underscore
+true
+let's go
+manual underscore testing
+plus equals to
+one
+okay
+just ignore this warning
+and
+let's see
+data underscore
+fake underscore
+manual
+testing dot head
+as you can see we have this
+and then data dot sorry underscore true
+underscore
+manual
+testing
+dot at
+this is this is the uh true data set
+so here I will merge data
+let's go merge
+for sure
+PD Dot
+concat
+concat is used for the concatenation
+data underscore fake
+data underscore
+comma
+axis
+equals to zero
+then data underscore merge
+dot head
+the top 10 rows
+yeah
+as you can see the data is merged
+here
+first it will come for the fake news and
+then with that for the True News
+and let's merge true and fake data
+frames
+okay
+we did this and
+let's merge the column then data dot
+merge
+Dot
+columns or let's see the columns
+it is not defined whatever data
+underscore much
+these are the column same title text
+subject date class okay
+now
+let's remove those columns which are not
+required for the further process
+so here I will write data underscore
+or equal to
+data underscore merge
+crop
+title we don't need
+that
+subject
+we don't need then
+so one
+so let's check some null values
+it's giving here
+because of this
+that's good then data
+dot is null
+dot sum
+Center
+so no null values
+okay
+then
+let's do the random shuffling of the
+data frames okay
+for that we have to write here data
+equals to
+data dot sample
+one
+then
+data
+okay
+data
+dot hat
+okay now you can see here the random
+shuffling is done
+and one for the
+true data reset and zero for the fake
+news one okay
+then
+let me write here data Dot
+reset
+underscore index
+place
+because you
+true
+data dot drop
+comma axis
+equals to 1
+then comma in place
+equals to true
+okay
+then let me see columns now data Dot
+columns
+so here we have two columns only rest we
+have deleted
+okay
+so
+let me see data dot add
+yeah
+everything seems good
+let's proceed further and let's create a
+function to process the text okay
+for that I will write here
+but
+okay
+you can use any name
+text
+and text equal to
+text Dot lower
+okay
+and text
+equal to re dot for the substring
+remove these things
+from the
+datas
+okay
+so for that I'm writing here
+comma
+okay
+then text equals to
+re Dot substring
+comma
+comma text
+okay
+then I have to write text equals to
+r dot substring
+to www
+Dot
+S Plus
+comma
+comma text
+okay then text equals to
+re Dot substring
+then
+oh
+comma
+okay
+then text equals to
+re Dot substring
+and
+percentage
+as
+again percentage or
+RG dot SK function
+right here string
+dot punctuation
+comma
+and Gamma then text
+right
+then text equals to re Dot substring
+and and
+comma
+x equals
+re Dot
+substring
+right here
+and again d
+then again
+then comma
+and again
+texture
+okay then at the end after right here
+return text so everything like uh this
+these type of special character will be
+removed from the data set
+okay let's run this let's see
+yeah so here I will add DF sorry not DF
+data
+data
+then
+text
+pursue
+data
+okay dot apply
+to the function name what part word opt
+okay
+press enter
+yeah
+so now let's define the dependent and
+independent variables okay x equals to
+data
+text
+and Y equals to
+data
+class
+okay
+then splitting training and testing data
+okay sorry
+so here I will write X underscore train
+comma X underscore test
+then y underscore train
+comma y underscore test equals to
+train underscore test underscore split
+then X comma y
+comma test
+let's go size equals to
+0.25
+okay press enter
+so now let's convert text to vectors
+for that I have to write here
+that it's X
+so here I will write from sqlarn
+Dot feature
+extraction
+Dot text import
+t
+factorizer
+okay
+then vectorization
+equals to g f i t
+factorizer
+okay
+then
+it's V
+underscore
+train
+equals to
+vectorization
+or reset it t i 100 factorization dot
+fit
+then transform
+X underscore train
+okay
+then XV underscore test equals to
+factorization
+condition
+Dot transform
+X underscore test
+okay then press enter
+[Music]
+so now let's see our first model
+logistic regression
+so here I will write
+from
+sqln Dot
+linear underscore model
+okay import
+logistic
+regression
+then a lot goes to
+logistic
+regression
+and I have to write here LR Dot
+split
+then XV
+Dot
+not DOT so dot train
+comma
+x v underscore test
+okay
+press enter
+dot XV dot train
+okay here I have to write y train
+and press enter
+we work so here I will write prediction
+underscore
+linear regression
+l r dot predict
+XV underscore test
+okay let's see the accuracy score
+for that I have to write LR DOT score
+then XV underscore test
+comma y underscore test
+okay
+let's see the accuracy so here as you
+can see accuracy is quite good 98
+percent
+now let's print
+the classification
+code
+y underscore test comma
+prediction of linear regression
+okay
+so this is you can see Precision score
+then F1 is code then support value
+accuracy
+okay
+so now we will do this same for the
+decision free gradient boosting
+classifier random for this classifier
+okay then we will do model testing then
+we will predict this score
+okay so now for the decision tree
+classification so for that I have to
+import from SK learn
+Dot 3
+import
+decision
+three
+classifier
+okay
+then at the short form I will write here
+I will copy it from here
+then
+okay
+then I have to write same as this so I
+will copy it from here
+and
+let's change linear regression
+to
+season 3 classified
+okay
+then I will write here same
+let's go DT
+question
+DT dot predict
+XV underscore
+test
+e
+still loading it's it will take time
+okay
+till then let me write here for the
+accuracy
+DT DOT score
+three underscore test
+comma y
+let's wait okay
+let's run
+the accuracy
+so as you can see accuracy is good than
+this linear regression
+okay logistic regression
+okay so let me
+show you deep let me predict
+trend
+okay
+so this is the accuracy score this is
+the all the report
+yeah
+so now let's move for the gradient
+boosting classifier
+okay for that I've read from
+sqlan
+dot ensemble
+port
+gradient
+boosting
+classifier
+pacifier
+I will write here GB
+because you let me copy it from here
+I will give here random
+let's go state
+equals to zero
+wait wait wait wait so I will write here
+GB Dot
+fit
+actually underscore train
+comma
+y underscore chain okay then press enter
+here I will write predict
+underscore GB
+was who
+GB Dot
+wait sorry
+predict
+three
+DOT test
+dot dot underscore test
+till then it's loading so I will write
+here uh it's for this code then I will
+add GB DOT score
+that
+three underscore test
+comma
+y underscore test
+okay
+so let's wait it is running this part
+till then let me write for the
+printing this
+case taking time
+taking time still taking time
+but if I will run this
+it's not coming because of this
+yeah it's done now so you can see the
+accuracies
+not good then
+decision tree but yeah it is also good
+99
+.4 something okay so
+now let's check for the last one random
+Forest
+first I will do
+for the random folders We have to write
+from sqlarn Dot
+symbol
+import
+random
+Forest
+classifier
+okay
+and here I will write RF
+was to right I will copy it from here
+then
+random
+date
+equals to
+zero
+and
+RF Dot
+fit
+three underscore train
+comma y underscore train
+okay then press enter
+and predict
+underscore
+RC
+or F
+equals to
+RF dot predict
+C underscore test
+okay
+till then I will write it still loading
+it will take time so till then I will
+write for the score score accuracy score
+XV underscore test comma y underscore
+test
+okay
+then I will write here till then print
+classification
+code
+and Y underscore test
+comma
+it will take time little bit
+so
+it run the accuracy score is 99 it is
+also good
+so now I will add the code for the model
+testing
+so I will get back to you
+but after writing the code so
+so I have made two functions one for the
+output label and one for the manual
+testing okay
+so it will predict
+the all the from the all models from the
+repeat so it will predict
+the the news is fake or not from all the
+models okay
+so for that
+let me write
+here news
+also string
+put
+okay
+then I will write here manual underscore
+testing
+so
+here I will you can add any news from
+the you can copy it from the Internet or
+whatever from wherever you want
+so I'm just copying from the internet
+okay from the Google
+the news
+which is not fake okay I'm adding which
+is not fake because I already know I
+searched on Google
+so I'm entering this
+so just run it let's see what is showing
+okay
+string input object is not callable okay
+let me check this first
+a I have to give here Str only
+yeah let's check
+okay I have to add here again the Escape
+yeah
+manual testing is not defined
+let me see manual testing
+okay I have to edit something
+it is just GB and it is just RF
+and GPS is not defined okay okay
+so what I have to do
+I have to remove this
+this
+everything seems sorted
+now
+as I said to you
+I just copied this news from the
+internet I already know the news is not
+fake so it is showing not a fake news
+okay so now what I will do I will copy
+one fake news from the internet
+and let's see it is detecting it or not
+okay
+so let me run this
+and let me add the news for this
+so
+all the models are predicting right it
+is a fake news
+or you can add your own script like this
+is the fake news okay
+I hope you guys understand
+till here
+so I hope you guys must have understand
+how to detect a fake news using machine
+learning you can you can copy it any
+news from the internet and you can check
+it is fake or not okay or if your model
+is predicting right or not so if you
+have any queries you can ask in the
+comment section below our team will
+respond you as soon as possible okay
+don't forget to check the coursing from
+the description box below and you can
+download this data set from the
+description box below
+and if you want this full code
+full code just comment for the same so
+we came to end of this video if you have
+any queries you can ask in the comment
+section below our team will respond to
+you as soon as possible and if you want
+this full code just comment for the same
+thank you so much for being here if you
+enjoyed this video please do subscribe
+to our YouTube channel and give like to
+this video thank you and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

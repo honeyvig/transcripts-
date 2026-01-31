@@ -1,0 +1,642 @@
+hello everyone welcome to simply learns
+youtube channel
+today we will be discussing about the
+longest common subsequence problem
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies
+so if you are a tech geek in a
+continuous hunt for latest technological
+advancements then consider getting
+subscribed to our youtube channel and
+don't forget to hit that bell icon to
+never miss an update from simply learn
+now without any further audio let's get
+started with the agenda for today's
+discussion
+we'll start this discussion by
+understanding what longest common
+subsequence problem is
+following that we'll go over the longest
+common subsequence implementation using
+recursion and finally we'll cover the
+solution for longest common subsequence
+problem using dynamic programming
+paradigm
+i hope i have made myself clear with the
+agenda
+so let's get started with our first
+topic that is understanding what the
+longest common subsequence problem is
+the term longest common subsequence
+clearly directs us towards some sort of
+relation between two sequences
+a sequence is nothing but a series of
+element that occurs in same order but
+are not necessarily contagious from this
+definition we can say that the longest
+common subsequence will be the term that
+both given strings will contain
+to understand it more clearly let's have
+a look at an example
+in this example i have taken two strings
+there is nothing like substring here
+right if you have studied the kmp
+algorithm you will remember the problem
+as string and substring in that problem
+we had to find the substring inside a
+given string but this scenario is
+totally different from that
+we'll be dealing with two different
+strings here
+here you can clearly see that string one
+is larger and string two is relatively
+smaller
+now for these two strings possible
+common subsequences are as shown on the
+screen and from this you can clearly say
+that the longest common subsequence will
+be c d e
+moving forward let's dive further into
+this lcs problem to understand the logic
+behind it
+the problem statement for the lcs states
+that given two strings find the length
+of common subsequences present in both
+the strings
+that means in this problem we'll be
+given two different strings with length
+m and n respectively and from these two
+strings we'll have to find the longest
+common subsequence with length k
+let's consider these two strings present
+on our screens
+we'll try to find out the lcs for both
+of these strings here
+we'll try to map patterns present in
+string 2 to string 1. now let's pick the
+first character in string 2 that is z
+now we will match this character to the
+character present in string1 and the
+first character is x so we'll map it
+with x but z and x do not match hence
+we'll move towards the next character
+next character is y and z and y also
+does not match hence we'll move to the
+third character that is it here we have
+found the match
+so what we'll do is we'll include z into
+our longest common subsequence
+the next character in our sequence is a
+and we have a in string 1 as well hence
+we'll include a in our longest common
+subsequence
+the next character in string 2 is d
+and we have found match for d in string
+1 as well hence we'll include it in our
+longest comma subsequence
+the final character in string 2 is f
+and we have found f in string 1 as well
+hence we'll also include it in our
+longest common subsequence finally the
+longest common subsequence for string 1
+and string 2 will be z a d f
+moving forward let's discuss one more
+problem to understand lcs clearly here
+you can see that z is present in both
+the strings thus will include it in our
+lca string
+the next character is y it is also
+present in string 1 but the rule of lcs
+says that the sequence of character
+should not be changed and here the
+mapping line of z and y are intersecting
+so we'll discard character y here and
+will pick the next character in string2
+that character is d
+and d is not intersecting with any other
+character hence we'll add it to our lca
+string
+now the next character b is also there
+in string1 but we cannot insert it in
+our lc string as it intersects with the
+mapping line of character d
+thus will discard this character
+the next character f can be added to our
+lca string as it does not intersect with
+any other mapping line so the first lcs
+sequence will be z d f
+and due to multiple intersections there
+is possibility of having another
+sequence that can be larger in length
+than the previous sequence for this
+sequence we'll begin from the second
+character of string 2 that is y
+and y is present in string 1 thus we can
+add it to the lcs
+next we can add d to our lcs sequence
+after this we have b but b cannot be
+inserted into lcs as it is intersecting
+with d
+hence we'll discard it and finally we'll
+include f into our lcs
+sequence in this problem both the
+sequences have the same length hence
+both of these sequences will be
+considered as longish common
+subsequences
+i hope that you guys have understood the
+logic behind finding the longest common
+subsequence because we have a challenge
+for you guys to assess your
+understanding of the lcs
+for these given sequences you are
+supposed to find out the longest common
+subsequence
+the options for this problem are
+c
+b a c e and b c e
+you all can drop your answers in the
+comment box below let's see how many of
+us can get this right
+now moving forward we'll build a
+solution for lcs using recursion
+so let's visit the code editor and
+develop the c program for longest common
+subsequence
+the two strings for which we are going
+to find lcs are x y and x p y cube
+let's create a function to get started
+with lcs implementation i am going to
+name this function as int
+lcs
+and inside this function will pass the
+references of two character arrays the
+first will be care
+star
+a
+comma care
+star
+b the next arguments will be the lengths
+of these character arrays in x and int
+y
+now
+we'll move to the function body of lcs
+the first condition will evaluate is if
+the character array are empty or not
+because if character arrays are empty
+then definitely there won't be any
+sequence to find out so when we reach x
+equal to 0 and y is equal to 0 will
+return 0 for that we'll write the
+condition if
+x equal to equal to 0
+or
+y
+equal to equal to 0
+then
+return
+zero
+now
+the next condition when both x and y
+won't be zero will check if the last
+character of both character arrays match
+or not for that we'll write another if
+condition
+if a
+x minus 1
+equal to equal to
+b
+x minus one
+then we will return
+one plus
+lcs
+a comma b
+comma
+x minus 1 comma y minus 1
+once this condition gets fulfilled we'll
+return 1 plus recursive call to lcs
+function with inputs decrease in size by
+1 that is x minus 1 and y minus 1. now
+if both the previous conditions fail
+then what we'll do is we'll go into this
+else part
+and inside this else part
+we will return
+max of
+lcs
+a comma b
+comma
+x comma y minus 1
+or
+lcs
+a comma
+b
+comma
+x minus 1
+comma y
+we are missing semicolon here
+okay and dot here
+so
+we'll change it
+now this statement will get executed
+when there is no character match if
+characters don't match will move either
+way one character in first string a or
+one character in second string b
+and check whichever gives maximum and
+will take that into consideration most
+of the time this condition will get
+satisfied
+to find out the maximum we'll have to
+create a manual maximum function so for
+that we'll create a new function that is
+int
+max
+and will pass arguments in m comma in
+n
+now inside this function will write a
+ternary condition that is return
+m
+greater than n
+question mark
+m
+colon
+and
+semicolon
+so this will return the maximum value
+between m or n
+with this we have successfully completed
+the lcs function so moving forward let's
+work on our driver function
+in driver function
+what we'll do is we'll create two
+character arrays at first
+so for that
+let's enter into this main function
+and we'll create character array a
+and inside a will pass
+x and y
+inside character array b will pass
+x
+b
+y
+q
+okay
+and will store the lengths of these
+character arrays into x and y
+for
+and x is equal to strlen
+a
+and for int
+y
+strlin
+b
+let semicolons here
+and finally we will make call to our lcs
+function using the printf statement
+the printf statement that will write its
+length
+of
+lcs
+is
+modulus
+d
+comma
+s
+a comma b
+comma
+x comma
+y
+semicolon and finally we'll add return
+0
+i hope our code is bug free now so let's
+run it and check if it is bug free
+that's fine
+here we are getting error but it is not
+exactly an error we have implicitly
+declared function max here
+so that's why we are getting this flag
+problem but we are actually getting
+output as well so the output that we are
+getting is 2 here
+and if you check
+both the strings
+then you can find out that
+character array a it's implemented
+inside character array b and the length
+of common sequence is 2 here
+so with this we can say that our
+recursive implementation of lcs is
+successful
+now moving forward we'll visit
+powerpoint to understand why recursion
+is not an ideal approach to solve this
+problem
+to understand the complexities
+associated with longest common
+subsequence problem implementation using
+recursion we'll formulate a recursive
+tree by going through the steps of a
+program that we have created previously
+so let's do that here
+as you can see in this lcs function the
+first step we perform is checking if
+both the strings are empty
+if they are not empty then we check if
+the last character of both strings
+matches or not
+thus the first call to the lcs function
+will check for the match of last two
+characters if characters don't match
+which is true in this scenario
+we move either one character in string a
+or in second string b
+and we'll choose whichever produces
+maximum value
+so if we reduce b by 1 and keep the a
+same then we have a character y in both
+the strings
+whereas if we keep b the same and reduce
+a by 1 then we have x and q which don't
+match with each other
+first we'll evaluate the left side of
+our recursion tree and here we have a
+character match thus will enter if
+condition where characters do match that
+is this condition
+and it says that return 1 plus both the
+character arrays with size reduced by 1
+and by doing that we get 2 different
+characters x and p here
+now as these characters do not match
+we'll move position by 1 in both the
+strings by doing that we get these
+results and here if you observe the left
+child has a character match thus will
+add 1 and reduce the size of both
+character arrays by 1.
+and with this step we reach the end of
+our strings
+now let's work on the right side of our
+recursion tree
+in this case we have distinct characters
+thus will move by 1 in both the
+character arrays and the resultant child
+nodes don't have characters that match
+furthermore the right shell reaches the
+null index hence now we will just expand
+the left child
+in addition to that we can move
+positions only in character array b as
+we have reached the end of character
+array a
+for this move we do not have any match
+so we'll reduce the position of b by 1
+again
+and here we get a match and also reach
+the end of both character arrays
+now the next step will be for evaluating
+lcs length by backtracking our recursive
+tree
+first we'll consider the left side so
+let's begin from the bottom of left side
+at the bottommost child we have some
+value equal to 0
+for the next step we'll have some value
+1 as we'll add 1 here
+for the next step as well we'll have to
+add 1 to our sum value thus the sum
+value will become 2 here
+and the overall sum for the left side of
+recursive tray will result into two
+whereas for right side the sum will
+become one as there is only one match
+now
+the side which has maximum some value
+will be written as a result of this
+celsius program which will be 2 in this
+case
+the complexity for this recursive lcs
+program will be 2 to the power n
+now for these two strings which have
+small length you can see that the
+complexity will be equal to 2 to the
+power n where n belongs to the depth of
+binary tree that is huge complexity if
+you look at the complexity graph you
+will get that you will get parabolic
+graph
+which will increase continuously or
+exponentially
+however this problem can be resolved by
+using dynamic programming paradigm
+moving further we'll try to analyze how
+dynamic programming can reduce the
+computational complexity of lcs problem
+here we'll try to solve lcs problem
+using the tabulation method in order to
+understand how tabulation can reduce
+space complexity by making fewer
+computations
+the lcs function for tabulation will be
+iterative
+hence we'll understand the computation
+with the help of tabular representation
+the columns will represent character
+array b and rows will represent
+character array furthermore we have
+added the null values to the table
+hence initially we'll set the field
+values for null row and columns as 0.
+now here we'll move through the row of
+character x
+for the first iteration we hit the match
+hence we'll add 1 to the diagonal
+element
+so 0 plus 1 will become 1
+for the next iteration
+we get x and p which do not match hence
+we'll continue with one
+next we have x and y which also do not
+match hence will continue with one
+remember guys the highest value between
+these two fields will be picked every
+time
+for the next move the value 1 will
+continue
+now moving forward we'll move towards
+the y row
+here for both x and p the values will
+remain 1 as we don't have the character
+match but for the next field we'll have
+a match hence we'll add 1 to the
+diagonal field the value for this
+particular fill will become 2 now
+for the last field the value 2 will get
+continued as it is the highest field
+than the another comparative field
+and you can see that we have found the
+accurate result here which is 2.
+i hope this tabulation logic is clear to
+all of you because moving forward we'll
+develop a c program for the same
+now in order to get started with this
+tabulation function we have created in
+lcs function with few arguments these
+arguments are similar to the recursion
+in this tabulation lcs function we'll
+first create the 2d matrix for
+performing the computation the statement
+that will help to do that is
+end
+l
+x plus 1
+x plus 1
+and
+y plus 1.
+so this will create a 2d matrix of size
+x and y
+will also initialize few variables for
+using them inside looping process
+so i'll create two variables in i and j
+next we'll create a nested loops for
+traversing through both arrays at the
+same time and updating the computational
+table
+for that we'll create for loop and
+inside this for loop we'll begin from i
+is equal to 0
+to
+i
+is greater than equal to x
+and will increment the i
+and insert this four will create another
+for loop
+and we'll begin this with j is equal to
+0
+to
+j
+less than or equal to y
+and
+j plus plus
+after that we'll write the first
+condition to set null values for the
+null row and column fields
+so
+the statement that will write is if i is
+equal to equal to 0 or or j is equal to
+equal to 0.
+then
+set
+l
+i
+j
+equal to
+zero
+if this condition fails then we'll check
+if the last character match with one
+another if they match then we will
+return 1 plus both array fields reduced
+by position 1.
+for that we'll write condition else f
+a
+i minus 1
+equal to equal to b
+j minus 1
+and insert this l-shaped condition
+we will set l
+i
+j
+is equal to
+l
+i minus 1
+j minus 1
+plus
+one
+and if this condition fails
+then
+we'll enter into else loop
+and
+we'll pick
+l i j
+as
+maximum of
+l
+i minus
+large l
+and here as well
+it should be large l
+l
+i minus 1
+j
+comma
+l
+i
+j minus
+1
+and we'll get out of these
+for loops
+and will return
+the output that is l
+x
+and
+y
+i hope this should be fine now
+so let's run our code and check if there
+is
+something wrong
+we'll save this as
+lcs
+underscore
+dp
+okay so we are getting three problems
+here
+okay so i have inserted o here instead
+of zero
+and there is one more mistake
+so
+i have called function max
+as max here and have named it as maximum
+here so we'll have to change this
+to maximum
+i think this should be fine now
+so let's run our code again
+okay we'll have to save this
+so we'll paste ctrl s
+and we'll rerun it
+yeah so we are getting our output here
+the length of longest common subsequence
+is 2.
+so if you observe here
+the output that we have got using
+dynamic programming is in
+5.58 second
+and the time that was taken for lcs
+recursion was around 8 second
+so you can see that the complexity has
+been reduced the time complexity and
+space complexity as well
+so
+that is why the dynamic programming it's
+better approach than recursive
+programming paradigm
+i hope the longest common subsequence
+problem implementation using dynamic
+programming is clear to all of you out
+there
+so with this we came to the end of this
+video i hope this video on longest
+common subsequence was informative
+if you have any queries regarding this
+topic then let us know about it in
+comment section below and we'll get back
+to you thank you so much for being here
+and do watch out for more videos from us
+until then keep learning and stay tuned
+to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,1025 @@
+hey traders welcome back to another pine
+script lesson today's lesson is going to
+be a little bit different to my usual
+lesson today i'm going to be showing you
+how to create a
+discord bot out of trading view alerts
+now admittedly i recognize this is a
+pretty niche subject and not many of you
+are going to need to do this
+sort of thing but it's something i've
+been playing around with
+in my free time
+while i'm trying to set up this zen in
+the art of trading discord network this
+is going to be a discord server that
+anyone can join to stay up to date with
+what i'm up to so there's a section here
+that'll
+sort of automatically update whenever i
+release anything new on social media or
+new trading view scripts or anything
+like that and it also has a bunch of
+market update channels now these
+channels are mostly managed by a custom
+bot i wrote in java so it's a little bit
+more advanced here's some of the source
+code here i'm not going to be showing
+you anywhere near anything as complex as
+what you see here
+in today's lesson we're going to focus
+on pine script and trading view and how
+to create a web hook in discord to send
+information from trading view into your
+custom discord server and these alerts
+will look something like this if i
+scroll up a bit here you can see this
+alert here now this is under the crypto
+updates channel but this was just a test
+command i sent yesterday and basically
+what our trading view alert is doing is
+sending an avatar icon url
+a
+bot name
+a message here you can tag roles so that
+anyone with this role gets a ping or
+notification that there's a new message
+in this channel
+and then we have an embed it's called an
+embed here where this this sort of box
+here and what you see in this box here
+is first we have an author you can make
+this anything you want i just set it to
+market update then we have an author
+image i've just set it to whatever the
+first base currency is in this case it's
+aud aussie canada so we have the aussie
+flag there and then we have our message
+from trading view and this is a message
+i wrote in my training view script this
+could be anything you could send any
+data that you can get out of trading
+view to your discord server
+in this sort of format so that sounds
+like something you'd be interested in
+stick around and i'll jump over to the
+pine script editor and show you how i
+built this out but before we begin
+i should mention that if you want to be
+notified when this discord server
+community thing goes live to the public
+head over to the artoftrading.com
+and sign up to our mailing list and i
+will send you out a message when it's
+ready to join but anyway let's get
+started with today's lesson so i've
+obviously already written out the code
+here i'm going to delete
+all of this
+and then i'll paste in
+uh the code block by block and explain
+what it does as we go
+so the first thing we have here is a
+bunch of user settings as always
+we have a bot name avatar url
+an icon url
+title url
+a text message custom message to add
+to our
+discord embed we have our role id to tag
+or ping when this message goes out we
+have our embed color
+and this little boolean here volatility
+alerts i'll explain what all of these do
+as we build out the script and this will
+all make perfect sense why i've set this
+up this way
+but before we get into the coding i need
+to show you how to set up your web hook
+on your discord server
+so this is assuming you already have a
+discord server custom discord server
+that you have admin privileges for if
+you don't know how to do that i'm not
+going to show you how to set that up in
+today's video because it's outside of
+the scope of what i'm teaching today
+there's plenty of tutorials out there if
+you're interested in that
+but if you've already got your server
+set up
+all you need to do in order to create
+your web hook
+to send this information to from trading
+view is right click on your server
+come down to server settings and then
+click on integrations
+next you want to click on web hooks here
+and then click create new web hook this
+button here
+and then we have our sort of web hook
+creation interface here you can name
+your bot whatever you want it doesn't
+matter what you call it because we can
+override that
+with our trading view alerts
+but the one thing you do need to make
+sure you set up correctly is your
+channel
+we cannot change what channel our
+message is sent to once it's set up so
+make sure you select the right channel
+here that you want to use
+so for today's lesson i'm going to come
+down and select
+i'm going to select private sandbox this
+is a custom private channel i've created
+in my discord for testing stuff that no
+one else except for me can see so i'm
+going to click on that and i'm going to
+call this thing
+um just
+test bot for now and i'm not going to
+bother with the avatar
+i'm going to save changes and now we
+have our web hook bot set up
+so that's literally all you need to do
+on the discord side let's jump back over
+to the pine editor and i'll show you the
+script that i wrote so this is a work in
+progress i'm going to add more features
+to this script as i find the time
+to be honest it's not a huge priority
+for me at the moment but i figured while
+i'm doing this i might as well turn it
+into a lesson to teach you guys
+something a little bit different
+so the first thing i do in the script
+other than get our user input is declare
+a couple of constant variables
+so constant just means these don't
+change i never change these in the
+script and they are var variables so
+they're persistent so on the very first
+bar on our chart these three variables
+get initialized and their values never
+change
+the first value is our role id this just
+converts our role
+id from the settings menu
+into the appropriate discord syntax so
+that it actually tags that role over on
+discord
+if i were to just
+um
+crypto for example if i were to send
+this message
+um as a
+human user in this uh channel this would
+actually tag the crypto role but if i
+was just to write at crypto in my alert
+text it would just show up as text and
+it won't tag the user
+the discord syntax for bots specifically
+just for bots to tag roles
+is the open arrow or left arrow the and
+sign and then the role id the discord
+role id
+so if i right click on my server come
+down to server settings roles
+if i right click on the crypto role and
+click copy id and go back here
+this is the id i need to
+reference when i'm trying to
+ping this role so we need the left arrow
+and sign and at sign and then close that
+off with the right arrow this right here
+would look like this
+when this message gets sent from our web
+hook bot to discord so that's an
+important thing to mention if you want
+to tag a user then it looks like this
+you get rid of the and sign and then you
+need to
+copy the user id and paste that in there
+so if i copy
+my bot id
+we would need to go at
+like that
+but we're just working with roles today
+so let's jump back over to the pine
+editor
+and move on the next constant variable
+here is our icon url so if the symbol
+info type
+so the market type we're currently
+loaded onto our chart is equal to 4x
+then we're on a forex market and instead
+of sending our icon url from the
+settings menu
+i send a flag icon so this is my website
+here we're getting the art of trading
+dot com forward slash files forward
+slash discord forward slash flags and
+then the base currency is going to be
+the first
+three letters in the symbol ticker
+so if i were to set an alert on this
+market right now this would be turned
+into all of this forward slash aud
+dot png and we would get the aussie flag
+otherwise if we are not on a forex
+market then we reference the icon url
+from the settings menu and you can set
+that to anything you want it's just a
+link just a url to any image file
+same with the avatar url which we'll get
+to in a moment
+next up we have our market constant
+variable and i'll explain what this is
+used for later it's not important it
+doesn't get sent in the alert or
+anything like that anyway the next thing
+i do is just get the data i want to send
+to discord so in this case i'm simply
+getting the percentage change
+of the closing price
+compared the current closing price
+compared to the previous closing price
+so we're dividing that and then
+multiplying by 100 in order to turn that
+into a percentage and then i'm also
+getting the rsi
+of the current market
+and you could use the security function
+here to reference other markets other
+time frames etc i'm just keeping this
+simple we're just referencing the
+current market we're on so that we can
+just set an alert
+on this market
+and then when the alert fires it will
+reference the current market's data next
+up i needed a custom function to
+truncate which is a fancy word for cut
+the excess decimal places so when you're
+sending some alerts
+to third-party apis to discord in this
+case
+sometimes if you send a value like if we
+send the rsi on our chart the rsi might
+be
+70.51
+or whatever
+but when it's sent when that number is
+sent to the third party api it could
+have like a dozen decimal places and
+it's just ridiculous
+so this custom function here truncates
+the numbers decimal places to whatever
+we want it to be so for example if i
+wanted to truncate the rsi's value we
+could say rsi truncated
+i don't know if that's a word but let's
+just go with that
+it's set to
+and then we'd use truncate
+and then pass in our market rsi variable
+this guy here
+comma
+and then how many decimal places we want
+to cut back to so if i put two in there
+then we would only have two decimal
+places after the whole number of our rsi
+value
+now here is the most complicated part of
+the script where we convert our values
+and all the settings data everything we
+have here into json format
+to send to the discord webhook so i've
+got a custom function here
+all of this code will be in the video
+description a link to it will be in the
+video description you can just copy and
+paste this entire script into your
+editor and play around with it but here
+is
+the embed json code for discord from
+pinescript let me paste it in here
+and it looks like a big mess but i'll
+explain what's happening here we have
+our embed parameters so the color of the
+embed this is the this is the actual
+color you can see we've got a red color
+on this embed a white one on this one a
+green one on this one so that's our
+first parameter
+a second parameter is the author
+the third is the title fourth is the url
+and this is the url of the title so if i
+go back over to discord in this case aud
+takes me to the trading view chart that
+i set this alert on so that url
+parameter turns the title into a link so
+this title becomes a link to this url
+next up we have our icon url when we
+call this function later in the script
+we pass it this icon url constant
+variable which remember
+sends a flag icon if this is a forex
+pair otherwise it just sends the icon
+url from our settings menu
+next up we have a description
+and then we have this variable here
+which i can get rid of as i'm not
+currently using that so if i jump back
+over to
+discord this is our description
+this is our title this is our author
+this is our icon url this is our color
+this is our content message
+and the role tag
+this is our avatar url
+we can set this to any image we want to
+and our bot name can be sent to anything
+we want and that basically makes up
+uh your average discord message sent
+from a bot i'll leave a link in the
+video description to a resource a really
+handy resource if i bring this up here
+this website here has a great
+bunch of guides here tutorials on how to
+use the different embed
+parameters so you could have a footer if
+you wanted to
+and that puts a little footer on the end
+here with an icon url and in fact we
+might use this
+later in our script to set the quote
+currency
+flag image so right now we only have the
+aussie flag on here we could set a
+footer below this description here that
+has the canadian flag image in it here
+and then a little footer here if we
+wanted to so maybe we'll look into that
+um towards the end of this lesson and to
+remind myself i'm just going to paste
+the comment in here
+to this footer code and we'll come back
+to this later but anyway there's a whole
+bunch of information here you can send
+images and all sorts of things
+and you can do all of this through json
+using your pine script alerts but today
+we're just going to focus on the basics
+i don't want this lesson to be
+too complex so let me go over this
+function really quickly the first thing
+we do is set up bot text this is our
+username of our bot you can see all
+these backslash
+and quotation marks here the backslash
+is an escape character now in most
+programming languages including
+panscript obviously
+we use quotation marks to
+declare a string so when we're working
+with strings or text we need to use
+quotation mails to tell panscript that
+this isn't code this is text that we
+want to send somewhere or display
+somewhere but if we want to use
+quotation marks in our text
+you can't just
+do a bunch of quotation marks because
+pinescript thinks this is just a bunch
+of blank strings side by side and it
+will you'll get compile errors if you do
+that so instead what we need to do is
+use the backslash or escape character
+and then put in our quotation marks so
+now you can see this is a full string
+but when we send this to discord or any
+anywhere else or display it on our
+screen or whatever we do with this the
+backslash will be basically deleted and
+this is what our text will look like
+but pinescript knows that we want to
+include this quotation mark within this
+string so that's why this looks so messy
+and it's a bit of a headache to write
+out the way i did this was i just set up
+my
+embed how i wanted to in notepad and
+then i pasted that code into the pine
+editor and i just backspaced everything
+and added backslashes
+for all the quotation marks
+and just added a string on the end like
+that
+it took me a little while to get
+everything lining up perfectly but
+that's what this giant string here
+basically is it's just one long json
+string that sends all of our various
+parameters so we have our username which
+is our bot name our avatar url which is
+the url to our
+image
+our profile image of the bot then we
+have our tag text uh what this variable
+here is doing is it's saying is our
+message blank so let me make this a bit
+bigger and open up the settings menu
+here this is our message parameter
+we could set this to anything we want
+like hi this is a market update
+or you can leave it blank and then there
+is no text that gets sent to discord
+this text is
+this text here
+before the embed so it's optional you
+don't need to include this and you don't
+even need to include a role if you don't
+want to you could just send an embed
+without the role and without the message
+in our script the way you do that is you
+would just make both of these text boxes
+blank
+and then this
+tag text would end up just being a blank
+string because here we first check is
+message blank
+and is roll blank if so then set our tag
+text to blank otherwise
+if message is not blank or roll is not
+blank then we set our content parameter
+and then we specify
+is our message blank if so then we just
+add nothing to the content parameter
+just yet otherwise
+if message is not blank then we add that
+message text to our content tag or
+parameter then we add a space on the end
+and then we add our role id constant
+which is this guy here and this does the
+same thing it checks is roll blank
+if so just send a blank string
+otherwise
+specify our role ping tag with the
+correct syntax that you can see here so
+this role id would be a long number like
+you see here and the way you get that
+role idea as i showed you earlier is you
+just right click on the role name
+anywhere in discord and click copy id i
+think you need to turn on
+some sort of setting in the settings
+menu just google that if you don't have
+the option to copy ids just google how
+to copy discord ids there's plenty of
+information on that out there so that's
+our tag text next up we return the rest
+of our text so this just
+sort of merges everything together so we
+merge
+our bot text our tag text and then our
+embed code we have our title here we
+have our url for the title we have our
+color of the embed we have our
+description of the embed we have our
+author name
+in this case that's going to be the
+market we're currently on
+and the url
+of that author so by default that's just
+set to the same url as our title but if
+you wanted to you could have two
+different urls here so that when you
+click on
+either this
+this will take you to one url and then
+you could make it so that when you click
+on the market it takes you to a
+different url if you wanted to i've just
+set it up so that both take you to the
+same url then next up we have our icon
+url this is the icon
+of the author in this case this is our
+flag icon for forex markets and if we're
+not on a forex market then it sends
+whatever image you put in to this
+setting here by default it's just set to
+my logo
+for
+my company so it's actually quite simple
+it only looks complicated because we're
+just dealing with json syntax in
+pinescript which
+you know if we were to see this in plain
+text it would look a lot more like this
+so this is a lot easier to read than
+what we're dealing with
+but basically you would just write out
+what you need to display and then as i
+showed you earlier you can format it in
+pine script after you've written it out
+in plain text like this it's a lot
+easier to do it that way than to try and
+write it out with all those backslashes
+just remember that when you're
+specifying all your keys you need
+quotation marks around them but when
+you're specifying your values not all of
+them need quotations so your color for
+example is just a number so you don't
+want to put quotations around this and
+same with although it looks like you can
+if you want to
+but it's the same with
+booleans you don't want to put
+quotations around your booleans or the
+there is a good chance the message won't
+work
+and this is a good time to mention that
+if you don't want to use embeds and you
+just want to keep it really simple and
+just send a simple
+line of text to your discord use the
+content tag it's much easier it's just
+one curly bracket one open curly bracket
+then content in quotation marks colon
+and then a string and this string can be
+anything and that gets sent to discord
+just like this so if you want to make a
+really simple discord bot through
+training view just use these instead of
+embeds but i like the look of embeds so
+i went with that instead plus you can
+add images and cool stuff like that
+so that's the important part of the
+script covered the first half next up
+all we need to do
+is
+send this information to discord using
+an alert so let me paste this code in
+here
+so the way i've done this is i check if
+the bar state is confirmed this boolean
+value this inbuilt variable is only set
+to true on the last closing update of
+the current bar or in other words the
+final tick of the current bar before a
+new bar starts
+so if the bar state is closing in the
+act of closing on the final tick then we
+get a bunch of information when we send
+it using the alert
+function and the way we would use this
+is we'd create a new alert select our
+script and input the webhook url that we
+created at the start of this lesson but
+we'll get to that in a moment
+so the first thing i do before we send
+this info to
+discord is i get a couple of strings
+here just to keep my code tidy or as
+tidy as possible i broke up our message
+into multiple variables
+the first one is our time frame this
+variable
+gets the current time frame we're on if
+it's an intraday
+uh time frame we're on then this text
+here will say our time frame
+period plus minute so if i was on the
+four hour time frame this would say 240
+minute
+if i was on the 5 minute time frame this
+would say 5 minute
+otherwise if this is not an intraday
+time frame but it's a daily time frame
+then our time frame variable is set to
+daily and i just realized we don't need
+the spaces here
+get rid of all the spaces
+so if the time frame is daily then our
+time frame is set to daily
+if i just set this variable to
+timeframe.period then this would just be
+d
+so to make it a little more readable on
+discord i convert
+the d of the daily time frame period
+into daily same with the weekly if we're
+on the weekly time frame then it's set
+to weekly instead of just w
+and if we're in the monthly it's set to
+monthly otherwise if we're not on any of
+these time frames i don't know what time
+frame we're on and so i just set it to
+blank so this is all done within
+parentheses so
+one of these will be selected out of our
+conditional statements once we've just
+uh determined which one we're on then we
+add the text
+time frame to the end of that so if
+we're on the five minute time frame this
+time frame variable would say five space
+minute space time frame
+just to make it more readable on discord
+next up we have our update this is the
+update we want to send
+this is basically our
+turning our market data that we've got
+up here into readable text
+so here
+we're saying sim info symbolinfo.ticker
+that would say audusd
+space ended space and then we check did
+the market change
+is the market change variable this is a
+percentage change remember of the
+current bar if the current bar's
+percentage change was positive or above
+zero then we say
+au
+aud usd in this case ended up
+and then
+our market changed percent
+or if it was not above zero then it
+ended down
+and then our market change percent
+and here we need to convert our market
+change value into a string or we'll get
+a compile error so you can't add a
+number directly to a string we need to
+convert that string into text
+we do that using the tostring function
+and then here is my truncate
+method the custom variable custom sorry
+function i created here
+that converts
+this market change percentage value into
+a
+number with two decimal places so that
+we don't have 1500 million you know
+numbers after our
+decimal place then we add the percentage
+sign on the end of that text then we say
+which time frame this data is from
+which is just passing the variable we
+created up here
+so
+on time frame and then in brackets we
+have our rsi value and again we convert
+that value to a string and we truncate
+it down to two decimal places so if i
+jump back over to discord this is
+exactly what that looks like now i know
+it's a lot of work to get a simple
+sentence sent to discord
+but the beauty of this
+sort of code is that once it's written
+we can pretty much set these alerts on
+any market we want to and the hard
+work's done that's why i like using
+custom functions and stuff for this
+because now this entire script is
+reusable and i've set multiple alerts on
+multiple markets
+to keep updating the users of my discord
+on any important market events such as
+you can see i've got a few bitcoin i'm
+going to add to the crypto alerts when i
+get around to it but this will notify
+you whenever
+um bitcoin volatility picks up so
+bitcoin rises or falls 10 with uh in an
+intraday time period within the day
+you'll get alerted on discord if bitcoin
+is broken out of its two-week range on
+high volume you'll get a alert
+because that could predicate a larger
+move incoming
+um and then i just have basic forex
+alerts
+that just update you on where the
+markets end of the day uh one thing you
+could add to this if you wanted to and i
+probably should have i don't know why i
+didn't
+is the uh
+price
+of this market
+so
+um i don't know where the best place to
+do this would be
+um let's do it here maybe let's add a
+open square bracket plus two string
+close plus
+close square bracket so now we'll have
+have in square brackets the actual price
+of this symbol so that's it next up we
+have our content which just generates
+the json
+this passes all this information to our
+custom function here and converts it
+into json format so that we can send
+that information in our alert so i need
+to get rid of this boolean because we're
+not using that at the moment
+that boolean was to add fields i was
+going to play around with adding various
+multiple fields to the embed but i don't
+think that's a good idea
+for this particular use case if you
+wanted to send like maybe stock data
+maybe you wanted to pull financials from
+a market or um multiple indicator
+readings from a market you might want to
+look into using fields
+which again this um guide here will help
+you with if you go to fields here if i
+scroll down you can see
+if you wanted to you could send a whole
+bunch of indicator values or something
+for a specific market using fields
+instead of using multiple embeds
+it looks a lot tidier but we won't cover
+that in today's lesson because it's
+going to be too much information
+one other thing i did with my script is
+i added a volatility
+alert so if i paste this block of code
+in here this is exactly the same as this
+code here the only difference is instead
+of waiting for the bar to close
+we're checking if the current bars
+change percentage
+the absolute value of the current
+markets change percentage so positive or
+negative if it has moved 10 percent up
+or down within the current bar and the
+user has turned volatility on in the
+settings menu it's on by default then
+this alert will be sent to discord and
+this is just telling you that there's a
+high volatility alert
+the only difference really with this
+code
+again i should add in
+the
+current price of this market would be
+helpful to know or useful to know
+the only difference between this
+code here and this one up here other
+than we don't specify the time frame
+which i probably should do so let me
+copy this here paste that in there and
+change today to
+on
+time frame
+so now this code is identical to our
+first
+block of code here the only difference
+is instead of sending out color from the
+settings menu this here
+which by the way is a decimal color not
+a hex color or a
+rgb color this is a decimal color not
+sure why discord uses this instead of
+hex colors
+but you'll need to look up an online
+converter maybe i'll link one in the
+description to convert your preferred
+color into a decimal value but the only
+difference with this block of code is we
+check if the current change is positive
+then we set it to bright green otherwise
+we set it to bright red so if we have
+positive volatility this would be a
+green embed if we have negative
+volatility or bearish volatility it'll
+be a red embed
+then we use the alert function to send
+this
+json syntax to discord
+and
+that's it so finally the last thing i do
+here is i create a custom table now this
+is completely optional let me paste this
+code in
+here
+and get rid of our plot close
+this is completely optional i only did
+this
+so that i could um quickly and easily do
+a bit of debugging with my text
+formatting
+for sending my alerts so now if i save
+this script fingers crossed this will
+compile without any errors i hopefully
+haven't missed anything
+i spoke too soon
+undeclared identifier content
+too much arguments ah because i removed
+a parameter from our custom function
+here
+and i forgot to update that now it
+should compile without any errors there
+we go
+you can see that our little custom table
+here is giving us just a little bit of
+information it's telling us what our
+base currency is and what market we're
+on if we were to go to for bitcoin for
+example now it's saying btc
+and crypto if we were to go to gold
+it'll be cfd
+and xau usd
+because this is not a forex market or a
+crypto market
+our market variable
+as you can see here
+if it's forex or crypto then we pass the
+base currency to our market variable
+otherwise we just reference the whole
+ticker so because this isn't forex or
+crypto
+we're just sending the entire ticker and
+that'll apply to anything we uh look up
+here so if i look up apple for example
+this will say stock and apple
+and of course you could set this
+this alert up on apple and it would work
+just the same as forex or anything like
+that only difference is you won't get
+your little flag icon sent to discord
+but of course if you wanted to you could
+look up an apple image and put that into
+your icon url and that will override
+the image over on discord but anyway
+let's go over the table code really
+quickly this isn't really relevant to
+the lesson
+but i'll go over really quickly first
+thing we do is set up a
+table
+with a position of middle right with one
+row one column and a border width of one
+then we have a custom function here
+which fills the table fills the cell of
+the table
+so down here we check is this the last
+bar on our chart
+if so then we use the fill cell custom
+function we pass it our table id
+we pass it 0 row id 0 column id and then
+our title which is market
+as you can see there
+and then our text so this is market plus
+and then our sim info symbol info dot
+type so this gives us our market type in
+this case that stock
+and then we need to pass a color a
+background color for the table i just
+set mine to black with zero transparency
+and i set the text color
+to color.white i'll leave a link in the
+video description to the blog post where
+they announced the release of this table
+functionality and i have a couple of
+guides there a couple of
+example scripts that show you how to use
+tables but this is just a really easy
+way to quickly and visually show certain
+data from your script
+in this particular case this was just
+for debugging purposes
+just so that i knew what my json code
+was sending to discord anyway that is it
+for our script
+let me wrap this up really quickly
+by
+i will add in the footer code in a
+moment but let's just test
+this script
+before we move on to doing that and
+wrapping up this lesson
+so let's create an alert on
+um
+let's go with us yen
+why not
+uh we're on the five minute time frame
+let's go to a one minute time frame so
+that i can make this quick
+click on add alert
+select our script
+leave it as any function alert call
+make sure to paste in the right webhook
+url so let me show you how to do that
+again
+so here we are on discord
+i need to right click on my server go
+server settings
+integrations
+web hooks
+and then click on my test spot
+copy that webhook url
+and then go back to trading view and
+paste that url into our webhook url
+parameter box here
+you can name this whatever you want you
+can set any of this to however you want
+you can notify yourself if you want to
+all that's optional
+now let's click create and in five
+seconds we should get
+an alert sent
+to my
+private sandbox channel where i test
+these sorts of things
+there we go
+market update
+sent from trading view you can see that
+our webhook url's been our web bot sorry
+has been overwritten with the parameters
+we sent in our script so it's no longer
+called test bot it's called trading view
+it's got the trading view icon here and
+all the information we wanted to send
+it's got our price
+um the percentage we're on a one minute
+time frame so it didn't move at all
+basically
+the rsi is 22.45 on this market and
+we're on the one minute time frame
+awesome that's about it i know i kind of
+rushed through this lesson but
+the source code will be in the
+description again as always
+so if you need to just rewatch this
+lesson a few times if you
+if i rushed over something you don't
+quite understand it
+but it's pretty easy it's pretty easy to
+set this up and it's pretty cool if you
+have your own discord server
+or you're trying to set up your own
+training community
+this is a really cool feature to have
+it's really really simple to set up and
+as you can see it just posted another
+alert i better go and disable the alert
+otherwise i'm going to get a bazillion
+messages sent to my discord before i
+remember to do that so i'm going to jump
+over right now and delete that alert and
+then i'm going to take a quick break and
+i'll come back and we will add the
+footer to this alert
+including the quote currency flag in
+this case the japanese
+flag symbol
+to our discord message so i'll be right
+back i need to take a break have dinner
+and then
+i'll show you guys how to do that all
+right i'm back uh i've changed my mind
+about adding the footer in today's
+youtube lesson just because this video
+is already long enough you can figure
+out how to do this yourself if you
+just study the json format for adding a
+footer to our embeds but this is what
+the final product looks like on my
+discord server the only thing i need to
+change here is to convert these pips
+into whole numbers but you can see that
+the
+two icons are here now so we've got the
+euro
+icon and the us icon
+in the header and footer which helps you
+to identify which currency pairs are
+which a little bit easier for those of
+you in the panzer mastery course i'll
+include an extended version of this
+lesson where i'll show you how i added
+this footer in but for the youtube guys
+watching thanks for watching this video
+i hope you found it interesting make
+sure to hit the subscribe button if you
+did because i'll be back soon with new
+lessons on how to do some cool stuff
+with pinescript oh and if you want to be
+notified when the discord server goes
+live make sure to head over to the
+artoftrading.com and sign up to our
+mailing list
+anyway that'll do take care best of luck
+with your trading and i will speak with
+you soon goodbye

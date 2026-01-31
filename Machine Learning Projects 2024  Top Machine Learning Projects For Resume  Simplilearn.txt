@@ -1,0 +1,541 @@
+do you know friends that according to
+the lending statistics the demand for AI
+and ml specialist is projected to Surge
+by 40% between 2023 to
+2027 and on an average an ml engineer is
+expected to earn around $133 and $336
+per year so if you are an aspiring ml
+engineer and thinking about what
+Innovative projects you can show in your
+portfolio then your weight is over cuz
+in this video I'll be covering eight
+amazing ml projects that you can
+Showcase in your
+resume craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we move on just a quick
+info guys simply learn has got Ai and
+machine learning boot camp in
+collaboration with the calch university
+you can gain skills in ml deep learning
+reinforcement learning NLP generative AI
+prompt engineering chat GPT and many
+more so hurry up now and join the course
+the course link is mentioned in the
+description box so let's get started so
+guys let's start first with a beginner
+level project and the first project that
+we are going to encounter that is home
+value prediction so guys this project
+project aims to develop a productive
+model to estimate the value of
+Residential Properties the model will
+analyze various features such as
+location square footage number of
+bedrooms and bathrooms age of the
+property and other relevant factors by
+leveraging historical Property Data the
+model will be able to provide accurate
+home value predictions which can be
+useful for real estate agents buyers and
+sellers so guys the programming language
+that we are going to use all over here
+will be pyth
+and machine learning libraries that we
+will be using will be psychic learn tens
+oflow kiras and for data handling
+libraries we have pandas numpy and for
+visualization we have to use mat plot
+lab and cbon now what will be the
+approach for this one guys so guys the
+first one that we have a data collection
+so here what is going to happen guys so
+first you have to collect the historical
+Property Data from the sources like
+Zillow retailer.com you can also get
+database from the public real estate
+databases like kaggle data sets where
+you have Zillo home value prediction
+ensure that a data set include features
+like location where you have latitude
+longitude square footage number of rooms
+earu property type and previous sales
+The Next Step that comes is data
+cleaning you have to handle the missing
+values by using imputation techniques or
+removing incomplete records removing
+outliers that may skew the model's
+prediction normalize or standardize the
+data to ensure consistency the Third
+third one that we have is feature
+engineering you have to create new
+features such as proximity to schools
+crime rates and access to the public
+transportation encode categorial
+variables example property type location
+using techniques like one hot encoding
+generate interaction features that
+capture relationship between existing
+features the fourth one that we have is
+model selection use regression models
+like linear regression random forest
+cradi and boosting neural networks
+experiment with different models to
+identify the best performing one now now
+in the next phase all you have to do
+guys is model training and evaluation
+split the data set into training and
+test sets train the model on the
+training set and evaluate their
+performance on the testing set using
+metrics like rsme which means root means
+squared error you can use cross
+validation to ensure the model's
+robustness and avoid overfitting the six
+oneth that we have all over here is
+hyperparameter tuning you can optimize
+the model's hyperparameter using
+techniques such as grid search or random
+search to improve accuracy and if you're
+looking forward to deploy your model
+then you can develop a web interface
+using flask or Jango to allow users to
+input property features and get
+predictions you can deploy the model on
+the cloud platform like AWS for
+scalability now if we talk about the
+complexity level of this we all know
+that it is a beginner level project now
+let us move on to the one more set that
+is music genre classification and
+generation so guys this is also one of
+the most beginner level project this
+project aims to develop a system that
+can classify music tracks into different
+genres and generate new music
+composition within specified genre the
+goal is to build a model that analyzes
+audio features to categorize music and
+uses deep learning techniques to create
+new music this project introduces
+Advanced concept of audio processing
+deep learning and generative models so
+guys what will be used in this so we'll
+have programming language that will be
+python for audio processing we'll be
+using librosa for machine learning
+libraries we'll be using tensorflow
+kiras pytorch for data handling
+libraries we'll be using pandas numpy
+for visualization we'll be using matplot
+list seon for the data set guys you can
+use gdan music genre data set or you can
+get it from free music archive so guys
+in the first phase we are going to have
+data collection you can update data sets
+containing music tracks and their
+corresponding genre from the sources
+from gtzan music genre data set and the
+free music archive ensure that a data
+set includes diverse genre and
+substantial number of tracks per genre
+next we'll go for data pre-processing
+use library librosa to load and
+pre-process audio files including
+feature extraction such as mil frequency
+sepal coefficients chroma features and
+spectral contrast you can normalize the
+extracted features to ensure consistent
+input for the given models now if we
+talk about feature engineering guys you
+can extract additional features from the
+audio files such as Tempo beat zero
+Crossing rate Etc create a feature
+Matrix TT that represents the extracted
+audio features then go for the model
+selection use conventional neural
+network or recurrent neural networks for
+the music genre classification split the
+data set into training and testing data
+set now if we talk about model training
+and evaluation guys then you can train
+the selected classification model on the
+training set evaluate the model's
+performance on the testing set using
+metrics like accuracy precision recall
+and F1 score use confusion matrices to
+understand the classification
+performance across different genres
+now if you talk about model selection
+and training for the music generation
+what you will do guys you can use the
+generative adverse networks or recurrent
+neural network such as lstm long
+short-term memory for music generation
+train the generative model on the data
+set to create new music sequences next
+we have model training and evaluation
+you can train the generative model on
+sequences of audio features you can
+evaluate the generated music by
+listening tests and by objective metrics
+like Inception score or fret audio
+distance if I talk about hyperparameter
+tuning guys you can optimize the model
+you can use the hyper parameters using
+techniques like grid search or random
+search to improve performance if I talk
+about deployment guys you can deploy
+these models on cloud platforms like AWS
+now let us move on to our next project
+so guys the complexity of this project
+is at the beginner level now let us move
+to the intermediate level projects next
+project that we have all over here is
+sentiment analysis of Twitter data this
+project aims to develop a sentiment
+analysis model that can classify to each
+set positive negative or neutral the
+goal is to analyze public sentiment on
+various topics or events using natural
+language techniques so guys what will be
+used all over here so in this we will
+have programming language like python
+okay NLP libraries nltk spacy for
+machine learning libraries you can use
+psych learn tensorflow kiras for data
+handling libraries we have pandas dpai
+for visualization we have mat plot lip
+seon and can use the API Twitter for
+data collection now how you're going to
+work on it guys so guys if I talk about
+the data collection use a Twitter API to
+collect tweets based on specific
+hashtags like keywords or topics extract
+relevant Fields like tweet text user
+information timestamp Etc then if I talk
+about data pre-processing guys clean the
+Tweet text by removing special
+characters links mentions hashtags and
+stop wordss tokenize the text and
+perform liiz or stemming to reduce the
+words to their base form next if we talk
+about feature engineering guys you
+convert the clean text Data into
+numerical representation using tfidf bag
+of words or word embedding now if I talk
+about model selection guys you can
+choose a classification algorithms such
+as logistic regression name bias or lsdm
+split the data set into training and
+testing data set now if I talk about
+model training and evaluation then you
+can train the selected model on the
+training set evaluate the model's
+performance on the testing set using
+metric like accuracy precision recall
+and FN score use cross validation to
+ensure the model's robustness if I talk
+about hyperparameter tuning guys you can
+optimize the model's hyperparameters
+using grid search or random search to
+improve the performance for deployment
+which can be optional you can deploy
+your model on AWS for realtime sentiment
+analysis so if I talk about the
+complexity level guys it's complexity is
+intermediate so guys our next project is
+customer segmentation using K means
+clustering
+this project aims to segment customers
+into distinct groups based on their
+purchasing behavior and demographic
+information the objective is to
+understand customer segments and tailor
+marketing strategies accordingly so guys
+what programming languages we'll be
+using so basically we'll be using python
+for machine learning libraries we'll
+have pyit learn for data handling
+libraries we'll have pandas numpy for
+visualization libraries we'll have ma
+plot cbon and the data set Source will
+be e-commerce transaction data how we
+are going to work on on this one for
+data collection we can obtain a data set
+of e-commerce transactions that include
+customer demographics purchase history
+and product information next we'll have
+data pre-processing for data
+pre-processing we are going to do the
+cleaning of the data by handling the
+missing values and
+outliers then for feature engineering we
+are going to create features like total
+purchase amount purchase frequency and
+recency of the
+purchases then we are going to proceed
+for the model selection you can use K
+means clustering to segment the
+customers into distinct groups you can
+determine the optimal number of clusters
+using methods like elbow methods or Sout
+score now if I talk about model training
+and evaluation you can train the K means
+model on the process data set you can
+evaluate the quality of clusters by
+analyzing intra cluster and intercluster
+distances next we have the evaluation
+you can visualize the Clusters using
+techniques like PCA principal component
+analysis TSN Etc next we have the
+hyperparameter tuning now now you can
+tune this model and interpret the
+characteristic of each segment you can
+develop a Target marketing strategies
+for each segment based on unique
+behavior and preferences now deployment
+is optional you can develop a dashboard
+using flask or Django to visualize
+customer segments and track marketing
+campaigns so guys if I talk about the
+complexity of this project so this is an
+intermediate level project so guys for
+data set you can use the kles customer
+segmentation data set which is available
+at the cagles platform form now the
+third intermediate level project that we
+have all over here is building a
+chatboard with rasa this project aims to
+build an intelligent chatboard using
+rasa framework the chatboard will be
+capable of understanding user queries
+and providing appropriate responses
+making it useful for customer support
+personal assistance or information
+retrieval what languages we are going to
+use so it will be python based we will
+have the NLP libraries like rasa nltk
+spacy for machine learning libraries we
+are going to have psyit learn tensor
+flow kiras etc for data handling
+libraries we are going to use pandas
+numai so guys this was what we are going
+to do it and how you can work on this
+one by collecting the data collect the
+conversation data and FAQs from the
+target domain annotate the data to
+create training examples for the chatbot
+next comes is data pre-processing clean
+the text data by removing special
+characters and normalizing the text you
+can tokenize and limiti the text to
+prepare for a training the third one
+have the models training you can use
+rasa's nlus component to train a model
+for intent recognition and entity
+extraction you can Define the dialogue
+management policies to handle different
+conversation flows next guys you can
+perform the feature engineering and
+integration you can integrate the rasas
+nlu and core components to build
+complete chatboard you can connect the
+chatboard to messenging platform like
+Facebook Messenger etc for model
+selection and testing what you can do
+guys you can test this chatboard with
+various inputs to ensure that it handles
+the scenarios appropriately and you can
+also select the right model using this
+now if I talk about model training guys
+what you have to do you have to collect
+the user feedback and conversational
+logs to continuously work on training
+the model next similarly you have to
+retrain the model periodically with the
+new data to see how it is working so
+that will be your evaluation now for the
+hyperparameter tuning what you going to
+do guys you have to check in those
+scenarios where it is able to tune up
+with those scenarios where it can handle
+the input appropriately and next is
+deployment so guys for deploying it you
+can use AWS so guys for a data set you
+can use rasa's open source so that's a
+very good data set for you to proceed so
+guys if you talk about difficulty of
+this project this is an intermediate
+level project now let us move on to the
+advanced level projects for advanced
+level projects the first one that comes
+up to my mind is movie similarity from
+plot summaries now this project aims to
+develop a system that can find out
+recommended movies similar to a given
+movie based on their plot summaries by
+analyzing the textual content of the
+movie plot summaries the model will
+identify similarities and suggest movies
+with similar themes story lines or
+genres this project introduces beginers
+to natural language processing text
+similarly measures and recommendation
+systems what languages we are going to
+use guys we'll be using python NLP
+libraries like nltk Spacey machine
+learning library like psyit learn data
+handling libraries like pandas numpy
+visualization we can use numpy and data
+set Source will be IMDb or kagle so guys
+this process is also involving the data
+collection then you have to go for data
+cleaning then feature engineering next
+model selection the similar process as I
+have discussed in other projects so you
+have to also go through the same one
+next what you have to do guys similarly
+what you have to do you have to train
+the model then evaluate the model then
+hypertune it and finally proceed for the
+deployment so this is overall process of
+this project try to research on the
+website a lot like how you can extract
+it so guys you can use kagle or towards
+data science to research more about this
+project now guys if I talk about the
+difficulty of this project and this is
+an advanced level project now let us
+move on to the next one that we have all
+over here that is image segmentation
+project for brain tumor prognosis this
+is a very very amazing project and
+definitely you can put up on your
+portfolio basically guys this project
+aims to develop an image segmentation
+model to identify and de eliminate brain
+tumors from m& scans the goal is to
+accurately segment the tumor regions
+which can Aid in prognosis treatment
+planning surgical interventions this
+project introduces intermediate level
+concepts of computer Visions deep
+learning and medical image analysis so
+guys what we'll be using all over here
+for programming languages we can use
+Python for deep learning libraries we
+can use tensorflow kiras pyto for image
+processing libraries we can use open CV
+psyit image for data handing libraries
+we can use pandas numpy for
+visualization we can use matte plot Li
+cbon now if I talk about what is the
+process of developing this project the
+first step will be same data collection
+so next step you have to go for data
+pre-processing third step you have to do
+the model selection where you can use
+CNN models for image segmentation task
+then you go for model selection moving
+ahead you're going to have the model
+training and evaluation you have to
+split the data set into training and
+validation and testing data sets next
+proceed for the evaluation phase okay
+evaluate the model with certain metrics
+so here I can give you certain idea like
+you can use dice coefficient
+intersection over Union or accuracy then
+go for hyperparameter tuning where you
+have to optimize the model's
+hyperparameters you can use GD search or
+random search as we have discussed and
+finally you can deploy this model on AWS
+now guys we have come to the final
+project this is also a very amazing
+project guys so guys the complexity
+level of this project is advanced level
+now let us move on to our final project
+that is the impact of climate change on
+birds this is a very very amazing
+project and definitely you can add it on
+your resume this project aims to analyze
+the impact of climate change on the bird
+population and migration patterns by
+examining various climatic Factor s and
+their correlation with bird spes data
+the project seeks to predict how climate
+change might affect bird behavior and
+distribution this project will introduce
+you some advanced level Concepts like
+time series analysis environmental data
+modeling Etc so guys what programming
+languages will be using for data
+analysis you can see we'll have pandas
+numai for machine learning libraries we
+are going to have psychic learn tensor
+flow for visualization we're going to
+have matte plot plotly for GEOS spatel
+we are going to have geopandas folium
+for data source we're going to have
+public data sets on bird observation and
+climate data sources from eBird now what
+will the process flow for this one guys
+first you have to proceed for data
+collection gather bird observation from
+the data like eBird which provides
+extensive record of bird sightings okay
+and for climate data you can collect it
+from NOA including temperature
+precipitation and other relevant
+climatic factors over the time and
+similar next process will be the data
+preprocessing then you have to proceed
+for feature engineering then you have
+have to go for model selection okay
+moving ahead you have to go for model
+training then evaluation then
+hyperparameter tuning and finally you
+have to deploy the model so research
+about this project see what models
+you're going to use suppose I can give
+you a hint about this you can use time
+series analysis models like ARA or ml
+models you can also use random forest or
+gradient boosting for predicting impact
+on the bird population so guys use
+Google exhaustively to research about
+this project this is also a very amazing
+project and it's going to give you a lot
+of idea now if I talk about the
+complexity level of this it is an
+advanced level project so guys that was
+all for today's video I hope so you
+would have enjoyed our today's video on
+top ml projects at simply done staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career here we've got
+you covered explore our impressive
+catalog of certification programs in
+cuttingedge domains including data
+science cloud computing cyber security
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to no
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

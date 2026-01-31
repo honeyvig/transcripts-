@@ -1,0 +1,610 @@
+foreign
+I am mayank and welcome to Simply learn
+today we will take you through the hands
+of lab demo of how you can create a mask
+detection application using Python and
+machine learning before we start I hope
+this screen is clearly visible and the
+audio is fine if yes please type in yes
+if there are any issues do let us know
+in the chat section so that we can
+resolve them I'm repeating again before
+we start I hope this screen is clearly
+visible and the audio is fine if yes
+please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them
+let's wait for some more minutes to let
+other the people join until then let me
+tell you guys that we have regular
+updates on multiple Technologies if you
+are a tech geek on a continuous hunt for
+the latest technological Trends then
+consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+learn I'm repeating again let me tell
+you guys that we have regular updates on
+multiple Technologies if you are a
+techie in a continuous hunt for the
+latest technological Trends then
+consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+learn
+great I think we can get started so in
+today's session we will go through the
+what is object detection is after that
+we will create a mass detection
+application using opencv Python and
+machine learning we will perform
+different function and create an amazing
+application using different python
+libraries before we move on to the
+programming part let's discuss what
+object detection is first and proceed
+further for the same so what is object
+detection
+a computer vision technique called
+object detection is used to find
+occurrence of objects in pictures or
+movies
+object detection algorithms frequently
+use machine learning or deep learning to
+generate useful results
+humans can quickly identify and pinpoint
+objects of interest when viewing photos
+or videos
+using a computer object detection aims
+to simulate this intelligence
+so moving forward so dear Learners if
+you want to upskill your AI and machine
+learning skills so give a chance to
+simpler and professional certificate
+program in Ai and machine learning which
+comes completion certificate and
+in-depth knowledge of AI and machine
+learning check this course detail from
+the description box below
+so here is one question for you guys I
+will give you one minute for this you
+can comment or give your answer in the
+chat section so I can see if the answers
+given by you are right or wrong
+so I'm repeating again here is one
+question for you I will give you exactly
+one minute for this you can comment or
+you can give your answer in the chat
+section so I can see if the answers
+given by you are right or wrong okay so
+the question is
+all keywords in pythons are
+capitalized lowercase uppercase none
+so I'm starting timer of one minute just
+type your answers in the comment section
+or in the chat section do let me know
+your answers
+I kindly ask that everyone take part in
+this to make this live session exciting
+so I'm starting the timer of one minute
+all keywords in Python are in capitalize
+lowercase uppercase or none
+let us know your answer in the comment
+section below
+I kindly ask that everyone take part in
+this to make this life session exciting
+40 seconds remaining
+all keywords in Python are in capitalize
+lowercase uppercase or none
+do let me know your answer in the
+comment section or in the chat section
+I kindly ask that everyone take part in
+this to make this live session exciting
+15 seconds more
+all keywords in Python are in capitalize
+lowercase uppercase or none
+five seconds more
+okay time up so after the allotted time
+has passed Those Who provided the
+correct response will receive a response
+and those Who provided incorrect
+response will receive one
+so now let's move to our programming
+part to create Mass detection using
+opencv python
+so first we will open command prompt to
+write a command to open jupyter notebook
+so here we will write Jupiter
+notebook
+then press enter
+so it will take some time yeah
+so this is the landing page of Jupiter
+notebook and here we have to new then
+python 3.
+so this is how the jupyter notebook UI
+look likes so at first we will import
+some major libraries of python which
+help in creating a mass detection system
+so here I will write import
+CV2 comma OS
+and press enter then I will give the
+path then data path
+to assume
+C
+and Slash
+users
+and Slash
+SLP
+zero nine three seven five
+and Slash
+desktop
+and Slash
+and face
+mask
+detection
+then slash
+data set
+okay
+so here it will be slash my bad sorry
+and Slash
+okay let's look fine
+so here I will write categories
+equals to OS Dot
+list
+directory this dir
+then I will assign data underscore path
+then I will create some labels
+equals to
+here I will write
+I will write here I
+four
+i n
+range
+then here I will give length
+of
+categories
+yeah
+then press enter Then here I will write
+label
+then detect directory
+pursue
+directory then
+zip then categories
+comma labels
+so here I will write print
+then label directory
+okay then I will print
+categories
+then I will print labels
+okay then press enter
+yeah
+so here CV means capturing video the CV2
+function in opencv can read video video
+capture by using pass zero as a function
+parameter we can access our webcam
+we may pass rtsp URL in the function
+parameter to capture CCTV footage which
+is quite helpful for video analysis then
+OS this this OS menu
+the OS module in Python has function for
+adding and deleting folders retrieving
+their contents changing the directory
+locating the current directory and more
+before you can communicate with the
+underlying operation system you must
+import the OS module
+and this OS list directory
+to retrieve a list of all files and
+folders in the given directory use
+Python OS dot list directory method the
+list of files are directory in the
+current working directory will be
+returned if no data is specified
+then label
+the the TK enter widget class called a
+label is used to show text or an image
+the user views the label they cannot be
+interact with it so moving forward I
+will write code so just stay with me
+after that I will explain you line wise
+okay
+so here
+I will write
+that
+image underscore size
+plus two hundred
+then I will create two classes data
+then Target
+okay
+arrays
+then I will write here for category
+in categories
+folder
+underscore
+but
+equals to OS dot path
+then dot join
+then data
+underscore path
+comma
+category
+okay then IMG
+image names equals to OS dot list
+directory then folder path
+just stay with me I will explain you
+line wise
+okay so here I will write for
+IMG name
+in IMG
+names
+IMG underscore path
+equals to OS dot path
+Dot
+join
+then I will write here folder
+I repeat
+I repeat so here we write folder
+underscore path
+then
+IMG underscore name
+so IMG equals to CV2
+dot I am read
+then IMG underscore path
+so here I will write try
+that gray
+equals to
+CV2
+dot CVT
+and capital c color
+then IMG comma CV2
+Dot
+then color
+then underscore B gr to RGB
+okay
+so I will go for the gray one
+CVT color pgr
+to RGB yeah
+so I will write here this size okay not
+in capital letter G size
+equals to CV2
+dot resize
+then Gray
+comma IMG
+size
+comma
+I am Jason
+why this two mg size because like length
+and like width and breadth would be
+shame
+like 100 so press enter
+so I will write Theta Dot
+append
+then resized
+then Target
+dot append
+then label
+then directory
+of category
+okay
+so
+I will write here except
+exception
+as e
+so here I will print
+and
+exception
+comma e
+okay then press enter let's see there
+should be no error
+so it is loading let's wait
+okay no adder
+so image size should be like 100 by 100
+so that is why I wrote here 100 the
+enemy size 100 by 100.
+and I made two arrays like for one for
+data then one for targets
+so
+this for this great question cbt.cvt
+color image so converting the image into
+grayscale okay then this line resize
+equals to CB2 dot resize gray IMG
+so resizing the grayscale into like 100
+by 100 since we need a fixed common size
+for all the images in the data set okay
+then this target a DOT append label
+directory so appending the image like
+and the label categories into the list
+list what is list data set
+so like for the last print exception e
+so if any exception raised the exception
+will be printed here and the pass to the
+next image okay
+so moving forward let's import numpy and
+save this data and the target okay so I
+will write here
+import
+numpy
+as NP
+right
+then I will write here data
+equals to
+NP dot array
+then again data
+by 255
+.0
+okay
+then again data
+equals to NP Dot
+reshape
+then data
+comma
+data
+dot shape
+then zero
+comma mg size
+comma IMG size
+comma 1.
+okay
+then press enter Then for Target
+let me put those just like this then
+Target equals to NP dot array
+then Target
+okay
+okay
+so here I will write from
+Keras Dot
+doodles
+import
+and putas
+okay
+so here I will write new underscore
+Target
+equals to
+NP underscore utils
+dot two
+underscore categories
+categorical I guess categorical
+then Target
+okay
+then press enter
+so here I will save NP dot save
+this data
+comma data
+okay and NP dot safe
+this target
+comma new Target
+okay
+so press enter
+here
+so numpy Nampa is a python Library used
+for working with Diaries it also has a
+function for working with in the domain
+of linear algebra and matrices it is an
+open source project and you can use it
+freely numpy stand for numerical python
+and this Keras
+a python interface for artificial
+neutral network is provided by the open
+source software package known as Keras
+the tensorflow library interface is
+provided by the Keras a number of
+backends were supported by KRS up until
+version 2.3 including tensorflow
+Microsoft cognitive
+so this is the part of the data
+processing this all this part of the
+data processing
+so let me write here data
+pre-processing free processor
+so the data preprocessing part is done
+now we will create the another file of
+this python for the training CNN CNN
+means convocational neural network okay
+test data
+comma
+train underscore Target
+comma test underscore
+Target
+because you train
+underscore split
+then we will split on data and Target
+comma yes size should be
+0.1
+okay so now I will give presenter okay
+train speed train split is not defined
+okay
+it is strain
+test split
+yeah
+so now I will write checkpoint
+request to model
+foreign
+model
+I repeat so here I will write model
+comma
+epoch
+than 0 3D
+dot model
+okay
+so here I have to write comma monitor
+equals to Value loss
+underscore
+loss
+comma
+bubbles
+equals to zero
+comma save
+best
+only
+question
+through
+drama mode
+equals two more should be Auto
+okay
+then I will press enter
+then here I will write history
+it goes to model
+Dot
+with
+to train
+underscore data
+comma
+okay chain
+underscore Target
+comma
+apoc address equals to 20
+comma callbacks
+callback is equals to
+checkpoint
+comma validation
+validation underscore split
+equals to 0.2 the best ratio okay
+so let me press enter okay there is one
+error model dot fit code 10x
+okay this should be a spelling mistake
+epoch
+pochs
+pursue 20
+.
+foreign
+then monitor
+goes to Value loss
+and
+propose equals to zero
+save best only equal to true then more
+Okay so
+here I have to write
+maybe it will so it will take some time
+to go till 20 okay so it will download
+one by one
+so we will wait
+for a while
+so the model checkpoints are completed
+so here I will write print
+then model
+dot evaluate
+okay
+here I will write test underscore data
+comma test
+underscore Target
+then press enter
+okay so I hope you guys understand till
+here if you have any question or any
+query regarding any code just put as in
+comments our team will surely provide
+you the correct solution okay so moving
+forward we will do we will create
+another file for detecting mask okay so
+I will go here and then
+new file
+python
+so I will write here detecting
+okay
+yeah
+so I will import some libraries here
+here as dot models
+import
+load
+models
+we will import
+CV2
+and we will import
+numpy
+as NP
+so press enter
+okay number as anything
+okay so presenter
+so what I will do I will write here
+model equals to load underscore model
+then
+okay
+Keras model from chaos cannot import
+name
+Okay so
+it is model only
+yeah
+so here I will add model equals to load
+model
+so I will write a model
+017
+dot model
+okay
+okay
+so here I will write face underscore
+classifier
+equals to CB2
+Dot
+Cascade
+Cascade classifier
+so this is one file for frontal phase
+default
+so you can find this file on the
+description box below so I will write
+here
+our Cascade
+underscore
+until
+face
+underscore default
+dot XML
+okay
+so source
+equals to
+CV2
+Dot
+video
+capture
+zero it will open our camera
+so labels
+underscore directory
+question
+0
+mask
+and one for
+no mask
+okay
+so colors
+directory equals to
+like no mask for red and mask for green
+okay so here we're at zero
+then 0 comma 2
+55 comma 0
+then again comma for one there should be
+0 comma 0 comma 251.
+okay
+so I hope you guys understand till here
+so if you have any question or any query
+regarding any code so just put as in
+comments our team will surely provide
+you the correct solution
+so
+the code is written
+so let me run this for this first I have
+to like
+so first I have to close my this person
+on screen camera
+so the code is running fine
+now it is showing no Mass
+now it is showing us
+so I hope you guys understand till here
+if you have any queries any question
+regarding any code just put as his
+comment our team will shortly provide
+you the correct solution I hope you guys
+must have understood how you can create
+mask detection system using opencv
+python if you have any queries you can
+ask in the comment section below our
+team will respond you as soon as
+possible and if you want this full code
+just comment for the same thank you so
+much for being here if you enjoyed this
+video please do subscribe to our YouTube
+channel and give a like to this video
+thank you and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
