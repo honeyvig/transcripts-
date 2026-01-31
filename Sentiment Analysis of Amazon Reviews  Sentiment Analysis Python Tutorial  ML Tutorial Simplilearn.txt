@@ -1,0 +1,1439 @@
+hello everyone i am mayank and welcome
+to simply learn today we will take you
+through the hands-on lab demo of how you
+can do the sentimental analysis of
+amazon customer reviews before we start
+i hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+let's wait for some more minutes to let
+other people join
+let's wait for some more minutes to let
+other people join
+let me tell you guys that we have
+regular updates on multiple technologies
+if you are a tech geek on a continuous
+hunt for the latest technological trends
+then consider subscribing to our youtube
+channel and press that bell icon to
+never miss any update from simply learn
+great i think we can get started
+so in today's session we will go through
+the what is sentimental analysis after
+that we will see types of sentiment and
+analysis we will see some application of
+sentiment analysis and at the end we
+will see hands-on lab demo like how to
+implement sentiment analysis using
+python in detail we already have amazon
+customer data set with us we will
+perform different function and analyze
+data for sentiment analysis using python
+you can download dataset from the
+description box below
+so before we move on the programming
+part let's discuss what a sentiment
+analysis actually is and proceed further
+for the same
+sentiment analysis sometime known as
+opinion mining
+is a technique used in natural language
+processing nlp to determine the
+emotional undertone of a document
+this is a common method used by
+organization to identify and group ideas
+regarding a certain good service or
+concept
+text is mined for sentiment and
+subjective information using data mining
+machine learning and artificial
+intelligence
+tools for sentiment analysis assist
+businesses in extracting information
+from unstructured unorganized language
+found in online sources like emails blog
+posts
+support tickets web chats
+forums and comments
+algorithm use rule based automatic or
+hybrid technology
+to replace manual data processing
+while automatic system use machine
+learning to learn from their data
+rule-based system execute sentiment
+analysis using predetermined
+lexicon-based rules combining the two
+method result in hybrid sentiment
+analysis
+sentiment analysis or opinion mining can
+extract the subject opinion holder and
+polarity or the degree of positivity and
+negative
+from the text and identify sentiment
+additionally other scopes including
+document paragraph sentence and sub
+sentence level can be used for sentiment
+analysis after seeing what is sentiment
+analysis let's discuss some types of
+sentiment analysis
+so the first one is fine grained
+sentiment analysis
+by segmenting sentiment each phrase or
+clause in a sentence is broken down and
+examined in relationship to the others
+simply said you can tell who review a
+product and what topics a person
+specifically discuss in their feedback
+and the second one is emotion detection
+instead of identifying positivity and
+negativity emotion detection recognize
+particular emotions example
+could include shock rage grief
+frustration and happiness
+and the third one is intent based
+analysis
+in addition to identify opinions in a
+text the intent based analysis also
+identifies behaviors
+for instance a frustrated online comment
+about changing a battery can motivate
+customer care to get in touch to address
+that particular problem
+and the last one is expect base analysis
+collects the precise component that is
+being mentioned either favorably or
+unfavorably
+for instance a client may write in a
+product review that the battery life is
+too short
+the system will then respond that the
+battery life is the main complaint and
+not the product as a whole
+so after seeing types of sentiment
+analysis let's see some application of
+sentiment analysis
+organization can employ sentiment
+analysis technologies for a number of
+purpose such as
+determining brand popularity reputation
+and awareness at a particular period or
+over time
+customer service requests in two
+categories
+and the next one is monitoring consumer
+response to new improvements or products
+and the fourth one is identifying the
+demographics or target market
+and the fifth one is determining the
+effectiveness of a marketing effort
+so here is one question for you guys i
+will give you one minute for this you
+can comment or you can give answers in
+chat section so i can see if the answers
+given by you are right or wrong
+so the question is
+is text analytics also refers to as text
+mining
+i'm repeating again is text analytics
+also refers to as text mining the
+options are true
+or false
+so let us know your answer in comment
+section below or in chat section
+so i am starting timer of one minute
+just type your answer in comment section
+or in chat section
+do let me know your answers
+so i'm starting timer of one minute
+i kindly ask that everyone take part in
+this to make this live session exciting
+so the question is is stacked analytics
+also refers to as text mining
+35 seconds are left
+do let me know your answers i kindly ask
+that everyone take part in this to make
+the live session exciting
+you want
+20 seconds left
+you can comment or you can give your
+answer in chat section so i can see if
+the answers given by you are right or
+wrong
+so time up guys
+so after the allotted time has passed
+those who provided the correct response
+will receive a response and those who
+provided the incorrect response will
+receive one
+okay now let's move to a programming
+part to perform sentiment analysis using
+amazon customer data set
+so first we will open command prompt to
+write command to open jupyter notebook
+so here we will write jupyter
+notebook
+press enter
+okay it's jupiter notebook
+so this is the landing page of jupiter
+notebook and here you can select
+new python file
+it's loading
+so
+this is how the jupiter ui looks like so
+at first we will import some bunch of
+major libraries of python which will
+help us in mathematical functioning
+so the first one is numpy
+so first i will write numpy import
+numpy
+s
+np
+numpy is a python library used for
+working with arrays it also has
+functions for working in the domain of
+linear algebra and matrices
+it is an open source project and you can
+use it freely
+numpy stands for numerical python
+so the next one is pandas
+i will write here
+import
+pandas
+as
+pd so pandas is a software library
+written for a python programming
+language for data manipulation and
+analysis
+in particular it offers data structures
+an operation for manipulating numerical
+tables and time series
+after that we will import
+import
+nltk
+so the natural language toolkit nltk is
+a python programming environment for
+creating application for statical
+natural language processing nlp
+for parsing classification stemming
+tagging and semantic reasoning it
+includes text processing libraries
+so
+after that
+we will
+import
+from
+nltk
+dot
+sentiment
+dot vader
+import
+sentiment
+htt
+analyzer
+okay there is no colon yeah
+so the lexicon and rule-based sentiment
+analysis tool vader
+vader means valence aware dictionary and
+essential reasoning
+is a customized precisely two sentiments
+expressed on social media
+vader makes use of variety of a
+sentiment lexicon is a collection of
+lexical elements such as words
+that are often classified as either
+positive or negative
+depending on their semantic orientation
+vader not only informs us of the
+positivity and negativity scores but
+also of the sentimentally of each score
+so the next one is
+import
+re
+python re module fully supports regular
+expression similar to those in perl
+if a regular expression compilation or
+use error occurs the re modules raises
+the expression re
+two key functions that are used to
+manage regular expression will be
+covered
+so re means regular expressions
+so the next one is
+from
+xblob
+import
+next
+blob
+okay
+so a python two or three package called
+text blob
+is used to process textual data it
+offers a straightforward api to explore
+typical natural language processing nlp
+tasks like part of speech tagging noun
+phrase extraction sentiment analysis
+classification translation and more
+so the next one is
+import
+words
+from
+word
+cloud
+a word cloud commonly refers to as a tag
+cloud is an image of words popular words
+and phrases are highlighted using cloud
+creators depending on their frequency
+and importance
+they give you immediate straightforward
+visual insights that can inspire more
+through analysis
+and the next one is import
+c bond
+as
+sns
+yeah
+so
+like an open source python library based
+on matplotlib is called cbon
+it is utilized for data exploration and
+data visualization
+where data frames and the pandas library
+c bond function with ease
+so the next one is
+import
+matplotlib
+dot
+pi plot
+as
+plt
+okay yeah seems good
+for python and its numerical expression
+numpy matplotlib is a cross platform
+data visualization and graphical
+charting package as a result it presents
+a strong open source substitute for
+matlab the apis for matplotlib allow
+programmers to incorporate graphs into
+gui applications
+and the next one is
+import
+of links
+c u f f l i n k
+as
+cf
+perfect
+another python module called
+cufflink
+links plotly with panda so that charts
+can be easily created on data frames in
+essence it function like a plugin
+so next in line
+at plot lib
+add plot
+clip so you can enable inline plotting
+by using the magic function percentage
+matplotlib inline which causes the plots
+and graphs to appear below
+the cell where you plotting commands are
+entered
+similar to a jupyter notebook it offers
+back-end interactivity in front-end
+so next we will import
+what you can like we can import okay
+from
+totally dot offline
+import
+init
+underscore notebook
+and let's go mode
+mode
+who gets through
+yeah
+ef
+dot go
+underscore
+offline
+so
+yeah
+in order to display the plot inside the
+notebook you need to initiate plotly
+notebook mode as follows like this
+keep rest of the script as it is like it
+and run the notebook cell by pressing
+you can shift press enter graph will be
+displayed offline inside the notebook so
+basically it is used for the offline
+graphing you can see okay
+so next we will import
+um
+plotly
+dot subplots subplots are important
+import make underscore
+subplot
+yeah
+the non-leaf nodes in this figure schema
+are represented by a hierarchy of python
+classes that was automatically
+constructed and is found in the
+plotly.graph objects
+which is normally imported as go
+these class instance are refers to as
+graph object
+the plotly defined fundamental classes
+okay
+so here we will import some
+like
+warnings you can say
+[Music]
+like to get not error
+so we will import let me give a line
+space
+import
+warning
+earnings yeah
+warnings
+dot filter
+warning
+ignore
+warnings
+dot von
+and
+this
+like will not
+show
+and let me add something pd
+dot set
+option
+display dot
+max underscore
+clumps
+import import
+words from word cloud
+okay there is an error let me check
+what's the error
+okay import
+this
+word cloud
+from word cloud
+it's capital
+and w is also capital
+here
+will be capital
+that it put is small only
+from word cloud
+my bad here went from word cloud
+from word cloud
+import
+word cloud
+okay
+yeah seems good
+so wherever we
+yeah or in warnings despite the
+notification the software continues to
+execute to display warning messages
+utilize the von
+found in the warning module the python
+built-in class expression is a subclass
+of the warning module which is used to
+display warning messages import warnings
+okay for seeing full data every single
+columns like
+okay there is error c bond
+no modulus c bond so
+s will be small
+got it
+okay inline
+is only like
+something like that line
+okay any errors
+no
+i guess no error
+okay
+yeah for seeing full data like every
+single columns of pd
+so here we are using this pd dot set
+option
+so we can use for it
+so moving forward let's import data set
+so for importing data set we will write
+here
+uh
+like df equals to
+pd dot
+read
+csv
+okay
+data set name
+so
+so you can download data set from the
+description box below so no worries of
+for that
+so let me
+run this
+okay
+so like here is pd is for pandas library
+read is used for reading the data set
+from the machine and csv is used for the
+type of file which you want to read
+so let's see our data
+here i will write df dot
+at
+yeah
+so
+if you want to like if you want to see
+top five rows of your data set you can
+use head and if you want to
+like see five rows of your data set you
+can use tail insert
+instead of head this one
+okay so this is our data set with only
+five rows
+if you want to see full data set you can
+like
+from starting from zero and ending it
+four nine one four rows
+okay
+four nine one one five rows and twelve
+columns
+it
+so let me give something like this for
+the better visual
+yeah
+okay so moving ahead let's sort this
+wilson bound column to ascending order
+for better analysis so i am talking
+about this wilson lower bound column
+this one
+for
+it's not 0 0 0 like in all the rows
+so let me show you
+so here you have to write like df equals
+to
+df dot sort
+i'll use
+wilson
+spelling should be correct
+lower
+bound
+make it to ascending order
+ascending label
+sorry descending order so
+vf dot drop
+[Music]
+named okay
+a name
+colon zero
+okay in place
+it is equals to true
+comma x is
+equal to one
+okay so let's see our data
+so here you can see the data is sorted
+in as
+in as ascending order
+okay
+provided row or column is eliminated via
+the drop function
+the draft method eliminates the
+specified column when the column axis is
+specified
+the drop method eliminates the
+designated row when the row axis is
+supplied
+okay
+so i hope you guys understand till here
+if you have any queries or like any
+queries regarding any code or there is
+something question till here
+just put as in comments our team will
+shortly provide you the correct solution
+okay
+so moving forward let's make a function
+for missing values
+so
+okay
+so i will write here
+like
+df
+missing
+values
+analysis
+analysis
+okay it's def for function we use df
+columns
+was to
+col
+for columns
+for
+or
+col
+n
+df dot columns
+if
+df
+column
+is null
+got some
+is greater than zero
+underscore miss
+x2
+is null
+or sum
+but we dot sort values
+sort underscore values
+like in ascending
+ascending
+ascending equation
+true
+like some
+maybe like this
+and this
+that's fine i guess
+yeah so here i will write ratio
+underscore equals to
+same thing
+that sum
+divided by
+f dot shape
+11
+100
+or
+sort
+values
+standing
+was to true
+fine
+okay okay
+num is okay and the tf part
+let's short value is equal to sending
+goes to true fine
+so
+here we will write missing
+underscore df
+goes to pd
+dot
+concat
+p
+dot round
+ratio
+underscore comma
+two
+you're perfect
+their axis will be
+one
+okay
+is
+equals to
+that will give like
+total where i will write missing values
+using
+values
+okay
+comma
+ratio
+thing
+underscore df
+equals to pd
+dot
+data frame
+let's go df
+okay so
+let me return
+let me create one more function for like
+check data frame so df
+underscore
+data frame
+okay
+it equals to 5
+comma
+tail
+equals to
+five
+so here i will write print
+okay
+comma
+again for row sprint
+goes
+dot
+format
+what format
+dot shape
+you know
+so for columns print
+hot shape
+print
+and types
+like of
+types of data
+dot
+center
+same as like that 82
+comma
+and
+df
+dot d types
+center
+just printing this is like you will see
+don't worry
+just stay with me you will see the
+beautiful result
+yeah print
+values
+print missing values uh analysis
+and
+yes is
+like df
+okay then
+again
+you get it
+values
+like there are many how many duplicate
+values are there
+so
+dot same for the center
+see
+oma
+again this one
+print
+f dot duplicated
+don't worry i will explain you like line
+by line
+just stay with me let me write the whole
+code
+first print
+tiles
+like i am printing multiple of things
+so just be with me
+dot
+82 comma
+ef dot
+one tile
+2.05
+comma
+one
+okay
+check
+data frame
+hoping like there will be no error
+yeah
+so you can see now like multiple
+information regarding data set is
+printed
+so this shape is for like
+how many rows and columns present in the
+data set
+like in types you can say
+like every column type like object n64
+float64 and many more are
+like
+present
+so like you can see review text is like
+object and
+day difference is
+n64 and wilson lower bound is float 64.
+okay so total missing values
+so total missing values are like uh
+one from here and one from here like one
+in form reviewer name and other is from
+reviewer text
+and like there is no duplicated values
+in our dataset
+and here you can see
+so like after that quantiles a quantile
+defines a particular part of the dataset
+that is a quantile determines how many
+values in the distribution are above or
+below a certain limit
+special quantiles are the like quartile
+quarter
+and you can say quintile that the fifth
+one and the percentile which is from
+hundredth okay so quantile is for like
+quarter
+or the you can say the fifth one
+so why i wrote this 83 82 and this for
+this purpose
+for making this something look cool
+that is why
+okay
+and
+so moving forward
+let's see unique values and in each
+column
+okay so i will write def
+check
+class
+frame
+unique
+f equals to pd
+dot
+data
+frame
+variable
+variable
+the frame
+columns comma
+classes
+colon
+data frame
+i
+i will write like an unique
+unique
+uue
+or
+i in
+data frame
+or
+columns
+get like
+and unique
+q
+for df equals to
+dot sort
+values
+classes
+ascending
+equals to
+false
+okay
+and unique
+underscore df equals to n
+unique
+f dot
+reset
+index
+drop
+equation
+true
+return
+and unique
+q-u-e
+and uniq
+let's go df
+check
+underscore class
+which one df
+so
+let me run this first
+yeah it's running you can see here
+okay there is an error classes
+okay
+check class df
+you're saying that
+this is
+case is capital c small
+let me run
+now
+yeah
+so here you can see the every column
+having unique values are sorted in
+descending order
+like review tags have like more unique
+values
+so it come first and then review name
+reverb time date difference wilson lower
+bound
+score average then goes to overall
+okay moving forward let's do some
+categorical variable analysis for
+overall
+yes so this will be like amazing
+something amazing is going to be happen
+so
+constraints
+equals to so i am giving here like some
+color values
+so v34
+d
+two two
+e
+b
+zero zero c
+okay
+so you can change you can like
+write whatever you want color
+oh i didn't write hashtag here
+hashtag
+three
+come on
+0 c
+9 to
+e b
+e b
+[Music]
+0
+c
+and then d
+you like 5 right
+ok so d f let's make function okay small
+df
+categorical
+variable
+okay
+df comma
+column
+okay categorical variable summary
+yeah perfect
+so let's make some figures so make
+subplots
+dots
+rows
+equals to
+1
+comma calls
+equals to 2.
+let me write from here like subplot
+it
+is too
+count plot
+like one for percentage
+percentage
+okay
+so specs speech
+equals to
+okay
+like
+type
+colon
+colon
+that's why
+okay
+comma
+same type
+volume here
+domain
+figure dot at
+and then trace
+dot
+bar
+one bar and one that pie chart okay
+y
+goes to df
+columns
+name
+value
+i'll use dawn
+to list
+forex you can lick
+string
+yeah str
+i
+or i
+in
+yeah
+column
+name
+dot value
+what
+counts
+tax
+text
+equals to df
+column name
+dot value
+counts
+and then bracket
+dot values
+dot
+to list
+go for
+text
+font
+the size should be
+14 is enough i guess
+column
+let's go name
+exposition
+so i'm doing for like making chart so
+stay with me to see that amazing chart
+okay
+so show legends
+so these are the like
+colors so i'm giving here value like
+very variable name
+constraints
+comma
+line
+equals two
+hashtag
+db
+e six easy
+comma
+just one
+okay small
+okay let me just
+like
+go over through
+everything is correct or not for the
+column name
+value counts index yeah it's fine
+text equals to tf column name
+dot value
+counts
+dot values
+to list okay
+text font equals to tick size then okay
+for thin size is enough
+name equals to column name and text
+position equals to auto
+and show legend falls and mark
+dict like color equals to constant okay
+fine line equals to color
+and this yeah this okay
+cool
+o equals to one
+comma column
+equals
+one
+seems good
+for pie chart we will make figure dot
+at
+so this is done for the light line chart
+not line chart that bar chart and this
+i'm doing for the pie chart
+okay trace
+go dot
+pi
+have
+columns
+column name
+value
+oh
+is
+leos goes to df
+again that column name
+what
+value
+count counts
+and dot values
+next font
+because you take
+the size
+i will prefer 18 is enough
+exposition
+like auto is fine
+so legend
+is to no need of legend
+false
+m equals to column name
+column name
+colors
+equals to constraints
+equals
+like in second
+okay you will see and you will get to
+know don't worry
+so figure dot
+update
+layout
+title
+equals to
+volume
+point nine
+x
+should be on center
+and y anchor
+be on top
+get
+equals to
+totally
+okay
+i
+plot
+figure
+let me run this
+okay like
+call equals to 2.
+now let's see the chart of like column
+overall one
+so we will write here
+categorical
+okay
+variable
+variable
+summary
+and then data frame name df
+comma
+overall
+okay let's run this
+okay it's loading here
+it's loading
+yeah
+you can see
+this here this is our bar plot and this
+is our pie chart
+so
+like this is overall
+uh from overall you can say that column
+so like percentage
+bar and that bar plot
+so this is how our like pie chart and
+bar chart looks like i hope you guys
+understand till here if you have any
+questions or any query regarding any
+code
+okay like any code any sort of code
+so just put as in comments our team will
+shortly provide you the correct solution
+so
+moving forward our goal is to rank the
+comments by the sentiment analysis
+so we don't get hung up on the other
+details i have sorted this data set
+according to certain rules before
+so moving forward
+we want to clean our data so let's see
+the sample data for cleaning
+so df dot
+review
+text
+okay dot
+head
+let me run this so
+so this is our sample data look likes so
+let's see
+like data full data for this okay let me
+see for
+or this i guess
+okay
+well like any particular row
+you can say i can take okay
+so i will write review
+underscore example
+example
+equation df
+dot
+review
+text
+i will take a random 2031 i guess
+okay so
+give you
+underscore example
+so this is
+like at 2031
+there is one review text
+okay so in that the whole data is here
+like uh like so my lovely wife bought me
+a samsung galaxy tab for father this
+this this
+like to find the exact model number this
+is a long you know comment
+i got the this this is it works like a
+charm okay so
+after seeing this data what we're gonna
+do is like we will clean it from
+punctuation and numbers using rejects
+rejects what a regular expression okay
+so here i will write
+review underscore example
+example okay
+equals to re
+dot sub
+and what i will do is
+okay i will explain
+don't worry
+small led
+to capital a
+a to z
+okay
+comma
+then space
+comma
+review
+underscore example
+exam
+but
+add sorry
+yeah
+review
+so here we use re for regular expression
+okay and
+so all the punctuation and numbers are
+removed from particular data
+so let me check first
+yeah this a to z then a to that okay
+fine
+so
+like all the punctuation and numbers are
+removed from particular data i will now
+convert the text or to all lowercase our
+machine learning algorithm recognize
+words that start with the capital
+letters as a different word
+and we will convert them to lowercase so
+thus our machine learning algorithm will
+not perceive words that start with a
+capital letter as a different word
+so what i will do is
+here i will write
+review
+sample
+sample
+equals to g view
+again example
+got lower
+i will
+split split
+okay
+yeah
+example
+so here you can see
+we have converted all the words in the
+lowercase letter by using lower function
+and why they are coming in new lines
+because we are splitting them using
+split
+function
+okay if you see only
+did lowercase for single row like we did
+for the like
+2 0 i guess 2 0 3 1
+okay
+yeah so let's make all row same in
+lowercase so i will write here rt
+equals to lambda
+x
+str
+er
+x
+for
+tf view
+text
+is capital
+text
+df
+view
+text
+next
+okay equals to df
+view
+yeah dot lower
+you have done
+and
+see all the data is in like lower case
+so i printed just top 10 rows and in
+like in reviews text column
+all the are in the lower case now so i
+hope you guys understand till here if
+you have any question or any query
+regarding any code or question till here
+like any code just put as in comments
+our team will shortly provide you the
+correct solution and if you need this
+full code you can comment down below
+okay
+so now the time has come to do sentiment
+analysis because all the data is sorted
+so what
+will i write
+let me
+do it little bit up
+yeah
+so i will write
+from
+yeah
+from
+vader
+sentiment
+dot fader
+admin
+port
+sentiment
+intensity
+analyzer
+yeah
+if
+polarity
+subjectivity
+your subjectivity
+let's do
+df
+view
+text
+not
+apply
+next
+pd
+dot series
+okay here we let text
+blob
+then again text
+dot
+like
+sentiment
+let me run for loop for index
+comma rho
+in
+df
+g view
+text
+what
+item
+items
+or
+sentiment
+density
+analyzer
+for polarity
+scores
+row
+score
+or neutral i will write score
+for positive
+if
+this is something crazy if negative is
+greater than positive
+then df dot location
+index
+comma
+segment
+equals to
+negative
+negative
+yes
+then
+let's see if
+positive is greater than negative
+then
+in this case
+df dot
+log
+index
+comma
+sentiment
+first two
+positive
+p capital
+else
+ef dot
+llc
+x
+sentiment
+let's do
+neutral
+okay
+so
+like this is for sentimental analysis
+and text blog
+this thing like text blob
+this
+blob okay it's blob
+textblob will return polarity and
+subjectivity polarity indicates your
+mood that is whether it is positive
+or negative or neutral
+it returns a value between zero and one
+the closer to one the more positive and
+the closer to zero is more negative
+okay
+let me run this it will take a little
+bit time
+because this sentiment
+okay it is getting error
+like module panda has no attribute
+series
+okay which one
+text
+sentiment
+okay here what is the thing
+s is capital
+let me run now
+it is executing
+like fit for a while wait
+so it will take time to run because like
+because of this sentiment intensity
+analyzer
+it take time
+can sentiment intensity
+analyzer okay spelling mistake again
+y index index is not defined
+sorry again
+index
+it will run i guess
+because everything seems good
+negative positive and this else
+loading so i have to wait like for like
+two minutes more i guess
+still loading guys
+i take time
+sentiment intensity analyzer
+so let me tell you again sentiment
+analysis like this text blob
+text blob
+will return polarity and subjectivity
+so polarity indicates your mood
+that is whether it is positive it is
+negative or it is it will be neutral
+it returns a value between zero and one
+the closer to one the more
+positive
+the closer to zero more negative
+okay
+i guess it's still
+running
+so
+it will take time so let me write code
+for that uh 20 into prediction i repeat
+moving forward let's identify the 20
+interpretation now we can include the
+positive negative and neutral status of
+the command
+okay
+then df
+df
+sentiment
+which equals to
+positive
+thought
+lose
+sun
+lower
+ending
+equals to
+false
+okay
+dot head
+it's 5.
+if i will run it may
+if eras to me because it's still running
+still running here it's still loading
+so let let let me write code for that
+unbalanced data problem so
+like we will category
+that data into positive negative and
+neutral
+okay so
+categorical
+variable
+summary df
+he meant
+yeah
+it came like this because of this
+wait i will tell you
+yeah so here you can see the pie chart
+distributed in negative positive and
+neutral emotions
+okay or you can say ratings and here you
+can see the bar chart also
+so
+and
+you can see the percentage distributed
+in each
+like in positive negative and neutral
+one
+so
+i hope you guys must understood the
+concept of sentiment analysis how we can
+implement it using python
+if you have any queries you can ask in
+the comment section below our team will
+respond you as soon as possible if you
+want this full quote
+just comment for the same
+thank you so much for being here if you
+enjoyed this live session please do
+subscribe to our youtube channel and
+give a like to this video thank you and
+keep learning

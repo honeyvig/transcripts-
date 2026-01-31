@@ -1,0 +1,378 @@
+we use our wi-fi every day for work and
+we use the internet for entertainment
+and communication
+the dependency on technology is at an
+all-time high thanks to the radical
+developments and innovation in these
+last two decades
+a big portion of this belongs to
+ensuring secure channels of
+communication and data transmission
+we have already covered videos on
+cryptography encryption and other
+algorithms such as the dsa rsa aes etc
+today we will be covering the most
+advanced hash functions known today
+the secure hash algorithms family or sha
+let's take a look at the topics to be
+covered in today's video
+we take a look at what is hashing and
+its principles examples and applications
+we learn about the origin of the sha
+algorithm along with its methodology
+there are some distinct characteristics
+of the sha family that we cover as well
+we take a look at the steps needed to
+create hashed values using the sha
+algorithm and then finally learn about
+the prospective advantages for the same
+let's first get acquainted with the
+concept of hashing and its applications
+hashing is the process of scrambling a
+piece of information or data beyond
+recognition
+we can achieve this using hash functions
+which are essentially algorithms that
+perform mathematical operations on the
+main plain text
+the value generated after passing the
+plain text information through the hash
+function is called as the hash value
+digest or in general just hash of the
+original data
+while this may sound similar to
+encryption the major difference is that
+hashes are made to be irreversible
+no decryption key can convert a digest
+back to its original plain text value
+however a few hashing algorithms have
+been broken down due to the increase in
+computational complexity of the new
+generation computers and processors
+there are new algorithms that still
+stand the test of time and are being
+used among multiple areas for password
+storage integrated verification etc
+like we discussed earlier websites use
+hashing to store user passwords so how
+do they make use of these hashed
+passwords
+when a user signs up to a new account
+the password is then run through the
+hash function and the resulting digest
+is stored on the servers
+so the next time a user logs into the
+account the same password he enters is
+passed through the hash function again
+if the digest matches with the one
+stored on the server then he is allowed
+to login to the account
+this way no plain text password gets
+stored preventing both the owner from
+snooping on user data and protecting the
+user privacy in the unfortunate event of
+a data breach or a hack
+we also use hashing when it comes to
+verifying data integrity
+when a user uploads a file onto the
+internet he or she can pass the file
+through a hash function and upload its
+digest as well
+when a new user downloads the file for
+personal use they can again pass the
+file through the same hash function
+the digest values are then compared
+within the newly generated value and the
+value uploaded by the user
+if the values match then the data
+integrity is verified and the value was
+not corrupted in transit
+to generate these hash digests from a
+standard input we use hash functions
+such an example of a hash function is
+the sha algorithm
+let us learn more about it in our main
+focus for the thing
+the secure hash algorithm are a family
+of cryptographic hash functions that are
+published by the national institute of
+standards and technology along with the
+nsa
+it was passed as a federal information
+processing standard also known as fips
+it has four different families of hash
+functions
+ssj0 is a 160 bit hash function
+published in 1993 and it was closed down
+later after an undisclosed significant
+flaw
+sha-1 is also a 160-bit hash function
+which resembles the earlier md5
+algorithm this was designed by the nsa
+to be a part of the digital signature
+algorithm
+sga2 is a family of two similar hash
+functions with different block sizes
+known as the sha-256 and the sha-512
+they differ in the word size
+ssh-256 uses 32-bit words while sha-512
+uses 64-bit words
+sha-3 is a hash function properly known
+as kcac it was chosen in 2012 after a
+public competition among non-nsa
+designers
+it supports the same hash lengths as
+hsj2 and its internal structure differs
+significantly from the rest of the sha
+family
+as we have already iterated the process
+is straightforward we pass a plain text
+message to the sha hash function which
+in turn performs certain mathematical
+operations on the clear text to scramble
+the data
+the 160 bit digest received from this is
+going to be radically different from the
+plain text
+the goal of any hash function is to
+produce digests that appear to be random
+to be considered cryptographically
+secure the hash function should meet two
+requirements
+first that it is impossible for an
+attacker to generate a message that
+matches a specific hash value
+and second it should be impossible for
+an attacker to create two messages
+producing the exactly same hash value
+even a slight change in the plaintext
+should trigger a drastic difference in
+the two digest
+this goes a long way in preventing hash
+collisions which takes place when two
+different plane tests have the same
+digest
+the sha family functions have some
+characteristics that they need to follow
+while generating the digest
+let's go through a few of them
+the length of the clear text should be
+less than 2 to the power 64 bits in the
+case of sha 1 and s h 256
+this is essential to keep the plain text
+compatible with the hash function and
+the size needs to be in comparison area
+to keep the digest as random as possible
+the length of the hash digest should be
+256 bits in the sha-256 algorithm 512
+bits in the sha 512 algorithm and so on
+bigger digest usually suggests
+significantly more calculations at the
+cost of speed and space
+we typically go for the longest digest
+to bolster security but there must be a
+definite balance between the speed and
+security of a hash function
+by design all hash functions of the sha
+512 she-256
+are irreversible
+you should neither get a plain text when
+you have the digest beforehand
+nor should the digest provide the
+original value when you pass it through
+the same hash function again
+another case of protection is that when
+the hash digest is passed into the sha
+function for a second time we should get
+a completely different digest from the
+first instance
+this is done to reduce the chance of
+brute force attacks
+to achieve this level of intricacy there
+are a number of steps to be followed
+before we receive the digest
+let us take a look at the detailed
+procedure as to how the sha algorithm
+works
+the first step is to make the plain text
+compatible with the hash function
+to do this we need to pad the bits in
+the message
+when you receive the input string you
+have to make sure the size is 64 bit
+short of a multiple of 512.
+when it comes to padding the bits you
+must add one first followed by the
+remaining zeros to round out the extra
+characters
+this prepares our string to have a
+length just 64 bits less than any
+multiple of 512
+here on out we can proceed to the next
+step where we have to pad the length
+bits
+initially in the first step we appended
+the message in such a way that the total
+number of bits in the message was 64 bit
+short from becoming a multiple of 512.
+now we add the length of bits in such a
+way that the total number of bits in the
+message is a perfect multiple of 512
+that means 64 bits plus the length of
+the original message becomes a multiple
+of 512. this becomes a final string that
+needs to be hashed
+in the next step we have to initialize
+this chaining variables
+the entire plain text message can now be
+broken down into blocks of 512 bits each
+unlike other hash algorithms like md5
+which use 4 registers or buffers sha
+family use 5 buffers of 32 bits each
+they are named a b c d and e these
+registers go through multiple rounds of
+operation but the first iteration has
+fixed hexadecimal values as can be seen
+in the screen
+moving on we have to process each of the
+512-bit blocks by breaking each of them
+into 16 sub-blocks of 32 bits each
+each of them goes through four rounds of
+operation that use the entire register
+and have the 512-bit block along with
+the constant array out of those four
+rounds each round has 20 iterations so
+in general we have 80 rounds sum total
+the constant value of k is an array of
+80 elements
+of those 80 16 elements are being used
+each round so that comes out to 80
+rounds for each of those elements
+the value of t differs by the number of
+rounds as can be seen in the table below
+a single formula is necessary to
+calculate the output of each round and
+iteration
+the formula can be b c d e register is
+equal to e plus a non-linear process b
+along with a circular shift of a plus wt
+plus kt
+in this formula abcd is the register
+value of the chaining variables as we
+discussed before
+p is the logical process which has a
+different formula for each round
+s5 is a circular shift by 5 bits
+and wt is a 32-bit string derived from
+the existing sub-block
+this can be calculated depending on the
+iteration at hand
+kt signifies a single element of the 80
+character element array which changes
+depending on the particular round at
+hand
+for the values of wt the first 16 values
+are the same as that of the sub blocks
+so there is no extra calculation needed
+for the next 64 elements the value of wt
+can be calculated as shown in the
+formula here to better understand this
+let's take a look at how each of this
+goes in a sequential process we have our
+initial register using the 5 words of 32
+bits each in the first step we put the
+values of a b c and d to the subsequent
+register as the output
+next we use a non-linear process p that
+changes depending on the round and uses
+the values of b c and d as input
+whatever output is generated from the
+non-linear process it is added with the
+value of the e register
+next the value of a is circular shifted
+by 5 bits and is added with the output
+generated in the previous step
+the next step is adding the value of wt
+and the constant element of kt the
+current output is then stored in the
+register a similarly this iteration is
+repeated every round and for each sub
+block in the process once all the
+registers are complete and all the sub
+blocks are joined together to form the
+single ciphertext message we will have
+our hashed output regarding the
+non-linear process p that uses the
+values of b c and d as input the formula
+changes every round to maintain a
+complexity of the program that can
+withstand brute force attacks
+depending on the round the values are
+passed through a logical operation which
+is then added with the values of wt kt
+and so on
+now that we understand how to get our
+hash digest from the plain text let us
+learn about the advantages we obtain
+when using the sha hash algorithm
+instead of relying on data in a plain
+text format
+digital signatures follow asymmetric
+encryption methodology to verify the
+authenticity of a document or a file
+hash algorithms like ssh 256 and the
+industry standard sha 512 go a long way
+in ensuring the verification of
+signatures
+passwords need not be stored in a plain
+text format which makes them accessible
+to hackers and other malicious actors
+when using digest the database security
+also gets a boost since the size of all
+hash values will be the same
+in the event of a hack or a breach the
+malicious actor will only receive the
+hash values with no way to regenerate
+the plain text
+in this case the plain text would be
+user credentials
+since the hash functions are
+irreversible by design it has become a
+compulsion when storing passwords on the
+servers
+the ssl handshake is a crucial segment
+of the web browsing sessions and it's
+done using sha functions
+it consists of your web browsers and the
+web servers agreeing on encryption keys
+and hashing authentication to prepare a
+secure connection
+it relies on a combination of symmetric
+and asymmetric algorithms which ensure
+the confidentiality of the data
+transmitted between a web server and a
+web client like the browsers
+you can monitor file corruption by
+comparing hash values before and after
+transit
+once the hashes match file integrity
+checks are valid and data corruption is
+avoided
+hash functions will always give the same
+output for the same input irrespective
+of the iteration parameters
+it also helps in ensuring that the data
+hasn't been tampered with on route to
+the receiver of the message hope you
+learned something interesting today if
+you have any queries regarding the topic
+feel free to ask us in the comments
+section and we will get back to you as
+soon as possible subscribe to our
+channel for more amazing content like
+this and thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,4002 @@
+hey there welcome to selenium webdriver
+tutorial by simply learn my name is
+anaga and today in this video we'll be
+talking about the selenium webdriver
+basics what is that you should be
+expecting from this video let's see what
+a selenium whenever we are learning
+about any tool it's good to know a
+little bit brief history of it so we
+will look into how selenium has evolved
+over years to become the most popular
+web application automation tool and why
+use webdriver and then we will
+understand what a selenium driver while
+we learn this i will also be touching
+upon some drawbacks of manual testing
+and how automation helps and then a deep
+dive into architecture of webdriver as
+you know every automation tool has its
+own advantages and limitations so we
+will be understanding the limitations of
+selenium webdriver and how we work
+around this and then i will demonstrate
+the webdriver in action for which i will
+use a simple web application use case to
+automate so let's get started so before
+we talk about selenium let's understand
+a few drawbacks of manual testing let's
+take an example of a very simple use
+case as a user i want to login to my web
+application using username and password
+a very simple use case and it's a very
+common use case for any kind of web
+application you're working so as a
+tester what do i do i need to write
+multiple test case to test this use case
+so i can use multiple data sets like
+valid credentials invalid credentials
+null values and so on to test this
+particular use case and then what you do
+you start executing the test cases one
+by one you find bugs then your
+developers fixes them and then you will
+need to rerun all the test cases again
+and again until all the bugs of for this
+use case are fixed and your application
+is ready to ship now look into this now
+this brings us to the first merit
+demerit of the manual testing which is
+what if one has to run test cases with
+hundred transactions and repeat them
+again and again this is going to be a
+very time consuming process and very
+boring also it is more error prone since
+it's done manually and human mistakes
+are bound to happen the third challenge
+is the scope of manual testing itself is
+very limited for example say regression
+testing ideally you would want to run
+all the test cases which you have
+written but since it's a manual process
+this is going to be very tedious to do
+and also you would not have all the
+luxury of time to execute all test cases
+so what do you do you start picking up
+those test cases which are very
+important to be run and that way you are
+kind of limiting the scope of your
+testing also working with large amount
+of data manually is going to be
+impractical what about performance
+testing you want to collect metrics on
+various performance measure as a part of
+your performance testing you want to
+simulate multiple loads on your
+application under test and all these
+things manually it is very difficult to
+perform and it's not feasible also and
+to submit all this creating manual test
+reports after running all the tests who
+wants to really do that and again
+another level of challenge here is say
+if you're working on an agile model
+where code is being churned out by
+developers the testers are building
+their test cases executing them as and
+when the bills are available to them
+this happens iteratively and hence you
+will need to run all those test cases
+which you have written multiple times
+during your development cycle and doing
+this manually definitely is going to be
+very tedious and boring and is this
+effective of doing it no so what do we
+do we automate it so this tells us why
+we want to automate one for faster
+execution two to be less error prone
+three to help frequent execution of our
+tests so there were many tools available
+in the market for automation one such
+tool was selenium and that brings us to
+the slide advent of selenium so much
+before selenium there are various tools
+in the market like rft qtp just to name
+a few popular ones so selenium was
+introduced by a gentleman called jason
+huggins way back in 2004. he was an
+engineer at thoughtworks he was kind of
+working on a web application which
+needed frequent testing and he realized
+the inefficiency in doing manual testing
+of his application repeatedly so what he
+did was he wrote a javascript program
+that automatically controlled the
+browser actions and then he named that
+as javascript test runner he made this
+open source which was later renamed as
+selenium core and this is how the
+selenium came into existence so with
+this brief history of selenium let's
+understand what is selenium and what are
+its main features selenium is the most
+popular and widely used automation tool
+for automating web applications it
+enables us to test web application on
+different kind of process like internet
+explorer chrome firefox safari opera and
+so on and also they introduced support
+for edge browser after microsoft
+introduced it selenium is a set of tools
+and libraries to facilitate automation
+of web application it is not a single
+tool it has multiple components and
+those we will be seeing uh in some time
+all these tools together help us test
+the web application so selenium is open
+source and it is platform independent
+this is the biggest reason why people
+are preferring this tool because it is
+free of cost qtp and rft which i just
+talked about are a chargeable one
+selenium scripts can run on any platform
+because selenium is primarily developed
+in javascript so it is platform
+independent well as you know it's common
+for manual testers not to have in-depth
+programming background so selenium has a
+record and replay back tool called the
+selenium ide which can be used to create
+a set of actions as a script and to
+replay that script but this is mainly
+used for demo purpose why because
+selenium is such a powerful tool that
+you should be able to take advantage of
+all its feature and not just be with a
+record and replay tool right so that way
+there are a lot of record and replay
+tool anyway available in the market the
+selenium provides support for different
+programming language java python c-sharp
+ruby php and so on you can write your
+test scripts in any language you prefer
+or you like and again as i said one need
+not really know in-depth or advanced
+knowledge of these languages you would
+still be able to write the selenium
+scripts with the basic knowledge of this
+programming language and also selenium
+supports various operating systems you
+can run selenium test on windows mac or
+linux or even say if you have ubuntu
+machine you can always run your selenium
+test on ubuntu machines so of you can
+run the test on any platform of your
+choice okay so let's go now a little
+more deeper into selenium so i said that
+selenium is not a single tool but it is
+a suite of tools right so now let's look
+at what are those major components which
+comprises of the selenium suite first
+one is the selenium ide so selenium ide
+is the most simplest tool in the whole
+suite of the selenium it is nothing but
+it's an integrated development
+environment earlier this ide was simply
+a firefox extension and it offered a
+record and playback functionality it was
+a very simple and easy to use and as i
+said mainly this is used for prototyping
+or for only the demo purposes right and
+not creating automation for your
+real-time projects because you know of
+its own limitation of being a simple
+recorded replay too however selenium
+what happened selenium ide it died with
+firefox 55. so that means uh the support
+for ide was stopped from firefox 55
+version but the good news is very
+recently all new brand new selenium ide
+has been launched and also what they
+have done is they've made this cross
+browser that means you can install the
+extension on chrome the id extension on
+chrome or as an add-on on firefox so it
+is supported on both the browsers
+firefox and chrome all right so while we
+are talking of this ide let me also show
+you
+how the latest id on the chrome looks
+okay for that let me go and launch my
+chrome browser so let me just open a new
+tab and what i'll do is i'll search for
+selenium id for chrome download then i
+go to this website and then you can see
+a selenium id offered by seleniumhq.org
+so what i simply need to do is like you
+install any extension on your chrome
+browsers i just say add to chrome and
+this adds this extension on your chrome
+browser now it is added so selenium ide
+has been added to chrome use this
+extension by clicking the side screen so
+can you see this icon here which is
+selenium id that's it so once you have
+installed this you are free to start
+using the id on this chrome browser
+similarly you can do adding of this
+add-on which is called as add-on on
+firefox so go to the firefox browser
+search for the selenium id and just
+install that add-on so let's get back to
+our presentation so that's about the id
+so what's our next component our next
+component is selenium rc which is
+nothing but selenium remote control
+selenium rc is used to write web
+application test in different
+programming languages it interacts with
+the browser with the help of rc server
+it has an rc server through which only
+it can interact with the web browsers
+and how does it communicate it uses a
+simple http get and post request and
+this is what was called as selenium 1.0
+version but it got deprecated in 2.0
+version and it was completely removed in
+3.0 and was replaced with something
+called as web driver so we will be
+talking in detail about why this
+happened what were the drawbacks of rc
+which led to replacing with the web
+driver so now that brings us to third
+component which is the selenium
+webdriver this is the most important
+component it is just a programming
+interface to create and execute our test
+cases of course it's a successor of rc
+because there were certain drawbacks
+which i just mentioned and we will be
+going in detail of what it were so
+driver what the major difference what we
+see with the web driver is the
+architecture of the web driver is much
+simpler than rc for the reason that
+webdriver interacts with the browser
+directly unlike your rc where it needs
+an rc server to interact with the
+browser so this gave a lot of advantage
+an edge over the rc the fourth component
+selenium grid selenium grid is used to
+run multiple test scripts on multiple
+machines at the same time with selenium
+driver you can only do the sequential
+execution however in real time
+environment you know that there is
+always a need to run tests on
+distributed environment for example say
+you have a web application and say you
+have automated around hundreds of
+thousands of test cases and you need to
+run them as a regression suite and also
+one of the ask is that you need to run
+this on multiple browsers and multiple
+os why since you have automated them and
+your application supports multiple
+browsers and os now imagine the time
+taken to run these thousand test cases
+sequentially with the web driver right
+it's going to take quite a bit of time
+so what you need is to run this parallel
+on multiple machines matrix across the
+browsers and operating system and that
+is where the grid helps you in achieving
+that so grid has this hub and node
+concept and it helps in achieving the
+parallel execution which i just talked
+about so you can check out our detailed
+video on selenium grid on simply learn
+all right so now we talked about the
+components of the selenium so let's look
+at the different versions it evolved
+into so when i talked about rc i
+mentioned that this was selenium one
+version so now let's understand how this
+evolved over years and what it offers
+today so when jason huggins introduced
+selenium the tool was called javascript
+program he called it as javascript test
+runner it had one major issue now that
+is something called a same origin policy
+so what is the same origin policy it
+says that a javascript when executed in
+a domain can access web pages in that
+domain only and it cannot access any web
+pages in another domain i will repeat it
+same origin policies dictates that a
+javascript is executed in a domain can
+access web pages in that domain only and
+it cannot access web pages in another
+domain for example say every web page
+inside google.com domain like search
+email drive can be accessible but
+nothing outside of google.com like say
+if you want to access a web page and say
+amazon or yahoo is possible to access
+why because of the simple reason which
+is the security reasons now to overcome
+this paul homan created something called
+a selenium remote control server and why
+did he create that he wanted to trick
+the browser in believing that the
+selenium core through which you're going
+to run your scripts and your web
+application under test are in the same
+domain with which you are able to
+achieve run your test on your web
+application without having to get into
+this issue of same origin policy so this
+is what was a version one of selenium
+and we called it as selenium remote
+control and then what happened in 2007
+simon stewart okay he invented this web
+driver now why did he invent this
+because the architecture of selenium rc
+was little complicated rc required a
+separate server to talk to your browsers
+so what he did was he removed the
+requirement of having a separate server
+in the rc and this was the selenium 2
+version now since it was a transition
+phase both the selenium rc and the web
+driver co-existed in selenium 2. while
+the web driver was still under
+development and then what happened in
+3.0 selenium is the selenium core which
+is the rc was completely deprecated and
+only the web driver was made available
+so in this series of videos we will be
+working with selenium 3.0 and now
+selenium 4 is already around the corner
+so alpha is already released as of the
+day when this video was made and i
+believe some of the features what the
+selenium 4 is going to offer is they are
+moving towards w3c webdriver
+standardization one and also there there
+is going to be an improved id the id
+which i just talked about that it's a
+improved version of the previous id and
+then an improved version of selenium
+grid also so they might be doing a gui
+based grid right so these are some of
+the major features expected in this
+version why selenium webdriver so let's
+look at what led to replacement of
+selenium rc with this webdriver for that
+first we need to understand the selenium
+rc and its shortcoming as i said
+selenium rc is a simple tool to write
+tests for web applications in various
+supported programming languages like
+java python ruby and c and this is the
+architecture of the selenium rc at a
+very high level first you need to write
+test scripts in any of the supported
+languages of your choice so if you're
+more familiar with java you would be
+writing your test scripts all your
+commands in the java so before we start
+writing the test one of the major
+requirement right required for the rc to
+run is your rc server so first you need
+to start this rc server before you run
+even a single line of code and this rc
+server is a separate application and now
+what is the function of this rc server
+the selenium server or the rc server is
+responsible for receiving cellini's
+commands from your test script it
+interprets them and then reports the
+result back to your selenium tester now
+what are the selenius commands these
+commands are nothing but the commands
+returned in your test script these are
+called as selenius command that is what
+the selenium server does now after the
+selenium servers function let's look at
+how the browser interaction happens the
+browser interaction happens through this
+rc server this rc server uses a simple
+http post and get request to communicate
+and how does this communication happen
+this rc server acts like a proxy say for
+example your test scripts asks for
+launching a browser this command from
+your test script goes to the server and
+then this rc server launches the browser
+injects its javascript into the browser
+once this is done all the subsequent
+calls that is all the subsequent calls
+is all the rest of the commands which
+you have written after launching the
+browser go to this rc server and then to
+the actual web server so it routes all
+the commands are getting routed through
+your rc server to your web browser upon
+receiving this instruction so what does
+the code do it executes these commands
+as the javascript commands on your
+browser so once these are executed the
+response from the browser or the results
+what you say are sent back to the rc
+server and rc server is responsible for
+sending it back to your test and then
+the test results are displayed here now
+if you see this complete cycle from
+starting your command from your test
+script talking to the rc server then rc
+server talks to the web browser it
+injects the javascript here runs your
+command takes back the results sends it
+to rc server and then back to this test
+script this whole cycle gets repeated
+for every command which is written in
+your test script and this is how your
+test case gets executed all right so now
+everything is fine so great we are
+unable to run the scripts we are able to
+launch the browser we are able to
+execute all the commands so what was the
+problem here why was still rc not good
+enough for the reason why the rc was
+still not good enough was one the
+architecture of rc is very complicated
+because of that intermediate rc server
+to communicate with the browser so there
+is no direct interaction with the
+browser this rc server needs to be
+installed before running any test
+scripts that means it has an additional
+setup because that is rc server is a
+mediator between your selenium commands
+and your browser the execution of the
+commands takes very long time it is very
+slow why because we saw that every
+command written in your test scripts
+needs to make a full trip from your test
+script to the rc server to the core to
+the browser and then back which makes
+your overall automation test execution
+very very slow so how does selenium
+webdriver now overcomes this this is a
+simple architecture of selenium
+webdriver even in web driver we have
+test scripts we have a web browser and a
+web server however we do not have an
+additional server for communication like
+the rc server which we saw in the
+selenium rc this makes the architecture
+of web driver very simple the selenium
+web driver that's one of the biggest
+advantages the selenium web driver does
+not use an additional server then
+secondly it makes direct calls to your
+browser using your browser's native
+support automation so since there is no
+intermediate server there the browser is
+controlled directly from the operating
+system level itself now due to this
+direct communication the overall the
+trips what we saw from the rc server to
+the browser and from the browser back to
+the rc server and to the test scripts
+right this was an indirect communication
+since this whole thing was avoided the
+speed of test execution is much faster
+in rc and this overall architecture of
+the web driver if you see it is much
+much simpler than what the rc provides
+so this was the major drawback from the
+rc and this is where webdriver replaced
+rc now was that all because of the
+architecture no there were few other
+shortcomings with the rc api is in
+selenium rc a single function has
+several commands redundant and confusing
+apis rca is less object oriented api
+though there are good set of apis to
+work with they are pretty redundant and
+confusing for example how and when to
+use a type key or a type command another
+example is the mouse commands click or
+to use click at or when to use mouse at
+or mouse stop so this was getting pretty
+confusing for the developers and to top
+it all this every browser interprets the
+command differently which makes your
+test cases brittle when it has to work
+on the multiple process developers had a
+tough time making their scripts cross
+browser and they had to add browser
+specific code whereas selenium driver
+comes with a set of more matured and
+simpler api which are pretty
+straightforward to use for example a
+simple click to simulate a click action
+on any web element send keys which
+simply means send the text to any web
+element on your web page scroll up or
+down on the web page and so on so we
+will see more of this commands when we
+actually start working with the web
+driver another difference is the browser
+support though both rc and webdriver
+supports multiple browser rc does not
+have support for html unit which is a
+headless browser whereas the web driver
+supports testing on headless browser now
+what is the seedless browser headless
+browser is a browser which does not have
+a ui it makes testing much faster
+because it does not need a real browser
+for testing now to summarize all this so
+if you look at the rc and the webdriver
+comparison which we talked about rc is a
+complex architecture whereas webdriver
+has a simple architecture for the main
+reason that webdriver removed the need
+of having an intermediate server rc the
+execution of your test cases or your
+automation scripts is much slower than
+the web driver rca requires a rc server
+to interact with the browser whereas the
+selenium web driver interacts with the
+browser directly using the web drivers
+also we saw the apis which rc provides
+which are pretty confusing and web
+drivers we have much easier and easy to
+use apis no support for html unit
+browser which is a headlight browser
+selenium driver also provides support
+for html unit browser now that we have
+understood what selenium rc is and why
+webdriver replaced rc let's go another
+level deeper into webdriver so what is
+selenium webdriver we know that the web
+driver in its simplest term is a tool or
+a programming interface to create and
+execute test cases on a web application
+it supports multiple browsers ie firefox
+chrome opera safari edge and it also has
+support for headless browser so we will
+know in some time what is in headless
+browser some of the features of
+webdriver so while rc was introduced in
+2004 web driver got introduced by simon
+stewart in 2006. webdriver can run on
+any platform of your choice linux
+windows mac and even if you have a
+ubuntu machine you can run your selenium
+web drive and what is this actual web
+driver is it an ide no it is a simply
+and programming interface to run your
+test cases and how does it work the test
+cases are created and executed using web
+elements or the objects using web
+locators and webdriver methods so once
+we get into the demo or once you start
+understanding how selenium works you
+will understand what are these webdriver
+methods and the locating techniques
+which are used to perform these actions
+on web element selenium web driver is
+pretty fast why since the web driver
+interacts directly with the browser and
+does not have an intermediate server
+like rc each browser with which you want
+to work with has its own driver on which
+your application runs and this driver is
+responsible to make the browser
+understand the command which are being
+passed from your script like a click of
+button or entering some text in any of
+the input fields through your scripts
+you tell which browser you want to work
+with say you want to do all this action
+say on the chrome browser if you want to
+work with chrome browser then the chrome
+driver is responsible for interpreting
+your instructions from your test case
+and executing them on the web
+application which is launched on chrome
+browser earlier so like rc webdriver
+also supports multi-programming
+languages in which you can write your
+test scripts like the ones which are
+listed here also webdriver supports
+different frameworks like test ng junit
+and n unit when we talk about the
+limitations of webdriver you will
+appreciate how this support for various
+frameworks and tools help in making the
+selenium a complete automation solution
+for web application now let's try to
+know what is the architecture of
+selenium webdriver webdriver has four
+different components in it one we have
+the client libraries or what is also
+called as language binding since i said
+selenium supports multiple languages and
+you're free to use any of the supported
+languages to create your automation
+script there are libraries available on
+selenium website which you need to
+download and use them let me show you
+that so let's go to my chrome browser so
+i have the selenium hq website already
+launched here so guys if you're working
+on selenium this website selenium hq dot
+org is going to be bible so everything
+and whatever you need to know and work
+with selenium is available here for now
+we want to see the client library so the
+language binding so for that what you
+need to do is if you go to the download
+section here can you see the selenium
+client and web driver language binding
+so for each of the languages which is
+supported you have a client library
+which you can download from here so if
+you're working on java you need to
+download the java libraries if you're
+working on python you need to download
+the python libraries right so these are
+called as language bindings so selenium
+provides lot of apis for us to interact
+with the browser and when we do the demo
+i will be showing some of those apis now
+what are these abs these apis are the
+rest apis rest is representational
+stateful aps and everything for selenium
+happens to this rest calls the second
+component is the json wire protocol so
+what is json javascript object notation
+and it's a standard for exchanging data
+over the web so for example you want to
+launch a web application through your
+script so what selenium does is it
+creates a json payload and post the
+request to the browser driver right and
+where are these browser drivers these
+are here right and what are these
+browser drivers these are a driver
+specific to each browser so if you see
+here you can see drivers for chrome
+firefox opera safari and edgerate so we
+interact with the actual browsers here
+using these drivers and how does this
+happen this driver establishes
+connection with the real browser without
+revealing the internal logic of browser
+functionality right that's exactly the
+function of this browser driver now what
+does that mean let's say we want to
+execute a test script so what happens
+when the script is executed is an http
+request is generated and sent to browser
+driver for each command in the script
+and then the driver receives the request
+through this http server and does all
+the execution on the actual browser once
+the execution is done the execution
+results are just sent back over the same
+http server to your test scripts so this
+is the simplest form of the architecture
+of the selenium webdriver well now as
+every tool has its own advantages and
+its limitations so let's look at what
+selenium limited webdriver limitations
+are cannot test mobile applications
+requires framework like apm selenium is
+for automating web application it cannot
+handle mobile right mobile applications
+are different and they have its own set
+of automation tools however what
+selenium provides is the support for
+integrating this apm tool apm tool is
+one of the popular tools for mobile
+application automation right so it
+provides a support for integrating apm
+tools so using apm and selenium you can
+still achieve mobile application
+automation now when do you usually use
+this in cases where say your application
+under test is also supported on mobile
+devices so that means you need a
+mechanism to run your test cases on your
+web browser as well as your mobile
+browsers right and this is how you
+achieve it using selenium when we talked
+about components of selenium i said that
+a web driver can achieve only sequential
+execution but in real time we know that
+we just cannot live with this we need to
+have a parallel execution on multiple
+machines and on multiple process so this
+limitation of webdriver is replaced by
+having the grid which helps us in
+achieve the parallel execution and do
+check out our video on more details on
+selenium grid selenium webdriver has
+limited reporting capability it can help
+create basic reports but definitely we
+need more especially when we are working
+on a big project we need good reports to
+be created so what it does is we have a
+support for multiple tools like test ng
+report ng and even the extent reports
+which you can integrate with selenium
+and generate beautiful reports isn't it
+really powerful all right there's
+another challenge what we have these are
+amongst few of the challenges what i
+have put across here there are other
+challenges also but always there is a
+workaround to get through this challenge
+so another challenge which we have
+mentioned here is selenium is not very
+good with image testing especially
+designed for web application automation
+but then we have other tools which can
+be used along with selenium to achieve
+any kind of image testing you want to do
+like auto it and securely so same way
+the way it provides a mechanism to
+integrate apm so selenium also provides
+a way for integrating autoit and the
+secular tools so if you look at all this
+selenium still provides a complete
+solution for our automation need and
+that's the beauty of selenium that makes
+it most powerful tool today for
+automation okay so let's look at
+webdriver in action so before we do that
+let's understand some of the basic
+browser commands and functions that we
+will be using in our demo today the get
+commands so there are six get commands
+to perform various actions on the
+browser driver.get this is used to
+launch any website application it takes
+a string argument and this needs to be a
+fully formed url which you want to
+launch driver.gettitle so this method
+fetches the title of the web page which
+you're working with so for example let's
+go to ebay so if you just hover your
+mouse here can you see the text there
+electronics cars fashion collectibles
+coupons and more ebay so this is nothing
+but title of this current page and this
+command helps us to get the title get
+current url so to get the url of any
+page is when you want to use this
+command so this will be used especially
+when you're working with multiple web
+pages and you want to say print whatever
+the current url you're working on on the
+console get page source this method
+dumps the complete html page source on
+your console actually this is not really
+much used uh unless you really need to
+look at anything in your html pages and
+then there are two more get commands
+related to windows handles these are
+used for handling multiple tabs and
+multiple windows on the browser now we
+will not be dealing with this in today's
+demo however if you want to know the
+details of this command these are
+available in our video tutorials for
+this commands the next set of commands
+are the navigational commands so these
+are self explanatory and basically are
+used to navigate between the multiple
+pages of your web application the first
+one the driver.navigate.2
+is very similar to driver.get so both
+does the same function and then you have
+navigate dot back navigate got forward
+and navigate dot refresh so this is used
+for refreshing your browser page and
+then there are two commands browser
+commands which we use one is the
+driver.close so this closes the current
+browser window so if you have got
+multiple tabs opened in the window and
+you want to close a particular tab so
+that is when you use driver.close and
+driver.quit what it does it quits the
+entire browser session then there are
+few other commands and
+these some of the commands are listed
+here however if you see there's a huge
+list of commands available in selenium
+and since we'll be using just a few of
+them in today's demo i have listed here
+so let's just understand these very
+basic commands which we will be using
+driver dot find element now when you
+want to work with any application what
+is that you need to do you need to
+perform actions on the elements of the
+web page and these are called as web
+elements for example let's go to our
+ebay dot in so on this website say you
+want to search for jbl speakers and what
+do you do when you want to search for
+this you would identify the search box
+and you will enter the text jbl speakers
+right and then you go ahead and click on
+the search button so this is the set of
+operations which you will do now for us
+to write this and this is exactly what
+you need to do through your commands for
+us to really write this text as jbl
+speakers i need to know what this
+particular element is okay so this
+particular input box is my web element
+which i need to identify similarly if i
+want to click on the search button i
+need to identify what this button is and
+that's exactly is done by using
+driver.find element selenium has
+multiple ways of finding these elements
+it has eight element locating techniques
+and our future videos on selenium do
+cover these eight element locating
+techniques very much in detail so for us
+right now we will be using couple of
+them so one is with id and one is with
+the link text the next one the send keys
+so as the name indicates it is used to
+send a certain text to any web element
+you have identified or you want to work
+with like in this example as i said
+since we want to search for jbl speakers
+right i would be basically sending the
+text jbl speakers to this web element
+using send keys click so after entering
+the text what we need to do i said we
+need to click on the search button so
+for all such actions we have methods
+defined in selling and one of them is
+this click what this does is it just
+clicks on the web element or the button
+which we want to work with so now with
+these basic commands let's go ahead and
+start writing our code for our test case
+so what is the test case we are going to
+write today so this is my use case today
+so use case one as a user i want to log
+into ebay application search for jbl
+speakers and then i want to check the
+today's team so there is something
+called as the days deal we will go and
+click on that and see what are the deals
+available i have another use case here
+what says is from this website from
+wherever we are right navigate to the
+simply learn website and navigate back
+to the ebay. so this using this use case
+2 what i want to show you is how do we
+use the navigational commands and my
+third use case is from the ebay.in i
+want to print the page title and close
+the browser so with this we are trying
+to demonstrate at least few commands
+from each of the categories which we
+talked about so i will be using eclipse
+for writing our test scripts and if you
+want to know how to get started with
+selenium how do we install selenium you
+can refer to our videos on installation
+of selling name by simply done okay let
+me go to my eclipse so in eclipse what i
+have done is i have already created a
+project called selenium demo and in this
+project i have gone ahead and created a
+java class in which we will be writing
+our test case so the java class which i
+have created is ebay search dot java and
+also what i have done is if you look at
+few import statements here i have
+imported all the required selenium jars
+here so if you look here in the
+referenced libraries the way after we
+you work with java here right so java is
+the prereq for your eclipse so you
+already have the java libraries
+available here so what i need to do is i
+also need to import the selenium jar
+face and this is the list of seldium jar
+files which you will need to work with
+the selling and this i've already
+imported for you then another thing what
+i do as a following a best practice is
+instead of writing all my code under
+this main function here what i do is i
+create methods for each of the use case
+or the test case which i am writing so
+same thing i am going to do that today
+for all the use cases which we have
+taken for this demo now let us get
+started so what is the first thing which
+we need to do the first thing what we
+need to do is you need to declare your
+web driver so which i've already done
+here i've said web driver driver and
+then i need to launch the browser before
+even i go into ebay dot in and start
+performing the other testing now for me
+to launch browser this is one method
+which i have already written here so let
+me walk you through this so there are
+multiple steps we need to follow for
+launching the browser the first thing is
+set system property so let's understand
+this particular command here the one
+which i have highlighted so this is used
+to set the property for your gecko
+driver now what is a gecko driver if you
+remember while we are talking of web
+driver architecture i said for whichever
+browser you want to work with you need
+to tell the web driver as which browser
+is what you're going to test with and in
+my case here i'm going to be using
+firefox browser and also if you remember
+while explaining the architecture i said
+every browser every browser has its own
+driver which you need to download and
+install and where is this driver let's
+go ahead and see that on the
+seleniumhq.org
+so let me go to my chrome browser i
+already have a selenium hq dot org
+website open here now on this website in
+the download section if you go down you
+can see something called as third party
+drivers binding and plugins and here you
+would see a list of all browsers gecko
+driver chrome opera edge right and html
+unit which is headless browser so all
+these browsers with selenium supports
+listed and for each of this browser we
+have a driver associated with it which
+we can download so if i want a gig or
+driver what i need to do is i need to
+click on this latest link this will take
+me to the latest web driver which is
+available so depending on the operating
+system which you're using right now i'm
+using a mac so i've already downloaded
+it so once you download you need to
+place it in a particular directory okay
+so let us go back to this and now if you
+see this path here what i'm highlighting
+this is where i have kept my gecko
+driver so this gecko driver what you see
+is my executable so if you are using
+using a windows machine it will be
+geckodriver.exe so this is the driver
+which should be working with now coming
+back to the system.set property this
+particular method or this particular
+command is used to set your driver
+property it is a key value pair and you
+will need to know which keys depending
+on the which browsers you are working
+with since i am working on the firefox
+browser the key which i need to set is
+the webdriver gecko.driver if i'm using
+chrome what i simply do is i have a key
+called chrome and then i would set this
+path to chrome driver and this is
+exactly you need to do so for you to
+even before launch the browser you need
+to do this set property so let me change
+this back to gecko so now we are clear
+till here now what is the next command
+which we need to after setting the
+property is after setting the property
+you have to instantiate the webdriver
+which is done by using this particular
+command driver is equal to new firefox
+driver so once you do this your browser
+is going to get launched then once your
+browser is launched what is the next
+step you do you would be launching the
+application on which you want to perform
+your test and that is done by using the
+command which we just saw now driver.kit
+now since i'm going to be working with
+ebay.in i have just said driver.get and
+the url fully formed url so this
+particular method is going to help me
+launch the firefox browser and also
+launch the ebay application now
+advantage of using methods like this is
+you can reuse this methods in every test
+case which you are going to write or you
+can make a common function of this and
+just call this function in any of your
+test cases now for me to call this
+method what am i going to do i am going
+to create an object of this class let's
+do that object is equal to newton and
+then i need to call this method obj dot
+launch browser good so far all right so
+now let's get to the first use case so
+let's go back to our presentation and
+see what was our first use case our
+first use case was that we want to
+launch the ebay application which we
+have already done in the launch browser
+method and then we want to search for
+jbl speakers now for that what we will
+do let me create a method here so i will
+call this method i'll say public void
+say
+search product that's my method name so
+i have created a method called search
+product now what i need to do is i need
+to search for jbl speaker so for that
+let me go to my firefox browser and i
+need to first identify the search box
+element so for identifying what i do i
+go to this website i go to this element
+and then i say inspect element so now i
+know that there is already an id which
+is unique to this particular web element
+available so i'm going to make use of
+this id i need to go to my eclipse so
+now here i'm going to use the find
+element method so for that i'll say
+driver dot find element i'll say by dot
+id and it's a string argument i'll just
+copy the id which i copied from the
+firefox browser and then what is the
+operation i need to do here i need to
+send keys and what is the keys i need to
+send the product which i am searching
+for i am searching for say jbl speakers
+done so with this command what it will
+do is it will enter the text jbl
+speakers in the search box after doing
+this i need to click on the search
+button now similarly i need to identify
+what is the web element search for this
+again i already have a unique id here
+which i'm just going to simply copy from
+here and use it in the find elements so
+same thing i will do driver dot find
+element by dot id and this is the id of
+the button and here what is my operation
+i need to click done good so far now
+other thing what we also need to
+understand here is so what happens
+sometimes depending on the website some
+websites are pretty slow even by loading
+the page and some are pretty fast now
+for the selenium to work without having
+to fail or without having to create
+exception of not finding the elements it
+is good to use certain weights so while
+we need to use weights say for example
+when after entering the jbl speakers and
+after clicking the button it's going to
+take a while for it to search for jbl
+speakers and give us that webpage with
+the list of jpm speakers and even before
+we start doing the first command like
+searching once we load the page it takes
+time for the complete page to get loaded
+okay so selenium provides lot of
+synchronization commands right and it's
+a very big topic on its own which needs
+to be used especially when you're
+working with any kind of website okay so
+there is a since it's a separate topic
+there's a separate video which will help
+you understand how to use the
+synchronization now for the demo purpose
+we have certain weight commands which
+can be used and that is exactly which
+i'm going to use here so that is called
+as thread dot sleep so what this does is
+say i'm going to give 2000 here what
+this does is this basically this script
+waits for two seconds right after the
+previous command is executed and then it
+executes your next command which is our
+find element now this is showing us an
+exception because it wants us to add a
+exception here at throws declaration
+which is interrupted exception okay we
+need to do this so once we are done okay
+we have done the click so let's see what
+is the first use case which we had have
+we covered everything in the first use
+case okay we said log in to ebay done
+search for jbl speakers and then i want
+to check on the day's d okay we need to
+do this also so for that again what we
+need to do is we need to go and identify
+so what i will do i'll use the inspector
+here and look for this daily deals now
+this is a link text it's an anchor tag
+so what i will do i'll copy this link
+text daily deals i'll go to my eclipse
+now after this i will give another
+thread dot sleep of say two seconds that
+should be more than enough and then i'll
+say driver dot find element now this
+time i will be using something called as
+link text and here as an argument as a
+parameter i am going to paste the daily
+deals which i just copied and then what
+do i need to do on this web element i
+just need to do a click operation done
+so the complete first use case we have
+covered so what we will do is let's go
+ahead and execute this first use case
+now i have launched the browser here i
+also need to call this method which is
+search product now again here since we
+are
+doing that add through declaration on
+the method we also need to do it for the
+main function exception added i'll save
+this and for me to run this what i do is
+i simply right click on that and i say
+run as java application now we see that
+our firefox browser is launched the ebay
+application is also launched and jbl
+speakers entered and search clicked so
+we have a list of jbl speakers here and
+now as per our test case it has to go on
+the daily days which it just did great
+all right so we have our first use case
+working so right now i have not used the
+browser.close so what i will do is i'll
+just manually go and close this process
+so we are done with our first use case
+now let's move to our second use case so
+what second use case says is from
+wherever you are right now we are on the
+ebay.in navigate to simply learn website
+and then navigate back to ebay. so let's
+see how to handle that so let's go back
+to my eclipse here now let's create
+another method instead of saying test
+case 2 or use case 2 will give a more
+meaningful name i'll say navigate since
+we are exercising the navigates command
+navigate commands here i'll just use
+this method now so we have done the
+click so i need a quick thread dot sleep
+here because i want it to wait so that
+we can see otherwise it's going to be so
+fast we will not be able to see what are
+the operations in it so i'll just add a
+thread dot sleep before we start
+navigating to the new website okay
+thread dot sleep and i guess two seconds
+should be good enough even here so same
+thing we need to add the exception so
+add throws declaration and interrupted
+exception all right done so now what we
+need to do is we need to navigate to the
+simplylearn.com so for that first i need
+a fully formed url of the website which
+i want to launch okay so let me go to
+and here instead of ebay dot in i would
+say let's search for simply learn i have
+it here and i just pick this from here
+https
+www.simplylearn.com so let me go to my
+eclipse and here we saw another command
+like get we said navigate dot 2 so let's
+use the same command so i'll say driver
+dot navigate dot 2 and i'm going to use
+two url because or you can just use a
+string because this is going to be a
+string variable now what does this
+command do this will simply navigate to
+the url which we have specified here now
+here again i'm going to give a quick
+sleep here so that we are able to see
+the website before we navigate back to
+the ebay. so i'll use a thread dot sleep
+this time probably i'll give a three
+second wait then what does our use case
+say let's go back to use case once and
+check and it says and navigate back to
+ebay. so that means i need to use a
+driver dot navigate dot can you see the
+list of commands here which provide for
+which the navigate class provides okay
+and the back is what we need to use so
+that it comes back to the ebay dot done
+so far so good now let's do one thing
+before even we go to the use case three
+let's execute our test case still here
+so what i'll do i'll save this program
+and after search product i will call
+navigate method okay i will save this
+and then right click run as java
+application so our firefox is getting
+launched it has launched the ebay
+application is on so it's going to first
+find the jbl speakers click on the
+search we have a list of jbl speakers
+then it will click on the daily deals
+yes it is doing that we got the deals of
+the day yes it is now navigating to
+simplylearn.com now after three seconds
+it should take me back to the ebay. okay
+cool so this was the last page where we
+left before we navigated to simply right
+and that is where we have come back
+using the back command so now let me
+close this again because i have still
+not incorporated the driver.close now
+let's look at the use case 3. now use
+case 3 says once you're back to ebay.in
+print the page title and then close the
+browser cool very simple so we'll go
+back to eclipse probably in the same
+method what i can do is once i'm back
+here i will say so i have to use driver
+dot get title that was a spelling
+mistake driver dot get title okay this
+is the method which we are going to use
+to get the title of the page now we also
+said that once we get the page title we
+want to print it on the console now how
+do you print it on console you just use
+a sis out statement so instead of just
+writing this what i will do is i'll
+directly write a cis out statement
+system.out.println
+and i'll write a text as the title of
+this page is and then we will
+concatenate with
+get driver.get as simple as that and
+after i do this i will simply call it's
+actually i want to call the driver.list
+but it's always good to create a
+separate method so i'll say public void
+close browser method and here i'll
+simply say driver dot quit you can use
+close or you can use quit so let me
+demonstrate how do we use twitter now i
+need to call the close browser so simply
+what i'll do i'll say obj dot close
+browser method okay so this completes
+our all three use cases so now let's
+execute all these three use cases now
+and we should be able to see the title
+of this page on the console so same
+thing what i do is right click run as
+java application okay same thing our
+ebay is launched now send keys the jbl
+speakers click on search button executed
+and then it has to click on the daily
+deals that it has done moves to simply
+learn website now it has to come back to
+ebay.n and we should be able to see the
+close process which just happened at the
+snap of the finger right now for us to
+know whether it really happened what we
+have done is we have printed the page
+title okay now can you see here we have
+the complete page title printed here all
+right so let's go back so let's look at
+what are the key takeaways from that so
+in this overall video we saw what was
+selenium what is selenium webdriver what
+was the limitation of the remote control
+which is selenium rc how did webdriver
+replaced it and we went into learning
+the architecture of the selenium web
+travel which is very important for us to
+understand because we will be working
+with the web driver to create all our
+automation scripts and then as i said
+every tool has its own limitation we
+also talked about limitations at a very
+high level and also as there are
+workarounds and then i also demo some of
+the browser apis and the usages and some
+of the methods which we use with
+selenium this video focuses on teaching
+how to use selenium ide for creating
+automation scripts what does this video
+cover one a brief about selenium and
+where the ide actually fits in very
+recently a new version of ide has been
+launched so we will look at what it has
+to offer how does the record and replay
+tool work and then let's understand the
+components of this id interface we will
+work with few commonly used selenium
+commands and then since we are using the
+new ide let's look at some of the key
+features of the selenium id and like
+every tool has its own
+limitations we will also look at what
+are the limitations of selenium ide so
+what is selenium so selenium is an
+automated testing tool used to test web
+applications across various browsers in
+my previous video where we have covered
+the complete basics of selenium
+webdriver i have explained each and
+every components of the selenium suite
+so selenium ide is one of the components
+in the selenium suite and other
+components of the suite are selenium rc
+webdriver and selenium grid so in this
+video we will be looking in detail about
+how the selenium id works so what is
+selenium id selenium ide was developed
+way back in 2006. it was created to
+facilitate a simple record and replay of
+the test automation so record and replay
+tools were pretty much invoked during
+this time and the main advantage of
+using such tool was an automation
+engineer was not really required to know
+any knowledge of programming he could
+just use this record replay tool and
+create the automation and this ide was
+available as a firefox extension so for
+one to use it you need to just go ahead
+and install the extension on firefox and
+then use its recording and record the
+steps of your test execution it is a
+very simple interface which helps in
+building the automation scripts and how
+this works you just need to start the
+recording on id perform your test steps
+on the browser and these steps gets
+recorded in the script and then what you
+could do is you could export the script
+into say a web driver or a junit ruby or
+any javascripts and then you can use it
+now however the record and replay tool
+is not a very powerful automation tool
+and hence this ide is mainly used for
+prototyping or you could say demo
+purpose now since selenium webdriver
+itself offers such powerful capability
+of creating robust test scripts ide more
+or less remains as a prototyping tool
+only so in short as i said ide is a part
+of overall selenium set of tools and
+mainly developed to speed up the
+creation of test cases and what is the
+other advantage of that one need not
+really have any programming knowledge to
+use this tool and mainly it is used for
+writing some quick test for demo
+purposes advancements with the new
+selenium id back in 2017 selenium id
+development was completely stopped the
+last supported firefox version where
+this ide was available as a plugin was
+firefox 54 and from 55 onwards the
+complete integration point was removed
+or it was completely broken however
+recently apply tools help revamp much of
+the selenium id code they basically
+rewrote the whole ide code and then now
+they have released a new version under
+the apache 2.0 license and it is
+completely managed by the selenium
+community now let's look at some of the
+features of this now traditionally the
+selenium id was only a firefox plugin
+however the new ide supports both the
+browsers the chrome and the firefox and
+thus making it cross browser so before
+even we start looking at the other
+features of the selenium id i would like
+to show you how do we install this
+firefox plugin or the chrome extension
+so for that let me go to my chrome
+browser so in the chrome words browser
+what i'll simply do is i'll search for
+selenium id for chrome so then let's go
+to this chrome.google.com
+and here you will see it as an extension
+selenium id so go ahead click on add to
+chrome so this will add this extension
+to your chrome browser so now it says
+selenium id has been added to the crew
+so how do you make out if it is added so
+you can see this particular icon here
+which says selenium id so this is the
+way you can go ahead and install it on
+the chrome now on the firefox i have
+already installed it since we want to
+use the firefox as a browser for all the
+demos in this video so here again you
+can see the selenium id so if i click on
+this ide it is going to open a window
+for me and the first window when it
+opens it says either open a new project
+or open an existing project or simply
+you can start recording a new test case
+in which case it creates a default
+project for you first so what i will do
+is i will say open an existing project
+and i've already got a project created
+so let me go to my folder where i have
+this project so i have this project
+created and i've opened it i also have a
+simple test case written now what this
+test case does is let me show you here
+it simply goes to google.com and then
+here what i'm doing is i'm searching for
+selenium hq documentation and then i
+click on this site which says
+seleniumhq.org and docs so which should
+take us to this particular website where
+the documentation is available so this
+is a simple script which i have tried to
+write it in this id so let's keep both
+this windows open and let's go back to
+our presentation to see the first
+feature of this selenium id the first
+feature what it says is improved locator
+functionality what are locators so these
+are nothing but the techniques used for
+locating your web elements on your
+website now for example in our
+example here now the type here the type
+which says name equal to q so name equal
+to q is a locator now this is a locator
+of what initially if you saw i went to
+google.com and this is the search button
+which i used right the search text and
+then i said enter so this is nothing but
+your web element for which the locator
+is name equal to queue now what happens
+in ide is when you record it it has
+taken the attribute name and it has
+recognized this particular web element
+using this attribute however it also has
+a feature wherein it also records its
+multiple locators available for that
+particular web element for example it
+also has a css locator it has an expat
+locator now how does it help here say
+for example tomorrow this particular
+attribute name right for the search box
+if it changes then what id does is when
+you execute this test script it falls
+back on your other locators mentioned
+here in the structure and then if none
+of this locators work only then the test
+case is going to go and fail not
+otherwise so how does this help this
+helps to make the test cases more robust
+otherwise having just one locator there
+is high possibility the test case might
+break or become pretty brittle as in
+when the web elements change their
+attributes so this is what the locating
+techniques are and that is how they have
+improved the locator techniques in the
+uh functionality in the new id now
+what's the next one parallel execution
+is possible with this new id so the
+first id the traditional one the
+parallel execution was not possible
+however this is a new feature which has
+been added so we will be looking in
+detail how to work with this parallel
+execution later in this video next is
+you can add control statements in your
+scripts now what are these control
+statements like if else while loops for
+each loops and even the switch case the
+earlier ide also had this provision but
+you had to install a plugin to enable
+the use of this control statements and
+now with this new id it is available out
+of box automatically waits for page to
+load in any automation synchronization
+between your application under test and
+your automation scripts is very
+important your script should not run
+faster than your application otherwise
+your scripts are going to start failing
+so it is necessary to have enough flow
+times on the operations
+of your web elements and also enough
+load times on your page now this low
+time ensures that all the elements of
+your web pages and the page itself is
+loaded completely before even a single
+line of script is run this new id takes
+care of providing that enough uh wait
+time and also you have a global set
+speed option which you can
+use to control your execution of your
+scripts so that is something which i
+will show you now so if i go back to
+this so can you see this clock icon here
+so it says test execution speed so what
+you can do is right now it is set to the
+fastest so i can actually control the
+execution speed here so right now i've
+just kept it a little slower so let's
+see how our test scripts run so you will
+be able to see a remarkable difference
+when i slow down the complete speed of
+this so now do you see how slow it is
+initially when i ran it you are unable
+to see what i entered in the search
+field of the google right so now it's
+clearly taking time on each of the steps
+which we have mentioned there so now it
+is executed successfully so next it
+supports embedded code you can run a
+simple java javascript from your test
+script right and how do you run that by
+using a simple command called as execute
+now let's see how do we do that so let's
+take the same example here now after
+clicking this okay so this is our id so
+what i will do is i'll first execute
+this test case and then in the end where
+i will show you how do we add a single
+javascript and do some function so
+let me get the speed back to a little
+normal because we do not want to waste
+too much time so i'll just play the
+script once so now we are in the
+selenium documentation now if you look
+at this page this is a pretty long one
+so now i'm going to write a simple
+javascript wherein i scroll down towards
+the end of this page that's all i'm
+going to do now for me to do that what i
+can do is in my script itself i can just
+add another line here okay here i will
+say add a new command
+here i'll say execute script which is my
+command and what is the script which i
+want to execute it's a java script which
+i'm going to write here i'll say window
+dot scroll by and i'm just going to
+mention some coordinates here start from
+zero and i'll say one five zero zero
+okay this is all my code is and now i'll
+simply run this test again let's see
+what happens so it's going to the
+documentation now it's clicked on the
+link okay let's move down do you see
+this initially it was right here on the
+top of the page and once the javascript
+was executed it brought me somewhere to
+the middle of this page that is how you
+can insert snippets of javascript and it
+has to be in context with your currently
+selected window okay and that's how you
+run it all right let's go back to our
+ppt okay what's the next feature so
+every ide has a debugger which allows
+step execution adding of breakpoints now
+apart from just having a breakpoints or
+adding the step execution there is
+another feature which it provides called
+i will show you that which is called as
+pause and exception so let's close this
+window and let's just keep this id
+window open here right so can you you
+see here pause button it says pause on
+exception so what it does is if you
+enable this button okay and when you're
+running the script so if at all there
+happens to be an exception in your
+script it stops the execution at that
+particular exception field and we will
+see this in detail when we look at
+complete debugger for the id can be
+integrated in ci since you can execute
+scripts from command line right we also
+talked about the parallel execution and
+you can also export the scripts to any
+of the programming language you want so
+since you can do that these scripts can
+be run from command line and hence they
+can also be integrated with your maven
+project and through jenkins you can run
+it and that's how you achieve your ci
+working principle of selenium id
+selenium id works on a very very simple
+principle one is the recording it
+records user interactions with the
+browser and which forms basically your
+id script and using this id script which
+is a recorded script you execute the
+script and verify and monitor for its
+stability and success rate and thirdly
+what you can do is you can simply save
+your recorded script for your future
+runs or regression testing and these
+scripts can be saved either in the form
+of an id project itself or you can also
+export these test scripts into the form
+of a javascript or your ruby scripts or
+even the web driver scripts now let's
+look at the components of this id
+interface itself the first one is the
+menu bar so let's go back to our id
+window so here in the menu bar what you
+can see is is a project name so either
+you can edit the project name here or
+you can simply create a new project open
+an existing project and save the current
+project so these are all the options
+available and since we have already
+created a project here i will not be
+showing how to create a new project so
+that we can do it little later now next
+one is the toolbar so this is the
+toolbar what we have here for the id now
+there are multiple components in the
+toolbar so let's see one by one so it
+says run all test now if you have
+multiple test cases written okay so this
+is an option where all the tests can be
+run one after the other this is to run
+your current test which the focus is on
+so currently our focus is on search test
+so if i click on this button it is going
+to execute the search test for you ide
+has this debugger option where you can
+do a step execution right you can do
+step by step execution using this option
+we'll see how to do that for example
+let's say we start from here okay and i
+click on this so what it does is
+basically it has just executed the first
+step for me so let's keep this side by
+side so that we can observe the complete
+execution now if i go and press on this
+again step over current command so that
+is the next command it is going to
+execute now it says type into this all
+right so now you can see the selenium hq
+documentation okay then again i say step
+send keys which it basically it said
+enter and then it is going to click on
+that documentation which it did and now
+we have a script written which scrolls
+down on this particular page so let's
+execute that and that is what it is so
+this is how the step execution happens
+so let's close this window and let's
+come back to our id window then we have
+buttons here where you can say record or
+you can stop recording okay then you can
+pause the execution and then there are
+other options available for disabling
+breakpoints so basically you can add
+breakpoints any barrier so for example
+if i want to add a breakpoint on the
+click here so what i have to just do is
+i have to just click here so this adds a
+breakpoint and if you want to remove all
+the spray point you just say disable
+those breakpoints so when you run the
+script even though you have a breakpoint
+available here for that particular run
+your breakpoint will be disabled and
+your execution will not stop at this
+point and let's enable them for now and
+what we will do is we'll just run the
+script until there so now it has stopped
+here at this click now from here either
+you can execute the rest of the test
+case by just clicking on this run button
+or you can stop the execution okay so
+for now what we'll do is we'll just stop
+the execution so once you stop the
+execution you will see that this is in
+red which means that this particular
+line was not executed or it failed
+either of the things because you have
+aborted at this particular line and the
+rest of the things what you see in green
+it shows that all these test steps have
+been executed successfully so what is
+our next component let's come back here
+so we saw the menu bar here we saw the
+toolbar we saw start and stop of
+recording address bar now what is this
+address bar so this address bar is where
+you actually write your url from where
+you want to start your recording and as
+in when you start writing more and more
+test cases it keeps a complete history
+of all the websites which you are
+working on next then we have a test
+script editor box which is this so let
+me just minimize this little bit okay
+this is nothing but your test script
+editor box and this is where all your
+script steps are all your interactions
+are recorded now there are four
+attributes in this okay can you see a
+command now command is nothing but the
+actual operation or the action performed
+on your web element so there are
+multiple actions you can perform like in
+this case we have something called as
+open we have got type we have got send
+keys and we have got clicks so these are
+all the selenium commands which are
+available and then we have something
+called as target now this target is
+nothing but the web element on which you
+want to perform the action and now this
+target as i said earlier also it is
+identified by multiple locating
+techniques and if you click on any of
+this like we looked at the name here now
+similarly the website which we are
+clicking on if you look at it there are
+multiple locating techniques which are
+available here so the one right now
+which is being used is the css
+identifier you can also have
+xpath here which is a relative x bar so
+these are all the locating techniques
+and this is where which is applied on
+the target value so value is an optional
+field so you can send any value to your
+web element for example in this case
+where we are sending the value which is
+our text which is
+selenium hq dot documentation so this is
+the value which i want to send it to as
+a search text to my google.com and then
+comment or the description so here you
+can mention any description about that
+particular line which you have recorded
+for example i can say here sending
+search text to the google search input
+box and this gets recorded here against
+your
+instruction now let's look at the test
+case pane now test case pane that is
+here so if you look here now it contains
+all the test cases which you have
+recorded now there are multiple things
+here one is your tests so i can always
+go ahead and create another say uh test
+case two okay i can add a few more test
+case here test case three so all these
+test cases are here now i can also have
+a test suite now there is already test
+suite which i have created which is
+called the google suite and now if i
+want to add test cases under this what i
+can do is i can just say add tests and
+now i can add any of this test which i
+just created under this test suite so
+say i have selected the first three and
+i've added it so we have test suite we
+have tests here and then executing so
+executing is basically it shows that
+particular test case which is currently
+in the execution mode so whichever test
+case we run you will see all the test
+cases listed here which have been
+executed at that point of time that is
+your test case pane and then we have
+test log and reference this is a very
+important window which you need to be
+aware of now here this is a running lock
+so as in when you are going to run your
+test cases the every instruction the
+every test step as and when it runs it
+is going to log here whether it is
+passed whether it has failed whether the
+command was executed properly or not and
+this is how it records it's a running
+law also there is something called as
+reference tag now for example just go
+ahead and ah let's select one of this
+command which you have written here so
+which is send keys now this reference it
+will show you the complete description
+of the command and how to use that
+command so say for click it says
+references click locator clicks on the
+target element it gives you a complete
+detail of what exactly the command does
+let's create a test script now for say
+amazon.com let's go back to our ide what
+we will do is we'll create a completely
+new project so let i'll click on the
+create new project are you sure you
+would like to without saving it yes
+proceed further and let's give the name
+as amazon project now in this new
+project what i will do is i will say
+i'll add a test and my test name is
+search iphone now basically what is the
+use case which i'm going to automate so
+i will launch amazon.com and i will
+search for iphones and once i get the
+iphones let's verify the title of that
+particular page now just the simple
+steps we'll go ahead and do that so for
+that first what i need to do is i need
+to enter the url now this url needs to
+be a fully formula so for that what i
+will do i'll first launch amazon.in on
+any browser i'll just copy this url and
+i can close this browser window and in
+this url address space i would say
+amazon.com and i'll say enter and now i
+would click on this recording button
+which says start recording so once i do
+this what it does is it launches the web
+page with amazon.com and from there i
+can start recording my script so let's
+do that i'll say record it so
+let me just keep this window side by
+side so that you can see what is
+happening on the id window here now here
+what i will do is i'll click on the
+search and i'll say iphone and i will
+click on the search button and here i
+will also click on this best seller once
+i'm in this window i'll say right click
+now when your selenium id is in the
+recording mode you will get this option
+here it says selenium id and there are a
+lot of options here which you can select
+now for this particular moment what i
+want to do is i want to assert the title
+so i'll just put an assertion pointer
+for assert title and then i will close
+my browser window now let's see what are
+all the commands which it has recorded
+let's go one by one right so it is done
+it is opening the amazon dot in it is
+setting the window size fine it clicked
+on the to search window button and then
+iphone is what we are searching and then
+it said submitted it's basically
+clicking on that button and then we said
+we also want to open the bestseller link
+and here is our asset title right so
+it's a very simple test so let's go
+ahead and execute this now since i also
+have a close command here this script is
+going to execute so fast that you will
+not be able to make out all the steps
+what we have written so for that what i
+will do i will comment out the slide now
+how do you comment out any command here
+just select the command and can you see
+here enable and disable command just
+click on it so now your command is
+disabled also what i will do is i will
+reduce the execution speed so that you
+should be able to see exactly what is
+happening so let's go ahead and execute
+this test first so i'll say run current
+test okay i have not stopped the
+recording so that is the first thing
+after closing the window i also need to
+click on the stop recording now your
+script is ready to be executed so let's
+go and run the current script again i'll
+just bring this side by side so that you
+can see each of these commands being
+executed here okay it has searched for
+the iphone it's clicked on the best
+sellers and it has done the title
+assertion now if you look at the log
+here as i said see every step as in when
+it was executed it has been logged here
+can you see here and it puts an ok and
+it color coded in green which says that
+this particular command was executed
+successfully now let's go ahead now this
+is what we did by simply recording all
+the steps from the browser now one more
+thing what we will do is say i want to
+continue recording here right i'm not
+completed my test case so what you can
+still do here is you can come towards
+the end of the script and press on
+record button again and then you can
+continue recording from here now say for
+example after the best sellers what we
+have got say i want to click on
+say hot releases hot new releases so i
+do that okay it says it has recorded the
+click and then i want to stop the
+recording just the another step is what
+i wanted to add now it has stopped the
+recording so can you see this new line
+which has got added so that means you
+really need not restart recording all
+the steps again if you want to add
+something in the middle of your script
+you can always go towards the end of the
+script or anywhere in between and you
+can add more commands there or you can
+record anywhere in between the script
+and that is how this does so let's go
+ahead and again execute this then i will
+show you another feature of this okay
+it's done the title assertion now and it
+is also clicked on hot new releases done
+now let's say for example i need to add
+another command here now instead of
+going ahead and using this recording
+what i will do is i will manually add
+certain command here say for example
+let's go to this amazon website and say
+you want to click on this cart so let me
+add a command manually here so what is
+my command my command is click and then
+what is that i want to click i need to
+identify that web element for that i can
+use this here which says select the
+target in the page so i click on that
+and i simply select this target which is
+my cart and that is all i need to do so
+my command is written there so i'll just
+simply go ahead and execute this again
+let's see what happens so let me close
+this window here okay let's run this
+test cases bring this window to the site
+so now you can see one by one the
+instructions being executed okay the
+iphone has been searched the best seller
+has been clicked assert title so it says
+your shopping cart is empty so that
+means it is successfully able to click
+on the cart so now with using id there
+are multiple things you can do you can
+simply record your script while you are
+running your test case you can add a
+command all by yourself you can stop
+recording anywhere and again restart
+from the same point now we have our
+complete test script ready now let's go
+ahead and save this so how do you save
+this simply go here and save your
+complete project so all the projects
+from the id are saved as dot site file
+so let's name this as amazon project and
+i will save it so if i show you in my
+finder how it looks like this is the
+project we created so it always stores
+with the file extension dot sid right
+that was selenium id now also i said you
+can export test cases into multiple
+format so search iphone is my test case
+so what i can do is i can just say right
+click and i can say export now right now
+you can see only three options it says
+java j unit javascripts and python
+however the older ide had multiple
+options of export which had even the web
+driver scripts and also the javascripts
+this is still in works and they would be
+adding more support for other
+programming languages here so but for
+now the only options what is available
+to us is java junit javascript and the
+python so let's go ahead and export this
+into java j unit so it's going to simply
+save it as dot java file let me go here
+in the id test i will save this file so
+if you go back to my finder you can find
+our search iphone test dot java you can
+open the java file you can you can see
+here it's a simple junit test it is
+exported into so if you have an eclipse
+ide you can use this test and execute it
+from your eclipse side selenium commands
+selenium commands can be broadly
+classified into three action commands
+accessors and assertions what are action
+commands action commands are the
+commands which interact directly with
+the web elements on your application so
+let's look at what these commands are so
+if we go back to our previous example
+where we had written a test script for
+amazon.n so if you look at all these
+things like open set window size click
+type so these are all nothing but called
+as action commands and if you go here
+you can see let me do one thing so let
+me just come to a blank line and now
+let's look at the list of commands so
+you have a whole list of commands here
+listed in the alphabetical order like
+add selection there are multiple asset
+commands which is made available to you
+and then there are set of commands where
+you say click or click at a particular
+location closing the browser using a
+debugger command double click drag and
+drop echo i'll just explain how to use
+an echo command so this is a command
+which is not or used on your web element
+but something which you want to say
+display on your console and then there
+are if else statements which are used as
+commands here then you have something
+called as execute script for you to
+execute any say javascript or any
+different script which you want to
+execute from your test script here and
+then you have few mouse commands here
+open which is what we use for opening a
+new url pause and so on so there are
+multiple commands which you can look at
+and try to use this commands in your
+script so these are all called as the
+action commands so let's go ahead and
+use this echo command and see what it
+does so now in the same script what i
+will do is towards the end of the script
+i'll just add this command i'll say echo
+and say i want to just display a message
+saying that this is the end of the
+script execution that is all i want to
+do now i'll just go ahead and run this
+and what we want to observe here is how
+this particular message what we have
+given here is displayed on the console
+in the log so now if you observe here so
+go to this last statement what we have
+so it says after clicking on the card it
+said echo this is the end of the script
+so this is what we displayed and using
+the command echo okay so this is how you
+can use the echo another feature here
+what you can do here is now say for
+example i just added a simple echo
+statement here now for me to execute
+that what i did was i executed the
+complete script you really need not do
+that always instead of that what i can
+do is i can just come to this particular
+line i can just say right click and i
+can say play from here so what it does
+is from this point it is going to play
+the script for me and not right from the
+beginning of the script so i'll show you
+how now with this command if you look
+here see it started running the script
+here it says running search iphone and
+then it executed only one command which
+says echo this is the end of the script
+so this is also possible to do with the
+id accessors accesses are the selenium
+commands that examine the state of an
+application and store the results in a
+variable so these are those commands
+which allow the user to store say
+certain values into your user defined
+variables and these stored values can be
+later on used either to create
+assertions or you can have some
+verification points created so let's see
+some of the store commands in action so
+i have few store commands here which
+i'll be demoing so first one is a store
+so simply using a store command you can
+store any kind of user defined messages
+in a variable and then after that you
+can either use it for displaying it on
+your console or you can do some
+assertions with that similarly store
+title so you can to store the title of
+any of the web page under test then
+store text so store text is basically
+used to uh capture the text attribute of
+any web element on your web page and
+store it in a variable use it as an
+assertion point store value so store
+value again is uh used to store the
+value attribute of any web element like
+so you have lot of web elements on the
+web page and say one of the attributes
+is what you want to do an assertion on
+so what you can do is you can use the
+store value command here get the value
+attribute of your web element and store
+it in a variable so let's see all these
+commands in action so let's go back to
+the same example so we have this amazon
+test script example so what i'll do is
+say instead of using amazon let's do one
+thing so let's create another test case
+itself so i'll go here i'll say add new
+test and i'll name this test as accessor
+test and we will use the same amazon
+site here i'll say click on start
+recording keep this window side by side
+so first we will look at store title so
+simply what i need to do is go to this
+amazon site which we have launched right
+click on this go to the selenium id and
+you have multiple options here so go
+ahead and select store title so once i
+click on that it is going to ask me the
+variable name where i want to store the
+title of this page so let's create a
+variable here i'll say var title and
+i'll say okay done now come back to your
+ide all right so i will stop the
+execution here now i have the store
+title command i created a variable
+called var title and i'm storing the
+actual title into this variable so let's
+also display this on our console so i'll
+add a command here echo and in target
+how do i use the variable now this is
+the way to use it i'll say dollar and in
+flower braces i will give the variable
+name which i have defined earlier so it
+is what i dle title okay so this is all
+my scriptures where i'm storing the
+title of the webpage and i'm displaying
+it in my console or the lock so now
+there are some extra commands which gets
+added here now because we are doing the
+recording on that so whatever the mouse
+movements happen it is going to record
+we do not need this so i will go ahead
+and delete this particular command so
+lets close this window and execute this
+test first so the script has executed
+successfully but let us go and see
+whether did we get the title displayed
+on the console yes so it it did open the
+amazon site it has set the window size
+it captured the title here in this line
+and then after assigning it to the
+variable we said echo and that variable
+name and it is displayed as the title of
+the page so now similarly let's go ahead
+and let's see how do we use the store
+text command now for store text i need
+an use case here say for example
+what about this cut let's say we want to
+display the text of this particular
+element now the text of this element is
+cut so now instead of again going and
+re-recording all the steps i will simply
+manually add this command so now after
+displaying the title okay so let's go
+ahead here and i will say store text and
+in store text i need to pick the text
+from this web element cart so what i
+will do is i'll use this target select
+target and i will select this particular
+element which is cut after this i need
+to create a variable where it can be
+stored so i'll say where cart text now
+similarly i will also display it using
+echo comma echo dollar in the flower
+braces i'll say where car text so let's
+execute this and then let's look at the
+other command so i'll just say i'll
+close this window again run this test so
+now look at this log lines so our last
+statements was storing the title and
+displaying the title after that we added
+store text okay so here is the command
+it said it is executed successfully it
+was able to retrieve the text from the
+element cart and the text retrieved was
+cart and which is what got displayed
+with the echo statement on our console
+so now let's move to our next store
+command which is store value now as i
+said store value for us to use that
+particular web element should have the
+attribute value so first let's examine
+which element we can take and display
+the value now on the same website i have
+the search button so i will right click
+on this and i say inspect element now
+look at all the attributes of this
+element it is of type input it has a
+class name it is of type submit and also
+it has this value attribute which is
+gogo and this is exactly what i want to
+retrieve and print so we will be using
+the search button now similarly same
+thing what i will do here i'll go ahead
+add a command here as a store value same
+way i will select the target as i select
+target from page i will click on the
+search button all right so here it has
+taken the target here in the value i
+will mention the variable name where i
+want to store the value so i'll say
+where button and value and similarly i
+will say echo and i will print the value
+of this variable which is dollar where
+btn value let's go ahead and execute
+this and say run current test so it has
+taken the title it has printed the value
+on the line 7. so it says store value on
+this particular element and the value
+was stored in the variable where btn
+value so that command was successful and
+the value actually which was got stored
+and which we retrieved using echo
+statement was geogo and that's exactly
+what we had here if you want to check
+again go here to inspect element the one
+which is highlighted so as we said the
+value is go and that's exactly got
+printed on our console now apart from
+this i also said there is a simple
+command which is just store so let's use
+that also now after all this here i will
+say store and say we want to just store
+a user message i would say a target as
+all store commands demod and this
+message i will capture it in a variable
+say that string this is just a text and
+then like i did it in the other that
+string and i'll say echo and the
+variable name so now if we
+close this and one way to do it is
+execute the complete test so which will
+execute all our store commands and also
+the last line is this the line number
+nine in the log which says the store
+command which we use to store the text
+all store commands demod and that is
+also displayed using the x so all the
+store commands we have demoed
+successfully now let's close this window
+and go back to our presentation so this
+is all about the accessor command now
+what do we have after accessor so we
+have something called as assertions now
+what is an assert so assertion is
+nothing but it verifies the current
+state of an application with an expected
+state so this is something where you
+compare your actual result with the
+expected result now assertions are of
+three different type one is assert
+verify and wait for now what does assert
+does when the assert command is executed
+and if it fails right the test stops
+immediately after this statement so if
+you are asserting say
+a title of a page and if you find that
+the title of page is not as expected as
+soon as it finds that failure your rest
+of the test case test is not going to
+run and it's going to immediately stop
+the test and also it is going to flag
+the test cases fake what is verify
+verify something where this selenium id
+it locks that particular assertion as
+fail however it would continue with the
+rest of the steps in the test case and
+then at the end of it the your overall
+test case is flagged as fake that is
+what verified us so verify is called a
+soft assertion whereas assert here is
+called as hard assertion why it is
+called harder session because as soon as
+an assert statement fails the complete
+test execution stops at that statement
+whereas in soft hazard what happens is
+after the failure happens the test
+continues with the rest of the steps and
+continue it completes its execution and
+then flags the test cases failure and
+when is this usually used in cases like
+as the same example say if you are
+asserting a title you really do not want
+the test case execution to stop even if
+there is a failure why because none of
+your steps are going to be dependent on
+this assertion point and this is where
+you will require a soft hassle wait for
+wait for something which waits for a
+certain condition to be true after that
+it proceeds to your further steps so if
+the condition goes false here for
+whatever say if you are waiting for an
+element to appear on the web page and if
+that element does not appear the test
+fails however it carries forward and
+completes the test by executing the rest
+of the steps and then flags the complete
+test case as a failure which will be
+something similar to a software so let's
+see all these things in action let's go
+back to our id we will create another
+test case here so i'll say assert test
+now for this what's the example we can
+take so first for assert title let's do
+the assert title on amazon itself and
+let's change the same test case to
+verify and see how this test case behave
+now for this i will launch the recorder
+with the same amazon dot in okay my
+recorder is launched now simply i will
+go to this website and i'll say right
+click selenium ide and i'll say assert
+title then i will stop the recording now
+here i will remove this command which
+has got added which i don't need so this
+is my asset title now we have already
+seen a third title passing in couple of
+our other examples now i want to show
+you a failure on ourselves so for that
+what i will do i will modify this actual
+type so here in the last line i'll just
+remove this amazon dotting so now
+ideally this test case is going to fail
+first because the title which it is
+expecting and what it is comparing
+against are not the same first let's
+execute this
+well i also need to show some statements
+after this so what i will do is let's
+add few more statements here let me
+start the recording here again say after
+asserting the title we want to go and
+click on this bestseller and then i will
+close this now let's execute this stop
+the recording and execute this test now
+do you see this assert title is in red
+that means it has failed the validation
+here so you see here in the log it says
+open the site done set window size done
+when it comes to azure title it says
+actual value was something different and
+it did not match with what you are
+trying to look for assert test ended
+with one error now after this assert
+please observe that there are no other
+statements which got executed this test
+stopped right away after this failure
+this is called as hard assert now let's
+go ahead and change this assert title to
+verify title so simply what i will do in
+the command itself instead of assert
+i'll say verify title and now let's
+execute this and see what happens now
+let me close this window first and then
+i'll say run test running assert test
+amazon dot in was open window size was
+set verify title failed because the
+titles were different because we have
+modified that however do you see this
+fourth line being executed click on link
+test bestseller and click on close now
+since i it was a very fast execution and
+i closed the browser probably was you
+were not able to see the best sellers
+clicked here that is fine but in the log
+we can see here that the steps 4 and 5
+got executed even after the title verify
+title step fit and if you compare it
+with the previous example where assert
+title failed the two lines after that
+the line 4 where we are clicking on the
+best seller and closing the browser are
+not getting executed so this is the main
+difference between the verify title and
+the asset title so now let's look at
+wait for how do we use wait for now for
+wait for i want to look at some kind of
+website where it would load an element
+dynamically after a while so for that i
+have a website here let's let's create a
+new test again let's go to the tests
+pane i will say assertion test and now
+uh let's go to a browser let me open
+a new window and there is a demo site
+which i want to use so let me search for
+that and then i will use that url so
+i'll say internet i'm going to use the
+dynamic loading do we have here yes
+dynamic loading page element rendered
+now so if you look at this website when
+i press on the start button right after
+a while this hello world text is going
+to appear on this webpage so in our use
+case what we will do we will launch this
+website we will click on the start
+button and then we will put an assert on
+this text using wait for let's do that
+so let's go here let me copy this this
+is the one let me say control c and in
+my new test i'll say control v and then
+i'll say start recording so it's going
+to launch this let's close the previous
+windows now in this i'm just going to
+click on start so that is going to get
+recorded done and now while the
+recording is still on i will add a
+command here for wait for so i'll say
+wait for element visible that is exactly
+what we are saying right so wait for is
+used until for a condition and until
+that condition is true so i am saying
+here please wait for this particular
+element which i'm going to give it in
+target until it is visible now the
+target is i'm just going to select the
+target from this web page itself so i'll
+say select target and i'm going to
+select this particular text come back
+here to your id so wait for the element
+to be visible what is the element to be
+visible is this hello volta hello world
+text and then you need to give a value
+here now what is this value since we are
+using wait for we need to mention a
+timeout so we have to tell basically to
+id that okay wait for say one second two
+seconds or three seconds whatever it is
+required and that timeout value is needs
+to be mentioned here so and this is in
+milliseconds so what i will say is i'll
+say so let's fail this test case first
+so i'll use a little lesser time mark so
+i'll say three thousand so that is three
+thousand milliseconds which is three
+seconds that is it and then we can say
+so what we'll do here is we'll add an
+assert so i will say assert text now
+what is the other text i'm going to do i
+need to look for the same element so
+i'll simply say select target this one
+and what is that i'm going to assert
+with i'm going to assert with the same
+text so i'll just copy this text and
+i'll put it in the value there's another
+way of doing that which we have done it
+previously so i can just go here do a
+right click go to selenium id and i can
+say assert text which is basically going
+to give me the same command so let me
+just go ahead and remove one of them
+either of them you can remove okay so
+let's stop the recording i will not
+close this browser because i want you to
+see how the dynamically loaded element
+behaves and will go ahead and execute
+this so i'll say stop recording and say
+execute this test now it's here all
+right so it's waiting okay it just
+failed now see this so it says wait for
+element visible after that the value we
+have mentioned is 3000 that is wait for
+three seconds which was not enough
+because and it failed with saying that
+unable to locate the element within the
+timer period now let's go ahead and
+change it to a passing value so i will
+say 10 000 here which is 10 seconds so
+let's close this
+and let's again execute this bring this
+to the side so that we can see okay it
+is waiting on that wait for element now
+look at the problem here what we have
+done is we have closed the website and
+after that we have added the assert text
+so this is a mistake what we have done
+and hence though it is found that
+element here for wait for what did it do
+it went ahead and closed the window and
+after that it's definitely not going to
+find the assertive right so that's the
+mistake what we have done so let's go
+ahead and debug this so what we will do
+after this wait for element we want this
+assert to be put after that we don't
+need this click content because this was
+an additional step which got added
+delete it and then close okay fine so
+now let's go ahead and rerun this so
+i'll say run current test i'll move this
+to a side okay it's waiting all right
+done so now it is able to do an assert
+text on this all right so this is how
+you use the wait for key features of
+selenium id let's look at the first
+feature reusability of test scripts so
+many of the test scripts have test steps
+that involves signing into an
+application or creating an account like
+for example a login screen is a very uh
+key example in this case where whenever
+you are testing your application first
+you need to log in and then perform any
+other test so now it's going to be a
+redundant or a waste of time to recreate
+the login steps again and again for each
+and every test case so we do not want to
+definitely do that so as we know since a
+record and replay tool does not have
+enough capability of writing
+common test cases or a common functions
+and calling those common factions like
+our regular selenium web driver has
+however what id is done is it has given
+us a provision to run one script from
+another script so what basically what we
+do here is especially for a login we
+write one test case which is going to
+log into your application and call this
+test case in the other test cases so
+let's take a a look at how this works so
+for that let's go to our id so in this
+id
+we'll do one thing let's go ahead and
+create a new project so let's say login
+project in this project i will create a
+new test case we'll call it as login
+test let's say add now in this login
+test i need to give a url now for this
+purpose i will be using again a demo
+site so first let me
+launch a demo site here file new window
+and i will say the demo site go dot uk
+okay this is a simple demo site which
+has a login functionality right so here
+i will go to the login screen now this
+also allows me to add few users and
+using the same users we can go ahead and
+do the login now coming back to our
+login page so this is the url which i
+need to launch which is going to give us
+username and password we will use to
+login into this application so give this
+url here and say start recording move
+this window here for recording and this
+here now what is the first step we want
+to record we want to come here click on
+the username and i'll say user1 okay and
+i'll say
+passwordpwd1 and i will click on test
+login and then what we will do is we
+will assert this text so here i'll say
+right click selenium id assert text
+that's it and then i will close the
+browser okay this is all my test is now
+come back to your id let's see if there
+are any unnecessary commands which it
+has taken okay click type all done and
+now for the time being i'm going to
+comment out this close comment because i
+want the browser to be still open so
+that we can see the actual test
+execution properly till the end of the
+script this is the login test case now
+simply if i run this let's execute this
+let me execute this and show stop the
+recording and execute this test case so
+it typed user one it typed pwd which is
+my password here and then clicked on the
+button and then definitely it was the
+wrong password so it gave me fail
+docking so this is fast fantastic
+however this is with one value i have
+used it but this is a function which i
+want to use it every time and also a
+probable use case i might have is that i
+might need to login with a different
+user id and password and apart from that
+even just to test this login test page i
+would want to test with multiple user id
+and password like valid credentials and
+invalid credential now for that purpose
+what we will do is we will parameterize
+this name that is user id and the
+password and how do i parameterize it
+simply go here instead of giving a hard
+coded value here what you can do is just
+say use any variable name here and we'll
+define this variable somewhere else so
+i'll say username this is the variable
+similarly for my password in my value
+field instead of a hard coded value i'll
+say dollar and i will say password now i
+cannot run this program as it is because
+there is this variable is not defined in
+the login.test what i will do now is i
+will create my actual test case so i'll
+say here i'll say invalid credential as
+my test case and i'll say add now here
+is where i will assign values for my
+variable now which are these variables i
+need to use username and password so i
+need to assign some value here and then
+call this function login test so let's
+do that in this video previously we also
+saw how do we use user variables and how
+do we assign value by using the store
+command so i'm going to say store and
+then my target is going to be the actual
+value so
+user1 and where is that i'm going to
+pass this to my variable username so
+let's just check once if the variable
+name is username yes all right done now
+i have done the username now i need to
+pass the password so i again i'll say
+store the actual password which is pwd1
+in my case and what is the variable i
+need to use here i have to use password
+because that's the variable which we
+have used in login test here and then
+after that i need to use a command which
+is called as run now what this run
+command does is run and whatever target
+you give which is basically your another
+test case it is going to run the test
+case now in our case our test is login
+test this is all our test case is going
+to be okay so what is that we did we do
+in this test case we created a variable
+username and password and assigned the
+actual username and password and then we
+are just calling this login test and in
+this login test this username and
+password will get passed which will be
+user1 and pwd1 and then it will execute
+this test with the or with the value
+which we have passed to this variable so
+now which test case we need to run the
+invalid credential so let's go ahead
+close this window and execute this test
+executed so now look at the log of this
+invalid credential test see running
+login test called by invalid credential
+before that it said store this value
+store user 1 in the value username that
+is your variable this is this line and
+then the password then it says run login
+test so it called the login test
+functionality and in the login test we
+have all this clicking on the password
+field clicking on the username and then
+asserting the text and that's exactly
+what is done here this is how you use it
+so now let's write one more test here
+for the same login test so
+let me add another test i'll say valid
+credentials and let's say add now same
+thing i will do here i'll say command
+store my target will be now i'll say
+user3 value will be username right okay
+now second command will be again storing
+this time it is for the password my
+password is pwd3 and
+the variable name is password and same
+thing i'll just call run and my login
+test that's it now similarly let's run
+this test and see what happens now this
+test is going to fail why let me close
+this window i don't need this why did
+this test case fail because my assertion
+point let's go to the tests i'll show
+you my assertion point in login test is
+look for failed login however we created
+a test case for valid credentials right
+because our valid credentials were said
+that the login was successful which did
+not match with what we were asserting
+which is fine right so we just wanted to
+see whether we can write a test case
+with valid credentials and invalid
+credentials and this is how you do that
+by passing the variables through your
+test case to your actual test case the
+next feature is the debugger in the id
+like every other id offers a debugger
+functionality so does selenium id so
+let's look at what are the different
+functions available for us in the
+debugging so there are multiple
+functionalities which the selenium ide
+offers us so one is called as the step
+execution so for us to look at how each
+of these debugging techniques works what
+i'll do is let's go ahead and create a
+new test script so let's go to our id
+and i will create a new test case so
+i'll say new test case let's use
+facebook login this time so i'll say fb
+login test or we'll just say fb test so
+now for this fb test i would go ahead
+and use the facebook login page so i'll
+just copy this url paste it here and
+then i will minimize this other firefox
+window and i will launch the recorder
+now so i'll click on start recording now
+let's keep this side by side and what is
+that we're going to do here is let's do
+a simple login functionality so i'll
+just use some email id here so i'll say
+my user at gmail.com this is just a
+dummy user id and password values and
+i'll say password as password1 then i'll
+click on login button let's stop the
+recording here so let's read the script
+once whether it has got everything
+whatever we need okay it has launched
+facebook it clicked on email id there's
+a double clicks here because i happen to
+click twice on the email id field so
+what i'll do i'll remove one we don't
+need it and then i'm typing the keys
+which is myuser.gmail and then i'm
+clicking on the password field typing
+the password and clicking on the login
+button and then once i do that okay so
+i'm going to get this pages the password
+you have entered is incorrect so let it
+be so we will use the script until here
+and check out some of the login options
+okay so we have completed writing of the
+script let me go ahead and close this
+window now first thing what we will do
+is we'll just simply execute the script
+so we have to just say run current test
+so it's going to log in your facebook it
+will enter my user at gmail it will
+enter the password it will log in and
+that's about it so now your script is
+executed now let's go into the debug
+mode as we said there are multiple
+options for debugging what is the first
+option let's see so first option we have
+is something called a step execution so
+what the step execution does is from
+your script you can execute all the
+steps one after the other so you can
+basically control the execution of each
+step and how you do that what you have
+to do is just go and click anywhere so
+let's start from the beginning let's
+close this window of our previous run
+and there is an option here which says
+step over current command so when you
+click on this what it does is it
+basically executes your first line where
+your cursor was and it stops immediately
+after that so if you look here it has
+launched the facebook page which says
+open the url facebook and then let's go
+ahead and just do the simple step
+execution again i will click on that it
+is going to execute this command where
+it set the window size to certain value
+again i will do a step execution now
+observe what happens here it clicked on
+this email field do you see the cursor
+there now let's do the next step again
+again i will do step over current
+command now the current command was it
+entered my user at gmail you can see it
+on the left side here now it will be
+more visible again i will do a step
+execution it is going to click on the
+password field now it is going to enter
+the password and now the last step is
+it's going to click on the login button
+and with this all our commands are
+executed and this is how you do the step
+execution and now where is this useful
+say if you've got a very long test case
+written and you want at certain point
+you want to start doing the step
+execution to see where your test cases
+fail probably one of your web element
+you entered is wrong or probably the
+text which you are entered is wrong so
+for you to debug such cases you can use
+this step over current command
+functionality so what's our next command
+break points so there are break points
+which you can insert in your script okay
+so let's close this execution and let's
+come back to our script so what i will
+do is first let's add a breakpoint how
+do you add a breakpoint say for example
+we want to add a breakpoint after we
+type in our email id so here what i do
+is i simply go and click here so once
+you click here this is where your
+breakpoint is added other way of adding
+breakpoint is you can right click on any
+command and you can use this toggle
+breakpoint so if there is no breakpoint
+it adds the breakpoint and for you to
+remove it you can simply go and select
+the toggle breakpoint again so now i've
+added a single breakpoint now what you
+need to do is once you execute this once
+you say run test what it will do is it
+will come till here till your breakpoint
+it will execute all the commands before
+that and it stops or pauses your
+execution at this point okay let's go
+ahead and see how it does so what i'll
+do is i've added a break point at the
+click on password field and i will say
+execute this test do you see here it
+says paused in the debugger so by adding
+breakpoint my test has entered the
+debugging mode and where has it stopped
+to at the point where i added this
+breakpoint so just go back here and see
+whether the previous steps have been
+executed yes my previous step was adding
+this myuser gmail.com into the email
+field which it has done and it is paused
+here and now from here i can either run
+the rest of the tests if i just click on
+this run current test what it will do is
+it will go ahead and execute all the
+steps or even i can do a step execution
+from here so say if i want to do a step
+execution i'll do this let me minimize
+this window a little bit so that you can
+see and i'm still again doing that step
+execution so it added the password and
+after this i'll say just go ahead and
+complete the test so it is clicked on
+your sign in login button and it is
+logged in so this is how you can use the
+breakpoint so that is about adding the
+breakpoint let's see what's the next
+removing the breakpoint so i showed you
+so if you want to add a breakpoint you
+just click here or you can do a right
+click and do toggle breakpoint if you
+want to remove the breakpoint just click
+again on the same place where it has
+added the breakpoint or you can always
+do this toggle breakpoint so this is the
+way of adding and removing the brick
+parts what is the third option disabling
+now say for example my test case is a
+pretty long one okay so i might have a
+multiple breakpoints so say let's add
+one breakpoint here at the email and
+then before clicking on login let's add
+another breakpoint now when i execute
+this it is going to stop here and then
+again if i say continue execution it is
+going to come and stop here so let's do
+that first and then i'll show you how
+the disable works so let's close this
+window again execute this bring this
+window here can you see this it's paused
+here okay and here now you should be
+able to see it now i'll say just run
+after this breakpoint do you see here it
+is paused after entering the password it
+has not clicked on the login button it's
+paused at the click and now i'll say
+again complete the test so your click on
+the login button is done and it is
+logged in so it's a little bit slow yeah
+now you've got that logged in page at
+some point of time while i'm debugging
+my test case i would want to just
+disable all the breakpoints and not
+remove everything for that i have an
+option here which says disable
+breakpoint so if this button is
+highlighted here that means i have
+selected disable breakpoint so what this
+does is when i execute this test it
+ignores all these breakpoints for this
+run it ignores this breakpoint until i
+have selected this disable breakpoint
+button okay so let's see this let me
+close this again and i have enabled this
+disable breakpoint is what i have
+selected i'll just simply go ahead and
+run this test case do you see that it
+did not stop at this break point it went
+ahead and completed the execution why
+because i have temporarily disabled it
+once i remove the selection and run it
+it is again going to stop at the break
+points so this is how it works so we saw
+adding of requirements removing of
+breakpoints and disabling of breakpoints
+what is the next one enter debugger by
+using play to this point option okay now
+another way of doing this is so let's
+remove all this breakpoint now for
+example like the last time we said we
+want to add a breakpoint here so now
+instead of doing that what i can do also
+do is i can just right click on that
+particular command and i can say play to
+this point only so when i select this
+what happens it acts like a break point
+and it comes and pauses at this
+particular command where i have said
+play till this point so let's try to do
+that so let me close this window and
+then for say type the password so here
+okay i'll say right click play to this
+point so it is going to execute all the
+steps until the password and it will
+stop here can you see this paused in the
+debugger so it again enter the debug
+mode and now it is stopped at this point
+so now there are multiple options now
+every time last time what we did we did
+a step over and also we said continue
+with the rest of the test now what we
+will do we'll just stop the execution so
+this is also an option available say if
+you want to change something here you do
+not want to continue with your execution
+you can simply go ahead and stop the
+execution so we saw how do we use the
+play to this point option now debugger
+command now all these things whatever we
+did now adding the breakpoints this was
+done in the id there is also a way of
+adding a debugger programmatically and
+how do we do that let's see now at the
+same place say after entering the
+password so here i will insert a command
+in this command i'll just say debugger
+this is all the command is now what
+happens when i execute this test cases
+at this point wherever it finds this
+debugger command this program enters
+into a debug mode and it comes and
+pauses the script here let's see this in
+action so simply i'll just play the
+script let's type the email id it's
+typed the password okay it is going a
+little slower here okay and there there
+you go now it is paused in deeper so
+this debugger did the same job as what
+we did earlier with the breakpoints now
+let's go ahead and just stop the
+execution because let's not keep logging
+into facebook with invalid username and
+id okay so this is how you can use the
+debugger command so i will stop the
+execution here close this window and
+then now let's see the next one let's
+close this window so we saw the debug
+pause on exception okay this is a very
+brilliant feature of this id i'll show
+you how it works now let's say let me
+remove this command now i do not want
+the debugger i'll say delete this
+command just click let it be there now
+if you look at this what we are doing is
+we are identifying these elements like
+email password and then clicking on the
+login button now say for example say
+this click so
+let's run this then i'll show you what
+it is and i want it to come and stop
+here okay so i will execute this all
+right so now it is paused here so now
+what i will do is the click right so
+this is where i am clicking is this
+login button so this login button is
+identified by some identifier which is
+an id now there is a possibility that
+tomorrow this particular id might change
+or any of the locator might change on
+this particular website and if that
+happens the first point of failure what
+you will see is when you click on this
+button because this script will say that
+this element is not formed in such cases
+if you are using pause on exception that
+is here pause an exception what happens
+is whenever this script finds an
+exception it goes and pauses at that and
+enters into a debug mode otherwise what
+happens whenever you find an exception
+your complete test script will stop
+executing because there is an error and
+your test case fails instead since we
+are in a debugging mode if you choose
+this option what happens is if there is
+an exception it is going to come get
+into the debugger mode and it is going
+to pause the execution at that point and
+once it pauses what you can do is you
+can go and correct it and then continue
+your execution so let's see that in
+action so now for example the click
+button so here the id is you underscore
+0 underscore so say i try to change this
+let me add 1 here and then if i execute
+this this script should fail for me
+basically because it is not going to
+find this so can you see us trying to
+find this id and since this particular
+element with this id does not exist this
+whole test case should fail firm now as
+i said earlier in this video so if by
+any chance if one of the element id is
+not found so if that is not found it
+always falls back into the other locator
+techniques and that is what it did in
+this case it tried to locate the login
+button using some other id and that's
+what it says element found with the
+secondary locator okay to use it by
+default update the test step and to use
+it as a primary locator and that is
+where the test case pass so let's try to
+see if i can make this test case fail in
+any way for that let's remove this and
+let's try on the email id so what i will
+do is let me try to comment this out
+remove the debugger and i will add a
+command here i'll say insert new command
+and in this i will say click and then i
+will use the target as id equal to email
+now in this case i do not have a
+fallback id because i am not using id to
+recognize the element rather i added my
+own command and i added my own locator
+here so now let's try with this and now
+instead of this is the right id so what
+i will do is i'll just change this id to
+something like underscore one so that
+this test case fails for me now let me
+close this and let's run this test case
+and basically this test case should fail
+so if you see here in the log it's
+saying trying to find the element with
+id email underscore one so this id has a
+default timer so it will keep trying to
+find the element until the timeout value
+is completed now there we go so it had
+an implicit timeout of 30 000 so that is
+30 seconds 30 000 milliseconds which was
+30 seconds now after that this test is
+filled so this is the scenario we wanted
+what happens here is it simply started
+executing the moment it found an
+exception it completely stopped so as a
+tester what you need to do is you need
+to go back look for this red lines where
+it has failed correct it and then rerun
+the whole test now instead of that what
+this pause and exception does is let me
+click on that so this is what is
+selected now what it does is when i
+execute this this is going to come and
+stop here let's see that so let me close
+this and run this program again so run
+current test i'll bring this to the side
+now see it's trying to find the id since
+the timeout is almost 30 seconds we need
+to wait until it pauses at this so now
+do you see this now it is not exited
+from the test it is just at the same
+step where it is unable to find this
+email field okay and it's saying okay it
+failed with an implicit timeout of 30
+seconds but now since i'm in the
+debugging mode and how did i get into
+the debug mode by selecting this option
+pause an exception now what i can do is
+i can go ahead and change this back to
+the actual one and then from here i can
+just simply do this i can say run the
+test now so now see what it did the
+moment i changed that and i said run it
+passed and how did it pass because i
+gave the right id here and that's
+exactly you can do with this departure
+control flow statements so in the legacy
+id uh these control flow statements were
+available as plugin so one had to
+install the plugin for you to use any of
+this control flow statements however in
+the new ide these are available out of
+box so let's see what this control
+statements are so let's go to my notes
+so there are two types of control flow
+statements one is conditional branching
+and the other one is looping so in
+conditional branching we have a regular
+if else if nested if else and end and
+when we talk about looping there are
+multiple loops available one is the
+while end loop so how does the while end
+loop work the code between the while and
+the end is executed until the expression
+is true and then we have a do repeat so
+do repeat where the commands after the
+do will get executed first and then the
+condition is checked and this is
+evaluated in the if statement times end
+so you can specify a number of
+iterations you would like a piece of
+code to be executed using this loop and
+then there is another loop which is a
+for each loop so this provides the
+ability to iterate over collection
+objects like say if you have an array
+object with you and you want to say or
+traverse through the array and perform
+certain operations on each of the array
+element so that is possible using the
+for each loop so let's go and write a
+test script and see how this work so
+what i will do is i will demonstrate a
+use case for the if else and then for
+the looping i have a few test scripts
+which i have already written which i
+will show you and i will walk you
+through them it's a simple counter which
+we can use and we will be incrementing
+the counter using one of these loops so
+we will just see how the loops are to be
+used what is the syntax to be used and
+how they execute in the id so let's go
+to our id now let's minimize this so
+this was our previous test case so what
+i will do is i will close this project
+and open another project so i have
+another project here which is called as
+control flows so as i said i have few
+scripts written for some of the loops
+however for the demo use case we will go
+ahead and write a new script okay so
+i'll say add new test and uh we are
+going to be working with a demo site
+called calorie calculator so let me name
+the test case itself as calorie
+calculator test so let's look at what is
+our use case now in this use case this
+is my use case i am saying go to this
+gallery counter website okay so let's
+see what that website is i have this
+website open here so this is a calorie
+calculator website in this website we
+are saying if the gender is male then
+click on the mail radio button so you
+have multiple fields here where you are
+accepting the age of a person the gender
+of a person the height the weight and
+then the activity level of the person
+and when when you click on calculate
+this is going to give you the number of
+calories so for our purpose for our demo
+use case what we will do is we will
+store the gender to be selected in a
+variable say for example i want a gender
+female to be selected and then i'm going
+to write an if condition here that if
+the gender is male right so if the
+gender is male then click on the mail
+radio button here and then i'm saying
+click active from the activity drop down
+so there is a drop down called activity
+here in this i am going to go and select
+active as daily exercise or intense
+exercise three to four times a week this
+is what i am going to be selecting and
+if the gender is female so if the value
+passed from the gender is female then
+what is that i want to do i want to
+click on this radio button female and
+select very active intense exercise from
+this activity dropped up a very simple
+use case so this is what we are going to
+write in our test script so let's
+minimize this window or we can just
+close this window for now we don't need
+this and here so how do we start this
+test case i need to enter the url so for
+me to enter the url let me go to that
+copy this url ctrl c minimize this and
+control v done so now here i will start
+my recording by clicking on the start
+recording button so now this url is open
+now the first thing what i need to do is
+in my test script i need to write a open
+command so i'll say open and my target
+is what this url done the next command
+is as per our use case i want to store
+the gender to be selected in a variable
+so we will use the store command and
+when we use the store command we need to
+specify the target so let's say the
+target is f and where is that i want to
+store i'll create a var gender that's my
+variable so i have stored this now what
+is the next thing i want to do so once i
+have stored this first is i need to put
+an if statement because my use case is
+if the gender is male and if the gender
+is female now since by default the male
+is already selected here so let's put an
+if condition for this condition if the
+gender is female okay so that is exactly
+what i am going to do so here i will say
+if in the command once i say if in the
+target you need to specify the condition
+now condition is i want to check for
+dollar that's my variable where gender i
+want to check if this is equal to f and
+how is that i can check i need to use 3
+equal to here in double quotes i'm going
+to mention f now this is what i have
+stored in the variable that gender this
+is what i'm going to check so if this is
+the condition in the next line now all
+the next lines whatever i am going to
+mention are the ones which will be
+executed if this condition is true now
+in the next line what i want is i want
+to select this radio button correct so
+now what i will do instead of writing
+all the commands manually i will now use
+a recorder to do that since i'm already
+in the recording mode i'll just go to
+the url or the website here and i'll go
+click on this female so on the right if
+you see these steps are getting recorded
+and then our use case also said that
+from the activity drop down we want to
+select very active so now if you look
+here all our steps have been recorded so
+i clicked on the female radio button and
+then we selected the id activity here
+which is our activity drop down and then
+we clicked on the desired value which is
+very active and then you end the if
+statement here so but we also want to
+add an else statement so instead of
+saying end here i will say else so that
+means if the gender selected is male
+okay what is that we want to do i want
+to go and select in the activity field
+as active because the mail is already
+selected so i'm not going to select it
+again and then i will end the if loop by
+end statement that is all so this is all
+my script is so let's stop the recording
+here there are some mouse move mouse up
+which i really do not need so what i
+will do is i'll just delete this so this
+is the simple statement what i need in
+the else where i'm saying select so
+select is something a command which is
+used to select a web element which is
+your drop down so you select the drop
+down here and once the drop down is
+clicked and then you go ahead and click
+on this particular target is nothing but
+your active daily exercises or intense
+this value from the drop down is what
+i'm selecting and same same thing what
+we did in the if statement so let's
+remove these also we don't
+mouse move at and mouse up at so all
+these statements we don't need so same
+thing if i am saying the if statement
+says if the gender is f that is female
+click on the radio button then go to the
+select activity select the activity by
+clicking on very active and then end the
+loop so this is all our scriptures now
+let's go ahead and execute this and see
+whether it works so let's minimize this
+window and i will simply say execute the
+current test let's slow down the
+execution speed little bit so that you
+can observe what exactly is happening
+now i'll say run the current test so the
+calorie calculator is open so we are
+passing the value f for the gender
+correct so that means it entered this
+loop you can see here in the log so if
+the gender is f which is female yes it
+found the condition to be true and then
+it clicked on this radio button it went
+to the select field which is your
+activity drop down it selected the very
+active option from here and then it
+ended now in the same program what i
+will do instead of f let's pass the
+value m mail and let's see what happens
+and then we will go ahead and execute
+this program so let's close this window
+again and execute the test script again
+so now according to the script we are
+not reselecting the radio button because
+this is already selected by default and
+in this descript if you see now all the
+green colored one if you see okay the
+open command ran successfully store
+commander and successfully it came to
+the if condition it checked if the
+gender was f or m it found that this
+condition is not true so can you see
+here all these other statements in the
+if are in black color that means these
+were not executed instead it came to the
+else part and then it executed all the
+commands in the else part so this is how
+you use a if condition in your selenium
+id so let's close this now as i said
+there are other looping statements what
+we have like while end loop or do repeat
+and time set so i have couple of
+examples written here let's walk through
+that and see so let's take the while
+loop first so what happens in this while
+loop let's see in this while loop what
+i'm basically doing is i have created a
+counter and i am counting it from 1 to 5
+and then displaying the value of the
+counter and i am using a while loop for
+that so here it says first i am setting
+a counter value to 1 and then i am
+saying while the counter value is less
+than 5 this is the loop while and end so
+whatever commands are within that those
+get executed until the condition is true
+so this loop will get executed until the
+counter becomes 5. so once it sees that
+counter is 5 it is going to exit the
+loop and just print the value of the
+counter it's as simple as while loop so
+just pay attention to the syntax the way
+it has been used here so this execute
+script is what a simplest statement what
+i have used this could be anything it
+could be any of your web elements you're
+performing certain operations say there
+is a calculator which you are using say
+a calculator under test so if you want
+to key in certain numbers until say the
+sum of the numbers is 30 or something an
+example like that could be a valid use
+case for your while loop so you could
+use that so let's execute this and see
+how the counter works so if i execute
+this command so now take a look at the
+log here this is running while test so
+first statement where it assigned the
+counter value and then it got into the
+while loop and it executed the volume
+until the counter was assigned the value
+5 and once the counter became 5 the
+while loop got exited and we are
+printing the counter value so this is
+how a while loop is used now similarly
+the same function of using a counter i
+have tried to use a do loop here so
+let's look at it now in the do loop what
+happens is the first the script is
+executed because it's the first command
+after the do statement so whatever is
+between the do and repeat if is executed
+and then the condition is checked here
+so here what i'm doing is i'm just first
+assigning a counter with value 0 and i'm
+incrementing the counter every time by
+10 and then i have a condition that once
+the counter becomes 50 please exit the
+loop that's all i'm doing here and
+another statement what i have written
+here is every time the counter gets
+incremented i am printing the value of
+the counter so let's execute this can
+you see that the way it is executing it
+alright now let's see the lock running
+do loop test okay the counter has been
+initialized to 0 and then it executes
+the script and this script is doing what
+it is just incrementing the counter by
+10. the counter becomes 10 and then 20
+30 40 and 50. so as soon as it becomes
+50 it's going to exit the loop and print
+the value of the counter so one thing to
+notice is there is no web element or
+website testing which i am doing from
+the script however one thing what the id
+needs is it needs a starting point so
+whenever you create a new test kit it
+asks you to at least give it a url from
+where it can start though it is not
+going to launch that url it is going to
+launch your browser definitely before
+even it executes a single line of test
+so that is something a mandatory in the
+id so we saw do loop we saw the while
+loop there is also something called as
+time slope so which is what i have said
+here times and n so this is something
+you can specify a number of iterations
+you would like to perform a set of
+commands so now in this example what am
+i doing i'm simply incrementing a
+counter by one right and i'm saying just
+increment that is this is the only
+command which i want to execute but i
+wanted to execute two types that's all
+so there is no other conditions here it
+is simply saying there is a set of
+command or a single command which i want
+to execute it twice and the number of
+times which i want to execute is what i
+mentioned here in the target so first
+initially i am assigning a counter with
+value 100 and then i am saying increment
+this counter by one two times and then
+print the value of the counter so let us
+execute this and then change the number
+of times if i say run test here so can
+you see this the number of times it got
+titrated and now the value is 102 why
+because initial value was 100 in the
+loop which is the time slope i am saying
+the iterations is 2 2 times execute the
+command which increments the counter by
+1. so that is why your counter value
+becomes 102. now say i increase this to
+say 10 so that we get a feel of how the
+loop executes here and same thing i will
+execute it now see it you can visually
+see the number of times the loop is
+getting executed all right and in the
+log you can see the values also here
+okay can you see here so this loop
+executed 10 times and hence the counter
+value because 110. so these are a simple
+ways of using these loops in the id so
+you can implement this loops for any
+kind of functionality you may want to
+perform on your web elements or any
+logic which you want to build for your
+test cases selenium side runner selenium
+side runner is a command line runner
+tool which allows the user to run your
+selenium id test cases on any browsers
+or to run the test cases parallely and
+also it gives you a mechanism to use the
+grid setup to run your test cases on a
+remote machine okay so for us to work
+with this selenium side runner there are
+certain uh installations which we need
+to do and some of the installation
+prereqs are one is you need a node.js
+server and what is this node.js server
+node.js server is a powerful javascript
+based platform and this is the platform
+which is intensively used by many
+developers across the world for
+developing their web applications and
+it's an open source and it is available
+free of cost to everyone to use it so we
+will need to go ahead and install a
+node.js server for this so now let's
+look at all the installation steps which
+are involved in installing the side
+runner and running it okay so let's go
+to my notes so the
+seleniumhq.org has a complete
+documentation on how to install this
+command line runner how to use it and
+what are the different ways we can use
+this runner i'll just show you where it
+is and you can use this as a reference
+for any of the tests which you're
+creating and using the side runner to
+run it
+so let me open a new window here let's
+go to this website
+so if you see here it has a complete
+guide on how to use this command line
+runner right including the setups what
+is the prereqs installing the browser
+drivers
+and
+how do you do the different
+configurations which are available with
+the side runner so you can configure
+various browsers with that you can set
+different capabilities for the browser
+if you want to use the selenium grid to
+run your test cases on remote servers it
+also gives you complete details on how
+to do that and also using the parameters
+changing your base url so this is a
+complete guide which you can refer to
+when you're working with the site runner
+okay so let's go back to our
+installation
+so coming back to our installation here
+so the first prereq what we need for the
+selenium side runner to run is your
+node.js okay so if you go to this
+website nodejs.org
+let me open the same
+browser okay
+all right so here you will see that the
+node.js is available as an installable
+for all the platforms like do you have a
+windows installer you have mac os
+installer you have linux installers also
+so if you're working with the windows
+machine there are two options for you
+either you can go ahead and download the
+msi installer or you can just download
+the zip and unzip it into any folder on
+your system okay and since i am using
+mac machine what i have done is i have
+downloaded this version pkg version and
+have installed it on my machine okay so
+once you download say if you're working
+on the windows machine so say if 64 bit
+is what you require and you click here
+and download the zip package i'll show
+you how the folder structure looks like
+so this is where i have downloaded the
+node.js installable now if you look at
+the windows one so this is what happens
+when you download the zip file and unzip
+it this is the folder structure it
+creates and this is what we would need
+right so npm is something which we would
+be using to install all the packages
+which are required on this node.js
+server and i'll explain to you what
+those packages are okay so once you do
+this installation you need to go and
+check if your installation is gone
+properly or not so for that what you do
+is go to your terminal window or in your
+case if you're using a windows machine
+just open a command prompt right and
+then you have to just give this command
+here you say npm minus v which is
+basically saying what is the version of
+the node.js which we have installed
+which is 6.9 okay now what is this npn
+npm is nothing but it's a node.js
+package manager and it gets installed
+with your node and this is used to
+install all your other packages or what
+it is called as modules on your system
+okay so now with this we know that our
+npm has been installed properly so let's
+move to the next step of installation so
+now we have our node.js installed now
+next thing is to install the selenium
+side runner now the selenium side runner
+is a library which is available to us
+and we need to install this library
+using the npn so let me go back to my
+terminal again so i'll just show you the
+command what it is what we use for
+installing this package or the library
+and since i've already installed on my
+machine i will not be uh doing the
+installation here so what you need to do
+so if you are a windows user you can
+directly give the command as npn install
+minus g selenium site
+runner okay so this is the command which
+you need to get however if you're a mac
+user or a unix user since you need to
+use a root user here what you need to do
+is just say sudo once you press enter
+here it will go ahead and install this
+complete library on your system now
+since i've already installed i'm not
+going to do that okay so i'll just exit
+from this now once the installation is
+done how do you check whether your
+installation has gone correctly or not
+you have to just simply give a command
+like selenium side runner minus version
+okay and now this will give you the
+version number if the installation has
+been successful so right now the version
+installed which is the latest version is
+3.11 okay so so far we have done the
+installation of the node.js server we
+have done the installation of the
+selenium now while you also you do this
+installation you need to know that where
+is the selenium ide side runner has been
+installed right as i said it's a library
+or what you popularly call as module in
+your npm right so for you to check
+whether where it has got installed you
+simply need to go to the directory i'll
+say ls minus user local library so if
+you see here you'll see something called
+as node modules so whatever packages
+you're going to install using npm would
+get installed in this directory the node
+modules directory so let's go ahead and
+see whether i have my selenium side
+runner there or not so i'll just use the
+same ls slash node modules okay do you
+see this selenium side runner is what
+has got installed and previously to that
+when we installed the node.js server it
+also installed this npm right so that is
+also available under the same folder so
+far so good so we have our selenium ide
+installed now what else is required so
+we installed the nodejs we installed the
+selenium side runner now we need this
+browser drivers now what are these
+browser drivers now what you did using
+your ide was let me
+id was we said right in the id itself i
+said run the current test and since i'm
+using firefox browser here any test case
+using the ide plugin on your firefox you
+execute is going to execute on the
+firefox browser correct same way if you
+are using the selenium ide on chrome
+which is an extension on chrome and you
+run the test cases there it is going to
+use the chrome browser to run the test
+case however any test cases or any
+automation scripts you're going to write
+you want your scripts to run on all the
+browsers because you want to do a cross
+browser testing right so for that
+purpose what we do through command line
+is we install this browser drivers right
+so say if you want to run your test
+cases on edge browser so that means you
+first need to install your edge browse
+driver on your substance before you run
+your test case on edge process if you
+want to do it for chrome similarly you
+need to download the chrome web driver
+and install it for firefox the same and
+once you install that then you should be
+able to run it on any browser now where
+are these chrome browsers available so
+if you go to the
+seleniumhq.org let me show you that
+okay in the selenium hq website if you
+go to this download tab and if you go
+down here you will see something called
+as third party drivers bindings and
+plugins and here you have a list of all
+the browsers and its corresponding
+driver files which are available and
+this is what which you need to go and
+download for example say i want to run
+all my tests on chrome browser right so
+what i do is i click here okay in the
+download session go to the latest chrome
+driver available click on that and then
+depending on which os you're working on
+if you're working on mac just download
+this if you're working on uh windows you
+download this and once you download the
+driver what you need to do is you keep
+that drivers like for example uh
+can you see this driver file so this is
+my driver file this is my executable
+driver file so what i did was i just
+downloaded this file for mac and i
+copied it to the location where my tests
+are present okay now so once i have this
+available what i need to do is i need to
+install this driver using again the npm
+command and to install this driver what
+you need to do is you need to be in the
+same directory where your driver file is
+present okay in the same directory you
+just issue this command you say npm
+install minus g and your chrome driver
+this is it so once you install this
+driver you should be able to work with
+your chrome driver got it very simple so
+similarly if you're working with
+different browsers say if you also want
+to run your test cases with edge or
+internet explorer or the firefox browser
+same way you need to download all the
+drivers from this location
+so from here like you have edge browser
+here opera browser you have a mozilla
+firefox browser so any of the browser
+which you want to work with you have to
+just download your driver from here
+place it in this location and install it
+using nbn command okay so since i will
+not be executing this command again
+because i've already installed it so
+once your drivers are installed what's
+the next step we are ready to execute
+our test cases okay so these are all the
+installation steps which are required to
+get your command line runner which is
+called a selenium side runner ready for
+you to execute your test from the
+command line all right okay now let's go
+ahead and see how do we execute the test
+cases so let's go back to our previous
+example in this video where we wrote
+some of the test cases for testing our
+control flows okay so these are all the
+test cases now if you observe here i
+have not created any test suite here we
+just had a default suite which was
+created when we created the project and
+we just went ahead and created all the
+tests here for the side runner to run we
+need to have a test suite there so if i
+just try to run the test let's try to
+run this what is the name of this
+project control flows so i'll show you
+what happens if there is no test suite
+defined for this so let me clear the
+screen and ah which is a project here
+this one okay so what i will do is let
+me simply go ahead and execute this
+project so to execute any test this is
+the command which you use you simply
+call selenium side runner and the
+project name okay and also once you have
+installed the selenium side runner you
+can also check the version of it okay so
+let's execute this selenium
+side runner and the project name project
+name is this
+done so now if i press enter now see
+what happens okay it's saying running
+the default suite carries here
+it looks for a test suite to start its
+execution okay so it picked up the
+default suite which is here
+okay since it was created when we
+created this new project fine however
+it's a test suite failed to run why
+because your test suite must contain at
+least one test and all our tests are
+residing outside the test suite we have
+none in the default test way correct so
+what we will do let's go ahead and
+create this test suite instead of
+default what i will do is i'll say first
+rename this so let's give it a proper
+name so we'll say control flow test test
+suite okay done so i have renamed it now
+let's go ahead and add all those test
+cases which we have created to this so
+i'll just simply say add test and select
+all these tests so we have around four
+tests here so i'll just select all them
+done so i'll save this project
+i'll go to my folder id tests and the
+same file name i'll just say replace now
+we have a test suite called control flow
+test now let's go ahead and run that
+again now let's see what happens
+okay so there are multiple test cases
+here so let's see all these test cases
+will be run one after the other
+sequential so we have that calorie
+counter test case and then we have the
+loop test cases all right so it is done
+so now let's understand the flow of this
+test case okay so this is where we
+started running our test suite so it
+finished first test case it finished the
+second test case it finished the third
+test case and then the fourth test case
+so all the four test cases it has
+completed and it says all the four
+passed total four and it also shows you
+the total time taken for the complete
+test suite to run and for every test
+case what is the amount of time required
+to execute that so this is all the
+information which is available here if
+at all there is a failure in any of the
+test case that would get reflected here
+it would say four past one phase and
+total four executed okay so this is the
+kind of report what you will get to see
+good so far okay so let's go back to our
+notes and see whether we have done
+everything so the other way of running
+is say you have multiple browser drivers
+installed and you want to run this on a
+particular browser so during that time
+what you can do is you can use this
+command you can say selenium side runner
+minus c minus c is nothing but setting
+the capabilities capabilities for what
+for the browser and then you give a
+browser name here so you can say chrome
+or you can say firefox whatever the
+browser of your choice and then give
+your project name so with this what
+happens is if your browser is installed
+now we have to install the browser using
+this command correct so if your browser
+is installed it will execute this
+particular test suite on the browser
+which you have mentioned here right and
+that is how you use the selenium side
+runner to run your test cases on
+multiple process now simply what you can
+do is you can create a shell script or a
+batch script you can add this line into
+a bad script for the multiple browsers
+and you can execute this so that way all
+your test cases would executed on all
+the process so that that way you can
+achieve your cross browser testing so
+other thing if you remember i also said
+that command line runner like if you go
+back to our presentation it says we can
+run it for parallel testing now let's
+see how do we achieve this parallel
+testing now to achieve this parallel
+testing there are certain steps which
+you need to do in the id so let's go
+back to our test suite so we have this
+test suite so if you go here and go to
+the settings can you see this run in
+parallel so you need to check this check
+box to run all these test cases in
+parallel so right now what happened when
+we executed it all the test cases ran
+sequentially one after the other correct
+so for every test case there was a
+chrome browser launched and the chrome
+browser was closed before the next test
+was launched now let's try to do this i
+am going to check this check box where
+it says run in parallel and i will say
+submit i'll save this project again now
+same thing i'll overwrite this project
+save done replace now let's go to our
+terminal window and run this test cases
+again for that what i will do i'll call
+the same command again however now
+please observe the number of chrome
+browser windows it's going to open okay
+i'll show you that so it has started
+running the test suite okay can you see
+this three chrome browser windows open
+at the same time okay and one by one
+they're going to get closed out okay so
+there was also the fourth one open but
+since the test case was so small that it
+was too quick for us to see here now
+look at the complete execution here so
+what it has done is it opened all the
+browsers in parallel okay and it ran all
+the test cases parallely you will see a
+big difference and since these are very
+small testers you might not be able to
+see a big difference in the execution
+time however if you have got a bigger or
+bigger test cases which you are running
+you will see a remarkable difference in
+the time taken by the suite to run the
+test cases still here you can see okay
+its almost 11 seconds it took whereas in
+the previous example it took 13 seconds
+as i said the difference is very small
+because our test cases are very very
+minor test cases right if you have a
+bigger test cases where it launches the
+browser launches your application under
+test then you are doing multiple
+operations you will be able to see a
+remarkable difference when you run the
+test sequentially and when you run it
+parallel so this is how you work with
+the ide and this is how you achieve the
+parallel execution okay so that
+completes our selenium side runner now
+let's look at some of the limitations of
+the selenium id the first limitation is
+you cannot export your id scripts to web
+driver scripts the support is yet to be
+added right so earlier in this video i
+showed you there are ways to export the
+scripts to junit and python however the
+previous ide did have this capability of
+exporting your scripts to web driver
+scripts and that support is yet to be
+added to the new id data driven testing
+like using excel files or reading data
+from the csv files and passing it to
+your scripts so this capability is not
+yet available in the id so you cannot do
+data driven testing database testing is
+also not possible so you cannot actually
+connect your database read the test data
+from your database or even you cannot
+perform any kind of database testing
+reporting facility so it does not have a
+good reporting we saw when we use the
+command line runner or through the id
+when we run the test there is a very
+minimal reporting capabilities what we
+could see so it does not really have ah
+capabilities of reporting like your test
+ng or the report engine all right so to
+sum it up what all we did we learn in
+this video we learned how to use the
+selenium id to create automation scripts
+we also looked at some of the key
+features of this new id like the
+reusability of the tests using the
+control flow statements how do we use
+the debugger and most importantly using
+the command line runner which is called
+a side runner to run your tests on any
+browser and also to run test case
+parallely so this brings us to the end
+of this video so hope you had a good
+learning with this video and thank you
+very much
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

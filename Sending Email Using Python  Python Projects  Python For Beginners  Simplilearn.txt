@@ -1,0 +1,242 @@
+hello everyone and welcome to this
+session
+on python projects and today we're going
+to discuss about how to send emails
+using python
+so we will see the piece of code in our
+jupyter notebook that how can we
+leverage python as a programming
+language to connect
+with smtp server email servers
+and send emails
+to the desired recipient simple emails
+emails with attachment etc so we will
+see with certain examples
+before we move ahead
+just make sure
+that whatever email id we are going to
+use
+for
+sending emails so we are going to use
+our gmail
+so make sure in your gmail you have
+allowed
+less secure app access and that's
+after this
+if you have enabled this after that only
+you will be able to send email using
+python so please make sure that you have
+enabled this less secure app access
+okay
+so we are going to use our gmail account
+as an example so that's why we are doing
+this now let's
+start
+so first of all you have to import
+the relevant python library which is the
+smtp lib and ssl library
+okay
+and then
+you need to mention
+the sender email
+and the password
+of your email id
+then provide the details of the
+receivers whom all you want to send the
+email okay
+then
+we will
+enter the details of the email body
+the data which we want to send in an
+email to the receiver
+now coming to connectivity with the
+email server now at this point we are
+utilizing this utility ssl to create a
+context
+and after this we will make connection
+with the gmail server and by default the
+ssl gmail server
+is running on port 465
+then we will login
+and then
+send an email
+okay so we need to connect to the
+gmail's smtp outgoing mail server
+then we need to provide the login
+information and then send email so now
+when i will execute this point
+now i will try to check
+my inbox and if you can see
+there is an email which i have received
+just now
+that and which has
+this is the content this email is sent
+using python and subject is mail from
+simply learn so this is the
+very simple
+piece of code which allows you to send
+email from your
+python code now let's take a look at
+another example
+where we will try to send email in an
+html
+body right
+okay so similarly we will start by
+importing smtp and ssl
+but also we will add two new libraries
+which is
+mind text and multipart now because
+we are trying to send
+a email in a html body part
+so
+i'm going to provide the email addresses
+of the sender and the receiver so i'm
+going to send email to myself
+i'll take my password as an input
+now
+i have to
+provide
+the multi mind multi part which i'm
+going to provide as alternative
+subject as anything which you can put
+multi-part test
+sender email in the receiver email
+now i am creating a text and an html
+body part
+so this is an html body which will go in
+my email
+now i am creating two variables
+one in which i am defining my text part
+which is text plain and another part i
+am adding my html which is i am tagging
+as
+html now you attach both part one
+and part two
+in the message
+okay so now your message has both text
+and the html
+now thereafter
+you have to create the same connectivity
+with your smtp gmail
+login
+and then
+you have provided the details of the
+sender and the receiver now you have to
+apply message dot as underscore string
+so now this is the this is the
+difference from a previous example
+where now you have encapsulated the html
+in the text part encapsulated in a
+message and then you are converting into
+a string and
+sending
+now now i have received an email
+multi-part test
+if you see this is an html body
+where i have kept this as a header and
+this as a plain text we are sending
+email using
+python so if you see this has come in
+bold as a header and this has come as a
+plain text
+okay
+now another important aspect any email
+generally you also need flexibility to
+add an attachment to it
+okay so right now what we have done is
+we have just
+created the email body in a different
+style
+earlier we had a plain text
+now here we
+created the body in html
+now we want to attachment
+so what we will do is we will say import
+email smtp live ssl
+now
+you have to import packages of encoders
+mime base
+my multipart and mime text
+now my other variables
+an email with attachment from python
+this is my subject
+this is an email with attachment sent
+from python this is the body
+sender and receivable
+email and password
+now i'll put all these variables
+encapsulate in a message which is my
+multipart
+okay the from details the two details
+subject and the receiver email
+now i'm gonna attach the body
+and now i'm going to define the name of
+the file which i want to attach
+now make sure
+like i'm running this python script from
+my
+folder
+c drive
+users query j
+and in this folder i have a document
+called document.pdf which i have kept it
+already so you make sure that the
+document is lying in the same folder
+from where you're running the script
+and then
+you have to
+open the file
+attach the file to the payload in octet
+stream
+then you need to encode it in the base64
+okay and then add header content
+description
+with the file attachment and the file
+name this is essential
+then at this part now your part is ready
+you have
+encapsulated the entire attachment in
+the part and you attach that part to the
+message
+convert the message as string
+now you are at the point of creating
+connection with the smtp server
+sender email receiver email and the text
+part
+and you need to send it
+now if you go to an email this is the
+document
+pdf which has come as an attachment and
+you received it
+so we have seen three variations of how
+you can send email from python
+one
+same plain simple vanilla email with
+simple text
+second you are sending email with html
+body where you can use the html tags
+third sending email with attachment
+the common part between all the three
+parts is that you need to create a
+connectivity with the smtp server
+okay
+and uh provide your credentials of the
+sender email
+and the data which you want to send in
+the attachment
+in other two cases where you were
+sending html body we used mime text and
+mind multipart and in the attachment
+part we use mime base as an extra
+library which we are supposed to use in
+order to send an attachment
+okay
+so i hope you guys had a great learning
+session and you will be able to apply
+these concepts in your day-to-day python
+programming thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

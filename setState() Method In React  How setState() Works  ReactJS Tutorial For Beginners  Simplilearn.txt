@@ -1,0 +1,260 @@
+hey guys welcome back to another video
+by simply learn
+now in this video we're going to learn
+about react.js set state method however
+to learn the understanding of this
+method we'll first look at what react.js
+state is but before we begin if you
+haven't subscribed to our channel
+already make sure to hit the subscribe
+button and the bell icon to never miss
+an update so without further ado let's
+begin typically a state is an object
+that stores the values of properties
+belonging to a component now these
+values can change over a period of time
+either via user interactions or network
+changes and the state helps facilitate
+this functionality every time the state
+changes react re-renders the component
+to the browser the state is initialized
+in the constructor a state can also
+store multiple properties a method
+called set state is used to update the
+value of the state object now this
+function performs a shallow merge on the
+new and the previous state
+conventionally a shallow merge ensures
+that the previous state values are
+overwritten by the new state values now
+that we've learned all about state let's
+go ahead and build an application to see
+the working of state all right so in my
+code editor that is vs code i've created
+my application say state and here in my
+source folder i have my app.js file now
+here i'm going to get rid of all the
+unnecessary code that i'm not going to
+be using also i suggest you go through
+the react installation on windows video
+to help you get started with creating
+your first application so let's create
+our class component say class app
+extends react dot component inside i
+have a render method that returns an
+html tag
+let's display a message welcome
+let's follow the jsx conventions and
+enclose all the html tags within the div
+tag so i say
+div
+class name equals app we also have to
+import the app.css file import app
+dot css
+so we save it and if you look at the
+browser we have welcome now let's
+beautify our code to do that let's add
+some styling so here in my app.js class
+component i say styles
+equals
+and i say font
+style and i set it to say bold and i say
+color
+say teal and here in my h1 tag i say
+style equals
+this
+dot
+styles so let me save it and if you look
+at the browser now we have welcome in
+teal and it's bold now let's go ahead
+and create a class component to
+understand state so first i create a
+folder and i call it components and
+inside this folder i create a class
+component and i call it new comp dot js
+and i use the snippet rce to create the
+class component to give you an insight
+into what we're doing today we'll
+display a message asking the user to
+subscribe to simply learn once the user
+clicks on the subscribe button we
+instruct them to click on the bell icon
+and finally we display a thank you
+message now to do all of this we're
+going to make use of state and as
+mentioned earlier we initialize the
+state object in a constructor so let's
+use the snippet r const to create a
+constructor now in the state object we
+initialize a property let's call it
+message and we display a message saying
+subscribe to simply learn let's save it
+and here in our render method let's say
+class name
+equals app and let's create an h3 tag
+and within the tag i display the message
+so i say
+this
+dot
+state dot message let's save it and now
+let's import it in our app.js component
+so i'll get rid of export here and here
+i say
+import new com from components and new
+comp and let's define it here and say
+new so we save it and look at the
+browser it says subscribe to simply
+learn all right again to make our code
+look more presentable let's add in
+styles so i'll just copy the same styles
+that i've added here and i paste them
+here and instead of bold i make it
+italic
+and
+i change the color to say
+purple and again in my h3 tag
+i define style
+and initialize it to distort styles so
+let me save it and now if you look at
+the browser it's in italic and it's in
+purple
+okay so moving ahead let's create a
+button that reads subscribe and once the
+user clicks on it the button should read
+subscribed and the message displayed
+above should instruct the user to click
+on the bell icon to do that let's first
+create a button the message that i want
+the button to read is subscribe however
+this message gets changed once the user
+clicks on the button so instead of
+explicitly mentioning subscribe here i
+create a prop i say sub
+and i say subscribe here and back in my
+render method i say this dot state dot
+sub so let's save it and if you look at
+the browser now you have a button which
+displays a message subscribe now once
+the user clicks on the button the
+message displayed should change to click
+on the bell icon to never miss an update
+so let's create an event handler for
+that so here
+button on click i call another method
+and let's call the method
+button change okay so this method should
+update the state and change the message
+and sub values to do that we make use of
+a set state method now a state can be
+updated in response to event handlers
+server responses or prop changes now all
+the updation can be done using the set
+state method now this is the general
+syntax used by the method we'll have a
+look at this further in the demo now the
+set state method conventionally enqueues
+all the updates made to the component
+state and instructs react to re-render
+the component and its children with the
+updated state now let's go back to our
+code editor and look at the working of
+this method now here i defined the arrow
+function button change if you are not
+familiar with arrow functions i suggest
+you read up on them and this is the
+general syntax and here i say this dot
+set state and inside i change my message
+to
+hit the bell icon to never
+miss an update and my sub value changes
+to subscribed
+let's save this and now if you look at
+the browser when we click on the
+subscribe button the message changes to
+hit the bell icon to never miss an
+update so moving ahead let's use a bell
+icon so that the user can click on it
+once he clicks on the image the image
+changes and a thank you message appears
+on the screen so for that i have two
+images i have bell a and bell b so i
+drag and drop both the images in my
+components folder all right
+now let's import these images into our
+new com.js file here i say import bell a
+from
+bell a dot png and again i'll say import
+bell b
+from
+bell b
+dot png all right let me save it to
+display the image on the screen we make
+use of the image tag now this tag has
+two attributes one is the source
+attribute that specifies the url and the
+other is the alt attribute that
+specifies an alternate text for the
+image so here in my component i say i
+make use of a paragraph tag that will
+help display the image in the next line
+and then i use the image tag now since
+my image changes once it's clicked i
+have to define a property and pass the
+event handler click that will update the
+image so here
+before specifying the source let's go
+back to our state and define another
+property
+that is image url and let's set it to
+bell a since that is the image that i
+want to display first let me save it and
+here in my image tag i say source equals
+this dot state
+dot image url and then we have the alt
+tag and i do not want to display any
+message so i leave it as it is now let's
+save it and if you look at the browser
+we have a bell displayed however now
+let's change the dimensions of the bell
+i do not want such a huge bell so back
+in my vs code i define style with width
+say 30 pixels
+and a height with again 30 pixels let me
+save this and now if you look at the
+browser we have a smaller icon so once
+the user clicks on this image the emit
+changes and the message displayed here
+gets updated to do that we'll have to
+define an event so let's go back to our
+vs code and here in my image tag let's
+say on click i define a method say this
+dot
+image change and now we define this
+method here i see image change i make
+use of an arrow function again
+and again i use the set state method i
+update the image so i say image url is
+now set to bell
+b and the message
+is updated to thank you
+happy learning
+so let's save this now and if we look at
+the browser we see the image and once
+clicked on it the image gets updated and
+the message changes so finally let me
+refresh the browser once and show the
+full execution let me refresh following
+the instructions let's click on the
+subscribe button and now it says hit the
+bell icon and once i do that the image
+updates and the message changes alright
+so with this we've come to the end of
+the video i hope the concept of state is
+clear to you watch out for more videos
+on react.js until then keep learning and
+stay tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

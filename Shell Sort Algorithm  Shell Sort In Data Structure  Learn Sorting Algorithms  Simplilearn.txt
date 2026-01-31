@@ -1,0 +1,165 @@
+hey everyone
+i am pepper khandelwal and i welcome you
+all to simply learnt's youtube channel
+in this session we will discuss shell
+sort
+we will begin our session by introducing
+shell sort
+then we will discuss shell sort
+algorithm
+after that we will implement shell sort
+in a codeurator
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel
+and clicked on the bell icon below so
+you never miss an update from simply
+learn's youtube channel
+so without any further ado let's get
+started with an introduction
+to shell sort shell sort is a sorting
+algorithm
+that is based on insertion sort
+algorithm and
+it is very efficient when the smaller
+value is on the far
+right and must be shifted to the far
+left then
+this method avoids significant shifts as
+in insertion sort
+now let's discuss the algorithm of shell
+sort
+let's say we have an array we will
+initialize a variable
+h this edge will represent intervals
+then we will divide this array into h
+intervals
+it will create sub sub arrays then we
+will apply
+insertion sort on these sub arrays
+after that we will reduce the interval
+edge by one
+then we will repeat this process
+recursively until
+h counts down to one we have now
+introduced
+shell sort and its algorithm now
+let's try to implement this algorithm in
+the code editor
+first we will start within function to
+sort an array using shell sort
+so int
+cell sort we will write argument as
+end arr
+bracket comma
+and n
+will start within big interval then we
+will reduce this interval by one
+so
+for loop
+and interval
+equals to n by two
+interval greater than zero
+interval
+divide equals to two
+now we will do a gap insertion sort
+for this interval
+so for
+and i is equals to interval
+i is less than n
+i plus equals to 1
+and amp is equals to
+arr packet i
+now we will shift earlier gap sorted
+element
+up until the correct location for a r i
+is for so hint
+a so for
+j is equals to i
+and j greater than equals to interval
+and then arr
+bracket j minus interval
+greater than temp
+and j minus equals to interval
+now arr
+at j is equals to
+a r
+j minus
+interval
+now we will put this stamp in its
+correct location so
+arr
+bracket j is equals to
+temp
+now i will return 0.
+now let's write a function to print this
+array
+so void
+print array
+and error
+comma and n
+so for loop and
+j is equals to zero
+a less than n
+j plus plus
+c out
+arr bracket j
+now we will write the function for the
+main block
+so end arr
+is equals to
+12 comma 34 comma
+56 comma 85
+comma comma
+9 comma 11
+comma 5.
+now let's find the size for this array
+so int
+n is equals to size of
+array divided by
+size of
+first element of this array
+now see out
+array
+array before
+sort
+now print array
+arr comma and
+cell sort
+error
+comma n now
+c out
+erase after
+sorting
+we will again print array
+here comma m
+now let's try and execute this
+as you can see we have successfully
+sorted this
+array let's get back to our slides
+at last let's sum up what we have
+learned from this session
+first up shelf sort has higher cache
+miss ratio
+than quicksort next
+shell sort is helpful when small
+elements are to the farther right
+next shell sort utilizes insertion sort
+algorithm
+finally shell sword requires fewer swaps
+than insertion sort
+and this was all for today's session
+hope you guys found it informative
+and helpful if you like this session
+then like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simpler
+hi there if you like this video
+subscribe to the simply learn youtube
+channel
+and click here to watch similar videos
+turn it up and get certified
+click here

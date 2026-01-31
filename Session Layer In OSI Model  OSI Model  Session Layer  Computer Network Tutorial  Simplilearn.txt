@@ -1,0 +1,161 @@
+foreign
+model the session layer is responsible
+for maintaining the dialog connection
+between the computer and maintain a
+secure and safe channel for transmission
+data between the systems
+hi guys and welcome to yet another
+interesting video by simply learn but
+before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to never miss an
+update from us now without further Ado
+let's take a look at the agenda for
+today's session
+to begin with we will look into what is
+an osm model
+moving forward with what is the session
+layer
+continuing with the functions of the
+session layer
+and at the end we will look into
+protocols applied in the session layer
+let's begin with the first setting that
+is what is an osr model
+The OSI or Open System interconnection
+model is a specifically designed set of
+protocols that govern communication
+channels through which network devices
+share information and data
+this task of sharing data is divided
+among seven layers of the SI model which
+works at micro level in a communication
+Channel
+now let's move on to the core topic for
+the session that is what is session
+layer
+the session layer controls and maintains
+connection between devices to share data
+among them
+it is also responsible for establishing
+and terminating sessions in the channel
+it also checks the authenticity and
+provides recovery options for the active
+sessions in case of a network error
+now let's move on to the next heading
+that is functions of the session layer
+but before we begin let's take a look at
+the actual working steps of the session
+layer in a communication Channel
+the session layer receives data units
+from the upper layers in the SM model or
+from the communication Channel
+where it integrates the data with
+session address
+and the session layer is responsible for
+maintaining the dialogue between the
+system that are connected in the
+communication Channel
+it applies multiple protocols for secure
+and safe transmission for example rtcp
+pptp pap
+after that the session data is being
+transferred to the lower layers in the
+USM model
+now let's take a look at the functions
+of the session layer
+whereas the first is session
+establishment
+then we have data transfer
+dialogue managing
+and synchronization
+let's take a look at each of the
+functions in detail
+the first function is session
+establishment
+it is responsible for establishing
+connections between systems also known
+as sessions
+this connection allows user to share
+data remote access and find handling in
+a communication Channel
+it acts as a transport connection
+that is accompanied in the session
+establishment that is the transfer
+connection is mapped when the session is
+released
+through this connection there are three
+ways of Transport connection
+which are one to one
+many to one and one to many
+now let's move on to the next function
+that is data transfer
+one of the core functions of the session
+layer is to handle exchange of data
+between systems in half duplex of full
+duplex Network Mode
+the session layer also allows the user
+to initiate data transfer in case of
+half duplex and simultaneous data
+Exchange in case of a full duplex
+Network model now let's move on to the
+next function that is dialog management
+the accession layer is responsible for
+keeping log data on which the system
+establish connection to exchange data
+this is known as dialog management
+it also uses a token method to maintain
+the efficiency of The Connection by
+giving the token to the user sharing
+data in case of a half duplex mode and
+then transferring it along with the data
+to the next system
+now let's move on to the next function
+that is
+synchronization
+the session layer maintains proper
+interaction between systems and provides
+a recovery option known as the known
+state in case of an error
+it also uses synchronization points to
+be added in the communication channel
+for using a known state in case of an
+error with this we have completed all
+the main functions of the session layer
+now let's move on to the next heading
+that is protocols in the session layer
+the session layer provides multiple
+Network protocols for security safety
+and efficiency between the communication
+systems
+some of the session layer Protocols are
+real-time transport control protocol
+rtcp
+this protocol provides statistical and
+controls the information for an RTP
+session in the communication Channel
+then we have point-to-point tunneling
+process pptp this section layer protocol
+provides a way to implement virtual
+private networks also known as VPN
+using TCP in the network channel
+then we have password Authentication
+Protocol pap
+this protocol in the session layer is
+used as a password Authentication
+Protocol by the PPP control
+to validate users in the communication
+Channel
+with this we have completed all the
+important points related to the session
+layer in the OSI model
+if you have any questions regarding the
+topic you can ask them in the comment
+section
+thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

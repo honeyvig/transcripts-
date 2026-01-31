@@ -1,0 +1,686 @@
+hey what's up Traders I'm Dave Chappelle
+and in today's video we're going to be
+getting our hands dirty with some Pine
+connector code so in this video I'll
+give you some code to work with to play
+around with some test commands so that
+we can start automating our scripts
+through trading view alerts so before we
+start let's just run a quick test alert
+here to make sure everything's set up
+there we go I have a trade executed on
+Aussie dollar let's close that um before
+we continue um I did change some
+settings here that you should probably
+be aware of if we go to properties in
+Pine connector and scroll down to the
+bottom I added this suffix here so in
+the previous videos I mentioned that um
+depending on your broker and the
+metatrader platform you're using there
+may be a suffix after the symbol name so
+if you look at my symbol list here
+you'll see that each symbol has a after
+the ticker we need to include that a in
+our alerts when we send them to Pine
+connector if we don't include this in
+our alert um the trade will not fire
+unless you come into your property these
+here and enter the suffix into this
+setting so that's what I've done here
+all the other settings are the default
+settings other than this one here I had
+to change to set B because I was getting
+an error my broker requires this setting
+in order to accept alerts on metat
+Trader now we're ready to start coding
+our alerts so let's open up the trading
+view charts and have a look at some
+template code I've written out here now
+this script is extremely simple
+everything's pretty much hardcoded so um
+there's not a lot of flexibility with
+the code we're going to work with today
+this is purely for example purposes in
+the next video I will show you the
+source code to a template I'm still
+working on and this template includes
+pretty much full functionality for Pine
+connector so you can copy and paste all
+of these
+settings input your license ID your risk
+Port trade uh it has the various filters
+that pinec connector uses included
+um you can use limit orders Market
+orders pit based entries or price-based
+entries you can even have multiple
+strategies set up all of this code can
+be copi and pasted into your own scripts
+and then all you need to adjust is the
+uh strategy section the conditions for
+your entry criteria and then you'll be
+able to add full Pine connector
+functionality to all your scripts so
+whether you're using fixed takeprofit
+and stop losses limit order entries
+trailing stops exit reasons everything
+will be included in that template but to
+keep things simple for today's
+introduction to the coding of pine
+connector scripts we're going to work
+with this stript back version just so
+that we can get a feel for what it's
+like to send alerts to Pine connector
+using pinescript Code so let's get into
+it um the first couple of settings I
+have here are just simple strategy
+inputs so if we open up the settings
+here we have our stoploss distance in
+Pips from the current market price and
+our risk reward profile
+so if I set this to two with these
+settings an alert will be sent to Pine
+connector to open a trade at Market with
+a 10 pip stoploss from the current
+closing price and a 20 pip profit Target
+since our risk reward is 2 to1 and our
+entry criteria couldn't be more simple
+we're just buying bullish candles and
+going short on bearish candles so again
+this is purely for demonstration
+purposes just so we can get a feel for
+this part of the script which is where
+we send Pine connector parameters using
+trading view alerts so moving on here
+are some of our Pine connector
+parameters the first parameter we need
+is our ID so that's the ID from your
+member dashboard the next parameter is
+our risk so this is either contracts or
+a percentage of our Equity depending on
+what we've set up in here so if we go to
+properties again and we look for volume
+type SL
+risk if I leave this on lots and I send
+an alert with one as my risk risk here
+then one standard lot will be open on
+this Market on metatrader through my
+broker however if I set this to
+percentage of balance then sending a
+parameter of one will open a trade with
+a 1% risk based on my stop loss so it
+doesn't matter if I have a 10 pip stop
+loss or a 100 pip stop- loss I'll only
+be risking 1% of my account balance if
+that trade loses and with a one to1 risk
+reward I'll be making a little bit under
+1% if I hit my take profit based on
+spread slippage and commission costs so
+don't forget to factor that in when
+you're automating your scripts the cost
+of slippage and commission and spread
+cannot be underestimated when automating
+systems especially on Lower time frames
+so for today's example we're working on
+the 1 minute time frame I wouldn't
+recommend automating scripts on the one
+minute time frame unless you're using
+very small position sizes which kind of
+negates the purpose of trading such a
+lower time frame because of the lack of
+volatility it's hard to make a lot of
+money with a small position size um but
+with a large position size you're going
+to be dealing with a lot of slippage and
+a lot of commission so unless you really
+know what you're doing I would steer
+clear of these lower time frames stick
+to the uh 5 minute time frame is
+probably the lowest I would go
+personally um but I prefer to trade the
+15 minute 30 minute or even the hourly
+time frame I actually have a couple of
+about six or seven alerts running on the
+hourly time frame and I haven't really
+run into any issues with slippage or
+commission costs I'm in a nice tidy
+profit for the past couple of months
+running a script on the 1 hour time
+frame but um yeah anyway that's outside
+the scope of today's lesson we'll cover
+all of that towards the end of the
+series for today let's get into the code
+part of this um so before I do that the
+next two settings here are kind of
+self-explanatory if we turn use limit
+order on then instead of buying or
+selling at Market we will place a buy
+limit or sell limit order so the price
+needs to come down down and fill our
+limit order rather than just buying at
+market and then finally we have Pip
+limit order distance so if we do use a
+limit order we can specify how many Pips
+to offset that limit order so let's go
+over the code first and then we'll run
+some test alerts to see how this um
+little script here works so first we
+need to get the points to pip value of
+the current market if you're trading
+Forex then 10 points is one pip if
+you're Trading um stocks and some of
+Futures markets Commodities usually it's
+not 10 points it's one point on stocks
+for example um one point is one pip but
+on Forex 10 points is one pip so that's
+what this code here is for depending on
+the market you're trading you may need a
+more uh complicated formula than this or
+you can just hardcode this custom
+function to return whatever the PIP
+value is for whatever Market you're
+trading so for example on crypto
+especially on um um crypto versus crypto
+pairs so like Bitcoin versus kadano for
+example you're going to have a lot of
+Satoshi a lot of decimal places that
+might affect this formula for today's
+example purposes this code will do just
+fine we're going to stick with Forex for
+today and on Forex 10 points is one pip
+next up we have just some simple example
+strategy code so you can replace this
+code with your own make it a little bit
+more advanced if you want to if you
+really want to um get your hands dirty
+with testing some connector
+functionality for today as I mentioned
+we're just buying bullish candles and
+selling bearish candles then we have a
+label here this is the debug label so
+you can see up here there's white label
+here this label is displaying what will
+be sent to Pine connector if my alert is
+triggered this really helps you sort of
+debug and confirm that the code you've
+written is spitting out a valid syntax
+for Pine connector so if you haven't
+watched the previous videos go back and
+watch that or you're going to be very
+very lost at this point of the video but
+the required Pine connector syntax is
+our ID first our license ID a buy sell
+or buy limit or sell limit command then
+a symbol so we need to tell it what
+Market we want to trade then we can pass
+in our risk and our stop loss and take
+profit and a bunch of other parameters
+which we'll cover in the next video when
+we go over this more advanced template
+code here this version of the script
+will allow us to have break even
+parameters sent to Pine connector so the
+our stop loss gets automatically moved
+to break even at a certain distance from
+our entry we can even have a trailing
+stop so the this script here if I turn
+this off for a moment just to tease you
+guys who haven't subscribed yet to the
+channel and give you a reason to to
+subscribe here's an example of the more
+advanced template I'm working on um
+where we have our orange line is our
+trailing stop activation line the blue
+line is our stop loss to break even
+activation and I'll be adding some other
+more advanced features before we get to
+the next video in this series but for
+today let's go back to our simple script
+and let's go over how we build the
+alerts that get sent to Pine connector
+so first we need to detect a trade this
+can be done on a strategy script or an
+indicator script today we're just
+working with a simple indicator script
+in the next video we'll work with a
+strategy script uh it doesn't really
+make any difference as far as Pine
+connect is concerned so this code here
+is what generates this string up here so
+PC alert is what gets triggered in our
+alert this gets sent to the Pine
+connector web hook we'll get to that in
+a moment so we start with our Pine
+connector ID then we need to separate
+that ID with a comma then we pass in the
+buy command so in this line of code here
+we're saying if PC limit is turned on
+which is this setting here if this is
+turned on then we want to pass the text
+by limit as our Command so you can see
+up here this this updates as I change my
+settings if this is turned off then we
+want to pass just buy buy at Market if
+we buy or sell at Market or we or we
+tell Pine connector to sell that means
+buy or sell at market and if we're
+buying or selling at Market we don't
+need to pass in a limit order price so
+PC price is a blank string if this is
+turned off if we turn this on then this
+parameter
+gets added to our alert string so with
+this on we have a bearish candle forming
+we're passing in our ID we're passing in
+a sell limit command and we're passing
+in a five pip distance from the current
+Bar's price so when this bar closes if I
+set an alert and I have this setting
+here set to Pips from current market
+price now it's turned to a bullish
+candle then a buy limit order will be
+placed 5 Pips below the current price or
+if this was a bearish candle it would be
+be placed 5 Pips above the current
+market price when this bar closes so
+that's the first couple of parameters of
+our string let's turn limit order off
+for now and move on to the next few
+which and the next one is risk so
+remember our risk parameter is dependent
+on what we set up in Pine connector so
+this is not trading advice this is all
+just purely for example purposes use all
+of this at your own risk I'm not a
+financial advisor I don't know your
+situation I'm not Le Al allowed to tell
+you how to trade but personally when I'm
+automating My Own scripts I always use a
+percentage of my account balance as my
+um stop- loss in Forex now in stocks
+it's a little bit different when I'm
+trading stocks I um I'm a little bit
+looser with my risk because I don't use
+leverage when I'm trading stocks and so
+things at least not on the bulk of my
+systems on my day trading mean reversion
+system I do use a bit of Leverage in the
+US markets but I'm out of my trade
+within a day or two and so I'm not very
+I'm not very exposed to Big losses but
+in Forex if I have a lot of Leverage on
+a small account like a $10,000 or less
+account um there's a high risk involved
+in that sort of trading and not only
+that but it makes it really hard to back
+test and develop a system if your risk
+is not consistent um particularly the
+Forex markets again on stocks it's a
+little bit different and after this pie
+connector series I'll go into a uh real
+test Series where I'll teach you guys
+how I back test and semi-automate some
+of my stock trading strategies um it's
+quite different how I approach that with
+stocks but with Forex I always use a
+percentage of my account balance per
+trade that allows me to normalize my
+risk whether I'm trading a one minute
+chart which I don't do so I should say
+whether I'm trading a hourly chart or a
+daily chart my risk is always the same
+I'm always risking one to two maybe 3%
+per trade if I have a really high um
+Edge over the markets with a particular
+system but I rarely ever go higher than
+2% so I leave this as percentage of
+account balance and if I leave it as
+that and we sent this alert right now we
+would buy euro dollar at Market uh with
+a 10 pip stop loss we'll get to that
+part in a moment and if that 10 pip stop
+loss were to be hit I would lose 1% of
+whatever my account balance is now I'm
+using a demo account here for this um
+instructional series at the end of this
+series we'll go to a live money account
+I'll show you how this is working on my
+live money account that I've um got a
+few thousand trading through Pine
+connector but for now we're sticking to
+demo because as you can see I've racked
+up a $600 loss here already just with
+testing um so I don't want to go to a
+live account too too prematurely in this
+series but um yeah so moving on we have
+our stoploss and our takeprofit
+parameters so Pine connector's Syntax
+for this is SL and TP so slal 10 comma
+TP = 20 means my stop loss will be 10
+Pips from the current market price and
+my take profit will be 20 Pips so 2:1
+risk reward profile now you can combine
+all of this into one line I do that in
+the more advanced template if I open up
+my Advanced script um this will probably
+horrify some of you guys especially the
+those of you who are new at to
+pinescript
+um so I don't want to freak you out
+don't worry too much about this just yet
+but in the next video I'll show you how
+this custom command this custom function
+sorry takes a couple of parameters and
+converts them into Pine connector syntax
+and we've stacked a whole bunch of
+commands here into into one line of code
+pretty much so this these bottom two
+lines of code is one one expression
+split across two lines and it adds up
+all of the pine connector syntax into
+one string that gets sent to Pine
+connector but in this simple example
+code because we don't have so much
+information to work with I've split this
+across each line so each command is on
+its own line so that it's easier to read
+and understand um so that you guys can
+study this play with this um get
+familiar with it before we move on to
+way more advanced applications of pine
+connector syntax so our PC alert is what
+gets passed into our alert function
+which gets sent to Pine connector and
+this just adds up all of the strings
+we've generated here into one string um
+so in a moment we'll fire a test alert
+see what happens over on metatrader but
+before we do that let's just quickly go
+over this debug label so this debug
+label is just creating a text label on
+the last bar on my chart it's deleting
+any old labels so it's creating a new
+label on the current bar and deleting
+the label on the previous bar if I don't
+have this line here then we have like a
+thousand labels drawn across my chart
+and it's hard to read um so we delete
+the previous label we keep the last
+label on our chart and this last label
+draws our current PC alert string that's
+going to be sent to Pine connector and
+then down here we have our short version
+of all of this code which is identical
+completely identical except that we are
+using cell limit and cell commands
+that's literally the only difference
+with this version of the pine connector
+syntax in the advanced template code um
+things get a little bit little bit more
+complicated but because we're using a
+fixed stop loss and a fixed take profit
+in Pips for today's example the code's
+identical so that simplifies things that
+helps us or helps you guys especially
+those of you who are new to this sort of
+thing it should help you to wrap your
+head around what we're doing here and
+then we're just drawing some symbols
+here that just display whether the
+candle is bullish or bearish all right
+so now that we have all of this let's
+fire off some test commands and see how
+this all works in the Practical uh side
+of things so what we need to do to
+trigger this alert is come up to alert
+select our script so today we're working
+with the simple example make sure any
+alert function call is selected you can
+call this anything but this does not get
+Center Pine connector this is purely for
+your own reference um if we go over to
+not ifications all we need to have here
+is this selected and this URL inputed
+this needs to be added to your alert if
+you want it to be sent to Pine connector
+and then Pine connector will receive
+your license ID and relay that
+information to your metatrader account
+so make sure this is selected and this
+URL is put in here these other settings
+are completely optional so if you want
+to be notified on your phone when Pine
+connector takes a trade you might want
+to enable this I definitely recommend
+turning this on when you initially set
+up your alerts so that you can keep
+track of what's Happening once things
+are running smoothly for a while maybe a
+week maybe a month depends on what makes
+you comfortable uh you can turn this off
+and just check on Pine connector every
+now and then that's what I tend to do I
+also have pinec Connector running on a
+dedicated machine so a um virtual server
+that is not running in my house it's
+running on the web at the end of this
+series I'll go over how to set that up
+so that you can have pine Connector
+running 24/7 without leaving your
+computer on but that's pretty advanced
+IT stuff that's not really relevant to
+pine pine script or pine connector uh so
+we'll get into that at the end of the
+series I've already got a video
+somewhere on YouTube on how to do that
+with the old version of pine connector
+not much has really changed in terms of
+setting up a dedicated machine um but I
+do know that Pine connector I think have
+their own service for setting up
+dedicated machines already set up with
+pine conector I think they have an
+affiliate um affiliate ilation with some
+dedicated machine service we'll look at
+all of that at the end of this series
+for now let's click create wait for this
+bar to close so we got 30 seconds to
+wait and then if this bar closes bullish
+this command will be sent to P connector
+and we should have a trade open so let
+me close any open trades we have right
+now uh I'll minimize this and let's wait
+and see what happens so 3 2 1 hopefully
+this works and I don't embarrass myself
+our alert has fired and there's our
+trade opened so this was actually a
+short trade that opened um even though
+this bar closed bullish so let's add
+another check onto our code here let's
+add and bar state. is
+confirmed and see if that fixes that
+issue save this remove the script and
+reset our
+alert
+create close this trade trade and drop
+down to a 1 minute time frame this is
+our trading time frame for today's video
+all right so this should close as a
+bearish bar there we go so we should get
+a cell command sent through to Pine
+connector there it is
+cell um our risk is based on our account
+balance so we have just under a standard
+lot uh position size here there's our
+stop loss 10 Pips from our entry and our
+take profit is double that so we got a 2
+to one risk reward um everything appears
+to be working fine so let's remove this
+alert and change some of these settings
+um so let's change risk reward to one:
+one let's turn use limit order on we'll
+leave our risk as one um and we'll leave
+our pip limit order distance as five
+we'll click okay then we need to go to
+Pine connector and change some settings
+here so let me close this trade real
+quick we'll go to experts properties um
+let's change our risk from percentage of
+account balance to Lots just to
+demonstrate how this setting works now
+when our alert fires we should open one
+standard lot instead of a percentage of
+our account balance which will obviously
+be dynamic and Vary from trade to trade
+this will open a fixed position size no
+matter how far away our stop loss is um
+Target type can stay as Pips in the next
+video we'll go over the price and
+percentage version of this settings in
+the more advanced template code but for
+today we'll leave it as Pips pending
+order also needs to stay Is pips um
+again in the next video we'll go over
+price and percentage for this setting
+too but for now all of these settings
+should be okay so let's click okay close
+this reset our alert select our simple
+example scripts click create now our
+label's not updating here because I
+added um is confirmed on the end of our
+short trade and long trade check so the
+bar actually needs to close before this
+command will be sent so this should
+change now now it says sell limit let's
+jump over here and nothing has happened
+so let me have a look and see what I've
+done wrong ah I can see what I've done
+if I bring over the syntax here I've put
+in the wrong syntax order so we need by
+limit then the symbol then the distance
+in Pips um if you look at my alert here
+I've got these two in the wrong order so
+we need to move the symbol info back one
+in our list of parameters when we're
+using a buy limit or sell limit so let's
+do that really quick so all I need to do
+is swap these two around um copy that
+and paste that there let's remove this
+check just for a moment so that I can
+see the
+debug label updating in real time save
+my code I've missed a comma there and
+we've got two commas here now so uh
+let's get rid of that save my code there
+we go now we only have one comma and we
+just need to add another comma in front
+of price
+now this is a little bit confusing
+because this parameter only gets sent
+when PC limit so when this limit order
+settings turned on um that makes the
+syntax look a little bit different to
+the rest of our code here we need to add
+the commas in weird places um but this
+is now looking correct so license ID Buy
+sell Command
+market symbol and then the rest of our
+parameters so now I turn limit order on
+ID Buy sell Command market and then our
+price value now when I set my alert this
+should work fine sorry about that I
+should have double checked that before
+recording this video but there you go
+there's some real time troubleshooting
+there we go we've placed our trade it's
+already been filled looks like now I
+need to close these because our alerts
+get fired when a new bar starts and when
+a
+um bar closes unless unless we have bar
+state is confirmed as a check here um so
+if we only wanted to open trades on a
+new bar we could say um sorry is new bar
+state. is new in this case I only want
+to open a trade when a signal is
+confirmed and the bar closes so let's
+add that check back onto our two long
+trade and short trade checks set our
+alert wait for this bar to close and
+then we should get a buy buy limit order
+there we go we have placed a buy limit
+order at 705 so 5 Pips below the current
+market price um oh there's our by limit
+order so that's oh there we go that's I
+was confused for a second there so 5
+Pips is actually quite a distance on
+this one minute time frame um so if we
+have a if we measure this
+out yeah five five Pips is a bit much
+five Pips is all the way down down here
+so let change this to one pip change
+this pip limit Auto distance to one and
+we need to reset read our alert whenever
+we change any settings click create um
+and we've got multiple orders opening
+now so let's delete all these delete
+delete and now the next signal that
+generates should place a limit order buy
+limit or sell limit one pip above or
+below the current market price so let's
+have a quick look and see what happens
+you have to forgive my Internet it's
+very sluggish today as usual here in
+Australia yesterday we lost one of our
+major cell providers uh for several
+hours across the entire country so
+Australia is not really well known for
+its stable internet
+connections um okay so this candle
+closed equal to its open we got a proper
+dogee candle here and that did not fire
+an alert because my code requires the
+price to close above L below it's open
+so we got to wait for the next bar now
+which shouldn't be long 3 seconds that's
+another dogee wow okay I'll fast forward
+to the next candle man the markets are
+slow right now there we go let's have a
+look there we go our limit order is
+placed and it's one pip
+above price so here the bar closed as a
+dogee but on trading view it was just a
+slightly bearish bar so there is a tiny
+tiny discrepancy between trading views
+data feed and Trader we went over that
+in the previous video it's not a huge
+deal unless you're trading a very low
+time frame which again I do not
+recommend but anyway we've placed our
+sell stop for a short trade one pip
+above the current market price with a
+one to one risk reward and there we go
+that'll do it for today's video that's
+just a really simple introduction to
+sending Pine connector alerts using pine
+script in the next video we'll elaborate
+on this go into way more detail so with
+all that said I hope you found this this
+video interesting as always a link to
+the source code will be below if you
+want to go and play around with this
+make sure to subscribe to the channel
+and either hit the Bell notification
+button if you want to be notified when
+the next video releases or go to theof
+trading.com and sign up to our mailing
+list I don't spam you I only send one
+email a week uh which is a newsletter of
+sharing something valuable that I've
+found to help my own trading um and when
+I release a new YouTube video I notify
+you guys about that with all that said I
+hope you have a great day have a
+fantastic weekend and I'll speak with
+you in the next video
+goodbye
