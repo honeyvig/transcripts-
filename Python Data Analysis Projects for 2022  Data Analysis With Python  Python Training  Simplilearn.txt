@@ -1,0 +1,3942 @@
+hi everyone
+welcome to this video tutorial on python
+data analysis project for 2022. in this
+video we'll be covering two interesting
+hands-on projects using python
+programming you will learn how to use
+real-world data to perform data analysis
+and data visualization the two projects
+are based on coronavirus and olympics
+data you will learn to collect analyze
+clean manipulate and visualize data with
+the help of python libraries such as
+numpy pandas matplotlib and c-bond these
+two projects will give you the idea to
+solve real-world problems using
+exploratory data analysis so let's get
+started with our first project
+today we are going to perform two
+hands-on projects on covet data analysis
+using python and tableau
+this is going to be a really interesting
+and fun session where i'll be asking you
+a few generic quiz questions related to
+coronavirus please make sure to answer
+them in the comments section of the
+video we'll be happy to hear from you
+covet or coronavirus is an ongoing
+global pandemic of coronavirus disease
+that emerged in 2019 and was first
+identified in wuhan china
+it is defined as an illness caused by a
+novel coronavirus called severe acute
+respiratory syndrome coronavirus 2
+commonly known as sars cove 2.
+on march 11 2020 the who declared coven
+19 a global health emergency the virus
+has so far infected over 22 crore people
+and killed more than 4.5 million
+innocents
+in india there have been over 3.3 crore
+confirmed cases and nearly 4 lakh 41 000
+deaths have been reported so far
+this data is according to official
+figures released by the union ministry
+of health and family welfare
+as the world tries to cope up with this
+deadly virus we request all our viewers
+and their family members to follow all
+the necessary precautions to avoid
+getting infected
+quiz time
+now let's see our first quiz in this
+project
+what does corona in corona virus mean
+here are the options is it a beer b
+respiratory is it c crown or is it d sun
+this is a very generic question i am
+sure a lot of you may already know some
+of you may not
+please let us know your answers in the
+comments section of the video we'll be
+glad to hear from you
+now in this video we will use
+three different kovid 19 datasets and
+perform data analysis using python and
+tableau
+the project will give you hands-on
+experience working on real-world data
+sets and how you can use the different
+python libraries to analyze and
+visualize data and draw conclusions
+you will learn how to create different
+plots in tableau and then make a
+dashboard from the visuals
+the project will give you an idea about
+the impact of coronavirus globally in
+terms of confirmed cases deaths reported
+the number of recoveries as well as
+active cases
+we will also see how india has been
+affected since the pandemic started and
+dive into the different states and union
+territories to learn more about the
+cov819 influence and the vaccination
+status
+first let me show you the two datasets
+that we'll be using
+so for our first project using python
+we'll be using the first two data sets
+kovid 19 india and covet vaccine state
+wise
+let me open the two data sets
+okay
+so this is the first data set you can
+see here
+we have
+the date
+we have the time
+then we have the different state names
+scroll down you can see we have kerala
+tamil nadu delhi haryana rajasthan
+sladhak punjab telangana and other
+states
+then we have something called as
+confirmed indian national so actually
+this
+two data sets confirmed indian national
+and confirmed foreign national we won't
+be using so in the demo itself we'll be
+dropping these two columns
+what we are concerned about are the last
+three columns
+the
+cured cases or the recoveries
+the number of deaths reported and then
+we have the
+total number of confirmed cases
+let me just
+sort the b column that is the date
+column so that you have an idea
+about the recent data we have
+i'll continue with the current selection
+and
+sorted you can see here
+this is
+till
+11th of august 2021
+so this data was collected from kegel it
+has some discrepancies that we will see
+in the demo the data is available for
+free
+we will provide the link to the data
+sets in the description of the video so
+please go ahead and download them
+the visualizations and results that you
+will see in the demo are based on the
+datasets that we'll be using we haven't
+pre-processed the data to remove
+outliers or any missing values
+now before i jump into the demo let me
+show you the second data set that we are
+going to use
+okay so coveted vaccine statewise is my
+second data set
+let me open it
+there you go
+so
+this is the second data set that we'll
+be using in the python
+project you can see we have a column
+called updated on then we have the
+state again you can see here there are a
+few discrepancies here
+it has taken the country name and not
+the state name below you can see there
+are the
+different state names
+and
+you can also see we have information
+about the total doses administered
+we have the sessions sites
+first dose administered then we have the
+second dose
+then we have information about male and
+female doses
+you can see here the different
+vaccines
+administered covaxin and cova shield you
+have sputnik v
+and here are the different age groups as
+well
+and finally if you see we have
+male individuals vaccinated the total
+number of female individuals vaccinated
+for a particular day
+we have information about transgender
+individuals vaccinated and finally we
+have the total individuals vaccinated
+each day
+all right
+before we jump into the hands-on part
+let's have a look at the second quiz in
+this project
+so
+here is the second quiz question
+which is the first country to start
+covet vaccination for toddlers
+is it a japan
+b israel c portugal or is it d cuba
+this is a very recent development that
+took place if you watch daily news
+updates on coronavirus you will be
+definitely able to answer the question
+please give it a try and put your
+answers in the comments section of the
+video it is really important for our
+viewers to know the right answer
+all right
+so now let's begin
+with our demo
+so i am on my jupyter notebook
+so the first project we are going to use
+python jupyter notebook
+i'll just
+rename this notebook as
+kovid
+data analysis
+project
+and click on rename
+all right
+so first and foremost
+we need to import all the necessary
+libraries that we are going to use so
+first i am importing pandas as pd this
+is for
+data manipulation
+then we have numpy as np
+numpy is used for numerical computation
+then we are importing
+matplotlib c bond and plotly these three
+libraries will be used for plotting our
+data and creating interesting
+visualizations finally i'm also
+importing
+my datetime
+function
+all right
+so i'll hit shift enter to run the first
+cell
+now it's time
+to load our first data set
+which is related to
+the covad-19 cases in india for the
+different states and union territories
+so i'll create a variable called covet
+underscore df dfs for data frame
+i'll use my pandas library
+and then
+give the read underscore csv function
+since our data sets are
+csv files
+and inside
+double quotes i'll pass in the
+location where my
+data sets are present
+so i'll just copy this location
+i'll paste it here
+we'll change
+the backslash to forward slash
+and after that i'm going to give my
+file name followed by the extension of
+the file
+i'll say covaid 19
+india dot csv
+let's go ahead and run it
+all right
+now
+to see the first few
+rows
+of the data frame i'm going to use the
+head function
+i'll say head and within
+brackets let's say i
+pass in 10 which means i want to see the
+first 10 rows of data
+if i run it there you go
+here you can see from 0
+till 9 so we have 10 rows of information
+and these are the different
+column names you have s number
+date time state or union territory then
+you have confirmed indian national
+confirmed foreign national
+cured cases deaths reported and the
+confirmed cases
+all right
+now moving ahead
+let's use the
+info function to get some idea about
+a data set
+if i run it you can see here it gives us
+the
+total number of columns we have nine
+columns the total number of entries or
+the rows we have eighteen thousand
+hundred and ten rows of information
+starting from zero till
+eighteen thousand one hundred and nine
+you see here the different types of
+variables or column names that we have
+then it has information about the memory
+usage as well
+and
+this side you can see
+the data types cool
+now we'll use another very important
+function which is
+to get
+some idea about statistical analysis the
+basic statistics about your data set for
+that i'll be using the describe function
+okay
+so if you can see here
+the describe function is for
+numerical columns only
+and you have the measures such as count
+the mean standard deviation
+maximum minimum the
+25th percentile 50th percentile and the
+75th percentile value
+okay
+now let's move ahead and import the
+second data set
+which is related to
+vaccination
+so i'll create a variable called vaccine
+underscore df
+i'll write pd
+read underscore csv function which is
+present in pandas
+library i'll move to the top and i'll
+copy the
+file location
+and we'll change the name of the file
+copy this and
+let me paste it here
+and instead of covered underscore 19
+underscore india
+i'm going to say governed
+underscore
+vaccine underscore statewide
+okay
+so this is the data set that we saw
+covered underscore vaccine underscore
+statewise
+all right
+let me run it
+cool
+and
+let's display the first
+seven rows of information from this data
+frame
+i'll be using the head function and
+inside the function i'll pass in 7
+there you go so here you can see we have
+from 0 till 6
+there are total
+24 columns
+a lot of them have null values you can
+see here
+all right
+now
+from the first data set which is the
+kovid underscore df data frame
+we'll be dropping a few unnecessary
+columns such as the time column
+confirmed indian national and conformed
+foreign national as well as the s number
+we don't need these columns so it's
+better to learn how to drop the columns
+for our analysis
+so i'll say
+kovid underscore df
+dot
+i'll use the
+drop function and within square brackets
+i'll pass in the
+column names the first is s number
+i'll give a comma
+within double quotes i'll say the next
+column is time
+my third column that i want to drop is
+confirmed
+indian national
+give another comma
+within double quotes i'll say
+confirmed
+foreign national
+outside the
+square brackets i'll give another comma
+and pass in my next
+argument
+that is in place equal to i'll say true
+i'll give another comma and say
+axis
+equal to 1.
+let's run it
+okay it has thrown an error let's debug
+the error
+says confirmed indian okay it should be
+indian national and not indian nation
+i'll
+just mention it as national will run it
+again
+okay
+now we have
+removed these four columns
+let me show you the data set now
+there you go
+so we have only the date column state or
+union territory cured that's and
+confirmed
+now
+let's see how you can change the format
+of the
+date column for that you have the
+function called to datetime
+i'll say
+covid underscore df
+i'll pass in my column name that is date
+i'll say equal to
+pd dot
+i'll use the pandas function that is to
+underscore
+date time
+i'll say covered underscore df which is
+my data frame name
+pass in my
+variable which is date
+give a
+comma and i'll use my argument that is
+format equal to
+i'll say percentage y
+give a dash say percentage
+m
+give another dash and say percentage d
+let's run it
+and i'll print
+the head of the data frame
+cool
+now moving ahead
+now we will see how to
+find the total number of active cases
+so active case is nothing but the total
+number of confirmed cases minus the sum
+of
+cure cases plus that's reported
+so let's
+find the active cases i'll give a
+comment
+okay
+i'll first write my
+data frame name that is covered
+underscore df
+within square brackets i'll give my new
+column which is active underscore
+cases
+i'll say equal to
+[Music]
+kubit underscore df
+and my first column would be
+the confirmed cases column
+minus
+i'll say
+kuvid underscore df
+then i'll pass in my cured column
+plus
+i'll again say
+kovid
+underscore df
+and
+add my
+deaths column
+this time let's print
+the last
+five rows from the new data frame that
+we have created
+okay
+let's run it
+it has thrown an error let's debug it
+says
+dataframe object has no attribute tails
+this should be teal
+there you go
+you can see here we have added a new
+column called active cases which is
+the confirmed cases minus the sum of
+cured and
+deaths reported column
+now we will
+learn how to create a pivot table using
+the pandas
+library so in this table we'll be
+summing all the
+confirmed deaths and cured
+cases
+for each of the states and union
+territories
+so we'll be using the pivot underscore
+table function for this
+i'll create a variable called statewise
+and say pd dot
+i'll use the pivot underscore table
+function
+i'll pass in my
+data frame that is kovid underscore df
+and then
+i'll give my
+values parameter
+inside the square brackets i'll pass in
+my
+columns
+confirmed
+deaths
+and then we'll have the
+cure column
+give a comma
+and next
+argument would be index
+which is going to be my state
+slash
+the union territory column
+let me bring this to the next line so it
+is more readable
+i'll say union territory
+i will
+give a comma now
+and pass in my last argument which is
+agg
+function that means aggregate function
+and
+this function would be
+max all right
+let's run it
+okay
+now
+i'm going to find out the
+recovery rate
+so recovery rate is basically
+the total number of qr cases divided by
+the total number of confirmed cases into
+hundred
+so i'll say
+statewise
+and within
+square brackets i'll
+pass in my
+variable that i want to create which is
+recovery rate
+this will be equal to
+[Music]
+the
+cured cases
+multiplied by 100
+by the total number of
+confirmed cases
+within square brackets i'll give my
+column as confirmed
+let's run this
+okay
+i'll just copy this column
+paste it here so this time we are going
+to find out the mortality rate
+so mortality rate is nothing but the
+total number of deaths
+divided by the total number of confirmed
+cases into hundred
+so i'm just going to
+replace the names here i'll say
+mortality
+all right
+and then instead of cured i'll say
+my deaths column
+into hundred divided by the confirmed
+cases let's run it
+okay
+now
+we are going to
+sort the values
+based on the confirmed cases column
+and we will sort it in descending order
+so let me show you how to do it i'll say
+statewise equal to
+i'll use the function short underscore
+values
+so
+i'll pass in my variable statewise dot
+and use the
+short underscore
+values function i'll say by
+i want to sort it by my confirmed
+cases column
+give a comma and i'll say
+ascending
+equal to
+false
+let's run it
+now we are going to plot our pivot table
+using a nice
+visual
+so for that i'm going to use
+my
+background underscore gradient function
+and inside that function we'll pass in
+our cmap parameter
+i'll show you how to do it
+style dot
+background
+underscore
+gradient
+and inside this we'll pass in a
+parameter called cmap
+so cmap stands for color maps this is
+present inside the matplotlib library so
+here you can see there's a nice
+documentation on choosing color maps in
+matplotlib
+this is provided by matplotlib.org
+if i scroll down you can see there are
+a number of c maps that you can use
+purples blues
+you have something called reds
+there are other things like magma you
+have summer autumn spring winter
+cool
+all these
+you can use whichever color map that you
+want and here you can see the different
+shades
+or the gradients
+okay
+so i'm going to use
+my color map as cube helix
+let me run it and show you the
+pivot table
+there you go
+here you can see we have our pivot table
+ready
+now as i said in the beginning there are
+a few
+discrepancies in the data set so here
+you can see
+there's one called maharashtra and there
+is also maharashtra triple star
+this you can ignore even if i scroll
+down you have madhya pradesh followed by
+three asterisks you can ignore this
+value as well even for bihar we have
+so these have been duplicated
+and
+here you can see the different
+state names and union territories then
+on the top you have the confirmed cases
+cured cases
+the debts reported and the new columns
+that we created
+these are calculated columns recovery
+rate and mortality rate
+and we have ordered it in
+descending order of confirmed cases so
+so far
+our data says that maharashtra has the
+highest number of cases followed by
+kerala karnataka tamil nadu andhra
+pradesh and uttar prades so these are
+the top
+5 states which have the highest number
+of
+confirmed cases
+even if you see the mortality rate is
+also high for maharashtra
+and
+if i scroll down
+the mortality rate is also high for
+uttarakhand if you see here
+if i scroll further
+your punjab the mortality rate is also
+high
+all right
+so this was our first
+visual that we created in the
+kobe data analysis project
+now moving ahead
+we'll see the
+top 10 states based on the number of
+active cases
+so we'll start
+i'll give a comment top 10
+active
+cases
+states
+okay
+so
+we are going to explore another very
+important pandas function in this which
+is known as group by
+so i'll first
+pass in my data frame which is kovid
+underscore df
+dot followed by the group by function
+i am going to group my data based on
+state slash
+union territory column
+then i'll say
+dot
+max which is to find the
+maximum value from the states
+that have
+the highest
+active cases so i have passed in my
+active cases column
+and
+we're also going to group it
+based on the date column
+after that
+we're going to sort the values so i'll
+use my function that is sort underscore
+values
+i'll say
+short by
+my column that is
+active cases
+let me bring this to the next line
+underscore
+cases
+i'll give a comma and say
+ascending equal to
+false
+say dot
+and then
+reset my index
+for that i'll use reset underscore index
+function
+okay
+let's check if everything is fine
+i have
+missed a square bracket here let me give
+another square bracket here
+okay
+and all this we are going to store
+in our
+variable called top underscore 10
+underscore active
+underscore cases
+okay
+now let me go ahead and
+run this cell
+okay there is
+a syntax error here
+now let's run it okay
+now i'll create another variable called
+fig
+here we'll pass in
+the plt which is for matplotlib
+library and we'll give the
+figure size
+using the
+fig size
+argument
+it's equal to and within a tuple and
+passing the size let's say 16 comma 9
+we'll run it
+okay
+and
+let's give
+a title to our plot
+so here we are going to create a
+bar plot
+so
+using plt.title we'll pass in the
+title let's say top 10 states
+with
+most
+active cases in india
+i'll give a comma and pass in the size
+of my title
+let's say 25
+okay you can see we are slowly
+being able to
+create our graph
+the most important thing is to pass in
+the
+x-axis and the y-axis
+i'll say ax which is for axis
+to pass in the axis i'm going to use the
+bar plot function that is present inside
+the c-bond library
+i'll say sns.bar plot
+i'll say data equal to
+my
+variable which is top underscore 10
+underscore
+states
+this is actually active states
+all right
+and now
+i'm going to use the
+ilock
+function
+and
+take the first 10 states so i'm using a
+colon and then giving 10 as my value
+iloc is for index location
+i'll give a comma and say my
+y-axis to be
+active cases
+give another comma and say my x-axis to
+be
+state
+slash
+union territory
+give another comma
+we are going to pass in the line
+width
+to 2
+i'll say line width equal to 2
+and will give
+an edge color
+let's say the edge color is
+red
+okay
+so i have my
+access defined now
+let's run it
+there's an error here it says stopped in
+active states not found
+let's go to the stop and see the exact
+okay so this is
+top 10 active cases let me change it to
+cases here
+now run it
+okay the x axis also has a mistake this
+should be
+state slash union territory
+now let me run it
+there you go we have our
+plot
+created but as you can see here the
+labels of the
+different states and union territories
+are overlapping so for that
+let me first pass in the
+x labels i'll say plt.x
+label
+and my
+x label would be states
+then i'll say
+plt dot
+by label
+my y label will have the total active
+cases
+and finally i'll write plt dot show
+before i run it let's collate all the
+lines of code that we have written for
+our
+top 10 states for most active cases in
+india into one cell
+so what i'll do is i'll just copy this
+and we'll keep
+adding
+in this cell itself
+okay
+i'll go to the top
+next we'll copy
+my figure size
+and we'll
+paste it here
+next let's take the
+title
+and put it here
+give us peace
+and we are going to copy
+the cell
+and i'll paste it here
+all right
+now it's time to run it
+there you go
+you see it
+here we have a nice
+bar plot ready on the top you can see
+the title top 10 states with most active
+cases
+and you see the edges are in red color
+for all the bars
+on the x-axis you have the different
+state names maharashtra karnataka kerala
+you also have andhra pradesh gujarat
+west bengal and chhattisgard
+so as you can see
+maharashtra
+has the
+highest number of active cases based on
+our data followed by karnataka caroline
+tamilnadu
+at second third and fourth place
+respectively
+and in the ninth place we have west
+bengal in the tenth place we have
+chattisgarh
+on the y-axis you can see the total
+active cases which are
+in lags
+okay now moving ahead now we'll see the
+top 10 states based on the total number
+of
+deaths reported
+so i'll give a comment
+top states
+with
+highest
+debts
+okay
+so i'll first
+create my variable
+saying top 10 underscore
+deaths
+this will be very similar to
+what we did here
+just that we need to change a few
+column names so instead of active cases
+we'll be using depths
+okay
+so i'll start with my
+data frame that is covered underscore df
+followed by using the
+group by function and i want to group my
+data
+based on
+the state slash
+union territory column
+then i'll choose the max function
+and within
+double square brackets i'll pass in
+my column names deaths and date
+let's make it consistent i'll be using
+single quotes
+okay
+i'll say dot
+i'm gonna
+short my
+result therefore i'm using the sort
+underscore values function
+i want to sort it by
+deaths column
+i'll give another comma and say
+ascending equal to false which means i
+want to
+order my result in
+descending order
+then i'll say dot reset underscore index
+okay
+after that i'll give my
+figure size i'll say plt dot figure
+and within brackets i'll pass in my
+argument which is
+fig size
+equal to
+using a tuple i'll say 18 comma let's
+say 5.
+now let's give a title for that i'll use
+the title function which is present in
+the matplotlib library
+i'll say
+top 10 states with
+most
+deaths
+and let's give a size to the title 25
+now it's time for us to give the access
+labels i'll just scroll down
+okay
+so i'll say ax equal to
+again this will be a bar plot so i'm
+using my c bond library followed by the
+bar plot function
+my data will be top
+underscore 10 underscore deaths
+which is this variable
+i'll give
+my index location iloc
+i'm going to choose
+12 states the reason being there are
+some discrepancies in the data i'll show
+you once i plot this result
+so in the y axis we'll have
+deaths column
+in the x
+we'll take
+state
+slash
+union territory
+okay
+i'll give another comma
+and say
+line width
+equal to 2
+and will give
+an edge color to our
+bars like we did here
+so i'll say edge color
+equal to let's say
+black
+okay
+now
+finally we'll give
+the x label the y label
+so i'll say plt dot x label
+x label would be states
+my y label
+will be
+total
+death cases
+then i'll write plt dot show
+now let's run it
+there you go
+you can see here we have a nice bar plot
+on the top we have the title top 10
+states with most deaths
+now
+what i specifically wanted you to see
+was these discrepancies in the data you
+can see here maharashtra is repeated
+twice even
+in our data that we collected from kegel
+karnataka
+spelling has an error you can see here
+we have a few
+rows of information where karnataka is
+spelled as
+k e r a a n instead of k a r n a
+all right so to
+remove
+these two results or to ignore these two
+results i had given
+my index location till 12 so we have
+maharashtra karnataka tamil nadu delhi
+then uttar pradesh west bengal kerala
+punjab andhra pradesh
+with the states that have the most
+number of debts reported
+okay
+now we'll create a line plot to see
+the
+growth or the trend of active cases for
+top five states with most number of
+confirmed cases so the states are
+maharashtra karnataka kerala tamil nadu
+and uttar pradesh i can show you
+so these are the states with highest
+number of active cases
+okay
+i'll just give a comment saying
+growth
+trend
+all
+right so for that
+we'll start with our
+figure size as
+plt dot figure
+i'll use my parameter fixed size equal
+to
+12 comma 6
+i'll say
+my axis as sns dot
+this time we are going to create a line
+plot
+my data would be
+the original data frame that is covered
+underscore df
+and
+within square brackets i'll say covad
+underscore df
+and we are going to pass in the
+state or the union
+territory column
+i'll give
+a dot and use the
+is in
+function so the
+states should include
+maharashtra
+will give a comma the next state should
+be karnataka
+next
+we have
+kerala
+give another comma
+my fourth state is tamil nadu
+give a comma
+and my fifth state would be uttar
+pradesh
+all right
+so i'll give
+a comma here and then say
+x equal to
+the date column
+y
+will be
+active cases column
+and i'm going to use another parameter
+called hue which is to
+give different colors to the different
+states the five states that we are
+looking for
+so hue
+will be my
+state slash union territory column
+okay
+after this
+i'll say
+ax dot
+set title
+my title will be top 5
+affected
+states
+in
+we'll india a size let's say
+16
+all right okay this should be size equal
+to 16
+and
+to make sure everything is fine let me
+just
+move it to the above line
+okay
+now we'll run it
+okay there is some error again
+it says
+invalid syntax let's see where we went
+wrong
+let me bring this to the above line
+okay this should be covered underscore
+df
+okay
+make sure you
+keep these small errors in check
+let's try and run it again
+all right
+if i scroll down
+there you go here you can see we have
+the top five affected states in india
+you see the different
+states here and the colors so
+this violet or the purple color is for
+maharashtra you can see
+how the
+active cases
+searched around
+april and may
+and then you can see
+even for karnataka the active cases
+surged very rapidly
+around me
+and
+june
+then it has decreased luckily
+similarly you can see the plots for even
+uttar pradesh
+as well as for tamil nadu so all the
+five states you can see one common trend
+that
+after
+march so around april
+the cases started to emerge very rapidly
+and
+later after july they started dipping
+okay
+now
+we are going to use our second data set
+which is related to vaccination
+all right
+so first and foremost let me go ahead
+and
+print the data frame for you
+so that you know
+the data that we are going to use so
+this is the data we are going to use
+for our next
+set of
+analysis even this data has a few errors
+and you can see there are a lot of
+missing values it makes sense because
+not all the days you would have
+vaccination
+for people
+and very crucial
+error that we are going to deal with is
+this
+state column here you can see
+in the state column we have india in
+a few rows so we are going to ignore
+these rows
+all right
+first let's rename
+our updated on column to just
+vaccine date
+so
+you can use the
+a rename function present in the pandas
+library to do it
+so i'll say vaccine underscore df dot
+rename
+i'll say columns equal to
+within
+curly braces
+i'll write
+updated
+on
+which is my
+original column name
+give a colon i want to change this to
+vaccine underscore date
+i'll give a comma
+and say in place equal to true
+so it will change
+my
+column name from updated on to vaccine
+underscore date
+in the
+original data frame
+let's run it
+now
+let me go ahead and print
+the first
+10 rows
+in the data set
+you can see here we have successfully
+changed
+the column name to vaccine underscore
+date the rest of the columns remain the
+same
+all right
+now you can
+check
+the
+total number of
+columns rows
+the data types and the memory usage
+using the
+info function
+here you can see it
+we have total 24 columns
+7845 entries
+and these are the
+columns that are present
+and if i scroll further
+you see here
+says
+the memory usage and here on the right
+you can see the
+data type
+cool
+now as you saw
+the data has a lot of missing values
+let's find the sum of all the missing
+values for each column
+so i'll say vaccine underscore df dot is
+null
+and then i'm going to use the sum
+function over it
+if i run it
+there you go
+so almost
+all the columns have
+missing values but columns such as
+male individuals vaccinated female
+individuals vaccinated even for columns
+like
+the age groups there are a lot of
+missing values
+now in the next step we are going to
+drop a few
+missing value columns
+so i'll say
+a new variable called vaccination
+i'll give the data frame name vaccine
+underscore df and use the drop function
+and inside the drop function we are
+going to write
+columns equal to
+i'll pass in the
+column names that i want to drop
+i'll say
+doses
+administered
+so this is the column that i want to
+delete sputnik v doses administered
+i'll give a comma
+second column is e e
+f i
+the next column is
+18 to 44
+years
+within bracket
+it has doses
+admin stored
+give a comma
+i'll say 45 to
+60
+years
+doses
+administered
+to another comma
+the final column that we are going to
+drop is
+60 plus which is this one 60 plus years
+deuces
+administered
+okay
+so these are the columns that we want to
+drop
+and finally i'll give my parameter
+access equal to 1. okay let me just
+recheck this
+column names first one is sputnik v
+doses administer then we have
+efi
+followed by
+18 to 44. years doses administered then
+we have 45 to 60 years doses
+administered
+finally we have 60 plus years
+i have added
+a s here which was missing and there
+should be a space as well because
+there's a space here in the column now
+let's run it
+all right
+so we have successfully dropped
+the columns that we wanted to drop
+now i'll say vaccination dot head
+you can see here
+we have dropped those columns and we are
+left with these columns now
+okay
+now
+we are going to create a
+plot
+that is a pie plot to see
+the vaccination for male and
+female individuals so i'll give a
+comment
+as male versus
+female vaccination
+to create this pie plot i'm going to use
+the plotly library that we had imported
+which is this one
+plotly okay
+so first of all we need to filter out
+the
+male individuals
+from our data frame
+i'll say male equal to
+vaccination
+meal
+and passing in the column
+individuals
+vaccinated
+we need to recheck the variable name
+whether it is correct or not
+you see here male
+individuals vaccinated
+then i'll say
+dot
+sum
+similarly we'll filter out the female
+individuals
+i'll say female equal to
+vaccination
+which is my new data frame
+within square brackets i'll pass in the
+column name female
+individual
+vaccinated
+i'll say dot sum
+okay
+okay these should be individuals as per
+the
+column name present in the data frame
+cool
+now i'm going to say px
+dot pi function which is present in the
+plotly library
+i am going to
+give the names of the
+pies
+so first one is meal
+and the second one is
+female
+give a comma and say
+values
+equal to
+male comma
+female
+then i'll give a comma and pass in my
+title which is
+meal and
+female vaccination
+okay
+this should be names
+all right now let's go ahead and run
+this cell
+so it'll take some time to create the
+pie chart here we go
+see here i have my title male and female
+vaccination
+so these are the two
+pies or the areas
+you have the label female and the value
+here you have the label meal and the
+value
+so from our data you can see 53 percent
+male
+individuals have been vaccinated
+compared to 47 percent for female
+okay
+now we are going to drop all those rows
+where
+our state was mentioned as india in the
+original data set
+i had shown this to you in the beginning
+so we are going to remove
+rows
+where
+state is india
+okay
+so to do that i'll say
+vaccine i'm creating another variable
+called vaccine
+and
+we'll use our original data frame that
+we had imported
+which is vaccine underscore df
+i'll say
+vaccine underscore
+df
+dot
+state
+not equal to
+india
+now let's
+print vaccine
+okay you can see here we have our
+data frame printed and from this data
+frame we are taking only those values
+or the rows where state is not equal to
+india
+cool
+now what we are going to do is
+we will rename the last column which is
+total individuals vaccinated to
+just total
+so i'll say vaccine dot
+rename
+we'll use the parameter columns equal to
+within
+curly braces i'll say
+total
+individuals vaccinated
+give a colon
+and we'll change this to just total
+give a comma and say in place equal to
+true
+and finally i'll print my
+head of the new data frame
+this should be columns equal to
+okay
+now you can see here if i scroll to the
+right and if i check
+we have successfully renamed our column
+all right
+now moving on to the last two
+visualizations that we'll see in this
+first project using python that is to
+find the states with most number of
+vaccinated individuals and the state
+with the least number of vaccinated
+individuals
+okay
+just give a comment
+most
+vaccinated
+state
+okay
+for this i'll first create a variable
+called wax underscore
+vac which is for maximum vaccination
+i'm going to use my
+data frame vaccine
+followed by the group by function
+i want to grip it by state column
+and
+we'll find the total sum
+of vaccinated individuals for each state
+i'll convert this to frame
+there should be a dot
+to underscore frame
+and i'll pass in my column name which is
+total
+after that i'll say max underscore vac
+equal
+to max underscore vac dot
+short
+underscore values
+i'm going to sort it by
+my total column
+say ascending equal to false which means
+i want to sort it in descending order
+so that we have the
+states with the
+highest number of
+individuals vaccinated
+i want the top 5 states
+now
+let's go ahead and
+print it
+so this will create a nice table for us
+there you go
+here you can see
+we have maharashtra uttar pradesh
+rajasthan gujarat and west bengal as the
+top five states with most number of
+vaccinated individuals
+now we are going to use this table and
+convert it into a
+chart
+now i had already written my
+code for the
+bar plot i am just going to paste it
+so here i have defined my
+figure size as 10 comma 5
+then i am giving a title as top 5
+vaccinated states in india and the size
+is 20
+after that i have created a variable
+called x
+which is going to store my bar plot
+this bar plot we have created using the
+cbon library
+and
+you see here i have my
+y-axis defined
+then
+i have the line width and the edge color
+as well
+i've given my x label as states by label
+as vaccination and i'm finally going to
+display my plot so let's go ahead and
+run it
+okay you can see it here
+we have converted this
+table into a bar plot now
+so first we have maharashtra with the
+highest
+number of vaccination
+then we have uttar pradesh rajasthan
+gujarat and west bengal
+now
+i want
+the viewers
+watching this video to
+find the states with least number of
+vaccinated individuals and convert that
+table into a
+bar plot that will show the
+bottom five vaccinated states in india
+which means the states which have
+least number of individuals vaccinated
+so please go ahead and put your
+codes in the comment section of the
+video it will be very similar to these
+two cells just that now we want to know
+the least five vaccinated states in
+india
+so please put the code snippets in the
+comments section of this video we'll be
+more than happy to know from you in case
+you are not able to do it we'll
+definitely keep the answers in the
+comments itself
+all right
+so this brings us to the end of the
+first
+project on kovit data analysis using
+python
+so
+in this project we used two data sets
+one was on
+the covet 19
+india data set for different states and
+union territories and the second data
+set that we used was for
+analyzing the status of vaccination in
+the different states in india
+now we'll move on to our second project
+okay so before moving on to our tableau
+project let's see the final quiz
+which of the following is not a common
+coronavirus symptom so this question is
+to make you aware of the correct coveted
+symptoms
+here are the options
+is it a fever
+b
+vision loss c loss of taste and smell or
+is it d curve
+please put your answers in the comments
+section of the video and let us know
+what you think
+now we'll move on to our second kovit
+data analysis project
+for this project we'll be using
+the tableau software and a global
+coronavirus dataset
+first we look at the data set and the
+fields we have
+okay so i am in my data set folder
+we have already seen the first two data
+sets in our
+python project
+this time we are going to use the global
+covet data let me open it
+all right so here you can see
+we have the different country names
+there are
+192 countries in our data set
+let me go to the top
+so
+we have
+country or region
+we also have the code
+for each of the countries
+then we have
+column called last updated so here you
+can see our data is still
+12th of march 2021
+and there are two columns which
+don't have any information that is
+people hospitalized and people
+tested
+then we have a column called
+active cases then we have a column for
+confirmed cases
+in the different
+countries we have the number of deaths
+and then we have the incident rate
+the latitude and the longitude for the
+countries
+then we have the mortality rate
+this is in fractions
+then we have the number of
+recovered cases and finally we have a
+column called uid
+so we'll be mostly using the country
+column
+active
+confirmed deaths
+and the recovered cases column
+and we'll be using the tableau software
+to create interesting visualizations and
+we'll convert those visuals and put it
+in the form of a dashboard
+towards the end of the project
+okay
+so let me
+close this file or let it be open
+i'll search for tableau public
+you can see here i have tableau public
+installed
+you can use the
+desktop version of tableau or the public
+version of tableau
+so for this project we are going to use
+the tableau
+public edition
+so here you can see i have
+created a few visuals already
+if you want you can clear them out
+okay
+now
+the first thing we need to do is to
+connect our csv data set to tableau for
+that
+under connect
+we have to a file
+i'm going to use
+text file
+and under
+chrome download so i'll search for my
+folder
+covered
+india
+and here i have my
+global covet data file let me open it
+this will take some time to load
+that you can see
+so on the tableau you can see the view
+here
+it shows the country or the region
+you have the last update
+you have columns like active confirmed
+deaths
+mortality rate and recovered
+and here you can see the
+symbols for the
+different columns so this is a globe
+which means this field
+is a
+region or a
+geographic field
+abc means it's a text field then we have
+the calendar which is for a date field
+abcr
+text field and this
+hash represents numeric fields
+all right
+so now that we have loaded our data
+let me just click on sheet1
+so this is the canvas where we are going
+to
+create our different
+reports
+all right
+so on the left you can see there are two
+panes the data pane and the analytics
+pane
+in the data pane you can see the
+name of the data set global covet data
+and here you can see the
+different
+columns that we have in the data set so
+on the top the ones marked in
+blue are called as dimensions
+and at the bottom
+whatever you see
+are marked in green and are called as
+measures
+so
+dimensions are always represented with
+blue icons and measures are in green
+icons
+so
+tableau has automatically detected the
+different
+data types for each of the
+columns
+all right
+so
+first of all we are going to create a
+simple table
+to see the total number of
+confirmed cases for each of the
+countries
+so for that i'm going to drag my country
+or the region column on to
+rows
+here you have rows i'll just drag it and
+drop it here
+there you go it has populated all my
+names starting from afghanistan
+till
+jimbah way so it has ordered in
+ascending order of alphabets
+now to
+see the total confirmed cases for each
+country i am going to drag my confirmed
+column onto text
+so here under marks card you have
+the text option i'll just drag it
+and drop it here there you go
+so tableau how easily has
+shown me a table where you can see the
+different country names and on the right
+you have the total number of cases that
+have emerged
+from these countries
+now this is not the most recent data as
+i
+told you this data was till march 2021
+cool
+now you can go ahead and
+short the
+table based on the
+total confirmed cases here on the top
+you can see here
+there are two options to sort in
+ascending order or in descending order
+let's first sort in
+ascending order
+by sum of confirmed cases within country
+and region
+there you go so here you can see these
+are the countries which have very
+few cases
+and if i scroll down
+you have france uk russia brazil india
+and u.s with the highest number of
+coveted 19 cases
+if you want you can also
+short it in
+descending order so that the countries
+with the highest number of confirmed
+cases appear at the top
+you can see it here
+and these are the countries that have
+very few covet cases
+now you can convert this simple table
+into different charts and graphs
+to do that
+here on the
+right top corner you have an option
+called show me
+now
+i can just click on this horizontal bar
+graph
+so that will automatically convert my
+table into a bar graph
+again you can go ahead and
+short the data
+there you go so here you have u.s india
+brazil russia uk france spain and italy
+this is a horizontal bar graph
+sorted in
+descending order of confirmed cases
+now suppose you want to display only the
+top few countries with the highest
+number of confirmed cases for that you
+can select these bars
+so i'll select till let's say
+germany
+or let's say till argentina
+okay and i'll click on keep only you can
+see it here it says 12 items selected
+that is the sum of confirmed cases i'll
+just click on keep only
+there you go
+so
+this horizontal bar graph has
+information only for these
+few countries that have the highest
+number of confirmed cases
+now you can go ahead and
+play with the color formatting
+so here under colors let me choose
+a green color
+okay
+now you can mark here since we selected
+only the top 12 countries with the
+highest number of confirmed cases so
+what we did was we just filtered it to
+the top 12 countries so tableau has
+automatically added
+country region in the
+filters card
+now if you want you can go ahead and
+edit this filter as well
+suppose you want to remove argentina you
+can just uncheck this click on apply and
+ok you see here argentina has been
+removed i click on
+undo so ctrl z to get it back cool
+now you can convert this
+horizontal bar plot into a vertical bar
+plot let me show you how to do it i'll
+just remove these
+fields from my
+chart
+now what i'm going to do is i'll
+drag country or region onto columns
+and i'll have
+confirmed
+column under rows
+there you go here you can see we have a
+vertical bar plot now
+and again you can
+use the axis now to short your data this
+is in
+descending order similarly you can sort
+it in ascending order here you have the
+option to
+sort your data
+okay
+cool
+and below you can see the
+different country names
+all right
+now you can go ahead and
+give
+a name to this
+sheet
+let's say
+top 10
+confirmed
+countries
+just apply
+and click on ok you have the title to
+this plot
+similarly you can change it here as well
+top 10
+confirmed
+countries
+okay
+now let's move on to our second
+visualization where we will create a
+global map so this global map will show
+the different countries
+present
+in the map and the cases that they have
+so to create the map first i'll drag my
+longitude
+generated
+field onto columns and then i'll drag
+latitude on to rows
+you see here we have the map ready
+and now
+i'll drag
+country
+region onto detail
+so this will give you
+the different country names you can see
+here we have canada
+the united states mexico
+here you have india
+sri lanka
+there's australia
+this is brazil
+and similarly we have spain france
+belgium
+there's
+italy here
+we have also greece
+similarly we have the african countries
+like
+central african republic this congo
+angola
+and on the top you have russia and this
+is iceland so on and so forth
+now
+i'm going to drag
+the
+active cases column onto
+detail again
+now if i hover the cursor you can see
+the
+active numbers for brazil you can see
+for india
+you have
+countries like china
+then here you have thailand
+algeria
+now
+i'm going to
+drag the confirmed cases column on to
+label so that you have the labels here
+you can see here the confirmed labels
+cool
+now if you only want to focus on a few
+countries
+present in a particular region you can
+highlight that region for example
+suppose
+for europe you want to focus on this
+region if you select it it will
+highlight only those countries and if
+you hover your mouse over these points
+it will show you the active cases and
+the total number of confirmed cases
+all right now if you want you can go
+ahead and change the color of the
+circles let's see i'll keep it as
+red
+okay
+so this is how you can create a
+map to represent the different active
+and confirmed cases
+i'll rename the title to
+global
+cases
+i'll just click on apply and ok
+similarly i'll change the sheet name as
+well to
+global cases
+ok
+now from this map you can see the
+countries such as usa
+brazil
+you have russia
+and india with the
+highest number of kovit 19 cases even in
+countries such as
+spain the numbers are
+really high
+and
+a lot of the african countries were also
+impacted
+and these small countries like solomon
+islands you have
+fizzy islands
+with few number of cases even for new
+zealand as well
+all right
+now moving to our next
+visual
+now we are going to see the top 10
+countries where highest deaths have been
+reported so far due to the pandemic for
+this we will create a tree map now
+so first of all i'll
+choose my country column and
+put it under
+columns
+and then i'll select
+the depths column and put it under rows
+i have the
+bar plot ready
+next i'll go to show me and here i have
+the option to select a tree map
+you see here for a tree map you need one
+or more dimensions and one or two
+measures so i'll just click on this tree
+map
+okay here you can see i have my tree map
+ready so tableau has automatically
+adjusted my fields so it has removed my
+fields from rows and columns and put it
+under size color and
+label
+next i will drag my
+country column and put it under filters
+and from here
+i am going to choose top
+i'll filter by field i am going to
+select the top 10
+countries
+based on the total number of
+deaths
+just click on apply and click on ok so
+these are the countries us brazil mexico
+india united kingdom italy russia spain
+france germany
+which have the highest number of deaths
+reported
+now
+you can also
+give the label
+i'll
+put the deaths column under label so
+that you have the labels here
+all right so this was a tree map that we
+created to show the
+top 10 countries with the highest
+number of deaths
+i'll just
+change the title top 10
+deaths
+cases
+now you can also edit the title in terms
+of the font color and everything
+let's i'll keep it tableau bold
+and i'll choose this as 14 click on
+apply and ok
+there you go
+similarly let's
+rename the sheet to
+death cases
+cool
+now moving
+to the next visualization
+where we'll see
+about the recoveries
+so before we move on to
+create a visualization for the
+top 10 or let's say the bottom 10
+countries in terms of recoveries let me
+show you how to change the
+color of the stream app
+so here
+by default tableau select the automatic
+palette
+if you want you can change it to
+different
+palettes let's see i'll go with
+gold purple diverging
+click on apply and i'll click on ok
+if this is
+not looking
+that great you can select another one
+let's say
+red green white diverging
+cool
+now let's
+go to our
+fourth visualization which is about
+top 10
+recoveries
+i'll click on apply and okay first i'll
+drag my country or the region column
+under
+columns
+and then i'll take
+the recovered column under rows
+this time
+instead of
+sum
+we are going to choose
+average
+okay
+and here
+i'll select
+my packed
+bubble chart
+after that i am going to drag my country
+or region onto colors
+and then i'll also
+put country under filters
+so i'll go to
+the top
+menu
+and i'll filter it by field
+i want to show the top 10 countries
+based on the average number of
+recoveries
+so click on apply and ok
+you can see here these are the countries
+that have
+the highest number of
+average recoveries you have india brazil
+turkey italy argentina germany colombia
+russia poland and mexico
+i'll just rename this sheet to
+recovery cases
+cool
+now let's move on to our next visual
+okay
+so here we are going to create a scatter
+plot to analyze the total confirmed
+cases versus the total number of deaths
+so whenever you have two numeric fields
+it is better to create a scatter plot to
+visualize the
+cases
+so for that i am going to
+drag my confirmed
+cases to columns and then i'll drag
+my
+depth column onto rows
+okay
+so by default
+the shape is a circle
+and
+to see all the countries i am going to
+drag country under color
+i'll say add all members
+there you go
+here
+you can see the legend
+for the different
+countries
+and
+the top you have
+us with the highest number of confirmed
+cases and the highest number of
+deaths as per our data set then you also
+have brazil here which has the
+second highest number of dells
+then you have
+mexico followed by india
+so this data is not a very recent data
+this data was last updated on
+march
+now from this we are going to filter out
+the top 10 countries with the highest
+number of
+confirmed cases
+and the
+so for that i'll drag my country column
+onto filters
+and i'll go to top
+filter by field
+i'll say top 10
+and i'll click on
+apply and ok
+so here you can see we have siberia
+sweden
+belgium
+netherlands
+spain
+italy france
+russia
+uk and
+you have brazil
+so these are the countries which have
+the
+highest number of
+active cases
+so instead of active let's select deaths
+click on apply and okay
+okay
+now if you see we have us here
+brazil india
+then mexico
+uk russia france
+italy germany and spain which have the
+highest number of deaths reported so far
+now if you want you can
+change
+the
+size of the circles based on the
+highest number of active cases so i can
+just drag my active column under size
+so you can see here
+spain
+france
+uk have the highest number of active
+cases
+now let's say instead of active i'll
+just have
+my confirmed cases under size
+okay
+and then
+you can also change the shape from
+circle to
+any other shape let's say square or
+this asterix
+okay
+let's go with the triangle
+cool
+i'll rename this sheet to
+confirmed versus
+deaths
+click on apply and okay
+i'll rename this to
+confirmed
+versus
+deaths
+all right
+now moving on to our
+next visualization where we will see
+the mortality
+for each of the countries
+and figure out which countries have the
+highest
+mortality rate
+okay
+so
+first i'll drag
+mortality rate
+onto
+column
+and then i'll have
+my
+country column under rows
+so there you go
+now let me go ahead and
+sort it in
+descending order
+so you can see here you have
+yemen
+there is mexico syria sudan egypt
+equator china and other countries which
+have the highest mortality rate
+and you can also
+select the country
+region under colors
+let's go ahead and edit the
+color
+instead of automatic let's select summer
+or
+you can go for some other palette let's
+say
+tableau
+classic medium i'll assign this palette
+yes i'll apply and okay
+all right
+finally
+we'll
+move ahead to our
+last visualization where we'll create a
+dual access chart
+so the dual axis chart in tableau will
+have one column and two different
+visualizations on the rows so here you
+have
+one
+column and on the right also you will
+have one column with their own access
+values
+so this dual access chart will be for
+recovered cases and the
+death cases
+let me show you how to do it
+so i'll drag
+my country
+field onto
+columns
+and then
+i'll choose
+recovered column onto
+rows
+so here i have got my
+line chart
+and the second
+column i'm going to choose is the depths
+column
+i'll hold my
+cursor and i'll place it
+when i get this
+green color rectangle i'll place it here
+there you go
+so now we have created two measure names
+deaths and
+recovered
+and here you have the access values
+you can synchronize the access values if
+you want
+the recovered cases are in millions and
+the debts are in thousands
+now let's go ahead and
+change
+the
+recovered line to
+bars
+and
+we are going to short it
+okay
+now let's change the color
+we'll select let's say
+blue
+i'll assign the palette click on apply
+and okay
+and if you want you can also change the
+color
+for
+deaths from blue to let's say
+winter i'll assign the palette click on
+apply and okay
+you can have whichever color you want
+and to make the access seam you can just
+right click on this axis and click on
+synchronize access
+so here you can see the values
+let's keep it in thousands only
+cool
+and rename this sheet to
+dual access
+okay
+now before we move ahead and create our
+final dashboard i want to show you
+one more
+feature in tableau that is to format the
+labels so you can see here
+instead of writing 5 lakh 30 821 we can
+change this in terms of millions or
+thousands and write it as let's say 530k
+to do that
+what i'll do is i'll go to format and
+here we have the option
+to select
+font
+and in font i'll go to fields and
+click on sum of deaths
+and here
+in this pane
+i'll choose
+number custom
+decimal places will be zero
+and
+display units i'll select
+thousands
+you can see here the values have been
+changed to 531k 193k 158k
+so on and so forth
+cool
+now let's go ahead and create our final
+dashboard here is the option to create a
+new dashboard so i'll just click on
+new dashboard
+and we are going to increase the
+size here so that
+it fits our
+view
+so we have selected the default view and
+the size i am going to
+choose here is automatic so now we can
+drop our sheets one by one
+first let's drag the
+global cases
+sheet here
+okay you can see we have our map
+now
+i'm going to choose the top 10 confirmed
+cases
+all right
+and after that we'll choose the
+death cases sheet so tableau will prompt
+you to place the sheet
+at the right location
+okay
+and now i'll choose my
+fifth visual which is confirmed versus
+deaths
+and if you want you can choose any one
+of
+these let's say i'll take the dual axis
+chart
+now you can just
+minimize the
+sheets and adjust the
+sizes to
+make it look better
+okay
+so you can see here we have our
+dashboard ready now you can still
+go ahead and customize the dashboards in
+terms of adding different
+filters to it we are not going to
+show that
+now you are getting some messages here
+to unknown four nulls you
+can
+remove them as well
+and here on the top you have the option
+to
+click on the presentation mode
+there you go so this is our final
+dashboard that we have created
+all right so this brings us to the end
+of the
+second
+coronavirus data analysis project using
+tableau
+now you can just click on escape to go
+back
+all right now you can save this
+and
+this will be published in the
+tableau public
+platform
+under your profile
+so that brings us to the end of this
+video tutorial on kovi data analysis
+project using python and tableau welcome
+to this exciting video on olympics data
+set analysis using python by simplyloan
+this is going to be a very interesting
+and interactive session where i'll give
+you a brief about the history of
+olympics and throw some light into the
+recently held tokyo olympics
+but we'll focus more on using olympics
+data set that is available on kegel and
+perform some exploratory data analysis
+you will understand how to use different
+functions in python to analyze and
+extract meaningful information
+during the course of our discussion i'll
+be asking you a few general questions
+related to the olympics try to answer
+them in the comment section of the video
+so let's begin
+the olympics is one of the biggest
+sporting events on the planet
+it is held every four years
+the first modern olympics took place in
+athens greece in 1896.
+as per national geographic
+the original olympics took place in 776
+bc
+so they began as part of an ancient
+greek festival with celebrated jews the
+greek god of sky and weather
+the rings in the olympics logo represent
+the five continents europe africa asia
+the americas and oceania
+from 1924 to 1992 the winter and the
+summer olympics took place in the same
+year but now they alternate every two
+years
+before i move on here is an interesting
+question for you
+only two people have ever won gold
+medals at both the summer and the winter
+olympics who are those two people
+please share your answers in the
+comments section of the video we would
+like to know from you
+the summer olympics in tokyo began on
+the 23rd of july and recently concluded
+on the 8th of august we got to witness
+some thriller matches that went down to
+the wire some amazing victories and
+sadly there were a lot of heartbreaks as
+well
+winning and losing are part and parcel
+of any game
+fans across the world were really happy
+to see this global event happen this
+year following last year's postponement
+due to the coronavirus pandemic
+with our olympic fever high let's take
+this opportunity to work around a
+project to perform exploratory data
+analysis using python to analyze and
+visualize past olympics data and answer
+specific questions
+in this video we will be using specific
+python libraries such as numpy pandas
+matplotlib and cbond to make sense of
+our data and extract meaningful
+information
+we are going to visualize our results
+with different charts and graphs
+before i show you the data set that we
+are going to use for our analysis
+i have another general question for you
+which is the first olympics where all
+the participating countries sent female
+athletes a repeat which is the first
+olympics where all the participating
+countries sent female athletes
+put the year and the city name where the
+olympics was held in the comments
+section of the video
+we'll be more than happy to hear from
+you
+now let me go ahead and show you the
+data sets that we'll be using in this
+video
+so here you can see i have my
+olympics data set folder that has two
+datasets these are csv files one is
+called the athlete underscore events and
+the other one is called noc underscore
+regions
+so
+we'll be using these two data sets these
+datasets can be downloaded from kegel we
+will post the dataset links in the
+description of the video please go ahead
+and download them these datasets have
+been directly taken from the internet
+now i'll show you the data sets
+so this is my first data set you can see
+on the top athlete underscore events
+so i have around
+15 columns you can see the count here
+and there are
+nearly
+2 lakh 71 116 rows of information
+so this is a huge data set that we are
+going to use the other data set we are
+going
+to use in this demo is called noc
+underscore regions now here one thing to
+note is
+noc stands for national olympic
+committee this is a three letter code
+that is given by the olympic committee
+we have the region name so afg is for
+afghanistan you have alb for albania elg
+for algeria we have also a column called
+notes you find some
+notes about the
+region for example here antiqua is
+actually antiqua and
+barbuda
+all right
+let's move to the
+first data set that i showed you
+this is a primary data set for our demo
+so these data sets have been directly
+taken from the internet and were not
+validated so the results that you will
+see in the demo is purely based on the
+data that we have collected
+so the file athlete underscore
+events.csv contains
+nearly 2 lakhs
+716 rows of information and there are 15
+columns
+so each row corresponds to an individual
+athlete competing in an individual
+olympic event
+so here id
+is actually a unique number for each
+athlete then we have the name which is
+basically the athlete's name we have the
+sex or the gender which is male or f for
+female
+then we have the age of the athlete
+which is in terms of integers
+we have the height in
+centimeters of the athletes then we have
+the weight in kilograms
+we have the team name these are the
+country names you have china denmark
+netherland there are around 200 country
+names
+then we have the noc as i said noc
+is a three letter code that stands for
+national
+olympic committee
+we have the games this games contains
+the year and the season you can see here
+1992 summer you also have the winter
+olympic information
+all right
+then we have a specific year column
+to
+tell you in which year this event had
+occurred
+now the year column is also an integer
+column
+we have the season so whether it was
+summer olympics or winter olympics
+then we have the city name this is the
+host city
+then we have the sport name you can see
+here we have basketball judo football
+tug of war
+speed skating
+there are so many
+then we have another column called event
+which is the complete even name as you
+can see the sport name is basketball but
+the even name is basketball men's
+basketball to be very specific
+again for speed skating you have
+different categories like women's 1000
+meters 500 meters
+all right
+now the final column is the middle
+column so it has
+the information about the athlete
+whether
+the athlete had won a medal be it gold
+silver branch and na means the athlete
+did not win any medals so we'll use
+these two data sets
+now let's
+get started with the demo
+we'll be using jupyter notebook for our
+analysis so i'll take you to my jupyter
+notebook right away
+i have opened it on chrome so this is my
+jupyter notebook that we are going to
+use you can see here olympics data set
+analysis
+i have already
+have a few cells that have been filled
+with some piece of code
+and you can see there are
+some comments written as well we are
+going to use this data set
+so let's get started
+first and foremost we'll import the data
+sets so we are going to use
+numpy pandas matplotlib and cbon
+let me hit shift enter to import all the
+libraries
+all right
+now the next thing is to load the
+datasets
+using
+pandas read underscore csv function
+so
+i'll create a variable called athletes
+i'll say equal to
+pd dot i'll use the read underscore csv
+function
+and inside this function will give the
+location
+of the files so i'll copy this location
+and here i'll paste
+make sure this is within
+quotations
+and these are all
+forward slash
+i'll give another forward slash
+and after that i'll give the
+file name that is
+athlete
+underscore
+evens
+dot csv
+i'll close the quotation
+let's run it
+okay
+similarly we will load the second data
+set i'll create another variable called
+regions
+so it will have my data frame
+i'll use the same function pd.read
+underscore csv
+i'll just copy this
+file path till here
+we paste it
+and
+i'll give my second file name which is
+noc
+underscore
+regions dot csv you can verify here
+the first one is athlete underscore
+events the second one is noc underscore
+regions
+okay i'll close the quotation and we'll
+run it again
+okay there seems to be some error i
+think this is the regions
+cool
+now moving ahead
+let's see the
+first few rows of both the data sets
+i'll use the head function for that
+i'll say
+athletes dot head
+so this will print the first five rows
+from my data set athletes you can see
+here
+from zero to four you have five rows of
+information the id name sex or the
+gender
+each height weight
+if i go to the right you have games
+year season sport event and middle
+now let's see
+the
+second data set that we
+imported or loaded
+i'll say regions dot head
+it says
+regions
+is not defined
+let me cross check it
+okay i have taken it as region let's
+make it regions
+cool
+now let's run it there you go so these
+are the first five rows from our second
+data set you have noc region and some
+nodes
+all right
+now the next step is to combine
+both the data sets so we'll join the
+data frames using the pandas merge
+function
+let me show you how to do it
+so this is going to be a horizontal join
+i'll create a variable
+called athletes underscore df
+then
+i'll use my first
+variable which is athletes
+i'll say dot merge which is my function
+name
+i'm going to merge
+the regions data frame
+i'll use the how parameter
+in how i'll give my value as
+i want to do a left join
+and my common column in both the data
+sets is actually noc
+so i'm going to use
+the noc column as my common column to
+merge both the data sets
+now let's go ahead and
+print the
+most data frame i'll say athletes
+underscore df.head
+let's run it
+there you go so
+if you see clearly if i move to the
+right you can see here we have added two
+more columns that were present in the
+second data set which was regions so we
+have regions and nodes
+added to my
+first data set that is
+athletes underscore
+events
+cool
+now one thing to note here is
+see the column names are not consistent
+if you see here the rest of the columns
+start with a capital letter but if you
+see the last two columns that we just
+added now start with the lowercase
+letters so we'll use
+the rename function to
+make the column names consistent
+but before that
+let's
+see the
+shape of the data frame so i'll print
+the shape of the data frame to know the
+total number of rows and columns
+i'll say
+athletes if i hit tab
+you will see it will give me
+the prompt i'll select athletes
+underscore df
+i'll use the
+shape attribute
+let's run it
+and see the result you can see here it
+gives me the total number of rows so 2
+lakh 71 116 rows and earlier we had 15
+columns in the first data set and now
+that we have added two more columns so
+the total number of columns becomes
+17 now
+cool
+so now it's time to make the
+column names consistent
+so i'll show you how to do it i'll say
+athletes underscore
+df
+dot i'll use the rename function
+and then
+i'll say
+columns
+equal to
+i'll use curly braces
+my first column
+that is region i want to change it to
+a region but the r should be capital now
+or upper case
+we'll give a comma
+and then say
+my second column
+this should be
+a region actually
+my second column that is notes
+i want to
+change the first letter to uppercase so
+i'll say capital n
+the rest all remains same
+we'll give a comma here and say
+in place equal to true
+so it will change
+the column names and will reflect
+in this athletes underscore df data
+frame
+let's run it
+now to verify you can again use the head
+function i'll run this again
+let me scroll down and move to the right
+you can see the difference there you go
+so we have successfully renamed the last
+two columns region and notes
+all right
+now moving ahead
+now
+i'll show you how you can use the info
+method to print information about a data
+frame including the index data type the
+column data types
+normal values and memory usage
+so for that you just need to use the
+info function so i'll write
+athletes underscore df
+dot info
+let's run it there you go so here we
+have the
+data columns you can see total
+17 columns you have
+two lags seventy one thousand hundred
+and sixteen rows or entries
+then you have the
+different column names and
+you see it says non-null and the data
+type of the column
+below you can see some information about
+the memory usage
+all right
+next
+the describe method is used for
+calculating statistical information such
+as mean standard deviation the
+percentiles of the numerical values of
+the data frame and much more
+it analyzes both numeric and object
+series and also the data frame column
+sets of mixed data types
+so let me show you how using
+the describe function you can display
+some statistical summary
+i'll just write
+describe
+and
+give parenthesis let's run it
+okay if i scroll down
+you can see here
+by default
+the describe function will only give
+information about numerical columns
+so here you can see we have the total
+count the mean of each of these columns
+you have the standard deviation the
+minimum and maximum value and then we
+have the 25th percentile the 50th
+percentile and the 75th percentile value
+of
+the columns id age height weight and
+year
+all right
+now one thing to notice here is if you
+see the year column
+the minimum year is 1896
+so this is when
+olympics started
+and until recently
+the rio olympics that was held in 2016.
+all right
+now moving ahead
+now let's check if there are any null
+values present in the columns of the
+data set
+so first i am going to create
+a variable called
+nan values
+give equal to i'll say
+athletes underscore df
+and the function to check is i'll say is
+n a
+i'll create another
+variable called nan underscore
+columns and here i'll use the any
+function i'll say nan underscore
+this
+variable which is underscore values
+dot i'll see any
+and i'll print
+my nan columns variable
+so this will display the result in terms
+of
+boolean values so if there are any null
+or any n or missing values in any of the
+columns it will say true otherwise it
+will say false
+let's display the result
+there you go
+so if you mark here clearly
+so there are
+nearly six columns where we have missing
+values you have
+age height wheat metal region and notes
+columns that have
+missing values so hence
+it has given us true the rest of the
+columns do not have any nan or missing
+values hence they are false
+alright
+let me scroll down
+now
+let's see the total number of null
+values for the
+above
+six columns
+so i'll say
+athletes
+underscore df
+dot i'll use the function is null
+and again i'll use this sum function
+okay this should be is null
+if i run it
+you can see it here
+so our age column has
+9474
+rows where we have null values
+then we have
+some null values for the height column
+as well for the weight column so these
+are the total number of
+rows where we don't have
+any information regarding each height
+weight or region
+notes this medal is
+self-explanatory because a lot of the
+athletes who participate in olympics
+don't win any medals so for them
+the value is any now before i move ahead
+i have a question for
+you people so the question is i want you
+to print the column names containing
+null values or missing values in the
+form of a list
+so
+please answer this question and put it
+in the comments section of the video we
+would be happy to
+know your approach
+so the question i'll repeat it again i
+want you people to print the column
+names containing null values or missing
+values in the form of a list
+so basically
+on the top we saw there were
+six columns that had
+null values i want you to print these
+six
+columns in the form of a list
+all right now moving ahead
+now let's see the data for specific
+countries
+let's say you want to see the athletes
+who have participated in the olympic
+games from the beginning for india
+for that you can filter your result
+using a function called query
+so let me show you how to do it i'll say
+athletes
+underscore df
+dot
+will use the query function
+and then
+i'll say team
+which is my column name
+should be equal to equal to
+and the value i'll give us india
+now let's
+display the first
+five
+rows of information
+or the details for the athletes who are
+from india if i run this
+okay there is some error here
+okay so we need to make sure this entire
+expression or the condition should be
+within
+single quote i'll just
+delete this single quote from here and
+we'll add it in the end
+now let's
+run it there you go
+so here you can see we have
+the top five rows
+of
+the athletes who are from india you can
+see here the region is india you can see
+the noc is india the team is india and
+let me go to the left you can see the
+name of the athlete
+the sex each
+so for each you have some missing values
+you have to wait
+team here and everything
+all right
+similarly you can also check for
+japan let me just copy the
+above code
+i'll paste it here
+and instead of india i'll say
+japan
+i'll run it
+there you go
+so if you see here
+you can see all the details are for the
+athletes who are from japan
+all right
+moving ahead
+now i want to know the top 10 countries
+who have participated since the
+inception of olympics in
+1896.
+so for that i'll create a variable
+called top underscore 10 underscore
+countries
+say equal to
+i'll use my data frame that is
+athletes underscore df
+i'll say dot
+team
+then i'll use the function
+value underscore
+counts
+i'm going to
+sort
+my count
+in ascending order
+just mark the way in which i am writing
+the functions
+any error in terms of syntax or the flow
+will
+throw you an error
+i want to display the top 10 countries
+now let's go ahead and
+print it i'll say
+top underscore 10 underscore
+countries
+all right
+let me run it
+okay it has given us an error let's
+debug it okay so this should be
+value
+counts and not count
+let's run it again
+another error
+okay
+so this should be short underscore
+values and not value
+let's run it again
+there you go
+so here you can see the top 10 countries
+participating in olympics since
+1896 you have united states then we have
+france so these are the number of
+participants who have taken part
+since 1896
+so the most number of participants have
+come from us then we have france great
+britain italy germany canada japan
+sweden
+we also have australia and hungary
+i'll scroll down
+now we are going to convert this table
+that we got or the output that we got
+in the form of a graph
+so i am trying to create a bar plot to
+plot the top 10 countries who have
+participated in olympics so here i am
+using the
+figure function to give the figure size
+so these are the dimensions 12 comma 6.
+now i'll tell you about this plt x6
+means just wait for a while
+i have given a
+title to my plot saying overall
+participation by country
+and then
+using the c-bond library and the bar
+plot function
+i am plotting the
+x
+and the
+y-axis so my x-axis has top
+i should make this top 10 countries
+because above we used top underscore 10
+underscore countries similarly for
+y-axis i'll make it top underscore 10
+underscore countries and then i'm using
+a color palette called set 2
+let's run it
+there you go so if i scroll down you can
+see here we have a nice
+bar plot
+this is a vertical bar plot
+and here you can see the bars which
+represent the different country names
+first we have united states which has
+the highest participation since the
+beginning of the olympics then we have
+france great britain italy germany
+canada
+and we have the rest of the countries
+cool
+moving ahead
+the next visualization we are going to
+see is the age distribution of the
+athletes
+so for this we are going to create a
+histogram
+i'll be using the matplotlib library
+specifically for this visualization
+so i'll say plt dot figure
+will give the figure size using the
+argument fig size
+equal to
+and this will be a tuple actually
+my size is going to be 12 comma 6
+i'll say
+plt dot
+title
+now you can give
+any title that you want i'll say
+age
+distribution
+of the
+athletes
+then we'll also give the x labels i'll
+say plt dot
+x label
+this will have each
+then we see plt dot
+y label
+and this will have
+the label as number of
+participants
+next
+i'm going to use the hist function so
+i'll say plt.test
+and i'll
+pass in my data frame that is
+athletes
+underscore df
+dot
+age
+which is my column name
+comma
+i'm going to pass in the
+bins
+for that i'm going to use the np dot
+e-range function so mp is for numpy
+and inside this i'll say
+10
+comma 80 comma
+2
+so my bins will start from the value 10
+and go until 80 with a size of 2
+comma
+i'll give another parameter that is
+going to specify the color of the bins i
+want my color to be
+orange
+and then
+i'll use
+the edge color to separate the bins i'll
+say edge color this is the
+parameter or the argument name and the
+color i want is white
+let's give a
+semicolon here
+and this should be edge color there's a
+spelling mistake here
+now let's run it and we'll see the
+output
+so there you go
+so this is a nice
+histogram that shows the distribution of
+the
+age of the athletes you can see the
+title each distribution of the athletes
+on the y-axis you have the number of
+participants on the x-axis we have the
+age values ranging from
+10 to 80 with a size of
+2
+and if you say this we have
+most number of athletes
+who have a age between
+20 to 30 you can see here
+so early 20s we have maximum number of
+athletes participating in the olympics
+we also have a few athletes who are
+beyond 40 years of age you can see here
+we have a
+few athletes
+even closer to 60 also
+and similarly we have a few athletes who
+are
+under 18 years of age
+all right
+now you can see here the bins we had
+taken orange color so our all the
+bars are represented in orange color
+and the edge you can see here we have
+the white color
+all right
+now moving ahead
+now in the initial slides of the video
+we discussed the summer and winter
+olympic games let's look at the
+different sporting events that are part
+of the summer and winter olympic games
+just to give you a heads up the winter
+olympic games are held once every four
+years for sports practiced on snow and
+ice
+so here i have my variable name winter
+underscore sports so i'm extracting
+for season equal to equal to
+winter and i am going to display only
+the unique values now let me run this
+cell
+okay so you can see here these are the
+different winter sports that are
+held
+during the winter olympics now similarly
+let's see for
+summer olympics so what i'm going to do
+here is i'll just copy this
+cell of code and will edit the
+variables i'll say summer
+underscore sports
+athletes underscore df remains the same
+here season will change it to
+summer
+dot sport dot unique remains the same
+and
+here i'll say summer underscore sports
+that should be small
+now let's run it
+there you go
+so here you can see we have
+more number of olympic sports that are
+held during the summer olympics compared
+to
+winter olympics
+so these are the sports that are played
+on snow and ice
+and these are the sports that are played
+during
+summer
+moving ahead
+now it's time to analyze the total
+number of male and female participants
+who have taken part in different games
+since 1896 till 2016 rio olympics
+all right
+so i'll say
+gender
+underscore counts which is my variable
+name
+i'll use my
+data frame that is
+athletes underscore df
+dot
+my variable name that is sex
+dot
+value underscore
+counts
+and then we are going to print
+gender underscore counts
+let's run this
+there you go
+so since the inception of olympics
+we have more number of male participants
+than
+female participants
+now here in this current cell you
+can see we are trying to plot a pie
+chart for male and female athletes so i
+have given my figure size then i have my
+title as gender distribution i am using
+the matplotlib library and the
+pi function i am using the variable
+gender counts that we used here
+then i am giving my labels as gender
+underscore counts dot index now i am
+using this auto pct the auto pct
+parameter enables you to display the
+percent
+value using python string formatting so
+this is my string formatting that i have
+used and i'm
+initialized my start angle for the pie
+chart as 150 degrees and i'm also giving
+shadow to my pie chart so i have
+written shadow equal to true
+let's run it
+all right so you can see here this is my
+pie chart that shows you the
+distribution of the
+male and female
+participation
+so for meal it is 72.5 percent for
+female so far it is
+27.5 percent as per the data set that we
+have
+you can change this start angle to let's
+say 180 degree and it will
+change the pie chart to this direction
+cool
+now moving ahead
+this time
+we are going to find the total number of
+medals that the athletes have won
+so i'll use my
+data frame athletes underscore df dot
+and then my column that is
+middle i'll say dot
+value
+underscore counts
+let's run it there you go so you can see
+the gold medals the bronze medals and
+the silver medals are
+very much
+similar to each other the numbers are
+pretty much the same
+all right
+now it's time to focus on the total
+female athletes who have taken part in
+each
+olympics
+so i'll create a variable
+called
+female underscore
+participants
+i'll say equal to and then use my data
+frame name that is athletes underscore
+df
+using
+square brackets
+i'll say
+athletes
+underscore df
+dot
+the gender should be equal to equal to
+female
+and
+i'll use ampersand
+i'll say
+just copy this
+paste it here
+lc dot
+season
+equal to equal to we'll check for summer
+olympics
+and i want to extract only
+the gender column so here it is sex
+comma
+my year column which is here
+okay
+and then
+i'll say
+female
+underscore
+participants
+equal to
+i'll just copy this
+paste it here
+and then i'll use the group by function
+say group by which is part of the pandas
+library
+i'll say year
+and then i want to find the count
+i'll reset the index
+say
+reset underscore
+index
+is a function
+and finally we are going to print
+female underscore participants
+and let's say the head
+all right
+so what we are trying to do is i am
+trying to filter
+my data only for the female athletes
+for summer olympics
+and here
+i am printing
+the participation
+based on each year so i am finding out
+the count
+so here we need to add
+one more square bracket
+all right
+now we'll
+run it and see the result
+the yuko so you can see here from 1900
+1904
+all these years you can see the female
+participation
+let me change it to tail so that we have
+the recent data of the
+olympics
+you can see it here for the beijing
+olympics 5816
+women athletes participated in 2012
+london olympics we had
+5815 olympics similarly for
+the 2016 rio olympics we had
+more participation than the london
+olympics so 622
+women athletes had participated
+all right
+now here
+this is another way in which you can
+filter your
+data for female athletes so i'm
+using two parameters my gender should be
+equal to female and season
+is summer olympics let me just run it i
+have stood it in a variable called women
+olympics
+now
+here i am trying to find a
+count plot or i am trying to create a
+count plot using my c bond sns library
+i have set my style to dark grid
+then my figure size i have given as
+20 comma 10
+my count plot will have the x axis
+as year
+the data is women olympics
+and palette i am using as spectral
+and then i have given a title women
+participation
+let's run and see the output
+there you go if i scroll down you can
+see on the top i have the title for my
+count plot which says women
+participation and on the y-axis i have
+the count
+and at the bottom you can see the
+different year values from 1900 till
+2016
+and 2016 had the highest number of
+female participation
+cool
+let me scroll down so in this cell of
+code we are trying to plot a line graph
+let me run it and show you the output
+so this line graph shows the trend
+which says plot for female athletes over
+time
+so here you can see the line graph so
+gradually
+the women participation has increased in
+olympics since
+its inception
+there was a slight decrease here this is
+around
+1950s
+and again you can see here there's a
+decrease with the women participation in
+1980 but since then since 1980 there has
+been continuous
+increase in the participation of female
+athlete numbers
+cool now coming to the next section
+of our analysis
+now we are going to filter the data to
+see the details of the athletes who have
+won gold medals
+so
+i'll create a variable called gold
+medals
+it's equal to i'll use my
+data frame is
+athletes underscore df
+and
+within parenthesis i'll use my data
+frame name
+which is
+athletes
+underscore
+df
+dot
+i'll use the condition middle equal to
+equal to
+and my value would be gold
+next
+i'm going to
+say
+gold medals dot head
+let's run it
+there you go
+so here
+we have the top five rows of the
+athletes who have won
+a gold medal you can see
+all the
+records have medal as gold
+now we are going to use this
+subset
+of the data and perform some more
+analysis
+so here
+i want to take only the values that are
+different from nan so i am going to use
+is
+finite
+function and inside that i have said
+gold medals each
+let me just run it cool
+now i want to see
+the athletes who have
+secured a gold medal beyond the age of
+60 years
+which is very rare
+so we'll see the total number of
+athletes with more than 60 years of age
+having won a gold medal
+so here i am going to say
+gold medals
+i'll use my
+column as id
+and then
+i'll use
+my variable
+gold medals
+and then
+i'll say
+age
+should be
+greater than
+60
+and then
+close my square bracket and say count
+okay let me just verify if everything is
+fine
+yeah
+i'll run it
+and we'll see the result so there are
+total
+six athletes who have won a gold medal
+having aged more than 60 years
+cool
+now let me check
+for which
+sport these six gold medals have come
+so i'll say
+sporting underscore event
+this is going to be my variable name
+equal to
+i'll use the
+same variable name gold medals
+i'll going to choose
+my sport column
+and then
+i'll give my
+condition
+age
+greater than
+60
+now let's go ahead and
+we'll print
+the variable spotting event
+if i run this you can see it here
+so
+for art competitions
+even for archery and suiting and this
+one called rook
+we have had gold medals from athletes
+who had an age
+more than 60 years
+now we are going to plot
+this result or the table that we
+achieved on the top
+so i'll say plt dot
+figure
+i'll give my
+figure
+size equal to let's say 10 comma 5
+then
+i'll say plt dot
+we'll use the
+tight
+layout
+say tight underscore
+layout
+then i'm going to use the c bond library
+and
+create a count plot
+for my variable
+sporting underscore
+event
+then i'll say plt dot
+title
+i'll give the title as
+gold medals
+for
+athletes
+over
+60 years of age
+let's run it
+and if i scroll down you can see here we
+have a nice count plot i have my title
+gold medals for athletes over 60 years
+and since
+for archery we had
+three players who secured a gold medal
+having an age more than
+60 years
+you can see here archery is three at
+competition one
+rook is one and shooting we had
+one medal
+all right
+now
+we'll see the total gold medals
+from each country
+so for that
+i'll say
+gold
+medals
+dot
+will use the
+region column
+and
+followed by that i'll use the
+value underscore
+counts function
+and
+i'll reset the index
+with
+name
+equal to i'll provide the
+middle column
+then we are going to print the
+head for the top five
+countries let me run it you can see it
+here
+so
+usa
+has secured the most number of gold
+medals then we have russia germany uk
+and then we have italy
+cool
+now in this cell i am going to create a
+plot to
+visualize the table that i got
+above
+so i've used my labels my titles i'm
+using the cat plot function that is
+present in the c bond library i have my
+x-axis my y-axis the data which is total
+gold medals
+let me just
+verify
+okay
+and we'll run it
+if i scroll down
+you can see this is a different palette
+that i had used which is a rocket
+and you can see usa has got the
+most number of gold medals then we have
+russia germany uk
+italy and france now we also have
+included france here which was not
+present in this table the reason being i
+have used head
+as six
+so it will give me the top six countries
+all right
+now we will analyze
+and look at the data for the most recent
+olympic event that is present in our
+data set i'm talking about the 2016 rio
+summer olympics
+so first of all i'll create a variable
+called max year
+which will be equal to my data frame
+name athletes underscore df
+my column name here and i'll use the max
+function
+then
+let's go ahead and print my max here
+i'll just show you the output you can
+see here my max here present in the data
+set is 2016 the rio olympics
+next
+we will
+create another variable called team
+underscore names
+that will be equal to
+my
+data frame name athletes underscore df
+within square brackets i'll give
+parenthesis and then say
+athletes underscore df
+dot
+year
+should be
+equal to equal to
+my
+output that is max here which is
+actually 2016
+and then i'll say
+ampersand
+i'll just copy this
+we'll paste it here
+this time i'll use the
+middle column and c equal to equal to
+gold
+i'll say dot
+team
+then i'll say team
+underscore names dot
+value
+underscore
+counts
+dot head
+and will display the
+top
+10
+countries
+let me run this
+there you go
+so in geo olympics
+united states secured the
+most number of gold medals
+now the reason this is 137 is we have
+also counted
+the team events for example basketball
+similarly great britain had 64 gold
+medals in total
+russia 50 we have brazil 34 argentina 21
+france 20 and japan 17.
+all right
+now
+using the above result we are going to
+create a bar plot i'll just change the
+steam underscore list to team underscore
+names
+similarly here also i'll make the
+corrections as
+team underscore names
+cool
+now we'll run it
+and you can see here we have a nice
+horizontal
+bar plot so we have united states at the
+top
+great britain russia germany china
+brazil
+so here i am displaying the top
+20 nations since i've used head
+as 20
+so these are the top 20 nations who
+secured the
+most number of gold medals in the u.
+olympics
+all right
+now in the final section of this video
+we will create a scatter plot to
+visualize the height and weight of male
+and female athletes who have won a medal
+now it can be a gold medal a silver
+medal or a bronze medal
+but before that
+we
+need to filter the data only for
+athletes who have won a medal
+now if you
+had noticed here our
+medals column also had a few
+null values so we are not going to
+consider
+those null values here
+we are only going to consider for the
+athletes who have
+bana medal
+so for that i will create a
+variable called not underscore null
+underscore
+medals
+equal to i'll say
+athletes underscore
+df
+then
+i'll give my
+let's make it df
+i'll give my condition
+let me just copy this
+i'll paste it here
+and then
+i'll give my condition
+height
+and use the
+not
+null
+function
+and then i'll say
+amberson
+create another parenthesis i'll say
+athletes underscore df
+this time we'll consider the
+weight column
+again i'll use the function as not null
+and
+i'll close the parenthesis
+okay i had missed one s here cool
+let me just run it now
+all right
+now we are going to create our final
+plot i'll say plt dot figure
+i'll give my
+figure size
+equal to
+i'll say 12 comma 10
+i'll say
+access
+equal to
+sns dot
+we'll be creating a scatter plot to plot
+the
+height and weight of the athletes who
+have won a medal
+i'll say scatter plot
+in my x-axis i'll have
+height
+comma
+in my y-axis i'll have
+weight
+comma
+my data should be
+not underscore null underscore
+medals
+so this is what we created here not
+underscore null underscore medals
+comma
+i'll use hue equal to my
+sex column
+cool
+finally i'll say plt dot i'll give a
+title to my plot
+saying
+height
+versus
+weight
+of
+olympic
+medalist
+cool
+now let's see our scatter plot
+this might take some time to
+keep the result because there are so
+many athletes present in a data set who
+have won a medal and also we are
+filtering
+in terms of
+hue which is for male and female
+there you go
+so if i scroll down you can see here
+we have a nice scatter plot
+on the top we have the title of the plot
+saying height versus wheat of olympic
+medalists you can see
+our age as the hue
+so blue points are for the male athletes
+and orange points are for the female
+athletes
+and on the y-axis we have the weight in
+terms of
+kilograms and you have the height in
+terms of centimeters
+cool
+so that brings us to the end of this
+demo session on
+olympics
+data set analysis
+so we used two data sets to
+[Music]
+carry out this exploratory data analysis
+and we
+created some
+visualizations to analyze and visualize
+the data
+all right
+so that brings us to the end of this
+video tutorial on olympics data set
+analysis
+thank you all for watching this video on
+python data analysis projects for 2022 i
+hope it was useful and informative
+thanks again stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

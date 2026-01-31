@@ -1,0 +1,514 @@
+foreign
+Apache spark is one of the best
+framework to handle large data and
+perform analysis it is widely used in
+industry for two main reasons in memory
+computation and parallel processing
+there is an important concept that serve
+as the foundation of Apache spark termed
+as rdt
+in fact it is often known as backbone of
+a purchase Park
+so with these interesting facts let's
+move forward to know more about by Spark
+artity
+hi everyone I am umrah's whale welcome
+to simple learns YouTube channel in this
+session we will explode by spark RTG if
+you want more amazing Tech related
+videos do like and subscribe and hit the
+Bell icon to stay tuned so before moving
+forward let's have a quick look at
+Agenda
+we will begin the session by discussing
+why exactly we need by Spark aridhi
+then the various features of rad along
+with the operations that can be
+performed next I will show you guys some
+demo related to transformation and
+action and then the pair rdd operation
+and Pi Spark
+after that we will have a look at
+transformation and action imperiality
+let's get through the video to learn
+more about Pi spark RTD without any
+further delay so before many of the
+Frameworks we are facing challenges in
+processing multiple tasks like Hadoop a
+stable intermediate data store that was
+required to hdfs and Amazon S3 by using
+this media the execution of numerous
+competition was performed including
+logistic aggression page rank algorithm
+K means Etc sharing data involves
+several input output operations such as
+replication and serialization it leads
+to slow data processing therefore there
+was a demand for anything that could
+solve the issue of solving input output
+operations while dissolving the problem
+of high memory train then there already
+came into the picture
+so with this let's look at our next
+topic that is water spice Park rtt
+resilient distributed data set often
+known as rdd are the components used in
+a cluster parallel processing Direction
+and operate across serval nodes
+since rdds are immutable elements you
+cannot alter them after creation because
+rdts are fault tolerant they will
+immediately recover from any failure now
+let's have a look at each of its
+features
+coming to feature so far today
+The Fosters in memory then lazy
+Evolution then immutable persistence
+partition parallel fault tolerance
+location sickness
+in memory
+spark r d can be used to store data data
+storage in a spark ID is size and volume
+independent we can save any size or
+amount of data the term in memory
+competition refers to processing data
+stored in the main Dam operating across
+task is necessary not in intricate
+databases because running databases slow
+the drives
+lease evolution
+its name implies that the execution
+process does not begin immediately after
+calling a certain operation
+there must be an action taken to start
+the execution
+as a result of such action rdd data
+cannot be transformed or made public
+spark keeps track of each operation
+performed through dark referring to a
+directed as select graph or Dag
+immutable
+since rdds cannot be changed over time
+they are immutable when we carry out
+more computation that property helps to
+maintain consistency rld that have
+already been shown dated cannot be
+changed they can only be turned into new
+modities
+this is made faceable by its process of
+transformation persistence all data can
+be kept on disk memory and processing
+storage
+additionally we can retrieve it straight
+from memory because of this rddr
+advantages for quick competition as a
+result we can run server operation on
+the same data side this leads to
+reusability as well which speeds up the
+competition partition each data set is
+logically divided into smaller chunks
+and distressed among cluster nodes they
+are not inherently divided they are just
+partitioned to improve processing this
+partition configuration offer
+parallelism
+so coming to parallel rdts are logically
+divided across cluster as we covered
+earlier when we do any operations the
+complete set of data is run concurrently
+coming to fall 12 length if we lose any
+rdd while working on any node the RTD
+will automatically recover
+different transformation that we apply
+to rdd result in a logical execution
+strategy
+the term lineage graph often refers to
+logical execution plan as a result if a
+machine malfunction occurs we could lose
+rdd we can therefore retrieve the same
+data set by performing the same
+competition on that of the lineage graph
+and actually this practice strengthened
+its fault toleranceability
+location thickness rdd support placement
+preferences this is information on rdd's
+location that the computational
+partition are places using the DAC
+directed as a silly graph scheduler
+to manage task effectively the AG helps
+keep them as near the data as possible
+the placement of the data speeds up the
+competition as well rdds allow you to do
+a various operation to complete a
+certain goal so with this let's look at
+the operation with pi sparkati
+a fundamental data structure in pi spark
+is the resilient distributed data set or
+rdt a low level object
+Pi spark rtds are very effective at
+handling distributed jobs any task can
+be completed using a collection of
+operation in pi Spa quantity
+these process fall into two categories
+data transformation and action
+let's learn about transformation first
+transformation or a kind of operation
+that accepts an rdd as input and output
+another RTG a transform Rd Returns on
+Humanity the old rdd remain unchanged
+and immutable the transformation
+generates are directed as a solid graph
+or DHE for competition after applying it
+and stops after performing any
+operations so with this let's look at
+fee of Pi spark rdd fundamental
+transformation right away the first is
+the map transformation
+filter transformation
+Union transformation flat map
+transformation so with this let's look
+at the actions in pi Spark rdt so for
+this let's look at actions in pi spark
+entity
+in pi spark rdds actions are a kind of
+operation that returns a value on being
+applied to an entity so following are
+some of the essential Pi spark RNA
+operation widely used that are collect
+action count action take action first
+action reduce action and save action
+so with this let's get to our next topic
+that is pi spark Fair rdd operations
+foot pair already spy spark offers a
+specific set of operations pair already
+are a unique class of data structure in
+pi spark that take the form of key value
+pairs hence the name because most real
+world data is in the form of key or
+value pairs
+pair already are practically employed
+more frequently the term key and value
+are used differently by priorities the
+value is referred to as data whereas the
+key is referred to as an identifier so
+with this we have come to our next topic
+that a transformation in pair RTD
+we must utilize operation that use keys
+and values since priorities are built
+from many doubles so following are the
+widely used Transformations on a
+priority
+starting from the reduced by key
+sort by key Group by key
+so with this let's get to the action in
+pi spark priority despite the fact that
+priorities can be used for any Rd action
+there are a few articles that are
+tailored exclusively for per entities
+these actions should be used with the
+priorities and will not function on
+regular rtts with pi spark pair rdd
+action is having only one function that
+is count by K the number of value
+associated with each key in the provided
+data is counted by the account by key
+action so now with this let's get to the
+demo section
+transformation and action in pi Spa
+quarterly demo now let's open the Google
+collab
+so now go to file
+open a new notebook
+with this
+you can see the new notebook is coming
+on the screen
+so basically for practice purposes all
+the following operation will be carried
+out in Google collab various condition
+must be completed on our PC before we
+can do PI spark rdd operations you can
+add it to the following requirements
+while practicing on your personal
+computer
+so you just have to get to the code and
+and write
+pip
+install
+let's run it
+now as you can see on the screen it's
+installed
+next we will initialize a spark context
+to perform the operation
+let's get to the code
+and
+from PI spark import spark context let's
+run it and please console the pi spark
+installation guide for local machines if
+you are unable to complete the
+prerequisite for any of the following
+reasons now that we have spark context
+ready with us we can carry out all the
+upcoming transformation and actions
+so let's go
+let's get to the code
+here we will see the example of map
+transformation let's run the code here
+we use the spark context parallelize
+method to construct an rdd called my rdd
+we utilize a collect action to extract
+every resultant element from a python
+list because the map action is a
+transformation and returns a numanity so
+the anomalous function for Lambda
+operates similarly in this case so how
+it operates in Python
+so here we get the output 26 34 42 and
+50. yeah so next is fill the
+transformation let's look at its example
+let's get to the code
+and understand the example of the filter
+transformation
+let's
+run the program
+using the parallelized method of spark
+context we first construct an rdd in our
+case called f underscore rdd the even
+number from our rdd F underscore rdd we
+are then removed using the anonymous
+function of Lambda we use the collect
+operation to retrieve every resultant
+element in our list because the filter
+transformation returns a r DT
+so with this let's come to our next
+function that is the union
+transformation let's have example to
+understand it better
+here let's get to the code
+and take an example of Union
+transformation
+let's run it
+here we used spark context parallelize
+method to First a stabilization rdd
+called input
+then using the filter dot method on the
+input Rd we produce two additionally
+rdds you underscore rd1 and you
+underscore rdd2 finally we use the dot
+Union transformation to generate the
+union of two filter entities
+so with this let's look at the next
+function that is flap map transformation
+so let's get to the code
+and see the flat map transformation
+example
+let's run it
+here we first use the parallelize method
+to build an rdd called fmap underscore
+rdd and then we added two strings to it
+then we transform it with the flat map
+function to separate all the strings
+into individual words similar to python
+list dot split technique this has the
+same effect then we extracted every
+resultant element in our list using the
+collect method
+and the output is Hello World welcome to
+the pi spark adity basically in pi spark
+arteries actions are a kind of
+operations that return a value on being
+applied to an artery so with this let's
+look the action in pi Spark
+so I'm going to show you some examples
+of actions in pi Spark rdd
+let's go
+so this is example of collect action
+let's get to the code
+and write the example of collect action
+let's run it
+basically here we started by utilizing
+the parallelized method of spark context
+to construct an rdd called collect
+underscore rdd the collect method which
+returns a list of all the elements from
+collectority was then used on our
+variety and so the output on our screen
+as you can see that is 15 24 33 42 and
+51. so with this let's look at the other
+operation
+that is the count action let's get to
+the code
+and write the example of count action
+let's run this
+here we started by utilizing the
+parallelized method of spark context to
+construct an rdd called collect
+underscore rdd the number of entries in
+our rdd where the determine by applying
+the count method to it
+and the output assigned as you can see
+we'll learn about the functions in pi
+spark rdt in actions so our next
+operation is the take action
+skip to the code we will see the example
+of take action also
+so
+let's run it
+and here we started by utilizing the
+parallelized method of spark context to
+construct an artery called t k
+underscore rdd as you can see on the
+screen then we used our rdd to take rdd
+to apply the take 3 function this caused
+the array to return a list for three
+elements
+as you can see the outputs are three
+elements 23 67 71
+so with this we have come to our next
+operation that is the reduce action
+let's get to the code as we can see on
+the screen here is the example of reduce
+action
+let's run it
+here we use the spark context
+parallelize method to construct an rdd
+called red underscore rdd we used a
+Lambda or enclosed an ominous function
+with the reduce method on red underscore
+rdt as you can see on the screen
+in this case the Lambda prints after
+adding each elements in the supplied Rd
+and as you can see the output is 90
+let's get to the code
+and our next operation is the save
+action
+let's take an example of save action
+and run it
+here we use the spark context
+parallelize method to build an RDA
+called SV underscore rgt as you can see
+on the screen we saved it on our direct
+using the dot save as text file method
+on SV underscore rdd with the same name
+supplied as an argument in it as a
+string type with the specified argument
+the dot save as text file function
+creates a directory depending on the
+file size different parts of the file
+will be produced inside the directory
+so with this we have come to the end of
+Pi spark pair operations now now we will
+look at the example of Pi spark pair rdd
+operations now have a look at the demo
+of transformation and action in pi spark
+variety as we have seen the examples of
+transformation and action of Pi spark
+rdd and now we will see the examples of
+transformation and action in pi spark
+variety
+so let's get to the code
+and our first operation is the reduced
+by K transformation let's take an
+example as you can see the example is
+here on the screen let's run this
+here also using spark context
+parallelize method we build an RD called
+MKS underscore rdd and inserted a list
+of topical containing student Mark as
+you can see on the screen
+then using an anonymous method enclosed
+within the Reduce by K transformation we
+perform the group by K transformation to
+the MKS rdd data site the collect action
+was used to create the list of the
+resultant element because the action
+creates a new entity
+as you can see on the screen the output
+are Amelia 81 Mary 69 Gomez 90 just say
+61 and Frank 94. with this let's look at
+our second operation that is the salt by
+key
+let's get to the code
+and take example of sort by key
+let's run this
+using spark context parallelize method
+we built an rdd called MKS underscore
+rdd as you can see on the screen and
+inserted a list of tuples containing a
+student marks on this rdd we use the
+sort by K transformation
+in order to solve the keys in ascending
+order we also gave the string arguments
+ascending to the sort by K
+transformation as you can see on the
+screen finally we obtained a list of all
+the result Elements by calling the
+collect method on the return rdd as you
+can see on the screen the output is just
+a 38 Franc 49 Amelia 43 Mary 33 48 just
+a23 Frank 45
+game 38 Mary 36 our next transformation
+is the group by key transformation so
+let's take an example of group by K
+transformation so we can understand it
+better
+let's get to the code
+and write the example of group bike
+transformation
+let's run it and see
+on executing we are getting
+Amelia 43
+8 marry 33 36
+49 and 45. as you can see on the screen
+using spark context parallelize method
+we build an rdd called MKS underscore
+rdd and inserted a list of tuples
+containing student marks then we
+transform the
+for rdd using the group by operation the
+results we are then saved to the DCT
+underscore rdd after being obtained to
+using the collect method we use the for
+loop on DCT underscore rgd additionary
+type item to obtain a list of grades for
+each student in each line
+since students can receive more than one
+topic Mark we also added list to the
+values so with this we have come to the
+end of transformation in PR already so
+now let's have a look at actions in
+priority actions in pair already only
+have a one operation let's perform that
+and that is the count by key
+let's take an example of count baking
+let's format
+as you can see on executing this code we
+get just a 2 franc to Amelia 2 Mary 1
+and Gomes one
+and as usual using Spark's context
+parallelize method we built an rdd
+called MKS underscore Aditi and insulted
+a list of dinnings to denmarks this
+dictionary is written by the count by K
+operation we save the dictionary entries
+in the variable DCT underscore rtt
+later after repeating these steps we
+obtain the total number of values
+associated with each key so with this we
+have come to the animation on Pi spark
+RTD I hope you found the session both
+interesting and exciting if you have any
+questions about any of the topic covered
+in this section or if you need the
+resources used in this session please
+let us know in the comment section below
+and our team of experts will be pleased
+to respond as soon as possible thank you
+until next time this is umra from Simply
+learn theme signing off continue to
+learn and stay safe
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

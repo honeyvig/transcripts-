@@ -1,0 +1,648 @@
+hello everyone i am mank and welcome to
+simply learn today we will take you
+through the hands-on lab demo of how you
+can create a speech to text or speech
+recognition system using python
+before we start i hope this screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them
+i am repeating again before we start i
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+let's wait for some more minutes to let
+other people join
+yeah until then let me tell you guys
+that we have regular updates on multiple
+technologies if you are a tech geek in a
+continuous hunt for the latest
+technological trends then consider
+getting subscribed to our youtube
+channel and press that bell icon to
+never miss any update from simply learn
+i'm repeating again let me tell you guys
+that we have regular updates on multiple
+technologies
+if you are a tech geek in a continuous
+hunt for the latest technological trends
+then consider getting subscribe to our
+youtube channel and press that bell icon
+to never miss any updates from
+simplylearn
+it i think we can get started
+so in today's session we will go through
+what is a speech recognition system
+moving forward we will see how speech
+recognition system works after that we
+will create a speech recognition system
+using python
+we will perform different function and
+create speech recognition system using
+different python libraries before we
+move on to the programming part let's
+discuss what is a specific cognition
+system first and proceed further for the
+same
+what is space recognition system
+a program capacity to convert spoken
+language into written language is known
+as a speech recognition system also
+known as automatic series recognition
+computer voice recognition or speech to
+text despite being sometimes confused
+with voice recognition
+speech recognition focus on converting
+speech form a verbal to a text format
+whereas voice recognition only aims to
+distinguish the voice of a certain
+person
+voice and speech recognition are two
+distinct technologies and they shouldn't
+be confused
+to recognize word in spoken language
+speech recognition is used voice
+recognition uses biometrical
+technologies to recognize a specific
+person by their voice
+so after knowing what is speech
+recognition system let's move forward
+and see how does his recognition system
+work
+pc cognition in python works with
+algorithm that performs linguistic and
+acoustic modeling acoustic modeling is
+used to recognize phonetics in our
+speech to get the most significant part
+of speech as words and sentences
+specific cognition start by taking the
+sound energy produced by the person
+speaking and converting it into the
+electrical energy
+with the help of microphone
+it then converts the electrical energy
+from analog to digital and finally to
+the text
+it breaks the audio data down into
+sounds and it analyze the sound using
+algorithm to find the most probable word
+that fits that audio
+all of this is done using natural
+language processing nlp and neural
+networks
+hidden markov models can be used to find
+temporal patterns in speech and improve
+accuracy so here is one question for you
+guys i will give you one minute for this
+you can comment or you can give your
+answer in the chat section so i can see
+if the answers given by you are right or
+wrong
+i'm repeating again so here is one
+question for you guys
+i will give you exactly one minute for
+this you can comment or you can give
+answer in the chat section so i can see
+if the answers given by you are right or
+wrong
+so the question is
+which of the following is the correct
+extension for the python file
+i'm repeating again which of the
+following is the correct extension of
+the python file
+option a dot python
+option b dot pl
+option c dot p y and option d dot p
+so let us know your answer in the
+comment section below
+so i am starting a timer of one minute
+just type your answer in the comment
+section or in the chat section do let me
+know your answers please
+i currently ask that everyone take part
+in this to make this live session
+exciting
+so i am starting the timer
+you can comment or you can give your
+answer in the chat section so i can see
+the answers given by you are right or
+wrong
+so the question is which of the
+following is the correct extension of
+the python file
+37 seconds remaining
+option a dot python option b dot pl
+option c dot py option d dot p
+let us know your answer in the comment
+section below
+i can't ask that everyone take part in
+this to make the live session exciting
+you have 15 seconds remaining
+10 seconds more
+which of the following is the correct
+extension of the python file
+3
+2
+one
+after that allotted time has passed
+those who provided the correct or
+response will receive a response and
+those who provided the incorrect
+response will receive one
+okay so now let's move to our
+programming part to create
+a speech recognition system using python
+so first we will open a command prompt
+to write a command to open jupyter
+notebook so here we will write jupyter
+notebook
+press enter
+so this is the landing page of jupiter
+notebook and here you can select new
+python file
+so this is how the jupiter notebook ui
+looks like so at first we will import
+some major libraries of python which
+will help us in creating space
+recognition system
+so here we will write
+first let me remain rename this
+speech
+recog
+so first i will import import
+each
+underscore
+recognition
+and second import
+pytts
+x
+3
+presenter
+so the incredibly attention i repeat the
+incredibly extensible speech recognition
+library serves as a wrapper for a number
+of well-known speech apis
+the speech recognition library includes
+default api key for one of these
+the google web speech api hard coded
+that implies that you can start moving
+without needing to register for a
+service
+and python project would benefit greatly
+from using the speech recognition
+package due to its virtuality and
+usability
+and then pytts x3 a python text to
+speech conversion library is called
+pytts x3
+it is compatible with python 2 and
+python 3 and work offline unlike
+competing libraries to obtain a
+reference to a pytts x3 engine instance
+an application calls the pytts x3 in it
+it is very user friendly program that
+turns type text into speech
+so moving forward let's write code for
+actual speech recognition system
+so here i will write
+sr
+equals to speech
+underscore
+here i will write with
+speech
+underscore
+recognition
+dot
+microphone
+source
+2
+then colon
+yeah
+here
+i will write print
+right here okay silence
+please
+then i will write here sr
+dot adjust
+underscore for
+underscore
+ambient
+underscore noise
+then
+source
+2
+comma duration
+equals to 2
+okay
+then enter
+then i will print something like
+peek
+now
+please
+something like that
+then i will write here audio
+audio 2
+equals to sr
+dot
+listen
+source
+2
+and here i will write for text
+equals to
+sr
+dot
+recognize
+okay
+underscore
+google
+audio
+two
+then here i have to print in small
+letters
+in lowercase so i will write here text
+equals to text
+dot lower
+just
+then here i will write
+print
+it
+you say
+plus
+text
+everything look great
+so a recognizer is a machine ability to
+listen to spoken words and identify them
+you can then use a speech recognition in
+python to convert the spoken words into
+text
+make a query or give a reply you can
+even program some devices to respond to
+these spoken words
+like every time the recognized speech
+from mic function is invoked the
+recognizer is calibrated for changing
+noise condition using the edges for
+ambient noise this one for ambient noise
+the backlog parameter of the listen
+function allow a quiz size to be
+specified it will listen to what we are
+speaking or saying
+this recognize google
+a function on the recognizer class
+which you have now developed will be
+used to query the google web speech api
+and convert spoken words into text
+recognize google needs the argument
+audio data in order to function properly
+otherwise it will fail
+python built in function lower is mostly
+used to handle strings
+the lower method converts each capital
+character in the provided string to
+lowercase before returning the lowercase
+string it accept no arguments it
+returned to the original text if the
+supplied string has no capital letters
+now let's check whether it's working or
+not so i will run it yeah
+run all
+hello how are you doing
+you can see hello how are you doing
+printed
+so let me try another one
+subscribe to simply learn youtube
+channel and press that bell icon to
+never miss any update from simply learn
+so here you can see subscribe to simplyn
+youtube channel and press that bell icon
+to never miss any update from simply
+learn is printed
+so speech to text is working fine
+so i hope you guys understand till here
+if you have any questions or any queries
+regarding any code or you have any
+questions just put as in comments our
+team will shortly provide you with the
+correct solution
+now moving forward what if we want that
+system will write what we are saying and
+speak that to
+this will be printed and
+now moving forward what if you want that
+system will write what we are saying and
+speak that too
+so for that we will write a small line
+of code
+so first we will do
+we will create one
+here
+like we will insert cell below we will
+write a function here so df f
+speak now
+command
+colon
+then voice
+equals to
+p y t t s x 3
+dot init
+okay
+then voice dot say
+command
+and voice
+dot run
+and
+wait
+yeah
+so what we will do here
+we will write
+like
+speak
+now
+then
+so this voice is nothing just a variable
+to text to speech and in it pytt x3
+engine has started obtains a pointer to
+an instance of an engine that will
+utilize the specified driver
+if another engine stand is already using
+the given driver the other engine stance
+is returned if not a new engine is built
+a speed now is a function in which
+using get function i am getting the
+values of the text this one i will get
+now let's run this sort of code and
+let's see if it is working or not so i
+will
+run
+hello how are you all
+peak now is not different okay
+speak now okay and small
+okay my bad run this again
+hello how are you all
+hello how are you all
+i hope you can hear properly so let me
+run this again for another demo example
+subscribe to simplyland youtube channel
+and press that bell icon to never miss
+any update from simplylearn
+subscribe to simple and youtube channel
+and press the bell icon to never miss
+any updates from simplylearn
+yeah so i hope you guys understand till
+here if you have any question or any
+queries regarding any code
+or you have any question related to
+python just put as in comments our team
+will shortly provide you with the
+correct solution
+okay okay moving forward
+so at last let's create speech
+recognition system from which we can
+open our websites and all
+like youtube like facebook like simply
+learn
+anything
+so we will open
+open new file for this i will create the
+separate one
+and i will write speech
+to web
+websites
+okay
+speech to web
+so here i will import import
+speech
+underscore
+recognition
+and
+import
+pytts x3
+then
+one major library import
+web browser
+okay then i will run it
+yeah
+i hope you already know these two first
+two libraries so this is third library
+is used for
+web browser is the file source code the
+web browser modules offers a high level
+user interface that enables user to view
+web-based content
+in most cases executing the open
+function from this module
+will result in the desired outcome
+so moving forward let me write code for
+it
+so i will write code first then i will
+explain you linewise
+so i will write
+if
+underscore underscore
+name
+then again to underscore equals to
+equals to
+underscore main then again underscore
+then colon
+yeah then you have to give a path like
+for your browser you can use edge you
+can use google chrome
+anything firefox anything
+so here i will give path path equals to
+then
+c drive
+i have my path
+already
+program
+files
+and
+x
+86
+microsoft
+and
+edge then
+okay then
+application
+and msh
+dot e x e
+you have to write at the end this
+percentage s
+don't forget to write this
+okay so path is set so let me create sr
+equals to
+speech
+recognition
+dot
+recognizer
+same as previous one
+and i will write with speech
+underscore
+recognition
+dot
+microphone
+as source
+and sr dot adjust
+or
+bend
+noise
+then source
+now everything seems good
+let me write print
+but we have wrote there
+like
+speak
+now please so here i will write
+please
+hey
+something
+to open
+okay
+i'll write audio equals to
+sr dot listen
+listen
+that source
+and i will print
+like what you said
+so it will hear
+hearing
+and i will here i try and accept
+then try
+so here i will write destination
+equals to sr
+dot recognize
+let's go google
+then audio
+print
+you
+asked
+to open
+right here plus
+destination
+okay
+so then
+web
+browser
+browser
+dot
+get
+that path
+then open
+that destination
+destination
+okay
+so here i will write that accept
+exception
+caption
+as
+you can write e
+then
+print
+if there will be error
+error
+still
+e
+okay
+so our recognizer is a machine ability
+to listen to spoken words and identify
+them you can use speech recognition in
+python to convert the spoken word into
+text
+you can even program some devices to
+respond to these spoken words
+every time the recognized speech from
+mic function is invoked the recognizer
+is calibrated for changing noise
+condition using the adjust ambient noise
+method
+a socket is all ready to receive
+connection after calling the listen
+function
+prior to performing the accept method on
+the server socket the listen method
+should be called the backlog parameter
+of the listen function allow our cue
+size to be specified it will listen to
+what we are speaking or saying
+the recognized google function on the
+recognizer class which you have now
+developed will be used to query the
+google web speech api and will convert
+spoken words into text
+recognize google needs the argument
+audio data in order to function properly
+otherwise it will fail
+okay
+so okay so let's try this it's working
+or not
+let me run this
+okay invalid syntax perhaps you forgot a
+comma
+okay let me see
+that print error
+inc it should be yeah
+okay let me check this
+let me run this again
+valid syntax perhaps you forget a comma
+hey
+try to run this again
+two
+okay
+let me remove this i guess it will work
+fine
+still
+didn't put okay okay no issues
+so here i will write
+again
+accept
+exception
+e
+and
+errors
+tr okay i forgot to write plus okay okay
+e
+yeah now it will work fine
+www.youtube.com
+so here you can see youtube is open
+yeah
+so we will try this one more time
+www www.facebook.com
+so here you can see facebook is open
+www.facebook.com
+one more last time
+www.simplylearn.com
+you can check our amazing courses on
+different different technologies here on
+simplyland website simplyland.com
+so i hope you guys understand till here
+if you have any query any question
+of regarding any code so just put as in
+comments our team will shortly provide
+you with the correct solution
+okay i'm repeating again i hope you guys
+understand till here if you have any
+questions or any queries regarding any
+code or related to any python question
+so just put as in comments our team will
+shortly provide you with the correct
+solution i hope you guys must understand
+how to create your own speech
+recognition system using python if you
+have any queries you can ask in the
+comment section below our team will
+shortly respond you as soon as possible
+and if you want this full code if you
+want this full code
+so just comment for the same thank you
+so much for being here if you enjoyed
+this video please do subscribe to our
+youtube channel and give a like to this
+video thank you and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

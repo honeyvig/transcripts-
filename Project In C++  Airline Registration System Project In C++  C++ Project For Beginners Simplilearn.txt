@@ -1,0 +1,978 @@
+hey guys welcome back to another video
+by simply learn
+in this session we will learn how to
+make an airline reservation system in c
+plus plus
+this project will allow a user to book a
+flight to a particular country and he or
+she will receive the ticket by filling
+in all the important details
+different concepts of c plus will be
+used in making this project which will
+help you in understanding the concepts
+of c plus in a practical manner
+so now let's go ahead
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so now let's go to our code editor that
+is dev c plus plus
+so this is our code editor and now let's
+create a new file
+and let's start with it
+so let's add some header files
+hash include
+iostream
+now we will add another header file that
+is f stream
+for file handling operations
+now hash include
+i o manip
+so this header file is used for floating
+point values
+so now we'll add the
+standard namespace
+now we'll write the main function
+now inside this main function we will
+create an object of a class
+our class name is management
+and
+the object name would be
+m obj
+after that return 0
+now we have to create this class
+so we'll write
+class
+management
+and inside this class
+we will make a constructor because we
+have created the object of this class so
+constructor would be called and inside
+that constructor we will call the
+function
+so let's do that first of all we'll
+write the public scope
+now under this public scope we'll write
+management
+so this is our constructor management
+and inside this constructor we will call
+a function let's say the name of the
+function is main menu
+all right
+so
+now the class ends so we'll write the
+semicolon in the end
+now inside this function
+main menu we have to create a menu that
+will display on the screen
+and also we have to use this function
+many times inside this
+program so we have to declare this
+function globally so we'll write
+void
+mean
+menu
+so this is the function prototype
+now after that
+we can create this function
+so let's write
+void
+mean
+menu
+and
+now we'll declare some variables
+l choice
+and s choice
+and
+another variable let's say back
+now we have to create a layout or a
+structure for a menu so let's do that
+slash d
+airlines
+you can write any name as of your choice
+now we will write main menu
+write slash d
+now again we'll add some space
+for some lines
+let's add slash d
+now we'll create a structure in which
+we'll ask the user to press a particular
+button to open a particular
+functionality like press one to open the
+customer details press 2 for flight
+registration press 3 for ticket and
+charges
+so let's do that
+now i'll copy paste
+i'll copy this part and paste it over
+here
+and second one we'll write press 2
+for flight registration
+so we are done with the layout now we'll
+take the input from the user
+so let's do that
+now we'll write l choice the variable
+that we have declared
+now for all three of them we'll make a
+separate classes that is for customer
+details we'll make a detailed class for
+flight registration we'll make a
+registration class
+for ticket and charges will make a
+ticket class
+and to
+call the functions of these classes will
+have to make the object of these classes
+so let's do that
+so we'll write
+details
+d
+d is the object name
+registration
+r r is the object name
+ticket is the class name t is the object
+name so we have created these objects
+d r and t
+now we'll use a switch statement
+a switch case statement
+and now we'll
+write l choice
+now inside the switch case first of all
+we'll create a case one
+now inside this case we'll
+have to call a function of detail class
+so let's do that but before that we'll
+write see out
+customers
+so that it looks nice now we'll call the
+function let's say the name of the
+function is information
+and now
+we'll ask the user
+to press one to go back to the main menu
+like if the user wants to go back to the
+main menu
+after filling the details or something
+like that
+then
+he or she can click on this one button
+all right now we'll take the input
+back this is the variable that we have
+declared
+now
+if
+back equals one
+then
+we'll call the main menu function
+that is the main menu will display
+and also in else block will do the same
+we'll call this function only
+and here we'll write
+press any
+key to go back to main menu
+now
+here we'll do the break
+case one ends
+now we have to create a case 2
+case 2 is for flight registration so
+we'll simply
+display a message and call the function
+we'll write
+book a
+flight
+using this system
+all right after that we'll use slash n
+and handle
+all right now we'll call this function r
+dot flights
+r is the name of the object
+and flights is the name of the function
+that we will create afterwards
+now we'll write
+break
+now we'll have to create case three
+now case raise for ticket collection
+now all we need to do is to display a
+message saying that get your ticket
+all right now we'll use slash n
+now we'll call the function
+t is the object name bill is the name of
+the function
+let's
+say now
+will display a message saying that your
+ticket is printed
+you can get it
+or you can collect it
+now we'll write press 1 to display your
+ticket
+we'll take the input and
+if back equals to 1
+then
+inside if condition
+will call this function
+display
+is the object name displays a function
+now after that we'll display a message
+press 1 to go back to main menu
+or press any key to go back to main menu
+so we'll write
+press
+ending key to go
+back
+to main menu
+all right now after that we'll take the
+input of this
+and if back equals to
+1
+then we'll write
+main menu that is we call this menu
+function and in else
+we gone
+again we will call this menu function
+to display the menu
+right after this
+break to end the case
+closing bracket and now here is the
+starting bracket
+all right so now we have to create a
+case for
+inside case 4 first of all we will
+display a message saying that see out
+thank you because in case 4 as we can
+see
+press 4 to exit so
+if a user press 4 will display a message
+saying that
+it's a slash installation and then again
+a slash t
+now
+thank you message will be displayed
+after that endl
+no
+now we'll write break
+and after that
+there would be a default case
+now in this default case a message would
+be displayed like
+invalid input or something like that
+all right
+invalid input
+please try
+again
+right after that we'll use slash n and
+l
+now
+to go back to main menu
+so that the user can try once again so
+we'll call this function main menu
+now after
+that break
+now we have to create classes like first
+of all we have to create this
+detail class in which we are calling the
+information function
+so this is the information function and
+now let's create its class that is class
+detail
+so let's do it
+class
+details
+now in the public scope
+you will declare some variables
+and
+static
+string
+name
+and let's say gender
+both of these would be string
+and
+now after that let's create the variable
+phone number
+and
+gender
+not gender age
+we have already created gender
+now age would be integer
+then there is
+address will write add
+then there is another variable
+static and
+customer id
+so let's see
+id now
+an array we have to create
+let's give it hundred
+now let's create this function
+information
+so inside this information function
+first of all we'll ask the user to enter
+the customer id
+so
+slash n
+enter the customer
+id
+after that
+now the user will enter the customer id
+c
+i d
+as you can see
+now we'll ask the user
+to enter the name
+then the name variable
+then will ask the user to enter the edge
+then there is address
+after that there would be
+gender
+now once the user has entered all these
+details then we'll display a message
+saying that
+your details are saved with us
+so right your details
+are saved
+with us
+[Music]
+all right so we have to end the class
+over here so we'll use semicolon
+now we'll create another class
+now we will create the registration
+class but before that we have to use
+some of the variables of the detailed
+class in the ticket class
+so for that
+we'll write in
+detail scope resolution operator
+c
+id
+this is the variable that we want to use
+then the name variable
+write string
+name
+then that variable gender
+so write string
+all right so now we can create this
+class
+so let's do this right class
+registration
+and now inside this class first of all
+we'll declare some variables under the
+public scope
+we'll write
+we'll declare a static variable
+choice
+then
+another variable that is choice one
+let's say
+then
+another variable back
+then
+a static float variable
+named charges
+all right
+so these are the variables now we have
+to create the function flights that we
+have called from the main menu function
+so this is the flight function now
+inside this flight function
+there is a character array
+named flight n
+now after that
+inside this array we'll put the name of
+the countries as the elements so let's
+start
+first of all is dubai
+after that there is
+canada
+then let's say another one is
+uk
+then there is
+usa
+after that there would be australia
+then let's say europe
+all right now
+using a for loop
+we will display each of these countries
+one by one
+so
+we'll write int a
+a less than
+[Music]
+six
+a plus plus
+now inside this for loop
+we'll write
+a plus one
+dot flight
+two
+so here what we are doing is
+this a plus one that is zero plus one so
+dubai will be displayed then one by one
+canada uk us australia all of these will
+get displayed and now after that we'll
+write
+flight n
+and l
+now
+all these countries will be displayed to
+the user
+so now the user have to select a country
+so first of all we'll write
+welcome
+to the
+airlines
+then
+and
+after that
+will ask the user to press the number of
+the country of which you want to book
+the flight
+so we'll write
+press the number
+so we'll take the input from the user
+see in choice
+now after that
+we'll use switch statements we'll write
+switch
+inside we'll write
+choice
+and now i will make some cases
+case one will be of dubai ks2 will be of
+canada then uk us australia and then
+europe
+so let's start with dubai
+so we'll display a message
+we'll write welcome to dubai myricks
+all right now slashing
+now again we'll display a message saying
+that
+your comfort
+is our priority
+enjoy the journey
+now
+we'll display following are the flights
+following
+our
+the flights
+all right so
+now
+we'll display first flight so right
+this is the name of the flight and now
+and l and now we have to display also
+that the timing and the date of the
+flight and how many hours will it take
+and the price
+so let's do that
+so here we'll write
+slash
+d
+then we'll write
+the date
+after that the timing
+there is 10 hours flight
+group is 14 000 let's say
+similarly
+let's copy and paste
+let's say there are three flights
+that are going to
+dubai and
+let's change the model numbers
+658
+and the time
+and the date also
+all right
+so these are the flights now we will
+ask the user to select the flight
+all right
+select the flight you want to book
+[Music]
+see in choice one
+now if
+the user chooses one
+then we have to create the condition
+you can use the switch case or you can
+do if else as well
+so let's start if choice one
+equals equals one
+that is if the user or the customer
+chooses the first flight flight then
+charges
+will assign
+the
+flight charges
+like 14 000
+and
+display a message
+saying that you have successfully booked
+the flight
+[Music]
+you can go back to menu and take the
+ticket
+will display this message
+so this is our if statement
+now we have to create else if statement
+as well
+for the condition we'll write if choice
+one
+equals equals two
+then what we'll do is
+let's just copy and paste to save time
+you can copy this part and paste it over
+here
+charges as we know the charges of this
+flight is ten thousand
+it will write ten thousand
+and its number was
+658
+all right similarly
+for the third flight as well we'll do
+the same
+the charges was 9000
+so let's do that
+the number was 498
+we have to change this one
+let's say 508
+so that the flight numbers are unique
+now in else block
+we'll write
+invalid input shifting to the previous
+menu
+so we'll simply display that
+and then we will call the flights
+function
+after that
+if the user wants to go back to the main
+menu so we'll display a message for that
+press any key to go back to the main
+menu
+[Music]
+if the user chooses one that is if back
+equals equals one
+then the main menu function would be
+called
+and same otherwise
+similarly we'll create case 2
+so let's do that
+in case two we'll just copy and paste
+this one to save some time
+all right the changes we have to do is
+welcome to canadian
+airlines
+and now your comfort is our priority
+it's all right following other flights
+so
+the motor number and number of flights
+we have to change
+let's say
+and the timings like
+and the dates and time
+it's
+2 pm
+you can change that as per your choice
+you can do whatsoever you want
+20 hours
+then select the flight you want to book
+then similarly in the first flight was
+of 24 000
+ca198
+and if you choose 2 then there would be
+29 000.
+forty thousand
+the rest is all good shifting to the
+previous menu as we have done previously
+and now again
+after this else
+we can create
+case three
+so inside this case three we'll write
+welcome to
+uk airways so right
+so now let's say to uk there are only
+two flights
+let's say there are only one flight
+to uk
+all right
+uk
+and its flight number is 798 let's say
+and the timings are
+and date is first of all 12
+and the timing is 10 am
+and it will take around 14 hours
+14 hours
+and 44 000
+rupees
+select the flight you want to book
+this is same and here i have to change
+44 000
+all right so to uk there is only one
+flight so we not need to create this
+health if statements
+so we can just cut it
+and in else block the rest is same
+so now after that
+we have to create case three
+sorry case four
+and we can copy and paste this one as
+well
+so our fourth flight
+was of
+us that is u.s airbase
+all right now we will change the name
+right
+us567
+and
+the dates
+it's a choice
+assign it 39 000 here and
+there is 42 000
+after this
+now case 5 would be of australian
+airlines so we'll write case
+5.
+and copy paste this part
+and here we'll write
+australian
+airlines
+so let's change we'll write
+yes
+and
+698
+timing date would be
+18
+9
+44 000.
+[Music]
+so all right else everything is done in
+this part
+now we'll create k6
+in case 6
+all we need to change is
+welcome to dubai my rates
+and
+we'll change it to european airlines
+european airlines then we'll change its
+name to
+eu
+498 instead of 198.98
+and the date let's say two
+time is 2 a.m
+18 hours of flight and its price is 36
+000.
+thirty one thousand
+10 am and
+all right now we have to change its
+model number as well
+all right so eu
+898
+and its price is 36 000.
+its price is thirty seven thousand
+all right rest everything is done in
+this part
+now let's create the default case
+all right
+in the default case we will write
+invalid input
+please
+no shifting to the main menu
+and then we will call this main menu
+function
+now we'll write
+break
+and close the switch statements
+all right so uh this registration
+function is done
+it's pretty long as we have created six
+cases
+of all the countries named
+dubai canada uk us australia europe
+now only one function is
+for class is left that is ticket class
+so let's create this ticket class
+all right so now after this registration
+class we'll have to use the semicolon
+so
+now before this ticket class
+we need to know that we have to use some
+variables of registration class
+and the details class in this ticket
+class so we will do the multiple
+inheritance and before that
+let's do the same thing as we did
+earlier
+float registration because we have to
+use these variables
+so we'll write
+the class name then scope resolution
+operator
+charges
+is the variable then another variable
+would be
+choice
+both of these variables is of
+registration class so that is why we are
+doing this
+all right now we will start with the
+class ticket
+we'll right class
+ticket
+then we have to inherit both of these
+classes that is we have to use multiple
+inheritance
+right public
+registration
+and then details
+so here we are using the multiple
+inheritance because we have to use the
+variables of both of these classes in
+this class ticket
+now in the public
+scope we'll start with the function that
+is bill
+void bill
+and now inside this function first of
+all we'll
+declare a variable name destination
+and we left it like this because
+we have to assign
+it
+a choice that is being made by the
+person who wants to travel to the
+country
+so now off stream as we know
+is used to create or write information
+in the files
+the object of is off stream is out f
+we have created now
+let's say the file is records.txt you
+can name it as per your choice
+in which the data
+of the flights is being stored
+now we will write inside this
+records.txt file
+so as we know
+to write inside the file the object name
+and
+then
+whatsoever we want to
+show inside the file
+xyz airlines
+uh
+details that is class name
+scope resolution operator
+c id
+then
+nl
+similarly we'll do that for name and
+gender as well
+um
+now
+when it comes to destination as we have
+left the empty space
+now the user if the user will press
+1 then it will go to dubai if if 2 then
+canada 3 then uk 4 then usa so we will
+have to do that as well
+so we'll write if
+registration as the class was
+registration
+scope resolution operator
+choice equals equals one
+then destination variable
+equals
+dubai
+and
+let's copy this part because we have to
+use else if statements as well you can
+just copy and paste all we need to do is
+else if
+now we can change it to choice 2
+and name to canada
+foreign
+now after that
+we'll simply print
+or write the destination
+so first of all we'll write destination
+and then we'll print the
+variable
+let's do slash d to add some horizontal
+space
+now
+destination variable
+all right now
+we'll write the flight cost
+because it is a variable of registration
+class
+all right now
+we have to close this
+object or file out f dot
+close
+we have closed the file
+now
+we have to display the receipt as well
+so for that we have to create another
+function within this class only we'll
+create void
+disk build that is display bin
+so inside this function
+we will create an if stream class and
+it's variable let's say would be ifs we
+all know it if stream class is used to
+read from the file
+so we are actually reading here so
+we'll write records.txt file
+now we'll use the if condition
+inside this
+so we'll write if
+not ifs that if it doesn't exist
+then it should show an error that is
+let's say
+file error
+now if the file is there then we'll use
+while loop
+and we'll check not ifs dot end of file
+that is here we are checking the file
+till the end that is every content of
+the file will check
+and ifs
+dot
+get line
+array
+100
+here we have used get line to read the
+content from the file and while loop
+will help us in doing that after that
+we'll
+print
+array and then handle
+all right after that we have to close
+this file as well
+so we'll do that ifs dot close
+now we have to close the class as well
+semicolon
+so yeah our code is pretty much done
+after this
+there was main menu and
+the main function so now let's try to
+run this one
+before that let's save it
+and let's name it
+as
+flight
+dot cpp
+all right now let's try to run this
+there are a few errors
+all right so
+first error
+is this one and
+let's check them all
+flight dot cpp
+66 line 66 there's an error
+all right
+function name is wrong flight we missed
+the t
+then
+line 466.
+in line 466
+[Music]
+where it is out f
+we forgot to write f we missed the f and
+then
+5 26
+this one is associated with the previous
+one error that is information error
+let's go to 561
+t dot display
+all right so we wrote the wrong name it
+was dis bill
+all right now let's try to run this
+again
+semicolon we forgot now
+as you can see xyz airlines main menu
+press one to add the customer details
+there's a little bit formatting error
+you can figure it out yourself
+press one to add customer details press
+two for flight registration three for
+ticket and charges and photo exit so
+let's say a new customer i am so i'll
+press one and i'll write customer id
+one
+now in the name of the customer let's
+say raj
+age of the customer is 23
+and address is
+all right
+now gender is mail
+now your details are saved with us
+all right now press any key to go back
+to the main menu we can press any key
+two three one
+then this is the main menu again
+now i want to register a flight i'll
+press two
+so these are the flights fly to the by
+canada uk usa we forgot to add some
+space we must add some space over here
+so these are the flights to dubai canada
+uk us australia europe and welcome to
+airlines they are asking
+us to press the number of the country of
+which you want to book the flight let's
+say i want to go to usa
+so
+four
+so these are the flights us567 u.s 658
+us 508
+and these are the timings and these are
+the dates let's say i want to go to
+658 us658 then i'll press 2.
+so there's a mistake by us we forgot to
+change the name of this flight we'll
+change this later and now let's go back
+to the main menu
+now let's say
+we know that we have booked this u.s 658
+but there was some
+writing error we by mistake forgot to
+write us 658 over here instead we write
+dub
+now as we know that we have this flight
+that is booked so we want to go for
+ticket and charges so we'll click on
+three
+your ticket ticket is printed you can
+collect it
+all right plus one
+to display your ticket
+as you can see customer id1 customer
+name raj mail description destination
+usa flight course 39 000
+as we know this is a 39 000 flight
+so this is
+how
+you can build this
+project
+and now let's correct our mistake
+let's go to
+australia
+us flight sorry so here it is
+let's change it to
+us
+and now let's save it
+so now it will work fine
+so this was a project on airline
+reservation system
+you can also try this project on your
+own
+all right guys with that we have come to
+the end of this session if you like this
+video on airline reservation system
+project in c plus plus
+then please give it a thumbs up i hope
+it really helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

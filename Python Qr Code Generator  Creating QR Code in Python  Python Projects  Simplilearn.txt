@@ -1,0 +1,222 @@
+hi everyone welcome to the simply Lear
+YouTube channel in this session we will
+learn how to create a QR code and then
+learn how to decode it but before we
+begin if you love watching Tech videos
+subscribe to our Channel like the
+tutorial and hit the Bell icon to never
+miss an update and before starting let
+us have a simple question to brush up on
+our knowledge and please answer in the
+comment section below we'll update the
+correct answer in the pin comment and
+your question is what does QR in QR code
+stand for and your options are quick
+record quick response quick review or
+quick restore you can pause the video
+give it a thought and answer in the
+comment section now moving on let's
+learn a few facts about QR codes QR
+codes are quick response codes used to
+store information that can used to make
+a call send a message or email open a
+website or even redirect to a location
+and a QR code can store up to 4 to 96
+characters or 7089 digits in a single
+code making it viable to hold large
+amounts of content let's see how a QR
+code is generated on web we will open
+the browser and search for any free
+website that is used to generate QR code
+code we will search QR code
+generator and we can enter any URL or
+any text to just create a QR
+code so we'll write simply
+learn and you can see your QR code has
+been generated you can download it copy
+it and send to anyone and he can just
+scan it and see the T simply
+to check it we can
+also open a QR Scanner in a mobile
+phone for that we'll just write QR
+Scanner in our Google Chrome or any
+browser and open any free one and
+just scan
+it you can see that it has scanned and
+decoded it as simply learn what we have
+encoded in it
+so let's move and create our own QR code
+scanner using python for that first
+we'll create a
+folder and name it as creating QR
+Scanner and inside it we will open the
+command prompt
+and open Visual Studio code
+I have choosen the visual studio code as
+my data you can choose any like jupyter
+notebook or P Cham any and inside I will
+create the
+file and name it as QR
+scan.
+py and now the first thing we have to do
+is import the python
+modules so for that the first module we
+would be importing is python QR
+code that will write the command pip
+install QR
+code as you can see that it states that
+the requirement is already satisfied I
+have already installed the python
+package you can use this command to
+install that and if you face any issues
+just comment down in the comment section
+and we'll get back to you
+now moving to our Visual Studio
+code we will import the
+package
+import QR
+code and now we'll use the function make
+to make a QR code for that we'll write
+QR
+code do make
+and inside we'll just copy any URL link
+or any command any contact information
+or anything so we will go to our
+browser and open the
+YouTube and search for creating a
+virtual assistant
+and
+Python and
+will copy this
+URL and paste
+it in the make function so that will get
+the QR
+code of our own video
+that is creating virtual assistant using
+python now we'll
+save this into a variable and name it as
+my
+QR and get this variable saved as a PNG
+image so that we can get it in our
+folder as our folder only contains the
+python file now
+when we save
+this let's PNG
+file now you have to save your code and
+just run
+it you can see that my qr. PNG has been
+generated so just open it you can see
+that you have got your QR code
+generated and you can
+also make some options that is scale I
+will set the
+scale equal to
+8 let's save the file and run
+it and you can see the QR code
+scanner
+now we
+will use a mobile phone you can use any
+mobile phone Android or iPhone and just
+check
+it using any QR code scanner that is
+available on your browser or you have
+any other app you can use
+that I'm using a free version on my web
+and that is QR cod scanner.
+in and on scanning I got the link and
+when I open it
+I redirected to the video that is how to
+create a virtual assistant using python
+so we have successfully made the QR code
+scanner now we have made the QR code
+scanner and we can also decode it using
+the python
+libraries so for
+that we have to install two more
+modules that is prar and and
+pillow for that we'll write the command
+pip
+install
+byar you can see that the requirement is
+already satisfied as I have already
+installed these modules and we also
+install pip
+install
+pillow this is also installed and if you
+face any issue in installing these
+packages just comment down in the
+section will get back to
+you now moving on to our Visual Studio
+code now
+we'll use the class decode first we will
+import the packages
+only
+from
+pper
+Dot pper
+import the dcode
+class and
+From
+Below import the image
+class
+now moving to decode the QR code we will
+use the decode class from P
+bar and use the image
+class and
+open our PNG file that is what you named
+as myqr
+PNG and
+now we'll store it in our variable that
+equal
+to and now we'll print what is decoded
+what would be decoded and we'll just get
+the value for that
+we'll get get the information at the
+zero
+index that is
+data we will code
+it in s
+key so yeah now
+we'll save a
+code and run it here you can see that
+you have got this link that that is
+recorded what you have encoded in the QR
+code
+scanner and now I have a question for
+you to just check whether a QR code is
+working or not now you have to
+make a task to just scan the QR code and
+see whether it's working or not for that
+we will create my
+qr1 equal to QR
+code do
+make and
+inside we will get a link for our
+website
+now we'll save the file and run
+it and we get
+also as a image for that we'll write my
+qr1 do
+save and the name of the file and add a
+scale of 7 we'll save the file run the
+file here you can see that the QR code
+has been
+generated
+and we have get
+it was it for you guys so just scan the
+QR code and check whether it's working
+or not
+so just scan it and answer is yes or no
+in the comment section
+below if it's working just answer it yes
+else no and with that we have come to
+the end of this session I hope it was
+interesting and informative if you liked
+it please let us know in the comment
+section below and stay tuned for more
+from Simply
+thanks hi there if you like this video
+subscribe to the simply learn YouTube
+channel and and click here to watch
+similar videos to nerd up and get
+certified click here

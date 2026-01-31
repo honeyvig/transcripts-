@@ -1,0 +1,715 @@
+hey traders in today's video I'm going
+to be breaking down a very simple but
+profitable Channel breakout system in
+Pine Scripts
+now before we start this is not trading
+advice I am not a financial advisor so
+make sure to always do your own research
+and make your own trading decisions
+don't trust anyone blindly not even me
+now in saying all of that this system
+surprised me it's quite a simple system
+but it does show potential so this
+originally came from a question from
+someone on my email list Neville a few
+weeks ago I asked for suggestions for
+content and Neville sent this in he said
+I would be interested in how you would
+go about coding a weekly system that
+first looks back over a certain period
+let's say 15 bars for the highest high
+value then the close must be above a 90
+EMA then the close must be higher than
+it's open then there must be a 1.25
+increase in volume so a rise in activity
+trading activity on the instrument and
+the instrument must have enough
+liquidity now two things uh first
+Neville didn't mention an exit reason so
+I'm just going to make one up it's going
+to be very simple and the second thing
+is I don't know what he means by enough
+liquidity that's subjective but
+obviously I'll add a user input and
+demonstrate a couple of methods we can
+use to filter out instruments that don't
+have enough liquidity to be properly
+traded obviously this depends on your
+account balance someone with a very
+small account can trade nearly anything
+but the larger your account gets the
+more an issue a liquidity becomes so
+let's delete this open up the pine
+editor and we'll get into today's lesson
+uh but before we do that I did slap this
+system into realtest which is a new back
+testing software I've been learning how
+to code in it's primarily used for stock
+Traders but here's the results of this
+system using a 20 position portfolio on
+the Russell 1000 so American Stock
+Market Russell 1000 20 positions no
+leverage we did get let me zoom in a bit
+here we did get pretty much identical
+return to buy and hold so this is The
+Benchmark the S P 500 spy ETF if you
+were to have bought spy at the beginning
+of this back test and held it until
+today you would have had an annual
+average return of about 8.37 and a mass
+drawdown of half your money you would
+have lost half your money in order to
+make this return on the other hand this
+really simple Channel breakout system
+has almost an identical rate of return
+but half the drawdown so I found this
+really interesting it just goes to show
+that you don't need to be particularly
+complex in your systems in order to beat
+the market I haven't done extensive back
+testing on the system this is just a
+single run back test but considering I
+haven't tweaked anything I haven't
+optimized anything it's a good
+indication that this simple system is
+quite robust so that's interesting to me
+but we'll come back to the real test
+side of things at the end of the video
+if you're interested in this stuff I'll
+elaborate on it and we get a lot of
+metrics here we get the monthly
+breakdown Mass drawdown for each year a
+lot of different um statistical metrics
+to to analyze we'll go over these at the
+end of the video if you're interested so
+hang around for that but for now let's
+jump into the pine editor and break down
+the trading view source code to the
+system all right so let's break down the
+source code here first of all this is
+obviously a strategy script I've set
+overlay to true so we can draw over
+price action I've set my initial Capital
+to 100 000 US Dollars and my default
+quantity type is a percentage of equity
+and we're investing 100 of our equity on
+every trade not really a risk management
+system I would recommend but for back
+testing purposes today and just to see
+if the system has any Merit whatsoever
+it will do I also haven't included
+commission costs here but if you're
+trading the US market commission costs
+are pretty negligible and the commission
+costs were included in my real test
+version of the script so we'll come back
+to that later at the end of the video
+now for our user inputs we have a 15 bar
+weekly bar Channel look back then we
+have our filter EMA so when 90 weekly
+bar period EMA then we have my stop loss
+trailing stop exit method for today's
+lesson since Neville didn't suggest a
+nice reason I'm just using a really
+simple 10 bar trailing stop if the
+market closes below this 10 bar trailing
+stop we exit our position for a loss or
+a profit then we have our volume
+increase so 1.25 percent is how much
+volume needs to increase a minimum of
+1.25 on the previous bar then we have
+our liquidity filter so this uh
+is spelled incorrectly for one thing so
+there's a couple of ways we can go about
+filtering liquidity and since Neville
+asked about liquidity filters in uh
+specifically I will elaborate a bit on
+this part of the script so the method
+I'm using right here is just to check
+how many shares have been traded on this
+Market on average over the past 100 days
+so we're getting down here we'll get to
+this in a moment but we're getting an
+EMA of volume over the past hundred bars
+and if that value that average 100 bar
+volume traded shares traded is greater
+than a million shares then we consider
+this a valid setup another
+filter we could use is turnover so if I
+set this to say 500 000.
+turnover filter
+we can calculate our turnover by
+multiplying the closing price
+by our volume and that will give us our
+turnover in US dollars in this
+particular case we're on a US market
+we're trading USD so this would give us
+how much USD volume was traded today so
+if we wanted to add a turnover filter
+here let me cut this out
+um this next part of the code this block
+here we're just getting our indicator
+values and our Channel high so the
+highest price that the market traded
+over the past 15 bars using our default
+input if I wanted to add another filter
+here I could say
+um let's call this let's put it up the
+top we'll call it EMA volume
+and this will be ta dot EMA volume
+um let's just hard code it to 100 bars
+but now I can copy this down into here
+and we'll get to that part of the script
+in a moment so now if we wanted to see
+the turnover let's plot turnover with
+the color of color dot purple
+and have a quick look here so now you
+can see the turnover for each weekly bar
+remember we're on a weekly bar so this
+is showing us how much money in US
+dollar terms traded each week on this
+particular Market which is Ford Motors
+as you can see it's a pretty liquid
+instrument there's a lot a lot of money
+being traded in Ford generally speaking
+now this will give us the current bars
+turnover if we wanted to get average
+turnover then we simply multiply the
+current closing price
+by our average volume over the past 100
+bars that will give us the average
+turnover in US Dollars over the past 100
+weekly bars hey guys sorry to jump in
+here this is editing Matt after I've
+recorded this video I realized that uh
+this formula for calculating the average
+turnover is actually incorrect the
+correct way to write this is like so we
+need to get the moving average of the
+volume multiplied by the close that will
+give us the 100 exponential moving
+average of turnover so this will be in
+the corrected code Linked In the pinned
+comment below and now we can add another
+filter here we can say did we trade at
+least a million shares over the past
+hundred bars and is our average turnover
+greater than let's say 500 000 US
+Dollars and I've got this input here we
+can we can use instead so those are two
+methods for filtering out low liquidity
+instruments so instruments that aren't
+traded very heavily now depending on the
+market capitalization of whatever stocks
+you're trading or whatever Market you're
+trading Bitcoin doing crypto markets
+this isn't really appropriate for Forex
+Trading because the volume for Forex
+Trading markets is dependent on the
+broker not the global markets so
+currencies are the most liquid markets
+in the world but most Brokers only show
+the volume of their brokerage so I don't
+typically use liquidity filters or
+anything to do with volume in Forex
+Trading systems but in stocks and crypto
+it's pretty important so there's our two
+liquidity filters we've got all our
+important indicator values the final
+thing to do is check our entry
+conditions so LC stands for long
+condition I could have put this all on
+one line of code but that makes it
+harder to read so I've put each
+condition on its own line first
+condition is the current close must be
+greater than our Channel high if we
+don't include this historical operator
+then the condition will never be met
+because this channel High includes the
+current bar and the current bar
+obviously cannot close greater than its
+own high so we need to check the
+previous bars is high the the previous
+bars 15 period Channel high if price
+closes above that we have a channel
+breakout but we have some other filters
+we need to check the second filter is
+that the closing price must also be
+above our EMA which in this case is our
+90 period EMA so 90 week EMA the third
+condition is that the bar must close
+higher than it's open so we need a
+bullish bar we can't have a gap up above
+our Channel high and then a bearish
+close that would not be a valid trading
+setup we need a bullish breakout while
+we're above this moving average so we
+need momentum to the upside Channel
+breakout confirmed Channel breakout and
+a bullish bar kicker to use a poker term
+and then finally we need to check the
+volume filter so we need the current
+bars volume to be greater than the
+previous bars volume multiplied by and
+this little equation here just converts
+this user input into a decimal form so I
+could have got rid of this entirely but
+then our user input would need to look
+like this
+1.02
+1.0125 would be a 1.25 increase but to
+make it more intuitive to work with the
+script I've included this formula which
+if I pull up a calculator real quick
+will look something like this so let's
+say the previous Bar's volume was 10
+shares we need today's bar or this
+week's bar volume bar to have traded at
+least 10
+times
+1 plus and then 1.25 divided by 100 if I
+close those off
+10.125 is our volume that the current
+bar must have traded in order to exceed
+the 1.25 increase on the previous bar so
+hopefully that makes sense it's pretty
+simple mathematics but it does look a
+bit confusing when you're writing it out
+in code if you're new to coding the
+final condition here is the liquidity
+filter so we need the average over the
+past hundred bars
+a volume to be greater than our
+liquidity input so a million shares in
+this case that might be a bit too high
+for certain markets you might want to
+swap these around you might want a
+hundred thousand shares traded but at
+least a million in turnover that
+probably makes more sense but I'll leave
+that to you guys to play around with for
+today's demonstration purposes this is
+fine so we're combining our two filters
+here our share our
+um
+share filter and our turnover filter
+these are combined into one condition
+and then long entry combines all five
+conditions
+um to give us our entry signal and if
+long entry is true then we enter a long
+trade we give the long trade an ID of
+long I've already specified in the
+strategy default parameters how much I'm
+risking on each trade we're risking well
+we're not risking we're investing 100 of
+our equity on each trade but because we
+have such a tight stop loss if I zoom in
+here you can see once we enter a trade
+once we get that confirmed Breakout
+over the previous bars 15 bar High the
+10 period EMA starts drawing and once we
+get a close below that 10 period EMA we
+exit on the next bar is open so that's
+our stop loss slash trailing stop profit
+system for this script and this is where
+we exit the trade if the current Buzz
+close is less than our 10 bar EMA so we
+don't discriminate between profit or
+loss we just exit so this is kind of
+like a trend following system where our
+all momentum system we're just trying to
+capture breakouts ride them for the
+short term and as soon as momentum
+um sort of slows down or reverses like
+we did here on this big red bar that's a
+good time to get out of our trade
+obviously it'd be nice to exit up here
+but good luck finding a method that can
+see into the future and tell you when
+you're going to have a big red bar I've
+never found one in all the years I've
+been trading in and researching systems
+there are some techniques you can use to
+to lock in profit once you
+um into profit but in my experience
+don't take my word for it but in my
+experience trying to lock in profits
+trying to get too creative with locking
+in profits really doesn't tend to add
+much to the bottom line simple exits
+tend to work best and for every time you
+give back all this profit you'll find
+another 10 trades where this red bar
+didn't close below the stop loss and the
+market continued much higher and so
+there's pros and cons to all exit
+reasons all exit methods we'll cover
+that in future lessons I did get a
+request to cover how exit reasons affect
+certain systems that is an interesting
+topic that we could do a deep dive into
+but for today's lesson that's it we're
+done we have our system written out very
+simple but profitable Channel breakout
+system finally down here we draw the
+channel High our blue EMA filter and if
+our position size is not equal to zero
+meaning we have an open trade then we
+draw our exit EMA the red EMA otherwise
+if we're flat you can see we exited a
+trade here and we didn't open a new
+trade until here
+so we don't need the 10 bar EMA being
+drawn
+and cluttering up our chart in between
+these two trades
+so we just stopped drawing it once we
+exit our trade we don't draw the 10 bar
+EMA until we enter a new trade
+um just like a normal stop loss would
+work so as always the source code to
+this script will be in the link in the
+pin comment below if you want to go and
+play around with this system just
+quickly we'll have a quick look at how
+it performed on different markets now
+remember we're investing 100 of our
+Capital into each trade which is not how
+a portfolio-based system would normally
+trade for me personally I can't give
+advice to you guys because I don't know
+your situation but for me personally I'm
+comfortable trading large percentages of
+my account balance on a trade if I know
+that I'm going to be exiting that trade
+very quickly if things go against me now
+if we're using high amounts of Leverage
+or trading a lower time frame that
+changes things entirely but for a weekly
+market system or daily daily bar system
+I'm usually pretty comfortable investing
+maybe not 100 percent but you know 20 of
+my account balance into a trade because
+I know that even if I lose fifty percent
+of my money on that trade that's only
+going to equate to a 10 loss on my
+portfolio level account balance and if
+you're running multiple systems on
+multiple markets on multiple time frames
+all of that tends to balance out your
+Equity curve and it's not as scary as it
+sounds on paper so anyway with that said
+let's wrap up this lesson by having a
+quick look at how this looks in real
+test all right so this is real test if
+you haven't seen this before it'll look
+very very different to plan script but
+for those of you who have been on my
+mailing list for a while where I send
+out my Weekly Newsletter which is
+completely free by the way go and check
+that out if you haven't already you can
+find the sign up form at the art of
+trading.com those of you on the list
+would know that I've been playing around
+with real tests a little bit over the
+past year or so and it's a very
+interesting piece of software to my
+surprise it's not particularly widely
+known own on the uh on the internet in
+in the trading Niche software like Amy
+broker and um what is it tradestation
+those sorts of platforms are way more
+commonly discussed and used but I've
+really really taken a liking to real
+tests specifically for stock trading
+systems for Forex and stuff like that
+trading viewers still my number one
+choice but for stock trading I do very
+much prefer real test because it allows
+a portfolio level back testing so we can
+see how our systems perform when traded
+in this case on 20 stocks simultaneously
+so in this script we can have up to 20
+positions open at any time and yeah
+let's quickly break down the code so I
+won't bother breaking down this part
+here if you guys are interested in real
+test and want me to do a sort of
+beginner guide to how to get this set up
+how to get it running let me know in the
+comments section because I'm very
+curious to see if there's any demand for
+this at all if there is uh I'll take
+some time out to show you guys the ropes
+I'm also planning to do more Pine
+connector content automated systems
+through metatrader and pinescript
+there's a lot of demand for that I know
+that's on my to-do list to do another
+Deep dive but for those of you who are
+curious about how to use realtest to
+make portfolio level back tests in the
+stock markets let me know in the
+comments section one of the other cool
+things about this software is that you
+can actually run multiple strategies on
+a single portfolio so we have a hundred
+thousand US dollars here as our account
+size and we're trading this example
+lesson that I just broke down in Pine
+script but we could also include a short
+selling system or a system that doesn't
+trade breakouts maybe it trades some
+sort of other entry reason and you can
+split your Capital across those two
+systems and see how those two system
+systems perform together how that
+influences your Equity curve you know if
+you're trading a trend following system
+simultaneously with a counter Trend or
+mean reversion system sometimes that can
+really even out your Equity curve and
+reduce your max drawdown because you've
+you're attacking the markets from two
+different directions simultaneously so
+when one system's not working very well
+the other one makes up for it and yeah
+you get the idea it's very powerful
+stuff so anyway here's our system code
+it's exactly the same as Pine script
+except the syntax is slightly different
+so we're checking if the closing price
+of the current bar is greater than the
+highest high over the past 15 bars this
+syntax is very similar to pine script
+which is also nice
+the layout of the script is obviously
+very different but again if you guys are
+interested in having me explain
+um how the scripting language in real
+test works let me know in the comments
+but anyway here are our five conditions
+I don't have the turnover condition
+um added to this the turnover filter but
+everything else is the same as the
+default settings in the other script the
+major difference between the script and
+the other script is that I've added a
+regime filter I've gone over regime
+filters multiple times in the past I'll
+leave some links to those in the video
+description and pin comment as well I've
+got lessons on how to create a regime
+filter in pinescript using the security
+function this is the same thing but in
+real tests so here we're getting the
+um 200 day moving average from the S P
+500
+ETF the Spy ETF from the S P 500 Index
+and that's one of our filters so we need
+all of our regular filters that we just
+went over to be met and we also need the
+S P 500 to be trading above its 200d
+moving average if those conditions are
+met then we have a valid breakout trade
+now when you're trading multiple
+positions in this case is 20 we need a
+way to rank which trades to take because
+some days we're going to get well more
+than 20 trading setups that meet these
+conditions here so we need to tell real
+test what order to take our trades in
+that's where score comes in set up score
+and for this we're just using the rate
+of change over the past five bars so
+that's just a percentage change over the
+past five bars so we're favoring
+companies that have stronger momentum
+than other candidates then we're just
+making sure that the company the stock
+we're looking to trade is currently a
+constituent of the Russell 1000 this is
+important to avoid survivorship bias if
+we're testing this system all the way
+back to 1991 like we are here then we
+need to make sure that we're including
+in our back test every stock that came
+and went from the Russell 1000 index
+over the past few decades because some
+of those companies have gone bankrupt
+some companies have left this index and
+we need to make sure that we would have
+traded them when they were in the
+Russell 1000 so that's very important
+that's why we are importing the Russell
+1000 list that includes the current and
+past constituents of the Russell 1000 uh
+then there's our stop-loss exit here if
+the bar closes below our EMA then we
+exit our trade here's where we plug all
+of these um conditions into our strategy
+sort of commands to tell real tests when
+to enter in exit trades and I also have
+the commission here this is the
+Interactive Broker default standard
+commission structure here's where we
+plot our information to the Chart I
+won't go over that we'll do that in a
+future lesson if you guys are interested
+in this and here's our Benchmark so
+we're just comparing how the system
+performs to buy and hold on the S P 500
+if I click test we'll run a quick test
+over every Market in the Russell 1000
+since 1991.
+test is done you can see it's very very
+quick the software is insane
+now if I click show trade list we can
+have a quick look to see make sure the
+system is doing what we wanted to and it
+is so we bought on this bars open after
+we had a confirmed breakout and we
+exited when we go to close below our 10
+bar moving average so that looks good if
+we go to show summary report
+here we can get a breakdown of all the
+metrics so we took 2790 trades we had a
+43 win rate average win was 11 average
+loss is five percent
+um we have a bunch of other metrics here
+that we can use to analyze the system we
+have a monthly breakdown of p l
+we have our correlations between the
+Benchmark as you can see here the green
+line is my simple Channel breakout
+system the red line is the s p 500.
+notice that it flat lines a couple of
+times here for quite a while so here we
+have the tech bust the uh.com bubble
+bursting so from 2002 to 2004 we didn't
+take any trades now keep in mind this is
+on the weekly chart so this was a 200
+week EMA that we're using as our filter
+normally you would use something like a
+200-day EMA so if we tweak the system a
+bit we could probably increase its
+return and maintain a low drawdown but
+anyway here is the 2008 financial crisis
+where the markets fell off a cliff our
+system went to cash and stayed in cash
+until things turned around a couple of
+years later now I know a couple of you
+are thinking what this didn't take any
+trades for a few years that's ridiculous
+why would you trade A system that
+doesn't take any trades for years at a
+time
+well what's the point for this
+particular system these periods of time
+were not profitable now obviously
+writing this recovery would have been
+very nice and we can make the regime
+filter more sensitive for example let's
+have a quick look at what would happen
+if we changed our regime filter to be a
+20-week moving average instead of a 200
+just out of curiosity let's see how
+sensitive this system is to the regime
+filter there you go you can see that
+didn't really affect our metrics much at
+all in fact we have a less a lesser rate
+of return and a slightly less drawdown
+but this kind of negligible numbers
+there so yeah now we have a 20-week EMA
+we only stayed in cash for about six
+months at a time in these examples
+and we still only wound up with a
+slightly less return so sometimes in
+trading more work does not mean more
+profit so valuable lesson now for those
+of you who off put by systems that don't
+take a lot of Trades sometimes that is
+not beneficial to the system I get that
+it's get it's boring when you're not
+taking trades I understand that
+completely and that is where the value
+of having multiple systems comes into
+play you wouldn't just trade a single
+system like this if you're a
+professional Trader you would have
+multiple uh strategies and systems
+running simultaneously for example I
+have a system that trades every day it
+takes up to 20 trades a day in the stock
+market and I also have a system that
+only takes five trades a month and
+sometimes it sits in cash for months at
+a time and so I never get bored because
+I'm always trading the daily system and
+that system's a high frequency it's very
+small profits but very high win rate and
+the monthly system is much much lower
+win rate but very big profits it rides
+Trends long-term trends so anyway just
+some food for thought for those of you
+who are freaking out when you see a
+system that doesn't trade for for a
+prolonged period of time sometimes in
+trading the best offense is a good
+defense like it's a bit
+counter-intuitive but the main goal as
+Traders is to protect our Capital so
+defensive measures are important in all
+trading systems but especially longer
+term systems and just while editing this
+video I just noticed that the the system
+actually didn't take any trades until
+1994 because
+uh it's using a 200 week regime filter
+and the script couldn't calculate the
+value of the 200 week moving average for
+the S P 500 until 1994 because at 52
+weeks per year with a 200 week moving
+average means we need about four years
+of press information to be able to
+calculate the regime filter so if we run
+our back test from 1995 from January
+1995 the system actually outperforms the
+S P 500 we got this I mean these numbers
+are negligible but but if we want to
+compare these fairly from when they
+started trading this system actually
+ends up ahead of the S P 500 quite
+significantly especially during the 2008
+financial crisis sure there was a long
+period of consolidation here where we
+did not make new Equity highs and we
+went to cash for quite a while but we
+avoided this catastrophe and that's one
+of the major benefits of a regime filter
+but anyway just thought I'd mention that
+so again this isn't a spectacular system
+it's not something I would personally
+trade but it's a good foundation for a
+very simple weekly low maintenance
+training system you only need to check
+your trades at the end of each week and
+in doing so you get the same return as
+Buy and Hold but half the drawdown
+pretty cool stuff I hope you guys found
+that interesting if you did let me know
+in the comments section if you want more
+real test stuff I'd love to show you
+guys but if there's no interest in it
+then I'm not going to waste my time but
+yeah anyway the pine script code will be
+in the pin comment below as always best
+of luck with your training thank you for
+watching this video I appreciate each
+and every one of you and I will speak
+with you in the next lesson take care
+have a great week
+goodbye

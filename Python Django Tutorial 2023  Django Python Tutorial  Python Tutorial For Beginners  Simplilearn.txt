@@ -1,0 +1,708 @@
+foreign
+YouTube channel today we are going to
+explore web development with python and
+we'll start with exploring various web
+Frameworks used for web development
+moving on we will learn what is Django
+and its key features further we'll
+understand the Amity architecture of
+Django but before we begin if you love
+watching Tech videos subscribe to our
+Channel like the tutorial and hit the
+Bell icon to never miss an update and I
+have an insightful for you guys
+that is if you are aiming to get
+certified as an AI and ml engineer and
+want to build a career in AI in that
+case you can check the professional
+certification program in Ai and machine
+learning that is in collaboration with
+IBM and Purdue University by simply run
+which will open the doors for the best
+career opportunities
+to find the details of this professional
+certification program in Ai and machine
+learning you can check the link in the
+description box below and the print
+comments
+and before starting I have a quiz
+question for you guys
+and your question is
+when was the first version of Django
+released and your options are 2004 2005
+2006 and 2007. please answer in the
+comment section below and we'll update
+the correct answer in the pin comment
+you can pause the video give it a
+thought and answer in the comment
+section
+now we will move to explore the various
+web Frameworks used for web development
+here are some of the most commonly used
+ones we'll start with Django Django is a
+high level web framework that follows
+the model view controller or MVC
+architecture pattern it provides many
+built-in features such as an orm an
+automation admin interface and a
+powerful URL routing system Django
+appears to be a MBC framework but you
+can call controller The View and the
+view the template next we have is the
+flask
+flask is a lightweight web framework
+that is easy to learn and use it
+provides a minimalistic core with
+extensions that can be added to add
+functionality as needed and next we have
+is pyramid pyramid is a flexible and
+scalable web framework that can be used
+for both small and large applications it
+is designed to be easy to use and easy
+to extend next we have the bottle
+framework it is simple and lightweight
+web framework that is ideal for building
+small applications and apis it has a
+minimalistic core and supports many
+extensions next we have analysis cherry
+pie so cherry pie is a minimalistic web
+framework that is easy to learn and use
+it provides a built-in web server and
+supports many extensions next we have is
+tornado tornado is a high performance
+web framework that is designed for
+handling large amounts of traffic and
+connections it provides a built-in web
+server and supports many extensions and
+next we have is web to py web to py is a
+full stack web framework that is
+designed to be easy to learn and use it
+provides many built-in features such as
+an orm a web-based ID and a powerful URL
+routing system there are many other
+python web Frameworks available as well
+each with their own strengths and
+weaknesses the choice of framework
+depends on the specific needs of the
+project and the preferences of the
+developer now you'll move to see what is
+Django
+so Django is a high level web framework
+for building web applications and python
+it has many features that make it a
+popular choice for web developers if I
+talk about the average salary for a
+Django developer
+in us it's 105 000 and in India it's
+rupees 8.4 lakhs per annum and now if we
+talk about the features of Django there
+are several reasons why someone might
+choose Django over other web Frameworks
+and these features include the first is
+object relational mapping that is orm
+junk provides an orm that allows
+developers to work with a database using
+python objects without having to write
+SQL queries directly this makes it
+easier to work with databases and
+reduces the amount of code that needs to
+be written next we have is automatic
+admin interface Django provides an
+automatic admin interface that allows
+developers to manage their applications
+data using a web-based interface without
+having to write any code and next we
+have URL routing Django provides a URL
+routing system that allows developers to
+map URLs to views making it easy to
+build complex web applications with
+multiple pages and Views next we have is
+template engine Django has a built-in
+template engine that allows developers
+to create HTML templates using python
+code this makes it easy to build Dynamic
+web pages that can display data from a
+database or other sources next we have
+is format handling Chang provides a foam
+handling system that allows developers
+to easily create and validate HTML forms
+making it easier to collect and process
+data from users next we have is the
+security features of Django Django has
+built-in security features such as
+protection against Crow site scripting
+xss grow site request forgery csrf and
+SQL injection attacks
+it makes a very secure to use triangle
+next we have is scalability Django is
+designed to be scalable so it can handle
+large amounts of traffic and data
+without slowing down and at last we have
+the built-in caching feature Django
+provides a caching framework that allows
+developers to Cache a frequently used
+data reducing the load to the database
+and improving performance so these are
+the features which led developers to use
+Django framework over others now we'll
+see the MVC or MVD architecture that is
+MVC his hair directed as mut
+architecture and what Django uses so
+Amity is model you template it's a
+software architecture pattern used in
+web applications development is commonly
+used in popular web Frameworks such as
+Django Ruby or rails and larval the
+workflow can be explained as follows the
+user requests a URL when a user requests
+a URL from the web application the URL
+is mapped to a specific view in the
+application then we have view processes
+the request this is the view and it
+processes the request the view process
+the request and interacts with large
+model layer to retrieve or manipulate
+data as needed the view also to create
+some context object that contains data
+that will be used to render the response
+and the template it renders the response
+the template receives the context from
+The View and uses it to render the HTML
+that will be sent back to the user's
+browser and the response is returned to
+the user the rendered HTML is returned
+to the user's browser when it is
+displayed as a web page and the user
+interacts with the page the user
+interacts with the web page by clicking
+on links filling out forms or performing
+other actions and then the process gets
+repeated when the user performs the
+action that requires another request to
+the web application the process repeats
+starting with the user requesting an URL
+overall the MIT architecture separates
+the responsibilities of the web
+application into three distinct
+components that is the model which
+manages data and business Logic the view
+which processes user requests and
+interacts with the model and the
+template which renders the HTML response
+this separation of concerns make it
+easier to develop test and maintain web
+applications Django mvt that is model U
+template is a software architecture
+pattern that is commonly used in Django
+framework this pattern divides the code
+of a web application into three main
+components that we have seen that is the
+models views and templates and we just
+see about models these are the backbone
+of any Django application they represent
+the data and the business logic and the
+views and the templates now we'll move
+on and build a simple web application
+with the help of Django now we will
+create a first Django project and for
+that
+first will go in Python projects and
+create a new folder
+and name it as
+project one
+and inside project one
+will open the command prompt
+and to create the Django project the
+first thing you need is python installed
+on your system
+so I will show you guys
+from where you can download the python
+you can download from the official
+website just go to the download section
+and click on the download python 3.1.2
+version that is the latest version so
+you have to download the latest version
+to make a Django project now moving on
+and if you want to see like which
+version is installed on your system you
+could just
+write a query
+python space minus minus
+version
+and it will show you that is 3.10.2 and
+the latest version is 3.1.2 so you can
+install the latest version as my version
+is above 3. it's okay to use that
+now uh we'll use an ID
+for our project and here I will use the
+visual studio code
+so you can use any ID which you have and
+so on but I will suggest if you are new
+and want to start with you can start
+with the visual studio code so you can
+download it from here that is for
+Windows and get it installed and now I
+will come back
+to a folder
+and we open the command prompt
+and here we'll open the
+or ideally that is video Studio code
+with the command code space period
+this will open the
+Visual Studio code for us now
+we will
+open a new terminal here
+terminal and new terminal so here in the
+terminal we will write the command for
+the Django admin to start a project so
+there's a simple command start project
+so it creates all the necessary files
+for Django project that is mvt
+architecture and before that you should
+have extensions installed on your Visual
+Studio code to get some suggestions and
+it would be good for you while writing
+the code
+so I'll show you guys what I have
+installed
+I have python that is find tele sense
+installed and I have also installed the
+Django
+okay
+so you guys can also install it now
+before running the Django
+first we need to install it
+so for that we'll just write the command
+script install
+Django
+and you can also visit py website
+don't just write Django
+py
+and press enter
+so this is the official website you can
+just copy the command and paste it in
+your command prompt
+so that it will just
+run the files and get your Django
+installed
+as you can see that the requirement is
+already satisfied I have already
+installed Django so I will not install
+the Django again so now we'll start with
+a project and for that in the terminal
+we'll use the
+Django admin command and start project
+that is the sub command of admin
+so for that we'll write Django
+admin
+start project
+and the name of the folder in which you
+want to start the project
+so we will write
+word
+as you can see that the folder is
+created and if you just open it
+you will see the number of files here
+that is init.py asgi Dot py settings.py
+urls.py and wsgi Dot POI and manage.py
+so these are all the files that Django
+gives you when you just write a command
+start project and it will give you all
+the files necessary for the Django
+project
+now here we'll run
+the manage.py file to start our server
+so for that we'll write the command
+python
+manage Dot py
+runs server and click enter
+okay so it won't be able to edit so what
+we'll do is we'll come into this folder
+that is the world folder and after that
+we can run it it states that it can't
+open the file so we'll just close this
+Visual Studio code and get back to our
+folder that was Project one and inside
+it has created the world
+so here inside this world
+folder I mean open the command prompt
+and cool out a ID that is Visual Studio
+code and inside this
+here we will get a new terminal
+and inside this terminal we will write
+python
+manage.py
+run server
+by mistake we have written the wrong
+spelling of python
+so just
+read it again python
+manage.py run server
+and press enter
+now you can see
+settings and they have started the
+development server at HTTP
+127.0.0.1 colon 8000 so we'll open this
+link
+so you can see that the installation was
+successful and this is your first Django
+project and you should be happy that you
+have run this project now moving on this
+is the default page now we'll create
+some pages and show you how we can
+create a basic project with Django so
+first we will create a app and to create
+the app we will write the command or
+first this will stop this server and get
+a new terminal and I will show you how
+we can create a new app using Django so
+to do that
+we'll just
+run a command python
+manage.py
+and you can see all the commands and
+this is the command startup which
+creates a new app so now we'll create a
+new app and for that we'll write
+python
+manage
+dot py space
+startup
+and we'll name our app
+so you could see here
+home app has been created and inside you
+could see the files that is android.py
+admin.py App Store py models.py test.py
+and views.py
+and this is a project world
+now you can see in the project we have
+settings.py file but we don't have
+settings.pify in our app
+and we have urls.py file in our project
+and we don't have inner app but we need
+to create urls.py file I will tell you
+why we have to create it
+so we have created
+a urls.power file and we'll copy the
+same content
+from the project and paste it in I app
+so first talking about the settings.py
+file so settings files will be Project
+Specific file so it would only include
+in the project and in settings we have
+information about templates and which
+database you are going to use by default
+we use sqlite that is Django uses the
+sqlite if we go here you can see the
+information about
+install apps what installed what apps
+are installed in
+by default they are installed in Django
+and the word middleware we are using
+this is about templates
+and the databases
+now
+in the home app we will create a file
+urls.py that we have created and copy
+the same from the project
+urls.py file
+and now if we move to urls
+so what you can see here is that this
+URL that is what status admin so if we
+just run our server and just run it and
+I will show you what this means material
+patterns means here
+so it has run
+the server and we have opened it here
+so
+if you write slash admin here
+you will be redirected to the admin page
+so what it shows is that the admin page
+if you just write slash admin with our
+server that is the HTTP you will be
+redirected to admin Dot sites.urls
+now if a user have any query or passes
+any query on a website the first thing
+this project will do is it will take you
+to the urls.py
+file of the project
+so this is the urls.py file of the
+project
+so it will take you there
+now in this
+what we'll do is
+you can see in the terminal that it just
+refreshes out what commands you will
+write it just refreshes out and it will
+show you on the website
+now here
+will write a path so that
+if any user comes to a query it will
+redirect it to the app or app and that
+is to the urls.py offer app
+so for that
+first we will import that is from
+django.urls
+import
+path comma include
+and we'll set a path
+that is
+if we have empty path
+then it would be included and redirected
+to
+home stored URL
+and if this path matches it will go to
+home.urls that is if it's the empty path
+now we'll go to the home app
+and
+check its
+urls.py now here we will create the
+first home page
+so for that
+we will import
+from our app from home
+will import
+views so in views.py
+we create
+all the functions
+so I will tell you how we will create it
+and how will be redirected to templates
+currently we are not creating any
+template but if we create any function
+so that would be stored in the views
+so we'll just set
+a URL path here
+so we'll set the path
+and we will
+write a function
+and we'll name the function as index
+and
+name it as home
+that is for the home page
+now
+we will move to the views.py file and in
+this file
+we'll create the index function which
+will
+do the following things and take you to
+the home page website that will create
+so from Django dot shortcuts we'll
+import render and HTTP response
+and we have imported HTTP response now
+we'll create a
+function
+and name it as index
+and inside will pass the request
+and
+will return
+HTTP response here
+and what it will
+return is
+this is Django home page
+now
+we will redirect
+to the server
+and we have to start the server again I
+think
+this one this is jungle we have deleted
+terminal and we'll create a new one
+and
+run python manage.py
+run server
+now our server is ready to go
+so it has opened and you can see this is
+the Django home page so we have created
+our home page the first one we have
+created was the default home page
+now we have our basic homepage here
+now
+we'll do some modifications and
+add other things that would be static
+and templates
+now we see what happened here is we have
+opened the port and the first query goes
+to projects url.p1 that is Project one
+URL dot py that is the word
+and here
+it has
+gone to the home dot URLs and when it
+com goes to home.urls what its state is
+if your query is blank then you will run
+the views.index function that is the
+index function in views and inside the
+index function what we are returning
+this is Django home page
+so
+this function has printed this is the
+Django home page
+Now to create other pages
+we can just go to urls.py
+and right path
+for
+others
+that is
+when we write when we have written slash
+admin it has taken to the admin web page
+now if we write
+about
+so we will create a website and
+in that there would be about section
+and for that it will
+run a function that we will create in
+views and we'll name the function as
+about only
+and we'll write the name
+about
+and similarly
+we'll create a path for
+services
+or contact us
+and in that
+and write views dot about
+and give it a name
+that is about
+so you can see the error in the terminal
+as we have just created the path for
+that but we have not created the
+function so we'll move to the views.bo
+file
+and we'll copy this function and create
+a 1 4 about and contact us and
+this would be
+contact us
+and in the views file
+we'll name the function as
+about
+and we'll return HTTP response this is
+about
+not home page about page
+and similarly
+we will create it for
+contact us
+and we'll return this is contact us page
+okay
+now we'll save this and it will go
+to our server
+and write slash
+about
+and press enter you can see it shows
+this is about page
+so our queries are working fine
+now we will create two folders that is
+static and templates
+so first we'll call
+and create a folder static
+and we'll create another folder
+and name it as template
+so from here we'll see how to use
+templates and what is the use of static
+so static is the folder in which we can
+create any file
+and we can store the data
+that is
+public that is anyone can see that data
+extract their data or use their data
+so static is used for that you can store
+your images or any file you want to show
+in public so that is stored in static
+and templates are what in which we will
+create the
+HTML pages and we will apply CSS or we
+can apply CSS also in
+static also so that anyone can use it so
+in this if we write
+this
+is a static file
+after writing this uh we need to go to
+the
+our settings.py file and in here you
+will see about the static files so this
+is a static URL and
+if you click on this link
+it will tell you
+how you can serve the
+static files and use the static files
+so this is the static files underscore
+directories so if we use this we can
+insert static files into our project
+so we'll go into settings.py and here
+you can paste this and but we need only
+one static file not more than that
+so we'll save this and move back to our
+website
+and here
+now right
+static and
+name of the file that was
+hello.txt
+slash hello Dot
+txt and if we press enter you could see
+that the static file has been extracted
+and it shows the data in it that this is
+a static file
+now we'll set the path for template so
+that we can use the templates
+project
+so for that we'll write OS told
+path to join
+and inside I'll write
+this
+underscore
+directory
+comma
+and we'll write
+templates
+no we will insert a HTML page in
+template
+so for that we'll create a
+and we'll write index dot HTML and
+inside this page
+will add something that would be
+this is our
+request
+HTML
+page
+yeah
+we'll add some body also
+that is in paragraph tag
+we'll write
+this is
+the first
+template
+and in the settings.py
+we have set the directories as base
+directly slash template yes
+you have created the folder with the
+name template only
+now we will move to our page and reload
+it so you could see this
+ID the first template we have written
+ID
+okay so this is the first template
+and if you want to create something
+good then you can use the bootstrap also
+as it is for the lazy people
+and I mostly use it
+so first I will copy the
+the root project file
+and we'll replace this with us
+and we'll see
+what it has updated so now we have seen
+what is Django and the features of
+Django and how to create a Django admin
+starter project and how to create an app
+in Django and how to use templates and
+static
+files in Django so with that we have
+come to the end of this session and I
+hope the session was interesting and
+informative if you liked it please let
+us know in the comment section below
+also do subscribe to our Channel and
+stay tuned for more from Simply love
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+foreign

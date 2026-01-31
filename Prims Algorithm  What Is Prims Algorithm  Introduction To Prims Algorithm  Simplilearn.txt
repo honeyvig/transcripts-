@@ -1,0 +1,618 @@
+hello everyone welcome to simply learns
+youtube channel today we will be
+discussing about prim's algorithm in
+data structure but before we begin let
+me tell you guys that we have daily
+updates on multiple technologies so if
+you are a geek in a continuous hunt for
+latest technological advancements then
+consider getting subscribe to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simplylearn now without any further
+audio let's get started with the agenda
+for today's discussion
+we will start this discussion with a
+brief introduction to prim's algorithm
+in data structure followed by that we'll
+deal with finding mst with prim's
+algorithm and finally we'll cover the
+coding implementation of prim's
+algorithm using c programming language
+i hope i made myself clear with the
+agenda now moving ahead let's get
+started with our first topic which is
+introduction to the prim's algorithm
+the prim's algorithm is used to find
+minimum spanning tree for a given graph
+but what exactly is a minimum spanning
+tree or mst well a minimum spanning tree
+is a subset of graph g having the same
+number of vertices as of graph g and
+edges equivalent to a number of vertices
+minus 1.
+along with these properties it also has
+a minimum cost for summation of all age
+weights included in a spanning tree
+prim's algorithm starts with a single
+node and explores all the adjacent nodes
+at every state the edges with minimal
+age weights causing no cycles in the
+graph gets selected hence we can say
+that prim's algorithm makes a locally
+optimal choice intending to find global
+optimal choice that is why it is called
+as greedy algorithm
+moving ahead let's understand how we can
+find out the minimum spanning tree using
+prim's algorithm
+now given a graph g consisting of
+vertices v and edges e we need to
+construct a minimum spanning tree g dash
+with vertices v dash equal to v and
+edges e dash equal to v minus 1
+having the summation of edge weights
+minimal this particular graph g contains
+9 vertices and 12 edges that means our
+msd g dash will have 9 vertices and 9
+minus 1 edges that is 8 edges so with
+this in mind let's create an msd for
+this graph g using prim's algorithm
+the first step in prim's algorithm is to
+choose an arbitrary starting vertex
+here we'll select node a as our starting
+vertex
+now the next step in prim's algorithm is
+to add new vertices with a minimum age
+weight
+in this case from vertex a we have two
+possible edges for traversal
+the age weight for age a b is 1 whereas
+the age weight for age ac is 6 so
+obviously we'll choose vertex b here
+since we have reached vertex b we'll
+look into the possible ages for adding
+an age with minimum weight to our msd
+hbd have the minimum age weight so we'll
+add it to our mst
+now from vertex d there is only one edge
+hence we'll directly add that hdh into a
+spanning tree
+now from vertex h there are two possible
+paths out of which the path h i has
+minimum cost thus will add it to our msd
+from vertex i there is only one edge so
+we'll directly include it in rmst now
+that i have included vertex g i am going
+to check what connected edges i have
+from vertex g but since there is only
+one edge from vertex g will just insert
+it on our mst from vertex e two edges
+are going to different vertices so we
+will choose the one with least age
+weight and that age is h e c
+now that i have included node c i am
+going to examine what connected edges i
+have to consider from vertex c
+currently out of these two highlighted
+edges i want to pick that edge which has
+not yet been included in msd and has the
+minimum edge weight but the question
+that arises here is can i add this edge
+ac into our msd
+well we cannot if we add hac to our mst
+then it won't remain a tree structure
+due to the creation of cycle or a loop
+which we cannot allow to happen
+according to the prem's algorithm thus
+in this particular case we'll choose hcf
+for insertion in rmst and finally the
+summation of age weight for this mst
+will become 30.
+also till the time you must have
+observed that this algorithm chooses the
+next vertex that offers the most
+prominent or immediate benefit
+it started with an empty spanning tree
+for maintaining two sets of potassius
+the first site was for the vertices
+included in the msd and the other one
+was for the vertices that haven't been
+included in the mst at every step this
+algorithm considered all the edges that
+connected the two sets and picked the
+one with minimum age weight from the
+adjacency matrix a group of edges that
+connects two sets of vertices in a graph
+is called cut in graph theory so at
+every type of prim's algorithm we find a
+cut of two sets one contains the
+vertices already included in mst and the
+other containing this rest of vertices
+after that we pick the minimum age
+weight from the cut and include that
+vertex to our msd set that is why this
+algorithm is called as greedy algorithm
+having said that let's dive into the
+implementation strategy for developing
+code for prim's algorithm
+the idea behind prim's algorithm is
+simple all the vertices of a spanning
+tree must be connected hence the two
+disjoint subsets of vertices must be
+connected in order to create a spanning
+tree and further this vertices should
+only be associated with the minimum edge
+weight to make it a minimum spanning
+tree in order to store these vertices
+and edges we'll create an adjacency
+matrix using 2d array in c programming
+language well the indexes of this 2d
+matrix will be the vertices where the
+values other than 0 will be the edge
+widths
+for indexes 0 1 and 2 you can clearly
+see that the adjacency matrix is having
+value 0
+that means there is no recurring
+connection or loop for these vertices so
+primarily let's add them to our graph
+structure
+for age 1 to 2
+we have the weight value 2 so we will
+add edge between
+vertex 0 and 1
+after that
+we have
+age between 2 and 1
+the value for this age weight is 3 so
+we'll add edge between 1 and 2 and
+ascend 3 as its age weight
+finally the age weight for connecting 0
+to 2 is 4 so we'll insert it in our
+graph as well in the next slide we'll
+discuss the strategy for implementation
+of a prim's algorithm
+from this example i hope you are clear
+with how we are going to maintain a
+structure of a graph using 2d matrix in
+the next slide we will discuss the
+strategy for the implementation of
+prim's algorithm
+the first step of this algorithm is to
+maintain a set for keeping track of
+vertices included in an msd once we
+create the set we'll assign a key value
+to all vertices in the input graph
+initially we are going to set all key
+values as infinite and at the runtime
+we'll assign weight 0 to the first
+vertex by doing that we choose it as an
+arbitrary starting vertex
+once done with that we'll start adding
+vertices to our minimum spanning tree
+for that we'll pick up a vertex u with
+minimum weight to insert it into our set
+after that we'll also update the key
+values for all adjacent vertices of you
+on that note let's visit a code editor
+to implement prim's algorithm using c
+programming language
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit up by simply learn click on the
+link in the description to know more
+now in order to begin with coding
+implementation we'll need to load some
+dependencies
+for this implementation process we are
+going to need a boolean set in order to
+keep track of vertices included in our
+msd that is why we'll include a standard
+boolean library in our program
+so
+hash include
+std
+dot h
+once done with this addition we'll
+define a number of vertices that we are
+going to use in our graph i am going to
+set the number of vertices to 5
+so let's do that
+hash
+define
+vertices
+5
+and if you want to implement mst for a
+larger graph then you must set the
+number of vertices to a more significant
+number now let's move to the main
+function
+the graph that i am going to use for
+generating a minimum spanning tree is
+supposed to be stored inside a 2d matrix
+so first let's have a look at that graph
+this is the graph for which we want to
+develop a minimum spanning tree the
+first step that we must take to do that
+is converting this graph into 2d matrix
+as discussed earlier the diagonal values
+will be null or zero and all the values
+will be the edge weights between two
+nodes so without wasting any time on
+this i will directly create adjacency
+matrix for this graph inside our code
+editor
+this part is about maintaining our graph
+in form of 2d matrix
+now after this
+we are calling prim semastic function
+which is responsible for generating a
+minimum spanning tree so
+let's do that here
+rims
+underscore
+mst and will pass this
+graph
+to this function
+but we haven't developed any code for
+this prims msd function but we'll do
+that now
+so let's create
+prim's msd function void
+prims underscore mst
+and will pass graph as an argument
+should be for dices
+and vertices
+to make it a 2d matrix
+now inside this function will create an
+array named key to store key values of
+all vertices
+and key
+vertices
+along with that we'll also initialize
+the parent in which we'll store our
+actual mst and boolean said to keep
+track of each and every vertex of our
+graph
+so let's create that parent
+array
+vertices
+and we'll create
+boolean
+set
+for maintaining track of all vertices
+now after this what we'll do is we'll
+set the key values of all vertices to
+infinity and we'll also make sure that
+these vertices are not part of our
+minimum spanning tree set so for that
+we'll create a for loop
+and inside this for loop we'll use
+iterator element i
+and we'll initialize this element to 0
+till
+vertices
+and will increase the iterator element i
+for each loop
+insert this loop
+we will set
+key i
+to the
+possible integer maximum value and in
+order to
+use this value we'll need to add one
+library which is called as limits dot h
+so
+we'll add it here
+hash
+include
+limits
+dot h
+okay
+after this
+we will also make sure that these
+vertices are not part of our minimum
+spanning tree set or boolean set so for
+that we'll write statement mean
+underscore span underscore tree
+i
+should be false that means empty
+and we'll add indentation
+okay
+now in order to choose the arbitrary
+index we'll set the key value of our
+first vertex to zero so that it will be
+chosen first in our minimum spanning
+tree for that we'll write statement key
+0
+should be equal to
+0
+and as we have chosen vertex 0 as our
+first arbitrary vertex so we'll also set
+the index 0 of the parent array to minus
+1.
+by doing this we are ensuring that the
+index 0 is the root node of our minimum
+spanning tree
+now to choose vertices with the minimal
+key value will create a new function
+named list key
+so let's do that
+and
+list
+underscore key
+and inside it will pass arguments end
+key
+boolean set
+and inside this function body we are
+going to set all key values to infinity
+so let's do that
+in list
+will be equal to int
+underscore max
+and
+we'll also initialize
+minimum underscore index as new variable
+now using a for loop will traverse
+through all vertices if the given
+vertice is not present inside the
+minimum spanning tree set and the key
+value is also smaller than the least
+value then we'll set the list variable
+to the key value and minimum index to
+that particular index fee
+so
+let's create that for loop
+and inside it entry as iterator element
+and we'll initialize
+it into value 0
+and
+the maximum limit for this v
+will be
+vertices
+and
+we'll increase the value of this small v
+variable
+plus plus
+now
+if the chosen vertex
+is not present inside minimum spanning
+tree set
+and and
+the key value
+for that vertex
+is also smaller than list
+then
+we will set list
+equal to
+key of
+v
+and minimum index
+to
+v
+and will get out of this for loop and
+will return
+the minimum index value
+on that node let's arrive back at our
+prims msd function
+here using a for loop will fetch the
+minimum index that we have generated
+inside a listkey function
+so let's create for loop
+we'll use count variable here
+and we'll initialize it to zero
+and we'll
+move this count variable
+till
+vertices
+minus
+1
+which is nothing but the number of
+vertices in our minimum spanning tree
+next
+we'll increase this count variable
+now we have arrived inside this for loop
+body
+now we will store that fetch minimum
+index value in variable u
+so ntu
+will be equal to list
+underscore key
+and will pass
+key
+and boolean set that is mean
+underscore span underscore tree
+and
+we will include this list node that is u
+to our minimum spanning preset
+or boolean set
+equal to true
+now here we'll use a nested loop in
+order to insert a complete edge which is
+initiating from node 0.
+inside this loop we'll further call if
+log to validate some conditions
+so
+let's create that nested for loop first
+and
+v
+is equal to zero
+to v
+table fertilizes
+v
+plus plus
+and inside this for loop we'll add
+f lock
+and we'll check graph
+u
+to v
+and and
+mean
+span tree
+v
+is equal to equal to false
+and and
+graph
+u
+v
+it's
+minimum than
+k of v
+then what we'll do is
+we'll set
+parent
+of v
+to u
+and key
+of v
+to
+graph
+you
+re
+so now you must be thinking about what
+exactly is this code is doing
+so actually what we are doing is we are
+inserting node u into our minimum
+spanning tree and once we include node u
+into our minimum spanning tree then we
+check if there is any age between u and
+v
+v is nothing but all the vertices inside
+the graph if there is h with between u
+and v then we check if that v is
+included in our spanning tree or not if
+it is not included then we check the
+value key value of v
+if the key value of v is greater then
+what we do is we set parent of v is
+equal to u
+and key value of v is equal to graph u v
+which is nothing but the weight
+between h u and v
+so that's what this code is doing
+after this what we'll do is we'll write
+one printf statement so for that we'll
+need to get out of this for loop
+and we'll write printf statement print f
+created
+spanning
+tree
+for
+given graph
+is
+backslash n so that this next part comes
+inside the next line
+and
+will also
+make a call
+to
+print
+underscore
+prim's
+mst
+function which is not created yet but
+we'll write code for it
+once done with this call and will pass
+parent
+and graph to it
+well
+now let's
+create a code
+for this print frames msd function
+and
+print
+underscore prims
+mst
+and will pass
+and
+parent
+will pass end
+graph
+with
+vertices
+and
+vertices
+now inside this function
+what we'll do is we'll write one printf
+statement
+to
+show the pattern of printing
+edge
+slash t
+rate
+slash and
+semicolon
+and in next slide
+we'll create iterator element
+and we'll initialize it to one
+and we'll extend this
+till
+vertices
+and i plus plus
+printf
+printf
+modulus d
+dash
+modulus d
+slash
+t
+backslash d
+modulus d
+and backslash n
+and will pass
+parent
+i
+comma i
+comma
+graph
+i
+and
+parent
+of
+i
+this statement will print a graph on our
+screen
+but here is one mistake
+that i have made i haven't added the
+indentation for this for loop
+okay
+i think this should be fine now
+we can say that our coding
+implementation is finished now let's run
+our code and check if it is working or
+not
+when we have received output on our
+console here that means our code is bug
+free and it works fine
+you can verify this result by drawing
+the spanning tree of output on your
+notebook and further you can compare it
+with the graph that we have shown
+previously
+furthermore if you are concerned about
+this code then don't be as we can send
+it over to you if you drop your email
+ids in the comment section below
+additionally you can also try to run it
+on your local system to understand its
+minute implementation details and
+implications
+so with this successful coding
+implementation we came to the end of
+this video
+i hope this video on prim's algorithm is
+resourceful for all of you guys out
+there if you have any queries regarding
+this topic then let us know in comment
+section below and we'll get back to you
+asap thank you so much for being here
+and do watch out for more videos from us
+until then keep learning and stay tuned
+to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

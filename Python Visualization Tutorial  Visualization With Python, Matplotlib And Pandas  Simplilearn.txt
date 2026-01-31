@@ -1,0 +1,4157 @@
+hello everyone
+welcome to this interesting video on
+python data visualization tutorial by
+simply loan
+data visualization is an essential part
+of any data analysis process
+it helps to discover hidden patterns and
+insights from the data
+so in this video we will learn how to
+create impressive charts and graphs with
+real-world data sets using python
+libraries
+our experienced instructors will help
+you learn everything in detail
+before we begin make sure to subscribe
+to the simply loan channel and hit the
+bell icon to never miss an update from
+us
+now
+let's have a look at the agenda for
+today's video
+so we will start by understanding the
+matplotlib python library
+so with matplotlib you will learn to
+create static animated and interactive
+visualizations in python
+then we will look at the cbon library in
+python
+cbond library is based on matplotlib and
+provides a high-level interface for
+drawing attractive and informative
+statistical graphs
+finally we will understand how the
+python bokeh library works
+book a is an
+interactive visualization library that
+provides highly interactive graphs and
+plots so let's get started
+matplot library today we're going to
+study the matplot library and the python
+code so what's in it for you what is
+matte plot library types of plots
+plotting graphs and sub graphs adding a
+graph inside a graph graph parameters
+title label legend
+line graphs line types color and
+transparency canvas grid and axis range
+2d plots scatter step bar fill between
+radar chart histogram contour image 3d
+surface image and then we'll hit a
+practice example pie chart
+so let's start with what is matte plot
+library
+map plot library is an open source
+drawing library which supports rich
+drawing types it is used to draw 2d and
+3d graphics
+and there are so many packages in the
+matplot library we're going to cover the
+basics and there are so many packages
+that sit on top of the map flight
+library that we can't even cover them
+all today but we'll hit the main one so
+you have a good understanding of what
+the matplot library is and what the
+basics can do you can understand your
+data easily by visualizing it with the
+help of matplot library you can generate
+plots histograms bar charts and many
+other charts with just a few lines of
+code and here we have some basic types
+of plots you can see here that we'll go
+into we have the bar chart the histogram
+boy i use a lot of histograms in my
+stuff scatter plot line chart pie chart
+and area graph
+let's start plotting them and to do this
+i'm going to be using jupiter notebook
+you can use any of your python
+interfaces for programming or scripting
+and running it of course we here really
+like the jupyter notebook for doing
+basic a lot of basic stuff because it's
+so visual and in our jupyter notebook
+which opens up in this case i'm using
+google chrome you can go up here to new
+and we'll create a new python 3 and set
+that up
+if you're not familiar with jupiter
+notebook we do have a tutorial that
+covers some of the basics of that and
+you'll look at any of our tutorials i
+usually cover a number of them showing
+how to set up jupiter and anaconda i
+myself use jupiter through anaconda in
+fact let's go ahead and open that up and
+just take a look at this see what that
+looks like you can see your anaconda
+navigator if you install it it will
+automatically install the jupiter
+notebook but that also installed a lot
+of other things i know some people like
+the qt console for doing python or
+spyder i've never used them i actually
+use notepad plus plus as one of my
+editors and then i use the jupiter
+notebook a lot because it's so easy to
+have a visual while i'm programming an
+even simple script in python i'll take
+it from the jupyter notebook and then do
+a save as you can always go under file
+and you can download as a python program
+so that will download it as an actual
+python versus the ipython that this
+saves it as
+so let's go ahead and dive in and see we
+got going here and let's go ahead and
+put matplot library tutorial and i'm
+going to turn this cell into a mark down
+so it doesn't actually run it
+you can see it has a nice little title
+there that's all jupiter notebook
+and then from matplot library
+let's import
+pi lab
+back one and then let's go ahead and
+just print
+we'll go pi lab and the version let's go
+ahead and run this so we're going to
+import our pi lab module from the
+matplot library and we find out that
+we're in version 1.15.1
+always important to note the version
+you're in probably i was reading an
+article that said the number one thing
+that python programmers struggle with is
+remembering what version they're working
+in and making sure that they're going
+from one platform to the other with the
+same version and if we're gonna graph
+things i think we need some data to
+graph so we're going to import numpy as
+np
+now if you're not familiar with numpy
+definitely go back and check out our
+numpy tutorial there's so many different
+things you can do with it dealing with
+reshaping the data and creating the data
+we're just going to use it to create
+some data for us
+and there is a lot of ways to create
+data but we're going to use the np.line
+space
+so we're going to create a numpy array
+and the way you read this is we're going
+to create numbers between 0 and 10 and
+we're going to create 25 of these
+numbers we're just going to divide that
+equally up between 0 and 10. and if we
+have x coordinates we should probably
+have some y coordinates and we'll do
+something simple like x times x
+plus 2. and let's just take a look we're
+going to print x
+and print
+y
+let me go ahead and run this
+and let's see we got going on here so we
+have our x coordinates which is 0 0.4
+0.83 etc and you can look at this as an
+x y plot so we have zero we have two so
+we have point four one six we have two
+point one seven and just as a quick
+reminder we're gonna do print np array x
+comma y dot reshape 25 comma two and the
+reason i want to do this is i want to
+show you something here
+a lot of times a program returns x comma
+y and it's an array of x comma y x comma
+y x comma y
+and so when you're working with the pi
+plot
+you have to separate it out and reshape
+it so if i start off with pairs like
+this i can reshape them if i know
+there's 25 pairs in there i can switch
+the 2 and the 25 and this is kind of
+goofy but we'll do it anyways reshape so
+i'm going to reshape my 25 by 2 back to
+2 by 25
+and if i run that you'll see i end up
+with the same output as the x y the two
+different arrays in here
+and this is important that we want x and
+y separate
+again that's all numpy stuff but it's
+important to understand that this is a
+format that matplot library works with
+it works with an array of x's and they
+should match your array of y's so each
+one has 25 different entities in it and
+then for our basic plotting of this data
+it only takes one command to draw graph
+of this data and so we use our from up
+here where we imported pi lab we take
+our pi lab and the keynote under there
+is plot for plotting a line and then we
+want our x coordinates and our y
+coordinates and we'll throw in r and the
+r simply means red so we're going to
+draw the line in red let me go and run
+that
+you can actually switch this around if
+you wanted to do different there's b
+for blue we have a lot of fun yellow
+hard to see yellow there we go but we'll
+go ahead and stick with red
+run
+and when you're doing presentations with
+these try to be consistent you know if
+the business and the shareholders send
+you a
+spreadsheet and they have losses in red
+use red for losses in your graph
+try to be consistent use green for
+profit for money you don't have to
+necessarily use green but it's whatever
+they're using whatever the company is
+using try to mirror that that way people
+aren't going to be confused if you
+switch your data around every time one
+graph has red for loss and one graph has
+blue for loss it gets really confusing
+so make sure you're consistent in your
+graphs and your coloring and something
+to know because we're going to cover
+this in a minute this is your canvas
+size so we have a canvas here and what
+we're going to do next is we're going to
+look at sub graphs okay
+so let's take our pi lab
+and create a sub plot
+and one of the things also to know when
+we're working with the
+matplot library i'm not setting when i
+do this this is my drawing canvas the pi
+lab so once i've imported the pi lab i'm
+drawing my images on there very
+important to know and with the subplot
+we're going to give it some different
+values and we're going to represent by
+rows columns and indexes
+and let's do one two one so it's going
+to be the first row
+second column and the index is like you
+can stack your graphs and things like
+that we don't worry too much about
+indexes but rows and columns we want to
+go ahead and use row one and column two
+and if we're going to have one object we
+should probably have two but before we
+do that we have to plot data onto the
+subplot so the order is very important
+and we're going to stick with our x
+comma y
+and let's do this we're going to add in
+a third parameter here remember we did
+red we're going to add shorthand dash
+dash for dashed lines so this plots the
+data into row one column two and if
+we're going to do that let's do another
+one pi
+lab.subplot and if we're going to do row
+one let's do
+column two and index two
+and this time we're gonna add g for
+green and this denotes a style and if
+we're going to set up our pi lab
+subplot there we go by lab we got to go
+ahead and plot that pi
+lab plot
+and instead of x y we want y comma x
+oops i messed up this is in the wrong
+spot
+there we go we'll move that down here
+real quick because that goes in the plot
+part so the subplot tells it the row
+column and index and the pi plot tells
+it what data in this case we switched
+them and the color and then the style
+shorthand now let's go ahead and run
+that
+and you'll see it takes this canvas
+splits it in two and now we have two
+different graphs and we have the red one
+with dashed lines and we have the green
+one which is has a little stars going up
+and if we take this and let's just um
+just for fun let's change this and run
+that with an index of one it puts them
+both on the same index and also gives me
+a warning because it's a strange way of
+doing two subplots there's this
+depreciated there's another way to do it
+but most people just ignore that warning
+because it's not going to go away
+anytime soon now that's using the same
+setup what happens if we do instead of
+this let's change the column on here and
+find out what happens
+and if we do the column
+it didn't really like that on the setup
+it just disappears so let's keep our
+column as two and let's change the row
+on the second one to two and run that
+and you'll see again it kind of squishes
+everything together and causes some
+issues so let's take the index so these
+need a unique index and you can see here
+where i made some changes i said row two
+and look what happens when i change to
+column two so i now have row two column
+two index two i squished it up here so
+you could put another graph underneath
+is what that does there's all kinds of
+different things you really have to just
+play with these numbers till you get a
+handle on them because
+you know we have to repeat it 164 times
+according to cambridge university if
+it's completely new to you and you can
+see right here where we go three run
+there we go but you can see it takes a
+little bit sometimes to play with these
+and get the numbers right hopefully hit
+the wrong one that's why let's go three
+there three there run
+there we go now it's overlapping so i
+have this doubled over here on the right
+for now we'll just go ahead and leave
+this with the
+where we have column and row two and the
+two different indexes so they appear
+nice and neatly side by side
+and then as we just saw as we were
+flashing through them we can put them on
+top of each other
+and let me just highlight that and copy
+it down here
+paste it down there and here we have one
+two one and then we'll do one two one
+also for this one and that puts the two
+subplots directly on top of each other
+gives us that warning and you can see we
+now have two different sets of data
+graphed on top of each other and you can
+also see how it did the indexes since
+one of them is from 0 to 10 that's the
+green one on the x axis and the other
+one is from 0 to 10 on the y axis so it
+took the greatest value of either one
+and then used those as a shared value
+so let's
+next look at operator description and
+we'll go ahead and turn this cell into a
+markdown and run that so it looks nice
+so fig and you remember i talked about
+the canvas earlier i briefly mentioned
+it we're going to look a little bit more
+at the canvas later on but that's what
+the figure is fid we're going to add
+axes so we're going to initialize the
+subplot add the subplot
+in rows and columns and all kinds of
+different things with this you can do
+let's look at that code and see exactly
+what's going on and i want you to notice
+that there's fig which is the actual
+canvas in the matplot library and ax is
+commonly used to refer to the subplots
+so we're creating subplots you'll see ax
+equals plt subplot
+earlier we did the pi lab so let's go
+ahead and import pi plot from matplot
+library and we're going to do it as plt
+you'll see that a lot that's really the
+standard in the industry is to call it
+plt just like pandas as pd and numpy
+array is np certainly you can import it
+as whatever you want but i would stick
+to the standards and we're going to do
+the same graph as we did above
+with the pi lab but with the plt so if
+it looks familiar there's reason we're
+doing this because we want to show you
+how the figure part works and working
+with the canvas goes but we're going to
+do the same plot as we did before and
+we'll call it fig and we're going to set
+that equal to plot figure so there's our
+figure or canvas on there and let's
+create a variable called axes and we're
+going to set that equal to fig dot add
+axes
+and in this we're going to control the
+left right the width the height of the
+canvas from 0 to 1.
+and so we can go ahead and i'm just
+going to put some stuff in there i got
+0.5 0.1.8.8
+so when you're looking at this this is a
+zero to one or you could say fifty
+percent ten percent eighty eighty
+percent but it's a control it's going to
+control your left and your right along
+with the width and the height so the
+width and the height we're gonna use
+eighty percent and we're gonna have like
+a little indent on the left and the
+right and this should look familiar from
+above x's dot plot x comma y
+and then let's give it a color how about
+red since we're recreating the same
+graph let's keep it uniform oops and it
+helps if i use a axis instead of a x e s
+i don't know where that came from but
+this looks identical to the one we had
+up above so here's our axis plot x comma
+y of red
+same graph same setup but this time
+we've added a variable equal to the
+figure dot add axes so our plot figures
+are canvas our axis is what we're
+working in and then our axis dot plot x
+comma y
+and again we can draw sub graphs let me
+put that down here
+[Music]
+just like we did before and a little
+different temptation here we're going to
+fig comma
+axes equal
+plt.subplots
+and in here it's going to be the number
+of rows
+we're going to do one row
+and columns equals two so if you
+remember before that's what we did we
+had one row with two different graphs on
+it we're going to do the same thing but
+know how we did this here's our figure
+our canvas and our axes we're going to
+create actually two different axes we're
+going to create row 1 column 2. and so
+axis is an array of information so we
+can simply do
+4
+let's do x in axes
+this is now look familiar x dot plot
+we're going to do x comma y we'll go
+ahead and make a red
+keep everything looking the same
+remember nice uniform graphs everything
+looks the same and if we go ahead and
+run this
+you'll see we get two nice side-by-side
+graphs so just as we had before the same
+look the same setup
+and just for fun let's change in columns
+to three we'll run that and now you see
+we'll have three on there and let's see
+if we make it a little bit more
+interesting we'll do in rows equals to
+two and you can see down here we're
+going to get an attribute eric's is
+trying to scrunch everything together
+so it does have a limit how much stuff
+you can put in one small space that's
+important to know you can fix that by
+changing the canvas size which we'll
+look at in just a minute and there's
+other ways to change it on here but here
+we go we can do in rows two and columns
+equals one you can see two nice images
+right above each other we'll go back to
+the original one row two columns side by
+side left to right and
+we can also
+draw a picture
+or graph
+inside another graph
+that's kind of a fun thing to do it's
+important to note that we can layer our
+stuff on top of each other which makes
+for a really nice presentation
+so let's start by uh fig we'll create
+another figure so we're going to start
+over again with our canvas we set that
+equal to plt.figure
+so there's our new canvas and let's do
+axes we'll call it axes one and two axes
+one equals fig dot add axes remember
+this from earlier
+and
+this here similar numbers we used before
+saying how big this axis is this figure
+in the axis is so this is going to be
+the big
+axes and let's do axes 2 equals
+another figure add axes and then 0.2
+0.5.4.3
+and if we're going to do this they need
+data on them so let's go ahead and plot
+some data on our axes so axes1 dot plot
+and we'll make this simply x comma y
+comma make it red and then let's go
+axes2 dot plot and let's reverse them y
+comma x comma green there we go doing
+what i told you not to do you shouldn't
+be swapping axes around and plotting
+your data in five different directions
+because it's confusing let's go ahead
+and run this and see what this looks
+like and then let's talk a little bit
+about this we talked about the 0.2.5.4.3
+and let me just grab the annotation for
+that that's left right width and height
+so we have in here that this is going to
+be left right so here's our left is
+point one in point five and we you know
+what let's just play with this a little
+bit what happens when i change this to
+point one moves it way over to the left
+so there's our point one so we can make
+this point four run that there we go so
+you can see how you can move it around
+the branches on here 0.2
+0.5 is the
+left so that's our right so see what
+happens when we do point oh let's make
+this point one
+that actually is they had it down at
+left right i thought this was wrong it's
+actually how far from the bottom let me
+switch that on here bottom there we go
+so we had here on this we can go ahead
+and put that back to 0.5 and run that
+and this is 0.3 let's make this 0.3 also
+and that is the width and then of course
+there's the height we can make that
+really tiny actually let's do 0.2
+let's run that and you can see it
+changes the height on there we make it
+even smaller 0.2 by 8.2 and as you can
+see you can get stuck playing with this
+to make it look just right it can
+sometimes take a little bit
+certainly once you have the settings if
+you're doing a presentation you try to
+keep it uniform unless it doesn't make
+sense for the graph you're working on
+try to keep the same colors the same
+position and the same look and feel
+and i mentioned earlier we can adjust
+the canvas sides so this is from earlier
+i just copied it down below we're going
+to re-plot the same data we've been
+looking at
+and what we can do is we can change the
+figure size to 16 by nine let me run
+that and show you what that looks like
+so it fills the whole screen and then if
+you are normally when you're working on
+the screen you don't worry too much
+about this but we can set the dpi to 300
+run that
+there it goes this is your dots per inch
+and if you are doing an output of this
+and you're printing a hard copy you want
+the higher quality i would suggest
+nothing under 300 if it's a professional
+print you might get a little less than
+that but whenever i'm doing professional
+graphics and printing them out on
+something 300 dots per inch is kind of
+the minimal on there you can go a lot
+higher too but keep in mind the higher
+you get the more memory it takes the
+more lag time and the more resources you
+use so usually 300 is a good
+solid number to use your dots per inch
+and you can see it drills a nice it
+draws a nice large canvas here which is
+16 by nine and then the dpi is 300 on
+here so it's a little higher quality and
+just out of curiosity i wonder how long
+it takes to draw something double that
+size 600 and you can see here where at
+600 dpi it's going to take a while there
+it goes just because it's utilizing a
+lot more graphics on there and let me
+just go back to the 300 now we'll
+actually do let's do a 100 you're not
+going to see a difference on this
+because it is web based graphics are
+pretty low
+and up here you saw i did this with the
+plot figure this works the same if i do
+figure axes subplot figure size and then
+we'll go ahead and do axes
+plot
+x comma y comma we'll stick to red
+let's go ahead and run this and you
+should get almost the same thing here
+here's our
+axis on the subplot on here with the
+fixed size and the dpi let me take this
+all out let me just remove all that real
+quick run it again there we go now we're
+back to our original figure and let's
+look at some of the other things you can
+do with this
+one things we do is we can set a title
+for the axis so axis set title you'll
+see right here since i put this on the
+axis it's the main title for the whole
+graph
+and if you're going to have a title you
+should also label so we can label our x
+label and we can set our y label in this
+case we're just going to call it x and y
+keep it nice and uniform and if we run
+this you'll see that we've added a nice
+x label and y label whoops where'd they
+go and it turns out in this environment
+that you have to put it before the title
+so let me go ahead and put it before the
+title and there's our x y and then we
+run that and of course we can also do
+upper size a little bit you can see
+what's going on a little better so here
+we have x label x if you come down here
+you'll see our x label and our y label
+we can of course change this to x
+label you can change this to y
+would be whatever you want on here of
+course and our title graph there we go
+run so here we have our title graph our
+y label and our x label all set up on
+our nice little plot and then before we
+move on to the next section let's do one
+more thing on here we have a thing
+called the legend and we're gonna do
+we're gonna set our ax legend label one
+label two up here it's a format for it
+but let's go down here and actually use
+it i'm going to do two different plots
+we're going to have axes plot x by x
+times x squared and x cubed and if i run
+this you'll see it puts two nice graphs
+on the setup on there but it's nice to
+have a legend telling you what's going
+on so for the legend we actually do axes
+since we have the two plots legend and
+on here we've created an array
+and we have y equals x squared y equals
+x cubed you can actually put this as
+whatever you want those are just strings
+and then location two and let's go ahead
+and run this and see what that looks
+like and you can see it puts a nice
+legend on the upper left hand corner
+location two we can do location three
+and run it and it drops it down to the
+bottom
+location one i can't remember where
+that's at there we go upper right so
+each one of these is a number that
+refers to the different locations on the
+screen zero kinda have to play with them
+or look them up to remember where
+they're at but they do work it just kind
+of moves around depending on where you
+want your legend out on there so on this
+section we cover the title of the graph
+the y labels and legends this is we're
+getting into some starting to look
+really fancy here so we now have
+something we can actually put out you'll
+see the title the graph looks a little
+fuzzy so i might in a web setup put the
+dpi up a couple notches maybe put it at
+200 100 might work fine just so you know
+something to notice on here when you're
+playing with these different things we
+had our subplots dpi equals oh let's do
+200 to see what that looks like
+so you can see now it's a lot clearer
+it's also larger so it's a nice little
+feature you can throw in there with your
+dpi dots per inch
+so the next section is let's look at
+some graph features we're going to look
+at line color transparency size and a
+few more things on here and oops i
+forgot the main title so we have our
+figure and our axes equals our plot and
+subplots and i'm going to do a dpi
+equals 150 so the graph comes out nice
+and large and easy for you to see and
+let's go ahead and do three plots on
+here we'll do x by x plus one so it's
+just going to be a straight line plot
+x plus x plus two
+and axis dot plot
+x x plus three this looks like we're
+doing nearest neighbor setup we're
+showing how it
+located data putting your lines on there
+between the nearest neighbors there we
+go so it draws a nice little graph with
+three lines on it one of the things we
+can do is we can control the alpha on
+this oops and you can actually see the
+when they did these lines it
+automatically pulls in different colors
+for your setup so there's some automatic
+automatic things going on in there and a
+lot of times we do that comma r where
+we're going to do color equals red
+another notation on here let's go ahead
+and run this now we have a bright red
+line down there
+and with the matte plot library you're
+not limited to red you can also use the
+one of many different color references
+as you see here with the pound sign one
+one five five dd which just is just blue
+and we can do the same thing with
+another color on here which turns out to
+be green i can just as easily do this
+green
+blue oops there we go blue and run that
+and you'll see here we have red blue and
+green and what i want to do is i want to
+make this we're going to say what's
+called the alpha on this and we're going
+to set this equal to 0.5
+so this is halfway see-through when i
+run this and it's almost going to look
+pink because you can see through it and
+let's change this just a little bit just
+to make this kind of fun let's square it
+there we go run it so now we have this
+nice square that comes up and you can
+see when it crosses it because i plotted
+these two lines after it and they have
+no alpha the red is behind those lines
+or in this case pink because we did the
+alpha halfway through so let's go ahead
+and do this alpha equals 0.5
+and oh you know what instead of squaring
+it let's take it to the 0.5 power
+that'll be kind of interesting to see
+what that does we'll just go to keep it
+squared there we go and run that and
+let's go back and look at this where it
+crosses over and the first thing you see
+right here is on the blue it's kind of
+light blue now you can see how the two
+colors add together you get almost a
+purple on there so i can clearly see
+where the red crosses the blue line and
+then the green just blanks it over
+because i didn't do any opaqueness no
+alpha on there so this is great if you
+have lots of data that crosses over and
+you need to be able to track those lines
+better and we'll go ahead and do this
+0.5 and we'll run that oops i did
+equals 0.5 let me go ahead and run that
+and so you can see right here now you
+can easily see the red line how it
+crosses the green and the blue down here
+and if we want to we can do this as the
+default is one solid so we can change
+this all to point eight let me just do
+that
+oops 58 there we go
+run
+oops i must have hit a wrong button
+there let me try that again i actually
+get rid of a bracket and let's go ahead
+and run that
+and we come down here and look at this
+you can still see where it passes behind
+them but the green dominates and the
+blue dominates because we're now at 80
+instead of 50 percent when you can do
+less that's kind of fun although at some
+point the lines kind of fade
+so 0.5 is usually the best setting on
+there we have a nice pastel here at 0.3
+and you can easily see where they cross
+over and just like you can play with the
+colors we can play with line width and
+you know let's do
+let's try dpi 100 and see what that
+looks like on my screen equals 100 and
+we'll go ahead and just take our ax plot
+do four of these lines just you can see
+how they look next to each other
+real quick here there we go
+and if i run this they should all appear
+the same it automatically does different
+colors on there so let's do color equals
+blue
+forgot my quotation marks there we go
+and we'll go ahead and just make these
+all blue just for purposes of being nice
+and uniform and then what i want to do
+is i want to do the line
+width
+width
+equals
+0.25 and let's just copy and paste that
+down here
+let's do equals one
+about 1.5
+and let's do one let's make this equal
+to 2. let's see what that looks like and
+we do that you can see it goes from a
+very thin line a 0.5 a 1 our 1.5 and 2
+which is twice the width of the one and
+if we're going to do different sizes we
+had different colors we had our alpha
+scheme let's take this whole thing here
+let's paste it down here and do another
+one
+but instead of line width let's look at
+styles and something to know here you
+can actually abbreviate this with lw so
+line width can also be point let's just
+do everything point two and let's set up
+a line style we'll do the first one
+dashes and let me just paste that down
+here
+so i'm not doing a lot of extra typing
+there we go
+take this out so we have our dashed
+we can do a dash dot let's do the dash
+dot here and a colon here there we go
+and there's a lot of different options
+we'll look at a few more as we go down
+for different ways of highlighting data
+but when you look at this we have
+everything as a line width of two and
+now we have a straight line we have a
+dashed line or a dot dash and a dot dot
+dot line
+and then another thing we can add on
+here is we're going to do here's our ax
+plot and we did x let's do x plus um
+four so it goes right on the top and do
+color black line width 1.5 so it's a
+smaller line
+and we're going to take the line and
+we're going to set dashes so look i've
+changed some of the notation here for my
+line and my ax plot so i can set my line
+comma equal to x plot and then i can
+change the line settings this way and
+when i run this let me run that on here
+you'll see the 5 10 15 10
+creates a series of dashes
+that are buried in link link in this
+case they alternate between a short dash
+and a long dash we can play with these
+numbers curiosity always has me what
+happens when you play with the numbers
+just to see what they look like let's do
+this let's paste this down here i'll do
+two of these just because they're kind
+of fun to play with and let's change
+this from 10 to
+three and we're going to change this one
+from 15
+to
+four and let's run that
+and you can see the differences in the
+lines oops very a little bit confusing
+on there because i forgot to change the
+lines are all on top of each other so
+let me change that really quick here and
+let's run that and now you can see
+here's our original dashed line
+alternating when i change these numbers
+on the second one the very end value to
+three you can see now we have dashes of
+five let's see i'm going to guess this
+is the dashes of five skip ten dashes of
+15 skip three and then it goes back to
+the beginning dash is five dashes skip
+ten fifteen dashes skip three and of
+course the last one we just switched up
+a little bit it looks a lot more uniform
+because i'm using two sets of ten or if
+i did something like this and change it
+to 30 it really becomes pronounced as
+far as the distances between them and
+instead of four let's go oh let's put 30
+here also 30 by 30. there we go really
+pronounced on that one and let's look at
+one more important group for plotting
+our data and in this we're gonna here's
+our plot we started with with the x plus
+one x plus two x plus three and did it
+in blue on this one's three or four
+different blue lines
+and this property we want to add the
+actual plots so you can see where the
+plots are on the graph and for that we
+might have marker equals o and if we run
+this you'll see it puts a dot for each
+of these and there's 25 dots because we
+have 25 x values so we actually have
+zero and each of the different values of
+x y are then plotted here with the dots
+and we don't want to just limit
+ourselves to dots
+you can also do
+plus sign that's another option
+dots is most common i'll actually like
+the dots the best if we do the plus sign
+you can see it puts a nice crosshairs or
+plus sign on there and we can do a
+marker there's a number of different
+markers you can use
+and i think this one was it s is another
+one
+which is a nice square and that's
+actually a good one that's for square o
+for
+period okay that's just kind of weird so
+you can see that probably on these
+markers another one is uh number one so
+if we run that you'll see we now have
+these little hatch marks
+and let's take oh let's just go with the
+o on this one
+by the way this works with square really
+nicely some stuff we're gonna do here on
+just a second let's do marker
+size equals two and change that to five
+and run that and you can see here it's a
+nice little tiny dot versus uh the size
+dot here this is interesting because it
+said two i thought it would be bigger
+but if you do 0.5 it gets even smaller
+and let's just do 10 to see what that
+looks like run that looks huge so marker
+size a lot of these are dependent on the
+dpi and the setups there's things that
+switch around as far as the way the size
+shows up you got to be a little careful
+when you change one setting it can
+change all the other markers and then
+let's take our square on here
+and we'll do we had marker size so we
+also have marker face we'll set that
+equal to red of course we i mean change
+the so it's up one notch we'll run that
+whoops must have mistyped something on
+here and i did it's marker face color
+equals red and so when i run that you
+can now see i have the squares on there
+with the marker face color of course we
+can mix and match these
+come down here and we'll make this
+instead of let's make this plus seven
+and we'll make this
+size 15
+marker face color
+equals
+and we'll do what green just because
+there we go run very hard to actually
+see what's going on there still 25 dots
+they kind of overlap as you can see they
+print them over each other of course if
+we really wanted to make it look
+horrible we could just make that really
+huge generally though you want something
+a little bit smaller and cuter we'll
+just try doing it this way there we go
+that's too small to even see the face
+so four you can start to see the face on
+there around four and maybe an eight
+eight might be a good number for this
+there we go eight again that all just
+depends on what you're trying to show
+and display so we've covered a lot of
+stuff here as far as our lines we've
+covered
+opaque with our alpha setting on there
+give us some nice pastels you can see
+how they overlap and how they cross over
+we covered the line width different size
+on there different formats for the line
+itself and these are all you can combine
+all these so you can have our line width
+equals two line style equals dash you
+can bring this down here also to the
+markers and then we added markers in
+just entered a circle a plus sign the
+square a little tick which uses a one
+then we had a marker size and a marker
+color face and we combined those you see
+we get a nice different series of
+representations we also briefly
+mentioned color where you didn't have to
+use like in here we used color black
+someplace up here and have to find it we
+use the actual number for the color as
+opposed to i changed them to red and
+blue so you get very precise on the
+color if you have a very specific color
+set that you need to match your website
+or whatever you're working on all those
+are tools in the matplot library so we
+have
+one more piece to formatting the graph
+so we want to show you and then we have
+two big sections we're going to go over
+the different graphs that they have
+along with a challenge problem so let's
+go to the last section we're going to
+look at is limits we're going to limit
+our data
+so this first primer is going to paste
+in there we're going to create our
+subplots one two so one row two columns
+we're gonna do a figure size of 10 comma
+5. this should all look familiar now
+since we've done a number of them and
+we're going to go ahead and plot and
+this is an interesting notation you
+should notice here our axis zero so one
+we've used instead of you can just
+iterate through them but they're just an
+array so it's an array of zero is still
+the axes of the first axes out of two
+and we're going to plot x
+x squared x
+x cubed line with two so we're going to
+go ahead and just plot two graphs right
+on top of each other without doing
+multiple plots on here and we'll set the
+grid equal to true on here let's go
+ahead and run that and you can see here
+our two plots with the x value going
+across
+and i'm going to do
+something similar and by the way as you
+can just if you look at it you can see
+the grid on there that's all that is
+easier to spot the data going across
+we're going to take the same
+data for axes one so we have our plot of
+x x squared x and x cubed line with two
+and this time we're going to take our
+axes one and do y limit
+it's actually set underscore y limit
+this is the y axis so it's going to be
+an array of two two values and we'll do
+0 comma 60 i'm just making these numbers
+up the guys in the back actually made
+them up i'm just using their numbers
+we're going to set the x limit
+and we'll set the x limit as
+don't forget our brackets there
+two comma five
+so it's the same data going in and but
+we're setting a limit on it let's go
+ahead and run that and let's see what it
+comes out of and here we have the y
+limit zero to sixty so we're looking at
+just the lower part of this curve here
+up to here and we have the x limit two
+to five so that starts right here at two
+and you can see very different graphs
+this is kind of nice because you could
+actually put one of these on top of the
+other if you wanted to draw focus to one
+part of a graph remember how we did that
+earlier one inside the other but just a
+quick note you can easily limit your
+graph and re kind of reshape the way it
+looks quite easily and we can also add
+that grid down there if you want a grid
+we'll run that and add the grid in there
+oops i guess you have to do the grid
+beforehand
+switch that there we go sometimes the
+order on this is really important so you
+may double check your order when you're
+printing these things out it also helps
+if i change it to one so in this case
+might not be the order i wonder if i'll
+go back here as one there we go so it
+doesn't matter the order and grid but
+you can set the grid for easy viewing
+here nice setup on there but you can see
+how we can limit the data
+so let's start looking at some other 2d
+graphs and make this cell a markdown so
+we run it as a nice pretty title to it
+and let's go ahead and create some data
+with an np array we'll do
+0 to 5 on here there we go and let's
+look at four common
+graphs we'll put them side by side so
+we'll do a figure our axes equals plot
+subplots one four columns and then
+figure size hopefully it'll fit nicely
+on here it seems to do a pretty good on
+here and i'll go and just run that since
+we're in there run you'll see i have no
+four blank plots on here
+and we'll start with axes of zero let's
+set title
+and we want this to be a scatter plot
+a scatter plot just means it has a bunch
+of dots on it so here's our axes of
+zero
+dot scatter easy to remember scatter a
+bunch of plots on there we'll do our
+n or we can do x or n there we go and
+let's go ahead and do axes set title
+scatter i've already did that we're just
+going to do scatter
+that's how you do it on there notice how
+you create a scatter plot with simply
+with the scatter control and we'll do
+let's do the variable x x
+plus let's throw some randomness in here
+usually scatter plots are have a lot of
+random numbers connected to them that's
+why they do them on there and so the
+bigger the x gets the bigger the
+randomness so 0.25 times the randomness
+and what we should end up doing here is
+with the scatter plot and you can see as
+you go up it just kind of has some
+random numbers and moves up and down the
+line
+but plus just the points so if you
+remember from back up here where we did
+marker
+this is plotting basically just the
+marker so it's a scatter plot
+probably less used is a step plot so for
+exes one we'll go ahead and do a step
+plot so you can see what that looks like
+and this time we'll use our n value
+instead of x we generated that end value
+up here and so for this we have n
+n times 2 our n squared n times 2 n
+squared line width equals 2 and if we
+run that it creates a nice step up
+let's see so we've got a scatter plot
+we've got a step
+plot let's do a bar plot
+and we'll use the same formula in n
+squared alignment centered because you
+can have them left or right with 0.5 and
+alpha if you remember correctly that's
+how opaque it is
+let's see what that looks like on there
+so we have some nice you can see here a
+nice bar plot it should look very
+similar to the step plot but colored in
+and we can change the width let's see
+what happens we do 0.9 run
+and if we take width out completely
+run that you can see it starts coming
+together on there and we can change the
+alpha we can take the alpha out too and
+run that so now you have the solid
+colors and if we take out the center
+and run that
+everything you really can't see the
+shift on here because that's actually
+the default on this but these are common
+settings for the bar graph let me just
+put them back in there there we go
+alignment center and alpha now i can't
+say i've used the step craft very much
+there's certain other certain i guess
+domains of expertise require a step
+graph but the scatter plot and the bar
+graph very common especially the bar
+graph and we'll look at histograms here
+in just a minute so i use histograms a
+lot especially in data science but this
+is nice if you have very uh concrete
+objects somebody how many people wearing
+yellow hats that kind of thing but if
+we're going to do that let's go ahead
+and do the last one which i see a lot
+more in the sciences certainly using the
+data science but more like for mapping i
+saw publication on uh solar flares and
+they were discussing the energy and so
+filling in the graph gives it a very
+different look so we're going to do the
+fill between and it's just like you
+think it'd be it's filled between but
+with a underscore between them and we'll
+do x and x squared and x and x cubed and
+we'll do color green and alpha again in
+case you had other data you want to plot
+on there you can see it forms a nice
+squared coming up here and also if you
+look at the bottom one is your squared
+value the upper line is your cubed value
+and then it fills in everything in
+between
+if you remember from calculus this would
+be if you had like a car a motor and
+efficiency they would talk about the
+efficiency going up and the loss and
+you're looking for the space or the area
+between the two lines so it gives you a
+nice visual of that now let's look at a
+few more basic two dimensionals so we
+have our figure figure size on here
+we're going to do a radar chart to be
+honest i've never used a radar chart in
+business or in data science i can't find
+a reason to use one now so the first
+line for doing a radar chart we have to
+add axes and the figure and with this
+this actually creates our oh let's let's
+run it so you can see what it creates it
+creates a nice looks like you're on a
+submarine and you're tracking the hunt
+for red october or something like that
+and it needs all of these the polar is
+the fact that we're doing polar
+coordinates
+zero zero point six point six has to do
+with the size if you take out any of
+these things and run them you get just a
+box
+if you take out the other half you
+pretty much get nothing in there and if
+you change these numbers and change them
+a little bit you can see it gets bigger
+they had point six on here i'll go ahead
+and leave it as one because that's just
+kind of fun that's all about the size on
+here the height and the width and then
+let's create some data t equals np line
+space and this is 0 to 2 times np times
+pi so if you remember that is the
+distance across and we're going to
+generate a 100 points
+so this is just a thing of data we're
+putting together then we simply do an ax
+dot plot and in this case let's do t
+comma t which would be a diagonal line
+on a regular chart and we'll give it a
+nice color equals blue
+and line width equals three let's see
+what that looks like and we can see here
+a spiral coming out remember this would
+be just a diagonal line on a regular
+chart what happens if we take this and
+instead of t
+times 0.5 there we go
+and you can see it slightly alters the
+way it spirals out we can do t times two
+spirals out a little quicker so it's
+kind of just a fun i've like i said i've
+never used a
+radar chart it's a column but you can
+always think of radar submarine kind of
+looks like one of those or in an
+airplane
+and none of this would be complete if we
+didn't discuss histograms oh my gosh do
+i use a histogram so much and we'll use
+our numpy that we have set as np to
+generate oh looks like we have a hundred
+thousand variables we're going to set
+equal to n and of course we create our
+figure and our axes from subplots 1 2
+figure size 12 14. so we're going to
+look at two different variations of the
+histogram and we'll set a title default
+histogram set our title there and then
+this is simply
+hist for histogram and we'll just go
+ahead and put in our n in there and let
+me run this and see what that looks like
+and let's talk about what is going on
+here so we generated an array here of
+data 1000 random arrays it looks like
+they're mostly between -4 and 4 and then
+it adds up each one it says 0 you have
+35 000 that are zero so that's what's
+most common on here and we have 20 000
+that are somewhere in this range right
+here between the minus two and well it
+looks like one and minus two and
+somewhere between zero and one there's
+thirty thousand numbers so all this is
+saying is this is how common these
+variables are and this gives you this
+point in so many directions when you're
+looking at data science to go ahead and
+run your histogram so you should always
+have your histogram and you can always
+put limits and all the other different
+things on your array just like you did
+on the other graphs on there and then
+we're going to do a cumulative detailed
+histogram
+and all it is is a histogram let me just
+do that
+and we set cumulative equal to true
+and bins equal 50. and i really want to
+highlight the the cumulative equals true
+is important but we can now choose how
+many bins we have in the first one it
+kind of selected them for us in this
+case let me go ahead and run this and
+you'll see it has the prints of data out
+for us and here's our whoops
+must have missed oh there we go it
+doesn't help that i put it over the old
+one there we go okay
+so now you have your default histogram
+and then we have a cumulative histogram
+and we should have 50 steps in there and
+let's just find out if that's true not
+so much by counting them i'm not going
+to count them if you want to you can
+count them let's just change it to 10
+and see what happens and we see here we
+have now 10 counts of that
+and we could set that for five
+and run that
+and then we have our five on there and
+we go ahead and take the cumulative
+equals true out just so you can see what
+that looks like and let me run that on
+here too
+that looks just like it did before i
+think there's what one two three four
+five six seven eight they have eight
+different bins on here is what the
+default came out of
+put that back in there run
+and so now it should look almost
+identical and it does and then we can
+put the cumulative back in see what that
+looks like with the cumulative
+and run that
+and we can see how that shifts
+everything over and has a slightly
+different luck
+wait it shifts it all to the right no it
+doesn't actually shift it to the right
+it's cumulative so it's the total of the
+different occurrences and so what that
+means is like if you consider this like
+for the year of rainfall we have like
+day one you had a little bit of rain day
+two we have more rain and so if you look
+at the number this is a hundred thousand
+thirty five thousand so it's a
+cumulative detail the histogram of the
+currents as it grows and rainfall is a
+good one because that would be a
+cumulative histogram of how much rain
+occurred throughout the year and we're
+going to look at two more graphs we've
+already looked at a bunch of them we
+looked at our radar graph we've looked
+at scatter step bar fill in
+basic plots we've looked at different
+ways of showing the data and we can
+increase the size of the line the look
+the color the alpha setting
+so let's look at contour maps let's put
+that in there there we go draw a contour
+map and before we draw a contour map
+we need to go ahead and create data for
+it and if you have contours your data is
+all going to have three different values
+so let's go ahead and create the data
+here we have our you'd import your
+matplot library your numpy so we have
+our numbers array
+and we'll import matplot.cm
+and that's your color maps so you have
+all these different color maps you can
+look at there's like hundreds of color
+maps so if you don't want to do your own
+color you can do your own color map
+they're pretty diverse and of course our
+plt we're gonna our pi plot and to
+generate our different data we're going
+to create a delta
+0.025 and we'll start with x and we're
+going to create an array between -3 and
+3 and delta increments of 0.025
+and we'll have our y we'll do something
+similar and then we'll create our x y
+into a mesh grid again these are all
+numpy commands so if you're not familiar
+with these you'll want to go back and
+review our numpy tutorial and we'll do
+an exponential on here minus x squared
+minus y squared for z1 we'll do a z2 so
+we have two different areas and z equals
+z of one minus z2 times two
+so we've created a number of values here
+and let me go ahead and run this and
+let's plug that in so you can see where
+those values are going so once we've set
+these we're going to create our figure
+and our x from our plt subplots we're
+going to create the variable cs and this
+is going to be our contour so right here
+cs is our contour surface and we're
+feeding it x y and z
+if you remember x y we created as our x
+and y components using our mesh grid and
+you know what let's do this just because
+it's kind of good to see this let's go
+ahead and print
+x and let's print
+y and i always like to do this when i'm
+working with something that's either is
+really complicated in this case is what
+we're looking at or you don't understand
+yet so we've created a mesh grid we have
+x y and when we're done with this we end
+up with here's our x
+and this set of values and our y so
+those are x and y coordinates and then
+we've also created z based on our x and
+y so we have x capital x capital y and
+capital z is our three components x and
+y be in the coordinates while z is going
+to be our actual height since we're
+doing a contour map so we created our
+contour map from our x y and z
+coordinates we want to go ahead and put
+in a c label maybe we want to go ahead
+and do a title on here
+we'll put that in our set title and this
+is a
+contour there we go contour map
+and let's go ahead and run this and see
+what that looks like
+and you'll see we generated a nice
+little contour map there's different
+settings you can play with on this but
+you can picture this being you're on a
+mountain climb and here we have a line
+that's represents zero maybe that's sea
+level and then moving on up you have
+your contours of 0.5 and then -1 and
+different setups little hills i guess if
+it's minus that's like a pit so i guess
+you're going down into a pit at minus
+five and minus one but on the other side
+you can see you're going up in levels so
+here's a mountaintop and here's like a
+basin of some kind and in data science
+this could represent a lot of things
+this could also be representing two
+different values and maybe profits and
+loss i don't know if i'd ever really do
+that as a contour map but i'm sure you
+can be creative and find something fun
+to do with a contour map and then we're
+going to look at one last map which is
+the 3d map and those are can be really
+important as a final product because
+they can show so much additional
+information that you can't fit on
+two-dimensional graphs
+there we go draw a 3d image
+and so we're going to import from our
+mpl toolkits the implant 3d and the axis
+3d we're going to import axis 3d this is
+what's going to let us work with the 3d
+image and this should look familiar
+we're going to create another figure
+just like we did before figure size 14
+by six that's a good fit on the screen
+we'll go ahead and run that
+so we have our figure and let's go ahead
+and take our x and we're going to set
+that equal to fig dot add subplot that
+should also be familiar from earlier and
+we're going to work with this sets the
+settings for the projection we're going
+to use one two one projection 3d and
+we'll see what that looks like in just a
+minute and we just created some
+three-dimensional data here before
+where we had x y and z capital x y and z
+so we're going to reuse that data we're
+just going to use that since this also
+this is also a three-dimensional image
+so let's use that for a
+three-dimensional graph and we simply do
+ax plot underscore
+surface
+and our capital x
+capital y
+capital z so there's our data coming in
+and we're going to add some settings in
+here we're going to do r stride 4 c
+stride 4 and line with 0. i'll show you
+what that is here in just a minute let's
+go ahead and run that so we can see our
+graph
+and of course it helps if i don't add an
+extra comma in there and you can see it
+generates this really beautiful
+three-dimensional graph
+so let's take a little bit time to
+explore some of these numbers we have
+going in here
+we have the r stride 4 the c stride 4
+and the projection 3d projection 3d is
+the important one because that's telling
+us that this is a 3d graph here
+so what are these first numbers one two
+one let's just change one of these i'm
+going to change this to five
+and it's going to give me an error let's
+change it to one
+and that didn't work let's change this
+middle one to three instead and you're
+gonna see how it starts reshaping the
+size and how it fits on the screen
+and we'll change the first one to two
+we'll run that one
+and again it's changed the dimensions
+and the size and how it fits on here
+play with these numbers to get a nice
+look and feel for it part of it is the
+tilt and the angle
+i'll do seven on this one
+there we go you can see it really
+shifted it there
+but again that changes the size now fits
+on the canvas
+but we'll leave it at the one
+two and just so you get a good look at
+what we're talking about here this is
+column width and index from before
+if we do one one one you can see that it
+now spreads it out all the way across
+uses the whole set up on there so this
+has to do with the size and how big you
+want it to be now there's one term that
+we didn't cover in this yet but we've
+used it throughout the whole setup
+and i'm just going to type that down
+here even though we're not going to go
+into detail and that's the term heat
+map you might see that it's kind of
+starting to lose ground as far as a
+common reference but there sure are a
+lot of people who still talk about heat
+maps what is a heat map well it is
+simply a color map that's all it is so
+if you ever see the term heat map
+that refers to the fact this is in
+different colors representing different
+heights
+that one is in the heat map but you can
+see up here we switched into
+let me go back up here here we go this
+one has different colors for the
+different values
+a lot of times you'll use like instead
+of x and y you might do a heat map
+where you have a fourth value and the
+fourth value represents the color and so
+you'll see this 3d image into nice
+colors represented by heat map that's
+all it is so if you see the term heat
+map that only means we're plotting some
+of the data in color to make it stand
+out or to give it a fourth dimension in
+this case
+so we've covered a lot of things on
+matplot and that brings us cover all the
+basics so that brings us to practice
+example and this is going to be the
+challenge for you and let me go ahead
+and change our cell
+cell type markdown and run that so it
+looks pretty
+practice example write a python program
+to create a pie chart of the popularity
+of programming languages
+okay excellent
+and if you're going to have a challenge
+we need some data and i'll just throw in
+our import our matplot library at the
+beginning you should do that
+automatically and so for our data to
+plot we're going to have our languages
+we're going to have python we're going
+to have java php javascript c-sharp c
+plus plus so those are six categories
+and then we have our popularity oops
+misspelling there popularity we'll give
+the first one 22.2
+java 17.6 and i don't know if these are
+real numbers they pulled
+my guess is that they might have just
+been made up because i don't know if
+python's really that much more popular
+than the other ones maybe specific to
+data science because python is very
+popular in data science right now
+because it has so many options the only
+other program that's highly used
+exclusively for data science is r
+so python's big and python also does a
+lot more it's a full programming
+language where r is primarily for data
+science they didn't put r in here so we
+have python we have java we have our php
+and you can see the different values
+they've given it or different
+percentages
+and i did add these up does not add up
+to 100 it adds up to 71 percent or
+something like that
+and then we're going to give colors and
+we've chosen these guys in the back
+brought in these colors i'm not sure
+what these colors are we'll find out in
+a minute so i'll be exciting but you can
+see they're using the actual color
+values you can pull off of a color wheel
+or something like that you could have
+just as easily done blue red green if
+you're too lazy to pick the exact colors
+and then let's go ahead and solve this
+and see we got here we're going to do
+something a little fancy just because we
+can the first thing we're going to do is
+we're going to use a variable called
+explode and you'll notice that there's
+six variables in here so that matches
+our six different categories and the
+first one we've done is point one and
+then zero zero zero zero zero point one
+when we put this in here under the
+explode in the plot it will actually
+push that square out so it's a really
+cool feature to highlight certain
+information on a pie chart
+and this is simply
+plt dot pi
+and we're plotting
+popularity there we go
+and before we add in all the really cool
+settings for this let's go ahead and run
+it and you'll see we generate a nice
+flat pie not too exciting there and then
+we'll go ahead and put in all the extras
+i talked about explode we can explode
+one of the values out so here's our
+explode equals explode labels as
+languages because we want to know what
+the different colors mean here's our
+colors equals colors our auto picture
+and this is standard print format so
+that's a python set up on there and
+that's just going to put the value on
+the pie slice and then we're going to
+add shadow because it just looks cooler
+with a shadow gives a little 3d look and
+we'll do a start angle of 140. let's go
+ahead and run this and take a look and
+see what comes out of that
+and look how that changes the whole
+setup so here's our labels there's our
+value we put on there there's our slice
+that's pushed out there's our shadow a
+3d effect
+and then we started at 140. we could
+also rotate this let's just do this
+angle
+90
+and if we run it
+you'll see the blue pi slice has moved
+up a little bit we could actually do
+actually let's just take the whole
+starting triangle out and run it'll
+default to zero this is what it looks
+like if it defaulted to zero so
+depending on where you want the
+highlighted slice to appear usually you
+want that appear on the left because
+people read left to right and so it
+draws a focus onto in this case python
+and how great python is i'm a little
+biased we're teaching a python tutorial
+so it should be understandable that
+we're looking at python and one last
+reference before we close you can go
+over to the matplot library dot pi plot
+set up and if you go underneath there
+the different functions on there you can
+look this up on their website you'll see
+a full list and this is why it's so
+important to go through a tutorial like
+this because this list is just so
+massive trying to figure out like here's
+our bar plot there's a bar h you can add
+barbs there's a box plot we didn't cover
+c labels a totally different kind of for
+your contour plot you can set up in
+there if you go down here we have our
+figures we used on there we showed you
+the basics how to do the figure you'll
+see some
+closer references on those
+there's a histogram down here h i s t
+there's also the his 2d makes a 2d
+histogram plot h lines all of this these
+are all the different commands that are
+underneath of here and you can see it's
+pretty extensive
+we've covered all the basic ones so that
+you know have a solid ground to look at
+these different options so when you come
+to these functions some of them are
+going to look a little off or not off
+will look unfamiliar but you'll still
+have the availability to probably
+understand most of this and have a basic
+understanding of your map plot library
+c-bond library in python
+we will learn how to visualize data and
+draw insights with different charts and
+graphs using the c bond library
+these visualizations are often referred
+to as plots in python
+so what is c bond in python the c bond
+library in python is a widely popular
+data visualization library that is
+commonly used for data science and
+machine learning tasks
+it is built on top of the matplotlib
+data visualization library
+and allows you to perform exploratory
+data analysis
+using cbon you can create interactive
+plots to answer specific questions about
+your data
+it helps you find trends in your data
+that you can't notice just by looking at
+the data
+now to understand the c-bond library in
+detail and how to create different plots
+and know the data better we'll be using
+two data sets in our demo
+the first one is the empty cache data
+set and the second is the popular iris
+flower data set
+now let's head over to our jupyter
+notebook and start with our
+demonstration
+so i am on my jupyter notebook let me go
+ahead and
+rename the notebook i'll say
+cbon
+demo
+we'll rename it
+all right
+you can see i have
+the first two cells already filled in
+so while working on an exploratory data
+analysis project using python you will
+need numpy pandas matplotlib and cbon
+libraries for data manipulation and
+visualization
+so let's import these libraries first so
+i've already written import numpy as np
+pandas pd matplotlib.pi plot as plt c
+bond sns
+all right so i'll hit shift enter to run
+this
+first cell
+alright
+now using the read underscore csv
+function that is present in the
+pandas library i am importing my data
+set that is empty cars i'll tell you
+what empty cars is about this is a csv
+data set and here i have given the
+location where my data set is present
+let's run it
+all right
+now
+let me go ahead and print the first
+five rows
+of my empty cars
+data frame
+for that i'm using the head function
+if i run it
+okay you can see here
+it has given me the first five rows the
+index starts from zero till four so
+total five rows of information
+and
+you can see these are the columns that
+are present in the empty cast data set
+the first is the
+model of the car now just let me give
+you a background about this data set
+so the data is taken from the 1974
+motor trend us magazine
+it has information about fuel
+consumption and 11 different aspects of
+automobile design and performance of 32
+cars
+all right
+so here we have the first column as the
+model of the car and then we have mpg
+which is
+miles per
+gallon
+then we have cyl which stands for the
+number of cylinders in the vehicle or
+the car
+then we have disp which is displacement
+in
+cubic inches so these all values are in
+cubic inches
+after that we have hp which is cross
+horse power
+then we have something called as
+dr80 which is basically the rear axle
+ratio
+then we have wt which is the weight of
+the
+car in pounds
+so think of it as
+weight multiplied by
+thousand pounds
+all right and then we have q sec which
+is 1 4 mile time this is a measure for
+acceleration
+then we have something called as vs this
+is
+the type of
+engine for each of the vehicles so 0
+stands for
+v shaped engine and 1 stands for
+straight engine
+then we have am which is basically
+the mode of transmission so
+zero is for automatic transmission and
+one is for manual transmission
+then we have the number of
+forward gears present in the vehicle and
+then we have something called as carb or
+carb
+this stands for the number of
+carburetors so carburetors is a device
+for supplying a spark ignition engine
+with a mixture of fuel and air
+all right
+now
+we'll use the info function to print the
+summary of the data frame so the info
+function returns information regarding
+the index data type column data types
+then we
+have the information about normal values
+and memory usage
+so i'll write my data frame name which
+is empty cars
+dot i'm going to use the info function
+let's run it
+and here you can see we have
+all the columns
+there are total 32
+entries from 0 to 31 so
+data about 32
+cars
+then here you can see the date types
+and the memory usage
+now moving ahead
+let me
+just print the
+shape of the data frame that will give
+you the number of rows and columns
+present
+i'll use the shape attribute
+you can see here there are total
+32 rows and 12 columns in my data set
+now the c bond library provides a range
+of plotting functions that makes the
+visualization and analysis of data
+easier
+so we'll cover some of the crucial plots
+that are available in cbon
+so let's start with a bar plot
+i'll give a
+comment as
+bar plot
+now
+first understand what a bar plot is so a
+bar plot gives an estimate of the
+central tendency of a numeric variable
+with the height of each rectangle
+it provides some indication of the
+uncertainty around the estimate using
+error bars
+now to build this plot you usually
+choose a categorical column in the
+x-axis and a numeric column on the
+y-axis
+so
+we'll create a bar plot between the
+number of cylinders and the miles per
+gallon
+so let's start
+i'll
+declare a variable called res which
+essentially stands for result
+then i'll use sns
+which is for the cbon library
+i'll say sns dot
+followed by my bar plot function
+and inside the function
+i'll pass in my
+data frame name that is empty cars
+and then
+for x axis within the bracket
+using quotation i'll give my column name
+as cylinder so this is going to be my
+x-axis
+and for y-axis i'll say
+my data frame name empty cars
+then the square bracket followed by my
+y-axis column that is miles per gallon
+now to display i'm going to use the
+matplotlib function i'll say plt dot
+show
+let's run it and we'll see the result
+there you go
+so here you can see on the
+x axis we have the number of cylinders
+so in our data we have
+vehicles with
+4 6 or 8 cylinders
+and on the y axis you can see the miles
+per gallon
+now what essentially this graph tells us
+is that
+when the number of cylinders in the
+vehicle increases my miles per gallon on
+mpg for the vehicles decreases
+and you can see these
+black lines
+so these lines
+indicate
+the uncertainty around
+the estimate using error bars
+all right
+now you can create the
+same bar plot using another way
+now we will exclusively define the x and
+y axis columns and also pass the name of
+the data frame using the
+data argument
+let me show you how to do it
+i'll use the same variable name res
+which stands for result i'll say sns dot
+bar plot
+now inside the
+bar plot function
+i'm going to exclusively define my x
+axis i'll say x equal to
+i'll pass in my column as
+cylinder
+then i'll say y-axis
+which is miles per gallon
+and then using the data attribute
+i'll pass in my data frame name that is
+empty cars
+and finally we'll write plt dot show
+let me run it
+you see here we have the exact
+same bar plot
+as the above one so this is another way
+to create a bar plot now python c bond
+allows the users to assign colors to the
+bars
+so the bar chart that we are going to
+create will convert all the bars to a
+particular color
+so for that i am going to use the color
+argument
+so i will say res equal to
+sns dot my function that is bar plot
+i'll say x
+equal to
+cylinder
+my y axis
+we'll have
+mpg
+and then i'll say data
+is empty cars
+give a comma and my final attribute i'll
+say
+color
+equal to i'll say yellow
+close the bracket
+and then
+i'm going to write plt dot show
+if i run it you can see here
+all the bars have been converted to
+yellow color now
+you can change the
+color
+argument let's say i'll make it to red
+if i print it you can see here all the
+bars have been changed to red color now
+all right
+now c bond library also has the
+palette argument
+which you can use to give different
+colors to the bars
+so if you go to
+google and search for
+seaborn palette
+you have a nice link here
+so here you have there are different
+palettes provided by
+c bond you can see here sns dot color
+palette
+and these are the
+names of the palette you can use
+whichever palette you want
+all right
+so
+i'll say res
+equal to
+sns dot
+bar plot
+we'll use our
+first method of
+assigning
+a bar plot so i'm using my data frame
+empty cars and this time we are going to
+change the x and y labels let's say i am
+using
+my x label as
+transmission whether
+automatic or manual transmission
+and then in my y-axis i'll have
+miles per gallon
+then
+i'm going to say
+palette
+equal to
+i made a spelling mistake here
+let's say our palette is
+set to this is the name of the palette
+i'll write plt dot show
+if i run it you can see
+here we have the
+two modes of transmission zero is for
+automatic transmission of the vehicle
+one is for manual transmission
+and you can see the miles per gallon for
+each of the modes of transmission if you
+want you can change the palette colors
+let me just copy this
+i'll paste it in my new cell
+and instead of set to let's say we'll
+use
+another pallet
+called as rocket
+and i'm also going to alter
+my x and y labels let's say in my x
+label i'll have
+gear
+and my label will be horse bar
+if i run it
+you see here we now have a different
+palette and the bars are of different
+colors on the x axis you have the gears
+three gear four gear or five gear
+vehicle
+and on the
+y axis you have the horse bar
+so from the graph you can see
+the horsepower is low for vehicles that
+have four gears
+while it is high
+for the vehicles that have five gears
+now let's understand how to create a
+count plot
+so the count plot function in the python
+c-bond library returns the count of
+total values for each category using
+bars we will create a count plot that
+returns the total number of vehicles for
+each category of cylinders
+i'll just give a comment here as
+count plot
+all right
+so i'll start
+sns dot
+i'll use the count plot function
+and i'll define my x axis as
+cylinders
+my y axis
+won't have any label or any column
+because y axis will only show the
+count
+then i'm going to
+use my
+data parameter or the argument and pass
+in my data frame name that is empty cars
+let's say i'll set the
+palette
+to
+set one
+let me run it
+okay there is some error let's
+debug the error
+says str
+object has no attribute get
+okay so this should be
+without the single quotes
+make sure the data frame name is without
+the
+single quotes let's run it again
+there you go
+so you can see here this is a nice count
+plot that
+shows the number of cylinders on the
+x-axis and on the y-axis you have the
+count you can see here
+there are more number of vehicles that
+have eight cylinders and there are
+less number of vehicles or cars that
+have six cylinders
+and actually you can count it as well so
+you can see here there are 14 cars that
+have eight cylinders there are
+11 cars that have four cylinders and
+there are seven cars that have
+six cylinders
+all right
+now moving ahead
+the next count plot will show the number
+of cars for each carburetor
+so for that i'm going to say
+sns dot
+count plot
+my x-axis will now have
+the variable
+carburetor
+i'll see data equal to empty cars
+and
+my palette
+i'll set it to
+set one
+let's say set two now let me run it
+you can see it here
+on the x-axis we have the different
+number of carburetors one two three four
+six and eight
+and you can see we have
+more number of cars that have two and
+four carburetors
+and there are very few vehicles that
+have
+six and eight carburetor
+cool now moving ahead
+so the python c-bond library allows you
+to create horizontal count plots where
+the feature column is on the y-axis and
+the count is on the x-axis let me show
+you how to create a horizontal count
+plot
+i'll say sns dot
+count plot
+i'm going to define my
+y label or the y axis as
+gear
+i'll say data equal to
+empty cars
+and
+set my
+palette to
+let's say rocket
+let me run it
+okay you see here this is a
+horizontal count plot if you compare it
+with the above one these were all
+vertical
+count plot as in the bars were
+vertically aligned but here you can see
+the bars are all horizontally aligned
+and
+on the y axis you have the gear column
+and on the x-axis you have the count
+so if you mark here properly you can see
+there are 15 vehicles with three gears
+there are
+12 vehicles that have four gears and
+there are total five vehicles with five
+gear
+now you can also create a grouped count
+plot using the hue parameter
+so the hue parameter accepts the column
+name for
+color encoding
+now let's
+build
+a count plot that shows the number of
+cars for each category of gears grouped
+by
+the number of cylinders
+so we are going to group based on the
+number of cylinders let me show you how
+to use the hue parameter for that
+i'll say
+sns.count plot
+in the x axis i'll have my
+gear column
+then i am going to pass my hue parameter
+that will have the
+cylinder column or the number of
+cylinders for each vehicle
+i'll pass my data frame
+using the data
+argument
+as empty cars and say pallet
+i'll set my pallet to set one
+let's run it
+if i scroll down you see here we have
+account plot on the x axis you have
+three four and five gears of the
+different vehicles
+and
+for each gear you have the
+bars
+that represent the number of cylinders
+so for
+vehicles that have three gears we have
+majority of the vehicles having eight
+cylinders
+similarly for
+vehicles that have four gears we have
+most of the vehicles with four cylinders
+and if you compare for the
+cars that have five
+gears
+so we have equal number of vehicles that
+have
+four and eight cylinders and then
+we have one vehicle that has
+six cylinders
+cool now moving ahead
+so the c-bond library supports the
+dist plot function that creates the
+distribution of any continuous data
+let's create the distribution of miles
+per gallon of the different vehicles or
+the cars
+the mpg matrix measures the total
+distance the car can travel per gallon
+of fuel so here i'll give
+a comment as dist plot which stands for
+distribution plot
+i'll say sns dot
+dist plot
+i'll pass in my
+data frame name that is empty cars
+give a period and say
+mpg which is my column name
+then i'm going to
+define the number of bins that i want
+let's say 10
+and then i'll use the
+color argument
+and i'll say let's say g which is for
+green
+let's run it now
+there you go
+if i scroll down you can see we have a
+nice
+distribution plot
+so these are all histograms and
+you can see we have a smooth curve
+and this shows the distribution of
+miles per gallon that is present in our
+data set all right
+now moving ahead
+you can also create heat maps using the
+c bond library
+so the heat maps will let you visualize
+matrix like data
+the values of the variables are
+contained in a matrix and are
+represented as colors
+you can create a correlation heat map
+which is a graphical representation of a
+correlation matrix representing the
+correlation between different variables
+so in our example we will create a heat
+map where you can find the correlation
+between each variable in the empty cars
+data set
+just give a comment as heat map
+i'll say sns
+and
+i'll use the heat map function
+i'll pass in my data frame name that is
+empty cars followed by
+my function called
+corr which is for correlation
+then i'll say c bar
+is equal to true
+so the
+c bar argument is used to draw the color
+bar then i'll say
+line bits
+i'll
+pass it as 0.5
+let's run it
+there you go
+here you can see we have a nice heat map
+and on the right side you can see the
+color bar that starts from
+minus point eight and goes up to plus
+point eight so this ranges between
+minus one and plus one
+and
+the bars or the
+cube you can see that have
+a lighter color
+have a positive correlation
+and the ones that are dark have a
+negative correlation
+so for example
+you can see here
+for cylinder and mpg
+the color is really dark which is around
+this region minus 0.8 this means
+when the number of cylinders in the car
+increases your miles per gallon
+decreases
+and this
+we also
+had seen in our first
+bar plot this one
+you can see here whenever
+the number of
+cylinders increased your miles per
+gallon had decreased
+and this is what
+has been depicted
+in our correlation map or the heat map
+but if you see for
+cylinder and displacement there is a
+positive
+correlation which comes around this
+color bar range
+similarly there are other features in
+the data set for example if you compare
+for the weight of the vehicle and
+the number of cylinders
+there is a positive correlation which
+means when the
+weight of the vehicle increases the
+number of cylinders present in the
+vehicle also increases
+and the others you can also compare and
+find out the correlation based on this
+color bar choose from over 300 in-demand
+skills and get access to 1000 plus hours
+of video content for free visit scale up
+by simply learn click on the link in the
+description to know more
+okay now let's move ahead
+the c bond scatter plot function helps
+you create plots that can draw
+relationships between two continuous
+variables
+so to understand about scatter plots and
+other plotting functions
+henceforth we are going to use
+iris flat data set so let's go ahead and
+load the iris flat data set i'll say
+irish
+equal to
+sns dot
+load underscore
+data set
+so this iris floor data set is already
+inbuilt into the sns or the c bond
+library
+now we'll go ahead and
+print the first five rows
+from the data set
+there you go
+here you can see here
+there are total
+four feature variables you have the
+sample length
+supple width better length and petal
+width of the
+three species of flower
+that is satosa
+virginica and versicolor
+so using this data set we are going to
+see the rest of the c bond plotting
+functions first let me go ahead and
+print the different species of flower
+and the
+count for each of the species of flowers
+that we have in our data set
+i'll say irish
+within square brackets i'll pass in the
+output or the target variable that is
+pcs and i'll use the function that is
+value underscore counts
+let's run it
+there you go so we have
+50 flowers of satosa type
+again 50 flowers of versicolor species
+and then
+we have another 50 flowers of type
+virginica so there are total 150 flowers
+present in our data set
+all right
+i will create a scatter plot to show the
+relationship between sepal length and
+petal length for different species of
+iris flask
+so i'll say sns
+dot
+followed by the
+scatter plot function in the x axis i'll
+say
+sample length
+column
+give a comma
+i'll pass in my
+y-axis with
+petal length
+then i'll say
+data
+equal to
+iris
+now let's run it
+you can see
+here this is my
+scatter plot between
+sepal length and petal length
+now
+you can classify the different species
+of flowers using the hue parameter as
+species in the function
+so what i'll do is
+i'm going to copy my
+above
+code i'll just paste it here
+and we are going to edit in this cell
+itself
+i'll add a last parameter called hue
+and this will have my species column
+let's run it and see the difference
+there you go
+here you can see
+we have a nice scatter plot
+the blue dots are for satosha
+the orange dots are for
+versicolor and for virginica you have
+the green dots
+from this scatter plot you can see that
+for virginia flowers the supple length
+and the petal length are higher than
+your versicolor and
+satosa
+and this region is completely
+for satoshi flash
+so you can see that the satosha flowers
+have
+lower sample length and petal length
+all right
+you can also
+use another
+parameter known as the size
+that will
+differentiate
+the different pieces of flower in terms
+of the size of the dots
+i'll say size as species
+let's run it you can see the result
+there you go
+so here you can see the
+virginica
+flowers are in green dots
+the size is small
+followed by versicolor with medium sized
+dots and then
+we have satosa
+whose size is
+large okay
+now the python c-bond library lets you
+visualize data using pair plots that
+produces a matrix of relationship
+between each variable in the data set
+so let me show you how to create a pair
+plot i'll say sns dot
+peer plot which is the function
+then i'll pass in my data frame name
+that is iris
+i'll put this
+iris data frame within
+double quotes
+and we'll run it
+okay there is some error here let's
+debug the error
+data must be panned as data frame okay
+what i'll do is i'll just
+remove
+the double quotes and we'll run it
+this might take some time to create the
+pair plot so
+just wait for a while
+there you go
+here you can see we have a nice pair
+plot
+on the
+y axis you have the
+supple length supple width petal length
+and petal width similarly on the x-axis
+also you have the
+same
+feature columns
+all the diagonal plots are histograms
+and the rest of the plots are
+scatter plots
+now you can convert the diagonal visuals
+to
+kde or kernel density estimation plots
+and the rest of the scatter plots using
+the hue parameter
+this makes the pair plot easier to
+classify each type of flower
+so
+i'll just copy this
+cell of code
+paste it here
+and
+i'll say hue
+equal to
+species then
+i'll say
+palette
+equal to
+set one
+let's run it and we'll
+see the new pair plot now
+this might take some time
+there you go
+so here you have the
+pair plot ready
+and on the
+right side you can see the different
+species the red color dots represent
+satosa
+the blue color dots represent versicolor
+and
+the
+green color
+dots represent virginica flowers
+now if you
+look at this graph
+you will find that
+your petal length is the best feature to
+classify the three different species of
+flowers
+the reason being you can see here
+they are very well
+categorized and they are separated
+all the red dots present here in the
+petal length represents satosa flash
+around this range
+all the blue dots represent
+versicolor flowers and the green dots
+are all
+virginica flowers so out of the four
+features petal width petal length sepal
+width and
+supple length
+you can take
+petal length as the
+best feature to
+differentiate between the three species
+of flowers
+all right
+now
+coming to lm plot function
+so the
+lm plot function in the
+c bond library draws a linear
+relationship as determined through
+regression for continuous variables
+so let's create the plot to show the
+relationship between petal length and
+petal width of the different species of
+iris flowers
+i'll just give a comment here as
+lm plot
+i'll say sns dot
+lm plot
+in the x axis we'll have
+petal length
+give a comma
+in the y axis
+i'll pass in
+petal width
+and i'll pass in my data frame using the
+data argument or parameter which is iris
+let's run
+it you can see it here
+we have a nice
+plot
+the line you see here
+is a linear regression line
+now in this
+lm plot you can use the hue parameter to
+differentiate between each species of
+flowers and you can set
+markers
+for different
+species let me show you how to do it
+i'll say sns dot lm plot
+we will say x
+as our
+petal length
+give a comma
+i'll write y
+as
+petal
+width
+then i'm going to pass the hue parameter
+in here i'll see
+my column as pcs
+then i'll give data equal to
+my data set name that is iris
+and now you can pass in
+markers
+argument to differentiate the different
+types of flaws
+let's say i want to represent setosa
+with
+dot or o
+then my next species which is
+versicolor should be represented with a
+star symbol
+and the final
+virginica species of flowers should be
+represented with let's say
+this arrow mark
+now let me go ahead and run it
+there you go
+you have three different
+linear regression lines
+and
+the circle dots in blue color represent
+satosha
+the orange color stars represent
+versicolor flowers and
+the triangles represent virginica
+flowers so this is how you create
+a linear relationship between the
+different
+types of flaws using the regression line
+all right
+now let's
+take a look at the final plotting
+function where we will create a box plot
+a box plot also known as a box and
+whisker plot depicts the distribution of
+quantitative data
+the box represents the quartiles of the
+data set
+the whiskers so the rest of the
+distribution except for the outliers
+now let's see the distribution of the
+three species of flowers
+based on their sepal width
+i just give a comment as box plot
+is the final plot that we are going to
+see in our c bond
+demo
+i'll say s n s dot box plot
+in the x axis we'll have the species
+column
+in the y axis we'll have
+supple
+width
+then i'll pass my
+data
+as iris
+let's run it
+there you go
+we have this
+box plot created
+at the bottom in the x axis you can see
+we have
+the box plot for
+satosa flowers
+orange for
+versicolor flowers and green for
+virginica flowers
+now this line represents
+median which is inside the box
+so this is also the median for
+versicolor flash you can compare the
+median
+sample width for each of the flowers
+from the y axis
+this line represents the
+maximum
+supple width value for satosa flower
+and
+this line at the bottom represents the
+minimum
+length of the supple bit for satosa
+flowers
+now these dots that you see outside the
+box plot are called as outliers
+the extended lines that are outside the
+box plot are known as whiskers
+all right
+so that brings us to the end of this
+demo session on
+cbon
+library in python so first we
+imported our empty car data set
+then we saw how to create a bar plot
+we learned how to use the color argument
+or the parameter inside
+bar plot
+we also
+saw how to use the palette attribute or
+the palette parameter
+then we learnt about
+creating count plots
+then we saw how to create horizontal
+count plot
+now moving ahead
+we saw how to create distribution plot
+then we saw
+correlation heat map
+after that
+we analyzed the other functions
+such as the scatter plot
+then we had the pair plot
+and we had the
+lm plot for
+finding the linear relationship and
+later we saw the
+box plot using the iris flower dataset
+python bokeh we will teach you
+everything that you need to know about
+the bokeh library in python which is
+used for data visualization
+so
+let's get started
+before we dive into this video let's get
+a basic overview of what you can expect
+to learn from this video what's in it
+for you
+so first we will explain what exactly
+the meaning of bokeh is
+then we will take a look at scatter
+charts and see how we can implement them
+in bokeh
+next we will understand what line charts
+are the scenarios in which they are used
+and how they can be coded in python
+bokeh
+then we'll move on to pie charts and
+understand how data distribution can be
+represented using them
+next we will take a look at histograms
+then we'll move on to bar plot and
+understand the difference between
+histograms and bar plots
+we'll then take a look at area plot and
+how to understand them
+and then we will move on to the layout
+function in bokeh which is used to make
+interactive web pages
+and finally we will use a data set to
+understand how we can make interactive
+charts in bokeh by using everything that
+we've already learned in this video
+so the first question that probably
+comes to your mind is what exactly is
+bokeh
+bokeh is a python library which is used
+to make highly interactive graphs and
+visualizations
+this is done in bokeh using html and
+javascript
+this makes bokeh a powerful tool for
+creating projects custom charts and web
+design based applications
+now bokeh is a python library for
+creating interactive visualizations for
+modern web browsers
+it helps you build beautiful graphics
+ranging from simple plots to complex
+dashboards with streaming data sets
+with bokeh you can create javascript
+power visualizations without writing any
+javascript yourself
+this makes it a very powerful tool for
+data visualization
+next let's take a look at scatter charts
+and how you can plot them in bokeh
+now scatter plots are a plot of each
+individual data point in the data two
+variables are plotted against one
+another and each data point on the
+x-axis has a corresponding individually
+plotted value on the y-axis
+as a result the plot looks like a bunch
+of scattered points
+these are some examples of scatter
+charts
+here each point on the chart corresponds
+to a value on the x axis and its
+respective value on the y y-axis
+using scatter plots we can see how two
+different variables correspond to each
+other
+now let's see how we can plot scatter
+charts using bokeh
+so the first thing that we're going to
+be doing is importing all of the
+necessary modules for our python project
+the first module that we're going to
+need is the pandas module which is used
+to work on data frames
+next we will also be importing the
+pandas bokeh module which is used to
+implement bokeh on pandas data frames
+next we will import bokeh.io which we
+will use to show the various graphs that
+we are plotting
+we will also import bokeh dot plotting
+which will help us in plotting all of
+the various graphs that we're going to
+be looking at
+we'll also import glob a module which
+will help us
+merge our files and get them in the
+required format
+so the first line of code that we're
+going to be writing is pandas underscore
+bokeh dot output underscore notebook
+this is basically just a line of code
+which will help you see your output in
+the same notebook itself
+now let's see how we can plot scatter
+plots in bokeh
+we already have imported the figure
+function from bokeh.plotting
+the figure function contains most of the
+plots that we want to plot such as line
+plots scatter plots bar charts etc so
+this is what we're going to be using
+the first thing that you're going to
+need to do is create a figure
+so how do we do that
+let's create a random variable p and
+this we're going to be initializing to
+the figure function
+now within this figure function we're
+just going to add a couple of
+parameters for our figure itself so
+let's say we want the plot width
+to be equal to 400
+and the plot
+height to be equal to 402 we're going to
+be plotting a scatter plot in the form
+of a square here next we know that a
+scatter plot is nothing but various
+circles which are plotted on top of our
+graph
+so that's what we're gonna do we're
+gonna be plotting
+circles
+at certain coordinates
+which are going to be given by our lists
+so the first coordinate is going to be
+the x-axis and the next list that you're
+passing in is going to represent the
+y-axis coordinates so over here let's
+just plot
+this as one comma two
+three
+four and five
+and over here let's start with four
+seven
+these are just random points this is
+just to show you how exactly you can
+plot a graph in bouquet
+and now let's just say that we want the
+size of the circles to be equal to 10
+and the color of every
+circle to be navy
+we're also going to give a random
+parameter called alpha and equate that
+to 0.5 this will just act as a
+placeholder
+now over here you've initialized your
+figure function and given in certain
+parameters
+and using this figure function you're
+calling the circle attribute of it
+passing in other parameters such as the
+x-axis coordinates and the y-axis
+coordinates the size of the circle the
+color of each circle and a random
+parameter called alpha so now we've
+imported all of our modules
+and this is how you plot a scatter chart
+in bokeh
+the same thing can be done when you look
+at the line plot
+all you have to do is initialize your
+figure function
+and call the line attribute of it pass
+in your x-axis coordinates in your
+y-axis coordinates
+maybe pass in a couple of other
+parameters that are required such as the
+width that you want the line to be and
+the color that you want the line to be
+and finally all you have to do is show
+the plot this is a basic overview of how
+you can use bokeh to plot graphs
+and here we have a line plot
+so the main difference between the
+scatter plot here and the line plot here
+is that the line plot has various
+different
+points which are connected to each other
+with the help of a line
+so again what exactly are line charts
+a line chart is a chart that represents
+data as a series of points which are
+connected to each other with the help of
+a line
+it is used to see trends in our data and
+drag the way data changes over a period
+of time
+so this is the same chart that we just
+plotted using bokeh right now so as you
+can see
+so the parameters that you know were
+passed in were one two three four and 5
+on the x axis
+and 3 1 2
+6 and 5 on the y axis
+so how exactly the line chart is plotted
+is that you plot each of these points
+and then you connect them or join them
+using a line
+next let's take a look at pie charts and
+how they can be implemented in bokeh
+but first what exactly is a pie chart
+a pie chart is a circular chart which is
+divided into slices to represent how
+much of the data belongs to a certain
+category
+it is a quick and easy way to see the
+categories in our data and the
+percentage of the data set that they
+represent
+on the other hand you have another type
+of chart called a donut chart
+donut charts are like pie charts with a
+hole in the center and in this hole you
+can use it to represent extra data
+or you can draw a pie chart within that
+hole itself
+so this is an example of a pie chart
+using this you can easily get to know
+the various categories that our data is
+divided into and the percentage that
+each of these categories contribute
+towards our data
+like over here we have a pie chart which
+represents crewmates and imposters in a
+game called among us
+so using this we can just say that
+around 75 percent
+of our
+data is crewmates and 25 of it is
+imposters
+on the other hand you have a donut chart
+which is almost exactly the same as the
+pie chart except the middle portion is
+missing values
+and in this middle portion you can do
+other things such as plot a pie chart
+or represent other data within it so now
+let's see how we can plot our pi plots
+using python bokeh
+but first we need to import the data
+that we're gonna be using to plot all of
+this
+so the data that we're gonna be looking
+at is the among us data
+among us as you might know is a game
+that caused quite a frenzy in the past
+two years
+so the data that we're going to be
+working at is the among us data set that
+you can find on kaggle
+among us was the new craze for people
+playing mobile games that suddenly
+exploded in popularity and became a hit
+video game during the pandemic
+now among us is basically a multiplayer
+game where 4 to 10 players are dropped
+in an alien spaceship
+each player has their own role of
+imposter or crewmate
+the task of the crewmate is to run
+around the spaceship to complete various
+tasks which are assigned to them and
+also to not get killed by an imposter
+players can be voted off the ship so
+each game becomes one of survival
+so let's load this data set and create
+more features
+so now we've imported our data set as
+you can see our data set has over 2000
+rows and 14 columns
+the first column that i want to show you
+is the user id column
+the user id column tells us which user
+the game data was collected from
+now there are 14 columns the game
+completed data tells us the date and
+time of game completion
+the team tells us if the player is an
+imposter or a crew mate
+the outcome
+tells us if the game was won or lost
+so over here this is each game that a
+certain user has played user id is used
+to represent the user who has played the
+game and as you can see we've collected
+data from 29 different people
+and the number of games that these 29
+people
+totally have played is over 2000
+the outcome tells us whether the
+user has won or lost in this game the
+task completed tells us how many tasks
+was completed by this user in this game
+all tasks completed tells us when the
+user was able to finish their tasks
+murder tells us if the user was murdered
+and imposter kills
+tells us the number of kills by the
+imposter
+so if the user was not an impostor we do
+not have data on how many kills was
+committed by the impostor during that
+particular game that's why this column
+has a lot of missing values
+gamelan tells us
+the total duration of the game and
+ejected tells us if the player was
+ejected or thrown off of the spaceship
+by their fellow players
+sabotage is fixed is basically
+the imposter within the game can create
+sabotages and it's the crewmates duty to
+fix them
+so this tells us the number of sabotages
+which was fixed by this particular
+crewmate
+time to complete all tasks tells us the
+duration taken by the crewmates to
+complete all the tasks and the rank
+change tells us the change in rank after
+wins or losses of the game
+the region
+or the game code tells us the server and
+the game code
+now first let's just see how exactly the
+data is distributed
+so this tells us how many
+uh counts each column has
+so as you can see here most of them have
+the same number of counts except rank
+change which has a couple of missing
+values
+unique tells us how many unique values
+exist
+in each column
+so obviously team there will be two
+because there are only two possible
+outcomes you can either be a crewmate or
+you can either be an imposter outcome
+also has only two unique values because
+you either win a game or you lose a game
+task completed has 12 different values
+and this is because the
+number of tasks which have been
+completed probably range from 1 to 12.
+all tasks completed has three values
+which is yes no and missing data and the
+same goes for murdered you have yes no
+or missing data
+impostor kills tells us how many kills
+the imposter has made
+so
+in this case
+uh the most skills that the person has
+made is probably nine
+uh game length there are 988 different
+values and ejected again there are only
+two values because you can either be
+ejected or you can either stay in the
+game
+now the top value tells us the most
+frequently occurring value and the
+frequency tells us the frequencies of
+all of the top values
+now let's create a feature called minute
+and extract data from game length
+so we're going to be splitting the game
+length column which is this column and
+we're going to be converting it into
+minutes
+and then we're going to be
+using that data and creating a separate
+feature column called minutes
+out of it
+so let's do this
+so these are the first top two values of
+our minutes call of our new minutes
+column
+uh the zeroth value is seven because the
+first
+game length that you see here was of
+seven minutes so all that we're doing is
+that we're going to be splitting this
+value which is seven minutes four
+seconds and we're gonna be keeping only
+the first value which is that of the
+minutes
+the second minutes value is 16 minutes
+and that corresponds to the second value
+in our minutes feature
+variable
+now
+let's take a look at the murdered column
+the modded column has yes no yes no
+values and missing data set and missing
+values
+so let's change those we're gonna be
+replacing no values with not murdered
+yes values with murdered
+and the simple dash with missing
+and we're gonna be doing this in place
+which basically means that this is going
+to make a change to our main data frame
+so this is done let's take a look at a
+data frame now
+this is what our data frame looks like
+we have a game's length column we have a
+minutes column
+and we also have made changes to our
+murdered column which is represented
+here so now we don't have any missing
+values or dashes in our murdered column
+we have all of it represented as
+categorical data
+and this is one of the main columns that
+we're going to be using to plot our pi
+plots
+so now let's see how we can plot a pie
+chart
+the first thing that we're going to be
+doing is that we're going to be
+getting the total value counts
+in our team column here
+so we're going to be plotting a pie
+chart with the help of this team column
+and we're going to be getting the value
+counts of each unique
+value in the team column
+so let's
+you can do this with the help of the
+value counts function
+that pandas data frames provides us with
+announce that we have the value counts
+of each unique value which is present in
+our team column let's plot it in the
+form of a pie chart
+we're gonna be doing this with the help
+of the plot bokeh function
+and the type of chart that we want to
+plot is a pie chart
+let's give it the title
+as
+ratio of
+imposters
+versus
+chromates
+and let's run this now
+and this is what your pi plot looks like
+after you've plotted it
+so now the same thing can be done to
+plot a donut plot
+the first thing that we want to see is
+if there are more crewmates or imposters
+murdered or not in the game
+to do this we will add two more features
+angle and color which are going to be
+used in the chart
+so to
+get angle we're going to be importing pi
+from math
+and we're going to be converting our
+angle in the form of radians
+and as for the color feature we're going
+to be having three different shades of
+blue
+so this is basically what our
+murder data frame looks like
+uh so over here you have not murdered
+the total value counts of which
+is 894 and the angle that this gives us
+is 2.5
+22302 and this is the corresponding
+color the same goes for murdered which
+is 867 values and we've converted that
+into an angle in radians and given it
+its own color and finally we also have
+missing values
+of which there are 466 the angle is
+1.314756 and it has its own
+corresponding color
+so this is the data frame that we're
+going to be using to plot our donor
+chart
+so from bokeh dot transform we import
+cumulative sum
+and the cumulative sum is what we're
+going to be using to find the start of
+our angle or basically to find
+or basically to find how much portion of
+our donor chart is going to be occupied
+by the angle
+so the donut chart can be plotted using
+the angular wedge function from figure
+so the x axis here is 0 and the y axis
+is 1 the inner radius is the radius that
+you are going to be giving to the inner
+smaller circle and that we've given us
+0.15 the outer radius is the radius of
+the bigger outer circle
+and the direction in which our data is
+going to be plotted is in the
+anti-clockwise direction
+so let's run this
+and this is what our donut chart looks
+like
+so the not murdered
+is this dark blue color portion of our
+donut chart and when you hold
+and when you hover over it you can see
+how many values are present in the not
+murdered column
+the same goes for murdered and because
+we've plotted our data in the
+anti-clockwise function
+this is how it's being plotted so
+murdered not murdered and then finally
+you have the missing values
+the way that you can interpret this
+graph is that you can say that most of
+the people were murdered during the game
+but most of the data is missing so we
+can't say for certain whether the
+majority of the people were murdered
+during the game or not because the
+number of missing values can make a huge
+difference and the number of people who
+are not murdered and the number of
+people who are murdered are very close
+to each other like their total values
+are very close to each other
+next we will create a data frame of
+sabotages fixed and minutes and change
+the column name and add t in them
+so this is basically what we're doing
+we've created a data frame which has the
+number of sabotages fixed and the
+minutes
+now let's just take the three sabotages
+which were fixed which is 0 1 and 2 and
+create a data frame out of all of these
+so each of these individual data frames
+just contains these individual columns
+to make a simple scatter plot with only
+one legend we can pass the data and use
+scatter to make the charts
+so basically we're just plotting the
+scatter chart in bokeh here
+and this is what our minutes
+scatter chart looks like
+now we're plotting this for one t we're
+plotting the minute at which one
+sabotage was fixed
+and another cool thing about bokeh
+charts is that you can always zoom into
+them or zoom out of them to better see
+where your data is plotted
+so this is a scatter chart which has
+only one variable which is one t and the
+minute at which it was plotted
+to make a scatter chart with more
+variables we are going to need to use
+circle
+which is a method of figure object which
+we've already seen before
+the circle is one of the many plotting
+styles which are provided by bokeh you
+can also use triangles or many more you
+don't have to make each point a circle
+so we're gonna be plotting
+so we're gonna be plotting the sabotage
+is fixed and the minute at which they
+were fixed
+and we're gonna be plotting three
+different circles of three different
+colors
+i mean each of them correspond to how
+many sabotages were fixed at what time
+zero sabotages at what time one sabotage
+at what time and two at what time so
+let's run this
+so as you can see here
+when zero sabotages were fixed these
+were the times
+when one was fixed this was the time at
+which it was fixed and when 2 was fixed
+this is the time that it was fixed at
+now the x-axis is our minutes and the
+y-axis is the sabotage
+when you hover over it you can see
+various information about where each uh
+circle is plotted
+so this has an index of 10
+the data x y will tell you the
+exact
+x coordinate and the y coordinate and
+the screen x y will tell you the screen
+pixels on which it is plotted
+so now we've taken a look at pie charts
+let's move on to histograms
+so what exactly is a histogram
+histograms are used to plot numerical
+data according to the range that they
+fall into the data is plotted in the
+form of bins or rectangles and the
+y-axis corresponds to the amount of data
+present in a certain range or at a
+certain point
+so this is what a histogram looks like
+this is a histogram of the distribution
+of minutes
+so the x-axis has the range
+within which this data falls like over
+here the first range is from 0 to 2.9
+and second one is from 2.9 to 5.8
+each range
+has a
+value of 2.9
+and the corresponding y-axis or the
+height of the bins
+tells us how much data is present within
+this range
+so this is how you can read histograms
+now let's see how we can plot them using
+python bouquet
+now let's see the distribution of
+minutes in the among us game we will use
+his to plot a histogram
+basically just going to be plotting the
+minutes of our game
+uh we're going to be using the df min
+column for this
+and we're going to be converting it
+into
+an integer
+so this is the column that we're going
+to be plotting let's plot this
+again we're going to be using the plot
+bokeh
+function here
+because it makes plotting data frames
+very easy
+the kind of data frame that we're going
+to be using is the histogram or hist
+and the title of our
+graph is going to be
+distribution
+of
+minutes so let's run this
+now this is what our histogram looks
+like
+now this is when we've only plotted one
+variable which is minutes
+yeah so another thing that you can plot
+is a stacked histogram
+a start histogram is when you plot
+various histograms on top of each other
+so let's see how this works
+for a start histogram we want to see if
+the game length has a correlation with
+the amount of imposters and crewmates in
+our game
+so to do this we're going to be creating
+a small data frame which has the game
+length and the team columns combined
+so
+let's do that
+this
+and this is what this looks like
+so all you have to do to plot this in
+the form of a stacked histogram is use
+the hist function again
+so
+let's see how that is done
+and let's give this figure a size of
+say
+[Music]
+750
+comma
+350
+so so let's run this again and this is
+the start histogram that you get
+we have two different columns which are
+plotted on top of each other
+uh versus the game length
+so basically this tells us that when the
+game length was between
+0 to 0.9 minutes the
+number of imposters
+was way higher than the number of
+crewmates
+and the longer the game went on the
+number of imposters decreased and the
+number of crewmates just kept getting
+longer and longer
+now obviously you can say that the
+number of crewmates is decreasing as the
+game goes on too but this is because the
+imposters would have killed off most of
+the crewmates
+as you can see here towards the end
+there are no imposters which means that
+most of the imposters were rejected and
+the crewmates won
+so now we've taken a look at histograms
+let's move on to bar plots and
+understand how exactly they're different
+from histograms
+so
+in histograms you have plotted numerical
+data distributions as of yet
+in bar plots you plot for categorical
+data
+it also uses bins to plot the amount of
+data when the bins are stored stacked on
+top of each other it's called a stack
+bar chart this is basically what a bar
+chart looks like the difference is this
+does not have its own range
+each bar is used to represent a
+categorical data and the height is used
+to tell us how much of that categorical
+data is present
+so now let's see how we can plot a bar
+plot
+so again we're gonna be making a small
+data frame of the task completed and the
+value counts of how many tasks have been
+completed
+to plot a bar plot we're gonna be using
+plot bokeh again and the kind of plot
+that we want to plot is bar
+so let's run this and see what we get
+so here is your bar plot
+the task completed in this case is
+categorical data
+and the counts basically tells us how
+many value counts fall into each
+category
+so zero does completed are 69
+one task completed is 117.
+task completed is 10
+and so on
+uh from this bar chart you can say that
+the most number of tasks completed is 7
+and the least task completed are 10.
+now let's create a start bar chart and
+let's see who wins imposters or
+crewmates
+to create a start bar chart what we're
+going to be doing is that we're going to
+be creating a different smaller data
+frame of team and outcome
+to make sure that the bar chart is
+stacked all you have to do is include a
+start attribute in your bar function and
+change its value to true
+so let's run this and see
+and here you can see that we have a
+stacked bar chart
+so you can see that crewmates who have a
+lot more data
+have
+won
+981 times and lost 780 times
+while imposters have lost
+205 times and one 216 times
+so the crewmates have one significantly
+far more than the number of times
+imposters have won
+now let's take a look at stacked
+vertical bar charts so so far the bar
+charts that we've been looking at have
+been horizontal which means
+that the data
+goes upwards
+for a vertical bar chart we're going to
+be seeing if all tasks have been
+completed or not
+so
+in the data frame column all tasks
+completed we're gonna be replacing the
+values of yes and no with task completed
+and task not completed
+we're also gonna be creating
+a smaller data frame of the outcome
+column and the task completed column
+to plot a start vertical bar chart you
+are going to be using
+python bokeh dot bar h function and
+you're going to be crea
+changing the stat
+attribute to true
+this is what a stacked horizontal bar
+chart looks like
+so over here we can see that the missing
+values is represented by blue task
+completed by orange and task not
+completed by green
+here you can see the total outcome you
+can see how many wins how many tasks are
+completed and how many tasks are not yet
+completed
+and the same goes for losses you can see
+how many losses have occurred how many
+tasks are completed and how many tasks
+were not completed this is a very good
+way of representing a lot of data in a
+relatively smaller area
+now
+the way we can interpret this graph is
+that we can say that finishing the task
+will automatically
+ensure that the crewmates have one so
+there's a higher number of people who
+need to complete the task to win the
+game
+another very unique type of bar chart
+that you can have is a bi-directional
+bar chart
+so let's plot a bi-directional
+bar chart in which the bars will be
+going both ways to the left and to the
+right
+we're gonna be plotting
+a horizontal bar chart over here
+to make it easier for you to see
+to have
+a bidirectional bar chart you need
+positive values and negative values the
+center
+is going to be at zero
+so here we're going to be making the
+loss features negative by multiplying
+the loss feature with the minus one
+value
+so here we go the losses are all
+negatives and the wins are all positives
+right now let's run this
+and see
+how many losses and wins have occurred
+for each user
+so user one
+has 42 losses
+and 58 wins but you can easily see
+whether they have one more or less or
+lost more by comparing the height of the
+bars
+for the wins and the losses
+so we can easily say that in this
+scenario user 1 has one more times than
+they have lost
+the same can be said for user 2 where
+the
+wins bar is significantly higher than
+the losses bar
+so this is how you can
+plot and understand a bi-directional bar
+chart so we've taken a look at how we
+can plot bar charts and the various
+types of bar charts that are available
+to us in python bouquet
+now let's take a look at area plots
+area plots is a combination of the line
+and the bar chart when the area below a
+line is shaded
+using an area chart we can see how the
+values of different groups change over a
+period of time
+the area chart has different baselines
+to show the vertical range of data
+here we've
+plotted the sabotages fixed versus the
+minutes at which they were fixed at
+right so these are the minutes and the
+sabotage is fixed
+are of two types zero t and one t
+so the number of minutes that we're
+considering here is somewhere around 28
+ish right and zero t as you can see has
+a way higher value
+so one really good thing about area
+plots especially in this case is that
+they have two ranges
+and they have another range on the y
+axis which is which tells us how the
+number of sabotages fixed is ranging
+so zero sabotage is fixed you can see
+how the value keeps fluctuating
+and
+how the value changes for different
+minutes
+and the same can be said for one t
+now one t has a baseline which is over
+here which is just above the zero t
+baseline this doesn't necessarily mean
+that this is where
+one t starts and this is where it ends
+this just means that it ranges
+from zero all the way here and we can
+compare
+very easily how zero sabotage is fixed
+and one sabotage is fixed range or
+change with respect to each other
+at
+the same time
+now the first thing that we're going to
+be doing to plot our area chart is that
+we're going to be creating
+another data frame this is called df
+minutes which is going to be comprising
+of the minutes column of our data frame
+and the sabotage's fixed column of the
+same data frame
+for df min we're going to be renaming
+the columns to 0t and
+1t and the only columns that we're going
+to be
+considering out of the five different
+columns that we have are the zero t and
+the one t column
+we're going to be combining all of these
+together in a format which can be
+plotted
+by using bokeh and column data source
+helps us do this it helps us convert
+our various
+data frame columns into lists
+next we're going to be using the figure
+function and we're going to give our
+figure a width of 400 a height of 400
+and the title of sabotage is fixed
+versus the minutes at which they were
+fixed at
+to plot a start area graph you're going
+to be using v area underscore stack
+function
+from the figure module
+you're going to be passing in your y
+parameters which is y naught and y one
+because we have two different y
+parameters here and the x parameter
+which is df minutes
+the color that you're gonna be using is
+gray and light gray
+the legend labels are the names that
+you've already put here which is 0t and
+1t
+and the source of your data is going to
+be this column data source
+now let's run this and see how our area
+chart looks
+so this is our area chart we've got in
+two different sabotages here and two
+different times
+at which they occur which is zero t and
+one t
+the minutes tells us how many sabotages
+were fixed at each time
+basically how long it took to fix a
+sabotage and the minute during the game
+at which they occurred
+now let's take a look
+at the layout function of our bokeh
+library
+the layout function will let us build a
+grid of plots and wedges we can have as
+many rows and columns or grids of plots
+in one layout
+using the layout function we can see
+various graphs at the exact same time
+mainly used for designing dashboards it
+lets you build grids of plots
+so this is basically what your layout
+function
+will help you do
+this is going to look very good in a
+website because it's going to arrange
+our plots in a way that we can easily
+see all of them
+and understand all of them without any
+loss of data
+this is also arranged very neatly which
+is exactly what the layout functions
+allow us to do
+so now let's take a look at how the
+layout function can be implemented in
+python bokeh
+now of the layout functions there are
+many different layout options which are
+available
+you have the column function which
+allows you to display
+plots vertically
+and you have the grid function which
+lets you display plots in the form of
+grids
+now for example um
+let's say that we want to make a
+dashboard layout in bokeh
+uh we are going to be considering
+three different charts
+the first one that we're gonna be
+considering is a lollipop chart which is
+done here
+the next one that we're gonna be
+considering are two pie charts
+so this is how you plot a lollipop chart
+and i'll show you what exactly a
+lollipop chart is in just a minute
+the first thing that you need to know is
+that the first graph that we're going to
+be plotting
+is going to be a graph which has the
+user id versus the outcome of the games
+plotted
+on it
+so what we're going to be doing here is
+that we're going to be creating a single
+data frame which has
+all of the
+user ids
+present in it along with the user
+and the wins that the user has obtained
+now using this we're going to be
+plotting it in the form of
+a plot in decreasing order where we have
+the top 10 users who have one
+which basically means that the users who
+have won the most number of games out of
+all the users in consideration
+so figure one segment will basically
+help you plot
+a line which has a width of two and a
+circle will be at the circle at the very
+top of this segment so lollipop chart is
+going to be
+a horizontal line with a circle at the
+very top
+so the next graph that we're going to be
+plotting is going to be a murdered
+and not murdered and missing values pie
+chart
+and the last thing that we're going to
+be plotting is a donut chart of the
+teams
+and the values within them
+so these are the three different graphs
+that we're going to be plotting and
+these are just us creating the graphs
+and plotting them
+the main logic is over here
+the main logic is that you want to set a
+layout in bokeh
+as to how you want to see the charts
+so the layout that we are going to be
+looking at is that we're going to be
+having a lollipop chart at the very top
+and two smaller pie charts at the bottom
+right
+so
+we have three figures here
+and the first thing that we're going to
+be doing is that we're going to be
+giving these
+figures
+a line color of none
+the axis is not going to be visible and
+the axis labels are not present for
+these figures
+this is the main function that you're
+going to be looking at this is your
+layout using the grade layout function
+that you've imported here from python
+from bokeh dot layouts you're going to
+be creating a grid
+and how does the grid know where the
+figures are
+so you've divided the grid into two this
+is evident because you have two figures
+two main figures here
+which are separated by a comma so this
+tells the grid that the page is going to
+be divided into two
+the first figure which is on top is
+going to be figure one and the figure at
+the bottom are figure 2 and 3
+this means that the bottom half is going
+to be further split into
+vertically
+let's run this and see what our layout
+looks like so here you have it your
+entire page is divided into two
+the first one has one the figure one
+which is the lollipop chart and the
+bottom half of our page
+has two figures which are the two donut
+charts
+the bottom half is divided exactly into
+two as you can see here
+this is because that is the grid layout
+that we wanted
+so this is how you can use the layout
+function in
+python bokeh it is extremely easy all
+you have to do is create a layout by
+using the grid function or you can also
+use the column function the column
+function will
+plot it
+in the form of a single column
+vertically
+using the grid function you can plot
+figures vertically as shown here
+so when you separate them by commas with
+respect to each other they will be plot
+but they will be plotted vertically and
+when you group them together
+and separate them with commas internally
+they will be plotted horizontally
+so now we've taken a look at how we can
+use the layout function
+now let's see how we can make
+interactive graphs with the help of
+bokeh
+over here we're going to be using bokeh
+to design a dashboard which is used to
+represent the horsepower in cars
+we are also going to make our graphs
+interactive and see how maximum
+information can be conveyed with the
+help of a single graph
+so here we have multiple different cars
+and along with the cars will also be
+going to be given their horse bars
+a little bit of other information about
+them and their images
+and over here as you can see
+we have a very simple
+vertical bar chart
+but let's see how we can make it
+interactive and convey all the
+information that we have in our single
+data set on this one bar graph
+so the first thing that we're going to
+be doing is importing all of our
+important necessary modules we're
+obviously going to have the pandas
+modules which is going to be imported to
+work with the data frame that we've
+given
+apart from this we're also going to be
+importing
+figures output file show save and column
+data source from bokeh.plotting we
+already know that the figure function is
+used to plot different types of graphs
+which are given
+output file is just used to see our file
+the show is used to display our graphs
+and save will help you save your graph
+now the column data source is the core
+of most bokeh plots
+it provides the data to the glyph of
+your plot when you pass sequences like
+python lists or numpy arrays to a bokeh
+render bokeh automatically creates a
+column data source with this data for
+you so this is basically what you're
+going to be using to pass data onto your
+bokeh glyphs
+apart from this we're also going to be
+using a harvard tool function
+and
+a trans and from the
+transform function we're going to be
+importing factor c map
+we're going to be importing a palette
+color
+which is going to be various shades of
+blue
+and we're going to be importing
+components from the embedded function of
+bokeh
+let's just see how we can use all of
+these and the different things that they
+do
+the first thing that you're going to be
+doing is reading in your car's data
+frame and creating a column data source
+so that you can easily pass this data
+onto your
+bokeh glyphs
+so let's run
+and import all of our various required
+functionalities and import the data as
+well
+so this is what your data set looks like
+we have eight different values in our
+data set which are the names of
+different cars their horsepower their
+price and a hyperlink of an image
+this is what our data set looks like we
+have only eight columns
+so using this data set we're going to be
+plotting a horizontal bar graph
+again we're going to be
+calling our figure function and we're
+going to be giving y range to our car
+list
+the y range is basically just going to
+have the different values which are
+going to be present on the y axis we've
+given the blot a width of 800 and a
+height of 600
+the title of the plot is cars with top
+horsepower and the x-axis label is
+horsepower
+the tools that we're using here is pan
+box select zoom in zoom out save and
+reset so these are tools that you're
+going to be getting on the right side of
+your plot
+now let's render our glyph or render our
+graph
+the graph that we are going to be using
+here is the horizontal bar graph so the
+y axis is going to have cars
+and the right or basically the height of
+the entire bar is going to depend on the
+horsepower
+the left is going to start from 0 and
+the height of each bar is going to be
+0.4
+the color that we are going to be giving
+is going to be a palette of blue so each
+different car will have a different
+color of blue associated with it and
+the
+color of blue which is associated with
+it will depend on the car list
+now fill alpha 0.9 the source is your
+source data that you have over here
+which is the column data source of our
+data frame
+and the legend is going to be car which
+basically means that your entire uh
+plot is going to have the legend of car
+now we're gonna be adding the legend
+this is
+us giving the legend its orientation so
+the legend is going to be vertically
+oriented the location is going to be on
+the top right and the font size of the
+text car of a legend is going to be 10
+px or 10 pixels
+we're also going to be adding a hover
+tool
+inside this harvard tool this hover tool
+tips will basically tell you what you're
+going to be seeing
+in the harvard toolbox
+so we're going to be creating this with
+the help of an html format
+the first thing that you're going to be
+seeing is the name of the car
+the next
+column will have the price of the car
+the horsepower of the car
+and the image
+now the image is in the form of a
+hyperlink and this is going to be auto
+populated in your hover tool
+the width of the image is going to be
+800
+so
+we are going to add all of these hover
+tools to our p image and we are finally
+going to be showing you the graph and
+what it looks like
+so this is your bouquet plot here the
+name the title of the plot is cars with
+top horsepower this is your
+legend which is cars
+the name of each car is given here along
+with the color which is associated with
+it here are the different tools that we
+have
+you can save this
+you can reset it you can zoom out you
+can zoom in
+you can select the boxes
+and you can pan your image
+so here we're zooming in here we're
+zooming out
+if we save this the plot automatically
+gets
+downloaded in your system and if you
+reset it the image goes back to exactly
+what it looked like when it was first
+opened
+now
+here you have the names of the different
+cars on the y-axis and you have the
+various horse bars on the x-axis
+let's take a look at a harvard tool
+so here you have the name of the car
+which is on top you have the price and
+you have the horse bar and as you can
+see you have the image which is hyper
+pop which is populated instantly from
+the hyperlink that was available to us
+now the color palette associated with
+each car
+gets darker the more the horsepower of
+the car increases
+so here we have cars with top
+horsepowers
+which are arranged in an
+ascending order from the top and a
+descending order from the bottom
+so this is another way that you can use
+bokeh to create extremely interactive
+and informational graphs
+here in just half a page
+and this is us making a huge plot right
+we can also decrease the size of the
+plot if you want to
+but basically in half a page we've
+conveyed all the information
+ranging from the name of the car to its
+model to the horsepower that is ha that
+it has its price and also its image
+and this is also very good way to
+compare it
+so these are just some functionalities
+which are provided in bokeh itself no
+other
+data visualization library will let you
+work so well
+with graphs and will let you customize
+your graphs to this extent
+thank you all for watching this video on
+the python data visualization tutorial i
+hope you liked it if you have any
+questions please feel free to put them
+in the comment section thank you again
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

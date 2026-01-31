@@ -1,0 +1,1199 @@
+hello everyone i am ang and welcome to
+simply learn today we will take you
+through the hands-on lab demo of how you
+can create a text to speech converter
+application using python
+before we start i hope the screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them
+let's wait for some more minutes to let
+other people join
+i'm repeating again before we start i
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+until then let me tell you guys that we
+have regular updates on multiple
+technologies if you are a tech geek in a
+continuous hunt for the latest
+technological trends then consider
+getting subscribed to our youtube
+channel and press that bell icon to
+never miss any updates from simply learn
+i'm repeating again let me tell you guys
+that we have regular updates on multiple
+technologies if you are a tech geek in a
+continuous hand for the latest
+technological trends then consider
+getting to subscribe to our youtube
+channel and press that bell icon to
+never miss any update from simply learn
+it i think we can get started in today's
+session we will go through what is text
+to speech converter after that we will
+create text to speech converter
+application using python
+this
+we will create this one
+we will perform different functions and
+create amazing ui for application using
+different python libraries before we
+move on to the programming part let's
+discuss what is text to speech converter
+and proceed further for the same
+text to speech is an api cloud service
+that enables you to turn return text
+into real sounding audio in a range of
+languages and voices
+by connecting with people in their own
+language you can give your business a
+voice and enhance customer experience
+and engagement
+increasingly accessibility of users of
+diverse abilities offering audio
+alternatives to prevent driving while
+distracted or automating customer
+service interaction to reduce hold items
+let's move to our programming part to
+create a text to speech converter
+application using python
+so first we will open command prompt to
+write command to open jupyter notebook
+so here we will write jupyter
+notebook
+to open jupyter notebook
+press enter
+so this is the landing page or jupyter
+notebook and select open new python file
+so this is how the jupyter ui looks like
+so at first we will import some major
+libraries of python which will help us
+in creating ui and to convert text to
+speech
+so the first one is
+import
+sorry
+import
+ek enter
+as
+tk
+so tk enter is also known as tk
+interface the default python interface
+for tcl tk gui toolkit is the tk enter
+package or ticker interface
+majority of unix system including mac os
+as well as windows machine support tk
+and tk intern
+tkinter which is part of all common
+python distribution is the binding legal
+method for creating graphical user
+interface gui in python
+it is the only framework included in the
+python standard library in fact
+so the next one is
+first we will write here
+import
+sorry
+from
+tk enter
+put
+from
+tk enter
+port
+file
+file dialog tk enter provides a number
+of built-in methods and class library
+function to create application
+components and user actionable elements
+one of the tk enter modules called file
+dialog offers classes and library
+functions for making windows for
+selecting files and dictionaries
+when you need to request that a user
+browser file or directory on the system
+you can use file dialog
+so
+the next one is
+import
+combo box
+combo box combines an entry field and a
+list box
+one of the tk enter visits
+it has down arrow to choose from a menu
+of possibilities it dates consumer in
+choosing from the list of available
+options
+a pop-up of scrolling list box is
+displayed down the entry field when user
+clicks on the drop down arrow on the
+entry field
+only when option from the list box is
+selected will the select option be shown
+in the enter field
+this one is
+it is one of the major one import
+ey
+e t x
+s x three
+okay
+so a python text to speech conversion
+library is called p y t t s x three it
+is compatible with python 2 and 3 and
+works offline unlike computing libraries
+to obtain a reference to our pyttx
+library
+engine instance an application called
+the
+x3 init
+factory method it is a very user
+friendly program that turns type text to
+speech
+this api file for windows program offers
+two voices that the pytas x3 module
+supports a female voice and a male voice
+3tts engines are supported by it
+windows sappy i5
+nss speech for mac os
+e-speak is available on all other
+platform
+so
+the next one is
+import
+os
+so the os module in python has function
+for adding and deleting folders
+retrieving their contents changing the
+directory locating the current directory
+and more before you can communicate with
+the underlying operating system you must
+import the os module
+the next one is
+from
+gtts
+import
+dts
+from
+play sound
+import
+a sound
+so gtts
+python has a variety of apis that can
+turn text into speech the google text to
+speech api often known as gtts api
+is one of these apis gtts is a simple to
+use program that turns enter text into
+audio that can be saved as mp3 file
+languages including english hindi tamil
+french german spanish and many more are
+supported via gtts api
+any one of the two accessible audio
+speeds rapid or slow may be used to
+deliver the speech
+the voice of created audio however
+cannot be changed as the most recent
+version
+so let me run this
+so after importing major libraries let's
+move forward and start creating user
+interface
+so i will write here
+import
+sorry
+root
+equals to
+tk
+put
+dot
+title
+simply learn
+to
+speech converter
+root dot
+geometry
+i will give a thousand
+580
+plus
+200 from y-axis and
+and
+80 from top
+okay
+root dot resizable
+will make into like false
+false
+and again false
+okay
+then
+dot
+configure
+background should be pg equals to
+use here hash
+f7
+ac
+four zero
+and
+okay first i will explain this so here
+tk stands for tk inter library
+every word in the string returned by the
+title
+method begins with an uppercase letter
+like a title or a header the following
+letter will be changed to uppercase if
+the word contains a number or a symbol
+one of the built-in methods in tk enter
+is geometry
+which is used to specify dimension while
+tk inter widget windows are mostly used
+to set the application windows dimension
+length
+the tk enter root windows size can be
+changed in accordance with the needs of
+the user using the resizable
+this one
+or we can forbid resizing of the tk
+enter window in other words this
+approach can be used to generate a
+window with a defined size
+simple text changes can be made to
+labels using python tk interconfig
+function
+two widgets are shown in the example
+below
+a label and a button when the button is
+pressed a function that is attached to
+the button execute the label config
+method
+you can give background color as per
+your choice i gave
+this
+orange something
+so
+let's run this and see the first look of
+ui by writing
+here i will write here
+root
+dot
+main loop
+i will run and all
+okay
+so this is how our ui looks like first
+ui
+so i can't resize because i gave here
+false false
+i can't resize it
+so if
+i will write here
+set of false i will write here true
+and again
+prove here
+so then i will run again
+[Music]
+so now i can resize it as per my choice
+okay
+yeah
+so i will write here
+false
+and again false
+meant it
+okay let's move forward and add some
+logos in the application
+i have already some png images on my
+system you guys can use any picture of
+your choice
+i have some images here
+images
+so
+you guys can use any picture of your
+choice
+so i will write here
+simply
+underscore logo
+first two photo
+image
+file
+then path of file
+slp
+09375
+top
+then
+ets folder
+yes
+folder then
+simply
+dot png
+then i will set label
+put
+h
+equals to
+employee image
+simply logo sorry
+and background
+i can copy from here
+dot
+place
+equals to
+880
+and y-axis should be
+like i will give here
+5
+30.
+okay
+let's run this
+root
+dot in loop
+here there is something error
+such file directory
+okay there is fun
+now let me run this
+yeah
+now you can see simply learn is there i
+need
+a little bit down
+so let me write again
+give here
+39
+run it again
+okay now it's looking good
+yeah
+the image object is returned by the
+photo image function
+output it's that easy to display a
+picture in python however the photo
+image class only supports the gif and
+png images
+which is a concern
+jpeg and gpg and png are the formats
+that are most often used
+the container box where the text or
+images can be placed is specified by the
+label
+the widget is used to inform the user or
+other widgets that are utilized in the
+python application
+the text or a portion of the text shown
+in the label can be configured using a
+number of different parameters
+the root window
+is where all the widgets are placed
+this one the root window is this all the
+widgets are placed
+even tk enter application must include
+precisely one increase of the class dk
+which is an instance of app is a
+subclass of frame
+and app is in instance of app
+by positioning them in a precise
+location with the parent widget the port
+manager organize widgets the option used
+by the geometry manager are anchor
+border mode height width
+real width
+x and y anchor
+shows the location where the widget is
+anchored
+okay let's move forward and add logo
+here
+instead of this add one logo here
+so i will make it comment down
+run it
+so for that i will write logo underscore
+image
+equals to
+photo
+image
+and file
+let's do
+we'll copy the path from here
+sit here
+okay
+so let me change it to speech
+dot png
+perfect
+so root
+dot
+icon photo
+false
+for my logo
+underscore image
+put dot
+main
+let me run this
+yeah now you can see a logo here
+so
+the image object is returned by the
+photo image function
+output it is the easy to display a
+picture in python however the photo
+image class only supports the gif and
+pgm which is a concern jpeg gpg and png
+are the formats that are most often used
+the title bar icon of the tk enter top
+level window is set using the icon photo
+but in order to set any image as a title
+bar icon it must be an object of the
+photo image class
+so okay logo is added
+this logo is added
+now we will make one upper frame like
+this one upper frame
+till here something like here
+and we will add the heading and logo in
+the frame
+okay
+so let me
+do this let me make it as a command
+so i will write here
+upper frame
+first to frame
+root
+and background should be
+you can use any color
+i will write here hashtag 1 4
+a
+7 dd
+cool
+then width should be
+1500
+yes i can give you 1200 is enough
+and height should be
+1
+30 is fine
+upper
+m dot place
+is equals to
+zero
+and
+y equals to your x and y equals to zero
+y because we need at the top
+so i will add one
+picture there so picture
+pursue
+again photo
+image
+i can copy from
+yeah
+same image i will add
+and label
+and when i'm where i'm
+adding here is like upper
+frame
+image equals to
+here background
+should be the same
+and dot place
+goes to
+150
+and y should be
+like i will give you 20.
+okay
+so let me run this
+root
+dot main
+two
+we'll run this run all
+okay
+okay there i have to write
+y equals to 20
+and again
+okay here
+what they should f is capital
+hope now it will run properly
+so the image is added here
+yeah for the purpose of grouping and
+arranging other widgets in a user
+friendly manner the frame widget is
+crucial
+it functions like a container that
+organizes the positioning of other
+widgets
+to arrange the layout and provide these
+widgets the screen uses rectangular
+regions
+the root window is where all the widgets
+are placed even tk enter application
+must include precisely one instance of
+the class tk
+and the label is specifies the container
+box where the text images can be placed
+these widgets used to inform the user or
+the other widgets that are utilized in
+the python application
+the text or a portion of the text shown
+in the label can be configured using
+several different parameters
+okay so logo is added and it's looking
+great
+so
+i hope you guys understand till here if
+you have any question or any query
+regarding
+any sort of code
+so just put as in comment our team will
+shortly provide you the correct solution
+i'm repeating again i hope you guys
+understand till here if you have any
+questions or any query regarding any
+code
+or if there are any questions related to
+python just put as in comments our team
+will shortly provide you the correct
+solution moving forward let's add a
+heading to the application
+so i will make it as a comment
+first i will add
+some
+[Music]
+else below
+better view
+okay
+so for that i will write here label
+i have to head heading at the upper
+frame so i will write here upper frame
+should be
+will give
+x
+to
+each
+converter
+on should be
+new
+woman
+okay side should be 40 is enough i guess
+and it should be bold
+background color should be
+i will add this one only
+so
+copy
+paste it here
+and foreground should be
+white
+and dot place
+at x
+equals to 250
+and y should be the same i guess i
+should be
+i will write 35
+to 30.
+let's run this root
+dot main loop
+run this
+okay it's like option front
+okay this is font i
+want sorry my bad
+oh it will work
+i guess
+yeah
+so here you can see
+x is added
+so for the purpose of grouping and
+arranging other widgets in user friendly
+manner the frame widget is crucial it
+functions like a container that
+organized positioning of the other
+widgets
+and the labels specify the container box
+where the text or images can be placed
+this widget is used to inform the user
+of other widgets that are utilized in
+the python application
+and in tk enter there are three
+different ways to specify a widget type
+to put it simply use the string format
+tk
+direct font format
+times 20 italic or bold
+upon family size styles is the structure
+of the string
+where style can be any legal mashup of
+text style keywords
+okay so heading is added now let's move
+forward and make our text box for
+writing text to it
+so let me make first
+as a comment
+okay
+so we are creating text box so i will
+write here text box
+equals
+to text
+and root window so i will write here
+root
+font
+so let me tell you first i will create a
+text box like this
+or this
+so font
+equals to
+library
+20. and background should be black or
+white
+okay let's do black first
+let it take it white only white
+and relief is something
+relief equals to
+groove
+and
+wrap
+keywords into
+word or characters word
+word
+and border width should be
+zero
+okay
+so text
+box
+dot place
+should i place it x equals to
+30
+comma y equals to
+150
+comma width
+it
+should be i will make it the longer one
+so i will write here
+940
+then
+height
+should be
+180
+so let's run this first root dot
+main loop
+let me run it
+so yeah
+xbox is created
+hello guys
+yeah
+so text box is created so the python
+application uses the text widgets to
+display text data the single line text
+box is implemented using the entry
+widgets which tkinter offers the
+multi-line style text is with a variety
+of styles and characteristics is shown
+using the text widget
+instead of group you can use
+raised flat bridge and many more
+it is used to make contact within a text
+document with
+using the rav features in tkinter we may
+enclose the characters or words in the
+tk widgets
+you can use word cats or none are the
+available default values for the wrap
+properties
+the tk enter button bd option determines
+the width or stroke of the border
+that encircles the button
+the width of the board around a button
+can be changed using the bd
+so by positioning them in a precise
+location with the parameter
+the put manager organized visits the
+option used by this geometry manager our
+anchor border mode height width
+x and y and many more
+so our text box is created
+you can write anything
+now let's move forward and add some
+combo box for selecting voice and speed
+so first
+i will but i will do it i will make it
+comment
+here i will write
+gender box
+for male female
+so it goes to
+combo
+box
+put
+value
+if the question
+email
+and font should be
+should be
+your font should be r
+o b o
+c e
+and 12 shells would be 12
+then there is something called state
+and then
+width
+12
+and
+gender box
+what place
+so i will place something here
+something here like gender should be
+here and speed should be here
+so i will write here
+equals to
+40
+comma
+y equals to
+400
+and gender box
+or set
+to mail
+run it so root dot main
+let me run this
+yeah so you can see male female
+yeah
+just combo box
+so a combo box combines an entry field
+and a list box
+one of the tinker widgets it has down
+arrow to choose from a menu of
+possibilities it aids consumers in
+choosing from the list of available
+option
+a pop-up of scrolling list box is
+displayed down the entry field when the
+user clicks on the drop down arrow on
+the entry field
+only when an option from the list box is
+selected with the selected option be
+shown in the entry field
+if i will select errors then it will
+show female
+male
+so some variables supported by tk enter
+can be used to change the values of tk
+inter widgets
+each variable operates as a typical
+variable would
+the values of these variable are set and
+retrieved using the set and get methods
+combobox combines a listbox widget and
+an entry widget
+you can choose one value from a group of
+values using a combobox widget
+you can also input a custom value in
+addition
+so settext is used to set the text in
+the entry box
+in the python tk enter
+it serves the purpose of entering text
+into the entry box when used as a
+function
+we will write a function and use as a
+button to invoke it
+so okay so it's look great
+moving forward let's add one more combo
+box for the speed one
+like fast medium and slow
+so whatever i will do
+i will copy
+first i will make it as a comment
+so
+first i will copy this and i will paste
+it here
+and i will write
+beatbox
+again
+beatbox
+again
+and i will set it to medium
+and there will be three values
+like fast
+pm
+and
+slow
+and i will place combo box
+where should i place
+will place it
+something
+like
+here i will place it here
+so
+for that
+i have to give x as
+around 540
+and y should be same
+so let me run this
+and let's see
+so yeah
+so it's looking fine function i use here
+is same as the previous one that we did
+for the gender one for this one
+so i hope you guys understand till here
+if you have any question or any query
+regarding
+any code
+any sort of code so just put as in
+comments our team will shortly provide
+you the correct solution i'm repeating
+again i hope you guys understand till
+here if you have any question or any
+query regarding any code just put as in
+comments our team will shortly provide
+you the correct solution
+so moving forward
+let's add play button to playing the
+return text
+but before
+that let's add something called select
+voice and select speed label for these
+two combo box
+for like select select voice type and
+select speed
+so let's add them quickly
+so i will write here label
+i am adding it to the root window so i
+will write here root
+and text
+equals to
+select
+voice type
+and font
+could be
+times
+common
+size should be like 15 is enough i guess
+it should be bold
+some
+background color should be i will
+here
+copy
+paste
+yeah
+foreground color should be
+white
+hot place
+equals
+to
+40
+and y equals to
+the 70
+okay let me copy this for the speed
+copy it and i will paste it here
+i will write here speed
+everything is same
+cut it and i will paste it here for the
+running
+let me run this
+lactic speed is there i don't know where
+you select okay
+okay i gave the same x values i guess
+yeah
+so here i have to write 540
+let me run this again
+select voice
+male female select speed fast medium
+flow
+so the python application uses the text
+widget to display the text data the
+single line text box is implemented
+using the entry widget which tkinter
+offers
+the foreground color of a button is set
+using the tk enter button fg parameter
+alternately the text color is on the
+button
+so it is looking cool
+now moving forward let's add play button
+somewhere here
+so
+i will write code for it
+a
+button
+[Music]
+i have one photo for it
+photo
+let me copy the path
+and play
+let's go btn
+first to
+button
+text
+equal to
+x should be
+play
+there is something called
+compound
+a button
+comma
+background should be
+[Music]
+white
+and
+width
+is 130
+pond
+goes to
+ariel
+hold
+um
+border width
+should be
+[Music]
+point
+one
+e
+c means centimeter
+and there is something called
+command
+equals to
+peak now
+a
+let's go
+ptn dot
+place
+x should be
+435
+y
+should be
+450
+let me see
+root
+dot main
+two
+come make it comment
+okay
+okay okay
+so this is a function
+we haven't created function yet so i
+will add it at the last
+so till
+see
+this
+border width
+okay okay w i d t h
+i hope now it will work
+it's
+a python application can add buttons by
+using the button widget these button can
+show text or images that explain what
+they are for when a button is clicked
+you can connect a function or method
+that is called automatically using that
+command
+so here compound determined the best way
+to display text and an image or the
+label cursor
+define how the mouse will look when it
+over the widget
+so the
+tk enter button bd option control the
+border width or stroke surrounding the
+button
+and some tk enter widgets let you use
+command binding to link a callback
+function to an event
+it enters that you may specify a
+function name in the widgets command
+option
+so that it will be called whenever an
+event occurs on the widget
+okay so our ui for the text to speech
+converter application is created and it
+is looking fabulous
+so now let's add function for converting
+the text to speech sound
+let me write the code first and then i
+will explain you line wise
+okay
+now we can write here
+command
+equals to
+peak now
+okay
+so what i will do i will add a function
+here
+i will add function here
+so let me write the code first then i
+will explain you linewise lies
+so
+here i will write ets tts is nothing
+just text to speech variable
+pytt
+sx3
+dot init
+ef for function speak now
+next
+equals to
+x underscore box
+dot get
+1.0
+till the end
+gender
+equals to
+gender box
+dot get
+and speed
+was to speed
+the scorebox
+dot
+get
+voices
+equals to tts
+dot
+property
+voices
+okay so there is one another function
+set voice
+if
+gender
+that
+property
+it should be capital
+property
+[Music]
+yeah
+voice
+if voice id versus id should be
+hero
+dot id
+ets
+dot say
+whatever written
+on text
+ts
+dot
+run
+run
+and
+i'm done for then
+else
+pts
+dot
+that
+property
+voice
+voices
+dot id
+pts
+dot say
+text
+and again tds dot
+done
+and
+here i will for
+i will write code for that speed if
+text
+and again if
+speed
+first equals to
+fast
+and
+ets dot set
+property
+and rate
+rate should be
+250
+or else if
+speed
+also equals to
+m
+so then
+ets dot set
+property
+and rate should be
+150
+that
+voice function will be called
+else
+eds dots that
+property
+it has dot set property and rate should
+be
+it should be
+60
+at
+voice
+okay so function is created
+dot get dot get get property fine text
+okay
+now let me run this
+so let me explain you
+ts is nothing just a variable
+to text to speech and init pytts x3
+engine has started obtains a pointer to
+an instance of an engine that will
+utilize the specified driver if another
+engine instance is already using the
+given driver
+the other engine instance is returned if
+not a new engine is built
+so speak now is a function which using
+get function i am getting the values of
+that text box voice
+i will show you it
+so
+from this
+from this speak now i am getting the
+value of text
+male and female then
+speed
+and using the get property i am getting
+the voices of male and female
+in set voice what i did using id 0 for
+male and assetting into the male
+and using id 1 for female and assigning
+it to the female
+and in this lc flatter i am setting
+speed to a particular values using the
+rate function and assigning them speed
+in frames per second
+so now let's see text to speech
+converters is working or not
+so what i will write here
+hello
+coders
+welcome
+to
+simplylearn
+oh i will play
+hello coders welcome to simple learn
+hope you hear the sound
+i repeat hope you heard the sound
+and same thing i will from
+from female
+object run and wait
+okay there is an error
+run and wait
+i will write
+let me run this again
+hello simply learn
+lo simply learn
+and again with female voice
+hello simple learn
+i will write here hello simply
+learners
+subscribe
+to our
+youtube
+channel hello simple learners subscribe
+to our youtube channel
+and i will play it too fast
+hello simple learners subscribe to our
+youtube channel
+then i will be slow
+hello simple learners
+subscribe to our youtube channel
+[Music]
+so
+i hope you guys understand till here if
+you have any questions or any query
+regarding any code just put as in
+comments our team will shortly provide
+you the correct solution
+i hope you guys must have understood how
+to create your own text to speech
+converter using python
+if you have any queries you can ask in
+the comment section below our team will
+respond you as soon as possible if you
+want this full code just comment for the
+same thank you so much for being here if
+you enjoyed this video please do
+subscribe to our youtube channel and
+give a like to this video
+thank you and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

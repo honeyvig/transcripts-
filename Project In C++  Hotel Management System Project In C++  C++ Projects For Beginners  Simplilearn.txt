@@ -1,0 +1,934 @@
+hey everyone welcome back to another
+tutorial by simply learn
+in this session we'll make a project in
+c plus this project will be a hotel
+management project in which we will have
+the information of the items or rooms
+that we have in the hotel and what are
+the food items ordered by the customer
+also we have the information that how
+many rooms are allotted to them
+also this project will tell us about the
+sales and the remaining food stocks we
+have and the total collection of the day
+we will make this project in three parts
+firstly we will discuss the first part
+in which we will declare some variables
+and then initialize them
+after that we will enter the quantities
+of items that we have in the hotel
+then we'll make a list of items or menu
+of items and rooms that we have in the
+hotel
+so let's start
+now we will switch to our code editor
+that is dev c
+so this is a code editor so here first
+of all let's make a new file we'll click
+on file and now we'll create a new file
+so now let's start with the project so
+first of all inside the main function we
+have to declare some variables but
+before that
+we will
+write the header files that is hash
+include iostream
+and then the namespace standard
+all right so we have included the header
+files now we'll start with the main
+function
+inside the main function
+we will declare the variable
+so first variable that will declare
+would be quant which stands for quantity
+and the second variable would be choice
+now we will declare those variables
+that store the quantity of food items or
+rooms
+so let's say
+the variable which will store the
+quantity of rooms would be q
+rooms
+and
+we have to initialize it also
+all right so similarly we have to do it
+with the food items as well so let us
+suppose uh one of our food item is pasta
+so we'll write
+q pasta that is quantity pasta
+we'll initialize it with zero
+similarly we'll do with the rest of the
+food items
+that is burger
+noodles
+and shake
+and chicken
+here chicken would be let's say chicken
+roll
+so these are
+our food items so these variables will
+hold the quantity of these food items
+so now we will declare those variables
+which will hold the value of the number
+of food items that have been sold so for
+example q pasta holds the value of
+number of pastas we had in our hotel and
+s pasta will hold the value of number of
+pastas that have been sold
+so let's start
+similarly we'll write s
+rooms that is sold rooms
+we have to initialize it with zero as
+well
+and s pasta
+similarly asperger
+s noodles
+as chicken
+all right
+now we will create some more variables
+that will store the price of the total
+price of each of these food items or
+rooms
+so let's do that let's say in total
+underscore rooms this is the variable
+name
+it will store the total price of the
+rooms
+we will initialize it with zero
+similarly
+total
+pasta
+equals zero
+total
+burger
+all right
+so these variables holds the quantity of
+food we have
+these variables holds the quantity of
+food we sold and these variables will
+hold the price the total price of each
+of the food items or rooms
+so let's
+comment it this holds quantity
+so that it's easy for you guys
+all right so here we have declared these
+variables
+now
+now we will make a list kind of a
+structure in which we will ask
+the user
+to enter the
+number or quantities of food items or
+rooms that we have in the hotel
+so
+all right now let's do this
+first of all we have to display a
+message
+but before that we'll use slash n and
+slash d
+so slash n means the next line and slash
+t will add a horizontal space in the
+output
+so we need
+that horizontal space
+so we'll write
+quantity of food
+let's say items only quantity of items
+we have
+we have in a hotel all right
+now
+we'll write rooms available
+so we'll add slash in and
+rooms
+available
+all right so after this
+we will write c in and take the input of
+quantity of rooms we have because here
+we are asking to enter the number of
+rooms we have
+so we'll write c in q rooms because it
+holds the quantity of rooms we have
+we have initialized it with zero
+similarly we'll do it for the rest like
+quantity of pasta like this will do
+inside the
+slashing
+now we'll write the quantity of pasta
+see in
+q pasta
+all
+right
+now similarly
+let's copy paste
+and save some time
+so this first was the pasta then
+burger
+and cube
+then there was noodles
+few noodles
+similarly we'll do it for shake
+and then
+here chicken is the chicken roll
+so quantity of chicken roll
+q chicken
+all right
+so
+one by one q room the quantity of rooms
+we have to add q pasta the quantity
+pasta we have to add then quantum burger
+we have
+all right now we have to create a menu
+to select the pasta burger room all the
+items we have to create a menu like that
+and for that let's do this
+we'll write c out again we'll use
+slash n
+slash and then
+again slash d slash
+t
+because you want some horizontal space
+in that
+we'll display a message saying that
+please select from the given menu
+options
+all right
+so it's a message for the users
+or the customers i would say
+now again we'll use slash n
+because i want to add some new lines
+so i'll use two selection
+now
+first is rooms
+secondly we'll use only one selection
+and
+here we are creating the
+menu to select the food items or rooms
+so now we will write
+pasta
+and similarly we'll copy paste
+so pasta then there was burger
+the noodles
+and there was shake
+then there was chicken
+chicken roll
+we also have to change the numbering
+that this is one this is two
+then this is three
+we are doing the numbering because the
+customer will press the number
+and then he can order
+five
+six
+and now again we'll
+in seventh position we'll add the
+details or information
+regarding the collection and sales
+so
+[Music]
+we'll write
+press 7 if you want to see the
+information
+regarding
+sales
+and collection
+this option would be used by the owner
+of the hotel to check the total
+collection for the day
+all right now again
+the eighth number
+is for
+if you want to exit
+yeah
+so this is done now
+after that we'll display a message
+saying that
+please enter your choice
+so we'll use slash and slashing and
+right
+please enter
+your choice
+now i will write c in choice we have
+already declared this variable
+now based on this choice your order is
+selected like if you press
+2 then this pasta would be selected like
+let's say if you want to order noodles
+then you have to select four and if you
+want to
+order chicken roll then you have to
+select six and if you want to
+check the total sales and connect
+collection of today
+that is
+for a particular day then you have to
+click 7 and 8 for the exit
+so a first part is done now in the
+second part we have to add the
+functionality to the choice part that is
+if a user enters the first number that
+is number one then rooms is selected and
+then he or she have to add the numbers
+of rooms they want
+similarly for the other food items as
+well like if they want to take two
+burgers or three burgers instead of one
+and we only have one burger left
+then also we have to display a message
+saying that only so and so burgers are
+left
+so now let's start with it
+so now we'll write switch case
+statements so when
+the user will select a particular number
+so that particular case would be
+executed
+so now let's
+do that
+right switch
+and
+inside the switch statement
+we'll write choice
+now the choice can be one two three four
+five six seven eight
+all right so now we have to create eight
+cases for that
+so case one would be
+we'll start with it
+there's a space between case and one
+all right so case one would be
+first of all inside the case one
+that is the case when rooms have to be
+selected so first of all we'll display a
+message saying that enter the number of
+rooms you want
+so let's do that
+use slash n
+now
+enter the
+number of rooms you want
+all right
+now after that
+the user will enter the number of rooms
+that is the quantity of rooms
+so now we'll take the quantity
+in the quantity variable that is quant
+variable
+so the user will enter the number of
+rooms that is the quantity of rooms he
+or she wants
+now we'll use a if statement and if
+statement inside this if statement now
+inside this if statement will check do
+we actually have that many rooms in our
+hotel or do we actually have that many
+pastas or burgers in our hotel
+right now so for that we have to write
+down a condition that is
+q rooms
+minus s rooms
+is greater than
+equal to
+quant
+that is
+q rooms is the quantity of rooms that we
+have and s rooms the number of rooms
+that we have sold
+so if
+we minus both of these that is if we
+subtract the quantity of room we have
+minus the rooms we have sold will get
+the remaining rooms now if the remaining
+rooms it's greater than equal to the
+quantity of rooms that have been ordered
+by the customer then
+we can give the room to them otherwise
+we have to display a message saying that
+we don't have that many rooms or
+something like that
+so let's do that so we'll write s rooms
+that is the rooms that we have sold so
+initially its value is zero so we have
+to add the values of quantity that have
+been
+entered by the user so we'll add the
+quant variable that is if the user have
+entered two rooms he or she wants then
+we'll
+add the add those two values to this
+sold rooms
+all right after adding the quantity to
+the sold rooms now
+we will do the total price of the room
+or rooms and for that we have the
+variable
+total
+room
+so we'll add
+this quant
+into the price of a one room
+to this total room
+so
+we are simply adding
+total room
+plus
+quantity
+into the price of a single room that is
+let's say 1200 is the price of a single
+room
+if a person orders two rooms then it
+would be like quant that is two two into
+1200 2400 will be added to this total
+room this total room is the total price
+of a room
+all right
+now we also have to display a message
+saying that these many rooms have been
+allotted to you so for that let's
+display a message
+first of all we'll use slash n like two
+times now
+we'll add some horizontal space as well
+all right
+now we'll display this quant variable
+and write a message
+that these many rooms
+have been
+allotted
+to you
+let me let's make it room or rooms
+room or rooms have been allotted to you
+so this message will be displayed
+all right
+now
+this is the if block now we'll have to
+make the else block that
+if the
+amount or quantity of room entered by
+the user is more than the remaining
+rooms then we'll display a message
+saying that only so and so rooms are
+left in the hotel
+so we'll use slash n then again slash d
+now
+write
+only
+few rooms
+minus s rooms that is here q rooms minus
+s room is the remaining rooms are the
+remaining rooms so
+subtracting both of these
+variables will give us the remaining
+rooms
+so
+these were the remaining rooms
+remaining
+in
+hotel
+all right
+and let's not add these as there's a
+single statement
+also we have to use break
+so we'll use break statement now
+similarly we have to create case 2. this
+case was for the room
+so whenever a user click on this one
+then this case will be
+executed so similarly we'll create a
+case 2
+so let's
+we'll copy it now we'll paste it
+so
+[Music]
+i will case to
+so in this case enters the number of
+rooms you want we can't we can't write
+that
+so we'll write past the quantity
+so let's do that
+we'll write
+enter
+pass the
+quantity
+all right so in this case
+the cn would be same that is quantity
+variable we have
+so
+now in this case the different thing
+would be the queue rooms instead of
+queue rooms we'll use the
+q pasta that is the quantity of pasta
+minus sold pastas
+it must be greater than quantity of
+pasta we have
+then only if block will execute
+otherwise similarly as that of this
+block will display a message
+so now
+the s rooms instead of s rooms here
+we'll use s pasta
+which is initially zero
+so we'll add the quantity of pasta to
+this variable that is will add the
+quantity of pasta that is ordered by the
+custard to this variable
+now
+total pasta that is the total price of
+the pasta
+so the number of pastas ordered by the
+customer into the price of a single
+pasta let's say the price of a single
+pasta is around 250.
+so quantity into 250
+now
+rooms instead of rooms let's do here
+pasta is the order
+so quant
+so quant will display the
+quantity
+so it will display like if you have
+order two pastas will it will display
+two
+pasta
+is the order
+and
+q roms here we have to display the
+remaining so we'll do the q pasta minus
+s pasta
+and here we will do is pasta remaining
+in hotel or stock
+pasta remaining in hotel
+so it will display the remaining pasta
+remained in the hotel now so
+else everything is fine now similarly
+we'll do for the next
+we'll copy it it will save some time
+and paste it now this is case three the
+case three is of burger
+so
+able to write
+burger
+quantity of burger minus
+burgers
+similarly s burger
+now the total price of burger
+so let's say the price of a burgle is
+around 120
+and so
+the remaining burgers
+q burger minus asperger
+the fourth case now
+that is the noodles case
+so enter noodles quantity
+now case 5
+now case 5 is of shakes
+so we'll write enter shakes quantity
+now
+case 6 we have to create
+in the case 6 there is chicken roll
+so let's do that
+chicken
+minus s chicken
+also we have to change the price of each
+meal like chicken roll
+would be of around 150
+and this shake would be
+120
+noodles
+140 let's say
+burger is okay then
+pasta is also okay
+so we have created six cases as of now
+so our second part of the program is
+done now we'll start with the third part
+of the program
+so the third part will contain the case
+7 case 8 and the default case that is if
+the user enters any other number which
+is not in the list that will come under
+default case
+in case 7 we have to display the
+information of sales and collection that
+is how many
+money we have collected for the day and
+the remaining food items etc
+so now let's start with the case seven
+so when the user will enter
+seven that is case seven
+then he want to see the details of the
+information of sales and collection
+so we'll display a message saying that
+details
+of sales
+and
+collection
+all right
+so after this message let's add slash
+slash t slash t
+all right
+so after this message
+we have to display the number of rooms
+we had the number of rooms we gave for
+rent
+and then the remaining rooms that is
+minus the quantity of rooms minus the
+sold rooms then the total rooms
+collection for the day so similarly will
+do for all the meals like pasta burger
+noodles etc
+so let's do it
+so we'll start
+display
+first of all we'll add slash in
+now
+number of rooms
+we had
+we'll display q rooms that is the
+quantitative rooms we had
+now
+similarly
+number of rooms
+we give
+for rent
+all right
+so we'll write
+s
+runes
+now we have to display a message
+similarly we'll write slash and slashing
+remaining
+rooms
+so
+for that we have to simply subtract
+queue rooms with s rooms that will give
+us the remaining rooms
+after that
+the total price that the room has
+collected what number of rooms have
+collected
+so we'll write
+total
+rooms
+collection
+for the day
+now
+it is stored at total rooms
+this variable is storing the total
+drives of rooms
+this is the complete information of
+rooms similarly we have to do it for the
+burger noodle pasta etc
+so we can copy we'll copy this part
+and we'll do
+copy and paste
+and paste
+again we'll paste
+now number of rooms we had instead of
+this we'll simply write number of pastas
+we had
+number of pastas
+we have to change that
+number of pastas we
+sold
+yeah that would be right
+now remaining past us
+there are few minor changes that we have
+to do
+total
+pasta collection
+also make sure to change the variables
+total
+pasta
+then
+q pasta
+all right now
+after pasta it was burger
+burgers we have
+number of burgers we sold
+all right so
+it will be q burger
+and s burger
+remaining burgers
+total burger collection for the day
+all right
+now we'll do same for
+noodles
+all right now
+shakes
+number of shakes we had
+number of shakes we gave
+we sold
+remaining shakes
+now there is chicken roll
+number of chicken rule we had
+all right now the case 8 the case 8 we
+have used for this was the case 7 and
+the case 8 we have used for exit as you
+can see here
+this is the exit case
+and for that
+we'll simply
+use the exit statement the exit
+statement is used to terminate the
+program to shift the control out of the
+program or exit the program
+so here we'll use that so k state would
+be
+exit and inside that will use 0 0 will
+mean that 0 millisecond
+and now after that we'll have to use the
+default case that if the user enters any
+other number that is not present in the
+menu list then this default case will be
+executed so in this
+default case we'll display a message
+saying that please select from the
+numbers that are mentioned above
+so we'll use slash n
+please
+select
+the numbers
+mentioned above
+so this message will be printed
+and also one more thing is there
+we have to use a go to statement
+and we'll have to label
+a part with m
+now i'll explain to you that why have we
+used this jump statement that is go to
+statement
+so after making a choice we again want
+to choose another option that is if i
+have ordered two pastas then i also want
+to order two
+burgers as well
+so
+we will mark
+or label
+menu with m
+so this is a menu please select from the
+menu options so here we will label m
+and
+in the last we have used the go to
+statements
+so the go to statement here will
+transfer the control to the menu after
+making a choice
+so again m is the label we have used for
+the menu and we will use a go to
+statement to transfer the control to the
+menu after making the choice so that we
+can make more choices
+go to is a jump statement basically that
+is used to jump from one part to another
+part having a specified label
+so we have labeled menu with m and this
+go to jump statement will help us in
+jumping to the menu after every choice
+all right so our code is done we have
+done all the things that we need
+now we need to run it
+and for that firstly we need to save it
+all right so let's go to files and save
+it
+and now let's
+select the destination folder
+let's name it as management
+management dot cpp
+all right
+so the program is saved
+now let's try to
+compile and run this program
+so there are some errors i can see
+okay so
+we have used
+the semicolon
+now
+this will take care of many errors now
+let's try it again compile and run
+let's check q noodles
+all right i think uh
+q noodles
+so we have two backspaces now let's try
+to
+compile and run again
+hope it works now
+so quantity of items we have as we can
+see
+so rooms available let's say we have 10
+rooms
+and quantity of pasta
+we have
+25 pastas in our hotel
+and around 50 burgers
+and 30 noodles
+and
+36
+chicken roll we have 40
+so this is the menu please select from
+the menu options as you can see
+first rooms then pasta burger noodles
+shake chicken roll information regarding
+sales and collection and then it to exit
+so first of all
+let's say
+i want to order two rooms so i'll click
+one please enter your choice i have
+clicked one and i'll press enter now
+enter the number of rooms you want
+and let us suppose i want two rooms
+so as you can see
+two room or rooms have been allotted to
+you
+now again the menu is displayed on the
+screen now let's say i want
+burgers so i'll click on three
+and i want two burgers
+and two burger is the order it is
+displayed
+now again i want a
+pasta let's say
+i want
+six pastas
+and six pasta the order
+i want
+to order now shakes
+let's have something to drink i want to
+order
+nine shakes
+nine shakes is the order
+and let's say
+so as we know that we have only 10 rooms
+now let's try to enter 11
+so first of all we'll enter one that is
+rooms
+now let's try to order
+11 rooms
+as you can see only 8
+8 rooms available or remaining in hotel
+so we forgot to add some space over this
+part
+but we can easily read it now as of now
+so
+it is displaying the message that only
+eight rooms are available because
+already we have ordered
+two early it was ten then now only eight
+rooms are available so this is showing
+that if we order
+more than the quantity then it will
+display this message
+now let's say i want to
+check the information regarding sales
+and collection of today's
+rooms and as well as meals so i'll
+simply click on seven
+now as we can see it will simply display
+all the
+sales and collection
+rooms and meals as you can see number of
+rooms we had 10 number of rooms we gave
+for rent two remaining rooms are eight
+so total rooms collection for the race
+2400 as one room is of 1200
+so similarly number of pastas we had 25
+number of pastas we sold 6 remaining
+pastas we had 19 so the total pasta
+collection is 1500 so and so the burger
+and then noodles and then shakes and
+chicken roll
+so this is the total chicken roll
+collection for the day
+that that is we haven't ordered a single
+chicken roll also we can do one more
+thing we can simply
+display the total result of all the
+collections of rooms and meals
+so let's do that
+now so to display the total collection
+of the day all we need to do is to add
+all the totals of pastas burgers and
+rooms
+so for that we have to go to case seven
+now we'll write slash and slash and
+slash in three times
+so here we'll write total collection for
+the day
+and after that
+total rooms
+plus
+total
+total burgers
+total pasta
+this total
+burger
+total
+[Music]
+chicken
+all right after this we will use the
+break statement
+now let's run the program
+so here it is rooms available
+let's write 10.
+quantity of pasta
+30
+quantity burger 50
+quantity of noodles 30
+shakes 30
+chicken roll
+40.
+so first of all i'll book two rooms i'll
+click on one and now two rooms
+and again
+if i'll click on
+rooms
+and then if i try to click
+10 rooms because already we have two
+sold we sold two rooms then it will
+display that only eight rooms remaining
+in hotel
+now i'll
+click on two to order pasta let's say i
+have ordered five pastas and
+five pasta is the order
+now let's say if we click on nine
+although we know that only one to eight
+numbers are available but if we click on
+nine
+so it will display a message please
+select the numbers mentioned above
+all right now let's say i have i want to
+order chicken roll
+10 chicken rolls i want
+so 10 chicken roll is the order now i
+want to check information regarding
+sales and connection for the day
+so click on 7
+and then here i can see
+number of rooms we had number of rooms
+we gave for rent remaining rooms and
+total collection for the day
+similarly for the pasta
+similarly for the burger similarly for
+noodles
+shakes and
+chicken roll as well
+and this is the total collection for the
+day 5150 exit
+and if we click on it we can exit
+so as we can see
+this is our hotel management project
+and this is how it's done
+the code is bit long but it's worth it
+you can also try this project on your
+own
+alright guys with that we have come to
+the end of this video on project in c
+plus if you like this video please give
+it a thumbs up i hope it really helped
+you all thanks for watching stay safe
+and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

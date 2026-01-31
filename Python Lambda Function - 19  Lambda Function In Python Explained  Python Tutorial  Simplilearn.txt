@@ -1,0 +1,699 @@
+hello everyone
+welcome to another video tutorial on the
+python series of tutorials by simply
+learn today we are going to learn about
+lambda functions in python in our
+previous video we have already seen
+the important built-in functions and how
+to write user defined functions in
+python in this video we are going to
+learn about lambda functions in python
+so what is the lambda function
+a lambda function
+is one of the simplest ways to define a
+function in python a lambda function is
+an anonymous function defined without a
+name and does not have the def keyword
+it can accept any number of arguments
+but can only have one expression
+so the function is always defined using
+the lambda keyword which you can see it
+here
+so here we have the syntax for lambda
+function we use the lambda keyword
+followed by the arguments and then we
+have a colon after that we have the
+expression that we want to evaluate
+cool
+now
+moving ahead let's
+look at an example of using lambda
+function in python
+now
+if you were to add two numbers in python
+using a function you would ideally use
+the def keyword followed by the
+function name and then pass in the
+arguments you can see the arguments here
+a and b
+then
+use the return statement to get the
+value of the addition so we have written
+a plus b
+and finally you will call the add
+function and pass the argument values to
+get the result
+now this operation can be done using the
+lambda function as shown here so we have
+defined a variable called add which is
+equal to and then we have used the
+lambda function followed by the two
+parameters or arguments so here a and b
+are the arguments and then i have my
+expression a plus b see all this you can
+do it in one line
+and then to call the function you use
+print
+followed by the variable which is add
+and then you have the arguments 3 comma
+8 so the addition of 3 plus 8 would be
+11.
+now you can see that instead of using
+the df keyword we have used the
+lambda keyword and there is no
+parenthesis required anything after the
+lambda keyboard is treated as a
+parameter or argument
+so
+we use a colon to separate parameters
+and the expression in our case the
+expression is a plus b
+now moving ahead we look at
+the pros and cons of
+lambda functions so lambda functions are
+suitable for simple logical operations
+so when we want one expression in return
+we can use the lambda function
+a lambda function is used as a parameter
+to
+different functions such as map filter
+reduce we will see all this in our demo
+session
+now coming to the cons of using
+a lambda function
+so
+lambda functions can only evaluate one
+expression as i told you earlier
+you cannot write a dot string to explain
+all the inputs operations and outputs as
+you would do in a normal user defined
+function that uses the df keyword
+and finally lambda functions are
+generally not preferred when you have to
+declare a function with multiple lines
+of code
+now let's head over to our jupyter
+notebook where we will learn about
+lambda functions and how to use it in
+different ways
+so i'm on my jupyter notebook let me
+just go ahead and we'll
+rename the notebook as
+lambda
+functions in python
+okay i'll just click on rename
+cool
+first of all i'll write a
+general user defined function using the
+def keyword let's say i want to add two
+numbers
+so this example we have already seen in
+our slide
+so the way to do is i'll use the df
+keyword followed by the
+function name and then i'm giving my
+arguments or the parameters
+after that
+let's say i want to store
+the addition of a plus b in a variable
+called result so i'll say result equal
+to e plus b
+and then
+i want to return my output that is
+result so i'll say return result
+so this is how you will normally create
+a function in python
+if i run it and then i'm going to call
+my function using the function name that
+is add and then i'll pass in
+my parameters a and b let's say my a is
+3 and b is 4.
+if i run this
+i will get the result 7 which is fair
+enough now if i want to
+do the same operation using
+a lambda function i would do something
+like this let's say i'll create a
+variable called add
+and then i'm going to use the lambda
+function
+followed by the arguments a comma p
+then i will give a colon and say a plus
+p
+after that i just say add
+and then pass in my parameters
+3 comma 4 if i run it you have the same
+result that is 7.
+now let's see another example using
+lambda functions to add
+a number this time i am going to pass in
+only one argument
+so i will say add equal to
+lambda
+my argument is x i'll say x colon x plus
+let's say i want to add x with
+100
+i'll say
+print
+add let's say i want to add 50 with 100
+if i run it i have the result 150
+all right
+now in python there is no need to assign
+a lambda to a variable you can directly
+call it let me show you how to do it
+i'll say
+lambda
+a comma b which are my arguments
+again this time i am going to use
+a multiplication
+operator
+since i want to do a
+product of a and b
+and after that
+using another parenthesis you can
+directly pass in the
+arguments so there is
+no need to explicitly assign a lambda to
+a variable
+so if i want to find the product of
+let's say 15 comma 30
+if i run it i have the result 4 t
+let's change the arguments let's say i
+want to find the product of 5 comma 7
+the answer is 35
+so this is known as an immediately
+invoked function expression or iife
+which is often pronounced as iffy
+you can also use keyword arguments using
+lambda functions let me show you what i
+mean
+i'll create
+my lambda function and assign it to a
+variable called product i'll say
+lambda
+let's say my arguments are x y and z
+after that i'll give a colon and say
+x multiplied by y multiplied by z
+next i'll say print
+my variable that is product
+and here i am going to use keyword
+arguments so i will say let's say
+z equal to 5
+x equal to 10
+and y equal to 4.
+you can see here
+this need not be in an order as you have
+defined the arguments
+if i run this i have the result the
+product of 5 multiplied by 10 multiplied
+by 4 is 200.
+now you can also
+use default arguments
+suppose i say add equal to i'll use the
+lambda function
+and say x comma
+why i am assigning a default
+value of let's say 15 and z let's say
+i'll assign a default value of 24
+then i'll give my colon followed by the
+expression that is x plus
+y plus z
+now i'll say print
+add now here i'm going to only pass in
+my value for x since i've already
+given a default value for
+argument y and z
+so
+my function only needs
+one argument that is x so let's say i
+want x to be
+20.
+if i run this
+you see the result here so 20 plus 15
+plus 24 is 59.
+now you can also use the
+asterix
+args parameter or args
+so this allows you to define as many
+arguments as you want
+so i'll say addition
+equal to
+lambda
+then i'll say asterix ergs
+so this will
+allow us to pass in as many arguments as
+you want
+and i want to find the sum of
+args so i'm using the inbuilt sum
+function in python
+now i'll say print
+my variable name that is addition
+and let's say i want to find the sum for
+four
+values or four arguments let's say 20 to
+40 and let's say
+50
+if i run it so the value is 112 so 20
+plus 2 plus 40 plus 50 is 112
+cool
+now lambda functions are also used with
+higher order functions which take one or
+more functions as arguments
+or return one or more functions let me
+show you
+so i'll define a variable
+called higher underscore
+ord underscore f u n which stands for
+function and y d stands for order
+so i'll declare my lambda function
+suppose the parameters are x
+and then i have a
+function
+then followed by a colon i have
+expression as x plus
+function of x
+now i'll say
+higher underscore ord underscore
+f u n
+and i'll pass in my two
+arguments let's say my x is 20
+and for this
+function
+i'll have
+a lambda function defined i'll say
+lambda x
+colon
+x multiplied by x
+now
+let me just run this and i'll show you
+the result okay so what it did was
+it added
+my value of x that is
+20 with
+function of x or f u n of x what is f u
+n of x fun of x is
+x multiplied by x so 20 multiplied by 20
+is 400 so this becomes 400
+plus x
+which is 400 plus 20 hence the result is
+420
+so this is known as a higher order
+function
+now let me show you another example
+let's say i want to display order event
+by
+taking the value of x
+i'll say lambda x colon
+here i am going to pass in my expression
+if x
+mod
+2
+will give a space here
+i'll say and
+odd
+or
+even
+now i'll give my argument value let's
+say 30
+the result is even because 30 is
+divisible by 2
+i'll just change this to let's say 15.
+if i run it the answer is odd because 15
+is not divisible by 2.
+let's say i have 150 the answer is even
+now moving ahead
+so let's write a lambda function that
+checks if a string is a substring of the
+given string
+so i'll create a variable called sub
+underscore
+string
+now i'll assign this
+variable with a lambda function i'll say
+lambda
+my
+argument let's say string
+i'll give the colon and pass in my
+expression string in
+let's say my string
+has this message welcome to
+python
+functions
+tutorial
+okay
+so we are going to check
+for string let's say in to welcome
+python java anything whether it is
+present inside the string which is
+welcome to python functions tutorial
+now let me go to the next line
+i'm
+going to print
+sub underscore string
+and let's say i want to check for my
+string
+let's say java
+if i run it it gives me false because
+the word java is not present inside my
+string welcome to python functions
+tutorial
+suppose i write
+python
+now one thing to note here is
+the p is
+small and here the p is in capital
+letter
+if i run it it again gives me false
+because
+python is case sensitive now if i make
+this as capital p it will result in
+true
+let's say i want to say
+instead of tutorial let's say i have
+training
+if i run it it tells me false because
+the support training is not
+there in the string welcome to python
+functions tutorial
+i'll change this to tutorial
+you see here i have my result as true
+all right
+now let's see how to use lambda
+functions using filter function so we
+are going to filter a list of numbers
+using a specific condition
+so i'll create a
+list called num
+let's say it has values 40
+10 40
+then we have 56 27 let's say 33 15 and
+70.
+so this is my list
+now i'm going to use
+my lambda function
+along with the filter function
+so i will pass in my variable as greater
+i'll say list
+then i am going to
+pass in the filter function and inside
+the filter function i will use the
+lambda function
+and i'll have my
+argument as num
+and my expression let's say i want to
+filter only those values
+which are greater than 30
+so i'll say num greater than 30 this is
+my expression
+or the condition that we want to check
+i'll give a comma
+and
+i'll have my next argument as num
+and let's go ahead and print the
+variable greater
+if i run this there you go you can see
+here we have all the values from the
+list or the numbers from the list that
+are greater than 30 so we have
+40 56 33 and 70 so
+10
+27 and 15 are
+less than 30 and hence those three
+values were not printed
+now let's say you want to filter a list
+of numbers that are divisible by four
+so i'll create another list called list
+one
+and
+let's say i'll have the
+same
+values in the list so i'll just copy it
+and i'll paste it here
+and i'll create my variable let's say
+divide
+i'll say divide equal to
+list one
+i'll use the filter function
+followed by
+the lambda function
+i'll say x
+colon
+then i'll have my expression
+x
+mod 4 should be equal to equal to 0
+i'll give a comma and pass in my
+next argument as my list 1.
+now
+i'm going to
+say print
+divide
+okay
+okay i'll remove the bracket here there
+is no need of a bracket here cool
+and we'll delete here as well
+now let's run it
+okay there is one error here this should
+be list one
+let's run it again
+okay there is some error let's debug it
+okay so this should be the function list
+cool
+there you go
+so here you can see we have two numbers
+40 and 56 that are divisible by 4.
+the remaining
+numbers are not divisible by 4 and hence
+were not printed
+all right
+now let's go ahead and explore how you
+can use the map function along with the
+lambda function
+so the map function accepts two
+arguments a function and a list it takes
+that function and applies it to every
+element of the list and returns the
+modified list
+so we'll create a list called
+list2
+let's say equal to
+and again we are going to have the
+same values in the list as above
+so i'll just
+copy those values
+or the numbers and i'll paste it here
+okay
+now
+let's say
+i want to find
+the value of a number multiplied by 2 so
+i'll say
+let's say the variable name is double
+the num or double the number
+i'm going to use the list function
+followed by the map function this time
+and then we'll have our
+lambda function
+i'll pass in my argument as x
+colon
+followed by the expression so x
+multiplied by 2
+i'll give a comma and then we'll have
+the list that is list 2
+there's a spelling mistake here this
+should be list 2 all right
+now
+i'm going to say print
+double
+underscore the
+underscore num
+make sure there is no space
+in the
+variable name
+now if i run it
+you can see here we have multiplied
+every number in the list by 2 so
+10 multiplied by 2 is 20
+40 multiplied by 2 is 80. similarly 30
+multiplied by 2 is 66
+15 multiplied by 2 is 30 and again we
+have 70 multiplied by 2 is 140
+so this is how you can use
+map function with
+lambda functions
+now suppose you want to find the power
+of a number let's say i want to find the
+power of a number raised to 3.
+so i'll create a list called list
+3
+let's say i have values 2 comma 5 comma
+10 comma 6 comma 4 and then let's see we
+have 12
+i'll say
+cube
+so i want to find
+the value of a number raised to the
+power 3
+so for that i am going to use the map
+function followed by the
+lambda function
+i will pass in my argument x
+and then
+here i am going to use the inbuilt
+power function in python so p o w
+my
+argument x
+and this x i want to raise it to the
+power of 3
+and then i'll have my
+next argument which is
+list underscore 3
+or list 3
+okay
+now
+let's
+print the list so i'll say list of
+cube
+i'll run it
+you can see here
+so 2 raised to the power 3 or 2 cube is
+8 5 cube is 125 10 cube is thousand
+6 cube is 216 4 cube is 64 and 12 cube
+is
+1728
+now coming to the final section of the
+demo where we'll see how to use
+the reduced function in python along
+with the lambda function and then we'll
+use the lambda function within a user
+defined function
+so first let's look at how to use reduce
+in python
+so reduce applies a rolling calculation
+to all items in a list you can use it to
+calculate the total sum or to multiply
+all the numbers together so reduce
+function is a part of
+func tools module so to use the
+reduce function you need to import the
+func tools module first so i'll say from
+funk
+tools
+import
+my function that is
+reduce
+and then i'll say
+let's say i have my list 4 this time
+i'll create a list
+i am going to take the same values as
+above
+and i will pass in within a list
+and now
+i want to find the sum of all the
+numbers that are present inside this
+list called list 4
+so i'll do that using my reduced
+function
+followed by the lambda function
+so i'll say x
+comma
+and i'll give my expression as
+y colon
+x
+plus
+y
+give a comma and pass in my last
+argument which is my list itself which
+is list four all right
+and then i'll say print
+sum
+let's run it
+there you go so 2 plus 5 plus 10 plus 6
+plus 4 plus 12 is 39
+so this is how you can use
+the
+reduce function in python suppose you
+wanted to find the
+product of all the numbers present
+inside the list so you can just
+use the
+asterix instead of the addition operator
+now if i run this
+you have the product of all the numbers
+that were present inside the list that
+is list four we have twenty eight
+thousand eight hundred
+now
+let me show you the final demo that is
+using a lambda function in a user
+defined function
+so first of all i'll create a
+user defined function to calculate the
+value of a quadratic equation
+so
+for some of you who don't know the
+formula quadratic equation it is
+ax square plus bx plus c so we are going
+to use that formula in our function
+and find the value using
+lambda function
+so i'll create a user defined function
+called quadratic
+and it will have
+three arguments a comma b comma c
+i'll say
+return
+and here in the return expression i am
+going to pass in my lambda function i
+will say lambda
+x which is my
+argument i'll say x
+colon
+then i'll have my equation which is a
+x square so i am saying a multiplied by
+x
+raised to the power 2 so i am using
+double
+asterisks
+plus
+b
+multiplied by x so this becomes ax
+square plus bx
+plus
+i have my constant that is c
+now
+just go to the next line
+i'm going to create a variable let's say
+f
+i'll have my
+user defined function name quadratic
+i'll pass in the values for a b and c
+let's say a is 2 b is 3
+and c is let's say 5
+and i'll call a of 1
+the value of x is 1
+the value of a is 2
+the value of b is 3 and the value of c
+is 5. now let's run it and see the
+result
+so
+ax square plus bx plus c
+for
+equal to 2 b equal to 3 and c equal to
+5 the result is 10.
+now let's change it to let's say i want
+the value of x as 2 if i run it
+you have the
+equation evaluated and the result is 19
+all right
+so that brings us to the end of this
+video tutorial on using lambda functions
+in python i hope it was useful and
+informative if you have any queries
+please feel free to put them in the
+comment section of the video thank you
+for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

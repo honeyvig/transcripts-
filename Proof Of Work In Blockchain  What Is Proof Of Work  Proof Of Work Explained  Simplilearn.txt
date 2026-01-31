@@ -1,0 +1,195 @@
+hey everyone and welcome to this new
+video of simply learn on proof of work
+in blockchain
+in this video we are going to cover all
+important concepts and components
+related to proof of work
+first we will have a quick introduction
+of blockchain then we will understand
+what is proof of work
+then we will look into how does it works
+and after that we will explore why is it
+actually needed
+what are the issues faced by proof of
+work
+and at last we will look into the
+blockchains working with proof of work
+so without further delay let's get
+started with the video
+but before that let's have a quick
+introduction to blockchain
+the term blockchain refers to a
+decentralized database that is made up
+of sequential blocks that contain
+recorded data
+the database is backed up by a network
+of self-contained participants known as
+nodes
+now let's understand what is proof of
+work
+proof of work is a decentralized
+consensus method that requires network
+participants to spend time solving an
+arbitrary mathematical puzzle in order
+to prevent the system from being hacked
+it is widely used in cryptocurrency
+mining for validating transactions and
+mining new tokens
+it helps in the processing of
+peer-to-peer transactions securely
+without the need of a trusted third
+party
+it also requires huge amount of energy
+at scale which only increases as more
+miners join the network
+now let's have a look at how proof of
+work works
+the right to add new blocks to a proof
+of work blockchain is provided to
+individuals who are willing to expand
+computational resources to solve
+cryptographic issues
+the participants competing to add new
+blocks are referred to as miners and the
+process is referred to as mining
+miners are the one who execute proof of
+work miners
+use their computational power to locate
+a valid block when a piece of
+information such as a transaction needs
+to be added to the blockchain
+this is accomplished by locating a hash
+that meets the network protocol specific
+requirements
+in cryptography a hash is the outcome of
+a hash function it converts any format
+or size of data into fixed size numbers
+the protocol established a level of
+mining difficulty that is
+algorithmically adjusted so that the
+time it takes to obtain a proper hash
+averages 10 minutes
+miners can sometimes locate multiple
+blocks that satisfy the protocol's
+requirements at the same time
+and split the chain n into
+because there can be only one accurate
+chain the protocol must account for
+these circumstances
+miners will initially continue to mine
+on both chains
+but once another block is discovered on
+top of one of the two prior blocks that
+chain becomes the canonical chain and
+miners are economically incentivized
+to discard the other block
+one of the advantages of proof of work
+blockchain in terms of security is their
+resilience to civil attacks the civil
+attacks occurs when one player in the
+network generates many false identities
+in the order to get an unfair edge
+over other network participants who only
+have one identity 51 attacks occur when
+a single user takes control of more than
+51 percent of the network's resources
+and hence has control over the adding of
+new blocks
+now we know how proof of work works
+let's dive down deeper and explore why
+do we need proof of work
+majorly proof of work is required for
+security and fraud prevention as well as
+trust
+proof of work is intended to prevent
+users from printing coins they didn't
+earn
+or from double spending
+if users could spend their coins more
+than once the currency would effectively
+become worthless
+proof of work ensures that independent
+data processors or miners can't lie
+about a transaction
+linking a block with the proof of work
+hash of its predecessor results in
+tamper resistance
+because the hash of each block is an
+ingredient in the hash of the following
+block
+any changes in the chain will affect the
+final proof of work
+hash as well as all block hashes in
+between
+so the deeper the altered block the more
+computational effort needed for
+tampering
+the first miner who discovers the proof
+of work answers publishes the solution
+to the rest of the network when a new
+block is discovered all nodes are
+notified we check the answer twice
+before moving on to the next block
+ps if correct the block miners earn the
+transaction fees and the block reward
+the protocol only accepts the longest
+chain as valid and authentic a fake
+chain is impractical in the long run
+since a minus chances of receiving the
+block reward and minimal
+other miners will continue to extend the
+valid chain quicker than the tampered
+chain over time
+moving on let's have a look at the other
+side of the coin as well as understand
+some of the major issues with proof of
+work
+first is it has a negative impact on the
+environment
+second the 51 attack can be used against
+it if miners gain control of 51 of the
+hashing power they will be able to
+determine what is true
+aside from the enormous cost of price
+there is no mechanism in place to punish
+any malicious miners
+and four because every node must process
+every transaction it does not scale
+properly while sharding the network may
+boost efficiency it also reduces
+security this was all about proof of
+work let's explore the best blockchain
+networks working with proof of work
+bitcoin is the largest and the very
+first blockchain to adopt proof of work
+and work with it ethereum is next
+working with proof of work
+though it is aiming to switch to proof
+of stake which we will talk about in a
+coming video
+then comes bitcoin cash which is an
+extension of bitcoin and follows the
+same structure thus it also works on
+proof of work
+then come litecoin which is also an
+altcoin of bitcoin
+and then comes monero another
+cryptocurrency serving similar purpose
+as other cryptos
+well this is all about proof of work in
+blockchain we have almost reached the
+end of this video if i missed anything
+important do let me know in the comment
+section
+i hope you enjoyed this video on proof
+of work in blockchain and learn
+something new from it if you like this
+video then please do hit the like button
+thanks for watching this video and stay
+tuned for more updates and videos from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

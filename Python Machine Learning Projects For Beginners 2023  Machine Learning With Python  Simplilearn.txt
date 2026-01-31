@@ -1,0 +1,4138 @@
+foreign
+today we will take you through the
+Hands-On lab demo of how you can
+implement the movie recommendation
+system before we start I hope the screen
+is clearly visible and the audio is fine
+if yes please type in yes if there are
+any issues do let us know in the chat
+section so that we can resolve them
+I'm repeating again before we start I
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+let's wait for some more minutes to let
+other people join
+yeah until then let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek on a
+continuous hunt for the latest
+technological Trends then consider
+subscribing to our YouTube channel and
+press that Bell icon to never miss any
+update from Simply learn
+I'm repeating again let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek on a
+continuous hunt for the latest
+technological Trends then consider
+subscribing to our YouTube channel and
+press that Bell icon to never miss any
+update from Simply learn
+I can see the people start joining
+great I think we can get started in
+today's session we will go through what
+is movie recommendation system after
+that we will see how movie
+recommendation system work moving
+forward we will see filtering strategies
+for movie recommendation system and at
+the end we will see Hands-On lab demo
+like how to create movie recommendation
+system using python in detail we already
+have data set with us we will perform
+different function and Implement a movie
+recommendation system using python
+before we move on to the programming
+part let's discuss what is movie
+recommendation system actually is and
+proceed further for the same
+so renting CDs and DVDs reading local TV
+listenings watching film strip
+projectors or recordings all of this is
+a thing of the past today
+all of the world's biggest film
+collection have been digitized and moved
+to the online streaming services like
+Netflix HBO or YouTube
+this platform can now help us with what
+is possibly the most difficult task of
+all choosing a movie they have been
+enhanced with AI powered capabilities
+well that is no longer a concern for you
+it is final time for machine learning to
+put its skills on display in the modern
+cinematic landscape
+to create Advanced predictive system for
+True movie expert data scientists are
+prepared to investigate our behavioral
+patterns and those of movies
+a movie recommendation system also known
+as a movie recommender system uses
+machine learning to predict or filter
+user fill preferences based on their
+prior decision and actions it is an
+advanced filtration system that
+anticipate the consumer in question
+potential like selection for a domain
+specific item a movie
+so after seeing what is movie
+recommendation system let's move forward
+and see how movie recommendation system
+actually works a movie recommendation
+system fundamental idea is a pretty
+straightforward every recommender system
+primarily consists of two components
+users and items user receive more
+prediction from the system and the
+actual movies are the products filtering
+and predicting only the movies that a
+matching user is most likely to wish to
+see in the main objective of movie
+recommendation system the user
+information from the system database is
+used by the ml algorithm for these
+recommendation system
+based on information from the past this
+data is used to forecast the user in
+questions behavior in the future
+data should be handled by expert because
+it is so crucial to ml projects
+including the movie recommendation
+system
+after seeing how movie recommendation
+system works let's see some filtration
+strategies for movie recommendation
+system
+to assist user in finding the most
+relevant films movie recommendation
+system employ a variety of filtration
+techniques and algorithm
+the content-based filtering and the
+collaborative filtering system
+subcategories of the ml algorithm used
+for the movie recommendations are the
+most well liked ones
+filtering based on content or content
+based filtering a method of filtering
+movies in a movie recommendation system
+that makes advantage of the item's data
+this information which is taken from the
+just one user is quite important in this
+case
+this technique uses an ml algorithm to
+suggest movies that are comparable to
+the user's past choices
+therefore the information about the
+prior movie choices and likes just one
+person is used to generate similarity in
+content-based filtering
+and the second one is collaborative
+filtering as the name implies this
+filtering technique is based on the
+interaction between the relevant person
+and the other user for the best outcomes
+the system contrast and compare these
+behaviors it combines the film choices
+and users patterns of several people
+like there are two types of
+collaborative filtering algorithm the
+first one is collaborative filtering
+based on users the goal is to find
+patterns in Target users and other
+database users like movie preferences
+and the second one is collaborative item
+based filtering the fundamental idea
+behind this is to find comparable
+products products like movies that
+Target users rate or interact with so
+after seeing the filtering strategies
+for movie recommendation system so here
+is one question for you guys
+I will give you one minute for this you
+can comment or you can give answer in
+chat section so I can see if the answer
+is given by you are right or wrong I'm
+repeating again so here is one question
+for you guys I will give you one minute
+exactly one minute for this you can
+comment or you can give your answer in
+chat section so I can see if the answers
+given by you are right or wrong
+so the question is which is the best
+language for machine learning
+programming
+which is the best language for machine
+learning the first one is Java the
+second one is python the third one is
+our language and the fourth one is C
+plus plus
+so this is the question I am repeating
+again which is the best language for
+machine learning
+so option one is Java second python R
+language and C plus plus
+so I'm starting timer of one minute just
+type your answers in comment section or
+in a chat section do let me know your
+answers
+please I want that everyone should
+participate in this and make this live
+session interesting
+so I am starting timer
+oh your time starts now
+please guys do let me know your answers
+in chat section or in you can comment
+down
+42 seconds to go
+you can comment or you can give your
+answer in the chat section so I can see
+if the answer is given by you are right
+or wrong
+30 seconds more
+which is the best language for machine
+learning
+you can give your answer to chat section
+or you can comment
+so I can see if the answers given by you
+are right or wrong guys come on please I
+want that everyone should participate in
+this and make this live section
+interesting
+one guys five second more
+one
+yep time up
+so time is over we will give reply those
+who gave correct answer and those who
+didn't give correct answer we will give
+you a reply with the correct answer
+so now let's move to our programming
+part to perform movie recommendation
+system using python
+so first we will open command prompt to
+write command to open jupyter notebook
+so we will write Jupiter
+notebook press enter
+so this is the landing page of Jupiter
+notebook and select here new
+new python file
+so this is how jupyter notebook UI look
+likes so at first we will import some
+major libraries or python which will
+help us in mathematical functioning so
+so the first one is numpy import
+numpy as NP
+so number is a python Library used for
+working with arrays it also has a
+function for working in the domain of
+linear algebra and matrices it is an
+open source project and you can use it
+freely numpy stands for numerical python
+so here NPD NP is denoting numpy so we
+will import the next Library
+port
+pandas
+as
+PD
+this should be space yup
+so
+pandas is a software Library written for
+the Python programming language for data
+manipulation and Analysis in particular
+it offers data structures and operation
+for manipulating numerical tables and
+time series so
+so after importing libraries we will
+move ahead and import data set so for
+importing data set we have to write like
+we have two data set with us
+let me show you the data set we have two
+data set with us
+the first one is credits
+this one
+and the second one is movies one
+movies one so don't worry you can get
+this data set link in the description
+box so let me write
+here
+credits
+let's go data frame equals to PD dot
+read
+underscore CSV
+here you have to give your location of
+the data set
+credits
+dot CSV
+the second one is movies
+let's go data frame
+this is for movie data frame PD dot read
+ESP
+so here you have to give the movie
+location movie data set location movies
+dot CSV
+okay everything seems good
+let me run this
+yeah
+so then
+here PD is for the pandas Library read
+is used for reading the data set from
+the machine and CSV is used for the type
+of file which you want to read
+so after this let's write code to see
+the data set so we will write here
+credits underscore DF
+and we will run it so this is our so
+this is our credit data set and next one
+is movies
+underscore
+so this is our movie data set
+so this is how our board data set look
+like so here you can see three dots
+this one and here also
+this one
+so we are unable to see our full data
+set like what if we want like full a
+4803 rows
+so at that case
+we can write here
+PD Dot set
+underscore option
+okay
+and here we will write display
+dot Max
+underscore columns
+this
+and here we will write none
+same for the rows PD dot set
+option
+display
+dot Max
+underscore rows
+okay
+none
+let's run this
+so now if we will write credits
+underscore DF
+it is running yeah
+so now you can see your full data set
+like full credit data set with 4803 rows
+or four eight zero two rows because
+there is
+this is starting from zero that's why so
+what about movies data set
+okay wait running
+it is still running you can see here
+so here you can see the full data set
+movie data set with 4802 rows
+or if you want to see only five top rows
+so you can write here
+credits underscore DF dot head
+so by this
+only five top rows so from head you we
+can see our five top rows and if we will
+use tail instead of head we can see our
+last five rows so here let me do with
+the movies one
+DF Dot tail
+yeah
+so here you can see 4798 row four seven
+nine and Del four eight zero two so with
+tail we can see our last five rows
+so moving forward let's merge the credit
+data set to movie data set because if we
+will combine them the confusion will be
+less and at the end it will be better
+for us so we will write here movies
+underscore
+equals to movies
+underscore data frame and credits
+underscore DF
+on
+it okay T is small I guess yeah perfect
+Titan
+so let me do something something like
+this
+okay
+it is saying data frame object is not
+callable
+edits underscore DF
+okay why because
+we haven't wrote merge here
+now it will work
+yeah perfect it's working so data is
+merged let's see the number of rows and
+column using share function so now we
+have only one so movies underscore DF
+dot shape
+okay let's run it 4809 and 2 3 23 but if
+we see here like in movies data set so
+in movies data set here here yeah yeah
+there are 20 and in here we are four
+columns in credit data set
+so
+like so you will be thinking that's why
+not 24 why only 23 columns that is why
+on title you can see here on title the
+titles in both titles are same you can
+see here
+both titles are same
+in both
+okay let me show you like this okay
+after Pirates of the Caribbean Spectra
+and so on
+here you can see after pirates of the
+academy inspector and so on
+so that is why on title written while
+merging so title are same so moving
+forward let's see our merged data set
+so we will write only movies
+underscore data frame dot head
+yeah
+so our data is merged you can see
+the last cast crew movie ID yeah you can
+see here movie ID title are the same
+damage cast crew okay guys
+let me give some more
+for the better View
+yeah
+so you can see all Columns of credit
+data set are added to movies one so
+moving forward let's see another
+function like
+movies
+underscore DF Dot info
+so by this
+yes you can see
+so by this the data frame information is
+printed via the info method the data
+includes the total number of columns
+their labels data kinds memory use rage
+index and the number of cells in each
+columns like non-null values note that
+info method does indeed print the
+information
+so here you can see the all the
+information is printed
+okay
+like columns name and the all null
+values count and data types too like
+this int object and
+in which we are working most so after
+this let's move forward and select some
+main column in which you are working
+most so we will write movies
+underscore DF equals to movies
+underscore DF
+title
+comma and another one is overview
+okay why
+okay here we have to get like this yeah
+so here we have to write John R
+Jonah is complete and we will work on
+what keywords keywords are the main
+keywords okay keywords then
+it will cost
+then we will
+we will do recommendation with the crew
+as well
+okay
+so by running this let me see
+our data again with seven okay okay
+there is one error okay this is movie
+the movie idea Journal yeah not index
+okay got it got it
+why not genre
+it's John Oates I guess
+what it is it's Jonas
+that's why
+it's Jonas okay
+yeah so let's see our data again with
+seven columns so I will write so I will
+write here movies underscore DF
+dot head
+here
+so you can see only our we have like
+movies ID same title overview joiners
+keywords cash and crew only
+so here you you can see the selected
+columns okay so let's move forward and
+once again let's see the info again like
+movies
+underscore TF Dot
+invoice come with selected columns and
+let's move forward and see how many
+missing values are present in particular
+column so like the columns is full we
+can see here but we don't know about
+that four thousand eight zero three
+values are filled or not so what we will
+do it we will see how many missing
+values are present there so
+here we will write like movies
+underscore DF dot is null
+dot sum
+not like this
+yeah perfect
+so the function data frame is null this
+one is null dot sum dot sum Returns the
+number of missing values in the data set
+so here you can see overview have three
+missing values
+so what we can do is we can write here
+movies
+underscore DF
+DF
+Dot
+drop n a
+this
+equals to
+true
+okay
+we will run it with sayings okay words
+documents
+also true okay fine
+and yeah it will not create an issue so
+if you sat in place equals to true the
+drop any method will modify your data
+frame directly that means that if you
+set in place equals to true the drop any
+will drop all missing values from your
+original data set let's move forward and
+see
+movies
+underscore DF
+Dot
+duplicated
+so the duplicate method returns a series
+with true on false
+values that describe which rows in the
+data frame are duplicated or not use the
+subset parameter to specify if any
+column should not be considered when
+looking for duplicates
+so
+here let me run this first
+so here we are we are getting 0. y 0 so
+if you are like thinking there is no
+true or false return so if you write it
+without sum like if I will write it
+without some
+okay let me copy from here yeah and I
+will run this so
+here you can see
+false false false in whole data set
+so some will combine them and return you
+a value at the end zero represent false
+itself
+so we need to not need this so we will
+write something else
+so moving forward let me write First
+movies
+underscore DF dot I location
+0
+dot Jonas
+let me run this
+so the ilog function this one ilock
+function
+first let me do something like this
+it will go up okay huh
+okay so from ilog function in Python is
+defined in the pandas module that helps
+us to select a specific row or column
+from the data set
+using the ilock method in Python we can
+easily retrieve any particular value
+from a row or column by using index
+value so here zeroth position line is
+coming
+which is here you can see
+so name action like name action name
+Adventure name fantasy this PSI
+physician
+this one science fiction yeah so this is
+because I am giving here Jonah that is
+why you can see here
+see id28 name action name something
+something like that okay
+so
+let's import something called ASG
+abstract Syntax for tree
+so this is one of the major Library
+import AST
+let me run this import is a class
+defined is the AST module that is used
+to express the import statement in
+python in the form of abstract syntax
+tree so
+so an abstract syntax tree or just
+syntax tree is a tree representation of
+the of the abstract syntactic structure
+of text written in a formal language
+each node of the trade denotes a
+construct occurring in the text
+so let's convert some like literal to
+object and append them so here I will
+write Def
+convert
+obj object
+like l
+equals to
+blank array
+for I in
+St Dot
+turtle
+bit
+EV
+Which object
+okay
+l dot append
+return
+here we are converting is like here is a
+convert is a function and L is the array
+to append by using for Loop we can
+append them to name so let me write code
+then I will explain like what is
+happening so let me write full code so
+movies
+underscore TF
+like
+Donuts
+okay
+because your movies
+Donuts
+and then dot apply
+what
+so then movies underscore TF
+then I will write keywords
+let's do movies
+underscore DF
+keywords
+lie
+this code DF Dot
+so if we will see our old data set in
+that like we will see old data set in
+that Joiner and that's keyword this
+keyword
+apps ID name and so on like ID that name
+like this type of things so it will
+create a message retrieving them so by
+using AST Library we just convert them
+to the normal one like title so got it
+guys so I hope you guys understand till
+here if you have any question or any
+query regarding any code or question
+just put as in comment our team will
+shortly provide you the correct solution
+abbreviating again I hope you guys
+understand till here if you have any
+type of questions regarding any code or
+something
+so just put as in comments our team will
+shortly provide you the correct solution
+so moving forward let's convert cash to
+and like same as previous way like like
+this only so what we will do here we
+will write f
+convert
+am
+here I am using
+so l equals to
+counter equals to zero
+St
+dot literal
+we
+if counter
+does not
+equals to 3
+then
+l dot
+Dot
+dot append okay then here I have to
+write I
+to name
+okay
+counter
+equals to 1.
+if you want to write like count as
+equals to counter plus one it is like
+both the same
+else
+click
+done
+l
+so let me run this let me run this
+okay so after this small code we have to
+assign the values like
+we are doing it for Costner so movies
+okay moves
+let's go DF then cast
+there's two movies
+underscore DF
+asked
+Dot
+reply
+convert
+everything seems good
+so let's see the changes are visible or
+not so we will write here movies
+underscore TF
+dot hat
+you can ignore this like this is nothing
+so here you can see cast is also
+same like keyword and journal so like
+let's do for the crew too so like we are
+converting you can say in a structured
+way
+so let's do for the crew one two
+so let me put some
+yeah
+so here we will add depth like fetch
+which is nothing like a function name as
+director
+obj
+okay
+colon l equals to
+or i n s t Dot literal
+obj
+if
+I
+like top
+equals to
+we can hit director
+so then
+l dot append
+l dot append
+um
+dot append to the same name
+but
+return
+okay capital l
+so we have to again write that movies
+video
+equals to movies
+in crew
+lie
+h
+just remember fetch director is a
+function name let's see changes
+so here I have to write movies then
+press enter
+so yeah crew is all set so
+changes are visible and data is looking
+good so what we
+like if I want to see the first movie
+Avatar overview this like this dot dot
+dot so I have to write here
+like movies
+overview
+Overview at 0th place
+oh yeah
+so this is a full overview of avtar
+movie like let me read for this in this
+2017 Century uh paraplegic Marine is
+dispatched and blah blah blah blah and
+civilization
+so moving forward that what we want to
+recommend movie in the basis of overview
+genre keyword cars so for that we need a
+separate separate words like in the then
+22nd century alone
+so if you will see in other columns all
+the words are separated but like here if
+you will see all the words are separated
+like action is subtracted Adventure is
+updated fantasy it's separated
+so
+there is a long sentence in this this
+one in the overview one there's a long
+sentence
+so it's difficult to recommend from this
+so what we are going to do is well we
+will separate them like like other
+columns so here we will write
+movies
+overview
+let's do movies
+and overview
+and Dot apply
+lie my bad sorry
+then Lambda
+colon x dot
+split
+error so let's see the results so movies
+yeah you can see in the section so now
+you can see all the words are separated
+by comma so now it will easy to match
+overview to recommend a particular movie
+so moving forward so what we are going
+to do is if there is a two word and
+space between there so we are going to
+remove that space so here you can see
+science fiction are separate separate
+okay so we are going to re like remove
+this one this is space
+so let's write code for that
+so here I will write like
+overview is already done so we will do
+not do for that so let's write code for
+the rest columns
+so here I have to write
+movies
+like
+genres
+pursue movies
+and again
+Jonas
+or apply
+Lambda
+X
+I dot replace
+to no space
+oh it seems good
+then I have to write for everywhere so
+for I in x
+it's for I in x 4 I in x
+movies genres equals to movie genres dot
+apply Lambda X
+I dot replace this to this for
+same score
+so let's copy paste this see
+one for keywords and one for cast and
+crew
+eats
+I would
+ask
+first
+that you
+that's the same so let me run this
+okay no error seems good so let's see
+the changes so movies
+so now you can see the science fiction
+space is gone like here is science
+fiction space is there
+now science fiction space is gone
+so like okay
+let's move forward and create one new
+column name as tag and put all the
+column data in a particular column
+okay let me do first yeah let me write
+movies
+this is a column one column name equals
+to movies
+then first we will put overview
+Plus movies
+and joiners
+and movies
+and what we have to give uh keywords
+keywords
+then again
+movies
+then
+asked
+let me run this
+okay
+so let's see the data frame movies
+okay still coming so like there is one
+problem I guess
+yeah no no no
+so here you can see all the data is
+merged in a under attack column yes you
+can see like in the second sensory blah
+blah blah so
+I hope you guys understand till here if
+you have any question or any query
+regarding any code
+or anything just put as in comment or
+our team will shortly provide you the
+correct solution okay so I'm repeating
+again I hope you guys understand till
+here if you have any question or any
+query regarding any code or like any
+question just put as in comment our team
+will shortly provide you the correct
+solution
+so from here let's create a new data
+frame
+okay
+so let me create new data frame because
+now we don't need this overview car
+screw Joiner like columns like this we
+have already merged into a one one
+column like attack column so we will
+write here new
+DF equals to movies
+so
+like movies we need movie ID
+new data frame we need movie ID comma we
+need Title
+and we have everything in tag column tax
+column so we need tax column
+okay let's run this let's see our new
+data frame
+so this is our new data look likes with
+only three columns like a movie ID title
+and tags so here you can see array
+brackets like this this area brackets
+so
+we are gonna remove them so we will do
+what we will write here we will write
+new
+data frame
+that n tags
+equals to
+new
+data frame
+tax
+dot apply
+Lambda
+X
+then I will give space
+dot join
+themes good everything is okay okay fine
+yeah
+so let's see the results so
+we will write a new underscore data
+frame
+so you can see the brackets are removed
+now let's see the data which is present
+in the zeroth index in tag column like
+this dot dot in this
+okay for that we have to write here
+a new
+data frame
+tax
+we did it before like for the overview
+one so you have to yeah
+so this is the whole data in the first
+like first index zeroth index so some
+part of the overview like from
+civilization and some are you can see
+this action Advantage fantasy science
+fiction these are some like genres
+and
+like here you can see like these are
+some Crews members
+and
+yeah like Sam Worthington like they are
+some cast crew okay
+so like moving forward like what we are
+going to do is just make them in lower
+case for the better prediction like
+something in capital and something like
+smaller so let's make it to
+lowercase so new underscore DF
+tax
+equals to new
+underscore DF
+tax
+dot apply
+it's got an X
+dot lower
+okay
+so don't worry about this error
+let's see the result uh new underscore
+DF
+Dot
+yeah now all the data present at TAG
+column is in small case or you can say
+lowercase moving forward let's do some
+feature extraction using count
+vectorizer so let's let me write first
+from SK learn
+Dot feature
+Direction
+feature extraction okay cool
+dot text
+import
+count
+riser
+TV equals to
+count
+riser
+underscore
+features
+features
+equals to
+5000.
+oh
+words
+equals to
+English
+and this yeah
+so count vectorizer okay there is a
+I cannot import count vectorizer from
+SQL and from user
+okay okay sorry sorry my bad here V is
+capital
+okay guys so he V is capital yeah so no
+error so count vectorizer is a great
+tool provided by the scikit-learn
+library in Python it is used to
+transform a given text into a vector on
+the basis of the frequency count
+of each word that occurs in the entire
+text so
+let me write something CV Dot
+with underscore
+transform
+f
+X like dot to array
+shape
+okay
+so the fit method like learns a
+vocabulary dictionary of all tokens in
+the Raw documents that is it creates a
+dictionary of tokens by default the
+tokens are words separated by spaces and
+like punctuation so that Maps each
+single token to a position in the output
+back Trace so here CVS are like here CV
+is a counter vectorizer so let's convert
+into Vector to array so for this we have
+to write vectors
+vectors equals to CV dot fit
+okay then transform
+X
+in
+so here we have to write
+Dot
+to array
+yeah then we have to write
+vector
+its vectors
+yeah you can see Vector 2 array all the
+zeros
+okay so moving forward let's get the
+feature Name by writing
+okay so we will write here
+Lian LAN
+CV dot get
+feature
+names
+okay then bracket
+yeah
+so okay we have like 500 feature names
+so I'm repeating I'm saying again like I
+hope you guys understand till here if
+you have any question or any query
+regarding any code whatever it is so
+just put as in comments our team will
+shortly provide you the correct solution
+okay guys like any code or you are not
+understand anything just put as in
+comment our team will shortly provide
+you the correct solution
+so let's import some major Library which
+is import
+nltk
+so what is nltk the natural language
+toolkit nltk is a platform used for
+building python programs that work with
+human language
+for applying in a statical network
+language processing NLP it contain text
+processing libraries for tokenization
+parsing classification stemming tagging
+and semantic reasoning
+so moving forward like from let me write
+first from
+and
+nltk
+dot stem
+dot Porter
+import
+ER
+yes equals to
+order
+I mean is a process for reducing a word
+to its word stem that suffix and prefix
+or to the roots of words known as Alama
+stemming is important in natural
+language understanding nlu and natural
+language processing NLP
+so here like I have to write
+so here I will write def stem
+to text
+y
+equals to
+or
+I in
+text Dot split
+y Dot append
+s dot stem
+done
+or join
+y
+so let's apply this timing to attack
+column so here we will write new DF
+X
+equals to
+new
+if
+tag
+dot apply
+them
+so let's import a cosine similarity from
+SK learn so we will write from SK learn
+dot matrices
+Dot pairwise
+import
+cosine
+underscore see me clarity
+okay it seemed good from SQL and
+mattresses
+metrics sorry Matrix Dot pairwise it is
+[Music]
+pairwise import cosine similarity okay
+let's run this no error so cosine
+similarity measures the similarity
+between two factors I repeat cosine
+similarity measures a similarity between
+two vectors of an inner product space it
+is measured by the cosine of the angle
+between two vectors and determines
+whether two vectors are pointing in
+roughly the same direction
+it is often used to measure document
+similarity in text analysis so here we
+will write
+cosine
+underscore see me
+clarity
+vectors
+so these all are the vector present
+let's see the cosine similarity Vector
+column and row using space
+so here I will write cosine
+let's go see similarity
+vectors
+dot shape
+so it's still running you can see here
+yeah
+so 4806 rows and four eight zero six
+columns are there let's assign variable
+similarity to this
+okay so let's similarity
+will write like this it might equals to
+cosine
+similarity
+this is underscore here
+I did this because we don't have to
+write always this long sentence a long
+keyword you can say
+so moving forward let's see First Column
+like we will add similarity
+yeah so this is our first column uh so
+let's see the rows only so we will write
+here
+t
+0
+Dot
+shape
+4806 okay
+so let's move forward and let's create
+some like sorted list so
+for that sorted
+okay
+paste
+enumerate
+spelling is fine
+okay one more like similarity
+similarity
+zero
+where I have to write reverse
+equals to true
+comma key
+equals to Lambda
+colon
+X not capital x x
+to write 1
+one colon six
+seems good yeah
+so the enumerate function in Python
+converts a data collection object into
+an enumerate object enumerate returns an
+object that contains a counter as a key
+for each value with an object making
+item within a collection easier to
+access so finally let's create the
+recommend function to check the movie
+recommendation system
+okay
+so
+so let's write here d f
+recommend
+we
+X
+also new
+DF
+in the TF
+I tell
+equals equals to movie
+X
+zero
+tenses
+versus similarity
+and movie
+yeah so movies
+list
+equals to sorted
+list
+numerate
+red
+distances
+comma reverse
+pursue
+true
+keyword
+sorry key only okay
+equals to Lambda
+let's call an X
+1
+.
+6
+or I in movies
+list
+Dot ilock
+I
+0
+dot title we because we need Title only
+so yeah it seems good okay
+so finally that like time is game
+so finally the time has come to check
+the recommendation of your favorite
+movies so you can comment in the chat
+section so I can check
+so let me write first recommend
+recommend for movie
+Avatar
+okay
+so here you can see the recommendation
+system is working fine so Titan a DOT e
+small soldier Independence Day are the
+recommendation for the movie after so
+let me check for the another one
+recommend
+like for
+one of my favorite movie Iron Man
+so here you can see Iron Man 2 Iron Man
+3 Avengers Age of Ultron Captain America
+and the Avengers are just
+recommendations for the movie Iron Man
+so let me check for the one more
+recommend
+Liars
+liar
+things going on 30 and the last one is
+last one I want to check is
+Captain America Civil War
+let me copy from here only
+yeah you can see the Captain America the
+First Avenger the Winter Soldier Iron
+Man 3 age of ultron's The Avengers
+so I hope you guys understand till here
+if you have any questions or any query
+regarding any code or question just put
+us in comments our team will shortly
+provide you the correct solution I hope
+you guys must have understood the
+concept of how movie recommendation work
+and how we can implement it using python
+if you have any queries you can ask in
+the comment section below our team will
+respond you as soon as possible and if
+you want this full code if you want this
+full code this full code if you want
+so just comment for the same we will go
+through the what is sentimental analysis
+after that we will see types of
+sentiment and Analysis we will see some
+application of sentiment analysis and at
+the end we will see Hands-On lab demo
+like how to implement sentiment analysis
+using python in detail we already have
+Amazon Customer data set with us we will
+perform different function and analyze
+data for sentiment analysis using python
+you can download data set from the
+description box below so before we move
+on the programming part let's discuss
+what is sentiment analysis actually is
+and proceed further for the same
+intimate analysis sometimes known as
+opinion mining is a technique used in
+natural language processing NLP to
+determine the emotional undertone of a
+document this is a common method used by
+organization to identify and group ideas
+regarding a certain good service or
+concept
+text is mined for sentiment and
+subjective information using data mining
+machine learning and artificial
+intelligence
+tools for sentiment analysis assist
+businesses in extracting information
+from unstructured unorganized language
+found in online sources like emails blog
+posts support tickets web chats forums
+and comments algorithm use rule-based
+automatic or hybrid technology to
+replace manual data processing while
+automatic system use machine learning to
+learn from their data rule-based system
+execute sentiment analysis using
+predetermined
+lexicon-based rules combining the two
+method result in hybrid sentiment
+analysis
+sentiment analysis or opinion mining can
+extract the subject opinion holder and
+polarity or the degree of positivity and
+negative
+from the text and identify sentiment
+additionally other Scopes including
+document paragraph sentence and sub
+sentence level can be used for sentiment
+analysis after seeing what is sentiment
+analysis let's discuss some types of
+sentiment analysis so the first one is
+fine grain sentiment analysis by
+segmenting sentiment each phrase or
+clause in a sentence is broken down and
+examined in relationship to the others
+simply said you can tell who review a
+product and what topics a person is
+specifically discuss in their feedback
+and the second one is emotion detection
+instead of identifying positivity and
+negativity emotion detection recognized
+particular emotions example could
+include shock rage grief frustration and
+happiness and the third one is intent
+based analysis in addition to identify
+opinions in a text the intent based
+analysis also identifies behaviors
+for instance a frustrated online comment
+about changing a battery can motivate
+customer care to get in touch to address
+that particular problem
+and the last one is expect based
+analysis collects the precise component
+that is being mentioned either favorably
+or unfavorably
+for instance a client May write in a
+product review that the battery life is
+too short the system will then respond
+that the battery life is the main
+complaint and not the product as a whole
+so after seeing types of sentiment
+analysis let's see some application of
+sentiment analysis
+organization can employ sentiment
+analysis Technologies for a number of
+purpose such as
+determining brand popularity reputation
+and awareness at a particular period or
+overtime
+customer service requests into
+categories and the next one is
+monitoring consumer response to new
+improvements or products and the fourth
+one is identifying the demographics or
+Target Market
+and the fifth one is determining the
+effectiveness of a marketing effort
+so here is one question for you guys I
+will give you one minute for this you
+can comment or you can give answers in
+chat section so I can see if the answer
+is given by you are right or wrong so
+the question is is text analytics also
+refers to as text mining
+I'm repeating again is text analytics
+also refers to as text mining the
+options are true
+or false
+so let us know your answer in comment
+section below or in chat section
+so I am starting timer of one minute
+just type your answer in comment section
+or in chat section
+do let me know your answers so I'm
+starting timer of one minute
+I kindly ask that everyone take part in
+this to make this live session exciting
+so the question is is stacked Analytics
+also refers to as text mining
+35 seconds are left
+do let me know your answers I kindly ask
+that everyone take part in this to make
+the live session exciting
+do one
+20 seconds left
+you can comment or you can give your
+answer in chat section so I can see if
+the answer is given by you are right or
+wrong
+so time up guys
+so after the allotted time has passed
+Those Who provided the correct response
+will receive a response and those Who
+provided the incorrect response will
+receive one
+okay now let's move to our programming
+part to perform sentiment analysis using
+Amazon Customer data set
+so first we will open command prompt to
+write command to open Jupiter notebook
+so here we'll write Jupiter
+notebook
+press enter
+okay it's Jupiter notebook
+so this is the landing page of Jupiter
+notebook and here you can select
+new python file
+it's loading
+so this is how the Jupiter UI looks like
+so at first we will import some bunch of
+major libraries of python which will
+help us in mathematical functioning so
+the first one is numpy so first I will
+write numpy import numpy
+that's NP
+AI is a python Library used for working
+with arrays it also has functions for
+working in the domain of linear algebra
+and matrices it is an open source
+project and you can use it freely
+numpy stands for numerical python
+so the next one is pandas
+so I will write here
+import
+pandas
+as PD
+so pandas is a software Library written
+for a Python programming language for
+data manipulation and Analysis in
+particular it offers data structures and
+operation for manipulating numerical
+tables and Time series
+after that we will import
+nltk
+so the natural language toolkit nltk is
+a Python Programming environment for
+creating application for statical
+natural language processing NLP for
+parsing classification stemming tagging
+and semantic reasoning it includes text
+processing libraries
+so after that
+we will import from an ltk
+Dot sentiment
+dot Vader
+import
+sentiment
+HD
+analyzer
+okay there is no column
+yeah
+so the Lexicon and rule-based sentiment
+analysis tool Vader weather means
+valence aware dictionary and essential
+reasoning
+is a customized precisely two sentiments
+expressed on social media
+Vader makes use of variety of a
+sentiment lexicon is a collection of
+lexical elements such as words
+that are often classified as either
+positive or negative depending on their
+semantic orientation
+Vader not only informs us of the
+positivity and negativity scores but
+also of the sentimentally of each score
+so the next one is import
+re
+python re module fully supports regular
+expression similar to those in Pearl if
+a regular expression compilation or use
+error occurs the re modules raises the
+expression re
+two key functions that are used to
+manage regular expression will be
+covered so re means regular expressions
+so the next one is
+from
+X blob
+import
+blob
+okay
+so a python two or three package called
+text blob is used to process textual
+data it offers a straightforward API to
+explore typical natural language
+processing NLP
+tasks like part of speech tagging noun
+phrase extraction sentiment analysis
+classification translation and more
+so the next one is
+import
+words
+from
+word
+cloud
+a word cloud commonly refers to as a tag
+cloud is an image of words popular words
+and phrases are highlighted using Cloud
+creators depending on their frequency
+and importance
+they give you immediate straightforward
+visual insights that can Inspire more
+through analysis
+and the next one is import
+C bone
+as
+SNS
+yeah
+so like an open source python Library
+based on matplotlib is called C bone it
+is utilized for data exploration and
+data visualization
+where data frames and the pandas Library
+c-bond function with ease
+so the next one is import
+matplotlib
+Dot
+Pi plot
+as PLT
+okay yeah seems good
+for Python and its numerical expression
+numpy matplotlib is a cross platform
+data visualization and graphical
+charting package as a result it presents
+a strong open source substitute for
+Matlab the API is for matplotlib allow
+programmers to incorporate graphs into
+GUI applications
+and the next one is
+import
+links
+c u f f l i n k s as
+CF
+perfect
+another python module called cufflink
+links plotly with pandas so that charts
+can be easily created on data frames in
+essence it function like a plugin
+so next inline
+at lordlib
+add plot clip
+so you can enable inline plotting by
+using the magic function percentage
+matplotlab inline which causes the plots
+and graphs to appear below
+the cell where you plotting commands are
+entered similar to a Jupiter notebook it
+offers back-end interactivity in front
+ends so next we will import
+what you can like we can import okay
+from
+Earthly dot offline
+import
+init underscore notebook
+underscore mode
+comma
+a plot
+okay
+in it underscore notebook
+notebook
+mode
+who gets through yeah
+dot go
+underscore offline
+so
+yeah in order to display the plot inside
+the notebook you need to initiate
+broadly notebook mode as follows like
+this
+keep rest of the script as it is like it
+and run the notebook cell by pressing
+you can shift press enter graph will be
+displayed offline inside the notebook so
+basically it is used for the offline
+graphing you can see okay so next we
+will import
+um plotly
+dot subplots subplots are important
+import
+make underscore
+subplot
+a yeah
+the non-leaf nodes in this figure schema
+are represented by a hierarchy of python
+classes that was automatically
+constructed and is found in the plotly
+dot graph objects which is normally
+imported as go
+these class instance are refers to as
+graph object the plotly defined
+fundamental classes
+okay
+so here we will import some like
+warnings you can say
+like to get not error
+so we will import let me give a line
+space
+import
+warning
+warnings yeah
+warnings
+dot filter
+warning
+ignore
+warnings dot one
+and
+this uh like will not show
+and let me add something PD
+dot set
+option
+display Dot Max underscore
+plums
+Gamepad import words from word cloud
+okay there is an error let me check
+what's the error
+okay import
+this
+word cloud
+from word cloud
+capital
+and W is also capital
+here it will be capital
+that's it what is small only
+from word cloud
+okay my bad here one from word cloud
+from word cloud
+import word cloud
+okay
+yeah seems good
+so wherever we
+yeah or in warnings despite the
+notification the software continues to
+execute to display warning messages
+utilize the wand
+found in the warning module the python
+built-in class inspection is a subclass
+of the warning module which is used to
+display warning messages import warnings
+okay for seeing full data every single
+columns like
+okay there is error c bond
+no modulus c bond so
+s will be small
+got it
+okay inline
+this only live
+something like that in line
+okay any errors no
+I guess no error
+okay
+yeah for seeing full data like every
+single Columns of PD so here we are
+using this pd.set option
+so we can use for it
+so moving forward let's import data set
+so for importing data set we will write
+here
+uh
+like DF equals to PD Dot
+read
+CSV
+okay
+add data set name
+so
+so you can download data set from the
+description box below so no worries of
+for that
+let me run this
+okay
+so like here is PD is for pandas Library
+read is used for reading the data set
+from the machine and CSV is used for the
+type of file which you want to read
+so let's see our data
+so here I will write DF Dot hat
+yeah
+so
+if you want to like if you want to see
+top five rows of your data set you can
+use head and if you want to uh like see
+five rows of your data set you can use
+tail insert instead of head this one
+okay so this is our data set with only
+five rows
+if you want to see full data set you can
+like from starting from 0 and ending it
+four nine one four rows okay
+four nine one one five rows and 12
+columns
+it
+so let me give something like this for
+the pattern visual
+yeah
+okay so moving ahead let's sort this
+Wilson bound column to ascending order
+for better analysis so I am talking
+about this Wilson lower bound column
+this one for it's not zero zero zero
+like you know all the rows so let me
+show you
+so here you have to write like DF equals
+to DF dot sort
+values
+Wilson
+spelling should be correct
+lower
+pound
+make it to ascending order
+ascending
+sorry descending order so
+we have dot drop
+named
+unnamed
+colon 0
+okay
+in place
+and base equals to true
+comma X is
+equals to 1
+okay so let's see our data
+so here you can see the data is sorted
+in as
+in as ascending order okay
+so the provided row or column is
+eliminated via the drop function the
+draft method eliminate the specified
+column when the column axis is specified
+the drop method eliminates the
+designated row when the row axis is
+supplied
+okay so I hope you guys understand till
+here if you have any queries or like any
+queries regarding any code or there is
+something questionable here just put as
+in comments our team will shortly
+provide you the correct solution
+okay
+so moving forward let's make a function
+for missing values
+so okay
+foreign
+so I will write here like DF
+missing
+values
+analysis
+okay it's def a function we use DF
+columns
+was true
+col
+ons
+for
+for
+col
+n d f Dot
+columns
+DF
+column
+is null
+dot sum
+greater than zero
+underscore Miss
+equals to
+DF
+underscore columns
+let's go
+dot sum
+but with DOT sort values
+sort underscore values
+like in ascending
+ascending
+ascending equals to
+true
+okay
+like some
+if you like this and this
+that's fine I guess
+yeah so here I will write ratio
+underscore equals to
+DF n a underscore columns
+underscore
+Dot
+additional
+same thing that sum
+foreign
+hundred
+or sort
+values
+ending
+was true true
+fine
+okay okay
+that means okay and the TF part
+that sort value is because you're
+standing goes to True fine
+so
+here we will write missing
+underscore DF equals to PD
+Dot concat
+B dot round
+issue
+underscore comma
+two
+you're perfect
+where access will be 1.
+okay
+is
+equals to
+that will give like
+total where I will write missing values
+missing
+values
+okay
+comma
+ratio
+underscore DF equals to PD
+dot data frame
+score DF
+okay so let me return
+thing
+TF
+let's create one more function for like
+check data frame so DF
+that underscore data frame
+okay
+it equals to five
+comma tail
+equals to
+5.
+so here I will write print
+okay
+yeah
+Dot Center
+comma
+again for row Sprint
+pose
+belly braces
+okay
+dot format
+s
+what format
+yeah
+dot shape
+you know
+so for column Sprint
+or shape
+paint
+and types like of types of data
+Dot
+Center
+same as like that 82
+comma
+end
+DF dot d types
+Center
+just printing this is like you will see
+don't worry
+just stay with me you will see the
+beautiful result
+yeah print
+values
+print missing values uh analysis uh
+yeses like DF
+okay
+then again
+you did
+values
+like there's many how many duplicate
+values are there
+so dot same for the center
+gee
+one more
+again this one
+end
+we have Dot duplicated
+don't worry I will explain you like line
+by line
+just stay with me let me write the whole
+code
+first print
+tiles
+like I am printing multiple of things
+so just be with me
+Dot
+82
+comma
+F Dot
+one tile
+zero five
+comma
+one
+okay
+check
+data frame
+I'm hoping like there will be no error
+yeah
+so you can see now like multiple
+information regarding data set is
+printed
+so this shape is for like how many rows
+and columns present in the data set
+like in types you can say like every
+column type like object
+N64 float 64 and many more are like
+present so like you can see review text
+is like object and their differences in
+N64 and Wilson lower bound is float 64.
+okay so total missing values
+so total missing values are like uh 1
+from here and one from here like one in
+from reviewer name and other is from
+reviewer text
+and like there is no duplicated values
+in our data set
+and here you can see so like after that
+quantize a quantile defines a particular
+part of the data set that is a quantile
+determines how many values in the
+distribution are above or below a
+certain limit
+special quantiles are the like quartile
+quarter and you can say quintile that
+the fifth one and the percentile which
+is from 100th okay so quantile is for
+like quarter
+or the you can say the fifth one
+so why I wrote this 83 82 and this for
+this purpose
+for making this something look cool
+that is why
+okay and
+so moving forward
+let's see unique values and in each
+column
+okay so I will add
+check
+Plus
+frame
+unique
+f equals to PD
+Dot data
+a frame
+variable
+variable
+the frame
+columns comma
+classes
+colon
+data frame
+I
+I will write like an unique
+unique
+u e
+or
+I in
+beta frame
+Dot
+columns
+okay like and unique
+you
+or DF equals to
+dot sort
+values
+classes
+comma ascending
+equals to
+false
+okay
+and unique
+underscore DF equals to n
+unique
+F dot reset
+index
+drop equals to
+true
+return
+and unique
+q-u-e and unique
+let's go PF
+check underscore class
+which one DF
+so let me run this first
+yeah it's running you can see here
+okay there is an error classes
+okay
+check class DF
+is saying that
+this is
+kses Capital C is small
+let me run now yeah
+so here you can see the every column
+having unique values are sorted in
+descending order like review tags have
+like more unique values so it come first
+and then review your name review time
+date difference Wilson lower bound score
+average then goes to overall
+okay moving forward let's do some
+categorical variable analysis for
+overall yes so this will be like amazing
+something amazing is going to be
+happened
+so
+constraints equals to so I am giving
+here like some
+color values so
+B 3 4
+d
+2 2.
+E B zero zero C
+okay
+so you can change you can like write
+whatever you want color
+s
+mistake
+right hashtag here
+hashtag
+three come on
+let's see
+it's done
+0 C
+9 to e b
+yeah
+EB 0
+3
+and then d
+you like five right
+okay so d f let's make function Okay
+small d f
+categorical
+variable
+okay
+DF comma
+column
+categorical variable summary yeah
+perfect
+so let's make some figures so make
+subplots
+plots
+rows
+equals to
+1
+comma calls
+equals to 2.
+let me write from here like subplot
+ALS
+equals to
+count plot
+like one four percentage
+percentage
+okay
+so specs speech
+equals to
+a like type
+colon
+colon
+that's why
+okay
+come on
+same type
+colon here
+domain
+we got dot add
+and then Trace
+Dot
+bar
+one bar and one that pie chart okay
+why
+equals to DF
+columns
+column name
+value
+values Dot to list
+4X you can click string
+yeah Str
+I
+or I
+in
+yeah
+column
+name
+dot value
+Dot counts
+index
+text
+equals to DF
+Alum name
+dot value
+counts and then bracket
+dot values
+dot to list
+okay
+so for text
+font
+the size should be
+14 is enough I guess
+so column
+UNESCO name
+X position
+so I'm doing for like making chart so
+stay with me to see that amazing chart
+okay
+so show Legend
+s to take
+colors
+goes to constraints
+so these are the like colors so I'm
+giving here value like very variable
+name
+because
+constraints
+comma line
+equals to
+let
+hashtag
+DB
+e
+6 e c
+comma
+perfect
+one
+Okay small
+okay let me just like go over through
+everything is correct or not for the
+column name
+will accounts index yeah it's fine
+text equals to TF column name
+dot value
+counts
+dot values
+to to list okay
+text font equals to take size then okay
+14 size is enough
+name equals to column name and text
+position equals to auto
+and show Legend false and Mark
+detect like color equals to constant
+okay fine line equals to color
+and this yeah this okay
+cool
+o equals to one
+comma column equals to one
+that seems good
+like for pie chart we will make figure
+dot at
+so this is done for the like line chart
+not line chart that bar chart and this
+I'm doing for the pie chart okay
+Trace
+go Dot
+pi
+f
+columns
+column name
+is
+values
+goes to DF
+again that column name
+what value
+count
+s
+and Dot values
+text font
+because you take
+yeah size
+I will prefer 18 is enough
+position
+like Auto is fine
+so Legend
+there's still no need of Legend false
+m equals to column name
+column name
+let's do
+like take
+then colors
+because you constants
+will go to one
+one column equals to two like in second
+okay you will see and you will get to
+know don't worry
+so if we got dot update
+layout
+equals to
+column
+0.9
+and 5.
+man
+X
+all right
+should be on centered
+then y anchor
+here on top
+red equals to
+tally
+okay
+I plot
+figure
+let me run this okay like
+call equals to 2
+now let's see the chart of like column
+overall one so we will write here
+categorical
+okay
+variable
+variable
+summary
+and then data frame name DF
+comma overall
+okay let's run this
+okay it's loading here
+it's loading
+yeah
+you can see this is this is our bar plot
+and this is our pie chart
+so
+like this is overall
+uh from overall you can say that column
+so like percentage
+bar and that bar plot so this is how our
+like pie chart and bar chart looks like
+I hope you guys understand till here if
+you have any questions or any query
+regarding any code
+okay like any code any sort of code
+so just put as in comments our team will
+shortly provide you at the correct
+solution
+so moving forward our goal is to rank
+the com comments by the sentiment
+analysis so we don't get hung up on the
+other details I have sorted this data
+set according to certain rules before so
+moving forward we want to clean our data
+so let's see the sample data for
+cleaning
+so DF Dot
+review
+text
+okay dot
+hat
+let me run this so
+so this is our sample data looks like so
+let's see like data full data for this
+okay let me see for
+or this I guess okay
+or like any particular row you can say I
+can take okay
+so I will write review
+underscore example
+example
+equals to DF
+Dot
+review
+text I will take a random two zero three
+one I guess
+Okay so
+review
+underscore example
+so this is like at two zero three one
+there is one review text
+okay so in that the whole data is here
+like uh like so my lovely wife bought me
+a Samsung Galaxy Tab for father this is
+this this like to find the exact model
+number this is a long you know command
+I got the this this it works like a
+charm okay
+so
+after seeing this data what we're gonna
+do is like we will clean it from
+punctuation and numbers using regex
+regex what regular expression okay so
+here I will write
+review underscore example
+example okay
+equals to re dot sub
+and what I will do is
+okay I will explain
+don't worry
+small rate
+to capital a
+to Z
+okay
+comma then space
+comma G view underscore example
+exam
+but
+sorry
+yeah
+review
+so here we used re for regular
+expression
+okay and
+so all the punctuation and numbers are
+removed from particular data
+so let me check first
+okay this A to Z then A to Z okay fine
+okay so like all the punctuation and
+numbers are removed from particular data
+I will now convert the texture to all
+lowercase our machine learning algorithm
+recognized words that start with the
+capital letters as a different word and
+we will convert them to lowercase so
+thus our machine learning algorithm will
+not perceive words that start with the
+capital letter as a different one so
+what I will do is
+here I will write review
+scample
+sample
+equals to G View
+again example
+dot lower
+I will split it
+split
+okay
+yeah example
+so here you can see we have converted
+all the words in the lowercase letter by
+using lower function and why they are
+coming in new lines because we are
+splitting them using split function okay
+if you see only did lowercase for single
+row like we did for the like two zero I
+guess two zero three one okay yeah so
+let's make all rows same in lowercase so
+I will write here RT
+equals to Lambda
+X
+we will
+Str
+X
+so DF
+View
+text
+is capital text
+DF
+View
+text
+text
+okay equals to DF
+View
+just
+yeah dot lower
+we have done
+add
+see all the data is in like lowercase
+so I printed just top 10 rows and in
+like in reviews text column all the are
+in the lower case now so I hope you guys
+understand till here if you have any
+question or any query regarding any code
+or question till here like any code just
+put as in comments our team will shortly
+provide you the correct solution and if
+you need this full code you can comment
+down below okay
+so now the time has come to do sentiment
+analysis because all the data is sorted
+so what
+will I write
+let me do it little bit up
+yeah
+so I will write
+from
+yeah
+from Vader
+sentiment
+dot Vader
+equipment
+report
+sentiment
+intensity
+analyzer
+if
+polarity
+subjectivity
+is subjectivity
+so DF
+if you
+text
+dot apply
+da
+XT PD
+dot series
+text
+blob
+and again text
+Dot
+like sentiment
+let me run for Loop for index
+comma row
+in DF
+G View
+text
+but item
+items
+or you
+intimate
+density
+analyzer
+or polarity
+scores
+row
+YouTube Let Me score
+or neutral I will write score
+a for positive
+if
+this is something crazy if negative is
+greater than positive
+then DF dot location
+index
+comma
+demand
+equals to
+negative
+negative
+yes Dan
+lcf
+positive is greater than negative
+then in this case
+DF Dot
+log
+index
+comma
+sentiment
+equals to
+positive
+P capital
+else
+e f dot LSC
+X
+intimate
+let's do
+neutral
+okay
+so like this is for sentiment analysis
+and text block
+this thing like text blob
+this blob okay it's block
+a text blob will return polarity and
+subjectivity polarity indicates your
+mood that is whether it is positive
+or negative or neutral it returns a
+value between 0 and 1 the closer to one
+the more positive the closer to zero is
+more negative
+okay let me run this it will take
+a little bit time
+because this sentiment okay it is
+getting error
+like model Panda has no attribute series
+okay which one
+text boxing
+next sentiment
+okay here what is the thing s is capital
+let me run now
+it is executing
+like fade for a while wait
+so it will take time to run because like
+because of this sentiment intensity
+analyzer
+it take times
+again sentiment intensity
+analyzer okay spelling mistake again
+y index index is not defined
+sorry again
+index
+it will run I guess because everything
+seems good
+negative positive and this else
+still loading so I have to wait like for
+like two minutes more I guess
+still loading guys
+I take time
+sentiment intensity analyzer
+so let me tell you again sentiment
+analysis like this text blob
+text blob will return polarity and
+subjectivity
+so polarity indicates your mood that is
+whether it is positive it is negative or
+it is it will be neutral it returns a
+value between 0 and 1 the closer to one
+the more
+positive the closer to zero more
+negative okay
+I guess it's still
+running
+so
+it will take time so let me write code
+for that 20 interpretation I repeat
+moving forward let's identify the 20
+interpretation now we can include the
+positive negative and neutral status of
+the command
+okay then DF
+DF
+sentiment
+what's equals to
+positive
+ought
+lose
+Sun
+lower
+ending
+equals to
+false
+yeah
+dot head
+it's five
+if I will run it may
+give errors to me because it's still
+running
+still running here it's still loading
+so let let me write code for that
+unbalanced data problem so like we will
+category that data into positive
+negative and neutral
+Okay so
+categorical
+variable
+summary
+TF
+event
+yeah
+it came like this because of this wait I
+will tell you
+yeah so here you can see the pie chart
+distributed in negative positive and
+neutral emotions okay or you can say
+ratings and here you can see the bar
+chart also
+so
+and
+you can see the percentage distributed
+in each like in positive negative and
+neutral one so I hope you guys must
+understood the concept of sentiment
+analysis how we can implement it using
+python if you have any queries you can
+ask in the comment section below our
+team will respond you as soon as
+possible if you want this full code
+just comment for the same today we will
+take you through the hands of live demo
+of how you can detect Parkinson's
+disease using python
+before we start I hope this screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+shoes do let us know in the chat section
+so that we can resolve them so wait for
+some more minutes to let other people
+join until then let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek on a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribe to our YouTube channel
+and press that Bell icon to never miss
+any updates from Simply learn
+okay great I think we can get started so
+in today's session we will go through
+the hands of lab demo of how you can
+detect Parkinson's disease using machine
+learning
+we will perform different function and
+analyze the data set using python to
+find who has Parkinson's disease and who
+has not using different different python
+libraries
+before we move on to the programming
+part so here is one question for you
+guys
+will give you exactly one minute for
+this you can comment or you can give
+your answer in the chat section so I can
+see if the answer is given by you are
+right or wrong
+so the question is which of the
+following character is used to give
+single line comments in Python
+option A
+double slash option b hash option C star
+option D slash star
+let us know your answer in the chat
+section
+so I am starting the timer of one minute
+you can just type your answer in the
+comment section or in the chat section
+so I'm starting the timer of one minute
+let us know in Yarns in the chat section
+foreign
+characters used to give single line
+comments in Python
+double slash has star slash star
+I kindly ask that everyone take part in
+this
+each of the following characters is used
+to give single line comments in Python
+15 seconds remaining which of the
+following characters used to give single
+line commands in Python
+one
+after the allotted time has passed Those
+Who provided the correct response will
+receive a response and those Who
+provided the incorrect response will
+receive one now let's move to our
+programming part to implement
+prediction system of Parkinson's disease
+so first we will open a command prompt
+to write command to open jupyter
+notebook so here we will write Jupiter
+notebook
+press enter
+so this is the landing page of Jupiter
+notebook and select a new python 3.
+so this is how the Jupiter notebook UI
+looks like so at first we will import
+some major libraries of python which
+will help us in creating a prediction
+system of Parkinson's disease
+so I will write here first I will rename
+this
+foreign
+so I will write here
+quote
+numpy
+as NP
+and the second one is import
+pandas as PD
+and the next one is
+from SQL
+port
+svm
+then from
+SK learn
+dot matrix
+import
+accuracy
+underscore then score
+after that from
+Escalon
+Dot pre-processing
+import
+standard
+scalar
+and from
+SK learn
+dot model
+underscore selection
+port
+train
+underscore test
+underscore split
+then press enter yeah
+so numpy is a python Library used for
+working with arrays it also has function
+for working in the domain of linear
+algebra and matrices
+it is an open source project and you can
+use it freely numpy stands for numerical
+python and the second version pandas
+panda is a software Library written for
+the Python programming language for data
+manipulation and Analysis in particular
+it offers data structure and operations
+for manipulating numerical tables and
+Time series
+Escalon the most effective and reliable
+python machine learning library is
+called sqln or scikit-learn through a
+python consistency interface it offers a
+variety of effective tools for statical
+modeling and machine learning including
+classification regression and many more
+svm svmr utilized in web pages and
+chosen detection phase identification
+email Gene classification and
+handwriting recognition
+among other applications we utilize svm
+in machine learning for some reason
+including this
+both classification and regression
+linear and non-linear data are supported
+sqln mattresses the sqln mattresses
+module implements several laws score and
+utility function to measure
+classification performance
+some matrices might require probability
+estimate of the positive class
+configuration value or binary decision
+value
+and the next one is accuracy score in
+Python the accuracy score function of
+the sqln matrices package calculates the
+accuracy score for a set of predicted
+labels against the true labels
+SQL and pre-processing the SQL and
+pre-processing package offers a number
+of universal utility function and
+Transformer classes to modify
+unprocessed feature vectors into a
+format better suited for the subsequent
+estimators in general standardizing the
+data set in advantages for learning
+algorithm
+then standard scalar each feature of
+variable is scaled to unit variance once
+standard scalar has its move this mean
+this process is carried out
+independently based on features since
+standard scalar estimate the empirical
+mean and standard deviation of each
+feature if they are present in the data
+set
+and the last one is train test split
+python train test split method divides
+array or matrices into random sepsis
+for the train and test set of data we
+will import the train test split
+function into our application as shown
+import the drain test split variable
+from the sqln model selection
+so after importing major libraries let's
+import data set
+so for that we will write here
+DF equals to
+PD dot read
+underscore CSV
+sorry CSV
+then data set name
+is
+dot CSV
+you can download this data set from the
+description box below so let's see our
+data set now so here I will write DF
+so this is how our data set looks like
+with 195 rows and 24 columns
+okay
+so here you can see like we can't see
+all the 195 rows okay like top five rows
+and
+so
+here you can see the three dots
+this three dot what if I want to see all
+the 195 rows so for that I will write
+here
+Ed dot set
+let's go option
+let's play
+dot Max
+underscore columns
+here I will write PD dot set
+option
+display
+dot Max
+rows
+comma none
+and here I will write the data set name
+DF
+yeah
+so you can see now we are unable to see
+the all the 195 rows
+okay
+all the 195 rows
+so moving forward we will use head
+function to see only top five rows
+so first I will do like this
+okay here I will write
+DF dot head
+so here you can see we can see only top
+five rows of our data set
+so
+so basically head is used for showing
+first five rows of the data set
+if we will use tail instead of head so
+it will show last five rows of the data
+set
+so let's move forward and see
+and using info function to see the
+information about the data set so I will
+write here DF dot info
+yeah
+so the data frame information is printed
+by the info method the data includes the
+total number of columns their labels
+data kinds memory use raise index and
+the number of cells in each column like
+non-null values note that the info
+method does not indeed print the
+information
+okay so we all know all the column names
+and the data types so here you can see
+these are the column names and non-null
+values then data types
+okay
+yeah so moving forward let's see some
+statical values using describe function
+so for that I will write DF Dot describe
+press enter yeah
+so here you can see all the statical
+values of every column like mean is
+standard deviation count like 25 50 75
+percent the maximum value of that
+particular column okay for every column
+so
+moving forward let's see how many
+columns and rows are present in the data
+set using the shape function
+for that I will write here
+DF dot shape
+so here you can see we have 195 rows and
+24 columns present in our data set
+okay like 190 it represents rows and
+this represents columns okay
+so moving forward we will see how many
+null values are present in the data set
+so for that we will write
+DF dot is null
+then dot sum
+then press enter
+is showing data frame objects here oh
+sorry for that
+this is is null
+yeah then press enter yeah
+so here you can see there is no null
+values present in our data set no zero
+zero Z all the zeros are here
+so we can say this is a good data set
+okay
+so I will just
+yeah so moving forwards we will
+distribute our Target variable columns
+okay
+so for that I have to write here DF
+status
+status is our Target variable okay
+Target column
+dot value
+underscore
+counts
+and press enter yeah
+so here you can see zeros and ones like
+147 ones and zeros are zero sorry 48 are
+0.
+so one means those who are affected by
+the Parkinson and 0 means negative those
+who are not affected by the Parkinson's
+disease
+so moving forward what we will do we
+will group database on the target
+variable okay so for that I have to
+write here DF dot Group by
+then status
+dot mean
+yeah
+so here you can see that we group data
+based on the target variable for each
+column for each column
+all the 24 columns okay
+so I hope you guys understand till here
+if you have any question or any query
+regarding any code like any code till
+here
+so you can just put us in comments or
+our team will surely provide you the
+correct solution okay
+so moving forward like we what we will
+do we will separate features and Target
+variable
+so what we will do we will drop the two
+columns like first one is name column
+and the second one is status column and
+in another variable we will put status
+column
+let's see
+I have to write x equals to
+at DF dot drop
+then columns
+equals to
+first one is name
+and the second one is
+status
+okay
+comma X is equals to
+1.
+then in y
+I will put
+DF
+status
+so let's print X and Y
+so I will print here
+print
+y here
+yeah
+so here you can see all the X values
+and here you can see all these status
+value like zeros and ones only
+zeros and ones okay
+let me do this yeah
+so moving forward we will split data set
+into training and testing using Trend
+test split function
+so for that we will write
+X
+underscore train
+comma X
+underscore test
+comma
+y underscore train
+comma
+y underscore test
+also
+train underscore test underscore split
+comma y comma
+test
+underscore
+size
+was to 0.2
+comma
+random underscore State equals to 2.
+yeah
+so here what I did I split training and
+testing data into 80 and 20 ratio eighty
+percent for training data and twenty
+percent for testing
+in prediction like this is the best
+ratio
+so moving forward let's see how many
+rows and columns are present in training
+data and in testing data
+so for that I have to write here print
+dot shape
+comma
+X underscore train
+dot shape
+comma X underscore test dot shift
+yeah
+so here you can see
+like in training and testing there are
+22 columns why because we already
+dropped two columns name and status
+okay let me show you first
+and we checked this before there are 24
+columns okay
+so now we have only 22 volumes why
+because we dropped the name and the
+status column
+so X train has 156 rows this 156 rows
+why this is 80 percent of 195. okay and
+this is 20 of 195. this is training this
+is testing
+so I hope you guys understand till here
+if you have any question or any query
+regarding any code or any machine
+learning topic and python so you what
+you can do just put us in comments our
+team will shortly provide you the
+correct solution
+so moving forward what we will do we
+will do data standardization okay
+so the process of transforming data into
+a standardized format so that user may
+process and evaluate it is known as data
+standardization
+most businesses use data from a variety
+of sources including databases data
+warehouse Lakes cloud storage and
+storage areas
+okay so for that I will write SS equals
+to
+standard
+killer
+we all know what is standard scalar
+yeah it's a press enter
+so we use a standard scalar for it so I
+will write here SS dot bit
+then X underscore train SS means
+standard scalar okay
+don't confuse yeah so using standard
+scalar we fit training data into it so
+moving forward we will transform
+training data and testing data using
+standard scalar Library okay so I will
+write here x underscore train
+equals SS dot transform
+let's go train
+yeah
+then X underscore test
+equals to SS SS means standardscaler dot
+transform
+test
+yeah then press enter
+so transformation is done now let's see
+our training and testing data for that I
+will write here print
+X underscore train
+so this is our training data
+and print
+X underscore test
+so this is our testing data okay
+yeah so I hope you guys understand till
+here if you have any question or any
+query regarding any code or any machine
+learning topic just put us in comments
+our team will shortly provide you the
+correct solution so moving forward we
+will train our model using svm method
+svmr utilized in web pages intrusion
+dissection page identification email
+Gene classification and handwriting
+recognition among other application we
+utilize svms in machine learning for
+some reason including this
+okay so we will do model training using
+like svm so I will write a model
+equals to
+svm dot SVC
+that will write a kernel
+question
+linear
+then press enter
+okay
+sqln.scm has no attribute SVC okay my
+bad
+C is capital
+okay let me check
+okay
+K should be small
+then press enter yeah now it's working
+fine
+so let's train svm with training data so
+for that I will write here
+model dot fit
+X
+underscore train
+comma y underscore train then press
+enter
+yeah it's working fine
+so moving forward what we will do we
+will do model evaluation so for that I
+have to write here x underscore
+then train
+underscore
+prediction
+equals to model Dot
+predict
+X underscore train
+train underscore data
+accuracy equals to accuracy
+underscore score
+y underscore train
+and then
+X underscore train
+then
+prediction
+let me do one thing I have to write D
+here
+for the better understanding
+yeah then press enter from this we what
+we are doing we are doing prediction and
+checking the accuracy of the model svm
+so like we will check accuracy for both
+training and testing data okay yeah so
+let me check first print
+curacy of
+training
+data
+data
+here I have to write train
+underscore data
+underscore
+accuracy
+press enter
+so the accuracy of training data is
+almost 89 percent like which is not a
+bad number
+so let's check accuracy of the testing
+data
+so for that I have to write here x
+underscore test underscore prediction
+equals to model
+dot predict
+then X
+test underscore data
+underscore accuracy
+equals to accuracy
+score
+y underscore test
+comma
+X underscore test
+prediction
+yeah
+so now let's see the accuracy of testing
+data so for that type light print
+accuracy of testing
+data
+test
+code data underscore accuracy
+so here you can see the accuracy of
+testing data is almost 88 percent so
+we're done with the model building and
+the accuracy part so let's build
+predictive system now okay for that
+I will write
+okay first let me do one thing yeah
+so I will write here input
+data
+okay
+then we will change data into numpy
+array so for that we will write input
+underscore data underscore NP equals to
+NP dot as array
+foreign
+input
+underscore data
+okay
+so now what we will do
+we will reshape this array okay we will
+reshape this numpy array for that I will
+write input underscore
+data
+underscore for a shape I will write only
+re
+so input
+underscore data
+let's go NP
+dot reshape
+then
+1 2
+minus 1.
+okay
+so now we will standardize the data for
+that I will write here s underscore data
+equals to SS dot transform
+input
+underscore data
+foreign
+so now I will make prediction model
+prediction equals to
+model dot predict
+the standardized digital so as data
+so you have to print
+Shen
+so for that I have to write here if
+if prediction
+0 equals to equals to zero
+okay
+then it should be print print
+negative
+no
+Parkinson's
+okay
+else
+trend
+positive
+Parkinson
+Parkinson's found
+so we are done with the our coding part
+so what we will do I will go on the my
+data set
+open with Notepad
+so this is our data set okay we will put
+any random value
+like this value okay
+yeah
+put it here
+so here you can see the status value to
+the zero
+so
+0 means negative no Parkinson found it
+should print no Parkinson found so what
+I will do I will remove this to check
+whether model is giving
+the right answer or wrong
+then press enter yeah
+here you can see it printed Parkinson
+found
+so now we will check from the another
+one
+we'll take the random
+we'll pick
+this one
+okay
+I will remove this status value
+then press enter
+okay something error one error picture
+okay okay okay
+let me copy it again
+the
+then copy it again here
+we'll remove this
+and then press enter
+yeah here you can see positive Parkinson
+found because there is one status is one
+so so you can see the results are coming
+amazing and correct so I hope you guys
+understand till here if you have any
+question or any query regarding any code
+so just put us in comments
+just ignore this warning
+okay
+I hope you guys must understood the
+concept of how we can detect Parkinson's
+disease using machine learning
+if you have any queries you can ask in
+the comment section below our team will
+respond to you as soon as possible and
+if you want this full code just comment
+for the same today we will take you
+through the hands of lab demo of how you
+can Implement loan approval prediction
+using python
+before we start I hope this screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them
+I'm repeating again before we start I
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+let's wait for some more minutes to let
+other people join
+until then let me tell you guys that we
+have regular updates on multiple
+Technologies if you are a tech geek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+I'm repeating again let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+great I think we can get started in
+today's session we will go through what
+is loan prediction system after that we
+will move on to the hands of layer demo
+to perform loan approvals prediction
+system moving forward we will be using
+different classification algorithms to
+implement loan approval prediction
+system
+we already have a loan approval data set
+which is we will perform different
+functional libraries using python you
+can download this data set from the
+description box below
+before we move on to the programming
+part let's discuss what is loan
+prediction system first and proceed
+further for the same a mechanism called
+loan prediction system gives you a way
+to apply for loans and receive
+notification when they are approved in
+accordance with the data provided by the
+applicant the system notifies the
+applicant of the loans available so here
+is one question for you guys I will give
+you one minute for this you can comment
+or you can give your answer in the chat
+section so I can see if the answer given
+by you are right or wrong
+I'm repeating again so here is one
+question for you I will give you one
+minute for this you can comment or you
+can give your answer in the chat section
+so I can see if the answer is given by
+you are right or wrong so the question
+is which keyword is used for function in
+Python language Option 1 python option
+two def
+Austin c f u and C option D Define
+so let us know your answer in the
+comment section below Okay so
+I am starting off timer 1 minutes
+type your answer in the comment section
+or in the chat section do let me know
+your answers please I kindly ask that
+everyone take part in this to make this
+live session exciting so I'm starting
+the timer of one minute
+which keyword is used for function in
+Python language Option 1 function option
+two def option C Punk option D Define
+which keyword is used for function in
+Python language
+47 kin remaining
+30 seconds let us know your answer in
+the comment section below
+this is the easy one which keyword is
+used for function in Python language
+function Dev Funk or Define
+I kindly ask that everyone take part in
+this to make this exciting
+five second more
+yeah after that allotted time has passed
+Those Who provided the correct response
+will receive a response and those Who
+provided the incorrect response will
+receive one
+so now let's move to our programming
+part to implement loan approval
+prediction system
+so first we will open a command prompt
+to write a command to open Jupiter
+notebook so here we will write Jupiter
+notebook
+press enter
+so this is the landing page of Jupiter
+notebook and here you have to select new
+Python 3 file
+so this is how the jupyter notebook UI
+looks like so at first we will import
+some major libraries of python which
+will help us creating a loan approval
+prediction system
+so here I will write import
+numpy
+as NP
+so Nampa is a python Library used for
+working with arrays it also has a
+function for working in domain of linear
+algebra and matrices
+it is an open source project and you can
+use it freely numpy stands for numerical
+python
+and the second one is
+quote
+pandas as PD panda is a software Library
+written for the Python programming
+language for data manipulation and
+Analysis
+in particular it offers data structure
+and operations for manipulating
+numerical tables and Time series
+and the third one is import
+matplotlib
+dot Pi plot
+as PLT
+so Matt broadly Python scripts can be
+used to create 2D graphs and plots using
+the matplotlib pi module with features
+to control line Styles font attributes
+formatting access and other features it
+offers a module called Pi plot that
+makes things simple for plotting
+so the fourth one is
+import
+C bone
+s
+and S
+so C bone an open source python Library
+based on matplotlip is called c-bone it
+is utilized for data exploration and
+data visualization with data frames and
+the pandas Library C1 function with ease
+so there is one more
+like prom
+Escalon
+quote
+svm
+so after importing libraries let's move
+forward and import data set so DF equals
+to
+PD dot read
+underscore CSV
+on
+dot CSC
+you can download this data set from the
+description box below
+so yeah
+so data set is imported let's see our
+data set so we will write DF dot head
+here
+yeah
+here you can see we have data set of top
+five rows so basically head is used for
+showing first five rows of the data set
+if we will use tail instead of head so
+it will show the last five rows of the
+data set
+so let's move forward and use info
+function to see the information about
+the data set
+okay so here we will write DF dot info
+so the data frame information is printed
+by the info method the data includes the
+total number of columns their labels
+data kinds memory use range index and
+the number of cells in each column that
+is non-null values note that the info
+method does indeed print the information
+okay so here you can see loan ideas
+object then this applicant income is N64
+then co-applicant income is float
+so normal values like this
+so
+we know all the columns names data types
+and information let's move forward and
+see missing values in the data set so
+for that we will use here I will write
+DF dot is null
+then basis
+dot sum
+yeah dot sum the data set total number
+of missing values is written via sum
+Escape rows in the data set that have
+missing values as a straightforward
+solution for the missing value data
+so we have missing values in loan ID 0
+gender is 13 then loan amount is 22
+self-employed is 32
+so I hope you guys understand till here
+if you have any questions or any query
+regarding any code so just put us in
+comments our team will shortly provide
+you the correct solution I'm repeating
+again I hope you guys understand till
+here if you have any questions or any
+query regarding any code or any question
+related to python just put as in
+comments our team will shortly provide
+you the correct solution
+moving forward we will create one more
+column
+that is loan amount log using loan
+amount detail and then we will display a
+histogram for that
+okay so let me do first for the better
+view I can do this
+yeah
+I will write here DF
+tone
+amount
+let's go log
+yeah
+equals to NP
+DOT log
+if
+now we will do DF
+loan
+amount underscore log
+dot hist
+for the histogram then pins I will take
+20.
+numpy.log
+a mathematical function that helps user
+to calculate natural logarithms of X
+where X belongs to all the input error
+elements you can see histograms it's
+looking fine let's see the null values
+in our new column
+so I will write here
+PF dot is null
+dot sum
+so here you can see in loan amount log
+there are 22 missing values
+so moving forward let's create one more
+column name total income in this we will
+add two columns applicant income and
+co-applicant income and we will display
+histogram for the same
+EF like
+total income
+a equals to DF
+applicant income
+and we will add one more data from TF
+that is
+go applicant
+f
+total income
+underscore log
+pursue NP Dot
+log
+DF
+capital
+done
+TF
+well income
+underscore log
+dot hist
+equals to 20.
+yeah
+so here you can see
+histogram of the total income log moving
+forward let's fill those null values in
+all the respective columns
+so here for that we will write
+DF
+gender
+dot will any
+DF
+gender
+dot mode
+zero
+comma in place
+to true
+and
+what I will do I will copy from here
+I change here gender to married
+they're also married
+and here for self employed
+and I will do self
+employed
+before dependent
+just everything will be same so here I
+will add DF Dot
+tone amount
+equals to
+DF Dot
+loan amount
+dot fill any
+PF Dot
+loan amount
+dot mean
+so here I will write instead of this I
+will copy from here
+and paste it here
+yeah
+School log
+that Alice is small
+so here I will write again that we can
+take it from here
+change column name
+to loan
+mount
+um
+on
+amount
+um
+edit underscore history
+gain
+credit underscore
+history
+so here I will write DF Dot
+is null
+sum
+it's it's worth giving error
+same self employed
+okay what the issue is that is capital
+okay
+again
+dependent
+okay
+it's dependence
+okay
+yeah
+so there is no missing values now
+what we're gonna do is we will select
+some specific columns and rows for the
+training and testing
+so for that I will write here
+x equals to
+dot I log
+dot r
+oh
+in Colon 11
+comma 13 colon 15.
+dot values
+y equals to
+d f Dot
+I lock
+then colon command 12
+Dot
+values
+let me see the X values
+okay so mail no these are the X values
+and let me see the Y values
+okay so the I log function in Python is
+defined in the pandas module that helps
+us to select a specific row a column
+from the data set using the ilock method
+in Python we can easily retrieve any
+particular value from our row or column
+by using index values
+so moving forward let's see the
+percentage of missing genders from the
+data set and we will do it for many
+other columns
+okay
+so it if it will be 0 so it will be
+great for us so we will write print
+percent
+of missing
+gender
+is
+percent
+to
+f
+sin
+and we will write this
+EF
+and gender column
+dot is null
+dot sum
+f
+dot shape
+zero
+multiply by 100.
+the same function object has no
+attributes sum
+okay why
+because
+here
+percent of missing gender is zero great
+so like so moving forward we will see
+number of people who take loan as a
+group by gender
+okay so for that we will write print
+numbers like of people
+would take loan as
+group
+by gender
+for that
+print
+DF
+sender
+dot value
+counts
+send us dot count
+plot
+x equals to
+sender
+comma
+data equals to DF
+pellet
+equals to
+set one you can use either set two
+either set three
+so let me see okay so
+here you can see like mail is 502 female
+are one one two you can see the bar plot
+so the number of observation in each
+category bins are displayed using bars
+using the count plot technique the
+following parameters are accepted by the
+procedure and are listed below this
+parameter accepts optional variable
+names for data or vector data inputs for
+long form data plotting so moving
+forward we will do for the same
+like number of people who take a loan
+Group by marital status
+so what I will do I will just copy from
+here
+and I will change it to here
+so I will write
+metal
+it does
+and the guys who are married
+here I have to write the
+eight
+so here you can see
+like four zero one
+the res like n213 I know
+okay so moving forward we will see
+number of people who tend loan Group by
+dependents
+so same what I will do I will paste it
+here
+I will just change the name here
+dependent
+change to here
+so here you can see the dependence and
+the Y label is the count so like 0r 360
+102 101 and 51. and many more so moving
+forward we will see number of people who
+take loan group as a self-employed
+okay for that what we have to do is
+you have to just change names
+e is capital here
+okay let's see the graph so moving
+forward we will see number of people who
+take loan Group by loan amount
+for that I have to write here
+wait let me make a better visibility
+yeah so
+as a loan amount
+[Music]
+is capital
+yeah
+here you can see
+paragraph
+so at the end we will see the number of
+people who take loan Group by the credit
+history
+okay so I will write here
+same
+as
+credit history
+that is history
+edit underscore
+history
+okay
+yeah so here you can see 525 and this 89
+So based on my assessment we don't have
+any missing values in the data set now
+so moving forward let's import
+scikit-learn library for training and
+testing data set
+so here I will write
+from
+sqln dot model
+underscore
+selection
+port
+train
+underscore test underscore split
+so I have like
+train
+comma X
+test comma y
+train comma y
+test
+okay
+so here I will write
+train
+underscore test underscore split
+is comma y
+comma test
+underscore size
+equals to 0.2
+random
+state
+equals to zero
+on SK
+learn
+dot pre processing
+processing
+import
+level
+encoder
+okay
+so level
+score x equals to
+label
+encoder
+SK learn
+but in my bed
+X is not defined
+here we have
+is the one of the most robust library
+for machine learning
+it is open source and built upon numpy
+sci-fi and matplotlib it provides a
+range of tools of machine learning and
+statical modeling
+and train test split function of this SK
+learn model selection package in Python
+splits arrays or matrices into random
+subsets for train and test data
+and label encoder and code label with a
+value between 0 and N class is -1 where
+n is the number of distance label
+moving forward let's fit and transfer
+data for training
+so here we will write for
+I in
+I in
+range
+0 comma five
+X underscore train
+comma I
+equals to
+label
+encoder
+underscore x dot fit
+transform
+and X underscore train
+colon comma I
+and X underscore train
+seven
+equals to
+but
+order
+underscore X
+dot fit
+transform
+and X underscore train
+seven
+let's see X underscore
+oh sorry
+train
+and yeah this I
+if this is capital X
+with transform joins these two steps any
+use for the initial fitting of the
+parameter on the trading set
+while also returning the transformed X
+internally the transfer object just
+calls first fit and then transform on
+the same data
+and we will
+perform same for the Y
+so
+I have I will write here
+table
+encoder underscore y
+EP so label
+encoder
+okay
+Pi underscore chain
+equals to label
+encoder
+underscore y Dot
+bit
+underscore transform
+we see the results yeah
+so training of the data set is done
+let's do for same for this testing data
+so I will write here for
+I in
+range
+0
+comma five
+underscore test
+I
+equals to
+label
+order
+underscore X
+Dot fit underscore
+transform
+is underscore
+test
+of I
+then again
+X underscore test
+column comma seven
+equals to
+label
+encoder
+underscore
+Dot
+fit
+underscore transform
+underscore
+test
+then colon comma seven
+yeah and see the results X underscore
+test
+okay it seems good
+all the values
+so we will do for the same y test
+so we will write here label
+encoder
+let me put
+let's go y
+equals to label
+so y underscore test equals to
+um
+order
+underscore y dot bit
+score
+transform
+underscore test
+let's see
+okay
+moving forward we will import standard
+Scala for the further process
+so for that we will write here
+from sqlan
+Dot preprocessing
+port
+Stan done
+scalar
+says equals to
+like really assign this standard
+I will do I will copy it from here
+so X strain
+equals to SS dot fifth
+underscore transform
+X underscore
+trained
+then X underscore test equals to SS Dot
+bit
+underscore transform
+underscore test
+okay skill and Dot preprocessing
+okay sqlnp processing
+standard scalar
+okay sorry
+and again like the standard okay
+ER
+yeah so standard scalar removes the mean
+and scales each feature variable to unit
+variance
+this operation is performed feature wise
+in an independent way everything is done
+let's see which classifier is best for
+prediction by seeing their accuracy
+so for that
+I will write here
+let me do one thing
+yeah
+so like I will write from
+you learn
+dot ensemble
+symbol yeah
+import
+random
+Forest
+classifier
+so I will write if under
+class clf classifier
+equals to
+random Forest
+sorry my bad
+so RF
+underscore clf
+dot fit
+X underscore train
+comma y underscore train
+so I will write here from
+SK LAN import
+s
+why underscore prediction
+equals to RF underscore
+classifier
+dot predict
+dot predict
+X underscore test
+so here I will print
+accuracy
+of Random
+random Forest
+classifier is
+comma Matrix
+it dot accuracy
+score score
+then y
+underscore prediction
+comma y underscore test
+why underscore prediction
+so let's see the prediction from the
+using random Forest classifier
+and the accuracy a random for it is a
+meta estimator that employs averaging to
+increase predicted accuracy and reduce
+overfitting
+if both type equals to true the size of
+this subsample is determined by the max
+sample argument otherwise each tree is
+constructed using the entire data set
+so here you can see the accuracy is like
+78 percent
+and here prediction you can see like
+here one denotes that loan approved and
+0 means loan will not approve
+so accuracy is quite less so let's see
+for another classification methods name
+base
+so here I will write from sqlan
+port
+gaussian
+NB nav base
+okay so NB classifier
+plus two
+gaussian
+NB
+B underscore classifier
+equals to
+sorry dot fit
+strain
+comma y
+trained
+so
+a not equals to
+like gaussian okay G's capital
+sorry
+so let's predict the value
+y underscore predict
+was to NB
+a scope classifier
+dot predict
+X underscore
+test
+and print
+accuracy
+of
+nav base
+is
+comma like Matrix
+dot accuracy
+score score
+y underscore prediction
+comma y underscore test accuracy of
+gaussian NB is 0.8 means 82 percent
+let's predict the value y predict
+the prediction like one is like loan
+approved and 0 is loan or not approved
+so nav base is a classification
+algorithm for binary two classes and
+multi-classes classification problem it
+is called name based the calculation of
+the probabilities for each class as
+simplified to make that calculation
+tractable
+so the accuracy is 82 percent and here
+prediction you can see one denotes loan
+approved and 0 means loan will not
+approve so let's see for another
+classification method like decision tree
+classifier
+for that I will write here
+from
+SK learn
+dot tree
+import
+decision
+tree
+classifier
+here I will write DT underscore
+classifier
+equals to
+I will copy it from here
+I will write here DT underscore clf
+equals to
+dot fit
+X underscore train
+comma y underscore train
+y small
+here I will
+see the accuracy
+pursue DT
+underscore classifier
+dot predict
+underscore
+test
+so here I will print
+accuracy of
+dysentery is
+comma Matrix
+dot accuracy
+underscore
+underscore predict
+comma y underscore test
+so here you can see the accuracy is 70
+percent
+so let me predict
+so decently the non-parametric
+supervised learning approach used for
+classification and regression
+application
+it is organized hierarchically as and
+has a note root branches internal nodes
+and Lead nodes this so the accuracy is
+70 percent and here prediction you can
+see one denotes the loan approved and 0
+means
+loan will not approve so let's do one
+more classification we will do it from
+the K neighbors using K Neighbors
+over here we will write
+from
+kailan
+Dot
+burst
+import
+K Neighbors
+pacifier
+kn classifiers
+we will assign
+this
+so here we will write KN underscore
+classifier
+Dot
+fit
+x and double strain
+comma y underscore chain
+okay SK learn
+sorry
+then again
+okay it's Capital here
+Capital here
+yeah
+so here I will see the accuracy
+okay
+my prediction equals to
+k n
+underscore classifier
+Dot
+predict
+X underscore test
+print
+curacy
+of
+K neighbors is
+Matrix
+dot accuracy
+score score
+by underscore prediction
+comma y
+underscore test
+so let's see the accuracy accuracy 79
+percent and it is quite good so the K
+numbers the five closed neighbors are
+sought for the K numbers classifier the
+classifier must be explicitly instructed
+to utilize euclidean distance to
+determine the proximity of nearby points
+so the accuracy is 79 percent and here
+prediction you can see one denotes the
+loan approved and zero means loan will
+not approve
+so you can see
+nav base
+name is yeah so here you can see
+we have name base classifier with the
+best accuracy of 82 percent so we can
+use it for the loan approval prediction
+system
+so I hope you guys understand till here
+if you have any questions or any query
+regarding any code just put us in
+comments our team will shortly provide
+you the correct solution
+I hope you guys must have understood the
+concept of how we can Implement loan
+approval prediction system using python
+if you have any queries you can ask in
+the comment section below our team will
+shortly respond to you as soon as
+possible and if you want this full code
+and if you want this full code just
+comment for the same thank you so much
+for being here if you enjoyed this video
+please do subscribe to our YouTube
+channel and give a like to this video
+thank you and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

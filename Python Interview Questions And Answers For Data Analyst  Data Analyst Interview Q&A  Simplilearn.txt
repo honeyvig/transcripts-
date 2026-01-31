@@ -1,0 +1,959 @@
+in the world of data science python
+stands out for its ease of use and
+Powerful data analysis capabilities
+reflecting on the 2023 stack Overflow
+developer survey Python's popularity is
+unmatched especially among data analyst
+and scientist consider the success story
+of ano a data analyst whose experties in
+Python's pandas and numpy libraries led
+to the development of a predictive model
+that significantly influenced her
+startup strategy this example highlights
+Python's practical application in
+extracting meaningful insights from data
+a skill highly valued in the industry as
+you gear up for a python data analyst
+interview it's crucial to demonstrate
+not only a technical Mastery of python
+but also your ability to apply its
+functionalities to real world problems
+this guide focuses on essential
+interview questions and answers drawing
+from real life applications and
+challenges to prepare you for what lies
+ahead through understanding practical
+use cases like anas you will gain
+insights into the impactful role python
+plays in datadriven decision making and
+before we move on guys just a quick info
+for you if you are one of the aspiring
+python Enthusiast or a data analyst
+Enthusiast and looking for online
+training and graduating from the best
+universities or a professional who
+elicits to switch careers in python or
+data analyst by learning from the
+experts then try giving a short to
+Simply learns Purdue postgraduate
+programing data analytics in C oration
+with IBM the link is in the description
+box below that will navigate you to the
+course page where you can find a
+complete over of the program being
+offered and if you are interested you
+can find the link in the pin comment and
+description box below so let's get
+started so we'll start with the first
+question that is what is Python and why
+is it preferred for data analysis so
+python is like a versatile tool that's
+not only easy to use but also powerful
+enough to tackle big projects it's a
+programming language which means it's a
+way for us to write instructions that a
+computer can understand and execute what
+makes Python special is how it combines
+Simplicity and power it's as if the
+tools in this section of the supermarket
+are designed to fit comfortably in your
+hand and work exactly as you expect
+making your job easier so here I will be
+giving you an overview of the answers
+you can provide to the interviewer in
+the interview so now you might wonder
+why do people working with data love
+shopping in the python section so much
+so let's consider some points for that
+that would be easy to learn so python
+Simplicity means you can learn how to
+use it quickly even if you are never
+programmed before it's like learning to
+cook using recipes that requires only a
+few ingredients then comes versatile
+tool set python offers a variety of
+tools known as libraries specifically
+designed for data analysis imagine
+having a Swiss army knife but for data
+these tools can help you clean sort
+analyze and visualize data all in one
+place
+then we have Community Support so
+there's a huge community of people who
+use Python for data analysis so if you
+ever get stuck or need advice there's a
+good chance someone has been in your
+shoes and can help it's like having a
+group of friends who are always there to
+lend a hand and then comes integration
+and automation so python makes it easy
+to automate repetitive task and
+integrate your data analysis work into
+larger projects this can save you a ton
+of time and effort allowing you to focus
+on the fun parts of your project then
+comes the in demand skill because so
+many businesses rely on data to make
+decisions knowing how to analyze data
+with python is a valuable skill that can
+open doors to exciting job
+opportunities so this is how you can
+answer the interview about why is python
+preferred for data analysis so moving to
+the next question that is explain the
+difference between a list tle and
+dictionary in Python so I will give you
+an overview you could use this or just
+mold into your language and provide the
+answer to the interview so when
+discussing the structures that is list
+uple and dictionary in Python it's like
+looking at different ways to organize
+information each serves a unique purpose
+list are again to an adjustable shelving
+unit you can add remove or change the
+items on freely it's ordered meaning you
+can refer to each shelf by its position
+for example you could see an example
+here that is mycore list and we have put
+penc notebook and eraser in the list so
+it allows you to manipulate the contents
+as needed now coming to the tles so tles
+resemble a fixed display case once you
+have arranged your items inside their
+order and presence are set you cannot
+change them this immutability is useful
+for ensuring that certain data remains
+constant so you could see the example so
+I have changed the example so you could
+see here that my tole has pencil
+notebook and eraser so it's a signifies
+data that you don't intend to Al now
+coming to dictionaries so they are like
+a flying cabinet or the filling cabinet
+with labeled folders each folder or key
+holds specific items values making it
+easy to locate what you need quickly
+without concern for the order in which
+you edit them so you could see an
+example that is myor dictionary that has
+pen and it is pointing out for the blue
+then book that is pointing out to
+mathematics that provides a way to
+access items directly by the label key
+now moving to the next item or the next
+question that is how do you handle
+missing values in a pandas data frame so
+when working with data in Python using
+pandas it's common to encounter missing
+values think of missing values like
+puzzle pieces that are lost to complete
+the puzzle or analyze your data you need
+to decide what to do with these missing
+pieces so strategies to handle missing
+values the first one will be remove so
+if the missing value is like a lost
+puzzle piece that isn't crucial you can
+simply remove that row or column this is
+straightforward but can lead to losing
+valuable information if not done
+cautiously for example you could just
+use DF do drop na so this is how you
+could use it now coming to the next o
+that is fill in so if you think of the
+missing piece as something you can guess
+or approximate you can fill in the
+missing value with a guess this could be
+the average of the ordered pieces the
+most frequently appearing piece or a
+placeholder like zero for example you
+could use DF do fill Na and you could
+pass the value inside it so the choice
+between removing and filling in depends
+on your specific data set and what you
+are trying to achieve if maintaining the
+Integrity of your data without the
+missing pieces is crucial filling in
+might be the best option if the presence
+of incomplete data could skew your
+results removing those entries might be
+safer so this is how you could tackle
+this now moving to the next question
+that is what are Lambda functions in
+Python and where would you use them so
+imagine you are in the kitchen about to
+make a quick snack you could pull out a
+big food processor for a small job but
+sometimes it's easier to use a simple
+knife in Python Lambda functions are
+like that handy knife a quick one and a
+onetime tool for small tasks so let's
+understand the Lambda function Lambda
+functions are small Anonymous functions
+defined within the Lambda keyword they
+can have any number of arguments but
+only one expression perfect for when you
+need a simple function for a short
+period you could see the syntax that is
+basic form Lambda arguments colon
+expression now we'll see its examples of
+use number one is sorting imagine you
+have a list of names with the ages and
+you want to sort them by age Lambda
+function makes this simple so you could
+see the code here that is sorted and
+under we have passed list comma key
+equal to Lambda X col x one so this is
+how you could do that then comes the
+quick calculations so you need to
+quickly apply mathematical operation
+like squaring a number without writing a
+full function so you could have a
+example here so this is how you could
+have a square of a number so when to use
+Lambda functions so now we'll see when
+to use Lambda functions number one is
+short one time use that is ideal for
+when you need a function once or in a
+limited scope and number two would be
+Simplicity when the operation is simple
+enough to be expressed in a single line
+and then comes the inline operations
+that is useful for inline operations
+that requires a function so let's move
+to the next question that is question
+number five and the question is
+demonstrate how to lose list
+comprehension to simplify code that
+generates a list of square for all even
+numbers from 0 to 10 so imagine you are
+tasked with creating a beautiful Garden
+Path using Square Stepping Stones
+however you only want to use stones that
+fit certain criteria such as being even
+numbered in size in Python list
+comprehensions offer a concise way to
+create this path which with just the
+stones you need so let's understand list
+comprehension so list comprehension
+provide a sent way to create list they
+combine a loop conditionals and the list
+operation into one line it's like
+selecting specific items based on
+criteria to create a new collection and
+now we'll see the basic Syntax for that
+that is in the form you will write the
+expression for item and then the it TR
+and if condition so let's see an example
+so we'll create a list of square for all
+even numbers from 0 to 10 so first we'll
+do this with the traditional approach
+and here we have an array and then we'll
+use the for Loop and then if statement
+and then we will append if the number is
+even we will Square it now coming to the
+list comprehension approach so you could
+see the expression here so first is the
+condition then the for Loop and then the
+if conditioner so this is how the list
+comprehension work so now we will
+discuss about the key points of list
+comprehension so the number one is
+efficiency so list comprehensions make
+your code more readable and efficient
+number two is simplification they
+simplify multiple lines of code into a
+single readable line and then comes
+versatility useful for filtering items
+or applying operations to elements and
+now coming to the next question that is
+sixth one explain the concept of deep
+and shallow copy in Python so imagine
+you have a magical notebook whatever you
+write in it also appears in a link
+notebook if you have a shallow copy of
+the notebook changes to the content like
+adding a new page in one will show up in
+the another however if you change
+something on a page already existing in
+both notebooks only the original
+notebooks page is affected a deep copy
+is like having two completely
+independent magical notebooks whatever
+you do in one notebook whether adding
+new page or changing existing ones
+doesn't affect the other notebook at all
+so let's understand shallow copy and
+deep copy so shallow copy creates a new
+object but does not create copies of
+nested objects found within instead it
+just copies the reference to these
+objects so changes to nested objects in
+the original or the copy will reflect in
+the other so you could see an example
+for that that is import copy and then we
+have the original list and the shallow
+copied list is equal to copy do copy of
+the original list now moving to the Deep
+copy so it creates a new object and
+recursively copies all objects found
+within the original object nested
+objects included so changes in the
+original or the copy do not affect each
+other at all so let's see the example
+that is deepor copyed list equal to
+copy. deep copy and inside we have
+passed original list now we'll discuss
+about the key points so shallow copy
+that is good for saving memory when
+creating copies of large objects where
+nested objects aren modified and about
+the Deep copy so it used when you need a
+fully independent copy of an object
+including all nested objects so this was
+about deep copy and shallow copy now
+moving to the next question that is what
+is p eight and why is it important in
+Python Programming imagine you are
+playing a game where everyone agrees on
+certain rules to make the game more fun
+and fair for everyone in the world of
+Python Programming p8 serves a similar
+purpose but for writing code p8 stands
+for python enhancement proposal 8 and
+it's essentially a set of rules and
+guidelines for formatting python code so
+let's understand pet so pet is like the
+rule book for python code style it
+covers recommendations on how to format
+your code such as how to name variables
+how to incident your code and other best
+practices think of it as the etiquette
+for Python Programming ensure that
+everyone writes code in a consistent and
+readable way and let's discuss why pepet
+matters so the number one reason is
+readability just like a well organized
+book is easier to read code that follows
+pepit is easier for humans to understand
+and read it's about making your code not
+just functional but also presentable and
+approachable then comes collaboration
+when everyone uses the same style guide
+it's much easier to work on projects
+together this consistency removes
+confusion and helps prevent errors that
+arise from misinterpreting the code and
+then comes maintenance so code that's
+easy to read and understand is also
+easier to maintain and update if your
+code follows Pate anyone including
+future you can quickly understand and
+modify it as needed so following pet is
+like keeping your Cotes desk clean and
+organized it makes your python programs
+more enjoyable and easier for you and
+others to read and work on just as
+playing a game is more fun when everyone
+knows and follows the rule coding in
+Python is more effective and enjoyable
+when everyone aderes to pep it so this
+was about pepit now moving to the next
+question that is describe how to perform
+a merge operation between two pandas
+data frames so imagine you are at a
+dinner party and you have two guest list
+one list has the names of guest and
+their favorite dishes the other list has
+names with their preferred drink choices
+to plan your dinner menu you need to
+combine these list into one so you think
+each guest food and drink preferences
+side by side in Python's Panda's Library
+this combining of list or tables is
+called a merge operation so let's
+understand merge in pandas so first
+we'll see pandas so it's a powerful
+library in Python for data analysis and
+manipulation and merge operation is like
+joining two tables based on a common
+column like guest names in our example
+so that you can see all the information
+in one place so let's see the steps to
+perform a merge number one step is
+identify the common key that is find the
+column common to both data frames such
+as guest name then choose the type of
+merge decide how you want to combine
+your list do you want to include all
+guest only those present on both list or
+some other criteria and then use the
+merge function apply pandas merge
+function to bring your data frames
+together based on your criteria you
+could see the example here that is first
+will identify the common key and then
+we'll choose the type of merge as you
+could see like outer joint inner joint
+or both the criterias and then we have
+used the merge option so this is done
+that is to perform a merge operation
+between two pandas data frame now moving
+to the next question that is ninth
+question and that is can you explain
+what numai is and how it is better than
+a regular list in Python so imagine you
+have a toolbox in this toolbox you have
+a regular Hammer that is Python's list
+and a power hammer that is numpy both
+can drive Nails into a board that is
+perform numerical operations but the
+power hammer does it faster and with
+less effort especially when you have a
+load of nails large data set numpy
+stands for numerical Python and it's a
+library especially designed for
+numerical operations it introduces an
+object called an ND array that is n
+dimensional array that is more efficient
+than Python's regular list for a few
+reasons you see those reasons number one
+is performance so numpy arrays are
+stored at one continuous place in memory
+allowing faster access in comparison to
+list so this means operation ation on
+numpy arrays can be done much quicker
+than on list then comes functionality
+numpy comes with a vast library of
+mathematical functions that can be
+performed on arrays making it incredibly
+powerful for scientific Computing and
+then comes memory efficiency a nump
+array is more memory efficient than a
+list allowing you to work with larger
+data set so this is why numpy is better
+than a regular list in Python now moving
+to the next question that is how do
+improve the performance of a slow
+running python script so imagine you are
+in a race with a backpack full of tools
+you think you might need as you run you
+realize the backpack is slowing you down
+so to speed up you would streamline your
+backpack carrying only words essential
+and organized for quick access
+optimizing a python script follows a
+similar principle so here's how number
+one is profile before optimizing first
+find out where the heavy items are use
+profiling tools to identify the slow
+parts of your script it's like checking
+your backpack to see what's making it
+too heavy then you can use efficient
+data structure Str some data structures
+are faster than others for certain tasks
+it's like choosing a lightweight compact
+multi-tool or carrying separate tools
+for each job you could leverage numpy
+for numerical task if your script does a
+lot of mathematical calculations using
+numpy as you discussed earlier you can
+significantly speed things up similar to
+swapping out of manual tool for power
+tool and then you could avoid Global
+variables accessing Global variables is
+slower than accessing local words it's
+second to having the tools you
+frequently use in an easy accessible
+pocket rather than in the bottom of a
+backpack and you could use built-in
+functions and libraries Python's buil-in
+functions and standard libraries are
+optimized for Speed using them instead
+of custom Solutions can be like using a
+well paved road instead of hacking your
+way through the jungle and then you
+could use limit of Loops so Loops
+essentially nested ones can slow down a
+script where possible use Python's list
+comprehensions or numis vectorized
+operations it's like choosing a path
+that goes directly to your Destin ation
+instead of wandering around so by
+focusing on these strategies you could
+significantly improve the speed of your
+python script making your coding race
+more of a Sprint than a marathon now
+moving to the 11th question that is what
+is the purpose of the group by function
+in pandas and provide an example of its
+use so let's say you have a big box of
+crayons sorted by color you want to
+count how many crayons you have in each
+color in Python Panda's Library the
+group by function helps you do exactly
+that with your data so the group by
+function groups data in data frame based
+on a certain criteria like how you might
+group crayons by color so once group you
+can apply functions to each group
+independently such as counting them
+summing of values or calculating
+averages so here how it works number one
+is group so the first group by that
+separates the data into groups based on
+your choosen criteria it's like sorting
+your crayons into groups of the same
+color now coming to the apply so next it
+applies a function to each group this
+could be calculating the average sum
+count Etc if we sticking with the crayon
+analogy this is like counting how many
+crons you have in each color group and
+then comes combine finally it combines
+the results into a new data frame you
+end up with a summary of your original
+data organized by the grouping criteria
+so it's like having a neat list that
+tells the count of each color of CRS so
+now moving to the next question that
+would be 12th so how can you create
+visualizations using matte plot LI or
+cbone provide an example so imagine you
+have just a beautiful hike and you want
+to share the experience with your
+friends you could describe every detail
+in words or you could show them a photo
+that captures the essense of the
+adventure in data analysis M PL lib and
+camera and filters for data allowing you
+to create visual representations that
+capture the insites from your data set
+so talking about MPL Li that is the
+camera mtpl Li is a plotting library in
+Python that allows you to create a wide
+range of static animated and interactive
+visualizations think of it as your
+camera for data visualization give
+giving you the tools to create basic
+graphs like line charts bar charts and
+Scatter Plots and then comes the cbone
+but before that you could see the
+example here that is import M prot spt
+then we have X and Y and they have the
+numbers there and then you could Flo the
+graph there and then comes the cbone the
+filters so cbone is built on top of mat
+PL and provides a high level interface
+for drawing attractive and informative
+statistical Graphics so cbone is like
+adding filters to your photos making
+your visualization more aesthetically
+pleasing and easier to interpret with
+less code and you could see the example
+here that is import cbone as SNS and
+then you could set the theme and the
+line Flo now coming to the next one that
+is 13th question so now guys let's
+understand overfitting so overfitting
+occurs when a machine learning model
+learns the details and noise in the
+training data to the extent that is
+performs poorly on new data it's like
+memorizing the answers to a test rather
+than understanding the subject and now
+we'll see how to prevent overfitting so
+number one is use more data so having
+more data can help the model learn
+better and generalize well it's like
+learning more about types of fruit to
+improve your overall understanding then
+comes simplify the model Sometimes using
+a simpler model can prevent overfitting
+this is again to focusing on the basic
+characteristics of fruit like color and
+shape rather than memorizing every sport
+on the apple skin and then comes cross
+validation this technique involves
+rotating the data set through training
+and validation phases it's like
+practicing with different sets of root
+every time to ensure you really
+understand them not just memorize them
+and then comes regularization so this
+technique adds a penalty on the more
+complex features of the model think of
+it as discouraging the model from paying
+too much attention to the less common
+characteristics of the fruit and then
+comes early stopping during training if
+you notice that your model's performance
+on a validation set starts to vers stop
+the training it's like realizing you're
+starting to focus too much on the
+details that don't matter and stopping
+your studying to refocus and in
+conclusion over fitting is like studying
+too hard on the specifics and missing
+the big picture by using strategies like
+Gathering more data simplifying your
+model and practicing with cross
+validation you can help your machine
+learning model to learn better and be
+more adaptable just like a well-rounded
+student who understands the essence of
+the subject not just the details
+now moving to the next question that is
+14th describe a situation where you had
+to clean a large data set and what steps
+did you take so imagine you have just
+been given a giant old attic full of
+various objects to organize and clean up
+some items are valuable and need to be
+kept some are duplicates and others are
+just plain junk cleaning a large data
+set in Python is somewhat similar you
+are aiming to tidy up the data so that
+it's useful for analysis so we'll see
+the steps for cleaning a large data set
+that is remove duplicate data that is
+just like removing duplicate items in
+the Attic that you don't need more than
+one of in data sets duplicates can skew
+your analysis so for that we'll use the
+action as we have seen the number one
+step that is remove duplicate data and
+we'll see the action that is we will use
+dataframe do dropcore duplicates in
+pandas to remove them and then we can
+use another method that is handle
+missing values so imagine finding boxes
+that are supposed to contain items but
+some are empty you decide whether to
+fill them label them as empty or remove
+them all together for that we could do
+the action that is options include data
+frame do fill na to fill missing values
+or data frame do drop na to remove rows
+or columns with missing values and then
+we have correct data types sometimes
+objects are stored in the wrong boxes
+similarly a numeric column might be
+incorrectly formatted as text so for
+that we'll use data frame do S Type to
+correct data types and and then we have
+standardized the data ensuring
+everything is organized and labeled
+consistently like making sure all book
+titles follow the same format for this
+section we will apply functions to clean
+and standardize text numbers and dates
+and we have remove or correct outliers
+if you find something completely out of
+place like a snowboard in a box of
+summer clothes you decide if it's an
+error or if it should be stored
+somewhere else so the action we can use
+is use statistical methods to detect
+outliers and decide whether to keep
+adjust or remove them and in conclusion
+cleaning a large data set involves
+removing unnecessary Parts like
+duplicates and outliers filling in gaps
+that is missing values and organizing
+correcting data types and standardizing
+it's about making sure the data is
+accurate consistent and ready for
+analysis just as organizing and cleaning
+the attic that makes it easier to find
+and use what you need now moving to the
+next question that is 15th how do you
+split a data set into training and
+testing set using psych learn imagine
+you are preparing for a magic show
+before performing in front of a live
+audience you practice your tricks with a
+friend to get feedback similarly when
+you are working with machine learning
+models you need to practice or train
+your model on a portion of your data and
+then test it on another portion to see
+how well it performs so this process
+helps ensure your model can perform
+magic with new unseen data not just the
+data it learned from so we'll see using
+psychic learn to split data so psychic
+learn is like your magic kit for machine
+learning in Python it has a tool called
+Trainor testore split that makes
+dividing your data into training and
+testing sets a breeze so we'll see the
+steps to split your data set number one
+is prepare your data gather your data
+set it's like getting all your magic
+propes ready for the show then import
+the tool bring the Trainor testore split
+function into a project and then we have
+spit the data decide what portion of
+your data you want to train on and what
+portion to testone the common split is
+80% for training and 20% for testing and
+you could see the code here and here x
+represent your features that is the
+information you use to make predictions
+and why presents your target what you're
+trying to predict and then we have text
+size equal to 0.2 that tells the
+function to reserve 20% of the data for
+testing and in conclusion splitting your
+data set into training and testing sets
+is a crucial step in the machine
+learning process it's like rehearsing
+your magic tricks before the Big Show
+ensuring your model is well prepared to
+amaze with its prediction on the new
+data using psych lears Trainor testore
+split this process is simple and
+straightforward allowing you to focus on
+perfecting your model's performance that
+is 16 explain the difference between
+supervised and unsupervised learning
+with examples so imagine you are
+learning to paint in supervised learning
+you have an instructor who gives you a
+picture to paint and guides you telling
+you when you are putting or getting it
+right and where you needs to improve so
+this is like having label data data in
+machine learning where you know the
+correct answers or labels for your
+training data and you're trying to
+predict those answers for new data so in
+supervised learning however it's like
+you are given brushes and paints but no
+pictures to replicate and no
+instructions you are free to explore and
+create patterns or structures on your
+own in machine learning this means
+working with data without predefined
+labels and the goal is to identify
+patterns or groupings within the data
+such as clustering similar customers
+together so key points are here are
+super wise learning you have label data
+and the goal is to learn a mapping from
+inputs to outputs and examples include
+regression and classification problems
+so now moving to the now key points for
+unsupervised learning that is we work
+with unlabelled data and the goal is to
+discover underlying patterns of
+structures the examples include
+clustering and dimensionally deduction
+now moving to the next question that is
+17th question and what are the main
+steps in a machine learning project so
+embarking on a machine learning project
+is like planning a journey you you need
+a map to guide you through different
+terrains and landmarks and here's how
+this journey typically enfolds number
+one is Define the problem so first
+figure out your destination what do you
+want to achieve with the machine
+learning model and this step is about
+understanding the problem you trying to
+resolve for second Point gather and
+prepare data so next back your packpack
+you need data for your journey collects
+data for your problem and then clean and
+pre-process it to make it useful for
+training a model then choose a model now
+choose a model of Transportation
+different models like decision trees
+Network Etc have their strength and are
+suited for different types of problems
+and then train the model time to hit the
+road training a model is like teaching
+it the rules of the road you will feed
+it the data you prepared earlier
+allowing it to learn from it and then
+evaluate the model check your map and
+Compass how well is your model
+performing use separate testing data to
+evaluate its accuracy and make sure it's
+learning correctly and then find tune
+the model so find the best rout based on
+the evaluation adjust your models
+parameters or approach to improve its
+performance and then deploy the model
+you have reached your destination once
+your model is trained and fine tuned you
+can deploy it to start making
+predictions or insights on new data and
+then and then we can monitor an update
+that is keep an eye on the road
+conditions over time your model might
+need adjustment or retraining as it
+encounters new data or as the underlying
+data patterns change so this is about
+the main steps in a machine learning
+project now moving to the next question
+that is how do we evaluate the
+performance model so imagine you have
+baked a batch of cook case for the first
+time to know if they are good you need
+people to taste them and give you
+feedback similarly after you have
+trained a machine learning model you
+need to evaluate its performance to see
+how well it's doing for its job like
+predicting outcomes or classifying data
+so the steps would be number one is
+accuracy so this is like asking out of
+all the C Cas how many were just right
+in classification problems accuracy
+measures how often the models
+predictions are correct and then
+confusion Matrix imagine a chart showing
+the types of feedback too sweet just
+right too blend a confusion matrics help
+you understand not just the successes
+but also where and how the predictions
+went from and then comes precision and
+record Precision ask of all the cookies
+we labeled at just right how many truly
+are just right recoil ask of all the
+cookies that are actually just right how
+many did we correctly identify it's
+about being correct when you say it's
+right and finding all the right ones and
+then comes F1 score sometimes you want a
+single number to balance precision and
+record especially if you have unsure
+which one is more important F1 score is
+like an overall grade for a quick case
+that considers both taste and appeal and
+then comes Roc curve and Au imagine
+plotting a graph showcasing your cookie
+making attempts balancing how
+adventurous you are with flavors against
+the mistakes you make so the ROC curve
+floats true positive rates against false
+positive rates and the Au area under the
+curve gives you a single measure of how
+good your model is across different
+thresholds now moving to the next
+question that is provide an example of
+using SQL in conjunction with python for
+data analysis so imagine you are a
+detective trying to solve a mystery you
+have a huge room full of file cabinets
+your database with information of
+various cases now you need a smart
+efficient way to find exactly what you
+are looking for without ranging through
+every file by by hand here's where
+python and SQL join forces to help you
+out so the python and SQL the detective
+Duo so SQL is like your search tool for
+query of the database directly
+pinpointing the exact information you
+need such as details of a specific case
+and you know python that is like your
+assistant detective that helps you to
+analyze the information draw insights
+and present them in a way that's easy to
+understand so now we'll see a simple
+scenario you are interested in finding
+out the number of cases solved each
+month to see when your team will was the
+most effective so use SQL to retrieve
+data so you write a SQL query to extract
+the number of cases solved by month from
+your data base so you could see how we
+have written here that is Select month
+and count as case sold and from Case
+Files where status is equal to Sol Group
+by month so now we will analyze and
+visualize with python so you use Python
+to connect to the database run your SQL
+query and then use libraries like pandas
+for analysis and M BL LI or cbone for
+visualization so you could see here that
+we have imported pandas and metal lip
+and then we have connected the SQL here
+and then we have run the SQL query and
+load into a data frame and then we have
+ploted the graph so you could see the
+example how we have used SQL in
+conjunction with python for data
+analysis now moving to the next question
+that is 20th question and how do you
+handle error handling in Python and can
+you explain the use of try accept and
+finally blocks so let's dive in imagine
+you're walking through a forest on a
+path you think you know well suddenly
+you find a tree that has fallen across
+your path and you need a plan to deal
+with the unexpected obstacle in Python
+situation this is like running into an
+error in your code so the try accept and
+finally blocks help you navigate these
+unexpected errors gracefully so the tri
+block this is where you walk along your
+planned path you place the code that you
+think might cause an error inside the
+tri Block it's like saying I will try to
+go this way but there might be a tree in
+my path and then we are coming to the
+accept block so if you encounter fallen
+tree and error the except block is your
+alternate route this block catches the
+error and lets you handle it preventing
+the program from crashing you can
+specify different types of trees to look
+out for and different dets so you could
+see the example here that is try try
+walking the path except oh no a tree
+take a detour so you'll take a detour
+from here and then we have the finally
+block whether you encountered a tree or
+node the finally block is like reaching
+the end end of your walk and taking a
+moment to reflect so this block runs no
+matter what even if there was an error
+it's often used for clean up actions
+like closing a file or releasing
+resources so you could see the code here
+that is finally relax at the end so
+here's the conclusion guys so we have
+covered 20 questions for you so if you
+like this video please like share and
+subscribe if you have any doubts comment
+them in the comment section below and
+our team of experts will help you as
+soon as possible until next next time
+stay safe and keep learning staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

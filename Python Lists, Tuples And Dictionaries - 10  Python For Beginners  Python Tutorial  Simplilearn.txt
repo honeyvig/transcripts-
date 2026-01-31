@@ -1,0 +1,994 @@
+hello everyone welcome to another video
+on python series of tutorials by
+simplylearn
+in this session we will look at list
+tuples and dictionaries in python
+now let's see the agenda for today first
+we will learn about the lists in python
+its characteristics and explore it in
+jupyter notebook then we will learn
+about the pulse in python its
+characteristics and we will also explore
+tuples in jupyter notebook after that we
+will have a look at dictionaries in
+python its characteristics and will head
+to jupyter notebook to understand the
+dictionaries
+so lets start with lists in python
+imagine you have different values
+you have numbers you have strings now if
+you want to group them together
+you can do this job in python with the
+help of lists or you have work with
+arrays in any other language like c plus
+or java this is the similar stuff in
+here which is list
+a list can be defined as a collection of
+objects values or items of different
+types and these collections are enclosed
+within the square brackets and are
+separated by commas let's understand
+this with the help of an example
+we will create a list and name it as
+list1 and insert the elements in square
+brackets and separate them with the help
+of commas
+list 1 equal to square brackets 1 comma
+adam
+coma 107 comma usa
+and unless we have our first element and
+0th index
+and we have 1 at 0 index atom at one
+index 107 at second index usa at third
+index
+and talking about the reverse index it
+starts with minus 1 index value we have
+usa at -1 index value 107 at minus 2
+index value
+adam at minus 3 index value and 1 at -4
+index value
+we will explore the list with various
+examples in jupyter notebook in a while
+till then let's look at the
+characteristics of list
+first the lists are ordered when we say
+that lists are ordered it means that the
+items have a defined order and that
+order will not change if you add new
+items to a list the new items will be
+placed at the end of the list
+second elements of the list can be
+accessed by index values
+third lists can store various types of
+elements for example numbers strings or
+lists itself
+fourth lists are mutable the list is
+changeable meaning that we can change
+add and remove items in a list after it
+has been created
+let's allow duplicate elements since
+lists are indexed list can have items
+with the same value let's have a look at
+some methods of lists in python
+the first one is append it adds an
+element at the end of the list
+for syntax we can write list1 dot append
+and in round brackets we have to write
+the element which we want to append
+the next is insert it adds an element at
+the specified position its syntax is
+name of the list dot insert and in round
+brackets will write the index at which
+we want to insert the element and comma
+and after data element which we want to
+insert
+third is extend
+it adds the element of a list to the end
+of the current list
+its syntax is list1 dot extend and in
+round brackets we will add the element
+like list2
+which we want to extend in the list
+the next is index it returns the index
+of the first element with the specified
+value
+and its syntax is list1 dot index and
+the element which you want to fetch the
+index
+the next is remove it removes the item
+with the specified value
+its syntax is list1 dot remove and in
+round brackets we write the element
+which we want to remove from the list
+the next is sort
+this method is used to sort the list
+its syntax is list1 dot sort
+the next is reverse it reverses the
+order of the list
+its syntax is list1 dot reverse
+let's move to jupyter notebook to
+explore these methods
+let's start with creating a list
+we'll name the list as list1
+and will create
+equal to
+and we'll start with square brackets
+and we'll write our first element that
+would be apple
+coma
+space
+next element
+orange
+coma space the next element
+banana
+coma space the next element
+kivy
+now we will get this list printed for
+that we'll write the syntax
+print and in round brackets we'll write
+the list name that would be list1 and
+run the command you can see here that
+the list is printed
+now let's create a different list with
+some different elements
+list 2
+equal to
+and in square brackets we'll write
+apple
+now we will insert a list
+in a list
+for that
+we will write a list in square brackets
+8 comma 4 comma
+6.
+and coma the next element that will
+write orange
+the next element banana
+now print this list
+to print this will write print round
+brackets will write list2
+and run the command here we will get the
+list
+to print it
+we can access any element in the list
+so for that we'll write the syntax
+print
+we want to access the second element
+that will be the third element from the
+list one for that we'll write the syntax
+print
+list one and in square brackets we'll
+write the index two and run the command
+we'll get the third element from the
+list one that is banana
+now
+we will access an element from the list2
+for that we'll write the command print
+list2
+and in square bracket we will write 1
+and in square bracket we'll write 2 and
+run the command what we get is 6
+so to access an element from a list that
+is already inserted in and list we have
+to write this syntax
+so this syntax tells us that we will
+first access the first index element
+that is 846 the list and in that we will
+access the second index value that would
+be 0 1 and 2 that is 6.
+so this is the syntax to access an
+element in a list that is already
+inserted in a list
+now we will see a reverse index order
+for that we'll write the command print
+list 1 and in square brackets we'll
+write the index -1
+and we'll run this command and we get
+tv as output
+now we'll see slicing in python
+we can access a range of items in a list
+by using
+the slicing operator
+now we will see an example
+to see
+the slicing operator work in python
+for that we will write the syntax print
+list1
+and in square brackets we'll write 1
+slicing operator 3 and run the command
+what we say is orange and banana as an
+output from the list 1.
+when you write 1 ratio 3 that is one
+slicing operator three it gives you the
+elements at index one
+two and not three
+so we get the output as orange coma
+banana
+now
+we will see another example for the
+slicing operator we'll write print
+list 1
+and in square brackets we'll write 3
+and slicing operator
+run the command here we can get only tv
+when we write a single number before
+slicing operator
+it would print the value at that index
+value and all the other elements that
+are present in the list but in this list
+we have only kv as the last element so
+it would print third index value and not
+more than that
+now we'll see append function for that
+we'll write the syntax list one
+dot append and in round brackets we will
+write the element which we want to
+insert at the last of the list
+we will write kawa and
+run it and now we will print the list to
+see the result
+here we can see that java is added at
+the last of the list
+now we'll see extend function
+for that we'll write the index list1 dot
+extend and in round brackets
+we will write
+in square brackets the particular
+elements we want to insert in the list
+so we will write watermelon
+and the next element we want to insert
+would be muskmelon
+that would be in inverted comas
+and we also want this list to be printed
+so we'll write print list one and
+execute this command
+here
+we can get watermelon and muskmelon add
+it just after the list
+just at the last elements of the list
+now if you want to delete a particular
+element from the list you can delete it
+with the syntax
+dl
+space
+the list name you want to delete the
+element
+and in square brackets you will write
+the index for the element you want to
+delete
+we have written the fifth index value
+so we'll run this command
+and we'll get the list printed
+we can see
+that the fifth index value that is
+watermelon is not there in list one it's
+been deleted
+now
+you can also do this
+with another method that is removed for
+that we will write list1 dot
+remove and in round brackets
+we will write the particular element we
+want to remove we will write that
+that is kv
+and we also want the list to be printed
+so we'll write
+print in round brackets list one
+and run this command
+we get that the key is been removed from
+the list one
+now there is another method that is pop
+we will write that command print
+in round brackets we'll write list one
+dot
+pop and we'll write the index value
+what we want to remove from the list
+that is one
+and we also want the list to be printed
+so for that we'll write the command
+print
+list one
+will run this command
+okay we have not written the name of the
+list correctly so now list one
+now
+so at the one index that was orange that
+has been removed from the list
+and now this is the new list
+now
+we can see another method that is clear
+that removes all the elements from the
+list
+so
+this we would apply on the list to
+list2 dot
+clear method
+and we'll also write another command
+that would be print
+list two
+and execute this command we can see that
+the list two is empty now all the
+elements from the list two have been
+removed
+now we'll see another method that is
+reverse for that we'll write the command
+list one
+third reverse
+and round brackets and we also want the
+list1 to be printed for that we will
+write the command
+print list1 and execute this command
+here we can see that the list one has
+been reversed muskmelon
+guava banana apple
+now
+if you want a particular index element
+to be accessed you can
+have the syntax for that you can write
+that print
+list1 dot
+index
+and in round brackets you just need to
+write the element for what you want to
+get the index
+and just run this command you will get
+the index of the element
+guava that is one
+we have another method and list that is
+count so count is used to give the
+number of times the particular element
+is present in the list so for that we
+will write the syntax print
+so print
+and in round brackets will write the
+list name list1
+dot count and round brackets will write
+the particular element
+for which we want to get the number of
+times that has been present in the list
+write musk melon
+and run this command it would give us
+the value 1
+because it's been present in the list
+for only a single time
+now let's move to the tuples
+so tuple tuple is almost same as list we
+can have different types of values in
+tuples
+the difference in list
+is we can change value because list is
+mutable and tuple is immutable that
+means you cannot change the value
+a tuple can be defined as a collection
+of objects values or items of different
+types and these collections are enclosed
+within the circle brackets and separated
+by commas
+let's understand this with the help of
+an example we will create a tuple and
+name it as top one and insert the
+elements in round brackets and separate
+them with the help of commas
+so w1 equal to round brackets the first
+element is one comma and the second
+element is adam third element is 107 and
+the fourth element is usa
+now in tuples we have our first element
+at zeroth index and we have one at zero
+index and atom at one index and 107 at
+second index and usa at third index
+and for the reverse index it starts with
+-1 index value we have usa at minus 1
+value 107 at minus 2 sec index value an
+atom at minus 3 index value and 1 at
+minus 4 index value
+we will explore the tuples with various
+examples in jupyter notebook but till
+then let's look at the characteristics
+of tuple
+so the first is the tuples are ordered
+when we say that tuples are ordered it
+means that the items have a defined
+order and that order will not change
+elements of the tuples can be accessed
+by index
+double items are indexed the first item
+has index zero the second index
+has one
+third tuples can store various type of
+elements that is strings arrays and many
+other elements
+the next is tuples are immutable doubles
+are unchangeable meaning that we cannot
+change add or remove items after the
+tuple has been created
+next is tuples allow duplicate elements
+since tuples are indexed they can have
+items with the same value
+let's have a look at some methods of
+tuples in python
+first that is index we can use the index
+operator to access an item in a tuple
+with the index starts from zero
+its syntax is the name of the tuple dot
+index and in round brackets will write
+the element for which we want to access
+the index
+the second is slicing we can access a
+range of items in a tuple by using the
+slicing operator for that we'll write
+the syntax top one and the range for
+which we want to slice the tuple
+the third is concatenation here we will
+add two tuples that is we just have to
+write the name of the tuples to add them
+and we'll place the plus operator just
+between them
+the next is repetition we can have the
+same item multiple times in a tuple for
+that we'll just have to write the syntax
+the name of the tuple
+and the multiplication operator into the
+times we want that value to be present
+in the tuple
+the next is count it returns the number
+of items a specified value occurs in a
+tuple
+so for that we have the syntax step one
+dot count and in round brackets we will
+just write the element for which we want
+to count the number of times that
+specified value has been occurred
+we also have another method that is
+indexed
+it searches the tuple for a specified
+value and returns the position of
+that where it was found
+now let's move to jupiter notebook to
+explore these methods so let's start
+first we will comment that would be
+tuples
+and we'll
+move to the next column and first we'll
+create a tuple
+for that we'll write the command to p 1
+that would be the name of the tuple and
+in round brackets we'll
+insert the elements that would be
+apple
+coma
+orange coma
+banana
+coma
+kv
+now we will print this tuple
+just have to write print and in round
+brackets the name of the topper and run
+the command
+will get the tuple
+printed
+now
+if you just want to insert a single
+element in a tuple for that you will
+write the command tab 2
+equal to in round brackets
+you will write a single element that
+would be apple
+and
+run that command
+the tuple has been created but this
+tuple has not been considered as tuple
+in python it's been considered as string
+so
+let's check the type of this tuple for
+that we'll write print
+type
+in noun brackets we'll write the name of
+the tuple we want to check
+and run this command
+here we can see that it is showing a
+string
+so a single element is been shown as
+string
+in python if you want that it should be
+tuple
+for that you just have to
+insert a single comma
+in the tuple and now run this command
+you will get this type as tuple
+now if you want to access any element in
+a tupper for that you just have to write
+the command print
+top one
+and in square brackets the index value
+that is 0
+and here you quote the value apple that
+is at
+0th index value in top1
+now
+you can also access the element in the
+reverse order for that will write the
+command print
+tap one
+and in square brackets we'll write the
+index value -1
+and run the command here we can get the
+value kv
+from the reverse index order
+now we also have the slicing operator in
+tuples also
+for that we'll write the command print
+f1
+in square brackets
+the index values
+will
+run this command print tab 1 index value
+1 slicing operator 3
+so it has printed orange and banana
+so what does it means it prints the
+index value 1 and 2 and node 3.
+we also have a repetition method and
+tuples
+for that we just have to write a simple
+syntax
+like print
+in square brackets the element you want
+to repeat
+we will write the element as repeat only
+and
+comma we just considered as tuple
+and just
+after the bracket we would have to write
+the multiply operator and the number of
+times the element should be repeated in
+the tuple
+now we'll run this command
+you can see that the tuple has been
+created with the element repeat and the
+number of times is 3 that we have
+written just after the
+element
+so the tuple has been created now we'll
+see the count method
+for that we'll write the command print
+the name of the tuple
+dot
+count
+and in round brackets we will write the
+element for which we want to
+know the number of times it been present
+in the tuple
+and will execute the command
+it gives us zero
+as our top one
+doesn't consist
+guava as an element
+so it gives us the count as zero
+now we'll see
+another method that would be index
+for that we'll write the command
+print
+top one dot
+index
+and in round brackets we'll write the
+element for which we want to fetch the
+index of that element
+banana and we'll run this command
+we will get the index of the element
+banana that is 2
+0 1 2.
+so we get the index of the element
+banana
+now if we want to use the append method
+in tuples we have to first create the
+tuple into the list for that we will
+write the command y equal to list and in
+round brackets we will write
+the name of the tuple
+which we want to convert in the list
+now we will use the append method
+to the list that is why
+dot append
+and will insert an element that would be
+guava
+and now
+we would just assign
+the y list to a variable top one
+we have now converted
+the y list to the tuple with this syntax
+that is
+tuple y and we have assigned it to the
+top one value
+now we'll print this
+tuple
+and execute the command here
+we can see that we have used the append
+method
+in the tuple
+first we have changed the tuple to the
+list by this command y equal to list tab
+one then we have used the append method
+y dot append
+and appended the element cover then we
+have changed the y list to the tuple
+that is step one equal to tuple the name
+of the list and then we have printed the
+tuple
+we can also add two tuples by another
+method
+for that
+we will
+write another
+tuple that would be top three
+equal to we will insert an element that
+would be
+cherry
+and now
+we want
+it to be added in top one so we'll write
+top one plus equal to
+top three
+and now we'll
+print
+the final tuple that would be top one
+and run the command here we can see that
+we have added
+two tuples that is tuple one and tuple
+three which consists of cherry and here
+we get the whole tuple as double one
+now
+to execute loops in tuples we'll write
+the command
+for that we'll write the syntax
+for
+space
+a variable x
+and
+the name of the tuple
+colon
+and then we will print
+the particular element one by one and
+we'll run this command here we can see
+that all the elements have been printed
+from the tuple
+now let's understand dictionaries in
+python
+in list you can fetch the elements with
+the help of index numbers what if you
+want to specify a different type of
+index for it example if you have a list
+of eight values and you want to fetch
+the fifth one you will use the index but
+if you have key for each element then
+you can use the key to access that
+element example phone book if you want
+to fetch a number you will use a name
+and you get a number and officially if
+we talk about dictionary if you want to
+understand the meaning of a word you go
+to that page and you look at the word
+and understand the meaning of it so this
+type of concept where you have a key and
+corresponding to that you have a value
+we can achieve this with the help of
+dictionaries
+python dictionary can be defined as a
+collection of objects values or items of
+different types stored in key value pair
+format these multiple key value pairs
+created are enclosed within the curly
+braces and each key is separated from
+its value by the colon let's understand
+this with the help of an example
+dict 1 equal to curly braces the first
+key is a and corresponding to that we
+have value and that is separated by
+colon and after the key value pair that
+is separated by a comma
+the next is b key
+and that has a corresponding value too
+after that we have inserted a comma
+to separate it from other values now we
+have a third key that is c and
+corresponding to that we have a value
+three
+let's see some characteristics of
+dictionaries
+the dictionaries are ordered from python
+version 3.7 when we say that
+dictionaries are ordered it means that
+the items have a defined order and that
+order will not change
+second that is elements of the
+dictionaries cannot be accessed by index
+third dictionaries can store various
+types of elements
+fourth dictionaries are mutable
+dictionaries are changeable meaning that
+we can change add or remove items after
+the dictionary has been created
+fifth one is dictionaries doesn't allow
+duplicate elements dictionaries cannot
+have two items with the same key
+now let's see some methods in
+dictionaries
+the first is clear method
+it removes all the elements from the
+dictionary and its syntax is the name of
+the dictionary dot clear
+the second is get
+it returns the value of the specified
+key
+the syntax is dict1 dot key and in
+square brackets we have to write the key
+name
+the third is keys it returns a list
+containing the dictionaries key
+its syntax is dict1 dot keys
+the next is pop it removes the element
+with the specified key its syntax is
+dict1 dot pop
+and in round brackets you would write
+the particular key name
+and the next method is pop item it
+removes the last inserted key value pair
+from the dictionary and its syntax is
+dect1 dot pop item let's move to the
+jupyter notebook and execute these
+methods
+first we'll add a comment that would be
+dictionaries
+and now we'll create
+a dictionary
+for that we will write the syntax
+name of the dictionary
+equal to
+curly braces
+first we'll write the key value
+then colon
+and the value corresponding to it
+will write
+apple
+then separate it by comma
+and then the second key value
+colon
+and
+the value corresponding to that key
+that would be orange
+when it would be separated by comma then
+we'll assign another key value that
+would be 3
+colon
+and
+the value corresponding to that would be
+banana
+comma next with
+the key value would be 4 colon and in
+inverted commas we'll write the value
+corresponding to it
+and we'll print this dictionary
+print text one and execute this command
+here we can see that the dictionary is
+printed
+with one key value we have the
+corresponding value apple with 2k value
+we have the corresponding value orange
+with 3 k value as the corresponding
+value banana and with 4 k value we have
+the corresponding value kv
+now to access a particular element
+we can't do that in dictionary but we
+can access a particular value with the
+help of key we can do that in dictionary
+for that we would write the syntax print
+the name of the dictionary
+and in
+square brackets we'll write the key
+value that would be one and run the
+command would get the value
+corresponding to the key value
+that is apple that is corresponding to
+the key value one
+now
+we will see a get method in dictionary
+for that we'll write the command print
+name of the dictionary dot
+get
+and in round brackets we'll just write
+the key value
+and run this command we'll get the
+corresponding value to the key value
+that is apple
+now
+we will use another method that would be
+pop for that we will write the command
+print
+deck 1 dot
+pop
+and in round brackets we'll write the
+key value
+for the value
+we want the element to be removed from
+the dictionary
+we will execute this command
+and we get kvi as the output now if we
+print the dictionary
+print dict 1
+we can see
+that the fourth key value and the value
+corresponding to that key value has been
+removed by the pop method
+now
+we can also print the length of the
+dictionary for that we'll write the
+command print
+len
+and in
+round brackets we'll write the name of
+the dictionary
+and just execute the command we will get
+three as the output as it has been
+considered one unit second unit and
+third unit so the length is three
+and we have
+another method that is sorted for that
+it will write the command print
+sorted
+and the name of the dictionary
+dict 1 will execute this command
+it would give us all the key values in a
+sorted manner
+when executed with this command
+now we can see another method that is
+keys for that we have to write the
+command print
+round brackets name of the dictionary
+dot
+keys
+round brackets
+and we'll run this command and we'll get
+all the keys that are present in
+dictionary
+there is another method that is values
+for that we'll write the command print
+deck 1 dot
+values
+round brackets
+and we'll execute this command
+we'll get all the values that are
+present in the dictionary now we'll see
+another method that is update
+that is used to update the particular
+value corresponding to the key value or
+update the dictionary with
+more values to be inserted in the
+dictionary for that we'll write the
+command dict1
+dot
+update
+in round brackets first we'll
+write the curly braces
+the key value
+semicolon colon
+and corresponding to that will write its
+value which you want to update
+watermelon
+and we'll also
+print the dictionary
+we'll execute this command
+we will get that the
+second value that is watermelon that's
+been updated
+previously it was orange and now it's
+watermelon
+so it's been updated by this command and
+we can also use this command to add more
+elements to the dictionary
+for that we'll write the syntax dict1
+dot update
+round brackets curly braces
+and the key value colon corresponding to
+that
+we will write the value
+muskmelon
+and we will print the dictionary
+we we'll execute this command
+sorry we just
+oriented the name of the dictionary dict
+one dot update
+now we'll execute this command here we
+can see that the value has been added to
+the dictionary
+now we'll see another method that is pop
+for that we'll write the command dict 1
+dot
+pop and in round brackets the key value
+for which we want the value
+to be removed from the dictionary and we
+will print the dictionary
+and execute this command
+here we can see that the second key
+value has been removed from the
+dictionary
+and we will see another method that
+would be ticked one
+dot
+pop item
+and then we will print the dictionary
+and execute the command
+here we can see that the pope item has
+removed the last element from the
+dictionary and we are left with only two
+elements in the dictionary
+now
+we will see some loops in the dictionary
+for that we'll write the command for
+x
+in the name of the dictionary that is
+text one
+colon
+and then we will write print
+dict 1
+and in square brackets
+the variable x and will execute this
+command
+so with this loop we can print all the
+values corresponding to the key values
+in the dictionary
+now to print both the
+key and values corresponding to it we
+can run the loop for that we'll write
+the command for x comma y
+in
+dict1
+dot items
+colon
+print
+x comma
+y and run this command
+we can get the key and the values
+corresponding to it
+now if you want to copy the particular
+dictionary in another dictionary you can
+write the command
+first you will name the dictionary you
+want to create and copy the elements
+we will name it as my dict
+equal to
+now i will write the command dict 1 dot
+copy
+and then
+we will print the new dictionary
+that is
+my dict
+and will run this command
+okay we have
+not inserted the wrong bracket here now
+then this command here we can see that
+we have printed the my dick dictionary
+and it has the same values as dict 1.
+now
+we'll see another method
+to delete
+the whole dictionary
+for that we'll write
+text one
+dot clear
+it would remove all the values from the
+dictionary and will also
+print
+the dictionary after that
+then this command here we can see all
+the elements from the dictionary have
+been removed
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you liked it please
+let us know in the comment section also
+do subscribe to our channel and stay
+tuned for more from simple
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

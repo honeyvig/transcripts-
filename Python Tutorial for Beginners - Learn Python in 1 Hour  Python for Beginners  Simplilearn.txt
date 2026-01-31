@@ -1,0 +1,1190 @@
+foreign
+is one of the emerging programming
+languages according to the most recent
+figures python is the most used coding
+language for about 80 percent of
+developers the syntax of this high level
+programming language is simple to
+understand Python's large Library System
+makes it a best choice for data science
+machine learning and artificial
+intelligence projects so hello Learners
+welcome to Simply learns YouTube channel
+and today we have come up with the
+Python tutorial from scratch
+if you want to start Python programming
+for data science machine learning web
+development or you want to automate any
+task this tutorial is the initial step
+for you but before we begin if you love
+watching Tech videos subscribe to our
+Channel like the tutorial and hit the
+Bell icon to never miss an update
+and let us have a simple quiz question
+to brush up on our knowledge so your
+question is in which language is python
+written and your options are
+PHP
+C C sharp or none of these please answer
+in the comment section below and we'll
+update the correct answer in the pinned
+comment
+you can pause the video give it a
+thought and answer in the comment
+section
+and an insightful for you guys if you
+are focused on building strong
+foundational skills for career growth in
+that case you can check out a free
+course to Learn Python basics for the
+completion certificate from scale up by
+simply learn you can check the python
+Basics free scale of course in the
+description box below the link would be
+given in the description box
+so now starting with the tutorial
+first we will create a folder
+so we would be doing all our stuff
+in a folder only and
+directly in an ideally
+so before that we will create a folder
+and name it as
+Python tutorial
+and now
+we will install the python for that you
+guys have to visit the website
+python.org
+press enter
+now you can see the downloads option
+just click on that
+and you will see the download python
+3.11.0 version so just click on that and
+it will start downloading for you I've
+already downloaded it
+so you just have to open this exe file
+and just
+and you have to select add python.exe to
+path if you have
+like if you haven't installed python on
+your system first time you are
+installing it you have to take on this
+checkbox else you don't have to
+click on install now and like I have
+already installed the python on my
+system
+and it's asking me username and password
+so this setup has failed like I have
+closed the setup so you just have to
+progress with the setup click on the
+next button and click on the check boxes
+that asks you to agree some terms and
+conditions and then the final setup
+would be completed
+and after this the for the thing we need
+to install is the python ideally
+in which we would code and learn the
+basics
+so we would be using the visual studio
+code so for that
+we will visit the Wheel Studio code
+website
+and just click on the download button
+you could select the windows Os or
+Ubuntu in which
+like in which operating system you're
+working on just click on the
+desired option you want to download okay
+like if I am using the Windows operating
+system I will click on Windows
+and I will select the 64-bit so you can
+see that the download has been started
+software downloading you just open the
+exe file
+and progress where it says the next and
+the stuff
+so after downloading
+we will open up
+folder and inside that we will open the
+command prompt
+and let our Visual Studio code open
+and if you want to learn how to
+configure the visual studio code I will
+Mark the python playlist that would be
+the full-fledged playlist for all the
+topics for the python installation then
+the first program then the ideal
+installation and all the things I will
+pin the playlist in the I button so you
+can check it out there okay
+here we will name the file as tutorial
+Dot py
+and we'll start with our basics
+so first we will write the basic hello
+world program
+for that we'll create a variable
+and inside
+all right hello world
+and after that you will print the
+statement using the print function
+we will save the program and run it
+so you can see the output that it has
+printed hello world here
+now the next thing we will
+learn is the input method how to get the
+input from the user so for that
+first we will comment this down
+and we'll start with the input method
+and for that
+we will input the name from the user for
+that we have created a variable and I
+will tell you what are the conditions to
+create a variable
+after this
+so here we have created the variable and
+use the input method and inside
+what
+you will write what is your name
+so this text would be displayed to the
+user and he would be knowing that he has
+to enter his name
+foreign
+[Music]
+his name
+first we'll write a string welcome to
+python
+tutorial
+and
+to write the variable that has some
+values in it
+we will use the addition sign that is
+the plus sign and
+then write the variable name
+so we'll save this
+and click on run so you can see that it
+is asking us what is your name
+so I will write a bissar Ahuja and press
+enter
+so you can see that it has maintained
+welcome to Python tutorial episode
+so if you want to add some space here
+you could simply do that
+foreign
+we'll save this and run it again
+so it's asking me what's your name I
+will write this uhuja
+so you could see that it has given us
+the output welcome to Python tutorial
+so moving on now we'll talk about some
+indentation part like how we write code
+in Python
+so first okay we will comment it
+afterwards
+so
+talking about the indentation
+so in Python indentation is of three
+types the simple statement empty
+statement and the complex statements
+if I let you see this is a simple
+statement it starts just from the left
+of the corner
+and the empty statements we don't have
+to do anything for that
+for the complex statements like the if
+else statements
+so there are two portions in the complex
+statements
+uh the indentation here means leaving a
+tab space from margin and in Python it
+is used to show that statements which
+are indented belong to Upper statements
+you would see in the loop section and
+the IFL section that is the control
+statements conditional statement section
+so in statements like if else if L if
+Etc views indentation because these are
+old types of complex statements and they
+have two parts that I already stated
+that is header and the body
+so we have to indent our body statement
+to show that these are sub statements of
+our main statement which is written in
+header portion
+and as I have showed you how to comment
+foreign
+the code
+in our program
+so we just
+have to place the hash before
+line of codes like if you want to just
+comment down a single line of code
+you could simply
+just put a hash in front of the
+line of code
+and there are multi lines command also
+we have seen the single line comment
+that is using hash their multi-line
+comments also so single line comment is
+the command which are created in single
+line only that is they occupy the space
+of single line and they are created just
+placing the hash before the code line if
+you want to create a multi-line command
+I will show you how you can create it
+you just have to use
+inverted commas but you should have
+three inverted commas in that
+inverted single commas three inverted
+single commands
+foreign
+foreign
+so guys you can see that we have placed
+three inverted commas and we have seen
+the multi-line comments how to comment
+if there are more than one line
+and we want to comment it down so we
+will use the single inverted commas for
+that the three single invertebrates
+and moving on now we'll start with
+variables
+so a variable is a name or an identifier
+which is given to any storage area or
+memory location it's a name of memory
+location and there are some rules for
+defining a variable in Python variable
+name can contain alphabets digits and
+underscore
+second variable name can start with an
+alphabet and underscore only it can't
+start with a digit no white space and
+reserved keywords are allowed to use as
+a variable name and the variables are
+case sensitive so we'll see some
+examples how to create a variable
+uh
+like simply we can create a variable and
+assign a value to it equal to 7 so a is
+the variable here and we have assigned
+a value to it
+and
+we can start with the variable name with
+the underscore that is underscore
+b80
+and we can assign any value to it we
+will assign an integer value to it that
+would be a bisar
+and if you want to use underscore in
+between you can also use that
+so for that we will write
+a b underscore
+bat
+and that would be equal to
+we'll assign any value to it that would
+be Ahuja
+these are the variable names and if you
+want to add any number to variable you
+can edit a b underscore bat one so we
+have added a number here also
+so these are the methods how you can
+create a variable
+and just be remember of some basic rules
+for that and now moving on to data types
+you have seen that variables can store
+data of different types and these
+different types can do different things
+python has the
+built-in data types by default and those
+are string in numeric types we have int
+float and complex types in sequence type
+we have list Tuple range in mapping type
+we have dictionaries set types we have
+set and Frozen set in Boolean type we
+have Boolean binary types we have bytes
+byte array
+memory View
+and
+we would be using these data types in
+the upcoming tutorial
+so I'll simply comment this down
+and now we will move to
+type casting
+so typecasting is defined as converting
+one data type into another for smooth
+functioning of program
+and with type function we can find the
+type of any variable
+I will show you with a demo
+so if you have created a variable and
+stored a value in it
+so to know the data type
+we would simply write print
+type
+in bracket the variable in which the
+value has been stored
+so we'll just save this
+and run the program
+and you will see that it has stated the
+class as in type so the integer value is
+stored in the variable a
+and if you store some
+value as a float we will see
+what does type function return to us
+we have saved this and run this
+so first
+oh sorry
+foreign
+so you guys can see
+that
+we have entered the p in the type
+function now we will run the program and
+you can see then it has returned the
+float class
+that is stored in the variable B
+so this is how typecasting works so you
+could identify any data type using the
+type method and type casting is done
+when we want to perform arithmetic
+operations on the variables of the same
+data type
+and moving on to operators
+operators are used to perform operations
+on variables and values python divides
+the operators in the following Loops
+there are arithmetic operators
+assignment operators comparison
+operators logical operators identity
+operators membership operators and the
+bitwise operators
+the arithmetic operators are addition
+subtraction multiplication division
+modulus exponentiation and flow Division
+I will show you some examples for it
+I will comment this down
+and start with operators
+so we will
+Define our value to a variable X
+and Define a value to a variable by
+and now our first arithmetic operation
+that would be addition so for that we'll
+simply write
+print
+X Plus y we will save this and run this
+program
+you could see that it has showed the
+addition of both X and Y
+into subtraction you just simply
+I have to place the subtraction symbol
+between both the variables
+that is 15 and -1
+and you could see that the other
+operations can be done similarly
+you just have to place the
+arithmetic operation symbol between the
+two variables
+X
+strip y that is a multiplication symbol
+we will save this and
+run it and if you want to learn about
+the variables
+and the data types and the arithmetic
+operations in a deep manner you could
+just click on the I button and check out
+the playlist of the Python
+there you will get all the topics
+discussed in a very vast way
+so
+we will see
+other operators also
+that is the division
+and save it and run it
+you could see that it has given us the
+output 0.875
+and
+the modulus operator
+we'll save this and run it you could see
+that it has given us the output 7.
+so modulus gives us the remainder
+foreign
+we would be using the exponentiation
+operator
+so you'll be getting
+the value of 7 raised to the power 8.
+and for floor division you just simply
+have to use
+two slash symbols
+you could see that it has given you zero
+now moving on
+we will see assignment operators that is
+equal to plus equal to minus equal to s
+t equal to division equal to modulus
+equal to flow division equal to and many
+more so now we'll start with the strings
+so we have seen the operators and if you
+want to dig deep down into the operators
+you can simply click on the I button and
+visit the playlist and you will get the
+operators
+tutorial there
+now we'll start with
+strings
+so string literal in Python are enclosed
+in either single quotes or the double
+quotes it means hello
+is same as hello I will show you what I
+am trying to say
+that is hello
+in
+single double quotes or
+foreign double quotes that is similar
+so this is how a string is represented
+in a python
+so we will get a single string printed
+for that we'll write print
+and
+store this in a variable
+x equal to hello
+and get it printed
+and save the program and run it you can
+see that it has given the output as
+hello
+so we have seen how we declare the
+string in Python
+now moving on we will move to list that
+is the sequence types
+and we'll start with the first sequence
+type that is list
+so lists are used to store multiple
+items in a single variable and lists are
+one of four built-in data types in
+Python that is used to store collections
+of data and the other three types are
+double set and dictionaries they all
+have different qualities and usage list
+items can be of any data type
+they are created using square brackets
+so we will see a demo how a list
+is created so we will name it as list
+one that is equal to and inside square
+brackets
+we will list some costs there will be
+BMW
+4D
+and Mercedes
+so you can see that in the square
+brackets we have added some cars and in
+the inverted commas
+and it has been stored in a variable
+list one so this is the list
+and that is stored in the variable list
+one
+and the main point list items are
+ordered
+which means that the items have a
+defined order and that order will not
+change if you add new items to a list
+the new items will be placed at the end
+of the list
+and the list items are changeable which
+means that we can change add and remove
+items in a list after it has been
+created and this also allows duplicate
+values
+since lists are indexed list can have
+items with the same value
+as you have indexes that are starting
+from 0 BMW that
+is placed on the index 0.
+and if you want to find the length of
+the list you could just simply use the
+length function
+for that
+we'll write
+length of list one
+we'll save this
+and click on the
+run button you could see that it states
+that there are three elements stored in
+the list
+now
+moving on to tuples so tuples are used
+to store multiple items in a single
+variable Interpol is also one of the
+four built-in data types in Python that
+is used to store collections of data
+tuples are written with round brackets
+you'll see a demo
+how tuples are created
+so for that we will create a variable
+and
+named as
+to one and inside the
+circular brackets
+we will
+insert some values
+that would be the name of
+some pass
+then with the car Branch BMW
+OD
+d
+and Mercedes
+and
+then you can print the stepper
+just save it
+and click on the Run button you can see
+that the Tuple is created and it has
+given us the output three values that we
+have stored in that upper and some
+important facts about the properties
+about the tuples that the Tuple items
+are ordered it means that the items have
+a defined order or that order will not
+change
+and the elements in the Tuple are
+unchangeable that we cannot change add
+or remove items after the Tuple has been
+created
+and it allows duplicate values since
+tuples are indexed that is BMW is
+indexed at index value 0 OD at 1 and
+Mercedes at 2 so they can have items
+with the same value
+and if you want to find the length of
+the Tuple you could use the length
+method
+for that we'll just write print
+and inside print we'll use the length
+function and
+the name
+of the double we'll save this
+and run this
+you could see that it has given us the
+output 3 that is it has saved three
+elements in the topic
+now moving on to sets sets are used to
+store multiple items in a single
+variable and it is also one of the four
+built-in data types that is used to
+store collection data
+and a set is a collection which is
+unordered unchangeable and unindexed
+so we'll see a demo for that
+now we'll see the demo for sets
+to create a set we just need to use
+curly braces
+so for that we will create a variable
+set 1 and inside that
+in curly braces
+we would add the car brands that is BMW
+then OD
+once it is
+and after that we will print
+set one
+and save this
+and run the program you could see that
+the set has been created
+and uh set items are unordered you have
+seen that the list and Tuple items are
+ordered but in sets the items are
+unordered
+they do not have a defined order so the
+items can appear in a different order
+every time you use them and cannot be
+referred to by any index or key value
+and they are unchangeable that is we
+cannot change the items after the set
+has been created and it do not allow
+duplicate values also
+we have seen the sets and moving on
+we'll see dictionaries
+as the container values so dictionaries
+are used to store data values in key
+value pairs they are written with curly
+braces and have keys and values
+and the collection is ordered and as of
+python version 3.7 dictionaries are
+ordered in Python version 3.6 and
+earlier dictionaries are unordered
+we will
+see a small demo for dictionaries
+now starting with dictionaries first
+we'll command this set
+we will create a dictionary
+when the variable detect one
+that is equal to
+curly braces and inside curly braces we
+will
+and option carbon and that
+its value is BMW
+and the second car
+its value is 4D
+and we have to place a comma after every
+item
+let's move on the car 3
+is Mercedes
+so now we will get this dictionary
+printed
+print
+indictment
+so we'll save this
+and click on the Run button so that the
+dictionary
+get created and
+we also get the printed dictionary that
+is carbon is associated with the value
+BMW car 2 is associated with value OD
+car 3 is associated with value Mercedes
+and in dictionaries the items are
+changeable that that means you can
+change add or remove items after the
+dictionary has been created and it does
+not allow duplicate items that is
+with the same key you can't have two
+values
+two same values
+with the two different Keys you can't
+have two same values so it does not
+allow duplicate items
+now moving on
+you'll see some if else conditions
+so
+that we will understand the eiffel's
+condition using
+an example only
+so first we will create a variable and
+assign a value to it
+and then
+another variable
+in the same value to it and now we will
+use if statement
+and write if B is greater than
+a
+then
+we will print
+B is greater than
+a okay
+so we'll save this
+and click on none you could see that the
+condition is true that is B that stores
+the value 9 is greater than a so it has
+printed B greater than a
+and if we reverse the condition if a is
+greater than V
+and B greater than a
+and if we run this you can see you
+didn't go to any value as the condition
+is false so it won't run the print
+statement here
+so now moving on
+now after
+as you've seen that
+if the condition is not true it will not
+print the print statement
+now we will also
+use the LF statement here
+so if the above condition is not true
+it will move to the next statement that
+would be alif and if B is greater than a
+it will print
+p is greater than a okay so we'll save
+this and click on run button
+you could see that it has first gone
+through this if statement and this is
+not correct it has not printed this
+print statement then it has moved to the
+end if statement and it could be greater
+than a
+and it has printed p is greater than a
+so you can use as many and if statement
+as you want
+and now we will be using the else
+statement
+the else keyword catches anything which
+isn't code by the preceding conditions
+so for the L statement
+and if we
+just
+get this b equal to equal to a that is
+if B value is equal to equal to a then
+it should print B is greater than a
+and if these both conditions are not
+true then it would be shifted to add
+statement
+and
+for and statement we will write
+print
+be equal to 9.
+so we'll save this
+then run it
+so you could see that it has given us
+the output as b equal to 9. as it has
+gone through the if statement if a is
+greater than B that is 7 is not greater
+than 9 so
+it has
+augmented that statement then it has
+moved to the next statement that is alif
+statement that is b equal to equal to a
+and 7 is not equal to 9 so it has
+omitted that statement and moved to next
+statement that is else and it has
+printed P equal to right in b equal to
+9.
+if the above statements mentioned above
+the else statement are not true then the
+else statement would be executed and it
+will print what is inserted in the else
+statement
+so moving on
+we will start with python loops and
+python has two Loop commands that is two
+primitive two commands while loop and
+for Loop
+and with the while loop we can execute a
+set of statements as long as a condition
+is true
+you will see
+this with the help of an example
+first of all comment this down
+foreign
+and while
+I is
+less than
+99
+it will print
+I and it will increment
+I width
+value 1 so I'll save this and run this
+program
+you can see that
+the value while loop has been executed
+and it has printed one two three four
+five six seven eight
+till ninety eight
+while I is less than 99 if we put I is
+less than equal to
+99 so it will
+run the loop till 99.
+you could see that the loop has been
+executed 10.99
+so this is how we use the while loop and
+four four loops
+the for Loop is used for iterating over
+a sequence that is list double and
+dictionaries
+so I will show you an example for that
+we'll comment it down
+foreign
+Loop
+I will create a list
+and inside the list we will add the
+brand names only that would be BMW
+OD
+and then Mercedes
+and now
+to print all these values we'll use the
+for Loop
+or I in
+this one
+print I
+will save this
+and click on run button
+you could see that this Loop has printed
+all the values one by one that is PMW OD
+and Mercedes
+this is how the loops are used
+now moving on
+we will
+see the python functions so a function
+is a block of code which only runs when
+it is called and you can pass any data
+that is known as parameters into a
+function
+so we'll see
+how we Define Encore function in Python
+that
+we use the keyword DF and then the
+function name
+so we'll name the function hello
+and after the colon
+we will print
+hello simply
+learn
+ers
+and after that we'll call this function
+that is hello
+and we'll simply call this we'll save
+this and run it
+you can see that it has printed hello
+simply another so we have defined the
+function here and pull the function here
+now we will see some functions with
+argument
+so for that
+you can just pass an argument in
+this function only F name as an argument
+so any information can be passed into
+functions as arguments and arguments are
+specified after the function name inside
+the parenthesis you can add as many
+arguments as you want just separate them
+with a comma
+so we have added a single argument here
+and
+here
+we will do print hello simply learn
+learners
+and after that
+just say hello and the name of the
+person
+with that we will write F name
+now we'll call the function with the
+parameter
+so we'll pass the parameter
+first would be a Visa
+second you pass
+anurag
+and uh as James
+so we will save this
+and run it
+you could see that it has given the
+output as hello abyssar hello anurag
+hello James
+so we have passed an argument here that
+is f name and we have printed the
+statement with a string that would be
+constant that is hello and F name as we
+will pass the parameter when we call the
+function
+so we have passed a bissar here so it
+has printed first hello abisa then we
+have called the function again and we
+have passed the value anurag there the
+name anurag there so it will display
+hello anurag then hello James
+so these are with the function now we
+will move to python built-in math
+functions so python has a set of
+built-in math functions including an
+extensive math module that we'll see in
+the further tutorial
+that will allow you to perform
+mathematical tasks or number so we will
+see a demo
+using these functions
+first we will see the built-in functions
+and when we'll study about the module
+then we'll
+see some functions from the module also
+so we'll start with minimum and maximum
+functions
+so for that first we'll create a
+variable
+and
+apply the minimum function there so the
+minimum and maximum functions they can
+be used to find the lowest or highest
+value in an I travel
+so we will add some values that is three
+nine seven
+nineteen
+and another value that is B equal to Max
+and then we'll pass values 2 9 8 8.
+and
+71.
+now we will get
+printed print text
+and then
+print B
+so we'll save this
+and run it so you can see that it has
+given us the output as three that is we
+have used the minimum function so it has
+get the minimum value from all the items
+we have
+passed in the minimum function that is 3
+9 7 19 the minimum value is 3 and in the
+max function the max value that is 88.
+so moving on now we have absolute
+function
+so first we will comment down this
+and moving on we'll use the absolute
+function so the absolute function
+Returns the absolute positive value of
+the specified number
+if we would write a negative number
+and we will use the absolute function
+for that
+inside absolute function write a
+negative value that would be
+um
+99.75 okay
+and after that
+you have to print this value print X
+and save this program
+and run it
+you could see that the value has been
+turned into positive that is 99.75 so
+absolute converts the negative value
+into positive that it it only prints
+positive value but you pass whether it's
+positive or negative
+so we'll see another function that would
+be the power function
+so
+the power function
+its syntax would be like this x comma y
+so I will show you
+with the help of a demo with the help of
+an example so
+for that and write x equal to
+power function and inside will pass
+4
+comma 3 that is 4 raised to power 3 and
+then we'll print its value
+now we'll save this program and run it
+so you could see that it has given us
+the value as 64. so 4 4 is a 16 16 4 64.
+oh
+raised to the power 3.
+so we have seen another built-in
+function that is Spa
+no
+moving on
+we have python Lambda function
+now moving on
+we have python Lambda function
+so a Lambda function is a small
+Anonymous function and it can take any
+number of fire documents but can only
+have one expression so we'll see an
+example
+first we'll commend this down
+and for Lambda function
+we will create a variable and inside
+will it Lambda
+variable
+X
+and we will
+Define an expression for that that would
+be X
+for multiplication operator
+into 10
+and then we will
+print it
+X
+no r
+function name is a and inside we will
+pass
+5.
+so 5 would be placed in place of X that
+would be
+it will return the value as 50. so you
+could see that we have created a Lambda
+function in a variable a and we have
+defined the expression that is we have
+used the variable X for the expression
+and we have defined the expression as X
+using the multiplication operator into
+10 and then we have printed it that is
+print the name of the Lambda function
+and the value we have passed that would
+be replacing X
+so now
+moving on to the next item
+python iterator but before pythonite
+return I want to tell you one thing that
+in Python we do not have arrays like we
+do not have built-in support for arrays
+but python lists they can be used as
+arrays
+so for that you can just click on the I
+button then you would get the playlist
+and there is a video particularly in
+list apple and dictionaries so there you
+will be getting all the details about
+the list and how you can use them as
+array
+so moving on we would
+start with python iterator so an
+iterator is an object that can be
+iterated upon meaning that you can
+Traverse through all the values which
+consist of the methods
+I will show you two methods
+that is underscore underscore
+ITR
+and its current score
+and the second method is next
+so these are the two methods that we
+used in a nitrator
+so
+I will make you understand with the help
+of an example
+so first we will create a tuple and name
+it as
+top one
+and inside the circular brackets
+I will write the
+brand name of the cars
+so that would be PMW
+the next is OD
+and the next is
+Mercedes
+and now
+we will create a variable
+my
+Tuple equal to
+identity of function
+and inside we will pass the name of the
+variable
+that we have created as a tuple
+and now to iterate this Tuple we will
+write print
+and using the next function
+inside
+we will just write the name of the
+variable in which you have passed the
+Tuple here
+that is
+my
+Tuple
+and again
+we will print this statement
+now we'll save this and run the program
+you could see that it has printed
+the first value in the Tuple one
+that is PMW and then OD so we have
+created it upper and stored three items
+in that and then we have created a
+variable and use the iterator function
+and pass the Tuple in that and after
+that we have created
+a print statement inside we have passed
+my top variable inside the next function
+so it has printed the value BMW then OD
+and if we
+print this value again and save this and
+run this
+you could see all the three values that
+are stored in the topper they have been
+printed
+so we have seen the iterator
+pythonitrator now moving on to the next
+topic
+that is python modules
+so a module
+a python module is same as a code
+library that is a file containing a set
+of functions that you want to include in
+your applications so we have some
+modules setup
+repeat yeah
+so we have some modules that have
+already been defined that is pandas
+mat.clip and beautiful soup and Mac
+module so there are so many modules
+that have been defined
+and you can also create a module of your
+own and you can import it into another
+program
+so you just have to save the file with
+the extension.py and you can use that
+file into another file just using the
+word import using the word import
+statement or import then the name of the
+file that you have created with the py
+extension
+so here
+you would see a module that have been
+created
+earlier
+and that module would be math
+so first we'll import that module that
+is import math
+that is the built-in module and it has
+named as math which will extend the list
+of mathematical functions in the python
+and to use it we have used the import
+keyword and after that we have written
+the name of the module
+and when you have imported the math
+module you can start using methods and
+constants of the module that is math
+so first we'll start with the square
+root method
+for that we'll create a variable and
+inside
+right math Dot
+sqrt and inside will pass
+91.
+and then we will print the variable
+we will save this
+so we'll save this
+and run it so you could see that the
+square root of 91 is
+9.5393920 and it goes on
+so this is one of the methods that is
+stored in the math module and we have
+other methods also
+I will see another method that is
+ceiling and ceiling method rounds a
+number of words to its nearest integer
+and there's another method that is flow
+that rounds the number downwards to its
+nearest integer and Returns the result
+so for that
+you'll write a variable x equal to
+and to use these functions we will write
+math Dot
+seed function
+and
+will write the value 5.4
+and in another variable that is y equal
+to reduce the math
+module and here we will use the method
+floor
+and inside will pass
+5.4 only
+and then we will print both these
+variables it is print X
+and
+print why now we'll save this
+and run the program you could see that
+it has returned the value as 6 that it
+Returns the value that is upwards to its
+nearest integer that is
+above the 5.4 that is 5 that is integer
+5 and integer 6 we have the value 5.4 in
+between and the upward value which
+corresponds to 5.4 is 6 so it has
+returned the value 6 and with the flow
+function it would return the value that
+is downward
+to 5.4 that is 5.
+and with that we have come to the end of
+this session
+and I have some insights for you guys
+that is if you are aiming to get
+certified in Python Programming and you
+want to build a python software
+development career
+in that case you can check this python
+certification course by simply learn
+which will open the doors for the best
+career opportunities and to find the
+details of this python certification
+course you can check the description box
+below there would be a link for this
+course and it could be the ideal
+solution to help you build your career
+in the right direction
+and I hope the session was interesting
+and informative if you liked it please
+let us know in the comment section below
+and also do subscribe to our Channel and
+stay tuned for more from Simply love
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,717 @@
+hello everybody and welcome once again
+we all are back with some very
+interesting feature of mongodb and that
+is called connecting your mongodb with
+some application
+so
+today we have decided whatever in our
+previous demonstrations i have shown you
+we will help you to connect your mongodb
+with the front end that is called python
+as we know it very well about the
+popularity of python in last recent
+years it is growing like anything so we
+thought why not to offer you
+this connectivity where you can have
+the mongodb
+not in a local environment but in a
+cloud environment so here we will tell
+you how to create the mongodb
+complete environment
+of cluster in your cloud
+and we can have
+this connectivity with our python which
+is running local to my system so i show
+you what few important things
+one by one
+so
+why python mongodb
+we understand mongodb is one of the most
+important
+database which is so called document
+based database available in market and
+it is fantastic phenomenal in terms of
+speed and the reliability
+it is purely called nosql database
+okay and helps you to go schema less
+now python is one of the most commonly
+user-friendly programming language for
+creating a complete web-based framework
+so it offers you huge amount of
+libraries with flexibility of connecting
+wide variety of applications
+so we would like to give you the idea of
+like how python and mongodb works
+together okay
+so you can
+use both the
+products together to develop
+different varieties of
+applications which can suits
+to different type of ideas now here we
+have one of the very very popular tool
+available name called pi
+so pi is actually the python
+library which is a kind of a driver
+through which you will be able to
+connect with your mongodb and perform
+basic operations whichever you expect
+okay so let's go ahead and start working
+on those demos okay
+so we will start with
+creating a mongodb environment
+with cluster in one of the very very
+popular tool that is known is called
+mongodb atlas so we'll be opening our
+website
+and go here and talk about call
+mongodb
+atlas
+i search for mongodb atlas that is
+basically the mongodb
+where i called database as a service
+i'll be selecting the first option
+and go to the start free because it's
+going to offer you by default some 500
+db of free space
+i say sign up with google
+going ahead and selecting this
+okay i say accept
+and say
+submit
+okay so it's starting up now
+it'll ask you about a few things
+i would rather say to select skip
+and continue
+well it will ask you about which
+environment you would like to take so
+i like to take this shared cluster i say
+create cluster
+now here it will take a while to get
+yourself ready for we can see it is
+offering the sandbox of having five
+columbia free space
+and this mongodb
+no backup that is the by default cluster
+name you can give the name of the
+cluster if you want but let it be y d
+for cluster zero i'm saying create
+cluster
+so my cluster is being ready so it will
+take a while to get your cluster set up
+so just wait till the timer cluster is
+getting ready so i tell you what this
+cluster is going to give you
+by default two child and one parent so
+called a one master and two
+child nodes where your cluster will get
+ready
+so
+you really don't need to set up any kind
+of cluster in your local environment and
+that is the best environment i would
+suggest for
+most of your development where your time
+reduce
+there will be no software requirement
+because sometimes version 2 version
+changes
+and you can get all the benefits of
+clusters
+so we're just waiting till the time the
+cluster is getting
+ready so once the cluster is ready you
+will be seeing some options
+where
+will help you to create the clusters in
+your upcoming demos
+so friends your cluster is now ready
+you can see now in this cluster you have
+got this
+environment so in this environment you
+will see there are some options they
+have given you one by one
+build up your cluster create a first
+database user
+add an ip address multiple options they
+are telling you now so how to set up so
+the first build of the cluster which we
+have anyways done next is called create
+your first database user select this
+so it will highlight this area now you
+can say like database access
+and
+i'm going to create a first new database
+user and new database user given there
+is a name for admin
+let's keep very simple username and
+password admin
+one two three so admin admin one two
+three
+yeah same
+and same add user
+now i can see
+the user is
+created now let's go back to the next
+option
+it's telling me the network access now
+go here
+and say
+sorry
+now say add ip
+address and
+i'll say allow access from anywhere
+so that i can take it from anywhere
+i say confirm
+now it is telling me about the progress
+i select this
+now tell me about which type of
+collections you want
+okay so i select this
+and inside this i'll be selecting this
+called collections
+okay
+and uh it's getting
+ready
+so it is giving me some options
+well two options that will give you load
+sample data set add my own data i'll say
+add my own data give the database name
+sl demo
+give the collection name emp or employee
+remember
+database name sl demo or i can better
+give the name called srdb
+sldb and employ i say create
+that is getting ready
+okay so my database table is ready
+that's it
+so i think
+we are all set
+with this environment
+okay
+well once it is ready your collection is
+also ready i'll go back and click on my
+project zero
+and here
+yeah so once it is there then i'll be
+clicking on this option called
+connect
+now it'll give me the multiple options
+how to connect
+so it will say correct for the
+shell or it will say connect with your
+application correct using compass
+i'll select
+the python
+python version
+3.11 or later so certainly i'll be using
+those version only
+okay and uh
+in this i'm having this
+if i will be using this to connect with
+my back end
+so that's how exactly you have
+the setup of mongodb cluster
+everyone so we are all ready now with
+our
+setup
+cluster we have already created earlier
+you remember about we have taken python
+3.11 or later
+so here if i just go back and check
+i have a god
+3.8.5 which is python 3 version which is
+available
+so you can select based on
+whichever we have it let's say 3.11 or
+later we can say 3.6
+or later so there'll be no much
+difference if i just see
+even if i just talk about 3.4 there's
+some change but here 3.6 or later
+it is same so i have a 3.8.5
+okay so
+i can use the same option
+so here in my
+vs core editor i am using for my
+development so here is a simple demo dot
+pi i have used welcome to check if it is
+working fine so yes it is working fine
+i'll start working with my first program
+with mongodb so i just go back and say
+demo
+py or i can say
+[Music]
+py
+demo
+dot py
+okay
+and here if i want to go back and start
+working on the development remember one
+thing we need
+first dependency called pi
+okay what i need pi
+ and for this we have already
+installed this dependency here
+sometime back this is how you need to
+install
+okay so we have this statement name
+called what pip installed by mongol
+that is the first dependency which you
+need to download in order to work with
+this
+okay
+so
+that's what we have taken this is
+installed by so if you just see
+you can go back and start
+developing this statement
+okay so let's go back and start working
+on this
+step number one you need to always say
+import
+number one the one dependence which
+you've installed is called pi
+so
+as you can just say p by m o n g o
+that is the dependency we have recently
+imported
+from
+okay let me go back and search from next
+point so import pi
+from
+here we are saying pi
+okay pi
+and we're also saying import
+ client
+that's the first thing you need to
+remember
+okay after that we would like to go back
+and use the cluster
+so we say cluster
+equal to
+ client and here i'll be passing
+the complete values the one which we
+have taken
+so this complete line
+i just take it
+go back
+and here
+i'm pasting it
+now here
+i have to basically replace this
+password with admin 123
+okay and we are all set
+okay
+now
+once it is ready
+we can go ahead and define db
+equal to
+cluster
+and provide which database you're
+talking about
+okay so you remember about we had a
+database which was available to us that
+is known as call
+sltb so i can just use the same sltp
+there
+and accordingly i can use
+which collection i'm connecting it to so
+accordingly i can go back and insert a
+record okay everybody so i can see i
+have got this
+file with me going forward i have to
+tell so this is what exactly the
+connection url you have received now if
+you define which database you are
+working on
+let me say tp equal to
+cluster and we have to provide in
+double quotes the database name called
+sltp if you remember we have used this
+after that we have to mention which
+collection it was so
+collection
+equal to
+db and here we just give the name call
+employee
+that was our collection name
+so once it is ready then i have to
+basically perform some insert operation
+so i just say post
+okay it's just a name equal to
+and here
+we just provide the properties
+like i would say name
+so
+you know to the json-based database so i
+can just use the name
+i say
+amer
+and once again you can just say
+email
+and
+say
+comment
+email.com
+that's it so this is just the data which
+i have now i want to insert so i can
+certainly say
+collection dot because i want to insert
+only one record you can see i have open
+functions coming up collections dot
+insert one and pass
+post
+isn't parameter now we are all done
+let's try to run this
+so i'll be running this with python
+three
+p by modem dot py
+hit enter
+now it's done let's confirm
+here into my code i will just go back
+and check
+here inside my
+applications i can just go back to my
+collections
+and in employee
+yeah there we go we have got some
+records coming up here
+okay so these records are nothing but
+the one which we have recently inserted
+in our application
+okay
+so fantastic so first example is working
+perfectly fine how we can have the
+records coming from the python and
+insert it there
+like that i can have as my number of
+records i can
+add it
+so how we can basically add if i want to
+add more than one records
+let's see this now here in case if i
+want to add more than one records so i
+can just use call post one
+i copy this url
+and paste it below
+and i say pause to
+i say
+i'm saying
+email
+i'm on one two at the rightmail.com and
+rather than saying insert one
+i can use
+insert many and inside this i'll be
+using this square brackets
+and pass
+post
+post one corner
+post two
+that's it
+okay so let's change the little name
+because it's already there
+let's insert
+yep records are inserted let me verify
+once again
+by refreshing it
+well now we have a total number of three
+records are available
+yeah there we go so records are added
+perfect so like this you can have
+as my number of records you can
+basically add it in a similar one the
+way we have basically used this i can
+also perform
+the search part too
+okay so in case if you want to perform
+the search part we have a very simple
+statement available with us what
+i'll go here
+the way we have added this so
+in this i'll just
+these records which are added inside my
+application i would not execute this
+rather
+i would like to go back and say
+now they are basically commented now
+and
+in fact i would like to use this also
+okay i will go here
+and
+find results
+results equal to
+same collection
+dot
+find if i want to find a name we can
+just use
+curly braces
+name
+colon
+[Music]
+okay
+so let me say print
+and terms
+results
+okay let's run this
+okay so it'll print what
+the results for me
+okay so
+it is just printing what the cursor
+object for me saying hey this is what a
+record is available to me we can also
+change in case if we do not think the
+correct result is coming up we can also
+go back
+and
+we can use some alternative option that
+is called foil
+okay so what we can do let's take a look
+here
+we can use for
+with this for i can say result
+okay in
+results
+and
+print this result
+that could be one option through which
+you can get the details with you
+okay so what you can do you can run this
+code again
+i forgot to put this
+semicolon here
+or
+we need to check
+well that was my
+requirement was so i'm having this
+let's try to run this
+well i got my result and this is what
+the detail which i have available to me
+so
+very simple how you can basically find a
+record and how you can basically
+retrieve the records at the same time if
+you want to have the specific field
+rather than all the fields so here in my
+code in this result
+okay you can just put the square bracket
+and tell which field you really want it
+now suppose if you just want id or else
+if you want name
+you can basically pick that up
+okay so if i just want that
+id
+only id is printed that's it
+everyone so you have seen like in my
+previous code how we were basically
+trying to fetch all the records we were
+using this find
+now in a similar line you can also have
+the option available because see when we
+used to talk about confine it gets me
+lot many records
+fine and because of that we were using
+this loop
+but in case if you want to fetch the
+individual records
+i'll be clear so in such cases you
+really do not want to use fine
+you can just
+use find one
+so what you can do is rather than using
+find
+i can also use one more option called
+fine one and for which
+i can come back
+just remove this all
+yeah so here in this case rather than
+using this file i can use find
+underscore you can see this option
+called find one
+here we talk about
+which are the properties you want to
+skip and which of the properties you
+want
+so i can just use this option called
+underscore
+idle
+okay colon
+zero okay i just remove this
+undersquared zero and here
+just print what
+results
+that's it let's run
+so that will try to fetch some of the
+records for you because if you do not
+have that id which you overwritten it
+will certainly not found it depends on
+what you would like to take
+so if i just say
+is having some issues but no problem but
+you know it very well how it basically
+takes
+now in a similar line we would like to
+also perform one more activity
+to talk about delete
+so for which what i will do is this i
+just want to uncomment it
+okay and i would like to insert some
+records here
+so here i want to add the id by my own
+with name
+so we already have this name
+email
+i have it i would like to use underscore
+id
+okay
+so
+we have this property underscore id
+colon
+101
+okay
+comma like this
+copy the same
+using it here
+and this time i'm using
+one zero two
+name and everything
+it'll be taken let me say
+user1
+here we try to say
+user
+two
+okay so collections dot many result file
+one i'm just deleting it all
+and uh let's try to
+execute it first
+okay so it's executed going back
+okay so i have some records with ide one
+zero and one zero two
+now here
+i just delete this
+and perform some actions here
+here we say
+results
+equal to collection
+dot
+delete
+see the options are available delete one
+and delete money it totally depends on
+what you really want
+okay so if i just talk about call delete
+one it will be only deleting one record
+delete my enemies where are the matching
+records are available to delete it
+fine so i'm just using this option
+called delete many
+okay wherever the property names are
+matched cos quite possible name
+sometimes match or whatever it is just
+then delete many so the option is up to
+you now for you want so the selected
+name you have to offer it
+whether you want to match it with the
+name or whether you want to match it
+with the email or whatever it is
+so that will be offering it but there's
+also one option available where you
+would like to delete everything
+are we clear so if you're planning to
+delete everything what you can do you
+can just leave it as a blank and try to
+run this
+so collection
+dot delete
+underscore remaining
+let's check
+great all records are deleted
+so as i told you earlier also so delete
+many means what it will delete all the
+records whichever are present in your
+code now
+clear in a similar one if i want to
+perform insert
+so you remember about we have an option
+called what
+insert many
+and here
+we would like to pass
+post one
+post to let's execute
+so it'll add
+the records inside this
+okay
+and next time what i want to perform
+after adding this record i would like to
+perform
+the update part
+okay so
+what i really want in my update let's
+take a look update means certain
+properties i'm looking forward to we get
+updated
+okay
+so
+in case if i want to check the record
+has to be updated i would first go and
+check
+whether the record does exist or not
+yeah we have two names user one and user
+2 let's go back and update bar
+here
+i just
+save collections
+okay dot
+update 1
+update you can see
+update one here very simple
+functionality
+here you will go
+and tell which id would like to perform
+an update
+so i say underscore
+id
+colon
+which i do you want to consider i'm
+saying one zero one
+okay
+and what else
+so i just use another curly braces and i
+say
+sorry dollar
+set
+and after this
+i use this colon
+use the curly braces
+name
+okay and
+use whatever you want to use it so
+suppose there is a user one i'm saying
+users
+one two three
+okay
+let's see
+it is loading and you can see the record
+user 1v3 is updated
+perfect
+so
+your code is absolutely working fine so
+you talk about either insert you talk
+about what
+update
+you talk about anything it works so
+insert update one
+delete one
+insert one as the name suggests they'll
+be taken care about inserting updating
+and deleting one records but the moment
+you use many they'll be performing
+multiple records so this is a very
+simple way like how the python will
+connect with your mongodb
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

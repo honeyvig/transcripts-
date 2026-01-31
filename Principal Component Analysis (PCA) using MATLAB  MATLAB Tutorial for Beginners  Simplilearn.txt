@@ -1,0 +1,632 @@
+data is a king in today's modern world
+of social media which receives a massim
+amount of data every day working with
+this ey dimensional data sets can be a
+difficult for a data analyst most
+well-known companies such as Netflix
+Amazon Google Facebook and many others
+deals with a large amount of data and
+use a principal component analysis
+technique to analyze it and to extract
+the meaningful insights PCI is the most
+commonly used data analysis techniques
+in various Industries on that note
+welcome to Simply learn YouTube channel
+and today we are here with a fantastic
+video on principal component analysis
+using Matlab which will help you to
+analyze any data sets in Matlab before
+we begin are you aiming to get certified
+as a data analyst and want to build your
+career in data analytics in that case
+you can check the data analyst
+certification course by simply learn
+which will open the door for the best
+career opportunities to find the details
+about the data analyst certification
+course check the link below in the
+description box it could be an ideal
+solution to help you build your career
+in the right direction and we have a
+special discount offer for a YouTube
+member to Avail the deal use the coupon
+code ytb E15 and if you haven't
+subscribed yet please subscribe to our
+simply Lear YouTube channel and H the
+Bell icon to never miss an update from
+us before we get started here is a
+question for you in mat Lam which
+command is used to add a text label to
+the x-axis let me know the answer in the
+comment section below now let's have a
+brief on agenda for today's session
+first we will understand what is PCA
+then we will move to why it is used
+after that we will understand what are
+the benefits of PCA at last we will see
+the implementation of PCA for different
+data sets now let's try to understand
+what exactly PCA
+is PCA is a tool for identifying the
+main axis of variance within a data set
+and enabling data exploration to
+understand the key variables in the data
+and identify outliers in simple words
+PCA is a process to find outliers and
+the key variables in a data sets now we
+have got an idea about what PCA is now
+let's learn why it is
+used PCA is a base of multivariant data
+analysis using a projection method PCA
+is a most commonly used to represent a
+multivar data table as a similar set of
+variables in order to observe Trends
+jumps clusters and outliers for example
+we all are familiar with Netflix in
+Netflix we have varieties of categories
+and numerous of people with their own
+choice of category but how will they
+classify the number of people in a
+different category or in a particular
+category Here Comes PCA using PCA we can
+calculate the number of categories and
+the people who are in that particular
+categories assume there are 750 people
+with the 15 categories
+and we can classify the number of people
+in a particular category for example a
+category one as a 50 people Category 2
+as a 30 people Category 3 as a 40 people
+like that 750 people will be classified
+within the 15 categories till now we got
+an idea about why PCA is used now let's
+have a look at what are the benefits of
+PCA PCA can help us to improve the
+performance at a low rate cost of model
+accuracy it includes the reduction of
+noise in the data feature selection and
+the ability to produce a independent
+output uncorrelated data features
+furthermore PCA enables to us to
+visualize the data and verify clustering
+or classifying the algorithms and helps
+in improve the algorithm run rate
+improve the classification accuracy and
+visualization till now we saw what is
+PCA why it is used and some of the
+benefits of PCA now let's see
+implementing PCA for different data sets
+we are Implement PCA for three different
+data sets for example implementation of
+PCA by creating our own data set in
+matlb and next we will Implement PCA for
+the iris data set and at last we will
+Implement a PCA for digit data set now
+let's see all this implementation in the
+platform as you can see we are inside
+the platform mat lab first we will
+Implement PCA by creating our own data
+sets for do that we have to generate a
+data points using a random function I'll
+take a variable as
+data and I'll create a random integer
+values of
+th000 into 2 as you can see in the
+workspace this will create a th000 cross
+2
+Matrix now we will just plot this Matrix
+using a function called
+scatter and we'll plot the
+data with the first
+column of
+Zed First Column of
+data with the second column of
+data we have to close three brackets and
+just press
+enter as we can see we have got an graph
+of our data with the First Column of our
+data to the second column of our data
+it's a scatter plot we have so many
+datas in our
+figure now just quickly go back to our
+Command window now we will find the
+variance of our data using a variable
+V of our
+data with respect to the First
+Column and the variance is
+1.033 now now similarly we'll do the
+same for our second
+column and we have got the value which
+is almost equal to one generally the
+variance of any data will be equal to
+one now what we'll do we need a more
+differences in our data to do that we'll
+multiply our data with another Matrix
+with the same number of rows and columns
+for that I'll take a variable a is equal
+to which is of random numbers of 2 cross
+2 as we can see we have a variable way a
+which is of random numbers and which is
+a two cross to
+Matrix and now I'll multiply this with
+data using a variable X is equal to data
+into our
+a and we have got our X
+now we have got the more differences
+data which have the more differences of
+th000 into two cross Matrix now we have
+to find a PCA for this Matrix before
+finding PCA we have to find the
+covalence Matrix and the igon values of
+that covalence Matrix for that we will
+find a covalence matrix of a matrix of
+our data which is of th000 into 2 for
+that I'll take a variable
+equals uh we have a variable called Cove
+which will give the covalence Matrix of
+the particular input you did I want a
+covalence matrix of our data and I'll
+just press Enter the covalence Matrix of
+our data is almost equal to one now I
+the same way I'll find the igon values
+and igon vectors for that I will give
+igon value for I'll just want to give it
+in a square brackets
+ion Vector for V and I'll I of Icon
+values for
+VA which is equal to we'll use a keyword
+called I of our covalence
+Matrix we have got the igon values and
+ion vectors of our covalence Matrix now
+we have to find the transforming vector
+VOR of our largest igon Vector our
+largest igon Vector with corresponding
+to igon value is 0.35 24 now we will
+find the transforming Vector for our
+largest icon
+Vector but I'll use a variable called U
+is equal to I need the
+ion Vector that is I'll say v e of n
+entire row with respect to our second
+column because the highest value is of
+our second column I'll just
+press enter and we have got our I
+transforming Vector of our highest igon
+value now we will find our first
+principal component before finding let
+me just clear this
+screen to find our first principal
+component I'll multiply my X into with
+my transforming vector and assign to a
+variable that is z is equal to X into
+U I have got my first principal
+component that is z which is of th000
+into one Matrix now I'll just find the
+variance of my
+Zed that is where a of Z
+which is equal to
+0.59 and quickly I'll find the variance
+of my x with the respect to the First
+Column and it is almost 0.3 and I'll
+just find out the variance of my second
+column of X which is equal to
+0.938 now let's find the PC P to find
+the PCA we have to decode the code to
+decode the code we have to multiply this
+our Zed into our transforming Vector now
+we will multiply and we will decode the
+code to get and projection
+values but we know we have 1,000 cross 1
+which is our Z Val value and our view is
+2 cross one to multiply we should have a
+same number of columns so what will do
+is we'll take a variable Y is equal to Z
+into U
+transpose you can see when we transpose
+our U the 2 cross one Matrix will be
+converted into 1 cross two which can be
+easily
+multiplied now let's plot this X and Y
+together using a scatter plot for that I
+taking one more figure
+and I'll use
+scatter of X with respect to the First
+Column get of X with respect to the
+second
+column and I'll just
+say
+uh yeah just just the scatter spelling
+was wrong sorry like now we will just
+label our graph by seeing X label to
+label our x axis and y axis we can use
+the function called X label I'll label
+the first one as
+pc1 and same as
+I'll use this y label
+and give it into
+PC2 we have labeled our X label y label
+and I'll give the
+title for our graph that is
+PC within the codes we have to give
+PCA
+plot and I'll just close the bracket and
+end with the semicolon enter now we have
+the scatter plot with our X label y Lael
+and title
+I'll just say hold
+on
+and will plot the V
+now scatter of Y with respect to the
+First Column and Y with respect to the
+second column and the semicolon enter
+now we have plotted both X and Y in a
+different
+figure this is our principal component
+analysis plot and this is our PCA line
+for a data set like this you can find
+PCA for uh creating a own data set in
+matlb now let's see how to create or how
+to analyze PCA for a iris data
+set to start with Iris data set first
+see the document
+of our Iris data
+set as we can see this is our Iris data
+set doc which has all the all the
+information about the data set data set
+contains s length in centimeter petals
+length in ctim and to low data set we
+need a two variable that is for in one
+is for input one is for output all the
+information a data set will be present
+in the
+doc and now we came to know about all
+the datas what are the data set contains
+and how to load as we know to load we
+need a two variables I'll take a
+variable for input I'll take it
+as
+[Music]
+input and output
+as
+output and
+I'll read the data set
+as Iris data set
+as you can see IR set is loaded and the
+input is 4 into 150 cross Matrix and our
+output is 3 into 150 cross
+Matrix now we will transpose our input
+and output Matrix because we have 4
+cross 150 we need 150 cross 4 Matrix to
+perform our PCA for that I'll just do
+input is equal to
+input and same as I'll do it for output
+I'll we are just Transforming Our input
+and
+output output is equal
+to Output
+transpose as you can see our our input
+and output has been transposed into 150
+into 4 4 and 150 into three Matrix as
+you if you can see our output is a is in
+the vector form now we have to convert
+this Vector form into a index form to do
+that I'll say Vector
+2 index of
+our
+out
+put transpose bracket close
+and see our Vector form which has then
+the value which has been in the vector
+form which is converted into
+our index form now what we will do is
+now we will just assign this conversion
+into our
+output output
+of I just say output is equal to vector
+to
+index
+of
+output transform of whole
+transform as we can see we will get this
+value which is now our output is 115 to
+1
+Matrix
+now we will
+just print our input and
+outut in the form
+of sorry I just mistake the made a
+mistake in
+my output spelling now we can see this
+four rows is an input and the last one
+is an output row as we can see five five
+as we know iris is a data set of fls and
+its characters and which is I have five
+character three 4 1 and 0.2 then the
+output is one like that these four rows
+contains the input and the last row is a
+output now we have the certain amount of
+150 inputs and outputs now we will find
+the PCA to find PCA I'm using the
+keyword called PCA
+of
+input we have got the PC of our input
+which is a matrix
+and the Matrix is a 4 cross4 Matrix now
+I can also find a
+PCA of a
+input I don't want this four Cross Four
+Matrix I'll just specify this a
+new number number of components that how
+many components I have in want in my
+principal component analysis that is PC
+PCA is equal to inputs you can assign to
+a variable otherwise you can also do it
+like
+components close and you should specify
+the number if I specify two I want two
+components if I specify three I want
+three components I want two components
+so I specifying it as two and then we
+guess when you press
+enter we'll get a two we can see now we
+have got our PC into two components we
+if you want we can that display that by
+removing the semicolon we can see PC of
+our input with respect to our two
+components that we have got we have got
+only two components now we will find the
+transformation vector and we will find
+the pr of our input of this two
+components to do that I'll assign this
+to a variable U
+and
+Z close the square and equals now this
+is the transformation vector and our
+first PCA we are finding our first PCA
+of our Iris data set to our input data
+of two components I'll just end with the
+semic and
+enter we have got our U which is of 4
+cross2 and we have got our Zed which is
+of 1 not5 that is 150 into 2 cross
+Matrix now what we'll do we'll plot this
+and we'll get our graph to do that I'm
+using a scatter
+plot for our variable
+Zed with respect to the first
+row and with the Z with respect to the
+second row and add to close two
+semicolons and just
+enter we got a
+figure with the three different we have
+Irish data set of three different
+flowers that is the characteristics of
+one flare characteristics of two second
+flare and characteristics of third flare
+we'll just make it will just go back to
+the command Pro command window and we
+will take one more figure
+I'll again scatter
+plot
+said here I'll mention the plot should
+be of 20
+size with respect to the
+output and should be of
+fil and at I'll
+just just enter and now I'll also give
+the color map that
+is
+color
+map with respect to I'll give it as with
+the double codes or single Codes Jet
+I'll give a color map as Jet and close
+and enter now I'll just give the label
+that is y l Lael and X label that is X
+label will be
+my
+input
+and not close the codes sorry like yeah
+my X label will be input and similarly
+we do it for y label it will
+be
+output and and press enter we also give
+title for our graph title which is equal
+to I'll just give it as
+PCA plot and close the code and
+semicolon
+enter let's go back to our figure this
+is our figure which have been filled
+colors this is a characteristics of one
+FL charactertics of second flow
+charactertics of third flow as we can
+see in the flow the flow one and the FL
+two have some similar characters but the
+FL one does not have any single
+character which are similar to FL 2 and
+FL 3 this is our PCA for Iris data set
+now let's see the PCA that is a
+principal component analysis for digit
+data
+set to perform PC on digits you have to
+load the digit data set into a current
+folder to perform PC any data set which
+is not present in the mat lab software
+you have to import data data set to do
+that you have to go to the home button
+in home button you can see there is a
+option called import data using this you
+can import your data and it will be
+available in the current folder when you
+import your data it will automatically
+come to a current folder which you're
+working after that as you can see I have
+already imported my digit data set into
+my current folder I'll just read the
+data
+into
+read
+table of the data set name that
+is digit automatically it will show end
+with the a semicolon and
+enter as you see our data has a
+1,797 into
+65 rows and Colum columns it is a matrix
+of 1,799 cross 65
+Matrix as you saw we have read our data
+in the form of table but to perform PCA
+we want our data to be in the form of
+array or the Matrix so to convert a
+table data into a matrix or array I'll
+use data is equal
+to table
+to array
+of
+data now our data is converted into an
+array as you can see is a data of 1,767
+into 65 which is converted into an array
+now I'll take a variable X is equal
+to data of all the rows with respect to
+First
+Column till
+end of
+last but not the one
+column and
+enter we have deleted the last row of
+our column as we need 767 into 64 Matrix
+to do that I just removed the last
+column of our Matrix converted into a 64
+column now I'll just assign Y is equal
+to
+data from start starting to
+end and end the
+semicolon our Y is a single row of our
+last data that is 171 into a last column
+only a one column now I'll what I'll do
+I'll just display my
+x with respect the first row and the
+entire
+column and enter as you can see we have
+column 1 with 23 throws 24 columns with
+6 46 and 47 columns with 64 rows now
+what we'll do we'll just reshape this
+data using a function
+called
+rehap it our
+x with respect to the
+first
+row and all the
+columns to a
+8
+cross8 8 cross crate is a size of our
+Matrix that we are reshaping you can see
+we have replaced into an 8 cross 8
+Matrix of our x what we'll do we'll
+again divide this by 16 and end with the
+semicolon now we will will display this
+image our data set is a data set digit
+data set has a data set of images so
+what we'll do we try to display that
+using a function called I'm am show I'm
+am show of
+X with the respect to first
+row of all
+column and which is we have divided into
+8 cross 8 and the size
+which is divided into a 16 and end with
+the bracket and I'll just check if all
+the bracket are
+closed now just press
+enter and we'll get a
+figure just let's go back to the figure
+and this is a figure the data set which
+can't be visible so what we'll do we'll
+just again go back to our
+command window and we will just find the
+PCA now for to find the PCA we need a
+transform vector and a PCA for that I'm
+using U and Z variable which will be
+assigned to a PCA that is using PCA
+variable and I'm using x with quotes I
+need a numerical components
+components only two close and close the
+brackets now we have got our transform
+invertor and our first PCA now I will
+again plot using a different figure
+function I'll take one more
+figure I'll use a
+scatter plot for the variable Zed
+with respect to the all the rows and the
+First
+Column
+same as the Z of all the rows to the
+second column and I want my bullet size
+to be
+25 and with respect to the Y and I need
+the scatter Pro to be
+filled and I'll just close the BR
+bracket and
+enter now let's give the color
+map map
+has
+J and also Define a color
+bar let's see the figure
+as you can see this is a output which
+has been scattered this is a
+1,179
+into or converted into our two
+dimensional
+Matrix now let's go back to
+our this and just execute the color
+bar after color bar you can see
+that a data and the color bar with
+respect to the data which has been
+scattered but finding the particular
+value of a particular point is very
+difficult in this scatter plot so what
+we'll do we'll just convert this into a
+line graph for that I'll just find the C
+is equal to coent Matrix of our variable
+that is our data
+X and I'll just find the E is equal to
+sort the
+IUN value of my coalin Matrix that is C
+and in the order of
+descending the descend keyword will
+arrange this value in the order of Z
+descending and then I'll sum all the
+value of e using the keyword called sum
+after that we will do the
+cumulative sum of our e which is the
+Sorting of Icon values with respect to C
+in the descending order then again what
+I'll do I'll take one more
+figure now I'll plot this in the line
+gra for that I'm using a plot I'm just
+plotting a
+using a plot function to plot a simple
+graph to our
+cumulative
+sum of
+e was divided by a sum
+of e I'll just close two brackets and
+enter in figure you can see we have got
+this output we have got this line
+where we can find out the particular X
+and the Y value of uh points easily we
+can find when compared to this scatter
+gra in Scatter graph using this color
+bar finding PC is a bit difficult so we
+have just plotted this graph which is
+very easy to find the X and Y values of
+our
+PCA with this we have reached the end of
+this session today we have learned what
+is PCA some of the benefits of PCA and
+we have implemented PCA for the three
+different data
+sets please share this video with your
+friends and family for more such videos
+please visit our simply learn YouTube
+channel for any queries regarding this
+topic mention it in the comment section
+thank you keep watching

@@ -1,0 +1,354 @@
+hey everyone welcome to Simply La
+YouTube channel today we will learn
+about the Dax in PBI or also known as
+the data analysis expressions in PBI
+that said if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get
+notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upskill yourself master data
+analytics skills and learn your dream
+job or growing your career then you must
+explore simply learn goad of various
+data analytics programs simply learn
+offers postgraduate programs from Pur
+University in collaboration with IBM
+through this program you will gain
+knowledge and work expertise in skills
+like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts in top th product
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data analytics role
+as a fresher or moved onto a Higher
+beinging job profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pinned comment and
+description box below to find a data
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+with data analysis expressions in PBI
+now when you're discussing about the
+data analysis expressions in PBI Then
+There are a wide variety of Dax in PBI
+so Dax can be assumed similar to the
+calculated fields and formulas that you
+generate in form of a query on your data
+using power query in powerbi now let me
+bring that to a little simpler level
+okay now you might be having sales data
+and quantity of a certain product order
+let's say you wanted to identify the
+cost per product then what you would do
+is a simple mathematical calculation
+which is total sale divided by number of
+quantities ordered of that particular
+product then you will get the product
+price
+right so similarly if you wanted to
+calculate some aggregate functions like
+sum minimum maximum average count Etc
+then you can use Dax and there are quite
+a few more other than just the aggregate
+functions let's take a look through
+those firstly we will have the aggregate
+TXS functions in powerbi so aggregate
+Dax functions can calculate a Scala
+value such as count sum average minimum
+maximum Etc there are a wide variety of
+aggregate functions like distincts
+approximate distinct count average count
+Max minimum product sum Etc and followed
+by that we have date and time tax
+functions in public VI so the date and
+time functions will help you create
+calculation based on dates and time many
+of the functions in Dax are similar to
+excel date and time functions however
+Dax functions use date and time data
+type and can take values from a column
+as an argument now we have calendar
+calendar Auto date dat Dev date value so
+most of these functions are already used
+in Excel and you might have a quite
+comfortable understanding of all these
+DX functions from Excel now if we move
+forward we have another function which
+is filter Dax function in PBI so the
+term fil filter function is
+self-explanatory the filter and value
+function syntax are some of the most
+complex yet powerful and differ greatly
+from Excel functions the lookup
+functions so usually we used to use the
+V lookup H lookup X lookup and index
+match functions for carrying out the
+lookup operations these are a little
+different from Excel so you can find all
+cross filtered all except all no blank
+row Etc and a few more right so these
+are the next category of Dax functions
+moving ahead we have the logic Dax in
+PBI so The Logical functions act upon an
+expression to return information about
+the values or set of expressions for
+example you can use the IF function to
+check the result of an expression and
+create conditional results so we have
+and bit and bit shift bit or bit zor and
+a few more in this particular area now
+if you move ahead we have trigonometry
+Dax and PBI yes trigonometry you can
+actually use S cos Etc in the Dax
+functions of PBI so here you can see the
+math and trigonometric functions so we
+have abs we have aost a cost h a Cod Etc
+and uh the next part of the Dax will
+cover time intelligence Dax functions in
+Fabi so the time intelligence Dax
+Expressions include the time
+intelligence functions that enable you
+to many manipulate data using time
+periods including date days month
+quarters years Etc and the new Dax
+operators in
+powerbi so the Dax operators are the
+four different types of calculation
+operators that are athematic comparision
+test concatenation and logical so they
+are plus minus star slash and
+exponential now other than this we also
+have a few DXs which are newly uploaded
+from Microsoft for PBI setup so those
+are right over here so Dax is
+continuously being improved with
+functions and functionality to support
+features new functions and updates that
+are included in service application and
+Tool updates within most cases are
+monthly now for this particular tutorial
+we will be focusing on the first
+category of tax functions which is the
+aggregate tax function in powerbi so the
+most commonly used aggregate Dax
+functions in powerbi are average count
+distinct Max minimum product sum Etc now
+we will just look into a practical
+demonstration to understand the realtime
+implementation of these most commonly
+used aggregate Dax functions in powerbi
+so let's quickly shift to the powerbi
+desktop version so now we have started
+the bi desktop version and here we have
+our data so you can see average sales
+category City so let's let me open the
+data set right over here so here you can
+see the sales data of um Superstore so
+we will be having the row ID order date
+order ship date ship mode customer ID
+Etc so this is the particular data we
+will be dealing with today so I think
+the power query mode so that we have a
+detailed understanding so here is the
+Excel data that we will be using today
+so we have the ru ID order ID order date
+ship date Etc so we will be finding out
+let's say maybe you wanted to find out
+uh category wise average sales or
+category wise complete sales in a
+specific region right so we do have
+regions over here which is southeast
+northwest and if you wanted to uh
+extract some insights based on a certain
+city based on a certain category let's
+say you wanted to extract details about
+corporate sales happening in England
+region England state or country uh
+Inland State and North Region right so
+such queries can be executed I mean to
+say you can filter out the data that you
+want to extract and explain it to PBI so
+that it gives you what you're looking
+for so that's what tax is going to help
+you with now that we have a brief
+understanding of
+what data we are working on and what we
+are trying to extract let's go ahead
+with PBI and try to execute these
+insights using the tax aggregate
+functions so there you go we have
+started our Pap Pi let's quickly load
+the workbook that you're working with so
+um here it is just select the data and
+press load there you go we have the data
+right yeah there we have have it now so
+we know what exactly we going to do with
+that so to have a better understanding
+how exactly tax is working on our PBI
+let's go with the tabular type of data
+visualization which is easier and
+simpler to understand so I'll create a
+table Type U visualization right away
+here and um now we will have different
+zones regions right so let's have the
+regions and yes we have the regions over
+here let's expand the table a little bit
+so that the data is visible clearly
+let's expand it to 100% a little more
+there you go we have it now let's say we
+wanted to find out the number of orders
+we receive from these zones right so you
+may have to add a new measure or to
+create a new Dax operation you may have
+to click on this particular data over
+here just right click and you will have
+an option of add a new measure and a new
+dags window is going to pop right in
+front of you now here you have it now
+let's name the measure as number of
+orders equals to so let's say uh if you
+wanted to find out the total number of
+orders from a specific region what you
+would do is just count the number of
+orders received right so all you have to
+do is uh call the count function and uh
+data so you will be counting the number
+of orders so order ID you will be having
+a unique order ID for every purchase so
+that would be the right uh piece of data
+you'll be trying to count here just
+press Tab and that will be selected
+enter and you have a new uh Dax
+operation right here just select that
+and you will be having
+the number of orders received from each
+region right let's try to calculate the
+minimum orders received from a Zone uh
+let's say maybe from okay let's try to
+add a new slicer or a filter onto our
+canvas so here you can see the icon for
+slicer there you go you have added it
+now let's keep it somewhere okay let's
+keep it here and uh in the fields I'll
+add uh maybe category just drag and drop
+it in the fields now you have all the
+three categories uh you have furniture
+office supplies and Technology right now
+let's do let's try to calculate the
+minimum orders received from category
+now let's try to add another table you
+can just drag and drop it anywhere there
+you have it in the same way let's try to
+right click on data and add a new
+measure and this time we will name it as
+minimum orders
+received you can call the minimum
+function and you can call data and Order
+ID enter so here you can identify which
+was that uh least performing category or
+least performing product and the highest
+performing product minimum and maximum
+correct so now you can call category
+okay we can use the category over here
+so you can just call the Region again
+and you can also call the minimum
+orders so minimum you might have to edit
+a little count of orders close the
+bracket enter and then now you will have
+the number or you can just uh minimum
+sales you can just ident ify minimum
+sales that are happening over here press
+enter now you'll be having a number of
+sale right how many dollars of purchase
+has been done from a region wise
+perspective in Furniture category and in
+office supplies this is the minimum
+orders you received and Technology wise
+and if you just click on anywhere in the
+canvas I think you will have all the
+three there you go now uh similarly if
+you wanted to create another table for
+maximum SA TS to just check out the
+maximum aggregate function you can do
+that and uh right click on data to
+create a new
+measure and here Max
+sales equals to Max function you can
+just call the max function and data of
+sales press tab to select and enter now
+you can call the segment and you can
+call the max of sales in that particular
+segment right now you can also add a
+slicer for or slicer or a filter for
+your region or like we did here for
+category so here we can add a region
+wise filter and you can find out which
+segment has given you the maximum sales
+or the minimum sales and the count of uh
+you know orders received and Etc so far
+we have understood the the count
+function count aggregate function
+minimum aggregate function maximum
+aggregate function the filters and
+slicers used uh maybe we can also
+explore with Su so basically some is
+just an aggregation of total orders or
+total sale or anything it's just adding
+up all the numbers so here we have a
+some aggregation as well so basically
+that's how we have a basic understanding
+of aggregate functions completely
+similar to excel so this is the basic uh
+part of Dex in PBI where you can
+Implement all the aggregate functions
+aggregate mathematics iCal functions and
+with that we have come to an end of this
+session on dags expressions in powerbi
+on the first part which is aggregate tag
+function Ty and uh if you have any
+queries regarding any of the topics
+covered in this session or if you
+require the D set or the formulas of tax
+that we used in this session or apart
+from that if you have any queries please
+feel free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply done staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simplylearn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here here

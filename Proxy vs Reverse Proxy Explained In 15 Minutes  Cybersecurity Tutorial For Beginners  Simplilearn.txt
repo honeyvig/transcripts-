@@ -1,0 +1,377 @@
+hey everyone welcome back to another
+video by simply learn today we are
+diving into the fascinating world of
+proxies and reverse proxies did you know
+that the market for proxy Services is
+projected to hit a whooping $5 billion
+by 2025 that's not all in 2023
+businesses using Proxes to safeguard
+their online activities spiked by a
+remarkable 30% compared to the previous
+year clearly there's a rising demand for
+these tools and we are here to unravel
+the why and how so bugal up as we
+explore the basics use cases and
+advantages of proxies and reverse
+proxies let's get started in this video
+in which we will cover how do proxies
+work different types of proxies what are
+they used for advantages of proxy
+reverse proxy what are reverse proxy
+used for and their advantages and at
+last we will understand the difference
+between proxy and reverse proxy and
+before commencing just a quick info for
+you if you are aspiring cyber security
+professional looking for online training
+and certification from prestigious
+universities and in collabor oration
+with leading experts to enhance your
+credibility then search no more simply
+learn postgraduate program in cyber
+security from MIT University in
+collaboration with EC Council should be
+your right choice through our courses
+you will gain knowledge and work ready
+expertise in skills like Advanced
+hacking Concepts Network packet analysis
+ethical hacking network security and
+over a dozen of others the course is
+designed to accommodate a diverse range
+of Learners and requires just bachelor's
+degree with 50% average you require no
+prior programming experience and one
+plus years of work experience is
+preferred if you are passionate about
+making your career in this field so if
+you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comments
+and description box so without further
+Ado let's get started all right so let's
+start with the first topic which is how
+do proxies work so a proxy server is a
+crucial element for online security and
+privacy picture it as a mediator between
+you and the internet its role is to mask
+your IP address and guide your internet
+internet traffic on its own in simple
+terms it's like a middleman between you
+and the internet when you connect
+through a proxy it hides your actual
+identity kind of like putting on a
+digital mask so instead of your IP
+address it uses its own this not only
+keeps your online moves on the down low
+but also throws a solid defense against
+any potential cyber Mischief or hacking
+attempts on your device think of this
+way the proxy is your virtual bodyguard
+it takes your internet request wraps the
+up in its own identity and send them out
+into the online world this way your
+online activities stay e Cognito and you
+get an extra layer of protection just
+like having an personal online security
+detail all right so this was about how
+do proxies work after this the next one
+on the list is different types of
+proxies so let's understand different
+types of proxies so proxies come in
+various types like forward proxy reverse
+proxy transparent proxy Anonymous proxy
+residential proxy but today in this
+video we will understand about forward
+proxy and reverse proxy so forward proxy
+or just a proxy server is like guard
+standing in front of your device it
+works as a middleman between you and the
+servers imagine it as a checkpoint your
+request have to go through this proxy
+server before reaching their destination
+this proxy is there to handle your
+request making sure they are okay before
+they go out it is like a filter that
+adds some security and helps things run
+smoothly so when you send a request the
+forward proxy checks it out first make
+sure everything is good before letting
+it reach the intended place it's like a
+helpful traffic manager for your
+internet connection so this was about
+forward proxy now coming to the what are
+forward proxies used for so let's
+understand this first so forward proxies
+play a crucial role in the internet
+communication acting as intermediators
+between user and the internet this are
+various purposes with different types
+tailored to specific needs so first
+residential proxies these proxies derive
+from internet service providers that is
+isps and provide users with a virtual
+clock masking their actual physical
+location users can select a specific
+geographic location allowing them to
+appear as if they are browsing from The
+Chosen area residential Proxes are
+valuable for task requiring region
+specific access or testing scenarios
+that demand specific locations
+all right so this was about the
+residential proxies next one is data
+center proxies typically employed by
+Enterprises data center proxies differ
+from residential proxies as they don't
+originate from an ISP instead they
+assign IP address from their own pool or
+thirdparty Cloud providers this gives
+business greater control and flexibility
+over their proxy infrastructure making
+them ideal for large scale
+operations all right so this was about
+data center proxies next one is mobile
+proxies so despite the name mobile
+proxies don't exclusively serve mobile
+devices these Proxes use IP addresses
+from mobile networks creating Dynamic
+and everchanging digital
+footprint this Dynamic nature makes
+mobile Proxes appealing to cyber
+criminals and scammers as it complicates
+efforts to trace their fixed location
+forward Proxes including residential
+Data Center and Mobile proes offer users
+and businesses various tools to enhance
+privacy access specific regions or
+control their online presence in diverse
+ways so these were the uses of forward
+proxies now let's understand advantages
+of forward proxy so there are many
+advantages of forward proxy some of them
+include user privacy a forward proxy
+positions itself between a user computer
+and the public internet making request
+on the users's behalf this configuration
+enhances users private y by shielding
+individuals behind the proxy then the
+next one is policy enforcement by
+channeling all corporate web traffic
+through the forward proxy organizations
+can scrutinize request and responses
+ensuring the enforcement of corporate
+security and acceptable use policies
+next one is traffic visibility so the
+forward proxy becomes a hub for all web
+traffic offering comprehensive insights
+into how the organization engages with
+Cloud infrastructures applications and
+third
+Services the next one is Shadow it
+detection so detection Shadow it
+instances where devices operate without
+it approval becomes possible with a
+forward proxy it identifies and tracks
+unauthorized devices on the corporate
+Network all right so next one is web
+security so monitoring all web request
+made by corporate users devices a
+forward proxy can block access to
+unauthorized sites and and filter out
+malicious or inappropriate content from
+responses bolstering web
+security all right next one on the list
+is data security so mitigating the risk
+of inappropriate and unsafe usage of
+cloud storage and third party Services
+is achievable through a forward proxy
+safeguarding corporate data
+security all right the next one is
+caching in addition to its primary
+functions a forward proxy can cache
+information optimizing processing speed
+for future request then there is
+realtime security policies so when
+paired with a cloud access security
+broker that is CB a forward proxy
+installed as software agent on the user
+device directs traffic to a cloud
+inspection Point here a real-time
+security policies are applied to
+establish secure connections with
+cloud-based resources like SAS apps and
+I platforms then there is consistent
+data and threat protection an adapt
+cloudbased base forward proxy ensures
+uniform data and threat protection
+across all cloud data channels
+simplifying the application of
+comprehensive policies so these were the
+advantages of forward proxy now let's
+understand what is a reverse
+proxy so a reverse proxy is typically
+refers to a service positioned ahead of
+one or more servers like a web server
+its role involves accepting requests
+from clients seeking resources on the
+servers for the client the reverse proxy
+behaves as the web server offering
+complete transparency to the remote user
+a reverse proxy is a server that
+receives client request redirects the
+request to one of several servers and
+then sends back the result from the
+server that handled the request to the
+client it appears as if the reverse
+proxy itself processed the request even
+though it acted as an
+intermediary the client interacts solely
+with reverse proxy server and remains
+unaware that a different server executed
+its request in essence the reverse proxy
+act as middleman managing the
+communication between the client and
+servers enhancing security and
+optimizing server workload
+distribution so this was about reverse
+proxy now let's understand what are they
+used for so the reverse proxies serve
+several crucial purposes in the realm of
+web infrastructure so first one on the
+list is load balancing one of the
+primary function is Distributing
+incoming request across multiple servers
+this helps optimize server performance
+and prevents any single server from
+becoming overwhelmed ensuring efficient
+resource utilization all right next one
+is DDOS mitigation in the realm of
+security a reverse proxy is a Frontline
+defense against the distributed denial
+of services that is DDOS attacks by
+strategically thotting incoming request
+it helps mitigate the impact of
+malicious attacks ensuring the stability
+and availability of services even under
+adverse conditions next one is stable
+Network endpoint so ensuring a stable
+client end point Aid Dynamic server
+instances is another Advantage offered
+by a reverse proxy in scenarios where
+servers scale up or down or undergo node
+failure or repair activities the reverse
+proxy maintains a consistent client Endo
+this stability is critical for
+uninterrupted user experience
+irrespective of changes in the backend
+server infrastructure all right next
+next one on the list is server anonymity
+so a key utility of reverse proxy is the
+provision of server anonymity acting as
+an intermediary between clients and
+servers the reverse proxy conceals the
+identity of the backend servers from
+external users this protective measure
+enhances security by limiting direct
+exposure to potential threats so reverse
+proxy plays a crucial role in optimizing
+performance ball string security and
+providing additional functionalities
+that contribute to robust and efficient
+web infrastructure so these were the
+uses of reverse proxy now let's have a
+look at the advantages of reverse proxy
+all right moving on to the advantages
+now now some of the advantages of
+reverse proxy are first one security
+forward proxy enhances overall security
+by save guarding backend servers from
+direct exposure then scalability and
+flexibility it offers scalability and
+flexibility in web applications allowing
+for the seamless addition and removal of
+server based on traffic volume forward
+proxy ensures SSL and encryption
+fostering secure communication between
+users and backend servers then there is
+caching the capability to Cache
+information enables the processing of
+future request more efficiently the next
+is performance reliability and security
+for a proxy contribute to the
+enhancement of performance reliability
+and security then protections from
+attacks it serves as a protective
+barrier preventing websites or services
+from revealing their IP addresses then
+offloading services for forward proxy
+has the capability to offload services
+from applications thereby improving
+overall performance so these were the
+advantages of reverse proxy now let's
+have a look and understand the
+difference between forward proxy and the
+reverse proxy so here are the
+differences between a forward proxy and
+a reverse proxy so purpose first of all
+a forward proxy provides anonymity and
+caching to clients while the reverse
+proxy improves server performance load
+balancing and security after that
+location a forward proxy is located
+between the client and the internet
+while a reverse proxy is located between
+the internet and the server then
+visibility the client is aware of
+forward proxy but the server is not
+aware of the reverse proxy all right now
+configuration the client must be
+configured to use forward proxy while
+the server must be configured to use a
+reverse proxy then use cases forward
+proxies are often used for bypassing
+content filters and accessing restricted
+content while reverse proxies are used
+for load balancing caching SSL
+offloading and web application firewall
+now if we talk about examples squid and
+Tor are examples of forward proxies
+while Apachi are one of the example of
+reverse proxy so these were the
+differences between forward proxy and
+reverse proxy to sum it up in this video
+we have covered the basics of proxies
+and reverse proxies we have explored how
+regular proxies works and their uses and
+advantages then we switch to reverse
+proxies understanding what they are used
+for and why they are beneficial we also
+understood the differences between
+forward proxies and reverse proxies and
+with that we have come to the end of
+this video If you like this video please
+give it a thumbs up I hope it really
+helped you all thanks for watching stay
+safe and keep learning staying ahead in
+your career requires continuous learning
+and upscaling whether you're a student
+aiming to learn today today's top skills
+or a working professional looking to
+advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here
