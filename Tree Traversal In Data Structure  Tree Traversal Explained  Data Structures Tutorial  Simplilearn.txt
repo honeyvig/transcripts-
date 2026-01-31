@@ -1,0 +1,238 @@
+hey everyone welcome to simply learn's
+youtube channel in this session we will
+be learning about tree traversal in data
+structures
+so let's take a look at the agenda for
+today's session
+first we will begin with understanding
+what exactly is tree traversal in data
+structures next we will understand the
+data structure used for implementing
+tree traversal after that we will learn
+the types of tree traversals in data
+structure
+and lastly we will discuss the different
+applications of tree traversal in data
+structure
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies if you are a tech geek in a
+continuous hunt for latest technological
+trends then consider getting subscribed
+to our youtube channel and don't forget
+to hit that bell icon to never miss an
+update from simplylearn now without
+further ado let's get started with our
+first topic that is what is tree
+traversal in data structure
+tree traversal is a process of visiting
+each and every node in a tree data
+structure
+so right here on my screen we have a
+tree with different nodes that is a
+b
+c
+d
+and e
+so here we will be visiting all the
+nodes one after the other using the tree
+traversal methods
+now that we have a brief understanding
+of what exactly is a tree traversal
+process let's get into the next topic of
+our discussion for today that is the
+data structure used for tree traversal
+in a tree data structure there are
+primarily two data structures utilized
+for tree traversal the first one is the
+stack data structure and the second one
+is the queue data structure a stack is a
+linear data structure that operates on
+the last in first out lifo principle
+there is only one pointer in the stack
+that is the top pointer which points to
+the stack's topmost element only the top
+of the stack is used for insertion and
+deletion now the next one is the queue
+a queue unlike stacks is open on both
+the ends the one end is always open and
+used only for input and the other is
+only used for deletion or elimination
+the principle followed in queue is
+first in first out or fifo approach
+followed by that we will look into the
+different types of tree traversals in
+data structure tree traversal can be
+done in the following ways the first one
+is breadth first search and the second
+one is the depth first search
+first let us have a look at the breadth
+first search algorithm or breadth first
+search traversal
+we follow level order traversal in
+breadth first search
+breadth first search traverses notes by
+level instead of subtrees first we visit
+the root node followed by the root node
+we visit the left sub tree of the tree
+then followed by the left sub tree we
+finished the right subtree of the entire
+tree
+after that we go until the leaf nodes of
+the entire tree is found the second one
+is the depth first search in depth first
+search we traverse three data structure
+in three ways that is pre-order
+traversal in order traversal and post
+order traversal
+let us take a look at how these
+traversals are carried out
+first let us discuss the pre-order
+traversal
+we traverse the root node first in the
+pre-order traversal then we traverse
+through the left subtree and finally we
+traverse through the right subtree
+then there is in order traversal in
+order traversal involves traversing of
+the left sub tree first followed by that
+we enter the root node then we visit the
+right subtree lastly we have the post
+order traversal so post order traversal
+involves traversing of left subtree
+first then the right sub tree and
+finally we visit the root node
+now next we will have a look at some of
+the important applications of tree
+traversal in data structure
+so we use tree traversal in data
+structures to build a prefix expression
+or polish notation from expression trees
+then utilize the pre-order traversal and
+then traverse the expression tree in a
+pre-orderly manner
+a binary tree's postfix representation
+or reverse polish notation can be
+generated using post order traversal
+because it returns values from the
+underlying set in order according to the
+comparator setting up the binary search
+tree in order traversal is often
+employed on binary search trees
+a complete binary tree can be deleted or
+released when deleting or freezing nodes
+and values in the post order traversal
+now next we will see an example based on
+tree traversal in data structures
+so on my screen we have an example for
+tree traversal in data structure to
+begin we have included the enum or user
+specified data type traversal it mostly
+used to give integral constant names
+which make a programmer easier to
+comprehend and maintain
+we defined three variables in the enum
+data type that is pre-order in order and
+post-order traversal we can define the
+type that can take one of the two values
+by using the typedef and enum keywords
+we have a traversal data type with trap
+variable and a node data type with node
+variable then we define the node using
+the data structure type as struct node
+we declare one variable x and two nodes
+as a left and right nodes respectively
+in this node section
+we then attempted to create node using
+the create node function passing the
+root node as an argument in this code we
+use a malloc function to create a node
+assign data to x and null to both the
+right and left nodes before returning to
+the root node
+if node t is not equal to null we simply
+return it otherwise we will use the
+released tree function to release the
+left and right nodes and if neither is a
+root node then we will use the free
+function to release the node t which
+will behave as the root node
+then we define the display tree function
+which takes the trap variable and the
+root node as parameters
+there is a condition in this function
+that is if the root node is not null we
+will return the root node then using the
+switch case scenario we attempted to
+traverse the tree using all three types
+of traversals
+we utilize a trav variable in the switch
+function so if any of the in-order
+pre-order or post-order variables match
+the trap variable the traversal will be
+executed then we created a tree using
+the create tree function which takes a
+data variable as input in the create
+tree function we used a malloc function
+to create the root node and we first
+assigned a null to the left and right
+nodes as well as the data to the
+variable x before returning to the root
+node
+we first traverse the root node then the
+left subtree and finally the right
+subtree in the pre-order traversal case
+in order traversal case we first
+traverse the left sub tree then the root
+node and finally the right subtree and
+in the post order traversal case v
+traverse the left sub tree then the
+right sub tree and finally traverse
+through the root node
+and finally we exit the display tree
+function and move on to the main
+function we assign the values 5 as the
+root node then 10 20 and 30 as the left
+nodes and similarly 15 25 and 35 as the
+right notes and then we call the three
+tree traversals that is preorder in
+order and post order to traverse the
+tree and finally we release the root
+mode
+now let us try to execute this program
+and see the output
+so there you go the program got
+successfully executed and you can see
+that the output has been displayed on my
+screen so the pre-order traversal is 5
+10 20 25 15 30 and 35
+followed by the pre-order traversal we
+have the in-order traversal that is 20
+10 25 5 30 15 and 35 and finally we have
+the post order traversal that is 20 25
+10 30 35 15 and 5.
+and with that let me give you a simple
+question
+so what is the pre-order and post-order
+traversal of this binary search tree so
+the elements are 1 2 3 four five six and
+seven you need to find out the pre-order
+and post-order traversal of this binary
+tree and you can let us know the answer
+in the comment sections below with that
+we have come to an end of this tutorial
+on tree traversal in data structure if
+you have any queries regarding the
+topics covered in this session or if you
+need the code executed in this
+particular session then please feel free
+to let us know in the comment section
+below and our team of experts will be
+happy to resolve all your queries until
+next time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,2986 @@
+hey everyone welcome to the typescript
+tutorial in this tutorial we will cover
+everything you need to know about
+typescript
+typescript is an object oriented and
+strongly typed programming language
+which is superset of javascript
+typescript code is converted to
+javascript which can be executed
+anywhere javascript is supported
+let's look at today's agenda
+we'll first understand what is
+typescript
+followed by which we'll look at the
+typescript tutorial
+then we will see the difference between
+javascript versus typescript
+followed by which we will understand
+some of the concepts in typescript
+generics
+then we will see how to interface
+typescript with react with nodejs and
+with express tutorial then we will look
+at some of the advanced typescript
+concepts followed by which we will
+create a real-time chat application
+project using typescript javascript and
+node.js
+and at last we will look at typescript
+interview questions which will help you
+crack any typescript interview at ease
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn so
+without any further ado let's get
+started
+what is typescript
+typescript is object oriented and
+strongly type programming language which
+is superset of javascript
+typescript code is converted to
+javascript which can be executed
+anywhere javascript is supported in a
+browser or node.js and any other
+application
+hypscript was designed by anders
+hegelsberg at microsoft the limitations
+of javascript for the development of
+large-scale application at the microsoft
+and among its external customers led to
+the creation of typescript
+due to the difficulty of working with
+the complicated javascript code there
+was demand for custom tooling to make
+developing javascript components easier
+typescript is javascript with some
+additional features
+to support a strong interaction with
+your editor typescript adds additional
+syntax to javascript typescript is a
+scripting language that understands
+javascript and uses type inference to
+provide powerful capabilities without
+the need for additional code
+why typescript compilation javascript is
+an interpreted language there is no need
+to compile it as a result it must be run
+to ensure that it is genuine if there is
+an error that implies you write all the
+code to find out an output
+as a result you will have to spend hours
+looking for the faults in the code so
+error checking is provided via the
+typescript transpiler if typescript
+detects any syntax mistakes it will
+compile the code and generate
+compilation errors this aids in the
+detection of mistakes prior to the
+execution of the script
+typescript provides an optional type
+system for javascript code when a client
+doesn't have a value for a parameter he
+can pass a null optional arguments are
+features of typescript we can declare
+some arguments in the function optional
+by utilizing optional parameter features
+so that the client is not necessary to
+supply a value to optional parameters
+strong static typing javascript does not
+have a powerful static typing system
+does the tls typescript comes with an
+optional static typing and type
+inference system the tls that is a
+typescript language service can deduce
+the type of variable defined with no
+type based on its value
+supports object oriented programming
+such as classes interfaces inheritance
+and other object oriented programming
+principles are supported by typescript
+typescript supports type definitions
+existing javascript libraries can use
+typescript type definitions
+external javascript libraries are
+defined in typescript definition files
+as a result these libraries can be
+included in typescript code
+now let us look at the difference
+between typescript versus javascript
+typescript is an object-oriented
+programming language
+whereas javascript is a scripting
+language
+and typescript supports static typing
+whereas javascript does not support
+static typing
+errors can be found and corrected during
+compile time in javascript errors can be
+found only during the runtime as it is
+an interpreted language
+there is a concept for es3 es4 es5 and
+es6 in typescript whereas no support for
+compiling additional es3 es4 es5 or as6
+features in javascript
+functions can have optional parameters
+in typescript whereas this feature is
+not possible in javascript
+converted into javascript code to be
+understandable for browsers in
+typescript in javascript this can
+directly be used in browsers
+in typescript proper build setup is
+required for static type definitions
+no build setup is required in javascript
+now let us look at the features of
+typescript
+typescript supports other javascript
+libraries typescript is a new microsoft
+language that is highly typed super set
+of javascript with support for object
+oriented programming and other current
+features like decorators
+because browsers and nodes comprehend
+javascript typescript compiles to
+javascript
+typescript is portable typescript is
+cross browser cross device and cross
+platform it can run in any environment
+that supports javascript typescript
+unlike its computators does not require
+dedicated virtual machine or a specific
+runtime environment to run typescript is
+superset of javascript
+it's a strong syntactical superset of
+javascript with the addition of optional
+static typing
+typescript is a large scale application
+development language that transcompiles
+to javascript
+typescript is static and typescript is
+object oriented language
+when a client doesn't have a value for a
+parameter he can pass null optional
+arguments are a feature of typescript
+when it comes to object-oriented
+programming with javascript
+javascript shines because of the class
+keyword it makes object-oriented
+programming look quite similar to
+programming in other object-oriented
+languages like c-sharp or java
+applications of typescript
+typescript can be used to develop
+javascript applications for both
+client-side and server-side execution
+typescript can be deployed instead of
+javascript language since it adds more
+features and gives error directly with
+the code
+typescript is used for building large
+scale application for enterprises
+advantages of typescript
+highlights error at the compilation time
+during the time of development
+in typescript it runs on any browser or
+javascript engine
+typescript has a namespace concept by
+defining a module
+typescript support strongly typed or
+static typing
+disadvantages of typescript
+typescript takes a long time to compile
+the code
+typescript does not support abstract
+classes
+typescript has extra compilation step
+for converting typescript into
+javascript typescript has an overly
+complicated typing system
+setting up development environment
+firstly we need to go to node.js
+official website and install node.js
+after installing
+go to command prompt and type the
+function node space hyphen v to check if
+the node is installed properly
+to install typescript
+run the command
+in pm node package manager install
+globally type script in the command
+prompt and this will install typescript
+so let's jump to the browser and see the
+installation of load.js and typescript
+then we will go to visual studio and see
+the different components like loops
+variables data types with examples
+choose from over 300 in-demand skills
+and get access to 1000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more so to install
+node.js come to the website nodejs.org
+here come to the downloads and from here
+you can install node.js
+node is an open source server-side
+execution platform for javascript code
+node is commonly used for real-time
+applications like chat news feeds and
+web push notifications
+because it allows for a persistent
+connection from browser to the server
+node.js is a javascript runtime based on
+v8 javascript engine from chrome
+node.js is an asynchronous event-driven
+javascript runtime for building scalable
+network applications
+to install for windows click on windows
+if you have mac os
+click on mac os to install
+so i'll click on windows here we go
+node.js is getting installed
+since i have already installed in my
+device i'll cancel it
+so once the installation is complete and
+you have installed the node.js
+just go to command
+prompt in the command prompt run the
+command
+node
+hyphen v to check if whether the node.js
+is installed properly
+and here it shows the version of node.js
+installed in our device
+so here we can see that node is
+installed properly next we need to
+install typescript
+to install typescript we need to run the
+command npm node package manager install
+hyphen g globally typescript
+if you run this command the typescript
+will be installed
+the typescript will be installed
+worldwide with this command this implies
+that each project you create on your
+computer can use typescript dependencies
+without having to reinstall the
+typescript package
+so after running this the typescript
+will be installed since i have already
+installed will clear this
+so after installing typescript to check
+if whether the typescript is installed
+properly
+to check if the compiler is installed
+just type dsc typescript compiler space
+hyphen version
+and here you can see the typescript
+compiler of version 4.5.4 is installed
+now that we know how to install node.js
+and
+type script now we will go to visual
+studio and
+see the
+examples
+so let us see the different types of
+variables available in typescript for
+variable declaration typescript follows
+the same rules as javascript variables
+can be declared with the commands like
+variable
+or we have
+let
+and we have constant
+const
+so these are the three types of variable
+declarations available in typescript
+we'll see them one by one
+variables can be declared in typescript
+using the var keyword just like in
+javascript the scoping rules are
+identical to those in javascript
+for example we can declare a variable
+of parameter h
+and it is of the type number
+which is equal to
+say 45 something like this
+and similarly we have
+let
+so let is a ecmascript 6 introduce two
+new types of variable declarations in
+javascript using the keyword let and
+const to solve the issues with variable
+declarations
+these additional sorts of variable
+declarations are also supported by
+typescript which is a superset of
+javascript
+for example we have let say employee
+name
+is equal to john
+similarly we have constant
+constant variables are declared in the
+same way as variable and let variables
+are constant transforms a variable into
+a constant whose value cannot be changed
+the same scoping constraints applied to
+constant variable as they do to the let
+variables
+for example we have constant
+num
+is equal to
+100
+something like this
+next we will look at the different data
+types in typescript
+we have different data types like number
+string
+boolean array etc
+so number first we'll look at the number
+just like javascript typescript supports
+number data type
+all numbers are stored as floating point
+numbers
+these numbers can be a decimal
+hexadecimal
+for example
+say let
+first
+number
+one two three
+so
+let's again
+the third number
+is equal to this is of the type now we
+will write octal
+and don't forget to put colon otherwise
+it will show an error
+let fourth
+now we'll declare the number of type
+say
+binary so typescript supports number
+data types like the numbers can be
+stored in floating point numbers
+or decimal or hexadecimal octal or
+binary
+so this is basically a number
+and this is
+hexadecimal
+[Music]
+this is octal
+and this is binary these are the
+different number methods in typescript
+the method two exponential returns the
+exponential notation in string format
+two fixed returns the fixed point
+notation in string format
+to locate string converts a number into
+a local specific representation of the
+number
+two precision returns a string
+representation in exponential or fixed
+point to be specified precision
+tostring returns the string
+representation of the number in the
+specified base
+and value off returns a primitive value
+of the number
+next we have string then the data type
+which we have is string string is an
+another primitive data type that is used
+to store text data
+string values are surrounded by single
+quotation marks or double quotation mark
+for example
+we say declare it let employee
+name
+string of the type string
+is equal to
+johnson
+so this is of the type string
+the different string methods in
+typescript are
+method character art returns the
+character at the given index concatenate
+returns a combination of two or more
+specified strings
+index off returns an index of first
+occurrence of this specified substring
+from a string and -1 if not found
+the method replace replaces the matched
+substring with a new substring
+and the method split splits the string
+into substrings and returns an array
+two upper case converts all the
+characters of the string into uppercase
+to lowercase converts all the characters
+of the string into the lowercase
+the next type which we have is boolean
+boolean values are supported by both
+javascript and typescript and stored as
+true or false
+example for boolean is say let
+here note that the boolean with small b
+is different from the boolean capital b
+so the upper case boolean is an object
+type whereas the lowercase boolean is a
+primitive type
+it is always recommended to use the
+primitive type boolean that is a lower
+case boolean in the code because while
+javascript coerces an object to its
+primitive type the typescript type
+system does not the typescript treats it
+like in the object type
+the another data type is of the type
+array
+an array is a special type of data type
+which can store multiple values of
+different data types sequentially using
+a special syntax
+typescript supports array similar to
+javascript there are two ways to declare
+an array one is using the square
+brackets and the other is using a
+generic array type
+example
+this is one type to declare with the
+square brackets
+and the other type is to use the generic
+array type
+both methods produce the same output
+arrays can contain elements of any data
+types numbers strings or even objects
+arrays can be declared and initialized
+separately these are the different array
+methods in typescript
+we have pop that removes the last
+element of the array and returns that
+element and push adds the new elements
+to the array and returns the new array
+length sort sorts all the elements of
+the array and similarly we have concat
+index of copy within
+fill
+shift splice
+and shift
+includes join
+last index of
+that returns the last index of the
+element in an array similarly we have
+slice two string
+and two locate string similarly we have
+tuple
+union any void and never as the data
+types in typescript
+next we'll look at the if statement in
+typescript
+an if statement can include one or more
+expressions which return boolean if the
+boolean expression evaluates to true a
+set of statements is then executed and
+in if-else condition an if-else
+condition includes two blocks
+if block and an else block if the if
+condition evaluates to true then if
+block is executed otherwise the else
+block is executed
+and we also have elsif
+so the elsif statement can be used for
+if statement
+next we will see loops in typescript
+typescript supports for loop the for
+loop is used to execute a block of code
+a given number of times which is
+specified by a condition
+so this is the for loop
+the first expression is executed before
+the for loop starts and the second
+expression is the condition for the loop
+to execute and the third expression is
+executed after the execution of every
+code block here in this example i is
+equal to 0 declares and initializes a
+variable the second condition i is less
+than 3 checks whether the value of i is
+less than 3 or not
+if it is less then it exits the loop
+the third statement
+increases the value of i by one
+this loop will execute the block three
+times until the value of i becomes three
+now that we have seen loops we'll see
+the functions in typescript
+functions are the primary blocks of any
+program functions are the most important
+part
+since it is a functional programming
+language with functions we can implement
+the concepts of oops like classes
+objects polymorphism and abstraction
+functions ensure that the program is
+maintainable and revisable and organized
+into readable blocks while typescript
+provides the concept of classes and
+module functions still are integral part
+of the language for example
+we have function
+sum
+so this is the example of function
+classes in typescript now let us look at
+the classes in typescript
+so in object oriented programming
+classes are fundamental entities used to
+create reusable components typescript
+has been primarily a functional
+programming language
+where inheritance is prototype based
+functions are used to build reusable
+components
+let us see an example for the classes
+employee name
+so we'll create a class employee
+and
+provide employee
+id
+employee name
+so the typescript compiler
+will convert the class to the javascript
+code using the closure
+and the constructor
+is a special type of method which is
+called when creating an object
+in typescript the construction method is
+always defined with the name constructor
+so in this example the employee class
+includes a constructor with the
+parameter employee id
+in the constructor members of the class
+can be accessed using this keyword
+example this dot employee id
+it is not necessary for every class to
+have a constructor
+first up what is javascript
+now javascript is a powerful client-side
+scripting language
+it is mainly used for enhancing the
+interaction of a user with the web page
+in other words you can make your web
+page more lively and interactive with
+the help of this language
+javascript is also being used widely in
+game development web development server
+development and robotics among others
+so talking about why javascript is being
+used
+first up is that it's open source
+next as discussed earlier it has
+excellent user interaction
+meaning the scripts are basically
+written in html pages and are executed
+automatically with embedded javascript
+also javascript offers a wide range of
+libraries and frameworks some popular
+ones are react
+angular vue.js among others
+and some other key features of
+javascript include excellent speed
+cross browser compatibility that is
+javascript code runs on all browsers
+like google chrome
+firefox safari you name it
+and lastly simple things are done simply
+it offers simple semantics allowing a
+seamless developer experience
+then what exactly is typescript
+now typescript is an object-oriented
+programming language which is a superset
+of javascript
+it's basically javascript with other
+impressive additional features
+and all the code written in typescript
+gets compiled to javascript ultimately
+now let's look at some of the key
+features of typescript that make you
+want to use it
+firstly it's a superset of javascript as
+mentioned earlier typescript is a
+superset of javascript
+now it supports all javascript libraries
+and apis
+in fact angular which is a javascript
+framework
+that is used to build single page
+applications is completely written in
+typescript
+now typescript uses object oriented
+programming concepts
+with the increase in code complexity
+javascript had to fulfill the
+requirements of object oriented
+programming
+hence typescript was introduced to
+bridge the gap
+typescript helps with quicker code
+development thus improving
+performance and lastly as mentioned
+earlier it adds several additional
+features to javascript making coding
+excessively easy
+now let's look at some of the advantages
+of typescript over javascript
+typescript always points out the
+compilation errors at the time of
+development
+now because of this at the runtime the
+chances of getting errors are very less
+however in case of javascript it's an
+interpreted language and all errors are
+shown during runtime
+next typescript supports static typing
+this means that all the variables that
+are used in your program are basically
+known during compile time
+now since this feature is
+used it leads to better code completion
+type checking tooling and refactoring
+as mentioned earlier typescript adds a
+lot of features to javascript right so
+typescript adds features like interfaces
+generics namespaces null checking and
+access modifiers
+and lastly it provides excellent tooling
+with intellisense which provides active
+hints as the code is typed
+moving ahead
+i'm sure you must have gathered the
+differences between the two languages
+however let me just brief them up for
+you
+firstly typescript is object oriented
+language while javascript is a
+client-side scripting language
+now typescript supports
+strongly typed and static typing feature
+while javascript does not support it
+in case of typescript errors are
+highlighted at the time of development
+making it easier for codes to run
+however
+javascript makes sure that it highlights
+errors at run time
+now typescript code is always converted
+to javascript and then run on browsers
+while javascript directly runs on
+browsers
+now typescript supports prototyping
+while javascript does not support
+prototyping
+lastly as mentioned typescript supports
+modules generics
+namespaces access modifiers etc
+while javascript does not support these
+features
+so lastly which one should you choose
+now what are the developers around the
+world using
+according to google trends
+growth in typescript has plateaued in
+the last 12 months while javascript
+still has a large user base
+so with that you can gather that a lot
+of developers out there
+prefer javascript over type script
+but if you wonder which one suits you
+better
+well if you're an experienced developer
+and work on smaller projects then
+javascript is ideal
+but if you prefer a statically typed
+language and you are working on a new
+library or a framework or if you're
+working in a big project with multiple
+developers
+then typescript would be a better option
+what is typescript generics
+typescript generics is a tool for
+creating reusable components in
+typescript
+rather than working with a single data
+type it builds a component that can
+interact with various data kinds it
+enables users to consume these
+components while also using their own
+kinds
+generics ensure that the software is
+both adaptable and scalable over time
+type safety is provided via generics
+without sacrificing performance or
+efficiency
+the type variable in typescript is used
+to denote types and uses generics
+generic functions have the same type as
+non-generic functions with type
+arguments specified first as in function
+declarations
+why use typescript generics
+consider the below code without generics
+the identity function is a function that
+returns whatever is sent in as a
+parameter we could either provide the
+identity function with the specific type
+or identity function with any type
+while the use of any is generic when we
+use any the function accepts any kind
+for the type of argument as a result
+when function returns we lose
+information about what the type was the
+only information we have is that any
+type could be produced if we pass in a
+string
+we need the means to capture the
+argument type in such a way that we can
+use it to signify what has been returned
+as well we will utilize a type variable
+here which is a form of variable that
+deals with types rather than values
+the identity function now has a type
+variable called time this type allows us
+to capture the type of data the user
+supplies
+for example a number or a string so that
+we can use it later we are going to
+utilize the type as a return type once
+more
+we can use two methods to invoke generic
+identity function after writing it one
+method is to pass all the parameters to
+the function including the type argument
+the other method is to utilize type
+argument inference
+now let us look at the typescript
+generic types
+generic functions have the same type
+parameters as non-generic functions with
+the type parameters listed first as in
+the function declarations
+we can call the generic type parameter
+in the type by whatever name we like as
+long as the number of type variables and
+how they have utilized match
+the generic type can also be written as
+a call signature of an object literal
+type
+typescript generic classes
+a generic class resembles a generic
+interface in appearance
+following the name of class generic
+classes contain a generic type parameter
+list enclosed in angular brackets
+although this is relatively literal use
+of the generic number class you will
+notice that nothing restricts it to
+using only the number type instead we
+may have used string or even more
+complicated objects
+a class type has two sides a static side
+and an instant side generic classes are
+only generic on the instant side not on
+the static side hence static members
+can't use the class type parameters
+while working with them
+although this is relatively literal use
+of the generic number class you will
+notice that nothing restricts it to
+using only the number type
+instead we may have used string or even
+more complicated objects
+putting the type parameter on the class
+itself like the interface ensures that
+all of the classes property functions
+with the same type
+typescript generic constraints
+typescript generic types allow you to
+work with any data type we can however
+use constraints to limit it to a
+specific types
+a type parameter can be declared that is
+limited by another type parameter for
+instance in this case we would like to
+retrieve a property from an object based
+on its name we'll put a constraint
+between two types to ensure that we are
+not obtaining a property that does not
+exist on the object
+now let us jump into visual studio code
+and understand typescript generics more
+better so here we are in visual studio
+code the prerequisite is we need to
+install node.js
+and we need to install typescript
+so let's get started
+let's call a function
+function identity
+identity function is a function that
+returns whatever is sent in as a
+parameter we could either provide the
+identity function with a specific type
+or with any type
+so this is the identity function with
+specific type so if we had to write the
+same
+in the identity function with the
+specific type so what we'll do we'll
+write it with this specific type
+so to write it with any type
+what we have to do is we'll write any
+in place of string
+so while the use of n is generic when we
+use any the function accepts any kind of
+the type of the argument as a result
+when the function returns we lose the
+information about what that type was the
+only information we have is that any
+type could have produced if we pass in a
+string
+so we are passing of the type string
+here and maybe we can pass this type as
+number as well instead of string so i
+can make this function generic by
+passing the type any but this will lose
+information about what type was passed
+so for that we need the means to capture
+the argument type in such a way that we
+can use it to signify what has been
+returned as well so we will utilize a
+type variable here which is of the form
+variable that deals with the types
+rather than the values
+so for that we will write the code as we
+create a function
+identity
+so here the identity function now has a
+type variable called the type
+this type allows us to capture the type
+of data the user supplies for example a
+number or a string so that we can use it
+later we are going to utilize a type as
+a return type once more so we can use
+one of the two methods to invoke the
+generic identity function after writing
+it
+so i have written a few lines of code
+with generic type function
+so here i have written a few lines of
+code in this example the type variable t
+is specified with the function in the
+angle brackets get array
+so the type variable variability also is
+used to specify the type of the
+arguments and then return the value
+this means that the data type which will
+be specified at the time of a function
+call will also be the data type of the
+arguments and of the return value
+so we call generic function get array
+and the past numbers array the strings
+array for example calling the function
+as get array number and we have passed
+the numbers as 16 and decimal number 2.0
+and 55
+this will replace t with the number and
+so the type of the arguments and the
+return value will be the number array in
+the same way for get array string we
+have passed the values as hello world
+the type arguments and the return value
+will be a string array so now the
+compiler will show an error if you try
+to add a string in number array or a
+number in string array thus we get the
+type checking advantage
+so it is not recommended but we can also
+call a generic function without
+specifying the type variable the
+compiler will use the inference to set
+the value of t on the function based on
+the data type of the argument values
+now let us run this code and check
+so let us go to the terminal and let us
+first run the command
+typescript.cmd and the file name type
+dot ts
+enter
+now let us run the file
+nodetype.js
+and here we go
+it's showing the number array as 1.5 to
+36 and 400 we have pushed two new values
+one for the number array it is value 400
+and for the string array hello
+typescript
+what is react
+react is a javascript library for
+creating user interfaces that is
+declarative efficient and customizable
+in react allows to build complicated
+user interfaces out of components which
+are small independent pieces of code
+react was first open sourced in 2013 by
+facebook and has since become one of the
+most popular libraries in the front end
+world
+with frameworks like redux react can
+simply be extended to integrate
+functionality like routing and state
+management patterns
+features of react
+react is an open source library and is
+developed by facebook
+react apps are fast flexible modular and
+scalable
+react is powerful javascript libraries
+that creates interactive interfaces
+popular libraries of react are redux
+material design and chest
+redux helps manage state in javascript
+redux is the most popular of all react
+libraries because it easily tracks the
+state as the application size grows
+react has robust developer community and
+variety of libraries
+react is declarative and component based
+declarative views make the react code
+more predictable and easier to debug and
+react is component based that is react
+letters build encapsulated components
+that manage their own state and compose
+them to make complex ui's
+advantages of using typescript with
+react
+in a react project typescript allows us
+to write html code directly typescript
+delivers superior intellisense and code
+completion for jsx when used with react
+javascript xm is abbreviated as jsx
+when using ides like visual studio
+visual studio code autumn webstorm
+eclipse and others typescript comes in
+handy this allow better development by
+improving autocomplete and snippet
+generation
+typescript has code that is easy to read
+and understand
+typescript is statically typed language
+the distinction between statically and
+dynamically typed programming languages
+is when type checking occurs
+variables in static language are type
+checked
+while creating react app complex type
+definitions can be defined as interfaces
+in typescript this is useful when you
+wish to use a complex type in the
+application such as an object with
+multiple properties
+microsoft supports typescript
+an open source programming language
+millions of developers all over the
+world enjoy and use it
+this implies that if you get stuck while
+learning or using typescript you can
+easily obtain help and answers on the
+community portal
+we can integrate typescript into our
+existing react projects for this we can
+configure the typescript compiler
+installing and configuring typescript
+and react
+before we install typescript we need to
+install node.js
+go to the node.js official website and
+you can install node.js from there once
+you install node.js go to the command
+prompt and run this command npm install
+hifunji typescript
+this command is used to install
+typescript globally
+once you have installed typescript to
+check if the typescript is installed
+properly run the command tsc typescript
+compiler
+hyphen v to check the version of the
+typescript compiler
+next we need to install react
+for installing react and creating a
+react project
+go to the command prompt and run this
+command npx create react app this
+command will create a simple folder
+structure of the application then
+install all the necessary modules and
+get the project up and running for you
+first of all we need to install node.js
+to install node.js go to the official
+website of node
+nodejs.org
+go to the downloads in downloads here
+you can
+install the node.js if you have windows
+if you have mac os
+you can install it from here so i have
+windows so i'll install windows since i
+have already installed so i'll cancel it
+so once you have installed node.js then
+go to the command prompt
+in command prompt we need to install the
+typescript to install the typescript run
+the command npm that is node package
+manager
+install
+hyphen g
+g stands for installing globally
+and then typescript
+what this command does is it installs
+the typescript globally
+run this command once you run this
+command the typescript will be installed
+since i have already installed
+typescript i'll cancel it so after you
+have installed typescript to check if
+the typescript is installed properly run
+the command typescript compiler tsc
+space
+hyphen hyphen b
+and press enter
+and this will show the version
+and this will show the version of the
+typescript installed so i have version
+4.5.4 installed in my device
+so after this to get started with the
+project after successful installation of
+node.js and typescript
+let us create a new folder to create a
+new folder type the command make
+directory
+and we'll name the folder as
+typescript
+hyphen
+react
+so enter
+so we have created the new folder
+next we'll change the directory to the
+folder which we created so cd
+to
+ts react
+so after this we need to initiate the
+project
+so to initiate the project we will run
+the command npm
+init
+it is asking for package name just click
+enter
+and
+click enter
+then is this ok click s
+after this what we need to do is create
+react app
+so to create react app run the command
+npx
+space create
+react
+app and enter
+so this command will create a simple
+folder structure for your application
+and then install all the necessary
+modules and get your project up and
+running for you
+so this is the project folder which i
+have already created
+i have the vs code folder wherein i have
+settings.json files in this then i have
+installed all the node modules
+then i have the source folder
+in source folder i have app.tsx file
+counter.esx
+index.html declarations
+index.dx file
+to install webpack just run the command
+npm install web pack
+space webpack hyphen cli in the terminal
+this will install the web pack
+so i'll show you a simple hello world or
+hello everyone program
+so in the app.tsx
+we'll just type hello everyone
+and we'll give the color as green and
+align the text at the center input since
+we have imported the counter
+file so in counter file we'll just type
+in subscribe to simply learn with text
+align in the center and with the color
+red
+so we'll just run this
+here we go we have the message hello
+everyone and subscribe to simply
+what is node.js
+node.js is an open source server-side
+execution platform for javascript code
+node.js is a javascript runtime based on
+the version 8 javascript engine from
+chrome
+node is an asynchronous event-driven
+javascript runtime for building scalable
+network applications
+although node.js is excellent for
+developing server-side apps it lacks
+several current features such as type
+checking it can also be difficult to
+manage a node.js code base
+node is commonly used for real-time
+applications like chat
+news feeds and web push notifications
+because it allows for a persistent
+connection from the browser to the
+server
+the current coding method such as static
+typing and type checking are supported
+by typescript
+it's designed to create complex and high
+level applications that's why having
+typescript as a primary language for
+supporting node.js capabilities would be
+idle
+this also allows us to develop server
+side apps with rigorous type checking
+avoiding run type errors and other
+typescript benefits while maximizing
+node.js capabilities
+now let us see how to set up the
+development environment for typescript
+with node.js
+the prerequisites are we need to have
+typescript installed in our device and
+node.js
+to install node.js go to the official
+website
+go to nodejs.org and go to downloads
+so here you can see
+we have node.js for different browsers
+for windows mac os
+and source code
+so go to windows if you have windows pc
+and click on install
+click on windows and here you can see it
+is getting installed since i have
+already installed in my device i'll
+cancel it
+so once you have installed go to the
+command prompt
+and just enter
+node.v to check if node is installed
+properly
+so here you can see the node is
+installed in my
+system
+to install typescript just run the
+command npm
+node package manager
+install globally
+typescript
+run this command and typescript will be
+installed
+since i have already installed
+typescript in my device
+we'll cancel this so once you have
+installed typescript to check if
+typescript is installed or not to see if
+the compiler is installed just run the
+command
+typescript compiler space
+version
+here you can see it will show the
+version of typescript compiler
+so now that we have installed both
+typescript and
+node.js let's see
+our example program for typescript with
+node.js
+so let's jump into visual studio code
+one more prerequisite is we need to have
+visual studio code installed
+so create a new folder and create a new
+project
+so we'll run an example program we'll
+create a function
+we'll write a program to add two numbers
+so sum
+number one
+comma number two
+will return number one and number two
+console.log
+we'll call the function sum
+and we'll provide the arguments
+so we'll provide the value
+9 comma
+5
+so let's save
+and run this program
+first we'll run typescript.cmd
+type.ts command
+then we'll enter
+then we'll run node and the file name
+here you can see
+it's showing the value showing the
+output as forty nine plus five the sum
+of nine plus five is forty so we'll
+delete this
+and
+write another program
+to show a hello message or a welcome
+message
+so we'll create a function
+we'll name the function as welcome
+message
+and will return
+that user
+is equal to simply learn
+console log
+we'll call the function
+welcome
+and pass
+so here we go we'll save this and check
+whether we have an error
+so here we go showing welcome to simply
+learn
+what is express.js
+express.js is a node.js web application
+framework that is free and open source
+it is used to quickly and easily design
+and create web apps
+web applications are applications that
+can be run through a web browser because
+express.js simply requires javascript
+programmers and developers may create
+web applications and apis with little
+effort
+tj holloway chook created express which
+is now maintained by node.js and several
+open source contributors
+to construct our applications express
+provides a simple interface it gives us
+the resources we need to create our app
+it's adaptable because there are a lot
+more modules on npm that can be directly
+integrated into express
+let us look at some of the features of
+express.js
+server side development is made easier
+with express it's possible to create
+single page multi-page and hybrid web
+apps with express.js
+express enables middlewares to respond
+to http request to be configured
+middleware is primarily responsible for
+the orderly structure of express js
+various functions
+express js has a comprehensive routing
+mechanism that uses urls to maintain the
+state of a web page
+it establishes a routing table that is
+used to carry out various operations
+based on the http method and url
+express.js has templating engines that
+enable developers to create dynamic
+content for web pages by creating html
+templates on the server
+express js simplifies debugging by
+offering a debugging mechanism that can
+pinpoint a particular area of the web
+application that is causing problems
+advantages of express.js
+express.js makes developing node.js web
+applications quickly and easily
+express.js is simple to set up and
+personalize
+it allows to define application routes
+using http methods and urls
+express.js includes a number of
+middleware modules that can be used to
+execute additional request and responses
+activities
+it is simple to interface with a variety
+of template engines including
+jade vash and ejs
+it allows us to specify middleware for
+handling errors
+express is used to make a rest api
+server and it's simple to provide your
+application static files and resources
+databases such as mongodb redis and
+mysql are simple to connect to
+express.js
+now let us look at the demo on
+typescript express
+the prerequisites are we need to have an
+editor
+be visual studio code then we need to
+have node.js installed and a package
+manager installed such as npm or yarn
+so we'll jump into visual studio code
+here i have created a new folder
+named express typescript then we will go
+to the terminal
+next we'll run the command
+npx
+type script
+hyphen init will initialize typescript
+next to initialize the node.js
+application we will run the command
+yarn
+init
+once we have initialized the node.js
+application we just need to click enter
+just click enter
+and we have successfully saved the
+package.json file next we need to
+make a new directory
+we'll make a new directory source
+next we'll install the touch cli
+globally
+with the command npm install
+touch
+clip
+so after installing this we'll run the
+command
+touch
+source inside the source folder we'll
+create the file app.ts
+so here you can see we have created the
+file app.ts inside the source folder
+so after this we will install typescript
+to install typescript run the command
+yarn
+add
+type script
+node
+dev
+type script
+hyphen d
+so after this we need to install express
+to install express run the command
+yarn
+space add
+express
+next we need to add node modules and
+express modules for that run the command
+yarn
+add
+type slash node
+type slash express
+so let us now go to the app.ts file and
+run the code
+we will close this
+so i'll copy paste a few lines of code
+here
+wherein i have imported express
+module
+the constant app creates an express
+function
+and we have
+express.json and we have returning a
+message hello world
+so we'll save this and we are running it
+on the local host with port number 3000
+so we'll save this
+and
+run it
+to run it we'll just
+run the command e on
+dev
+so application is listening at the
+localhost 3000
+so we'll copy this
+and open in the browser
+here we go it's showing the message
+hello world
+similarly we have routing
+like this example with app.get and
+app.host the app object provides a
+collection of functions that attach
+callbacks to http request made to define
+destinations
+and other http methods such as post put
+patch and delete can also have callbacks
+attached to them
+the router object is another approach to
+setup routing
+you can call the get put and patch and
+delete methods on a router object just
+like you do on a app object
+and similarly we have
+request and response
+so the request object holds information
+about http request including headers
+query strings and parameters
+when when an http request is received
+the response object represents the http
+response that the application provides
+similarly for response the send method
+is the most significant one it sends the
+http response to the client so that it
+can be received
+the function accepts a variety of data
+kinds including strings objects arrays
+and buffers
+the send method finishes the response
+process with data but you can
+alternatively use the end function to
+end it without any data
+the request and response objects are
+accessible to middleware function
+it can join the request response cycle
+at any point
+a third argument that middleware
+receives is the next function
+the get callback which processes the
+http get request that we wrote in this
+example
+is an example of middleware it's highly
+unique middleware that only works in one
+situation they can also carry out more
+general duties
+we'll first look at type assertions
+type assertion is similar to typecast in
+other languages but it does not do any
+additional verification or restructuring
+it has no effect on runtime and is only
+used by the compiler typescript expects
+that you the programmer have completed
+the necessary and specific checks
+so there are two types of assertions
+one is the as syntax
+and the other one is the angle bracket
+syntax both versions are identical
+choosing one over the other is primarily
+a matter of preference
+however only as style assertions are
+allowed when combining typescript with
+jsx
+type aliases type aliases give type a
+new name
+type aliases are similar to interfaces
+in that they can be used to name
+primitives unions tuples and any other
+kind that you would have to define by
+hand otherwise
+aliasing doesn't truly create a new type
+instead it gives the type a new name
+aliasing a primitive isn't very useful
+however it can be used for documentation
+purposes
+type aliases like interfaces can be
+general all we have to do is add type
+parameters and utilize them on the right
+side of the alias declaration
+this is the syntax for type aliases
+type generics
+type generics is a tool for creating
+reusable components in typescript
+rather than working with a single data
+type it builds a component that can
+interact with various data kinds it
+enables users to consume these
+components while also using their kinds
+generics ensure that the software is
+both adaptable and scalable over time
+consider the below code without generics
+the identity function is a function that
+returns whatever is sent in as a
+parameter you could either provide the
+identity function with a specific type
+or the identity function with any type
+while the use of any is generic when you
+use any the function accepts any kind
+for the type of argument
+as a result when the function returns
+you lose the information about what the
+type was
+the only information you have is that
+any type could be produced if you pass a
+string
+so for that we need the means to capture
+the argument type in such a way that we
+can use it to signify what is being
+returned as well
+we will utilize a type variable here
+which is a form of variable that deals
+with the types rather than values
+the identity function now has a type
+variable called type this type allows
+you to capture the type of data the user
+supplies
+for example
+a number or a string so that you can use
+it later you are going to utilize type
+as the return type once more
+next we look at the in operator
+the in operator serves as a type
+narrowing expression
+the true branch narrows to types that
+have an optional or required property n
+and the false branch narrows to the
+types that have an optional or missing
+property n for a n in x expression
+where n is a string literal or a string
+literal type and x is the union type
+below is an example code for inoperator
+null and undefined are two special types
+in typescript that have the values null
+and undefined respectively they are not
+particularly useful much like void
+null and undefined are subclasses of all
+other types by default that means you
+can give things like number null and
+undefined values
+when the strict null checks flag is set
+however null and undefined can also be
+assigned to unknown any and the
+respective types
+this helps you avoid a lot of frequent
+errors you can use them as union type
+string null and undefined if you want to
+send in either a string null or a
+undefined
+next we have index types
+using index types we can get the
+compiler to check code that utilizes
+dynamic property
+names by using index types a typical
+javascript pattern for example is to
+select a subset of an object's property
+we may build and use this function in
+typescript using the index type query
+and index access operators
+let us jump into visual studio code and
+understand index types more better
+so consider this code as an example for
+index types here key of t the index type
+query operator
+for any type t p of t is the union of
+non-public property names of t
+and t of k the indexed axis operator is
+the second operator the type syntax
+reflects the expression syntax in this
+case
+and t of k can be like index type
+queries be used in generic environment
+which is where its truly potential can
+be seen all we have to do now is make
+sure that the type variable k extends e
+of t
+in get property o
+t and property name k so that means of
+property name the compiler will initiate
+the actual type of the key after you
+return t of k result therefore the
+return type of get property will change
+depending on which property you request
+index signature
+index signature interact with the key of
+and the t of k
+the type of an index signature argument
+must be either a string or a number
+if your type has a string index
+signature key of t will be a string or a
+number
+because in javascript you can access an
+object property using either a string or
+number
+t of string is simply the index
+signature type
+below is the syntax for index signature
+if you have a type with number index
+signature e of t will just be a number
+map types
+taking an existing type and making each
+of its property optional is a typical
+undertaking because this happens
+frequently enough in javascript
+typescript has a new feature called map
+types that allows you to define new
+types based on existing ones
+the new types turn each property in the
+old type in the same way in a map type
+for example make all the properties
+optional or the read-only type
+it's important to note that this syntax
+refers to the type rather than a member
+you can use an intersection type to add
+more members
+this is the simplest map type and its
+parts the syntax is similar to the index
+signature with a 4 in the middle
+there are 3 sections in total
+the type variable k is assigned to each
+property one by one
+the little union of string the names of
+the properties to iterate over a stored
+in case
+and third one the properties type is the
+result
+next we have conditional types
+based on the condition given as a type
+relationship test
+a conditional type chooses one of the
+two alternative types when t can be
+assigned to u the type is x and when it
+can't the type is y
+because the condition depends on one or
+more type variable a conditional type t
+extends u
+so x is to y and is either resolved to x
+or y or delayed
+whether to resolve to x or y or to
+differ when t or u contains type
+variables is determined by whether the
+type system has enough information to
+conclude that t is always assignable to
+you
+in conditional types we also have
+distributive conditional type
+that is a conditional type in which the
+check type is beta type parameter
+during instantiation distributive
+conditional types are automatically
+distributed over union types
+supporting libraries from node modules
+typescript includes a series of
+declaration files to guarantee that
+typescript and javascript support works
+well right out of the box
+and typescript includes a series of
+declaration files however there are two
+drawbacks to using these declaration
+files with typescript
+one drawback is since while upgrading
+typescript
+we must also deal with the changes of
+typescript built-in declaration files
+which can be difficult when the dom apis
+change so regularly
+and the other
+drawback is that customizing these files
+to meet your needs and the demands of
+project dependencies is difficult
+so to overcome this a new feature
+like types
+was added that allow us to override a
+specific built-in library
+then we can update typescript and lock
+the file in dependency management
+ensuring that it utilizes the same
+version of dom types as a result we can
+update the types on our own schedule
+then with
+then with typescript 4.5 we can update
+typescript and log file in our
+dependency management
+await type and promise improvements
+the awaited type is the new utility
+introduced in typescript
+this type is intended to represent
+activities such as await in async
+functions and the then method on
+promises
+notably the way they recursively unwrap
+promises
+existing apis such as javascript
+built-in like promise dot all promise
+dot rays and others can benefit from
+awaited time
+in fact some of promise not all
+inference concerns provided as
+foundation for awaited promise that all
+combines certain traits with awaited to
+produce far superior inference results
+tail recursion elimination on
+conditional types
+when typescript identifies potential
+infinite recursion or any type expansion
+that take a long time and damage your
+editor experience
+it often leak fails
+as a result typescript includes
+heuristics to ensure that it doesn't run
+off the tracks while deconstructing an
+indefinitely deep type or working with
+types that provide a lot of intermediate
+results
+let's jump into visual studio code and
+look at an
+example the trim left type for example
+removes spaces from the beginning of
+string like time when provided a string
+type with space at the beginning trim
+left returns the reminder of the string
+to the user
+this type is handy but it will throw an
+error if a string contains more than 50
+leading spaces
+this is problematic because these types
+are frequently used in modeling
+operations on strings
+such as parsers for url routers
+to make matters worse a more powerful
+type useful generates more type
+installations resulting in even
+additional input length restrictions
+trim left is written in such a way that
+it is tail recursive on one branch when
+it calls itself again it returns a
+result instantly and does nothing with
+it
+because these types don't require any
+intermediate outcomes they can be
+constructed more rapidly and without
+activating many of typescript built-in
+type recursion heuristics
+next we have assert signatures
+the asset signature features allow us to
+construct functions that operate as type
+cards as a side effect
+instead of returning their boolean
+result explicitly
+consider a below example
+after a search ring typescript has no
+way of knowing if you have guaranteed
+the type of input
+to prevent this most people just make
+the parameter input string which is fine
+but it also moves the type checking
+problem somewhere and in circumstances
+where you just want to fail hard having
+this option is beneficial
+if this function ever returns typescript
+can filter the type of input to string
+exactly like it would be if it were
+inside an if block with a type card
+to make this safe the asset function
+must either give an error or not return
+at all if the asset assertion isn't true
+and lastly we have recursive type
+aliases
+the ability to recursively reference
+type aliases has been limited
+the reason for which
+is because each type aliases must be
+capable of substituting itself for
+whatever it aliases
+because this isn't always possible the
+compiler rejects some recursive aliases
+interfaces can be recursive but their
+expressiveness is limited and type
+aliases cannot that involves combining
+the two creating a type alias and
+extracting the types recursive
+operations into interfaces
+interfaces can be recursive but their
+expressiveness is limited and type
+aliases cannot
+that involves combining the two creating
+a type alias and extracting the type's
+recursive portions into interfaces it's
+effective
+by establishing an interface users may
+write what was practically the same code
+typescript has no trouble working with
+the interfaces and other object types
+because they introduce a level of
+indirection and their whole structure
+does not need to be eagerly built up
+however many found the work around of
+introducing the interface to be
+inconvenient
+and there was nothing wrong with the old
+version of value or array that used
+array directly in concepts
+this is the chat application where we
+have two users and from the user one
+will send the message hello
+and the user two will receive it and
+from the user to we'll send the message
+hi
+and the user one receives it so this is
+basically a simple chat application how
+we can create
+how are you
+so this is basically a simple chat
+application which we can create
+so in this video we will learn to make
+this chat application from the scratch
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn
+watch the video till the end so that you
+don't miss out anything so without
+wasting any further time let's get
+started first of all we will create a
+new folder
+so i'll go to my d drive
+and i'll create a new folder
+i'll name the folder
+as chat tab
+so after creating this new folder
+so we will go to visual studio code open
+a new window in new window we will open
+the folder which we created
+we created the folder in d drive
+we will first create the user interface
+to create the user interface for that we
+need to create a new file called
+index.html
+so i've successfully created the new
+file index.html
+so we'll change the title
+we'll name the title as io chat
+next after this will open the link
+before this we should know what is cdn
+a cdn is a network of servers that
+distributes content from an origin
+server throughout the world by catching
+content close to where each end user is
+accessing the internet via a web-enabled
+device
+the content they request is first stored
+on the origin server
+and is then replicated and stored
+elsewhere as needed
+so we will use bootstrap cdn and query
+cdn for our project
+so we'll use the link tag
+the link element allows authors to link
+the document to other resources
+we will click on the link
+so for this to get the bootstrap cdn
+we will
+go to the browser and type bootstrap cdn
+so we'll copy this link
+for bootstrap cdn
+and we'll paste it here
+bootstrap is the most popular css
+framework for developing responsive and
+mobile first websites bootstrap 5 is the
+newest version of bootstrap
+and bootstrap is free open source css
+framework directed at responsive mobile
+first front and web development
+it contains css and javascript based on
+design templates for forms buttons
+navigation and other interface
+components
+after this next we need jquery cdn
+next we will
+next we'll get the jquery cdn and write
+it in the script tags
+so i'll select script
+the script element allows authors to
+include dynamic script and data blocks
+in the documents
+the element does not represent content
+for the user
+to get the cdn
+for jquery
+go to the browser
+and just type
+jquery cdn
+and open the first link
+click on uncompressed
+and
+copy this
+go back to the visual studio code and
+paste it
+so after this is
+done jquery is fast small and feature
+with javascript library it makes things
+like html document transversal and
+manipulation event handling animation
+and ajax much simpler with an easy to
+use api
+that works across a multitude of browser
+with the combination of versatility and
+extensibility
+so after this we'll take one more script
+tag and this time we will include
+the
+we'll take one more script tag inside
+this script tag we will enter the client
+site socket dot io web api that will
+work inside the browser you can go to
+the browser and search socket.io you
+will get all the information related to
+socket.io
+so just go and type
+socket.io
+here
+just go to the browser and type
+socket.io and on this website socket.io
+you have all the documentation and all
+the details to get started with
+socket.io so you can go through the
+socket dot io here
+so in the script tags
+i'll write source
+and just type socket
+or typo slash
+socket dot io dot js
+so after this
+we'll create a new div tag
+so the diff element has no special
+meaning at all it represents its
+children it can be used with the class
+language and title attributes to markup
+semantics common to a group of
+consecutive elements
+so inside this div will create a new
+class
+new class container
+so class is basically a space separated
+list of classes of the element classes
+allow css and javascript to select and
+access specific elements via the class
+selector or functions like the method
+document get elements by class name
+so after this
+we will create another div
+class
+rule
+inside this will create one more diff
+class
+this scholar medium for this class is
+used when the device size is medium or
+greater than 768 pixel and the maximum
+width of the container is 720 pixel and
+you want the width equal to four columns
+that is when we use this function column
+medium four
+next we'll create another div
+class
+well
+so after this will provide the heading
+h3
+the h3 element represents a section
+heading
+so in this will provide the heading as
+online users
+you can change the headings whatever you
+want to but i'll keep it as online users
+so after this will create an unordered
+list
+this class
+list group
+and id
+so after this we'll create a one more
+diff
+in this div class
+we'll provide column medium
+of size 8.
+this column medium 8 starts for large
+column
+then we'll create a div another div
+class chat
+where id
+is equal to chat
+then i'll create a form
+this form element represents a
+collection of form associated elements
+some of which can represent editable
+values that can be submitted into a
+server or processing
+perform id
+is equal to
+for message form
+this will create a diff class
+form group
+next we'll create the label
+so label element represents a caption in
+a user interface the caption can be
+associated with specific form control
+known as label elements labeled
+controlled either using for attribute or
+by putting the form control inside the
+label element itself
+so use the label element inside that
+we'll write enter message
+next we'll create a text area
+use the label text area
+so inside text area will create a class
+form control
+and
+id
+message
+so text area element represents a
+multi-line plain text edit control for
+the element's raw value the contents of
+the control represent the controls
+default value
+after the text area
+will
+just
+right
+then we will create an input element
+input element of
+will
+assign a type submit
+class
+button
+value
+send message
+in double quotes
+so this input basically it represents a
+type data field usually with a form
+control to allow the user to edit the
+data
+so we have finished with the user
+interface we'll just save this
+and run it in the browser
+right click and open with live server
+so here we go we have created the html
+but
+we we will now create assign few css
+elements
+we just need the margin top
+for the body so we'll assign that
+so we'll create styles element
+the style element allows authors to
+embed style information in their
+documents the style element is one of
+the several inputs to the styling
+processing model the element does not
+represent content for the user
+so in the style
+we'll just write this body
+and will assign margin top
+30 pixel
+save this and we'll go to the browser
+and just refresh
+so till now we have created the user
+interface
+we'll just go to the browser and run
+this user interface
+just right click and click on open with
+live
+server now we will create a new file
+called server.js
+and we'll go to the terminal
+in terminal we will run two commands
+first of all we need to install
+socket.typo for that we'll run npm
+and there is one prerequisite we need to
+have node.js installed in our device
+so then run the command node package
+manager npm
+install
+socket.typo
+socket.io is a library that enables
+real-time bi-directional and even-based
+communication between the browser and
+the server
+it consists of a node.js server and a
+javascript client library for the
+browser
+after installing socket.io then we need
+to install express
+for that run the command npm install
+express
+express is a minimal and flexible
+node.js web application framework that
+provides a robust set of features for
+web and mobile applications
+after installing socket.typeon express
+you will get these two files
+packet.json file
+and package
+json
+next go to the server.js
+wherein i will paste few lines of code
+in the line one creates an express
+application the express function is a
+top level function exported by the
+express module
+then we have const listen
+and then we require and socket.io
+then we we have created and variable app
+express method then we have created and
+variable server
+so this server
+that is we use the module http
+so it creates a module http to use the
+http server and client we must require
+http the http interfaces in node.js are
+designed to support many features of the
+protocol which have been traditionally
+difficult to use in particular large
+possible chunk encoded messages the
+interface is careful to never buffer
+entire request or responses so the user
+is able to stream data
+then we have another variable io where
+we require socket.ibo server
+and similarly we are listening in the
+port 3000
+so in port 3000 it starts a server
+listening for connection
+a net dot server can be an tcp or an ipc
+server depending on what it listens to
+then we have app.get
+here the request is declared but its
+value is never read we have request and
+response
+then we are routing it on the local host
+3000
+so in this line we are transferring the
+file at the given path so automatically
+sets the content type response header
+field the callback is invoked when the
+transfer is complete or when an error
+occurs
+be sure to check request response sent
+if you wish to attempt responding as the
+header and some data may be already been
+transferred
+here we are connecting the client to the
+server and here we add plug details to
+the customer array and here we are
+checking the current connections
+and then we disconnect from the server
+using the disconnect function
+next we delete the plug details and
+the again we show the current
+connections
+here
+on the socket.on we send messages
+function data and then we console.log
+the data then we emit the new messages
+so then we have written console.log
+server is listening
+so now we will run this code and check
+if the server is listening
+now we'll check if the server is
+listening for that will run the command
+node
+server
+and here we go server is listening
+now
+we will just go and
+run the local host 3000 on the browser
+go to the
+new tab and just run localhost 3000 and
+here we go
+it's running and when we come back to
+the code
+we can see it shows one socket connected
+so again if we go and open it in a new
+browser
+and just run the local host
+and go back to the code it will show two
+sockets connected
+so we are almost done we just have a
+small part left out we'll go to
+index.html
+and here
+we'll just scroll down
+and above body we'll just paste few
+lines of code
+so here basically we are just creating a
+function to get data form
+so we'll get message form
+and we'll we are creating variables
+message and we are creating variables
+chat
+so basically in this line we will know
+form between click event handle
+and
+then we will prevent default from
+submission
+next in this line we will trap data for
+text box and call server
+then we'll create clear
+then we will clear the form text box
+then we'll console.log submitted
+so our program is finished
+now we'll just run and check the code
+so we'll save this code
+go to the browser
+refresh it
+so i have the two browsers i have opened
+it in two separate window we'll just
+check if the application is working so
+we'll send the message hi
+and here we go we have received the
+message so we can say hello
+so the chat application is working
+successfully
+we'll first look at beginner level
+interview questions
+what is typescript
+typescript is an object oriented and
+strongly typed programming language
+which is a superset of javascript
+typescript was designed by anders
+hegelsberg at microsoft the limitations
+of javascript for developing large-scale
+applications at microsoft and among its
+external customers led to the creation
+of typescript because of the difficulty
+of working with complicated javascript
+code there was a demand for custom
+tooling to make developing javascript
+components easier
+typescript code is converted to
+javascript which can be executed
+anywhere javascript is supported in the
+browser or nodejs or any other
+application
+typescript is javascript with some
+additional features to support a more
+robust interaction with your editor
+typescript adds additional syntax to
+javascript typescript is a scripting
+language that understands javascript and
+uses type inference to provide powerful
+capabilities without additional code
+explain the features of typescript
+typescript supports other javascript
+libraries typescript is a new microsoft
+language that is highly typed superset
+of javascript with support for object
+oriented programming and other current
+features like decorators
+because browsers and nodejs comprehend
+javascript typescript compiles
+javascript
+typescript is portable typescript is
+cross browser cross device and cross
+platform it can run in any environment
+that supports javascript
+typescript unlike its competitors does
+not require a dedicated virtual machine
+or a specific runtime environment to run
+typescript is superset of javascript it
+is strongly syntactical that superset of
+javascript with the addition of optional
+static typing typescript is a
+large-scale application development
+language that transcompiles to
+javascript existing javascript programs
+are also valid typescript programs
+because typescript is a superset of
+javascript typescript is static
+when a client doesn't have a value for a
+parameter he can personal optional
+arguments are a feature of typescript
+you can declare some arguments in the
+function optional by utilizing optional
+parameter features so that the client is
+not necessary to supply a value to
+optional parameters
+object oriented language when it comes
+to object oriented programming with
+javascript typescript shines
+because of the class keyword it makes
+object oriented programming look quite
+similar to programming in other
+object-oriented languages like c-sharp
+or java
+what are export and import keywords in
+typescript
+import keyword is used to export
+declaration example export star from
+module and the export keyword is used to
+export any variable function and type
+aliases
+below is the example for import keyword
+and export keyword
+can typescript be used for the backend
+typescript can be generally used for
+backend applications by using node.js
+and having additional safety that the
+language brings
+how to declare a variable in typescript
+let and const are the two methods to
+declare variables variable names can
+contain alphabets and numeric digits
+they cannot contain spaces and special
+characters except the underscore and the
+dollar sign variable names cannot begin
+with the digits flow is the example code
+where we have declared a variable with
+let method and we have declared a
+variable inside a function list the
+applications of typescript script can be
+used to develop javascript applications
+for both client-side and server-side
+execution
+typescript can be deployed instead of
+javascript language since it adds more
+features and gives error directly with
+the code typescript is used for building
+large-scale applications for enterprises
+how can a base constructor be called
+from a child class
+a base class constructor can be called
+from child class using the super method
+as shown in the example
+what are getters and setters
+getters and sectors intercept access to
+a member of the object
+they give us a way of having finer grain
+control over how a member access each
+objects a getter method starts with the
+keyword get
+and the setter method starts with the
+keyword set
+what is the purpose of ts config.json
+file
+tsconfig.json file is a json format file
+in which we can specify different
+options to tell the compiler how to
+compile a given project this file in the
+directory indicates that the directory
+is the typescript's project root
+list the advantages of typescript
+typescript highlights errors at the
+compilation time during the time of
+development
+any browser or javascript engine can run
+typescript
+it has a namespace concept by defining a
+module typescript supports strongly
+typed or static typing typescript has
+the advantages of being tightly typed or
+allowing static typing it may confirm
+type correctness at the compile time
+because of static typing
+what are rest parameters in typescript
+when the number of parameters that a
+function will receive is not known or
+can vary we can use rest parameters
+we can pass zero or more arguments to
+the rest parameters the compiler will
+create an array of arguments with the
+rest parameter name
+how to compile typescript with visual
+studio code
+visual studio code includes typescript
+language support but does not include
+the typescript compiler we need to
+install the typescript compiler either
+globally or in your workspace to
+transpile typescript source code to
+javascript the easiest way to install
+typescript is through node package
+manager
+the node.js package manager if you have
+npm installed you can install typescript
+globally on your computer by using this
+command npm install hyphen g type script
+we can test the installed typescript by
+checking the version or help
+for this run the command tsc
+hyphen hyphen version
+list access modifier supported by
+typescript typescript supports three
+access modifiers
+protected
+private
+and public in protected all class
+members can access them but the instance
+cannot but in private it's only
+accessible by members whereas in public
+it is accessible by members child
+classes and instance of the class
+list the disadvantages of typescript the
+typescript takes a long time to compile
+the code typescript does not support
+abstract classes
+and extra compilation step for
+converting typescript into javascript
+typescript has overly complicated typing
+system
+how to debug a typescript file
+to debug a typescript file a dot js
+source map file is needed to debug the
+file
+compile the dot ts file with the source
+map flag for generating source map file
+use the command
+type script tsc space hyphen source map
+file dot ts source mapping url is equal
+to file.js.map
+how can we convert a string to a number
+with typescript in typescript conversion
+from a string to a number can be done
+using the following commands parse int
+method
+and we have parse float method
+and number method
+explain type aliases
+type aliases give a type a new name type
+aliases are similar to interfaces in
+that they can be used to name primitives
+unions tuples and any other kinds that
+you would have to define by hand
+otherwise
+alyasing doesn't truly create a new type
+instead it gives that type a new name
+aliasing a primitive isn't very useful
+however it can be used for documentation
+purposes type aliases like interfaces
+can be in general
+all we have to do is add type parameters
+and utilize them on the right side of
+alias declaration below is the syntax
+for type aliases
+what are nullable types in typescript
+null and undefined are the two special
+types in typescript that have the values
+null and undefined respectively they are
+not particularly useful much like void
+null and undefined are subclasses of all
+other types by default
+that means you can give things like
+number null and undefined values
+when the strict null checks flag is said
+however null and undefined can only be
+assigned to unknown
+any and their respective types the one
+exception being that undefined is also
+assignable to want this helps to avoid a
+lot of frequent errors you can use the
+union type string null undefined if you
+want to send in either a string null or
+undefined
+what is in operator in typescript
+the in operator serves as a type
+narrowing expression
+the true branch narrows to types that
+have been an optional or required
+property n and the false branch narrows
+to the types that have an optional or
+missing properties in for a n in x
+expression as shown in the example below
+where n is a string literal or string
+literal type
+and x is a union type explain index
+types in typescript
+using index types we can get the
+compiler to check code that utilizes the
+dynamic property names a typical
+javascript pattern for example is to
+select a subset of an object properties
+we may build and use this function in
+typescript using the index type query
+and indexed access operators
+in this example k of t the index type
+query operator for any type t key of t
+is the union of known public property
+names of t and t of k the indexed access
+operator is the second operator the type
+syntax reflects the expression syntax in
+this case t of k can be like index type
+queries be used in generic environment
+which is where it's truly potentially
+seen all you have to do now is make sure
+that the type variable k
+extends to k of t
+what are map types
+typescript has a feature called map
+types that allow you to define new types
+based on the existing ones
+the new type turns each property into
+the old type in the same way in a map
+type
+it's important to note that this syntax
+refers to a type rather than a member
+you can use an intersection type to add
+more numbers as you can see in the
+example it is the simplest map type and
+its parts are type keys and type flags
+where syntax is similar to the index
+signatures
+with 4 in the middle there are three
+sections in total
+the type variable k is assigned to each
+property one by one
+and the literal union of strings the
+name of properties to iterate over the
+stored in case
+and properties type as a result
+what is meant by contextual typing
+when there is a type on one side of the
+equation but not on the other the
+typescript compiler finds out the form
+we can omit typing on the right side as
+typescript can work it out automatically
+this increases the amount of work needed
+to type code
+distinguish between typescript and
+javascript typescript is an
+object-oriented programming language
+whereas javascript is a scripting
+language
+typescript supports static typing
+javascript does not support static
+typing
+in typescript error can be found and
+corrected during a compile time in
+javascript errors can be found only
+during runtime as it is an interpreted
+language
+there is support for
+es3 es4 5 and 6 in typescript
+whereas in javascript no support for
+compiling
+in typescript functions can have
+optional parameters whereas in
+javascript this is not possible
+in typescript converted into javascript
+code to be understandable for browsers
+javascript can be directly used in
+browsers
+typescript has proper build setup dot
+package manager is required for static
+type definitions no build setup is
+required in javascript
+what is jsx
+jsx is an xml like syntax that can be
+embed it is intended to be turned into
+legitimate javascript though the
+semantics of that transformation will
+vary depending on the implementation
+typescript allows you to embed jsx type
+verify it and compile it to javascript
+immediately jsx needs to be translated
+into a valid typescript we use the jsx
+file with the
+tsx extension
+define static typing
+static typing refers to a compiler
+having variables parameters and object
+members that are recognizable at the
+compilation type this helps in detecting
+early errors static typing as is an
+important concept
+static typing is when the compiler
+enforces that the values use the same
+type here's an example
+what is meant by type inference
+when you don't specify an explicit type
+for variable typescript can infer it
+type inference is the term for this this
+is normally done during the declaration
+when the variables or parameters are
+initialized
+typescript recognizes that the variable
+foo is a string even if we don't mention
+string as a type
+here is an example
+how to create objects in typescript
+objects are collection of keys and
+values that resemble a dictionary the
+keys must be one of a kind resemble rs
+and are sometimes referred to as
+associate arrays
+an object type in typescript refers to
+any value with properties it can be
+defined simply by specifying the
+properties and the kinds of these
+properties
+as an example
+explain different data types in
+typescript
+number both integer and floating point
+numbers are represented by the data type
+number
+boolean has true and false values
+string it is used to denote a string of
+characters
+void is usually applied to function
+return types
+null it's used when an object isn't
+worth anything
+undefined indicates the value assigned
+to an uninitialized variable
+any any type of value can be assigned to
+a variable if declared with any data
+type
+what are the benefits of using
+typescript
+compilation javascript is an interpreted
+language
+thus there is no need to compile it as a
+result it must be run to ensure
+authenticity if there is an error you
+write all the code only to find no
+output as a result you will have to
+spend hours looking for faults in the
+code
+error checking is provided via the
+typescript transpiler if typescript
+detects any syntax mistakes it will
+compile the code and generate
+compilation error
+this aids in detecting errors before the
+execution of the script
+the next benefit is it provides an
+optional type system for javascript code
+when a client doesn't have a value for a
+parameter he can personal
+optional arguments are a feature of
+typescript
+you can declare some optional arguments
+in the function by utilizing optional
+parameter features so the decline does
+not need to supply a value to optional
+parameters
+strong static typing
+javascript does not have a powerful
+static typing system
+through the tls typescript comes with an
+optional static typing and type
+inference system the tls can deduce the
+type of variable defined with node type
+based on its value
+typescript supports object oriented
+programming
+typescript support classes interfaces
+inheritance and other object oriented
+programming principles
+typescript supports type definition
+existing javascript libraries can use
+typescript type definitions
+external javascript libraries are
+defined in typescript definition files
+as a result it can include these
+libraries in typescript code
+how to install typescript
+typescript is a javascript programming
+language for use in application
+typescript exchange javascript with
+optional types that support tools for
+large-scale javascript application in
+any browser or any host on any other
+operating system to install typescript
+globally with node package manager which
+means you can run the typescript command
+from anywhere in your terminal to
+install the latest stable version of
+typescript you just need to run the
+command npm install hyphen g space type
+script this will install the latest
+version of typescript
+what are decorators
+a decorator is a type of declaration
+that can be used to decorate the class
+declaration method accessor property or
+argument
+decorators take the form
+expression where expression must
+evaluate to a function
+that will be called with information
+about the decorated declaration when it
+is called at runtime
+what are mixins
+combining simple or particle classes is
+a popular approach of constructing
+classes from reusable components for
+languages like scala you may be familiar
+with the concept of mixins or
+characteristics
+to extend a base class the design relies
+on generics and class inheritance the
+finest mix in support
+in typescript is provided through the
+class expression pattern
+explain classes in typescript
+classes are not supported in javascript
+es5 or earlier this feature the
+typescript inherits from es6
+a class is a collection of items with
+similar characteristics fields methods
+constructor blocks
+nested classes and interfaces are all
+included in the classes
+below is the syntax to declare a class
+in terms of oops a class is a template
+for producing objects
+what is a namespace and how to declare
+it
+the namespace is used to group
+functionalities logically to enable a
+single or group of link functionalities
+a namespace can include interfaces
+classes functions and variables
+the namespace keyword followed by the
+namespace name can be used to construct
+the namespace curly brackets can be used
+to define all interfaces classes and
+other objects
+below is the syntax for namespace
+explain the components of typescript
+internally the typescript language is
+separated into three layers each of this
+layer is further subdivided into
+language compiler
+and language services
+language it is written in typescript and
+includes typescript language components
+it includes syntax keywords and type
+annotations
+compiler the typescript compiler
+converts typescript programs into
+javascript code it also converts our
+typescript code to javascript code
+parsing and type checking it
+it provides information that allows
+editors and other tools to deliver
+greater assistance capabilities like
+automated refactoring and intelligence
+it adds a layer of abstraction to the
+core compiler pipeline
+what are the recent advancements in
+typescript
+typescript 4.2 has been released and it
+includes more flexible type annotations
+tougher checks and additional
+configuration choices and a few breaking
+changes
+rest arguments can now be placed
+anywhere in triple type in type error
+messages type aliases are no longer
+enlarged resulting in a better developer
+experience
+typescript 4.2 brings the language one
+step closer to its aim of accurately
+typing javascript at any size anywhere
+javascript is used
+describe as syntax in typescript
+the as is an additional syntax in
+typescript for type assertion it was
+introduced as the original syntax
+conflicted with jsx
+while using jsx with typescript only as
+style assertions can be used
+define lambda function
+typescript provides shorthand syntax for
+defining function expressions a lambda
+function is an anonymous function
+without a name
+below is an example for lambda function
+what are conditional types in typescript
+based on a condition given as a type
+relationship test a conditional type
+chooses one of the two alternative types
+when t can be assigned to you the type
+is x and when t can't the type is y
+because the condition depends on one or
+more type variables a conditional type t
+extends to u
+x is to y and is either resolved to x or
+y or delayed whether to resolve to x or
+y or to differ when t or u contains type
+variables is determined by whether the
+type systems has enough information to
+conclude that t is always assignable to
+you
+what is an interface with reference to
+typescript
+the interface defines the syntax for
+classes to follow
+a class implementing an interface
+implements all its members
+it can be referenced but not
+instantiated typescript compiler uses an
+interface for type checking
+what is a declare keyword in typescript
+as javascript does not have typescript
+declaration to use it in the typescript
+file without any compilation error
+declare keyword is used
+the keyword is used for ambient methods
+and declarations to define a variable
+that exist elsewhere
+now we will look at advanced level
+interview questions
+what are object oriented principles
+supported by typescript
+all object-oriented principles
+encapsulation inheritance polymorphism
+and obstruction are supported by
+typescript
+encapsulation is a major component of
+object-oriented programming language and
+its method of structuring code so that
+each block of code has its own set of
+access points for external code
+polymorphism occurs when many class
+inherit from the same parent and
+overwrite the same functionality
+each of those kit classes is now
+responsible for implementing a property
+or method but they may do so it on their
+own unique way
+inheritance
+typescript makes creating an object
+model and inheritance chain a breeze to
+construct classes
+simply use the standard class keyword
+abstraction is a method of modeling
+objects in a system that separates the
+responsibilities of the classes or type
+from the code that inherits it
+explain index signatures in typescript
+index signatures interact with the key
+off and t of k
+the type of an index signature argument
+must be either a string or a number
+if your type has a string index
+signature key of t will be a string
+or a number because in javascript we can
+access an object property using either
+string or numbers and t of string is
+simply the index signatures type
+the index signature consists of the
+index name and its type in square
+bracket
+followed by colon and the value type
+what are assert signatures
+the asset signature features allows us
+to construct functions that operate as
+type guards as a side effect instead of
+returning their boolean result
+explicitly
+after a search string typescript has no
+way of knowing if you have guaranteed
+the type of input to prevent this most
+people just make the parameter input
+string which is fine
+but it also moves the type of checking
+problem somewhere and in circumstances
+where you just want to fail hard having
+the option is beneficial
+what is type assertion explain its types
+a type assertion is similar to a type
+cast in other languages but it does not
+do any additional data verification or
+restructuring it has no effect on
+runtime and is only used by the compiler
+there are two types of assertions
+one is the as syntax other is the angle
+bracket syntax
+below is the example for asyntex and
+angle bracket syntax
+explain how typescript files can be
+supported from node modules
+typescript includes a series of
+declaration files however there are two
+drawbacks to using this declaration
+files with typescript
+one is while upgrading typescript we
+must deal with changes to typescript's
+built-in declaration files
+and the other is customizing these files
+to meet the needs and the demands of
+project dependencies is difficult
+a new feature like at the rate types was
+added that allows to override the
+specific built-in library then we can
+update typescript and the log file in
+dependency management ensuring that it
+utilizes the same version of the dom
+types as a result we can update the
+types on our own schedule
+explain the typescript generics
+typescript generics is a tool for
+creating reusable components in
+typescript it builds a component that
+can interact with various data kinds it
+enables users to consume these
+components while also using their own
+kinds
+the identity function now has a type
+variable called type
+this type allows us to capture the type
+of data the user supplies for example a
+number or a string so that we can use it
+later we are going to utilize type as
+the return type once more below is the
+syntax for typescript generics
+what is recursive type aliases
+the ability to recursively reference
+type aliases has always been eliminated
+the reason for this is because each type
+aliases must be capable of substituting
+itself for whatever it aliases
+interfaces can be recursive but their
+expressiveness is limited and type
+aliases cannot
+that involves combining the two creating
+a type aliases and extracting the types
+recursive portions into interfaces it's
+effective
+typescript has no trouble working with
+the interfaces and the other object
+types because they introduce a level of
+indirection and their whole structure
+does not need to be eagerly built up
+explain tale recursion elimination on
+conditional types
+when typescript identifies infinite
+recursion or any type expansions that
+take a long time and damage your editor
+experience
+as a result typescript includes
+heuristics to ensure that it doesn't run
+off the tracks while working with types
+that provide a lot of intermediate
+results
+the trim left type removes spaces from
+the beginning of string like type when
+provided a string type with a space at
+the beginning trim left returns a
+reminder of the string to the user
+advance type script removes tail
+recursion from conditional types it can
+prevent
+intermediary instantiations as one
+branch of conditional type is merely
+another conditional type
+explain the awaited type and promise
+improvements this type is intended to
+represent activities such as await in
+async functions
+and the dot then method on promises
+notably the way they recursively unwrap
+promises
+existing apis such as javascript
+built-ins like promise.all promise.trace
+and others can benefit from the awaited
+type in fact some of promise dot all's
+inference concerns provided as
+foundation for awaited promise dot all
+combine certain traits with the awaited
+to produce far superior inference
+results
+so with that we have reached the end of
+this video thank you so much for being
+here keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

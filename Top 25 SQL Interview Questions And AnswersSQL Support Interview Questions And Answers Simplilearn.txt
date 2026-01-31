@@ -1,0 +1,359 @@
+hey everyone welcome to Simply learn
+today we will learn the SQL interview
+questions and answers that said if these
+are the type of videos you'd like to
+watch then hit that subscribe button and
+the bell icon to get notified just for a
+quick info if you want to upscale
+yourself master data science and
+analytics skills and land your dream job
+or grow in your career then you must
+explore simply learns goad of various
+data science and analytics programs
+simply learn offers various
+certification and postgraduate programs
+in collaboration with some of the
+world's leading universities like
+Caltech Purdue IIT conour and many more
+through our courses you will gain
+knowledge and work ready expertise in
+skills like Advanced Excel Advanced
+python machine learning data
+visualization generative Ai and over a
+dozen of other skills that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts working on top TI data
+and product companies and academicians
+from top universities after completing
+these courses thousands of Learners have
+transitioned into a data science or data
+analytics rule as a fresher or moved on
+to a higher paying job and profile if
+you are passionate about making your
+career in this field then make sure to
+check out the link in the pinned comment
+and description box below to find a data
+science and data analytics program that
+fits your experience and areas of
+interests now without further delay
+let's get started with the first
+question in the docket so the first
+question is what is SQL and what is the
+order of SQL query execution so the
+answer for this question is SQL or
+structured query language is a
+programming language designed design for
+managing and manipulating relational
+databases it is used to perform
+operations like querying data updating
+data inserting data and deleting data
+from a
+database and the correct order of
+execution of a SQL query is as follows
+it starts a SQL query execution starting
+from the from Clause followed by that
+the we Clause then Group by having
+select order by and limit now with that
+let's move ahead to the second question
+what is the difference between SQL and
+no SQL databases the answer is SQL
+databases are relational databases that
+use a structured schema and are suitable
+for complex query intensive transactions
+no SQL databases are non-relational and
+are suitable for large amounts of
+unstructured data and real-time
+applications now moving ahead we have
+the third question explain the
+difference between inner joint and left
+joint the answer for this question is
+inner joint returns only the row where
+there is a match in both tables where
+left joint returns all rows from the
+left table and the Matched rows from the
+right table if there is no match null
+values are return for columns from the
+right table now let's move ahead into
+the fourth question what is
+normalization and
+denormalization the answer is
+normalization is the process of
+organizing data in a database to reduce
+redundancy and improve data Integrity
+denormalization on the other hand is the
+process of combining tables to minimize
+the number of joins for query
+optimization now the fifth question
+explain the asset properties in the
+context of a database asset stands for
+automac consistency isolation and
+durability these properties ensure that
+database transactions are processed
+reliably automac City ensures that the
+transaction is treated as a single
+indivisible unit consistency ensures
+that a transaction brings the database
+from one valid state to another
+isolation ensures that concurrent
+execution of transactions does not
+interfere with other and and durability
+ensures that once a transaction is
+committed it remains committed even in
+case of a system failure now moving
+ahead we have sixth question what is the
+difference between group buy and having
+Clauses the answer for this question is
+Group by is used to arrange identical
+data into groups typically to perform
+aggregation functions on each group
+whereas on the other hand having is used
+in in combination with group y to filter
+the results based on a condition applied
+to grouped data now 7th question explain
+the difference between union and Union
+all the answer for this question is
+Union combines the results of two select
+statements removing duplicate rules
+while Union all combines the results
+including duplicates now the eth
+question what is a subquery the answer
+for this question is a subquery is a
+query nested within another query it can
+be used to retrieve data that will be
+used by the main query as a condition to
+further restrict the data to be
+retrieved now the ninth question how can
+you prevent SQL injection in your
+queries the answer is SQL injection can
+be prevented by the following steps to
+prevent SQL injection use parameterized
+queries or prepared statements
+these methods ensure that user input is
+treated as data and not as an executable
+code now 10th question explain the
+difference between a primary key and a
+foreign key the answer is a primary key
+uniquely identifies each record in a
+table and must be unique and not null a
+foreign key is a field in a table that
+is a primary key in another table
+establish lishing a link between the two
+tables now the 11th question what is the
+difference between a wear clause and a
+having Clause the answer for this
+question is the wear Clause is used to
+filter rows before they are grouped and
+aggregated whereas the having Clause is
+used to filter the results of aggregate
+functions applied to grouped rows now
+the 12th question explain the concept of
+indexing in databases the answer is
+indexing is a database feature that
+improves the speed of data retrieval
+operations on a database table by
+creating a data structure also known as
+an index on one or more Columns of the
+table indexing allows the database
+engine to quickly locate and access the
+rules that satisfy a query now the 13th
+question what is a stored procedure the
+answer is a stored procedure is a precom
+filed collection of one or more SQL
+statements that can be executed as a
+single unit it is stored in the database
+and can be called and executed by
+another program or another procedure now
+the 14th question how can you find the
+second highest or nth highest salary
+from a table the answer is you can use
+order buy and limit Clauses to find the
+second highest salary for example select
+salary from employees order by salary
+descending limit one or offset one in
+case if you wanted the nth highest
+salary then provide offset n let's say
+if you wanted to get the fifth highest
+salary then provide offset five now
+moving ahead we will discuss the 15th
+question explain the difference between
+a primary key and a unique key the
+answer is both primary key and unique
+key enforce the uniqueness of values in
+a column but a table can have only one
+primary key whereas it can have multiple
+unique Keys moving ahead we have the
+16th question what is a view in SQL the
+answer is a view is a virtual table
+based on the result of a select query it
+does not store the data itself but
+provides a way to represent the data
+stored in one or more tables in a
+specific way now 17th question what is
+the purpose of SQL case statement the
+answer is the case statement is used to
+perform conditional logic in SQL queries
+it allows you to perform different
+actions based on different conditions
+now 18th question how can you update
+data in a table using SQL the answer is
+the update statement is used to modify
+the the existing records in a table for
+example update employees set salary is
+equals to 50,000 where department is
+equals to ID so you are giving an update
+command to table name employees and you
+want to set salary equals to 50,000
+where department or Department column is
+equals to the value it now 19th question
+explain the difference between a
+clustered index and a non-clustered
+index answer a clustered index
+determines the physical order of data
+rows in a table and a table can have
+only one clustered index a non-clustered
+index does not affect the physical order
+of the rows and can be created on
+columns other than the primary key now
+moving ahead we have the 20th question
+what is the purpose of SQL join Clause
+the answer is the join Clause is used to
+combine rows from two or more tables
+based on a related column between them
+there are various types of joins
+including inner join left join right
+join and full join each serving a
+different purpose in combining data from
+multiple tables now moving ahead we have
+another five questions from SQL
+interview questions and answers these
+five questions will be based on query so
+the interviewer might ask you or might
+give you a realtime situation where you
+might have to extract the required
+results using a SQL query so the
+following questions are 21st write a
+sequal query to retrieve the total
+number of rows in a table the answer for
+this question is Select count Star as
+total rowes from your table name so here
+you are trying to select
+the count function and star indicates
+select all the rows in your particular
+table and name the result as total rows
+from the given table let's say your
+given table is department so select
+count Star as total Row from department
+now moving ahead 22nd question write a
+SQL query to find the average salary of
+employees in a specific department so
+here a specific spe ific Department from
+an employee data table will be provided
+to you and that particular department is
+to be selected and you need to find the
+average salary of all the employees
+present in that particular department
+for example someone might get 50,000
+someone might get 100,000 right so the
+average salary of employees is 75,000
+here so you need to find out the average
+salary number so the answer for this
+question is Select
+average of salary as average salary from
+employees where department is equals to
+the given Department let's say the
+interviewer asked you to find out the
+average salary from testing department
+so you are going to write select average
+of salary and name the result as average
+salary from employees data table where
+department is equals to testing and
+remember the testing word should be
+includ included in single codes because
+it is character data type so you can
+either add that particular text in
+between single codes or double codes so
+remember whenever you are using text
+based data try to include it in single
+codes or double codes now moving ahead
+we have next question write a SQL query
+to display the top five highest paid
+employees from a table so here the
+question might be the fifth highest or
+get all five top highest understand the
+question properly and write the answer
+so the answer for this question is
+Select employee ID employee name salary
+from employees data table order by
+salary in descending order limit five so
+in this particular situation the
+salaries are or the data will be
+organized in descending order that is
+highest salary first second highest
+third highest fourth highest and fifth
+highest so entire data will be printed
+but you are trying to limit the values
+or the result to only five rows using
+the limit query so here select employee
+ID employee name salary from employees
+data table order by salary descending
+order limit five is the answer now 24th
+question write a SQL query to update the
+salary of all employees by a 10%
+increase
+so here you are trying to update a
+particular column which is the salary
+column so you want to increase the
+salary of each and every employee by 10%
+right so in that situation you might
+want to multiply the salary number with
+another number which is 1.1 which is
+also in terms of 10% increase so the
+answer for this question is update
+employees table set
+salary column is equals to existing
+salary value into number 1.1 this should
+do the job now the last question in our
+list for today write a SQL query to find
+the second most common value in a column
+the answer for this question is set your
+column from your table Group by your
+colum order by count descending limit
+one offset one these questions test your
+ability to construct SQL queries from
+common tasks including data retrieval
+aggregation updating records and working
+with ordering and limiting results
+practice writing and understanding these
+type of queries to enhance your SQL
+skills and with that we have come to the
+end of this session on SQL interview
+questions should you need any assistance
+PPT and other resources used in this
+session please let us know in the
+comment section below and our team of
+experts we'll be happy to help you as
+soon as possible until next time thank
+you for watching and stay tuned for more
+from Simply learn staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

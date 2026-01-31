@@ -1,0 +1,1059 @@
+hello everyone welcome to yet another
+informative video from Simply learn in
+today's competitive job market having a
+solid understanding of SQL or structured
+query language is essential especially
+if you're aiming for roles that involve
+handling data SQL is a standard language
+used to manage and analyze data in
+various Industries it not only allows
+you to efficiently work with large data
+sets but also ows you to derive valuable
+insights crucial for making informed
+business decisions as businesses
+increasingly prioritize datadriven
+strategies the demand for SQL
+proficiency continues to rise in this
+video we have covered from beginners to
+advanced level questions that you can
+definitely expect in your SQL interview
+ensuring you're well equipped to succeed
+in your career craving a career upgrade
+subscribe like and comment
+below dive into the link in the descript
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back and if you want to become a SQL
+certified so here is a quick info for
+you try SQL certification course by
+simply learn this SQL certification
+course gives you all the information you
+need to successfully start working with
+SQL databases and make use of the
+database in your applications learn how
+to correctly structure your database
+author efficient SQL statements and
+clauses and manage your SQL database for
+scalable growth the school is open to
+anyone interested in learning SQL no
+prior experience in programming on
+databases is required is ideal for
+beginners and those looking to enhance
+their database management skills check
+out the course link from the description
+box and pin comments so without further
+Ado let's get started so let's start
+with the first question what is SQL SQL
+stands for structured query language
+it's a programming language used to
+manage and manipulate databases with SQL
+you can query update insert and delete
+data in a database imagine it as a
+librarian who knows where every book in
+a library is when you need information
+you ask the librarian and they fetch it
+for you similarly with SQL you write
+queries to get the data you need from a
+database for example to find all the
+customers in a database who live in New
+York you would write select star from
+customers where City is equal to New
+York now this is a query so this command
+tells the database to find all the
+records in the customer table where the
+city is New York SLE is essential
+because it provides a consistent way to
+interact with relational databases which
+store data in structured tables now the
+second question is what is a database
+now a database is an organized
+collection of data stor electronically
+think of it as a digital filing cabinet
+where you can store and retrieve inform
+information quickly managed by database
+Management systems or dbms databases
+allow you to use SQL to interact with
+data for example an online bookstore
+uses a database to keep track of books
+authors customers and orders so tables
+like books customers and orders stored
+all the necessary information secet
+queries help the bookstore to find in
+stock books top customers a total sales
+easily now let's move on to the next
+question what is ddl or data definition
+language so ddl primarily stands for
+data definition language which is a
+subset of SQL that deals with the
+management of database structures it
+includes commands for defining and
+modifying the structure of database
+objects such as tables indexes and
+constraints now here are some key ddl
+commands create which is used to create
+new databased objects like tables
+indexes or views the second one is Alter
+which modifies existing database objects
+such as adding deleting or modifying
+columns in a table next we have drop
+which deletes an entire database object
+such as a table or index so ddl commands
+are crucial for database administrators
+and developers to manage the structure
+of databases effectively they allow for
+the creation modification and deletion
+of database objects ensuring the
+database remains organized and optimized
+for data storage and
+retrieval now let's move on to the next
+question which is what do you mean by
+DML or data manipulation
+language so data manipulation language
+is a subset of SQL used for managing
+data within database objects so unlike
+data definition language which focuses
+on defining database structures DML
+deals with retrieving inserting updating
+and deleting data stored in the database
+tables so here are some key DML commands
+the first one is Select which retrieves
+data from one or more tables based on
+specified criteria next you have insert
+which adds new rows of data into a table
+then you have update which modifies
+existing data in a table and at last you
+have delete which removes rows of data
+from a table so DML commands are
+essential for applications to interact
+with and manipulate the data stored in
+databases they allow users to perform
+tasks such as querying for specific
+information adding new records updating
+existing ones and deleting unnecessary
+data now let's see what the fifth
+question
+is what do you mean by a foreign key so
+forign key in the context of databases
+is a column or a set of columns that
+establishes a link between two tables in
+a relational database so it represents a
+relationship between two tables where a
+value in the for and key column of one
+table matches a primary key value in
+another table so this relationship helps
+enforce referential Integrity between
+the table tables ensuring that every
+forign key value points to an existing
+primary key value in the reference table
+for example consider two tables orders
+and customers so the orders table may
+have a column named customer ID which is
+a for in key referencing the customer ID
+column in the customers table this forq
+relationship ensures that every customer
+ID in the orders table corresponds to
+valid customer ID in the customer's
+table thereby maintaining consistency
+and integrity of the data so now let's
+move on to the next question what are
+table and field so in the context of
+databases a table is a fundamental
+structure in a relational datab base
+that organizes data into rows and
+columns each table represents a
+collection of relatable data entries
+table consists of columns and rows
+columns Define the types of data that
+can be stored in each field such as
+integers strings dates Etc tables are
+used to store and organize data in a
+structured manner facilitating efficient
+data retrieval manipulation and
+storage now a field also referred to as
+a column is a vertical element within a
+table that represents a specific
+attribute a property of the data being
+stored each column in a table has a name
+and a data type that defines the kind of
+data it can hold such as numbers text
+dates or binary data fields are the
+building blocks of tables and Define the
+structure of the data stored within the
+table for example consider students
+table so in this example student ID
+first name last name date of birth and
+grade are Fields or columns within the
+students table each storing specific
+information about each student record
+tables and fields are fundamental
+concepts and relational databases
+allowing for efficient organization
+storage and retrieval of structured data
+now moving on to the seventh question
+what is
+normalization so normalization is a
+process of organizing data in a database
+efficiently to reduce redundancy and
+depend deny it involves breaking down
+large tables into smaller related tables
+and defining relationships between them
+now the main goal of normalization are
+to minimize data redundancy ensure data
+consistency and improve data Integrity
+so in simpler terms normalization helps
+to structure data in such a way that
+avoids storing the same information
+multiple times and reduces the
+likelihood of errors or inconsistencies
+in the database so typically involves
+dividing large tables into smaller ones
+and establishing relationship between
+them using keys like primary key and
+foring keys to ensure data is stored
+logically and efficiently now what is a
+query so query is a command used to
+retrieve update or manipulate data
+stored in a database it's written in a
+query language like SQL and specifies a
+criteria for selecting or modifying data
+according to the user's needs for
+example a simple query might retrieve
+all records from a table while more
+complex queries can filter data based on
+specific conditions or perform
+calculations queries are essential for
+interacting with databases and
+retrieving meaningful information
+efficiently now let's move on to the
+ninth question which is what are the
+different operators available in SQL SQL
+operators are special symbols or
+keywords used to perform operations on
+data they can be categorized into
+several types let's go through them with
+examples the first one is arithmetic
+operators which perform mathematic
+operations like addition subtraction
+multiplication and division then you
+have have comparison operators which
+compare two values and return a Boolean
+result which is equal not equal greater
+than less than and so on then you have
+logical operators which combine multiple
+conditions such as and or or not then
+you have bitse operators which perform
+bit level operations like bitwise and
+bitwise or Etc then you have set
+operators which Combine results of two
+quedes like Union Union all intersect
+and accept and then you have other
+operators like between in isal
+ETC so these were the operators in SQL
+now the 10th question is what are user
+defined functions in SQL so user defined
+functions or udfs in SQL or custom
+functions created by users to perform
+specific tasks unlike built-in SQL
+functions udfs are tailored to meet
+particular requirements of your
+application or business logic they can
+be used to encapsulate complex
+calculations or repetitive tasks making
+your SQL code more modular and easier to
+maintain now there are two types of udfs
+which the first one is scalar functions
+so these functions return a single value
+such as an integer float or string then
+you have table valued functions these
+return a table which can be used like a
+regular table in SQL queries now the
+next question is what is an alas command
+in SQL so an alas in SQL is a temporary
+name given to a table or a column in a
+SQL query this helps to make your SQL is
+more readable and easier to understand
+so think of it as a nickname for a
+column or table that you use just for
+the duration of the query so here's how
+you can use alas with columns and tables
+column alas you use a column alas to
+rename a column in your quy result this
+is useful for making column names more
+readable or for when you want to rename
+columns in your output so the query you
+can give is select first name as first
+last name as last from employees so in
+this question first name is given the
+Alias first and last name is given the
+alas last so the result will show these
+aliases as the column headers now we
+have table aliases you use a table alas
+to rename a table in your query this is
+particularly useful in complex queries
+involving joints where it can help
+shorten the query and improve
+readability so for example you have this
+query so in this following query the
+employees is given the AL as e and
+department is given the AL as D this
+makes the query shorter and easier
+easier to follow so hope you understood
+this now let's move on to the next
+question which is what is ETL in SQL so
+ETL stands for extract transform and
+load so it's a process used in database
+management and data where housing to
+move data from one or more sources to
+the destination system usually a data
+warehouse or database where it can be
+used for analysis and Reporting let's
+break down each part of ETL first one is
+extract so this is the first step where
+data is extracted from various Source
+systems then you have transform so once
+the data is extracted it needs to be
+transformed to fit the structure and
+format of the destination system so this
+step can include cleaning the data
+aggregating it and Performing
+calculations or conversions and at last
+you have load which is a final step
+which is loading the transform data into
+the target database or data
+warehouse now the next question is how
+to copy tables in SQL so copying tables
+in SQL is a common task whether you are
+duplicating data for backup purposes
+testing or creating a new table based on
+an existing one there are a few methods
+to copy tables and I'll guide you
+through the most straightforward ones
+with examples so the select into
+statement is a simple way to copy the
+structure and data of a table into a new
+table so for example you can give this
+query so this command creates a new
+table called new table with the same
+structure and data as existing table now
+what are union minus and intersect
+command
+s so these commands are used to combine
+the results of two or more queries in
+different ways let's dive in and
+understand each of them with examples
+the first one is Union so the union
+command is used to combine the results
+of two or more select queries into a
+single result set it removes duplicate
+rows between the combined results so for
+example this query combines the first
+names from the employees table and the
+customer table into a single list
+removing any duplicates
+next we have minus so the minus command
+also known as accept command in some SQL
+dialects is used to return the results
+from the first query that are not
+present in the second query so for
+example this query returns first names
+that are in the employees table but not
+in the customer's table next you have
+intersect so the intersect command is
+used to return the common results from
+two or more select queries it includes
+only the rows that are present in all
+queries for example this query returns
+first names that are present in both the
+employees table and the customer's table
+now let's move on to the next question
+which is what is a SQL injection so SQL
+injection is a code injection technique
+that attackers use to exploit
+vulnerabilities in an application
+software by injecting malicious SQL code
+so this can allow attackers to read
+modify or even delete data in the
+database without proper authorization so
+SQL injection typically happens when an
+application takes user input and inserts
+it directly into an SQL query without
+proper validation of sanitization so
+let's look at an example to understand
+this better so imagine you're having a
+simple loging form where users enter
+their username and password the
+application might use a SQL query like
+this to check the credentials so if the
+application directly inserts user input
+into the query an attacker could input
+something like the second query so since
+one is equal to one is always true the
+query returns all ruls in the users
+table potentially giving the attacker
+access to the system without a valid
+password now what is Auto increment so
+Auto increment is a feature in SQL that
+automatically generates a unique number
+whenever the new record is inserted into
+a table so this is particularly useful
+for creating primary keys where each
+record needs a unique identifier so when
+you define a column with an
+autoincrement attribute the database
+automatically assigns a unique value to
+that column for each new row the value
+usually starts at one and increments by
+one for each subsequent row although you
+can customize a starting point and
+increment value so let's look at a
+simple example to understand how
+autoincrement works so imagine you are
+creating a table to store information
+about employees you want each employee
+to have a unique ID so in this example
+the employee ID column is a set to Auto
+increment this means that when you
+insert a new employees into the table
+you don't need to specify the employee
+ID value the database will handle it for
+you now the next question is what is the
+default constraint so the default
+constraint in SQL is used to provide a
+default value for a column when no value
+is specified during the insertion of a
+new record so this helps ensure that
+your table always has meaningful data
+even if some fields are left blank
+during data entry so when you define a
+column with the default constraint the
+database will automatically insert the
+specified default value if no other
+values provided for that column so let's
+look at an example to understand how the
+default constraint works so imagine
+you're creating a table to store
+information about products and you want
+to default stock quantity to be zero if
+not specified so in this example the
+stock quantity column is given a default
+constraint with a value of zero this
+means that if you insert a new product
+without specifying the stock quantity it
+will automatically be set to zero now
+let's move on to the next question what
+is the difference between the between
+and in operators in
+SQL so both between and in operators are
+used to filter query results based on
+certain conditions but they serve
+different purposes and are used in
+contexts let's break it down the between
+operator is used to filter the results
+set within a certain range it can be
+used with numbers text or dates the
+range specified includes both the start
+and end values so imagine you have a
+table called sales with a column sales
+amount you want to find all sales that
+are between1 and
+$500 so in this query between filters
+the results to include only those
+records where the sales amount is
+between 100 and 500
+inclusive so in operators used to filter
+the result set based on a list of
+specified values it allows users to
+specify multiple values in a wear clause
+for example let's say you have a
+customer table and you want to find
+customers who are from either New York
+Los Angeles or Chicago so in this query
+in filters the results to include only
+those records where the city is either
+New York Los Angeles or Chicago now
+let's move on to the 19th
+question what is the difference between
+a primary key and unique constraints so
+both primary key and unique constraints
+are used to ensure that data in a
+database remains unique but they have
+distinct characteristics and uses so
+let's explore each of them in detail so
+a primary key is a constraint that
+uniquely identifies each record in a
+table it's a column or a combination of
+columns that ensures all rows in the
+table are unique and not null then you
+have unique constraint so a unique
+constraint also ensures that all values
+in a column or a set of columns are
+unique however unlike a primary key a
+table can have multiple unique
+constraints and columns with unique
+constraints can contain null
+values now what is a join and SQL and
+what are the types of joints so a join
+and SQL is a way to combine rows from
+two or more tables based on a related
+column between them joins are used to
+fetch data from multiple tables and
+present it as a single result set so
+there are several types of joints each
+serving a specific purpose let's dive
+into the main type Ty of joints with
+examples inner joint so an inner joint
+returns only the rows where there is a
+match in both tables left outer joint so
+left join returns all rows from the left
+table and the match rows from the right
+table so if no matches found null values
+are returned for columns from the right
+table then you have right outer joint so
+right join ensures all rows from the
+right table and the match rows from the
+left table if no matches found null
+values are returned for columns from the
+left table and at last you have have
+full outer John so full John returns all
+rows when there is a match in either the
+left or right table so if there is no
+match null values are returned for
+colums where there is no
+match now the 21st question is what is
+that index so an index in a database is
+like a road map that helps quickly find
+specific information in a table so
+normally data is stored in a specific
+order on a disk making it efficient for
+sequential reading however when you need
+to find specific data quickly like
+searching for different values an index
+acts like a shortcut sot again to having
+a quick reference guide that allows
+database to pinpoint relevant data
+without scanning every single entry so
+this makes searches fast similar to how
+a binary search operates so although
+indexes require extra disk space and can
+slow down data rights they greatly
+enhance retrieval speed for commonly
+accessed data now what is the on delete
+Cascade constraint so an on delete
+cascate constraint in MySQL automates
+the deletion of related rows in a child
+table when corres responding rows in the
+parent table are deleted so this ensures
+that all dependent records in the child
+tables are removed without requiring
+manual deletion maintaining data
+integrity and simplifying database
+management now what is a cursor so a
+cursor in SQL is a temporary storage
+area allocated by database serving
+during DML operations like select insert
+update or delete so curses allow you to
+process each row in a result set
+individually making it useful for row by
+row data manipulation so you declare a
+cursor with a query open it to execute
+the query fet rows one at a time for
+processing and close the cursor when
+done to release
+resources so the next question is what
+are the various types of relationships
+in SQL so in SQL relationships between
+tables are crucial for organizing and
+structuring data here are the different
+types of relationships the first is one
+to one so each row in table a is linked
+to one and only one row in table B and
+vice versa so example a table of
+employees and a table of employee
+addresses where each employee has one
+unique
+address now the next one is one to many
+here each row in table a can be linked
+to multiple rows in table B but each row
+in table B is linked to only one row in
+table a for example a table of
+departments and a table of employees
+where each department has multiple
+employees but each employee Belongs to
+Only One department now the next one is
+many to one so it is a reverse of one to
+many where each Row in table B can be
+linked to multiple rows in table a so
+for example multiple employees can be
+linked to one department and the last
+one is many to many so each row in table
+a can belink to multiple rows in table B
+and each row in table B can be linked to
+multiple rows in tbling for example a
+table of students and a table of courses
+where each student can enroll in
+multiple courses and each course can
+have multiple students so this
+relationships s maintain data integrity
+and facilitate complex queries by
+properly structuring how tables interact
+with each other now the 25th question is
+what is the difference between SQL
+delete and SQL truncate commands so the
+delete and truncate commands in SQL are
+used to remove data from tables but they
+operate differently and have different
+implications SQL delete removes specific
+rows from a table based on a condition
+SQL trunade removes all rows from a
+table resetting the table to an empty
+State Now what is the difference between
+cluster and non-cluster
+index clustered index a clustered index
+reorders the way records are physically
+stored in a table based on the indexed
+columns there can only be one clustered
+index per table it organizes data rows
+in tables based on the indexed columns
+it changes the physical order of the
+table data to match the index order so
+typically it's used on columns that are
+frequently used for range queries
+example wear order byy Etc now a
+non-clustered index a non-clustered
+index does not change the physical order
+or the table draws and creates a
+separate structure for the fast data
+retrieval so multiple non-clustered
+indexes can exist on a single table does
+not affect the physical order of the
+table data it stores index entry
+separately from the actual data row so
+it is typically used for columns that
+are frequently used in join wear and
+order by Clauses now the next question
+is what is a live lock so live log
+happens when multiple processes are
+actively running but are stuck in a
+repetitive cycle of interaction so each
+process responds to changes initiated by
+others causing a loop where no
+meaningful progress is made so unlike a
+deadlock where processes are all waiting
+for resources in livelock processes
+remain active and continue to react to
+each other without achieving any
+productive outcome this can occer in
+concurrent systems where processes are
+trying to coordinate actions but end up
+in a state where their actions hinder
+each other's progress leading to a
+persistent Loop of
+interactions now the next question is
+name different types of case
+manipulation functions available in SQL
+so these are the three useful functions
+in SQL for manipulating the case of
+strings the first one is lower the lower
+function is used to convert a string
+into a lowercase letter it accepts a
+string as inputs and Returns the same
+string with all characters converted to
+lower case for example if you have a
+string hello world applying lower case
+it would result in a smaller case Hello
+World now next we have uppercase so
+conversely the uppercase function
+converts a string into uppercase letters
+it also takes a string as input and
+returns a string with all characters
+converted to uppercase and the last one
+is init cap the init cap function is
+used to capitalize the first letter of
+each word in a string while converting
+all other letters to lowercase so this
+function is Handy for formatting names
+or titles so these functions are helpful
+for standardizing Text data or
+formatting it according to specific
+requirements and SQL queries now the
+next question is what are local and
+Global variables so a local variables
+are declared within a specific scope
+such as within a function or a block of
+code so they exist only within that
+scope and cannot be accessed or modified
+from outside it so local variables are
+typically used to store temporary data
+or values that are only needed for a
+specific task or computation within that
+particular scope so once the scope of
+the function of block ends the local
+variables are usually destroyed or no
+longer accessible now the global
+variables on the other hand are declared
+outside of any specific function or
+block and can be accessed and modified
+from anywhere within the program or
+script the have a wider scope and pures
+throughout the entire execution of the
+program Global variables are useful for
+storing values that need to be accessed
+by multiple functions or parts of the
+code however excessive use of global
+variables can lead to potential issues
+like accidental overwriting of values or
+difficulty in debuging now coming to the
+30th question name the function which is
+used to remove spaces in the end of a
+string so SQL the trim functions used to
+remove spaces or other specified
+characters from the beginning and end of
+a string it helps clean up data by
+eliminating unnecessary white space that
+might affect the comparisons or display
+the Syntax for trim is straightforward
+you provide the string inside the
+parenthesis and SQL will trim any
+leading and trailing spaces for default
+now what is the difference between
+truncate and drop statements the
+truncate statement quickly removes all
+rows from a table it deletes data while
+keeping the table structure indexes and
+permissions intact now the drop
+statement completely removes a table
+from the database it deletes a table
+structure along with all its data
+indexes constraints and
+permissions now so Define SQL order by
+so AUD by arranges fetch datas based on
+specified columns defaulting to
+ascending order but by adding DEC
+command you can reverse the order for
+highest to lowest prices so it's a
+simple yet essential feature for
+organizing data exactly as needed in SQL
+queries now explain SQL having statement
+so the having clause in SQL is used to
+filter data based on condition for group
+results or aggregate functions used in
+select statement unlike the we clause
+which filters rows before grouping
+having filters rows after data has been
+grouped together this means you can use
+having to apply conditions to summarize
+data like finding groups with a total
+sum about a certain value or averages
+that meet specific criteria it's
+important to remember that aggregate
+functions like sum count average can
+only be used with having not with where
+this helps SQL manage and analyze data
+effectively whether you looking looking
+at individual rows or group results now
+the next question is explain SQL and or
+statement in SQL the and statement
+combines conditions where both must be
+true for a road to be
+included for example this query
+retrieves employees older than 25 who
+work in the IT department now the all
+statement is used but at least one
+condition must be true for instance this
+query retrieves products in either the
+electronics or clothing category both
+statements allow for flexible data fil
+ing based on specific criteria in SQL
+queries now let's move on to the next
+question which is why do we use commit
+and roll back commands we use commit and
+SQL to finalize and permanently save
+changes made by a transaction ensuring
+they're visible to other users or
+applications and roll back is used to
+undo changes if a transaction encounters
+an errored or needs to be cancelled
+reverting the database as previous date
+so these commands are essential for
+managing transactional integrity and
+ensuring data consistency in equal
+databases now let's see what the next
+question is what are asset properties so
+asset properties are a set of four
+essential characteristics that guarantee
+the reliability and consistency of
+transactions in a database system so the
+first one is atomicity it ensures that
+all operations within a transaction are
+treated as a single unit so either all
+operations are successfully completed or
+if any operation fails the entire
+transaction is rolled back to maintain
+data Integrity the second one is
+consistency ensures that only valid data
+is committed to the database
+transactions take the database from one
+valid state to another constraints
+triggers and validations are applied to
+ensure data consistency I stands for
+isolation it ensures that the execution
+of transactions concent does not
+interfere with each other each
+transaction is isolated from others
+until it completes preventing them from
+accessing uncommitted changes and the d
+stands for durability ensures that once
+a transaction is committed it changes up
+permanent and survive system failures
+the changes are stored in nonvolatile
+memory disk and remain intact even in
+case of power loss or system crash now
+the next question is are null values the
+same as zero or a blank space so no a
+null value in SQL are not the same as
+zero or a blank space so null represents
+a missing or unknown value in a database
+column it indicates that the value for
+that particular record is undefined or
+not applicable it is distinct from zero
+or an empty STP zero reprs a numerical
+value that is explicitly defined as a
+number zero it is a numeric value and
+not the same as null now blank space
+that I'm testing represents an absence
+of characters in a string field it is
+different from null which is
+specifically used to denote the absence
+of any value including numeric or other
+data types moving on to the next
+question what is the need for group
+functions in
+SQL in database Management Group
+functions also refer to as aggregate
+functions are used to process multiple
+rows of data together based on specific
+criteria resulting in a single
+meaningful value these functions operate
+across groups of rows rather than
+individual rules allowing for
+calculations and summaries at a higher
+level of abstraction so various group
+functions are the first one is Count
+function so it calculates the number of
+rows that meet the specified criteria
+such as counting the number of orders
+placed by customers the next one is some
+function it adds together the numeric
+values in column for all rows that meet
+the criteria like totaling the sales
+revenue for a specific period and then
+you have the average function which
+computes the average value of a numeric
+column across all selected rows useful
+for finding the average salary of
+employees the next you have Min function
+it retrieves the minimum value from a
+column for the selected rows such as
+finding the earliest date in a
+transaction history and then you have
+the max function which retrieves the
+maximum value from a column for the
+selected Row for example identifying the
+highest sales figure achieved in a month
+now the next question is is how can you
+fetch common records from two tables so
+when we have data spread across
+different tables in a database and want
+to retrieve information that relates
+across these tables we use the joint
+statement this SQL feature lets us
+specify which columns from each table we
+want to include in a query
+results now the next question is how do
+we avoid getting duplicate entries in a
+query without using the distinct keyword
+so when dealing with SQL queries the
+distinct keyword serves to filter out
+duplicate rows from the result set so
+while useful it can sometimes impact
+query performance because it requires
+the database engine to sort and compare
+the result set to eliminate duplicates
+so alternatively there are several
+methods to remove duplicates efficiently
+the first one is using row numbers so by
+assigning new row numbers to each row
+Partition by The Columns that Define
+uniqueness you can filter out duplicates
+by selecting rows where the row number
+is one the next is using self jooin so
+joining a table to itself based on a
+columns that Define uniqueness ows you
+to filter duplicate entries selecting
+only those rows where corresponding
+values match and then by using Group by
+so grouping rows based on columns that
+Define uniqueness in aggregating the
+results helps in eliminating duplicates
+as each groups represents a unique
+combination of values now the next
+question is what is the difference
+between a qualis and a null function so
+the qualis function Returns the first
+non-null expression from its arguments
+this means if you have multiple
+Expressions separated by commas this
+function will evaluate them in order and
+return the first Nal value if all
+expressions are null then the function
+return returns null now in SQL Server
+the isnull function serves a different
+purpose it replaces null values with a
+specified replacement value now the next
+question is what's the difference
+between rows and range so rows specifies
+the window frame based on a physical
+number of rows before and after the
+current row and the range defines the
+window frame based on rows with with the
+same values as a current row this is
+useful when your data is ordered by
+values that can have
+duplicates now the next question is what
+is a CTE also known as common table
+expression and how is it different from
+a SE query so Common Table expression or
+CTE is a temporary result set that you
+can reference within a select insert
+update or delete
+statement it is defined using the width
+clause and is easier to read and
+maintain compared to subqueries so
+unlike subqueries CTS can be self-
+referential and recursive which allows
+for more complex query moving on to the
+next question explain the difference
+between cross joint and full outer join
+so cross joint produces a cartisian
+product of two tables meaning each row
+from the first table is combined with
+each row from the second table and the
+full outter join returns all records
+when there is a match in either the left
+or right table it combines the results
+of both left join and right joint now as
+the 45th question we have what are
+windows functions so Windows function
+performs a calculation across a set of
+table rows related to current row unlike
+aggregate functions they do not cause
+rows to become grouped into a single
+output row common window functions
+include row number off rank off and
+dense rank off so this is how the query
+will look like now what is the
+difference between the rank of and dense
+rank of functions so a rank of function
+assigns ranks to rows within a partition
+with gaps in the ranking sequence when
+there are ties and the dense rank of
+assigns ranks to rows within a partition
+without gaps in the ranking sequence
+when there are ties how do you perform a
+recursive query in SQL recursive queries
+are performed using recursive CTS
+they're defined using the with clause
+and include a union all to combine the
+anchor member and the recursive member
+so this is how a recursive query looks
+like now as the next question we have
+write a query to find the top five
+customers with the highest total order
+amounts so this is your query now this
+SQL query selects the customer ID and
+calculates a sum of order amount for
+each customer from the orders table now
+it then groups the results by customer
+ID using group buy ensuring each
+customer's total order amount is
+aggregated the order by total order
+amount thec arranges these totals in
+descending order placing the customers
+with the highest order amounts at the
+top finally the limit five restricts the
+output to the top five customers with
+the highest total ordered amounts now
+how can you optimize a slow running
+query so there are several techniques
+including use appropriate indexes
+indexes help retrieve the data Faster by
+organizing it efficiently second avoid
+unnecessary joins and subqueries
+simplify queries to minimize the amount
+of data processed third use efficient
+functions and operators choose functions
+and operators that perform tasks with
+minimal overhead and then analyze
+execution plans review query execution
+plans to identify and address
+Performance bottlenecks
+effectively moving on to the last
+question what is a partitioned table and
+why would you use it so a partitioned
+table is a large table divided into
+smaller Moree manageable pieces called
+partitions so partitioning improves
+performance and manageability especially
+for large data sets by allowing queries
+to scan only relevant partitions rather
+than the entire table for example the
+SQL statement creates a table named
+sales with column sale ID of type int
+sale date of type date and amount of
+type decimal 102 it partitions the table
+sales based on a sale date column using
+range partitioning two partitions which
+is p 0 and P1 are
+defined so p 0 includes values less than
+20 22 0101 and P1 includes values less
+than 2023 0101 this setup allows data in
+the sales table to be divided into
+separate partitions based on the data
+ranges so there you have it as we
+conclude the video on SQL interview
+questions and answers we hope you found
+the insights and explanations valuable
+for your preparation mastering SQL is
+key to excelling in data related roles
+and understanding these common interview
+questions will boost your confidence
+during interviews if you found this
+video helpful please consider
+subscribing to our channel for more
+tutorials and tips on mastering SQL and
+advancing your career in data don't
+forget to like and share this video with
+others who might benefit from it thank
+you staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

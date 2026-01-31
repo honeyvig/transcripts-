@@ -1,0 +1,179 @@
+foreign
+models before the data is being
+transmitted it has to go between
+different protocol check at the
+transport layer
+this layer identifies any error or
+corrupted data that is being transmitted
+over the network channel
+hi guys and welcome to yet another
+interesting video by simply learn but
+before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to never miss an
+update from us
+now without further Ado let's take a
+look at the agenda for transport layer
+in the osm model
+to begin with we will look into what is
+an OSI model
+moving forward with what is the
+transport layer in the OSI model
+continuing with the functions available
+to the transport layer
+and lastly we will look into what is the
+TLs in transport layer
+now let's take a look what is nosr model
+The OSI model is a specifically designed
+set of protocols that govern
+communication channels through which
+network devices share input and data
+this task of sharing information is
+divided among seven layers of DSi model
+for micro level network communication
+now let's move on to the core topic for
+this session that is what is transport
+layer
+the transport layer is responsible for
+overseeing the data being transmitted
+and check there is no error in the data
+using different network protocols for
+example UDP and TCP
+then these data segments are shared over
+the connection and non-connection
+Network Services
+it also identifies suitable
+Communication channel for the data
+now let's move on to the next heading
+that is the functions of Transport layer
+before we begin with the actual
+functions of the transport layer let's
+take a look at the data flow that occurs
+between the multiple layers of the SM
+model and the transport layer
+to begin with the session layer
+will share data packets over to the
+transport layer where it will be checked
+for various errors
+or corruption in the data received
+it is then transmitted into smaller
+units over to the next layer
+in between this multiple Protocols are
+applied in the transport layer for
+example TCP UDP a CTP
+and then these data segments are shared
+over to the bottom layer
+now let's take a look at the functions
+available for the transport layer
+the first is process to process delivery
+multiplexing and deep multiplexing
+congestion control
+flow control and lastly error control
+let's move on with each of them in
+detail
+the first is process to process delivery
+function in this function it is one of
+the main tasks of the transport layer
+that is designed to effectively deliver
+data segments to the correct process
+among all the working application over
+the sender site
+this task applies a 16-bit port number
+to identify the sender destination
+application correctly to transmit data
+over the network channel
+now let's move on to the next function
+that is multiplexing and demultiplexing
+the first term is multiplexing it is
+also one of the core tasks of Transport
+layer to allow simultaneous use of
+multiple networks over the sender side
+and this is known as multiplexing
+whereas
+demultiplexing is executed at the
+receiver end to obtain data from
+multiple senders application
+now let's move on to the next function
+that is
+congestion control
+this function is used to handle traffic
+of data in the network model which
+arises due to access data being
+transmitted over the network channel
+the congestion control of data is
+handled in two parts
+the first is open loop control which is
+applied to stop congestion condition in
+the network channel
+whereas the second control is known as
+closed loop control
+that is applied to eradicate the
+congestion situation in the network
+model
+now let's move on to the next function
+in the transport layer
+the next function is known as flow
+control
+the transport layer performs flow
+Management Services in the TCP Network
+model in a communication Channel
+this channel applies the sliding window
+protocol principle
+to handle the data flow in the network
+model
+to know more about the sliding window
+protocol principle you can watch our
+previous videos
+now let's move on to the last function
+of the transport layer
+the last function of the transport layer
+is known as error control
+the transport layer also checks errors
+in the information received from the
+upper layer in the osm model
+error detection is performed using the
+checksum method or error detecting codes
+to check corrupted data
+acknowledgment and no acknowledgment
+services are used to inform sender if
+the receiver has received corrupted or
+dams data through the network channel
+with this we have cleared all the
+functions related to the transport layer
+now let's move on to the last setting
+for the session
+that is what is TLS
+TLS stands for transport layer
+Securities the TLs service is
+responsible for providing enhanced
+security to the transport layer in the
+network model
+to ensure that the external services do
+not affect the data being handled in the
+transport layer TLS performs a main role
+let's take a look at some of the TLs
+services in the transport layer
+where the first is known as encryption
+which performs encryption procedures for
+sensitive data being handled in the
+layer
+next is hidden many of the TLs services
+are invisible to the client side and are
+only available to the transport layer
+for being used in data
+compatibility most TLS services are
+available for multiple web browser and
+are compatible with multiple devices
+with this we have created all the points
+regarding the transport layer in the SM
+model
+if you have any questions regarding the
+topic you can ask them in the comment
+section
+thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

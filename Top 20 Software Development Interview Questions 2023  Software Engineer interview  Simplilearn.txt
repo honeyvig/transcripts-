@@ -1,0 +1,1493 @@
+foreign
+ER in the software industry do you wish
+to crack the most brain teasing data
+structures and algorithm questions to
+land in your dream company as a software
+developer then you're at the right place
+this top 10 data structures and
+algorithm based interview questions are
+asked most frequently in major MNS this
+quick session on data structures and
+algorithm questions will keep you on a
+safer side while attending the
+interviews of your dream company data
+structures and algorithm questions play
+a vital role in every software
+development interview they have become
+essential to crack by every software
+engineer to get hired by the top tech
+companies like Accenture TCS Infosys
+Amazon and many more before getting
+started let me know which is your dream
+company you can let me know in the
+comment section below hey guys welcome
+to Simply learn today we'll be learning
+the top 10 DSA interview questions and
+answers and while we are at it please
+leave us a like if you find our content
+helpful and a sub to the channel would
+be appreciated so without any further
+delay let's get started
+and the top 10 question is
+consider a text file interrupted by a
+perk and all the text has been reversed
+due to this bug so which data structure
+would you choose to implement a program
+to revert the text file to its original
+the solution is stack data structure
+let's look at the problem we must read
+an insisting element by element in
+reverse order sounds something like last
+to first as we all know stack follows
+first in last or principle in order to
+reverse a string we must create an empty
+stack to push all the string characters
+one by one
+and then what about the character one
+after the another
+so once performing the pop operations on
+a string all the string characters would
+be reversed and form into the original
+string now let's try to implement the
+program using stack data structure so as
+you can see here we have a reverse
+function which is declared and
+going to the function here we have a
+structure of Stack where we have top
+sides and array variables and we have a
+function called structure creation sorry
+stack creation
+so first we are allocating memory to a
+stack using mlog function and this size
+is assigned to stack of size and
+initially stack of top is equal to -1
+and then allocating memory to the stack
+of array
+then coming to is full function where it
+checks whether the stack is full so if
+we'll return stack of top is equal to
+stack of size -1 and checking if the
+stack is empty that is is empty written
+stack of top is equal to -1 and then
+coming to the push function which is
+used to insert the item into this stack
+so it checks if is full if the stack is
+full in return where the item is
+assigned to stack of top
+and pop to delete the item from a stack
+so it checks it is empty then written
+intimate as written stack of array that
+is of stack of top minus minus that
+means stack is empty is decrementing a
+top by -1 and then coming to the reverse
+function here we have string length of
+string which is assigned to n
+and then calling this stack creation
+function to create an empty stack and
+from I is equal to 0 to n push all the
+Stacked or whatever is there in this
+string of I is pushed to the stack and
+for I is equal to 0 to I less than n Pop
+All the
+items to back to the string of I and
+then coming to the main function here we
+have a reverse string
+and here
+we are reversing a string so we are
+calling the reverse function which is
+this and it tries to reverse this string
+and get back to its original form
+so it prints the reverse string
+so let's try to execute it
+so as you can see here reverse string is
+simply learn
+the top ninth question is
+consider you have been assigned a task a
+task in which you are given an array of
+numbers to be arranged in ascending
+order so with sorting algorithm would
+you choose to place the numbers most
+efficiently
+and the solution is quick sort algorithm
+quicksort algorithm helps research the
+information faster than any other
+sorting algorithm it is widely used to
+sort the elements faster also memory
+storage is utilized efficiently since no
+additional storage is required if the
+array size is small then the quick sort
+algorithm Works faster to sort the
+elements
+so now let's consider array of elements
+3 5 2 4 and 1 and let the pivot element
+be 3.
+so
+why are we taking pivot as a 3 because
+the left hand side element is greater
+than the right hand side element so if
+the right cell element is lesser than
+the pivot element
+then swap out the elements
+next comparing the next left element
+with a pivot element and it checks
+whether 5 is lesser than the element 3.
+so if it's lesser than it will swipe
+with each other
+similarly comparing the next element to
+and since 2 is less than 5 it will
+remain in the same position next
+comparing the element 4 width 5. again 4
+is lesser than 5 so it will remain in
+the same position so now as you can see
+the left hand side elements are not at
+the proper position so considering the
+left hand side elements
+we will swap the elements so here it
+combines 1 and 2. since 1 is less than 2
+it will remain in the same position
+next compare 3 and 2 here 3 is greater
+than 2 so it will swap out the elements
+now let's have a look at the program
+implementation so here as you can see we
+have a quick sort algorithm function
+declaration and then going to quick sort
+algorithm function here we have array of
+size 24
+into left and in to right so
+initializing the variables i j p and
+temp so if left is lesser than right
+then assign the left element to P that
+is Pivot element and
+assign all the left element to I and
+right element with J so while I lesser
+than J while array of I lesser is equal
+to array of p and I less than right then
+increment I by 1. while array of J is
+greater than array of P then decrement J
+by 1. so if I is lesser than J then we
+are doing swap so we are swapping the
+elements that means array of I is given
+to the temp variable and whatever is
+there in Array of J is assigned to array
+of I and the temp variable is assigned
+to array of J and then changing the p
+that means the array of p is assigned
+are stored in temp variable and whatever
+is there in Array of J is given to RFP
+and whatever is then temp is given to
+array of J and then calling the quick
+sort algorithm
+so coming to the main function here we
+have I count and array of size 25.
+so it's first asking to enter the number
+of elements so suppose we want to enter
+five elements to arrange in the
+ascending order then enter 5. so once
+you enter 5 it will ask to enter one
+element by element
+so from 0 to count it will last one by
+one
+so then we are calling the quicksort
+algorithm to sort the elements
+and then it will print sorted elements
+from I is equal to 0 to I less than
+count and will sort the elements one by
+one so let's execute the program
+so here enter the number of elements so
+let's enter 5
+and enter the elements one by one five
+so we have 2 5 6 3 and 1.
+so the elements are sorted 1 2 5 6 and
+31. our eighth question is
+you are given a list of numbers to find
+the minimum and maximum numbers
+Implement a c program using the
+appropriate type of data structure
+and the solution is array data structure
+the array data structure is used to
+store multiple data of the same type
+easily allowing random access to an
+element using the index number it also
+improves performance remarkably as it
+stores the element consequitably next
+the array use less memory space as there
+is no usage of pointer variables so now
+let's Implement a program to find the
+smallest and largest element
+so here we have array of size 50 then
+variable i n and
+variable to find the largest element and
+a variable to find the smallest element
+so first enter the number of elements
+input the array elements so one after
+the other from I is equal to 0 to n it
+will take the array element
+and initially the largest element and
+smallest element is assigned to array of
+0.
+and then coming to for Loop wherefore I
+is equal to 1 till I less than n if
+array of I is greater than array of L M
+uh sorry large element
+then assign array of I to the largest
+element
+if array of I is lesser than smallest
+element then assign array of I to the
+smallest element and then print the
+smallest element and largest element
+so let's execute it
+so enter the number of elements let's
+enter 5 and input the elements let's
+enter two
+five ten
+six
+one
+so as you can see the smallest element
+is 1 and the largest element of an
+arraylist is 10.
+the next stop seventh question is
+assume you are given a task to store a
+set of elements with two conditions
+first memory resources drawn should be
+conscious second the data structure
+should be dynamically stable when new
+elements are added or existing elements
+are deleted from the data structure
+irrespective of the location
+and the solution is singly linked list
+s are not predefined data structures
+they are dynamically programmed data
+structures and utilize the memory blocks
+from the Heap storage this makes them
+available alternative to the array as
+the memory needed is judiciously used
+also whenever an element is deleted its
+memory block will be returned to the hip
+in a single linked list we can access
+the element easily because of the
+pointer variable that points to the
+address of the next node in the list so
+here let's understand the program
+implementation so here we have a
+structure of a node where we have a data
+variable and a pointer variable called
+Next PTR
+we have a function Declaration of a node
+creation node count and print list
+so going to the node creation function
+here we are creating a new node where we
+are allocating memory for it
+we have a variable called data and I
+so it first checks if node is equal
+equal to null then memory cannot be
+allocated else enter the data for the
+node one so it takes the data
+so data is assigned to nodes data part
+and initially the nodes next pointer is
+assigned to null so the node is assigned
+to PTR
+next for I is equal to 2 to I lesser or
+equal to n
+which whatever it creates a new node
+allocate memory for it and check if new
+node is equal to null then memory cannot
+be allocated so break is enter the data
+for the node
+that means the data is assigned to the
+new nodes data and the new note's next
+pointer is equal to null and then new
+node is assigned to pointers next PTR
+and next point is next PTR is assigned
+to PTR
+then coming back to node count
+so this function is used to count the
+number of nodes in a list so initially
+the count value is equal to 0 and we
+have a pointer PTR
+so point that node is assigned to PTF
+while PTR not equal to null increment
+count by 1 and PTR next pointer is
+assigned to PTR and return the count
+next coming to the print list that means
+it lists out all the notes so we have a
+pointer and if node is equal equal to
+null that means no data formed in the
+list else the node is assigned to pedia
+while it checks the condition PTR not
+equal to none then print all the node
+data
+so ptr's next bit PTR is assigned to PTR
+so now let's try to execute it
+so enter the number of nodes so if you
+want five nodes so enter the data so let
+us enter one two three four and five so
+as you can see
+the single linked list elements are one
+two three four and five and the total
+number of notes are
+five
+executing in this session and the
+question and answers we are discussing
+will be attached in the description box
+below so you can have a look at it and
+execute the code for a better
+understanding and if you face any issues
+while executing the programs then please
+let us know in the comment section below
+and our team of experts will be happier
+to resolve all your queries at the
+earliest the top sixth question is
+assume you have stored the elements
+randomly in the memory that means not
+contagious the memory elements are not
+stored in adjacent location memory
+blocks and suppose you want to remove
+the elements from a given position which
+type of data structure would you
+recommend for such a task considering
+minimum traversal to save time
+the doubly linked list is the clear
+solution as the question clearly
+mentions the memory blocks located are
+not adjacent now the second puzzle is
+about the minimum traversal out of all
+the variants in the linked list the
+doubly linked list is a variable option
+as it has the bi-directional traversal
+feature a w linked list allows you to
+traversal in both Direction since it
+uses two pointers to point to the
+address of the previous and next node it
+is easy to access the node using the
+previous pointer and delete the node
+from the list and here we have the
+memory representation
+so here let's understand the working of
+programs implementation
+so we have a structure of node and we
+have a variable called data and a
+pointer variable previous and next
+so first coming to the insertion at
+beginning so we are inserting the
+element so we are creating a new node
+and allocating memory using mlog
+function and then we are assigning our
+data to a new node and the new next part
+is holding the head and initially the
+new previous is assigned to null so if
+head is not equal to null then heads
+previous is equal to Nu and Nu is
+assigned to hit
+then coming to the void insertion at end
+so inserting an element at the end of
+the list
+so here we are creating a new node and
+allocating memory to it using m-log
+function and the last note is equal to
+head that means head is assigned to the
+last node and then the new data that
+means a new data is assigned to a new
+nodes data part and the next is assigned
+to null
+and we are creating a temporary variable
+where it is assigned to Temporary
+variable and checks the condition if a
+head is equal equal to none then is
+assigned to new nodes previous part and
+new is assigned to that means a new node
+is assigned to head written
+and here we are using a temporary
+variable while temp next is not equal to
+null then temporary variable nodes like
+next part is assigned to Temp and new is
+assigned to attempts next and temp is
+assigned to news previous
+and coming to insertion at uh sorry
+insertion of the node
+so we are specifying the position here
+so if previous node is equal equal to
+none then the given previous node cannot
+be done
+again creating a new node and assigning
+a value to it and now previous nodes
+next is assigned to new next and new
+node is assigned to previous notes next
+the new previous is equal to previous
+node so if new new nodes next part is
+equal to null the new nodes next next
+notes previous is assigned to new
+and then coming to the deletion of a
+node that means how to delete a node
+so first if head is equal equal to null
+or node to be deleted is equal equal to
+null then return
+if head is equal equal to node to be
+deleted then
+not to be deleted next part is assigned
+to head
+this if condition node to be deleted
+next part is not equal to null then
+assign node to be deleted previous to
+node to be deleted next node previous
+and then if note to be deleted previous
+is not equal to null then assign node of
+next to the node to be deleted previous
+notes next and free the node to be
+deleted
+and this display function will display
+all the elements in a list
+and then coming to the main function we
+are inserting value to a node that is
+5215 and 3 sorry 42153
+it print the linked list element that it
+display all the elements and then after
+deleting an element so we are deleting a
+element
+hit a next to next next that means
+fourth element and display the header I
+also we are displaying the element after
+deletion
+so let's execute it
+so as you can see we have inserted the
+elements one two three four and five
+into the list so after deleting an
+element that is we are deleting the
+fourth element
+so after deleting fourth element we got
+the list is one two three and five
+so our fifth question is
+you are given a problem and you need to
+devise a solution the task is to build a
+job portal website and the problem is
+that the portal needs to pick the latest
+profile listed on the website so which
+data structure could fit in and solve
+this puzzle and how
+solution to this problem is stack data
+structure
+we can use stack as it follows last in
+first out and the latest profile would
+obviously be the last item to get in and
+the first item to get out of this stack
+in a linear data structure the items in
+a stack are stored in the order of the
+first in last out or last in first out
+so stack performs operations like push
+and per where push is used to insert the
+item into the stack where the swap is
+used to delete the item from the stack
+operations like insertion and deletion
+of an items are possible only from the
+one end of the stack that is on top of
+the stack so this program is to insert
+items into the stack and then delete the
+top item from this stack so here we have
+a structure of stack and we have a
+variable called top size and array
+we have a function declaration at the
+top
+then going to the stack creation
+so this is stack creation function where
+we are creating a stack and allocating
+memory to it using analog function and
+assign size to the stack of size and
+initially stack of top is equal to -1
+that means stack is empty and then the
+stack of array is assigned that means a
+memory is allocated
+and written stack then check whether the
+stack is full so using is is for check a
+return stack of top is equal to stack of
+size -1 that means the stack is full if
+the stack is empty
+then return stack of top is equal to -1
+that means stack is empty
+then push function is used to insert
+item into the stack so it takes if it is
+full written else stack of a that means
+the item is assigned to the top of Stack
+and then pop is used to delete the item
+from a stack so it checks if the stack
+is empty already empty then written as
+decrement the stack of top by -1
+and coming to the main function here we
+have we are calling the stack creation
+so we create a stack and then push the
+items into the stack we are pushing the
+item 10 20 and 30. so the last element
+to get in is 13. so the first element
+will be popped out is 30. so now let's
+run the program and see the output
+so as you can see
+the first element was 30. so it is
+popped out
+the top fourth question is
+given a tray you have to find the prefix
+expression of a tree so which order of
+traversal audioters
+solution is pre-order traversal of a
+tree data structure
+so basically in pre-order traversal we
+Travis a tree from the root note to the
+left sub tree
+followed by the right subtree so it is a
+quick way of searching and can easily
+get the prefix expression
+so as you can see this program is to
+perform the pre-order traversal of a
+tree data structure so here we have a
+structure of a node and we have a data
+variable
+then we have a pointer to the left node
+and right node
+first going to the creation of a new
+node we are creating a node and
+initializing memory for it that means
+allocating memory using M lock function
+and assigning data to a node's data part
+and initially the nodes left node and
+right node is null
+then return the node
+then coming to display pre-order
+function
+here it tells how to do the travel so
+that is from first from the left node
+and then going to the right node so it
+checks the condition if node is equal
+equal to none then return
+and so print the node data
+so first display pre-order we are
+calling the display pre-order function
+to display for a left node first and
+then they write node so coming to the
+main function here we have a root node
+values assigned 10
+and Roots left node values assign 20 and
+root right no right node is assigned the
+value 30.
+and then put left notes left node is
+assigned 40 and Roots left notes right
+node is assigned 50.
+next print the pre-order traversal of a
+binary tree so calling the display
+pre-order function to display all the
+nodes
+so let's execute it
+so as you can see the pre-order
+traversal of a binary tray is 10 20 40
+50 and then 30. because 30 is the right
+time
+and or 10 is the root side
+whereas this are the left chart
+the top third question is
+let's assume that you receive a software
+requirement that offers ticket booking
+services
+your job is to devise a solution that
+stores all the booking requests and
+response to the request based on the
+first come first serve approach which is
+the most variable and dynamically stable
+data structure
+the solution is Q data structure
+the queue is a linear data structure
+that follows the FIFA order and it also
+a dynamically designed data structure
+queue follows fifo which stands for
+first scene first out or in other words
+first come first serve
+in queue the elements are inserted from
+the back of the queue called NQ
+and the elements can be removed from the
+front of the queue called DQ
+as shown in the pillow diagram
+so in this function we have a size of 15
+and we have a function called NQ display
+and the variables array of size and
+initially rare and front is interest to
+-1 that means the queue is empty
+and next we have a while condition so we
+print for the choice options that is
+first is enqueue operation second option
+is display the queue list and third
+operation is exit
+and then enter your choice of operations
+to perform so it's asking you to enter
+the choice so if you enter one case one
+that means it calls the enqueue function
+uh if you enter case 2 that means it's
+calling the display function and in case
+the it calls the exit function by
+default uh if you print any other option
+then it will be it will display
+incorrect Choice return zero so coming
+to the NQ function which is used to
+insert the item in or element into the
+queue so creating a new item
+so if rare is equal equal to size of
+minus 1 that means the Q is Overflow is
+if front is equal equal to minus 1 that
+means Q is empty then assigned front is
+equal to 0. and it's asking to enter the
+element to insert the insert into the
+queue
+so if you enter the new
+item then it will increment to rare by
+1 that means where is equal to red plus
+1 so now new item is inserted into the
+array I mean list of Q and then coming
+to the display function we have the
+condition if front is equal equal to -1
+that means the queue is empty else
+from I is equal to 0 till I laser is
+lesser or equal to right it will display
+all the array elements
+so now let's run the program
+so here enter the choice let's enter one
+and enter the item 20.
+and enter the second choice that is 1
+enter the item 13. and now enter two and
+as you can see the list of items are 20
+and 30. third second question is
+Rahul has a large army he arranges them
+in an arbitrary order and everyone is
+given an integer ID so now Rahul wants
+to add one Army in the picnic now use a
+single point of variable and it should
+be possible to traversal in both
+Direction Implement a program to solve
+the problem statement
+and the solution to this problem
+statement is circular single linked list
+a circular singly linked list is to
+perform a reverse table with less memory
+uses than a doubly linked list we
+require extra memory for the previous
+pointer in a doubly linked list so when
+we compare the circular link list to
+both single linked list and everything
+list we don't find a null in any of the
+nodes instead the last note's next
+pointer holds the address of the first
+node so basically there is only one
+point of variable in the circular single
+link list
+so in this program
+we have a structure of node and then
+variable data and we have a single point
+pointer variable called next
+so to insert to the empty list
+we have we are checking the condition if
+it is not equal to null then return head
+let's create a new node allocate memory
+for it and assign a data to the new
+nodes data part and new is assigned to
+here
+and head is assigned to Heads next
+return head
+and then insert a beginning so if head
+is equal to null written insert to empty
+list so again create a new node
+allocate memory and assign data to the
+new nodes data part and hits next is
+assigned to new next and new is assigned
+to hit next
+and return it and coming to the void
+display function so it display the list
+of elements
+so it checks we have a pointer variable
+PTR and it checks if head is equal to
+null that means the list is empty so it
+will return
+and then the heads next is assigned to
+pointer
+and here we are using dual condition
+first it prints the data path so pointer
+next is assigned to PTR and then checks
+the condition while that is pointer not
+equal to head of next and coming to the
+make function
+or here we have assigned null to the
+Head and we are inserting element at the
+beginning of the list 30 then 40 and 10
+so then print listed elements a linked
+list elements are and we're calling it
+display function so this function will
+display all the elements so let's run it
+so as you can see the linked list
+elements are 10 14 and 30. the top first
+question is
+given a tree you have to count the
+number of nodes in a tree create a
+function and try to call the function
+inside the same function
+and the solution is tree data structure
+a tree consists of a root node followed
+by Panic node and a child node
+so this program is to count the number
+of nodes in a tree so here we have a
+structure of a node and we have a data
+variable and a pointer to left note and
+right node
+and then coming to creation of a new
+node so here we are creating a new node
+and allocating memory for it using mlog
+function and assign data to a nodes data
+path and initially the nodes left node
+and nodes right node are assigned to
+none
+function to find the left height of a
+binary tree so this function is to find
+the height of a left height of a binary
+tree essentially the height is equal to
+0 so while node
+incrementing the height by 1
+so the notes left node is assigned to
+node so return height
+and then this function is to find the
+right height of the binary tree so again
+initially the height is equal to 0 while
+a node height increment height by 1
+when the nodes write node is assigned to
+node so return the height
+next total load so this function is to
+count the number of nodes in a binary
+tree
+so if root is equal equal to none that
+means written 0.
+else we are assigning left height of a
+root to the LH and right height of a
+root to RH
+and checking if the left and right
+Heights are equal if they are equal that
+means a return 2 to the power of height
+minus 1.
+else we are having a recursive call so
+we are calling a one plus total load
+function
+plus the total node
+coming to the main function here we are
+assigning values to the node so root
+node is holding a value 10 15 is
+assigned to left node 20 is assigned to
+Root's right node and 25 is assigned to
+Roots left nodes and left node
+and we have Roots left notes right node
+is equal to 30. and root a right snow
+left node is having 35 and Roots right
+notes right node is having 40. so now it
+will print the total number of nodes in
+a tree so let's check
+so as you can see the total number of
+nodes are 7.
+so here I have two bonus questions for
+you guys please try to find out the
+answers and let us know which data
+structure would you prefer to solve the
+problem statement and the first question
+is John has moved to a small village and
+likes visiting one of his best friend he
+wants to take this shortest route
+because he is in hurry to meet the best
+friend so now he has decided to take
+this shortest path Jon starts at
+intersection 1 and his friend is at
+intersection here each Road Links to an
+intersection from the start to its
+destination point so using which data
+structure would you solve this problem
+statement
+and the second question is let's
+consider there's a class of 25 students
+and we want to store the grades for each
+of their five courses is there a way we
+can keep all the information
+please let us know the solution for this
+question in the comment section below
+differentiate between three types of a
+linked list the three types of linked
+lists are
+singly linked list doubly linked list
+and circular linked list in single link
+list the traversal is Possible only in
+One Direction whereas in doubling list
+the charism happens in two ways forward
+and backward Direction and each node
+consists of data and the address of the
+previous Annex node whereas in circular
+linked list the traversal of a circular
+single linked list is until we raise the
+same node with Saturn in index and in
+single link list and W linked list the
+last node is pointing to null meaning no
+node after it in a list whereas in
+circular English the last node in an
+index points to the address of the first
+node no null is found in the list
+in single linked list every node in a
+linked list connects with the other
+through a pointer variable that holds
+the address of the next node
+a dominating list uses two pointer
+variables that points to the address of
+the previous and next node a circular
+linked list uses two pointer variables
+that points to the address of the
+previous and next node and the last node
+next will point to the address of the
+first node in a list
+top ninth question is
+write a program to add a note at the
+beginning and and specified position in
+any linked list so as you can see the
+screen this is the program to add a note
+at the beginning end and specified
+position in a linked list so as you can
+see the screen here we have a structure
+of a node
+coming to the insertion and beginning
+function
+here we creating a new node and
+allocating memory to it using mlog
+function and then we are assigning a new
+data to a new notes data path
+and initially
+the new notes next is holding head that
+means a head is assigned to the address
+of new notes next
+Now new is head
+then coming to insertion at the end so
+we are going to insert the node at the
+end of the linked list so here we are
+creating a new node allocating membrane
+to it using envelope function and
+assigning a value using new data so new
+data part is holding new data and last
+note is equal to head
+essentially it's assigned to head but if
+we are checking the condition if head is
+equal equal to null that means head is
+equal to Nu return else check the
+condition while last node next is not
+equal to null then last node next is the
+central last note and now last no next
+is equal to Nu then return
+then coming to insertion of the note
+that means of the specified node so if
+previous node is equal equal to null
+then print the given previous node
+cannot be none
+written that means we are inserting a
+node
+at this specified position so if the
+previous node is equal equal to null
+then the given previous node cannot be
+none so for that we are creating a new
+node allocating memory and assigning a
+data using new news data is equal to new
+data and new data new nodes next is
+holding previous previous known next
+and now previous node next is equal to
+new
+and this display function will print all
+the elements in a neat list so well now
+node is not equal to none then it will
+display the node data part
+and then assign nodes next to node
+coming to the main function here we are
+assigning values to the node so we are
+calling the function insertion at n and
+passing the value that is 25 insertion
+at the beginning
+passing value 15 insertion at the
+beginning again 10 uh insertion at the
+end we are passing 30 and insertion of
+to specify node that is 20 and then
+print the linked list element so for
+that we are calling the display function
+so let's run the program
+so as you can see the output here the
+linked list elements are 10 15 20 25 and
+30. it has print in an order
+the top eighth question is
+find the sum of the notes in a linked
+list
+so in this program we are going to find
+the sum of the nodes in a linked list so
+here we have a structure of a node where
+we have data variable and a pointer
+variable next
+so we have a function called insertion
+to insert an element into the list so we
+are creating a new node and we are
+allocating memory for it using analog
+function and assigning data
+so new node data part is holding the
+data and new node next is assigned to
+head that means now head is holding the
+address of the first node so head is
+equal to new node and coming to the main
+function
+we have a head which is initialized to
+none and initially the sum is equal to
+zero so now calling the insertion
+function and passing the value so we are
+going to insert the value 1 16 26 and
+30. that means we are assigning a value
+to the nodes
+and then we are creating a pointer which
+is assigned to the head while pointer
+not equal to null then we are performing
+certain operation that is sum is equal
+to sum plus pointers data so calculating
+uh that means we are adding the data of
+our old nodes and then
+pointers next is assigned to PTR
+so that will calculate all this um
+data that means all this uh elements 1
+16 26 and 30 and then it will display as
+a sum of all nodes
+so let's execute it
+so as you can see the sum of nodes is
+equal to 73. the top seventh question is
+Implement a c program to reverse the
+elements of a single linked list so in
+this program we are going to reverse the
+elements in a single link list so as you
+can see the screen here we have a
+structure of a node where we have a data
+and a pointer pointing to the next we
+have a reverse function so we have
+reverse function to reverse the data so
+coming here we are creating a previous
+which is initially initialized to null
+and then we have a temporary variable
+that is assigned to head and the next is
+equal to none so while let's make the
+stamp
+so while temp is not equal to null
+then it will execute this statement that
+is this statements are used to reverse
+the elements that means the list of
+elements that we are given here will be
+reversed
+so for that we are performing this
+operation that is uh the temp whatever
+is there in the temp notes next is given
+to the next variable and whatever is
+there in the previous is given to temps
+next and what's there in the temp is
+given to previous and finally uh the
+temp is equal to next that means
+whatever is there in the next is
+assigned to Temp and now head is equal
+to previous coming to the insert node we
+are going to create a new node uh then
+assigning a value using data
+so new node new nodes data is holding
+the data and the next is assign to head
+then that means um the first the head is
+holding the address of the first node
+that is new nodes address
+and then the head is equal to new node
+and then coming to the display function
+this will display all the list of
+elements that is we are using temp
+variable that is equal to head that
+means assigned to head while temp is not
+equal to null
+print the data so it will print the data
+so what data it's like temporary next
+whatever is there in the temp data which
+will print all the data all the nodes
+data and then temp next is assigned to
+temp
+then coming to the main function here
+the head is initially assigned to null
+and we are calling the insert node to
+insert the values that that is 10 20 30
+and 40. so it will print the given
+linked list is and calling the display
+function so it will display all these
+elements and then calling the reverse
+function to reverse this element and
+then again calling the display function
+to display it back
+so let's try to execute
+so as you can see here we have
+the list of data that is 40 30 2010 and
+then and the reverse data is 10 20 30
+and 40. the code that I'm executing in
+this session and the question and
+answers we are discussing will be
+attached in the description box below so
+you can have a look at it and execute
+the code for a better understanding and
+if you face any issues while executing
+the programs then please let us know in
+the comment section below and our team
+of experts will be happy to resolve all
+your queries at the earliest top sixth
+question is
+write a program to count the number of
+nodes in a linked list so in this
+program we are going to count the number
+of nodes in a linked list so here we
+have a structure of a node where we have
+again same data and the
+variable or a pointer to the next
+then coming to the insertion function
+this is to insert an element for that we
+are creating a new node and allocating
+memory then assigning a data
+and the new next is holding head that
+means head is equal to new note head is
+holding the address of the new node and
+coming to the display function here we
+are going to display the
+for what other account the node count so
+here we have a new node which is
+assigned to head and initially the node
+count is equal to zero while new note is
+not equal to null that means new node
+next is assigned to new node and every
+time it is printed it will increment
+node count by one so we are using
+nodecon plus plus that means it will
+increment a node by 1.
+so then it will display the total number
+of nodes in an linked list
+so coming to the main function here we
+have head which is assigned to none and
+calling the insertion function for
+passing the value 10 20 and 30. so now
+we have
+uh the values 10 28 13 and calling the
+display function to display the number
+of counts sorry number of nodes in in a
+linked list so let's execute it so as
+you can see the total number of nodes in
+a link list are three because here here
+we have given three values to three
+nodes
+so let's try to add one more
+foreign
+questions let us know the trickiest ones
+you faced in your interviews in the
+comments below let's see if anyone
+responds with the right answers to your
+questions could be helpful for all the
+viewers with some extra questions to
+learn top fifth question is
+Implement a program to merge two sorted
+linked lists from their end so now let's
+understand the program to merge two
+sorted linked lists from their end
+so as you can see here again same we
+have a structure of a node
+and we are creating a pointer variable
+that is next
+and then we have a display function so
+this will display the elements
+so here we are creating a pointer
+variable PTR which is assigned to head
+while PTR it will print the data
+and then pointers next is assigned to
+PTR
+then coming to insert we are going to
+insert the element into the list so for
+that we are creating a new node and
+allocating memory for it after
+allocating memory we are assigning a
+data for new nodes data part and in you
+know next is holding head that means now
+the head is equal to new node head is
+holding the errors of the new node then
+coming to the move function so here we
+have PTR and head well if head is equal
+equal to none then return
+as what we are going to do here is
+creating a new node which is assigned to
+head and then head is equal assigned to
+Heads next
+and pointer is assigned to neurons next
+and PTR is assigned to new node
+so this function here we are going to
+move the linked list so
+this function uh these are the
+statements that we are going to perform
+and then coming to the reverse we are
+going to reverse to
+so two set of linked lists so the first
+link our set of Link list is first and
+the second is second
+so while first and second initially
+result is equal to none if First Data is
+lesser than second data then call move
+else move function and pass the first
+set of data
+and pass the second set of data
+why second then again we are calling the
+move function
+and
+and result uh that is we are passing the
+reference result and second while first
+then we are calling the move and passing
+the first set of linked lists
+then it will print the result so this is
+basically to reverse the linked list so
+we are reversing the first set of as
+well as second
+and then coming to the main function
+here we have a first set of uh linked
+list that is first set assigned to null
+and whereas seconds it is also assigned
+to null so for I is equal to 6 to I
+greater than 0 that means from i 0 to 6
+I is equal to I minus 2 that means it's
+going to it's going to print the even
+numbers from 0 to 6. calling the insert
+to insert the elements then
+so passing the first this that means
+this is the first set of linked list and
+this is the second set of linked list
+where I is equal to 9 I greater or equal
+to 1 then I is equal to I minus 2 that
+means from 1 to 9 it current it going to
+print the odd numbers so we are calling
+the insert function and passing the
+second set of that means this is the
+second set of elements
+then print first list of elements so
+display first so this will display the
+first set of linked lists and then again
+print the second list of elements
+calling the display function to display
+the second set of linked list
+then calling the reverse function to
+reverse first as well as second
+so after merging the linked list so now
+um this is going to merge two linked
+list so then after merging again we are
+calling the display function to display
+so let's try to execute it
+so as you can see the first list of
+elements were 2 4 6. and the second set
+of list is one three five seven and nine
+so it's going to merge this two link
+list from their end so this is the
+sorted uh linked list
+so here we have nine seven six five four
+three two one so this is going to sort
+the elements and then merge from there
+in the top fourth question is
+write a program to delete a note at the
+beginning end and specified node in any
+linked list so as we have previously
+discussed on how to insert the notes now
+let's understand on how to delete the
+node from a list
+so as you can see here we have a delete
+function that means to delete a node so
+we have last and keynote as an argument
+that we have passed and if last is equal
+equal to null that means written that
+means there are no nodes in a list
+so and this functions to delete a node
+at the end so if last data is equal to
+Keynote and the last next is equal to
+last then free the last
+and we are assigning the last equal to
+none and then it will return
+then we are creating a temporary
+variable which is assigned to last and
+then we have a delete node a pointer to
+delete node so if last data is equal to
+the keynote y temp next is not equal to
+last then whatever is there the temp
+notes next is assigned to temp
+and the last node next is assigned to
+Temp next and free the last so once you
+free the membrane of a last node then
+assign the last next that means the temp
+next is assigned to the last wealth temp
+next is not equal to last and temp next
+data is not equal to the keynote then
+whatever is there in the templates is
+assigned to Temp so if temp next data is
+equal to the keynote and the temp next
+is um
+is a scientific delete note now the
+delete note next is assigned to Temp
+next and then we are going to free the
+memory for the node to be deleted now
+calling the display function to display
+the list so if
+creating a pointer variable and if the
+head is equal to none
+if head is equal to none that means the
+list is empty then we are assigning a
+pointer is equal to Heads next so do
+that means this will print that is it
+will print the notes data uh so once it
+prints the First Data again it will uh
+the pointers next is assigned to the PTR
+then we'll print all the notes data and
+then check the condition while PTR not
+equal to H next coming to the main
+function as we have already seen how to
+insert so the elements that we are
+inserting is 30 40 10 20 and 10. so it
+is like 10 20 30 and 40. and print the
+linked list element so it we are calling
+the display function to print the
+elements and after deletion the linked
+list elements are so which element we
+are deleting that is 10. so delete now
+we are calling the delete node to delete
+the element 10 then again we are
+displaying calling the display function
+to display the elements so let's execute
+it
+so as you can see the linked list
+elements were 10 20 13 14. so after
+deletion the link list elements are 20
+30 and 40 that means we have deleted 10
+successfully top third question is
+write a program to remove duplicate
+elements from the sorted linked list so
+here basically we have the elements
+these are the sorted elements that is uh
+10 20 30 40 and 50 and also we have a
+duplicate elements that means a
+duplicate nodes so basically we are
+going to delete this so we are going to
+delete this then then 30 and extra 40.
+so for that
+uh we have a structure of a node
+and then we have a display function
+so in display function we are going to
+display the uh data
+so for that we have a pointer which is
+assigned to head while pointer it will
+bring the date of all the nodes and we
+are assigned pointers next to pedia then
+coming to insert function this is to
+insert the elements or the node so
+creating a new node and allocating
+memory for it
+and then assigning a data and new notes
+next will be head that means
+um
+the new node address head is holding the
+address of the new new node and then we
+have a remove duplicate function so this
+function is basically going to remove
+this extra or the duplicate 10 30 and
+40. so in this function it checks if
+head is equal equal to null return that
+means there are no nodes then creating a
+pointer which is in slash to head so
+while pointer next is not equal to none
+then we are going to perform this so if
+check the condition if pointer data is
+equal to 0.2 pointer nodes next data
+that means if this and this is equal to
+if this and this element is same so
+suppose this is the pointer and this is
+the pointer next so this is what your
+pointer next data so if those both are
+same then we are assigning pointers next
+next to next next and then free this
+space or the memory for the pointers
+next and next next is assigned to
+pointers next else we are assigning
+pointer next to the PTR and coming to
+the main function here we have if and
+the elements that um list of elements
+that is 10 20 30 40 and 50 and we have
+extra or the duplicate elements as well
+and we have n which is assigned to size
+of elements divided by size of elements
+starting from the index 0 and initially
+head is assigned to null and for I is
+equal to n minus 1 I greater than equal
+to 0 we are inserting the elements and
+then decrementing iMac minus 1 we are
+calling the remove duplicate function to
+remove the duplicates and then again
+display the list so let's execute it
+so as you can see here they have we have
+removed all the duplicates that is we
+had extra 10 30 and 40. so now
+um the duplicates are removed so now the
+list is 10 20 30 40 50 and the last is
+none top second question is
+Implement a program to rotate a linked
+list so in this program we are going to
+rotate the list so for that we have a
+rotate list function
+so here we have a variable called P if p
+is equal equal to 0 then return so p is
+nothing but the list if the linked list
+is empty then it will return so let's
+consider the below example that is we
+have a list called one two three four
+and five so if suppose p is equal to 4.
+so that means PTR is assigned to head
+first so current will either point to
+the P payth or none so if initially the
+count is equal to 1 while count is
+lesser to p and the pointer is not equal
+to null then we are assigning pointers
+next to PTR and we are implementing the
+count by one so that means the current
+will point to the node 4 in the above
+example that means um this now the
+current that is PTR is pointing to the
+fourth and if PTR is equal to none then
+it will return else now again
+the current points to K node that means
+uh here we have the period so
+the current points to create node store
+it in a variable so whatever is that the
+uh four here in this example it is 4
+so this pole will be stored in so here
+it will store in the variable this one
+eighth note now the peer points to the
+node 14 the above example so now here
+while pointers next is not equal to null
+then assign pointers next to PTR
+and now point is next is equal to a head
+that means head is holding the address
+of the pointer snakes and now a p8 node
+next is holding head
+and again the pH node next is assigned
+to null that means we are keeping the 4
+as it is and rotating that means
+rotating in the sense now these three
+elements will come this side and this so
+it's kind of a it's not a reverse but
+it's just a rotating so coming to the
+insert function here we are going to
+create a new node uh and then assigning
+a value and first notes uh address will
+be uh for holding head will be holding
+the address of the First new nodes next
+and now
+head is assigned to new node and now
+this function is to print the elements
+so while node is not equal to none then
+only it will print the all the data of a
+node uh nodes or nodes data and now
+nodes next is assigned to node and
+coming to the main function here head is
+assigned to null so for I is equal to 6
+I greater or equal to 0 that means from
+0 to 6 we are inserting values that
+means uh inserting the node so print
+given linked list
+so whatever is given first it will
+display then after rotating or now PTR
+is pointing to 4 so after rotating the
+list again we are going to
+display the list of elements
+so let's execute it
+so as you can see here the given linked
+list is one two three four five and six
+so after rotating it is 5 6 1 2 3 and 4.
+now first question is
+Implement a stack using any linked list
+so in this program here we have a
+structure of a node and actually the top
+is assigned to none and push item that
+this function is used to push the items
+into the stack so using linked list we
+are
+implementing a stack so here creating a
+new node and allocating memory for it
+and then assigning a value to a new
+node's data part so if the top is equal
+to null the new node next equal to none
+else the new nodes next is equal to top
+so now the new node is top
+so if it is uh the top is equal to Nu
+naught then item is pushed successfully
+that means inserted and pop item this
+function is to delete the item from a
+stack so if top is equal equal to none
+that means stack is empty else we have a
+temporary variable which is assigned to
+top so it will delete the top item from
+a stack so temp next is assigned to top
+and we are going to free the memory for
+a temporary variable and then printing
+the element that means printing the
+items in a stack so if top is equal
+equal to null that means the stack is
+empty else here we have a stuck node
+them that means we are creating a
+temporary variable which is assigned to
+top and while temp next is not equal to
+null then it will print the data offer
+temps data that means it will print the
+items in a stack so a temp next is
+assigned to Temp and then again it will
+print all the data so coming to the main
+function here we are having a choice and
+then item while one using while
+condition uh it's asking options that is
+push pop display and exit so first
+asking enter your choice so if you enter
+the choice the in case one we are going
+to insert the item into the stack uh so
+we are calling the push function that is
+push item function and then in the case
+too if you uh select the option two then
+we are going to call the function pop
+item if it is third then print item if
+it's 4 then it is exit by default if you
+if you enter anything apart from one two
+three and four then it's going to print
+wrong choice so please try again with
+different choice so let's try to execute
+it
+so first let's enter the choice one
+and enter the value to be inserted that
+is 10. again let's enter 1
+and value 20. now let's uh display
+so now the inserted up 20 and 10. so to
+delete let's enter Choice 2 so that
+means whatever was at the top is deleted
+successfully so top was 20. so now 20 is
+deleted successfully so now let's just
+click three
+so as you can see
+now only 10 is in the list or in the
+stack
+so here I have one question for you guys
+and the question is Implement a program
+to check whether the list is palindrome
+please try to find out the answer and
+let us know the solution for this
+question in the comment section below
+so with this we have come to the end of
+this session on the top 10 linked list
+question and answers I hope this session
+was informative and interesting so if
+you have any queries regarding any of
+the topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries or the earliest until next
+time this is Sanya from the simply learn
+stream signing off thank you stay safe
+and keep learning
+foreign
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

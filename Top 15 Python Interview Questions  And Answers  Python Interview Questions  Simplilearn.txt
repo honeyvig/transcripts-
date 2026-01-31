@@ -1,0 +1,1080 @@
+do you know friends that the average
+salary of python developer in India is
+around 7ak
+8,083 rupees according to the indie.com
+and in today's market scenario there are
+30 plus th000 jobs available right now
+as per to the job portals like indeed
+LinkedIn and monster.com choosing a
+career in Python can be a smart move for
+many reasons because Python's high
+demand for data science its versatility
+in software development a of learning
+High salaries and a strong job growth
+has made it attractive choice for
+switching career in this domain with
+that keeping in mind I have curated top
+15 python interview questions now before
+we move on just a quick info for you
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether making a switch or aiming higher
+simply learn has your
+back simply learn has come up with
+postgraduate program in data science in
+collaboration with CTIC ctme and IBM
+this program teaches you skills and
+tools including python ml T generative
+AI chat GPT and many more this program
+also includes master classes by Caltech
+instructors and IBM experts with that
+said guys here's the agenda for our
+today's session so guys we will be
+covering questions from arrays list
+strings then we will move on to doues
+and set moving ahead we will also have
+questions based on recursion algorithm
+problems data handling and data
+visualization so let's get started but
+before that I request you guys that do
+not forget to hit the Subscribe button
+and click the Bell icon for further
+updates so guys let's get started so
+here's our first interview question that
+is given to aray write python function
+to return the intersection of the two
+for example if we have X = to 1590 and Y
+= 3029 then it should return 9 and zero
+so how you will approach this problem by
+coding in Python you can take your time
+and then you can come to the solution so
+guys in order to solve this question we
+will have to create a python function
+that will find the intersection of two
+arrays and this function is going to use
+the set data structure to efficiently
+determine the common elements between
+the two list so guys first what we are
+going to do let us create a function
+first so we are going to say the name
+def intersect and you can just call it
+as arrays okay and then let us give the
+two argument A1 and
+A2 pretty fine till here now after that
+convert both of the list and sets to
+remove the duplicates and allow for
+intersection
+so what we are going to do we are going
+to create set one okay and this is going
+to be set of array
+one okay then next what we are going to
+do we are going to create a set of two
+okay and this is going to be assigned to
+set of array two pretty
+fine now now what we have to do guys we
+have to find the intersection of both of
+the sets so guys we can give a variable
+name sets intersection so sets Okay and
+this is going to equal
+to set one okay
+dot
+intersection of set
+two very easy guys and then we have to
+convert the intersection set back to a
+list before returning this list so what
+we can do finally we can just
+return
+so return list and here we can give the
+intersection of the same
+so now we have done that let us take
+example of the same so for example we
+can take say x = to
+15
+09
+and yals to say 3
+0 2
+9 and finally we are going to call this
+as
+result so rest equals to and finally we
+can just call our function so our
+function was intersect arrays so we can
+just copy this and we can give the
+arrays name that it will be X comma y
+fine and then we can finally ask to
+print the
+result so in this way we are going to
+find the intersection let us run our
+notebook so we can see there are some
+errors coming up so
+okay so we can see that the answer is
+coming 0 and N pretty fine right now so
+we have completed our first question now
+let us move to the next question so guys
+our next question is given an array find
+all the duplicates in this array for
+example we have 1 2 3
+1365 and we should return only one and
+three so we can see one and three are
+the only one which has been duplicated
+so how you are going to approach this
+problem you can pause this video for a
+while and then you can come to this
+video and then you can watch the
+solution so guys to find all the
+duplicates in an array in Python you can
+use a dictionary or the collections do
+counter to count the occurrences of each
+element and then gather those with the
+counts greater than one so for example
+I'm going to show you a dictionary so
+what we can do we can define a function
+first say let's find a duplicate So Def
+find say
+duplicate and in this we are going to
+take an argument array
+Define now after that let us declare a
+dictionary with name as
+counts okay and let us create an list of
+duplicates after that what we are going
+to do we are going to count each element
+in the array so let us go to the fall
+Loop so
+for Num in
+Array
+Okay then
+if num in
+counts okay then what I'm going to do
+I'm going to put this that count
+num or
+else what we can do
+we can
+count on that num equals to
+one so finally what we are going to do
+in this code that we are counting the
+occurrences of each element so we are
+using the for Loop and we are
+maintaining it with the count okay now
+as you would have got the idea regarding
+this so let me write this variable now I
+hope so till here you are clear with it
+in the next we are going to collect
+elements that appear more than once so
+guys for key and value in counts. item
+if the value is greater than one what we
+can do we can append that key okay I'll
+show you right here what I mean so here
+we can apply the for Loop so
+for
+key comma value and
+counts and
+okay so for key value in counts.
+items so if the
+value is greater than one okay what we
+are going to do we are going to append
+this list so
+duplicates do
+append with the required
+key okay now what what we are going to
+do finally and finally we are going to
+return our duplicates
+so so finally this function is going to
+return duplicates now let us have the
+example usage for example we have this
+input
+array
+say one 2 3
+1 3
+6 comma
+5 and the
+result is equals to
+find SL
+duplicates and we are going to put the
+input array
+so now let us cross check the functions
+we have so it is f
+duplicate this is
+we're going to exclude this now let us
+run our this code so it says there is a
+error okay now let us see what's the
+error in this so it says for key and
+value in counts. item okay so it says
+unindent does not match the outer end so
+there's indentation problem okay so guys
+as you can see all over here we have
+given our duplicates 1 2 3 1 3 65 and we
+are finding the duplicates in this input
+AR and our result is 1 and three very
+easy so go through this question this
+question has a high probability of being
+asked in the interview question so don't
+miss it out now let us move to our third
+question so guys our next question is
+that you have to rotate a list to the
+right by K places where K is a non-
+negative number for example we have an
+input of 1 2 3 4 5 and k equals to 2 so
+your rotated array is going to look like
+something 4 51 2 3 okay so basically
+when k equals to 2 so 0 1 and two so
+after this all the numbers are going to
+come first and then in the same process
+like 1 2 and three are going to go back
+so it's a rotation problem and let us
+see how we can approach this
+problem so guys in order to solve this
+problem of rotating a list right by K
+places where K is a non- negative you
+can use a straight forward approach then
+this involves slicing the list and
+rearranging the parts but here's the
+another way you can try it that is by
+normalizing so guys since the rotating
+the list by its length suppose it has a
+length of n it results the same list so
+you can normalize by K by taking K mod n
+or k percentage n where n is the length
+of the entire list so what is going to
+do this is going to handle the cases
+where k is greater than n okay so let us
+try to see the problem so we have
+created a function called def rotate
+list and I have taken two parameters
+nums and K now here I'm defining n as
+the length of the given list so if n is
+equals to zero I want it to return the
+nms okay the given parameter which we
+have given okay the length of the given
+list so now after this we have to
+normalize so in order to avoid like it
+we K repeat where K becomes greater than
+n so k equals to K modul N so this is
+our normalization and after this we are
+performing the rotation so by Rotation
+by slicing so rotated list equals to
+nums of minus K dot plus nums of K so
+this means that till K you have to
+partition it okay and after post of K
+you have to do the partition and after
+that we are returning the rotated list
+so you can see the input list we have 1
+2 3 4 5 and here k equals to 2 so what
+is going to return so the given list
+okay so K dot means since two and post
+two and pre2 so you have to take that
+into consideration so guys after post we
+are adding the pre so for example K = to
+2 so 0 1 and two so these comes so four
+and five is be going to be put all over
+here then after that threee of two are
+going to be placed and finally we are
+concatenating it so 45123 is going to be
+our output so let us run this program
+and we can see we are getting the output
+4 5 1 2 and 3 very easy problem okay now
+let us move on to the next problem so
+guys the next question is given an
+integer array find the sum of largest
+contiguous subarray within the array for
+example given the array a equals to 0 -1
+- 5 - 2 3 and 40 so it should return 70
+because of three and 40 so there's a
+note also that if all the elements are
+negative then it should return a zero so
+it has given the case study for example
+you have to consider an integer array
+and you have to find the sum of largest
+contiguous subarray so this is a
+subarray problem let us try to approach
+this so for example we have the input
+list 0 -1 -5 - 2 3 and 40 so we have to
+take a case on this and it should return
+70 so guys to solve this problem you can
+use the cadan algorithm which
+efficiently finds the maximum subarray
+within the time complexity of ofn and
+this algorithm maintains the running sum
+of Maximum subarray found so far and
+updates it as it traverses the array
+additionally to handle the case where
+all the elements are negative so such
+that you want to return zero in such a
+case you can initialize the maximum sum
+as zero so here's the python
+implementation of the scene so guys
+here's the solution to this problem let
+us Define the function Max subarray and
+which is going to take nms as the
+parameter now we are going to initialize
+variables to tracks the current sum and
+the best sum found so current sum equals
+to zero and maximum sum is also equals
+to zero then we have to Traverse through
+the array and update the current sum and
+Max sum accordingly so for example for
+Num in nums okay then we have to update
+the current sum and reset it to zero if
+it becomes negative so if current sum is
+less than zero then you have to put the
+current sum equals to zero and then
+update it that maximum sum equals to Max
+of you can take a Max function then take
+Max sum and the current sum and finally
+we are returning the max sum so this is
+very easy so basically what we are doing
+so we are taking two variable current
+sum and Max sum and we are traversing
+through this nums array and we are
+finding that if our current sum is
+equals to Z
+okay then we are updating our current
+sum such that current sum equals plus
+now okay so we are adding the current
+sum with the given number like the
+iterator number basically we are using
+for example if it is one so current sum
+will be equals to 0 so 0 + 1 will be
+there and then if it goes negative so if
+current sum is less than zero then we
+are putting it to zero very easy suppose
+if you have negative numbers in your
+array so that covers this situation now
+I hope so you have got the idea
+regarding the same and finally we are
+taking the maximum of Max sum and the
+current sum okay so in this way we are
+going to print the maximum part of it
+which is 17 now let us take this and let
+us try to run our application so you can
+see we have printed 70 so this clearly
+covers the idea regarding this question
+now let us move to our next question so
+guys our next question is def find tles
+and list in Python and what are the
+major differences between them so guys
+this is one of the very basic question
+so in Python list and tles both are
+sequence data types that can store
+collection of items they are used to
+store multiple items in a single
+variable and have several similarities
+but there are significant differences
+that affect how and when you should use
+each for example if you take a list so a
+list in Python is a mutable changeable
+ordered sequence of elements each
+element inside a list can be accessed
+added edited or removed and lists are
+defined by having values between a
+square
+bracket for example if we Define a list
+say list l so which is equals to say 1 2
+3 and also we can put
+hello pretty fine and also we can add a
+Boolean value so let's add
+true now let us talk about the tles so a
+tle in Python is a immutable or
+unchangeable ordered sequence of
+elements this is very important and once
+a tle is created you cannot change add
+or remove its elements tles are defined
+by having values between parentheses and
+this way we cover the definition of tles
+so for example if we Define the tle so
+it it is going to look something like
+this so T equals to say
+we take the parenthesis and suppose we
+add 1 2 and three this forms our tle now
+if we talk about the major differences
+we know that in list are mutable okay
+and tles are
+immutable so that's the basic difference
+next you can talk about their syntax so
+like if you talk about list they use
+square brackets whereas tles uses
+parenthesis if we talk about performance
+guys then t are faster than list because
+of their immutable nature of tles Now
+list being mutable they are slightly
+slower as compared to tle okay and they
+also require additional operations for
+memory so in this way you can
+differentiate between tles and list now
+let us move on to our next question so
+guys our next problem is on anagram so
+it says given an array of strings group
+anagrams together okay okay suppose we
+have strings like eat T tan eight Nat
+bat so our output should look like
+something like this it should be eight
+eat T natat tan and bat okay now to
+solve the problem of grouping anagrams
+together forming a given array of
+strings you can utilize a dictionary to
+help organize words by their signature
+so guys what's a signature a signature
+can be formed by sorting the characters
+in each string which ensures that all
+anagrams will have the same signatures
+so for example what we are going to do
+we are going to create a dictionary so
+you can use a dictionary to map each
+sorted version of a string such that the
+strings to a list of strings can be
+added and when it is sorted you can
+match that signature then you you can
+use the sort each string for each string
+in the list you can sort the strings to
+generate its signature and add the
+original string to the corresponding
+list and then finally you can collect
+the results so basically here's a python
+implementation of the scene so guys as
+you can see all over here we have
+defined the function named group
+anagrams and we have taken arguments
+words so here's our dictionary anagram
+dict then we are taking the for Loop and
+finally we are sorting it okay with the
+empty string using the join function
+okay and we are using the sorted
+function then if sorted word not in
+anagram dictionary then what we are
+doing basically we are putting it into
+this anagram dictionary with the
+category of the sorted word which we
+have created so this is the required
+variable okay now this will be equals to
+an word dictionary now finally if this
+does not happen then else you can put
+anagram dictionary in the sorted words
+and you can upend that it in the word so
+these are the certain things where word
+is our iterator okay so this is equal
+ALS to a number which we are basically
+storing so now finally we are extracting
+the list so we are presenting the groups
+into a list okay so finally the
+dictionary is converted into the list so
+list anagram dict values and finally we
+are returning our result so here is our
+input words and finally we are calling
+our function with this word as the
+parameter so let us run this and let us
+see whether our output is coming or not
+and we can see we are getting the output
+of the anagram words so eat T eight tan
+Nat and bat so we had this as the
+anagrams are certain things like suppose
+it is there so T is ending with t so it
+is next word is starting with t you can
+see the next word is ending with a and
+here the next word is starting so
+similarly tan and Nat are grouped and
+bat are grouped so what we have to do
+all over here the entire logic Remains
+the Same and it is here so you have to
+create a variable all over here sorted
+word and let's say be empty and you have
+to join it with the word word means in
+the griven dictionary whatever the word
+like suppose eat T tan so initially we
+are putting it in empty words now if
+this word okay if this sorted word is
+not in anagram dictionary means it is
+not present in our dictionary so we can
+just do what we can put this in our
+dictionary so we can take this parameter
+as sorted word okay and put that word in
+this so similarly like we are grouping
+in this case like eat and T okay now
+else if it is not present in our
+dictionary so anagram sorted dictionary
+is appending that word okay so here the
+assignment is happening and here we are
+appending it so finally which results us
+e tee eight tan Nate and bat very tricky
+question has a higher probability to be
+asked in the exam now let us move on to
+our next
+question so guys our next question is
+given an integer n and integer K output
+a list of all combinations of K numbers
+choosen from 1 to n for example if n =
+to 3 and K = 2 you have to return 1 2 1
+3 and 2 3
+so how is this going to happen so guys
+this is going to happen by generating
+all the possible combinations of K
+numbers from set of numbers ranging from
+1 to n you can use this so there is a
+python iter tools. combination function
+and this function is designed to
+generate the combination without
+repetition based on the specified length
+so how you can do this so for example
+you can import iter tool okay from
+combinations and then you can generate
+the given combinations so let me show
+you so guys as you can see all over here
+I am importing iter tools from
+combinations then I am creating a
+function Dev generate combinations NK is
+a given parameter okay where I'm
+creating a range from 1 to n so range
+function I'm using and I'm putting this
+from 1 to n plus one and I'm storing
+this into the variable or assigning it
+into a variable called numbers this then
+I'm using ID tools. combinations to
+generate all the combination of the
+length ke and finally we are converting
+it into a list and storing it in the
+result so in this function basically
+what we are doing so we can see there is
+a range 1+ n plus one so this is
+basically generating the numbers from
+one up to n and the combinations of
+number comma K you can see so in this
+line so what this is basically doing
+this is producing the com combination of
+numbers in numbers okay taken k at a
+time so each combination is returned as
+a tle and all the combinations are
+stored in a list so this output of tles
+in the list represents the combination
+of numbers chosen so if you need them in
+specific format like list of list
+instead of list of tles you can convert
+them accordingly now let us run our code
+and we can see we are getting it in the
+form as 1 2 1 3 and 2 three
+so this is generating the same and so we
+are getting an output of list of all the
+combination of K numbers chosen from 1
+to n so in this scenario I have put Nal
+3 and K = 2 very amazing question has a
+higher probability to be asked in the
+exam now let us discuss the next
+question so guys our next question is
+pretty interesting and it says write a
+function to generate n samples from a
+normal distribution and plot them on the
+histogram so guys in order to solve this
+question you need to know about normal
+distribution so to generate the samples
+from a normal distribution you can plot
+them on the histogram so you can use
+Python's Library called as numpy for the
+generation of samples and mat plot clip
+for plotting the histogram so here's the
+implementation so guys as you can see
+all over here we are importing numpy as
+NP and we are importing the mat plot lib
+okay then finally we are defining a
+function plot normal distribution
+samples and here we have to take the
+three parameters the first one is n
+second one is mean and the third one is
+standard deviation we have initialized
+mean equals to zero and standard
+deviation equals to 1 then we are
+generating n samples from a normal
+distribution with specified mean
+standard deviation and with that we are
+going to plot the histogram so it's more
+of a mathematical problem but if you
+have a little bit idea regarding normal
+distribution you can achieve this so we
+can see there is a parameter n where the
+N denotes the number of samples okay and
+mean is there for the normal
+distribution and similarly we have
+included standard deviation for the
+normal distribution finally here we are
+generating the samples so samples equals
+to we are using the nump library so np.
+random. normal okay and I have given loc
+location equals to mean scale is
+standard deviation and of the size n so
+it is very standard and after that we
+are plotting the histogram with PLT
+doist so I've have taken samples then
+bins equals to 30 Edge color we have
+given black and Alpha equals to
+0.7 and finally we are putting the title
+as histogram distribution sample on the
+X level there is a value and Y is
+frequency and we have put the grid as
+true and finally we are asking it to
+show it now let us run this so we can
+see it has generated the histogram of
+normal distribution samples very
+interesting question I hope so you are
+clear with it now let us move on to the
+next question now guys let us take a
+question from pandas a very popular
+Library so the question says that what
+is the difference between apply and
+apply map functions in pandas so guys in
+pandas the functions apply and apply map
+serve different purposes although they
+both apply a function along the x-axis
+of the data frame or in Panda series
+but here you can use them so for example
+in apply is used to apply a function
+along the axis of the data frame so it
+can be either a row or a column it can
+be used to operate on the entire row or
+column at once and this function is
+extremely flexible and can return a
+single value or a series or even a data
+frame then if we talk about flexibility
+guys it works on a complete row or
+column and can be used to implement
+aggregation transformation and other
+operations that consider multiple
+elements at once so for example let me
+show you so say we have
+this
+import pandas as PD okay then we can
+Define our data frame so DF equals to PD
+do data
+frame and
+finally here we can give as a
+all over here and we can give the value
+as list as 1 2 and
+three
+similarly we can change the given
+thing as
+B and we can change this value as
+four five and
+six and and finally we have closing this
+so by applying a function to each column
+say default axis equals to zero so we
+can store the result certain in
+something like this so let us create the
+variable called result and this is
+equals to say DF DOA apply okay and we
+can use our Lambda expression so
+Lambda
+X and here we can take
+x.
+Max okay
+minus x.
+Min pretty fine so we are applying a
+function to each column all over here
+and if you talk about like apply map so
+apply map is used to apply a function to
+each elements of the data frame so this
+method is available only for data frames
+not for series object that is the most
+important thing and if we talk about
+element wise operation so apply map
+operates element wise and it is very
+suitable for operations that depend on
+the value of the single cell and they do
+not need to consider other elements in
+the row or column so guys that was a
+basic difference between apply and apply
+math functions now let us move on to the
+next question so guys our next question
+is on strings and it says given a string
+return the first occurrence character in
+it so on none if there is no recurring
+character for example if the input is
+python interview questions and the
+output is n so as you can see N is a
+recurring alphabet so we have to find
+the recurring character in this given
+string so guys to find the first
+recurring character in a string you can
+use a python function that tracks a
+character you have seen as you iterate
+through the string you can utilize a set
+to efficiently check if a character has
+appeared before so for that here's a
+simple implementation so slides as you
+can see all over here we have defined
+the function first recurring character
+and we are taking input string as a
+given argument now here is a variable
+called scene and it is stored as a set
+now let us iterate through the each
+character in the string so for car in
+input string if car is present in this
+set so what I want to do I want to
+return the first recurring character
+then finally we are adding this
+character into the set if it is not
+already seen and if it is not present we
+are returning the none very basic for
+Loop and conditionals we have applied
+okay now in this we are presenting the
+input string okay and let us see what
+our output would be when we are calling
+the given function so you can see we are
+getting output of n so this is very
+basic guys and I hope so you have got a
+brief idea regarding this now let us
+move on to our next question so guys as
+you can see our next question is given a
+positive integer X return an integer
+that is a factorial of x if a negative
+integer is provided it should return
+minus one and implement the solution
+using recursive function so guys we have
+got a problem on recursion and it is
+mostly asked in TCS or extens interview
+question so whenever you are having a
+technical round so you're going to have
+a higher probability to be asked now let
+us see the solution of this question so
+guys to calculate the factorial of a
+given positive integer X using recursion
+and to return minus one for negative
+integers you can Implement a simple
+recursive function so here's how you can
+do it so you can see all over here we
+have defined a function def factorial X
+okay so if we are hitting our base case
+means x equals to Z what we are
+returning it as one and if the input is
+negative we are returning minus one as
+indicated and finally we can see a
+recursive case so if it is not hitting
+both of the cases then we are basically
+returning X into X factorial x -1 so
+basically what it is doing guys so say
+if we put X = to Zer so we know that we
+are getting its factorial as one now we
+are getting factorial of one now if x is
+greater than 0 say suppose we are taking
+one so 1 into factorial of 0 so
+factorial of 0 is 1 so 1 into 0 will be
+one similarly next if x = to 2 so 2 into
+factorial of one so it becomes two so
+you can see we are going to get a series
+of multiplication so in that way we can
+find this solution using recursion so
+let us try to print the output so we can
+see we are getting output as 120 minus1
+and one so we have finally completed
+this problem using recursion definitely
+try this problem guys one of the most
+frequent ask questions in the interview
+now let us move on to our next question
+so guys our next question is given an M
+byn Matrix with positive integers
+determine the length of longest path of
+increasing within the Matrix for example
+let us see so guys in order to find the
+longest increasing path in an M * n
+Matrix of positive integers you can use
+a technique called depth first search
+approach and combined with
+memorization this problem is going to
+involve exploring all the possible paths
+from each cell and caching the result to
+avoid redundant computation now so in
+this approach we are using DFS with
+memorization for each cell in The Matrix
+use DFS to explore possible increasing
+path starting from the cell then cure
+the length of the longest path starting
+from the each cell to avoid the
+recomputation then also go on the edge
+conditions like you will only move to
+the adjacent cells that contain a higher
+volume to ensure that the path is
+increasing finally you have to implement
+the steps so you can create a DFS
+function that explores all the four
+possible directions like up down left
+and right and it is returning the length
+of the longest path and finally use
+memorization table a 2d list basically
+to store the length of the longest path
+starting from each cell iterate over
+each cell in The Matrix and you can
+initiate a DFS if the cell hasn't been
+explored so here is the implementation
+of the same so guys as you can see all
+over here we have created a function
+called def longest increasing path and
+we have taken an argument called Matrix
+so if not Matrix or Matrix is present
+okay then we are returning it zero and
+finally we are defining our DFS function
+with I and J as the two given variable
+so if it is already computed then return
+the cached value so if memo of I and J
+is not equal to zero we are returning
+the given memo then we are exploring all
+the possible four directions like 0 1 1
+0 0us and - 1 0 so it is denoting
+the up left right and bottom and say we
+have initialized our maximum length as
+one okay so in order to find the DI and
+DJ means the distance what we are taking
+the two variables as n i and NJ okay and
+we are incrementing it with I and G and
+then finally we are using if an i is
+greater than zero it is less than M and
+NJ is greater than equal to Z and less
+than n so finally The Matrix is also are
+seeing in this Matrix we are seeing that
+n i and NJ should be greater than the
+Matrix of I then finally we are printing
+the maximum length so using the max
+function we are finding the maximum
+length and we are returning this DFS and
+finally we are storing the memo of I J
+equals to maximum length so which is
+basically our cache length and finally
+we are returning the maximum length so
+you can see later on what we are doing
+we have taken m&n and and we are
+multiplying the length of the Matrix
+into length of the Matrix Z so later on
+we have created the variable called memo
+all over here and in this we are
+multiplying it with n okay for element
+at zero index and in the range of M and
+we have initialized our result equals to
+zero then we can start DFS from each C
+for I in range of M for G in the range
+of n we can result equals to maximum
+result of DFS i g so here we can see The
+Matrix of 9994 668 211 so let us see
+what is our longest increasing path so
+this was a basic idea regarding the code
+the code can seem a little bit more
+exhaustive but if you try to do it with
+the concept it will be solvable now we
+can see the longest path it's showing is
+four so this is the output of our given
+problem so let us go again with this
+problem so here basically in this what
+we are doing is we are traveling from 1
+to 2 2 to 6 and 9 so that has become the
+four okay so this is our longest
+increasing path so 1 to two Okay then 2
+to 6 then 6 to 9 so this is our maximum
+path we can follow so four is the given
+output now let me go through this
+problem once again for example here we
+have taken a DFS function okay so this
+DFS function is called recursively to
+explore each Direction it checks whether
+a move is valid stays within the bound
+or moves a higher value then you can see
+we have taken the use of memorization so
+memo of inj is stores the length of the
+longest increasing path from cell inj so
+guys this reduces the time complexity by
+avoiding the recalculating parts of the
+same cell then we are doing the result
+calculation so we are iterating through
+each cell starting a DFS if the longest
+path from that cell has not been
+computed then we are printing the
+maximum value obtained from all the dfl
+calls and that is our result so this
+approach is basically efficient for
+matrices where many values are not
+recomputed due to caching thus making it
+a feasible for larger matrices so that's
+the solution of this problem now let us
+move to our next problem so guys our
+next question is explain flask what
+flask is and its benefits so guys as we
+all know that flask is a popular
+microwave framework written in Python it
+is called micro framework because it
+does not require particular tools or
+libraries it has no database abstraction
+layer form validation on any other
+components where pre-existing third
+libraries provide common function
+however flas supports extensions that
+can add application features like here
+we can say suppose if you want to add
+Simplicity flexibility okay lightweight
+features then you can use it flask is
+also extensible that it can be extended
+with extensions available to additional
+functionality like object relational
+mappers form validation upload handling
+and various open authentication
+Technologies and several common
+Frameworks related tool then you can
+also say it has a buil-in developer
+server and debugger so flask also
+includes a built-in server and debugger
+which makes it easy to develop and test
+your applications locally so this is
+flask and this are some of of its
+benefits now let us move on to the next
+question so guys our next question is
+what is the difference between list
+arrays and sets in Python and when you
+should use each of them very basic
+question guys so guys in Python list
+arrays and sets are all Container data
+types that store collection of items
+each type serves a different purposes
+and use in specific scenarios depending
+on the needs of the program so for
+example list let's are like R1 the most
+versatile data structures in Python they
+are ordered mutable and can hold a
+heterogeneous assortment of objects then
+if I talk about characteristics lists
+are ordered meaning that the items have
+been defined in order and that order
+will not change until unless you change
+it so guys as you can see all over here
+that lists are mutable meaning you can
+change their content without changing
+their identity you can also have a
+duplicate element in a list so it is
+always advisable to use list when you
+need an ordered collections that can
+change and might include the duplicate
+entries suitable for the cases where you
+need to perform frequent read and write
+operations now if I talk about arrays
+arrays in context of python arrays
+module or the numpy arrays are
+specifically optimized for numerical
+data and offer more storage efficiency
+and operations which are tailored to
+numerical processing like you can use
+numpy arrays and a situation when an
+extensive set of operations are for
+mathematical and logical based arrays
+are also mutable and ordered so you can
+use arrays when you need to store large
+amount of numerical data for scientific
+Computing or other operations that
+require efficient and compact storage
+with vectorized operations like for data
+analysis machine learning or any task
+that requires efficient array
+computation the next one is sets so guys
+sets are unordered collection of unique
+elements they are like mutable and
+provide operations to perform common
+sets of operations like unions
+intersections differences and symmetric
+differences sets are like unordered so
+they do not record element in position
+or order of insertion we can use sets
+whenever you need to ensure that a
+element appears only once in a
+collection so ideal for membership
+testing removing duplicates from
+sequence performing mathematical set
+operations like Union intersection
+symmetric Etc so this was all about this
+question now let us move on to our next
+question so guys let us move to our
+final question that is what are some of
+the common ways to handle missing data
+in Python and which method do you prefer
+and why so guys as we all know that
+handling missing data is a crucial
+aspect of data pre-processing especially
+in real world scenarios where data
+incompleteness can skew or invalidate
+analysis python particularly with
+libraries like pandas and numpy provides
+robust methods for dealing with missing
+data so here are some of the common
+strategies the first one that is is
+removing
+data okay so like dropping rows or
+columns with missing values using dropn
+function okay so you can use when this
+data set is too large or when the
+missing data is not significant and it
+is not likely to introduce bias so in
+that scenarios you can use it there are
+certain drawbacks to it like you can use
+valuable data also that could be
+critical for analysis the second
+technique that comes up to my mind is
+imputation so guys when you're are
+filling missing values with either a
+test statistic like mean median mode
+okay for numerical data or a frequent
+category for categorial data this can be
+done using fil now or a simple imputer
+from skarn impute so you can use it when
+the Integrity is crucial and you cannot
+afford to lose data points
+a drawback of this is that potentially
+it is introducing bias or affecting the
+distribution of the data so using
+algorithms is a third
+part repeat so third one is predicting
+the missing values using algorithms to
+predict missing values based on other
+data in the data sets techniques can
+range from simple linear regression to
+more complex approaches like K nearest
+neighbors or random Forest so when the
+missing values are substantial and
+there's a reasonable hypothesis that
+other variables can predict the missing
+values so you can use this so it is
+computationally intensive and can
+overfit if not properly tuned next one
+is using a constant to fill the missing
+data
+so guys filling missing data with a
+constant is not present in the data
+likeus 999 for instance like to
+differentiate the real data from the
+field ones so often used in modeling
+competitions or specific algorithms that
+can handle peculiar values and interpret
+them appropriately the drawback of this
+is that it can skew the analysis if not
+handled correctly so Guys these were
+some of the common ways to handle the
+missing data in the python now for me I
+would like to prefer the imputation
+because imputation combined with
+indicator variables especially for data
+sets where missing values are
+informative so guys in this way it can
+yeld a better result so guys that was
+all for today's video I hope so you
+would have enjoyed our today's video on
+python interview questions at simply La
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry EXP
+choose any of our programs and set
+yourself on the path to Career Success
+click the link in the description to
+know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

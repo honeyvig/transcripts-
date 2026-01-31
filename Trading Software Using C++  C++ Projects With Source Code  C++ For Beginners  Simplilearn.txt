@@ -1,0 +1,565 @@
+foreign
+welcome back to another video by simply
+learn in this session we will be
+creating a trading project in which we
+will be able to buy different types of
+Home Appliances like refrigerator air
+conditioner microwave Etc by checking
+their price and discount on each item
+after buying these products a proper
+bill will be generated displaying the
+current time and date
+we will use different concepts of C plus
+plus to make this C plus project
+this project will be helpful for those
+folks who are at their initial to
+intermediate stage
+we have tried to keep this project as
+basic as we could
+but before we begin make sure to
+subscribe to our YouTube channel and hit
+the Bell icon to never miss an update
+from Simply learn
+now let's switch to our code editor
+so this is a code editor Dev C plus plus
+first of all let's save this one
+let's type first of all we'll include
+the header files so hash include
+iostream
+now let's try to say first of all
+let's save it let's name it first of all
+we want to name it let's say
+project 2 dot CPP
+so we have named this one and we have
+saved all right now the project2.cpp is
+the name of this file
+now we can start with the coding part
+now another header file we'll have to
+include is Hash include C time so we are
+including C time because we have to
+display the time also that's why I will
+have to include this Library C10
+only Now using namespace standard
+now we'll start with the main function
+that is int me
+now inside this function we'll first of
+all initialize some variables and
+functions
+so let's say
+we'll initialize the character and let's
+name it start
+after that we'll have to initialize or
+declare a function Also let's say the
+function name is shop
+and what will be passed to it all right
+now another variable would be of
+character type again it is choice
+so we have created two variables and
+declared a function
+all right so this project would be of
+shopping of trading of Home Appliances
+so we'll do that
+for that we will ask the user to press a
+key let's say for home appliances you
+would press h to continue shopping
+so
+first of all we'll create a tag
+I'll explain to you why we are creating
+these tags first of all we'll create a
+tag start L we have named this tag as
+start l
+all right now
+will display a message saying that
+please press h
+to start shopping
+for Home Appliance
+all right
+so we are asking the user to press h
+to start shopping for the home
+appliances
+now here we use again another tag start
+I'll explain them later why we are doing
+that
+now we will take an input from the user
+the it that is start
+we'll take the input now this input
+would be H that the user will be
+entering so now the user can enter small
+in small case or in uppercase so for
+that we will use an if condition
+in which we'll write
+start equals equals
+H that is the lower case
+or
+start equals
+uppercase
+all right so here we will declare a
+variable let's say float
+and name it total now we will call a
+function and store that function in this
+variable so we'll call show up
+all right
+now time underscore t
+equals
+time
+null
+so yeah now let me write the other part
+of the code also then I'll explain the
+complete part so TM star
+PTR
+local time and T
+so time T is a Time related type so
+there are four types of time related
+types clock underscore T time underscore
+T size underscore T and TM these types
+are capable of representing system and
+date as some sort of integer
+now here the time function with null
+parameter Returns the current calendar
+time in seconds
+as you can see time with null
+now moving on to the second that is
+tms26 sign so TM is a struct type and
+the local time function is returning a
+pointer to the TM object
+this is a local time function this is
+returning the object to the TM this
+returning function to the team object
+right
+so as you can see here we have used the
+error operator so the arrow operator in
+C or C plus plus gives the value held by
+the variable name to the structure or
+Union variable of the pointer name
+so after that we can see we have used
+the TM day
+here TMM date so it means that days of
+month ranging from 1 to 31.
+and this
+tmmon which means month since January
+so it is we are using these variables to
+represent the time
+so TM Moon that is for month it will
+represent it means the months from
+January since January and this is for
+the Days 1 to 31 and this is for the
+year like TM year means year since 1900.
+so we will use all of these to represent
+the date
+all right now we'll type print build
+time
+so for the build time we'll have to do
+this like
+P PTR
+yeah
+all right for this we'll have we will
+use this
+foreign
+so here we are printing the build time
+this will print the hour this will print
+the minute this will print the second
+all right
+now we'll print total bill amount
+all right now we will use an if
+condition because you will have to give
+some discount also
+so if the total is greater than
+50 000 and less than one lakh
+then we will give a discount of five
+percent and to give the discount we'll
+do
+total equals total minus
+0.05
+into
+Tal
+that would be
+five percent
+now the total discount will print
+total discount
+five percent
+similarly we will do for others also
+like if we if the buyer buys more than
+one lakh in less than one lakh 25 000
+then we will give a different discount
+and different discount for other amounts
+as well
+so we can do that we can just copy it
+and then use it
+else if
+so here we'll do that if the amount is
+from 1 lakh
+foreign
+then we will give a discount of let's
+say 10 percent
+0.1
+it would be ten percent
+next I'll see if
+let's just copy paste this one
+125 to 150.
+then we will give a discount of
+25 percent which is 0.25
+if the amount is more than 1.5 lakhs
+that is 1 lakh 50 000.
+then we will discount we will give a
+discount of 0.5 that is 50 percent
+now here we'll write
+C out
+total bill amount
+and then we will print amount
+that is total
+now here we will use a tag again
+now here we will print that do you want
+to shop again or not if yes then press Y
+and if no then you have to press n then
+we'll have to take the input from the
+user
+let's see in
+choice
+so if the user selects
+y so we'll write if Choice equals to
+y smaller case for uppercase
+then we can do that go to start as we
+have used the tag
+so these tags are used because
+if the user press y then will straight
+go to this
+start tag like this portion will be
+displayed
+so as we can see this tag is used so if
+the user will press yes or Y
+then we'll straight go to this part
+because this tag so that's how tag is
+used
+also we'll have to use single quotes
+note the double one
+now as if
+and else you will write
+choice
+and
+in this case we can print thanks for
+shopping
+and in else so it will act as a default
+case
+so this is basically a default case in
+which in this portion we'll write you
+have entered wrong option please press h
+all right now we'll use again an else
+block
+for the above if
+he'll write
+you have entered
+wrong option
+please
+press h
+to start again
+now go to
+start
+after that as we can see we have
+declared a function
+this
+float total this shop function that we
+have stored in total so we will be
+creating the body of this function
+float shop
+now here we will use a tag again so
+again a tag will be used which is name
+shop the name of the tag is shop now
+again some variables will be declared
+like character choice
+product again of character type
+let's say
+quantity
+of integer type
+and
+bill will which will have to initialize
+from zero we will be using it
+then again we will be using another tag
+let's say item
+item level or item l
+your choice whatever you want to name
+the tag
+now let's create a
+welcome
+interface kind of a thing
+all right as you can see
+foreign
+after that and I will use
+and similarly we will copy this part
+and use it
+let's name it to please press W to order
+washing machine
+free for television let's say M4
+microwave
+and let's say
+A4 air conditioner
+now first of all we'll create an if else
+condition
+in that if else condition we will cover
+all the things like if it is not
+refrigerator washing machine television
+microwave air conditioner other than
+those things then it will go to the else
+block for that we have to create an if
+condition in which we will keep all
+those home appliances
+so let's just do that
+if choice
+equals r
+choice
+sequence
+the
+equals m
+okay
+all right now inside this if condition
+we'll use another if
+in which we will write if Choice equals
+r
+or uppercase r
+then
+in that condition we will
+we will mention different brand names
+and different prices of a refrigerator
+so for that let's create
+see out in that we will write
+a whirlpool
+foreign
+after that we will use ndel
+similarly we'll do for all of these
+so let's say Whirlpool Samsung will
+mention it Samsung
+and then higher
+similarly
+voltas
+foreign
+now the user will enter the choice like
+one two three
+up to six
+so let's see if the user will enter
+1
+then we will ask the user please enter
+the quantity of the product
+all right now in C in we'll write
+quantity we'll take the input from the
+user
+now
+these variables we have already declared
+so Bill equals to Bill
+Plus
+quantity
+into
+40 000 which is the price of one that is
+whirlpool
+washing refrigerator Whirlpool cost 40
+000 that is why we are multiplying this
+all right so
+similarly if
+in else if condition will do the same
+If the product is 2 the if the user will
+press 2
+then the price of Samsung is
+25
+000
+the rest is same
+ly
+for product three also
+foreign
+so this is what we have created for
+refrigerator now we'll have to use an
+else block
+and this else block will write
+you have entered
+the wrong option
+please try again
+all right now go to
+refrigerator
+now similarly as we have done for the
+refrigerator we'll do the same for
+washing machine also
+let's copy this part
+if Choice washing machine that is w
+washing machine details
+all right
+now let's name it Bosch
+and the price would be forty thousand
+twenty five thousand twenty thousand
+the second would be LG
+third would be ifp
+higher
+and last should be let's say Samsung
+we can do the same we can copy this part
+to save some time
+we'll have to alter
+the values only the rest would be same
+all right if the product is one then
+please enter the quantity of the product
+forty thousand twenty five thousand
+twenty thousand fifty eight
+you will have to do 58
+then 30 000.
+then 45
+000
+similarly we'll have to do it for others
+also like as we can see
+we have many home appliances like we
+have done RAV4 refrigerator and washing
+machine will have to do for television
+microwave air conditioner for these
+three we will have to do the same so we
+can just copy paste those things so we
+have copy pasted for air conditioner
+micro even television
+and let's save it
+let me show you this is for the
+television
+the code is same we'll have to alter the
+digits like the price of each brand
+will have to do that and for microwave
+also
+as you can see
+and now let's have a situation where the
+user enters any other alphabet rather
+than these alphabets like r w m t a
+then for that condition we will have to
+create an else block
+and for that let's create an else block
+in that else block we will write
+you have entered
+the wrong option
+please try again
+all right
+return
+bill
+all right
+after that we'll have to use the bracket
+let's try to run it by first saving it
+now we'll try to run this execute
+compile and run
+let's hope it works
+so there are some errors
+so there are some errors that we need to
+take care of
+another one is this
+rptr we have written it's dptr
+and the TM second will have to use the
+error operator here
+all right
+so let's save it again and try to run
+this
+hope it runs
+so as you can see it is showing please
+press h to start shopping so we'll press
+h
+now please follow the instructions
+please enter R to order refrigerator
+please enter W to order washing machine
+please enter T to order television enter
+M to microwave a for air conditioner
+so let's say I won't want a refrigerator
+only
+and these are the refrigerator details
+they have Whirlpool Samsung higher
+voltas growth rage Panasonic and the
+price ranges are mentioned so let's say
+I want to order voltas
+I'll click four
+please enter the quantity of the product
+let's say I want to purchase
+four refrigerators
+let's consider consider a situation
+all right so four refrigerators date is
+mentioned time is mentioned and the
+total bill amount is 72 000.
+foreign
+[Music]
+72 as we can see so total discount as we
+have given the discount above 50 percent
+is five percent so after discounted it
+reduces to 68 400. now they're asking if
+you want to continue shopping or not
+like let's say I want to shop something
+more then I I'll click why
+before that guys let me show you that we
+have different discounts that we have
+mentioned like
+let's see again
+as you can see just a second
+this if the total amount is greater than
+50 000 and less than one lakh then five
+percent discount if it is greater than
+one lakh and less than one lakh 25 000
+then it will be 10 percent between 125
+and 150 it would be 25 percent and
+greater than 150 to be 50 percent
+so this is how we are giving the
+discount in this project
+now let's try to run this again
+so we'll press h
+now let's say I want to buy microwave
+I'll click m
+let's say
+Whirlpool or Samsung let's say Samsung
+microwave I want to buy I'll press six
+please enter the quantity of the product
+let's say I want to buy five microwaves
+then 1 lakh 75 000 build date is created
+build time is generated
+50 discount is there
+and after the discount it comes around
+87 500.
+all right
+so this is how we can do that and let's
+say I'll click on why if you if I want
+to shop again then again I'll have to
+click on edge now I want to buy let's
+say air conditioner
+so I'll press a
+enter your choice
+let's say I want to buy o Journal so
+I'll click on four
+three o General ACS
+66 000 after discount it is 62 700.
+and let's say if I add some wrong option
+let's say I'll click
+so here I'll have to click rwtma let's
+say I'll click four or two something
+some digits I'll enter
+then it will show you have entered the
+wrong option please try again
+and if I'll click let's say B which is
+not there
+then what will it show
+again it will show you have entered the
+wrong option
+so we have to select
+rwtna from these we'll have to select we
+cannot select from any other digit or
+alphabet
+we have to select from rwtma
+so let's check
+a and
+taken
+one only
+and now I want to kind of quit the
+shopping then I'll click on n
+thanks for shopping
+so this is our C plus plus trading
+project that you can create it is quite
+basic project and this will help you in
+understanding C plus plus in a better
+way
+so this was all about our project in C
+plus plus you can make this project on
+your own for the learning purpose the
+link of this code will be added in the
+description box
+with that we have come to the end of
+this video so if you like this video
+please give it a thumbs up I hope it
+really help you all thanks for watching
+stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

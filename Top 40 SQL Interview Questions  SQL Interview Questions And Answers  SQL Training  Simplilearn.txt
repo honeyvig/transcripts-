@@ -1,0 +1,1583 @@
+foreign
+data is getting bigger day by day and it
+has a significant role in decision
+making for companies now in order to
+handle these huge amounts of data there
+is a need for database and database
+Management Systems now in order to
+communicate with these databases you
+need a tool this is where SQL comes into
+picture would you like to Ace the most
+frequently Asked SQL interview questions
+during your campus placements to land in
+your dream company well you are at the
+right place and on that note hello
+everyone welcome to Simply learns
+YouTube channel I hope you guys are
+doing well and staying safe in this
+tutorial we will be taking you through
+some most commonly asked SQL interview
+questions in 2022 and for 2023 we look
+at some of the key things that you need
+to keep in mind while answering these
+interview questions the general
+questions will revolve around key
+Concepts like commands constraints joins
+functions transactions and other
+database related questions you may also
+get some scenario your based questions
+wherein the interviewer might ask you to
+write queries other than the theoretical
+questions wherein the interviewer wants
+to test your knowledge in depth so we'll
+be going through all these
+technicalities and see how to answer
+these questions in your next interview
+but before we begin if you're new to the
+channel and haven't subscribed already
+consider getting subscribed to our
+Channel simply learn to stay updated
+with all the latest tech content and hit
+that Bell icon to never miss an update
+from us so without any further Ado let's
+get started
+so the first question is what is SQL and
+why it is used SQL or structured query
+language refers to a standard
+programming language utilized to extract
+organize manage and manipulate data
+stored in relational databases SQL is
+thereby referred to as a database
+language that can execute activities on
+databases that consist of tables made up
+of rows and columns SQL commands are
+used to process analyze and manipulate
+the data that is stored in databases SQL
+plays a crucial role in retrieving
+relevant data from databases by
+performing various operations like
+insertion updation modification and
+deletion
+SQL can manage several data transactions
+simultaneously where large volumes of
+data are written concurrently so that is
+SQL and why it is used
+moving ahead let us now discuss our next
+question which is why we need a database
+as the technology kept on advancing the
+file system had became difficult to
+handle when the number of files
+increased and the volume of data also
+grew this is where database comes into
+picture the system is no longer able to
+store and retrieve data efficiently and
+this created some some limitations and
+drawbacks and that is when we needed a
+new medium through databases now the
+problem with traditional file systems is
+we have data redundancy and
+inconsistency redundancy means when the
+same data is getting duplicated and
+repeated in different location this
+leads to excess and unwanted storage
+which eventually results in
+inconsistency where the data in
+different files does not match with each
+other data isolation data is isolated
+because it is scattered in various files
+in different locations and the files may
+be in different formats as well at any
+point writing new application programs
+to retrieve the appropriate data becomes
+difficult as the files are separated
+from each other in different locations
+limited data access file storage systems
+usually do not have access for multiple
+users this means multiple users at
+different places cannot access the data
+simultaneously it becomes difficult to
+access important data if multiple users
+are searching at the same time
+security and integrity issues
+data is of Paramount importance to
+anyone and its privacy and its security
+is one of the most important things we
+need to consider data stored in files
+can be easily accessed and tampered so
+it is important to prevent access to
+unauthorized users to hold the Integrity
+of the stored data so in order to
+eliminate all these drawbacks we use a
+database which is further controlled by
+a database management system
+all right moving ahead the next question
+is how does an SQL database works now
+database store related information
+across multiple tables and allows you to
+query information using SQL commands but
+the process it is a bit of
+a hectic one and in order to understand
+this in a simple way I have put a flow
+diagram here where you can understand
+how the flow between the user and the
+SQL engine through the database server
+is happening now a typical SQL database
+engine includes a storage engine which
+is a database server and the query
+processor within the SQL engine now to
+retrieve the data the query processor in
+the SQL engine accepts and executes SQL
+commands for the database server which
+forwards to an application server now
+this application server within the
+database process the SQL request and
+sets it to a web server where the user
+can access the information via SQL
+cables if the required data is found in
+the tables that is present in the
+database server it sends the information
+back to the user in this way one can
+find the the data that is needed from
+the database by writing simple SQL
+queries so this is how a traditional SQL
+database works I hope you guys have
+understood let us now move ahead and
+discuss the next question which is what
+are the main usages of SQL or you might
+be asked what are the features of SQL or
+you can or you might be asked why we use
+SQL now SQL is responsible for accessing
+and manipulating the data present in
+databases by writing simple SQL queries
+now the main function or the main usages
+of SQL is it is used to execute query
+against a database Now by writing a
+simple query you can perform complex
+operations to retrieve data from the
+database you can also perform various
+operations like insert update and delete
+records for example if you have created
+a new table you can insert records in
+that now due to for due to some reasons
+if there is a modification or a change
+in the record you can use the update
+statement to modify them and finally if
+you no longer want to process that data
+or show the data in that table you can
+use the delete command to delete that
+data present in that table
+and again as discussed earlier it is
+used to perform complex operations on
+the database like functions by joining
+two or more tables and Etc
+the next question is what do you
+understand by tables and Fields in a
+database
+a table is a set of data that is
+organized in a model in the columns and
+rows format tables are considered as the
+fundamental level to store data in a
+relational database management system it
+contains a header row at the top of the
+table which gives the list of column
+names
+now the tables contain rows and columns
+where the rows are known as records in
+general and the columns are known as
+Fields now a column is set of data
+values of a particular type like numbers
+or alphabets for example if you consider
+the employee table here which has
+employee ID employee name job department
+number salary in the column names which
+is basically considered as the different
+fields and we also have different
+records present in this table like if
+you consider the employee details of
+Rohan whose employee ID is 1011 who's
+working as a data analyst so fields are
+basically columns in a table with
+specific information about the data and
+a record is basically an individual
+entry that exists in a table
+all right the next question is explain
+different types of commands in SQL now
+mainly there are four types of commands
+in SQL the first one is data definition
+language or ddl data destination
+language helps you to define the
+database structure or schema
+data manipulation language or DML DML
+allows you to modify the database
+instance by inserting modifying and
+deleting its data
+next we have data control language or
+DCL DCL gives access to the data stored
+in the database by granting and revoking
+permissions to the user and finally we
+have transaction control language or TCL
+TCL commands deal with the transactions
+within the database so these were some
+of the important and mainly used SQL
+commands
+now moving ahead you might be asked to
+explain any one of the SQL commands in
+detail so I have taken other question
+here which states that what are the
+statements used under DML commands so
+you need to prepare accordingly and
+thoroughly so that interviewer want to
+know whether you have the in-depth
+knowledge of the SQL commands or not now
+typically under DML commands we have
+four statements the first one is Select
+this command is used to fetch data from
+a database table next we have insert
+insert is is used to insert data into a
+table of a database now if you have
+created a database and if you want to
+insert some record into it you can use
+the insert statement next we have update
+update command allows modifying a data
+in the table now as discussed earlier if
+you want to make changes in your
+database you can use the update
+statement which basically updates the
+value in a given table and finally we
+have delete this command allows deleting
+specific rows from the table now if a
+longer if you no longer want the data to
+be present in your table in that case
+you can use the delete statement now
+guys we have select statement which also
+comes under dql command which is data
+query language but in most of the cases
+we consider it under DML command as well
+so you need not worry so these are the
+four statements that come under DML
+commands moving ahead the next question
+is what are aggregate functions in SQL
+aggregate function SQL perform a
+calculation on multiple values and
+return a single value
+now we have five different types of
+aggregate functions in SQL the first one
+is Count function count is used to
+basically count the total number of
+fields or number of uh data that you
+want from your table next we have the
+average average is used to calculate the
+average of all the fields that are
+present in the table
+next we have minimum and maximum as the
+name suggests they are used to find the
+maximum and minimum value while
+performing any complex or mathematical
+calculations from your table and finally
+we have sum which is used to summarize
+or calculate the whole of the values
+that are present in the table so these
+are some aggregate functions that are
+used in SQL
+the next question is what are
+constraints in SQL constraints are a set
+of rules imposed on tables of relational
+databases constraints help in
+maintaining the accuracy integrity and
+reliability of a database
+now we have total of six types of
+constraints that are present in SQL the
+first one is unique unique constraint
+ensures that all the values in a column
+are different
+primary key primary key is a combination
+of a not null and unique constraint
+which basically uniquely identifies each
+row in a table
+next we have foreign key foreign key
+uniquely identifies a row or record in
+an other table
+next we have default constraint default
+constraint sets a default value for a
+column when no value is specified so if
+you're working on a database and if you
+haven't assigned a value in to that
+record it will automatically give a
+default value
+next we have check constraint check
+basically ensures that all the values in
+a column satisfies a specific condition
+and finally we have not null not null
+ensures that a column cannot have a null
+value so that was all about constraints
+and the different types of constraints
+that we use in SQL
+next question is what are keys in SQL
+and why do we use them SQL key is an
+attribute or set of attributes which
+help you to identify a unique row in a
+table
+SQL case are one of the most important
+attributes of any relational database
+because it plays important role to
+establish a relationship between two or
+more tables it also helps queries to
+execute faster that is retrieval of the
+records from the database becomes much
+faster by using keys keys also set the
+different constraint to uniquely
+identify the tuples or rows from the
+large data sets
+all right now once you are as water Keys
+the interviewer might ask what are
+different types of keys used in SQL so
+you have to be prepared for that as well
+now in general we have four different
+types of keys present in SQL the first
+one is primary key the primary key in
+SQL is a single or a group of fields or
+columns that can uniquely identify a row
+in a table for example employee ID or
+student ID in a table is considered as a
+primary key because it uniquely
+identifies each and every record present
+in that table next we have super key a
+Super Key is a combination of all
+possible attributes which can uniquely
+identify rows or tuples in a table
+next we have candidate key candidate key
+can be defined as a set of one or more
+columns that can identify or record or a
+tuple uniquely in a table
+foreign key a foreign key is a set of
+attributes in a table that refers to the
+primary key of another table so if you
+want to connect another table using the
+primary key of the existing table then
+the key that is present in the uh new
+table is considered as the foreign key
+now for candidate key let's say I have
+different uh you know Fields like let's
+say aadhar card passport or driving
+license as Fields present in my table so
+which can uniquely identify or record
+uniquely similar to that of primary key
+now since candidate key is a set of one
+or more columns we consider all these
+all of them as candidate keys so I hope
+you've understood till now uh what are
+the different types of keys used in SQL
+all right moving ahead let us now
+discuss the next question which is what
+are some common Clauses used with select
+query in SQL now as we know SQL being a
+query language requires a method to
+apply constraints on the data and for
+that we use Clauses skill Clauses are
+basically inbuilt SQL functions which
+allows us to apply certain restrictions
+on the data in a resultant set now with
+the help of SQL Clauses we can filter
+the data according to our requirement
+and it also reduces the complexity of a
+query which helps in writing
+user-friendly queries which are easy to
+read and understand as well which also
+ultimately allows us to restrict the
+number of outputs or the certain amount
+of data that we want in our resultant
+set now let us now discuss some of the
+different types of Clauses used in SQL
+first we have where plus it is used to
+filter records in the database now as
+you all know familiar that we have like
+thousands and thousands of Records in
+our you know database so if you want to
+filter only a particular records as per
+your requirement then you can give a
+condition which can be done by using a
+where Clause next we have ordered by
+order by Source the data either in
+ascending or descending order next we
+have group by Group by is used to group
+entries with identical data and can be
+used with aggregation functions or
+methods to obtain summarized database
+results next we have having Clause
+having Clause basically filters the rows
+where aggregate values may be specified
+conditions now group I and having are
+almost similar to each other so you can
+consider both of them to filter the
+records as per your requirement next we
+have the limit and again as the name
+suggests it is used to restrict the
+number of results from the query or the
+result in the resultant set for example
+if you have hundreds hundred records in
+your database and if you want only 50
+requests to display in a resultant set
+then in that case you can use them limit
+and finally we have the distinct clause
+which is used to you know discard the
+rows having any duplicate values which
+basically eliminates you know certain
+records that have any duplicate value so
+if there are any records that are
+repeated in your table then you can
+eliminate them by using distance plus so
+those are some of the common Clauses
+that we use with select query
+all right let us now discuss the next
+question which is what is the difference
+between care and wire care data types
+now I know you've all used both these
+you know data types extensively while
+working on your database but due to how
+frequently we use them many of us fail
+to recognize their differences when
+asked to choose between worker and Care
+in your interview questions now the
+difference is important to know from
+both an interview point of view and from
+the standpoint of the database design as
+well when you're working on your you
+know database application because uh a
+poor choice of data type from both these
+uh you know data types restricts the
+type of data you can add which can
+ultimately waste space and slow down
+your query as well so it is important
+that we understand the difference now
+first difference between them is care is
+a fixed length character string data
+type and wirecare is a variable in
+character string data type
+and coming to care this data type can be
+a single byte or a multiple byte whereas
+wire can accept character strings up to
+only 255 bytes now character or care
+data type can be used when the character
+length is known so if you're working or
+if you are specifying a column data type
+wherein you know the length of the
+character in such case you can use the
+cat whereas on the other side wire car
+is a data type which is used when the
+character length is not clear so for a
+string values when the total number of
+character length is not known in such
+case you have to take VAR Care Now care
+is used when the character length of the
+data is the same whereas worker is used
+when the character length of the data is
+changing that is when it is variable and
+finally car is a static data type and
+badcad is a dynamic data type so these
+are some of the main and important
+difference between carrot and wire care
+data types and choosing between them uh
+is important that because you know it
+can ultimately affect your database
+performance so it is important to choose
+the right data type
+all right moving ahead the next question
+is name few data types used in SQL I
+hope you've come across this word data
+type in almost every programming
+languages so similar to those uh data
+types present in unlike any other
+programming languages we do have certain
+data types which are similar in SQL as
+well now as we know a data tape a
+database table must have a name and data
+type for each column so when building a
+table an SQL Developer must decide what
+kind of data will be stored in each
+column so the data specifies how SQL
+will interact with the store data and
+serves as a guide for SQL engine and
+determining what kind of data is
+expected inside of each column so we
+have different data types like numeric
+data type which has in type bit float
+and Boolean types of uh you know
+elements of data types next we have
+string data type which contains care
+worker and Text data types and next we
+also have date time data types which
+takes a different elements again which
+has date format which only takes the
+entry of date in year month rate we also
+have date time we also have time stamp
+as well now other than this we have some
+miscellaneous and extra data types also
+for example XML and Json formats in
+order to store the data in our tables as
+well so these are some of the important
+data types used in SQL I hope you guys
+have understood
+all right moving ahead let us now
+discuss the next question which is
+explain the difference between Group by
+and order by now both these Clauses are
+one of the important Clauses in SQL as
+they are used to filter and sort the
+data as per our requirement so it is
+also again important that how we use
+them and how their uh you know
+specifically being used is important so
+you have to understand the differences
+and when to use and when not to use now
+coming to group by Group by is used to
+group the rows that have the same value
+whereas order by is used to arrange the
+data obtained as a result of a query in
+a sorted form so let's say if you want
+to arrange the first 10 records in
+ascending order then you can use the
+order byte Clause whereas if you are
+let's say want to group certain columns
+in a particular order so then in that in
+that case you can use Group by Group by
+Clause now group I always is used before
+the order by clause in the select
+statement whereas order by is used after
+the group by clause in a select state
+so if you want to use a group by you
+need to use before the order by and
+similarly for uh order by also it is you
+always used after the group by next
+Group by uh attributes under aggregation
+function cannot be in group by Clause
+whereas attributes under aggregate
+functions can be in order by Clause now
+it is also mandatory to use aggregate
+functions in the group by so whenever
+you are performing function aggregate
+functions like count sum average minimum
+and maximum in such case you need Group
+by whereas aggregate function is not
+compulsory as such to use an order by
+function and finally the important thing
+Group by controls the presentation of
+rows or tuples whereas order by controls
+the presentation of columns
+all right moving ahead let us now
+discuss the next question which is why
+do we use case statement in SQL
+so the case statement in SQL is a way of
+handling the if else statement that we
+use uh in other programming languages
+which basically uh returns a value for
+the condition specified now it tests a
+list of conditions and returns one of
+the multiple possible results so it is
+used to fetch us a particular value
+based on a certain condition in your
+database so the case expression
+basically goes through conditions and
+return of value then the first condition
+is met just like an if then else
+statement so once a condition is true it
+will stop reading and return the result
+if no conditions are true it Returns the
+value in the else clause and if there is
+no else part and no conditions are true
+it will basically return a null value so
+that is what an SQL case statement does
+in your SQL database so for example if
+you consider an example here we have a
+query such as select employee ID job
+title salary and we have to mention the
+keyword case and it is always followed
+with a when and then keyword so I am
+specifying a condition here when salary
+is greater than or equals to 50 000 I
+want to display a string value that is
+the salary is greater than 50 000 and if
+salary is equals to 50 000 I want to
+display a you know message as the salary
+is 50 000 and if both these conditions
+are not satisfying then it will go to
+the else part which will basically
+return the salary is under 50 000 and it
+will always end with an end as statement
+so this is what case statement is in SQL
+and why do we use it
+all right moving ahead one of the most
+important questions which is what are
+joints in SQL and explain different
+types of joints
+now you might have come across the SQL
+joins key Awards in most of the cases
+guys uh they're one of the important
+statements in SQL which allows you to
+access information from two or more
+tables at once which also keep our
+database normalized basically
+normalization is allows us to keep data
+redundancy low so that we can decrease
+the amount of data anomalies in our
+application when we delete or update a
+record we'll get into that uh when we
+talk about normalization in detail so
+you just have to understand that the
+joint laws allows us to retrieve data
+from two or more related tables into a
+meaningful resultant set
+so for example we'll understand with an
+example consider a Mercedes Benz which
+is one of the uh you know largest
+automobile manufacturing companies in
+the world so let's say they are trying
+to access some information of their
+customers now in the database let us
+assume that they have three different
+tables of customer an order table and a
+vehicle table now let's say they're
+trying to find a particular model type
+you know which a customer has purchased
+in a recent time so for that in order to
+find that data they have to go through
+three different stages that is first
+they have to find the customer table and
+then they have to go to order table to
+find the order ID so that they can get
+into the vehicle ID details and finally
+they'll fetch the model type or let's
+say the the variant from the vehicle
+orders now instead of that I'll just
+simply join the two tables that is the
+customer table and vehicle table based
+on the common column that is present in
+this both table which is customer ID so
+with the help of this common field I can
+retrieve the model and the variant
+instead of searching the three tables
+you know one at a time so simultaneously
+I'm able to retrieve data by using
+common columns in both the table so that
+is one of the most important USB or the
+uh factor that a join does when you're
+trying to retrieve data from more than
+one table
+so I hope you've understood what what
+joints are and let us now understand the
+different types of joints now the first
+joint is inner joint
+the inner joint returns only those
+records that have matching values from
+both the tables that is the left table
+and right table next we have the outer
+or full outer join now
+outer join basically retrieves the data
+from both the tables irrespective of
+whether they are matching or not so it
+will display the values either from left
+table or from right table
+now next we have the left join as the
+name suggests the left John gives
+priority to the first table or the left
+table or the first table so it will
+retrieve only the records that are
+present in the left table and only the
+matching records that are present from
+the right table
+and finally we have the right join right
+join basically retrieves the data from
+the right table or the second table and
+only the matching values from the left
+table or the first table so these are
+some different types of joints we use in
+SQL if you want to learn more about SQL
+joints make sure to check out our SQL
+joins tutorial on our Channel where we
+have discussed the syntax and its use
+cases which with a certain examples and
+its execution in MySQL workbench as well
+so I would highly recommend you to check
+that out
+all right moving ahead next question is
+what is explain the difference between a
+join and a union in SQL
+so now joints and unions can be used to
+combine data from one or more tables now
+the difference lies in how the data is
+combined so in simple terms joins
+combine data into new columns if two
+tables are joined together then the data
+from the first table is shown in one set
+of column alongside the second tables
+column in the same row so if you look at
+this example where we have taken two
+tables in a resultant tables The Columns
+are being added side by side
+so each row in the result uh contains
+column from both table A and B rows are
+created when columns from one table
+match columns from another so this match
+is basically called the join condition
+but when I speak about Union Union
+combines data into new rows in a union
+each row within the result is from one
+table or the other in a union columns
+aren't combined to create results but
+rows are combined unions are typically
+used when you have two results whose
+rows you want to include in the same you
+know same result that is if you want to
+include the difference the rows in your
+resultant set then in that case you have
+to choose the union so that that was
+some of the main differences between the
+join and Union statement
+all right moving ahead let us now
+discuss the next question which is what
+is the difference between delete and
+truncate delete command is used to
+delete only specified number of rows
+that is if you want to delete only
+specific rows like one or more rows you
+can uh use the delete statement whereas
+the truncate command is used to delete
+all the rows uh in a single go from a
+table delete comes in a DML command that
+is data manipulation language whereas
+truncate is a ddl command which is data
+definition language
+now there may be a where clause in the
+delete command in order to filter the
+records since we are specifying uh
+deleting only specifying specified rows
+we can use a where Clause to limit the
+number of rows that we want to delete
+whereas we do not have the option to use
+where clause in the truncate command as
+it deletes all the rows simultaneously
+Now using when you use a delete the
+changes can be rolled back so once you
+delete certain records from the table
+you can use the rollback statement uh to
+make changes again whereas if you use
+the truncate the changes cannot be
+rolled back once you are once you have
+deleted the records from the table it
+will completely uh just vanish from the
+table and you do not have the you know
+luxury to get back to to its original
+state that is it cannot be rolled back
+now delete on a performance side the
+latest slower than truncate because they
+are individually deleting the rows
+whereas truncate is faster than delete
+because we are deleting all the rows at
+a single time
+so these are some of the main
+differences between delete and truncate
+and one thing you have to keep in mind
+in that uh when you are using truncate
+you have to be careful because once you
+have once if you use the truncate and
+once the deletion is done you cannot uh
+get back to its original state that is
+that changes can be rolled back so it is
+very important that you choose these two
+statements you know wisely
+all right moving ahead let us now
+discuss the next question which is what
+are sub queries and how they're used in
+SQL now software is in SQL are another
+important concept if you are trying to
+solve complex SQL queries so in such
+case sub queries can be quite handful so
+you need to know what sub queries are
+now as the statement says as an SQL sub
+query is nothing but a query inside or
+another queries and we use a sub query
+to fetch data from more than one table
+that is if you're retrieving data from
+one or more tables we need sub queries
+and a sub query is also often referred
+to as an inner query while the statement
+containing a sub query is also called an
+outer query or outer select statement we
+can Implement sub queries with the
+select insert update and delete
+statements along with the operators like
+equals to greater than equals to in
+between and Etc now consider an example
+here where I'm trying to find you know
+the listed price of all the items
+present in the orders table whose price
+is greater than the average of total
+listed price in that order a table so
+here the inner query becomes the select
+average listed price from the order
+table statement so it basically
+calculates the result of this in a query
+first and it passes on to the outer
+query so let's say if I have the average
+of the listed price is 100 so the outer
+query basically selects the name the
+listed price from the orders table whose
+listed price is greater than 100 so it
+will retrieve all the data whose price
+in order table is greater than 100 so in
+this way you can use sub queries you
+know to find complex or more you know to
+find inferences of the complex queries
+by using a simple sub query so I hope
+you understood what sub queries are
+let us now move ahead and discuss the
+next question which is what is asset
+property in a database now to ensure
+that the database is in a consistent
+State both before and after the
+transaction one needs to follow certain
+properties and those properties are
+known as asset properties now where a
+stands for atomicity C stands for
+consistency I stands for isolation and d
+stands for durability now talking about
+atomicity the concept of automatic
+atomicity describes how the data stays
+Atomic so in other words if an action or
+transaction is performed on the data it
+should either be executed completed or
+not executed at all
+so changes in the data must be like a
+single operation now next we have the
+consistency consistency the idea behind
+consistency is the value must constantly
+be maintained now the Integrity of the
+data should be upheld in dbms or SQL
+which means the changes uh done to the
+database should always always be saved
+next we have isolation now the
+characteristic guarantees that uh
+numerous transactions can take
+simultaneously without causing the
+database state to become inconsistent so
+transaction uh takes place without
+interruption and independently so
+changes made in one transaction are not
+visible to changes made in any other
+transaction until the change in question
+has been committed or not so isolation
+basically checks whether the transaction
+is getting successful in case of any
+system failures or not and finally we
+have durability now durability as the
+name suggests something which a
+transaction done is permanent if it is
+durable durability in dbms or SQL refers
+to the guarantee that data remains in
+the database permanently once an
+operation has been successfully
+completed so these are the asset
+properties that are present in a
+database which are also quite useful
+when you are working on SQL database
+because it should satisfy the condition
+uh in the tables that you are working on
+all right moving ahead let us now
+discuss the next question what are
+common table expression in SQL now a CT
+or Common Table expression defines a
+temporary result set that a user can
+refer possibly multiple times within a
+SQL statement so if you're serving
+someone working on large databases and
+if you want to use the queries that have
+already created you can just simply make
+us comment table expression where in it
+enables user to write and maintain the
+queries easily with increased
+readability and reusability
+now cities are more readable than
+subquery which makes it and go to SQL
+statement or the concept now CT
+basically increases the performance of
+the query now instead of writing the
+query each and every time while you're
+working on a database you can just
+simply already call The Common Table
+expression that you have created earlier
+now the syntax of CT is written as with
+CTE name that is you have to mention the
+CT name as within the parenthesis select
+column one column two from tables and
+close the parenthesis and again mention
+the select statement column one column
+two from CT name that you have written
+and you can also mention the condition
+using the where clause
+so that was about all about the Common
+Table expressions in SQL
+all right moving ahead let us now
+discuss what is normalization in SQL
+again guys normalization is a quite
+important concept even if you are
+working on a dbms or SQL Concepts I
+think it is important to prepare uh well
+uh for your interviews and this is one
+of the important question if you are
+preparing for that now a normalization
+is basically the process to eliminate
+data redundancy and enhance data
+Integrity in the table so it basically
+uh is useful to you know uh have the
+data redundancy and inconsistency at
+place it is basically a multi-step
+process that step that sets the data in
+a tabular form and removes the
+duplicated data from the relational
+tables so and also we have different
+types of normal forms guys so you need
+to prepare all of them and interviewer
+interviewer might ask you uh one of the
+normal forms that is uh present so we
+have four different types of normal
+forms such as one and f 2 and F3 NF and
+P CNF now a following question can be
+you know to explain any of the normal
+form now I'm considering here what is
+first normal form so
+for a table to be in first normal form
+you know the atomicity of the table is
+one that is every table should contain a
+single value and each and every record
+must be unique now let us understand
+with an example here let's say I have a
+table of students which has roll number
+name age courses as different fields now
+as you can see for one student we have
+multiple courses present in the same
+record so we have for Hersh he has opted
+for courses SQL and Java now as per the
+first normalization definition it is not
+correct because it shouldn't have
+multiple values present in one record or
+one column so we can this we can
+eliminate this by you know converting
+into a separate row that is we might
+have uh you know repeated values but it
+should be unique values so
+I have written SQL and Java into
+separate table into separate columns in
+a resultant table which basically
+satisfies the first normal form
+all right moving ahead let us now
+discuss the next question what is
+difference between SQL and MySQL now the
+interviewer might want to understand
+your you know in-depth knowledge whether
+you are understanding you know the
+differences between a MySQL which is a
+relational database and an SQL which is
+a programming language so the difference
+is basically SQL is a programming
+language whereas MySQL is a relational
+database management system which is used
+to you know perform various operations
+like insert update delete on the data
+that is stored in the database
+so SQL is a language which is useful in
+querying relational database system and
+again whereas MySQL is used to store
+modify and delete data in a database in
+an organized way SQL is a licensed
+product of Microsoft whereas MySQL is an
+open source platform managed by Oracle
+Corporation
+SQL provides adequate protection to SQL
+servers against Intruders whereas MySQL
+being an open source platform we cannot
+guarantee the security as it is
+unreliable
+coming to SQL it doesn't support any
+connectors whereas in MySQL we have
+various tools such as MySQL workbench in
+order to build databases
+so these are some of the major
+differences between the SQL and MySQL
+the next question is write an SQL query
+to find second highest salary from
+employee table now we all know to find
+the highest salary we can simply use the
+max you know aggregate function so the
+following query would be select ID
+employee name maximum of salary from
+employee all right but what if you want
+to find second highest salary that is
+where a sub query comes into picture you
+need to use a sub query to First find
+select maximum salary from the table and
+then you have to retrieve your
+particular columns that is employee Name
+ID or maximum salary from employee where
+salary is less than that maximum salary
+so something which is less than the max
+would be the second highest rate so that
+is what the logic is and we are doing
+that simply with use of subqueries here
+all right moving ahead let us now
+discuss the next question which is
+explain the differences between where
+and having Clause so where Clause is
+used to filter the records from the
+table based on specific condition
+whereas having flaws is also used to
+filter record from the groups based on a
+specific condition where Clause can be
+used without Group by clause and having
+Clause cannot be used without Guru by
+Clause where Clause implements in a row
+operation whereas having Clause
+implements in column operations now in
+general where Clause cannot contain
+aggregate function whereas in having
+Clause you can include various aggregate
+functions like count some average
+minimum maximum Etc and finally where
+Clause can be used with select update
+drip statement while you cannot use any
+of this statement with having plus where
+you can just only use the select
+statement
+so that were the differences between
+where and having Plus
+the next question is write an SQL query
+to return even and odd number records
+from table now I hope you guys know the
+logic behind this it is a simple SQL
+query you just have to use the model as
+operator which Returns the records with
+order even values for that we need to
+check the reminder when we divide the
+column value by 2. so when the reminder
+is 0 that is basically an even number
+otherwise it's an odd number so the
+query for even number records is Select
+start from table where ID modulus 2 is
+equals to 0 and for odd number odd
+number records you need to write a query
+as select star from table where ID
+modulus 2 not equals to 0.
+all right the next question is what is
+the difference between a function and
+procedure functions and stored procedure
+another important concept but their way
+of implementation is bit of similar so
+but you need to understand the
+differences on how they work so function
+basically returns a value that is it
+should always return a value when you
+are writing when you are performing a a
+complex function on your data database
+table and function can be called from a
+select query as well and function is
+generally used to perform some
+calculation and always return a result
+whereas on the other hand start
+procedures cannot be used in SQL
+statements anywhere in the where having
+or Select Plus
+procedures can either return a single
+multiple or no values at all that is we
+have an optional condition here that
+procedure may or may not return values
+in the resultant set
+Now using short procedure we can prepare
+SQL code which you can save so that the
+code can be reused again and again which
+is not with the case of function so
+stored procedure can be quite helpful
+again if you are working a large data
+set and if you want to retrieve uh
+values and if you want to fetch data in
+that case stored procedure can be quite
+useful as you cannot uh you know as you
+can use it
+simultaneously or multiple times
+all right moving ahead let us now
+discuss the next question which is how
+to create a new table from an existing
+table now creating a new table from on
+already uh you know created table is a
+bit of easy you just have to use uh
+we create and select statement so as it
+states a copy of a table can be created
+from an existing table using the
+combination of both create and select
+statement and the syntax is create table
+mention the new table name as mentioned
+the select statement inside the columns
+that you want to retrieve from the
+already present table that is from the
+existing table and you can also mention
+the where now if you want only a
+particular column in that case you can
+use the where condition so that was how
+that is how you can create a new table
+from an existing table again this is a
+simple you know SQL query wherein the
+interviewer wants to know if you are you
+know having proper knowledge on the
+tables like of creating a tables foreign
+the next question is how is SQL
+different from nosql now you guys might
+might have heard about nosql which is
+basically trending a lot nowadays where
+it is used to store a lot of
+unstructured data now as the data is
+increasing day by day SQL has been in a
+downside where it is unable to store you
+know a lot of unstructured data that is
+coming from the internet and from the
+you know World Wide Web so in that case
+you know companies have switched to
+another technology which uses a new you
+know way of storing the data be it you
+know unstructured or semi-structured
+data which is nosql however there are
+differences between SQL and nosql that
+is SQL is a relational database that is
+it comprises of rows and columns in a
+table and it is only stored in that
+format while no SQL is a non-relational
+database which basically you know stores
+data in a key value pair or a document
+based or a graph based data are
+structured and while SQL has a fixed
+schema design and structure that is you
+need to you know give the table
+structure that is you need to predefine
+this schema that is your rows or your
+columns in hindsight whereas noise scale
+has a dynamic schema design and
+structure that is you need not provide
+you know a schema if you're working on
+nosql database SQL handles complex
+queries whereas nosql handles large
+volumes of data so let's say if you have
+some data present in your table and if
+you are you know constantly working on
+it and Performing complex queries in
+that case you need SQL to retrieve the
+data whereas if you are having large
+volumes of data in that case you can use
+nosql SQL is vertically scalable while
+nosql is horizontally scalable
+now from what do I mean scalable is
+basically as a term used in database
+whereas scalability is the ability to
+expand or contract the capacity of
+system resources in order to support the
+ever-changing usage of your applications
+now when I talk about vertical scaling
+it refers to increasing the processing
+power of a single server or cluster now
+both relational as well as the
+non-relational database can scale up but
+eventually there will be a limit in
+terms of Maximum processing power and
+throughput whereas the horizontal
+scaling also known as the scale out
+method refers to Bringing on additional
+nodes to set the ring that is you can
+even improve you can even add CPUs and
+ramps to your existing server now this
+is difficult with relational databases
+because due to difficulty in spreading
+out related data across the nodes but
+with non-relational database or with SQL
+this is made simpler since collections
+which we use in nosql are self-contained
+under coupled relationally and finally
+SQL follows asset property that we have
+already discussed in our previous
+question which is what is asset property
+and whereas NOS skill follows cap
+property
+so these were some of the main
+difference between you know the
+traditional SQL language and the new or
+the emerging technology that is no SQL
+all right moving ahead the next question
+is write an SQL query to find the nth
+highest salary from a table now if
+you're a beginner or someone working as
+an SQL Developer even to an intermediate
+level uh finding you know first second
+third highest salary can be quite easy
+you know using you know sub queries or
+functions but whereas to find the nth
+highest salary you need a bit of more of
+assistance so using a sub query you can
+find the inside a higher salary wherein
+the query is written as select salary
+from employees as employee one where n
+minus 1. now here n basically denotes
+the higher and higher salary that you
+want to calculate let's say if I want to
+find the 35th highest salary you need to
+mention 35 in the end Place equals to
+select count distinct salary from
+employees as employee to I'm giving an
+alias name here where employee 2. salary
+is greater than employee one dot salary
+now
+the logic behind this is a basically
+self joining the same table again and
+I'm comparing the two tables wherein it
+will compare the salary from the second
+table which is greater than the first
+salary and it will retrieve the data in
+the resultant set now you can use this
+or do this in another way using the
+limit Clause the query is written as
+select star from employees where salary
+is equals to select distinct salary from
+employees order by salary limit n comma
+1. now this is applicable in most of the
+databases that you're working on like
+MySQL SQL server or even Oracle as well
+where you just have to specify the N
+value and use a limit clause and it will
+do the rest
+so let's say if I want to find uh 50th
+highest salary in place of n i can
+basically put 50 also and we can also
+find the nth higher salary using the row
+number function now if you want to know
+in detail on how to use the row number
+function and the syntax of it you can
+check out our video uh on how to find
+highest salary from our from a table in
+our Channel where we have discussed
+clearly on how to use various different
+methods and especially how to use the
+row number function as well so I'd
+highly recommend you guys to check that
+out
+all right moving ahead the next question
+is name the operator which is used for
+pattern matching in SQL now SQL like
+command or operator is is used to find a
+specific character in our database so it
+basically determines whether a specific
+character that you are mentioning
+matches a pattern string or not now this
+is used to perform complex pattern
+search in data wherein you don't know
+the uh you know complete you know
+information that you are working on the
+data so
+just with the help of some certain
+specifics or specific characters that
+I'm talking here about uh you can
+basically retrieve the data the syntax
+is followed as select column one column
+two column in from table name where
+column name like pattern let us just
+understand this an example where again
+you can have a follow-up question for
+this where it is where the interviewer
+can ask you write an SQL query to fetch
+the employees whose name begins with any
+two characters followed by a text R A
+which is basically two characters and
+ends with any sequence of characters now
+in general we have two different like
+operators which is underscore and
+percentage Wild Card characters where
+underscore matches a single character
+and percentage matches 0 or multiple
+characters
+so the answer to this query is basically
+select employee name from employees
+where employee name like within the
+parenthesis now as I as the question is
+stated as it should begin with any two
+characters so I can basically put an
+underscore here for the first two places
+followed by a text which is array and it
+can end with any number of characters so
+let's say if I have murali whose name
+starts with m and the next character is
+U so you can take it as m u r a and it
+can end with any characters again l i so
+murali is an example for this or else
+you can take Surat again you can have
+two different characters in the first
+position and it can end with any number
+of characters at the end so this is how
+you can use like operator in order to
+fetch certain patterns when you are not
+aware of the uh you know
+string or the data that you are trying
+to retrieve from the database table
+all right moving ahead let us now
+discuss the next question which is
+explain what is an alias in SQL and why
+we use it now I'm sure you know what uh
+the term Alias is it is giving a
+temporary name to someone so similarly
+in SQL also it is basically a temporary
+name that is given to a table or a
+column while writing a query now Alias
+can be quite useful because let's say if
+you're working on a database and if the
+columns or the table names are so long
+now you have to write or type the
+database table again and again in such
+long format so instead of that I can
+simply write a
+Alia's name for that now let's say I
+have employee details as my table name
+now instead of writing every time
+employee details I can just give another
+Alias name like EMP or EMP details so
+giving aliasis makes the table or column
+name more readable as well
+now if you are using Alias it is a
+temporary change guys so it is just
+limited to the runtime of the query
+wherein you are executing a query so it
+will just give a layer's name for only
+that moment and it is not permanently
+saved so if you're performing for column
+operations the Alias can be used as
+select column name as Alias name from
+table and if you are giving an aryas
+name for table you can write a select
+column one or column so on up to n
+columns from table name as Alias name
+all right let us now discuss the next
+question which is explain views in SQL
+now a database view in SQL is like
+having virtual tables containing a
+single query and its result now the
+result is usually a work virtual table
+which is having the same amount of rows
+and columns just like the actual table
+so we can either pass a query to store
+all the rows and Columns of a table or
+just a part of it now the most
+significant advantage of using a view in
+SQL is that it it also stores the query
+and hence we don't write we don't have
+to write it again and again from this
+scratch but again then the question
+arises why not use a stored procedure
+instead now even the stored procedures
+can hold a query and execute whenever
+called however the advantage with views
+is that they are easier and more
+straightforward compared to procedure
+and the query is queries written as
+create view view name as select column
+one column two up to so on column n from
+you can write a single table or from
+multiple tables as well you can you all
+also use a wire condition
+so we can just easily create a view in
+SQL from a single table or even multiple
+tables using the create view statement
+but before anything else we need to
+create we need to already have a table
+so that we can create a view for it so
+that was views in SQL and how they are
+used
+all right the next question is what are
+triggers in SQL
+so a trigger is basically a stored
+procedure which is a set of SQL
+statements saved under a name just like
+a function or even when you're writing
+you know views which takes a temporary
+name so that it can be reused that is uh
+triggers can be executed that are
+automatically uh you know called on when
+there is any change in the database now
+for instance you may program a trigger
+to execute when data is inserted in a
+table now we have different types of
+triggers as well based on the event and
+the timing of it so we have a different
+DML triggers we have ddl triggers and
+database triggers so now in DML we have
+insert update and delete and in ddl
+triggers we can use create an order
+statements now the timing is also
+important when you are triggering a data
+triggering certain event that is you can
+use before trigger that is you can use
+before insert trigger that is whenever
+you're trying to insert a new record if
+it is not satisfying the condition that
+you have specified then it will omit so
+it basically backfires before this
+specified event has occurred similarly
+you can use after trigger as well which
+basically you know fires after a
+specified event has already occurred
+so that was triggers in SQL
+so an immediate following uh question
+would be why we use SQL triggers being
+an advanced level concept the
+interviewer might want to know the
+in-depth knowledge of what SQL triggers
+are so SQL triggers allows the user to
+avoid redundant code with multiple
+programs need to perform the same
+database operations it also maintains
+complex column constraints and refresh
+inferential or data integrity and also
+it prevents invalid transactions and
+make sure that the user that is
+authenticating a transaction is being
+successfully executed
+and finally it increases the performance
+of the SQL queries because it does not
+need to compile each and every time when
+the query is getting executed so there's
+those are some of the main reasons why
+we use SQL triggers
+all right moving ahead let us now
+discuss the next question which is what
+is indexing in SQL now indexing in X SQL
+is a special table used to speed up the
+searching process of the data in a
+database table now let's say if you're
+working on thousands and thousands of
+record it becomes quite difficult you
+know if you try to retrieve certain data
+which are ultimately impacts the
+performance of the query now let's say
+let's take an example here now you all
+might have you know done this in your
+school days wherein you have this
+textbooks and in textbooks you have
+table of contents now if you want to
+refer to a particular chapter instead of
+searching from page one and
+simultaneously moving on to the next
+Pages you can just check the index page
+where you can find the number now let's
+say in the example I want to find the uh
+concepts of the neural science of
+hospitality which has an index 62. so
+instead of searching from the start I
+can just turn on to the 60 second page
+and just refer to to the contents that
+are present in that chapter so similarly
+in SQL as well instead of searching
+you know the whole table you can just
+speed up the process by using an index
+so the main benefit of using indexing is
+it improves query speed as discussed and
+faster data recovery is also another
+Factor when using indexing and also it
+the efficiency that is the search
+efficiency of the query increases
+wherein the performance of the database
+ultimately impacts on how you are
+running the query now the more the com
+the more complex the queries the more
+you know performance it takes which
+ultimately impacts the efficiency so if
+you're trying to perform you know data
+operations on more than you know 1000
+records or let's say one lakh records in
+a table in that case you can use index
+and that gives us the final question
+guys uh which is what are the
+applications of SQL in real life
+nowadays SQL has been uh in a tremendous
+you know usage for more than many
+sectors in in real life as well for
+example if you take banking banking
+sector is an important you know criteria
+for our nation for its development so
+banking uh uses SQL and it is one of the
+major components in banking sector where
+Bank stores the account details of
+customers and the transaction
+transactions done in the database on a
+regular basis it is also used in
+education sectors like schools and
+universities where
+the you know users or the people in uh
+authorization use SQL and databases to
+store and retrieve information about
+their students faculty and staff
+information
+next we have Finance Finance in a is
+another massive area where SQL queries
+are used regularly in managing the
+assets Revenue details shares of the
+companies now faster execution and
+retrieval of data plays an important
+role for all the businesses around the
+world to make strategies and derive
+insights from it and for that we need
+SQL to retrieve the data as early as
+possible
+and next we have Healthcare again
+hospitals and other medical centers use
+SQL to store the details of the patients
+without any hassle it also helps in
+maintaining all the documents necessary
+bills as well Etc
+manufacturing uh is another important
+you know sector where SQL is used and
+considering the vast presence in the
+market manufacturing also uses SQL in
+order to
+find that data from the Machinery the
+employees that are working in a
+particular manufacturing plant and Etc
+it is also widely used in travel also in
+order to store the details of the
+customers let's say if they have any uh
+you know offers to be presented in real
+time we use SQL in order to store all of
+this in no time
+and finally we have e-commerce as well
+now companies like Amazon Flipkart uh
+you know considering its best presence
+in the market retail and e-commerce
+company stores its customer data to
+improve their shopping experience by
+providing special offers which in turn
+helps the business to grow so these are
+some of the uh applications in of SQL in
+real life I hope you guys have
+understood
+and that brings us to the end of today's
+tutorial guys I hope you all understood
+all the uh SQL interview questions which
+are of basic and intermediate level that
+are necessary to crack your next
+interview
+thank you for watching the video guys if
+you found this tutorial informative and
+helpful give it a thumbs up and share it
+with your friends
+if you have any further queries
+regarding any of the topics covered in
+today's session feel free to let us know
+in the comment section below and a team
+of experts will be more than happy to
+help resolve all your queries
+at the earliest until next time stay
+safe and keep coding
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

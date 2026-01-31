@@ -1,0 +1,1039 @@
+hello everyone and welcome to today's
+session on acc centures interview
+question at simply learn in today's
+session we will be covering the commonly
+asked accent interview questions do you
+know friends that Accenture screening
+process involves three round the first
+one is online assessment test next one
+is a technical round and finally after
+clear that you proceed for an HR round
+so in today's session we will be
+discussing the technical round interview
+questions I have curated questions based
+on oops concept SQL and most commonly
+asked questions based on your Java
+programming languages now before we move
+on I request you guys that do not forget
+to hit the Subscribe button and click
+the Bell icon for further updates
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to FastTrack your ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back now before we move on just a quick
+info guys if you want to become a full
+stack Java developer then simply learn
+has got you covered you can accelerate
+your career as a certified Java
+fullstack developer and acquire
+essential industrial skills like react
+angular spring boot hibernate and gsps
+while mastering MVC and web services to
+craft highly scalable web applications
+so hurry up now and join the course the
+course link is mentioned in the
+description box so guys let's start with
+our first question that is what is the
+significance of using objects in oops
+programming as compared to procedural
+programming now as we all know that
+objects provide a way to model real
+world entities and their interactions
+with software unlike in procedural
+programming where functions manipulate
+data in objectoriented programming it
+encapsulates data and behavior into the
+objects this makes code more modular
+organized and easier to understand and
+also maintain objects promote
+reusability scalability and flexibility
+in software development so this was all
+about significance of objects in OBS
+programming language this is one of the
+basic question and can be expected to be
+a starting question in your interview
+now let's move on to the next question
+so our next question is also kind of
+very basic it says explain the concept
+of class with an example now guys as we
+all know that class is like a blueprint
+that defines the properties and
+behaviors of the objects consider the
+class car it defines characteristics
+such as color model speed behaviors such
+as driving and stopping each car object
+created from this class will have its
+own unique State like the color and
+model and behavior like driving and
+stopping but they all share the same
+structure defined by the car class so
+this was one of the basic example if
+somebody asks you what is class and
+explain it with example you can quote
+this example now let's move on to our
+third question that is how does
+encapsulation helps in managing
+complexity in software development so
+guys encapsulation is the bundling of
+data means attributes and methods that
+operate on the data into single unit
+that's object it hides the internal
+state of an object and restricts the
+direct access to it allowing it for
+better control over data access and
+manipulation encapsulation helps manage
+complexity by providing a clear
+interface for interacting with objects
+reducing the risk of unintended data
+modification and making it easier to
+maintain and refactor the code now let's
+move on to our next example that is
+provide an example of encapsulation in
+Java so guys we all know that in Java
+encapsulation is achieved using access
+modifiers like public private and
+protected for example a class might have
+private Fields like attributes such as
+name age and public methods like
+behaviors like get name and set name to
+access and modify these fields this
+ensures that the internal state of the
+object is protected from direct external
+access and also maintaining
+encapsulation so in this way you can
+just quote the example now I will show
+you an one example by putting up a code
+and you can also show a code or dictate
+a code to your interviewer so guys let's
+say we create a class called
+public and let's name it as person
+okay now let us create a private
+variables to hold the data now I will
+have the data such as name and age
+so
+private the data type for name is
+string okay next can be your age
+so the data type will be
+int now let us create a Constructor to
+initialize the object so our class name
+is person so we can just create our
+Constructor something like this so
+public
+person and just add those arguments so
+string name and int age and finally here
+what you can do guys that you can bind
+it up like this do
+name equals to
+name
+and this. AG equals to age
+and then what you can do guys is create
+Getters and Setters
+okay so in this way our half of the work
+is done okay now what will be the
+Getters and Setters so I'll show you
+once so it would
+be say
+public string get
+name and here we can say okay let us
+return the
+name and for the setup we can write
+something like this public
+void set
+name and
+here you can name String
+name and similarly you can just
+set the name as this do name equals to
+name and similarly you have to create it
+for the age okay so I have created it
+for the name
+okay and similarly just create it for
+the
+each now finally just create the object
+okay so
+say public static
+void
+main
+string
+okay and let us create the object as
+person P equals to new
+person and finally you can add these
+things so say the name
+as Neil and say age as
+80 and finally just you can print this
+system
+out. print Len and
+finally just add P
+dot so this shows an example of
+encapsulation this was kind of lenier
+but you can dictate this to your
+interviewer and I think so
+it would be perfect answer to show that
+you are clear with the concept of
+encapsulation now let us proceed for the
+next question that is what is
+inheritance and how does it promotes
+code reuse so guys as we all know that
+inheritance is a key Concept in
+objectoriented programming that allows
+class like a subclass or derived class
+to inherit properties and behaviors from
+another class that's called super class
+this promotes code reu by allowing the
+subass to reuse the code or methods and
+variables defined in the super class so
+this is how it promotes the code
+reusability a very easy question now let
+us move on to the next question so guys
+our next question is describe a real
+world scenario where inheritance would
+be beneficial now as we all know that
+inheritance allows class to inherit the
+properties and behavior of another class
+and it promotes the code reuse by
+enabling the subass to inherit the
+properties and functionality from their
+super classes this kind of reduces
+redundancy improves maintainability and
+facilitates the creation of specialized
+classes that builds upon the existing
+functionality now you can quote an
+example something like this that we can
+consider modeling different type of
+vehicles the super class vehicle could
+contain common attributes like color
+speed and behaviors like start and stop
+subclasses like car and truck and
+motorcycle would inherit from the
+vehicle and add their specific
+attributes and behaviors such as number
+of doors for cars cargo capacity for
+trucks so in this way you can describe a
+real world scenario that makes the use
+of inheritance now let us move on to the
+next question so guys our next question
+is what is polymorphism and how does it
+improves flexibility in programming so
+guys we all know that polymorphism is a
+fundamental Concept in objectoriented
+programming that allows objects of
+different types to be treated as objects
+of common super class it enables a
+single interface to represent multiple
+underlying data types providing
+flexibility in programming basically
+there are two types of polymorphism the
+first one is compile time polymorphism
+and the second one is runtime
+polymorphism so if I talk about compile
+time polymorphism it occurs when
+multiple methods in the same class have
+same number but different parameter list
+the compiler determines which method to
+call based on the method signature
+whereas method overloading allows for
+flexibility in method invocation as when
+the appropriate method is chosen based
+on the number of arguments provided if I
+talk about the runtime polymorphism
+basically also known as method
+overriding it occurs when a subclasses
+provides a specific implementation of a
+method that is already defined in the
+super class at run time the jvm
+determines which method to execute based
+on the actual type of the object method
+overriding also allows for flexibility
+in method Behavior as different subass
+can provide their own implementations of
+the same method now polymorphisms
+improve flexibility in programming in
+many ways like code reusability then
+extensibility and also enhance
+abstraction so this makes the answer
+complete for this question I hope so you
+would have got a brief idea regarding
+poly morphism and the types of
+polymorphism involved in it now let's
+move on to our next question so guys our
+next question is given an example of
+polymorphism using method overwriting so
+guys let us code this question so what
+I'm going to do let us create a class
+called animal okay and we'll make a
+method like sound and we'll try to make
+it like print that animal makes sound
+then we're going to create a subass of
+the animal that is dog and we are going
+to override the make sound method okay
+so let us directly deep dive into that
+okay so let us create our parent class
+first so let's say
+class
+animal okay then let's create a method
+so I'll
+say public void Mak
+sound okay and I can just print certain
+thing like
+okay so I printed certain thing like
+this now let us create a inherited class
+okay or a child class so let's see that
+we can say like class animal Okay so
+class dog and it
+extends okay this is uh this keyword
+demonstrate that we are using
+inheritance right now and we can say it
+directly inherits from the class animal
+now what we are going to do right now
+that we are going to override this
+method called Mak sound so let's use
+that annotation
+and let's copy this method and paste it
+right over
+here okay and in this what we can do we
+can override it
+say now let us create the objects so
+I'll say that this is our main method so
+I'll just write the short form pvsm okay
+and okay now
+say
+dog D equals to new
+dog and we can just call here like
+system
+and we can just uh call this method
+called me sound so D dot uh make sound
+method pretty fine so this shows the
+example of how method writing is
+done
+okay and we are using inheritance in
+this so I hope so you got a brief idea
+regarding this so guys let's start with
+the next question it says explain the
+importance of access modifiers in
+controlling access to the class members
+so guys as we all know that access
+modifiers play a very crucial role in
+controlling access to the class members
+like Fields methods Constructors in Java
+they Define the visibility and
+accessibility of the class members
+within and outside the class ensuring
+proper encapsulation and maintaining the
+integrity of the class implementation
+the importance of access modifiers lies
+in several key aspects like
+encapsulation data hiding and security
+so these were some of the importance of
+access modifiers I hope so you would
+have got a brief idea regarding this now
+let's move on to our next question that
+says what is the difference between
+public private and protected access
+modifiers so guys the difference between
+public private and protected access mod
+modifiers lies in the visibility and
+accessibility of the class members now
+if I talk about Public public members
+are accessible from any other class or
+packages they have the widest scope of
+visibility allowing them to be accessed
+from anywhere in the program and if we
+talk about protected guys protected
+members are accessible within the same
+class subclasses and class within the
+same package they provide more
+visibility than the private members but
+restrict access from the class outside
+the package now if you talk about the
+private members private members are
+accessible only within the same class
+they are hidden from other classes
+restricting access to the class internal
+implementation details very basic
+difference between the three I hope so
+you have got an idea regarding this now
+let's move on and discuss our next
+question so guys our next question is
+how do Constructors contribute to object
+initialization in Java very amazing
+question
+and this has a high probability to be
+asked in the interview so guys as we all
+know that Constructors play a very
+critical role in object initialization
+in Java by setting up the initial state
+of an object when the object is created
+using the new keyword a new Constructor
+is called to allocate the memory for the
+new object and to initialize its field
+so it sets up the initial values then
+what it does guys it provides overloaded
+Constructors Java allows Constructors to
+be overloaded enabling the creation of
+objects with different initial States
+depending on the Constructor used
+suppose if I have a class called person
+and I declare the fields such as private
+string name and private int age now if I
+create a default Constructor like public
+person and I bind it up like this do
+name and set the state to unknown and
+this do age equals to zero so in this
+way I'm setting the initial state of the
+given arguments so these are all the
+behaviors which are going to be set in
+our object when it is going to get
+initialized similarly you can put a
+parameterized Constructor like suppose
+public person and inside this you put
+string name in age now bind it up after
+binding just create the getter Setters
+and after that when you are creating the
+object like person one and person two
+then you can add like name and age so in
+this way you're going to get an output
+because whenever you are trying to print
+out the object name do given getter like
+get name or get age so your output is
+going to get printed out so suppose in
+this case guys if I try to print out uh
+person one dot say get age so it's going
+to print like 30 because uh 30 is the
+stage which I put it up so just an
+overview of it in this way you can
+explain this question question but
+basically setting up an initial State
+and also providing overloaded
+Constructors are the two main reasons
+that they contribute to the object
+initialization now let's move on to the
+next question so guys our next question
+is explain the different types of
+inheritance very fundamental question
+and can be asked most of the time so
+guys in object-oriented programming
+language inheritance allows a class to
+inherit the properties and behavior from
+the another class there are very several
+type of inheritance so the first one is
+single inheritance if I talk about
+single inheritance in this scenario a
+class is going to inherit from one and
+only one super class next one we have is
+multiple inheritance here in this
+scenario a class can inherit from more
+than one super class so guys we all know
+that Java does not support multiple
+inheritance because of the ambiguity so
+this can be achieved only through
+interfaces next one we have all over
+here is multi-level inheritance in this
+scenario a class is derived from another
+class which is also derived from another
+class creating a chain of inheritance
+like you can see all over here so super
+class subass one derived and there is
+subclass 2 and finally you have the
+Hybrid inheritance so in the case of
+Hybrid inheritance you get to see that
+two classes are derived from a super
+class and one class is derived from two
+super classes so you get a chance to see
+a scenario of Hybrid inheritance now
+here in the hierar where you have one
+super class and three different
+subclasses are derived from one super
+class but this is a scenario for your
+hierarchy so these were some of the
+different type of inheritance you can
+explain to your interviewer now let's
+move on to the next question so guys our
+next question is what is the default
+Constructor and when does it gets
+invoved so guys the default Constructor
+in Java is no argument Constructor that
+automatically is provided by the
+compiler if no other Constructors are
+explicitly defined in a class it
+initializes the object with default
+values so this is all about default
+Constructor now let's move on and
+discuss about the next question our next
+question is describe a situation where
+you can use method overloading so like
+very simple guys uh whenever we want to
+use method overloading so so suppose in
+a scenario where you are creating uh a
+calculator and you have created a method
+certain thing like addition and where
+you are generally returning a plus b now
+you have overloaded the given method and
+added the third argument like in the
+first one we took two arguments A and B
+and we were returning two and we were
+returning the sum of the two and in the
+third one we can see it is returning the
+three arguments means the sum of of the
+three arguments like a plus b plus C so
+this is situation which is using the
+method overloading very simple example
+you can demonstrate this example to tell
+that you are aware of the concept of
+method overloading now let's move on and
+discuss the next question so guys next
+question is what is the role of static
+methods in Java and how do they differ
+from instance method so guys we all know
+that static methods in Java belong to
+the class rather than any specific
+instance meaning that they can be called
+without creating an object of the class
+they're defined using the static keyword
+instance method on the other hand
+require an object of the class to be
+created and called upon the object so
+Guys these were some of the role of the
+static methods now if I talk about the
+key differences the first one is Axis
+static methods are called using the
+class name while instance method are
+called using the objects the second one
+comes on the context static methods
+cannot access instance variable or
+instance method me directly because they
+do not operate on an instance of the
+class third one is usage static methods
+are used for operations that do not
+require data from then instant like
+utility or helper methods so this were
+one of the basic answer to this question
+now let's move on to the next question
+so guys our next question is give an
+example of a situation where you would
+use a static method so guys a common
+situation where you can use a static
+method is when Crea in utility or helper
+methods that perform general purpose
+task that do not require any data from
+the instance of the class for example
+consider a utility class that provides
+mathematical operation so say you create
+a class called math utils and you have
+the static method to calculate the
+square of a number so here public static
+in square in number and just you can
+return number cross number so again you
+can create a static method to calculate
+the factorial similarly static int
+factorial and you take a number n and
+finally you take a for Loop and result
+the multiplication of the given chain of
+numbers so that's how you return the
+factorial I hope so you are aware of the
+logic like how would you create a method
+for factorial now finally in this
+scenario what we are doing that we are
+creating a certain helper class and uh
+in a situation we are creating a static
+method so while uh you know printing the
+factorial or in the scenario or
+basically printing the square so I have
+created all these two static method and
+they are helping me out so in this
+situation you can use the static method
+so I hope so you have got an idea
+regarding this it's also one of the most
+important questions so please take a
+look on this one now let's move on to
+the next question so guys our next
+question is what is a concept of
+abstraction and its relevance in
+software development so guys if I talk
+about abstraction abstraction in
+software development is a concept of
+hiding complex implementation details of
+a system and exposing only the essential
+features and functionalities to the user
+this is achieved by creating abstract
+classes and interfaces that Define what
+actions can be performed but not how
+they are performed so this is a basic
+idea regarding abstraction I hope so you
+have got a brief idea regarding this now
+let's move on and discuss us about next
+question so one of the most frequently
+Asked question uh it says what a
+difference between method and
+Constructor in Java now I know many of
+you get confused when this question is
+asked so in this way you can answer this
+question so guys in Java methods and
+Constructors are both integral part of
+the classes but they serve kind of
+distinct purposes a method is a block of
+code that performs a specific task and
+can be invoked multiple times within a
+class
+methods can have return types and
+parameters allowing for flexibility and
+code reuse on the other hand if I talk
+about Constructor it is a special type
+of method that is used to utilize
+objects of a class Constructors are
+invoked automatically when an object is
+created and are responsible for setting
+initial values to the object attributes
+unlike methods Constructors do not have
+return types and their names must match
+with the class name so this is the basic
+difference between methods and and
+Constructors now let's move on and
+discuss the next question so guys our
+next question is can an abstract class
+have a Constructor so the answer to the
+same question is yes guys an abstract
+class can have a Constructor and the
+purpose of the Constructor in an
+abstract class is like to initialize the
+common Properties or perform setup tasks
+that are required by the subclasses so
+this was the answer to this question
+very tricky question and please take a
+note of the this one now let's move on
+to the next question that is can an
+abstract class have static methods if
+yes then provide an example where this
+might be useful so guys yes abstract
+classes can have static methods and
+static methods in abstract class can
+provide utility functions or behavior
+that is not tied to the particular any
+instance of the class these methods can
+be called directly on the class itself
+without the need to instantiate an
+object so for example here is a
+scenario so guys let us create an
+abstract class called
+shape and
+say let's create public
+static here I'm going to create a double
+and in this I'll say let's calculate the
+area okay now here you give the argument
+say double and say
+radius you can return
+here math.pi or you can give 22 by7 and
+just multiply
+radius cross
+radius now what do you have to do next
+let us create a static method to
+calculate the parameter so if I talk
+about the same so here you can create
+certain thing like this public static
+okay
+and double so charger charge charger
+charger laptop
+so guys here what you can do uh let's
+create public static double and say
+calculate
+perimeter and in this what I can take
+radius as the
+argument
+and
+written to cross
+m.p star radius okay so this is a thing
+and so you can see all over here we have
+created a these two
+stuff so in our abstract class we have
+created two itic methods now let's try
+to create a class called
+Circle and it will extend the abstra
+class shape the class Circle
+extends say
+shape okay now
+so I have declared a variable called
+radius okay then create a Constructor
+all over
+here so I won't create it just I leave
+you to do it okay now next what you can
+do all over here in the main method okay
+so
+pbsm
+string augs
+okay what I can do I can create an
+object of circle so
+say Circle
+C equals
+to New
+Circle and here you can give the radius
+so suppose I give as five okay so after
+that what you can do guys you can call
+the method such as
+system.out
+do print Len
+and you can calculate the area plus the
+perimeter how with the name of the
+method so our object is C the C dot you
+can just call this
+method
+and C Dot calculate parameter so in this
+way guys it going to calculate the
+entire thing for our area and the
+perameter provided we have given our
+radius so this example shows that
+abstract classes can have static methods
+very important question uh please do
+take a look on this now let's move on to
+our next question next question says is
+it possible for an abstract class to
+have final methods and the answer is yes
+it is possible for an abstract class to
+have final methods like a final method
+in an abstract class cannot be
+overridden by its sub classes which
+ensures that it behaviors remains
+consistent across all the sub classes so
+one of the very important questions and
+it is generally asked in the interview
+so please take a note of this one so
+guys let us discuss the next question so
+guys our next question is that can
+abstract class Implement an interface
+without providing implementations for
+all its meth methods and the answer is
+yes an abstract class can Implement an
+interface without providing
+implementations for all its methods
+however in this scenario the abstract
+class itself must be declared as
+abstract meaning it does not have to
+provide implementations for all the
+methods defined in the interface the
+subclasses of the abstract class will
+then be responsible for implementing the
+remaining interface methods let's move
+on to the next question so guys our next
+question is is what happens if abstract
+class does not contain any abstract
+methods very amazing question and the
+answer to the same is like if an
+abstract class does not contain any
+abstract methods it behaves similarly to
+a regular class however because it is
+declared as an abstract it cannot be
+instantiated directly instances of
+concrete subclasses of the abstract
+class can be created but there is no
+requirement for these subclasses to
+provide implementations for these
+methods so this is the answer to this
+question now let's move on to the next
+question so guys our next question is
+can you create an instance of an
+abstract class so guys the answer to the
+same is no you cannot create an instance
+of an abstract class directly in Java
+attempting to instantiate an abstract
+class using the new keyword will result
+in a compilation error so this is one of
+the thing and the purpose of an abstract
+class is to serve as a blue print for
+the other classes to extend and
+implement it typically contains one or
+more abstract methods than the must be
+implemented by its sub classes so this
+is the overall scenario of this now let
+us discuss the next question the next
+question is how do abstract classes
+support polymorphism So guys if I talk
+about the abstract classes supporting
+polymorphism in Java It Is by allowing
+subclasses to provide their own
+implementations for the abstract method
+while still being treated as instances
+of the abstract class this means that
+you can use a reference to the abstract
+class to refer to the objects of his sub
+classes and the polymorphic behavior is
+exhibited when invoking overridden
+methods so this is the answer to this
+question now let's move on and discuss
+the next question so guys our next
+question is can an abstract class have
+private methods and why would you use a
+private method in an abstract class so
+guys answer to this question is yes an
+abstract class can have private methods
+in Java private methods in an abstract
+class are not inherited by sub classes
+and they are also not accessible outside
+the abstract class itself however they
+can still be used within other methods
+of the same abstract class so guys this
+is the answer to this question now why
+should we use a private method in an
+abstract class the first reason is code
+organization private methods help
+organize the implementation details of
+the abstract class by encapsulating
+certain functionality that is not meant
+to be accessed or overridden by the sub
+classes next one is code reusability
+private methods can be reused within the
+abstract class itself reducing the code
+duplication and promoting
+maintainability third one is
+implementation detail private methods
+can represent implementation details or
+helper methods that are not part of the
+public interface pH of the abstract
+class but are necessary for its proper
+functioning so this was the answer to
+this question I hope so you would have
+got a brief idea regarding this now
+let's move on to the next question so
+guys our next question is how would you
+design an abstract class to ensure that
+certain methods must be implemented by
+all subclasses but other methods still
+have a default implementation first
+let's try to understand this question it
+is basically asking you you to design an
+abstract class and here you have to
+ensure that all the methods or like
+certain methods must be implemented by
+all the sub classes but other methods
+also should have default
+implementation so like we did uh let us
+think of the answer to this solution uh
+say we create an abstract class called
+shape and uh we have an abstract method
+that must be implemented by the sub
+classes so say we create an public
+abstract double calculate area okay and
+this is abstract method now in order to
+provide a default implementation for the
+method okay so that it can be
+overwritten I create another method like
+public string get color and I return the
+given color say like blue agree then I
+provide a default implementation for the
+method that subclasses can inherit so
+public void display info and uh like
+here I am basically printing the get
+color okay now finally when you create
+another class which is child of this and
+here you can override with the public
+string get color and here you can change
+the color from Blue to Red so this way
+you can do it and this is one of the way
+where you can design abstract class so
+that you can ensure that all the classes
+are implemented by the other methods so
+guys I have given you a brief idea
+regarding this question I'm not showing
+you the code of this question
+and you should try this question by
+yourself give it to the thought uh try
+for 5 10 minutes and if you're not
+getting it write down a comment on this
+video and we'll definitely get back to
+you now let us move on to the next
+question so guys our next question is
+can an abstract class inherit from
+another abstract class A very
+interesting question and the answer is
+yes an abstract class can inherit from
+another abstract class this allows
+basically for hierarchial abstraction
+where each abstract class can Define
+their own set of abstract method to be
+implemented by the sub classes now let's
+move on to the next question and the
+next question is pretty interesting one
+it says how do abstract classes handle
+Constructors in an inheritance chain so
+guys in an inheritance change involving
+abstract classes Constructors are
+basically called in a top down manner
+like starting from the super class down
+to the subass here each of the
+Constructor initializes the respective
+class State before passing control to
+the next Constructor in the chain like
+suppose if I say if I have a class
+abstract animal and I create a default
+Constructor like public animal and just
+print out certain thing in inside this
+that animal Constructor now I create an
+abstract class called mammal and it is
+extending animal so I create a
+Constructor public mammal and I just
+print out in this system do out. printel
+in like mammal Constructor now similarly
+you can create another class called dog
+and it is extending the mammal okay now
+I create a Constructor for this it says
+public dog and I'm printing out this
+Constructor so similarly when I'm trying
+to create an object of dog okay so the
+output which I'm going to get is first
+the animal Constructor okay then the
+mammal Constructor and then the dog
+Constructor so the top down approach is
+always there uh guys it's a pretty much
+of a tricky question okay so give a
+thought on this one so guys our next
+question is can an abstract class be
+final why or why not so guys the answer
+to this question is no an abstract class
+cannot be final because it's meant to be
+extended by sub classes to provide
+concrete implementation for its abstract
+methods making an abstract class Final
+would prevent inheritance and and
+contradicting its purpose so it's not
+possible most of the time interviewers
+ask this question to make the candidate
+you know confused so if it is asked in
+your interview please do remember the
+answer of this question now let's move
+on and discuss the next question so guys
+our next question is why might you
+choose to use abstract class instead of
+an interface even though both can Define
+methods that subclasses need to
+implement very tricky question and it
+can trouble you a little bit so the
+answer to the same question is guys that
+you might choose an abstract class
+instead of an interface like when you
+want to provide a partial implementation
+of the functionality that the subclasses
+can inherit if I talk about abstract
+classes abstract classes can have member
+variables Constructors and non-abstract
+methods they provide more flexibility
+and code reuse compared to the
+interfaces so guys our next question is
+what is the difference between inner
+join left join right join and full outer
+join so guys the answer to the same
+question is that first one is inner join
+so guys as you can see in this diagram
+that inner join returns a row when there
+is at least one match in the both tables
+if I talk about the left join it returns
+all the rows from the left table and
+match the rows from the right
+table if I talk about the right join
+right join returns all the rows from the
+right table and the Matched rows from
+the left table if I talk about the full
+outer join it returns all the rows even
+when there is no match in the table now
+let's move on and discuss the next
+question that is what are the difference
+between union and Union all so guys if I
+talk about Union so Union combines the
+result of two or more selected
+statements removing the duplicates
+whereas Union all also combines results
+but retains the the duplicates let's
+discuss the next question that is how
+can you optimize a SQL query that uses
+multiple joints and
+subqueries so guys you can optimize a
+SQL query with multiple joints and
+subqueries using indexes on join columns
+limiting the result set with wear
+Clauses and ensuring that subqueries are
+efficient and return the necessary data
+now let's discuss the next question that
+is how do Group by and having Clause
+work with SQL so guys we all know that
+group by groups rows that have same
+values into the summary rowes and having
+filter groups based on specified
+conditions Let's us discuss the next
+question that is explain the concept of
+normalization and what are the different
+normal forms and why is normalization
+important so guys first answer to the
+same that is normalization is a process
+of organizing data in a database
+efficient
+the different normal forms like 1f 2 NF
+3nf bcnf are there they are used to
+eliminate the redundancy and dependency
+issues improving the data integrity and
+reducing the anomalies now let's move on
+and discuss the next question that is
+what is the difference between truncate
+delete and drop statements in SQL so
+guys if I talk about truncate truncate
+removes all the rows from the table
+without logging individual row deletions
+if I talk about about delete delete
+removes the specific rows and drop
+deletes an entire table or database
+object now let's move on and discuss the
+next question that is what is a stored
+procedure so guys a stored procedure is
+a pre-compiled set of SQL statements
+stored in a database it can accept
+parameters execute SQL queries and
+return results enhancing the performance
+and security next question very
+important it says explain the concept
+concepts of trigger in SQL so guys a
+trigger in a SQL is a special type of
+stored procedure that automatically
+executes when certain events occur such
+as insert update delete operations on
+the table triggers are used to enforce
+business rules maintain data integrity
+and automate the task with this we have
+come to the end of our question that is
+what are the security considerations
+when using stored procedures and
+triggers in a database so guys very
+amazing question and it's a kind of
+practical one so the answer to the same
+is that security considerations when
+using stored procedures and triggers
+includes such as parameter validation to
+prevent SQL injection attacks proper
+permissions to restrict access to the
+sensitive data or operations and also
+auditing to track changes made by stored
+procedures and triggers additionally
+using parameterized queries and limiting
+privileges can help mitigate the
+security risk so guys that was all for
+today's video I hope so you would have
+enjoyed our today's video on exent your
+programming language keep learning and
+keep growing staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

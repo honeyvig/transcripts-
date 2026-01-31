@@ -1,0 +1,173 @@
+foreign
+and troubleshooting the network settings
+for our systems is a necessary system
+skill for any ID professional using some
+of the most important Network commands
+we can easily configure and troubleshoot
+network settings for the device without
+needing additional assistance
+hello everyone and welcome to yet
+another interesting video by simply
+learn in this interactive demo session
+on the top networking commands we will
+look into some of the most popular
+commands applied by users to handle
+network issues and save precious time so
+stay tuned
+but before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to never miss an
+update from us
+to begin practicing the commands we need
+to access the command prompt application
+using the CMD command in the start menu
+now let's begin with the list of
+commands the first command is ipconfig
+this command displays the system's basic
+IP address configuration data which
+includes Network information about IP
+addresses subnet masks and default
+gateway
+similarly we also have ipconfig slash
+all command which displays all the
+details regarding our device like Lan
+settings physical address of the system
+IP addresses subnet masks and DHCP
+information
+let's use the CLS command to clear the
+application window for the next one the
+next command is hostname which is used
+to access the system's hostname
+to verify this let's use the ipconfig
+slash all command to check the hostname
+in the information and for sure we have
+the same hostname
+let's perform the CLS command again and
+perform the next command
+the Ping command is used to check the
+communication availability of the
+destination host and the user system
+for example user ping command with
+google.com to check the server
+availability which gives us the
+following result
+also using the results IP address and
+then the pin command we can get the same
+result in case we just don't have the
+domain name
+we perform the CLS command again and
+move on to the next one the nslookup
+command is used to troubleshoot network
+connectivity and find the IP address of
+a domain like Google and Amazon as
+applied just now to receive the name and
+address of the domain
+also using the MS lookup command and
+then applying the server command with an
+IP address we can get the domain name
+belonging to the IP address
+and similarly to check the number of
+servers with the same domain name we can
+do this and we have four name servers
+for Google
+we perform the CLS command again and
+move on to the next one
+the tracered command is used to
+troubleshoot the routing issues of the
+network by displaying the routing table
+through which the data is transmitted to
+a maximum of 30 hops in the network as
+you can see
+similarly you can also try amazon.com
+and share your views in the comment
+section below now let's clear the
+application window and perform the next
+command which is the ARP command
+this command is applied to display the
+communication exchange between the IP
+address and the systems Mac or physical
+address
+let's move on to the next command which
+is the path ping command
+this combines the preset and ping
+commands and displays detailed
+information as an output for a maximum
+of 30 hops in the network
+this command takes some time to compile
+the full hop details so that you can
+share findings in the comment section
+next we have the netstat command it's
+used to display the network connection
+summary of the system as shown in the
+demo
+similarly if we use the netstat hyphen n
+command it will give us much more
+details about the connection and UDP
+details
+next we have the net share command which
+displays the details of where the data
+resources for a system are shared and we
+can check them under the share name
+resources and remark column
+then we have the route command that
+allows us to access the routing tables
+and also allows us to make changes to
+them
+let's try the route print command and we
+have the interface list ipv4 routing
+table details with all the active routes
+and the IPv6 routing table moving on
+let's clear the window and look at the
+net sh command the netsh is a popular
+command which allows us to view and
+configure the network adapters in the
+system
+under the net sh command we have
+multiple functions for configuring
+settings let's try the show command and
+we have the following result
+moving on we have the task list command
+that lists all the currently working
+applications on the system with task or
+program ID and the memory it uses let's
+perform an example
+access Google Chrome and then perform
+the task list command and as expected we
+have the Chrome details in the list
+and if we close the Chrome window and
+again use the task list command we don't
+have the application active
+similarly we also have the task kill
+command which will terminate the task
+corresponding to the given program ID in
+the command window
+for example let's access Chrome and
+perform the task list command to check
+the program ID
+and then we'll use it with the task kill
+command and we can see that the
+application is terminated
+to check our result we can access the
+task list command again next on the list
+we have the system info command
+it's used to view all the information
+about the system from the windows
+version to the BIOS and booting
+configuration you can access all these
+details using the system info command
+and the last Network command for this
+section is the wmic command
+for getting detailed information on the
+ports and functions of the system like
+CPU details and then similarly we can
+check the bio settings with this we have
+completed the session on the top
+networking commands if you have any
+question about them you can ask your
+doubts in the comments section below
+thank you so much for watching
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

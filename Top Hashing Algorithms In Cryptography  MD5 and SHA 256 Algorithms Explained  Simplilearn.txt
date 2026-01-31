@@ -1,0 +1,1316 @@
+in the world of cryptography storing
+data in plain text is the biggest risk
+an organization can take
+from a consumer point of view we prefer
+our data to be encrypted at all points
+be it during transit or at rest
+hashing has provided to be quite
+beneficial in this regard since the
+early 90s and still finds use when
+storing critical data
+today we will cover the technical
+aspects of hashing while going through
+some well-known hash functions and
+algorithms at the end
+let's take a look at the topics we are
+covering today
+we start by learning about cryptography
+in general and its various applications
+historical significance and categories
+we also have a demonstration of how
+cryptography is used in today's industry
+when encrypting internet traffic
+we follow that up by taking a deep dive
+on to hashing
+we cover the basics of hashing like hash
+functions guidelines ways to strengthen
+hashes among other things
+next we cover the md5 hash algorithm
+explaining the steps taken when
+scrambling the data and checking out
+applications and advantages
+finally we also cover the sha hash
+algorithm its phases during hashing and
+the distinct advantages over other
+algorithms of this nature
+with the rise in censorship and general
+fear over privacy loss consumer security
+is at an all-time high risk technology
+has made our life so much easier while
+putting up a decent target on our
+personal information it is necessary to
+understand how to simultaneously
+safeguard our data
+and be up to date with the latest
+technological developments maintaining
+this balance has become easier with
+cryptography taking its place in today's
+digital world
+so here's a story to help you understand
+cryptography
+meet ann
+ann wanted to look for a decent discount
+on the latest iphone she started
+searching on the internet and found a
+rather shady website that offered a 50
+discount on the first purchase
+once and submitted her payment details a
+huge chunk of money was withdrawn from a
+bank account just moments after
+devastated and quickly realized she had
+failed to notice that the website was a
+http webpage instead of an https one
+the payment information submitted was
+not encrypted and it was visible to
+anyone keeping an eye including the
+website owner and hackers had she used a
+reputed website which has encrypted
+transactions and employees cryptography
+our iphone enthusiasts could have
+avoided this particular incident
+this is why it's never recommended to
+visit unknown websites or share any
+personal information on them
+now that we understand why cryptography
+is so important
+let's now understand what cryptography
+is
+cryptography is the science of
+encrypting or decrypting information to
+prevent unauthorized access we transform
+our data and personal information so
+that only the correct recipient can
+understand the message as an essential
+aspect of modern data security using
+cryptography allows the secure storage
+and transmission of data between willing
+parties
+encryption is a primary route for
+employing cryptography by adding certain
+algorithms to jumble up the data
+decryption is the process of reversing
+the work done by encrypting information
+so that the data becomes readable again
+both of these methods form the basis of
+cryptography
+for example when simply learn is jumbled
+up or changed in any format not many
+people can guess the original word by
+looking at the encrypted text
+the only ones who can are the people who
+know how to decrypt the coded word
+thereby reversing the process of
+encryption
+any data pre-encryption is called plain
+text or clear text
+to encrypt the message we use certain
+algorithms that serve a single purpose
+of scrambling the data to make them
+unreadable without the necessary tools
+these algorithms are called ciphers
+they are a set of detailed steps to be
+carried out one after the other to make
+sure the data becomes as unreadable as
+possible until it reaches the receiver
+we take the plain text pass it to the
+cipher algorithm and get the encrypted
+data this encrypted text is called the
+ciphertext and this is the message that
+is transferred between the two parties
+the key that is being used to scramble
+the data is known as the encryption key
+these steps that is the cipher and the
+encryption key are made known to the
+receiver who can then reverse the
+encryption on receiving the message
+unless any third party manages to find
+out both the algorithm and the secret
+key that is being used they cannot
+decrypt the messages since both of them
+are necessary to unlock the hidden
+content
+wonder what else we would lose if not
+for cryptography
+any website where you have an account
+can read your passwords important emails
+can be intercepted and their contents
+can be read without encryption during
+the transit more than 65 billion
+messages are sent on whatsapp every day
+all of which are secured thanks to end
+to end encryption
+there is a huge market opening up for
+cryptocurrency which is possible due to
+blockchain technology that uses
+encryption algorithms and hashing
+functions to ensure that the data is
+secure if this is of particular interest
+to you you can watch our video on
+blockchain the link of which will be in
+the description
+of course there is no single solution to
+a problem as diverse as explained there
+are three variants of how cryptography
+works and is in practice
+they are
+symmetric encryption
+asymmetric encryption and hashing
+let's find out how much we have
+understood until now
+do you remember the difference between a
+cipher and ciphertext
+leave your answers in the comments and
+before we proceed if you find this video
+interesting make sure to give it a
+thumbs up before moving ahead
+let's look at symmetric encryption first
+symmetric encryption uses a single key
+for both the encryption and decryption
+of data it is comparatively less secure
+than asymmetric encryption but much
+faster
+it is a compromise that has to be
+embraced in order to deliver data as
+fast as possible without leaving
+information completely vulnerable
+this type of encryption is used when
+data rests on servers and identifies
+personnel for payment applications and
+services the potential drawback with
+symmetric encryption is that both the
+sender and receiver need to have the
+same secret key and it should be kept
+hidden at all times
+caesar cipher enigma machine are both
+symmetric encryption examples that we
+will look into further
+for example
+if alice wants to send a message to bob
+she can apply a substitution cipher or a
+shift cipher to encrypt the message but
+bob must be aware of the same key itself
+so he can decrypt it when he finds it
+necessary to read the entire message
+symmetric encryption uses one of the two
+types of ciphers stream ciphers and
+block ciphers
+block ciphers break the plain text into
+blocks of fixed size and use the key to
+convert it into cipher text
+stream ciphers convert the plain text
+into cipher text one bit at a time
+instead of resorting to breaking them up
+into bigger chunks
+in today's world the most widely used
+symmetric encryption algorithm is aes
+256 that stands for advanced encryption
+standard which has a key size of 256 bit
+with 128 bit and 196 bit key sizes also
+being available
+other primitive algorithms like the data
+encryption standard that is the des the
+triple data encryption standard 3des and
+blowfish have all fallen out of favor
+due to the rise of aes
+aes chops ups the data into blocks and
+performs 10 plus rounds of obscuring and
+substituting the message to make it
+unreadable
+asymmetric encryption on the other hand
+has a double whammy at its disposal
+there are two different keys at play
+here a public key and a private key
+the public key is used to encrypt
+information pre-transit and a private
+key is used to decrypt the information
+post transit if alice wants to
+communicate with bob using asymmetric
+encryption
+she encrypts the message using bob's
+public key
+after receiving the message bob uses his
+own private key to decrypt the data this
+way nobody can intercept the message in
+between transmissions and there is no
+need for any secure key exchange for
+this to work since the encryption is
+done with the public key and the
+decryption is done with a private key
+that no one except bob has access to
+both the keys are necessary to read the
+full message
+there is also a reverse scenario where
+we can use the private key for
+encryption and the public key for
+decryption a server can sign
+non-confidential information using its
+private key and anyone who has its
+public key can decrypt the message
+this mechanism also proves that the
+sender is authenticated and there is no
+problem with the origin of the
+information rsa encryption is the most
+widely used asymmetric encryption
+standard it is named after its founders
+reversed xiaomi and adelman and it uses
+block ciphers that separate the data
+into blocks and obscure the information
+widely considered the most secure form
+of encryption albeit relatively slower
+than aes it is widely used in web
+browsing secure identification vpns
+emails and chat applications
+with so much hanging on the key secrecy
+there must be a way to transmit the keys
+without others reading our private data
+many systems use a combination of
+symmetric encryption and asymmetric
+encryption to bolster security and match
+speed at the same time
+since asymmetric encryption takes longer
+to decrypt large amounts of data the
+full information is encrypted using a
+single key that is symmetric encryption
+that single key is then transmitted to
+the receiver using asymmetric encryption
+so you don't have to compromise either
+way another route is using the
+diffie-hellman key exchange which relies
+on a one-way function and is much
+tougher to break into
+the third variant of cryptography is
+termed as hashing
+hashing is the process of scrambling a
+piece of data beyond recognition it
+gives an output of fixed size which is
+known as the hash value of the original
+data or just hash in general
+the calculations that do the job of
+messing up the data collection form the
+hash function
+they are generally not reversible
+without resilient brute force mechanisms
+and are very helpful when storing data
+on website servers that need not be
+stored in plain text
+for example many websites store your
+account passwords in a hashed format so
+that not even the administrator can read
+your credentials when a user tries to
+log in they can compare the entered
+passwords hash value with the hash value
+that is already stored on the servers
+for authentication since the function
+will always return the same value for
+the same input
+cryptography has been in practice for
+centuries
+julius caesar used a substitution shift
+to move alphabets a certain number of
+spaces beyond their place in the
+alphabet table
+a spy can't decipher the original
+message at first glance for example if
+he wanted to pass confidential
+information to his armies and decides to
+use the substitution shift of plus 2 a
+becomes c b becomes d and so on the word
+attack when passed through a
+substitution shift of plus 3 becomes dw
+defn
+this cipher has been appropriately named
+the caesar cipher which is one of the
+most widely used algorithms
+the enigma is probably the most famous
+cryptographic cipher device used in
+ancient history
+it was used by the nazi german armies in
+the world wars they were used to protect
+confidential political
+military and administrative information
+and it consisted of three or more rotors
+that scrambled the original message
+depending on the machine state at that
+time the decryption is similar but it
+needs both machines to stay in the same
+state before passing the cipher text so
+that we received the same plain text
+message
+let's take a look at how our data is
+protected while we browse the internet
+thanks to cryptography here we have a
+web-based tool that will help us
+understand the process of rsa encryption
+we see the entire workflow from
+selecting the key size to be used until
+the decryption of the cipher text in
+order to get the plain text back
+as we already know rsa encryption
+algorithm falls under the umbrella of
+asymmetric key cryptography
+that basically implies that we have two
+keys at play here a public key and a
+private key
+typically the public key is used by the
+sender to encrypt the message and the
+private key is used by the receiver to
+decrypt the message
+there are some occasions when this
+allocation is reversed and we will have
+a look at them as well
+in rsa we have the choice of key size we
+can select any key from a 512 bit to
+1024 bit all the way up to a 4096 bit
+key the longer the key length the more
+complex the encryption process becomes
+and thereby strengthening the ciphertext
+although with added security more
+complex functions take longer to perform
+the same operations on similar size of
+data we have to keep a balance between
+both speed and strength because the
+strongest encryption algorithms are of
+no use if they cannot be practically
+deployed in systems around the world
+let's take a 1024 bit key over here
+now we need to generate the keys
+this generation is done by functions
+that operate on pass phrases the tool we
+are using right now generates this
+pseudorandom keys to be used in this
+explanation
+once we generate the keys you can see
+the public key is rather smaller than
+the private key which is almost always
+the case
+these two keys are mathematically linked
+with each other
+they cannot be substituted with any
+other key and in order to encrypt the
+original message or decrypt the cipher
+text this pair must be kept together the
+public key is then sent to the sender
+and the receiver keeps the private key
+with himself
+in this scenario let's try and encrypt a
+word simply learn
+we have to select if the key being used
+for encryption is either private or
+public since that affects the process of
+scrambling the information since we are
+using the public key over here
+let's select the same
+and copy it and paste over here
+the cipher we are using right now is
+plain rsa there are some modified
+ciphers with their own pros and cons
+that can also be used provided we use it
+on a regular basis and depending on the
+use case as well
+once we click on encrypt we can see the
+ciphertext being generated over here
+the pseudorandom generating functions
+are created in such a way that a single
+character change in the plaintext will
+trigger a completely different
+ciphertext this is a security feature to
+strengthen the process from brute force
+methods
+now that we are done with the encryption
+process let's take a look at the
+decryption part
+the receiver gets this cipher text from
+the sender with no other key or
+supplement
+he or she must already possess the
+private key generated from the same pair
+no other private key can be used to
+decrypt the message since they are
+mathematically linked
+we paste the private key here and select
+the same
+the cipher must always so be the same
+used during the encryption process
+once you click decrypt you can see the
+original plain text we had decided to
+encrypt this sums up the entire process
+of rsa encryption and decryption
+now some people use it the other way
+wrong we also have the option of using
+the private key to encrypt information
+and the public key to decrypt it this is
+done mostly to validate the origin of
+the message since the keys only work in
+pairs if a different private key is used
+to encrypt the message the public key
+cannot decrypt it conversely if the
+public key is able to decrypt the
+message it must have been encrypted with
+the right private key and hence the
+rightful owner
+here we just have to take the private
+key
+and use that to encrypt the plain text
+and select the same in this checkbox as
+well
+you can see we have generated a
+completely new cipher text
+this cipher text will be sent to the
+receiver and this time we will use the
+public key for decryption
+let's select the correct checkbox and
+decrypt
+and we still get the same output
+now let's take a look at practical
+example of encryption in the real world
+we all use the internet on a daily basis
+and many are aware of the implications
+of using unsafe websites let's take a
+look at wikipedia here pretty standard
+https website where the h stands for
+secured
+let's take a look at how it secures that
+data
+wireshark is the world's foremost and
+most widely used network protocol
+analyzer it lets you see what's
+happening on your network at a
+microscopic level
+and we are going to use the software to
+see the traffic that is leaving a
+machine and to understand how vulnerable
+it is
+since there are many applications
+running in this machine let's apply a
+filter that will only show us the
+results related to wikipedia
+[Music]
+let's search for something that we can
+navigate the website with
+okay once we get into it a little you
+can see some of the requests being
+populated over here
+let's take a look at the specific
+request
+these are the data packets that
+basically transport the data from our
+machine to the internet and vice versa
+as you can see there's a bunch of
+gibberish data here that doesn't really
+reveal anything that we searched or
+watched
+similarly other secured websites
+function the same way and it is very
+difficult if at all possible to snoop on
+user data this way
+to put this in perspective
+let's take a look at another website
+which is a http web page
+this has no encryption enabled from the
+server end which makes it vulnerable to
+attacks
+there is a login form here which needs
+legitimate user credentials in order to
+grant access
+let's enter a random pair of credentials
+these obviously won't work but we can
+see the manner of data's transfer
+unsurprisingly we weren't able to get
+into the platform
+instead we can see the data packets
+let's apply a similar filter that will
+help us understand
+what request this website is sending
+these are the requests being sent by the
+http login form to the internet
+if we check here
+see whatever username and password that
+we are entering we can easily see it
+with the wireshark
+now we used a dummy pair of credentials
+if we select the right data packet we
+can find our correct credentials
+if any website had asked for a payment
+information or legitimate credentials it
+would have been really easy to get a
+hold of these
+to reiterate what we have already
+learned we must always avoid http
+websites and just unknown or not
+trustworthy websites in general because
+the problem we saw here is just the tip
+of the iceberg even though cryptography
+has managed to lessen the risk of cyber
+attacks it is still prevalent and we
+should always be alert to keep ourselves
+safe online
+imagine creating an account on a new
+website
+you provide your email address and set a
+password that you are confident
+and you would not forget
+what about the website owner how
+securely are they going to store your
+password
+for website administrators they have
+three alternatives they can either store
+the passwords in a plain text format
+they can encrypt the passwords using an
+encryption and decryption key
+or they can store the passwords in a
+hash value
+let's have a look at each of these
+when a password is stored in plain text
+format it is considered to be the most
+unsafe option since anyone in the
+company can view your passwords a single
+hack and a data server breach will
+expose all the accounts credentials
+without needing any extra effort
+to counter this owners can encrypt the
+passwords and keep them in the servers
+as a second alternative
+but that would mean they also have to
+store the decryption key somewhere on
+their servers
+in the event of a data breach or the
+server hack both the decryption key and
+encrypted passwords will be leaked thus
+making it a single point of failure
+what if there was an option to store the
+passwords after scrambling them
+completely but with no way to decrypt
+them
+this is where hashing comes to play
+since only the hashed values are stored
+in the server
+though encryption is needed with no
+plain text passwords to protect your
+credentials are safe from the website
+administrators
+considering all the pros cached
+passwords are the industry standard when
+it comes to storing credentials nowadays
+before getting too deep into the topic
+let's get a brief overview of how
+hashing works
+is the process of scrambling a piece of
+information or data beyond recognition
+we can achieve this by using hash
+functions which are essentially
+algorithms that perform mathematical
+operations on the main plain text
+the value generated after passing the
+plaintext information through the hash
+function is called the hash value digest
+or in general just the hash of the
+original data
+while this may sound similar to
+encryption the major difference is
+hashes are made to be irreversible no
+decryption key can convert a digest back
+to its original value
+however a few hashing algorithms have
+been broken due to the increase in
+computational complexity of today's new
+generation computers and processors
+there are new algorithms that stand the
+test of time and are still in news among
+multiple areas for password storage
+identity verification etc
+like we discussed earlier websites use
+hashing to store the user's passwords
+so how do they make use of these hash
+passwords
+when a user signs up to create a new
+account the password is then run through
+the hash function and the resulting hash
+value is stored on the servers
+so the next time a user comes to login
+to the account the password he enters is
+passed through the same hash function
+and compared to the hash stored on the
+main server
+if the newly calculated hash is the same
+as the one stored on the website server
+the password must have been correct
+because according to hash functions
+terminology same inputs will always
+provide the same outputs
+if the hashes do not match then the
+password entered during login is not the
+same as the password entered during the
+sign up hence the login will be denied
+this way no plain text passwords get
+stored preventing both the owner from
+snooping on user data and protecting
+users privacy in the unfortunate event
+of a data breach or a hack
+apart from password storage hashing can
+also be used to perform integrity checks
+when a file is uploaded on the internet
+the files hash value is generated and it
+is uploaded along with the original
+information
+when a new user downloads the file he
+can calculate the digest of the
+downloaded file using the same hash
+function
+when the hash values are compared if
+they match then file integrity has been
+maintained and there has been no data
+corruption
+since so much important information is
+being passed on to the hash function we
+need to understand how they work
+a hash function is a set of mathematical
+calculations operated on two blocks of
+data
+the main input is broken down into two
+blocks of similar size
+the block size is dependent on the
+algorithm that is being used
+hash functions are designed to be one
+way they shouldn't be reversible at
+least by design
+some algorithms like the previously
+mentioned md5 have been compromised but
+most secure algorithms are being used
+today like the sha family of algorithms
+the digest size is also dependent on the
+respective algorithm being used
+md5 has a digest of 128 bits while she
+256 has a digest of 256 bits
+this digest must always be the same for
+the same input irrespective of how many
+times the calculations are carried out
+this is a very crucial feature since
+comparing the hash value is the only way
+to check if the data is untouched as the
+functions are not reversible
+there are certain requirements of a hash
+function that need to be met before they
+are accepted
+while some of them are easy to guess
+others are placed in order to preserve
+security in the long run
+the hash function must be quick enough
+to encrypt large amounts of data at a
+relatively fast pace
+but it also shouldn't be very fast
+running the algorithm on all cylinders
+makes the functions easy to boot force
+and a security liability
+there must be a balance to allow the
+hash function to handle large amounts of
+data and not make it ridiculously easy
+to brute force by running through all
+the possible combinations
+the hash function must be dependent on
+each bit of the input
+the input can be text audio video or any
+other file extension
+if a single character is being changed
+it doesn't matter how small that
+character may be the entire digest must
+have a distinctly different hash value
+this is essential to create unique
+digests for every password that is being
+stored
+but what if two different users are
+using the same password
+since the hash function is the same for
+all users both the digest will be the
+same
+this is called a hash collision
+you may think this must be a rare
+occasion where two users have exactly
+the same password but that is not the
+case
+we have techniques like salting that can
+be used to reduce these hash collisions
+as we will discuss later in this video
+you would be shocked to see the most
+used passwords of 2020.
+all of these passwords are laughably
+insecure and since many people use the
+same passwords repeatedly on different
+websites hash collisions risk are more
+common than one would expect
+let's say the hash functions find two
+users having the same password
+how can they store both the hashes
+without messing up the original data
+this is where salting and peppering come
+to play
+salting is the process of adding a
+random keyword to the end of the input
+before it is passed on to the hash
+function
+this random keyword is unique for each
+user on the system and it is called the
+salt value or just the salt
+so even if two passwords are exactly the
+same the salt value will differ and so
+will they digest
+there is a small problem in this process
+though
+since the salt is unique for each user
+they need to be stored in the database
+along with the passwords and sometimes
+even in plain text to speed up the
+process of continuous verification
+if the server is hacked then the hashes
+will need to be brute forced which takes
+a lot of time but if they receive the
+salts as well the entire process becomes
+very fast
+this is something that peppering aims to
+solve
+peppering is the process of adding a
+random string of data to the input
+before passing them to the hash function
+but this time the random string is not
+unique for each user it is supposed to
+be common for all users in the database
+and the extra bit added is called the
+pepper in this case
+the paper isn't stored on the servers it
+is mostly hard coded onto the website
+source code since it's going to be the
+same for all credentials
+this way even if the servers get hacked
+they will not have the right pepper
+needed to crack into all the passwords
+many websites use a combination of
+salting and peppering to solve the
+problem of hash collision and bolster
+security
+since brute force takes such a long time
+many hackers avoid taking the effort the
+returns are mostly not worth it and the
+possible combinations of using both
+salting and peppery is humongous
+with the consensus aiming towards an
+educated public on digital privacy it's
+no surprise to see an increasing
+interest in encryption algorithms
+we have already covered the major names
+like the des and the aes algorithm
+md5 algorithm was one of the first
+hashing algorithms to take the global
+stage as a successor to the md4
+despite the security vulnerabilities
+encountered in the future md5 still
+remains a crucial part of data
+infrastructure in a multitude of
+environments
+the md5 hashing algorithm is a one-way
+cryptographic functions that accepts a
+message of any length as input and it
+returns as output a fixed length digest
+value to be used for authenticating the
+original messages
+the digest size is always 128 bits
+irrespective of the input
+the md5 hash function was originally
+designed for use as a secure
+cryptographic hash algorithm to
+authenticate digital signatures
+md5 has also been depreciated for uses
+other than as a non-cryptographic
+checksum to verify data integrity and
+detect unintentional data corruption
+ronald rivest founder of rsa data
+security and institute professor at mit
+designed md5 as an improvement to a
+prior message digest algorithm which was
+the md4
+as already iterated before the process
+is straightforward we pass our plain
+text message to the md5 hash functions
+which in turn performs certain
+mathematical operations on the clear
+text to scramble the data the 128-bit
+digest received from this is going to be
+radically different from the plain text
+the goal of any message digest function
+is to produce digests that appear to be
+random
+to be considered cryptographically
+secure
+the hash functions should meet two
+requirements
+first that it is impossible for an
+attacker to generate a message that
+matches a specific hash value and second
+that it is impossible for an attacker to
+create two messages that produce the
+same hash value
+even a slight change in the plaintext
+should trigger a drastic difference in
+the two digest
+this goes a long way in preventing hash
+collisions which take place when two
+different plain texts have the same
+digest
+to achieve this level of intricacy there
+are a number of steps to be followed
+before we receive the rises
+let us take a look at the detailed
+procedure as to how the md5 hash
+algorithm works
+the first step is to make the plain text
+compatible with the hash function
+to do this we need to pad the bits in
+the message
+when we receive the input string we have
+to make sure the size is 64 bit short of
+a multiple of 512.
+when it comes to padding the bits we
+must add one first followed by zeros to
+round out the extra characters
+this prepares the string to have a
+length of just 64 bits less than any
+multiple of 512.
+here on out we can proceed on to the
+next step where we have to pad the
+length bits
+initially in the first step we appended
+the message in such a way that the total
+length of the bits in the message was 64
+bit short of any multiple of 512.
+now we add the length bits in such a way
+that the total number of bits in the
+message is perfectly a multiple of 512.
+that means 64-bit lens to be precise are
+added to the message
+our final string to be hashed is now a
+definite multiple of 512.
+the next step would be to initialize the
+message digest buffer
+the entire hashing plain text is now
+broken down into 512 bit blocks
+there are four buffers or registers that
+are of 32 bits each named a b c and d
+these are the four words that are going
+to store the values of each of these sub
+blocks
+the first iteration to follow these
+registers will have fixed hexadecimal
+values as shown on the screen below
+once these values are initial
+of these 512 blocks we can divide each
+of them into 16 further sub blocks of 32
+bits each
+for each of these sub blocks we run four
+rounds of operations having the four
+buffer variables a b c and d
+these rounds require the other constant
+variables as well which differ with each
+round of operation
+the constant values are stored in a
+random array of 64 elements
+since each 32-bit sub-block is run 4
+times 16 such sub-blocks equal 64
+constant values needed for a single
+block iteration
+the sub-blocks can be denoted by the
+alphabet m and the constant values are
+denoted by the alphabet t
+coming to the actual round of operation
+we see our four buffers which already
+have pre-initialized values for the
+first iteration
+at the very beginning the values of
+buffers b c and d are passed on to a
+non-linear logarithmic function
+the formula behind this function changes
+by the particular round being worked on
+as we shall see later in this video
+once the output is calculated it is
+added to the raw values stored in buffer
+a
+the output of this addition is added to
+the particular 32-bit sub-block using
+which we are running the four operations
+the output of this requisite function
+then needs to be added to a constant
+value derived from the constant array k
+since we have
+four different elements in the array
+repeat
+since we have 64 different elements in
+the array we can use a distinct element
+for each iteration of a particular block
+the next step involves a circular shift
+that increases the complexity of the
+hash algorithm and is necessary to
+create a unique digest for each
+individual input
+the output generated is later added to
+the value stored in the buffer b
+the final output is now stored in the
+second buffer of b of the output
+register
+individual values of c d and a are
+derived from the preceding element
+before the iteration started meaning the
+value of b gets stored in c
+value of c get stored in d and the value
+of d in a
+now that we have a full register ready
+for this sub block the values of a abcd
+are moved on as input to the next
+sub-block
+once all 16 sub-blocks are completed the
+final register value is saved and the
+next 512-bit block begins
+at the end of all these blocks we get a
+final digest of the md5 algorithm
+regarding the non-linear process
+mentioned in the first step the formula
+changes for each round it is being run
+on this is done to maintain the
+computational complexity of the
+algorithm and to increase randomness of
+the procedure
+the formula for each of the four rounds
+uses the same parameters that is b c and
+d to generate a single output the
+formulas being used are shown on the
+screen right now
+algorithm unlike the latest hash
+algorithm families a 32-bit digest is
+relatively easier to compare when
+verifying the digest
+they don't consume a noticeable amount
+of disk storage and are comparatively
+easier to remember and reiterate
+passwords need not be stored in plain
+text format making them accessible for
+hackers and malicious actors
+when using digest the database security
+also gets a boost since the size of all
+the hash values will be the same
+in the event of a hack or a breach the
+malicious actor will only receive the
+hashed values so there is no way to
+regenerate the plain text which should
+be the user passwords in this case
+since the functions are irreversible by
+design hashing has become a compulsion
+when storing user credentials on the
+server nowadays
+a relatively low memory footprint is
+necessary when it comes to integrating
+multiple services into the same
+framework without a cpu overhead
+the digest size is the same and the same
+steps are run to get the hash value
+irrespective of the size of the input
+string
+this helps in creating a low requirement
+for computational power and is much
+easier to run on older hardware which is
+pretty common in server farms around the
+world
+we can monitor file corruption by
+comparing hash values before and after
+transit
+once the hashes match file integrity
+checks are valid and we can avoid data
+corruption
+hash functions will always give the same
+output for the similar input
+irrespective of the iteration parameters
+it also helps in ensuring that the data
+hasn't been tampered with on route to
+the receiver of the message
+we use our wi-fi every day for work and
+we use the internet for entertainment
+and communication
+the dependency on technology is at an
+all-time high thanks to the radical
+developments and innovation in these
+last two decades
+a big portion of this belongs to
+ensuring secure channels of
+communication and data transmission
+the secure hash algorithm are a family
+of cryptographic hash functions that are
+published by the national institute of
+standards and technology along with the
+nsa
+it was passed as a federal information
+processing standard also known as fips
+it has four different families of hash
+functions ssj0 is a 160 bit hash
+function published in 1993 and it was
+closed down later after an undisclosed
+significant flaw
+sha-1 is also a 160-bit hash function
+which resembles the earlier md5
+algorithm
+this was designed by the nsa to be a
+part of the digital signature algorithm
+scga2 is a family of two similar hash
+functions with different block sizes
+known as the sha-256 and the sha-512
+they differ in the word size
+she-256 uses 32-bit words while sha-512
+uses 64-bit words
+ssh 3 is a hash function properly known
+as kcac it was chosen in 2012 after a
+public competition among non-nsa
+designers
+it supports the same hash lengths as hj2
+and its internal structure differs
+significantly from the rest of the sha
+family
+as we have already iterated the process
+is straightforward we pass a plain text
+message to the sha hash function which
+in turn performs certain mathematical
+operations on the clear text to scramble
+the data
+the 160 bit digest received from this is
+going to be radically different from the
+plain text
+the goal of any hash function is to
+produce digests that appear to be random
+to be considered cryptographically
+secure the hash function should meet two
+requirements
+first that it is impossible for an
+attacker to generate a message that
+matches a specific hash value
+and second it should be impossible for
+an attacker to create two messages
+producing the exactly same hash value
+even a slight change in the plain text
+should trigger a drastic difference in
+the two digest
+this goes a long way in preventing hash
+collisions which takes place when two
+different plain texts have the same
+digest
+the sha family functions have some
+characteristics that they need to follow
+while generating the digest
+let's go through a few of them
+the length of the clear text should be
+less than 2 to the power 64 bits in the
+case of sha-1 and sh-256
+this is essential to keep the plain text
+compatible with the hash function and
+the size needs to be in comparison area
+to keep the digest as random as possible
+the length of the hash digest should be
+256 bits in the sha-256 algorithm 512
+bits in the sha 512 algorithm and so on
+bigger digest usually suggests
+significantly more calculations at the
+cost of speed and space
+we typically go for the longest digest
+to bolster security but there must be a
+definite balance between the speed and
+security of a hash function
+by design all hash function of the sha
+512 she-256
+are irreversible
+you should neither get a plain text when
+you have the digest beforehand
+nor should the digest provide the
+original value when you pass it through
+the same hash function again another
+case of protection is that when the hash
+digest is passed into the sha function
+for a second time we should get a
+completely different digest from the
+first instance
+this is done to reduce the chance of
+brute force attacks
+to achieve this level of intricacy there
+are a number of steps to be followed
+before we receive the digest
+let us take a look at the detailed
+procedure as to how the sha algorithm
+works
+the first step is to make the plain text
+compatible with the hash function
+to do this we need to pad the bits in
+the message
+when you receive the input string you
+have to make sure the size is 64 bit
+short of a multiple of 512
+when it comes to padding the bits you
+must add one first followed by the
+remaining zeros to round out the extra
+characters
+this prepares a string to have a length
+just 64 bits less than any multiple of
+512
+here on out we can proceed to the next
+step where we have to pad the length
+bits
+initially in the first step we appended
+the message in such a way that the total
+number of bits in the message was 64 bit
+short from becoming a multiple of 512.
+now we add the length of bits in such a
+way that the total number of bits in the
+message is a perfect multiple of 512.
+that means 64 bits plus the length of
+the original message becomes a multiple
+of 512. this becomes a final string that
+needs to be hashed
+in the next step we have to initialize
+this chaining variables
+the entire plain text message can now be
+broken down into blocks of 512 bits each
+unlike other hash algorithms like md5
+which use 4 registers or buffers sha
+family use 5 buffers of 32 bits each
+they are named a b c d and e these
+registers go through multiple rounds of
+operation but the first iteration has
+fixed hexadecimal values as can be seen
+in the screen
+moving on we have to process each of the
+512-bit blocks by breaking each of them
+into 16 sub-blocks of 32 bits each
+each of them goes through 4 rounds of
+operation that use the entire register
+and have the 512-bit block along with a
+constant array out of those four rounds
+each round has 20 iterations so in
+general we have 80 rounds sum total
+the constant value of k is an array of
+80 elements
+of those 80 16 elements are being used
+each round so that comes out to 80
+rounds for each of those elements
+the value of t differs by the number of
+rounds as can be seen in the table below
+a single formula is necessary to
+calculate the output of each round and
+iteration
+the formula can be a b c d e register is
+equal to e plus a non-linear process b
+along with a circular shift of a plus w
+t plus kt
+in this formula abcd is the register
+value of the chaining variables as we
+discussed before
+p is the logical process which has a
+different formula for each round
+s5 is a circular shift by 5 bits
+and wt is a 32-bit string derived from
+the existing sub-block this can be
+calculated depending on the iteration at
+hand
+kt signifies a single element of the 80
+character element array which changes
+depending on the particular round at
+hand
+for the values of wt the first 16 values
+are the same as that of the sub blocks
+so there is no extra calculation needed
+for the next 64 elements the value of wt
+can be calculated as shown in the
+formula here
+to better understand this let's take a
+look at how each of this goes in a
+sequential process we have an initial
+register using the five words of 32 bits
+each in the first step we put the values
+of a b c and d to the subsequent
+register as the output
+next we use a non-linear process b that
+changes depending on the round and uses
+the values of b c and d as input
+whatever output is generated from the
+non-linear process it is added with the
+value of the e register
+next the value of a is circular shifted
+by 5 bits and is added with the output
+generated in the previous step
+the next step is adding the value of wt
+and the constant element of kt the
+current output is then stored in the
+register a similarly this iteration is
+repeated every round and for each
+sub-block in the process once all the
+registers are complete and all the
+sub-blocks are joined together to form
+the single ciphertext message we will
+have our hashed output regarding the
+non-linear process p that uses the
+values of b c and d as input
+the formula changes every round to
+maintain a complexity of the program
+that can withstand brute force attacks
+depending on the round the values are
+passed through a logical operation which
+is then added with the values of wt kt
+and so on
+now that we understand how to get our
+hash digest from the plain text let us
+learn about the advantages we obtain
+when using the sha hash algorithm
+instead of relying on data in a plain
+text format
+digital signatures follow asymmetric
+encryption methodology to verify the
+authenticity of a document or a file
+hash algorithms like ssh 256 and the
+industry standard sha 512 go a long way
+in ensuring the verification of
+signatures
+passwords need not be stored in a plain
+text format which makes them accessible
+to hackers and other malicious actors
+when using digest the database security
+also gets a boost since the size of all
+hash values will be the same
+in the event of a hack or a breach the
+malicious actor will only receive the
+hash values with no way to regenerate
+the plain text
+in this case the plain text would be
+user credentials
+since the hash functions are
+irreversible by design it has become a
+compulsion when storing passwords on the
+servers
+the ssl handshake is a crucial segment
+of the web browsing sessions and it's
+done using sha functions
+it consists of your web browsers and the
+web servers agreeing on encryption keys
+and hashing authentication to prepare a
+secure connection
+it relies on a combination of symmetric
+and asymmetric algorithms which ensure
+the confidentiality of the data
+transmitted between a web server and a
+web client like the browsers
+you can monitor file corruption by
+comparing hash values before and after
+transit
+once the hashes match file integrity
+checks are valid and data corruption is
+avoided
+hash functions will always give the same
+output for the same input irrespective
+of the iteration parameters
+it also helps in ensuring that the data
+hasn't been tampered with on route to
+the receiver of the message
+hope you learned something new today if
+you have any questions from today's
+session be sure to let us know in the
+comments below
+subscribe to our channel for more videos
+like this thank you for watching

@@ -1,0 +1,387 @@
+hey everyone welcome to another video by
+simply learn in this video we will
+create a realtime chat application using
+node.js JavaScript and
+typescript let's look at the chat
+application which we are going to create
+this is the chat application where we
+have two users and from the user one we
+will send the message hello
+and the user to will receive it and from
+the user to we'll send the message
+hi and the user one receives it so this
+is basically a simple chat application
+how we can
+create how are
+you so this is basically a simple chat
+application which we can create
+so in this video we will learn to make
+this chat application from the scratch
+but before we begin make sure you have
+subscribed to our YouTube channel and
+clicked on the Bell icon so you never
+miss an update from Simply learn watch
+the video till the end so that you don't
+miss out anything so without wasting any
+further time let's get started first of
+all we will create a new folder so I'll
+go to my D drive and I'll create a new
+folder
+I'll name the folder
+as chat
+tab so after creating this new folder so
+we will go to visual studio code open a
+new window in new window we will open
+the folder which we
+created we created the folder in D
+drive we will first create create the
+user interface to create the user
+interface for that we need to create a
+new file called
+index.html so I've successfully created
+the new file index.
+HTML so we'll change the title we'll
+name the title as IO chat
+next after this we'll open the
+link before this we should know what is
+CDN a CDN is a network of servers that
+distributes content from An Origin
+server throughout the world by catching
+content close to where each and user is
+accessing the internet via a web enabled
+device the content they request is first
+stored on the origin server and is then
+replicated and stored elsewhere as
+needed so we will use bootstrap CDN and
+query CDN for our project so we'll use
+the link tag the link element allows
+authors to link their document to other
+resources we'll click on the
+link so for this to get the bootstrap
+CDN we will go to the browser and type
+bootstrap
+CDN so we'll copy this
+link for bootstrap CDN and we'll paste
+it
+here bootstrap is the most popular CSS
+framework for developing responsive and
+mobile first websites bootstrap 5 is the
+newest version of bootstrap and
+bootstrap is free open-source CSS
+framework directed at responsive mobile
+first front and web development it
+contains CSS and JavaScript based on
+design templates for forms buttons
+navigation and other interface
+components after this next we need
+jQuery CDN
+next we will next we'll get the jQuery
+CDN and write it in the script
+TX so I'll select
+script the script element allows authors
+to include Dynamic script and data
+blocks in their documents the element
+does not represent content for the user
+to get the CDN for
+jQuery go to the browser
+and just type jQuery
+CDN and open the first
+link click on
+uncompressed
+and copy
+this go back to the visual studio code
+and paste
+it so after this is
+done jar is fast small and featur
+JavaScript library it makes things like
+HTML document transversal and
+manipulation event handling animation
+and Ajax much simpler with an easy to
+use API
+that works across a multitude of browser
+with a combination of Versatility and
+extensibility so after this we'll take
+one more script tag and this time we
+will include
+the we'll take one more script tag
+inside this script tag we will enter the
+client set socket. IO web API that will
+work inside the browser you can go to
+the browser and search socket do IO you
+will get all the information related to
+socket.io so just go and type socket.
+IO here just go to the browser and type
+socket. IO and on this website socket.
+IO you have all the documentation and
+all the details to get started with
+socket.io so you can go through the
+socket. iio here
+so in the script tags I'll write
+source and just type
+socket
+io/ socket. io.js
+so after this we'll create a new div
+tag so the div element has no special
+meaning at all it represents its
+children it can be used with the class
+language and title attributes to mark up
+semantics common to a group of
+consecutive elements so inside this diff
+we'll create a new
+class new class
+container so class is basically a space
+separated list of classes of the element
+classes allow CSS and JavaScript to
+select and access specific elements via
+the class selector or functions like the
+method document get Elements by class
+name so after
+this we'll create another
+div class
+R inside this we will create one more
+diff class
+this colum medium 4 this class is used
+when the device size is medium or
+greater than 768 pixel and the maximum
+width of the container is 720 pixel and
+you want the width equal to four columns
+that is when we use this function column
+medium
+4 next we'll create another
+diff class
+well so after this we'll provide the
+heading
+H3 the H3 element represents a section
+heading so in this will'll provide the
+heading as online
+users you can change the headings
+whatever you want to but I'll keep it as
+online
+users so after this we'll create an
+unordered
+list this
+class list
+group and ID
+so after this we'll create a one more
+diff in this div
+class will provide column medium of size
+8
+this column medium AG stands for large
+column then we'll create a diff another
+div class chat
+where ID is equal to chat
+then I'll create a
+form the this form element represents a
+collection of form Associated elements
+some of which can represent editable
+values that can be submitted into a
+server or
+processing per form
+ID is equal to
+for message
+form this will create a diff
+class form group
+next we'll create the
+label so label element represents a
+caption in a user interface the caption
+can be associated with specific form
+control known as label elements label
+control either using for attribute or by
+putting the form control inside the
+label element
+itself so use the label element inside
+that we'll write enter message
+next we'll create a text
+area use the label text
+area so inside text area we'll create a
+class form
+control and
+ID message
+so text area element represents some
+multi-line plane text edit control for
+the elements raw value the contents of
+the control represent the control's
+default value after the text
+area
+we just write
+then we will create an input
+element input element
+of we'll assign a type submit
+class
+button value
+send message in double
+quotes So this input basically it
+represents a type data field usually
+with a form control to allow the user to
+edit the
+data so we have finished with the user
+interface we'll just save this and run
+it in the browser right click and open
+with live
+server so here we go we have created the
+HTML but we we will now create assign
+few CSS elements we just need the margin
+top for the body so we'll assign that
+so we'll create Styles
+element the style element allows authors
+to embed style information in their
+documents the style element is one of
+the several inputs to The Styling
+processing model the element does not
+represent content for the
+user so in the
+style we'll just write this
+body and we'll assign margin
+top 30
+pixel save this and we'll go to the
+browser and just
+refresh so till now we have created the
+user interface we'll just go to the
+browser and run this user interface just
+right click and click on open with live
+server now we will create a new file
+called server.js
+and we'll go to the
+terminal in terminal we will run two
+commands first of all we need to install
+socket. IO for that we'll run
+npm and there is one prerequisite we
+need to have nodejs installed in our
+device so then run the command node
+package manager npm install
+install socket.
+IO socket. iio is a library that enables
+realtime bidirectional and even based
+communication between the browser and
+the server it consist of a node.js
+server and a JavaScript client library
+for the
+browser after installing socket.io then
+we need to install Express for that run
+the command npm
+install
+Express Express is a minimal and
+flexible node.js web application
+framework that provides a robust set of
+features for web and mobile
+applications after installing socket. IO
+and express you will get these two files
+package.json file and package log. Json
+next go to the
+server.js wherein I will paste few lines
+of
+code in the line one creates an express
+application the express function is a
+top level function exported by the
+express module then we have const listen
+and then we require an socket. iio then
+we we have created an variable app
+Express method then we have created an
+variable
+server So This Server that is we use the
+module
+HTTP so it creates a module HTTP to use
+the HTTP server and client we must
+require HTTP the HTTP interfaces in
+node.js are designed to support many
+features of the protocol which have been
+traditionally difficult to use in
+particular large possible chunk encoded
+message
+the interface is careful to never buffer
+entire request or responses so the user
+is able to stream
+data then we have another variable IO
+where we require socket. IO server and
+similarly we are listening in the port
+3000 so in Port 3000 it starts a server
+listening for connection a net. server
+can be an TCP or an IPC server depending
+on what it listens to
+do then we have
+app.get here the request is declared but
+it's value is never read we have request
+and
+response then we are routing it on the
+Local Host
+3000 so in this line we are transferring
+the file at the given path so
+automatically sets the content type
+response header field the call back is
+invoked when the transfer is complete or
+when an error occurs be sure to check
+request response sent if you wish to
+attempt responding as the header and
+some data may be already been
+transferred here we are connecting the
+client to this server and here we add
+plug details to the customer array and
+here we are checking the current
+connections and then we disconnect from
+the
+server using the disconnect
+function next we delete theplug details
+and the again we show the current
+connection
+here on the socket Doon we send messages
+function data and then we console.log
+the data then we emit the new
+messages so then we have return
+console.log server is
+listening so now we will run this code
+and check if the server is
+listening now we'll check if the server
+is listening for that we'll run the
+command node server
+and here we go server is listening now
+we'll just go and run the Local Host
+3000 on the
+browser go to the new tab and just run
+Local Host 3000 and here we go it's
+running and when we come back to the
+code we can see it shows one socket
+connected so again if we go and open it
+in a newow
+browser and just run the local host and
+go back to the code it will show two
+sockets
+connected so we are almost done we just
+have a small part left out we'll go to
+index.html and here we'll just scroll
+down and above body we'll just paste few
+lines of
+code so here basically we are just
+creating a function to get data form so
+we get message form and we we are
+creating variables message and we are
+creating variables chat so basically in
+this line we will know form between
+click event handle and then we will
+prevent default from submission next in
+this line we will trap data for text box
+and call server then we'll Cate clear
+then we will clear the form text box
+then we'll console.log submitted
+so our program is finished now we'll
+just run and check the
+code so we'll save this
+code go to the
+browser refresh it
+so I have the two browsers I have opened
+it in two separate window we'll just
+check if the application is working so
+we'll send the message
+hi and here we go we have received the
+message so we can say
+hello so the chat application is working
+successfully
+so with that we have reached the end of
+this video I hope you like the video
+thank you so much for being here keep
+learning and stay tune to Simply
+[Music]
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

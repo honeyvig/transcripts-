@@ -1,0 +1,252 @@
+hey everyone welcome to another session
+by simply learn in this session we will
+learn about typescript generics
+generics is the ability to design a
+component that can work over several
+types rather than a single one it is one
+of the critical tools in the toolkit for
+creating reusable components in c sharp
+and java languages
+this enables users to use these
+components while also allowing them to
+utilize their kinds
+let's see what's in it for you in this
+session
+in this session we will first start with
+understanding what is typescript
+generics followed by which we will look
+at why to use typescript generics
+proceeding further we will understand
+the typescript generic types generic
+classes and generic constraints
+but before we begin make sure you have
+subscribed to our youtube channel and
+click down the bell icon so you never
+miss an update from simply learn
+so without wasting any further time
+let's get started
+what is typescript generics
+typescript generics is a tool for
+creating reusable components in
+typescript
+rather than working with a single data
+type it builds a component that can
+interact with various data kinds it
+enables users to consume these
+components while also using their own
+kinds
+generics ensure that the software is
+both adaptable and scalable over time
+type safety is provided via generics
+without sacrificing performance or
+efficiency
+the type variable in typescript is used
+to denote types and uses generics
+generic functions have the same type as
+non-generic functions with type
+arguments specified first as in function
+declarations
+why use typescript generics
+consider the below code without generics
+the identity function is a function that
+returns whatever is sent in as a
+parameter we could either provide the
+identity function with the specific type
+or identity function with any type
+while the use of any is generic when we
+use any the function accepts any kind
+for the type of argument as a result
+when function returns we lose
+information about what the type was the
+only information we have is that any
+type could be produced if we pass in a
+string
+we need the means to capture the
+argument type in such a way that we can
+use it to signify what is been returned
+as well we will utilize a type variable
+here which is a form of variable that
+deals with types rather than values
+the identity function now has a type
+variable called time this type allows us
+to capture the type of data the user
+supplies for example a number or a
+string so that we can use it later we
+are going to utilize the type as a
+return type once more
+we can use two methods to invoke generic
+identity function after writing it one
+method is to pass all the parameters to
+the function including the type argument
+the other method is to utilize type
+argument inference
+now let us look at the typescript
+generic types
+generic functions have the same type
+parameters as non-generic functions with
+the type parameters listed first as in
+the function declarations
+we can call the generic type parameter
+in the type by whatever name we like as
+long as the number of type variables and
+how they have utilized match
+the generic type can also be written as
+a call signature of an object literal
+type
+typescript generic classes
+a generic class resembles a generic
+interface in appearance
+following the name of class generic
+classes contain a generic type parameter
+list enclosed in angular brackets
+although this is relatively literal use
+of the generic number class you will
+notice that nothing restricts it to
+using only the number type instead we
+may have used string or even more
+complicated objects
+a class type has two sides a static side
+and an instant side generic classes are
+only generic on the instant side not on
+the static side hence static members
+can't use the class type parameters
+while working with them
+although this is relatively literal use
+of the generic number class you will
+notice that nothing restricts it to
+using only the number type
+instead we may have used string or even
+more complicated objects
+putting the type parameter on the class
+itself like the interface ensures that
+all of the classes property functions
+with the same type
+typescript generic constraints
+typescript generic types allow you to
+work with any data type we can however
+use constraints to limit it to a
+specific types
+a type parameter can be declared that is
+limited by another type parameter for
+instance in this case we would like to
+retrieve a property from an object based
+on its name we'll put a constraint
+between two types to ensure that we are
+not obtaining a property that does not
+exist on the object
+now let us jump into visual studio code
+and understand typescript generics more
+better so here we are in visual studio
+code the prerequisite is we need to
+install node.js
+and we need to install typescript
+so let's get started
+let's call the function
+function identity
+identity function is a function that
+returns whatever is sent in as a
+parameter we could either provide the
+identity function with a specific type
+or with any type
+so this is the identity function with
+specific type so if we had to write the
+same
+in the identity function with the
+specific type so what we'll do
+we'll write it with the specific type
+so to write it with any type
+what we have to do is we'll write any
+in place of string
+so while the use of n is generic when we
+use any the function accepts any kind of
+the type of the argument as a result
+when the function returns we lose the
+information about what that type was the
+only information we have is that any
+type could have produced if we pass in a
+string
+so we are passing up the type string
+here and maybe we can pass this type as
+number as well instead of string
+so i can make this function generic by
+passing the type any but this will lose
+information about what type was passed
+so for that we need the means to capture
+the argument type in such a way that we
+can use it to signify what is being
+returned as well so we will utilize a
+type variable here which is of the form
+variable that deals with the types
+rather than the values
+so for that we will write the code as
+we'll create a function
+identity
+so here the identity function now has a
+type variable called the type
+this type allows us to capture the type
+of data the user supplies for example a
+number or a string so that we can use it
+later we are going to utilize a type as
+a return type once more so we can use
+one of the two methods to invoke the
+generic identity function after writing
+it
+so i have written a few lines of code
+with generic type function
+so here i have written a few lines of
+code in this example the type variable t
+is specified with the function in the
+angle brackets get array
+so the type variable t also is used to
+specify the type of the arguments and
+then return the value
+this means that the data type which will
+be specified at the time of a function
+call will also be the data type of the
+arguments and of the return value
+so we call generic function getarray
+and the pass numbers array the strings
+array for example calling the function
+as get array number and we have passed
+the numbers as 16 and decimal number 2.0
+and 55
+this will replace t with the number and
+so the type of the arguments and the
+return value will be the number array in
+the same way for get array string we
+have passed the values as hello world
+the type arguments and the return value
+will be a string array so now the
+compiler will show an error if you try
+to add a string in number array or a
+number in string array thus we get the
+type checking advantage
+so it is not recommended but we can also
+call a generic function without
+specifying the type variable the
+compiler will use the inference to set
+the value of t on the function based on
+the data type of the argument values
+now let us run this code and check
+so let us go to the terminal and let us
+first run the command
+typescript.cmd and the file name type.ts
+enter
+now let us run the file
+nodetype.js
+and here we go
+it's showing the number array as
+1.5 to 36 and 400 we have pushed two new
+values one for the number array that is
+value 400 and for the string array hello
+typescript
+so with that we have reached the end of
+this video
+i hope you liked the video thanks for
+watching keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

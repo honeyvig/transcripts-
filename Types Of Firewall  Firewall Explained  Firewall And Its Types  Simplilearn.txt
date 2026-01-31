@@ -1,0 +1,284 @@
+hey everyone Welcome to our cyber
+security Journey today we delve into the
+intricate world of network protection as
+we explore the types of firewalls in an
+era where digital threats Loom large
+understanding that diverse forms of
+firewall is crucial join us to unravel
+the layers of Hardware software proxy
+stateful inspection and Next Generation
+fires discover how this guard s Shield
+your digital realm from cyber intrusions
+and now we'll move to the landscape of
+firewalls and fortify your knowledge and
+just a quick info for you if you want to
+upskill yourself master cyber security
+skills and land your dream job or grow
+in your career then you must explore
+simply learn's cohort of various cyber
+Security Programs simply learn offers
+various certification and postgraduate
+programs in collaboration with some of
+the world's leading universities like
+MIT it kpur EC Council and many more
+through our courses you will gain
+knowledge and work ready expertise in
+skills like Advanced hacking techniques
+Network packet analysis ethical hacking
+network security and over a dozen others
+and that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in top typ product and security
+companies and academicians from top
+universities after completing these
+courses thousands of Learners have
+transitioned into cyber security role as
+a fresher or move on to a higher paying
+job and profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the pin comment and description box to
+find a cyber security program that fits
+your experience and areas of interest
+and now let's start with the topic what
+is a firewall a firewall serves as a
+protective mechanism either in the form
+of a device or software tasked with
+monitoring Network traffic to identify
+and thought potential threats and it's
+primary function is to create a barrier
+permitting harmless traffic while
+blocking any potential harmful data and
+the protective reach of a fireball is
+adaptable catering to various scenarios
+security teams leverage Fireballs to
+safeguard networks from external sources
+such as the internet second establish
+protective parameters around internal
+sub networks ensuring for instance that
+HR personal cannot access systems
+deserved for the devop team third
+implement and traffic scanning on
+individual devices like safeguarding a
+BYOD laptop from incoming traffic and in
+the client server model of network
+security firewalls play a fundamental
+role ensuring the safety of both
+incoming and outgoing traffic however
+vulnerabilities exist including success
+ability to social engineering attacks
+where malicious actors attempt to
+exploit individuals by for example
+stealing passwords for CEO fraud second
+Insider threats that is posed by
+individuals within the network
+intentionally altering firewall settings
+and then human errors such as employees
+forgetting to activate the firewall or
+disregarding important update
+notifications so this was about the
+firewall and now we'll see how does a
+firewall work teams Implement a firewall
+in line within a network to serve as a
+barrier between external sources and the
+producted systems administrator
+establish chalk points where the
+firewall scrutinizes all data packets
+entering or leaving the network a packet
+a formatted piece of data for the
+internet transfer consists of a payload
+the actual content and a header that is
+information about the data sender and
+recipiant and firewalls assess packets
+using predefined rules to differentiate
+between Banning and malicious traffic
+these rules set govern how the firewall
+examines and the first rule is source
+and destination IP address and then
+payload content and the packet protocols
+example TC CP IP and then application
+protocols HTTP tnet FTP DNS SSH and then
+data patterns indicative of specific
+cyber attacks the firewall blocks
+packets that violate the rules directing
+safe packets to their intended
+destination and when a firewor restricts
+traffic two options exist that is
+silently discard the request or provide
+an error reply to the sender both
+options prevent harmful traffic from
+entering the network the choice depends
+on security preferences typically
+security teams op to silently drop
+request to minimize information exposure
+if a potential hacker is testing the
+firewall for vulnerabilities so this is
+how does a firewall work and now we'll
+see the types of firewall so we'll start
+with the number one that is Packet
+filtering firewall so packet filtering
+Firs operate at Junction points
+comparing each packet to established
+criteria like IP address addresses and
+port numbers while fast and cost
+effective they lack broader context and
+don't inspect packet payloads this makes
+them suitable for basic security in
+small or budget constraint organizations
+and if we talk about the advantages the
+number one is Filters traffic for the
+entire network it is fast and efficient
+and is inexpensive with minimum impact
+and now talking about the disadvantages
+it lacks broader context doesn't check
+payloads and setup can be challenging
+and now moving on to the next type of
+firewall that is circuit level Gateway
+so circuit level gateways monitor TCP
+handshakes to determine the legitimacy
+of network sessions while it is easy to
+set up they should be used in
+conjunction with other security
+Technologies to prevent data leakage and
+if we talk about its advantages it
+processes requested transactions and it
+is easy to set up and it requires low
+cost and now talking about the
+disadvantages it offers no protection
+against data leakage no application
+layer monitoring and it requires ongoing
+updates and then coming to the next
+firewall that is application Level
+Gateway also known as proxy firewalls
+application Level gateways filter
+packets based on service and content
+while providing fine grain security
+controls they can impact Network
+performance and are costly and now
+talking about the advantages it examines
+all Communications find gr security
+controls and it protects user anonymity
+and now talking about the disadvantages
+it can inhibit Network performance and
+it is costlier than some options and
+doesn't work with all protocols so this
+was about the third firewall that is
+application Level Gateway and now moving
+to the fourth firewall that is stateful
+inspection firewall so stateful
+inspection monitors the entire session
+offering a high degree of control over
+content while resource intensive it
+provides substantive loging capabilities
+and is effective against specific
+attacks like doos and talking about the
+advantages it monitors the entire
+session and it high control over content
+and substantive logging capabilities and
+now talking about the disadvantages it
+is resource intensive more expensive and
+doesn't provide authentication and now
+moving to the fifth firewall that is
+next Generation firewall and Next
+Generation firewall combines packet and
+stateful inspection with deep packet
+inspection and additional security
+systems while offering optimal filtering
+it requires integration with other
+security systems and is costly and now
+talking about the advantages it combines
+DPI with other controls and it tracks
+traffic from Layer Two to the
+application layer and talking about the
+disadvantages the complex integration
+process and the costlier than other
+types and choosing the right Fireball
+depends on specific security needs with
+larger Enterprises often using a
+combination of these Technologies for a
+layer defense so these were the types of
+firewall and now we will see firewall
+deployment options as the landscape of
+it consumption models has evolved so to
+have the methods for deploying security
+measures firewalls today come in various
+delivery methods including Hardware
+Appliances software based Solutions and
+services so first talking about Hardware
+based firewalls a hardware based
+firewalls operates as a dedicated
+Appliance serving as a secure Gateway
+between internal Network devices and
+external entities unlike software based
+Alternatives these self-contained
+appliances do not draw on the processing
+power or resources of host devices and
+often referred to as network-based
+firewalls these appliances are
+particularly suitable for medium to
+large organizations safeguarding
+numerous devices however configuring and
+managing Hardware based firewalls
+demands a higher level of expertise
+compared to their host-based
+counterparts and now talking about
+software based firewalls in contrast a
+software based firewall also known as a
+host firewall that runs on individual
+servers or devices to provide protection
+host firewall software must be installed
+on each device utilizing some of the
+host devices CPU and RAM resources
+offering robust protection against
+viruses and malicious content on a pre-
+device basis software based firewalls
+excel in the Discerning various programs
+running on the host this granity enables
+the filtering of inbound and outbound
+traffic grated precise control over
+communication permissions for different
+programs and now talking about the third
+deployment option that is cloud or
+hosted firewalls many security service
+providers deliver cloud-based firewalls
+also termed firewall as a service this
+hosted solution can monitor both
+internal Network activities and On
+Demand environments from third parties
+cloud-based Fireballs entirely managed
+by an mssp are advantageous for large
+Enterprises or those with Disturbed
+operations and security resource gaps
+they also prove beneficial for smaller
+organizations with limited staff and
+expertise and this was all for this
+tutorial hope you guys found it
+informative and helpful if you like the
+session then like share and subscribe if
+you have any questions you can drop them
+in the comment section below thanks for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

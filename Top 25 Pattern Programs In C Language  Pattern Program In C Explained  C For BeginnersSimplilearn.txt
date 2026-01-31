@@ -1,0 +1,1089 @@
+foreign
+welcome to Simply learn today we'll be
+learning how to generate patent programs
+in say before we get started I hope this
+screen is clearly visible and audio is
+fine if s please type in yes if there
+are any issues do let us know in the
+chat section so that we can resolved
+I see a lot positive responses great
+let's wait for some time for others to
+join us
+great I think we can get started
+this session is on pattern programs in C
+so we'll be covering star pattern number
+pattern alphabet pattern programs and
+some special patterns
+we'll discussed almost all frequently
+Asked interview pattern questions and
+while we are at it please leave us a
+like if you find our content helpful and
+a sub to the channel would be
+appreciated
+first let's get started with a right
+angle triangle star pattern program
+patent programs are performed in the
+form of a matrix where we have rows and
+columns and to print the right angle
+triangle pattern the star arrangements
+are made in the form of a matrix
+where first row has one star second row
+has two stars and third row has three
+strands and so on
+we have inserted Stars at the cell index
+U of zero zero e of 1 0 1 1 then year of
+2 1 2 2 2 3 followed by a of 3 1 to a of
+three four
+and then a of 4 1 up to year four five
+and in the rest of the cells we have a
+free spaces moving ahead let's
+understand the program logic
+we have outer loop for rows and inner
+Loops for columns so first the control
+will check the condition initially the I
+value is 1 so 1 lesser or equal to rows
+so rows if the rows value is 5 then 1
+lesser equal to 5 which is true so it
+comes the control comes to the inner for
+Loop and again checks the condition
+initially the J value is 1 so 1 less or
+equal to 1 the condition is satisfied so
+it prints this statement under the inner
+for Loop that is a princess task
+so again the control goes back to the
+inner follow and increment the J value
+by 1. now J value is 2. so 2 less or
+equal to 1 which is false so it comes
+out of the inner for Loop and prints a
+statement under the outer for Loop and
+the control transfers to the new line it
+again goes back to the outer for Loop
+and increment the I value by 1. so this
+Loop will continue until all stars are
+printed so now let's run the program and
+see the output
+as you all can see my screen this is the
+code for the right angle triangle
+pattern program so here we have the
+counter variable i j and rows is in
+slice to 5. so as I discussed before the
+first star will be printed in the first
+row First Column and when this I value
+is incremented by 1 then it prints the
+second row First Column and then second
+row second column and so on until it
+prints all the stars so now let's run
+the program and see the output
+and here we go the stars are printed in
+a form of a right angle triangle
+next we have inverted right angle
+triangle pattern program
+so this is the image
+where we have five stars in the first
+row 4 stars in the second row
+and three stars in the third row and so
+on and the rest of the cells we have the
+three spaces so let's look at the logic
+and try to understand
+we have outer follow for rows and in a
+follow for columns so initial a i is
+equal to 5 so 5 greater equal to 1 which
+is true so the control comes to the
+inner follow and initially J value is 1
+so 1 lesser or equal to 5 which is true
+so print the first star
+and against the control go back and
+increment J value by one so now J value
+is equal to 2 2 lesser or equal to 5
+again true so executes the statement
+under the inner for Loop change the
+second star
+so this will repeat until the condition
+is not satisfied so once the control
+comes out and the control transfers to
+the new line so again it goes to the
+outer for Loop and decrement I value by
+1. so now I value is 4.
+so for greater or equal to 1 which is 2
+so comes back to the inner follow and
+this will rip it until it form a pattern
+of inverted right angle triangle
+so now let's execute a program and look
+at the output
+so in this program we have counter
+variables Ing and the rows are in slides
+to 5.
+so in our previous program we had
+operator lesser or equal to and
+pre-increment but in this program we
+have greater equal to and pre-decrement
+operator
+so as I said
+first in it will print five stars in the
+first row and then four stars and then
+three stars and so on so now let's
+execute and see the output
+as you all can see
+the inverted right angle triangle is
+printed successfully
+next pattern is Arrow shaped pattern
+as you can see we are trying to combine
+our previous two patterns into one that
+is right angle triangle and inverted
+right angle triangle
+let's have a look at the code
+so here
+the half of the code is for the first
+half of the pattern and the second half
+is for the second half of the pattern
+the only difference in the code is that
+we have rho minus 1.
+so let's first run the program to get a
+better understanding
+so here let's run the program
+as you all can see the pattern to get 5
+stars in one row
+we have row minus one so the only
+difference
+between the previous code and this is
+that we have Roo minus 1.
+the code that I'm executing in this
+session will be attached in the
+description box below so you can have a
+look at it and execute the pattern
+programs for a better understanding and
+if you face any issues while executing
+the programs then please let us know in
+the comment section below and our team
+of experts will be happier to resolve
+all your queries at the earliest
+all right
+our next patent program is mirrored
+right angle triangle
+let's understand this pattern in a form
+of a matrix
+in our first pattern program where we
+had first star followed by four spaces
+in this we have four spaces first and
+then one star then three spaces and two
+stars followed by two spaces and three
+stars and so on
+so let's have a look at the logic
+so as you can see here in order to print
+these pieces first we have a for Loop
+where we have J is equal to 2 into rho
+minus 1 J greater equal to 0 and then J
+minus minus which is the post decrement
+operator
+so initially the I value is 0 and 0
+lesser to 5 then comes and prints the
+spaces first and then J is equal to 0 by
+0 less or equal to 0 which is true and
+princes Star first
+and then when the condition is not
+satisfied it comes out and the control
+transfers to the new line goes back and
+increment the I value by 1. so now I
+value is 1 so 1 lesser to 5 which is
+true and comes between these spaces so
+this will repeat until it prints all
+these tasks so now let's execute the
+program
+so in this program we have counter
+available inj and row value is equal to
+5. and this two for Loops we have for
+rows and then next for Loop is for
+columns
+so now let's try to execute it
+and here we got the output
+the mirrored right angle triangle is
+printed successfully
+next inverted mirrored right angle
+triangle pattern
+it is similar to the previous pattern
+but the pattern is inverted so here as
+you can see
+first we have five stars and the second
+row we have first space And Then
+followed by four stars then two spaces
+followed by three stars and so on
+so here let's see the logic
+so as you can see here it first print
+these blank spaces similar to our
+previous program here also we have for
+Loop to print the blank spaces and here
+again we have a k counter variable to
+print the Stars so let's execute the
+program and see the output
+as you all can see this is the program
+for our inverted mirrored right angle
+triangle so here we have three variables
+the counter variables i j and k and the
+row value is equal to 5. so initially
+the I value is equal to 5 so it checks
+the condition where the 5 greater or
+equal to 1 which is true so comes to
+this for Loop and checks J is equal to 5
+so 5 greater to 5 which is false so it
+will not print any blank spaces so the
+control comes to this for Loop where K
+is equal to 1 and checks the condition
+one lesser or equal to 5 it's true so
+Prince the first start and again it goes
+back and increment the K value by one so
+now the K value is 2. then check the
+condition 2 lesser or equal to 5 which
+is true princes star and this will
+continue up to it prints the 5 stars in
+first row and then the control comes out
+and jumps to the new line that means the
+control transfers to the new line then
+again it goes back and decrement the I
+value by one so now the I value is 4. 4
+greater or equal to 1 again the
+condition is satisfied comes princely
+spaces and this will continue until it
+prints all the stars so now let's run
+the program
+and here we got the output
+our next pattern is mirrored Arrow
+shaped star pattern
+so in this pattern program we are
+combining our previous two pattern
+programs that is mirrored right angle
+triangle pattern program an inverted
+mirrored right angle triangle program so
+now let's have a look at the code
+so here the first half of the code is
+for the first half of the pattern and
+the second half of the code is for the
+second half of the pattern
+so to understand it in a better way
+let's execute the program
+so in this program we have counter
+variables i j and k and the rows is 5.
+so as I said
+the first half of the program is for the
+first half of the pattern so here we
+have the for Loops for the rows and
+this for Loop is for the columns and for
+the second pattern we have this for Loop
+for the rows and then this for Loop for
+the columns so let's run the program
+so here we got the output
+next we have pyramid star pattern
+program
+as you all can see
+we have first two spaces followed by one
+star and then two spaces and in the next
+row we have space first and then star
+space star space and the third row we
+have star and Then followed by space
+star space and star so to understand
+this pattern how it works let's look at
+the code
+as you can see the code here
+we have I is equal to 0 so initially the
+I value is 0 and 0 less than 5 which is
+true so comes to the next follow where J
+is equal to rho minus 1 so 5 minus 0 is
+5. so 5 greater than 1 which is true so
+it prints the first space
+and this will continue until the
+condition is satisfied once the
+condition is not satisfied it comes out
+of the for Loop so it checks the initial
+J value is 0 so 0 letter is equal to
+5 which is true so it prints the first
+star
+so when
+it prints two two spaces and then one
+star and goes back and print two spaces
+again
+so when the condition is not satisfied
+it comes out and the control transfers
+for the new line
+once a control transferred to the new
+line
+it goes back to the first for Loop and
+increment I value by 1. so now I value
+is equal to 1.
+so then it prints this second row Stars
+so this way it repeats until all stars
+are printed in the form of a pyramid so
+let's run the program and see the output
+so as you can see the row value is 5 and
+we have the counter variable ing for
+rows for printing the blank space and
+then
+a loop for a printing star
+so now as I discussed before it print
+two spaces first and then star and
+followed by two spaces in the first row
+so let's try to execute this program
+and here we go
+we got a star pattern
+in the form of a pyramid
+next we have inverted pyramid star
+pattern program
+so in this pattern
+as we can see the first row we have
+first star then space
+then then second start and followed with
+space and third star and the second row
+we have space star space star and the
+space and the third row we have two
+spaces and Then star and two spaces it's
+just similar to the previous pattern but
+it is just inverted so let's have a look
+at the code
+so here we have for Loop for rows and
+then four Loops for columns so this for
+Loops is to print the blank spaces and
+the next for Loop is to print the Stars
+so here initially the I value is 0
+and 0 lesser or equal to 5 minus 1 that
+is 4 so the condition is satisfied
+counts down to the next follow where J
+initial value is 0 so 0 lets or equal to
+4 which is true and Princess blank
+spaces
+and then once the condition is not
+satisfied it comes out where K value is
+0
+so the 0 is less or equal to rows minus
+1 minus I if this condition is satisfied
+the star is printed
+so once the condition is not satisfied
+the control transfers to the new line so
+now let's try to run the program
+so here in this code we have three
+counter variables that is I J and K and
+rho is initialized to 5.
+so here we have two for Loops where it
+is used to print the blank spaces and
+then we have the under for Loop which
+prints the star
+so now let's try to execute it
+and here we got the pattern
+there's the inverted pyramid star
+pattern
+our next pattern program is upper
+inverted pyramid and lower pyramid
+so we have already performed the
+inverted upper pyramid and also the
+regular lower parameter so now let's
+have a look at the code
+so this for Loop the first this
+statements are for the upper invented
+parameter which we have already executed
+and then next we have the other code for
+the lower parameter
+so the only difference is that here we
+use rows minus 1.
+so let's see why do we use that
+so we are trying to combine the patterns
+that we have already executed that is
+the upper invented pyramid and lower
+parameter so for that
+we have the for loops for the upper
+invented pyramids that we have already
+discussed and here the only difference
+is that we have used rows minus 1 and
+next we have the lower parameter again
+here also we have used rows minus one so
+let's see try to execute and see the
+output
+so as you can see here we have the one
+star so in order to print
+in this pattern we have used rows minus
+1. if we just give rows then we'll get a
+one more extra star in between this
+so I hope you got it
+up next we have right diagonal star
+pattern
+so let's understand in a logic so here
+first we have four spaces then one stump
+followed by three species one star and
+then space and the third row we have two
+spaces one star and two spaces and so on
+so in order to print in a right diagonal
+star pattern let's understand the logic
+behind it
+so for that let's look at the code
+so initially we have I value is equal to
+1.
+so 1 it checks the condition where the 1
+is less or equal to 5 which is true so
+comes to the inner for Loop where J
+value is 0 so 0 lesser than 5 minus I
+which is 1 so 5 minus 1 is 4 so 0 lesser
+than 4 which is true and then it prints
+the blank space
+so this will continue until the given
+condition is satisfied once the
+condition is false it comes out the
+control will come out and print the star
+and then it turns to the new line again
+it goes back and increment the I value
+and this will repeat until it prints the
+right diagonal star pattern so now let's
+run the code and have a look at the
+so as you all can see we have two
+counter variables ing
+where we have the row value to be 5.
+so as I discussed before
+this for Loop is used to print the blank
+spaces once the condition is false it
+will come out the control will
+come out and print the star and goes
+back to the new line so now let's try to
+execute
+and here we go we got the right diagonal
+star pattern program
+next we have X star pattern program
+so let's try to understand the logic
+so here we have the first star and Then
+followed by three spaces and then stop
+and the second row we have space star
+space star and space and the third row
+we have one star in between the two
+spaces the and similarly we have third
+row and fourth row so now let's have a
+look at the code
+so here in this code we have I is equal
+to rows then I must be greater equal to
+1 that is 5 is greater equal to 1 which
+is true so comes to the inner follow
+where J value is I
+then J must be lesser to rows so if this
+condition satisfy it prints the spaces
+once the condition is not satisfied it
+comes to the next for Loop where J value
+is equal to 1 and then it checks the
+condition where 1 is lesser or equal to
+2 into I minus 1.
+if the condition is satisfied it comes
+to the if condition where J is equal
+equal to 1 or J is equal equal to 2 into
+I minus 1. if the condition is satisfied
+it prints is star yes it will print the
+space
+if the condition is not satisfied the
+control comes and it transfers to the
+new line
+and our next half of the program
+prints the lower invented V pattern so
+here we have for Loop where I is equal
+to 2 and I must be less or equal to rows
+simply condition is satisfied it comes
+to the for Loop where J is equal to i j
+less it in rows so if the condition is
+satisfy it prints these spaces
+else it will come to the next for Loop
+where J is equal to 1 and 1 must be less
+or equal to 2 into I minus 1. and then
+if this condition satisfied it comes and
+checks the if condition where J is equal
+to equal to 1 or J is equal equal to 2
+into I minus 1. so this code is used to
+print the lower invented V pattern so
+now let's run the program
+as I discussed before we have a counter
+variables Ing and row value is
+initialized to 5. so here the first half
+of the program is used to print a V
+shape and the next half of the program
+is used to print the lower invented B
+pattern so now let's try to run it
+and here we go
+so this is our first V and this is our
+second invented way which is in the form
+of X star pattern
+the next pattern that we have is
+invented V pattern
+so let's have a look at the logic
+so as you can see this is very much
+similar to our pyramid pattern but the
+only difference is that we don't have a
+star here
+so now let's have a look at the logic
+so the logic of a program is that
+the out variable is equal to one so one
+must be lesser or equal to rows
+so if the condition is satisfied it
+comes to the inner for Loop where in is
+equal to 1 and in must be less or equal
+to rows into 2. so if this condition
+satisfied the control comes to the if
+else statement where it tries to execute
+or check the condition where n must be
+equal to X or it should be equal to Y if
+the condition satisfy it prints a start
+else it will print the space so now
+let's try to execute the program
+so here we have the variable out and in
+where the row value 5 is initialized to
+X and Y so now let's try to execute
+and here we go we got the invented V
+pattern
+so moving ahead let's have a look at the
+next pattern
+and our next pattern is v-shaped star
+pattern
+so to understand let's have a look at
+the logic
+so this is very much similar to our
+previous pattern but it is just inverted
+so for that let's have a look at the
+code
+so in the given code
+the difference is that
+we have I is equal to n minus 1
+so the I value must be greater or equal
+to zero if the condition satisfied it
+comes to follow where J is equal to n
+minus 1 so if J is greater than I then
+it prints this space
+if the condition is not satisfied then
+it comes out and prints the star
+then it comes to the next for Loop where
+J is equal to 1 J lesser than I into 2
+so if J is lesser than I into 2 it
+prints the space
+then it comes to the if condition where
+I is greater or equal to 1 if I is
+greater than equal to 1 it prints is
+star and then the control transfer to
+the new line so now let's try to run the
+program
+so as I said
+the N value is equal to 5. so it is just
+similar to our previous program
+and pattern where it is just in an
+inverted form so now let's try to
+execute it
+so here we go the output the V Star
+pattern is formed
+up next we have a pyramid shaped star
+pattern
+so we have already executed a pattern
+based on a pyramid but the only
+difference in this type of pyramid is
+that we have a hollow parameter so let's
+have a look at the logic
+so previously we had stars in between
+but in this type of a pyramid we are not
+going to have a stars in between of a
+pyramid so for that let's have a look at
+the logic
+foreign
+we have a counter variable i j and k so
+first it checks the initial value of I
+is equal to 1 where 1 should be lesser
+or equal to rows so if rows value is 5
+then 1 is less than equal to 5 then if
+the condition is satisfied it comes to
+the inner for Loop where the J initial
+value is 1 so 1 must be lesser to rows
+so if this condition is satisfied it
+will print this space
+if it does not satisfy it comes to the
+next follow where K value is 1 so 1 must
+be lesser or equal to 2 into I minus 1.
+then if this condition satisfied it
+comes to the if else statements
+where the K must be equal to 1 or I is
+equal to rows or k is equal to 2 into I
+minus 1 so if this is true then it
+prints this star pattern else it will
+print this piece so wherever it is
+required to print the star it prints the
+start else it will print the space and
+if this condition does not satisfy it
+comes out and the control transfers to
+the new line
+and then again it will increment the I
+value by 1 and this group will repeat
+so here let's try to execute the program
+and see the output
+so as I said this if else statement
+prints the star wherever it is required
+in space wherever it is required so now
+let's try to execute it
+so as I said it can be a triangle but
+it's a polo
+okay next we have a inverted star
+pyramid it is very much similar to our
+previous pyramid but the only difference
+is that it is inverted
+so let's have a look at the logic it is
+similar to the previous logic but it
+just inverted so in the first row we
+have
+three stars where first star then space
+again star space star and in the second
+row we have two stars and in the third
+row we have one star in between two
+spaces so now let's have a look at the
+code
+so here the first for Loop is used to
+print these faces
+so the next for Loop is used to print
+these Stars so when the condition is
+true it prints this term else it will
+print the space and once the condition
+is false it the control comes out and
+enter to the new line so then again it
+decrements the I value so here we have
+the I minus minus which is the post
+decrement operator so now let's try to
+run the program
+so as I discussed before we have i j and
+k counter variables and row value is
+equal to 5. so this for Loop is used to
+print these faces and if this if
+condition satisfied it prints the star
+wherever it is required and space
+wherever it is required
+so now let's try to run the program
+and here we got the output it's a
+inverted
+star parameter
+next we are going to have a look at the
+Box pattern
+so in this pattern
+the number of rows and columns must be
+equal so the only change is that
+the first row we have five stars and the
+next row will have two stars and three
+spaces in between and similarly the
+third and fourth row and fifth row will
+have five stars so now let's have a look
+at the code
+so here the initially I value is equal
+to one so if the condition
+satisfy it comes to the inner follow
+where J initial value is 1 so J must be
+lesser to M so n is for the rows and M
+is for the columns so here we have if
+statement where I must be equal equal to
+1 or I must be equal equal to n or
+J should be equal to 1 or J should be
+equal to m
+so if this condition satisfied it prints
+the star else it will print this space
+and once the condition is not satisfied
+the control comes out and transfers to
+the new line and again goes back to the
+order follow and
+increment the I value by 1. so now let's
+have a look at the code
+so here in this program as you all can
+see the N value is 10 and M value is
+also 10 so that means
+the number of rows and the number of
+columns are equal
+so here as per this effect statement
+it prints Stars wherever it is required
+and print space where it is necessary so
+now let's try to run the program
+so as you can see
+the Box pattern is formed
+following we have a square start pattern
+it is very much similar to our previous
+pattern but that was a hollow box
+pattern but here the only difference is
+that we have stars in between
+so
+now let's have a look at the code
+so here we have a counter variable I and
+J where initially I value is equal to 0
+so 0 lesser than rows that is if rows is
+equal to 5 then 0 lesser to 5 which is
+true then comes to the inner for Loop
+where J value is equal to 0 so 0 less
+than 5 which is again true it prints the
+star then again it goes back to the
+inner for Loop and increments the J
+value by 1. so now the J value is 1 so 1
+less than 5 against 2 then prints this
+second star and this will continuously
+repeat until the condition is not
+satisfied then once the condition is not
+satisfied it comes out of the for Loop
+and prints this statement under the
+outer follow
+and then the control transfers to the
+new line once comes out it just
+increments the I value by 1. so now the
+I value is 1. so again it checks the
+condition I lesser than prose so this
+will continue until it prints the
+pattern in a box shape so now let's
+execute the program
+so as you all can see the screen the row
+value is 5.
+so now we have the variables ing
+so similarly as I discussed before it
+prints until it make a pattern of a box
+so now let's try to execute
+yeah
+we got the pattern a box shape pattern
+now let's get into the number patterns
+so first we have right angle triangle
+number pattern program
+so here let's understand in the form of
+a matrix so here we have rows and
+columns where the First Column is filled
+with the number one second column is
+filled with the number two and similarly
+3 4 and 5. so here the first cell has
+the number one and followed by the four
+spaces similarly second row have two
+numbers followed by three spaces we have
+already discussed the
+logic how the right angle triangle is
+print so now let's have a look at the
+code
+so here let's look at the code
+so this is very much similar to our
+first program but the only difference is
+here we are taking a j value instead of
+star so it prints the numbers so let's
+run the program
+so here as you can see the
+code the row is initialized to 5 so we
+have five rows and here it prints the
+value of T that means the numbers
+instead of star we are using the numbers
+so now let's try to run the code
+and here we got the output this is the
+right angle triangle pattern in using
+numbers
+so next we have another right angle
+triangle number pattern program so here
+we have a numbers as in one two three
+four five six but in our previous
+pattern the whole First Column was the
+number one and second column was number
+two so here to understand in the form of
+a matrix the the first row and First
+Column we have the number one and the
+second row
+First Column we have two and followed by
+three and similarly four five six and so
+on so now let's try to understand the
+logic
+it is very much similar to our previous
+program and this
+right angle triangle is also called as a
+fluid strangle where we have one extra K
+variable that is the counter variable
+which is used to print the value
+that means here
+it prints the K value and increments on
+every iteration so instead of using
+J we are using K plus plus so now let's
+try to run the program
+so here as you can see it's very much
+similar to our previous program but the
+only difference is that we have a k is
+equal to 1 so
+here we are taking the K value in order
+to print the Floyd's triangle
+so let's run the program
+and here we got the output so here we
+got the right angle triangle number
+pattern program
+next we have the pyramid number pattern
+program so which is also called as a
+pascal stranger
+so
+when we learn in it in a form of a
+matrix then it is very much similar to
+The Pyramid pattern but the only
+difference here is we are using numbers
+instead of stars
+so now let's have a look at the code
+so here
+as you can see we have a four loops and
+we have the counter variables i j and k
+so here we are using a temporary
+variable so if this if statement starts
+satisfied that is K is equal to 0 or I
+is equal to 0. and temp value is equal
+to 1 else 10 is equal to the formula is
+stem into I minus K plus 1 divided by K
+then it will print the numbers in a form
+of a pattern that is in a paramet
+pattern so now let's have a
+look at the output so here as I
+discussed earlier the row value is equal
+to 5 and we have temporary variable
+which is in slice to 1 and we have the
+counter variables i j and k
+so here we have a for Loop which is the
+auto follow
+so if I is equal to 0 there is 0 lesser
+two rows if the condition satisfy it
+comes to the inner for Loop where the J
+value is 1 and J must be lesser or equal
+to rho minus 1. if this condition
+satisfy it print this space
+then it comes to the next for Loop where
+K value is equal to 0 and K is lesser to
+I that means K must be lesser to I or
+lesser or equal to I
+so once it comes to the if statement
+where it checks K is equal equal to 0 or
+I is equal to equal to 1 by temporary
+equal to 1 else we have a formula where
+temp is equal to Temp into I minus K
+plus 1 divided by K
+so then it will print a number in form
+of a pattern that is in a pyramid
+pattern so now let's run the program
+and here we have a pattern
+which is a Pascal's triangle
+up next we have
+a box pattern number pattern program
+so in this it is very much similar to a
+box or we can also say a square pattern
+but instead of stars we are using
+numbers so we have already executed a
+program based on a box pattern so this
+is very much similar to that but there
+we have used Stars so in this pattern we
+are using numbers so the numbers are 1
+and 0.
+so we have equal number of rows and
+columns so now let's have a look at the
+code
+so here
+we have a for Loop and we have a
+variable num
+and we have a if statement so only if
+this condition satisfied that is I
+modulus 2 is equal equal to 0 then num
+is equal to 1 then enters the for Loop
+where int J is equal to 1 J lesser or
+equal to rows and J plus plus then it
+prints a number
+in place of star and then it checks the
+condition or a formula we can say or
+this is an expression where num is equal
+to num condition num is equal equal to
+zero
+or we have print 1 else print 0. so if
+num is equal to num equal to 0 then
+prints 1 else it will print 0.
+then we have num is equal to 1 so
+we have under the for Loop where we have
+int J is equal to 1 J lesser equal to
+rows J plus plus so here if J is like
+equal to 1 and J is less or equal to
+rows it prints the number that is the
+num is equal to num is equal to zero so
+if this satisfy it prints one else it
+print 0. else it will transfer the
+control to the next line so now let's
+try to execute the program
+so as I discussed before
+here we have
+the rows value equal to 5 and we have a
+counter variable I and J
+so initially the I value is 1.
+checks whether I is less or equal to rho
+it says then we have a if statement
+where it says I modulus 2 is equal to 0
+and we have initialized the num value to
+zero then we have a for Loop where J is
+equal to 1 and J must be less or equal
+to rows it prints the number and the
+number that we are going to print is
+either 1 and 0. so if this condition
+satisfies that is num is equal to num
+equal to 0 it will print 1 else it will
+print 0 similarly we come in the else
+part where we have num is equal to 1.
+where we have a for Loop where J is
+equal to 1 1 less or equal to rows and J
+plus plus it prints if this condition
+satisfied that is J lesser or equal to
+rows then it prints a number and here
+again when this number is equal to 0 is
+assigned to number when this condition
+satisfy it prints one value one else it
+will print the value of 2 else
+if this condition not satisfied the
+control comes outside prints the new
+line so now let's try to execute
+and here we got the output where we have
+a box pattern
+using numbers
+now let's get into the another part of
+this session that is alphabet pattern so
+first let's have a look at the right
+angle triangle alphabet pattern so here
+in the first row
+and First Column we have a similar to
+the stars and the number programs that
+we have worked similarly we have an
+alphabets so here we have a alphabet
+first and then followed by four spaces
+and then in the second row we have
+alphabet a b and followed by three
+spaces and so on so now let's have a
+look at the code
+so it's very much similar to the star
+pattern or right angle triangle star
+pattern and number pattern but here
+instead of star or numbers here we are
+using alphabets so we are we have this
+cat J plus alphabets so this is used in
+order to print the alphabets in order or
+in a pattern of right angle triangle
+let's run the code
+so here we have the alphabet is equal to
+64. so
+it takes the ASCII value
+so let's run this code
+as you can see we got a right angle
+triangle
+alphabet pattern program
+next pattern is inverted right angle
+triangle
+so we have already executed a pattern
+based on the star but here we have
+alphabets
+so here in the first row we have five
+alphabets in the second row we have four
+alphabets and followed by one space and
+in the third row we have three alphabets
+followed by two spaces and similarly we
+have fourth row with two alphabets and
+three spaces and so on so now let's have
+a look at the code
+so it is very similar to the inverted
+star pattern but here we are using
+alphabets instead of numbers
+so here we have alphabet plus J which is
+used to
+insert the alphabets so let's execute
+the program
+so here in order to get inverted right
+angle triangle we have I is equal to
+rows minus 1 and I must be greater or
+equal to 0 and we have
+post decrement operator so once this
+condition satisfied it comes into the
+inner for Loop where J value is equal to
+0 and J must be less or equal to I and
+if this satisfy it prints the correct
+alphabet so according to this in first
+row it prints five alphabets then once a
+condition is not satisfied it comes out
+that means the control transfer to the
+new line and then decrement the I value
+by 1 and this will continue till it
+prints the inverted right angle triangle
+pattern program so now let's execute
+and here we have a inverted right angle
+triangle program
+using alphabets
+next we have pyramid alphabet pattern
+it is similar to The Pyramid that we
+have executed but here we are using
+alphabets instead of numbers or Stars so
+let's have a look at the code
+so in order to print the alphabets here
+we have
+the alphabet that is a variable which is
+equal to 65 and this will print the
+ASCII value of a
+and here
+we have the
+counter variables that is i j and k so
+initially the I value is 0 so 0 should
+be less or equal to 4 which is 2 it
+comes to the inner for Loop and it says
+the initial value of J is equal to 4. so
+4 greater to I
+that is initially I value 0 so 4 is
+greater to 0 which is true so it prints
+the space that is the empty space so
+this will continue until the condition
+is satisfied once it the condition is
+not satisfied it comes out
+for this for Loop and checks the
+condition so the K must be less or equal
+to I
+if it satisfy then it will print an
+alphabet that is alphabet plus k
+so now let's try to run the program
+so as you can see we have alphabet that
+means it prints alphabets in a form of a
+pyramid shape so now let's run it
+yeah we got the output
+now let's try to have a look at this
+special pattern
+so in this special pattern
+we are trying to use two symbols that is
+star and hyphen so using star and hyphen
+we are trying to have a pattern of a
+half Diamond so now let's have a look at
+the code
+so here this is the first half of a
+program where it prints the right angle
+triangle
+so it is very much similar but here we
+are using the hyphen and then in this
+next for Loop we are using star
+and in the inverted right angle triangle
+that is uh the second half of the
+pattern here we are using star and then
+the hyphen so now let's try to run the
+program
+so here in this special pattern program
+we are using Star Plus hyphen
+so this will be
+a first half of the program which will
+print the right angle triangle and this
+will be the inverted right angle
+triangle
+so using this we are trying to have a
+half diamond pattern so now let's try to
+run it
+and here we got we have used star hyphen
+star hyphen and we have formed a pattern
+called half diamond
+so this would be our last program for
+this session this is very interesting
+program so let's execute it
+as you can see the Christmas tree
+pattern is executed
+but I want you to execute this program
+and understand the logic and comment on
+the comment section below don't worry
+about the code I had already mentioned
+that the code that I am executing in
+this session will be attached in the
+description box below so you can have a
+look at it and execute the pattern
+programs for a better understanding and
+if you face any issues while executing
+the programs then please let us know in
+the comment section below and our team
+of experts will be happier to resolve
+all your queries at the earliest
+so with this we have come to the end of
+this session on the pattern programs in
+C I hope this session was informative
+and interesting until next time thank
+you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

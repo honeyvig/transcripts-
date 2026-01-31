@@ -1,0 +1,584 @@
+foreign
+YouTube channel today we are going to
+create a location tracker using a phone
+number and Python and before proceeding
+I have an insight for you guys that is
+if you are aiming to get certified as an
+AI and ml engineer and want to build a
+career in AI in that case you can check
+the professional certificate program in
+Ai and machine learning that is in
+collaboration with IBM and Purdue
+University by simpler that will open the
+doors for the best care opportunities
+and to find the details of this
+professional certificate program that is
+in Ai and machine learning you can check
+the link in the description box below
+and we'll also mention the link in the
+pin comment
+you can go through the course
+and just check it out
+and we have some testimonials also if
+you want to see the review of these
+courses
+and moving on I have a question for you
+guys
+and your question is
+which of the following modules needs to
+be imported to handle date time
+computations in Python and your options
+are the first option is date the second
+option is date time and the third option
+is time date and the fourth option is
+time
+so please answer in the comment section
+below and we'll update the correct
+answer in the pin comment you can pause
+the video give it a thought and answer
+in the comment section
+and moving on now we will start a
+project that is track phone number
+location using python
+so for that
+first we'll create a folder for our
+project you could also create a virtual
+environment
+but
+I'm not going to do that you guys can
+create if you want to just keep your
+project aside from all other projects
+and don't want your modules to get
+conflicted with any other module
+so I will name a nice track
+and inside this I will open the command
+prompt
+and I will use the ID that is Visual
+Studio code for that I am writing the
+command code space period and press
+enter in the command prompt
+so it will open my ID
+Visual Studio code
+and here I will create a new file and
+name it as
+new DOT py
+and before starting with the project the
+first thing we should do is install and
+import libraries that we need for our
+project
+so we'll start with installing and
+importing the libraries
+so we will import
+the first Library there would be phone
+numbers
+I will show you you can just simply
+write pypi that would be the PIP
+installation command for
+the particular Library you can just
+search pypi and the name of the library
+you want to install in any browser
+will get these kind of web pages and
+inside you could see the command to
+install that and here you can find
+some of their descriptions and their
+download files release history and home
+pages so we'll just copy the command
+move back to our Command Prompt or you
+could use the terminal of your ID
+you could use any to install your
+modules
+so I'm using command prompt and I have
+copied my command as you can see it
+states that the requirement is already
+satisfied
+that means that on this system I have
+this module already installed so I don't
+need to install it again
+and portfolio we'll just copy it and
+move back to a command prompt and paste
+the command
+and click enter
+you can see that the requirement is
+already satisfied as I've already
+installed these modules so I don't need
+to install them again and there's
+another that is open cage so we'll use
+it to
+point out the location on the map
+so for that also you could just copy the
+command get back to command prompt or
+your terminal of your ID and press enter
+and it will get to modules installed it
+states that the requirement is already
+satisfied as I've already cleared that I
+have already installed these modules
+so moving back to our ID
+we'll start with importing our libraries
+so we'll import the necessary libraries
+that is phone numbers that is used to
+pass phone numbers geocoder
+will call the class from the phone
+numbers that is geocoder which is used
+to determine the location of a phone
+number and will use volume which is used
+to create Maps it will also assign a
+value to a variable key
+so we'll start with importing
+and first you will Import phone numbers
+okay
+moving on
+now we will import geocoder from phone
+numbers class
+okay
+now we will also import volume we'll use
+it
+later on but yeah and we will also
+create a file
+uh for our phone number
+so that we can just import the phone
+number from that file and I won't be
+showing you the phone number so you guys
+won't be like spamming or misusing it I
+know you won't miss use but yeah I will
+not mention it
+so for that
+I will
+take the file name as test.py and here
+we'll just create a variable
+and name test number and inside
+we'll just write the phone number
+okay
+and get back to a file that is new node
+py we have imported the libraries now
+we'll create second file for phone
+number that we have created now we'll
+start with creating a variable and we'll
+name it as check number and use the
+phone numbers library and the pass
+function parser phone number
+so to do that first we'll create a
+variable and name it as check number
+and we'll use the pass function of
+phone numbers Library
+and inside will pass the number that we
+have stored
+into
+the other file but to access that
+variable from the other file we need to
+import that file so from test
+that is test.pi that is in the same
+folder we will import the variable
+number
+okay
+we have imported it
+now okay just return number
+now it's number
+okay moving on now we will use the
+geocoder class and use the description
+for number
+I will show you guys
+what I am going to use
+that is we'll use the jio code
+geocoder.description phone number
+function to determine the location of
+the phone number and that to in English
+language
+so for that we'll create a variable and
+name it as number location okay
+number underscore
+location
+and inside this we'll use the geocoder
+class
+and what function values description
+phone number
+you could see this is the second
+function so we are using this and inside
+this what will pass we'll pass the
+variable check number in which we have
+passed the phone number
+so we will pass this check number
+and
+we will ask it to provide the result in
+English language for that we have used
+en
+okay
+and after that what we need we need the
+number location that is stored in the
+variable we want to print it
+so we'll just simply print it that would
+be number
+underscore
+location
+okay that is then
+and now
+if you just
+run this
+you will get the output as location that
+is India and the most important thing
+these libraries will tell you the
+countries note the particular States
+like it will these libraries try to
+depict the particular state but they are
+not such particular they will give you
+the countries in which these phone
+numbers are situated
+okay
+well where these phone numbers are
+active
+so we have done with the location
+now we also want to extract the career
+not career but the career that the
+mobile service provider that is if in
+India we talk about we have mobile
+service providers that is jio Airtel
+Vodafone idea psnl and if we go out so
+we have nine mobiles and others so we
+want those service providers okay yes
+that is mobile careers
+so for that
+now we'll
+use the phone numbers libraries again
+and for that we will import the career
+class
+so for that we'll write from
+phone numbers
+import
+area
+okay sorry
+now we have imported the career class
+now we'll use a function that would be
+career dot name for number function that
+is in the career module that we have
+imported from phone numbers
+so for that first we'll create a
+variable and name it as
+service provider
+okay and inside this variable what we'll
+use is we'll use the phone number dot
+parse first we have done that
+in the check number variable also
+so you could use the check number
+variable or we could just simply pass
+the phone number again here so for that
+we'll just write phone numbers library
+and use the pass function
+and that is inside will pass the number
+in which we have stored our number
+okay
+we have passed it
+and now
+no
+we'll use the
+career.name for number function and for
+that we'll directly print it out
+or you could store in a variable that's
+your choice we will directly print it
+that would be career
+Dot
+and you could find the functional name
+for valid number no
+that is name fundament that is the first
+one and inside will pass the pass number
+that we have stored in a variable
+service provider or you could use the
+check number
+so we'll just pass service provider
+and
+will pass anything that would
+we need
+the
+credit provider name in English
+so we are passed en okay so this code
+has used career dot name for number
+function that is used to read minus
+service provider of the phone number
+that is in English
+we have done that so we'll just save the
+file
+and run it
+so you could see that states Tata docomo
+I will run it again for you guys
+now it has printed both things that is
+the number location that is India and
+the service provider that is started
+docomo and what this Library does is if
+you get your number ported it won't show
+the current service provider it shows
+when you have just
+get your Sim the first time the first
+service order it will show you that that
+is
+okay now moving on we will use the maps
+to point out the location
+so for that we'll use the open cage
+module as we have already installed that
+so we'll import jio coder or open cache
+jio code from
+the open kids module
+so I will show you what will import that
+is from
+module
+will import openk jio code glass yeah
+the first one open gate jio code
+okay
+now
+what we need is the key of open cage so
+I will show you guys
+will open the open cage
+and you guys have to
+enter that I have already login
+so this is
+the dashboard and we'll go to geocoding
+API
+and we'll use the free one free trial
+and one time plan customers can have
+only one active API key at a time okay
+we'll use this only
+and I will just like I won't show you
+guys
+so I will just blur it out
+so I'll paste the key here
+and coming back
+so here we'll use the key so for that
+we'll create a variable first
+and name it as geocoder only
+so jio coder and use the open KGO code
+and inside we'll pass the key
+but we have stored in a variable key
+and now
+we want the number location in a string
+so we'll store it in our variable
+for that we will just write query equal
+to string and inside will
+store the parse number as a string so
+we'll pass the variable in which we have
+passed the phone number that is number
+location
+and now we'll use the geocoder dot jio
+code function and pass the query into it
+so for that will create a function a
+variable and name it as results
+and we'll use the geocoder
+and use the geocode function and inside
+will pass the query that is the variable
+in which we have stored the pass number
+that is as a string and now what we want
+is latitude and longitude of the
+location
+so for that we'll create a variable and
+name it as latitude
+and
+from the results variable
+we will just
+okay let it equal to from the results
+variable
+we'll just take the
+zeroth index
+and
+we will
+take the geometry
+and the latitude
+and for longitude we'll do the same that
+is in this code what we are doing is we
+are importing the openk jio code class
+from the open case dot geocoder module
+which is used to get the latitude and
+longitude coordinates of the location of
+the phone number
+it then initializes an instance of the
+class with the API key that we have
+stored in the variable key and then the
+code creates a query variable but we
+have created that is with the value of
+number location and we'll use the
+geocoder.geocode method to get the
+latitude and longitude coordinates of
+the location of the phone number that we
+are doing now these coordinates are then
+stored in the variable that is lat that
+is we will store latitude in that and
+we'll store the longitude in the LNG
+variable and finally that latitude and
+longitude longitude coordinates we will
+print them in the console okay
+so
+now we will just get the longitude
+so for that we'll use
+results
+and inside we'll use geometry
+and the longitude
+okay
+so now we'll just print the latitude and
+longitude
+okay I will save this and
+run this
+so you could see the first thing it has
+printed is the current location that is
+India then the service provider and then
+the latitude and longitude you would
+just copy these latitude and longitude
+and paste on a map or you could just
+search on a any browser it will show you
+the coordinates on a particular map
+where these are
+and to get the pointer
+on a map we will use the folio module so
+I will show you guys how we'll do so
+we'll use the volume dot map function
+that is the map function from the folio
+module and we'll pass the latitude and
+longitude coordinates that we have
+stored in the variables latitude and
+longitude and then the volume dot marker
+function will use the marker function
+from the folio module class volume
+module and it will show the marker on
+the map so
+to do that I will show you guys I will
+do we have imported the volume module
+and first we'll create a
+variable
+and we'll store the file in an in an
+HTML format so you could just open in
+any browser and you could see the map
+so in this variable we'll use the map
+function
+so volume
+that is equal to
+volume dot map and inside
+use location and that is equal to
+latitude
+Uma
+longitude
+and
+what we need to set Zoom
+zooming can set Zoom start
+and we'll set it as 9. you could set as
+you want
+okay
+so we have set it as nine and now we'll
+use the marker function so
+for that
+we'll just use the marker function
+dot marker
+and inside we'll pass the latitude and
+longitude
+okay
+and we will just pop up the number
+location for that will set
+pop-up
+and that would be equal to
+the past number
+okay and we'll use the add to function
+that is
+root add to and inside this will pass
+the variable map location in which we
+have stored the
+so we'll pass map location okay
+we have passed this and we want to save
+this map location in an HTML format
+so we'll use map location
+dot save
+and we'll name the file as
+my location
+go to HTML okay
+so I'll save the file in an HTML format
+so you guys could just open that and use
+it so we have run the
+program and you could see it has stated
+that India Tata docomo and the letter U
+and longitude and you could see in the
+same folder that we have the my
+location.html file
+so we'll get back and you could see my
+location we'll just open it and you
+could see that it has pointed out into
+the map that is the phone number belongs
+to the India
+and we'll get
+check it out
+now I will change the phone number and
+test this
+for a different phone number so put that
+I will write
+obviously I won't be showing the phone
+number
+what the phone
+yeah
+we have saved it and
+the new DOT pure file we will run it
+for this
+phone number and
+put C
+Nevada
+and the latest and it has notified the
+service provider
+okay
+we'll run it again
+okay
+look it won't be able to
+find out the service provider and the
+location for this phone number has been
+saved in the dot HTML file so we'll just
+open it
+and
+check okay yeah the pointer is located
+near Nevada
+so our project is working fine and if
+you want
+not to store the phone number in like
+the other file
+you could just do it you would just get
+the phone numbers entered in the console
+so for that you just guys have to write
+a small line for enter
+ing the phone number
+so first we'll do is I will show you
+guys how to do that
+and just get this
+so we have commented the module that is
+the test module and now to get the phone
+number input
+from the user will use the same variable
+number in which gives stored the phone
+number earlier
+and we'll use
+input and here we will write
+enter
+phone number
+with
+country code
+okay
+with the country code you guys have to
+enter it
+and if I run it
+so here
+I will enter
+and I will
+get this also blurred so it will take a
+little
+time for editing also you guys can see
+India Tara docomo latitude and longitude
+and
+the file has been updated that is the my
+location.html
+and if I open this you could see that it
+has pointed in India
+and and with that
+we have come to the end of this session
+I hope this session was interesting and
+informative if you liked it please let
+us know in the comment section below and
+also do subscribe to our Channel and
+stay tuned for more from Simply learn
+and you can check out the course link
+that is mentioned in the description and
+pin comments if you want to excel in
+your career till then stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

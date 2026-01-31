@@ -1,0 +1,814 @@
+C programming interview questions are a
+major part of every interview procedure
+this video has covered all the basic
+interview questions and that every
+candidate is asked to check his or her
+knowledge in the programming skills they
+have become essential to crack by every
+interview and the current ID industry
+so please stick till the end of this
+video while we give away answers to that
+one importancy programming questions
+that is the most frequently Asked in
+every interview
+hey guys welcome to Simply learn today
+we will learn the top 40 C programming
+interview questions and answers
+before we start let us test your
+existing knowledge of C to use
+operations like mlog and clo which
+header files should be include the
+options are
+stdio.h
+stdlib.h cornea.h or string.h do leave
+your answers in the comment section
+below and while we are at it please
+leave us a like if you find our content
+helpful and a sub to the channel would
+be appreciated
+before we begin with this this video is
+categorized into beginner level
+intermediate level and advanced level
+questions so without further delay let's
+get started
+the first question is what are the
+features of the C programming language
+C is a simple and portable it is a midi
+level language it has a features of
+modularity sales rich in library it is a
+procedural language easy to extend and
+it consists of built-in operations it
+also provides memory management
+the next question is mention different
+data types in C
+data types are classified into basic
+derived and user-defined data types
+basic data types are int care float and
+double direct data types include array
+and pointers and user-defined data types
+are inum structure and unions
+what is the use of static functions
+functions declared with the keyword
+static are the static functions they
+have the scope restricted only to the
+functions in which they are declared
+the next question is mention the dynamic
+memory allocation functions
+dynamic memory allocation functions are
+analog see a log realloc and free
+when we use the analog function The
+Continuous block of memory will be
+allocated and the pointer variable will
+hold the address of the first element
+clf function is similar to analog
+function but in the case of clog
+function multiple blocks of memory of
+the same size will be allocated which
+holds zero value by default and it takes
+two arguments that is number element and
+element size
+we use real lock function to change the
+array size without losing the data in
+short the real up functions will change
+the size of the previously allocated
+memory block the free function is used
+to deallocate the memory space occupied
+by the previously allocated by mlog see
+a log realloc functions in order to use
+the memory more efficiently and to
+return back the memory to the Heap once
+done we use free function what is the
+difference between local variable and
+Global variable
+variables declared inside the functions
+with the keyword local or called local
+variables the local variable scope is
+inside the functions in which it is
+declared variables declared outside the
+functions with the keyword Global are
+called Global variables and they can be
+accessed by multiple functions defined
+in the program
+moving ahead to the next question
+what is the use of pointer variables in
+C programming and what do you mean by
+dangling pointer variable
+a pointer is a variable that holds the
+address of another variable to be
+executed which can be of data type int
+care array Etc
+pointers are used to access the memory
+location easily and it reduces the
+storage space and increase the speed of
+the program's execution when a pointer
+pointing to another variable is deleted
+and a pointer is still pointing at the
+same memory location then the pointer is
+known as a dangling pointer
+the next question is what is nested
+structure nested structures are the
+structures where data members of One
+structures is referred by the data
+members of another function next what is
+the use of break control statements
+break is used to terminate the loop so
+whenever the control encounters the
+break statement it will stop the loop
+iteration and transfer the control to
+the next statement soon after the loop
+generally break statements are used in
+the loop and switch control statements
+and the next question is what are C
+tokens
+tokens are the smallest individual
+elements in the program which include
+keywords identifiers constants special
+symbols strings and operations
+what is predefined functions in C
+predefined functions are the built-in
+functions it helps user to use already
+existing code in the program what is the
+use of printf and scanf function printf
+and scanf are inbuilt Library functions
+defined in the standard input output
+header file scanf is used to read the
+input from the user and printf is used
+to print the output on console
+the next question is what is the use of
+header files in C
+header file contain the predefined
+library functions programs can make use
+of standard Library functions by
+defining hash include in the program it
+reduces the number of code and
+complexity of the program
+what is an array mention its different
+types an array is a homogeneous
+collection of elements of the same data
+type that means similar types of
+elements are stored under one name
+called an arena and also the array of
+elements stored in consecutive block of
+memory types of array includes one
+dimensional array two-dimensional array
+and multi-dimensional array next what is
+the use of const keyword
+using a const keyword the value of a
+variable is constant throughout the
+program runtime constant values are
+unchangeable syntax include const
+variable name equal to value and
+semicolon at the end
+what is a memory leak
+when the memory is allocated dynamically
+and not deallocated even when the memory
+is no longer required that leads to a
+memory leak now that your basic level
+questions are completed let us go
+through a few intermediate level
+questions
+differentiate between call by value and
+call by reference in call by value we
+pass values by copying variables in call
+by reference we pass the address of the
+variable in call by value the memory
+location for formal and actual arguments
+are created separately in the case of
+call by reference the formal and actual
+arguments share the same memory location
+any changes made in copy of variables
+will not affect the value of a variable
+outside the function in call by value
+whereas in call by reference any changes
+made in the variables will also affect
+the value of the variable outside the
+function moving on to the next question
+what is the difference between a
+compiler and an interpreter
+a compiler compiles the whole code at a
+time and displays all the errors whereas
+The Interpreter executes the program
+line by line and displays the error of
+every single line
+what are the entry and exit Loops in C a
+loop in which the condition is checked
+first and then executes the statements
+is known as an entry Loop for example a
+while loop is an entry Loop
+a loop in which the set of statements is
+executed first and then checks the given
+condition is known as an exit Loop for
+the example do while loop is an exit
+Loop and the next question is what is
+typecasting
+typecasting is a process of converting
+one data type to another data type the
+conversion that is done automatically is
+known as implicit conversion
+next
+mention four types of storage classes in
+C
+four types of storage classes in CR
+automatic register static and external
+next what is the use of the size of
+operator in C the size of operator is
+applied to the data types such as int
+care float Etc to determine the exact
+size of a variable in bytes
+what are the string handling functions
+in C string handling functions are Str
+Len strc80
+strcpy and Str CMP Str Len is used to
+find the string length it will count the
+number of characters in a string and
+prints the output
+then strc80 is used to concat two
+strings which means adding up two
+strings SDS cpy is to copy a string to
+another
+strcmp is to compare two strings
+and the next question is write a c
+program to print the following pattern
+so now let's understand the working of
+the code so in this pattern program we
+have two for loops
+so
+where the order follow-up indicates the
+number of rows and the inner for Loop
+will indicate the number of columns so
+here it first checks the auto follow
+condition and if the condition is
+satisfied the country will go to the
+inner follow and print the value that is
+it prints the J value
+and once the condition is false the
+control will transfer back to the auto
+follow and increment I by 1.
+and this process will repeat until all
+the number patterns are printed
+successfully so now let's execute it
+so as you can see the number here this
+is the pattern where we are executing
+with the help of two for Loops that is
+for I is equal to 1 I lesser is equal to
+n so n value is 5 and then I plus plus
+then coming to the inner for Loop J is
+equal to 1 J lesser or equal to I and J
+plus plus
+so now moving on to the next pattern
+question we have Implement a program to
+print parameter star pattern so in this
+parameter star pattern program we have
+declared variables i j and rows is equal
+to 5. so the number of rows that we are
+going to print is 5. so for I is equal
+to 0 to I less than 5 it's going to
+print the rows and
+this for Loop will print the blank
+spaces
+so from J is equal to rows minus i j
+greater to i j j minus minus so this for
+Loop is used to print the spaces in
+between the parameter star pattern and
+coming to this for Loop here J is equal
+to 0 J lesser or equal to i j plus plus
+it will print this star
+so let's run it
+okay let's run it
+so as you can see the start pattern is
+formed
+and the next question is write a c code
+to swap two numbers without using third
+variable
+so here we have the variables first and
+second so first is initialize to Value 1
+and second is initialized to Value 2. so
+print before swapping the values of
+first and second and it will print the
+values of first and second initially
+essentially the values of first and
+second is one and two then coming to
+this statements
+so here first is equal to First plus
+second so suppose let's consider
+first is equal to so the first value is
+1 so 1 plus
+2 is equal to 3.
+okay so now the first value is holding
+the first variable is holding the value
+3 then coming to the second
+here second is equal to now the value of
+first is three so three
+3 and minus the value of second is still
+2.
+so let's give 2
+so which is 3 minus 2 is 1 so now this
+variable second is holding new value
+that is 1.
+then
+first is equal to
+first minus second so now what's the
+value of first the new value is 3 so 3
+minus and what's the value of second
+that is 1.
+so 3 minus 1 is 2.
+so now as you can see initially the
+first was equal to one that is before
+swapping the value of where first is
+equal to 1 and second is equal to 2. now
+after swapping the value of first is
+equal to 2 and second is equal to 1. so
+that's what's Happening Here
+so let's remove this
+hope it's clear
+so now let's run it
+so as you can see the screen before
+swapping the value of first is equal to
+1 second is equal to 2. so after
+swapping the value I have exchanged so
+first is equal to 2 and then second is
+equal to 1.
+moving on to the advanced level
+questions first what is a union union is
+a special data type that holds the
+element of different data types at the
+same memory location the concept of
+structure and unions are the same
+however the only difference is in terms
+of storage space and the keyword in
+Union memory is allocated once the
+variable is created and the union
+variables are created to access and
+assign values of the union members in C
+the next question is what are
+enumeration
+enum is a user-defined data types
+consisting of an integral constant in
+short and enum is a keyword that allows
+a user-defined data types consisting set
+of integral constants the syntax of
+enumeration is inum inum name and list
+of constants separated with the help of
+comma operator and the next question is
+what is a recursion recursion is a
+process of making a function call itself
+in short the user call function inside
+the same function
+the next question is what are
+microcensee macro in C is defined by the
+hash Define directive a macro is a name
+given to a piece of code so whenever the
+compiler encounters a macro in a c
+program it will replace it with a macro
+value in the micro definition the macro
+are not terminated by the semicolon
+syntax of a micro has defined macronium
+followed by macro value example hash
+defined by 3.14 and semicolon at the end
+what are file operations in C
+creating a file writing a file reading a
+file seek operation within a file and
+truncating a file
+and at last deleting a file
+what are the difference between macros
+and functions macros are pre-processed
+but functions are compiled using macros
+execution speed is faster and in the
+case of functions this feed of execution
+is lower the macro name is replaced by
+the macro value before compilation
+whereas in function transfer of control
+take place during the function call
+using macros the length of the code
+increase the code length is unlefted
+using the function
+the next question is sort an array using
+a quick sort algorithm
+as you can see the screen we have a
+quick sort algorithm function declared
+where we have array
+of size 25 left and right variables so
+coming to the main function we have I
+count and array so
+using printer function it will print
+into the number of elements so it will
+take the number of elements that means
+suppose you want to sort 5 elements so
+it will take that number and then it
+will take elements one by one using this
+for Loop then it will call the quick
+sort algorithm so when then this quick
+sort algorithm the control will transfer
+to this function and we have array of
+size 25 left and right
+so here we have two variable stick that
+is i j pivot and temp variables so if
+left hand side element is less than
+right hand side element then left hand
+side element is assigned to Pivot and
+then left is assigned to I and right
+element is assigned to J
+so while I lesser than J so why it
+checks the condition array of I lesser
+or equal to array of pivot and I is less
+than right then increment I by 1. while
+array of J greater than array of pivot
+then it will determine J by 1. so if I
+is less than J
+here we are using temp variable
+to swag that means to
+shift the elements so whatever is there
+in Array of I is given to Temp variable
+whatever is then there in Array of J is
+given to array of I and whatever is
+there in the temp variable is assigned
+to array of J then now temp is not
+holding any value so array of piot
+is given to Temp variable
+and
+array of J is assigned to array of
+private and temp is assigned to array of
+T then two times you are calling the
+quicksort algorithm first time to saw
+the elements at the left hand side and
+then to sort the elements at the right
+hand side
+and coming to this main function then it
+will print all the sorted elements
+so let's run it
+so as you can say enter the number of
+elements so let's enter 5
+and let's enter some random numbers
+okay so the numbers that we entered was
+1 4 32 5 and 5. so sorted elements are 1
+4 5 5 and 32 so it has sort all the
+elements successfully using quick sort
+algorithm
+and the next question is Implement a
+program to print the factorial of a
+given number using recursive method so
+as you can see here we have a main
+function in which we have declared the
+variable n and then enter a positive
+integer so it will take the N value
+then it will print factorial of a given
+number and then call the fact function
+so the control will transfer to this
+function where we have fact of in n so
+if n is greater or equal to 1 only then
+it will perform a factorial method so
+suppose here we are giving a positive
+integer that n to B 3 okay suppose we
+are given 3 so n that is 3 into
+fact of
+n minus 1 that is 2 3 minus 1 is 2. so
+again we are calling
+fact here fact function
+so what this basically do is
+3 into 2 it will perform
+three into two so three twos and six so
+it will print
+6.
+factorial of 3 is 6 so let's check it
+so enter positive integer let's enter 3
+and the value is 6. so similarly if
+suppose the number is 5 5 into
+fact of 5 minus 1 that is 4. so
+what it does is
+it will take 5 into 4 into 3 into 2 into
+1. so it will count all this and bring
+the value so let's check what's the
+factorial of 5
+so let's enter 5 and see the factorial
+of number 5 is 120.
+I hope it's clear
+and the next question is write a c code
+to find the Fibonacci series
+so inside the main function we have
+declared the variables N1 into N3 I and
+now so initially the invent value is 0
+into value is equal to 1. so first it
+will print enter the number of terms so
+the number of terms that you need to
+fight Fibonacci
+so
+once you enter it will take the num and
+it will print the initial value of N1
+and N2 that is it will print N1 is equal
+to 0 and into is equal to 1. then coming
+to this for Loop
+I is equal to 2 essentially I is equal
+to 2 and then I lesser lesser to num
+so it will check whether 2 is less than
+num so if it is true then it will come
+and execute the statements
+so N3 is equal to N1 plus N2 so suppose
+now we have the value of N1 and into so
+N3 is equal to
+N1 is 0.
+Plus
+into is 1. so now the value of N3 is 1
+1. okay so that will print as a N3 then
+here it will again we are going to
+change so now we are assigning N2 value
+to N1 so what is into value
+that is 1 is given to
+N1 is equal to 1 then
+assigning entry value to N2
+what is N3 value now that is 1 that is
+given to N2 now N2 is also holding 1.
+so now once once it print this value
+again it will go to the for Loop and
+increment I by 1. so once this is the
+increase that means once it increment by
+1 that means now the I value will be 3
+so again it will check whether 3 is less
+than num so again this will continue the
+process till the I value is less than
+num
+so let's execute it
+so let's run the program
+so enter the number of terms so let's
+enter 5
+and the Fibonacci series of 5 is 0 1 1 2
+and 3.
+and the next question is write a program
+to check whether a given number is prime
+number so in this
+program inside the main function we have
+the variables num I and flag is equal to
+zero so initially flag value is equal to
+0.
+so as you all know that flag acts as a
+Boolean variable so if the condition is
+satisfied it will indicate true or false
+so
+then we will print enter the number to
+check Prime and it will take the number
+for condition I is equal to 2 till I
+lesser or equal to num divided by 2.
+then checks the condition if num module
+I is equal equal to 0 this is the
+condition that it has to meet to check
+whether the number is prime or not so if
+this condition satisfied then it will
+print number is not Prime
+and flag is equal to 1 break if flag is
+equal equal to 0 then print number is
+prime
+so let's execute it
+so enter the number to check Prime so if
+I enter 3 it will say number is prime
+so now let's give another number
+which is not prime let's keep 4 and
+we'll say number is not Prime
+so I hope this program is clear
+the next question is
+how to implement a program to find the
+height of a binary tree so as you can
+see the screen we have
+the structure of node
+then we have a variable data
+and nodes left child structure and right
+right child structure
+so we have a function called high to
+find the height actual height of a
+binary tree so if node is equal equal to
+null that means if there are no nodes in
+a tree then it will return 0 else it
+will assign height
+height of notes left child to L height
+then assigning height of node's right
+child to R height so then check the
+condition if
+L height is greater than R height then
+return L height plus 1 else written R
+height plus 1.
+so to create new node we are creating a
+new node called node and allocating
+memory to it using analog function and
+assigning a data
+initially denotes left child and right
+child are assigned to NAB then return
+the node coming to the int main that is
+coming to the main function we have
+structure of node that is root
+assigning value 10 to the root node and
+Root's left child is assigned to 15
+Roots right child is assigned to 20 and
+value 25 is assigned to Roots left
+child's left hand and 30 is assigned to
+Roots left child's right child then
+print height of a binary tree
+then it will take the the control will
+go back to the this function height and
+then prints the value
+so let's print
+let's run it
+so here height of a binary tree is 3.
+moving on to the next question write a c
+code to find the N terms or natural
+number and find the sum
+so basically we are finding the odd
+numbers first
+then we are adding up all the odd
+numbers and printing the sum value
+so we have the variables declared i n n
+sum initially the sum value is equal to
+zero so first enter the number of terms
+print it will take the number of terms
+suppose we want five natural numbers odd
+five odd numbers then we are giving 5
+there
+then the odd numbers are
+using this for Loop it will print all
+the odd numbers so I is equal to n i
+lesser or equal to n it will print using
+this formula it will print all the odd
+numbers that is 2 into I minus 1 and
+then whatever it finds it will add up
+all the odd numbers so using this
+statement sum is equal to sum plus 2
+into I minus 1 we will get this value of
+all the odd numbers
+so then if we print the sum of four
+natural numbers up to n terms
+so let's execute it
+so enter the number of terms suppose we
+need five odd numbers so odd numbers are
+1 3 5 7 and 9. so then it will add up
+all these odd numbers so the sum of all
+natural numbers up to five terms are 25.
+next Implement a c program to display a
+string in reverse order so basically we
+have a string where we are going to
+reverse the string
+so here we have declared car string 1 of
+size 100 and we have a temp variable and
+then length l r and I so L is for left
+hand side element R is for right hand
+side element
+so first print enter a string to reverse
+so whatever string we need to reverse
+that we are going to enter
+so it will take a string then string of
+length
+string length of str1
+is assigned to l e n
+so initially L is equal to 0
+till R is equal to length minus 1.
+so here whatever string we have suppose
+we have
+simple so this will be 0
+here this index will be 0 and this will
+be a length minus 1.
+so that that's what your basically tells
+then for I is equal to l to I less than
+r
+it will perform this statements so
+whatever is that in string of 1 of I is
+given to temp
+then whatever is there Instinct of one
+of R is given to string of 1 of I then
+whatever is that in temp is assigned to
+string of 105 then the increment R minus
+minus then again it will go to I and
+increment I by 1.
+so from I is equal to l l to R it will
+perform all these operations and then
+reverse a string so one by one it will
+put and reverse the string so let's
+execute
+enter a string to reverse let's enter
+simply
+and the reverse string is ILP Mis
+I hope it's clear
+the next question is Implement a program
+to remove duplicates in a sorted array
+so here we have a sorted array that is
+10 12 30 40 and 50. and as you can see
+we also have a duplicate elements that
+is we have 10 2 times then we have 12
+T repeated and also 15 55 duplicate
+number
+so here this is a sorted array so
+basically we are going to delete the
+duplicate elements so for that
+we have a remove duplicate array
+function
+so if n is equal equal to 0 or n is
+equal equal to 1 then written in
+so if the elements are 0 or the element
+is 1 just return those elements then
+declaring the temp variable and this
+function is used for traversal so the
+control will travel all the array
+elements so it will check so I J
+initially J is equal to 0 so for I is
+equal to 0 to I less than n minus 1
+it checks whether a of I is not equal to
+the next Element e of I plus 1 then it
+will assign e of I to Temp J plus plus
+then again assign here n minus 1 to 10 J
+plus plus then modifying if there is any
+repeated here if I is equal to 0 to I
+less than J
+temp of I is assigned to e of I and then
+written J
+coming to the main function here we have
+the array elements as I said 10 12 30 40
+and 55 and also along with the
+duplicates so n is assigned to size of a
+so it will give the size of array divide
+by size of a of 0.
+the function array duplicate remove
+duplicate array is assigned to the
+variable n and for I is equal to 0 to I
+less than n it will print all the sorted
+array elements so let's run it
+as you can see
+the elements were 10 10 so here it's
+given one duplicate element is deleted
+and here again 12
+30 40 and 55 is given successfully
+so the elements are deleted
+and the last question is Implement a
+program to add a node at the beginning
+end and specified position in any linked
+list
+so here we have the node structure where
+we have data and also the variable next
+so
+we have a function for insertion at
+beginning
+insertion at end and insertion after a
+note
+so first starting with insertion at
+beginning we are creating a new node and
+allocating memory to it using mlog
+function and
+we are assigning a new data to a new
+nodes data part and new nodes next is
+assigned to head that means head is
+assigned to this because head is holding
+the address of the new node now so head
+is equal to Mu
+avoid insertion at end so basically here
+also we are creating a new node and
+allocating memory to it and coming here
+we have a head is assigned to last node
+because we are going to insert it in so
+head now head is assigned to last node
+so new data we are assigning to new
+nodes data part and initially the new
+next is equal to none now actually
+because it's a last node
+the note or the next new notes next will
+hold the null value so if head is equal
+equal to null then head is equal to new
+while last notes next is not equal to
+null
+then last is equal to last notes next
+and last note next is equal to Mu that
+means new we are assigning it to last
+notes next then coming to the insertion
+of third node so here we have previous
+node and new data
+so if the previous node is equal equal
+to none that means there are no nodes in
+a list the given previous node cannot be
+none
+then creating a new node allocating
+memory to it and assigning a new data
+and to the next new nodes next
+we are assigning previous nodes next to
+the new node next and new we are
+assigning to previous notes next
+coming to the display function checking
+while node is not equal to null
+then print all the node data part
+then assign nodes next to note
+so coming to the mean function here we
+have head initially equal to none and
+insert at n we are inserting 25 at the
+end then at the beginning we are
+inserting 15 again at the beginning we
+are inserting 10 that means 10 15 and 25
+then at the end again 30 then insertion
+after note hits next 20. then you will
+print the linked list elements
+so let's run it
+so it has print in our order
+so as you can see the linked lists are
+10 15 20 25 and 30.
+so with this we have come to the end of
+this session on the top 40 C programming
+question and answers I hope the session
+was informative and interesting
+if you have any queries regarding any of
+the topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happier to resolve all
+your queries at the earliest until then
+thank you stay safe and keep learning

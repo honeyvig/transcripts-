@@ -1,0 +1,157 @@
+hey traders uh this is just a quick
+video to explain the changes the update
+i made to my breakout indicator so this
+is an indicator i use to
+just make my trading a little bit more
+efficient means i don't need to stare at
+charts
+as long throughout the day particularly
+when i'm day trading which i am today
+and if i zoom out my chart here jump out
+to the daily chart we have this really
+nice uh trend emerging here on euro
+aussie
+we've just had this break above this
+swing high with a major move and now
+we've pulled back into structure and
+this structure level is beginning to act
+as support and so what i'm anticipating
+here
+is a potential rally back up to these
+highs and what i want to see before i
+enter any positions is price breaking
+close above this consolidation period
+here on this one hour time frame so
+obviously i could just right click here
+and create an alert
+and i'll be notified when price crosses
+this
+previous high of the consolidation but i
+don't really care about that i want to
+know when price closes above these highs
+and with the default
+trading view settings alert settings i
+can't there's no option here to select
+to notify me only when price
+is closed above
+that high so i created this breakout
+indicator there is a lesson in the
+version 4 section of this course where i
+explain the code it's pretty simple
+script all it does is it takes two
+inputs long breakout price short
+breakout price it checks if price has
+closed above
+or below
+that given price
+and then it generates an alert when
+that happens
+so all i've done here in updating the
+script
+is i have converted it to version 5 of
+pinescript which required a few syntax
+changes i needed to change the indicator
+the study function to an indicator
+function i needed to change my inputs
+but one cool feature of version 5 and
+what inspired me to update this script
+today since i'm using it is this new
+confirm parameter in the input
+function
+this confirm parameter when used with
+time related inputs or price related
+inputs means that when i add this script
+to my chart i can actually select with
+my mouse where to put my breakout alerts
+so if i throw on the old version
+of this indicator script which i haven't
+updated yet
+i just added it to my chart and now i
+need to come up to the settings and i
+need to manually put in the price that i
+want to see
+before i set my alert
+however with the new version of the
+script watch what happens when i click
+add to chart see this little pop-up down
+here it says set the long breakout price
+price for my breakout indicator and now
+i have this horizontal line if i click
+up just above the highs here we've now
+placed my long breakout price
+and now i need to place a short breakout
+price as well i'm not interested in
+shorting this market but there is no way
+to tell pinescript to only confirm one
+or the other so i still need to place my
+short breakout for now i'll just put it
+at the lows
+but if we do get a
+breakout to the downside i'm not
+interested in actually trading that but
+i still need to set that parameter
+anyway but now you can see after setting
+both parameters the script is now
+on my chart and the lines are drawing
+where i place them and i can click on
+these little
+handle icons here and i can change the
+price
+if i want to really quickly and easily
+and now when i set my alert on the
+script
+i can choose once per bar close and now
+i will only be notified when the
+breakout is confirmed and we've had a
+one hour candle close above or below our
+long and short breakout levels
+anyway that's it for this lesson i'm
+going to create my alerts now
+actually one thing i'll do while i'm
+here is separate these alerts
+as well so we'll have long alert and
+short alert so for this i'm going to get
+rid of the alert message here and just
+write long
+and short and i'll add long breakout
+and short breakout
+save my code
+hey guys editing matt here i forgot to
+change the
+condition for our short breakout to
+short alert one of the many dangers of
+copy and pasting code
+and now when i set my alert i can
+actually choose
+to only receive long breakout alerts
+once per bar close create my alert now
+i'll be notified if today price action
+manages to clear these highs and then
+i'll be interested in either trading a
+breakout setup
+depending on how big the breakout is if
+it's reasonable and
+below 159 i'll probably just buy the
+breakout
+with my stop below this swing low here
+and target the previous high in this
+daily pullback otherwise
+if the breakout is massive i'll wait for
+a pullback trade and hopefully get a
+nice
+better price on the pullback and of
+course if this gets stopped out there is
+a second chance opportunity down at
+these lows to buy if we get a double
+bottom i'll be keeping an eye out for
+that as well because i do like the look
+of this market price action formation
+that's coming in here and so i would not
+be surprised to see another push higher
+here that could allow me to get a nice
+risk reward profile depending on how
+price action unfolds here anyway that's
+it for this lesson see you in the next
+one
+[Music]
+you

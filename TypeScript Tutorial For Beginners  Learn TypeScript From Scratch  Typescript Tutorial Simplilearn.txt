@@ -1,0 +1,568 @@
+hey everyone welcome to another tutorial
+by simply learn
+in this tutorial we will learn about
+typescript typescript has grown in
+popularity in growing years microsoft
+created and maintains the typescript
+programming language it is a rigorous
+syntactical superset of javascript with
+the addition of optical static typing
+typescript is a large-scale application
+development language that compiles
+javascript existing javascript programs
+are also valid typescript programs
+because typescript is superset of
+javascript let's see what's in it for
+you in this session we'll first start
+with understanding what is typescript
+then we will see why do we need
+typescript
+what led to the development of
+typescript next we will see some of the
+important and key features of typescript
+followed by which we will look at the
+advantages of typescript and
+applications of typescript then
+proceeding further we will see how to
+set up the development environment what
+are the necessary tools required for the
+development of typescript then we will
+see how variables data types functions
+and loops are used in typescript but
+before you begin if you love watching
+tech videos then subscribe to our
+youtube channel and make sure you have
+press the bell icon so you never miss an
+update from simply learn so without
+wasting any further time let's get
+started
+what is typescript
+typescript is object oriented and
+strongly type programming language which
+is a superset of javascript typescript
+was designed by anders hegelsberg at
+microsoft
+the limitations of javascript for
+developing large-scale applications at
+microsoft and among its external
+customers led to the creation of
+typescript
+because of the difficulty of working
+with complicated javascript code there
+was demand for custom tooling to make
+developing javascript components easier
+typescript code is converted to
+javascript which can be executed
+anywhere javascript is supported
+in the browser on node.js and in your
+application
+typescript is javascript with some
+additional features to support more
+robust interaction with your editor
+typescript adds additional syntax to
+javascript
+typescript is a scripting language that
+understands javascript and uses type
+inference to provide powerful
+capabilities without additional code
+why need typescript
+now we'll see some of the reasons why we
+need typescript
+firstly we have compilation
+javascript is an interpreted language
+thus there is no need to compile it
+as a result it must be run to ensure
+authenticity if there is an error we
+need to write the code only to find the
+output as a result we will have to spend
+hours looking for false in the code
+error checking is provided via the
+typescript transpiler if the typescript
+detects any syntax mistakes it will
+compile the code and generate the
+compilation error this aids in detecting
+errors before the execution of the
+typescript
+typescript provides an optional type
+system for javascript code
+when a client doesn't have a value for a
+parameter he can personal optional
+arguments are a feature of typescript
+you can declare some optional arguments
+in the function by utilizing optional
+parameter features so the decline does
+not need to supply a value to optional
+parameters
+strong static typing javascript does not
+have a powerful static typing system
+through the tls typescript comes with an
+optional static typing and type
+inference system the tls that is a
+typescript language service can deduce
+the type of variable defined with no
+type based on its value
+typescript supports object oriented
+programming typescript supports classes
+interfaces inheritance and other object
+oriented programming principles
+typescript supports type definition
+existing javascript libraries can use
+typescript type definitions
+external typescript libraries are
+defined in typescript definition files
+as a result it can include these
+libraries in typescript code features of
+typescript
+typescript supports other javascript
+libraries
+typescript is a new microsoft language
+that is a highly typed superset of
+javascript with the support for object
+oriented programming and other current
+features like decorators
+because browsers and nodes comprehend
+javascript typescript compiles
+javascript
+typescript is portable typescript is
+cross browser cross device and cross
+platform
+it can run in any environment that
+supports javascript
+typescript unlike its computators does
+not require a dedicated virtual machine
+or a specific runtime environment to run
+typescript is superset of javascript
+it's a strong syntactical superset of
+javascript with the addition of optional
+static typing
+typescript is a large scale application
+development language that transcompiles
+to javascript
+existing javascript programs are also
+valid typescript programs because
+typescript is superset of javascript
+typescript is static when a client
+doesn't have a value for a parameter he
+can pass null
+optional arguments are a feature of
+typescript
+you can declare some arguments in the
+function optional by utilizing optional
+parameter features so that the client is
+not necessary to supply a value to
+optional parameters
+object oriented programming when it
+comes to object oriented programming
+with javascript typescript shines
+because of the class keyword it makes
+object oriented programming look quite
+similar to programming in other object
+oriented languages like c sharp or java
+applications of typescript
+typescript can be used to create both
+client-side and server-side javascript
+applications
+typescript can be deployed instead of
+javascript language since it adds more
+features and gives errors directly with
+the code
+typescript is used for building
+large-scale applications for enterprises
+now let us look at the advantages of
+typescript
+during development problems are
+highlighted at compilation time
+any browser or javascript engine can run
+on typescript
+by defining a module
+it has a namespace concept
+typescript supports strongly typed or
+strongly typing typescript has the
+advantages of being tightly typed or
+allowing static typing it may confirm
+type correctness at compile time because
+of static typing
+intellisense is the feature of
+typescript that develops active tips as
+you type setting up development
+environment
+firstly we need to go to node.js
+official website and install node.js
+after installing
+go to command prompt and type the
+function node space hyphen v to check if
+the node is installed properly
+to install typescript run the command
+in pm note package manager install
+globally type script in the command
+prompt and this will install typescript
+so let's jump to the browser and see the
+installation of load.js and typescript
+then we will go to visual studio and see
+the different components like loops
+variables data types with examples
+choose from over 300 in-demand skills
+and get access to 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more so to install
+node.js come to the website nodejs.org
+here come to the downloads and from here
+you can install node.js
+node is an open source server side
+execution platform for javascript code
+node is commonly used for real-time
+applications like chat news feeds and
+web push notifications
+because it allows for a persistent
+connection from browser to the server
+node.js is a javascript runtime based on
+v8 javascript engine from chrome
+node.js is an asynchronous event-driven
+javascript runtime for building scalable
+network applications
+to install for windows click on windows
+if you have mac os
+click on mac os to install
+so i'll click on windows here we go
+node.js is getting installed
+since i have already installed in my
+device i'll cancel it
+so once the installation is complete and
+you have installed the node.js
+let's go to command prompt
+in the command prompt run the command
+node
+hyphen v
+to check if whether the nodejs is
+installed properly
+and here it shows the version of nodejs
+installed in our device
+so here we can see that node is
+installed
+properly next we need to install
+typescript
+to install typescript we need to run the
+command npm node package manager
+install
+hyphen g globally typescript
+if you run this command the typescript
+will be installed
+the typescript will be installed
+worldwide with this command
+this implies that each project you
+create on your computer can use
+typescript dependencies without having
+to reinstall the typescript package
+so after running this the typescript
+will be installed since i have already
+installed will clear this
+so after installing typescript to check
+if whether the typescript is installed
+properly
+to check if the compiler is installed
+just type dsc typescript compiler space
+hyphen version
+and here you can see the typescript
+compiler of version 4.5.4 is installed
+now that we know how to install node.js
+and
+type script now we will go to visual
+studio and
+see the
+examples
+so let us see the different types of
+variables available in typescript for
+variable declaration typescript follows
+the same rules as javascript variables
+can be declared with the commands like
+variable
+or we have
+let
+and we have constant
+const
+so these are the three types of variable
+declarations available in typescript
+we'll see them one by one
+variables can be declared in typescript
+using the var keyword just like in
+javascript the scoping rules are
+identical to those in javascript
+for example we can declare a variable
+of parameter h
+and it is of the type number
+which is equal to say 45 something like
+this
+and similarly we have
+let
+so let is a ecmascript 6 introduce two
+new types of variable declarations in
+javascript using the keyword let and
+const to solve the issues with variable
+declarations
+these additional sorts of variable
+declarations are also supported by
+typescript which is a superset of
+javascript
+for example we have let say employee
+name
+is equal to john
+similarly we have constant
+constant variables are declared in the
+same way as variable and let variables
+are
+constant transforms are variable into a
+constant whose value cannot be changed
+the same scoping constraints apply to
+constant variable as they do to the let
+variables
+for example we have constant
+number
+is equal to
+100
+something like this
+next we will look at the different data
+types in typescript
+we have different data types like number
+string boolean array etc
+so number first we'll look at the number
+just like javascript typescript supports
+number data type
+all numbers are stored as floating point
+numbers these numbers can be a decimal
+hexadecimal
+for example
+say let
+first
+number
+one two three
+so
+let's second
+the third number
+is equal to this is of the type now we
+will write octal
+and don't forget to put colon otherwise
+it will show an error
+let fourth
+now we'll declare the number of type
+say binary
+so typescript supports number data types
+like the numbers can be stored in
+floating point numbers
+or decimal or hexadecimal octal or
+binary
+so this is basically a number
+and this is
+hexadecimal
+[Music]
+this is octal
+and
+this is binary these are the different
+number methods in typescript
+the method two exponential returns the
+exponential notation in string format
+two fixed returns the fixed point
+notation in string format
+to locate string converts a number into
+a local specific representation of the
+number
+two precision returns a string
+representation in exponential or fixed
+point to be specified precision
+tostring returns a string representation
+of the number in the specified base
+and value off returns a primitive value
+of the number
+next we have string then the data type
+which we have is string string is an
+another primitive data type that is used
+to store text data
+string values are surrounded by single
+quotation marks or double quotation mark
+for example
+we say declare it let employee
+name
+string of the type string
+is equal to
+johnson
+so this is of the type string
+the different string methods in
+typescript are
+kept method character at returns the
+character at the given index concatenate
+returns a combination of two or more
+specified strings
+index off returns an index of first
+occurrence of this specified substring
+from a string and minus 1 if not found
+the method replace replaces the matched
+substring with a new substring
+and the method split splits the string
+into substrings and returns an array
+two upper case converts all the
+characters of the string into uppercase
+two lowercase converts all the
+characters of the string into the lower
+case
+the next type which we have is boolean
+boolean values are supported by both
+javascript and typescript and stored as
+true or false
+example for boolean is say let
+here note that the boolean with small b
+is different from the boolean capital b
+so the upper case boolean is an object
+type whereas the lowercase boolean is a
+primitive type
+it is always recommended to use the
+primitive type boolean that is a
+lowercase boolean in the code because
+while javascript coerces an object to
+its primitive type the typescript type
+system does not the typescript treats it
+like in the object type
+the another data type is of the type
+array
+an array is a special type of data type
+which can store multiple values of
+different data types sequentially using
+a special syntax
+typescript supports array similar to
+javascript there are two ways to declare
+an array one is using the square
+brackets and the other is using a
+generic array type
+example
+this is one type to declare with the
+square brackets
+and the other type is to use
+the generic array type
+both methods produce the same output
+arrays can contain elements of any data
+types numbers strings or even objects
+arrays can be declared and initialized
+separately
+these are the different array methods in
+typescript
+we have pop that removes the last
+element of the array and returns that
+element and push adds the new elements
+to the array and returns the new array
+length
+sort sorts all the elements of the array
+and similarly we have concat index of
+copy within
+fill
+shift splice
+and shift
+includes join
+last index of
+that returns the last index of the
+element in an array similarly we have
+slice two string
+and two locate string similarly we have
+tuple
+union any word and never as the data
+types in typescript
+next we'll look at the if statement in
+typescript
+an if statement can include one or more
+expressions which return boolean if the
+boolean expression evaluates to true
+a set of statements is then executed and
+in if-else condition an if-else
+condition includes two blocks
+if block and an else block if the if
+condition evaluates to true then if
+block is executed otherwise the else
+block is executed
+and we also have elsif
+so the elsif statement can be used for
+if statement next we will see loops in
+typescript
+typescript supports for loop the for
+loop is used to execute a block of code
+a given number of times which is
+specified by a condition
+so this is the for loop
+the first expression is executed before
+the for loop starts and the second
+expression is the condition for the loop
+to execute and the third expression is
+executed after the execution of every
+code block here in this example i is
+equal to 0 declares and initializes a
+variable the second condition i is less
+than 3 checks whether the value of i is
+less than 3 or not if it is less then it
+exits the loop
+the third statement
+increases the value of i by one
+this loop will execute the block three
+times until the value of i becomes three
+now that we have seen loops we'll see
+the functions in typescript
+functions are the primary blocks of any
+program functions are the most important
+part
+since it is a functional programming
+language with functions we can implement
+the concepts of oops like classes
+objects polymorphism and abstraction
+functions ensure that the program is
+maintainable and revisible and organized
+into readable blocks while typescript
+provides a concept of classes and module
+functions still are integral part of the
+language for example
+we have function
+sum
+so this is the example of function
+classes in typescript now let us look at
+the classes in typescript
+so in object oriented programming
+classes are fundamental entities used to
+create reusable components
+typescript has been primarily a
+functional programming language
+where inheritance is prototype based
+functions are used to build reusable
+components
+let us see an example for the classes
+employee name
+so we'll create a class employee
+and
+provide employee
+id
+employee name
+so the typescript compiler
+will convert the class to the javascript
+code using the
+closure and the constructor
+is a special type of method which is
+called when creating an object in
+typescript the construction method is
+always defined with the name constructor
+so in this example the employee class
+includes a constructor with the
+parameter employee id
+in the constructor members of the class
+can be accessed using this keyword
+example this dot employee id
+it is not necessary for every class to
+have a constructor
+so far in this video we saw the
+variables different data types
+loops
+functions classes
+and constructors
+so with that we have reached the end of
+this video thank you so much for being
+here keep learning and stay tuned to
+simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

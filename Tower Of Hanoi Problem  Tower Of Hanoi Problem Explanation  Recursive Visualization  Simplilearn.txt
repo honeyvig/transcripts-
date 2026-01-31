@@ -1,0 +1,324 @@
+hello everyone welcome to simply learns
+youtube channel
+today we will be discussing about tower
+of hanoi problem in programming but
+before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for latest
+technological advancements
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without any
+further audio let's get started with the
+agenda for today's discussion
+we'll begin this discussion by
+understanding the torah of ana problem
+along with how we can construct a
+solution for it
+followed by that we'll develop the c
+program which can solve this torah of
+inner problem
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic which is understanding the
+tower of ni problem
+the tower of hanoi is a mathematical
+puzzle made up of three towers and
+multiple rings arranged in ascending
+order of their diameters the number of
+rods or tower is fixed whereas the
+number of rings can be changed by the
+player
+the setup of this game looks something
+like this there are three towers in this
+diagram and one of the tower is decked
+with several number of discs or rings
+such that the largest disc is at the
+bottom and the smallest desk is at the
+top
+a player's goal is to move these discs
+one at a time to a particular
+destination tower in the same specific
+configuration at the start that means
+the order of disk should not be changed
+after being transferred to the
+destination tower
+before you get ahead of yourself and
+deem this problem to be trivial there is
+one crucial aspect to consider
+in this problem you are not allowed to
+transfer a larger disk on the top of a
+smaller disk at any stage
+this rule makes solving this problem
+substantially difficult
+however this problem can be solved using
+the auxiliary tower or helper tower by
+altering the position of disc using
+three towers we can take all the disc
+present at source forward to the
+destination tower this is quite
+confusing right
+so to make this understandable to all of
+you let me give you a rough example in
+this tower of hannah problem we have
+three rings at the source tower now to
+attain the same sequence at the
+destination tower we'll move the top two
+rings to the helper tower
+after that we can move a ring with
+highest diameter to the destination
+tower
+now if we just move the two rings
+present at the helper tower to the
+destination tower we'll solve our
+problem but let me tell you guys that
+this explanation was just to make you
+visualize this problem more
+straightforward manner in reality this
+problem becomes more complex when the
+rules for the movement of rings are
+applied
+so moving forward let's look at those
+rules for ring movement in the tower of
+another problem the first rule that we
+have is at any instance only one disk
+can be moved from the tower that means
+we cannot move more than one disk at a
+time
+the next rule on our list conveys that a
+disk can only be moved if it is the
+uppermost disk of the stack
+the last and essential rule is no disk
+should be placed on the top of another
+disk that is smaller in size
+so let's look at another tower of ni
+problem to build solution using these
+set of rules
+in this problem we have four disks to
+increase our problems complexity whereas
+the number of towers remain the same
+in order to formulate the solution we
+are allowed to move these rings into
+different towers so the first move we
+are supposed to do is moving the orange
+disk to the helper tower
+next we can move green disk to the
+destination tower and after that we can
+move the orange disk to the destination
+tower
+we'll place this orange disk over the
+green disk
+now our helper tower is empty so let's
+take out our yellow ring from the source
+tower to the helper tower
+now we'll move the orange ring to the
+source tower
+further we'll move green ring to the
+helper tower
+this movement will make our destination
+tower empty so that we can bring this
+larger disk to it
+next we'll move orange ring to the
+helper tower this move will make room
+for the transfer of largest disk to the
+destination tower
+now
+we have brought our largest disc to the
+destination tower however we still need
+to bring three more discs to our
+destination tower in order to solve this
+toh problem
+and to do that here we'll move orange
+ring to the destination tower
+and the green ring to the source door
+after that we'll move orange ring to the
+source tower in order to bring the
+second largest
+ring to our destination tower here we
+have successfully placed two rings at
+the destination tower now we only left
+with arrangement of two more rings to
+attain that here we'll move orange ring
+to the helper tower
+and green ring to the destination tower
+finally we'll move orange ring to the
+destination tower
+and this is how we'll land that accurate
+solution to our tower of anna problem if
+you observe this process you'll get that
+the process of ring movement is of
+recursive nature and we can develop a
+solution to this problem using recursive
+programming paradigm
+so moving ahead we'll develop a program
+to implement a solution to the store of
+any problem
+the language that we are going to use
+for this implementation is c programming
+language
+so without wasting any time let's move
+to the code editor
+here to begin with our tour of an
+implementation
+let's first create an utility function
+named toh
+so we'll do that void
+toh
+and inside this function will pass few
+arguments the first argument will pass
+to this function will be the number of
+rings in our toh problem so let's call
+that variable n
+and the subsequent arguments will be the
+source tower destination tower and
+helper tower all these three arguments
+will be of character data type as we
+want to pass the names of towers here so
+we'll create
+care
+source
+next
+care
+destination
+and care
+helper
+tower
+next now inside this function body will
+make recursive call to the same function
+in order to move the disk
+inside this recursive call will tell our
+ide to move n minus 1 disk from source
+store to the helper tower
+and to do that the statement that we'll
+write is
+t o h
+move n minus one disk
+that is this n
+next will be the source
+then helper
+underscore t which will act as
+destination here
+and
+destination power will act as an
+helper tower
+so basically this call is nothing but
+these arguments over here
+this recursive call will allow n minus 1
+rings to move from source store to the
+helper tower by taking the help of
+destination tower so by using this
+statement we have moved n minus 1 rings
+from source to the helper tower next
+what we'll do is we want to print all
+these movements covered by this function
+hence let's create a format for printing
+the disk movement using printf function
+the format that we'll use is
+printf
+add slash n
+next
+move
+disk
+modulus d
+from
+tower
+modulus c
+to
+tower
+modulus
+c
+and after this by taking comma will pass
+arguments
+the first will be modulus d that is
+number of tower
+next will be the source
+and after that it will be destination
+so by moving n minus one disk to the
+helper tower we have made space for
+moving the largest disk to the
+destination top and next we'll have to
+move this n minus one rings to the
+destination tower from the helper tower
+by using the source node
+so
+for that we'll write another recursive
+call toh
+n minus 1
+comma helper underscore t will act as
+source now
+and destination
+will act as destination
+whereas source
+will act as
+helper toggle
+now what will be the base case for this
+recursive function well it's pretty easy
+the recursive call we are making is
+actually decreasing the disk number that
+is n minus 1 and thus after few
+iteration the value of n will become 0
+and when it reaches 0 we want to stop
+our recursion so our base condition will
+be
+f
+n
+becomes equal to zero
+we will
+return the control to the next function
+so with this we have successfully
+created our tour of ener function next
+we'll move to our driver method that is
+main method in order to contemplate the
+toh function
+so what we'll do is we'll pass
+arguments to toh function
+the number of rings that we are going to
+use for this problem will be 4
+and let's call our towers as
+a
+then b
+and
+c
+and return 0
+now let's check if our code works fine
+or not
+okay so we are getting one error over
+here semicolon missing
+okay so let's add that semicolon and
+re-run our code
+okay so we have received output here the
+output is 15 steps that we have
+discussed earlier for the four ring stoh
+problem
+and that output is what we have received
+here that means our program works
+accurately you can verify this output by
+matching these movements with the
+previous solution that we have discussed
+earlier
+the only thing to note here is that the
+tower b is acting as destination tower a
+is acting as source and tower c is
+acting as helper tower
+i hope you guys are clear with toro
+henry implementation now
+this is all about tour of hanoi
+implementation using c programming
+language i hope the implementation
+strategy covered in this video is clear
+to all of you out there
+if you have any queries regarding the
+concept covered in this video then let
+us know about it in comment section
+below and we'll surely get back to you
+thank you so much for being here and do
+watch out for more videos from simply
+learn until then keep learning and stay
+tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

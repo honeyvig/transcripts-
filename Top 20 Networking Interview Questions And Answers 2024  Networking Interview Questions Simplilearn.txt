@@ -1,0 +1,1582 @@
+welcome to Simply learn with new video
+on networking interview questions and
+answers so let's start with an example
+imagine you are working behind the
+scenes during the launch of a big online
+sale suddenly customers begin to
+experience slow loading times and
+transaction problems due to network
+issues this real life example highlights
+the critical role of network
+professionals who must swiftly address
+such issues to prevent a business
+disaster understanding networking isn't
+just about passing an interview it's
+crucial for handling the real challenges
+that impact businesses and users daily
+from managing data traffic efficiently
+to ensuring robust security measures are
+in place the skills required in network
+management are fundamental to the smooth
+operation of Digital Services across the
+globe this guide on networking interview
+questions and answers is designed to
+help you not only as your job interviews
+but also prepare you to face and solve
+network problems effectively
+each question is crafted to enhance your
+understanding and equip you with the
+skills needed to tackle various Network
+related tasks confidently dive into this
+Learning Journey where each answer adds
+to your ability to keep digital
+platforms running smoothly and
+securely craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back before commencing just a quick info
+for you guys if you're one of the
+aspiring cyber security professional
+looking for online training and
+certification from prestigious
+universities and in collaboration with
+leading experts to enhance your
+credibility then search no more simply
+learns postgraduate program in cyber
+security from MIT University in
+collaboration with EC Council should be
+right choice for more details you can
+use the link in the description box and
+pin comment and if these are the types
+of videos would like to watch then hit
+the Subscribe button like and press on
+the Bell icon to never miss on future
+content so let's get started with
+technical Knowledge Questions of
+networking so the question number one is
+what is the difference between a hub
+switch and a router so starting with Hub
+so Hub connects multiple ethernet
+devices into a single Network segment
+acting as a central point so how it
+works it receives a packet of data from
+one device connected to it and broadcast
+it to all other devices in the network
+regardless of which device it is
+intended for and the key point is
+because it sends data to all devices it
+can lead to collisions and is generally
+less efficient and less secure now
+moving to switch so the basic function
+of switch is a switch also connects
+devices in a network but is more
+intelligent than a hub so let's see how
+it works it can store the addresses of
+the devices connected to it in a table
+when it receives data it knows exactly
+which part to send it to based solely on
+the devic's address thus only sending
+data to the destination device and the
+key point is this makes switches more
+efficient than hubs because they reduce
+unnecessary traffic and are more secure
+now moving to router so the basic
+function of a router is it connects
+multiple networks together guiding data
+from one network to another based on
+their IP addresses so let's see how it
+works it examines the data it receiv
+Lees to determine which network or
+device it should send to allowing not
+just connection within a single network
+but between different networks like your
+home network and the internet and the
+key point is routers are crucial for
+larger Network setups and for accessing
+the internet as the direct traffic and
+can also offer security features like
+Fireballs so let's consider some
+examples so the example for Hub would be
+that is suitable for very small simple
+networks where security and speed are
+not critical for switch it is used in
+home networks and businesses when
+Network traffic needs to be managed
+efficiently to avoid performance issues
+and about the router it is essential in
+any network that needs to connect to the
+Internet or between different internal
+networks providing Pathways and security
+measures so this breakdown explains the
+basic roles and functions of each device
+in a way that's accessible for buers
+providing a clear understanding of when
+and why each device is used so now that
+you have understand the difference
+between a hub a switch and a router and
+the roles in a network let's delve into
+how data travels across these devices
+using different networking models so
+this brings us to the TCP IP and OSI
+models which are Frameworks for
+understanding and designing Network
+systems so let's move to question number
+two that is can you explain how the
+tcpip model layers correspond to the OSI
+model layers so let's start with tcpip
+models so the tcpip model is a four
+layer protoc suit designed for the
+internet it is more straightforward and
+has been the foundation for internet
+protocols development so let's see the
+layers that is link layer that is first
+layer this corresponds to the OSI models
+physical and data link layers it handles
+the physical and data link protocols
+like ethernet and Wi-Fi then comes the
+internet layer it matches the OSI
+Network layer it deals with packets and
+routing them across different networks
+IP protocol then comes transport lay
+this is same as OSI transport layer this
+layer ensures data is transferred
+reliably and error free that is TCP and
+UDP protocols then comes application
+layer it encompasses OSI session
+presentation and application layers it
+provides protocols and applications used
+to communicate over a network like HTTP
+and FTP so now let's come to the OSI
+model so the OSI model that is open
+systems interconnection model has seven
+layers and provides a more detailed
+framework for understanding Network AR
+iture so let's see the physical layers
+or the layers starting with physical
+layer so that deals with the hardware
+setup for data transfer that is cables
+bits on The Wire then comes data link
+layer it manages data transfer between
+adjacent Network nodes then comes
+Network layer it handles the routing of
+data packets then comes transport layer
+it ensures complete data transfer then
+comes session layer it manages sessions
+between applications and then comes
+presentation layer it translates data
+between the application and the network
+and then comes the application layer it
+supports application and end user
+processes now we see the correspondence
+between these models that is TCP IP and
+the physical and data link layers of OSI
+so let's see the link layer of TCP IP
+integrates the physical and data link
+layers of OSI then comes internet layer
+of TCP I that corresponds to the network
+layer of OSI then comes transport layer
+that is consistent across both models
+focusing on data flow control then comes
+application layer of tcpip that broadly
+covers osi's top three layers
+streamlining session management data
+representation and application Services
+into a single layer that interacts
+directly with the end users application
+so understanding these models is crucial
+for networking professionals because it
+helps in diagnosing issues setting up
+networks and ensuring efficient data
+flow across the internet and other
+networks so with this foundation in
+networking models we can move on to
+discuss specific Network protocols and
+their roles in in ensuring efficient
+network communication so with that we
+will move to the third question that is
+what is the purpose of ARP in a network
+so let's start with the definition so
+ARP is the address resolution protocol
+so the address resolution protocol is a
+network protocol used to map an Internet
+Protocol address that is IP address to a
+physical machine address that is
+recognized in the local network and the
+Machine address that is also known as
+media access control or the MAC address
+is a unique identifier assign to network
+interfaces for communication at the data
+link layer so let's see the purpose of
+ARP in a network so the first purpose is
+IP to MAC address mapping so when a
+device wants to communicate with another
+device on the same local network and
+knows the IP address but not the MAC
+address ARP is used to discover the Mac
+addresses now comes the second one that
+is ARP request and response mechanism so
+the ARP request that is the device
+broadcast and ARP request packet to all
+devices on the local network
+asking who owns a specific IP address
+and then comes ARP response so the
+device with the matching IP address
+sends back and ARP reply which includes
+his Mac address and then comes caching
+ARP entries once a device receives a MAC
+address it stores this information in
+its ARP caching caching PRS the need for
+repeated ARP request for the same IP
+address thus reducing Network traffic
+and speeding up the communication
+process so the example of ARP action is
+let's consider a scenario for this
+imagine you are sending an email from
+one computer to another within the same
+office Network your computer knows the
+IP address of the destination computer
+but not its Mac address so the process
+is your computer will use ARP to ask who
+has this IP address the destination
+computer will reply with its Mac address
+your computer then sends the email
+directly to that Mac address or the
+local network so this is the example now
+let's see the significance of ARP number
+one is efficiency and connectivity so
+ARP is essential for ipv4 networks to
+function efficiently ensuring that data
+packets find their way to the correct
+devices within a local network segment
+and then comes security considerations
+while ARP is crucial it's also
+suspectable to certain types of security
+attacks like ARP spoofing where a
+malicious actor can answer the ARP
+request with its Mac address redirecting
+the data to the attacker machine so
+understanding ARP helps and grasp how
+devices communicate over a network and
+the importance of Mag addresses in local
+network environments this knowledge is
+foundational for troubleshooting network
+issues and securing networks against
+common vulnerabilities so absolutely
+continuing from the explanation of arp's
+role in network communications let's
+dive deeper into one of the dynamic
+routing protocols that is widely used in
+large scale networks OPF or open
+shortest path first this protocol is
+crucial for efficient Network routing
+especially in complex Network topologies
+so now we are coming to Advanced
+Technologies and moving to the fourth
+question that is discuss the different
+types of OPF areas and their functions
+so let's start with OPF so OPF is a
+dynamic routing protocol for Internet
+Protocol that is IP networks it uses a
+link state routing that is LSR algorithm
+and falls into the group of interior
+Gateway protocols igps operating within
+a single autonomous system it is
+designed to scale efficient to support
+larger networks with multiple routers so
+let's see types of OPF areas and their
+functions so starting with OPF divides
+an autonomous systems as into
+hierarchical areas to optimize traffic
+and reduce routing table size which
+improves Network performance and reduces
+overhead so let's see the types the
+number one is backbone area so this is
+the core of an OPF Network all other
+areas connect to the backbone area
+either directly or through virtual links
+it is responsible for Distributing
+routing information between non backbone
+areas so the importance of this is the
+backbone area is crucial because it
+simplifies the routing process by
+reducing the number of routes that need
+to be processed by each router now
+moving to the next type that is normal
+area so a normal area does not carry
+external routing information routers in
+normal areas only know about the
+networks within their area and the way
+to reach other areas by the backboard so
+about this characteristics all types of
+OPF messages are allowed in normal areas
+including router Network summary and
+external link advertisements now moving
+to the next type that is stub area so
+stub area function is that it is
+designed to prevent external routes that
+is routes outside the OPF as from being
+flooded into the area and its
+characteristic is no external routes are
+allowed into a stub area only intra area
+and Inter area routes are advertised
+default routes are used to reach
+networks outside the area now coming to
+the next one that is totally stubby area
+so its function is it is an enhanced
+version of a stub area it blocks
+external routes and also blocks summary
+Network advertisements from other areas
+and its characteristic is it only
+default routes and intra area routes are
+advertised within a totally stubby area
+minimizing the size of the routing table
+even further now coming to the next that
+is notes so stubby area and SSA so its
+function is it is a type of stub area
+that can improve as external routes and
+send them to the backbone area but it
+does not receive external routes from
+other areas and its characteristic is it
+allows for limited distribution or the
+redistribution of external routes into
+the area while still benefiting from the
+reduced overhead of a stub area so
+transitioning from the detailed
+explanation of OPF areas let's explore
+another crucial as of modern networking
+that is MLS multi-protocol label
+switching so MLS is a flexible high
+performance routing technique that is
+widely used in service provider networks
+and large Enterprise environments
+understanding how MLS works and its
+advantages over traditional IP routing
+can provide significant insights into
+Network efficiency and performance
+enhancements so let's start with the
+question number five that is how does
+MLS work and what are its benefits or
+traditional IP routing so MLS is a data
+carrying technique that directs data
+from one network node to the next based
+on short path labels rather than long
+Network addresses avoiding complex
+lookups in a routing table now coming to
+layer operation so that is often
+referred to as a layer 2.5 protocol MLS
+operates between the data link layer
+that is Layer Two and the network layer
+layer three of the OSI model so how does
+MLS work so there's a label assignment
+when data enters the m Network a label
+Edge router that is L assigns it a label
+this label is simple fixed length
+identifier that dictates the data's path
+through the network then comes label
+switching the packets are then directed
+through the network using label switch
+routers these routers switch the labels
+to direct the packets along
+predetermined paths which are set up
+based on the networks traffic and Jing
+policies then comes label spping as the
+packet traverses the network each router
+swipes the packets incoming label with a
+new label before forwarding it to the
+next router this process is repeated
+until the packet reaches its destination
+then comes label removal once the packet
+arrives at the final router the label is
+removed and the packet is delivered
+based on its original IP address now we
+see the benefits of MLS over traditional
+IP routing so the number one benefit is
+faster packet forwarding by using labels
+MLS reduces the time needed for a packet
+to Traverse the network as each dter
+does not need to perform a network
+address lookup to decide the packet's
+next hope the next is increased
+reliability and performance MLS allows
+for setting up predetermined paths for
+Network traffic which can be optimized
+for specific types of service
+requirements such as bandwidth and
+latency this ensures higher performance
+and more reliable network service then
+comes enhanced traffic management so
+Network operators can direct and control
+the flow of traffic B B on predefined
+policies efficiently utilizing available
+Network paths and reducing congestion
+then comes quality of service that is
+qos npls supports qos for managing
+different types of data strings this is
+crucial for applications requiring
+priority handling such as VIP voice over
+IP or real-time video streaming then
+comes scalability mpls is highly
+scalable making it suitable for large
+Enterprises and service provider
+networks that handle millions of data
+packets per second then comes VPN
+support npls is effective for deploying
+VPN Services providing the ability to
+manage and isolate traffic for different
+users of the same physical
+infrastructure so let's see an example
+of mls in action let's consider a
+scenario consider a service provider
+that needs to ensure high quality video
+conferencing services for a corporate
+client while also handling regular
+internet traffic NLS can be used to
+separate and prioritize the video
+conference traffic from less sensitive
+data ensuring smooth uninterrupted
+service so the significance of MLS is
+MLS provides Network engineers and
+operators with powerful tools for
+traffic management enhancing the
+efficiency and performance of networks
+understanding MLS is essential for those
+involved in the planning deployment and
+management of modern telecommunication
+networks this overview of MLS not only
+highlights its functional mechanism but
+also underscores its advantages or
+traditional routing marking its critical
+role in contemporary Network management
+and optimization so after discussing how
+mpls improves Network efficiently let's
+dive into another critical aspect of
+networking that is encryption
+Technologies particularly the difference
+between symmetric and asymmetric
+encryption and their roles in ensuring
+network security so moving to question
+number six that is explain the
+differences between symmetric and
+asymmetric encryption between the
+context of network security so let's
+start with what is encryption encryption
+is the process of encoding information
+to prevent unauthorized access it
+transforms readable data that is PL text
+into scrambled format that is cipher
+text that can only be read and processed
+after it has been decrypted now move to
+the symmetric encryption so symmetric
+encryption uses the same key for both
+encrypting and decrypting data this type
+of encryption is faster and is often
+used for encrypting large volumes of
+data so let's see how symmetric
+encryption works both the sender and the
+recipient share the same secret key and
+the sender uses this key to encrypt the
+P text and send it over the network the
+recipent uses the same key to decrypt
+the cipher text and retrieve the
+original information and now we'll see
+the example of symmetric encryption
+algorithms that is Advanced encryption
+standard AES and the next is data
+encryption standard Dees and then comes
+triple Dees so these are the examples of
+symmetric encryption algorithms so now
+we'll talk about the pros of symmetric
+encryption it is faster than asymmetric
+encryption due to less computational
+complexity and is ideal for application
+with data needs to be encrypted and
+decrypted quickly and talking about
+conses so key distribution is a
+challenge security exchanging the key
+between parties can be risky and
+impractical or insecure channels and
+scalability can be an issue between each
+pair of users that needs a unique key
+now coming to asymmetric encryption so
+asymmetric encryption also known as
+public key cryptography uses two
+different Keys a public key and a
+private key the public key is shared
+with everyone but the private key is
+kept secret by its owner so let's see
+how a symmetric encryption works so the
+sender uses the recipent public key to
+encrypt the message the message can only
+be decrypted by the reant private key
+which is not shared and remains
+confidential let's see the examples of
+asymmetric encryption algorithm the
+example are RSA that is D set Shamir at
+lman ECC elliptic curve cryptography
+then comes digital signature algorithm
+DSA now talking about Pros so it solves
+the key distribution problem public keys
+can be freely distributed and posted in
+public directories without compromising
+security and it enables digital
+signatures which not only protect
+against tempering but also verify the
+identity of the sender then comes cones
+it is slower than symmetric encryption
+due to the complexity of the
+mathematical operations in mod and it
+requires more computational resources
+which can be a constraint in resource
+limited environments and it is used in
+network security both symmetric and
+asymmetric encryption are used often
+complementarily and symmetric encryption
+is used for the bulk encryption of data
+because of its efficiency and asymmetric
+encryption is used for securely
+exchanging the keys necessary for
+symmetric encryption and for
+authentication processes now coming to
+practical implementation questions and
+moving to the question number seven and
+the question is how would you configure
+a VLAN on a Cisco switch so let's start
+with the VLAN so a vlen that is virtual
+local area network is a logically
+segmented Network within a switch by
+dividing a network into V lens you can
+group devices even if they are not
+connected to the same network switch and
+control traffic patterns and network
+segmentation now we see the steps to
+configure a vand on a Cisco switch so
+the number one step is access the switch
+connect to the Cisco switch via console
+cable or through SSH or tnet to remote
+access this provides a command line
+interface for configuration the next
+step is enter Global configuration mode
+and after logging into the switch enter
+the global configuration mode by typing
+that is enable configure terminal so
+this mode allows you to make changes
+that affect the entire switch now mve to
+the next step that is create the VLAN so
+vlans are identified by unique numbers
+that is VLAN IDs for example to create
+VL 10 we can use the command V 10 and
+you can also assign a name to this V for
+easier identification and management so
+we are naming it as marketing so the
+next step is assign ports to the VLAN
+assign switch ports to the newly created
+VLAN to include devices into the segment
+for instance to assign Port fast
+ethernet 0/1 to V 10 execute the code
+that I'm showing you that is interface
+fast ethernet 0/1 switch Port mode
+access switch Port access VL 10 so
+repeat this process for any other ports
+you want to add to VL 10 after that
+verify the VLAN configuration after
+configuration it's good practice to
+verify that the vline is set up
+correctly so you will use the command
+show vline brief so this command
+displays all V lens on the switch and
+the port assigned to each VL and then
+save the configuration to ensure the
+configuration is not on reboot save it
+using right memory and then
+alternatively you can use
+copy running config startup config so
+let's see a practical example imagine
+you are setting up a network in an
+office with different departments like
+marketing and HR by configuring vlans
+you can ensure the devices in the
+marketing department do not see traffic
+from HR enhancing security and traffic
+management and now we'll see the
+significance of VLAN so VLAN play a
+critical role in managing a large
+Network by segregating traffic enhancing
+performance and increasing security for
+Network administrators mastering VL
+configuration on Cisco switches is
+fundamental ensuring efficient and
+secure network operations so
+understanding how to configure V lens is
+not just about technical knowhow it's
+about creating a network environment
+that is optimized secure and tailored to
+the specific needs of an organization so
+now moving on from configuring V lens on
+a Cisco switch and let's tackle a common
+Network issue that is troubleshooting
+slow connectivity slow Network
+performance can frustrate users and
+hinder business operations making
+efficient trouble shooting essential so
+let's move to next question that is
+question number eight that is describe
+the steps to troubleshoot a network
+where users are experiencing slow
+connectivity and the steps to do that is
+that is number one step connectivity in
+a network and identify the scope of the
+problem determine if the problem is
+affecting one user a group of users or
+the entire network this helps isolate
+whether the issue is local to a specific
+device switch or widespread through the
+network then check physical connection
+verify that all cables including
+ethernet and power cables are securely
+connected and not damaged check for
+loose connections or signs of Veer and
+tier that could affect data transmission
+and then you can move to assess Network
+utilization use network monitoring tools
+to check current traffic flows and
+utilization levels on network devices
+High utilization might indicate
+excessive bandwidth consumption or a
+potential denial of service that is do
+attack then review Hardware performance
+inspect the status of routers switch and
+other network devices for any signs of
+Hardware failure or performance
+degradation check system logs for any
+error message or Warnings then test the
+network speed conduct speed test to
+measure the actual data transfer rates
+across the network compare these rates
+with expected performance levels to
+determine if they are within acceptable
+limits then analyze the quality of
+service Q settings if your network uses
+qos policies to prioritize traffic
+ensure these settings are configured
+correctly and misconfigured qos can lead
+to non priority traffic consuming too
+much bandwidth then inspect DNS and DHCP
+configurations slow or faulty DNS
+responses can cause delays ensure the
+DNS servers are operating correctly
+check the DHCP Scopes and Lease time to
+ensure IP addresses are being assigned
+effectively then evaluate the network
+design consider the possibility of
+design flows contributing to Bott legs
+this could include inadequate switch
+capacity improper routing configuration
+or lack of sufficient redundancy and
+then check for external issues if your
+network relies on external services such
+as Cloud platforms or external DNS
+verify that these services are not
+contributing to the latency then check
+the service status pages and network
+announcements for any ongoing issues and
+then we have update firmware and
+software ensure that all network devices
+are running the latest firmware and
+software versions outdated softwares can
+lead to Performance issues and
+vulnerabilities and then the step is
+consult system logs and SNMP data review
+logs for any signs of anomalies or
+recing patterns that could indicate the
+root cause of the problem SNMP data can
+provide insights into the performance of
+network devices over time and then comes
+the step isolate and test Network
+segments if possible isolate parts of
+the network to see if performance
+improves this can help pinpoint the
+location of the fold then comes the step
+seek user feedback communicate with
+users to determine if changes or
+specific activities correlate with the
+Slowdown user reports can provide clues
+that help in diagnosing the issue so
+conclusion and follow after identifying
+and addressing the issue monitor the
+network to ensure that performance has
+returned to acceptable levels keep users
+informed of the resolution and any steps
+they can take to avoid or report similar
+issues in the future so this was all
+about question number eight now we move
+to question number nine that is write a
+python script to pass a log file and
+find all the field SSH login attempts so
+start with that is scanning through a
+systems SSH log files to detect any
+report any fade login attempts so this
+can help in auditing security and
+identifying potential unauthorized
+access attempts so if a interviewer ask
+you this question you could follow the
+steps that would be the first step is
+set up your environment Ure you have
+python installed on your system you can
+use any text editor or any ID like pyam
+or vs code to write your script so let's
+move the python script so we have a
+python script here so this is the python
+script to find out the failed SSH login
+attempts so the line one here is import
+re so this Line Imports Python's
+built-in re module which provides
+support for regular expressions and
+regular expressions are powerful tools
+for matching text patterns this module
+isn't actually used in the simple
+version of the script but is often
+necessary for more complex pattern
+matching which might be needed for
+different log file formats on more
+specific search criteria and then coming
+to line three and four so this defines a
+function named findor Fiore SSH that
+login takes one parameter that is log
+file uncore path this parameter is
+expected to be a string representing the
+path to the log file that the function
+will read and analyze now coming to line
+five and six so this Line opens the file
+located at log file unor path in read
+mode that is r and this with open as
+statement is used for handling the file
+object this approach ensures that the
+file is properly closed after its suit
+finishes even if error occurs during the
+process then comes line seven and 8 this
+is for Loop that iterates over each line
+in the file and line represents the
+current line in the file for each
+iteration of the loop now coming to line
+9 and 10 so inside the loop this line
+checks if the substring that is failed
+password is found in the current Line
+This substring is commonly present in
+Unix like systems that is log files then
+there is a failed SSH login attempt
+making it a good indic to search for now
+coming to line 11 that is if the
+substring failed password is found in
+line so this line of code executes
+printing the line to the console this
+output could be redirected to another
+file or processed further but in the
+simple script it is directly displayed
+to the user now coming to line 13 and 14
+so this sets the variable logor file
+path to the string that is pathore 2/
+authorization. log which should be
+replaced with the actual path to to the
+log file you want to analyze so this
+path is commonly that is where SL log
+authorization. log on lenux systems for
+the authentication logs which include
+SSH login attempts now coming to line 16
+so this line calls the findor fieldcore
+sshor logins function that pass in log
+file path as the argument this initiates
+the execution of the function with the
+specified log file path and the script
+starts processing the log file according
+to the defined logic so this script
+provides a straightforward approach to
+scanning log files for specific entries
+and a common task in network security
+monitoring and auditing so now moving to
+question number 10 that is how would you
+use a script to automatically back up
+network configuration from multiple
+devices so first we'll find the
+essential components that is python for
+writing the script paramiko that is a
+python library for handling SSH version
+two connections then Crone a Time based
+job scheduler in Unix like computer
+operating systems to schedule scripts at
+regular intervals now we see the steps
+to create the script so the number one
+step is set up python environment that
+is install Python and ensure it's
+configured correctly on your system then
+install paramiko using pip bash that is
+PIP install paramiko then we'll write
+the script to backup configuration so
+here's the script so first we importing
+paramiko and then we are importing OS
+and from date time we are importing date
+time so we have a function here that is
+backup _ device config so this function
+takes in the device host name username
+password and optionally a command that
+is defaulted to show running config
+which is common in Cisco devices it logs
+into the device via SSH runs the command
+to get the current configuration and
+saves it to a file named with the host
+name and the current time stamp then
+comes SSH client setup use paramiko to
+handle the SSH connection execute the
+command and write the output to a file
+then we're using the loop over devices
+so this script provides a list of
+devices each represented as a dictionary
+with necessary login credentials and it
+Loops over this list to back up each
+device and then we have automate script
+execution so to automate the script
+schedule it using Crone on a Linux
+system that is edit the Chrome tab with
+con tab minus C and add a line like this
+to run the script daily at 1:00 a.m.
+I'll show you how you can write that
+that is 01
+star
+slash SL Ben SL
+python slash path slash2 slash here you
+will run your script so this is how you
+can run your script so now if we see the
+benefits of automation that is
+reliability it ensures that backups are
+taken consistently without human
+intervention the next is timeliness
+backups can be scheduled to ensure that
+they are always up to date and the next
+is scalability easy easy to add more
+devices into the backup processes by
+updating the device list so using a
+script like this simplifies the
+management of network configurations and
+enhances the operational reliability by
+ensuring that up-to-date backups are
+always available for Disaster Recovery
+purposes so let's move to question
+number 11 and your question is create a
+function in Python that calculates the
+subnet mask given a c notation so there
+will be steps to provide this and you
+can answer the interviewer that we can
+start with the c notation that is
+understanding cidr notation so you can
+see that that c notation specifies the
+number of bits set to one in the subnet
+mask for example SL 24 means the first
+24 bits of the subnet mask are set to
+one then comes the converting cidr to
+subnet mask so you have to create a
+32-bit binary number with the first n
+Bits set to one where n is the number
+from the cide notation so let's move to
+the code and see how we can proceed with
+C annotations so as you can see that the
+first line that is defining a function
+so this line defines a function named C
+_ 2or sub netore mask that takes one
+argument cidr which is expected to be a
+string representing a network address in
+C notation example 1
+192.168 do10 Dot and then we come across
+extracting prefix length so here we'll
+be extracting the prefix length so here
+we have cidr do split slash one that
+splits the C string at the Slash and
+takes the second part that is index one
+which is the prefix length and that is
+number of bits in the subnet mask then
+we have int that has an argument cidr do
+split that converts this prefix length
+from a string to an integer and this
+operation is wrapped in a tri block to
+handle cases with a conversion might
+fail and if a value error is C the
+function returns an error message
+prompting the user to provide the cidr
+in the correct format then we'll create
+the binary mask and with this code
+snippet we will create the binary mask
+that creates a string of 1 s that is as
+long as the prefix length for example if
+prefix length is 24 this results in 24
+consecutive 1 s then comes o this
+creates a string of zeros for the
+remaining bits in a standard 32-bit
+address for a prefix length of 24 this
+result in 8 O and these two strings are
+concatenated to form a complete 32bit
+binary mask representing the subnet mask
+now we'll start with converting binary
+to decimal so the loop iterates or the
+binary mask string in step of 8 Bits and
+the binary underscore mask extracts each
+octet from the binary mask and int o
+comma 2 converts the binary string octet
+to a decimal string and here you can see
+that subnet do mask subnet ma to append
+this has the argument and this converts
+the decimal integer to a string which
+which is then appended to the subnet
+unor mask list and then we are forming
+subnet mask so this joins all the
+elements in the subnet mask list into a
+single string separated by dots forming
+the final subnet mask in doted decimal
+notation and then we have the example
+usage so this snippet demonstrates how
+to use the function it provides a c an
+notation calls the function to convert
+it into a subnet mask and prints the
+result so in summary this function
+efficiently converts C notation into a
+subnet mask handling potential input
+errors and Performing binary to decimal
+conversion to produce a standard subnet
+mask format this is a practical tool for
+network configuration and Analysis task
+so now moving to question number 12 so
+the question number 12 is design a
+network topology for a company that has
+three branches and a central data center
+so you can answer this question by
+explaining an example that imagine you
+are in charge of setting up the network
+for a company with three branch offices
+and a Cal data center so there's a
+simple way to think about it first we
+will set up the components of the
+network that is Central Data Center and
+what it is is it's the main Hub where
+all critical components applications
+databases and services are hosted and
+the key parts that is high performance
+servers storage systems core switches
+which connect all devices there are
+firewalls and multiple internet
+connections for reliability then comes
+the branch offices so what they are they
+are offices that need to to connect to
+the central Data Center and provide
+network access for employees and the key
+parts are access switches that are
+connect devices within the office
+routers that connect the branch to the
+central Network then comes fireballs and
+possibly local servers and then comes
+connecting everything so there are ban
+links these are the dedicated
+connections between each branch and the
+central data center uring secure and
+reliable Communications then there comes
+the backup links redundant connections
+to keep things running smoothly if the
+main link fails then comes the security
+in which we have Fireballs that protect
+the network by controlling incoming and
+outgoing traffic and preventing
+unauthorized access and then we have VPN
+virtual private networks that secure the
+communication between branches and the
+data center over the internet and after
+that we have IP addressing that has
+subnets different subnets for each
+branch and the data center help organize
+and manage IP addresses preventing
+conflicts now we'll see the simple
+diagram for the network and we'll think
+of the network like this this so here's
+our Central Data Center branch one
+branch 2 and Branch 3 so let's see the
+benefits of the network topology the
+number one benefit is scalability it is
+easy to add more branches or expand
+existing ones without major changes then
+comes rund dency and shows continuous
+operation even if one connection fails
+then comes the security that protects
+data with fireballs and VPN and then we
+have the efficiency that optimizes how
+data flows across the network so this
+design helps keep all branches connect
+Ed to the central data center securely
+and efficiently ensuring smooth
+operations and secure data access for
+the entire company now that you have an
+idea of how to design a network topology
+for a company with multiple branches and
+a central data center let's explore
+another important aspect that is
+ensuring data redundency this is
+especially crucial for Industries like
+Financial Services the data integrity
+and availability are Paramount so the
+next question is that is question number
+13 so how would you ensure data redund
+dency in a network designed for a
+financial service provider so ensuring
+data redundency means having multiple
+copies of data so that if one copy is
+lost or corrupted the other can be used
+for a financial service provider this is
+critical to maintain trust and
+continuous operations so now we'll see
+the key strategies for data redundancy
+and you can also tell the interviewer
+the same strategies so starting with
+number one that is data backups so
+regular backups that is schedule
+frequent backups of all critical data
+this could be daily hourly or even real
+time depending on the importance of the
+data then we have offsite backups stored
+backups in a different physical location
+to protect against sight specific
+disasters like fires or floods then
+comes the raid that is redundant array
+of independent disk so there are raid
+levels so use Raid configurations like
+raid 1 raid five or RAID 10 on storage
+devices to duplicate data across
+multiple dis this ures data availability
+even if one dis fails then comes Network
+redundancy and there are multiple paths
+design the network with multiple
+Pathways for data to travel if one path
+fails data can take another route use
+redundant network connections example
+multiple isps to ensure continuous
+connectivity now moving to the next
+strategy that is load balancers use load
+balancers to distribute Network traffic
+across multiple servers or paths
+preventing any single point of failure
+then comes data replication in this we
+have real time replication use realtime
+data replication to create a live copy
+of data on another server or data center
+this ensures that data is immediately
+available in case of a primary server
+failure then we have asynchronous
+replication for Less critical data a
+synchronous replication can be used
+where data is coped at regular intervals
+and after that we have cloud services so
+utilize cloud storage services for
+backup and redundency many Cloud
+providers offers robust redundency
+options with geographically dispersed
+data centers and we also have hybrid
+Cloud that can combine on premises and
+cloud storage to create a hybrid
+solution that benefits from the
+flexibility and rency of the cloud while
+maintaining control over critical data
+on premises so let's see the design for
+data dcy and this is the design here we
+have primary data centers that are
+houses critical applications of data
+then we have secondary data center that
+act as a fail over sight replicating
+data from the primary Center in real
+time and then we have Storage Solutions
+in which we have raid arrays that
+Implement raid configurations for all
+criticals storage devices and then we
+have regular backups that schedule
+backups to both local storage and
+offsite locations and you can see the
+network configurations there are
+redundant connections that use multiple
+internet connections and network paths
+to ensure continuous connectivity and
+you can see the load balancers here so
+they distribute traffic across multiple
+servers to avoid overloading any single
+server and then we do the data
+replication and in this we have realtime
+replication that Implement real-time
+data replication between the primary and
+secondary data centers so now now let's
+discuss the benefits of this design the
+number one is high availability multiple
+copies of data ensure that it's always
+available even if one copy is lost
+number two is disaster recovery offsite
+and Cloud backups provide a safety net
+in case of a disaster at the primary
+location then comes continuous
+operations redundant Network paths and
+real-time data replication help maintain
+operations without interruptions this
+design ensures that a financial service
+providers data remains safe available
+and intact even in the face of Hardware
+failures network issues or site specific
+disasters and after understanding how to
+ensure data redundancy for critical
+operations let's switch our Focus to
+designing wireless networks especially
+for office spaces effective wireless
+network designs ensures that all users
+have reliable and fast connectivity
+essential for productivity and
+collaboration so your next question is
+what wireless network design
+considerations would you suggest for a
+large open Office Space so you can start
+answering this question that designing a
+wireless network for a large open Office
+space requires careful planning to
+ensure robust coverage high performance
+and security so we'll consider some key
+considerations and the considerations
+are number one coverage and capacity so
+that includes site survey where we
+conduct a thoro site survey to
+understand the layout potential sources
+of interference and areas with high user
+density use tools to map signal strength
+and identify dead zones and then we have
+access point placement strategically
+place APS to ensure complete coverage in
+a large open Office APS should be placed
+at regular intervals to provide
+overlapping coverage areas and prevent
+dead Sports and then we have
+interference Management in that we have
+Channel planning that use non
+overlapping channels to reduce
+interference between APS in the 2.4 GHz
+band use Channel 1 6 and 11 for the 5
+GHz band more channels are available
+allowing for better separation and then
+we have the avoid physical obstructions
+that positions APS to avoid
+interferences from bowls furniture and
+other obstructions that can beaken the
+signals and then we have another
+consideration that is Network
+performance and inside that we have
+bandwidth requirement so estimate the
+bandwidth requirement based on the
+number of users and the types of
+applications they will use and then plan
+for Peak usage times and after that we
+have AP density and show a sufficient
+number of APs to handle the expected
+number of simultaneous connections high
+density environments may require more
+APS to maintain performance and the next
+consideration is Security in security we
+have the encryption that use strong
+encryption methods like wpa3 to protect
+the wireless network from unauthorized
+access and after that we have
+authentication that Implement robust
+authentication mechanisms such as
+802.1x with radius to ensure only
+authorized users can access the network
+and then we have the guest Network that
+provide a separate guest network with
+limited access to protect the main
+network from potential security threats
+and after that the next consideration is
+scalability that focuses on future
+growth in that we have the design for
+the network to accommodate future growth
+in the number of users and devices
+ensure that the infrastructure can be
+easily expanded and the modular design
+use a modular approach where additional
+APS and network resources can be added
+without significant redesign and then we
+have the quality of service in that we
+have prioritization Implement Qs
+policies to prioritize critical
+applications like viip and video
+conferencing and ensuring they have the
+necessary bandwidth and low latency and
+then we have load balancing use load
+balancing to distribute clients evenly
+across APS preventing any single AP from
+becoming overloaded so here is the
+diagram of a wireless network layout and
+you could see the AP Channel 1 AP
+Channel 2 AP Channel 11 AP Channel 6 and
+the AP Channel 1 so the benefits of this
+design is comprehensive coverage that
+ensures that the entire office space has
+strong and reliable Wi-Fi coverage the
+next is high performance adequate AP
+placement and channel planning prevent
+interferences and congestion ensuring
+High Network performance so with that
+we'll move to the next question that is
+question number 15 and your question is
+write a python script that list all
+devices on the same network so let's
+move to the visual studio code and have
+a look on our code snippet so here first
+we will import the SC Library so this
+Line Imports all functions and classes
+from the scap Library which is a
+powerful python Library used for Network
+packet manipulation and analy
+then we are defining a function that is
+scan so this line defines a function
+with one parameter that is IP which
+prevents the IP address or range to scan
+then we're creating the ARP request so
+this line that is ARP request equal to
+SCP so this creates an ARP request
+packet the pdst parameter specifies the
+target IP address or range to scan ARP
+is used to map IP addresses to magc
+addresses then we'll create the ethernet
+frame so this line creates ethernet
+frame with the broadcast destination
+that is the MAC address and this address
+ensures that the packet is sent to all
+devices in the network segment after
+that we are combining the frames and
+sending and receiving the packets and
+then we have the initialization of
+Client List and after that we will Loop
+through responses so we'll extract IP
+and Mac addresses and for each response
+this line that is client _ dict this
+line extracts The Source IP addresses
+that is psrc and The Source Hardware Mac
+addresses from the ARP response it
+stores these values in a dictionary with
+key IP and mac and then we'll add the
+client to the list so this will append
+the dictionary containing the IP and Mac
+addresses of the discovered device to
+The Client List after that we'll return
+The Client List after processing all
+responses this will return the list of
+discovered devices each represented by a
+dictionary containing its IP and Mac
+address and then we have the function
+definition this line defines a function
+named displore result that takes one
+parameter that is result _ list which is
+a list of dictionaries containing the IP
+and Mac address of discover devices and
+after that we'll print the header and
+that will print for the output
+indicating the columns for IP addresses
+and Mac addresses separated by tabs so
+in summary this script uses SCP to
+perform an ARP scan of a specified IP
+range identifying devices on the network
+by their IP and Mac addresses it sends a
+broadcast ARP request collects responses
+and prints the list of discovered
+devices in a readable format now moving
+to the next question that is question
+number 16 and your question is create a
+simple pocket server in Python that can
+accept connections and send responses to
+clients now moving back to visual studio
+code we'll see the code snippet for that
+so first we are importing the socket
+module so this is the python buil-in
+socket module which provides access to
+the BSD socket interface and this module
+is essential for Network programming and
+allows for the creation of socket based
+communication and this this line creates
+the socket object so this specifies the
+address family for the socket and aore
+in refers to the IP V4 protocol and then
+we specify the socket type that is soore
+stream that indicates the socket will be
+a TCP socket which is connection
+oriented and reliable then we'll use a
+variable that is silvercore Socket that
+holds the socket object that will be
+used to listen for incoming connections
+and then we'll bind the socket to
+address and P
+so this tle specifies the address and
+port on which the server will listen and
+after that we will listen for incoming
+connections so this specifies the
+maximum number of cued connections that
+is five if more than five connection
+attempts are made before any are
+accepted the exess connection attempts
+may be refused and after that we'll
+print the server status so this will
+print a message to the console
+indicating that the server is up and
+running and ready to accept connections
+so in summary this script creates a
+simple TCP server that listens for
+connections on Local Host that is
+127.0.0.1 at port9 when a client
+connects the server accepts the
+connection prints the client's address
+sends a welcome message to the client
+and then closes the connection the
+server continues to run indefinitely
+handling each new connection in turn so
+with that we have come to the next
+question that is question number 17 and
+your question is write a function in
+Python to Ping a specified host and
+return true if it is a up and Falls if
+it is down so let's break down and we'll
+move to vs code and have a code snippet
+for that so first we are importing the
+OS module that provides a way to
+interact with the operating system and
+in this script the OS do system function
+will be used to execute system commands
+then we'll Define the function and name
+it as isore hostor up that takes one
+parameter that is IP which is a string
+representing the IP address of the host
+to be pinged after that we'll execute
+the Ping command with this line so this
+function executes the specified command
+that is in this case a ping command in
+the operating systems command line
+interface is applied after that we'll
+return the response and if the response
+is equal to equal to zero this checks if
+the response has exit status and this
+will return true if the response is zero
+that is the host is up and false
+otherwise the host is down so let's see
+the example IP address so we have an IP
+address here and after that will check
+the whole status and then we print the
+whole status whether it is up or down so
+in summary this script defines a
+function that checks if a given IP
+address is reachable by sending a single
+ping request to it and the function
+returns true if the host response to the
+Ping and Fs otherwise so the script then
+uses this function to check the status
+of the IP address and prints the result
+to the console so with that we will move
+to the next question that is question
+number 18 and your question is what is
+the denial of service attack and how can
+it be prevented so you can start
+answering this question with the
+definition of dose attack so a denial of
+service that is dose attack is a common
+type of cyber threat that aims to make a
+website or network service unavailable
+to its intendent users the goal is to
+overwhelm the target with a flood of
+useless traffic or request which can
+cause the system to slow down
+significantly or crash denying service
+to legitimate users so how do attack
+Works let's let imagine a small shop
+with only one cashier if a Bus full of
+people arrives and everyone gets in line
+the cashier will be overwhelmed and
+service will slow down now imagine if
+most of those people didn't intend to
+buy anything but just stood there
+legitimate customers can't get through
+the line because of the crowd that's
+similar to what happens during a dose
+attack so let's move to the types of
+dose attacks the number one is volume
+based attacks these include UDP floods
+ICM floods and other SPO packet floods
+the attacks goal is to saturate the
+bandwidth of the attacked side then we
+have protocol attacks so these include
+SN floods fragmented packet attacks and
+ping of death and are aimed at
+exploiting server resources and at
+number three we have application layered
+attacks so these include low and slow
+attacks that have get and post floods
+and more targeting the web application
+lay so understanding and preventing dose
+attacks involve both technical measures
+like upgrading hardware and using
+firewall configuration and strategic
+measures like planning for redundancy
+and using external Doos protection
+services so by preparing and protecting
+your network you can ensure that it
+remains reliable and available to
+legitimate users even under attack so
+with that we'll move to the next
+question that is question number 19 and
+your question is how do quality of
+service that is qos parameters affect
+Network traffic management so you can
+start with the definition of qos that is
+it's a technology used in networks to
+ensure that certain types of traffic get
+priority for others ensuring Optimal
+Performance for critical applications
+especially when the network is congested
+so now we see the key ways that Qs
+affects Network traffic Management
+number one is traffic prioritization so
+Qs allows Network administrators to
+priortize traffic for example voice and
+video traffic can be prioritized over
+email or file downloads this ensures
+that applications requiring realtime
+data like VIP calls or live video
+streams receive higher priority and
+maintain quality or during high traffic
+periods then comes bandwidth allocation
+so Qs can control how much bandwidth is
+allocated to different types of traffic
+critical applications can be granted a
+certain amount of bandwidth ensuring
+they always perform well then we have
+traffic shaping this involves regulating
+the network data transfer to ensure a
+smooth flow of traffic rather than burst
+of data that can lead to congestion
+traffic shaping can help manage the data
+load and improve overall Network
+performance then comes congestion
+management and aidance so so Qs
+mechanisms help manage Network
+congestion by determining which traffic
+is dropped or delayed in a congested
+Network this helps prevent overall
+network degradation and maintains the
+performance of Priority Services after
+that we have minimizing latency and
+Jitter by prioritizing time sensitive
+data packets Qs reduces latency and
+Jitter that is variance And Delay which
+is crucial for applications like
+interactive video games or
+teleconferencing so let's consider an
+example consider a corporate network
+with both data heav applications and
+real-time communication platforms are
+used by implementing qos the network
+Administration ensures that the video
+conferences calls get priy or large file
+downloads this means that during a team
+video call even if someone start
+downloading a large file the quality of
+the video call won't suffer because the
+network is configured to prioritize it
+so with that we will move to the next
+question that is question number 20 so
+your question is can you explain the
+role of a routing protocol in a converge
+Network so you can start answering that
+routing protocols play a vital role in
+any network including converg networks
+which integrate voice video data and
+even Wireless Services into a single
+Network infrastructure and these
+protocols help in directing data packets
+between Network nodes by determining the
+best paths for data transmission now
+we'll see the key roles of routing
+protocols in a Converse Network the
+number one role is path determination so
+routing protocols analyze various paths
+through the network and choose the best
+path for data packets to travel this is
+crucial in a converged network with
+different types of traffic may have
+different priority and bandwidth needs
+then we have efficiency and optimization
+in converged networks routing protocols
+optimize the use of network paths which
+is essential for maintaining high
+performance across various types of
+services example ensuring video streams
+are smooth while simultaneously handling
+highspeed data transfers then comes the
+scalability as Network demands grow
+routing protocols adapt to changes they
+can handle increased traffic and
+dynamically adjust routes as the network
+expands or as new devices and services
+are added then we have resilience and
+full tolerance routing protocols enhance
+Network resilience and for tolerance by
+quickly rerouting traffic in the event
+of a link or a node failure this is
+particularly important in convers
+networks with downtime can significantly
+impact various integrated Services then
+we have Qs service support some Advanced
+routing protocols can recognize
+different types of traffic and treat
+them according to their Qs requirements
+for instance they can prioritize voice
+over IP traffic or standard data packets
+to reduce latency and improve call
+Quality let's say an example in a
+converged Network within a large
+Enterprise routing protocols manage the
+flow of data voice and video between
+Corporate Offices data centers and
+external cloud services for example if a
+primary link used for video conferencing
+data fails the routing protocol can
+automatically redirect this traffic to a
+secondary path without interrupting the
+ongoing conference so in conclusion we
+have routing protocols these are The
+Navigators of a convers network and
+intelligently directing traffic to
+ensure efficient reliable And Timely
+delivery of various types of data their
+ability to dynamically adjust to the
+network conditions and priorties makes
+them indispensable in today's complex
+and multi-service network requirements
+so with that guys we have come to the
+end of this session if you like this
+session like share and subscribe if you
+have any doubts you can comment down in
+the comment section below till then stay
+safe and keep learning staying ahead in
+your career requires continuous learning
+and upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading universi
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

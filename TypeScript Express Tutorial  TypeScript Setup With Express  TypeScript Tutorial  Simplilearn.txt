@@ -1,0 +1,259 @@
+hey everyone welcome to another video by
+simply learn
+in this video we will discuss about
+typescript express
+let's look at what's in it for you in
+this session
+we'll first start with understanding
+what is typescript
+then we will look at what is express.js
+followed by which we will look at some
+of the features of express js and
+advantages of using typescript with
+express
+and at last we will have a hands-on demo
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell like so never miss
+an update from simply learn
+watch the video till the end so that you
+don't miss out on the demo so without
+wasting any further time let's get
+started with typescript express
+what is typescript
+typescript is an object oriented and
+strongly typed language which is a
+superset of javascript
+typescript is a variant of javascript
+with a few more features typescript
+extends javascript with extra syntax to
+provide a more robust interface with
+your editor
+typescript was designed by anders
+hegelsberg at microsoft
+typescript was created in response to
+the limitations of javascript for
+constructing large-scale applications
+within microsoft and among its external
+customers
+there was a demand for specialized
+tooling to make developing javascript
+components easier due to the complexity
+of working with complex javascript code
+typescript code is converted to
+javascript which can be executed
+anywhere javascript is supported in a
+browser on node.js and in any other
+application
+typescript is a scripting language that
+understands javascript and relies on the
+type inference to deliver advanced
+functionalities without the need for
+additional code
+what is express.js
+express.js is a node.js web application
+framework that is free and open source
+it is used to quickly and easily design
+and create web apps web applications are
+applications that can be run through a
+web browser because express.js simply
+requires javascript
+programmers and developers may create
+web applications and apis with little
+effort
+tj whole away chook created express
+which is now maintained by node.js and
+several open source contributors
+to construct our applications express
+provides a simple interface it gives us
+the resources we need to create our app
+it's adaptable because there are a lot
+more modules on npm that can be directly
+integrated into express
+let us look at some of the features of
+express.js
+server-side development is made easier
+with express it's possible to create
+single page multi-page and hybrid web
+apps with express.js
+express enables middlewares to respond
+to http request to be configured
+middleware is primarily responsible for
+the orderly structure of express js
+various functions
+express js has a comprehensive routing
+mechanism that uses urls to maintain the
+state of a web page
+it establishes a routing table that is
+used to carry out various operations
+based on the http method and url
+express.js has templating engines that
+enable developers to create dynamic
+content for web pages by creating html
+templates on the server
+express js simplifies debugging by
+offering a debugging mechanism that can
+pinpoint a particular area of the web
+application that is causing problems
+advantages of express.js
+express.js makes developing node.js web
+applications quickly and easily
+express.js is simple to set up and
+personalize
+it allows to define application routes
+using http methods and urls
+express.js includes a number of
+middleware modules that can be used to
+execute additional request and responses
+activities
+it is simple to interface with a variety
+of template engines including
+jade vash and ejs
+it allows us to specify middleware for
+handling errors
+express is used to make a rest api
+server and it's simple to provide your
+application static files and resources
+databases such as mongodb
+redis and mysql are simple to connect to
+a express.js
+now let us look at the demo on
+typescript express the prerequisites are
+we need to have an editor maybe visual
+studio code then we need to have node.js
+installed and a package manager
+installed such as npm or yarn
+so we'll jump into visual studio code
+here i have created a new folder
+named express typescript then we will go
+to the terminal
+next we'll run the command
+npx
+type script
+hyphen init will initialize typescript
+next to initialize the node.js
+application we'll run the command
+ian
+init
+once we have initialized the node.js
+application we just need to click enter
+just click enter
+and we have successfully saved the
+package.json file
+next we need to make a new directory
+we'll make a new directory source
+next we'll install the touch cli
+globally
+with the command npm install
+touch
+cli
+so after installing this we'll run the
+command
+touch
+source inside the source folder we'll
+create the file app.ts
+so here you can see we have created the
+file app.ts inside the source folder
+so after this we will install typescript
+to install typescript run the command
+yarn
+add
+type script
+node
+dev
+type script
+hyphen d
+so after this we need to install express
+to install express run the command
+yarn
+space add
+express
+next we need to add node modules and
+express modules for that run the command
+yarn
+add
+type slash node
+type slash express
+so let us now go to the app.ts file
+and
+run the code
+we will close this
+so i'll copy paste a few lines of code
+here
+wherein i have imported express
+module
+the constant app creates an express
+function
+and we have express dot json
+and we have returning a message hello
+world
+so we'll save this and we are running it
+on the local host with port number 3000
+so we'll save this
+and
+run it
+to run it we'll just
+run the command e on
+def
+so application is listening at the
+local host 3000
+so we'll copy this
+and open in the browser
+here we go it's showing the message
+hello world
+similarly we have routing
+like this example with app.get and
+app.host the app object provides a
+collection of functions that attach
+callbacks to http request made to define
+destinations
+and other http methods such as post put
+patch and delete can also have callbacks
+attached to them
+the router object is another approach to
+setup routing
+you can call the get put and patch and
+delete methods on a router object just
+like you do on a app object
+and similarly we have
+request and response
+so the request object holds information
+about http request including headers
+query strings and parameters
+when when an http request is received
+the response object represents the http
+response that the application provides
+similarly for response the send method
+is the most significant one it sends the
+http response to the client so that it
+can be received
+the function accepts a variety of data
+kinds including strings objects arrays
+and buffers
+the send method finishes the response
+process with data but you can
+alternatively use the end function to
+end it without any data
+the request and response objects are
+accessible to middleware function
+it can join the request response cycle
+at any point
+a third argument that middleware
+receives is the next function
+the get callback which processes the
+http get request that we wrote in this
+example
+is an example of middleware
+it's highly unique middleware that only
+works in one situation they can also
+carry out more general duties
+so with that we have reached the end of
+this video like and share it if you
+found it interesting thank you for being
+here keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

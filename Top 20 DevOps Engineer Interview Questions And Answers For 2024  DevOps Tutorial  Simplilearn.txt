@@ -1,0 +1,443 @@
+Welcome to our video on devops engineer
+interview questions devops has become an
+essential skill set for today's
+technology professionals with many
+organizations seeking out talented
+individuals who can help them build and
+maintain their infrastructure if you are
+looking to become a devops engineer this
+video is for you in this video we'll be
+covering some of the most common
+interview questions for devops engineer
+as well as some tips on how to answer
+them successfully we will cover
+infrastructure as code and cic CD
+pipelines along with many other
+important topics you'll often be asked
+about your experience with Isa tools
+like terraform and ansible as well as
+your knowledge of cloud providers like
+AWS Google cloud or Microsoft Azure we
+will also discuss tools like Jenkins
+Travis Ci or Circle C as well as
+concepts of containerization and
+kubernetes there's a lot to learn and a
+lot to discuss in our devops engineer
+interview questions video so without
+without further Ado let's get started
+also if you are Keen to learn more about
+devops and its Concepts and want to
+attain a job in a renowned company then
+simply learns Caltech postgraduate
+program in devops could be the right
+choice for you this comprehensive
+program will equip you with the
+knowledge and skills needed to master
+the devops principles tools and
+practices so dive deep into
+containerization orchestration and
+automation framework like Docker
+kubernetes and Jenkins get hands-on
+experience with Cloud platform and learn
+how to Leverage The Power of
+infrastructure as code so don't miss out
+on this chance to transform your career
+and become a valuable asset to any
+organization click the link in the
+description to discover more about this
+devops course now let's jump into the
+video but before moving ahead let's
+first understand what is devops now
+devops is a set of activities and
+approaches aimed at enhancing the
+effectiveness and Excellence of software
+development delivery and deployment it
+brings together the Realms of software
+development depth and information
+technology operations Ops the main goal
+of devops is to encourage seamless
+collaboration between development and
+operations team through the entire
+software development life cycle it
+achieves this through the utilization of
+automation continuous integration
+delivery and deployment thereby
+accelerating the process and minimizing
+errors in software development now let's
+explore who is a devops engineer now
+devops engineer is an expert in
+developing deploying and maintaining
+software systems using devops practices
+they work closely with it operations
+developers and stakeholders to ensure
+efficient software delivery the
+responsibilities include implementing
+automation continuous integration and
+continuous delivery or deployment
+practices as well as resolving issues
+throughout the development process
+devops Engineers are proficient in
+various tools and Technologies such as
+source code Management Systems build and
+deployment tools virtualization and
+container Technologies but how exactly
+to become a devops engineer now
+depending on the business and the
+individual function different criteria
+for becoming a devops engineer may exist
+however some specific fundamental skills
+and certifications are frequently needed
+or recommended first is an excellent
+technical background now devops
+Engineers should be well versed in it
+operations system administration and
+soft software development second is
+experience with devops tools and
+methodologies now devops Engineers
+should have experience with various
+devops Technologies and processes
+including Version Control Systems build
+and deployment automation
+containerization cloud computing and
+monitoring and logging tools third is
+scripting and automation skills now
+devops Engineers should have strong
+scripting skills and be proficient in
+using tools such as Buzz python or
+Powershell to automate tasks and
+processes for this cloud computing
+experience now devops Engineers should
+have experience working with Cloud
+platforms such as Amazon web services
+Microsoft Azure or Google Cloud platform
+and in the end certification some
+organizations may require devops
+Engineers to hold relevant
+certifications such as certified devops
+engineer CDE or certified kubernetes
+administrator CK a or AWS certified
+devops engineer professional well now
+let us begin with some really important
+devops interview questions and answers
+as we have already covered the road map
+of how to become a devops engineer so
+the first question that we are coming up
+with is how is devops different from
+agile methodology well devops is a
+culture that allows the development and
+operation team to work together this
+results in continuous development
+testing integration deployment and
+monitoring of software throughout the
+life cycle whereas agile is a software
+development methodology that focuses on
+iterative incremental small and Rapid
+Release of software along with customer
+feedback basically IT addresses gaps and
+conflicts between the customer and
+developers devops addresses gaps and
+conflicts between the developers and it
+operations now the second question is
+which are some of the most popular
+devops tools well some of the most
+popular devops tools include selenium
+puppet Chef get Jenkins anible and
+Docker which are considered really
+important in today's world if you want
+to become a successful devops engineer
+the third question is what is the
+difference between continuous delivery
+and continuous deployment now we will
+address this one by one so continuous
+delivery ensures that you can safely
+deploy onto production but continuous
+deployment ensures that every change
+that passes through automation testing
+is deployed to production automatically
+instead of
+manually continuous delivery ensures
+business applications are delivered as
+they were expected now continuous
+deployment makes sure that software
+development and other processes like
+release are smooth and
+faster continuously we also make changes
+to a production life environment through
+rigorous automated testing but when it
+comes to continuous deployment there is
+no explicit approval for a developer to
+require a developed culture question
+four is what is the role of
+configuration Management in devops now
+configuration management enables
+management of and changes to multiple
+systems also it standardizes resource
+configuration which in turn manage its
+infrastructure also it helps with the
+administration and management of
+multiple servers and maintains the
+Integrity of the entire
+infrastructure next is what is the role
+of AWS in devops well AWS has the
+following role in devops first is
+flexible services this provides ready to
+use flexible services without the need
+to install or set up the software second
+is build for scale you can manage a
+single instance or scale to thousands
+using AWS Services third is automation
+AWS lets you automate tasks and
+processes giving you more time to
+innovate than come secure using AWS
+identity and access management you can
+set user permissions and policies in
+your organization and then comes large
+partner ecosystem AWS supports a large
+ecosystem of partners that integrate
+with an extended AWS
+Services now if we talk about the sixth
+question that is name three important
+devops kpis now the three very important
+kpis are as follows meantime to fill
+failure recovery this is the average
+time taken to recover from a failure
+deployment frequency the frequency in
+which the deployment occurs percentage
+of fail deployments the number of times
+the deployment
+fails now the seventh question is what
+are the benefits of using Version
+Control here are some of the benefits of
+using Version Control well all team
+members are free to work on any file at
+any time with the Virgin control system
+later on VCS will allow the team to
+integrate all of the modifications into
+a single version the VCS asked to
+provide a summary of what was changed
+every time we save a new version of the
+project we also get to examine exactly
+what was modified in the content of the
+file as a result we will be able to see
+who made what changes to the projects
+now inside the VCS all the previous
+variants and versions are properly
+stored we will be able to request any
+version at any moment and we will be
+able to retrieve a snapshot of the
+entire project at our fingertips a VCS
+that is distributed such as get lets all
+the team members retrieve a complete
+history of the project this allows
+developers or other stakeholders to use
+the local git repositories of any of the
+teammates even if the main server goes
+down at any point in time so the next
+question is what is the blue green
+deployment pattern now this is a method
+of continuous deployment that is
+commonly used to reduce downtime this is
+where traffic is transformed from one
+instance to another in order to include
+a fresh version of the code we must
+replace the code with the new code
+version the new version exists in a
+green environment and the old version
+exists in a blue environment now after
+making changes to the previous version
+we need a new instance from the old one
+to execute a newer version of the
+instance so this was the right answer
+next is what is continuous testing
+continuous testing constitutes running
+of automated tests as part of the
+software delivery pipeline to provide
+instant feedback on the business risk
+present in the most recent release in
+order to prevent problems in Step
+switching in software delivery life
+cycle and to allow development teams to
+receive immediate feedback every build
+is continually tested in this manner now
+this results in a significant increase
+in speed in a developer's productivity
+as it eliminates the requirement of re
+running all the tests after each update
+and project rebuilding now let's move to
+the next question that is what is
+automation testing now test automation
+or manual test automation is the process
+of automating a manual procedure in
+order to test an application or system
+automation testing entails the use of
+independent testing tools that allow you
+to develop test scripts that can be run
+repeatedly without the need for human
+interaction the next question is how to
+automate testing in devops life cycle
+now developers are obliged to commit all
+the source code changes to a shared
+devops repository every time A change is
+made in the code Jenkins like continuous
+integration tools will grab it from this
+common repository and deploy it for
+continuous testing which is done by
+tools like selenium so why is continuous
+testing important for devops any
+modification to the code may be tested
+immediately with continuous testing
+this prevents concerns like quality
+issues and release delays that might
+occur whenever big Bank testing is
+delayed until the end of the
+cycle in this way continuous testing
+allows for high quality and more
+frequent releases so the next question
+is how do you push a file from your
+local system to the GitHub repository
+using git now first connect the local
+repository to your remote repository now
+get remote add origin and then you can
+see the code and the Second Step that
+you need to do is push your file to the
+remote repository next question is what
+is the process for reverting a commit
+that has already been pushed and made
+public now there are two ways that you
+can revert a commit remove or fix the
+bad file in a new commit and push it to
+the remote repository then commit it to
+the remote repository using this command
+and second is create a new commit that
+undoes all the changes that were made in
+the bad commit you can use this command
+for it next is explain the difference
+between get fetch and get pull now get
+fetch only downloads new data from a
+report repository whereas git pull
+updates current head Branch with the
+latest changes from the remote server
+the second difference is git fetch does
+not integrate any new data into working
+files whereas git pull downloads new
+data and integrates it with the current
+working
+files get fetch used users can run a git
+fetch at any time to update the remote
+tracking branches whereas git Poole
+tries to merge remote changes with your
+local ones now coming to the next
+question explain the concept of
+branching in git suppose you are working
+on an application and you want to add a
+new feature to the app you can create a
+new branch and build a new feature on
+that Branch by default you always work
+on the master branch and the circles on
+the branch represent various cont
+comments made on the branch so after
+you're done with all the changes you can
+merge it with the master Branch next
+question is explain the Master Slave
+architecture of Jenkins now Jenkins
+Master pulls the code from the remote
+GitHub repository every time there is a
+code commit it distributes the workload
+to all the Jenkins layers and when
+requested from the Jenkins Master the
+slaves carry out build test and produce
+test reports the next question is which
+file is used to Define dependency in
+Maven bill. XML pom.xml
+dependency XML or version. XML the
+correct answer is perm. XML next
+question that we are going to cover is
+explain the two types of pipelines in
+Jenkins along with their syntax now
+Jenkins provides two ways of developing
+a pipeline code scripted and declarative
+now scripted pipeline is based on group
+groovy script as their domain specific
+language one or more node blocks do the
+core work throughout the entire pipeline
+now the syntax is execute the pipeline
+or any of its stages on any available
+agent Define the build stage perform
+steps related to building stage Define
+the test stage perform steps related to
+this test stage Define the deploy stage
+and perform steps related to the deploy
+stage now declarative pipeline provides
+a simple and friendly syntax to define a
+pipeline here the pipeline block defines
+the work done throughout the pipeline so
+the syntax that follows is first execute
+the pipeline or any of its stage on any
+available agent Define the build stage
+perform steps related to building stage
+then Define the test stage perform steps
+related to the test stage Define the
+deploy stage and perform steps related
+to the deploy stage again this was the
+code for declarative pipeline and the
+last question for this video is explain
+how you can set up a Jenkins job to
+create a Jenkins job we go to the top
+page of Jenkins choose the new job
+option and then select build a freestyle
+software project now the elements of
+this freestyle job are optional triggers
+for controlling when Jenkins builds
+optional steps for Gathering data from
+the build like collecting Javad do
+testing results and or archiving
+artifacts a build script that actually
+does the work or the optional source
+code management system like subversion
+or
+CBS well there you go these are some of
+the most common devops interview
+questions that you might come across
+while attending an interview as a devops
+engineer in-depth knowledge of processes
+tools and relevant Technologies is
+essential and these devops interview
+questions and answers will help you get
+some knowledge about some of these
+aspects in addition you must also have a
+Hol istic understanding of the products
+services and systems in place here's an
+inspiring success story from one of our
+satisfied Learners who has propelled
+their career with devops this can help
+you boost your confidence and make a
+firm decision in this field do watch the
+video well that's all for this video If
+you like this video please do give it a
+thumbs up and share it with your friends
+also if you have any questions please
+feel free to ask away in the comment
+section our team will reach out to you
+as soon as possible thank you and keep
+learning staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

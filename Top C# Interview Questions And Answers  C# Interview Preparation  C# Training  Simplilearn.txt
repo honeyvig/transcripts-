@@ -1,0 +1,987 @@
+if you wanted to learn how to answer c
+sharp interview questions then you have
+come to the right place hey everyone
+welcome to our simply learns youtube
+channel today we'll talk about one of
+the exciting topics in c sharp that is c
+sharp interview questions and answers
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you're a tech geek in
+a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn
+this tutorial video has 50 interview
+questions and all these questions are
+divided into three levels beginner
+intermediate and advanced levels so
+without further ado let's get started
+with the first topic
+now before getting into any interview
+questions i would like to reveal the
+first type of questions that are
+recording interview questions it is
+obvious that in any technical interview
+you will be asked to code some or the
+other program so we have bought the most
+frequently asked top five coding based
+questions in c sharp which are write a
+program in c sharp to reverse a string
+write a program in c sharp to find if a
+given string is a palindrome or not
+write a c sharp program to find the
+substring from a given string write a c
+sharp program to find if a positive
+integer is prime or not and lastly write
+a singleton design pattern and how to
+implement them in c sharp
+so these are the most frequently asked
+coding based interview questions based
+on c sharp and if you want we would like
+to share these quotes with you please
+feel free to share us your email ids in
+the comments section below so that we
+can share you all these codes
+now let's start with the beginner level
+interview questions
+so our first question is how the c
+programming language differs from
+c-sharp programming language the first
+difference is that the c programming
+language allows for procedural
+programming whereas c-sharp programming
+language provides object-oriented
+programming the second difference is
+that c programming language supports
+pointers whereas in c sharp pointers are
+only used in unsafe mode the third
+difference between c and c sharp is that
+garbage collection is not supported in c
+whereas in c sharp garbage collection is
+handled by the common language runtime
+or clr
+the next difference between the both is
+the c programming language is cross
+platform in contrast the dot net
+framework is required to run on the
+c-sharp language only fifth difference
+between c and c sharp is we can achieve
+a low level of abstraction using c
+programming language whereas in c sharp
+we can achieve a high level abstraction
+the last difference between the both is
+the c programming language is primarily
+used in commercial industries and
+engineering whereas c sharp on the other
+hand is used for software development
+and other network related goals
+the second question is what is an object
+and a class in c c-sharp
+the answer for this question is a class
+is a collection of properties and
+methods used to represent a real-time
+entity it is data structure that groups
+all the instances into a single unit
+whereas an object of a class is defined
+as an instance technically it is simply
+a block of memory that can be stored as
+variables arrays or collections for
+example the car is working as a class on
+my screen and the objects are ford and
+rd which are the car manufacturers
+next is what are the fundamentals of
+object-oriented programming
+the answer for this question is the
+object-oriented programming language or
+oops in c-sharp is divided into four
+concepts that is encapsulation
+abstraction
+inheritance and polymorphism
+let's take a closer look at each of the
+four object oriented programming
+concepts first encapsulation
+encapsulation is defined as when an
+object's internal representation is
+hidden from the view outside its
+definition it is said to be encapsulated
+only the necessary information is
+accessible while the rest of the data
+implementation is hidden
+next abstraction abstraction is the
+process of identifying and eliminating
+irrelevant details from the object's
+critical behavior and data
+following the oops concept inheritance
+is the ability to create new classes
+from existing ones it is accomplished by
+gaining access to altering and extending
+the behavior of objects in the parent
+class
+lastly we have polymorphism polymorphism
+is defined as a name that means one name
+many forms it is accomplished using
+several methods with the same name but
+different implementations
+now we have the next question that is
+what is the common language runtime or
+clr so the answer for this question is
+the common language runtime manages the
+execution of dotnet programs clr the
+just-in-time compiler translates
+compiled code into machine instructions
+this is the program that the computer
+runs clr provides memory management
+exception handling type safety and other
+services now let's look at the next
+question
+what is managed and unmanaged code
+so manage code is executed by clr common
+language runtime on which all
+application code is based the internet
+platform because of this is regarded as
+managed internally the dotnet framework
+uses the garbage collector to clear
+unused memory whereas unmanaged code is
+any code executed by an application
+runtime in a framework other than dotnet
+the application runtime will handle
+memory security and other performance
+operations
+next we have
+what exactly is an interface
+in c sharp an interface is a class
+blueprint it is like an abstract class
+and that all the methods declared within
+the interface are abstract
+it cannot have a method in body and
+cannot be instantiated instead it can be
+used to achieve multiple inheritances
+that can't reach
+the following example demonstrates an
+odd even class has access to both the
+even and odd classes
+now we have the next question
+what are the different types of classes
+in c sharp so the answer for this
+question is there are four different
+types of classes in c sharp the first is
+partial class which states that its
+members can be divided or shared across
+multiple files the keyword partial
+denotes it
+the second class is abstract an abstract
+class is one was object cannot be
+instantiated the only way to get the
+class is to inherit it must include at
+least one method the keyword abstract
+denotes the abstract classes the next
+class is sealed class a sealed class
+cannot be inherited to access a sealed
+class members we must create a classes
+object then the keyword seal denotes it
+the last and the fourth class in c sharp
+is static this class does not allow
+inheritance the classes members are also
+static the keyword static denotes this
+type of class the keyword instructs the
+compiler to look for any static class
+instances created by accident
+now the ninth question
+what is the difference between equality
+operator and equals method in c sharp
+the difference between the equality
+operator which is double equals to and
+equals method in c sharp is the the
+double equals operator and the equals
+method compare two values or reference
+type data items
+this answer explains the fundamental
+distinction between two the comparison
+operator is the equality operator and
+the equals method compares the contents
+of the string the double equals to
+operator compares the identity of
+reference whereas the equals method
+compares the only reference
+now we have the tenth question
+explain code compilation in c sharp
+the answer for this question is in c
+sharp code compilation consists of three
+steps the c-sharp compiler compiles the
+source code into managed code putting
+the newly created code together into
+assemblies
+then the common language runtime is
+being loaded and clr is carrying out the
+assembly
+now we have the 11th question what are
+the differences between a class and
+struct
+the answer for this question is
+the first difference is class can
+inherit whereas struct cannot the second
+difference is a class is passed by
+reference type whereas struct is passed
+by value type
+the next difference is class members are
+private by default whereas in struct
+members are public by default
+the fourth difference is class is
+appropriate for large complex operations
+and objects though struct is appropriate
+for small isolated models the last
+difference between the boat is we can
+use a garbage collector to manage memory
+in class whereas a struct cannot use
+garbage collector and thus cannot manage
+memory
+the next question is what is the
+difference between virtual method and
+abstract method
+virtual method is default implementation
+of virtual process is always required it
+can however be overridden in the derived
+class though this is not required for
+example the override keyword can be used
+to override it
+though an abstract method has no
+implementation it belongs to the
+abstract class therefore derived class
+must implement the abstract form
+although an override keyword is not
+required in this case it can be used
+now the 13th question explain namespaces
+in c sharp
+namespaces are employed in organization
+of large code projects for example in c
+sharp the most common namespace is
+system we can create our namespaces and
+use one namespace with another known as
+nested namespaces the keyword namespace
+is used to identify them
+following the c-sharp interview
+questions and answers the next question
+is what is the using statement the
+answer for this question is the using
+keyword indicates the program uses the
+specified namespace as an example
+consider system the system is a
+namespace in this context
+the class console is defined in the
+system module so in our program we can
+use a console write line and read line
+now the next question is explain
+abstraction
+one of the object oriented concepts is
+abstraction it is used to display only
+the classes essential features and hide
+unnecessary information
+let us use a car for an example
+a car driver should be familiar with the
+vehicle's details such as color name
+mirror steering gear brake and so on he
+doesn't need to know about the internal
+combustion engine and an exhaust system
+as a result abstraction aids in knowing
+what is required and concealing internal
+details from the outside internal
+information can be hidden by declaring
+such as parameters as private and using
+the private keyword
+the following question is explain
+polymorphism polymorphism in programming
+means the same method but different
+implementations it is classified into
+two types compile time polymorphism and
+runtime polymorphism the compile-time
+polymorphism results the call in
+compile-time polymorphism is also
+referred to as static binding early
+binding and overloading
+the compiler does not resolve the
+runtime polymorphism call and is also
+referred to as dynamic binding late
+binding or overriding
+for example a man acts as a father a
+husband and an employee all
+simultaneously the next question
+how is exception handling implemented in
+c sharp in c sharp exception handling is
+accomplished using four keywords try
+catch finally and through
+in try try contains a block of code that
+will be checked for exceptions in catch
+a program that catches an exception with
+the help of the exception handler and
+finally it is a block of code written to
+run regardless of whether an exception
+is scored or not and finally through
+throw is when a problem occurs it throws
+an exception
+followed by exception handling we have
+another question
+that is what are the c sharp input and
+output classes what are commonly used
+for input and output classes
+the system.io namespace in c sharp
+contains classes used to perform various
+operations on files such as creating
+deleting opening closing etc
+the following are some of the examples
+of commonly used input output classes
+which are file stream writer stream
+reader string writer string reader part
+etc
+file aids to with the manipulation of a
+file
+stream writer is the class that is used
+to write characters to a string
+the stream reader is used to read
+characters from stream the string writer
+is used to write a string buffer the
+string reader is used to read the string
+buffer the path is used to perform
+operations on path information followed
+by that the next question is what is
+stream reader or stream writer class the
+answer for this question is
+the name space system dot input output
+contains the classes stream radar stream
+writer which are used to read and write
+character 90 database data
+members of stream reader are close read
+and read line members of stream writer
+are close right and right line
+there is an example on my screen where
+you have code block to read and
+a code block to write using stream
+reader and stream writer now the next
+question what is a destructor in
+seashore destructor are used to clear
+memory and free resources in c sharp
+however this is handled by a garbage
+collector on its own internally system
+dot gc dot collect is used to clean up
+but it may be necessary to implement
+destructors in some classes manually
+the following is an example of vehicle
+acting as a destructor using the tide
+symbol following the 20th question we
+have the 21st question which says what
+is an abstract class
+so the answer for this question is an
+abstract class is denoted by the
+abstract keyword and only be used as a
+base class this class should always be
+inherited it is impossible to create an
+instance of the class itself if we don't
+want any program to create an object of
+a class we can make it as categories
+abstract there are no implementations of
+any methods in the abstract class they
+must be implemented in the child class
+here's an example that shows an abstract
+as abs then the child as child class
+that inherits the abs abstract class and
+finally an object as c is one of the
+accesses
+the addition function via a new process
+called submission
+and abstract classes methods are all
+implicitly virtual as a result the
+virtual keyword should not be used with
+any abstract classes methods they must
+however be implemented in the child
+class the next question is what is the
+difference between boxing and unboxing
+codes
+boxing is converting a value type to a
+reference type at the same time unboxing
+is the explicit conversion of the same
+reference type back to the value type
+the following is an example val 1 is 50
+which is going through boxing process
+and val 1 is converted into object
+boxing val which is then converted back
+into an unboxing variable after the
+boxing process
+the following question is what is the
+difference between continue and break
+statement the break statement terminates
+the loop it causes the program control
+to exit the loop in contrast the
+continue statement instructs the
+program's power to go only to the
+current iteration however it does not
+affect the loop
+following is an example for break
+statement in which the break keyword is
+used to terminate the loop going from 0
+to 10 immediately the continue block of
+code is used to skip the current
+iteration of 2. the final question for
+the beginner level is what is difference
+between final finally and finalized
+blocks
+final is a keyword that indicates that a
+variable method or a class is
+unchangeable to put it simply finally
+like try and catch blocks it is used for
+exception handling the final block is
+always executed regardless of whether an
+exception is raised
+this block is mainly used to close
+database connections input output
+resources etc lastly the finalized
+method in java.lang protected method
+object type it is passed down to every
+java class you create therefore the
+garbage collector thread calls this
+method before removing an object from
+memory now we have reached the
+intermediate level
+the 25th question on our list is what
+exactly is an array so the answer for
+this question is an array is a data
+structure that stores multiple variables
+of the same data type it is a set of
+variables stored in a single memory
+location here's an example of marks
+array with 5 integer values 10 20 30 40
+and 50. a single dimensional array is a
+linear array that stores variables in a
+single row the preceding example is a
+one-dimensional array arrays can have
+multiple dimensions rectangular arrays
+are another name for multi-dimensional
+arrays we have a multi-dimensional array
+as numbers with three rows and three
+columns with one two and three in the
+first row three four and five in the
+second row and four five and six in the
+third row
+now the next question is what is a jack
+arry
+a jagged array is an array with array
+elements it is also known as an array of
+arrays and can have a single dimension
+or multiple dimensions here's an example
+of jack arry a jagged array with four
+rows
+in the first row we have two values one
+and two the next row contains values
+three four and five and six the third
+row includes three values seven eight
+and nine and the fourth row contains
+five values that is three four five six
+and seven
+now the next question name some
+properties of arrays
+an array has following properties that
+is length this function returns the
+total number of elements in an irene
+size
+this indicates whether the array's
+length is fixed or not
+read-only this indicates whether the
+array is read-only or not
+now we have 28th question
+what is an array class
+arrays can be created manipulated
+searched for and sorted using array
+class however the array class does not
+belong to the system however the
+collection's namespace is still
+considered because it implements the
+list interface therefore the ira class
+serves as the foundation for area
+supporting language implementations
+we have an array class called colors and
+we have four colors red blue green and
+yellow we print those colors in this
+array class example
+now the next question is what exactly is
+a string what are the characters of
+string class a string is the grouped
+character objects string variables that
+can be declared in c sharp a string
+class in c sharp represents a string in
+the following example we have a string
+called name that is inserted by c sharp
+interview questions and answers the
+string class has the following
+properties
+character returns the current strings
+character object the length function
+returns the number of objects in this
+current string
+another 30th question
+what is an escape sequence named some
+strings escape sequences in c sharp in c
+sharp a backslash indicates the escape
+sequence the backslash indicates that
+the character should be interpreted
+literally or unique
+an escape sequence is treated as if
+there were a single character first we
+have backslash n which means newline
+character next we have backslash b which
+is used for backspace then we have two
+types of backslash which represents
+backslash itself after that we have a
+single backslash code and lastly we have
+backslash double quote now the 31st
+question
+what are regular expressions search a
+string using regular expressions
+a regular expression is a template that
+can match a set of input operators
+constructs and character laterals can
+all be used in the pattern for example
+regex is used for string passing and
+character string replacement an example
+occurs 0 or more times before the
+preceding character as a result
+a star b predicts is equivalent to b
+comma a b comma a a b comma a aap and so
+on
+following is the code language program
+in which we have strings as c c plus
+plus and c sharp then we have c l as an
+object and try to find the string c
+sharp as we can see c sharp is present
+in the following string so we will print
+as a match as found now the next
+question what are the fundamental string
+operations explain the following are
+some examples of basic string operations
+the first operation is concatenate a
+system can concatenate two strings
+string concatenate or use the plus
+operator the next string operation is we
+have modify replace x comma y is the
+function that replaces one string with
+another the trim function is used to cut
+a string at the end or beginning third
+string operation is compare operation
+system dot string comparison is used to
+compare two strings either case
+sensitively or not at all it requires
+two parameters the original string and
+the string to be compared with the last
+operation is a search operation used to
+find specific string using the start
+with and ends with methods
+following question is what exactly is
+passing how do you pass a date and time
+string the answer with this question is
+parsing is a process of converting a
+string into another data type for
+example consider the string value 100
+which we are attempting to convert into
+a number variable of integer data type
+using pass function
+as a result the pass method
+converts string 100 into its base type
+that is integer
+following the same method to convert
+date time string string date time is
+equals to date july 24 2011.
+datetime past while is equals to date
+time and past method
+date time
+we will now move into the advanced level
+interview questions
+now the first one in advanced level
+interview question is what is a delegate
+explain
+a delicate is a variable that holds the
+reference to a method hence it is a
+function pointer or reference type all
+delegates are derived from
+system.delegate namespace both delegate
+and the technique that it refers can
+have the same signature
+declaring a delegate public delegate
+void some numbers and number following a
+delegate's declaration the
+representative must create the object
+using new keyword
+some numbers sn1 is equals to some new
+numbers of number the delegate acts as
+an encapsulation for the reference
+method which is called internally when a
+delegate is called now the next question
+how to use delegates with events
+delegated authority is used to initiate
+and manage events a delegate must always
+particular at first following by the
+events
+this diagram gives three functions to
+delete and the delegate to generate an
+event that is an event generator
+the next question is what are events
+events are user actions that cause the
+application to receive notifications to
+which it must respond user actions can
+include mouse movements keypress and so
+on
+a class that raises an event is known as
+the publisher and the class that
+responds or receives the event is known
+as a subscriber
+if an event does not have one subscriber
+it is never raised events are declared
+using delegates
+in this example we have delegates as
+print and os and event names as my event
+1.
+now the next question is what are the
+different types of delegates and there
+are three types of delegates the first
+one is single delegate a single delegate
+is a delegate that can only call one
+method
+the second type of delegate is the
+multicast delegate a delegate that can
+call multiple methods is known as a
+multicast delegate the plus and minus
+operators are used to subscribe and
+unsubscribe the third type of delegate
+is the generic delegate it does not
+require a definition of an instance and
+it is classified into three types that
+is action function and
+predicate
+so the action is in the preceding
+example of delegates the events we can
+use the action keyword to replace the
+definitions of delegate and even
+function a function delegate defines a
+method that can take arguments and
+results and lastly we have predicate a
+method that can be called with arguments
+and always returns a bool
+now followed by that we have the 38th
+question
+what do multicast delegates mean
+the answer for this question is in c
+sharp multicast delicate is a delegate
+that holds the references to a multiple
+functions when we invoke the multicast
+delegate we gather all the tasks that
+the delegate prefers for example if you
+want to use a delegate to call multiple
+methods all the method signatures must
+be seen let's see a code example to
+multicast delegate
+this program uses a namespace delegate
+and then declares delegate as a
+multi-delegate with formal arguments a
+and b
+we define the addition and subtraction
+functions in the class program which we
+declare and calculate as class b and a
+minus b respectively then in the main
+function we create a class program
+object p1 then we declare md1 and md2
+objects for addition and subtraction
+operations
+then we assign md1 to md1 and md2 giving
+a value of 100 to a and a value of 200
+to b
+now let's try to execute the program and
+see the output
+now the next question is what are
+synchronous and asynchronous operations
+so the answer for this question is
+synchronization is a technique for
+writing thread safe code in which only
+one thread can access a resource at any
+given time before continuing with the
+program flow the asynchronous call waits
+for the method to complete in
+asynchronous mode the method calls
+return immediately so that the program
+can perform other operations while the
+called method completes its work the
+async and await keywords are used to
+achieve asynchronous programming in c
+sharp
+our next question is what exactly is
+reflection in c sharp reflection is the
+ability of a code to access the
+assemblies metadata during runtime a
+program reflects itself and uses
+metadata to inform or change its
+behavior
+system of namespace reflection includes
+methods and classes for managing the
+information of all loaded types and
+techniques it is primarily used in
+windows applications such as viewing the
+properties of a button in a windows form
+the class reflection members inform
+object is used to discover the
+attributes associated with the class
+following that we have reached the next
+question that is the 41st question what
+is the generic class
+generics is also known as gender classes
+create courses or objects with no
+specific data type for example the data
+type can be assigned in runtime that is
+the program uses it
+let's see a simple code for generic
+class
+in this program we have name space as
+generic class public class test class
+and g to represent the generic class
+after that we define an array namely
+object 1 of generic type with length 5
+then we have int variable as count 1
+then we have a function as some adding
+items mechanism into a generic type next
+we have to keep adding items to an array
+until the count plus one is less than
+six then we have to keep increasing the
+count value by one following that we
+have an index variable for each
+statement iteration in which we have to
+get and set properties the get property
+is used to return the index value and
+the set property is used to set a value
+with the same name as the index value
+finally we instantiate a generic with an
+integer with the object name int obj in
+the main method then we add integer
+values to the array and finally we
+multiply all the values in the array
+now let's try to execute this code and
+see the output
+now the program got successfully
+executed and you can see the output
+right on my screen
+now the next question explain get and
+set access properties
+get and set are referred to accesses
+properties make to use these the
+property implements a mechanism for
+reading and writing the value of a
+private field these accesses are used to
+gain access to a private field the get
+property method is used to retrieve the
+value of a property to change the value
+use set property accessor and let's see
+an example to understand this in a much
+better way
+we have a class name as a person name in
+this program followed by two variants
+firstly we have a private variable as n
+for the person's name then we have
+public variable
+as name one we have get property that
+returns variable n and finally we have a
+set property that assigns variable m to
+the variable value next the value
+keyword denotes the value that we
+transfer to the property n next in the
+main function we have an object name as
+my name where we give the name as abc
+and finally we display the person's name
+as abc
+now the output is on my screen right
+over here
+now let's get back to the ppt
+the next question is what exactly is a
+thread
+and what is multi-threading a thread is
+a collection of instructions that can be
+executed to allow our program to perform
+concurrent processing confident
+processing will enable us to perform
+multiple operations at the same time
+c-sharp has a thread by default however
+the other threads can be created to run
+code in parallel with the original code
+this is accomplished by having different
+threads handle different process
+referred to as multi-threading to handle
+multi-threaded operations several thread
+methods are used start sleep about
+suspend resume and join are all options
+the next question is name some
+properties of thread class
+some of the properties of thread class
+are first we have is alive property
+it has work then when a thread is active
+this value is actual
+the following property is name which
+returns the thread's name also can set
+name for the thread following that we
+have the next property as priority which
+returns the prioritized value of this
+task set by the operating system the
+background is the following property of
+thread class it gets or sets the value
+that indicates whether a thread should
+be a background process or a foreground
+process last property is we have thread
+state which describes the thread state
+on the next question we have what are
+the different states of a thread so the
+different states of thread are
+unstarted state which means a thread has
+been created next we have running state
+which means that the threat begins
+execution weight sleep joint is the
+third stage
+in which a threat called sleep another
+thread calls weight and another thread
+calls join next we have suspense state
+the thread has been halted about it is
+the next state which the thread has died
+but not being changed to the state
+stopped
+last is we have stop state which means
+that this thread has come to a halt
+followed by this we have the next
+question which is what is a deadlock
+a deadlock occurs when a process cannot
+complete its execution because two or
+more methods are awaiting the completion
+of another
+this is common in multi-threading
+followed by that we have another
+question explain lock monitors and mutex
+object in multi-threading
+a lock keyword ensures that only one
+thread can enter a specific code section
+at a time the preceding example lock ob
+jx indicates that a lock placed on obx
+until this process releases it at which
+no point no other thread will be able to
+access obj mutex is like lock but it can
+work across multiple processes
+simultaneously for example weight one
+method is used to lock the lock and
+release mutex is used to unlock it on
+the other hand mutex is slower than lock
+because it takes time to acquire and
+release it monitor enter and observe
+internally exits implements a lock a
+lock is monitor shortcut internally and
+lock objects is called you can see an
+example right on my screen
+the next question on the list is what is
+race condition
+a race condition occurs when two threads
+access the same resource and attempt to
+change it simultaneously it is
+impossible to predict which thread will
+be the first to access the resource if
+we have two threads t1 and t2 both
+attempt to access a shared resource
+called x if both threads try to access
+or write a value to x the last value
+returned to x is saved
+49th question in the list is what is
+serialization and dc realization the
+answer for this question is converting
+code to binary format is known as
+serialization once converted to budget
+is simple to store and write to a disk
+or other storage devices serialization
+is most valuable when we don't want to
+lose the original form of the code and
+want to retrieve it at any time in the
+future
+dc realization refers to recovering
+c-sharp code from binary form now the
+50th question
+what are the different types of
+serialization now there are various
+types of serialization which are as
+follows
+the first type of serialization is the
+xml serialization the second one is soap
+and the last and the third one is the
+binary serialization
+another 51st question what is an xsd
+file
+so an xsd file is an abbreviation for
+xml schema definition it defines the
+structure of an xml file it determines
+which element should be represented in
+the form of xml and in what order and
+which property should be current
+during serialization of c sharp code and
+x sd.exe converts the classes into xsd
+compiler form
+now as discussed initially we will go
+through some coding based interview
+questions the document of code will be
+sent to you feel free to write your
+emails in the comment section below so
+that we can respond to you at the
+earliest
+now program one is string reverse
+so you can see that it is converting
+simply learn into the reverse string
+which is here
+now let us go through the second program
+real quick
+now on my screen you can see the second
+program the second program is based on
+converting or checking if the string is
+palindrome or not let's quickly execute
+this
+you can see that it is asking for enter
+string
+let us enter
+p op pop
+and it is saying as the string is apalan
+rom now let us quickly execute the third
+now the third one is based on substring
+operations let's quickly execute the
+code let's enter a string here simply
+learn
+so here you can see the substrings that
+can be created using simply learn
+now let's execute the fourth code so
+this program is based on if checking the
+number is prime or not
+so now let's enter a number let's enter
+7 which is a prime number which says
+number is prime now the fifth question
+is based on single ton
+now let's try to execute this code and
+see the output
+now you can see the code got
+successfully executed and the output is
+over here hello and hi
+now don't you worry about the code
+please feel free to let us know your
+email ids in the comments section below
+and we will have this quote sent over to
+you at the earliest
+now with that we have come to an end of
+this session on
+c-sharp interview questions if you have
+any queries regarding any of the topics
+covered in this session or if you need
+the code that we have executed in this
+particular session then please feel free
+to let us know in the comment section
+below and our team of experts will be
+happy to resolve all your queries until
+next time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

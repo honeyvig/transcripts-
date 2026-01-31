@@ -1,0 +1,626 @@
+hey everyone welcome to another video by
+simply learn in this video we will go
+through asp.net mvc interview questions
+if you're looking for a job that
+involves knowledge of asp.net mvc here
+are some of the important asp.net mvc
+interview questions and answers
+that will help you get confident and
+feel better while giving an interview
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn
+so without wasting any further time
+let's get started
+we will start with the beginner level
+asp.net mvc interview questions and
+answers
+what is mvc
+mvc is a software architectural pattern
+that divides an application into three
+major components
+mvc stands for model view and controller
+the model represents the shape of the
+data and stores the data that it
+retrieves from the database
+view view is a user interface used to
+represent the data of the application as
+tables charts and diagrams it also
+communicates with model and controllers
+easily
+controller
+the controller in mvc holds the user's
+request it handles the http request made
+by the user
+explain the lifecycle of mvc
+lifecycle is a series of steps used to
+handle the request to change the state
+of the application
+the lifecycle of mbc is divided into two
+categories
+application lifecycle and request
+lifecycle
+application lifecycle runs the iis
+application until it stops
+the request lifecycle handles the http
+request of the application
+list the advantages of using mvc
+mvc has a lot of advantages with
+building the application some of them
+are mvc provides separation of
+components that allows the reuse of
+applications across the several
+platforms
+mvc allows applications to change
+features like layouts fonts and colors
+without affecting the entire
+architecture of the application
+mvc uses asynchronous techniques to
+build applications that can be easy for
+a developer to build application in a
+faster and secure way
+what are the actions and list a few of
+them
+action methods in mvc execute the
+request and generate the response
+actions have one-to-one mapping with the
+user
+here is a list of few of the actions
+content result it returns a string file
+path result it returns the file path
+content file content result it returns
+file content
+javascript result it returns the script
+for execution json result it returns
+json formatted data view result it helps
+to receive a response for the view
+engine
+and file stream result it returns file
+content and redirect to result it helps
+to redirect to the specified url
+what are actions filters and list the
+types of action filters
+action filters are attributes that apply
+to the controller or a controller action
+that helps in modifying the executed
+actions
+mvc framework includes several actions
+some of them are
+output catch output catch catches the
+output of a controller at a specific
+time
+handle error handle error handles the
+error when it executes an action
+authorize authorize enables you to
+restrict access for a control
+what are action verbs
+action verbs are http request applied to
+the action methods to work for http
+request methods
+some of the action verbs are http post
+http get http put and http delete
+what are code blocks in mvc
+code blocks in mvc are used to enclose
+c-sharp statements
+this is an example for code blocks it
+starts with the symbol at the rate and
+encloses with curly braces code blocks
+work with loops and keywords in
+different ways
+what are helpers in mvc and is the types
+of helpers
+helpers in mvc are html classes that
+help to create html control
+programmatically
+html helpers in mvc generate html and
+result as a string
+some of the different types of helper
+methods that asp.net provides are create
+links
+create links is to get the information
+from the routing tables
+create inputs this helps to create text
+boxes and buttons create form
+handle post back to an action on a
+different controller
+what are non-action methods
+non-action methods are attributes used
+when a public method in a controller
+does not want an action method
+here is an example that shows how to
+create a non-action method in mvc
+what is model binding
+model binding in mvc allows mapping the
+http request data with the models using
+the data sent by the browser in an http
+request
+model binding also acts as a bridge
+between the http request and c-sharp
+action methods
+using model binding it automatically
+transfers post and get into a specified
+data explain the process of validation
+in mvc
+validation in mvc is used to check the
+user input and provides a set of
+validation that is easy to use and
+powerful to check the errors of the user
+what is a partial view
+partial view is a view that is rendered
+from the another view which helps to
+break the larger view into smaller views
+a partial view is also used to reduce
+the duplication of the common markup
+content across the markup files
+what are logic layers
+the logic layer defines and decides the
+information needed to solve the assigned
+problems
+logic layers in mvc are divided into
+three types
+business layer display layer and input
+control layer
+what are the drawbacks of mpc
+there are many advantages and
+disadvantages of using mvc applications
+you will now understand some of the
+disadvantages of using them
+mvc is not suitable for large type
+applications the complexity of the
+applications is high using mvc
+it is difficult to understand the design
+pattern in mvc
+deployment of applications is hard
+compared to the other applications
+what are file extensions for razer view
+laser is a view engine used to write the
+mix of html and server side
+it is also a general purpose template
+engine that does not provide any ties to
+the mvc which allows the creation of
+view engine inside the application razer
+in mvc contains razer markup c-sharp and
+html
+file extensions of razer view are
+divided into two types
+dot cs html used for c-sharp dot vb html
+used for visual basic
+what is an unobtrusive ajax
+it is a progressive enhancement that
+focuses on the delivery of the content
+ajax calls in unobtrusive ajax which are
+made through built-in helpers to
+eliminate the need to add the blocks of
+code
+what are get and post actions
+get in mvc is used to request the data
+from a specific resource it is the most
+common http method
+below is the syntax of get action
+post is used to send data to the server
+to create and update a resource
+below is the syntax of post action
+now let us look at intermediate level
+interview questions
+what is a razor
+razor is a view engine used to write the
+mix of html and server side it is also a
+general purpose template engine that
+does not provide any ties to mvc which
+allows creating a view engine inside the
+application
+below is the syntax
+in c sharp it is dot c s html in visual
+basic it is dot v b html
+what is exceptional handling in mvc
+exceptional handling in mvc is used to
+execute the action methods using try and
+catch blocks
+it is the process for responding to the
+exceptional condition for the special
+processing
+for example here in this program you
+will create an exception for the
+application that shows an error on the
+web page that displays a custom error
+message or custom error pages
+what is a layout view layout view in mvc
+allows creating a common site template
+that inherits multiple views to provide
+a consistent look for an application
+the layout view has the same extension
+as other views which you can store in
+the shared folder
+esp.net mvc layout allows the child
+views using some methods like render
+section method and render body method
+what are web apis
+web api is a platform used to build
+restful applications using dotnet
+frameworks that include small and large
+application for devices tablets and
+mobile devices
+here is an example for web apis this is
+a basic program to add the configuration
+of web api in the configuration folder
+of the mvc application using the name
+web api config
+what is form authentication in mvc
+form authentication in mvc is
+responsible for users credentials like
+sign up sign in login and log out
+it also provides a way to handle
+authentication using custom logics in
+asp.net applications
+you can do form authentication using the
+sql database to provide the user
+credentials and information
+it is used to edit the web configuration
+files and
+add a login page to authenticate
+explain bootstrap and its use
+bootstrap is a front-end framework tool
+used for web applications to build a
+user interface using html css and
+javascript
+it was first developed by twitter
+developers for personal use and became
+popular with the designer and developers
+with flexibility
+bootstrap provides all pieces of layouts
+menus fonts widgets and other many
+features you can find bootstrap files in
+the solution explorer as bootstrap.css
+and bootstrap.js
+what are glimpse in mvc
+glimpse in mvc is a free and open source
+nugget platform used to perform
+operations like performance debugging
+and diagnosis for the applications it
+allows users to find information about
+every action by the server including the
+azure test in the application
+list the types of action results in mvc
+action result is an action method used
+along with an action it is the result of
+action execution the action result is a
+return type
+action results are divided in mvc into
+three categories status results content
+returning result and redirection result
+status result provide the status of the
+code to the browser content returning
+result is responsible for returning the
+content
+and redirection result redirects the
+specified url
+what is a request lifecycle
+request lifecycle is a sequence of
+events that occur when the application
+handles the http request
+request lifecycle involves 5 steps
+routing mvc handler controller action
+invoker and result execution
+routing is used to map the incoming url
+to the router and creates request
+content and sends it to the next layer
+mbc handler is responsible for creating
+the controller instance
+controller is used to deal with the
+request and implement the controller
+interface
+action invoker is used to execute the
+action method sent by the controller
+result execution is responsible for the
+execution of action method in the
+controller
+explain the ways of adding the
+constraints to a router
+constraints to a router in mvc are added
+in two ways
+using the object that implements the
+router constraint interface
+or using the regular expressions
+explain routing in mvc
+routing is the process of mapping the
+browser request to the controller and
+responding back
+router handles the information and url
+patterns in routing and it stores all
+the configured files to the application
+in the routing tables
+routing in mvc is divided into two types
+convention based routing and attribute
+based routing
+this is an example of registering the
+routing with different custom routes
+using the name default
+the default maps with the url pattern in
+the routing table
+what is output caching
+output caching is responsible for
+improving the performance of the
+application
+it also enables you to remove unwanted
+actions
+below is the example for output catching
+mention the benefits of areas
+areas in mvc allow to organize the
+models views and controllers into a
+separate function in the application
+like building support etc
+let's see some benefits of using areas
+in mvc
+using areas it is easy to perform unit
+testing it allows you to separate the
+functional sections of the applications
+it also helps in communicating with the
+other areas by creating another area
+what is a view start
+view start is introduced by a view
+engine that applies to all views
+automatically below is an example for
+reviewed sort
+what is attribute routing
+attribute routing is a type of routing
+that provides more control over the url
+by defining routers directly on the
+actions and controller in the
+application
+some of the advantages of using
+attribute routing are it reduces the
+chance of errors in the application
+it is easy to map routes pointing to the
+same action it provides more control
+over the url
+how to change the action names in mvc
+the action name attribute is used to
+change the action name in mvc
+explain data annotations
+data annotations in mvc are responsible
+for providing the instance checking for
+the client side
+mvc provides various data annotations
+some of them are required is used to
+indicate the property of the required
+field
+string length is used to indicate the
+string length
+bind is used to include or exclude the
+binding parameters
+email address is used to value the email
+address
+what is the difference between mvc and
+web forms
+mvc is based on a design pattern that
+helps to create the application faster
+web forms are based on functions and
+code behind
+mvc provides html helpers to create the
+controls whereas in web form every
+control in web form has server control
+mvc is used to create partial views
+and web forms are used to create user
+controls there is no view state in mvc
+view state in waveforms is used to
+maintain the state
+it is easy to use jquery javascript and
+css in
+web forms use a little jquery and
+javascript
+differentiate between view bag and view
+data
+view bag is used to transfer the
+temporary data from the controller to
+our view
+view data is used to transfer data from
+the controller to the view
+view bag is a type of object whereas
+view data is a key value collection
+view bag is slower than view data and
+view data is faster than view back
+view back works only on dot net 4.0 and
+above
+view data works on dot net 3.5 and above
+view bag is used as dynamic so no need
+for type conversion
+whereas in view data type conversion is
+required
+explain scaffolding in mvc
+scaffolding is a technique used as code
+generation for asp.net web applications
+it also generates code for crude
+operations using the entity framework
+models
+it reduces the time and generates clean
+code while creating the application it
+is automatically installed in visual
+studio 2013 and above versions
+explain the difference between temp data
+and view back
+temp data is a key value collection
+whereas view bag is a type of object
+temp data is used to pass data between
+two consecutive requests
+view bag values becomes null
+temp data works during the current and
+subsequent request view back works only
+at the current time temp data works on
+dot net 3.5 and above view bag works
+with dot net 4.0 and above
+explain the difference between render
+page and render body
+render page is a layout page that
+contains content filled by the other
+pages
+whereas render body is a method of
+master page or razor commonly used as a
+layout page
+render page is obviously present in the
+layout view
+render body doesn't have a fixed path
+render page does not include any
+parameters
+but render body always includes the
+parameters like boolean
+multiple methods are not allowed in
+render page
+render body allows multiple methods
+list a few rules of resourcing resource
+is a view engine used to create web
+applications by combining the features
+of mvc
+there are certain rules to be followed
+for the razor they are
+razor block having c sharp and enclosed
+with
+curly braces
+variables are always declared with the
+var keyword
+variables and functions within line
+always start with the symbol at the rate
+c sharp file has an extension of dot cs
+html
+scored statements always end with
+semicolon
+now let us look at the advanced level
+interview questions
+what are bundling and minification
+bundle is a logical group of physical
+files used to improve the performance of
+the application by providing the inbuilt
+features bundled into a single file
+which improves the performance using
+http request known as bundling
+this program below shows all the bundles
+of css files present in the folder of
+only
+minification is a technique of removing
+the unnecessary comments and characters
+from css and javascript to reduce the
+size to improve the performance of the
+application
+below is the example of minification
+it alerts if the number is even or if
+the number is odd
+what is json binding
+json binding is known as javascript
+object notation binding that supports
+mvc3 using json value provider factory
+it allows action methods to accept and
+model bind data in json
+binding this is a simple program that
+shows how to bind data using json
+binding
+what is cross domain ajax
+hx cross domain sends a request to
+refresh the url domain of the web pages
+there are many ways to implement and use
+the cross domain ajax the most commonly
+used cross domain ajax are send json
+pre-request and cross domain resource
+sharing
+explain the usage of remote validation
+in mvc
+remote validation is the process of
+validating specific data posting to a
+server without posting the entire data
+to the server
+this program on remote validation helps
+in checking the validation of the user
+using the parameter username and the
+displays the message name already exists
+list the standard html helpers in mvc
+standard html helpers in mvc are used to
+render the html controls like label text
+box password checkbox etc
+some of the standard html helpers in mvc
+are html text box it is used to create a
+text box html password this is used to
+create a text box with password identity
+next we have html check box it is used
+to create the property in the check box
+html radio button it automatically
+displays the property in the radio
+button
+explain the implementation of ajax in
+mvc
+ajax is asynchronous javascript and xml
+client-side script that communicates to
+the database without any need from the
+postback it also speeds the response's
+time in the application
+below is the syntax
+of ajax in mbc
+explain about mvc model binders
+model binders in mvc allow mapping http
+request with the model
+it works when a user requests the data
+from the browser to the controller at
+this time model binding works on
+middleman to map the incoming request
+with the controller action method
+update model method function observes
+the request and updates the model class
+this program is process of adding the
+controller with the index action method
+to the mvc
+explain areas in mvc
+areas in mvc allow organizing the model
+view and controllers into a separate
+function in the application like
+building support etc
+it is mainly used for large applications
+when the developer or user is working
+with the area it is important to
+register with the areas
+the syntax for registering the areas is
+as follows
+in this each mvc has its own area folder
+that allow it to keep controllers models
+and views separately
+explain the roles of presentation
+abstraction and control in mvc
+presentation obstruction and control is
+an architectural pattern that separates
+mvc interactive system into three types
+of components
+presentation
+presentation in mvc is responsible for
+formats of the visual and audio
+presentation of the data
+abstraction is responsible for
+retrieving information and processing
+the data
+control handles the flow of control the
+communication between two components
+explain the uses of keep and peak in mvc
+keep in mbc is used to preserve the data
+of stem data after the value is read
+peak in mvc is used to read the value in
+temp data without clearing the data
+here are some differences between keep
+and peak
+key provides two overloading methods
+whereas peak provides
+no overloading method
+once the data is read by the keep then
+the data is erased
+the data in peak remains the same after
+the operation is successful
+in keep redirect to result and redirect
+to route result are called to get the
+items back
+in peak there is no action called by the
+peak internally to retrieve
+so with that we have reached the end of
+this video like and share it if you
+found it interesting thank you for being
+here keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

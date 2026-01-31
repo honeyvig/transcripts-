@@ -1,0 +1,5114 @@
+hey everyone welcome to simply learn's
+youtube channel in this session we will
+be learning about trees and data
+structures
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies if you are a tech geek in a
+continuous hunt for latest technological
+trends then consider getting subscribed
+to our youtube channel and don't forget
+to hit that bell icon to never miss an
+update from simply learn
+now without any further ado let's get
+started with the agenda for today's
+session
+today we will be discussing trees in
+data structures so first we will
+understand what exactly are trees in
+data structures followed by that we will
+understand the first type of trees and
+data structures which are the binary
+trees then moving ahead we will learn
+the binary search trees in data
+structures followed by that we will
+learn the abl trees in data structures
+next we have b trees in data structures
+and finally we will wind up the session
+by discussing b-plus trees in data
+structures
+hope i made myself clear with the agenda
+now let's get started with our first
+topic over to our experts
+so we will be discussing what exactly is
+a tree data structure
+followed by that we will understand why
+we need a tree data structure
+then we will learn the three
+terminologies followed by that we will
+understand tree node then we will see
+the types of trees and followed by that
+we will understand the tree traversal
+and finally we will see some
+applications of trees in real time i
+hope i made myself clear with the agenda
+now let's get started with the first
+topic that is what is a tree data
+structure
+so what exactly is a tree data structure
+the tree is a non-linear data structure
+that consists of nodes and is connected
+by edges i know it's a little difficult
+to understand just by the definition so
+let me show you the pictorial
+representation
+as you can see we have the elements that
+is 10 20 30 40 50 60 and 70 and all
+these are stored in the tree data
+structure they are stored in a
+non-linear structure if we had used
+arrays it would have been in a linear
+consecutive way where 10 starts first
+and 70 ends at the last position
+now in the next section we will discuss
+why we had made to a switch to the tree
+data structure when we already had a
+linear data structure that is airy
+now the next topic that is why we need
+tree data structure
+so there are many reasons why we have
+switched into tree data structure and
+one of the reason is a linear data
+structure always stores the elements in
+a sequential form that is one after the
+other and in operations to be performed
+in linear data structure the time
+complexity increases as the data size
+increases you can see here that as
+discussed before the elements are stored
+in a linear form that is 10 at the first
+place and 70 at the last place imagine
+you wanted to access the element 70 then
+using the traversal you had to start
+from the first position that is 10 20 30
+40 and slowly at the end is 70. so
+accessing that particular element is
+really time consuming we are facing this
+just for 70 elements imagine if we had
+700 elements
+right so that is exactly why we had made
+a switch to tree data structure and
+using tree data structure we have many
+advantages as the tree data structure is
+completely non-linear and it allows
+easier access and quicker access of the
+data elements how is that possible we
+will look into it into the next segment
+where we will discuss about the
+traversal of trees
+now before we understand the traversal
+of trees we should understand another
+important topic that has the
+terminologies of tree
+so the first one is the node node is the
+entity that contains the keys and
+pointer to its child nodes
+so here you can see that the elements a
+b c d e f and g are the elements so each
+and every element or the blue dot is
+called as a node and
+the blue dots here are
+one two three four five six and seven so
+we have seven blue dots so we have seven
+elements here so you can see the line
+between each elements right so this
+particular line is called edge now we'll
+discuss about the edge in the next part
+so the connecting links between any two
+nodes are called as edges so we
+discussed about the nodes right where
+the element is stored the blue dots are
+the nodes and the lines connecting
+between the elements or nodes is called
+as the edge
+so out of all the nodes
+this first node that is the element a is
+called as the root node in a tree data
+structure
+so indirectly root node is also called
+as the parent node of all the nodes now
+we will understand what are parent nodes
+and children nodes
+so in a tree data structure the node
+that is the node's predecessor is called
+as parent node so here we have discussed
+that a or the root node is the parent of
+all nodes
+so for a b and c nodes are children
+nodes and for b and c nodes a happens to
+be the parent node similarly d and e are
+the children nodes of b and f and j are
+children nodes of c
+and
+the
+nodes d and e have b as the parent node
+and the nodes f and g have c as the
+parent node
+now followed by that
+we will understand the descendant node
+so as discussed before the descendant
+node is the node that comes after the
+parent node here the b and c are the
+descendants of a and d and e are
+descendants of b and similarly f and g
+are the descendants or children of the
+node c
+so in a tree data structure the node
+which does not have any child is called
+as the leaf node now at the end we have
+d e f and g so these particular nodes do
+not have any children nodes like b and c
+so these particular four nodes which do
+not have any children are called as the
+leaf nodes
+in a tree data structure the node with
+at least one child node is called as the
+internal node
+so here the internal nodes are p and c
+which have at least one child
+in a tree the total number of children
+of a node are called as the degree of
+that node so in this particular diagram
+the degree of root node is 2 because it
+has two child nodes and the degree of b
+is 2 as it has two child nodes similarly
+the degree of c is 2 because it has two
+child nodes but when it comes to d e f
+and g
+the
+degree is 0 because they do not have any
+child nodes
+in a tree data structure the root node
+is said to be at level 0 and the
+children of the root node are said to be
+at level 1 and the children nodes of the
+level 1 are at level 2. so to understand
+this let's go through the diagram as you
+can see this particular root node is
+called as level 0
+and followed by that we have the
+children nodes of a that is b and c and
+that level is called as level one and
+followed by that we have level two and
+if this tree goes forward the levels
+also increase accordingly
+now in a tree data structure the total
+number of edges from a leaf node to the
+particular node is the longest path and
+this particular path is called as the
+height of that node
+now here we have our general tree data
+structure and here you can see the
+height of node a s2
+and the height of node b and c together
+is at 1 and the height of the last leaf
+nodes happens to be 0.
+next in the tree data structure the
+total number of edges from the root node
+to a particular node is called as the
+depth of that node
+now in this particular tree data
+structure the depth of the root node is
+zero and the depth of b
+and c together is 1 because the number
+of edges connecting to the
+node a from b is just 1 and similarly
+the number of edges connecting the node
+c from a is just one so the depth of
+both b and c is one
+now if we consider the last leaf nodes
+then the depth is two because if you see
+g is connected to a using two different
+edges similarly f is connected to a
+using two different edges and e and d
+also have two nodes to connect to a so
+the depth is 2
+now in the next segment we will
+understand the tree node so the tree
+data structure has data part and
+references to its left and right child
+node in the tree data structure so here
+you can see this is the node and the
+node has three segments that is data
+element and the references towards left
+child and the references to its right
+child
+now there are four different types of
+trees the first one is the binary tree
+followed by that we have the binary
+search tree then we have avl tree and
+finally we have the b3 let us discuss
+each one of them the first one is the
+binary tree a binary tree is a tree data
+structure in which each parent node at
+most has two children
+so in this particular tree will have at
+most two children that means it might
+have one or more than one but not more
+than two children per node
+moving ahead we have the binary search
+tree so a binary search tree or a bst is
+a tree data structure in which each node
+has a maximum of two children all nodes
+of the left sub tree are less than the
+right node all nodes on the right
+subtree are more than the root node so
+here you can see the image or the gif
+which represents the image of a binary
+search tree so here all the nodes of the
+left subtree are less than the root node
+and all the nodes of the right sub tree
+are more than the root node
+the next type of the tree is the avl
+tree the avl tree got its name after
+inventory georgie adelson welsky and
+landis avl tree is the self-balancing
+tree in which each node maintains a
+balanced factor most value is either one
+zero or minus one
+balance factor is equals to height of
+the left subtree minus height of the
+right sub tree or height of the right
+sub tree minus height of the left
+subtree so in this particular image you
+can identify it is an avl tree
+and now the last type of tree that is
+the b tree
+b3 is a special kind of self-balancing
+search tree in which each node can
+contain more than one key and can have
+more than two children b3 is also known
+as the height balanced m v tree now in
+this particular gif we can see how a b
+tree looks like
+now followed by this we will discuss the
+tree traversal
+so traversing a tree helps to visit
+required node in the tree to perform
+specific operations tree traversal can
+be performed in three different ways
+the first one is the pre-order traversal
+where we visit the node
+and visit all the node from the left
+side then visit all the nodes from the
+right side so this particular gif is an
+example for pre-order traversal where we
+visit all the left side nodes first then
+we visit the right side nodes
+now we will move ahead into the next
+type of traversal
+that is the in order traversal
+first we visit all the nodes from the
+left side then we visit the root node
+and then represent all the nodes from
+the right side so this particular gif
+will be an example for the in order
+traversal where we visit all the left
+side nodes and then we visit the root
+node and followed by that we will visit
+the right side nodes
+and the last type of traversal is the
+post order traversal where we visit all
+the nodes from the left side first then
+revisit all the nodes from the right
+side and finally visit the root node
+so this particular image on the right
+side is an example for post order
+traversal now before we get into
+learning the applications of trees we
+will try to execute one example based on
+the post order pre-order and inorder
+traversals entry data structure
+so you can see that we have an example
+on my screen right now so here we have
+the node structure
+then we have the in-order traversal
+function followed by that we have the
+pre-order traversal function and finally
+we have the post order traversal
+function now let's quickly run this
+program and see the output and don't
+worry about the code this particular
+code document will be attached in the
+description box below and you can have
+access to it
+now we have the run option over here and
+the program got successfully executed
+you can ignore this warning and here we
+have the in order traversal of the tree
+and the first output then we have the
+pre-order traversal of the tree and
+finally we have the post-order traversal
+of the tree now let's discuss the last
+part
+where we will learn the application of
+trees
+so the application of trees are as
+follows binary search trees are used to
+quickly check whether an element is
+present in the set or not then we have
+the most popular database usage of b3
+which is a variant of tree data
+structure then we have the modified
+version of trees called as tries which
+is used in the router to store routing
+information and finally the compiler
+uses a syntax tree to validate the
+syntax of every program you right
+so we shall begin our session by
+learning a binary tree and some basic
+terms related to binary tree then we
+will try to implement it in the code
+editor after that we will discuss its
+properties then we will discuss
+different types of binary trees then we
+will try various operations on them like
+traversal insertion and deletion
+and finally we will take a glance on
+what are our final key takeaways from
+this session but before we begin make
+sure that you have subscribed to our
+youtube channel and click on that bell
+icon to never miss an update from simply
+learn
+so without further ado let's get started
+with our first topic that is what
+exactly is a binary tree
+so it is a treated structure in which
+each node can have at most two child
+nodes these nodes are referred to as
+left child in node and right child node
+next let's discuss about some terms
+related to binary tree
+first up a node a node consists of data
+and a link to its both child nodes
+next the root node root node is the
+first node of the tree next leaf nodes
+these are the nodes which has no child
+next parent node apart from the root
+node any node which has at least one
+child is called as parent to that child
+node next up a child node any node with
+a parent is called as a child node
+next up is the internal node any node
+with a child and a parent is called as
+an internal node
+next up is the height of the binary tree
+the longest path from the root to any
+leaf node is called as the height of the
+binary tree
+next up is the depth of the binary tree
+the depth of the node is the total
+number of edges from the root node to
+the target node or the
+last child node
+now let's try to implement the binary
+tree in the code editor
+as you can see now we are on the code
+editor and the code on my screen is an
+example for binary tree now here you can
+see that we have created a structure for
+node followed by that we have a function
+where we will print the tree
+and this is a main function
+now don't worry about the code this
+particular code segment will be
+available in our description box below
+and you can always have access to it and
+try to edit and run this code on your
+own local system to have a better
+learning experience now without further
+ado let's try to run this program
+quickly and see the output
+so there you go the code got
+successfully executed and here you can
+see the output of this particular binary
+tree
+now let's get back to the theory part
+so as discussed before followed by the
+implementation part we will learn about
+the properties of a binary tree
+now let's discuss the properties of the
+binary trees
+first up maximum number of nodes at a
+level l is 2 to the power l
+next up maximum number of nodes in a
+binary tree of height h is equals to 2
+to the power of h minus 1.
+next up minimum possible height in a
+binary tree with two nodes is equals to
+log of l plus 1 base 2.
+next up the minimum possible level in a
+binary tree with n nodes is equals to
+log of l plus 1 base 2.
+finally a binary tree with l lease has
+at least
+log l base 2 plus 1 levels
+now let's discuss about the different
+types of binary trees
+first up we have the full binary tree
+followed by that we have the complete
+binary tree then we have the perfect
+binary tree
+followed by that we have the balanced
+binary tree and lastly the degenerate
+binary tree let's discuss about these in
+detail first up full binary tree a full
+binary tree is a unique tree data
+structure in which a node can have
+either two children or no child
+next a complete binary tree
+so a complete binary tree is another
+specific binary tree where each node on
+all levels except the last level must
+have two children and at the lowest
+level all leaves should reside possibly
+on the left side
+the next one is the perfect binary tree
+a binary tree is perfect if every node
+must have two children and every leaf is
+on the same level
+the next one is called as the balanced
+binary tree
+a binary tree is balanced if for each
+node the height of the left subtree and
+the height of the right subtree varies
+at most by just one
+at last we have the degenerate binary
+tree
+a binary tree is said to be degenerate
+if every internal node has only one
+child
+we have now discussed the binary tree
+some terms and properties related to
+binary trees and types of binary trees
+now we will look into the operations
+that needs to be performed on the binary
+tree so there are basically three types
+of operations that can be performed on
+binary tree which are traversal
+insertion and deletion
+so first we'll look into the traversal
+operations
+there are three different types of
+traversal operations possible on binary
+tree which are pre-order traversal
+in-order traversal and finally the
+post-order traversal
+now let's get back into the text editor
+mode and try to execute our example
+so right now we are on the text editor
+and this particular code is for the
+traversal operations on our
+binary tree and here you can see we have
+the structure for node and we have also
+the in order function
+pre-order function and post order
+function don't worry about the code this
+particular code will be available in
+the description box below and after you
+have written the code we have some
+standard input over here you can see
+that we are giving the number of edges
+as four and the left subtree elements
+are two and one and the right subtree
+elements are two and three and another
+left subtree elements are
+three and five and lastly we have five
+and six for another left subtree now
+let's try to execute this code
+now we have already executed the code
+and we also have the output over here
+and here you can see we have entered the
+number of edges as four and the
+traversal is in order traversal which is
+one two six five and three and the
+pre-order traversal output is two
+one three five six and the post order
+traversal is one six five three and two
+now let's get back to the ppt now we
+have the insertion operation
+and now let's get back to our text
+editor and try to see an example for
+insertion operation as well
+so on my screen you can see an example
+for insertion operation
+so here we have the insert function as i
+said this particular code will be
+available
+in the description box below now let's
+provide the standard input
+so the standard input will be four edges
+and we have two and one as the left
+subtree and two and three as right
+subtree three and five as left subtree
+again and
+five and six as the left subtree now
+let's quickly run this code
+and there you go the program got
+successfully executed and here we have
+the
+output
+the nodes got inserted and it has
+provided an in order traversal that is
+one two six five and three
+now let's get back to the presentation
+and the last type of operation is the
+deletion operation let's quickly execute
+an example based on deletion operation
+as well
+now as you can see we are on the text
+editor again now here the example is for
+deletion operation we have the delete
+function over here
+now for this particular program we don't
+need any standard inputs so just let's
+run the program
+so there you go the program got
+successfully executed and we have the
+output over here and in order to
+traversal before deletion and in order
+traversal after the deletion of an
+element
+so the deleted element is element 11.
+now with that let's get back to the
+presentation mode again
+so that's how the element got deleted
+now we have reached to the last part of
+this session that happens to be the
+final key takeaways
+so what are the final takeaways so
+binary tree is faster at search
+operations than other type of tree
+and it is easier to find maximum and
+minimum elements in the binary tree
+binary tree does not allow duplicate
+values and graph traversal is done using
+binary tree it is used to convert the
+post fixed expressions into the prefix
+expressions we shall begin by
+introducing binary search trees
+then we will discuss some of the
+properties of binary search trees
+after that we will try various
+operations on them like insertion and
+deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply run
+so without any further ado let's get
+started with introduction to binary
+search tree
+binary search tree is a set of nodes
+organized in such a manner that they all
+have the same binary search tree
+characteristics
+a key and a value is assigned to each
+node
+the requested key is compared to the
+keys in binary search tree
+so during search if the key is found
+then the corresponding value
+will be retrieved
+next up
+properties of binary search tree
+first up
+the left sub tree of a node contains
+only nodes with keys lesser than the
+parent node
+next up
+the right subtree of a node contains
+only nodes that are greater than the
+parent node
+the left and the right subtree each must
+also be a binary search tree
+next let's discuss what are the
+operations we can perform on a
+binary search tree
+first up insertion
+last
+deletion
+let's discuss them in detail
+first up insertion
+we can insert a node in such a way so
+that we obey binary search tree rules
+that is the
+new node should be either less than the
+parent node if it's a it's on the left
+subtree or if it's on the right subtree
+it should be greater than the parent
+node let's execute this in the code
+editor
+we will start by creating a class for
+the binary search tree
+so class
+pst
+and data
+and bst pointers
+left
+comma
+right
+next we will define some functions
+publicly
+public
+first default constructor
+and a parameterized constructor
+function to insert the value
+and a function to traverse the node
+now let's write default constructors
+definition
+so bst
+pst
+now let's write the parameterized
+constructors definition
+bst
+and
+value
+data
+is equals to value
+and left
+is equals to null
+and
+write
+equals to null
+now let's write the definition for the
+insert function
+so bst
+star
+root
+comma
+end
+value
+now we will check if the tree is empty
+or not
+so if
+root
+then we will insert the first node
+we will return
+new
+pst
+value
+otherwise we will insert the data so if
+the value
+is greater than root
+tata
+and
+then we have to insert it
+in the right subtree
+so
+root
+right
+is equals to
+insert
+root
+right
+comma
+value
+else
+as the value should be inserted in the
+left
+side
+so root
+left
+is equals to insert
+root
+left
+comma value
+and then we will return
+root
+now let's write the traverse function
+so void
+est
+purpose
+pst
+star root
+if
+root
+and we will return
+otherwise we will first traverse
+left side
+then we will print the root data
+then we will traverse
+the right side
+root
+right
+now let's write the main block
+so we will start with an empty tree so
+bst
+b
+comma
+star root
+is equals to
+null
+the root
+is equals to
+b dot insert
+root
+comma
+50.
+e dot
+insert
+equals to
+root comma 10
+b dot insert
+gonna be root comma
+30
+d dot insert
+root
+comma 50
+sorry we already use 50 so we will use
+60
+a dot insert
+root
+comma
+let's use 20.
+try to traverse this
+so b dot
+traverse
+root
+let's execute this
+as you can see we have successfully
+created and traversed our first binary
+search tree
+let's get back to slides
+at last deletion
+we will delete a note following the
+binary search tree rules that is the
+value of the left subtree should be less
+than the parent node and the value of
+the right subtree should be greater than
+the parent node
+let's try these in the code editor
+let's start by creating a node
+this time we will use structure so
+struct
+node
+and
+key
+product
+node
+star left
+comma
+star right
+now we will create a utility function to
+create a new binary search tree node
+so struct
+node
+star
+new node
+and
+item
+equals to
+product
+size of
+next
+temp
+will be assigned the key is equals to
+item
+left
+equals to null
+and
+temp
+right
+is equals to
+now let's write
+a function to traverse the tree
+traverse
+product
+node
+star
+route
+so if
+root
+is equal to null
+traverse
+root
+left
+see out
+root
+right
+now let's write a utility function to
+insert the new node with the given key
+in the binary search tree
+substruct
+node
+insert
+node
+star
+node
+comma
+and
+key
+so if
+node
+is equals to null
+then we will return
+new node
+key
+otherwise
+we will recur down the tree so if
+he is less than
+a node key
+then we will
+insert in the left subtree so node
+left
+is equals to insert
+node
+left
+comma
+key
+else
+node right
+would be inserting
+e
+now let's return the note
+now we have given a non-empty binary
+search tree
+so we have to return the node with the
+minimum key value found in that tree
+so
+we will start
+extract
+mode
+star
+men
+value
+node
+star mode
+node
+star
+current
+is equal to node
+so we will loop down to find the
+leftmost leaf
+so
+while
+current
+and
+parents left
+is not equals to null
+so current
+should be equals to
+current
+return
+current
+node star
+delete
+node
+product
+node star
+root
+comma
+and
+key
+f
+root
+equals to null
+return
+route
+now if the key to be related is smaller
+than the roots key then it lies in the
+left subtree so we will check
+if
+e
+less than
+root key
+then root
+left
+it will be equals to
+delete
+node
+root
+left key
+comma key
+now if the key is deleted
+is greater than the roots key then it
+lies in the right subtree so else
+if
+e
+is greater than root
+root
+right
+is equals to
+delete
+node
+root
+right
+comma key
+else
+if
+roots
+dot left
+equals to null
+and
+dot right
+is equals to null
+and return
+else
+f
+root
+that
+equals to null
+that struct
+node
+star
+is equals to root
+right
+and free
+route
+return
+else if
+roots
+right
+is equals null
+then struct
+outstar
+lamp
+is equal to root
+three root
+return
+temp
+now note with the two children
+get the in order successor
+smallest in the right subtree
+so struct
+node
+star
+temp
+is equals to
+min value
+node root
+right
+now we will copy the in successors
+content to this node so root
+is equals to temp
+now we will delete the inorder successor
+so root
+right
+first to
+delete
+node
+root
+right
+comma temp
+now we will return
+root
+now let's write the main block
+we will start with an empty tree
+note star
+root
+is equals to
+null
+now root is equals to
+insert
+root comma
+two
+root
+is equals to insert
+root
+comma five
+root
+is equals to insert
+root
+comma
+three
+root
+is equals to insert
+root
+comma 4
+root
+is equals to
+insert
+root comma
+seven
+and root
+equals to insert
+root comma
+six
+let's try to traverse this so c out
+traversal
+of
+the given
+hours
+route
+now first we will delete a value see out
+delete
+two
+our root is equals to
+delete
+node
+root comma
+to
+see out
+traversal
+after
+deleting
+traverse
+route
+let's execute this
+as you can see we have successfully
+deleted
+two and traverse the tree again
+let's get back to our slides
+in this we will talk about avl trees we
+shall begin our session by what is an
+avl trees
+then we will discuss various rotations
+we can perform to balance avl trees then
+we will discuss the complexity of able
+trees
+after that we will try various
+operations on them like insertion
+deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel
+so let's get started with introduction
+to avl trees
+an avl tree is a height balanced binary
+search tree for each node we have to
+make sure that the height of the left
+subtree and the right substrate can
+differ by at most one
+we can calculate this balance factor by
+subtracting the height of the left sub
+tree from the height of the right
+subtree
+now let's discuss various rotations we
+can perform on avl trees
+first up ll rotation next are our
+rotations next lr rotation
+at last rl rotation
+let's discuss them in detail
+first up ll rotation it is a clockwise
+rotation when a node is inserted on the
+left subtree of the left subtree of a
+node then we apply this rotation to
+balance the tree it is applied on the
+node below the balance factor 2 node
+that is we will apply write rotation on
+the green node
+next rr rotation
+when a node is inserted into a right
+subtree of the right subtree of a node
+then we perform rr rotation
+it is an anti-clockwise rotation which
+is applied on the node below a node
+having balance factor minus 2 that is we
+will apply it on the green node
+next up lr rotation
+when a node is inserted into right
+subtree of the left sub tree of a node
+then we perform lr's rotation
+it is a combination of rr and ll
+rotation
+first we will apply error rotation on
+green and yellow node
+after this red node is still unbalanced
+so we will perform ll rotation on the
+yellow node
+finally
+rl rotation
+when a node is inserted into the left
+subtree of right subtree of a node then
+we perform rl rotation
+it is a combination of ll and rr
+rotation
+first we will apply ll rotation on green
+and yellow nodes
+after this the red node is still
+unbalanced so we will perform rr
+rotation on the yellow node
+now let's discuss complexity of avl
+trees
+first up
+space complexity is a bigger of n
+next up avl tree offers a complexity of
+bigger of log n for searching
+next up
+avl trees offer a complexity of bigger
+of log n for insertion
+finally avl tree offers a complexity of
+bigger of log n of for deletion
+we have now introduced an avl tree and
+rotations on it
+now let's discuss some of the operations
+we can perform on avl trees
+first up insertion
+and deletion
+let's discuss them in detail
+first up
+insertion we will insert a node
+following binary search tree rules
+then we will check if the nodes are
+balanced or not if they are not then we
+will balance it by using suitable
+rotations
+now let's try these operations in a code
+editor
+let's start by creating a node to create
+a node we need a class node
+we will create its member as public
+and key
+node star
+left
+star
+right
+hint height
+now let's write a function to get
+maximum of two integers
+so
+int
+max
+a
+comma
+and b
+now let's declare of utility function to
+get maximum of two integers
+so int
+max
+a
+comma
+ent fee
+now let's write a function to get the
+height of the tree
+and
+height
+node
+star
+n
+now if
+n is null
+and we will return zero
+else
+we will return
+and calls
+now let's write that function to get
+maximum of two integers
+hint
+max
+and
+a
+comma
+and
+b
+we will return
+if
+a is greater than b
+then we will return a
+else we will return b
+now let's write a helper function that
+allocates a new node with a given key
+and null left and right pointers
+so node
+star
+new node
+and
+key
+so node
+key
+will be equals to key
+node
+left
+will be equals to
+left
+node
+left
+will be equals to null
+and
+node
+write
+will be equals to null
+and node
+height
+will be equals to
+1.
+and
+return
+node
+here we have kept height as one because
+at the new node is initially added at
+leaf so by default it will always be at
+one
+now let's write a utility function to
+write rotate subtree rooted with y
+node
+star
+right
+not star y
+now node
+star x
+is equals to
+y is left
+and
+node
+star
+e2
+is equals to
+x
+right
+now we will perform rotation so
+x right
+will become y
+and
+y is left
+will become t2
+now we will update the heights so y
+height
+is equals to max
+of
+height
+of y left
+comma
+hi
+off
+y
+height
+plus one
+now
+x
+height
+equals to
+maximum of
+height
+hex
+left
+comma
+height
+of
+x
+right
+plus one
+now return
+x
+now let's write a utility function to
+left rotate subtree rooted with x
+node
+or
+left rotate
+node star x
+node
+star y
+will be equals to
+access right
+and
+node
+star t2
+will be equals to xs
+sorry
+twice s
+now we will perform rotation so y
+left
+will be equals to x
+and
+x
+right
+will be equals to t2
+now let's update height so x
+height
+is equals to
+maximum of
+height
+of
+excess left
+comma
+height
+of
+access right
+and
+wise height
+equals to maximum of
+height
+of
+y's left
+comma
+height
+of
+wise right
+return
+y
+now let's write a function to get
+balance vector of node n
+so end
+at
+balance
+argument as node pointer
+and
+if
+n is n is equals to null
+then we will return
+zero
+otherwise
+we will return
+height
+of
+ends
+left
+minus
+height of
+hence right
+now let's write a recursive function to
+insert the key in the subtree rooted
+with node and returns the new root of
+the subtree
+so
+node
+star
+insert
+nodes
+star
+node
+comma hint
+key
+now we will perform the normal bst
+insertion so if
+node is equals to null
+then we will return
+new node
+key
+now if
+this key is
+less than
+node's key
+then
+node
+left
+will equals to
+insert
+node
+left
+comma key
+or else
+we will insert that in the right node
+right
+is equals to
+insert
+node
+type
+key
+now we will return node
+this if else will make sure that we will
+reach to the leaf node and then we will
+insert the key
+now we will update the height of the
+census term
+so node
+height
+is equals to 1 plus
+max
+height
+of code
+left
+comma
+height
+of node
+right
+now we will get the balance factor for
+this ancestor
+node to check whether this node became
+unbalanced so int
+balance
+is equals to get
+balance
+now if this node becomes unbalanced then
+there are four cases
+so if
+balance
+is greater than one
+and
+e
+is less than
+node
+left
+key
+then
+we will return
+right
+rotate
+note
+this if statement for the left left case
+so or ll case
+now let's write it for the right right
+case or rr case
+so if
+balance
+is less than minus one
+and
+e
+is greater than
+node
+right
+key
+then
+we will return
+left
+rotate
+node
+now right for the left right case or lr
+case so if
+balance
+is greater than one
+and
+key
+is greater than node
+left
+key
+the node
+left
+is equals to
+left
+rotate
+node
+left
+i'll return
+right
+rotate
+now let's write the right left case or
+rl case
+so if
+balance
+is less than -1
+and
+key
+is less than
+node
+to the right
+key
+and node
+right
+will be equals to
+light
+rotate
+node
+to the right
+and we will return
+left
+rotate
+now we will return this node
+now let's write a function to print
+pre-order traversal of this tree
+so void
+pre-order
+node
+star route
+so now if
+root
+is not null
+then
+c out
+root
+key
+and now pre
+order
+root
+and pre-order
+now let's write the code for the main
+block
+we will start with an empty tree
+node
+star root
+is equal to null
+now we will try to construct tree
+root
+is equals to
+insert
+root
+comma 10.
+our root
+is equals to
+insert
+root comma
+five
+root
+is equals to insert
+root
+comma
+2
+root
+is equals to insert
+root
+comma
+3
+root
+is equals to insert
+root comma 7
+and root is equals to insert
+now let's try to print this tree
+so c out
+avl
+tree
+is equals to
+in
+order
+spray order
+root
+let's execute this
+as you can see we have successfully
+created our first avr tree
+let's get back to slides
+at last deletion
+we will delete a node following a binary
+search tree rules
+then we will check if all the nodes are
+balanced or not if they are not then we
+will balance it by using suitable
+rotations
+now let's try these operations in a code
+later
+let's start by creating a node to create
+a node we need a class
+node
+we will define its members as public
+and key
+note star
+left
+note star
+right
+end height
+now
+let's write a utility function to get
+height of the tree so end
+height
+node
+star
+n
+f
+n is equals to null
+then in that case we will return
+zero
+otherwise we will return
+hence height
+now let's write a utility function to
+get maximum of two integer
+and
+max
+a comma and
+b
+so we will return
+if a is greater than b
+then a
+else
+b
+now let's write a helper function that
+allocates a new node with a given key
+and null left and right pointers
+so node
+star
+u
+node
+and
+key
+so node
+star
+new node
+is equals to new
+node
+parenthesis
+now new node
+will get
+key as
+key
+new node
+left
+is equals to null
+and new node
+right
+is equals to null
+and new nodes
+height
+is equals to 1
+because new node is initially added as
+leaf
+that's why it is always be given as 1.
+now we will return this node return
+node
+now let's write a utility function to
+write rotate a subtree rooted with y
+so node
+are
+right
+rotate
+node
+star
+y
+star
+x is equals to
+y left
+node
+star t2
+is equals to
+x
+right
+now we will perform rotation so x
+right
+is equals to y
+y
+left
+is equals to t2
+now we will update heights
+so y
+high
+equals to maximum of
+height
+of
+y's left
+comma
+height
+of
+vice
+right
+plus one
+and
+x height
+is equals to
+maximum of
+height
+of
+access left
+comma
+access right
+plus one
+now we will return this new route so
+return
+x
+now we will write
+node
+star
+left
+rotate node star
+x
+node star y
+will be equals to access right
+and
+our star t2
+will be equals to y's left
+now we will perform rotation so y
+left
+to x
+and x
+right
+is equals to t2
+now we will update these heights so x
+height
+is equals to maximum of
+height
+of x
+left
+comma height
+of
+x
+right
+plus 1
+and
+wise height
+is equals to
+max
+of height
+of
+y's left
+comma height
+of
+wise
+right
+plus one
+now we will return this y
+now we will write a function to get
+balance factor of node n
+so int
+cat
+get balance
+node star n
+so if
+n is equals to null
+then we will return
+0
+otherwise we will return
+height
+of
+ends left
+minus
+height
+of
+ends right
+now let's write a function to insert a
+node
+so node
+star insert
+so node
+star
+node
+comma
+end
+key
+now we will perform normal bst rotation
+so if
+node
+is equals to null
+and we will return
+new node
+key
+so now if
+key
+is less than node key
+then
+node
+left
+will be equals to insert
+node
+is greater than node key
+then
+node
+is equals to
+insert
+node
+write
+comma key
+else
+we will return
+node
+because equal keys are not
+allowed now we will update the height of
+the ancestral node
+so node
+height
+is equal to one plus
+max
+height
+of node
+left
+comma height
+of
+node
+right
+now we will get the balance factor of
+this ancestor node to check whether this
+node becomes unbalanced
+so if
+to end
+balance
+equals to
+that
+balance
+of this node
+now if this node becomes unbalanced then
+there are four cases that could be
+possible
+first up llks
+so if
+balance
+is greater than
+one
+and
+key
+is less than
+node left
+return
+write
+rotate
+mode
+now let's write right right case
+so if
+balance
+is less than minus 1
+and
+key is
+greater than node
+right
+key
+then we will return
+left
+rotate
+node
+now
+let's write left right case
+so if
+a lens
+is greater than one
+and
+e
+is greater than node
+left
+key
+and
+node
+left
+will be equals to left rotate
+node
+and we will return
+write
+rotate
+now let's write the case for right left
+case
+if
+balance
+is less than -1
+and
+e
+is less than
+node
+right
+so node
+write
+is equals to
+write rotate
+node
+right
+now we will return
+left rotate
+note
+now let's return the unchanged node
+pointer
+so return
+node
+now let's write a function to find
+minimum value node
+so node
+star
+min
+value
+node
+node star node
+so node
+star
+current
+equals to node
+so while
+current
+left
+is not equals to null
+current
+is equal to
+current
+at left
+now we will return current
+now we will write a recursive function
+to delete a node with the given key from
+subtree with the given root
+so node
+star
+delete node
+its arguments are
+not pointer root
+comma
+end key
+for starters we will perform standard
+bst delete so if
+root
+is equals to null
+then we will return
+root
+now if the key to be deleted is smaller
+than the root key then it lies in the
+left subtree
+so
+if
+e
+is less than
+root
+e
+then
+root
+left
+will be equals to
+delete
+node
+root
+to the left
+comma key
+now if key to be deleted is greater than
+the root key then it lies in the right
+subtree
+so else
+if
+e is greater than root
+e
+then
+root
+right equals to
+delete
+node
+root
+height
+comma key
+now if the key is same as the root key
+then this is the node to be deleted so
+else
+if
+root
+left
+equals to
+hell
+are root
+to the right
+is equals to null
+then node
+star
+temp
+is equals to root
+left
+now if
+temp
+is equal to
+the temp
+will be equal to root
+and root
+will equals to null
+else
+root
+will be equals to star temp
+and free
+damp
+it's
+node
+star temp
+is equals to
+min value node
+root
+right
+now we will copy the inorder successors
+data to this node so root
+e
+is equal to temp
+key
+now we will delete this in order
+successor so root
+right
+is equals to
+delete
+mode
+key
+now if
+root
+is equals to null
+then we will return
+root
+now we will update the height of the
+current node
+so root
+height
+is equals to 1 plus
+max
+of height
+of roots left
+comma
+height
+up
+root
+height
+now we will get the balance factor of
+this node
+so
+end balance
+is equal to
+get
+balance
+root
+if this node becomes unbalanced then
+there are four cases
+first up lr case
+so if
+balance
+is greater than one
+and
+that balance
+of
+roots
+left
+is greater than equals to
+zero then we will return
+right rotate
+now if
+balance
+is greater than one
+and
+get balance
+of root
+left
+less than zero
+then
+root
+left
+will equals to left rotate
+root
+left
+now we will return
+right rotate
+now let's write right right case so if
+balance
+less than minus 1
+and
+cat balance
+is less than equals to zero
+then we will return
+left
+rotate
+now we will write right left case so if
+balance
+is less than minus one
+and
+get
+balance
+of root
+right
+is greater than zero
+then
+root
+light
+is equals to
+write
+rotate
+right
+now we will return
+left rotate
+and we will return this route
+now let's write a function to print
+pre-order traversal of this tree
+so void
+tree
+order
+so if
+root
+not equals to
+null
+and see out
+root
+e
+preorder
+root
+duct
+and pre-order
+root right
+now let's write a code for the main
+block
+we will start with an empty tree so node
+root
+is equals to
+null
+now root
+is equals to insert
+root comma
+two
+root
+is equals to insert
+root comma
+10.
+root is equals to insert
+root
+comma
+9
+root
+is equals to insert
+root
+comma
+7
+root is equals to insert
+root
+comma five
+root
+is equals to insert
+root comma three
+now let's try and print this of avl tree
+so see out
+created
+avl
+reorder
+now we will delete a node so root
+is equals to
+delete
+node
+root
+comma
+10.
+now let's again try and print this
+so see out
+modified
+behavior
+tree
+pre-order
+after
+deletion
+of
+10
+layout
+handle
+pre order
+root
+now let's execute this
+as you can see our deletion function is
+working perfectly
+now let's get back to our slides
+at last let's sum up what we have
+learned from this session
+first up avl trees is a self balancing
+binary search tree
+next every node must have a balance
+factor of either -1 0 or 1.
+next after every rotation we must verify
+if each node is balanced or not
+finally avl trees offers fast insertion
+and deletion operations
+b trees
+we shall begin by introducing b trees
+then we will discuss the properties of b
+trees
+after that we will try various
+operations on them like searching
+insertion and deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn
+so without any further ado let's get
+started with what is b tree
+b tree is a special m tree data
+structure
+a b tree of order m can have at most m
+minus one keys and m children
+now let's discuss some properties of b
+trees
+first up every node in a b tree can have
+at most m elements
+next every node except the root and the
+leaf node must have m by 2 children
+next a root node must have at least two
+nodes
+at last a leaf node must be at the same
+level
+now let's discuss what are the various
+operations we can perform on a bakery
+we can perform three operations on a b
+tree
+that is searching
+insertion
+and deletion
+let's discuss these in detail
+first up searching
+in this we will traverse the complete b
+tree until we have found a key
+we will start from the left side to go
+all the way up to the right side
+now let's try this in a code editor
+we will first start by creating a b tree
+node
+to do that we will use class
+b3 node
+and
+keys
+it is an array of keys
+then
+t
+this will define the range of the number
+of keys
+then we will
+create a child pointer
+e3
+node
+see
+it is an array of child pointer
+then
+then a variable
+to check the current number of keys
+and a boolean variable
+which will be true when the node is
+leave
+now define some
+functions in public
+first constructor
+then a function to insert a new key in a
+subtree
+void
+insert
+non-full
+argument as into k
+next a utility function to split the
+child y of the node
+argument as end i
+comma
+a b tray node pointer
+by
+a function to traverse the b tree
+and a function to search a key in the
+subtree
+it will return null if key is not
+present
+now we will create another class b3
+and make it a friend of this so that we
+can access private members of this
+b-tree
+of this class in b tree function
+now
+we will create a pointer root
+minimum degree
+then
+public
+a constructor b3
+put equals to null
+and t is equals to
+underscore d
+now we will write a function to traverse
+this tree
+point traverse
+if
+not
+null
+and root
+traverse
+now we will write a function to search a
+key industry
+return
+if root is equals to
+null
+and null
+else
+root
+earth
+now the main function that inserts the
+new key in this b3
+void
+insert
+and okay
+now
+we will write the constructor for b tray
+node class
+now we will copy the given minimum
+degree and leave property
+now we will allocate the memory of the
+maximum number of possible keys and the
+child pointer
+and c equals to
+new
+b3
+star bracket
+2 star t
+now we will initialize the number of
+keys at zero
+now let's write the function to traverse
+old node in the subtree rooted with this
+node
+there are n keys and n plus one children
+to traverse through n keys and first and
+children's we need to do int eyes
+i is equals to zero
+i less than n
+i plus plus
+if this is not leaf node then before
+printing key
+traverse the subtree rooted with child
+cei
+so if
+if
+equals to false
+then
+c bracket i
+l equals to
+traverse
+else
+see out
+case
+now we will print the subtree rooted
+with the last node
+so if
+leave
+equals to false
+and see
+i
+traverse
+now we will write the function to search
+key k in sub tray rooted with this node
+so
+b3
+node
+are
+e3
+search
+okay
+we will first find the first key greater
+than or equal to k
+so
+file
+and i
+is less than n
+and
+k
+is greater than
+is
+bracket i
+then i plus plus
+now if we found the key is equals to k
+then we will return this node
+bracket i
+is equals to k
+then we will
+return
+if key is not found here and this is a
+leaf node then
+if
+leaf is equals to
+true
+then we will return
+now we will try to go to the appropriate
+child
+so we will use return
+c bracket i
+arrow
+search
+now we will write the bean function that
+inserts the new key in this v tree
+so
+void b tree
+insert
+and okay
+so if
+root
+is equals to
+null then we will allocate the memory of
+our root
+foreign
+now root
+keys
+bracket 0
+is equals to k
+now we will change root
+here we are updating the number of keys
+in this route
+now if else
+else if tree is not empty
+then
+if root is full then tree grows in
+height so
+if
+root
+arrow n
+is equals to
+2
+star t
+minus 1.
+then we will allocate the memory for the
+new root
+b3
+star s
+equals to new
+e3
+node
+t comma false
+now we will make the old root as child
+of the new root
+so s arrow
+c bracket zero
+is equals to
+root
+now we will split the old root and move
+one key to the new root
+so
+as
+split child
+now
+new root has two children's
+we have to decide which of the two
+children is going to have a new queue
+new key
+so in
+i is equals to zero
+if
+if
+as
+keys
+0
+is less than
+k
+then
+i plus plus
+and as
+arrow
+c bracket i
+arrow
+insert
+known
+full
+okay
+now we will change the root
+equals to s
+else
+if root is not full we will call the
+insert non-full
+now we will write a function insert for
+non-full
+we will initialize and
+i is equals to
+n minus 1
+f if
+is equals to
+true
+then
+while
+i is greater than equals to zero
+and
+if
+is greater than k
+then
+case
+i plus one
+will be equals to key is i
+and i minus minus
+now we will insert the new key at the
+found location
+else
+while
+i is greater than equals to zero
+is
+i
+is greater than
+k
+then
+i minus minus
+now we will see if the found child is
+full
+f
+c
+bracket
+i plus one
+l
+is equals to
+2 star t
+minus 1.
+then
+we will use split child
+i plus one
+comma
+c
+i plus one
+now if
+k is
+bracket i plus 1
+is less than k
+then i plus plus
+c
+i plus one
+okay
+now we will write the function split
+child
+bye
+coma leaf
+and
+equals to
+t minus one
+now for dough
+and
+j is equals to zero
+j less than t minus 1
+j plus
+z equals to
+equals to why
+now we will copy the last two childrens
+of y to z
+if
+y leaf
+is equals to false
+and for
+enter j
+is equal to 0
+j less than t
+and j plus plus
+now we will reduce repeat now we will
+reduce the number of keys in y
+since this node is going to have a new
+child we will create a space for the new
+child
+so for loop
+and
+j is equals to 9 j goes to n
+j
+greater than equals to
+i plus 1
+j minus minus
+c bracket
+j plus 1
+equals to c bracket j
+now we will link the new child to this
+node
+now a key of y will move to this node
+and find the location of new key and
+move all greater keys one space ahead
+now we will increment the count of keys
+in this node
+now let's write the main block
+we will define a b tree with menu of
+degree 3.
+now t dot insert
+then
+t dot insert
+20
+d dot insert
+five
+two dot insert
+six
+d dot insert
+12
+a dot insert
+30
+d dot insert
+7
+and
+t dot insert
+17
+now let's try to traverse
+this see out
+traversal
+of
+b3
+t dot
+now let's search some keys so let's take
+end
+k is equals to 6
+so if
+t dot search
+okay
+is not
+null
+then
+see out
+okay
+else
+see out
+not present
+let's try this function one more time
+with k is equals to
+15.
+let's execute this
+as you can see we have successfully
+traversed this b tree and we have
+checked two keys if they are present or
+not
+the k is equals to
+15 was not present and k is equal to 6
+was present
+let's get back to our slides
+next up insertion
+we have to insert an element in such a
+way so that we won't disobey any
+properties of b trees
+now let's try this operation in a code
+editor
+we will start by creating a node to do
+that we will use class
+b3 node
+then we will create an array of keys
+minimum degree
+an array of child pointers
+current number of keys
+and a boolean variable leaf
+this variable will tell if the node is
+leaf or not
+then we will define some public
+functions
+we will start with constructor
+now we will create a function
+to insert a new key
+into the non-full node
+a utility function to split the child
+function to traversal
+tree
+a friend class b tree
+now we will create this class b tree
+now we will define a pointer to root
+node
+minimum degree
+and we will create some public functions
+first constructor
+root equals to
+null
+and t equals to
+underscore t
+now
+void
+traverse now if
+root is not equational
+then root
+arrow
+traverse
+now we will define a main function that
+inserts a new key in this b tree
+now we will write the constructor for
+the b3 dot class
+and t1
+comma
+boolean
+leaf one
+now we will copy the given minimum
+degree and leave property
+now we will allocate memory of maximum
+number of possible keys and child
+pointers
+now we will initialize the number of
+keys as zero
+now let's write a function to traverse
+all node in the subtree
+now there are n keys and n plus one
+children so we will traverse through n
+keys and first and center
+so end
+i
+hold i is equal to zero
+i less than n
+and i plus plus
+now suppose if this is not leaf
+then before printing key we will travel
+the subtree rooted with this child
+so
+if
+if
+is equals to false
+then c
+i
+arrow
+traverse
+now we will print these keys
+now we will print the subtree rooted
+with the last child
+so if
+leaf
+is equals to
+false
+then
+ci
+arrow
+traverse
+now we will write the main function that
+inserts a new key in this b tree
+void
+b3
+now if tree is empty
+then we will allocate the memory to root
+true
+now we will insert the key
+root
+arrow
+keys
+equals to k
+and we will update the number of keys in
+root
+root
+arrow
+and
+equals to one
+else
+if tree is not empty
+and if root is full
+then tree will grow in height
+if
+root
+arrow n
+is equals to
+2 star t minus 1
+now we will allocate the memory of new
+root
+now we will make all root as child of
+new root
+is equals to
+root
+now we will split the old root and move
+one key to the new root
+so to do that we will use split child
+function
+0 comma shoot
+now new root has two children's now
+we have to decide which of the two
+children is going to have new key
+so to do that we will use end is equals
+to zero
+if
+s keys
+0 is less than k
+then i plus plus
+and s
+arrow
+c i
+now we will change the route
+root
+insert
+non-full
+okay
+now we will write a utility function to
+insert a new key in this node
+we will assume that node must be
+non-full when this function is called
+so void
+b tree
+node
+insert non-full
+k
+we will initialize index as index of
+right most element
+so int
+i is equals to n minus 1
+now if this is a leaf node
+and the following loop does two things
+a finds a location of new key to be
+inserted or move all greater keys to one
+place ahead
+so while
+i is greater than equals to zero
+and
+is
+i is greater than k
+now
+is
+i plus 1
+will be equals to
+keys
+at i
+and
+i minus minus
+now we will insert the new key at the
+found location
+so keys
+at i plus 1
+will be equals to k
+and
+n equals to n plus 1
+now else
+if this node is not leave then we will
+find the child which is going to have
+the new key
+so while
+i is greater than equals to 0
+and
+is
+i
+is greater than k
+then
+i plus i minus minus
+now we will see if the found child is
+full
+so if
+c i plus 1
+arrow n
+is equals to
+2 star t
+minus 1.
+now if the child is full then we will
+split it
+to
+split
+child
+at i plus 1 comma
+c
+i plus 1
+after split the middle key of ci goes up
+and ci is splitted into 2 now we will
+see which of the following will have the
+new key
+f
+keys
+i plus 1
+is
+less than k
+then i plus plus
+c
+i plus one
+insert
+normal
+okay
+child
+and
+i
+comma
+a3
+node
+now we will create a new node which is
+going to store t minus keys of y
+so b tree
+node
+star z
+equals to
+new
+d3
+node
+by
+arrow
+d
+comma
+y arrow
+leaf
+now z
+arrow n
+is equals to t minus 1.
+now we will copy the last d minus one
+keys of y to z
+so for loop
+j is equals to zero
+j less than
+t minus one
+j plus plus
+so z
+arrow
+is
+j
+equals to
+y arrow
+is
+j plus t
+now we will copy the last t children's
+of y to z
+so
+if
+y leaf is false
+so for
+end
+j is equals to zero
+j less than t
+and j plus plus
+so z
+c j
+is equals to
+y
+c
+j plus t
+now we will reduce the number of keys in
+y
+so y
+arrow n
+is equals to t minus 1
+now since the node is going to have a
+new child we will create the space for
+the new child
+so for
+into j
+is equals to n
+and j is greater than equals to i plus 1
+and j minus minus
+c
+j plus 1
+will be equals to
+cj
+now we will link the new child to this
+node
+so c bracket i plus 1
+equals to z
+now a key of y will move to this node
+so we will find the location of new key
+and move all greater keys one space
+ahead
+so for
+int
+j
+is equals to
+n minus one
+j greater than equals to i
+j minus minus
+is
+a plus one
+is
+j
+now we will copy the middle key of y to
+this node
+sub key is
+bracket
+i
+is equals to
+y
+arrow
+keys at t minus one
+now we will increment the counts of key
+in this node
+so n equals to n plus one
+now we will write a driver program to
+test above functions
+now we will write the main block
+we will start with a b tree with meaning
+of degree 3.
+now we will insert keys in this tree
+so d dot
+insert
+10
+d dot insert
+15
+d dot
+insert
+five
+d dot insert
+x
+t dot insert
+12.
+dot
+insert
+seven
+now let's print this constructor tray
+so see out
+created
+b3
+yes
+now t dot
+traverse
+now let's execute this
+as we can see we have created b3 of
+order three
+let's get back to our slides
+finally deletion
+while deleting any elements from b tree
+we have to be careful not to break any
+properties of the b tree
+like all the leaves must be present at
+the same level or elements must be in
+ascending order
+now let's try this operation in a code
+editor
+let's start by creating a node to create
+a node we need a class
+node
+end
+start keys
+this is an array of keys
+entity
+a minimum degree
+now we will define an array of child
+pointers
+so b3 node
+number of keys and
+a boolean variable leaf to tell us if
+the node is leaf or not
+now we will define some public functions
+we will start with the constructor to
+this class
+b3
+node
+and underscore t
+comma
+boolean
+underscore leaf
+and a function to traverse the whole
+nodes in the sub-rooted tree
+so void
+traverse
+now a function to search a key in the
+sub tree
+so b3
+node
+star
+search
+and k
+this will returns null if k is not
+present
+now we will write a function that
+returns the index of the first key that
+is greater or equal to k
+so int
+find key
+and k
+now we will write an utility function to
+insert a new key in this subtree
+rooted with this node
+we will be assuming the node must be
+non-full when this function is called
+so void
+insert
+non-full
+as argument as
+k
+now we will write a utility function to
+split the child of y
+of this node
+void
+child
+and
+i
+comma
+b3
+node
+y
+a wrapper function is to remove the keys
+k in substituted with this node
+so void
+remove
+end k
+another function to remove a key present
+in the eighth height position in this
+node which is a known leaf node so void
+remove
+from non-leaf
+and
+idx
+now we will write a function to get the
+predecessor of the key where the key is
+present in the idx position in the node
+so end
+get
+red
+and idx
+now we will write a function to get the
+successor of the key where the key is
+present in the idx position in the node
+so end
+successor
+and
+idx
+now we will write a function to fill up
+the child node present in the idx
+position
+in the c array if that child has less
+than t minus 1 keys
+so void
+fill
+and
+idx
+now we will write another function to
+borrow a key
+from the c idx minus one node and place
+it and place it in c idx node
+so void
+borrow
+from
+a function to borrow a key from the idx
+plus one node and place it at the i
+idx node
+so void
+borrow
+from
+next
+and
+idx
+void
+merge
+idx
+now we will make b3 class as friend so
+that we can access private members of
+the this class in the b3 functions
+so friend
+class
+b tree
+so class
+we'll start with the pointer to the root
+node
+so b3
+node
+star root
+t
+now we will write some public functions
+we will start with the constructor so b3
+and
+underscore t
+so root
+is equal to
+null
+and
+t is equals to
+underscore
+now
+a traverse function
+void
+traverse
+so we will check if
+root is not null
+then
+root
+arrow
+traverse
+now we will write a function to search a
+key in this tree
+so b3
+node
+search
+and k
+we will return
+if
+root
+is equals to
+null
+then we will return null
+else
+root
+arrow
+search at key
+now we will write the main function that
+inserts a new key in this b tree
+so void
+insert
+int
+k
+now another main function that remove
+the new key in this b tree
+so void
+removed
+now we will write the constructor for
+this bitrate node
+and d1 comma
+bull
+leaf
+one
+so t will be equals to t1
+and
+leaf
+will be equals to leaf one
+now we will allocate memory for the
+maximum number of possible keys and
+child pointers
+so keys is equals to
+new
+int
+bracket
+to start d
+minus one
+and child c is equals to new
+b3 node
+star bracket
+2 star d
+now we will initialize the number of
+keys as zero
+so n is equals to zero
+now we will write a utility function
+that returns the index of the first key
+that is greater than or equal to k
+so
+int
+b tree
+node
+find
+key
+and
+k
+[Music]
+now end
+by dx
+is equals to 0
+then while
+i dx
+is less than n
+and
+keys
+idx
+is less than k
+plus plus
+idx
+return
+idx
+now we will write a function to remove
+the key k from the sub root tree rooted
+with this node so void
+v3
+node
+remove
+end key
+and
+idx equals to
+point key
+okay
+if the key to be removed is present in
+this node
+then
+if
+i dx
+is less than n
+and
+at keys
+is equals to k
+now if node is leaf node
+then we will remove from leaf node is
+called
+otherwise remove from non-leaf function
+is called
+so if
+leaf
+then remove
+from
+leaf
+idx
+else
+remove
+from
+only
+idx
+now else
+if this node is a leaf node then the key
+is not present in the stream so
+if
+leave
+see out
+is
+does not
+exist
+industry
+and return
+the key to be removed is present in this
+subtree rooted with this node the flag
+indicates whether the key is present in
+this subtree rooted with the last child
+of this node
+so
+bull
+black
+is equals to
+idx
+equals to and
+if
+it is true
+else
+false
+if the child where the key is supposed
+to exist has less than t keys then we
+fill that child
+so if
+c at i dx
+and
+it's less than t
+then fill
+idx
+now if
+flag
+and
+i dx
+is greater than n
+and c
+dx
+minus 1
+remove
+okay
+s
+c
+idx
+removed
+return
+void
+b3
+node
+remove from leaf
+and
+idx
+now we will move all the keys after the
+idx position one place backward so for
+loop
+and
+i is equals to idx plus one
+idx plus one
+i less than and
+i plus plus
+plus plus i
+so keys
+at i minus 1
+should be equals to
+i
+and we will reduce the count of keys so
+n
+minus minus
+then return
+now we will write the function to remove
+the idx key from the node which is
+non-leaf node
+so void
+e3
+node
+remove
+from non-leaf
+and
+idx
+so int
+k is equals to
+keys
+at idx
+if the child that precedes k at c i d x
+has at least t keys then we will find
+the predecessor thread of k in the
+subtree rooted at ci dx we will replace
+k by predecessor recursively and delete
+thread in cidx
+so if
+c idx
+arrow
+and
+is greater than equals to
+d
+then end
+equals to
+get
+red
+idx
+keys
+idx
+equals to
+red
+c
+idx
+remove
+else
+if
+c at idx 1
+arrow
+and
+is greater than equals to
+t
+and end
+suck
+is equals to
+get
+suck
+idx
+of keys at idx
+is equals to suck
+c at idx plus one
+users remove
+suck
+else
+will merge
+idx
+and c at idx
+we'll call
+remove
+at id expert call
+remove
+return
+now we will write a function to get
+predecessor of keys idx
+so end
+b3
+node
+get bread
+and
+suck
+repeat
+and idx
+so b3
+node
+star curve
+is equal to c at idx
+while
+is not a leaf
+then
+will be equals to
+curve
+and
+now we will return
+key
+now we will write
+end
+bakery
+node
+get
+suck
+and
+idx
+r
+equals to c
+i d x
+plus one
+while
+curve
+arrow
+while curve is not leaf
+0
+now we will return
+now we will write a function to fill
+child c idx which has less than t minus
+one keys
+b3
+node
+and
+idx
+f
+repeat if the previous child c idx minus
+1 has more than t minus 1 keys then we
+will borrow a key from that child
+so if idx
+is not equals to zero
+and
+c at i i dx
+minus one
+calls
+and greater than equals to
+t
+then we will borrow from previous
+idx
+else
+if
+i dx is not equals to n
+and
+c at i dx
+plus 1
+calls
+n
+greater than equals to 1
+3
+then
+we will borrow
+from next
+at idx
+else
+if
+i dx
+is not equals to n
+and we will merge
+idx
+as
+merge
+idx
+minus one
+return
+now we will write a function borrow from
+prep
+a tree node
+star child
+is equal to c idx
+a dream
+node
+star sibling
+is equals to c
+i d x
+minus one
+now
+the last key from cidx minus 1 goes up
+to the parent and key idx minus 1 from
+parent is inserted as the first key in c
+idx thus the losses sibling one key and
+child gains one key
+moving all keys in c i d x one step
+ahead
+so for loop
+and
+i
+is equals to
+child
+at n
+minus one
+i greater than equals to 0
+and i minus minus
+minus minus i
+child
+calls keys
+at i plus 1
+equals to
+child
+calls
+keys
+at i
+now if cidx is not a leaf
+then we'll move all its child pointers
+one step ahead
+if underscore
+child
+calls leaf
+or
+and
+i
+equals to
+child
+and
+i
+greater than
+equals to zero
+i
+minus minus i
+child
+at c bracket i plus 1
+equals to
+child
+c bracket eye
+now we will set the child's first key
+equal to the key at idx minus 1 from the
+current node
+so child
+is
+at zero
+is equals to
+keys that idx minus one
+now we will move siblings last child as
+ci dx's first set
+so if
+child is not leave
+your child
+hello c bracket 0
+is equals to
+sibling
+at
+c
+sibling
+calls
+n
+now
+keys
+at idx minus 1
+will be equals to
+strip length
+keys
+sibling
+false
+n minus one
+child
+at n
+will be plus equals to
+1.
+and sibling
+and
+will be equals to minus equals to
+1
+return
+void
+b tree
+node
+from next
+int idx
+now we will start by b3
+node
+child
+is equal to c at idx
+and b3
+node
+sibling
+is equals to c at idx
+plus 1.
+now key idx is inserted as the last key
+in the ci dx
+so child
+keys
+and
+is equal to
+keys
+at idx
+now child
+at keys
+if
+child is not live
+let's see
+equals to
+sibling
+at
+c
+zero
+now
+the first key from sibling is inserted
+into key idx
+so key at idx
+is equals to
+sibling
+keys
+zero
+for loop
+and
+i is equals to 1
+i
+less than
+sibling
+at n
+plus plus high
+sibling
+i
+minus 1
+is equals to sibling
+now if
+sibling is not leave
+loop
+i
+equals to one
+less than equals to
+sibling calls n
+plus plus i
+false
+c at i minus 1
+equals to
+sibling
+calls c at i
+now we will be increasing and decreasing
+the key count of cidx and cidx 1
+respectively
+so
+child
+at n
+is plus equals to
+one
+sibling
+calls
+n
+minus
+equals to
+1
+return
+now void
+b3
+node
+merge
+with argument as end idx
+b3
+node
+star child
+is equals to c
+dx
+beat
+tree node
+or sibling
+equals to c
+at idx plus one
+now we will be pulling a key from the
+keyed node and inserting it at t minus
+one position is c i d x
+so
+child
+calls keys
+t minus one
+is equals to
+keys
+at idx
+now we will be copying
+keys from cidx 1 to cidx at the end
+so 4
+and
+i
+is equals to 0
+i less than sibling
+plus n
+and plus plus i
+so child
+i plus t
+equals to
+siblings
+if
+our child
+calls
+leave
+for
+i is equals to zero
+i
+less than equals to
+sibling
+calls
+plus plus i
+child
+false
+c
+record i plus t
+equals to
+sibling
+because i
+now for
+is equals to idx
+plus 1
+i less than n
+plus plus i
+i minus 1
+is equals to
+case
+at i
+or
+and
+i is equals to
+i dx plus 2
+i less than equals to
+n
+and plus plus i
+e
+at i minus 1
+is equals to
+c
+at i
+child
+and
+plus
+equals to
+sibling
+and
+plus one
+elite
+sibling
+return
+now we will write the main function that
+inserts a new key in this battery
+so void
+b3
+and
+okay if
+root is equals to
+null
+then we will allocate
+memory to root
+which equals to
+new
+v3 node
+d
+comma true
+[Music]
+note
+is
+bracket 0
+is equals to k
+and
+root
+at n
+is equals to one
+else
+if
+root
+calls
+and
+is equals to
+star
+t minus one
+so b3
+node
+star s
+is equals to
+new
+b3
+node
+e
+comma false
+now as
+c bracket 0
+is equal to
+root
+as
+split
+child
+zero comma
+root
+and i is equals to zero
+f
+has
+keys
+bracket zero
+less than k
+[Music]
+i plus plus
+s
+c bracket
+hi
+insert
+non-poll
+okay
+now we will change the route to us
+else
+root
+calls
+insert
+non-full
+at key
+a utility function to insert at non-full
+node
+so int
+i
+is equals to n minus 1
+if leaf equals to true
+the following loop does two things
+finds the location of key to be inserted
+or moves all greater key to one place
+ahead
+so while
+i
+is greater than equals to 0
+and
+keys
+at i
+are greater than k
+then
+keys
+at i plus 1
+will be equals to keys at i
+and i
+minus minus
+keys
+at i plus 1
+will be equals to
+a
+and n will be equals to n plus one
+else
+while
+i is greater than equals to zero
+and
+is
+at i
+greater than k
+i minus minus
+f
+c bracket i plus 1
+at n
+equals to
+2 star
+t minus 1
+child
+i plus one
+comma
+c
+i plus one
+f
+is
+bracket i plus one
+okay
+i plus plus
+c bracket
+i plus one
+insert non-poll
+okay
+b3
+node
+and i
+comma
+b3
+node
+star wars
+b3
+node
+star z
+is equals to new
+b3
+node
+argument as y calls t
+and y calls leaf
+now that calls
+n equals to
+t minus 1
+now we will copy the last d minus 1 keys
+of y to z
+so for
+loop and j is equals to zero
+j less than
+t minus one
+j plus plus
+so z keys
+okay
+is equals to
+y
+at keys
+j plus
+t
+so
+if y
+if
+equals to
+false
+for
+and
+j is equals to zero
+j
+less than t
+j plus plus
+j
+c bracket i
+is equals to
+y calls
+c bracket j plus
+e
+now y calls
+n equals to t minus 1
+now since this node is going to have a
+new child we will create space for the
+new child
+so for loop
+and
+change equals to n
+j greater than equals to
+i plus 1
+j minus minus
+c
+vector j plus 1
+equals to c bracket
+j
+now c bracket
+i plus 1
+is
+equals to
+c bracket
+j
+e bracket
+i plus 1
+is equals to z
+now for
+loop
+and
+j is equals to n
+minus 1
+j greater than equals to
+i
+g
+minus minus
+is bracket j
+plus 1
+equals to
+keys
+at j
+is i
+equals to
+y
+is
+bracket
+t minus one
+n is equals to n plus one
+now we will write function for traverse
+so void
+b3 node
+traverse
+and i
+for loop
+i is equal to zero
+i less than n
+i plus plus
+f leaf
+equals to false
+and c bracket i
+will traverse
+if
+is equals to false
+then c i
+will call
+traverse function
+now we will write the function to search
+key in the subtree rooted with this node
+so b3
+node
+star
+b tree
+node
+search
+and
+k
+and
+i is equals to zero
+while
+i is less than n
+ampersand
+k
+is greater than keys
+bracket i
+so i plus plus
+now f
+is bracket i
+is equals to k
+return
+this
+now if
+if
+is equals to true
+then return
+null
+otherwise return
+c bracket i
+calls
+search
+okay
+now we will write the utility function
+to remove
+so void
+e3
+remove
+and
+k
+f
+not root
+and see out
+the
+key
+is empty
+return
+now we will call the reboot repeat now
+we will call the remove function for
+root
+so root
+calls
+remove
+okay
+now if root has zero keys then we will
+make its first child as a new root
+if it has a child
+otherwise set root as null
+so if
+root n
+is equals to
+zero
+then b tree
+node star
+dmv
+equals to root
+if
+root
+leaf
+root
+equals to
+null
+else
+root
+equals to
+root
+c bracket
+zero
+now delete
+return
+now we will write the code for the main
+block
+we will start with b3
+of order 3.
+now let's traverse this crater tree
+see out
+created
+tree
+now c out
+and l
+now we will use t dot remove
+to remove five
+now see out
+modified
+p3
+after
+deleting
+5.
+t dot traverse
+as you can see we have successfully
+deleted 5 from our b3
+let's get back to our slides
+at last let's sum up what we have
+learned in this session
+first up all the operations on b3 have
+time complexities of log n
+next all the leaves must be on the same
+level
+next elements of b3 are sorted in
+ascending order from left to right
+finally every node contains one more
+pointer than the number of elements of
+the node
+b plus trees
+we shall begin by introducing b plus
+trees
+then we will discuss properties of b
+plus trees after that we will try
+various operations on them like
+insertion and deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn
+so without any further ado let's get
+started with what is a b plus tree
+a b plus tree is a special m by tree
+data structure a b plus tree of order m
+can have at most m minus one keys and m
+children
+a b plus tree can be used as b tree with
+only keys to each node and with linked
+leaves to which an additional level is
+added at the bottom
+now let's discuss some properties of b
+plus trees
+first up every node in b 3 can have at
+most m elements
+next every node except the root and the
+leaf node must have m by 2 children
+next maximum keys for any node is m
+minus 1
+and at the last minimum keys for any
+node is ceiling of m by 2 minus 1.
+now let's discuss what are the various
+operations we can perform on b plus 3
+we can perform two operations on a b
+plus tree
+first up insertion
+second deletion
+now let's discuss these in detail
+first up insertion
+we have to insert an element is in such
+a way so that we won't disobey any
+properties of b plus trees
+now let's try this operation in a code
+editor
+we will start by creating a node to
+create a node we need a struct
+b plus
+tree
+node
+and star data
+b plus
+tree node
+space star
+child btr
+boolean
+leaf
+and end n
+for the object star root
+will be equals to null
+star
+and p pointer
+will be equals to null
+comma
+star x will be equals to none
+now we will write a constructor for it
+so b
+node
+star highlight
+and
+i
+and p equals to
+new
+b plus
+tree node
+np arrow
+data
+is equals to new
+space and
+bracket 5
+nnp
+child
+ptr
+is equals to new
+b plus 3
+node
+star
+bracket
+sex
+and belief
+is equals to true
+and p at the
+n
+is equals to
+zero
+now we will write a for loop
+i is equals to zero
+i less than six
+i plus plus
+np
+child
+is equals to
+return
+traverse
+b plus
+three
+node
+star b
+c out
+and
+i
+again afford to
+from i equals 0
+to
+i less than
+p at n
+i plus plus
+p doesn't have leaf
+then we will traverse the child
+traverse
+child
+patient bracket high
+see you
+p data
+at i
+now we will check these conditions again
+for
+i at t at n
+we will traverse it again
+from p
+child
+at i
+now next function will be used to sort
+this
+so void
+sort
+and star p
+comma
+and
+temp
+for loop
+a equals to i
+j less than equals to n
+j plus plus
+f
+p bracket i
+greater than b bracket j
+then
+we will swap these two so temp
+will store p at i
+and then p will replace its value with p
+at a
+now we will store
+the temp value in the p of j
+do
+now let's write a function to split this
+side
+and
+child
+d plus
+3
+node
+star x
+comma
+and i
+and j
+made
+b plus
+3 node
+star
+comma
+star
+and p3
+comma
+star y
+and p3
+equals to true
+f
+i
+is equals to minus one
+mid
+is equals to
+x
+data
+bracket 2.
+x data
+bracket 2
+will be equals to 0.
+then
+x
+will store n minus minus
+p1
+is equals to init
+now when p1 leave
+will be equals to false
+and x leaf is equal to true
+for loop
+j is equals to 3
+j less than 5
+j plus plus
+a minus 3
+will be equals to
+x
+data
+at j minus 3
+is equals to
+x at child ptr
+bracket j
+np3
+and plus plus
+x
+data bracket j
+is equals to zero
+now x
+greater than
+n minus minus
+another for loop
+from j is equals to zero
+with j less than six
+at j plus plus rate
+x
+child video
+at j
+will be stored at null
+now
+np1
+data
+at zero position
+will be equals to mid
+np1
+child ptr
+at
+and p1
+on n
+will be equals to x
+and p1
+child
+at np1
+on n plus 1
+will be equals to np3
+p1
+call n plus plus
+root
+is equals to np1
+now else
+y is equals to
+x
+child
+ptr at i
+and mid is equals to y at data
+at two
+and y
+on data at 2
+is equals to 0.
+i will store n minus minus
+now for loop
+j is equals to 3
+j less than 5
+j plus plus
+np3
+data
+j minus 3
+is equals to
+y
+data
+and p3
+and plus plus
+why
+data
+bracket j
+is equal to zero
+y
+and minus minus
+x
+child
+ptr
+at i plus 1
+is equals to y
+x
+at
+child ptr
+i plus 1
+is equals to
+np3
+return
+now we will write a function to insert
+into the
+tree
+void
+insert
+argument as end a
+so end
+i
+comma temp
+x is equal to root
+if
+x equals to null
+then root
+is equals to
+finite
+and x will be equals to root
+otherwise
+f
+x is a leaf
+and
+x at nine
+eight and exit n
+is equals to five
+and temp
+is equals to
+split
+child
+x
+comma minus 1
+x is equal to root
+if
+is greater than
+x
+data
+and
+a is less than
+x
+at data
+i plus one
+i plus plus
+and break
+else
+if
+a is less than
+x data
+zero
+then break
+else
+continue
+x is equals to x at
+child
+at i
+else
+while
+hex leaf
+is false
+for loop
+i is equal to zero
+when
+i is less than x at n
+i plus plus
+if
+a is greater than
+x
+data
+i
+and
+a
+is less than
+x
+and data
+i plus one
+a plus plus
+break
+else
+if
+a is less than x
+data
+break
+else
+continue
+if
+x
+child
+at n
+is equals to five
+that temp
+is equals to split
+child
+at x comma i
+x
+data
+at x n on n
+is equals to temp
+x
+at n plus plus
+continue
+else
+x is equals to x
+child
+right here
+i
+x
+on data
+at
+x at n
+is equals to a
+sort
+x at data
+exit n
+at n plus plus
+now let's write the code for the main
+block
+first we will declare some variables
+as and i
+n
+and t
+now we will request
+enter
+number
+of
+element
+to be
+inserted
+in
+pattern
+now see out
+now we will enter the element so enter
+the
+element
+now we will write a for loop
+so i is equals to 0
+to i less than n
+at i plus plus
+so cn
+d
+and insert
+now we will traverse this
+tree or co
+of b plus 3
+drivers
+root
+let's execute this
+we will enter five elements
+2 comma 3 comma 5 comma 7 over 9
+as you can see we have successfully
+traversed our first b plus 3.
+let's get back to our slides
+next deletion while deleting any element
+from b plus 3 we have to be careful not
+to break any properties of b plus 3.
+like all the leaves must be present at
+the same level or elements must be in
+ascending order now let's try these
+operations in a code editor
+let's start by creating a b tree
+first we will declare a global variable
+and
+max equals to three
+then we will
+create a class
+pp tree
+and a class
+node
+boolean
+is leaf
+and
+start key
+comma size
+ptr
+and upfront class
+now public
+load
+variable
+now we will write
+plus
+bp tree
+so node
+star root
+void
+insert
+kernel
+and
+node star
+comma
+node
+star
+void
+remove internal
+node star
+and a node function
+find
+parent
+start
+now public
+bp tray
+the constructor
+search function
+a insert function
+void remove
+void
+display
+get root
+e is equals to new
+in
+bracket max
+is equals to
+new
+node
+star
+bracket max plus one
+bp tree
+constructor
+now void
+with
+bp tray
+insert and
+x
+f
+true
+is equals to null
+then root
+is equals to
+new
+node
+root
+called key
+root
+checks
+his leave
+nice
+is equals to one
+else
+node
+cursor
+is equals to root
+node
+star
+parent
+while
+cursor
+is
+leave
+is equals to
+false
+to
+cursor
+now for loop
+and i is equals to zero
+to i less than
+cursor
+size
+i plus plus
+if
+x is less than cursor
+keep
+at it
+cursor
+is equal to cursor
+at
+ptr
+at i
+f
+i
+is equals to cursor
+size
+minus one
+cursor
+cursor
+and
+pdr
+i plus one
+break
+now if
+person
+size
+is less than max
+then end
+i is equals to zero
+while
+x is greater than cursor
+e
+set i
+and
+i is less than
+cursor
+size
+for loop
+and is equals to
+cursor
+at size
+and j is greater than i
+a minus minus
+so cursor
+calls key
+at j
+is equals to
+cursor
+pulse key
+at j minus one
+cursor
+calls key
+at i
+is equals to x
+cursor
+calls size
+plus plus
+pressure
+calls
+ptr
+add cursor
+size
+is equal to
+cursor
+ptr
+add
+cursor size
+minus one
+now cursor
+at ptr
+cursor
+size
+minus one
+cursor
+ptr
+equals one
+else
+node
+equals to new
+and
+virtual
+node
+max plus one
+four
+and
+i is equals to zero
+to
+i less than max
+at the rate i plus plus
+virtual node
+at i
+is equals to
+cursor
+e
+hat i
+and
+i is equals to zero
+comma j
+while
+x is greater than
+virtual
+or
+method i
+i is less than max
+i plus plus
+for
+int
+j is equals to max
+plus 1
+comma j
+is greater than
+i
+g minus minus
+virtual
+node
+j
+is equals to
+virtual
+load
+at j minus 1.
+so virtual
+node
+i
+is equals to x
+so new leaf
+is leaf
+is equals to true
+cursor
+size
+is equals to
+max
+plus 1
+by 2
+new leaf
+size
+is equals to max
+plus 1
+minus
+max
+plus one
+divided by two
+pressure
+cursor
+rice
+is equals to
+new leaf
+a new leaf
+that
+new leaf
+size
+is equals to
+cursor
+ptr
+max
+now void
+baby tree
+insert
+internal
+end x
+comma node star
+cursor
+comma
+node
+star
+child
+if
+cursor
+size
+is less than max
+then
+end
+is equals to zero
+while
+x is greater than
+cursor
+at
+key
+at i
+and
+i is less than
+cursor
+of size
+i plus plus
+for loop
+and
+j is equals to
+cursor size
+a is greater than i
+j minus minus
+cursor
+at key
+at j
+is equals to cursor
+a minus one
+cursor
+bracket i
+is equals to x
+cursor
+cursor
+at ptr
+bracket i plus 1
+is equals to child
+else
+node
+star
+internal
+is equals to
+new node
+virtual
+g
+is max plus one
+node
+star
+virtual
+key
+at max
+plus one
+virtual
+idea
+or
+zero
+i less than max
+i plus plus
+virtual
+key
+is equals to
+cursor
+key
+for
+and
+i is equals to zero
+i less than max
+plus one
+i plus plus
+virtual
+dtr
+i
+refers to cursor
+ptr
+at eye
+node
+star
+pp tree
+find
+parent
+node
+star
+cursor
+comma node
+star child
+star parent
+if
+cursor
+is
+leaf
+or
+cursor
+at
+atr
+zero
+yes
+then return
+none
+i less than cursor
+size
+plus one
+i plus plus
+f
+cursor
+dtr
+cursor
+return
+parent
+else
+parent
+is equals to find
+parent
+cursor
+ptr
+right
+parent
+not equals to
+null
+return
+return
+turret
+now void
+ep tray
+removed
+and x
+if
+root
+null
+then
+see out
+empty
+else
+node
+star cursor
+goes to
+root
+sibling
+comma
+right
+sibling
+so while
+cursor
+s
+leaf
+equals to false
+so for
+i less than cursor size
+and i plus plus
+current is equals to cursor
+left
+sibling
+is equals to i minus one
+right
+sibling
+is equals to i plus one
+f
+x is less than
+cursor
+is
+then cursor
+will be equals to cursor
+ptr
+if
+i is equals to
+cursor
+size
+minus one
+right
+sibling
+equals to y plus two
+cursor
+is equals to
+cursor
+bracket i plus one
+is equals to
+false
+force
+for
+is less than
+cursor
+size
+close
+plus plus
+if
+cursor
+key
+at force
+is equals to
+x
+then
+found
+equals to true
+and then break
+now if
+not found
+not
+we're done
+now if
+cursor
+size
+equals to zero
+then
+c out
+right
+delete
+cursor
+delete
+cursor
+pdf
+delete
+cursor
+root
+is equals to
+null
+return
+for loop
+and
+is equals to
+cursor
+is
+size
+i plus plus
+comma j plus plus
+cursor
+key
+at eye
+is equals to
+write node
+cursor
+add cursor
+size
+first
+now see out
+merging
+removed
+internal
+at
+right sibling
+minus one comma
+parent
+comma
+right node
+delete
+write
+node
+okay
+write node
+right now
+avoid
+e3
+display
+f
+cursor
+is not equals to null
+or
+i equals to 1
+i less than
+cursor
+size
+5 plus
+see out
+person
+say out cursor
+key
+attack
+see out
+if
+cursor
+is
+leave
+not equals to true
+and 4
+and
+i equals to 0
+i less than cursor
+size
+plus one
+i plus plus
+pressure
+ptr
+now node
+star bp3
+get root
+return
+root
+now we will write the main block
+we will start with an empty tree pp tree
+node
+now node
+dot
+insert
+five node
+dot insert
+15
+node
+dot insert
+25
+node
+dot insert
+35
+dot insert
+dot display
+dot
+get true
+node
+dot remove
+fifteen
+dot display
+dot
+root
+let's execute this
+as you can see
+this program is working flawlessly we
+have successfully deleted the key 15.
+let's get back to our slides
+at last let's sum up what we have
+learned in this session
+up b plus trees are fast at performing
+all its operations
+next all the leaves must be present on
+the same level and data is only stored
+in leaf node
+next elements of the b-plus tree are
+sorted in ascending order from the left
+to the right
+finally every node contains one more
+pointer than the number of elements of
+the node now with that we have come to
+an end of the session on trees in data
+structures if you have any queries
+regarding any of the topics covered in
+this session or if you need the codes
+executed in this particular tutorial
+then please feel free to let us know in
+the comment section below our team of
+experts will be happy to resolve all
+your queries until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
